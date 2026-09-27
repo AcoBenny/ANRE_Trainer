@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 public class MainActivity extends Activity {
     private WebView webView;
@@ -23,17 +25,28 @@ public class MainActivity extends Activity {
         settings.setBuiltInZoomControls(false);
         settings.setDisplayZoomControls(false);
 
-        webView.setWebViewClient(new WebViewClient());
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
+                try {
+                    InputStream is = getAssets().open("audit_patch.js");
+                    byte[] buffer = new byte[is.available()];
+                    int read = is.read(buffer);
+                    is.close();
+                    String js = new String(buffer, 0, read, StandardCharsets.UTF_8);
+                    view.evaluateJavascript(js, null);
+                } catch (Exception ignored) {
+                }
+            }
+        });
         webView.loadUrl("file:///android_asset/anre_trainer.html");
     }
 
     @Override
     public void onBackPressed() {
-        if (webView.canGoBack()) {
-            webView.goBack();
-        } else {
-            super.onBackPressed();
-        }
+        if (webView.canGoBack()) webView.goBack();
+        else super.onBackPressed();
     }
 
     @Override
