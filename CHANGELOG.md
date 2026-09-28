@@ -75,3 +75,15 @@ The project is currently consolidating the final evidence-backed documentation s
 - Added punctual mappings for the electrician authorization regulation, including arts. 22, 29, 30 and 47.
 - Kept historical wording such as "adeverință/legitimație" distinct from current consolidated terminology.
 - No application answer was changed during this batch.
+
+
+### V10.9.5 · Legislation conflict resolution
+- Resolved G1-LEG-024: A → C after verification of the ATR requirement.
+- Resolved G1-LEG-027: A → C using the current connection regulation, art. 33 alin. (1) lit. b).
+- Resolved G1-LEG-028: B → C using Annex 3 pct. 2.3 of the connection regulation.
+- Resolved G1-LEG-032: B → A using the authorization-regulation sanctioning framework.
+- Resolved G1-LEG-034: B → A using authorization regulation art. 37 lit. e).
+- Preserved every previous value as `Raspuns_initial`.
+- Added a dedicated `RESOLVED_LEGISLATION_CONFLICTS` audit registry.
+- Validated the 822-question dataset and JavaScript syntax after the corrections.
+- Kept the correction in the working evidence prototype; final Android packaging remains pending completion of the legislation audit.
