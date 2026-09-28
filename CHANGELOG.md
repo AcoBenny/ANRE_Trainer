@@ -27,6 +27,24 @@ The project is currently consolidating the final evidence-backed documentation s
 - Kept generic ANRE links only where no exact demonstrated provision is available.
 - Preserved 822 unique questions and passed JavaScript syntax validation.
 
+
+### V10.7 · Grade I norm conflict resolution
+- Resolved G1-NOR-061 using I7-2011 pct. 5.2.12.3.4: A → B.
+- Resolved G1-NOR-089 using I7-2011 pct. 5.1.4.3.3: A → B.
+- Resolved G1-NOR-094 using I7-2011 pct. 5.5.7.11: A → C.
+- Preserved prior answers as `Raspuns_initial` and retained a resolution audit trail.
+
+### V10.8 · Grade II norms
+- Completed G2-NOR + G2-NORM: 15/15 questions received explicit bibliographic/source treatment.
+- I7-2011 uses local document access plus official Portal Legislativ verification.
+- PE 102/1986 and PE 155/1992 remain external because a complete official text suitable for offline bundling was not demonstrated.
+
+### V10.9 · Legislation verification
+- Began source verification for all 112 legislation questions.
+- Established the official-source registry around Legea 123/2012, the ANRE electrician authorization regulation, the electricity supply regulation and the grid-connection regulation.
+- The phase distinguishes historical exam-source wording from the current consolidated legal text.
+- Exact article/paragraph mapping is added only when demonstrated by the official source.
+
 ### In progress
 - Final question-level evidence mapping
 - Mobile UX validation
