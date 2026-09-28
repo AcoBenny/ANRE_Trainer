@@ -273,3 +273,26 @@ The second punctual legislation batch was verified against official Portal Legis
 The batch also exposed a useful version-control rule: current authorization regulations use the term "autorizație" while older question wording may use "adeverință/legitimație". Such terminology differences are retained in the audit rather than silently normalized.
 
 No application answer was changed in this phase. The evidence mapping is being accumulated first; any answer correction will use an explicit conflict-resolution record.
+
+
+### Phase 20 · V10.9.5 legislation conflict resolution
+The first legislation conflict-resolution pass was completed after independent verification of the relevant legal provisions.
+
+Five conflicts were resolved:
+- **G1-LEG-024:** A → C, based on the ATR requirement in the applicable connection procedure.
+- **G1-LEG-027:** A → C, Regulation on connection, art. 33 alin. (1) lit. b), 12 months when the connection contract has not been concluded.
+- **G1-LEG-028:** B → C, Regulation on connection, Annex 3 pct. 2.3: individual metering groups are centralized, at ground floor or on the landing.
+- **G1-LEG-032:** B → A, authorization regulation sanctions the prohibited activity; the mere age of a still-valid authorization document is not itself the stated sanctioning ground.
+- **G1-LEG-034:** B → A, authorization regulation art. 37 lit. e): respecting the project is an explicit obligation; participation in reception/commissioning is conditional on being requested.
+
+The previous values were preserved as `Raspuns_initial`. A dedicated `RESOLVED_LEGISLATION_CONFLICTS` registry was added to the working HTML so the corrections remain auditable.
+
+A further quality-control point was recorded: G1-LEG-034 had initially been omitted from the Batch 3 conflict count even though its stored answer also differed from the verified provision. It was therefore included before the resolution was finalized.
+
+The working prototype was validated with:
+- 822 questions
+- 822 unique IDs
+- JavaScript syntax check passed
+- all five corrected records retain their original answer value in `Raspuns_initial`
+
+No Android release was produced from this working correction until the remaining legislation audit is completed.
