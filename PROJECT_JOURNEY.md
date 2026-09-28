@@ -134,20 +134,25 @@ The design principle is now explicit:
 
 **Audit metadata supports development; evidence cards support the learner.**
 
-### Phase 13 · V9.2 pre-answer card fix
-A second mobile review showed that the evidence card was still being inserted immediately below the question because the question renderer called `evidenceCard(q)` directly.
+### Phase 13 · V9.2 evidence flow
+Mobile testing then exposed two related rendering issues.
 
-V9.2 changes:
-- removed the pre-answer evidence-card render from the learning/question view;
-- removed the same pre-answer evidence card from the exam renderer for a consistent exam experience;
-- retained the post-answer documentation flow;
-- confirmed the standalone HTML still contains 822 unique questions;
-- confirmed the remaining evidence-card call is not invoked during initial question rendering;
-- validated the inline JavaScript separately with Node syntax checking.
+First, the evidence card was being inserted before the learner answered. That was removed so the initial screen stays focused on the question and A/B/C.
 
-The intended learner flow is now:
+Second, the post-answer renderer was still calling only the I7-specific source function. As a result, non-I7 questions had no documentation card after answering.
 
-**Întrebare → A/B/C → răspuns → feedback → documentație/sursă**
+V9.2 now uses the generic evidence-card renderer after every answer:
+- I7-mapped questions receive the verified I7 card with the direct paragraph link;
+- other technical-norm questions receive the compact technical-reference card;
+- legislation questions receive the appropriate legislative/ANRE source card;
+- electrotechnics questions receive the technical cross-reference card;
+- no evidence card is shown before the answer.
+
+The intended learner flow is:
+
+**Întrebare → A/B/C → răspuns → feedback → card documentație → sursă**
+
+The standalone HTML JavaScript was syntax-checked successfully after this change.
 
 ## Verification philosophy
 
