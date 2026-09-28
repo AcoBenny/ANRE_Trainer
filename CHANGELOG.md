@@ -12,11 +12,12 @@ The project is currently consolidating the final evidence-backed documentation s
 - Preserved direct Portal Legislativ text-fragment links for verified I7 mappings.
 - Validated the updated standalone HTML JavaScript with Node syntax checking.
 
-### V9.2 · Pre-answer card fix
-- Removed the evidence card from the initial question render.
-- Removed the same card from the initial exam render.
+### V9.2 · Evidence flow completion
+- Removed the evidence card from the initial question and exam renders.
 - Kept documentation/source evidence in the post-answer flow.
-- Confirmed 822 unique questions and validated the inline JavaScript separately with Node.
+- Changed the post-answer renderer from the I7-only source function to the generic evidence-card renderer.
+- I7 questions keep their verified direct paragraph card; other norms, legislation and electrotechnics questions now receive their appropriate source card.
+- Confirmed 822 unique questions and syntax-checked the standalone HTML JavaScript with Node.
 
 ### In progress
 - Final question-level evidence mapping
