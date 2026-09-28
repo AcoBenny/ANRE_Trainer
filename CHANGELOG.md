@@ -4,9 +4,17 @@
 
 The project is currently consolidating the final evidence-backed documentation system for all 822 questions.
 
+### V9.1 · Evidence UX cleanup
+- Separated internal audit metadata from the learner-facing question screen.
+- Removed cross-reference/formulation audit text from the main question and exam views.
+- Kept verification status, source and reference information in a compact evidence card.
+- Added full-width clickable source actions for technical-reference cards.
+- Preserved direct Portal Legislativ text-fragment links for verified I7 mappings.
+- Validated the updated standalone HTML JavaScript with Node syntax checking.
+
 ### In progress
 - Final question-level evidence mapping
-- HTML V9 validation
+- Mobile UX validation
 - Final Android packaging
 
 ## Historical milestones
