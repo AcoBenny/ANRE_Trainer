@@ -252,3 +252,24 @@ Recommended commit style:
 - `test:` validation
 - `docs:` documentation
 - `build:` Android/release work
+
+
+### Phase 19 · V10.9.3 legislation pinpoint mapping · Batch 2
+The second punctual legislation batch was verified against official Portal Legislativ sources.
+
+**11 questions were closed at article/alineat level:**
+- G1-LEG-001 → Legea 123/2012, art. 3 alin. (1) pct. 15
+- G1-LEG-002 → art. 58 alin. (4)
+- G1-LEG-003 → art. 58 alin. (4)
+- G1-LEG-009 → art. 93 alin. (1) pct. 3
+- G1-LEG-010 → Regulamentul aprobat prin Ordinul 66/2023, art. 29
+- G1-LEG-011 → art. 47 alin. (1)-(2)
+- G1-LEG-013 → art. 18 alin. (1) / art. 30 alin. (1)
+- G1-LEG-014 → art. 22
+- G1-LEG-017 → Legea 123/2012, art. 58 alin. (4)
+- G1-LEG-018 → art. 67 lit. a)
+- G1-LEG-019 → art. 93 alin. (1) pct. 3
+
+The batch also exposed a useful version-control rule: current authorization regulations use the term "autorizație" while older question wording may use "adeverință/legitimație". Such terminology differences are retained in the audit rather than silently normalized.
+
+No application answer was changed in this phase. The evidence mapping is being accumulated first; any answer correction will use an explicit conflict-resolution record.
