@@ -315,3 +315,26 @@ Validation after the batch:
 - 822 unique IDs
 - JavaScript syntax check passed
 - no Android release generated yet; legislation audit continues.
+
+
+### Phase 22 · V10.11 local evidence UX
+
+The evidence flow was refined after mobile review showed that a source button can still feel like an external hand-off instead of documentation that can be read immediately.
+
+The new rule is:
+
+**Evidence button → internal evidence popup → relevant local content → optional official source**
+
+For I7 mappings, the popup now exposes the verified source fragment directly, together with its exact chapter and paragraph.
+
+For the other categories, the popup exposes the locally available source row, the exact verification basis, the stored verification note and any recorded cross-reference. It explicitly states when the integral normative/technical paragraph is not embedded locally, rather than inventing or implying that a source paragraph is available.
+
+The learner-facing button wording now distinguishes:
+- **„Citește fragmentul relevant”** when a verified local paragraph/fragment exists;
+- **„Citește referința locală”** when only the local source-row evidence is available.
+
+This preserves the project rule that evidence must lead to relevant information rather than a generic portal page.
+
+The external official link remains secondary and is shown only when an exact official destination is known.
+
+The V10.11 standalone HTML was JavaScript syntax-checked successfully. Runtime/browser QA remains the next gate before Android asset synchronization.
