@@ -19,6 +19,14 @@ The project is currently consolidating the final evidence-backed documentation s
 - I7 questions keep their verified direct paragraph card; other norms, legislation and electrotechnics questions now receive their appropriate source card.
 - Confirmed 822 unique questions and syntax-checked the standalone HTML JavaScript with Node.
 
+
+### V9.3 · Pinpoint source mapping
+- Added a verified I7-2011 mapping for G1-NOR-088.
+- Source location: **pct. 4.1.5.3.8**.
+- Replaced the generic ANRE landing-page destination for this question with a direct official I7 paragraph link.
+- Kept generic ANRE links only where no exact demonstrated provision is available.
+- Preserved 822 unique questions and passed JavaScript syntax validation.
+
 ### In progress
 - Final question-level evidence mapping
 - Mobile UX validation
