@@ -154,6 +154,23 @@ The intended learner flow is:
 
 The standalone HTML JavaScript was syntax-checked successfully after this change.
 
+
+### Phase 14 · V9.3 pinpoint source mapping
+Mobile testing exposed that a generic ANRE landing-page link is not sufficient when the exact normative provision is known.
+
+The tested question **G1-NOR-088** was mapped to **I7-2011, pct. 4.1.5.3.8**, which directly addresses metal enclosures of prefabricated distribution installations and their possible use as protective conductors.
+
+V9.3:
+- adds the punctual I7 mapping for G1-NOR-088;
+- uses the same direct text-fragment mechanism as the other verified I7 references;
+- keeps the generic ANRE page only for questions where no demonstrated pinpoint source is available;
+- preserves the 822-question dataset and unique IDs;
+- passes JavaScript syntax validation after the change.
+
+The rule is now explicit:
+
+**If an exact source provision is demonstrated, the learner gets the exact provision, not a generic portal homepage.**
+
 ## Verification philosophy
 
 The project deliberately records corrections and uncertainty.
