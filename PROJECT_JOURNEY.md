@@ -171,6 +171,47 @@ The rule is now explicit:
 
 **If an exact source provision is demonstrated, the learner gets the exact provision, not a generic portal homepage.**
 
+
+### Phase 15 · V10.7 conflict resolution
+The Grade I technical-norm verification reached three explicit answer conflicts where the application answer differed from the verified I7-2011 provision.
+
+Resolved after punctual source verification:
+- **G1-NOR-061:** A → B, I7-2011 pct. 5.2.12.3.4
+- **G1-NOR-089:** A → B, I7-2011 pct. 5.1.4.3.3
+- **G1-NOR-094:** A → C, I7-2011 pct. 5.5.7.11
+
+The previous values were preserved as `Raspuns_initial` and the correction was recorded in a dedicated resolution registry. No conflict was silently overwritten.
+
+### Phase 16 · V10.8 Grade II norms
+The Grade II technical-norm/documentation batch was reviewed:
+- **G2-NOR:** 12 questions
+- **G2-NORM:** 3 questions
+- **15/15** received an explicit bibliographic/source treatment.
+
+The references were separated into three groups:
+- **I7-2011:** local document access plus official Portal Legislativ verification;
+- **PE 102/1986:** official ANRE bibliography reference, but no complete official text was demonstrated for safe offline bundling;
+- **PE 155/1992:** official ANRE bibliography reference, but no complete official text was demonstrated for safe offline bundling.
+
+### Phase 17 · V10.9 legislation verification
+The next verification phase covers the **112 legislation questions**:
+- 50 Grad I
+- 62 Grad II
+
+The legislation workflow uses the historical 05.2023 ANRE question-set context while checking the answer against the relevant official legal act and, where appropriate, its current consolidated form.
+
+The initial official-source registry includes:
+- **Legea nr. 123/2012**
+- **Regulamentul pentru autorizarea electricienilor**, approved by Ordinul ANRE nr. 66/2023, with later amendments
+- **Regulamentul de furnizare a energiei electrice la clienții finali**, approved by Ordinul ANRE nr. 5/2023
+- **Regulamentul privind racordarea utilizatorilor la rețelele electrice de interes public**, approved by Ordinul ANRE nr. 59/2013, with subsequent amendments
+- relevant ANRE thematic/bibliographic acts and tariff decisions where explicitly required.
+
+The phase preserves the distinction between:
+1. the source/version relevant to the historical exam question;
+2. the exact legal provision supporting the stored answer;
+3. the current consolidated form.
+
 ## Verification philosophy
 
 The project deliberately records corrections and uncertainty.
