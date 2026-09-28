@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### V10.11 · Local evidence UX
+- Changed evidence actions so the learner opens an internal evidence popup rather than being sent directly to a generic source page.
+- I7 mappings expose the verified paragraph/fragment directly in the popup, with exact location.
+- Other categories expose the locally available source row, verification basis and audit note, while explicitly stating when the full technical/normative paragraph is not embedded locally.
+- Distinguished `Citește fragmentul relevant` from `Citește referința locală` so the UI does not overstate the evidence available.
+- Kept exact official Portal links as a secondary verification action where a precise destination is known.
+- Standalone HTML JavaScript syntax validation passed; runtime QA and Android synchronization remain pending.
+
 The project is currently consolidating the final evidence-backed documentation system for all 822 questions.
 
 ### V9.1 · Evidence UX cleanup
