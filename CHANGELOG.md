@@ -87,3 +87,13 @@ The project is currently consolidating the final evidence-backed documentation s
 - Added a dedicated `RESOLVED_LEGISLATION_CONFLICTS` audit registry.
 - Validated the 822-question dataset and JavaScript syntax after the corrections.
 - Kept the correction in the working evidence prototype; final Android packaging remains pending completion of the legislation audit.
+
+
+### V10.10 · Legislation Batch 4
+- Resolved G1-LEG-043: B → A, supply regulation art. 26 alin. (4) lit. b), minimum 5 working days for non-household clients.
+- Resolved G1-LEG-047: C → B, connection regulation art. 24, ATR as the network operator's offer.
+- Resolved G1-LEG-048: A → B, household client's payment-method choice.
+- Rechecked neighboring G1-LEG-041, 042, 044, 045, 046, 049 and 050 without changing their answers.
+- Confirmed G1-LEG-050 against supply regulation art. 7 alin. (1) lit. d), minimum 3-month payment installment scheduling for vulnerable clients.
+- Preserved previous answers and extended RESOLVED_LEGISLATION_CONFLICTS.
+- JavaScript syntax validation passed; Android packaging remains pending.
