@@ -296,3 +296,22 @@ The working prototype was validated with:
 - all five corrected records retain their original answer value in `Raspuns_initial`
 
 No Android release was produced from this working correction until the remaining legislation audit is completed.
+
+
+### Phase 21 · V10.10 legislation Batch 4
+Batch 4 continued the punctual audit of Grade I legislation questions, focusing on the electricity supply regulation and grid-connection regulation.
+
+Three answer conflicts were resolved:
+- G1-LEG-043: B → A, supply regulation art. 26 alin. (4) lit. b): minimum 5 working days for non-household clients.
+- G1-LEG-047: C → B, connection regulation art. 24: the ATR contains the technical connection solution and constitutes the network operator's offer to the applicant.
+- G1-LEG-048: A → B, supply regulation: the household client may choose among payment methods made available by the supplier.
+
+The same batch also rechecked neighboring questions G1-LEG-041, 042, 044, 045, 046, 049 and 050. Their answers were not changed. In particular, G1-LEG-050 was confirmed against art. 7 alin. (1) lit. d), which provides for payment installment scheduling for a minimum of 3 months at the vulnerable client's request.
+
+Previous values were preserved in Raspuns_initial, and the corrections were appended to RESOLVED_LEGISLATION_CONFLICTS.
+
+Validation after the batch:
+- 822 questions
+- 822 unique IDs
+- JavaScript syntax check passed
+- no Android release generated yet; legislation audit continues.
