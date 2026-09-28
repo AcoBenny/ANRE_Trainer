@@ -154,7 +154,6 @@ The intended learner flow is:
 
 The standalone HTML JavaScript was syntax-checked successfully after this change.
 
-
 ### Phase 14 · V9.3 pinpoint source mapping
 Mobile testing exposed that a generic ANRE landing-page link is not sufficient when the exact normative provision is known.
 
@@ -170,7 +169,6 @@ V9.3:
 The rule is now explicit:
 
 **If an exact source provision is demonstrated, the learner gets the exact provision, not a generic portal homepage.**
-
 
 ### Phase 15 · V10.7 conflict resolution
 The Grade I technical-norm verification reached three explicit answer conflicts where the application answer differed from the verified I7-2011 provision.
@@ -211,6 +209,28 @@ The phase preserves the distinction between:
 1. the source/version relevant to the historical exam question;
 2. the exact legal provision supporting the stored answer;
 3. the current consolidated form.
+
+### Phase 18 · V10.9.2 legislation pinpoint mapping · Batch 1
+The first punctual legislation batch was verified against the official Portal Legislativ.
+
+**13 questions were closed at article/alineat/literă level without changing the application dataset yet.**
+
+Important mapping corrections discovered in this batch:
+- **G1-LEG-004** → Legea 123/2012, art. 58 alin. (5)
+- **G1-LEG-005** → Legea 123/2012, art. 23 alin. (8), replacing the overly broad art. 52 reference
+- **G1-LEG-015** → art. 92 alin. (1)
+- **G1-LEG-016** → art. 92 alin. (1)
+- **G1-LEG-021** → art. 49 alin. (1) lit. f)
+- **G1-LEG-022** → art. 49 alin. (1) lit. a)
+- **G1-LEG-023** → art. 2
+- **G1-LEG-025** → art. 1 alin. (2) lit. b)
+- **G1-LEG-026** → art. 92 alin. (2)
+- **G1-LEG-038** → art. 3 alin. (1) pct. 13
+- **G1-LEG-042** → art. 52 alin. (1)
+- **G1-LEG-044** → art. 52 alin. (4)
+- **G1-LEG-049** → art. 58 alin. (6)
+
+No answer was silently changed. The work at this stage updates the evidence registry only. Answer changes, if ever required, will follow the same explicit conflict-resolution procedure used in V10.7.
 
 ## Verification philosophy
 
