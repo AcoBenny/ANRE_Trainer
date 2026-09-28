@@ -117,6 +117,23 @@ The build configuration uses:
 - minSdk 24
 - targetSdk 35
 
+### Phase 12 · V9.1 evidence UX cleanup
+A manual mobile review exposed an important distinction between **audit metadata** and **user-facing evidence**.
+
+The first V9 evidence implementation displayed internal audit language directly above the answers, including cross-reference notes and formulation warnings. This made the question screen unnecessarily dense and pushed the actual answers down.
+
+V9.1 changes:
+- removed internal audit text from the normal question and exam screens;
+- kept verification status and source information in a compact evidence card;
+- made the evidence action an explicit, full-width clickable button;
+- ensured non-I7 technical references also have a navigable official ANRE source link;
+- kept the detailed audit registry in the project data/history rather than the main exam UX;
+- validated the resulting JavaScript with Node syntax checking.
+
+The design principle is now explicit:
+
+**Audit metadata supports development; evidence cards support the learner.**
+
 ## Verification philosophy
 
 The project deliberately records corrections and uncertainty.
