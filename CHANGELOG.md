@@ -67,3 +67,11 @@ The project is currently consolidating the final evidence-backed documentation s
 - Consolidated Grad I and Grad II into a unified trainer.
 - Added filtering, learning mode, mistakes, quick tests, simulations, statistics and local persistence.
 - Added Android WebView packaging and GitHub Actions builds.
+
+
+### V10.9.3 · Legislation pinpoint mapping · Batch 2
+- Closed 11 additional Grade I legislation questions at official article/alineat level.
+- Added punctual mappings for Legea 123/2012 arts. 3, 58, 67 and 93.
+- Added punctual mappings for the electrician authorization regulation, including arts. 22, 29, 30 and 47.
+- Kept historical wording such as "adeverință/legitimație" distinct from current consolidated terminology.
+- No application answer was changed during this batch.
