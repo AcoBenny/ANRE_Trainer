@@ -1,0 +1,28 @@
+# Changelog
+
+## [Unreleased]
+
+The project is currently consolidating the final evidence-backed documentation system for all 822 questions.
+
+### In progress
+- Final question-level evidence mapping
+- HTML V9 validation
+- Final Android packaging
+
+## Historical milestones
+
+### V9 · Evidence system
+- Expanded the documentation-card concept from a small I7 prototype toward all 822 questions.
+- Added question-level evidence/status tracking.
+- Kept official references separate from technical cross-reference evidence.
+
+### V8.x · I7 documentation prototype
+- Introduced compact I7 documentation cards.
+- Added direct Portal Legislativ text-fragment links where applicable.
+- Corrected G1-NOR-025 from 20 mm to 15 mm after exact source verification.
+- Corrected additional I7 mappings and source fragments.
+
+### Earlier versions
+- Consolidated Grad I and Grad II into a unified trainer.
+- Added filtering, learning mode, mistakes, quick tests, simulations, statistics and local persistence.
+- Added Android WebView packaging and GitHub Actions builds.
