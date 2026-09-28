@@ -12,6 +12,12 @@ The project is currently consolidating the final evidence-backed documentation s
 - Preserved direct Portal Legislativ text-fragment links for verified I7 mappings.
 - Validated the updated standalone HTML JavaScript with Node syntax checking.
 
+### V9.2 · Pre-answer card fix
+- Removed the evidence card from the initial question render.
+- Removed the same card from the initial exam render.
+- Kept documentation/source evidence in the post-answer flow.
+- Confirmed 822 unique questions and validated the inline JavaScript separately with Node.
+
 ### In progress
 - Final question-level evidence mapping
 - Mobile UX validation
