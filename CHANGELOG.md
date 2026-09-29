@@ -157,3 +157,10 @@ The project is currently consolidating the final evidence-backed documentation s
 - Static QA: 822 records, 822 unique IDs, 822/822 populated explanations.
 - RC1 standalone SHA-256: `1f056eea6b0e7b87be4eacdb68642ae096b9427cc098f5c56236a8f23d3a8c28`.
 - Next gate: targeted pedagogical/source QA before Android packaging.
+
+
+### V10.19 · RC1 audit-label correction
+- Reclassified the 641 newly generated explanations from `RC1_RESEARCHED_EXPLANATION` to `RC1_COVERAGE_EXPLANATION`.
+- Clarified that these explanations use the existing verification/source basis and technical-principle checks and are not individual external-source verification claims.
+- Kept the full 822-question explanation coverage intact.
+- Updated RC1 SHA-256: `a44a223ba5373164112230fa8b7252958fbc31151df786d92a8de811337b25ef`.
