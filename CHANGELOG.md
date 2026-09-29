@@ -174,3 +174,13 @@ The project is currently consolidating the final evidence-backed documentation s
 - Added 20 targeted QA flags for explanation records requiring further review.
 - Static QA: 822/822 records, 822 unique IDs, 822 explanations, 0 answer changes, no external JS/CSS, JavaScript syntax valid.
 - V10.20 SHA-256: `dda0cdd6d64e1c64fb6ffc18637c5ac22c46a9bb3c8eb6b0eafb0b88a273780e`.
+
+
+### V10.21 · Multidisciplinary linguistic/pedagogical QA
+- Started the explicit pre-APK linguistic, examiner, pedagogical, electrotechnics, norms and legislation QA gate.
+- Treated negations, conditions, quantifiers and modal/absolute wording as attention triggers rather than automatic defects.
+- Isolated 18 genuine answer/explanation mismatches and corrected the explanations without changing any stored answer.
+- Rechecked the relevant I7 terminology and current Portal Legislativ text where applicable.
+- Static QA: 822 records, 822 unique IDs, 822 explanations, 0 answer changes, 0 remaining targeted answer/explanation contradictions, no external JS/CSS, JavaScript syntax valid.
+- V10.21 local SHA-256: `36a562ea7db8b8f72dfa9344d8c56212460e307551ad9ee3f7dcfc18d21c7657`.
+- Next gate: broader linguistic review and reduction of generic explanation templates before APK packaging.
