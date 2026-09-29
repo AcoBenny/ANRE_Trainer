@@ -401,3 +401,8 @@ The remaining G2 Electrotechnică source research was closed conservatively for 
 ### Phase 30 · V10.18 standalone release candidate
 The evidence-aware standalone HTML was promoted from the V10.15 adjudication build to V10.18. It retains all 822 questions and the compact evidence workflow, and now surfaces the V10.17 research state for the 71 unresolved G2 Electrotechnică records directly in the evidence modal. The release candidate is fully self-contained with no external JavaScript or stylesheet dependency.
 Local artifact SHA-256: `82b8801ac9c2c3520218dbfbc3f2fb464e885a8f08ab660b4a853d911bab5d5d`.
+
+
+### Phase 31 · V10.18 final static QA
+Release QA completed against the V10.18 standalone artifact: 822/822 records present, 822 unique IDs, 414 Grad I, 408 Grad II, all stored answers are A/B/C, all questions have A/B/C options, and the standalone contains no external JavaScript or stylesheet dependency. The 71 V10.17 G2 Electrotechnică research records are all still explicitly non-exact-source.
+Dynamic Chromium execution was attempted in the isolated runtime but was blocked/hung by the execution environment, so no new claim of full browser-runtime validation is made. Existing manual QA history remains the functional baseline; the V10.18 code delta is limited to evidence metadata presentation and release metadata.
