@@ -392,3 +392,7 @@ A dedicated research register was created:
 ANRE_Trainer_G2_ELEC_SOURCE_RESEARCH_V10_17.csv
 
 The next step is targeted source fingerprinting: search distinctive wording/formula combinations from each unresolved question against identifiable specialist books/courses, and promote only when the source text can be demonstrated sufficiently to support the stored answer.
+
+
+### Phase 29 · V10.18 source-evidence closure decision
+The remaining G2 Electrotechnică source research was closed conservatively for the standalone release. The 71 records have candidate technical references and conceptual support, but no demonstrated exact specialist-manual source was established. They therefore remain non-exact-source records. No stored answer or Raspuns_initial was overwritten, and no candidate was promoted merely because a concept matched.
