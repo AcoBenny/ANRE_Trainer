@@ -197,3 +197,14 @@ The project is currently consolidating the final evidence-backed documentation s
 - JavaScript syntax valid; no external JS/CSS.
 - V10.22 SHA-256: `f1398c7351790593db97879a71f4ac5106600b15c65254a3dfb25f4b9c698861`.
 - This is an explanation-quality rewrite, not a claim of independent external-source verification for every rewritten record.
+
+
+### V10.23 · Linguistic + examiner QA gate
+- Screened all 822 questions for wording traps: negation, conditions, thresholds, minimum/maximum, modal wording, absolute wording, exceptions and cumulative/alternative conditions.
+- 229 questions contained at least one wording-risk marker.
+- 46 high-risk records with two or more markers received targeted manual review.
+- 0 empty options, 0 duplicate A/B/C sets, 0 unbalanced question parentheses and 0 wrong explicit „Varianta A/B/C” references in explanations.
+- 0 stored answer changes.
+- Produced the 822-row linguistic/examiner QA registry and compact HTML audit report.
+- Produced the V10.23 standalone release candidate with the QA gate recorded.
+- Existing source-verification statuses remain authoritative; this phase does not claim independent source verification for every question.
