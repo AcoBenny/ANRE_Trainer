@@ -537,3 +537,30 @@ Static release checks after the corrections:
 - local artifact SHA-256: `36a562ea7db8b8f72dfa9344d8c56212460e307551ad9ee3f7dcfc18d21c7657`
 
 This is a targeted correction milestone, not the final linguistic sign-off. The next QA layer should review the broader wording-trigger set and the high-frequency generic explanation templates before the standalone is declared APK-ready.
+
+
+### Phase 37 · V10.22 explanation deep QA · 623 coverage explanations rewritten
+The broad wording review identified **623 records** carrying the V10.19/V10.21 coverage-explanation status. These were the approximately 600 explanations previously flagged as too generic.
+
+A dedicated deep-QA pass rewrote all 623 learner-facing justifications while preserving:
+- the stored answer;
+- the existing source/evidence basis;
+- the existing retention cue;
+- the distinction between trainer-authored explanation and official ANRE barem.
+
+The rewrite replaced repeated boilerplate with compact, question-specific explanations. Where the question itself establishes a definition, unit, relation, instrument, physical law or technical condition, the explanation now states that decisive relationship directly. Normative and legislative explanations retain their source-basis distinction and do not invent new article references.
+
+Additional consistency checks after the rewrite:
+- 822 records
+- 822 unique IDs
+- 623 explanations rewritten
+- 181 pre-existing non-RC1 explanations left intact
+- 0 stored answer changes
+- 0 targeted answer/explanation letter mismatches
+- 0 remaining instances of the three major V10.21 generic explanation templates in the rewritten set
+- 565 unique explanation texts across the full corpus
+- JavaScript syntax valid
+- no external JS/CSS dependency
+- V10.22 SHA-256: `f1398c7351790593db97879a71f4ac5106600b15c65254a3dfb25f4b9c698861`
+
+This phase is an explanation-quality rewrite, not a claim that every rewritten explanation has been independently externally source-verified. Existing source verification statuses remain authoritative.
