@@ -139,3 +139,9 @@ The project is currently consolidating the final evidence-backed documentation s
 - No external JS/CSS dependency.
 - 71 unresolved G2 Electrotechnică source records remain explicitly non-exact.
 - Chromium runtime validation could not complete in the isolated environment; no false claim of dynamic QA was made.
+
+### V10.18 · Evidence-context refinement
+- Expanded evidence modal context so source fragments are accompanied by a short justification, rather than appearing as isolated sentences.
+- Preserved source quotation separately from explanatory context.
+- Static QA: 822 IDs, no external JS/CSS, JavaScript syntax valid.
+- Updated SHA-256: `fdd97e6dd3f7f862e7ce64ddf4833f1aac47c330bf3d283f9fa19b8b12747a5d`.
