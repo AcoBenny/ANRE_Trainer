@@ -221,3 +221,14 @@ The project is currently consolidating the final evidence-backed documentation s
 - Node JavaScript syntax check passed.
 - V10.24 SHA-256: `b12d2438f6a4b5d694942bd0f4cf69a4e9f97cdeff5f455bf22d68b668231005`.
 - Standalone pre-APK gate passed. Android packaging/revalidation is the next phase.
+
+
+### V10.25 · Explanation linguistic enrichment
+- Kept candidate-source A/B/C lists temporarily because the source audit is still open; final cleanup is deferred.
+- Expanded 722 explanations under 260 characters.
+- Added a visually highlighted **„Ideea-cheie”** learner cue to all 822 records using existing `De reținut` content.
+- Improved explanation readability with slightly larger type and line-height.
+- 0 answer changes; 822/822 records retained.
+- JavaScript syntax check passed.
+- SHA-256: `18c85d041b12d4e066476ebdca80d5b0bf6f3cd24ca1cbd0701cf8e64a0bfbea`.
+- Chromium CLI visual screenshot attempt hung, so no browser visual sign-off is claimed for V10.25.
