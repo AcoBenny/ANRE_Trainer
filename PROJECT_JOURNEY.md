@@ -406,3 +406,8 @@ Local artifact SHA-256: `82b8801ac9c2c3520218dbfbc3f2fb464e885a8f08ab660b4a853d9
 ### Phase 31 · V10.18 final static QA
 Release QA completed against the V10.18 standalone artifact: 822/822 records present, 822 unique IDs, 414 Grad I, 408 Grad II, all stored answers are A/B/C, all questions have A/B/C options, and the standalone contains no external JavaScript or stylesheet dependency. The 71 V10.17 G2 Electrotechnică research records are all still explicitly non-exact-source.
 Dynamic Chromium execution was attempted in the isolated runtime but was blocked/hung by the execution environment, so no new claim of full browser-runtime validation is made. Existing manual QA history remains the functional baseline; the V10.18 code delta is limited to evidence metadata presentation and release metadata.
+
+
+### Phase 32 · V10.18 evidence-context refinement
+Evidence presentation was refined after review: the source fragment is no longer displayed as an isolated sentence only. Where question-level detail exists, the evidence modal now adds a compact contextual justification containing the reason for the correct answer and the specific explanation for the stored correct option. The original source fragment remains unchanged and separately identifiable, preserving the distinction between source text and explanatory context.
+Static checks passed: 822 IDs present, no external JS/CSS dependency, JavaScript syntax valid. Updated local artifact SHA-256: `fdd97e6dd3f7f862e7ce64ddf4833f1aac47c330bf3d283f9fa19b8b12747a5d`.
