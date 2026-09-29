@@ -396,3 +396,8 @@ The next step is targeted source fingerprinting: search distinctive wording/form
 
 ### Phase 29 · V10.18 source-evidence closure decision
 The remaining G2 Electrotechnică source research was closed conservatively for the standalone release. The 71 records have candidate technical references and conceptual support, but no demonstrated exact specialist-manual source was established. They therefore remain non-exact-source records. No stored answer or Raspuns_initial was overwritten, and no candidate was promoted merely because a concept matched.
+
+
+### Phase 30 · V10.18 standalone release candidate
+The evidence-aware standalone HTML was promoted from the V10.15 adjudication build to V10.18. It retains all 822 questions and the compact evidence workflow, and now surfaces the V10.17 research state for the 71 unresolved G2 Electrotechnică records directly in the evidence modal. The release candidate is fully self-contained with no external JavaScript or stylesheet dependency.
+Local artifact SHA-256: `82b8801ac9c2c3520218dbfbc3f2fb464e885a8f08ab660b4a853d911bab5d5d`.
