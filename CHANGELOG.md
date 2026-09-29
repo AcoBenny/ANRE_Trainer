@@ -105,3 +105,11 @@ The project is currently consolidating the final evidence-backed documentation s
 - Confirmed G1-LEG-050 against supply regulation art. 7 alin. (1) lit. d), minimum 3-month payment installment scheduling for vulnerable clients.
 - Preserved previous answers and extended RESOLVED_LEGISLATION_CONFLICTS.
 - JavaScript syntax validation passed; Android packaging remains pending.
+
+### V10.16 · G2 Electrotehnică exact-source investigation
+- Investigated the remaining G2 Electrotehnică records that were not supported by exact candidate fragments.
+- Confirmed from the official ANRE 2023 bibliography that Electrotehnică is sourced to specialist manuals/books rather than one named normative textbook.
+- Kept candidate rows from ELECTROTEHNICA-09.2024 separate from underlying technical-source evidence.
+- Did not promote topic similarity or partial wording matches to exact-source verification.
+- No answer conflict was introduced and no stored answer was silently overwritten.
+- Remaining unresolved records now have a clear next step: identify the actual specialist manual/source used for the technical literature basis and perform pinpoint verification.
