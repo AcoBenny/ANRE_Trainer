@@ -208,3 +208,16 @@ The project is currently consolidating the final evidence-backed documentation s
 - Produced the 822-row linguistic/examiner QA registry and compact HTML audit report.
 - Produced the V10.23 standalone release candidate with the QA gate recorded.
 - Existing source-verification statuses remain authoritative; this phase does not claim independent source verification for every question.
+
+
+### V10.24 · Standalone functional QA / pre-APK gate
+- Exercised the standalone in a controlled Chromium runtime.
+- Verified boot, learning, answer feedback, explanations, next/previous navigation, evidence modal, quick test, statistics, exam setup and Grad II A/B filtering.
+- Traversed all 414 Grad I learning questions in a dedicated last-question test.
+- Verified **„Reia de la început →”** appears at question 414/414 and returns to question 1.
+- Inspected the learner UI at 390×844 mobile viewport.
+- 822 records, 414 Grad I, 408 Grad II.
+- 0 external JS/CSS dependencies.
+- Node JavaScript syntax check passed.
+- V10.24 SHA-256: `b12d2438f6a4b5d694942bd0f4cf69a4e9f97cdeff5f455bf22d68b668231005`.
+- Standalone pre-APK gate passed. Android packaging/revalidation is the next phase.
