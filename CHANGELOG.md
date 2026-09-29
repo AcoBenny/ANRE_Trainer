@@ -164,3 +164,13 @@ The project is currently consolidating the final evidence-backed documentation s
 - Clarified that these explanations use the existing verification/source basis and technical-principle checks and are not individual external-source verification claims.
 - Kept the full 822-question explanation coverage intact.
 - Updated RC1 SHA-256: `a44a223ba5373164112230fa8b7252958fbc31151df786d92a8de811337b25ef`.
+
+
+### V10.20 · Explanation/UI QA after mobile review
+- Simplified the learner-facing explanation card to a single clear justification plus optional memory cue.
+- Removed the automatic three-option analysis from the main post-answer card to reduce visual overload on mobile.
+- Corrected the V10.19 explanation for G2-ELEC-245 after targeted source review; stored answer C was preserved.
+- Added explicit **„Reia de la început →”** navigation on the final learning question.
+- Added 20 targeted QA flags for explanation records requiring further review.
+- Static QA: 822/822 records, 822 unique IDs, 822 explanations, 0 answer changes, no external JS/CSS, JavaScript syntax valid.
+- V10.20 SHA-256: `dda0cdd6d64e1c64fb6ffc18637c5ac22c46a9bb3c8eb6b0eafb0b88a273780e`.
