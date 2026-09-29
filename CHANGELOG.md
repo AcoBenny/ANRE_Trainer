@@ -131,3 +131,11 @@ The project is currently consolidating the final evidence-backed documentation s
 - Preserved all 822 questions and existing evidence safeguards.
 - Produced a self-contained release candidate with no external JS/CSS dependency.
 - Local artifact SHA-256: `82b8801ac9c2c3520218dbfbc3f2fb464e885a8f08ab660b4a853d911bab5d5d`.
+
+### V10.18 · Final static QA
+- 822/822 questions present and unique.
+- 414 Grad I + 408 Grad II.
+- All answers A/B/C and all option fields populated.
+- No external JS/CSS dependency.
+- 71 unresolved G2 Electrotechnică source records remain explicitly non-exact.
+- Chromium runtime validation could not complete in the isolated environment; no false claim of dynamic QA was made.
