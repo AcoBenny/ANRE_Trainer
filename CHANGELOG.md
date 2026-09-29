@@ -184,3 +184,16 @@ The project is currently consolidating the final evidence-backed documentation s
 - Static QA: 822 records, 822 unique IDs, 822 explanations, 0 answer changes, 0 remaining targeted answer/explanation contradictions, no external JS/CSS, JavaScript syntax valid.
 - V10.21 local SHA-256: `36a562ea7db8b8f72dfa9344d8c56212460e307551ad9ee3f7dcfc18d21c7657`.
 - Next gate: broader linguistic review and reduction of generic explanation templates before APK packaging.
+
+
+### V10.22 · Explanation Deep QA
+- Rewrote all 623 V10.19/V10.21 coverage explanations that still used the broad coverage-template style.
+- Replaced repeated boilerplate with more question-specific explanations for electrotechnics, technical norms and legislation.
+- Preserved stored answers, source/evidence basis and retention cues.
+- 0 stored answer changes.
+- 0 targeted answer/explanation letter mismatches after rewrite.
+- 0 remaining instances of the three major V10.21 generic templates in the rewritten set.
+- 822 records, 822 unique IDs, 565 unique explanation texts across the full corpus.
+- JavaScript syntax valid; no external JS/CSS.
+- V10.22 SHA-256: `f1398c7351790593db97879a71f4ac5106600b15c65254a3dfb25f4b9c698861`.
+- This is an explanation-quality rewrite, not a claim of independent external-source verification for every rewritten record.
