@@ -445,3 +445,11 @@ Static validation of the RC1 artifact:
 - local artifact SHA-256: `1f056eea6b0e7b87be4eacdb68642ae096b9427cc098f5c56236a8f23d3a8c28`
 
 RC1 is an explanation-coverage milestone, not yet the final pedagogical sign-off. The next QA gate is targeted review of explanation specificity, wording traps, formulas and source alignment before Android packaging.
+
+
+### Phase 34 · V10.19 RC1 audit-label correction
+The explanation-coverage artifact was relabelled conservatively after QA review. The 641 newly populated explanations are now explicitly classified as `RC1_COVERAGE_EXPLANATION`: they are trainer-authored explanations derived from the existing ANRE question-bank/verification basis plus technical-principle checks, not claims that every record has undergone individual external-source verification.
+
+This keeps the evidence model honest while preserving the completed learner-facing coverage. The next phase is targeted external-source and pedagogical QA of the explanation corpus, with special attention to legal/normative wording, numerical limits, formulas and wording traps.
+
+Updated RC1 SHA-256: `a44a223ba5373164112230fa8b7252958fbc31151df786d92a8de811337b25ef`.
