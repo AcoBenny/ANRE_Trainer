@@ -372,3 +372,23 @@ Outcome:
 - the next valid path is to obtain/identify the actual specialist manual(s) used as the technical literature basis, then perform pinpoint verification against those sources.
 
 This phase confirms the project rule: **ANRE question-bank provenance is not the same thing as exact technical-source evidence.**
+
+
+### Phase 28 · V10.17 technical-source research · G2 Electrotehnică
+A first structured technical-source research pass was performed for the 71 G2 Electrotehnică records still lacking exact-source proof.
+
+The official ANRE bibliography remains the governing source-selection rule: Electrotechnics is defined as knowledge of electrotechnics, electrical measurements and electrical machines, with manuals and books from specialist technical literature explicitly permitted as study material. The bibliography does not nominate one single textbook.
+
+Several university/technical references were identified that support clusters of the stored concepts, including:
+- UTCN electrical-engineering teaching material for DC circuits, equivalent resistance and Ohm-law relations;
+- UPT engineering-physics material for series/parallel resistance, Joule energy and electrical power;
+- UTCN electrotechnics material for AC power, apparent/reactive power and power factor;
+- university electrotechnics material for RLC series impedance and resonance;
+- technical measurement material for ammeter/voltmeter concepts.
+
+These references are recorded as CANDIDATE_REFERENCE_ONLY. They do not prove that a particular ANRE question was copied from, derived from, or authored from that specific textbook/course. Therefore no pending question was promoted to exact-source evidence and no answer was changed.
+
+A dedicated research register was created:
+ANRE_Trainer_G2_ELEC_SOURCE_RESEARCH_V10_17.csv
+
+The next step is targeted source fingerprinting: search distinctive wording/formula combinations from each unresolved question against identifiable specialist books/courses, and promote only when the source text can be demonstrated sufficiently to support the stored answer.
