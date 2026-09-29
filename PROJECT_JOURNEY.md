@@ -484,3 +484,56 @@ Static validation:
 - V10.20 SHA-256: `dda0cdd6d64e1c64fb6ffc18637c5ac22c46a9bb3c8eb6b0eafb0b88a273780e`
 
 This phase is deliberately a QA correction, not a cosmetic-only change: it prevents a generated explanation from contradicting the stored answer while keeping the learner interface compact.
+
+
+### Phase 36 · V10.21 multidisciplinary linguistic/pedagogical QA · targeted correction pass
+The next pre-APK quality gate was started as an explicit multidisciplinary review of the 822-question standalone corpus.
+
+The review covered:
+- 🇷🇴 linguistic formulation and wording-trap detection;
+- 🎓 examiner-style answer/explanation consistency;
+- 👨‍🏫 pedagogical clarity of the learner-facing justification;
+- ⚡ electrotechnics terminology and option alignment;
+- 📚 normative wording consistency;
+- ⚖️ legislation wording consistency;
+- 🧪 static integrity and JavaScript syntax.
+
+The first automated screening identified many **attention triggers** such as negations, conditional wording, minimum/maximum expressions, modal terms and absolute wording. These are review signals, not automatic errors.
+
+A stricter answer/explanation consistency pass then isolated **18 genuine explanation mismatches** from the broader lexical triggers. The stored answers were not changed. The 18 explanations were rewritten so that the explanation explicitly supports the stored answer instead of naming a different option.
+
+Corrected records:
+- G1-ELE-089
+- G1-ELE-094
+- G1-ELE-125
+- G1-ELE-137
+- G1-ELE-138
+- G1-ELE-249
+- G1-ELE-266
+- G1-ELE-267
+- G1-LEG-022
+- G1-LEG-037
+- G1-NOR-039
+- G1-NOR-044
+- G1-NOR-045
+- G1-NOR-046
+- G1-NOR-049
+- G1-NOR-069
+- G1-NOR-077
+- G1-NOR-082
+
+For the I7-related corrections, the current Portal Legislativ text was also checked where applicable. In particular, the official I7 text defines “parte activă” as a conductor or conductive part intended to be energized in normal operation and specifies the factors used for admissible current determination, including conductor material, section, insulation and installation method. citeturn1search0turn1search1
+
+Static release checks after the corrections:
+- 822 records
+- 822 unique IDs
+- 414 Grad I
+- 408 Grad II
+- 822/822 populated explanations
+- 0 answer changes
+- 0 remaining explicit answer/explanation contradictions under the targeted detector
+- no external JS/CSS dependency
+- JavaScript syntax valid
+- local artifact SHA-256: `36a562ea7db8b8f72dfa9344d8c56212460e307551ad9ee3f7dcfc18d21c7657`
+
+This is a targeted correction milestone, not the final linguistic sign-off. The next QA layer should review the broader wording-trigger set and the high-frequency generic explanation templates before the standalone is declared APK-ready.
