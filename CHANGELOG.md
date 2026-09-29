@@ -120,3 +120,8 @@ The project is currently consolidating the final evidence-backed documentation s
 - Created ANRE_Trainer_G2_ELEC_SOURCE_RESEARCH_V10_17.csv with candidate references and explicit non-promotion status.
 - No answer was changed and no candidate reference was presented as an exact ANRE source.
 - Next step: source fingerprinting using distinctive wording/formula combinations.
+
+### V10.18 · Source-evidence closure
+- Closed the current exact-source research gate for the remaining 71 G2 Electrotechnică records.
+- Kept all 71 as non-exact-source evidence.
+- No answer changes and no Raspuns_initial overwrite.
