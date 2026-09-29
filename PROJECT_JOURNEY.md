@@ -641,3 +641,33 @@ Static release checks:
 The previous user-reported last-question ambiguity is therefore resolved in the current standalone: the final learning question has an explicit restart action rather than appearing to lose the navigation path.
 
 **Standalone gate result:** functionally ready for the next APK packaging phase. This is a standalone QA result, not a claim that Android packaging itself has already been revalidated.
+
+
+### Phase 40 · V10.25 explanation linguistic enrichment · learner comprehension pass
+Following the mobile review, the audit candidate-source card was intentionally left unchanged for now. Its A/B/C source variants remain available as audit material until the source audit is finished; they are not treated as learner-facing final UX.
+
+The learner explanation layer was then revised:
+- **722/822** explanations that were shorter than 260 characters were expanded into clearer 3-sentence learner-facing explanations.
+- The expansion preserves the existing technical/legal rationale and explicitly connects it to the stored correct option.
+- **0 stored answers were changed.**
+- **822/822** records now expose an explicit `detail.key` derived from the existing `De reținut` content.
+- The learner card now presents an **„🔎 Ideea-cheie”** block with visual highlighting, so the retention cue is separated from the explanatory paragraph.
+- Explanation typography was slightly increased and line-height improved for mobile readability.
+- Source/evidence statuses were preserved.
+
+Static QA:
+- 822 records
+- 822 unique IDs
+- 0 answer changes
+- 722 explanations expanded
+- 822/822 key learning cues present
+- JavaScript syntax valid
+- V10.25 standalone SHA-256: `18c85d041b12d4e066476ebdca80d5b0bf6f3cd24ca1cbd0701cf8e64a0bfbea`
+
+A Chromium CLI screenshot attempt was inconclusive because the runtime hung before producing a screenshot, so no visual-browser pass is claimed for this phase. The static/runtime checks remain valid.
+
+Artifacts:
+- `ANRE_Trainer_FINAL_STANDALONE_822_V10_25_EXPLANATION_LINGUISTIC.html`
+- `ANRE_Trainer_V10_25_EXPLANATION_LINGUISTIC_QA_822.csv`
+
+This phase is deliberately separate from the still-open candidate-source audit and from exact normative/source verification.
