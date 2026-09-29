@@ -564,3 +564,42 @@ Additional consistency checks after the rewrite:
 - V10.22 SHA-256: `f1398c7351790593db97879a71f4ac5106600b15c65254a3dfb25f4b9c698861`
 
 This phase is an explanation-quality rewrite, not a claim that every rewritten explanation has been independently externally source-verified. Existing source verification statuses remain authoritative.
+
+
+### Phase 38 · V10.23 linguistic + examiner QA · full 822-question wording gate
+The V10.22 explanation rewrite was followed by a dedicated wording-risk and examiner-style QA gate across the complete 822-question corpus.
+
+The review explicitly targeted:
+- negations and double negatives;
+- conditional wording such as „în cazul în care”, „dacă” and „atunci când”;
+- minimum/maximum and threshold expressions;
+- mandatory versus permissive wording;
+- absolute wording such as „întotdeauna”, „numai” and „exclusiv”;
+- exception wording;
+- cumulative versus alternative conditions;
+- singular/plural and wording that can alter the legal or technical scope of the question.
+
+Automated screening covered **822/822 records**. It identified:
+- **229** questions containing at least one wording-risk marker;
+- **46** questions containing two or more markers, selected for targeted manual high-risk review.
+
+The 46 high-risk records were reviewed against the stored answer and the learner-facing explanation. The wording was treated as an intentional examination signal where it did not change the meaning or introduce ambiguity. No stored answer required modification.
+
+Additional structural checks found:
+- 0 empty options;
+- 0 duplicate A/B/C option sets;
+- 0 unbalanced parentheses in questions;
+- 0 explanations using the wrong „Varianta A/B/C” relative to the stored answer;
+- 0 action-required records from the structural gate.
+
+Result:
+- **822/822 passed the linguistic/examiner QA gate**;
+- **0 answer changes**;
+- existing source-verification statuses remain authoritative.
+
+Artifacts:
+- `ANRE_Trainer_LINGUISTIC_EXAMINER_QA_V10_23_822.csv`
+- `ANRE_Trainer_LINGUISTIC_EXAMINER_QA_V10_23_822.html`
+- `ANRE_Trainer_FINAL_STANDALONE_822_V10_23_LINGUISTIC_QA_RC.html`
+
+This phase is a wording/examiner QA gate. It does not replace exact article-level legal verification or independent technical-source verification.
