@@ -338,3 +338,21 @@ This preserves the project rule that evidence must lead to relevant information 
 The external official link remains secondary and is shown only when an exact official destination is known.
 
 The V10.11 standalone HTML was JavaScript syntax-checked successfully. Runtime/browser QA remains the next gate before Android asset synchronization.
+
+
+### Phase 26 · V10.15 source adjudication and journey continuation
+The next phase begins from the V10.14 candidate registry and applies the multidisciplinary verification pipeline to the 76 G2 Electrotechnica records.
+
+For each record:
+1. compare Master wording with the local candidate;
+2. compare all A/B/C alternatives;
+3. verify whether the candidate actually supports the stored answer;
+4. inspect wording traps such as mandatory/optional, minimum/maximum, thresholds, exceptions and conditional phrasing;
+5. classify as SUPPORTED, CONFLICT or INSUFFICIENT_SOURCE;
+6. preserve the original Master answer and candidate evidence without silent overwrites.
+
+Candidate similarity is never promoted automatically to verified evidence.
+
+The learner evidence model remains unchanged: exact verified fragments may be shown as readable evidence; candidate or insufficient evidence must be labelled honestly and must not masquerade as a verified paragraph.
+
+The broader source-ingestion work continues for remaining records without exact source support.
