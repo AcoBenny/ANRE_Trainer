@@ -1,0 +1,11 @@
+Faza,Test,Pass,Criteriu
+Dataset,822 întrebări,PASS,DATA.length == 822
+Integritate,822 ID-uri unice,PASS,Set(ID).size == 822
+Grad I,414 întrebări,PASS,count Grade I == 414
+Grad II,408 întrebări,PASS,count Grade II == 408
+Răspunsuri,A/B/C pentru toate,PASS,all Raspuns in A B C
+Variante,A/B/C complete,PASS,all questions have A B C
+Sursa,standalone fără JS extern,PASS,no script src attributes
+CSS,standalone fără stylesheet extern,PASS,no link href stylesheet
+Cercetare V10.17,71 înregistrări,PASS,research registry == 71
+Cercetare V10.17,71 nu sunt promovate la exact source,PASS,all 71 remain non-exact
