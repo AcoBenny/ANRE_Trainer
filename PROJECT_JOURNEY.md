@@ -411,3 +411,37 @@ Dynamic Chromium execution was attempted in the isolated runtime but was blocked
 ### Phase 32 · V10.18 evidence-context refinement
 Evidence presentation was refined after review: the source fragment is no longer displayed as an isolated sentence only. Where question-level detail exists, the evidence modal now adds a compact contextual justification containing the reason for the correct answer and the specific explanation for the stored correct option. The original source fragment remains unchanged and separately identifiable, preserving the distinction between source text and explanatory context.
 Static checks passed: 822 IDs present, no external JS/CSS dependency, JavaScript syntax valid. Updated local artifact SHA-256: `fdd97e6dd3f7f862e7ce64ddf4833f1aac47c330bf3d283f9fa19b8b12747a5d`.
+
+
+### Phase 33 · V10.19 explanation coverage RC1
+The project moved from evidence-context presentation to question-level pedagogical justification coverage.
+
+The V10.18 standalone was audited and confirmed to contain **641/822 questions without a populated `detail.why` explanation**. Those records were grouped into:
+- 255 Grad I Electrotechnics
+- 246 Grad II Electrotechnics
+- 90 Grad I Technical Norms
+- 50 Grad I Legislation
+
+A first research-backed RC1 pass populated explanations for all 641 records. Identical question wording across Grad I/II is intentionally handled as one explanation source, resulting in **374 distinct explanation units** rather than duplicating independent reasoning.
+
+Each newly populated record now carries:
+- `detail.why` = learner-facing justification;
+- `detail.remember` = compact retention cue;
+- `detail.justification_type` = category of reasoning;
+- `detail.justification_status` = RC1_RESEARCHED_EXPLANATION;
+- `detail.source_basis` = existing verification/source basis;
+- `Audit.justificare_pedagogica` = explicit statement that the explanation is trainer-authored and not an official ANRE barem.
+
+The pass preserves all stored answers and existing source evidence. It does **not** convert ANRE question-bank provenance into normative-source proof.
+
+Technical examples include explicit formulas and reasoning for Joule heating, series capacitors, electric induction, inductive short-circuit limitation, service capacitance and transformer construction. Legislation and norms retain their existing verification basis instead of inventing article references.
+
+Static validation of the RC1 artifact:
+- 822 records
+- 822 unique IDs
+- 822/822 populated explanations
+- 822/822 A/B/C answers present
+- no source fields intentionally removed
+- local artifact SHA-256: `1f056eea6b0e7b87be4eacdb68642ae096b9427cc098f5c56236a8f23d3a8c28`
+
+RC1 is an explanation-coverage milestone, not yet the final pedagogical sign-off. The next QA gate is targeted review of explanation specificity, wording traps, formulas and source alignment before Android packaging.
