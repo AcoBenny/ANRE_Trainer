@@ -356,3 +356,19 @@ Candidate similarity is never promoted automatically to verified evidence.
 The learner evidence model remains unchanged: exact verified fragments may be shown as readable evidence; candidate or insufficient evidence must be labelled honestly and must not masquerade as a verified paragraph.
 
 The broader source-ingestion work continues for remaining records without exact source support.
+
+
+### Phase 27 · V10.16 exact-source investigation · G2 Electrotehnică
+The V10.16 investigation reviewed the remaining G2 Electrotehnică records that could not be promoted from candidate matching.
+
+A key source-level finding was confirmed against ANRE's official **Tematica și bibliografia pentru examenul de autorizare electricieni 2023**: for Electrotehnică, item 1 specifies **knowledge of electrotechnics, electrical measurements and electrical machines**, and explicitly states that candidates may study **manuals and books from specialist technical literature**. Unlike the legislation and ANRE-regulation entries, the bibliography does not identify one single normative textbook or document that can serve as the exact source for every electrotechnics question.
+
+The remaining records were therefore not falsely promoted to exact-source verification. The candidate rows from ELECTROTEHNICA-09.2024 were treated as question-bank provenance/cross-reference material only when the wording and A/B/C alternatives actually matched. A similar topic or a mathematically related question was not accepted as exact evidence.
+
+Outcome:
+- no new answer conflict was introduced;
+- no Raspuns_initial value was overwritten;
+- records without a demonstrated exact technical source remain explicitly unresolved at source level;
+- the next valid path is to obtain/identify the actual specialist manual(s) used as the technical literature basis, then perform pinpoint verification against those sources.
+
+This phase confirms the project rule: **ANRE question-bank provenance is not the same thing as exact technical-source evidence.**
