@@ -113,3 +113,10 @@ The project is currently consolidating the final evidence-backed documentation s
 - Did not promote topic similarity or partial wording matches to exact-source verification.
 - No answer conflict was introduced and no stored answer was silently overwritten.
 - Remaining unresolved records now have a clear next step: identify the actual specialist manual/source used for the technical literature basis and perform pinpoint verification.
+
+### V10.17 · G2 Electrotechnică technical-source research
+- Started structured source research for the 71 unresolved G2 Electrotechnică records.
+- Identified university/technical references supporting clusters of concepts: DC circuits, resistance, Ohm law, AC power, RLC resonance and electrical measurements.
+- Created ANRE_Trainer_G2_ELEC_SOURCE_RESEARCH_V10_17.csv with candidate references and explicit non-promotion status.
+- No answer was changed and no candidate reference was presented as an exact ANRE source.
+- Next step: source fingerprinting using distinctive wording/formula combinations.
