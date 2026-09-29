@@ -125,3 +125,9 @@ The project is currently consolidating the final evidence-backed documentation s
 - Closed the current exact-source research gate for the remaining 71 G2 Electrotechnică records.
 - Kept all 71 as non-exact-source evidence.
 - No answer changes and no Raspuns_initial overwrite.
+
+### V10.18 · Standalone release candidate
+- Integrated V10.17 source-research state into the evidence UI.
+- Preserved all 822 questions and existing evidence safeguards.
+- Produced a self-contained release candidate with no external JS/CSS dependency.
+- Local artifact SHA-256: `82b8801ac9c2c3520218dbfbc3f2fb464e885a8f08ab660b4a853d911bab5d5d`.
