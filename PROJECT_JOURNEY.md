@@ -603,3 +603,41 @@ Artifacts:
 - `ANRE_Trainer_FINAL_STANDALONE_822_V10_23_LINGUISTIC_QA_RC.html`
 
 This phase is a wording/examiner QA gate. It does not replace exact article-level legal verification or independent technical-source verification.
+
+
+### Phase 39 · V10.24 standalone functional QA · pre-APK gate
+The V10.24 standalone was exercised in a controlled Chromium runtime before Android packaging.
+
+Functional paths checked:
+- application boot with **822 questions / 414 Grad I / 408 Grad II**;
+- Grad I and Grad II learning mode;
+- answer selection and learner feedback;
+- explanation rendering;
+- next/previous navigation;
+- final-question behavior;
+- final button **„Reia de la început →”**;
+- final-question restart back to question 1;
+- evidence action and evidence modal open/close;
+- quick test mode, starting at 1/10;
+- statistics view;
+- exam setup view with 20/30/50/100-question choices;
+- Grad II A/B filter switching;
+- local persistence state creation.
+
+A dedicated last-question runtime test traversed all 414 Grad I questions, reached **„Întrebarea 414 / 414”**, displayed **„Reia de la început →”**, then returned to **„Întrebarea 1 / 414”** after activation.
+
+The evidence modal was also opened and closed successfully. The tested mobile viewport was **390 × 844 px**; the question/answer layout remained usable, with the horizontal top navigation behaving as a scrollable tab strip.
+
+Static release checks:
+- 822 records
+- 822 unique IDs
+- 414 Grad I
+- 408 Grad II
+- 0 external JavaScript dependencies
+- 0 external stylesheet dependencies
+- Node JavaScript syntax check passed
+- V10.24 standalone SHA-256: `b12d2438f6a4b5d694942bd0f4cf69a4e9f97cdeff5f455bf22d68b668231005`
+
+The previous user-reported last-question ambiguity is therefore resolved in the current standalone: the final learning question has an explicit restart action rather than appearing to lose the navigation path.
+
+**Standalone gate result:** functionally ready for the next APK packaging phase. This is a standalone QA result, not a claim that Android packaging itself has already been revalidated.
