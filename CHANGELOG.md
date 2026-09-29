@@ -145,3 +145,15 @@ The project is currently consolidating the final evidence-backed documentation s
 - Preserved source quotation separately from explanatory context.
 - Static QA: 822 IDs, no external JS/CSS, JavaScript syntax valid.
 - Updated SHA-256: `fdd97e6dd3f7f862e7ce64ddf4833f1aac47c330bf3d283f9fa19b8b12747a5d`.
+
+
+### V10.19 · Explanation coverage RC1
+- Audited the V10.18 release candidate and confirmed 641 questions had no populated `detail.why` explanation.
+- Added learner-facing explanations to all 641 missing records.
+- Consolidated identical question wording into 374 distinct explanation units across Grad I/II.
+- Added `detail.remember`, `detail.justification_type`, `detail.justification_status` and `detail.source_basis` for newly completed records.
+- Added an explicit audit flag distinguishing trainer-authored justification from official ANRE barem text.
+- Preserved stored answers and existing source/evidence metadata.
+- Static QA: 822 records, 822 unique IDs, 822/822 populated explanations.
+- RC1 standalone SHA-256: `1f056eea6b0e7b87be4eacdb68642ae096b9427cc098f5c56236a8f23d3a8c28`.
+- Next gate: targeted pedagogical/source QA before Android packaging.
