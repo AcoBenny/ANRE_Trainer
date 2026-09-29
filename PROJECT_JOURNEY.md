@@ -453,3 +453,34 @@ The explanation-coverage artifact was relabelled conservatively after QA review.
 This keeps the evidence model honest while preserving the completed learner-facing coverage. The next phase is targeted external-source and pedagogical QA of the explanation corpus, with special attention to legal/normative wording, numerical limits, formulas and wording traps.
 
 Updated RC1 SHA-256: `a44a223ba5373164112230fa8b7252958fbc31151df786d92a8de811337b25ef`.
+
+
+### Phase 35 · V10.20 explanation/UI QA after mobile review
+A mobile review exposed two separate issues in V10.19 RC1.
+
+**1. Explanation clarity**
+The post-answer explanation was carrying a full three-option analysis card, which made the learner-facing result unnecessarily dense. More importantly, targeted QA found several RC1 explanations that referenced the wrong option letter. The clearest example was **G2-ELEC-245**, where the stored answer is C but the generated explanation incorrectly discussed option A. The answer itself was not changed.
+
+G2-ELEC-245 was rechecked against the 09.2024 electrotechnics question material and technical references describing double-bus arrangements and the operational meaning of “rezervă caldă”. The explanation was rewritten to directly explain why the stored C configuration is the intended normal operating arrangement. ANRE's current electricity page lists ELECTROTEHNICA-09.2024 among the examination materials; the supporting technical references distinguish a hot reserve as an element ready to be brought into service by closing its breaker. citeturn0search0turn1search1
+
+The learner-facing explanation renderer was simplified to:
+- **De ce este corect?** → one clear justification;
+- optional **De reținut** → one compact memory cue;
+- no automatic three-card A/B/C analysis unless separately needed.
+
+**2. Last-question navigation**
+The learning-mode navigation was reviewed. The existing logic already wrapped the index internally, but the UI did not make the boundary explicit. V10.20 now changes the final button label to **„Reia de la început →”** on the last question, while preserving the existing wrap behavior. This removes the ambiguity visible on mobile and makes the end-of-list behavior explicit.
+
+QA flags were added to 20 records where the explanation corpus needs targeted review. Stored answers were preserved: **0 answer changes**.
+
+Static validation:
+- 822 records
+- 822 unique IDs
+- 822/822 explanations populated
+- 0 answer changes
+- no external JS/CSS
+- JavaScript syntax valid
+- 20 targeted explanation QA flags
+- V10.20 SHA-256: `dda0cdd6d64e1c64fb6ffc18637c5ac22c46a9bb3c8eb6b0eafb0b88a273780e`
+
+This phase is deliberately a QA correction, not a cosmetic-only change: it prevents a generated explanation from contradicting the stored answer while keeping the learner interface compact.
