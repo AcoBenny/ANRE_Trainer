@@ -232,3 +232,11 @@ The project is currently consolidating the final evidence-backed documentation s
 - JavaScript syntax check passed.
 - SHA-256: `18c85d041b12d4e066476ebdca80d5b0bf6f3cd24ca1cbd0701cf8e64a0bfbea`.
 - Chromium CLI visual screenshot attempt hung, so no browser visual sign-off is claimed for V10.25.
+
+
+### V10.26 · Explanation naturalness QA
+- Expanded the remaining 78 explanations shorter than 260 characters.
+- 822/822 explanations now meet the minimum learner-facing length gate.
+- 0 answer changes and source/evidence statuses preserved.
+- V10.26 SHA-256: `077c859ba8d0f5b3c0f268b12890addec9e47788edf0f6ae376f447ffdc5cf92`.
+- Candidate-source audit remains open; source-variant cleanup is deferred until audit closure.
