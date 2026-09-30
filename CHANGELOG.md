@@ -240,3 +240,13 @@ The project is currently consolidating the final evidence-backed documentation s
 - 0 answer changes and source/evidence statuses preserved.
 - V10.26 SHA-256: `077c859ba8d0f5b3c0f268b12890addec9e47788edf0f6ae376f447ffdc5cf92`.
 - Candidate-source audit remains open; source-variant cleanup is deferred until audit closure.
+
+
+### V10.27 · Candidate-source context prototype
+- Corrected the target of the explanation-enrichment work: the candidate-source card, not the main answer justification.
+- Added a dedicated contextual paragraph block with visual highlighting for defensible source context.
+- Prototype populated for G2-ELEC-050 using external technical literature on bundle conductors and corona loss.
+- Highlighted the key phrase **„reducerea pierderilor Corona”**.
+- Candidate A/B/C variants remain temporarily because the source audit is open.
+- 0 answer changes; JavaScript syntax check passed.
+- SHA-256: `b3d009a2ad64a023b1824531ee31e42437e50d70e2d882ede4977354cea0093d3`.
