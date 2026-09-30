@@ -696,3 +696,25 @@ Artifacts:
 - `ANRE_Trainer_V10_26_EXPLANATION_NATURALNESS_QA_822.csv`
 
 The candidate-source audit remains intentionally open; its source variants will be cleaned only after the audit is finished.
+
+
+### Phase 42 · V10.27 candidate-source context prototype · highlighted source concept
+The V10.26 correction was clarified: the desired enrichment applies to the **candidate-source question card**, not to the main learner justification.
+
+V10.27 therefore introduces the intended visual pattern:
+- keep the candidate question and its audit variants temporarily while the source audit is still open;
+- add a separate **„🧠 Context tehnic pentru înțelegere”** section when a defensible local/external context is available;
+- present a fuller explanatory paragraph rather than only the candidate-question line;
+- visually highlight the exact concept/phrase that connects the context to the candidate question;
+- explicitly label external context as conceptual verification material, not as proof of the original ANRE source.
+
+For the current example **G2-ELEC-050**, external technical literature on bundle conductors was used to build the first contextual prototype. The context explains that multiple conductors per phase reduce the surface electric-field gradient and are associated with reduced corona loss. The phrase **„reducerea pierderilor Corona”** is visually highlighted.
+
+The candidate-source A/B/C list remains intentionally untouched because the audit is still open. It will be simplified only after candidate adjudication is complete.
+
+Static QA:
+- 822 records retained
+- 0 answer changes
+- JavaScript syntax valid
+- V10.27 standalone SHA-256: `b3d009a2ad64a023b1824531ee31e42437e50d70e2d882ede4977354cea009d3`
+- Context prototype currently populated for 1 audited example; remaining candidate contexts will be added only where the evidence supports them.
