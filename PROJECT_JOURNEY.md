@@ -671,3 +671,28 @@ Artifacts:
 - `ANRE_Trainer_V10_25_EXPLANATION_LINGUISTIC_QA_822.csv`
 
 This phase is deliberately separate from the still-open candidate-source audit and from exact normative/source verification.
+
+
+### Phase 41 · V10.26 explanation naturalness QA · final short-explanation cleanup
+The V10.25 learner-explanation pass was followed by a targeted cleanup of the remaining short explanations.
+
+- **78/822** explanations were still below 260 characters and were expanded.
+- The existing rationale and stored answer were preserved; the added text only strengthens the learner-facing bridge between the explanation and the selected option.
+- **0 stored answers changed.**
+- **822/822** explanations are now at least 260 characters.
+- The pass remains a linguistic/pedagogical refinement, not independent source verification.
+
+Static QA:
+- 822 records
+- 822 unique IDs
+- 0 answer changes
+- 78 short explanations expanded
+- 0 explanations below 260 characters after the pass
+- source/evidence statuses preserved
+- V10.26 standalone SHA-256: `077c859ba8d0f5b3c0f268b12890addec9e47788edf0f6ae376f447ffdc5cf92`
+
+Artifacts:
+- `ANRE_Trainer_FINAL_STANDALONE_822_V10_26_EXPLANATION_NATURALNESS.html`
+- `ANRE_Trainer_V10_26_EXPLANATION_NATURALNESS_QA_822.csv`
+
+The candidate-source audit remains intentionally open; its source variants will be cleaned only after the audit is finished.
