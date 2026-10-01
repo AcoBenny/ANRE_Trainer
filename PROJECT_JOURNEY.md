@@ -718,3 +718,25 @@ Static QA:
 - JavaScript syntax valid
 - V10.27 standalone SHA-256: `b3d009a2ad64a023b1824531ee31e42437e50d70e2d882ede4977354cea009d3`
 - Context prototype currently populated for 1 audited example; remaining candidate contexts will be added only where the evidence supports them.
+
+
+### Phase 43 · V10.28 candidate-source card separation + context audit registry
+The candidate-source card was cleaned so that audit material is no longer mixed with the learner's main answer justification.
+
+Changes:
+- removed the main „💡 Justificarea răspunsului” block from the candidate-source modal;
+- retained the candidate question, local row/score, A/B/C source variants and research note as audit material;
+- added an explicit **„🧠 Context tehnic pentru înțelegere”** area for every candidate card;
+- when no defensible context is available yet, the card now states that clearly instead of generating or implying source text;
+- retained the G2-ELEC-050 contextual prototype with the highlighted phrase **„reducerea pierderilor Corona”**;
+- created a 76-row candidate-context audit registry.
+
+Static QA:
+- 76 G2 Electrotehnică candidate records audited for context coverage;
+- 1/76 has a supported contextual paragraph at this stage;
+- 75/76 remain **PENDING_CONTEXT** and are not auto-filled;
+- 0 stored answer changes;
+- JavaScript syntax check passed;
+- V10.28 standalone SHA-256: `aaad6d47bca77191ed2f0a6f19ffd9d9ab4a6bbdf7aa362e1419698dc2d4ac92`.
+
+This phase intentionally does not promote any candidate match to exact source evidence. The audit remains conservative: unsupported context stays visibly pending.
