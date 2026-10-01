@@ -250,3 +250,15 @@ The project is currently consolidating the final evidence-backed documentation s
 - Candidate A/B/C variants remain temporarily because the source audit is open.
 - 0 answer changes; JavaScript syntax check passed.
 - SHA-256: `b3d009a2ad64a023b1824531ee31e42437e50d70e2d882ede4977354cea0093d3`.
+
+
+### V10.28 · Candidate-source card separation + context audit
+- Removed the learner-facing main answer justification from the candidate-source audit modal to avoid mixing two different evidence layers.
+- Added an explicit technical-context section to candidate cards.
+- Added a safe pending state when a defensible contextual paragraph is not yet available.
+- Kept candidate A/B/C variants and research notes as audit material while the source audit remains open.
+- Candidate-context registry: 76 records, 1 contextual paragraph available, 75 pending.
+- 0 answer changes.
+- JavaScript syntax check passed.
+- SHA-256: `aaad6d47bca77191ed2f0a6f19ffd9d9ab4a6bbdf7aa362e1419698dc2d4ac92`.
+- Next gate: populate candidate context only from defensible local/external sources, then rerun functional/mobile QA before APK packaging.
