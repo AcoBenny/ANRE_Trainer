@@ -38,3 +38,12 @@
 **Status:** `OCR_INDEXING_PASS` / `SOURCE_SEMANTIC_QA_PENDING` / `OFFLINE_RIGHTS_NOT_VERIFIED` / `QUESTION_MAPPING_NOT_RESTARTED` / `INDEPENDENT_QA_NOT_RUN` / `APP_NOT_MODIFIED` / `EXTRA_COST_0_RON`.
 
 **Checkpoint:** CKPT-002 rămâne ultimul; acesta este doar un registru de progres intermediar.
+
+## Următoarea selecție: paginile grafice fără text
+
+După OCR rămân **90 de pagini fără strat text suficient** în cele 11 surse canonice: 20 în *Cartea electricianului din stații și PT-uri*, 51 în catalogul Schneider 2024, 8 în manualul scanat 1995 (pagini goale/aproape goale), 8 în ghidul IEC, 2 în cursul PREG și 1 în catalogul Finder.
+
+- Au fost inspectate vizual un eșantion de **15 pagini** din documentele non-OCR. Paginile Finder p.61 și PREG pp.2,8 apar goale, iar exemple din Schneider și IEC reprezintă copertă/separatoare de capitole. **Nu generalizăm la toate paginile lor**.
+- Toate cele **20 de pagini fără text ale sursei STATII** au fost previzualizate într-o planșă de contact. Au fost identificate desene de echipamente, scheme, grafice și tabele, importante pentru catalog. Clasificările sunt generale, fără validarea inginerescă a simbolurilor sau a legendelor.
+- Registrul `NON_TEXT_PAGES_VISUAL_TRIAGE_90_2026_11_08.csv` consemnează toate cele 90 de pagini cu priorități candidate; `STATII_GRAPHIC_ONLY_20_VISUAL_INDEX.csv` păstrează etichetele vizuale din planșa de contact. Un grad mare de alb sau lipsa de text nu justifică eliminarea unei pagini tehnice.
+- **Fără OCR în masă pentru cele 90**: mai întâi separăm schemele și tabelele de copertă/pagini albe; formularele/drawings necesită verificare vizuală, nu doar transcriere de caractere.
