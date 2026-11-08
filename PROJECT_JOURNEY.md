@@ -770,3 +770,15 @@ This phase intentionally does not promote any candidate match to exact source ev
 - Extracted 3 existing linguistic markers in Batch001 (G2-ELEC-029 comparison, 030 negation/exclusivity, 035 condition); AGENT-031 curriculum exercise assigned in Avengers Academy, no independent model run.
 - **Canonical resume checkpoint:** [LATEST](docs/CHECKPOINTS/LATEST.md) → [CKPT-002](docs/CHECKPOINTS/CKPT-ANRE-20261108-02.md). All 822 question IDs, candidate-source quarantine and standalone/APK separation preserved. No new release or paid API usage.
 - Open: 17 priority semantic page/answer checks, 36 page candidates, source-embedding rights, 2026 legal currentness, Android offline E2E, Lot 2 historical question uploads.
+
+
+## 2026-11-08 | Historical question Lot2 received and screened (interim, no checkpoint #3)
+- User requested fewer 1MAiN checkpoints. The Academy [checkpoint policy](https://github.com/AcoBenny/Avengers-Asamble/blob/main/docs/CHECKPOINT_POLICY.md) now targets 2–3 substantial verified batches or a release/handoff, not after every import. [LATEST](docs/CHECKPOINTS/LATEST.md) still points to **CKPT-002**.
+- Received **18 historical/practice question PDF files, 1,345 PDF pages**. Verified file hashes and per-file metadata; originals remain in user uploads, not in GitHub. [SHA256 catalog](docs/QUESTION_BANKS/HISTORICAL_LOT2_MANIFEST_2026-11-08.json).
+- Ran normalized question-stem searches against all 1,345 pages and the 822-question standalone V10.29 corpus: **390 existing question IDs / 228 distinct question stems** matched as text in one or more PDF documents. This is NOT full three-choice duplication or an answer-key match.
+- **432** app IDs had no exact text match; do not infer they are novel/missing. 0/62 `G2-LEG` matched exactly; examine Grade II legislation gap with care.
+- Cross-PDF page similarity found 160/160 Grad II cumulative legislation pages closely matching Grad I/II cumulative pages at cosine >= 0.90; no exact SHA256 PDF duplicates.
+- Option comparison sample (first <=4 pages each PDF): **109 overlapping question rows**; 69 with identical A/B/C text/order, 8 near, 32 variants/annotations/extraction differences. This does NOT establish 32 wrong correct-answer keys.
+- One Grade II PDF has corrupt text encoding; requires selective visual inspection.
+- [Detailed interim intake QA](docs/IMPORT_AUDIT_LOT2_2026_11_08.md) and [issue #3](https://github.com/AcoBenny/ANRE_Trainer/issues/3) record the next technical/language/legislative audits.
+- Original 822 ID/answer data unchanged. No old legal answer key promoted; no new APK/HTML build, no paid API calls, no independent agent certification. **CKPT-003 intentionally not created.**
