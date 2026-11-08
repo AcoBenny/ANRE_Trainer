@@ -13,4 +13,4 @@
 - No new paid API costs.
 
 ## Resume
-Read CKPT-002 and its links, then check the 17 priority exact-evidence questions before promoting any source. Continue with G2-ELEC-051..100. Await Lot 2 historical question uploads for separate duplication audit. Do not assume uploaded PDF bytes are stored in GitHub, or that Android/file:// E2E passed.
+Read CKPT-002 and its links, then check the 17 priority exact-evidence questions before promoting any source. Continue with G2-ELEC-051..100. Lot 2 historical uploads were received and screened (18 PDF files, 1,345 pages); see [interim Lot2 audit](../IMPORT_AUDIT_LOT2_2026_11_08.md) and [source/hash manifest](../QUESTION_BANKS/HISTORICAL_LOT2_MANIFEST_2026-11-08.json). Do not mint CKPT-003 until additional substantive review is validated. Do not assume uploaded PDF bytes are stored in GitHub, or that Android/file:// E2E passed.
