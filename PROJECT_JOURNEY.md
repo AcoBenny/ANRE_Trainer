@@ -853,3 +853,6 @@ This phase intentionally does not promote any candidate match to exact source ev
 - Regulatory spotcheck: ANRE authorization Order 66/2023 amended by Order 65/2024; connection Order 59/2013 lists consolidated form 25 May 2026 on official portal; EV installation scope covered by IEC 60364-7-722:2018 (paywalled standard, not redistributed); SSM HG1425/2006 is distinct from internal instruction. Currentness per article remains unresolved.
 - Metadata saved in [P1 report](docs/DIDACTIC_CORPUS_INDEX/P1_PRIORITY_TECHNICAL_AUDIT_V2_2026_11_08.md), [13 categories](docs/DIDACTIC_CORPUS_INDEX/P1_13_CATEGORIES_REVIEW_V2_2026_11_08.csv) and [19 detailed subtopics](docs/DIDACTIC_CORPUS_INDEX/P1_19_SUBTOPIC_EVIDENCE_V2_2026_11_08.csv). User received V2 XLSX and ZIP with original registry sheets retained. Original books not redistributed via GitHub.
 - No code or answer key edits, no new checkpoint (CKPT-002 still current), no paid API costs. Independent specialists NOT_RUN. Next: fill targeted theory gaps and technical source review, not question validation yet.
+
+## 2026-11-08 | Visual QA policy adopted, no app change
+Academy AGENT-014 UI visual release gate added as documentation only. Question mapping and didactic source audits remain priorities. No HTML/APK runtime or offline documentation test executed by this change. See docs/VISUAL_QA_GATE.md.

@@ -19,3 +19,7 @@ See [PROJECT_JOURNEY.md](PROJECT_JOURNEY.md).
 The project distinguishes between official verification, official references and technical cross-reference evidence. This is intentional: not every technical examination question has a single official normative document behind it.
 
 See [CHANGELOG.md](CHANGELOG.md) for major milestones and corrections.
+
+
+## Visual QA acceptance for future releases
+- [Academy AGENT-014 visual QA gate](docs/VISUAL_QA_GATE.md). Release requires screenshot and real Android/HTML interaction evidence; this documentation does not alter question/source mapping or certify the APK.
