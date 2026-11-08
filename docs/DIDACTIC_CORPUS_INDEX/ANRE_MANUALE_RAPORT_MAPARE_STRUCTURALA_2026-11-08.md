@@ -69,3 +69,11 @@
 4. **Abia apoi** începem maparea și auditul celor 822 de întrebări și al colecțiilor din Lotul 2, cu specialist lingvistic AGENT-031 și auditor tehnic.
 
 **Statut proiect:** biblioteca este inventariată și navigabilă integral la nivel de fișier/pagină, **dar maparea didactică exactă, aprobată, nu este încheiată**. Acesta este un registru de lucru fundamentat, nu acceptarea finală pentru implementare. CKPT-002 rămâne ultimul checkpoint; raportul este un jurnal de progres, nu checkpoint nou. Cost suplimentar: 0 lei.
+
+
+## Control de proveniență față de sursele publice ANRE
+
+- ANRE publică tematica/bibliografia pentru autorizare (pe site este listată bibliografia 2023), plus exemplele ELECTROTEHNICA-09.2024, LEGISLATIE Grad I/II 05.2023 și NORME TEHNICE Grad I/II 05.2023: https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/
+- Formularul de examene ANRE descrie folosirea tematicii și a exemplelor; acestea nu sunt, prin ele însele, manuale didactice integrale: https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/electricieni/examene/
+- Referința oficială pentru textul reglementării I 7-2011 este https://legislatie.just.ro/Public/DetaliiDocument/287132, cu modificările Ordinului 959/2023 (https://legislatie.just.ro/Public/DetaliiDocument/271142). Există și dispoziții de aplicare la anumite proiecte, deci versiunea/cazul trebuie determinat exact.
+- Nu a fost stabilit că PDF-ul sintetic încărcat cu data 22.09.2023 cuprinde toate modificările și situațiile aplicabile în noiembrie 2026. **Normative-currentness: NOT_VERIFIED**. Nicio întrebare/barem nu a fost schimbat.
