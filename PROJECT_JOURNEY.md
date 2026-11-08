@@ -750,3 +750,12 @@ This phase intentionally does not promote any candidate match to exact source ev
 - Separate V10.29 standalone preview quarantines unrelated source-candidate cards. Same 822 questions / answer keys and candidate data. Node JS syntax check PASS. Chromium in-memory HTML audit: 76/76 popups display pending documentation at 390x844 and 1280x800 with no JS exceptions.
 - **No new APK build, no Android device QA, no `file://` offline QA and no external independent technical review.** Original source didactic paragraphs still missing. Do not label candidate provenance as authoritative didactic sources.
 - Next: ingest authorized manuals, map exact chapters and pages, independently audit, synchronize standalone asset and APK and run E2E.
+
+
+## 2026-11-08 | Lot 1 manuals inventory and checkpoint CKPT-ANRE-20261108-01
+- Received and inspected **14 uploaded PDF files = 4,120 PDF pages** (page counts and hashes via PyMuPDF; no mass OCR). Uploaded user documents remain **outside GitHub**; a metadata-only manifest is now at [docs/CHECKPOINTS/manuals_manifest_2026-11-08.json](docs/CHECKPOINTS/manuals_manifest_2026-11-08.json).
+- Verified byte-identical duplicate I7 2011 consolidated 2023 PDFs. Found near-identical teaching course pair `203385014-Curs-Electrotehnica.pdf` (258 pages, scanned) and `466657067-Pregătirea-Tehnică-Pentru-Autorizarea-Electricienilor.pdf` (257 pages, partly searchable). **257/257** aligned rendered pages closely matched in coarse grayscale image comparison; extra last page is nearly blank.
+- Three PDFs have no selectable text in tested page samples; OCR not performed. Initial priority: electrical-machines textbook, theory course, 2021 UTCN three-phase course, IEC-based installation manual; regulatory I7-2011 is version-sensitive. Schneider 2024 is primarily product/solution reference; old I7-02 and 1995 installer manual are historical.
+- Original 822 question bank and answer keys untouched. V10.29 candidate-source quarantine remains a preview, not Android release.
+- **First durable 1MAiN checkpoint** stored at [docs/CHECKPOINTS/LATEST.md](docs/CHECKPOINTS/LATEST.md), with state, risks, evidence, next actions and restart instructions. New checkpoints scheduled by workflow milestones, not asynchronous jobs; direct ChatGPT native Memory update not claimed.
+- Legal currency, manual redistribution/embedding rights, real question-to-paragraph mappings and Android end-to-end QA remain unverified. Later user upload pending: historical ANRE questions Grad I / II and optionally III / IV.
