@@ -1,9 +1,16 @@
 # ANRE Trainer | Latest verified checkpoint
 
-Current checkpoint: [CKPT-ANRE-20261108-01](./CKPT-ANRE-20261108-01.md)
+**Latest:** [CKPT-ANRE-20261108-02](./CKPT-ANRE-20261108-02.md)  
+**Previous:** [CKPT-ANRE-20261108-01](./CKPT-ANRE-20261108-01.md)
 
-Source inventory: [14 uploaded manual PDFs and hashes](./manuals_manifest_2026-11-08.json)
+## Verified progression
+- First intake: 14 PDF manuals, 4,120 pages, hashes and duplicates indexed in [manifest](./manuals_manifest_2026-11-08.json); copyrighted PDFs not committed.
+- First source index: 41 physical PDF page locations in [chapter index](../DIDACTIC_CHAPTER_INDEX_PRIORITY_2026-11-08.md).
+- First mapping batch: G2-ELEC-001..050, 50 topical source candidates, 14 model-inspected direct principle pages, none independently approved. See [Batch001](../DIDACTIC_SOURCE_MAP_BATCH001_G2_ELEC_001_050.md).
+- 76 previous cross-ID candidate links remain quarantined; 822 question IDs and keys unchanged.
+- Open quality issues: [source candidate misassociation #1](https://github.com/AcoBenny/ANRE_Trainer/issues/1) and [all-A answer-position bias #2](https://github.com/AcoBenny/ANRE_Trainer/issues/2).
+- AGENT-031 Romanian language review exercise assigned in Avengers Academy, but actual autonomous agent trials/independent QA not run.
+- No new paid API costs.
 
-To resume: read this checkpoint, the [project journey](../../PROJECT_JOURNEY.md), and the [V10.29 cross-ID source audit](../V10_29_CANDIDATE_SOURCE_AUDIT.md). Preserve 822 questions and existing keys. Next action: index textbook sections, then question-source mapping. Historical-question ZIP is still pending user upload.
-
-Do not claim native ChatGPT Memory updated, autonomous agents trained, Android tested, or copyrighted PDFs republished merely because checkpoint exists.
+## Resume
+Read CKPT-002 and its links, then check the 17 priority exact-evidence questions before promoting any source. Continue with G2-ELEC-051..100. Await Lot 2 historical question uploads for separate duplication audit. Do not assume uploaded PDF bytes are stored in GitHub, or that Android/file:// E2E passed.
