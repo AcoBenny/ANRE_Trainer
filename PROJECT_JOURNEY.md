@@ -759,3 +759,14 @@ This phase intentionally does not promote any candidate match to exact source ev
 - Original 822 question bank and answer keys untouched. V10.29 candidate-source quarantine remains a preview, not Android release.
 - **First durable 1MAiN checkpoint** stored at [docs/CHECKPOINTS/LATEST.md](docs/CHECKPOINTS/LATEST.md), with state, risks, evidence, next actions and restart instructions. New checkpoints scheduled by workflow milestones, not asynchronous jobs; direct ChatGPT native Memory update not claimed.
 - Legal currency, manual redistribution/embedding rights, real question-to-paragraph mappings and Android end-to-end QA remain unverified. Later user upload pending: historical ANRE questions Grad I / II and optionally III / IV.
+
+
+## 2026-11-08 | Checkpoint 002 | First 50 didactic-source page candidates and Academy language-review cohort
+- Continued from [CKPT-001](docs/CHECKPOINTS/CKPT-ANRE-20261108-01.md), using uploaded PDF manual bytes without redistributing them.
+- Built [41 priority chapter/PDF-page locators](docs/DIDACTIC_CHAPTER_INDEX_PRIORITY_2026-11-08.md), drawn from four high-priority didactic/normative PDFs; anchors confirmed in actual extracted text. This is indexing, not proof of legal currency or of every technical answer.
+- Drafted [G2-ELEC-001..050 page-level didactic map](docs/DIDACTIC_SOURCE_MAP_BATCH001_G2_ELEC_001_050.md): 50/50 source-page candidates, 14 direct model page-principle spotchecks, 36 unverified topic candidates. 17 cases flagged for exact-evidence follow-up. Independent source QA NOT_RUN.
+- Visually checked UTCN 2021 three-phase slide pages 66, 67 and 88 for the correct √3 relationships where the PDF text extraction loses symbols.
+- Verified all 76 conceptual Grade II introductory questions currently have `Raspuns=A`; while question order shuffles, displayed A/B/C options are fixed. Created [issue #2](https://github.com/AcoBenny/ANRE_Trainer/issues/2). No original key change and no implemented answer shuffling yet.
+- Extracted 3 existing linguistic markers in Batch001 (G2-ELEC-029 comparison, 030 negation/exclusivity, 035 condition); AGENT-031 curriculum exercise assigned in Avengers Academy, no independent model run.
+- **Canonical resume checkpoint:** [LATEST](docs/CHECKPOINTS/LATEST.md) → [CKPT-002](docs/CHECKPOINTS/CKPT-ANRE-20261108-02.md). All 822 question IDs, candidate-source quarantine and standalone/APK separation preserved. No new release or paid API usage.
+- Open: 17 priority semantic page/answer checks, 36 page candidates, source-embedding rights, 2026 legal currentness, Android offline E2E, Lot 2 historical question uploads.
