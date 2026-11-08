@@ -856,3 +856,11 @@ This phase intentionally does not promote any candidate match to exact source ev
 
 ## 2026-11-08 | Visual QA policy adopted, no app change
 Academy AGENT-014 UI visual release gate added as documentation only. Question mapping and didactic source audits remain priorities. No HTML/APK runtime or offline documentation test executed by this change. See docs/VISUAL_QA_GATE.md.
+
+
+## 2026-11-08 | V3 source recovery: 6 didactic external references, no approvals
+- The six previously uncovered **local** teaching subtopics in the 19-subtopic P1 register now have **verified public educational reference entry points**: OpenStax Maxwell magnetic flux §16.1 (`div B=0`), MIT OCW §2.7.1 & OpenStax §16.3 (`S=E×H` / `S=E×B/μ0` in vacuum), OpenStax §10.5 (`τ=RC`), DOE PV, DOE wind, and NPTEL §1.10 conductor bundling.
+- **4/6** external references address the exact foundational principle; **2/6** cover only PV/wind fundamentals while grid integration/protections remain **BLOCKED**. All **6** remain external candidate sources, NOT local uploaded manual paragraphs, and **0** have independent engineering QA approval or confirmed rights to embed into a new Android/HTML release. Parent-category final validations remain **0/44**.
+- Source rights: OpenStax & MIT OCW terms CC BY-NC-SA with required attribution/noncommercial/sharealike. NPTEL/Utah content redistribution not established. PDF public screenshots for MIT and Utah returned cache misses; their textual claims not misrepresented as visual verification. DOE third-party reuse not assumed.
+- Metadata in [V3 six-source registry](docs/DIDACTIC_CORPUS_INDEX/V3_6_EXTERNAL_DIDACTIC_SOURCES_2026_11_08.csv), [19-subtopic carryforward](docs/DIDACTIC_CORPUS_INDEX/V3_19_SUBTOPIC_EVIDENCE_2026_11_08.csv), [external gap report](docs/DIDACTIC_CORPUS_INDEX/V3_EXTERNAL_SOURCE_GAPS_REPORT_2026_11_08.md), [original didactic note drafts](docs/DIDACTIC_CORPUS_INDEX/V3_ORIGINAL_DIDACTIC_NOTES_DRAFT_2026_11_08.md); [issue #6](https://github.com/AcoBenny/ANRE_Trainer/issues/6) updated.
+- The user received a **V3 Excel tracking workbook** preserving V2 with 3 added sheets, and a user-download ZIP with no copyrighted PDFs. No stored 822 question IDs, keys, standalone HTML or Android APK modified. **CKPT-002 still latest**, no new checkpoint; incremental spend **0 RON**.
