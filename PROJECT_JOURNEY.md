@@ -740,3 +740,13 @@ Static QA:
 - V10.28 standalone SHA-256: `aaad6d47bca77191ed2f0a6f19ffd9d9ab4a6bbdf7aa362e1419698dc2d4ac92`.
 
 This phase intentionally does not promote any candidate match to exact source evidence. The audit remains conservative: unsupported context stays visibly pending.
+
+
+## 2026-11-08 | V10.29 source-candidate integrity audit (quarantine preview)
+- Examined user-supplied V10.28 standalone SHA256 `aaad6d47bca77191ed2f0a6f19ffd9d9ab4a6bbdf7aa362e1419698dc2d4ac92`. This is NOT the older Android HTML asset on `main`.
+- Deterministic crosswalk: 76/76 `G2_ELEC_CANDIDATES` items match exactly the question, A/B/C choices and original XLSX row at **another Grade I + Grade II ID pair**, none at their assigned conceptual Grade II target. 48 distinct source rows. Grade II G2-ELEC-001..076 are conceptual/syllabus practice questions, not direct transcriptions from that ANRE spreadsheet.
+- Examples: `G2-ELEC-007` series vs candidate parallel; `G2-ELEC-020` apparent vs reactive power units; `G2-ELEC-050` protective earthing vs bundled overhead conductors/Corona; `G2-ELEC-076` ohms vs reactive power despite `HIGH_CANDIDATE` label.
+- Full 76 exact cross-ID pair table: [docs/V10_29_CANDIDATE_SOURCE_AUDIT.md](docs/V10_29_CANDIDATE_SOURCE_AUDIT.md). Academy reproducible scanner `scripts/anre_candidate_crosswalk.py`, CI [PASS 42486645828](https://github.com/AcoBenny/Avengers-Asamble/actions/runs/42486645828).
+- Separate V10.29 standalone preview quarantines unrelated source-candidate cards. Same 822 questions / answer keys and candidate data. Node JS syntax check PASS. Chromium in-memory HTML audit: 76/76 popups display pending documentation at 390x844 and 1280x800 with no JS exceptions.
+- **No new APK build, no Android device QA, no `file://` offline QA and no external independent technical review.** Original source didactic paragraphs still missing. Do not label candidate provenance as authoritative didactic sources.
+- Next: ingest authorized manuals, map exact chapters and pages, independently audit, synchronize standalone asset and APK and run E2E.
