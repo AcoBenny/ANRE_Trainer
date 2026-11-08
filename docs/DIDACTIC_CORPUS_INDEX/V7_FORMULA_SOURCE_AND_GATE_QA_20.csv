@@ -1,0 +1,21 @@
+id,finding_class,exact_locator,evidence_finding,required_action_or_limitation,independent_QA
+QAF-01,CONFIRMED_SOURCE_DEFECT,PREG PDF 52,Q=I²Rt source caption misidentifies R as resistivity; should be resistance in ohms,HARD_WARNING_FOR_ANSWER_EDUCATION,NOT_RUN
+QAF-02,SYMBOL_OCR_RISK,AUT_1995 PDF 99,Transformer ratio formula illegible in OCR vs source raster,RUNTIME_TRANSCRIPTION_FROM_RASTER_REQUIRED,NOT_RUN
+QAF-03,SYMBOL_OCR_RISK,UTCN PDF 66,Sqrt3 visually present in star line-phase voltage; textual extraction may drop radical,NORMAL_SYMMETRIC_GENERATOR_ONLY,NOT_RUN
+QAF-04,VISUAL_CONFIRMED,PREG PDF 30,E=F/q shown; SI V/m; electric field definition,GOOD_SPOTCHECK_NOT_FULL_COVERAGE,NOT_RUN
+QAF-05,VISUAL_CONFIRMED,PREG PDF 45,Kirchhoff loop sum with directed voltages; reference orientation matters,GOOD_SPOTCHECK_NOT_FULL_COVERAGE,NOT_RUN
+QAF-06,VISUAL_CONFIRMED,PREG PDF 89,RLC series impedance Z=sqrt(R²+(XL−XC)²) and resonance XL=XC,SINUSOIDAL_IDEALIZATION,NOT_RUN
+QAF-07,VISUAL_CONFIRMED,MAS PDF 128,"Complex stator/rotor excitation equation of synchronous generator, printed primes and phasor conventions",NEVER_RECOPY_FROM_OCR,NOT_RUN
+QAF-08,VISUAL_CONFIRMED,I7 PDF 25,DDR prohibited in TN-C; in TN-C-S only on TN-S portion,I7_2023_SNAPSHOT_NOT_CURRENT_2026_CERTIFICATE,NOT_RUN
+QAF-09,VISUAL_CONFIRMED,I7 PDF 161,"I7 cap 8 initial verification, visual inspection before energization",I7_2023_SNAPSHOT_NOT_CURRENT_2026_CERTIFICATE,NOT_RUN
+QAF-10,SOURCE_QUALIFIER,PREG PDF 63,"Faraday induction sign not explicit, can be magnitude; requires orientation qualification",NO_AUTOMATIC_ANSWER_KEY_CHANGE,NOT_RUN
+QAF-11,SOURCE_INSUFFICIENT,PREG PDF 72,Parallel-circuit voltage is not proof of installed-cable voltage-drop allowable %,REQUIRE_EXACT_I7_AND_PROJECT_CONDITIONS,NOT_RUN
+QAF-12,SOURCE_INSUFFICIENT,MAS PDF 92,Asynchronous generator regime does not prove protections or generator-class interconnection settings,NO_GENERALIZATION,NOT_RUN
+QAF-13,SOURCE_ROLE_ERROR,SSM PDF 3-4,Internal workplace authorization instruction is not ANRE authorization or national SSM statute,USE_LEGE_319_2006_FOR_FOUNDATION,NOT_RUN
+QAF-14,SOURCE_ROLE_ERROR,AUT_1995 PDF 27-31,Historical authorization requirements cannot support present 2026 legislation keys,USE_ORDIN_66_2023_AMENDED,NOT_RUN
+QAF-15,SOURCE_ROLE_ERROR,AUT_1995 PDF 149,Historical energy supply contract rules are not proof of 2026 connection procedures,USE_ORDIN_59_2013_MAY_2026_CONSOLIDATION,NOT_RUN
+QAF-16,SCOPE_MISMATCH,ANRE 2023 syllabus PDF pp1-3,Only 10 named bibliography rows apply to Grade I and 13 to Grade II; unrelated Grade III/IV rows should not block Grade I/II readiness,CURRENT_ANRE_EXAM_SCOPE_NEEDS_DATE_CHECK,NOT_RUN
+QAF-17,RIGHTS_BLOCK,IEC/ASRO user manual PDFs,Online catalogue/purchased standards are not automatically licensed for public offline republishing,USE_ORIGINAL_EXPLANATIONS_AND_LINKS,NOT_RUN
+QAF-18,INDEPENDENT_QA_MISSING,All 44 topics,No distinct qualified reviewer executed independent source audit; 0 formal approvals,RELEASE_GATE_NO_FINAL_KEYS,NOT_RUN
+QAF-19,CURRENTNESS_UPDATE,Ordin 59/2013 consolidated 25.05.2026,Historical 1995 and 2023 norm citations can miss later changes,CHECK_CONCRETE_ARTICLE_PER_QUESTION,NOT_RUN
+QAF-20,OFFICIAL_SCOPE_GAP,EV charger,SR HD 60364-7-722:2019 catalogue identifies scope but not technical teaching paragraphs,ANRE_G1_G2_RELEVANCE_NOT_YET_IN_QUESTION_BANK_AUDIT,NOT_RUN
