@@ -782,3 +782,14 @@ This phase intentionally does not promote any candidate match to exact source ev
 - One Grade II PDF has corrupt text encoding; requires selective visual inspection.
 - [Detailed interim intake QA](docs/IMPORT_AUDIT_LOT2_2026_11_08.md) and [issue #3](https://github.com/AcoBenny/ANRE_Trainer/issues/3) record the next technical/language/legislative audits.
 - Original 822 ID/answer data unchanged. No old legal answer key promoted; no new APK/HTML build, no paid API calls, no independent agent certification. **CKPT-003 intentionally not created.**
+
+
+## 2026-11-08 | Audit-only gate and didactic source Batch002
+- Owner explicitly froze all application/HTML/APK/answer-key implementation until the COMPLETE didactic document mapping and audit have finished. Recorded [AUDIT_FIRST_RELEASE_GATE](docs/AUDIT_FIRST_RELEASE_GATE_2026-11-08.md). Audit scripts and metadata reports only; no release or UI changes authorized.
+- Reviewed 17 high-risk didactic page candidates from first 50: **8 direct source-page supports, 6 require derivation/conditions, 3 have only thematic pages/insufficient exact evidence**. All **NOT independently approved**.
+- Continued with **50 additional existing Grade II electrotechnics IDs**: G2-ELEC-051..076 plus G2-ELEC-154..177 (actual ID gap 077..153, not invented entries). Model-assisted source reviews: 26 direct page supports, 10 conditional/derived, 9 topic-only, 4 no exact local source, 1 missing essential diagram.
+- Current audit-only coverage: **100/822 question IDs examined for didactic page mapping**, **95/822 have PDF page candidates**, 5/822 unresolved source/figure; remaining 722 not yet started. **0 independent final source approvals**, no manuals embedded offline.
+- Important blocker `G2-ELEC-177`: question says 'schema de mai sus', but V10.29 embedded `DATA` contains no attached drawing. Logged [issue #5](https://github.com/AcoBenny/ANRE_Trainer/issues/5) together with 161,166,170,172 absent precise didactic sources.
+- [Batch002 audit table](docs/DIDACTIC_AUDIT_BATCH002_NO_IMPLEMENTATION_2026-11-08.md) includes exact physical PDF page/technical-status for all 17 rechecks and 50 new records. PDF originals remain user uploads, not GitHub.
+- The CSV tracker for all 822 (unmapped IDs explicitly identified) and audit JSON were exported into the conversation as a download archive. User's approved checkpoint cadence remains low: **CKPT-002 unchanged**, interim batch records only, no CKPT-003.
+- Independent engineering/language/rights QA and current normative versions remain pending. No paid API calls; **0 RON**.
