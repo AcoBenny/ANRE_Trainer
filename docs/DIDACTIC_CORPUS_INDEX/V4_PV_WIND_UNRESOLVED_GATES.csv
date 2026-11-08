@@ -1,0 +1,8 @@
+id,domain,gap,current_evidence,status
+GAP-PV-01,PV,"Schema DC/AC completă, întrerupere, dispozitive, supratensiuni",IEC 60364-7-712:2025 text paywalled; ANRE art.14 doar protecții interfață,BLOCKED_FULL_TECHNICAL_PARAGRAPH
+GAP-PV-02,PV,"Antiin­sularizare: teste, limite, condiții de reacționare",ANRE art.14 / IEC 62116:2014 rezumat,PARTIAL_OFFICIAL_SCOPE
+GAP-PV-03,PV,Verificarea ediției SR EN 50549 și aplicabilitate 2026,132/2020 face trimitere la standardul din 2019,REQUIRES_OFFICIAL_EDITION_CHECK
+GAP-WIND-01,EOLIAN,Exemplu didactic complet conectare/convertor/reglaje turbină,DOE funcționare + IEC 61400-21-1 descrie domeniu,DIDACTIC_GAP
+GAP-WIND-02,EOLIAN,Diferențe dintre clasele A/B/C/D și protecții/sincronizare,"Ordin 208/2018 normă, clasa trebuie determinată",REQUIRES_CLAUSE_LEVEL_QA
+GAP-BOTH-01,PV/EOLIAN,QA independent pe ediții și paragraf normativ,Niciun model/inginer independent nu a aprobat,INDEPENDENT_QA_NOT_RUN
+GAP-BOTH-02,PV/EOLIAN,Permisiuni surse PDF offline,Surse licențiate diferit; unele plătite,COPYRIGHT_CLEARANCE_NOT_DONE
