@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "project": "ANRE Trainer",
+  "repo": "AcoBenny/ANRE_Trainer",
+  "base_branch": "main",
+  "base_head": "4effd56ca9e339df1fe20a5adf6f0fc4e567312d",
+  "development_branch": "docs/context-starter-2026-11-09",
+  "freshness": "PINNED_BASE_ONLY_VERIFY_HEAD_BEFORE_USE",
+  "selector_policy": {
+    "default": "HOT_FIRST_THEN_SCOPED_SOURCE",
+    "invalid_index": "REFUSE_AND_REFRESH",
+    "source_digest_kind": "git_blob_sha1",
+    "requires_branch_and_commit_check": true,
+    "preserve_existing_decisions": true,
+    "independent_qa": "NOT_RUN",
+    "model_token_savings": "NOT_MEASURED",
+    "no_auto_merge": true,
+    "no_auto_deploy": true
+  },
+  "tiers": {
+    "HOT": [
+      "PROJECT_CONTEXT.md",
+      "docs/CHECKPOINTS/LATEST.md"
+    ],
+    "WARM": [
+      "project-index.json",
+      "docs/DECISIONS.md",
+      "docs/QA_EVIDENCE.md"
+    ],
+    "COLD": [
+      "PROJECT_JOURNEY.md",
+      "historical evidence/manuals/logs"
+    ]
+  },
+  "routes": [
+    {
+      "target": "question-ID",
+      "path": "app/src/main/assets/anre_trainer.html",
+      "git_blob_sha": "bc5b5a61954ba138cf83987bfc932eca517f3b21",
+      "kind": "code",
+      "note": "Source 822 record corpus; answer correctness unverified",
+      "source_commit": "4effd56ca9e339df1fe20a5adf6f0fc4e567312d",
+      "verification": "EXACT_BLOB_AT_PINNED_BASE_NOT_CURRENT_RUNTIME"
+    },
+    {
+      "target": "checkpoint",
+      "path": "docs/CHECKPOINTS/LATEST.md",
+      "git_blob_sha": "ae2d3295576a62d063306b546bb59f6b1229d25f",
+      "kind": "context",
+      "note": "Actual checkpoint pointer",
+      "source_commit": "4effd56ca9e339df1fe20a5adf6f0fc4e567312d",
+      "verification": "EXACT_BLOB_AT_PINNED_BASE_NOT_CURRENT_RUNTIME"
+    },
+    {
+      "target": "journey",
+      "path": "PROJECT_JOURNEY.md",
+      "git_blob_sha": "f6b7bc0fc93cf7d410a07e241d75f6427b8f4721",
+      "kind": "history",
+      "note": "Read relevant sections only",
+      "source_commit": "4effd56ca9e339df1fe20a5adf6f0fc4e567312d",
+      "verification": "EXACT_BLOB_AT_PINNED_BASE_NOT_CURRENT_RUNTIME"
+    }
+  ]
+}
