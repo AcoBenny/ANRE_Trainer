@@ -1,0 +1,29 @@
+{
+  "schema": "avengers.project-context.v1",
+  "project": "ANRE Trainer",
+  "repository": "AcoBenny/ANRE_Trainer",
+  "kind": "software",
+  "entry": "PROJECT_CONTEXT.md",
+  "views": {
+    "state": "docs/CONTEXT/STATE.md",
+    "map": "docs/CONTEXT/MAP.md",
+    "tasks": "docs/CONTEXT/TASKS.md",
+    "sources": "docs/CONTEXT/SOURCES.jsonl"
+  },
+  "existing_authorities": {
+    "checkpoint": "docs/CHECKPOINTS/LATEST.md",
+    "journey": "PROJECT_JOURNEY.md",
+    "qa": null,
+    "decisions": null,
+    "architecture": null
+  },
+  "last_verified_git_commit": null,
+  "last_verified_source_revision": null,
+  "read_order": [
+    "state",
+    "tasks",
+    "map",
+    "scoped_source_on_demand"
+  ],
+  "note": "Navigation only. No keys or sources independently approved."
+}
