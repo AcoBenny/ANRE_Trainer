@@ -945,3 +945,13 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - Verified `Romanian Language Reviewer` already existed in Avengers Asamble curated role catalog, mapped to `anre-question-bank-qa`. It was omitted from the compact default active ANRE team; V14 applied linguistic checklists without independent linguistic agent execution.
 - Committed `docs/QUESTION_AUDIT/ANRE_LINGUISTIC_REVIEW_GATE.md`, making explicit option-by-option trap/ambiguity/source gate and distinct linguistic, technical, data and independent QA roles. No retroactive claim of QA execution.
 - Previous V8–V12 screens and V14 conflicts remain preliminary; all application keys/HTML/APK unchanged, PR #7 Draft, no merge/release.
+
+
+### 2026-11-09 | V15–V24: ANRE full 822-ID screening coverage and CKPT-003
+- Canonical V10.29 blob `bc5b5a61954ba138cf83987bfc932eca517f3b21`, 822 ID-uri unice: 408 G2 + 414 G1. Screening/preflight acoperire 822/822, nu „validare 822/822”; niveluri: 381 examinări model-assisted tehnic/lingvistic, 77 G2 legislație/norme preflight, 204 G1 corespondent textual exact G2, 160 G1 lingvistic/surse preflight.
+- Livrabile auditate V15/V16 (81 G2 electrotehnică), V17 (77 G2 norm+leg), V18 (33 G2 concepte), V19 (50 G1 electrotehnică), V20 (822 ledger + 254 duplicate cross-grade), V21 (204 parity), V22 (160 G1 neidentice), V23 (822 coverage ledger), V24 (verificare surse XLSX originale).
+- Două perechi cu întrebări și variante identice dar chei diferite: G1-ELE-018/G2-ELEC-170 și G1-ELE-102/G2-ELEC-245. Alte 6 diferențe canonical/tracker V13 persistă. Nu adjudeca fără sursă tehnică/normativă exactă, auditor independent și istoric barem.
+- V24: LEGISLATIE-GR.-1-05.2023 (1).xlsx col I 1,2,3,4,5 în 5 rânduri neregulate; nu este barem A/B/C. Electrotehnică rând25 text+ABC nu include barem independent. Nicio corecție a baremelor.
+- 77/77 G2 norm+leg și 50/50 G2-ELEC-001..050 au cheia A, vulnerabilitate de evaluare. G1-NOR trebuie corelat cu actualizările I7 (Ordin 959/2023); sursele pagină+ediție neconfirmate în majoritatea rândurilor.
+- QA determinist înregistrat (număr de rânduri, unicitate ID, apartenență lot, potrivire canonical), dar **independent QA=NOT_RUN**, testare HTML/APK offline=NOT_RUN. 0 întrebări pregătite de release.
+- Checkpoint permanent: `docs/QUESTION_AUDIT/CKPT_003_ANRE_2026_11_09_V24_HANDOFF.md`. PR #7 rămâne Open Draft, nu merge; doar documentație. Urmează rezolvarea conflictelor și maparea paragrafelor didactice exacte cu surse, apoi QA extern și E2E.
