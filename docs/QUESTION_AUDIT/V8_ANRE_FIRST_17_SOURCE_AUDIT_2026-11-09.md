@@ -61,3 +61,12 @@ Inventarul are **822 ID-uri unice**, fără modificarea datelor. Important: seri
 - Un **PR separat pe ramură de dezvoltare**, doar cu acest raport și CSV-uri de audit; nu merge în `main`, nu release și nu cod nou în aplicație fără aprobare explicită.
 
 **Checkpoint:** `CKPT-002` rămâne checkpoint-ul de bază. Acest lot V8 este o evidență nouă de audit, nu un checkpoint de release.
+
+
+## Următoarele 50: doar screening automat (nu verificare semantică)
+
+- Inventar construit din ID-urile **prezente efectiv în V10.29**, nu dintr-un interval numeric continuu: `G2-ELEC-051..076` (26 întrebări conceptuale) și `154..177` (24 întrebări cu etichetă sursă XLSX).
+- Distribuție inițială a cheilor: A=32, B=9, C=9. Aceasta este **distribuție**, nu un verdict despre corectitudine.
+- Semnale euristice neexclusive: 26 fișe candidate asociate greșit, 9 formulă/calcul, 5 măsurare, 3 protecție, 2 negație, 2 comparație, 2 condiționalitate; 15 fără marker detectat.
+- **50/50 statut `NOT_REVIEWED` semantic și `NOT_RUN` QA independent**. Markerii nu dovedesc capcane; propunerile de corectare a răspunsurilor rămân zero.
+- Date: [V8 next50 automated preflight](V8_G2_ELEC_NEXT50_AUTOMATED_PREFLIGHT.csv). Acest fișier nu trebuie confundat cu validarea didactică pe articol/pagină.
