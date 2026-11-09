@@ -1,0 +1,80 @@
+name: Project Context v1 structural QA (no app/runtime actions)
+
+on:
+  push:
+    branches:
+      - docs/context-navigation-v1-20261109
+    paths:
+      - PROJECT_CONTEXT.md
+      - AGENTS.md
+      - docs/CONTEXT/**
+      - docs/QA_EVIDENCE.md
+      - PROJECT_JOURNEY.md
+      - .github/workflows/project-context-qa.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  context-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Checkout exact branch without persisted credentials
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Independent manifest, canonical-source and local-link contract
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, re
+          root = pathlib.Path.cwd()
+          manifest = json.loads((root / "docs/CONTEXT/manifest.json").read_text(encoding="utf-8"))
+          assert manifest["schema"] == "avengers.project-context.v1"
+          assert manifest["entry"] == "PROJECT_CONTEXT.md"
+          expect = {
+              "state": "docs/CONTEXT/STATE.md",
+              "map": "docs/CONTEXT/MAP.md",
+              "tasks": "docs/CONTEXT/TASKS.md",
+              "sources": "docs/CONTEXT/SOURCES.jsonl",
+          }
+          assert manifest["views"] == expect
+          listed = ["PROJECT_CONTEXT.md", "AGENTS.md", *expect.values()]
+          for name, target in manifest["existing_authorities"].items():
+              if target is not None:
+                  listed.append(target)
+          for relative in listed:
+              path = pathlib.PurePosixPath(relative)
+              assert not path.is_absolute()
+              assert not any(part in (".", "..", "", ".git") for part in relative.split("/"))
+              resolved = root / relative
+              assert not resolved.is_symlink() and resolved.is_file(), relative
+              assert resolved.resolve().is_relative_to(root), relative
+              if relative in expect.values() or relative == "PROJECT_CONTEXT.md":
+                  assert resolved.stat().st_size <= 8192, "unbounded navigation: " + relative
+          assert "PROJECT_CONTEXT.md" in (root / "AGENTS.md").read_text(encoding="utf-8")
+          root_index = (root / "PROJECT_CONTEXT.md").read_text(encoding="utf-8")
+          for link in re.findall(r"\]\(([^)]+)\)", root_index):
+              if "://" in link or link.startswith("#"):
+                  continue
+              rel = link.split("#", 1)[0]
+              assert (root / rel).is_file(), "broken local link: " + rel
+          entries = (root / expect["sources"]).read_text(encoding="utf-8").splitlines()
+          for entry in entries:
+              obj = json.loads(entry)
+              assert set(("id", "kind", "locator", "revision", "verification")) <= set(obj)
+              assert obj["verification"] != "OFFICIAL_VERIFIED" or "authority" in obj
+          print(json.dumps({
+              "status": "STRUCTURE_PASS_NOT_APP_OR_SOURCE_SEMANTIC_QA",
+              "entry_count": len(listed),
+              "source_registry_entries": len(entries),
+              "actual_commit": __import__("subprocess").check_output(
+                  ["git", "rev-parse", "HEAD"], text=True).strip(),
+              "independent_review": "NOT_RUN",
+              "target_runtime_e2e": "NOT_RUN",
+          }))
+          PY
+      - name: Ensure no generated source mutation
+        run: git diff --exit-code
