@@ -939,3 +939,9 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 ### 2026-11-09 | V14 linguistic trap QA on 6 V13 conflicts
 - Applied ANRE question-bank QA and source-audit rules to six exact canonical question sets; no independent worker executed. Genuine wording traps: G1-LEG-028 (apartment block context: official ground floor/landing -> V9 C), G1-LEG-032 (4 vs 5 years: V9 A plausible, sanctions article pending), G1-LEG-034 (reception only if requested -> V9 A), G1-LEG-048 (payment choices only among supplier's -> V9 B). G1-LEG-024 depends on unverified 6-month ATR exemption; G2-ELEC-170 on exact definition of Cs and historical alleged A->C correction. All six remain quarantined, no canonical answer edited.
 - Evidence committed in `docs/QUESTION_AUDIT/V14_TRAP_REVIEW_SIX_CONFLICTS.csv` (6 cases) and `docs/QUESTION_AUDIT/V14_TRAP_REVIEW_REPORT.md` with exact regulatory URLs. Source text is not a newly executed independent QA approval. Historical app badge `VERIFICAT TEHNIC` does not substitute for authoritative paragraph verification. PR #7 stays Draft, no merge, HTML/APK/keys unchanged.
+
+
+### 2026-11-09 | ANRE linguistic agent routing gap fixed in documented protocol
+- Verified `Romanian Language Reviewer` already existed in Avengers Asamble curated role catalog, mapped to `anre-question-bank-qa`. It was omitted from the compact default active ANRE team; V14 applied linguistic checklists without independent linguistic agent execution.
+- Committed `docs/QUESTION_AUDIT/ANRE_LINGUISTIC_REVIEW_GATE.md`, making explicit option-by-option trap/ambiguity/source gate and distinct linguistic, technical, data and independent QA roles. No retroactive claim of QA execution.
+- Previous V8–V12 screens and V14 conflicts remain preliminary; all application keys/HTML/APK unchanged, PR #7 Draft, no merge/release.
