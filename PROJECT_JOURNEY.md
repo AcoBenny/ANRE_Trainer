@@ -969,3 +969,10 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - Added `docs/QUESTION_AUDIT/I7_OFFLINE_BUILDER_README.md` with syntax, limitations, staged migration and QA gates.
 - Synthetic parser test PASS in tool; read-back of both new files on GitHub PASS. LIVE DOWNLOAD NOT_RUN: this session's container could not resolve the official government host. Independent QA on real annexes/tables and offline Android/HTML integration NOT_RUN; existing older manuals have NOT been replaced, no official text falsely promoted.
 - Guardrails: PR #7 remains Draft/unmerged, app/src/main/assets/anre_trainer.html and APK unmodified, answer keys/options untouched. Promote to app only following real download and temporal/technical QA with user approval.
+
+### 2026-11-09 | User-supplied official I7 HTML -> actual offline searchable reference (staged)
+- Input `REGLEMENTARI (A) 01_11_2011.htm`: 5,504,033 bytes, SHA256 `99389c372d898dea067b80a93e1998f93a1b03302812e478de327ff2013d90b7`, I7-2011 with 959/2023 notes.
+- Real local generated HTML reader + JSON index: 2,247 indexed point/article nodes, 48 annexes, 184 HTML tables preserved; 151 referenced JPG images missing from upload; each replaced with an explicit placeholder. No external asset dependency.
+- QA structural PASS, browser JS search PASS in headless offline Chromium via set_content (file navigation restricted by test environment). Standalone HTML and bundled ZIP provided as conversation artifacts, not committed to GitHub yet: missing original figure assets and legal-currentness gate.
+- Priority I7 source references 5.2.12.3.10, 5.3.3.21, 8.1.1.3.3 recorded for questions G1-NOR-032,029,010. Evidence notes `docs/QUESTION_AUDIT/I7_OFFLINE_USER_HTML_IMPORT_2026_11_09.md`.
+- No canonical question keys, answer options, app HTML, APK or main branch changed; source promotion/replacement pending image bundle + independent normative QA + user approval.
