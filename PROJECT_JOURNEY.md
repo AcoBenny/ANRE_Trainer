@@ -976,3 +976,8 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - QA structural PASS, browser JS search PASS in headless offline Chromium via set_content (file navigation restricted by test environment). Standalone HTML and bundled ZIP provided as conversation artifacts, not committed to GitHub yet: missing original figure assets and legal-currentness gate.
 - Priority I7 source references 5.2.12.3.10, 5.3.3.21, 8.1.1.3.3 recorded for questions G1-NOR-032,029,010. Evidence notes `docs/QUESTION_AUDIT/I7_OFFLINE_USER_HTML_IMPORT_2026_11_09.md`.
 - No canonical question keys, answer options, app HTML, APK or main branch changed; source promotion/replacement pending image bundle + independent normative QA + user approval.
+
+### 2026-11-09 | Partial recovery of missing official-HTML figures using archived I7 PDF
+- Official JPG URLs still not directly fetchable from this runtime. Found user's own I7 2023 archive PDF in Library, with embedded schematics. Compared figure captions, page coordinates and image objects, distinguished parallel figures / duplicate figure number changes.
+- 82/151 images embedded in a new standalone offline reader (2023-archival labelled with source PDF page/xref); 69 remain explicitly missing. Search index and 184 HTML tables retained. Browser-offline QA on sample images + search PASS; structural stream checks for all 82 PASS. Current official JPG parity, normative SME approval, physical Android QA NOT_RUN.
+- Detailed provenance/QA file `docs/QUESTION_AUDIT/I7_2026_11_09_ARCHIVAL_FIGURE_RECOVERY_82_OF_151.md`; generated HTML, ZIP, full figure manifest/CSV delivered as conversation artifacts, not committed to repository. Main app and keys unchanged, PR Draft, no merge.
