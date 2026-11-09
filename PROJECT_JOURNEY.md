@@ -899,3 +899,10 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - Inspected new original-page visual math/rules (PREG pp30,45,89, MAS p128, I7 pp25,161, UTCN p66) alongside prior formula flags; **20** claims/errors/QA gates recorded. Existing seven V6 open gates preserved with *scope-specific* downstream impacts.
 - Artifacts: [V7 report](docs/DIDACTIC_CORPUS_INDEX/V7_PRE_QUESTION_DIDACTIC_AUDIT_REPORT_2026-11-08.md), [44 category ledger](docs/DIDACTIC_CORPUS_INDEX/V7_44_TOPIC_SEMANTIC_SCREENING.csv), [29 official bibliography entries](docs/DIDACTIC_CORPUS_INDEX/V7_OFFICIAL_ANRE_G1_G2_2023_BIBLIOGRAPHY.csv), [20 risks](docs/DIDACTIC_CORPUS_INDEX/V7_FORMULA_SOURCE_AND_GATE_QA_20.csv), [7 blockers](docs/DIDACTIC_CORPUS_INDEX/V7_7_BLOCKERS_SCOPE_AND_HANDOFF.csv), [protocol](docs/DIDACTIC_CORPUS_INDEX/V7_QUESTION_AUDIT_ENTRY_RULES.md); issue #6 updated. User V7 XLSX preserved V1–V6 sheets; 9-file ZIP passed integrity and SHA256 checks.
 - **No independent agents or technical reviewer runtime**; no project/app/822 changes, no paid API. **CKPT-002 still latest.** Read-only question triage may be offered for owner approval; **do not silently start answer correction or claim formal final approval.**
+
+
+## 2026-11-09 | Project Context v1 navigation proposal (not merged)
+- Documentation-only Draft PR #8 proposes one-screen PROJECT_CONTEXT.md, docs/CONTEXT state/tasks/map/source ledger and canonical reference manifest.
+- The pre-existing docs/CHECKPOINTS/LATEST.md and full Journey remain authoritative. Audit PR #7 remains a separate Draft with question/source review; no source or answer revision from the navigation proposal.
+- Cross-repo structural review checked manifest/schema/file references and GitHub diff; no app/src source, HTML, answer key, APK or manuals modified. This is not an independent ANRE source audit or Android runtime PASS.
+- Academy bootstrap and safety tests: https://github.com/AcoBenny/Avengers-Asamble/actions/runs/42697800639 (18/18 synthetic). No merge/release until owner approval.
