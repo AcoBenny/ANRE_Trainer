@@ -1,5 +1,8 @@
 name: I7 official figure recovery (one-time, read-only)
 on:
+  pull_request:
+    branches: ["main"]
+    paths: [".github/workflows/i7-official-figure-fetch.yml"]
   push:
     branches: ["audit/anre-v8-priority-17-20261109"]
     paths: [".github/workflows/i7-official-figure-fetch.yml"]
