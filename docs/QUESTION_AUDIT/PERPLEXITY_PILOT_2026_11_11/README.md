@@ -4,7 +4,7 @@
 
 ## Lucru efectiv executat
 - Au fost selectate 20 ID-uri P0 distincte din V73/V78/V95 și verificate prin `ID_ROUTING_822.csv`, câte o unitate exactă QABC distinctă (20/20). 10 electrotehnică, 5 legislație, 4 norme Grad I, 1 norme Grad II. Toate cele 20 chei originale sunt păstrate.
-- Baseline documentar: redeschidere reală 4 pagini cu surse publice (DOE pentru G1-ELE-029; Legea123 art92/93 pentru G1-LEG-026/019; Reg66/2023 art37 pentru G1-LEG-034), acoperind **4 ID-uri**. Pentru G1-NOR-089 sursa I7 apare în index, dar pagina directă a returnat 502: **search index only**. Celelalte 15 ID-uri păstrează doar istoric de cercetare, nu înseamnă că nu au dovezi anterioare.
+- Baseline documentar: redeschidere reală a 3 pagini publice relevante pentru 4 ID-uri (DOE pentru G1-ELE-029; Legea123 art92/93 pentru G1-LEG-026/019; Reg66/2023 art37 pentru G1-LEG-034), acoperind **4 ID-uri**. Pentru G1-NOR-089 sursa I7 apare în index, dar pagina directă a returnat 502: **search index only**. Celelalte 15 ID-uri păstrează doar istoric de cercetare, nu înseamnă că nu au dovezi anterioare.
 - Comparare explicită A/B/C şi verificare de ediţie pentru fiecare ID: **neînchise**; dovada pentru patru ID-uri este un indiciu specific, nu un verdict de barem.
 - Test real Perplexity: **NOT_RUN**. Nu există connector/plugin Perplexity în acest chat şi încărcarea paginii de căutare directă a eşuat; fără token API şi fără execuţie externă. Nu inventăm scor de câştig sau răspunsuri.
 - Au fost pregătite 4 runde x5 întrebări şi tabelele necesare pentru completarea/QA a experimentului. Folosirea Free web este posibilă, dar rezultatele necesită exportul sesiunii sau o rulare browser autorizată.
