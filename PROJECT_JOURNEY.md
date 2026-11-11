@@ -1072,3 +1072,11 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - V74: 71 P0, 14 cazuri cu cercetare/dispoziție specifică, dintre care 6 candidați de chei alternative susținute preliminar din surse legislative/normative, plus 3 G2 normative cu opțiuni de tip greșit; 57 P0 încă fără nouă adjudecare specifică.
 - V75: `docs/QUESTION_AUDIT/V75_ALL_822_EVIDENCE_QA_AND_RELEASE_GATE_REPORT.md`; handoff `docs/QUESTION_AUDIT/CKPT_008_V75_822_EVIDENCE_HANDOFF.md`. Linkuri de sursă și limitări clar distinse de aprobare.
 - **Important:** V73 822/822 = EVIDENCE_COVERAGE_COMPLETE, **nu** CONTENT_VALIDATION_COMPLETE. Rămân surse exacte, versiuni 2026, QA tehnic/lingvistic independent, conflicte și teste de aplicație. PR #7 Draft; fără merge/main/release și fără APK/HTML editat.
+
+
+## 2026-11-11 | CKPT-010 | V85–V99 focused audit and real separate AI review
+- Continued from CKPT009 and immutable V78/V83, no duplicate screening credit: 50 new focused records (38 P0,12 P1),4 temporal rechecks on existing IDs; focused evidence total91/822. All72P0 still open; investigation coverage is not correctness approval.
+- Separate AI reviewers actually reopened primary sources and assessed claims/ABC:51 review rows,50 unique IDs.42 scoped-support rows,8blocked,1revision; no official/human answer signoff or learning approval. NOR028 missing I7 exceptions found by reviewer, corrected in audit explanation and read back; canonical key unchanged.
+- New V95 master822 rows preserves old evidence, sources/editions/gaps, separate AI verdicts; V95 reproducible data QA:54 analysis records have zero canonical text/ABC/key mismatches. V96 detailed report; CKPT010 handoff.
+- Temporal gate: law URL300063 is selected2025 edition; V91 narrows2026 evidence but full selectedJuly2026 consolidation retrieval is incomplete. PE155 primary-text gaps and missing learner diagram remain.
+- Source PDFs/screenshots inspected privately, not redistributed. Canonical baremes/question/ABC/HTML/APK untouched; no main/merge/release/deploy. PR7 stays Draft. No persistent cloud worker or automation launched.
