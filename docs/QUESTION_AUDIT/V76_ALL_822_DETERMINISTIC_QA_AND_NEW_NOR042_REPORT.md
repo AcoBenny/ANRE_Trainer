@@ -1,0 +1,15 @@
+# V76 | 822-question deterministic integrity QA and 18 same-stem variants
+**Date:** 2026-11-11. **Source:** V73 822 canonical evidence records; evaluated with a quote-aware CSV parser. QA here means **deterministic data checks and targeted legal/normative reading only**, NOT independent electrical certification.
+## Findings, tested
+- CSV: 822 records, 24 fields/record, 822 IDs unique. No missing ID, ABC, canonical key, answer text, source filename/row; selected ABC for the stored key equals the `canonical_answer` in all 822. No apparent structural corruption. All rows `approved_for_learning=NO`.
+- Distribution: Grade I 414, II 408; 595 electrotehnică, 112 legislație, 115 norme; priority P0=71, P1=229, P2=522 in **original V73** (risk level not validation).
+- 254 exact duplicate groups (same normalized Q + A/B/C). **Two have different keys**: G1-ELE-018/G2-ELEC-170 and G1-ELE-102/G2-ELEC-245. Existing P0; do not merge answers.
+- **18 groups of identical question stems with different ABC** identified, documented row-by-row in `V76_18_SHARED_STEMS_DIFFERENT_CHOICES_QA.csv`. Not automatically errors: variants intentionally change the correct response and absolute qualifiers. Do not auto-deduplicate solely by question text.
+- **NEW P0: G1-NOR-042** (not in V74): canonical key B = „în circuitele monofazate cu trei conductoare și ... 25 mm² Cu/35 mm² Al”. The more specific I7 art. 5.2.4.6.1(a) prescribes same N and phase section in *single-phase two-wire regardless of size*, exactly original **option A**; paragraph (b) provides threshold **16 mm² Cu/25 mm² Al** for polyphase, not B's thresholds. The answer is a **strong candidate A**, pending latest-effective-edition verification and independent expert review. Do NOT edit original key. Official publication: https://legislatie.just.ro/Public/DetaliiDocumentAfis/287132 (specific rule visible in search text); archive with article text: https://legislatie.just.ro/Public/FormaPrintabila/00000G1AGLK3X9HXIS43LTLA4TCXTBR4 .
+- **G1-NOR-041** shares a similar stem but includes an unsupported formulation „single-phase three-wire” despite the I7 quoted b) describing *polyphase*; review before approving B. Record as conditional linguistic/scope gate, not new definitive key conflict.
+- 77 non-electrotechnical G2 keys all A in prior V75: already flagged as potential synthetic-bias/provenance concern; cannot conclude the keys are all wrong or official.
+## Not verified
+- Current effective text across all laws as of 2026-11-11, exact technical sources for all rows, independent technical+linguistic+source QA, phone APK/HTML runtime, license rights, historical questions' official provenance. A link to a paragraph does not prove the whole question without exceptions.
+- **No** changes to original keys, ABC, canonical HTML, APK, main branch, merge/release.
+## Handoff
+- Add G1-NOR-042 to the P0 adjudication queue (71 -> at least 72). Prioritize G1-NOR-041, and other 17 shared-stem variants when auditing changed ABC/quantifiers. Keep V73 immutable as historical baseline and version a supplemental risk queue.
