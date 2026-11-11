@@ -1080,3 +1080,11 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - New V95 master822 rows preserves old evidence, sources/editions/gaps, separate AI verdicts; V95 reproducible data QA:54 analysis records have zero canonical text/ABC/key mismatches. V96 detailed report; CKPT010 handoff.
 - Temporal gate: law URL300063 is selected2025 edition; V91 narrows2026 evidence but full selectedJuly2026 consolidation retrieval is incomplete. PE155 primary-text gaps and missing learner diagram remain.
 - Source PDFs/screenshots inspected privately, not redistributed. Canonical baremes/question/ABC/HTML/APK untouched; no main/merge/release/deploy. PR7 stays Draft. No persistent cloud worker or automation launched.
+
+
+## 2026-11-11 | CKPT-011 | Deep audit execution preparation (no new answer approvals)
+- User requested preparation for all three remaining content-audit stages, targeting completion today, Europe/Bucharest. Prepared an operational runbook, exact criteria, source requirements and reviewer workflow; deadline is a target, not guaranteed evidence availability.
+- Canonical822 IDs routed exactly once to568 exactQABC units (254 duplicate groups,2 contradictory-key groups),30 batches max20units. Original keys/grade/provenance/explanations exported on demand; prior evidence reused without new-credit inflation.
+- Audit script guards canonical blob and branch, exports batches and checks structural closure/source/version/ABC/explanation/reviewer requirements. Structural PASS is not technical/legal truth or app approval. Contradictory original keys cannot be verified as stored.
+- Prepared author/reviewer roles and source dependencies; no30-batch execution claimed. Existing figure PDF is available for technical audit; absence of app association must not be confused with a missing source file.
+- No answer/text/HTML/APK changes, no merge/release, no persistent cloud worker or automation. Checkpoint011 is the next execution entry point.
