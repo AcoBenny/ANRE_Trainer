@@ -1098,3 +1098,5 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - No new deep-batch completion, 0 learning approvals; no changes to canonical bank, keys, HTML/APK, main/merge/release/deploy. Continue source QA and batches from CKPT011.
 
 - CKPT012 addendum: found original Monitorul Oficial 100/06.02.2023 PDF (PPC hosting), visually verified pp.9 and12. LEG017 historical termination art18(3) distinguished from power interruption art26; exact2026 Law123 consolidation still missing. Updated report and checkpoint with screenshot success specifically for this PDF, without claiming PE155/PE102 PDF visual QA.
+
+- CKPT012 LEG032 addendum: Portal Legislativ Reg66/2023 opened; art30 states5-year authorization periodic visa, art35 recognizes gradeIIA design scope under conditions. Together with Legea123 art93 indexed2026 this challenges stored LEG032 B, without final adjudication or approved key change. Legal chain/current official consolidation remains to verify.
