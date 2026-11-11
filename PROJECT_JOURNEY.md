@@ -1100,3 +1100,12 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - CKPT012 addendum: found original Monitorul Oficial 100/06.02.2023 PDF (PPC hosting), visually verified pp.9 and12. LEG017 historical termination art18(3) distinguished from power interruption art26; exact2026 Law123 consolidation still missing. Updated report and checkpoint with screenshot success specifically for this PDF, without claiming PE155/PE102 PDF visual QA.
 
 - CKPT012 LEG032 addendum: Portal Legislativ Reg66/2023 opened; art30 states5-year authorization periodic visa, art35 recognizes gradeIIA design scope under conditions. Together with Legea123 art93 indexed2026 this challenges stored LEG032 B, without final adjudication or approved key change. Legal chain/current official consolidation remains to verify.
+
+
+## 2026-11-11 | CKPT-013 | First deep NOR/LEG source investigations (not closed)
+- Continued directly from CKPT012. Opened six risk-P0 source/ABC/edition investigations in DEEP-NOR-01 (NOR023/027/030/031) and DEEP-LEG-01 (LEG017/032), reusing older evidence without counting it twice. No deep batch closure or learning approvals.
+- Official ANRE05.2023 bibliography PDF screenshot inspected p3: PE102 republication1993 only for gradeII+ (not gradeI), PE155/92 for gradesI/II+, I7 for gradeI/II+. Applied edition scope to avoid relying on PE102 alone for Grade1 question NOR027.
+- NOR027 remains strong candidate A versus stored B based on historical screw/contact wiring rule; professional independent/edition QA pending. NOR030/031 historical PE155 support is provisional because of source numbering and visual-verification caveats; LEG017 termination vs disconnection and LEG032 5-year visa statutory chain left unresolved.
+- Parliament shows 2026 Law160 changed Law123 Articles3/73^1, not58/93, narrowing but not clearing temporal gate (OUG152/2024 affected93). Official consolidated July2026 Article58/93 inaccessible, no legal gate waived.
+- Executed machine-check over Github-read manifest+report: all6 units unique, assigned to expected batch/P0, report present, PR Draft/unmerged. This is NOT independent specialist QA and deep batch structural validator was not run.
+- Saved detailed initial research in DEEP_EXECUTION_2026_11_11/DEEP_NOR_01_LEG_01_INITIAL_EVIDENCE_2026_11_11.md and handoff CKPT_013_DEEP_FIRST_NOR_LEG_SOURCE_QA_2026_11_11.md. No canonical key/Q/ABC/HTML/APK or merge/release changes.
