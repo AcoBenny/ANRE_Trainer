@@ -1065,3 +1065,10 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - **V57**: master coverage table of 822 ID with 214 unique source-rechecked, 608 pending same-depth source check; 0 independent technical/linguistic approvals and 0 application-ready entries. This session produced 147 rows, with 6 re-reviews = **141 newly checked unique IDs**. All 147 original Q/A/B/C/keys confirmed byte-for-byte identical to canonical in GitHub read-back, 0 new-row duplicates. Details in `docs/QUESTION_AUDIT/CKPT_005_V57_214_OF_822_PRELIMINARY_SOURCE_SCREEN.md`.
 - No modifications to grading, HTML, APK, main, merge or release. No GitHub Actions built. PR #7 Draft.
 - **Resume from G1-ELE-022** using 2023 official and 2026 effective source version and precise didactic citations, not stale or fabricated textbook evidence. User will say 'continuă' to start next live session, no scheduling requested.
+
+## 2026-11-11 | V62–V75 | 822/822 evidence passports, release gate still closed
+- Preluare directă din CKPT-007: 274/822 individual source screens preliminare. În această sesiune, V62–V72 au reconciliat alte 548 ID (36 G1 norme, 329 G2 electrotehnică, 183 G1 electrotehnică) din note anterioare și textul canonic; **nu** reprezintă 548 verdicturi cu sursă exactă verificată independent.
+- V73: 822 pașapoarte evidență, 71 P0 / 229 P1 / 522 P2; 822 rânduri și ID-uri unice, 0 modificări chei/enunț/opțiuni/cod, 0 independent QA, 0 release approval.
+- V74: 71 P0, 14 cazuri cu cercetare/dispoziție specifică, dintre care 6 candidați de chei alternative susținute preliminar din surse legislative/normative, plus 3 G2 normative cu opțiuni de tip greșit; 57 P0 încă fără nouă adjudecare specifică.
+- V75: `docs/QUESTION_AUDIT/V75_ALL_822_EVIDENCE_QA_AND_RELEASE_GATE_REPORT.md`; handoff `docs/QUESTION_AUDIT/CKPT_008_V75_822_EVIDENCE_HANDOFF.md`. Linkuri de sursă și limitări clar distinse de aprobare.
+- **Important:** V73 822/822 = EVIDENCE_COVERAGE_COMPLETE, **nu** CONTENT_VALIDATION_COMPLETE. Rămân surse exacte, versiuni 2026, QA tehnic/lingvistic independent, conflicte și teste de aplicație. PR #7 Draft; fără merge/main/release și fără APK/HTML editat.
