@@ -1088,3 +1088,11 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - Audit script guards canonical blob and branch, exports batches and checks structural closure/source/version/ABC/explanation/reviewer requirements. Structural PASS is not technical/legal truth or app approval. Contradictory original keys cannot be verified as stored.
 - Prepared author/reviewer roles and source dependencies; no30-batch execution claimed. Existing figure PDF is available for technical audit; absence of app association must not be confused with a missing source file.
 - No answer/text/HTML/APK changes, no merge/release, no persistent cloud worker or automation. Checkpoint011 is the next execution entry point.
+
+
+## 2026-11-11 | CKPT-012 | Recover source documents PE155, PE102 and GIS (no learning approvals)
+- Continued from CKPT011 without restarting batch organization. Targeted source discovery yielded PE155/92 copies with RENEL heading and §§3.2.1/3.2.3 supporting NOR030(A)/NOR031(B) provisionally; copy numbering inconsistency (3.3.1/3.3.2) and document authentication remain.
+- Retrieved PE102/86 text §§4.6.3 and 2.12(a) note4. NOR027 original key B conflicts with feed-to-contact-screws requirement favoring A. NOR023 local heating A supported only within norm-specific scope, not an unrestricted current-law assertion.
+- Retrieved Hitachi MSM Rev R p98, EirGrid GIS functional spec R4 §10.1, Eaton XGIS design guide (2020); ELE088 source suite strengthened but no blanket option adjudication. Current law311821 and supply regulation264611 direct opens returned502; LEG017/032 still blocked.
+- All screenshot attempts of source PDFs returned Cache miss, so no visual verification claimed. Cross-document review only, no independently running agent reviewer or qualified expert signoff. Added SOURCE_RECOVERY_POST_CKPT011_2026_11_11.md + CKPT_012_SOURCE_RECOVERY_PE155_PE102_GIS_2026_11_11.md.
+- No new deep-batch completion, 0 learning approvals; no changes to canonical bank, keys, HTML/APK, main/merge/release/deploy. Continue source QA and batches from CKPT011.
