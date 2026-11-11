@@ -21,3 +21,6 @@ Source auditor + electrotechnical researcher + domain/linguistic reviewer + QA f
 3. Retrieve exact law consolidation26.07.2026, supply regulation, and offense/sanction basis for LEG017/032.
 4. Start CKPT011 batches `DEEP-ELE-01`, `DEEP-NOR-01`, `DEEP-LEG-01`, `DEEP-ELE-02`; continue remaining 30 batches when sources are available. **0/822 newly approved** by this source-recovery-only checkpoint.
 5. No edit to canonical Q/ABC/keys, HTML, APK; no merge, release or deploy.
+
+## Addendum after the initial source checkpoint
+The original **Monitorul Oficial 100/06.02.2023**, hosted at `https://www.ppcenergy.ro/wp-content/uploads/ord-5-2023.pdf`, was opened **and visually screenshot-checked** at physical pp.9/12. Art.18(3)(a) directly supports historic LEG017 option A (judicially proven theft), Art.18(3)(c) reserves other legally defined grounds; Art.26(2)(b) covers interruption for failure to provide financial guarantee, **not automatic termination**. The exact selected law123 consolidated as of26.07.2026 remains unavailable, so LEG017 stays blocked for definitive adjudication. This later PDF was visually inspected successfully, unlike the earlier PE155/PE102/Hitachi/EirGrid screenshot failures. Full findings appended to SOURCE_RECOVERY_POST_CKPT011_2026_11_11.md; zero answer approvals.
