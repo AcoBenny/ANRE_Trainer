@@ -32,3 +32,13 @@
 2. Pentru `NOR023/ELE088`: diferențiază explicit domeniul sursei de generalitatea întrebării. Nu forța verdict.
 3. Pentru `LEG017/032`: recuperare consolidadă legală din 2026 și distincția reziliere/deconectare/sancționare. Păstrează BLOCKED până la textul complet.
 4. Continuă loturile `DEEP-ELE-01`, `DEEP-NOR-01`, `DEEP-LEG-01` și `DEEP-ELE-02` din CKPT011. Nu relua screeningurile V8–V99.
+
+
+## Addendum | Regulamentul de furnizare, Monitorul Oficial 100/06.02.2023, găsit și inspectat vizual
+
+Sursă nouă: **reproducerea Monitorului Oficial al României nr. 100/6 februarie 2023** găzduită de furnizorul PPC, PDF https://www.ppcenergy.ro/wp-content/uploads/ord-5-2023.pdf . **PDF deschis și capturile vizuale reușite** la pagina fizică9 (index8), care arată Art.18(1)–(5), și pagina fizică12 (index11), care arată introducerea Art.26. Pasajul Art.26(2) a fost citit prin textul indexat al PDF; pagina fizică13 nu a primit captură în această verificare. Nu confunda acest succes punctual cu tentativele anterioare de screenshot PE155/PE102/Hitachi, care au eșuat.
+
+- **G1-LEG-017**: Art.18(3)(a) reglementează explicit rezilierea pentru sustragerea de energie stabilită prin hotărâre judecătorească definitivă (opțiunea A). Art.18(3)(b) admite și neplata facturilor, iar (c) alte situații prevăzute de lege, deci lista nu este limitată la A. Art.18(5) impune procedură de preaviz/notificare în cazurile (b)/(c). Art.26(2)(b) reglementează **întreruperea** pentru neconstituirea garanției, nu automat **rezilierea** (opțiunea C). Racordarea ilegală (B) necesită în continuare analiza altor temeiuri, inclusiv Art.18(3)(c). **Cheia B existentă nu este justificată de aceste pasaje; nu se modifică fără adjudecare și aprobarea utilizatorului.**
+- Căutarea textului consolidat public 2024 la https://lexapp.ro/legislatie/regulament-furnizare-energiei-electrice-clientii-finali-2023/ indică Ordinul6/2024 pentru art.9,15,24,25; nu a fost inspectată o formă oficială exhaustivă la 11.11.2026. Portal Legislativ 264611 returnase 502 la deschidere, deși textul indexat indica deja art26. **Consolidarea exactă a Legii123/2012 la 26.07.2026 rămâne blocată**, așadar verdictul final LEG017 este încă neînchis.
+- Lecție QA: păstrează deosebirea **dreptul de reziliere** / **întreruperea alimentării** și categoria **caz expres** vs **alte cazuri prevăzute de lege**. Întrebarea cere analiză completă, nu doar o potrivire textuală cu varianta A.
+
