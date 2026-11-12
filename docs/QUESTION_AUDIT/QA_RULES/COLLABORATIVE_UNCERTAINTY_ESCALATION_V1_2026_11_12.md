@@ -34,3 +34,8 @@
 - Text I7 §5.2.4.6.1 în reproducerea Monitorului Oficial: https://curentulelectric.ro/wp-content/uploads/2019/01/NORMATIV_I7_2011_actualizat.pdf ; sursa 2011 nu garantează de una singură toate modificările și ediția ANRE 2026; `web.screen` anexă PDF a eșuat cache miss în sesiune.
 
 Nu se modifică `main`, bareme, întrebări, HTML, APK; nu se face merge/release fără acord.
+
+## G1-NOR-041 dialog outcome / user hypothesis update (2026-11-12)
+- Utilizatorul a ales B, deoarece enunţul cere **completarea unei afirmaţii**, iar răspunsul trebuie evaluat ca o propoziţie întreagă. A este prea general (`indiferent de secţiune` pentru polifazate), B are pragurile **16 mm² Cu/25 mm² Al**, C le măreşte nejustificat. Capcana poate sta în **variante**, nu doar în enunţ. Nu confunda mm² (secţiune) cu diametrul.
+- Cercetare suplimentară: I7-02 **§5.1.8** reprodus în HTML are chiar sintagma `monofazate cu trei conductoare` împreună cu pragurile B; I7-2011 **§5.2.4.6.1** distinge `două conductoare` mono şi praguri poly în alt subpunct. Aceasta este **diferenţă de ediţie**, nu dovadă că utilizatorul a greşit şi nu se rezolvă prin a presupune arbitrar L+N+PE.
+- Lecţie + 11 fixture-uri în `STATEMENT_COMPLETION_AND_SOURCE_ERA_V1_2026_11_12.md`, `tools/qa_statement_completion.mjs`, `tools/tests/qa_statement_completion.test.mjs`; JS fixture runner 11/11 PASS după un parser fix pentru `trei`. Încă `INDEPENDENT_QA=NOT_RUN`, sursa/ediţia exactă de examen 2026 nedovedită, nicio aprobare automată.
