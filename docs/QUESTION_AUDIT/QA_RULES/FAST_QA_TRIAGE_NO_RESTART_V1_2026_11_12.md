@@ -21,3 +21,6 @@ Queue: [targeted limit triage CSV](TARGETED_SEMANTIC_BOUND_RECHECK_2026_11_12.cs
 
 ## Safe status
 This change is a **routing proposal / candidate shortlist**, not an executable change to the canonical bank, no full rerun of all 822; `Perplexity` remains paused. `tools/qa_normative_threshold.mjs` is a narrow proof of concept with 11 synthetic PASS cases, not a general semantic engine or a source validator. `CKPT-024` has the original error and full explanation. No HTML/APK/main/merge/release changes.
+
+## Human-in-the-loop uncertainty exception (2026-11-12)
+For **genuine unresolved semantic uncertainty** after source review, show the original QABC, the exact competing interpretations and one targeted question to the user. Preserve user input as `USER_HYPOTHESIS`, not authoritative answer evidence; derive a counterexample-tested QA rule and require source-edition/independent QA before acceptance. Continue clear cases autonomously; do not repeatedly interrupt for routine source gaps. Full policy: [COLLABORATIVE_UNCERTAINTY_ESCALATION_V1_2026_11_12.md](COLLABORATIVE_UNCERTAINTY_ESCALATION_V1_2026_11_12.md).
