@@ -37,3 +37,6 @@ Ran **10/10 deterministic synthetic fixtures** using pure JS function equivalent
 
 ## Follow-up
 Use human interpretation + exact updated normative source to resolve NOR051. New semantics rule only applies to cases where a row-object match exists. Keep `0/822 learner approvals` until independent QA evidence; do not turn a deterministic regression into an answer signoff.
+
+## 2026-11-12 | G1-NOR-051 dialog completed, source/edition review remains
+User interpreted `electrocasnic monofazat >2kW` as domestic appliance and likely dedicated socket, A=2.5mm²Cu. I7 §5.4.7 provides the concrete household example, and Annex5.32 socket row gives Cu2.5mm²; **candidate A** follows expected I7 question context, NOT universal proof that every appliance uses a plug. Original question lacking `priză`/ `locuință` is context inference, not automatic normative certification. User's fixed-cable-power heuristics (1.5Cu=2.3kW max, 50% safety rule) are not general engineering limits; `Iz` is installation-dependent. See [ELECTROCASNIC_CONTEXT_VS_CABLE_AMPACITY_NOR051_2026_11_12.md](ELECTROCASNIC_CONTEXT_VS_CABLE_AMPACITY_NOR051_2026_11_12.md). 10 synthetic regression fixtures pass; independent legal/source QA not performed; no original key, wording, app edits.
