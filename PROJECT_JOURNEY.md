@@ -1181,3 +1181,8 @@ Academy AGENT-014 UI visual release gate added as documentation only. Question m
 - Semantics learning is LOCAL to limit/intention/scope questions: DO NOT restart the 822-item ANRE audit. Exact bank inventory 822 ID placements/568 distinct QABC units; existing research 10/30 batches, 200 units/265 IDs; approved 0/822.
 - Rapid GitHub register scan: 7 narrow numeric limit candidates, 6 require bound-specific recheck; G1-NOR-005 false positive because `cel puțin` qualifies count of **measurements**, not requested distance. Separate lexical risk flags are exploratory, never verdicts.
 - Saved `docs/QUESTION_AUDIT/QA_RULES/TARGETED_SEMANTIC_BOUND_RECHECK_2026_11_12.csv` and `FAST_QA_TRIAGE_NO_RESTART_V1_2026_11_12.md` to route evidence-reuse, intent/scope-specific rule, deterministic fast-track, independent review and true-blocker escalation. No automatic answers, approvals, or canonical code changes.
+
+## 2026-11-12 | Avengers Academy | interpretare colaborativă pentru incertitudini reale
+- New explicit user rule: after checking source/ABC, present unclear exam item **verbatim** with answer alternatives, competing interpretations and one narrow user question; collaboratively infer a generalizable testable rule.
+- Preserve user perspective as hypothesis rather than verified norm/key; keep source version and separate QA proof, no automatic canonical answer changes. Do not interrupt for trivial uncertainties or reask the same case. Continue clear work autonomously.
+- Documented in `docs/QUESTION_AUDIT/QA_RULES/COLLABORATIVE_UNCERTAINTY_ESCALATION_V1_2026_11_12.md`, linked from fast-track protocol; pilot discussion `G1-NOR-041` on physical 3 conductors vs normative 2 active conductors with current key B, no signoff.
