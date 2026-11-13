@@ -1,0 +1,139 @@
+{
+  "schema_version": "INTEGRATED_ONE_PASS_V1",
+  "date": "2026-11-13",
+  "status": "RESEARCH_ONLY_NOT_APPROVED",
+  "cases": [
+    {
+      "unit_id": "AU-61b27d9384e3d14f",
+      "member_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "original_keys": {
+        "G1-ELE-043": "A",
+        "G2-ELEC-189": "A"
+      },
+      "question": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
+      "A": "cu tensiunea între faze",
+      "B": "numai cu puterile active generate",
+      "C": "cu puterile reactive generate",
+      "source_object": "stator_current_of_three_phase_synchronous_generator",
+      "rule": "dependencies_of_terminal_current_on_voltage_active_reactive_power",
+      "proposed_key_NOT_APPLIED": "",
+      "status": "BLOCKED_NO_UNIQUE_DIRECT_PROPORTIONALITY_WITHOUT_FIXED_VARIABLES",
+      "source": {
+        "title": "Schneider Electric Electrical Installation Guide: Definition of reactive power",
+        "institution": "Schneider Electric",
+        "edition_year": "ONLINE_LIVE_VERSION_DATE_UNVERIFIED",
+        "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+        "locator": "Power triangle S²=P²+Q² lines 51–68; three-phase S=√3 U I lines 74–92",
+        "access": "SOURCE_PROVIDER_HTML_DIRECTLY_OPENED_AND_READ",
+        "source_edition_verified": "NO_2026_ANRE_BIBLIOGRAPHY_UNVERIFIED",
+        "exam_bibliography_match": "NO",
+        "source_scope": "GENERIC_BALANCED_THREE_PHASE_POWER_RELATIONS_NOT_GENERATOR_SPECIFIC; mathematically applicable to steady terminals with declared assumptions",
+        "offline_rights": "LONG_TEXT_ORIGINAL_PARAPHRASE_ONLY; SHORT_SOURCE_QUOTE; NO_EXTERNAL_PAGE_COPY"
+      },
+      "short_exact_quote": {
+        "text": "A simple formula is obtained, linking apparent, active and reactive power",
+        "status": "SHORT_VERBATIM_QUOTE",
+        "attribution": "Schneider Electric, 'Definition of reactive power'"
+      },
+      "contextual_paraphrase_md": "Într-un sistem trifazat echilibrat, **curentul de linie I** este legat de **tensiunea între faze U** și de **puterea aparentă S** prin relația **S = √3·U·I**. Puterea aparentă include contribuția **puterii active P** și a **puterii reactive Q**, astfel încât în regim sinusoidal **S² = P² + Q²**. Combinând formulele, rezultă **I = √(P²+Q²)/(√3·U)**. Această expresie arată că, dacă **P și Q sunt constante**, creșterea lui U determină **scăderea** curentului, nu o creștere direct proporțională. Dacă menținem U constant și schimbăm P sau Q, curentul poate crește, dar nu este proporțional numai cu una dintre puteri în orice regim. Pentru a alege un răspuns unic trebuie precizat **ce mărimi sunt menținute constante** și regimul de funcționare al generatorului.",
+      "context_type": "ORIGINAL_AUTHOR_PARAPHRASE_NOT_VERBATIM",
+      "highlight_terms": [
+        "S = √3·U·I",
+        "S² = P² + Q²",
+        "I = √(P²+Q²)/(√3·U)",
+        "P și Q sunt constante",
+        "scăderea",
+        "ce mărimi sunt menținute constante"
+      ],
+      "abc_reasoning": {
+        "A": "La P și Q constante, I este invers proporțional cu U, deci A este falsă în acel regim. Poate fi direct proporțională doar în altă ipoteză, de exemplu impedanță echivalentă constantă, dar aceasta nu este dată și nu este generală pentru generator.",
+        "B": "«Numai» elimină dependența de Q și U; formula de putere aparentă demonstrează că B nu este universală.",
+        "C": "Q afectează mărimea curentului statoric pentru P și U fixe, dar I=sqrt(P²+Q²)/(sqrt3 U) nu este în general direct proporțional cu Q dacă P ≠ 0."
+      },
+      "issues": [
+        "NO_VARIABLE_HELD_FIXED",
+        "STORED_A_IS_NOT_GENERAL",
+        "ONLY_IN_B_IS_STRONG_LINGUISTIC_TRAP",
+        "TECHNICAL_SOURCE_SCOPE_IS_POWER_RELATION_NOT_GENERATOR_MANUFACTURER_SPECIFIC",
+        "2026_EDITION_AND_INDEPENDENT_QA_NOT_RUN"
+      ],
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-f7f04edda7082ffb",
+      "member_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "original_keys": {
+        "G1-ELE-104": "A",
+        "G2-ELEC-247": "A"
+      },
+      "question": "În echipamentul electric, uleiul electroizolant, din punct de vedere electric:",
+      "A": "asigură doar izolarea părților sub tensiune între ele si fatã de masã",
+      "B": "stinge arcul electric care apare in întrerupătoare",
+      "C": "asigura ungerea mecanismelor de acţionare",
+      "source_object": "mineral_electrical_insulating_oil_as_insulation_and_arc_quenching_medium_in_oil_circuit_breakers",
+      "rule": "multiple_electrical_functions_of_insulating_oil_and_absolutizing_only",
+      "proposed_key_NOT_APPLIED": "B_CANDIDATE_ONLY_IF_BREAKER_USES_OIL_ARC_QUENCHING",
+      "status": "RESEARCH_CANDIDATE_B_HAS_2_MANUFACTURER_SOURCES_ORIGINAL_A_ONLY_FALSE_BUT_EXAM_SCOPE_UNVERIFIED",
+      "source": {
+        "title": "Gulf TransCrest I: electrical insulating oil for transformers, switchgear and circuit breakers",
+        "institution": "Gulf Oil International manufacturer",
+        "edition_year": "PRODUCT_PAGE_CURRENT_2026_NOT_ANRE_REFERENCE_EDITION",
+        "url": "https://me.gulfoilltd.com/en/products/gulf-transcrest-i",
+        "locator": "Application and Key Benefits, lines 164–173 and 180–190",
+        "access": "ORIGINAL_MANUFACTURER_HTML_DIRECTLY_OPENED_AND_READ",
+        "source_edition_verified": "PUBLIC_MANUFACTURER_CURRENT_NOT_EXAM_EDITION",
+        "exam_bibliography_match": "NO",
+        "source_scope": "ACTUAL_OIL_INSULATED_SWITCHGEAR_EXACT_FUNCTION, NOT_ALL_CIRCUIT_BREAKERS",
+        "offline_rights": "LONG_AUTHOR_PARAPHRASE; LIMITED_VERBATIM_QUOTE_ONLY"
+      },
+      "short_exact_quote": {
+        "text": "High dielectric strength ensures excellent insulation and quenching of electric arc",
+        "status": "SHORT_VERBATIM_QUOTE_UNDER_25_WORDS",
+        "attribution": "Gulf Oil product page, Key Benefits"
+      },
+      "corroboration": [
+        {
+          "title": "Bharat Petroleum MAK Hivoltol industrial insulating oil",
+          "url": "https://www.bharatpetroleum.in/our-businesses/mak-lubricants/industrial-lubricants/mak-hivoltol",
+          "locator": "Applications, line 344–346, page last updated March 26 2026",
+          "access": "SECOND_SEPARATE_MANUFACTURER_HTML_DIRECTLY_OPENED",
+          "scope": "Oil as arc-quenching medium for switchgear and circuit breakers; does not confirm ANRE source edition"
+        }
+      ],
+      "contextual_paraphrase_md": "În echipamentele electrice cu izolație în ulei, lichidul are **rigiditate dielectrică** și contribuie la **izolarea părților aflate sub tensiune** de celelalte părți și de masă. În anumite tipuri de **întreruptoare cu ulei**, același mediu participă și la **stingerea arcului electric** format la separarea contactelor, deoarece izolația se reface după întrerupere. Prin urmare, formularea **„asigură doar izolarea”** este prea restrictivă atunci când întrebarea include întreruptoarele cu ulei. Totuși, nu toate întreruptoarele folosesc ulei: cele cu **vid sau SF₆** au alte medii de stingere, deci varianta despre arc necesită această limitare. **Ungerea mecanismelor de acționare** este o funcție mecanică separată și nu reprezintă proprietatea electrică solicitată.",
+      "context_type": "ORIGINAL_AUTHOR_PARAPHRASE_NOT_VERBATIM",
+      "highlight_terms": [
+        "rigiditate dielectrică",
+        "izolarea părților aflate sub tensiune",
+        "întreruptoare cu ulei",
+        "stingerea arcului electric",
+        "asigură doar izolarea",
+        "vid sau SF₆"
+      ],
+      "abc_reasoning": {
+        "A": "Adevărată ca funcție de izolare, dar «doar» este infirmat de stingerea arcului în întreruptoare cu ulei, confirmată de doi producători. Prin urmare A nu poate fi adoptată universal fără restrângerea tipului de echipament.",
+        "B": "Stingerea arcului prin ulei este susținută în întreruptoare/switchgear proiectate pentru ulei ca mediu de stingere, deci B este un candidat tehnic mai solid pentru acel obiect exact, nu o afirmație despre întreruptoare în vid/SF₆.",
+        "C": "Ungerea mecanismelor nu este proprietatea electrică a uleiului electroizolant care definește funcția sa în transformatoare și întreruptoare."
+      },
+      "issues": [
+        "ORIGINAL_A_CONTAINS_FALSE_UNIVERSAL_ONLY",
+        "B_IS_TRUE_ONLY_FOR_OIL_ARC_QUENCHING_BREAKERS_NOT_ANY_BREAKER",
+        "TWO_MANUFACTURER_WEB_PAGES_CORROBORATE_BUT_NO_EXAM_2026_SOURCE_EDITION",
+        "INDEPENDENT_SOURCE_TECHNICAL_LINGUISTIC_QA_NOT_RUN"
+      ],
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}

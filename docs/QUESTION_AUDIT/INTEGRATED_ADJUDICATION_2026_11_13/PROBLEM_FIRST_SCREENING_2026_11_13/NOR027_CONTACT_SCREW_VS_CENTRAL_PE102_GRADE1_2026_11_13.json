@@ -1,0 +1,84 @@
+{
+  "schema": "ANRE_ONE_PASS_PROBLEM_FIRST_V1",
+  "date": "2026-11-13",
+  "research_outcome": "HISTORICAL_PE102_TEXT_MATCH_A;I7_GRADE1_CENTRAL_CONTACT_MATCH_BUT_SCREW_TERM_EQUIVALENCE_NOT_ESTABLISHED",
+  "object": "Siguranta fuzibila cu capac filetat, conductor alimentare versus plecare, soclu si contact; distinctii intre surub terminal/contact central/dulie filetata",
+  "sources": [
+    {
+      "source": "I7/2011 §5.3.4.3.1.2",
+      "kind": "official normative search-index snippet, direct open 502",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+      "scope": "sigurante cu filet, alimentarea conductorului de faza la contactul central",
+      "exact_terms": "conductor de faza;contact central; nu identifica literalmente «suruburile de contact»",
+      "edition_note": "2023 amendments reflected in online index; complete 2026 consolidated direct source NOT verified"
+    },
+    {
+      "source": "PE102/1986 §4.6.3",
+      "kind": "normative PDF transcription mirrored and opened; visual screenshot cache miss",
+      "url": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+      "scope": "sigurante cu capac filetat, alimentare la suruburile de contact, plecare la dulii filetate",
+      "edition_note": "PDF edition1993 republication not verified; official ANRE 05.2023 bibliography explicitly Grade I NU, II DA"
+    },
+    {
+      "source": "ANRE official bibliography 05.2023 PDF page2 (zero-indexed)",
+      "kind": "official ANRE PDF text AND page screenshot inspected",
+      "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+      "scope": "Grade I I7/2011 DA; PE102/1986 NU",
+      "edition_note": "applicability of this particular bibliography to autumn2026 NOT fully certified"
+    },
+    {
+      "source": "Siemens SENTRON DIAZED product overview",
+      "kind": "manufacturer HTML directly indexed; contextual construction corroboration only",
+      "url": "https://sieportal.siemens.com/ru-uz/products-services/10006950",
+      "scope": "DIAZED bases feed from below to insulate threaded ring; manufacturer orientation not literal equivalence to historic PE102 screw wording",
+      "edition_note": "modern product, cannot settle historic terminology"
+    }
+  ],
+  "ABC_research": {
+    "A": "Formula coincide textual cu PE102/1986 §4.6.3, dar PE102 nu apare pentru Grad I in bibliografia ANRE05.2023. I7 leaga faza la contactul central; echivalenta contactului central cu «suruburile de contact» din varianta A nu e demonstrata fara desen/identificare fizica a terminalelor.",
+    "B": "Baremul vechi B atribuie suruburilor de contact conductorul de plecare. Acest lucru contrasteaza cu descrierea explicita PE102; nici prevederea I7 privind alimentarea contactului central nu confirma B.",
+    "C": "Alimentarea la dulia filetata contravine indicatiei istorice PE102; Siemens explica scopul izolarii inelului filetat la scoaterea patronului; C nu este sustinuta."
+  },
+  "context_md": "La **siguranțele cu capac filetat**, poziția **contactului central** și a **duliei filetate** este importantă pentru protecția împotriva atingerilor accidentale. În **I7 §5.3.4.3.1.2**, conductorul de **fază** trebuie conectat la **contactul central al soclului**, dar formularea nu identifică explicit denumirea **șuruburilor de contact** din variantele examenului. Textul istoric **PE102 §4.6.3** indică **alimentarea la șuruburile de contact**, corespunzătoare variantei **A**, însă bibliografia **ANRE 05.2023** exclude PE102 de la **gradul I**. Informațiile de la producător pentru siguranțele DIAZED confirmă orientarea alimentării spre baza soclului, dar nu dovedesc identitatea terminologică a componentelor unui model istoric. De aceea, varianta **A este un candidat puternic, nu un barem validat**, până la o **schemă de soclu autentică**, confruntarea ediției I7 aplicabile și **QA independent**.",
+  "context_type": "ROMANIAN_ORIGINAL_5_SENTENCE_PARAPHRASE_WITH_BOLD",
+  "highlights": [
+    "siguranțele cu capac filetat",
+    "contactului central",
+    "duliei filetate",
+    "I7 §5.3.4.3.1.2",
+    "fază",
+    "contactul central al soclului",
+    "șuruburilor de contact",
+    "PE102 §4.6.3",
+    "alimentarea la șuruburile de contact",
+    "A",
+    "ANRE 05.2023",
+    "gradul I",
+    "schemă de soclu autentică",
+    "QA independent"
+  ],
+  "transfer_rule": "GRADE_BIBLIOGRAPHY_GATE_BEFORE_EXACT_OLDER_TEXT;DO_NOT_EQUATE_TERMINAL_NAME_TO_CENTRAL_CONTACT_WITHOUT_DRAWING",
+  "blockers": [
+    "2026 grade-specific bibliographic edition",
+    "authenticated threaded fuse base schematic mapping center contact vs terminal screws",
+    "independent source+technical+linguistic review",
+    "PE102 mirror edition and screenshot"
+  ],
+  "unit_id": "AU-24115e9d1eb4a28b",
+  "representative_id": "G1-NOR-027",
+  "member_ids": "G1-NOR-027",
+  "qabc_sha256_UNCHANGED": "24115e9d1eb4a28bacf1ce8cdf4358782defb71d1af4295a62c396589e435d8a",
+  "original_key_UNCHANGED": "B",
+  "original_QABC": {
+    "question": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+    "A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+    "B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+    "C": "conductoarele de alimentare să fie legate la duliile filetate"
+  },
+  "candidate_NOT_APPLIED": "A_CONDITIONAL",
+  "independent_source_QA": "NOT_RUN",
+  "independent_technical_QA": "NOT_RUN",
+  "independent_linguistic_QA": "NOT_RUN",
+  "exam_bibliography_edition_verified": "NO",
+  "approved_for_learning": "NO"
+}

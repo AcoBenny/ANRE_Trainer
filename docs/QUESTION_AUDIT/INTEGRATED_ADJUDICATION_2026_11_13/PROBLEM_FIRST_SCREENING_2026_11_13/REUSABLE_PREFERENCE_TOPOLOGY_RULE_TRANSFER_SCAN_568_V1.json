@@ -1,0 +1,81 @@
+{
+  "schema": "TRANSFERABLE_LOGIC_RULE_SCAN_V1",
+  "date": "2026-11-13",
+  "method": "Deterministic exact vocabulary scan of all 568 canonical question stems. Not a semantic exhaustive audit.",
+  "total_unique_units_scanned": 568,
+  "hits_count": 6,
+  "reusable_rules": [
+    {
+      "id": "PREFERENCE_REQUIRES_OBJECTIVE",
+      "statement": "To judge 'de preferat' or 'avantajos', require explicit engineering objective, breaker/coupler positions, actions and operating regimes. Cannot infer merely from a topology label.",
+      "warning": "Generic rule is a question-design and scope gate, never itself proof of which option is correct."
+    },
+    {
+      "id": "BUSBAR_PREFERENCE_OBJECTIVE_AND_PROTECTION_SCOPE_V1",
+      "statement": "Double busbar with one breaker/circuit: separate bar-fault, revision and breaker bypass cases; selective protection and circuit allocation affect outage impact."
+    },
+    {
+      "id": "H_PREFERENCE_BY_SWITCHING_TARGET_NOT_DOUBLE_BUSBAR_V1",
+      "statement": "H inferior vs superior: assess which switching target has a dedicated breaker and compare line vs transformer maneuvers; do not substitute double-busbar source."
+    }
+  ],
+  "hits": [
+    {
+      "unit_id": "AU-9e72d87e6cd28f4d",
+      "representative_id": "G1-ELE-102",
+      "members": "G1-ELE-102;G2-ELEC-245",
+      "scope": "DOUBLE_BUSBAR_ONE_BREAKER",
+      "source_context_present": true,
+      "status": "SOURCE_CONTEXT_MAPPED_BUSBAR_CLUSTER",
+      "reuse_rule": "BUSBAR_PREFERENCE_OBJECTIVE_AND_PROTECTION_SCOPE_V1"
+    },
+    {
+      "unit_id": "AU-810f43a6cc6e125b",
+      "representative_id": "G1-ELE-028",
+      "members": "G1-ELE-028;G2-ELEC-177",
+      "scope": "OTHER_OR_DIAGRAM_ABSENT",
+      "source_context_present": false,
+      "status": "REVIEW_FIRST_NOT_MAPPED",
+      "reuse_rule": "PREFERENCE_REQUIRES_EXPLICIT_OBJECTIVE_AND_EXACT_DIAGRAM_NOT_CROSS_TOPOLOGY"
+    },
+    {
+      "unit_id": "AU-a75e421a4064ac4c",
+      "representative_id": "G1-ELE-100",
+      "members": "G1-ELE-100;G2-ELEC-243",
+      "scope": "DOUBLE_BUSBAR_ONE_BREAKER",
+      "source_context_present": true,
+      "status": "SOURCE_CONTEXT_MAPPED_BUSBAR_CLUSTER",
+      "reuse_rule": "BUSBAR_PREFERENCE_OBJECTIVE_AND_PROTECTION_SCOPE_V1"
+    },
+    {
+      "unit_id": "AU-93e94ea7347046f2",
+      "representative_id": "G1-ELE-101",
+      "members": "G1-ELE-101;G2-ELEC-244",
+      "scope": "DOUBLE_BUSBAR_ONE_BREAKER",
+      "source_context_present": true,
+      "status": "SOURCE_CONTEXT_MAPPED_BUSBAR_CLUSTER",
+      "reuse_rule": "BUSBAR_PREFERENCE_OBJECTIVE_AND_PROTECTION_SCOPE_V1"
+    },
+    {
+      "unit_id": "AU-b157329216a487e9",
+      "representative_id": "G1-ELE-167",
+      "members": "G1-ELE-167;G2-ELEC-305",
+      "scope": "LINE_TRANSFORMER_H_BRIDGE",
+      "source_context_present": true,
+      "status": "SOURCE_CONTEXT_MAPPED_H_BRIDGE",
+      "reuse_rule": "H_PREFERENCE_BY_SWITCHING_TARGET_NOT_DOUBLE_BUSBAR_V1"
+    },
+    {
+      "unit_id": "AU-914d53da0bed681e",
+      "representative_id": "G1-ELE-168",
+      "members": "G1-ELE-168;G2-ELEC-306",
+      "scope": "LINE_TRANSFORMER_H_BRIDGE",
+      "source_context_present": true,
+      "status": "SOURCE_CONTEXT_MAPPED_H_BRIDGE",
+      "reuse_rule": "H_PREFERENCE_BY_SWITCHING_TARGET_NOT_DOUBLE_BUSBAR_V1"
+    }
+  ],
+  "other_risk": "This scan flags only six explicit preference-word questions; it may miss implicit preference or other linguistic traps in remaining 562 units.",
+  "independent_source_QA": "NOT_RUN",
+  "learning_approval": "NO"
+}
