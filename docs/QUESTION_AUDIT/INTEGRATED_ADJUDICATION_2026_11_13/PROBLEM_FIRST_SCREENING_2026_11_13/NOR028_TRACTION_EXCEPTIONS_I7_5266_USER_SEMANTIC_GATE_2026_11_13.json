@@ -1,0 +1,82 @@
+{
+  "schema": "ANRE_PROBLEM_FIRST_ONE_PASS_RESEARCH_V1",
+  "date": "2026-11-13",
+  "unit_id": "AU-be981412cea00b34",
+  "representative_id": "G1-NOR-028",
+  "member_ids": "G1-NOR-028",
+  "grade": "I",
+  "batch_id": "DEEP-NOR-02",
+  "qabc_sha256_UNCHANGED": "be981412cea00b341db0ca9ead49cb68e49f2c0b289e3694ea38bb47dc6a892b",
+  "original_key_UNCHANGED": "C",
+  "original_QABC": {
+    "question": "Supunerea legăturilor electrice la eforturi de tracţiune:",
+    "A": "este permisă întotdeauna",
+    "B": "este permisă în cazul conductoarelor de cupru",
+    "C": "este interzisă"
+  },
+  "source_legacy_reused_not_double_counted": "V90 primary source recheck corrected following separate V97 review; existing NOR02 preliminary CSV; not new independent source review",
+  "sources": [
+    {
+      "document": "I7/2011, original Monitorul Oficial 802bis/2011",
+      "clause": "§5.2.6.6",
+      "url": "https://automatizariaz.ro/wp-content/uploads/2023/07/Normativ-instalatii-electrice.pdf",
+      "access": "OFFICIAL_GAZETTE_BRANDED_REPRODUCTION_PDF_TEXT_READ; PDF_SCREENSHOT_CACHE_MISS",
+      "claim": "General ban on tensile loads on electrical connections, with two express exceptions: contact-line links powering mobile receivers; free-installed cable/conductor connections on appropriately designed/dimensioned supports",
+      "edition": "2011 original text; full 2026 consolidated regulation not verified"
+    },
+    {
+      "document": "I7/2011 consolidated working copy derived from Portal Legislativ, generated 2026-05-11",
+      "clause": "§5.2.6.6",
+      "url": "https://www.arya.ro/legislatie/pdf.php?download=1&slug=normativ-i7-2011",
+      "access": "TEXTUAL_PDF_READ_PAGES_OTHER_THAN_EXACT_CLAUSE_VISUALLY_INSPECTED; EXACT_CLAUSE_SCREENSHOT_NOT_VERIFIED",
+      "claim": "Same restriction and exceptions; 2026 May working copy provenance to government source, not direct official 2026 legal validation",
+      "edition": "Ordin959/2023 amendments reflected in 2026 generated copy; direct Portal Legislativ full open HTTP502"
+    },
+    {
+      "document": "ANRE 2023 exam bibliography",
+      "clause": "Grad I table: I7 included",
+      "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+      "access": "PREVIOUSLY_CHECKED_OFFICIAL_ANRE_PDF_AND_VISUAL_BIBLIOGRAPHY",
+      "claim": "I7 applies Grade I in ANRE May2023 bibliography; whether latest for 2026 exam must be confirmed",
+      "edition": "2023"
+    }
+  ],
+  "ABC_conditional_research": {
+    "A": "«este permisă întotdeauna» fals: I7 interzice în principiu efortul de tracțiune, deci permisiunea universală contrazice norma.",
+    "B": "«este permisă în cazul conductoarelor de cupru» insuficient: materialul Cu nu e enumerat ca excepție și nu transformă orice conexiune într-o situație permisă.",
+    "C": "«este interzisă» reflectă interdicția generală I7 §5.2.6.6, DAR fără menționarea excepțiilor este falsă ca propoziție universală în orice situație. C este răspunsul de examen probabil/intended, strict condițional pe «ca regulă generală»; unicitatea logică nu este certificată."
+  },
+  "contextual_paragraph_5_sentences_md": "În **I7 §5.2.6.6**, regula de bază este că **legăturile electrice nu trebuie supuse eforturilor de tracțiune**, fiindcă solicitarea mecanică poate compromite contactul. Același articol introduce însă **două excepții explicite**: conexiunile **liniilor de contact pentru receptoare mobile** și conexiunile **conductoarelor montate liber pe suporturi adecvate**. Varianta **A («întotdeauna permisă»)** este incompatibilă cu interdicția generală, iar **B (material Cu)** nu justifică singură o derogare. Varianta **C («este interzisă»)** descrie **regula implicită**, dar devine prea absolută dacă enunțul este interpretat ca o afirmație despre **toate configurațiile**, inclusiv cele exceptate. De aceea **baremul original C rămâne neschimbat**, iar o decizie sigură cere confirmarea **domeniului întrebării**, a **ediției aplicabile** și **QA lingvistic independent**.",
+  "highlight_terms": [
+    "I7 §5.2.6.6",
+    "legăturile electrice nu trebuie supuse eforturilor de tracțiune",
+    "două excepții explicite",
+    "liniilor de contact pentru receptoare mobile",
+    "conductoarelor montate liber pe suporturi adecvate",
+    "A («întotdeauna permisă»)",
+    "B (material Cu)",
+    "C («este interzisă»)",
+    "regula implicită",
+    "toate configurațiile",
+    "baremul original C rămâne neschimbat",
+    "domeniului întrebării",
+    "ediției aplicabile",
+    "QA lingvistic independent"
+  ],
+  "candidate_NOT_APPLIED": "C_GENERAL_RULE_ONLY_WITH_EXCEPTIONS_NOT_APPROVED",
+  "transfer_rule": "IMPERATIVE_DEFAULT_PLUS_ENUMERATED_EXCEPTIONS_DONT_TREAT_CATEGORICAL_AS_UNIVERSAL;CHECK_FOR_EXCEPTIONS_IMMEDIATELY_AFTER_RULE",
+  "ambiguity_to_ask_user": "Enunțul «Supunerea legăturilor electrice la eforturi de tracţiune:» A întotdeauna permisă; B permisă pentru cupru; C interzisă. I7 interzice ca regulă, dar permite două excepții. Tu ai considera C răspunsul corect ca regulă implicită sau întrebare incompletă deoarece nu precizează «în general»?",
+  "user_interpretation_status": "PENDING_NOT_ASSUMED_NOT_EXPERT_SIGNOFF",
+  "blockers": [
+    "Question omits whether it asks GENERAL RULE or ALL_CASES; C only intended under first interpretation; ask user to distinguish without changing stem",
+    "official consolidated current edition/2026 exam grade bibliography confirmation",
+    "Independent source, technical, linguistic review NOT_RUN for this one-pass mapping; previous independent partial source reviews retained",
+    "Any diagram or original-source rights not verified"
+  ],
+  "independent_source_QA": "NOT_RUN_CURRENT_ONEPASS",
+  "independent_technical_QA": "NOT_RUN_CURRENT_ONEPASS",
+  "independent_linguistic_QA": "NOT_RUN_CURRENT_ONEPASS",
+  "exam_2026_edition_verified": "NO",
+  "approved_for_learning": "NO",
+  "canonical_modification_authorized": "NO"
+}
