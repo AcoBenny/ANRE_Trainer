@@ -1,0 +1,137 @@
+{
+  "schema_version": "INTEGRATED_ONE_PASS_V1",
+  "date": "2026-11-13",
+  "status": "RESEARCH_ONLY_ZERO_LEARNER_APPROVAL",
+  "cases": [
+    {
+      "unit_id": "AU-74e7f2339e0faf2e",
+      "member_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "original_keys": {
+        "G1-ELE-029": "C",
+        "G2-ELEC-178": "C"
+      },
+      "question": "Curentul electric alternativ poate fi produs numai prin fenomene:",
+      "A": "termice",
+      "B": "chimice",
+      "C": "de inducţie electromagnetică",
+      "source_object": "possible_physical_generation_methods_for_AC_output",
+      "rule": "exclusive_causation_only_induction",
+      "proposed_key_NOT_APPLIED": "",
+      "status": "BLOCKED_UNIVERSAL_ONLY_FALSE_DUE_TO_ELECTRONIC_INVERTER_COUNTEREXAMPLE",
+      "source": {
+        "title": "Solar Integration: Inverters and Grid Services Basics",
+        "institution": "US Department of Energy, official technical educational guide",
+        "edition_year": "WEB_EDITED_YEAR_NOT_RELIABLY_VERIFIED",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics",
+        "locator": "What are Inverters?, paragraphs 1–4, especially DC-to-AC switching explanation",
+        "access": "OFFICIAL_ENERGY_GOV_HTML_OPENED_AND_READ",
+        "source_edition_verified": "PUBLIC_WEB_SOURCE_NO_ANRE_MATCH",
+        "exam_bibliography_match": "NO",
+        "source_scope": "EXACT_COUNTEREXAMPLE_TO_ONLY_MAGNETIC_INDUCTION_FOR_AC_OUTPUT",
+        "offline_rights": "ORIGINAL_CONTEXT_PARAPHRASE;DIRECT_QUOTE_SHORT_ONLY"
+      },
+      "short_exact_quote": {
+        "text": "an inverter accomplishes the DC-to-AC conversion by switching the direction of a DC input",
+        "status": "SHORT_QUOTE_UNDER_COPYRIGHT_LIMIT",
+        "attribution": "US DOE official page, 'What are Inverters?'"
+      },
+      "contextual_paraphrase_md": "Un **generator electromecanic** produce în mod obișnuit tensiune alternativă prin **inducție electromagnetică**, atunci când există variația fluxului magnetic prin înfășurări. Totuși, noțiunea mai largă de **producere a unei ieșiri de curent alternativ** include și conversia electronică. Un **invertor** primește tensiune continuă și comută controlat dispozitive semiconductoare astfel încât la ieșire apare o tensiune variabilă, inclusiv de formă sinusoidală după filtrare. Prin urmare, cuvântul **„numai”** din întrebare nu este justificat pentru orice mod de obținere a curentului alternativ. Dacă autorul a intenționat strict «generator electric rotativ», această limitare trebuie menționată în enunț și verificată în sursa de examen.",
+      "context_type": "ORIGINAL_AUTHOR_PARAPHRASE_NOT_DIRECT_QUOTE",
+      "highlight_terms": [
+        "generator electromecanic",
+        "inducție electromagnetică",
+        "producere a unei ieșiri de curent alternativ",
+        "invertor",
+        "numai"
+      ],
+      "abc_reasoning": {
+        "A": "Un simplu proces termic, fără conversie electrică, nu descrie mecanismul obișnuit de generare de curent alternativ. Există efecte termoelectrice și conversii de energie care pot alimenta sisteme electronice, deci nu declarații exclusive.",
+        "B": "Sursele electrochimice pot furniza curent continuu unui invertor care produce ieșire alternativă; «chimice» singure nu precizează mecanismul de alternare.",
+        "C": "Inducția electromagnetică produce curent alternativ în alternatoare, dar «numai» este fals în sens general: invertoarele semiconductor pot produce ieșire AC din DC prin comutație electronică."
+      },
+      "issues": [
+        "UNIVERSAL_QUANTIFIER_ONLY_HAS_DIRECT_COUNTEREXAMPLE",
+        "NONE_OF_OPTIONS_IS_STRICTLY_UNIQUE_FOR_UNQUALIFIED_STEM",
+        "CHECK_ORIGINAL_ANRE_EXAM_SCOPE_MAY_MEAN_ALTERNATOR_NOT_ALL_AC",
+        "INDEPENDENT_LINGUISTIC_AND_TECHNICAL_QA_NOT_RUN"
+      ],
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-314bf304167de5c0",
+      "member_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "original_keys": {
+        "G1-ELE-073": "B",
+        "G2-ELEC-218": "B"
+      },
+      "question": "Fluxul electric total, produs de o sarcină electrică de valoare q printr-o suprafaţă închisă care o înconjoară, este egal cu:",
+      "A": "valoarea numerică 2q",
+      "B": "valoarea numerică q",
+      "C": "valoarea numerică q/2",
+      "source_object": "electric_flux_through_closed_surface_due_to_enclosed_charge",
+      "rule": "Gauss_law_which_flux_vector_D_vs_E",
+      "proposed_key_NOT_APPLIED": "B_WITH_D_FLUX_DEFINITION",
+      "status": "RESEARCH_SUPPORTS_B_FOR_D_FLUX_DEFINITION_BUT_LINGUISTIC_VECTOR_AMBIGUITY_OPEN",
+      "source": {
+        "title": "Bazele Electrotehnicii 1, Curs 2",
+        "institution": "Universitatea Politehnica București, Conf. Lucian Petrescu",
+        "edition_year": "PDF_YEAR_NOT_ESTABLISHED",
+        "url": "https://www.elth.pub.ro/~petrescu/1.Energetica%20-%20IIB/Curs2.pdf",
+        "locator": "pp. 7–8 (printed), §1.3 Legea fluxului electric, general integral form; definition of Ψ=∫D·dA",
+        "access": "ORIGINAL_UNIVERSITY_PDF_TEXT_READ_SCREENSHOT_NOT_ENABLED_BY_WEB",
+        "source_edition_verified": "NO",
+        "exam_bibliography_match": "NO",
+        "source_scope": "EXACT_SAME_GAUSS_ELECTRIC_DISPLACEMENT_FLUX_IN_ROMANIAN_TERMINOLOGY",
+        "offline_rights": "SOURCED_SHORT_QUOTE_ONLY;PARAPHRASE_CONTEXT"
+      },
+      "short_exact_quote": {
+        "text": "Fluxul electric prin orice suprafaţă închisă (Σ) este egal cu sarcina electrică totală",
+        "status": "SHORT_QUOTE_UNDER_COPYRIGHT_LIMIT",
+        "attribution": "Politehnica București, Curs 2, §1.3"
+      },
+      "contextual_paraphrase_md": "Electrostatica folosește două mărimi distincte: **intensitatea câmpului electric E** și **inducția electrică D**, legate în vid prin D = ε₀E. Pentru o suprafață închisă, **fluxul inducției electrice** se definește prin integrarea lui D pe suprafață, iar legea fluxului electric oferă **∮D·dS = q** pentru sarcina electrică totală inclusă. Dacă în schimb calculăm **fluxul câmpului E**, într-un mediu omogen precum vidul obținem **∮E·dS = q/ε₀**, o mărime diferită. În terminologia de electrotehnică folosită de cursul universitar românesc, expresia «flux electric» desemnează prima mărime, pentru care răspunsul **q** este susținut. Cardul trebuie să păstreze explicit această distincție, fiindcă enunțul singur nu precizează vectorul integrat.",
+      "context_type": "ORIGINAL_AUTHOR_PARAPHRASE_WITH_TWO_SEPARATE_PHYSICAL_DEFINITIONS",
+      "highlight_terms": [
+        "intensitatea câmpului electric E",
+        "inducția electrică D",
+        "fluxul inducției electrice",
+        "∮D·dS = q",
+        "fluxul câmpului E",
+        "∮E·dS = q/ε₀",
+        "q"
+      ],
+      "abc_reasoning": {
+        "A": "2q nu rezultă nici din Gauss pentru fluxul lui D, nici din legea uzuală a fluxului lui E; lipsește justificarea factorului 2.",
+        "B": "Da, dacă «flux electric» înseamnă Ψ=∮D·dS, așa cum este definit în cursul universitar românesc: Ψ=q. Este o interpretare condițională ce necesită uniformizarea terminologiei.",
+        "C": "q/2 nu apare pentru fluxul închis al lui D; nici definiția fluxului lui E nu duce la q/2, ci q/ε₀ în vid."
+      },
+      "corroboration": [
+        {
+          "title": "OpenStax University Physics Volume 2 §6.2",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law",
+          "access": "HTML_OPENED",
+          "purpose": "Contrasting electric E-field flux q/epsilon0, not replacing Romanian D-flux definition"
+        }
+      ],
+      "issues": [
+        "AMBIGUOUS_TERM_ELECTRIC_FLUX_WITHOUT_SPECIFYING_D_OR_E",
+        "QUESTION_INTENDED_D_FLUX_SUPPORTED_BY_ROMANIAN_UNIVERSITY_TECHNICAL_LECTURE",
+        "EXAM_BIBLIOGRAPHY_EDITIONS_NOT_VERIFIED",
+        "INDEPENDENT_REVIEW_NOT_RUN"
+      ],
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}
