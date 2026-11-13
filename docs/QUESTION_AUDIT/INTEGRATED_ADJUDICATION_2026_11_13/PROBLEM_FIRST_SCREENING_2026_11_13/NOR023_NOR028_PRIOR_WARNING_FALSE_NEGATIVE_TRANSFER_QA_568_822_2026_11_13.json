@@ -1,0 +1,59 @@
+{
+  "title": "CKPT-042 | NOR023 NOR028 research and previous triage false-negative recovery",
+  "date": "2026-11-13",
+  "schema": "ANRE_QA_READBACK_TRANSFER_GATE_V1",
+  "actual_executed_mechanical_readback": {
+    "unit_count": 568,
+    "grade_id_count": 822,
+    "unique_grade_id_count": 822,
+    "classification_units": 568,
+    "route_rows": 822,
+    "canonical_key_hash_member_and_route_errors": 0,
+    "context_units": 15,
+    "context_grade_ids": 25,
+    "approved_for_learning": 0
+  },
+  "review_first": {
+    "before": 293,
+    "after": 297,
+    "grade_ids_before": 344,
+    "grade_ids_after": 352,
+    "still_deferred_units": 271,
+    "still_deferred_grade_ids": 470
+  },
+  "promoted_prior_existing_risk": [
+    {
+      "id_pair": [
+        "G1-ELE-156",
+        "G2-ELEC-294"
+      ],
+      "issue": "B/C placement both feasible; «se preferă» needs scheme, exact protection-zone scope; Siemens source partial; no final source QA"
+    },
+    {
+      "id_pair": [
+        "G1-ELE-219",
+        "G2-ELEC-355"
+      ],
+      "issue": "triple arc impedance may have been transferred incorrectly from one-phase earth fault to three-phase arc fault; no exact equation source"
+    },
+    {
+      "id_pair": [
+        "G1-ELE-221",
+        "G2-ELEC-357"
+      ],
+      "issue": "dielectric air clearance versus personnel safety working distance; original A potentially wrong object"
+    },
+    {
+      "id_pair": [
+        "G1-ELE-226",
+        "G2-ELEC-362"
+      ],
+      "issue": "Budeanu distortion power D scalar nonnegative; question asks direction without theory/convention"
+    }
+  ],
+  "regression_rule": "For each P2 item, if prior triage WARNING contains HIGH_PRIORITY, SOURCE_SCOPE_MISMATCH or AMBIGUOUS, an unflagged route is a screening false negative. Promote to *review-first only*, retaining original grade/key/risk and zero approval. Review false positives manually; keyword match alone never resolves answers.",
+  "actual_scan_remaining_unflagged_with_explicit_prior_warning": 0,
+  "non_promoted_lexical_leads": "Generic absolute-word filters catch many words in incorrect distractors; do NOT automatically flag all such cases without object-specific evidence. Regexp lexical scan had 43/275 previous deferred with absolute adverbs; these do not imply confirmed errors.",
+  "source_and_independence_limits": "Current investigations on NOR023/NOR028 are same-assistant source research; earlier V97/V98 separately executed narrow QA exists but does not grant complete independent QA or 2026 edition. PDF screenshots of exact clauses failed or were not inspected; no human signoff or learner release.",
+  "no_changes": "No QABC, original key, master hash, HTML, APK, main, merge or release modified; classification/routing changes and contextual evidence documentation only."
+}
