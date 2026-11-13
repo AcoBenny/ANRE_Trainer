@@ -1,0 +1,139 @@
+{
+  "schema_version": "INTEGRATED_ONE_PASS_V1",
+  "date": "2026-11-13",
+  "status": "RESEARCH_ONLY_NOT_FINAL_LEARNER_APPROVAL",
+  "policy": "one full paragraph contextual paraphrase 4-6 sentences with bold highlights; exact short quote optional; source rights and original page required for publish",
+  "cases": [
+    {
+      "unit_id": "AU-765361a56cb06047",
+      "member_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "original_keys": {
+        "G1-ELE-018": "A",
+        "G2-ELEC-170": "C"
+      },
+      "question": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+      "A": "Cs=3 C",
+      "B": "Cs=C/3",
+      "C": "Cs=C",
+      "source_object": "symmetric_three_phase_overhead_line_partial_phase_to_phase_capacitances_without_earth",
+      "rule": "positive_sequence_phase_service_capacitance_equivalent",
+      "proposed_key_NOT_APPLIED": "A",
+      "status": "RESEARCH_CANDIDATE_A_MATHEMATICAL_DERIVATION_KEY_CONFLICT_OPEN",
+      "source": {
+        "title": "Mihai Puiu–Berizințu, Bazele electrotehnicii. Seminar și lucrări practice",
+        "institution": "Universitatea Vasile Alecsandri din Bacău, Editura Alma Mater",
+        "edition_year": "2013",
+        "url": "https://cadredidactice.ub.ro/mihaipuiuberzuntiu/files/2012/05/BethSLP.pdf",
+        "locator": "§1.3.3 'Capacități în serviciu', relation (1.45), and ensuing symmetric-line examples",
+        "access": "ORIGINAL_PUBLISHER_HOSTED_PDF_TEXT_READ_WEB_PDF_SCREENSHOT_CACHE_MISS",
+        "source_edition_verified": "TITLEPAGE_2013_VISIBLE_AS_EXTRACT_NOT_VISUALLY_CHECKED",
+        "exam_bibliography_match": "NO",
+        "source_scope": "EDUCATIONAL_MATCH_SIMILAR_LINE_AND_SERVICE_CAPACITANCE",
+        "offline_rights": "NOT_CHECKED_DO_NOT_COPY_SOURCE_PAGE_OR_FULL_PARAGRAPH"
+      },
+      "short_exact_quote": {
+        "text": "Capacitatea în serviciu este o mărime utilă în studiul regimurilor de funcţionare",
+        "status": "SHORT_QUOTE_UNDER_COPYRIGHT_LIMIT",
+        "attribution": "§1.3.3, educational publisher PDF"
+      },
+      "contextual_paraphrase_md": "O linie electrică trifazată are **capacități parțiale între conductoarele fazelor**, care influențează curenții capacitivi chiar și atunci când influența pământului este neglijată. În calculul pe fază, aceste capacități pot fi reprezentate printr-o **capacitate de serviciu echivalentă**, dar numai după ce se ține seama de raporturile dintre tensiunile fazelor. Pentru trei faze în regim simetric, **u₁ + u₂ + u₃ = 0**, iar sarcina asociată fazei 1 este **q₁ = C(u₁−u₂) + C(u₁−u₃) = 3C·u₁**. Prin urmare, în această ipoteză, **Cₛ = q₁/u₁ = 3C**; formula nu este simpla numărare a două ramuri, ci rezultă din relațiile fazoriale ale sistemului trifazat.",
+      "context_type": "ORIGINAL_AUTHOR_PARAPHRASE_AND_MATHEMATICAL_DERIVATION_NOT_SOURCE_VERBATIM",
+      "highlight_terms": [
+        "capacități parțiale între conductoarele fazelor",
+        "capacitate de serviciu echivalentă",
+        "u₁ + u₂ + u₃ = 0",
+        "q₁ = C(u₁−u₂) + C(u₁−u₃) = 3C·u₁",
+        "Cₛ = q₁/u₁ = 3C"
+      ],
+      "abc_reasoning": {
+        "A": "Pe un sistem simetric, q₁=C(u₁−u₂)+C(u₁−u₃); deoarece u₂+u₃=−u₁, rezultă q₁=3C·u₁ și Cs=3C. Ipoteza este obligatorie.",
+        "B": "C/3 este inversarea greșită a echivalării triunghi–stea de capacități din această configurație; nu reproduce q₁/u₁.",
+        "C": "C este capacitatea unei singure perechi de faze, nu capacitatea echivalentă pe fază în regim simetric, cu celelalte două faze prezente."
+      },
+      "issues": [
+        "MISMATCH_BETWEEN_IDENTICAL_QABC_KEYS_G1_A_G2_C",
+        "ANRE_2026_EXAM_SOURCE_EDITION_NOT_PROVEN",
+        "PDF_VISUAL_SCREENSHOT_CACHE_MISS",
+        "INDEPENDENT_TECHNICAL_SOURCE_LINGUISTIC_REVIEW_NOT_RUN"
+      ],
+      "grade_review": "EQUAL_TECHNICAL_QUESTION_ACROSS_GRADES_NO_SILENT_SPLIT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-9e72d87e6cd28f4d",
+      "member_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "original_keys": {
+        "G1-ELE-102": "A",
+        "G2-ELEC-245": "C"
+      },
+      "question": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+      "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+      "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+      "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă.",
+      "source_object": "double_busbar_single_breaker_per_circuit_with_transverse_coupler",
+      "rule": "preferred_normal_operational_busbar_coupler_mode",
+      "proposed_key_NOT_APPLIED": "",
+      "status": "BLOCKED_NON_UNIQUE_NORMAL_CONFIGURATIONS_AND_MISSING_PREFERENCE_CRITERION",
+      "source": {
+        "title": "Scheme de conexiuni pentru stații și posturi de transformare, republicare a unui material tehnic",
+        "institution": "Sursă tehnică secundară, blog Schema Electrică",
+        "edition_year": "posted 2015, original textbook edition unverified",
+        "url": "https://schema-electrica.blogspot.com/2015/03/scheme-de-conexiuni-pentru-statii-si.html",
+        "locator": "§2.1.2.4, paragraphs immediately after Figures 2.1.4 and 2.1.5, specifically 2 operating variants",
+        "access": "WEB_HTML_OPENED_AND_READ",
+        "source_edition_verified": "NO_ORIGINAL_EDITION_UNVERIFIED",
+        "exam_bibliography_match": "NO",
+        "source_scope": "EXACT_DOUBLE_BUSBAR_SINGLE_BREAKER_OBJECT_MATCH_BUT_MULTIPLE_NORMAL_MODES",
+        "offline_rights": "DO_NOT_STORE_LONG_VERBATIM_EXCERPT"
+      },
+      "short_exact_quote": {
+        "text": "Schema oferă două posibilităţi de funcţionare în regim normal",
+        "status": "SHORT_QUOTE_UNDER_COPYRIGHT_LIMIT",
+        "attribution": "§2.1.2.4 blog reproduction"
+      },
+      "contextual_paraphrase_md": "O stație cu **două sisteme de bare colectoare** și un întreruptor pe circuit poate distribui circuitele între cele două bare, pentru flexibilitate și continuitate. Într-o variantă de exploatare, circuitele funcționează pe bara de lucru, în timp ce **bara de rezervă poate fi menținută sub tensiune prin cupla transversală**. O altă variantă permite **funcționarea ambelor bare sub tensiune**, cu sursele și plecările repartizate între ele; **cupla transversală poate fi închisă ori deschisă**, în funcție de schema și cerințele de exploatare. Pentru a stabili ce regim este «de preferat», trebuie precizate **criteriul de siguranță, schema concretă și starea operativă a cuplei**; simpla descriere a două bare nu impune un răspuns unic.",
+      "context_type": "ORIGINAL_AUTHOR_PARAPHRASE_NOT_SOURCE_VERBATIM",
+      "highlight_terms": [
+        "două sisteme de bare colectoare",
+        "bara de rezervă poate fi menținută sub tensiune prin cupla transversală",
+        "funcționarea ambelor bare sub tensiune",
+        "cupla transversală poate fi închisă ori deschisă",
+        "criteriul de siguranță, schema concretă și starea operativă a cuplei"
+      ],
+      "abc_reasoning": {
+        "A": "Menținerea uneia dintre bare în rezervă rece poate fi o situație posibilă în anumite scheme, dar sursa specifică o variantă cu bară de rezervă caldă, nu justifică preferința generală pentru bară rece.",
+        "B": "Exploatarea cu ambele bare sub tensiune și cu cupla închisă este descrisă ca una dintre variantele de operare; fără criteriu de preferință, B nu este eliminată universal.",
+        "C": "Exploatarea cu ambele bare sub tensiune și cu cupla deschisă/disponibilă poate corespunde rezervei calde, dar sursa nu stabilește că ar fi universal preferată față de B."
+      },
+      "issues": [
+        "MISMATCH_BETWEEN_IDENTICAL_QABC_KEYS_G1_A_G2_C",
+        "NEED_ORIGINAL_OPERATIONAL_STANDARD_AND_EXAM_APPLICABILITY",
+        "B_VS_C_BOTH_PLAUSIBLE_WITHOUT_CRITERION",
+        "NO_STATION_SCHEMATIC_OR_SOURCE_CLAUSE_MANDATING_PREFERRED_VARIANT",
+        "INDEPENDENT_REVIEW_NOT_RUN"
+      ],
+      "corroboration": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+          "title": "Regulament 26 august 2010 stări operative «rezervă caldă»",
+          "access": "OFFICIAL_SEARCH_SNIPPET_ONLY_PAGE_502",
+          "purpose": "Definition of warm reserve, not preference rule"
+        }
+      ],
+      "grade_review": "SAME_STEM_AND_OPTIONS_ACROSS_GRADES_MUST_SHARE_TECHNICAL_JUDGMENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}
