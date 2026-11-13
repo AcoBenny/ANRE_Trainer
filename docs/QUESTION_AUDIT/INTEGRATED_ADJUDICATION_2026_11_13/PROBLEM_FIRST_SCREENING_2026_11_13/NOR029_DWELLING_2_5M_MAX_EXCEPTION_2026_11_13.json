@@ -1,0 +1,67 @@
+{
+  "schema": "ANRE_ONE_PASS_PROBLEM_FIRST_V1",
+  "date": "2026-11-13",
+  "research_outcome": "C_EXACT_DWELLING_EXCEPTION_VS_STORED_B_GENERAL_RULE_NOT_APPLIED",
+  "object": "Limita inaltimii laturii superioare a tabloului de distributie in locuinte masurata fata de pardoseala finita",
+  "sources": [
+    {
+      "source": "I7/2011 §5.3.3.21",
+      "kind": "official consolidated Portal Legislativ text in search index; direct open HTTP 502",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+      "scope": "plafon general 2.3m si exceptie locuinte 2.5m",
+      "edition_note": "Portal index indicates updates by Ordin959/2023; full accessible authoritative latest2026 text NOT proven"
+    },
+    {
+      "source": "ANRE official bibliography 05.2023 PDF page1 (zero-indexed)",
+      "kind": "official ANRE PDF text and page screenshot inspected",
+      "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+      "scope": "I7/2011 included for Grade I",
+      "edition_note": "exact 2026 examination bibliography remains to verify"
+    }
+  ],
+  "ABC_research": {
+    "A": "2m poate fi o montare individuala sub plafon, dar NU valoarea maximului admis explicit pentru locuinte. False-positive original: nu trata o valoare mai joasa ca raspuns de maxim.",
+    "B": "2.3m este plafonul general stabilit de I7, dar enuntul are calificator explicit «din locuinte»; cheia pastrata B nu foloseste exceptia locuintelor.",
+    "C": "2.5m este limita speciala expresa pentru tablourile din locuinte, adica maximul normativ solicitat, deci candidatul C."
+  },
+  "context_md": "Normativul **I7 §5.3.3.21** stabilește pentru **latura superioară a tablourilor de distribuție** un plafon general de **2,3 m** de la pardoseala finită. Același articol prevede însă o **excepție explicită pentru locuințe**, unde limita admisă este de **2,5 m**. Întrebarea menționează chiar **tablourile din locuințe** și solicită limita pe care înălțimea **să nu o depășească**, astfel că se cere **plafonul normativ**, nu o înălțime oarecare care ar respecta și ea regula. În acest context, valorile **2 m** și **2,3 m** pot descrie poziții conforme, dar nu sunt **limita specială maximă**; varianta **C** este justificată de excepția I7, iar **B** rămâne doar baremul original nemodificat. **Aprobarea pentru învățare** așteaptă reconfirmarea ediției aplicabile examenului și **review tehnic/lingvistic independent**.",
+  "context_type": "ROMANIAN_ORIGINAL_5_SENTENCE_PARAPHRASE_WITH_BOLD",
+  "highlights": [
+    "I7 §5.3.3.21",
+    "latura superioară a tablourilor de distribuție",
+    "2,3 m",
+    "excepție explicită pentru locuințe",
+    "2,5 m",
+    "tablourile din locuințe",
+    "să nu o depășească",
+    "plafonul normativ",
+    "2 m",
+    "limita specială maximă",
+    "C",
+    "B",
+    "Aprobarea pentru învățare"
+  ],
+  "transfer_rule": "EXPLICIT_EXCEPTION_BEATS_GENERAL_MAX;UPPER_BOUND_QUESTION_SELECTS_LEGAL_THRESHOLD_NOT_ANY_COMPLIANT_LOWER_VALUE",
+  "blockers": [
+    "final applicable I7 consolidated2026 source opened directly",
+    "2026 grade-specific official exam bibliography",
+    "independent source+technical+linguistic QA"
+  ],
+  "unit_id": "AU-91a2ff4f7d7f1d9b",
+  "representative_id": "G1-NOR-029",
+  "member_ids": "G1-NOR-029",
+  "qabc_sha256_UNCHANGED": "91a2ff4f7d7f1d9b9b595067efa1a9be1866f3c9d326b538a7c0031ecb3437d4",
+  "original_key_UNCHANGED": "B",
+  "original_QABC": {
+    "question": "Tablourile de distribuţie din locuinţe se pot instala astfel încât înălţimea laturii de sus a tablourilor faţă de pardoseala finită să nu depăşească:",
+    "A": "2 m",
+    "B": "2,3 m",
+    "C": "2,5 m"
+  },
+  "candidate_NOT_APPLIED": "C_PROPOSED",
+  "independent_source_QA": "NOT_RUN",
+  "independent_technical_QA": "NOT_RUN",
+  "independent_linguistic_QA": "NOT_RUN",
+  "exam_bibliography_edition_verified": "NO",
+  "approved_for_learning": "NO"
+}
