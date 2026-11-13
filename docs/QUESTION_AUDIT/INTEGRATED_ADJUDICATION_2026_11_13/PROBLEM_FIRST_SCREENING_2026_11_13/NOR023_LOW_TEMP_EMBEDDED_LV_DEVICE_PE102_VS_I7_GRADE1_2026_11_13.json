@@ -1,0 +1,81 @@
+{
+  "schema": "ANRE_PROBLEM_FIRST_ONE_PASS_RESEARCH_V1",
+  "date": "2026-11-13",
+  "unit_id": "AU-dbc4b69b4a250d57",
+  "representative_id": "G1-NOR-023",
+  "member_ids": "G1-NOR-023",
+  "grade": "I",
+  "batch_id": "DEEP-NOR-01",
+  "qabc_sha256_UNCHANGED": "dbc4b69b4a250d57b3177606a36bd100a2aebb8f89a6b4c94377d3bbeec2724b",
+  "original_key_UNCHANGED": "A",
+  "original_QABC": {
+    "question": "În cazul în care temperatura minimă este sub valorile stabilite de norme, montarea aparatelor înglobate în echipamentul de joasă tensiune :",
+    "A": "se admite dacă se prevede o încălzire locală",
+    "B": "nu se admite",
+    "C": "se admite în cazul în care aparatele au ulei"
+  },
+  "source_legacy_reused_not_double_counted": "V98 separate AI source-scope reviewer BLOCKED I7 narrower; existing NOR01 triage PE102 A historical; no new independent review run",
+  "sources": [
+    {
+      "document": "PE102/1986 for unit energy production/distribution infrastructure",
+      "clause": "§2.12(a) after Table1/notes, station equipment below +5°C",
+      "url": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+      "access": "PRIMARY_TEXT_REPRODUCTION_OPENED; PDF_SCREENSHOT_CACHE_MISS",
+      "claim": "In stations where minimum ambient temp may be below +5°C, installation permitted with local heating guaranteeing minimum required, OR where manufacturer allows operation",
+      "edition": "PE102/1986 mirror; reprint1993 and 2026 legal applicability not verified; ANRE May2023 bibliography excludes PE102 for Grade I"
+    },
+    {
+      "document": "I7/2011 amended 959/2023, consolidated working copy derived from Portal Legislativ",
+      "clause": "§5.3.3.8",
+      "url": "https://www.arya.ro/legislatie/pdf.php?download=1&slug=normativ-i7-2011",
+      "access": "EXACT_PDF_TEXT_READ; RELATED_PAGE_SCREENSHOT_SUCCESS_OTHER_PAGE; EXACT_CLAUSE_PAGE_VISUAL_NOT_CONFIRMED",
+      "claim": "For distribution boards CONTAINING MEASURING DEVICES, placement below0°C/above40°C or outside maker limits is not recommended; if cannot comply, board maker must ensure measurement device functioning with local heating or ventilation, or user climatizes space",
+      "edition": "Working-copy generated May2026, direct official 2026 source failed HTTP502"
+    },
+    {
+      "document": "ANRE official Grade I/II exam bibliography 2023",
+      "clause": "PE102 Grade I NU; I7 Grade I DA",
+      "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+      "access": "PRIOR_OFFICIAL_PDF_AND_VISUAL_TABLE",
+      "claim": "I7 grade I yes; PE102 Grade I no, despite historical question cited source PE102",
+      "edition": "2023; 2026 applicability not verified"
+    }
+  ],
+  "ABC_conditional_research": {
+    "A": "«se admite dacă se prevede o încălzire locală» are suport textual direct la aparate în stații PE102 §2.12(a), dar sursa nu este în bibliografia Grade I 2023; I7 5.3.3.8 admite soluție de încălzire pentru tablouri cu aparate de măsurare, nu toate «aparatele înglobate în echipamentul de joasă tensiune»; lipsesc domeniul aparatelor și temperatura relevantă.",
+    "B": "«nu se admite» ca interdicție necondiționată este contrazisă de excepția condiționată de încălzire locală sau soluții conforme cu producătorul, cel puțin pentru categorii precise.",
+    "C": "«se admite în cazul în care aparatele au ulei» nu este criteriu demonstrat nici de PE102 pentru montarea la temperaturi joase, nici de I7 5.3.3.8; în altă situație I7 §5.3.3.18 interzice dielectrici combustibili (ex. ulei) în tablouri de distribuție, fără a generaliza această interdicție către orice stație PE102."
+  },
+  "contextual_paragraph_5_sentences_md": "Enunțul vorbește despre **aparate înglobate în echipamentul de joasă tensiune** la **temperaturi sub valorile normate**, fără a preciza tipul aparatelor și amplasamentul. În **PE102 §2.12(a)**, pentru **echipamentele din stații**, este admisă montarea sub limita normală atunci când o **încălzire locală asigură temperatura necesară** sau producătorul permite explicit funcționarea. Totuși, **PE102 nu este inclus în bibliografia ANRE 2023 pentru gradul I**, deși susține istoric varianta **A**. În **I7 §5.3.3.8**, încălzirea locală este o soluție pentru **tablouri cu aparate de măsurare**, un obiect mai îngust decât toate echipamentele joasei tensiuni, deci nu poate valida automat aceeași literă în întreaga întrebare. **B** neagă nejustificat orice derogare, iar **C** confundă prezența uleiului cu o permisiune termică, dar **validarea lui A** rămâne blocată de **domeniu, ediție și QA independent**.",
+  "highlight_terms": [
+    "aparate înglobate în echipamentul de joasă tensiune",
+    "temperaturi sub valorile normate",
+    "PE102 §2.12(a)",
+    "echipamentele din stații",
+    "încălzire locală asigură temperatura necesară",
+    "PE102 nu este inclus în bibliografia ANRE 2023 pentru gradul I",
+    "A",
+    "I7 §5.3.3.8",
+    "tablouri cu aparate de măsurare",
+    "B",
+    "C",
+    "validarea lui A",
+    "domeniu, ediție și QA independent"
+  ],
+  "candidate_NOT_APPLIED": "A_HISTORICAL_PE102_MATCH_GRADE1_SOURCE_SCOPE_NOT_APPROVED",
+  "transfer_rule": "EXACT_DEVICE_CLASS_SCOPE_AND_GRADE_BIBLIOGRAPHY_BEFORE_HEATING_EXCEPTION;DO_NOT_EXPAND_MEASUREMENT_ONLY_I7_TO_ALL_LV_EMBEDDED_DEVICES",
+  "ambiguity_to_ask_user": "Enunțul «În cazul în care temperatura minimă este sub valorile stabilite de norme, montarea aparatelor înglobate în echipamentul de joasă tensiune:» A admite cu încălzire locală; B nu admite; C admite dacă au ulei. Te referă, după formularea grilei, la aparate în stații (PE102) sau generic la toate aparatele de joasă tensiune?",
+  "user_interpretation_status": "PENDING_NOT_ASSUMED_NOT_EXPERT_SIGNOFF",
+  "blockers": [
+    "Historical PE102 wording strongly matches Q and A but bibliography for Grade I lacks this norm; narrow I7 has heating, not full device range",
+    "official consolidated current edition/2026 exam grade bibliography confirmation",
+    "Independent source, technical, linguistic review NOT_RUN for this one-pass mapping; previous independent partial source reviews retained",
+    "Any diagram or original-source rights not verified"
+  ],
+  "independent_source_QA": "NOT_RUN_CURRENT_ONEPASS",
+  "independent_technical_QA": "NOT_RUN_CURRENT_ONEPASS",
+  "independent_linguistic_QA": "NOT_RUN_CURRENT_ONEPASS",
+  "exam_2026_edition_verified": "NO",
+  "approved_for_learning": "NO",
+  "canonical_modification_authorized": "NO"
+}
