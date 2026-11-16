@@ -38,3 +38,16 @@
 **Definiția prescurtată și condiția din următorul paragraf trebuie tratate împreună:** nu extrage `B=1/X` din introducerea didactică dacă paragraful următor restrânge folosirea la reactanță pură. Separă `KEY_INTENDED`, `VALIDITY_DOMAIN`, `COUNTEREXAMPLE`, `USER_INTERPRETATION`, `OFFICIAL_KEY_PROOF`. Feedbackul utilizatorului poate debloca interpretarea practică a grilei fără a valida universal termenul și fără a aproba învățarea.
 
 **Nicio mutație canonică/aplicație. Fără merge/release.**
+
+## 5. Confirmarea utilizatorului pentru ELE-222
+
+**Feedback utilizator, citat exact (2026-11-16):**
+> „Revenind la a doua întrebare legat de reactanță Da logic a folosit este este adecvată pentru răspunsul ce ai folosit foarte bine principiile învățate până acuma”
+
+**Interpretare fidelă:** utilizatorul confirmă că raționamentul aplicat la `ELE-222` este adecvat și acceptă alegerea **C („reactanței”) ca răspuns intenționat al grilei**, pe baza contextului terminologic și a eliminării întrebării ↔ variante și variante ↔ variante.
+
+**Dovezi păstrate, nu rescrise:** A („impedanței”) desemnează admitanța `1/Z`, nu susceptanța; B („rezistenței”) trimite la conductanță `1/R` în model rezistiv pur; C corespunde convenției didactice simplificate pentru reactanță pură. Modelul `Z=R+jX` rămâne un contraexemplu împotriva universalizării simpliste: `B=-X/(R²+X²)`, și semnul lui `B` trebuie tratat distinct de mărimea `1/|X|`.
+
+**Stare:** `ELE222_USER_CONFIRMED_INTENDED_C_AND_METHOD`, `TECHNICAL_SCOPE_WARNING_RETAINED`, `OFFICIAL_KEY_UNVERIFIED`, `INDEPENDENT_QA_PENDING`, `NOT_APPROVED_FOR_LEARNING`.
+
+Nu se numără întrebare nouă, nu se modifică cheia, enunțul, variantele sau aplicația; nu se face merge/release. Această confirmare rămâne feedback al utilizatorului, nu dovadă de autoritate oficială.
