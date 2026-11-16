@@ -29,3 +29,19 @@ Transfer la ELE-222: alternativa **C** („reactanței”) poate revela intenți
 - `ELE128_GENERIC_INDUCTIVE_RL_COUNTEREXAMPLE_PRESERVED`.
 - `NOT_OFFICIAL_KEY_VERIFIED` / `NOT_INDEPENDENT_QA` / `NOT_APPROVED_FOR_LEARNING`.
 - Nu au fost introduse întrebări, A/B/C, bareme, HTML, APK sau merge/release noi; totalurile CKPT-054 rămân 114/568 unități, 139/822 ID-uri documentate contextual și 0/822 aprobate.
+
+## Addendum: eliminare bidirecțională enunț–variante și între variante
+
+**Clarificare textuală a utilizatorului (citat exact):**
+> „Corect că deducerea prin eliminare se poate face și întrebarea versus răspunsurile nu doar între răspunsuri”
+
+**Regulă generalizată, complementară CKPT-057, nu o fișă nouă:**
+1. **Enunț ↔ A/B/C (vertical):** verifică dacă fiecare variantă poate satisface obiectul, condițiile, calificativele, contextul terminologic și rezultatul matematic al *întrebării*. Elimini sau condiționezi alternativele incompatibile. Variantele pot furniza indicii despre modelul didactic implicat de autor, dar nu îl dovedesc singure.
+2. **A ↔ B ↔ C (orizontal):** compară opțiunile între ele pentru contradicții, incluziuni, suprapuneri, excepții, relații general–particular și imposibilitatea ca unele să fie simultan adevărate.
+3. **Verificare înapoi (reversibilă):** reconstruiește sensul probabil al enunțului din opțiunea candidat și verifică-l în definițiile aplicabile, sursa bibliografică și cazurile-limită. Nu confunda o opțiune rămasă prin eliminare cu dovada afirmativă că este universal corectă.
+
+**Exemplu ELE-128:** față de enunțul cu „caracter inductiv”, B (0°) indică echivalent rezistiv și C (−90°) capacitiv; A (+90°) este modelul inductiv pur inclus în opțiuni. Interpretarea generică RL cu φ=45° rămâne fizic posibilă, dar nu apare ca opțiune. Rezultat: **A ca răspuns intenționat probabil, nu definiție universală a caracterului inductiv**.
+
+**Teste negative obligatorii:** (i) niciun răspuns exact în domeniul indicat; (ii) mai multe variante simultan adevărate; (iii) unica variantă rămasă contrazice o sursă de exact același domeniu; (iv) deducerea necesită inventarea unei condiții nejustificate. În toate aceste situații păstrează blocajul/ambiguitatea, chiar dacă testul are o cheie istorică.
+
+**Trasabilitate:** această clarificare aparține utilizatorului și îmbunătățește *metoda de raționare* în orice domeniu, nu schimbă baremul ELE-128, nu execută QA independent și nu crește numărul de unități auditate. 114/568, 139/822, 0 aprobate pentru învățare. Fără modificări HTML/APK/merge/release.
