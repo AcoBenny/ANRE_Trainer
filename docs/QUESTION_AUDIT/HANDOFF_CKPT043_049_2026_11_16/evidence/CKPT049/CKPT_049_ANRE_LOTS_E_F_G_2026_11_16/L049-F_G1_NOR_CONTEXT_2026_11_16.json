@@ -1,0 +1,585 @@
+[
+  {
+    "id": "G1-NOR-066",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+    "A": "este interzisă",
+    "B": "este admisă",
+    "C": "este admisă numai pentru conductoare de cupru",
+    "original_key": "B",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": true,
+    "classification": "POTENTIAL_KEY_MISMATCH_OBJECT",
+    "norm_locator": "I7 §5.2.12.1.3–.5; §5.2.3.2.5",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "I7 §5.2.12.1.4 interzice explicit conductoare electrice în tuburi/țevi pozate în pământ.",
+    "nearby_context_and_counterevidence": "Cablurile pozate în tub îngropat apar în alte clauze ca obiect diferit; nu convertim «conductoare» în «cabluri».",
+    "option_analysis": {
+      "A": {
+        "text": "este interzisă",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Textul I7 §5.2.12.1.4 interzice conductoarele în tuburi/țevi pozate în pământ.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "este admisă",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Permisiunea pentru cabluri îngropate protejate în tub este un obiect distinct, nu excepție pentru conductoare izolate.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "este admisă numai pentru conductoare de cupru",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Nicio derogare generală pentru conductoare din cupru în acest caz nu apare.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "73.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-067",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Sigutanţele fuzibile sunt dispozitive care protejează:",
+    "A": "numai la curenţi de suprasarcină",
+    "B": "numai la curenţi de scurtcircuit",
+    "C": "atât la curenţi de suprasarcină cât şi la curenţi de scurtcircuit",
+    "original_key": "C",
+    "candidate_unapplied": "C",
+    "key_mismatch_flag": false,
+    "classification": "CONDITIONAL_FUSE_TYPE",
+    "norm_locator": "I7 §5.3.4.3 / SR EN 60269; DEER ST89-1 JT 2026 §1.1",
+    "source_url": "https://www.distributie-energie.ro/wp-content/uploads/2026/01/ST-89-1-JT-Sigurante-fuzibile-de-JT-tip-MPR-Ed.U1-Rev.1-2026.pdf",
+    "source_type": "OPERATOR_TECH_SPEC",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Fuzibile de uz general gG asigură protecție atât suprasarcină cât și scurtcircuit.",
+    "nearby_context_and_counterevidence": "Există tipuri aM care acoperă doar scurtcircuitul, deci «siguranțele fuzibile» fără tip poate supra-generaliza.",
+    "option_analysis": {
+      "A": {
+        "text": "numai la curenţi de suprasarcină",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Există fuzibile gG care protejează și la scurtcircuit, deci «numai suprasarcină» nu este general.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "numai la curenţi de scurtcircuit",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Există fuzibile gG care protejează și la suprasarcină, deci «numai scurtcircuit» nu este general.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "atât la curenţi de suprasarcină cât şi la curenţi de scurtcircuit",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Descrie fuzibilele gG, nu orice clasă: cele aM pot fi doar pentru curenți de defect; întrebarea omite tipul.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "74.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-068",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "În încăperi în care se impun condiţii speciale de protecţie datorită utilizatorilor (copii, bolnavi mintal etc.), prizele trebuie să fie",
+    "A": "montate aparent",
+    "B": "prevăzute cu dispozitive de protecţie diferenţială ≤ 30 mA",
+    "C": "de tip îngropat",
+    "original_key": "B",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_CONTEXT",
+    "norm_locator": "I7 §5.4.29",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Prize în încăperi cu utilizatori vulnerabili: DDR ≤30mA, obligatoriu împreună cu tip special.",
+    "nearby_context_and_counterevidence": "A și C descriu montaj aparent/îngropat, insuficient ca măsură de protecție a utilizatorilor.",
+    "option_analysis": {
+      "A": {
+        "text": "montate aparent",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Montajul aparent nu garantează protecția utilizatorilor vulnerabili.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "prevăzute cu dispozitive de protecţie diferenţială ≤ 30 mA",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Protecția diferențială de cel mult 30mA este o cerință relevantă pentru acest tip de utilizatori.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "de tip îngropat",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Montajul îngropat nu înlocuiește protecția diferențială.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "75.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-069",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "În încăperi în care se impun condiţii speciale de protecţie datorită utilizatorilor (copii, bolnavi mintal etc.), prizele trebuie să fie",
+    "A": "de tip special (de ex. cu obturatori)",
+    "B": "de tip îngropat",
+    "C": "montate aparent",
+    "original_key": "A",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_CONTEXT",
+    "norm_locator": "I7 §5.4.29",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Aceleași încăperi: prize de tip special, ex. cu obturatori, și DDR ≤30mA.",
+    "nearby_context_and_counterevidence": "B/C reprezintă poziționări, nu tip special contra contactului accidental.",
+    "option_analysis": {
+      "A": {
+        "text": "de tip special (de ex. cu obturatori)",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Prizele cu obturatori sunt o măsură specifică de prevenire a contactului accidental.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "de tip îngropat",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Montajul sub tencuială nu definește tipul special de priză.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "montate aparent",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Montajul aparent nu definește tipul special de priză.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "75.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-070",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Întrerupătoarele, comutatoarele, şi butoanele de lumină trebuie montate:",
+    "A": "numai pe conductoarele de fază",
+    "B": "numai pe conductorul de nul",
+    "C": "pe fază sau pe nul, nu are importanţă",
+    "original_key": "A",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 §5.4.22",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Comanda iluminatului pe fază, nu pe N.",
+    "nearby_context_and_counterevidence": "B/C lasă receptorul sub tensiune chiar dacă nu funcționează.",
+    "option_analysis": {
+      "A": {
+        "text": "numai pe conductoarele de fază",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Întreruperea fazei este regula protectivă pentru dispozitivele de comandă a iluminatului.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "numai pe conductorul de nul",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Dacă întrerupi doar N, elementele receptorului pot rămâne sub tensiune de fază.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "pe fază sau pe nul, nu are importanţă",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Alegerea fază/N nu este indiferentă din punct de vedere al securității.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "77.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-071",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Culoarea verde-galben pentru izolaţia conductoarelor si cablurilor se foloseşte pentru marcarea conductorului de:",
+    "A": "faza",
+    "B": "neutru de lucru",
+    "C": "de protecţie şi de neutru",
+    "original_key": "C",
+    "candidate_unapplied": "C",
+    "key_mismatch_flag": false,
+    "classification": "AMBIGUOUS_PEN_WORDING",
+    "norm_locator": "I7 §5.1.4.3.1(a)–(c)",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Verde/galben identifică PE și face parte din marcajul PEN, care are și marcaj bleu la capete.",
+    "nearby_context_and_counterevidence": "N singur e bleu, nu verde/galben. C este plauzibilă numai dacă «de protecție și de neutru» înseamnă conductor comun PEN, nu PE+N separat.",
+    "option_analysis": {
+      "A": {
+        "text": "faza",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Faza nu este identificată prin combinația verde-galben.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "neutru de lucru",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Neutrul N separat este identificat prin bleu, nu verde-galben.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "de protecţie şi de neutru",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Are sens numai interpretând funcția mixtă drept PEN cu marcaj verde-galben și suplimentar bleu la capete; formularea este ambiguă.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "78.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-072",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+    "A": "nu este obligatoriu să poată fi deconectat individual",
+    "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+    "C": "trebuie să poată fi deconectat individual",
+    "original_key": "B",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_CONTEXT",
+    "norm_locator": "I7 §5.5.2.3",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Conductorul conectat la bara principală se poate deconecta individual, sigur, numai cu sculă.",
+    "nearby_context_and_counterevidence": "C omite condiția deconectării cu sculă, A neagă cerința.",
+    "option_analysis": {
+      "A": {
+        "text": "nu este obligatoriu să poată fi deconectat individual",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Contrazice condiția de deconectare individuală pentru verificare.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Include atât posibilitatea deconectării individuale, cât și utilizarea unei scule.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "trebuie să poată fi deconectat individual",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Omite condiția expresă privind deconectarea numai cu sculă.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "79.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-073",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Legăturile conductoarelor din aluminiu pentru îmbinări sau derivaţii trebuie să se facă:",
+    "A": "prin răsucire şi matisare",
+    "B": "prin cleme speciale, prin presare cu scule speciale sau prin sudare",
+    "C": "prin lipire cu cositor",
+    "original_key": "B",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SIMPLIFICATION",
+    "norm_locator": "I7 §5.2.6.8–.9",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Îmbinări de Al cu cleme speciale, presare/scule adecvate, metalizare-lipire ori sudare.",
+    "nearby_context_and_counterevidence": "A răsucire simplă nu este normativ; C lipire simplă cu cositor nu este metoda din norma Al. B este cea mai apropiată dar simplifică lista permisă.",
+    "option_analysis": {
+      "A": {
+        "text": "prin răsucire şi matisare",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Răsucirea și matisarea simplă nu este metoda reglementată pentru conexiuni din aluminiu.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "prin cleme speciale, prin presare cu scule speciale sau prin sudare",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Clemele speciale, presarea adecvată și sudarea corespund metodei de realizare a legăturilor Al.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "prin lipire cu cositor",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Lipirea simplă cu cositor nu reproduce metodele sau pregătirea specială din paragraf.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "80.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-074",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Marcarea conductorului neutru  care asigură simultan și funcţia de protecţie (PEN) se face",
+    "A": "cu  culoarea bleu                                 pe toată  lungimea",
+    "B": "prin culori verde/galben pe toată  lungimea",
+    "C": "prin culori verde/galben pe toată  lungimea şi suplimentar marcare cu\n     culoarea bleu la fiecare extremitate;",
+    "original_key": "C",
+    "candidate_unapplied": "C",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 §5.1.4.3.1(b)",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "PEN: verde/galben pe lungime și albastru la fiecare extremitate.",
+    "nearby_context_and_counterevidence": "A sau B singure omit marcaje esențiale.",
+    "option_analysis": {
+      "A": {
+        "text": "cu  culoarea bleu                                 pe toată  lungimea",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Bleu integral este identificarea N separat, nu PEN.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "prin culori verde/galben pe toată  lungimea",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Verde-galben fără marcajele bleu la capete este incomplet pentru PEN.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "prin culori verde/galben pe toată  lungimea şi suplimentar marcare cu\n     culoarea bleu la fiecare extremitate;",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Verde-galben pe lungime și bleu la capete este marcajul PEN complet.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "81.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-075",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Marcarea conductorului neutru (N) se face:",
+    "A": "cu culoarea bleu                                   pe toată lungimea.",
+    "B": "prin culori verde/galben pe toată  lungimea",
+    "C": "cu culoarea bleu                           la fiecare extremitate;",
+    "original_key": "A",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 §5.1.4.3.1(c)",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Conductorul N marcat bleu pe toată lungimea.",
+    "nearby_context_and_counterevidence": "B este marcaj PE, iar C doar la capete omite continuitatea la cablu cu N standard.",
+    "option_analysis": {
+      "A": {
+        "text": "cu culoarea bleu                                   pe toată lungimea.",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Bleu pe întreaga lungime este identificarea standard a conductorului N.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "prin culori verde/galben pe toată  lungimea",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Verde-galben este rezervat pentru funcția de protecție.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "cu culoarea bleu                           la fiecare extremitate;",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Bleu doar la capete nu reproduce marcajul de-a lungul întregului N, cu excepțiile speciale neinvocate.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "82.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-076",
+    "lot": "F",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Conform normativului I-7-2011, o coloană electrică  este un circuit electric care:",
+    "A": "alimentează un tablou de distribuţie.",
+    "B": "alimentează un receptor de putere",
+    "C": "alimentează mai multe surse de iluminat",
+    "original_key": "A",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 Cap. 2 Terminologie: «coloană electrică»",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Coloană: circuit care alimentează unul sau mai multe tablouri de distribuție.",
+    "nearby_context_and_counterevidence": "B consumator receptor și C lumină sunt circuite terminale; A «un tablou» este caz valid al definiției mai generale.",
+    "option_analysis": {
+      "A": {
+        "text": "alimentează un tablou de distribuţie.",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Circuitul care alimentează un tablou este un caz inclus în definiția coloanei.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "alimentează un receptor de putere",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Circuitul unui receptor de putere nu este, prin sine, circuit de alimentare a tabloului.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "alimentează mai multe surse de iluminat",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Alimentarea surselor de iluminat este un circuit terminal, nu o coloană.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "83.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  }
+]

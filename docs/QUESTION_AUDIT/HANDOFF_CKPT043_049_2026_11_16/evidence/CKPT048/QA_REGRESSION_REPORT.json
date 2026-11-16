@@ -1,0 +1,77 @@
+{
+  "checkpoint": "CKPT-048",
+  "phase": "REAL_DATA_CONTENT_FIELD_REGRESSION",
+  "date": "2026-11-16",
+  "artifact_47_original_sha256": "05ef3c7c3ce5975d159229ddca98559c3f49cb98913a3a71a53f8b1c3d3ebe26",
+  "canonical_input_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+  "original_unique_IDs": 47,
+  "source_bank_ID_count": 822,
+  "historical_batches": 4,
+  "mismatched_original_QABC_keys": 0,
+  "real_shifted_semantic_cards": 35,
+  "shifted_batches": {
+    "L047-A-G2-BIBLIOGRAPHY_2026_11_16.json": 0,
+    "L047-B-G1-CONFLICT_2026_11_16.json": 11,
+    "L047-C-G1-GROUPED_2026_11_16.json": 9,
+    "L047-D-G1-I7-EXACT_2026_11_16.json": 15
+  },
+  "corrected_card_count": 35,
+  "post_repair_detected_semantic_field_errors": 0,
+  "test_count": 12,
+  "tests": {
+    "ROTATION_CAUGHT": true,
+    "FIXED_ROTATION_NOT_CAUGHT": true,
+    "IDENTICAL_SOURCE_BANK_KEYS_PRESERVED": true,
+    "NONROTATED_ENTRIES_UNCHANGED": true,
+    "REPAIR_IDEMPOTENT": true,
+    "ARTICLE_A_IS_NOT_SHIFT": true,
+    "MENTION_OF_B_IN_A_REASON_NOT_ENOUGH": true,
+    "EXPLICIT_C_DISTRACTOR_OK": true,
+    "FALSE_LEARNER_APPROVAL_CAUGHT": true,
+    "MISSING_LOCATOR_CAUGHT": true,
+    "MISSING_CONTEXT_CAUGHT": true,
+    "WRONG_OPTION_LABEL_CAUGHT": true
+  },
+  "tests_passed": 12,
+  "approved_for_learning": 0,
+  "independent_source_QA": "NOT_RUN",
+  "independent_technical_QA": "NOT_RUN",
+  "independent_linguistic_QA": "NOT_RUN",
+  "2026_grade_edition_verified": false,
+  "github_PR_7_updated": false,
+  "batches": [
+    {
+      "source_name": "L047-A-G2-BIBLIOGRAPHY_2026_11_16.json",
+      "fixed_name": "L047-A-G2-BIBLIOGRAPHY_REPAIRED_2026_11_16.json",
+      "records": 12,
+      "rotations_fixed": 0,
+      "all_ID_question_choices_key_preserved": true,
+      "sha256": "d65ab93e8cde6d38d1948db257e3228c31378c20d5a5fd5ec488eb9d5f3b74c2"
+    },
+    {
+      "source_name": "L047-B-G1-CONFLICT_2026_11_16.json",
+      "fixed_name": "L047-B-G1-CONFLICT_REPAIRED_2026_11_16.json",
+      "records": 11,
+      "rotations_fixed": 11,
+      "all_ID_question_choices_key_preserved": true,
+      "sha256": "759019075be359d8330429563ed9c68a225e11a94cd444550c6500a6b86788c8"
+    },
+    {
+      "source_name": "L047-C-G1-GROUPED_2026_11_16.json",
+      "fixed_name": "L047-C-G1-GROUPED_REPAIRED_2026_11_16.json",
+      "records": 9,
+      "rotations_fixed": 9,
+      "all_ID_question_choices_key_preserved": true,
+      "sha256": "33f884315eb8204967a6280a49191019e1d40c68dc3e465222ec0ffcd4bbc262"
+    },
+    {
+      "source_name": "L047-D-G1-I7-EXACT_2026_11_16.json",
+      "fixed_name": "L047-D-G1-I7-EXACT_REPAIRED_2026_11_16.json",
+      "records": 15,
+      "rotations_fixed": 15,
+      "all_ID_question_choices_key_preserved": true,
+      "sha256": "303456bdd71bf28e7222c7c2af55718d101111c8980ec1d30b2a4614cbd76e21"
+    }
+  ],
+  "note": "Deterministic rule detects full shifted pattern, not source correctness. Source content remains research-only, no key changes."
+}

@@ -1,0 +1,691 @@
+[
+  {
+    "id": "G1-NOR-052",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Pentru circuite monofazate, conductorul neutru (N) va avea:",
+    "A": "aceeaşi secţiune ca şi conductorul de fază",
+    "B": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de cupru",
+    "C": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de aluminiu",
+    "original_key": "A",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 §5.2.4.6.1(a), §5.2.4.6.2–.3",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Monofazat uzual cu două fire: S_N = S_fază, indiferent de Cu/Al.",
+    "nearby_context_and_counterevidence": "În polifazat și la armonici există alte reguli; enunțul monofazat este generic.",
+    "option_analysis": {
+      "A": {
+        "text": "aceeaşi secţiune ca şi conductorul de fază",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Regula de bază a circuitului monofazat: N are aceeași secțiune cu faza, fără restricție la un metal.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de cupru",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Adaugă restricția «numai cupru», pe care regula monofazată nu o cere.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de aluminiu",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Adaugă restricția «numai aluminiu», pe care regula monofazată nu o cere.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "59.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-053",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Branşamentul electric este partea din instalaţia de distribuţie a energiei electrice cuprinsă între linia electrică şi:",
+    "A": "firida de branşament",
+    "B": "coloana electrică",
+    "C": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului",
+    "original_key": "A",
+    "candidate_unapplied": "C",
+    "key_mismatch_flag": true,
+    "classification": "POTENTIAL_KEY_MISMATCH_SCOPE",
+    "norm_locator": "PE155/1992 §1.2.1–1.2.3",
+    "source_url": "https://www.baluna.ro/wp-content/uploads/2018/02/pe_155_92.pdf",
+    "source_type": "PE155_SECONDARY_PDF_PARSE_SCREENSHOT_FAILED",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Branșamentul ajunge la instalația interioară; bornele de ieșire din contor sunt delimitarea normativului PE155. A descrie doar racordul linie-firidă.",
+    "nearby_context_and_counterevidence": "C reproduce nota privind delimitarea, nu definiția textuală completă; ediția și PE155 grad I încă trebuie confirmate.",
+    "option_analysis": {
+      "A": {
+        "text": "firida de branşament",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Linie–firidă descrie racordul, doar o parte a branșamentului în terminologia PE155.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "coloana electrică",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Coloana este un element al traseului, nu punctul final de delimitare din definiția completă.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Bornele dinspre consumator ale contorului corespund punctului de delimitare descris de nota PE155; verificare istorică și bibliografică necesară.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "60.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-054",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Întrerupătoarele, comutatoarele şi butoanele de lumină se montează, faţă de nivelul pardoselii finite, la înălţimea de:",
+    "A": "1m de la axul aparatului",
+    "B": "(0,6-1,5) m de la axul aparatului",
+    "C": "1,5 m de la axul aparatului",
+    "original_key": "A",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": true,
+    "classification": "POTENTIAL_KEY_MISMATCH_AMBIGUITY",
+    "norm_locator": "I7 §5.4.22; §5.4.21–.25 context",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Interval recomandat pentru întrerupătoare/comutatoare/butoane: 0,6–1,5m.",
+    "nearby_context_and_counterevidence": "A=1 m și C=1,5 m sunt și ele valori în interval; enunțul nu solicită explicit intervalul. B e formularea-sursă cea mai completă, unicitatea grilei e discutabilă.",
+    "option_analysis": {
+      "A": {
+        "text": "1m de la axul aparatului",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "1 m este o înălțime permisă în interiorul intervalului, deci nu poate fi eliminată ca falsă.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "(0,6-1,5) m de la axul aparatului",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Reproduce integral intervalul recomandat de I7, 0,6–1,5 m.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "1,5 m de la axul aparatului",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "1,5 m este tot o valoare inclusă în interval; întrebarea poate avea variante compatibile.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "61.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-055",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Prevederile normativului  I 7 – 2011 se aplică la proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente:",
+    "A": "clădirilor cu funcţiuni agroindustriale şi agrozootehnice",
+    "B": "minelor şi carierelor",
+    "C": "depozitelor de materiale pirotehnice şi explozive",
+    "original_key": "A",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 §7.5.1, domeniu de aplicare",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Există prescripții I7 explicite pentru construcții agroindustriale și agrozootehnice.",
+    "nearby_context_and_counterevidence": "Mine/carieri și depozite pirotehnice sunt reglementate special și nu sunt în obiectul cerut.",
+    "option_analysis": {
+      "A": {
+        "text": "clădirilor cu funcţiuni agroindustriale şi agrozootehnice",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "I7 conține prescripții explicite pentru construcții agroindustriale/agrozootehnice.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "minelor şi carierelor",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Exploatările miniere au regim special și nu sunt incluse în categoria normativă invocată.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "depozitelor de materiale pirotehnice şi explozive",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Depozitarea explozivilor/materialelor pirotehnice are regim special distinct.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "62.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-056",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Montarea, pe conductoarele de protecţie, a unor elemente care pot produce întreruperea circuitului este:",
+    "A": "interzisă",
+    "B": "permisă în anumite condiţii",
+    "C": "la latitudinea consumatorului",
+    "original_key": "A",
+    "candidate_unapplied": "A",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_EXCEPTION",
+    "norm_locator": "I7 §5.5.3.5–.6",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Niciun dispozitiv de comutație nu se inseriază pe conductorul PE.",
+    "nearby_context_and_counterevidence": "Îmbinări de test desfăcute cu sculă există; acestea nu echivalează cu comutație automată a PE în serviciu.",
+    "option_analysis": {
+      "A": {
+        "text": "interzisă",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Regula interzice elementele de întrerupere/comutație în serie pe PE.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "permisă în anumite condiţii",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "O legătură de test demontabilă cu sculă nu justifică un dispozitiv care întrerupe PE în serviciu.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "la latitudinea consumatorului",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "O normă de securitate nu lasă protecția la alegerea consumatorului.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "63.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-057",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Amplasarea aparatelor, echipamentelor şi receptoarelor electrice în locuri în care ar putea fi expuse direct la apă, ulei, substanţe corozive, căldură sau şocuri mecanice:",
+    "A": "se admite",
+    "B": "se admite condiţionat",
+    "C": "este interzisă",
+    "original_key": "B",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": false,
+    "classification": "CONTEXTUAL_INFERENCE",
+    "norm_locator": "I7 §5.1.2.1–.2; §3.0.2.4–.5",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Echipamentul se alege pentru influențele externe; protecția suplimentară adecvată poate permite amplasarea.",
+    "nearby_context_and_counterevidence": "Permisiunea nu este necondiționată (A), iar interdicția absolută (C) ignoră măsurile de protecție. Enunțul exact nu este reprodus literal în norma găsită.",
+    "option_analysis": {
+      "A": {
+        "text": "se admite",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Permisiunea necondiționată omite influențele externe și gradul de protecție necesar.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "se admite condiţionat",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Este posibilă doar cu echipament și măsuri adaptate condițiilor locale.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "este interzisă",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Interdicția generală absolută ignoră posibilitatea protecțiilor suplimentare; norma exactă de aplicare trebuie identificată.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "64.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-058",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:",
+    "A": "se admite întotdeauna",
+    "B": "este total interzisă",
+    "C": "se admite condiţionat",
+    "original_key": "B",
+    "candidate_unapplied": "C",
+    "key_mismatch_flag": true,
+    "classification": "POTENTIAL_KEY_MISMATCH_DIRECT",
+    "norm_locator": "I7 §3.0.3.5; §5.2.8.2.2",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Regula de neamplasare sub trasee cu condens are excepție pentru execuție închisă IP33 minim, material rezistent; alt articol cere protecție anti-condens.",
+    "nearby_context_and_counterevidence": "A «întotdeauna» greșit, B «total interzisă» greșit din cauza excepției; C admis condiționat.",
+    "option_analysis": {
+      "A": {
+        "text": "se admite întotdeauna",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "«Întotdeauna» ignoră pericolul de condens și condițiile restrictive.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "este total interzisă",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "«Total interzisă» este prea absolut când norma prevede o derogare expresă cu IP adecvat.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "se admite condiţionat",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Sursei îi corespunde permisiunea condiționată de execuție închisă și protecție împotriva umezelii.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "65.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-059",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Corpurile de iluminat echipate cu lămpi cu descărcări se prevăd în orice tip de încăpere cu:",
+    "A": "grătar protector",
+    "B": "dispozitiv pentru îmbunătăţirea factorului de putere",
+    "C": "difuzor",
+    "original_key": "B",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_CONTEXT",
+    "norm_locator": "I7 §5.4.20; §5.4.19 context",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Lămpi cu descărcări: dispozitiv de îmbunătățire a factorului de putere.",
+    "nearby_context_and_counterevidence": "Grătar/difuzor apar în §5.4.19 numai pentru anumite depozite/riscuri, nu orice încăpere.",
+    "option_analysis": {
+      "A": {
+        "text": "grătar protector",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Grătarul protector este cerut în anumite amplasamente, nu universal pentru lămpi cu descărcări.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "dispozitiv pentru îmbunătăţirea factorului de putere",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Norma precizează compensarea factorului de putere pentru această categorie de lămpi.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "difuzor",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Difuzorul este o soluție constructivă specifică, nu cerință generală pentru lămpile cu descărcări.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "66.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-060",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:",
+    "A": "este recomandată",
+    "B": "este permisă condiţionat",
+    "C": "nu este permisă",
+    "original_key": "B",
+    "candidate_unapplied": "C",
+    "key_mismatch_flag": true,
+    "classification": "POTENTIAL_KEY_MISMATCH_DIRECT",
+    "norm_locator": "I7 §5.5.3.1–.2",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "I7 §5.5.3.2 interzice explicit folosirea conductelor pentru apă ca PE.",
+    "nearby_context_and_counterevidence": "Carcasele metalice/tuburile dedicate pot fi PE condiționat în §5.5.3.1, dar aceasta nu autorizează conducte de apă. B confundă obiectele.",
+    "option_analysis": {
+      "A": {
+        "text": "este recomandată",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Folosirea conductelor de apă ca PE nu este recomandată, ci exclusă expres.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "este permisă condiţionat",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Condițiile în care anumite învelişuri metalice pot avea funcție PE nu includ conductele pentru apă.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "nu este permisă",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Interdicția pentru conductele de apă apare expres în I7 §5.5.3.2.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "67.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-061",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:",
+    "A": "admisă",
+    "B": "interzisă",
+    "C": "admisă doar pentru tuburi cu diametru mai mic de 16 mm",
+    "original_key": "A",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": true,
+    "classification": "POTENTIAL_KEY_MISMATCH_DIRECT",
+    "norm_locator": "I7 §5.2.12.3.1–.4",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "I7 §5.2.12.3.4 interzice îmbinarea tuburilor la trecerile prin elementele de construcție.",
+    "nearby_context_and_counterevidence": "A inversul interdicției, C inventează excepția diametrului 16mm.",
+    "option_analysis": {
+      "A": {
+        "text": "admisă",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Admiterea îmbinării în trecere contrazice formularea explicită de interdicție.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "interzisă",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "§5.2.12.3.4 interzice îmbinările tuburilor la trecerea prin construcție.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "admisă doar pentru tuburi cu diametru mai mic de 16 mm",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Pragul de diametru 16 mm nu este o derogare din paragraful citat.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "68.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-062",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "În camerele de copii din creşe, grădiniţe, spitale de copii, prizele trebuie montate pe pereţi la următoarele înălţimi măsurate de la axul aparatului la nivelul pardoselii finite:",
+    "A": "peste 1m",
+    "B": "peste 1,5 m",
+    "C": "peste 2m",
+    "original_key": "A",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": true,
+    "classification": "POTENTIAL_KEY_MISMATCH_MODALITY",
+    "norm_locator": "I7 §5.4.25, context §5.4.24 și .26",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Pentru camerele de copii din creșe/grădinițe/spitale: înălțime recomandată peste 1,5m.",
+    "nearby_context_and_counterevidence": "A peste 1 m nu garantează minim 1,5; C peste 2m este nivelul recomandat pentru școli în clase, nu pentru categoria cerută. Verbul «trebuie» în grilă vs «se recomandă» în normă.",
+    "option_analysis": {
+      "A": {
+        "text": "peste 1m",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "«Peste 1 m» permite și 1,2 m, sub recomandarea de peste 1,5 m din I7.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "peste 1,5 m",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Reproduce pragul «peste 1,5 m» din categoria creșe/grădinițe/spitale pentru copii.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "peste 2m",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "«Peste 2 m» privește alt context de încăperi pentru elevi, nu exact categoria din întrebare; totodată înălțimile peste 2 m ar îndeplini matematic și pragul 1,5 m.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "69.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-063",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "Tablourile de distribuţie se vor executa",
+    "A": "numai în  construcţie deschisă",
+    "B": "numai în construcţie închisă (protejată)",
+    "C": "în construcţie deschisă sau închisă, în funcţie de condiţiile de influenţe externe şi grad de protecţie",
+    "original_key": "C",
+    "candidate_unapplied": "C",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 §5.3.3.5–.6",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "Tablouri deschise sau închise în funcție de influențele externe și gradul de protecție.",
+    "nearby_context_and_counterevidence": "A/B «numai» exclud categoria permisă de normă.",
+    "option_analysis": {
+      "A": {
+        "text": "numai în  construcţie deschisă",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "«Numai deschisă» exclude tablourile închise permise după mediu.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "numai în construcţie închisă (protejată)",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "«Numai închisă» exclude tablourile deschise permise după mediu.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "în construcţie deschisă sau închisă, în funcţie de condiţiile de influenţe externe şi grad de protecţie",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Reflectă alegerea în funcție de condițiile de influențe externe și gradul de protecție.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "70.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  },
+  {
+    "id": "G1-NOR-064",
+    "lot": "E",
+    "grade": "I",
+    "category": "Norme tehnice",
+    "question": "În clădirile de locuit se prevăd în fiecare încăpere:",
+    "A": "cel mult două prize",
+    "B": "prize după necesităţi",
+    "C": "cel puţin trei prize",
+    "original_key": "B",
+    "candidate_unapplied": "B",
+    "key_mismatch_flag": false,
+    "classification": "DIRECT_WITH_SCOPE",
+    "norm_locator": "I7 §5.4.24–.25",
+    "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "source_type": "I7_SECONDARY_SYNCHRONIZED_COPY_2026_05_11",
+    "source_status": "SECONDARY_SOURCE_REOPENED_NOT_CURRENT_EDITION_CERTIFIED",
+    "support_reason": "În locuințe se prevăd prize în fiecare încăpere după necesități.",
+    "nearby_context_and_counterevidence": "A maximum 2 și C minimum 3 sunt cantități universale inexistente în articol.",
+    "option_analysis": {
+      "A": {
+        "text": "cel mult două prize",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Plafonul universal «cel mult două» nu rezultă din I7.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "B": {
+        "text": "prize după necesităţi",
+        "research_assessment": "PREFERRED_BY_SOURCE",
+        "reason": "Numărul prizelor se stabilește în funcție de necesitățile încăperii.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      },
+      "C": {
+        "text": "cel puţin trei prize",
+        "research_assessment": "NOT_PREFERRED_FOR_SCOPED_REASON",
+        "reason": "Minimul universal «cel puțin trei» nu rezultă din I7.",
+        "provenance": "MANUAL_PRELIMINARY_REASONING_NOT_INDEPENDENT_QA"
+      }
+    },
+    "official_exam_bibliography_2026": "NOT_VERIFIED",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "source_edition_independent_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "bank_snapshot_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "original_bank_source": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+    "original_excel_row": "71.0",
+    "context_clue_labels": [
+      "DIRECT_NORMATIVE_PARAGRAPH",
+      "ADJACENT_CONDITIONS_AND_EXCEPTION",
+      "ELIMINATION_WITH_POSITIVE_SUPPORT"
+    ]
+  }
+]
