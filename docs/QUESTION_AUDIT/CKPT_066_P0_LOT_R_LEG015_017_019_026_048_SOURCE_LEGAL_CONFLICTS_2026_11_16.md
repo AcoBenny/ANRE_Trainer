@@ -83,3 +83,15 @@ Utilizatorul propune **C** pentru `G1-LEG-017` `AU-4b365bd0966b300d`, argumentâ
 - **Stare:** `CANDIDATE_A_STRONG_DIRECT_LAW`, `USER_C_HYPOTHESIS_PRESERVED_AND_DISPUTED_BY_PRIMARY_LAW`, `IMPORTED_KEY_B_PRESERVED`, `OFFICIAL_QUESTION_KEY_PROVENANCE_UNVERIFIED`, `INDEPENDENT_LEGAL_QA_PENDING`, `LEARNING_APPROVAL_NO`, `COVERAGE_DELTA_0`.
 
 Nu se modifică enunțul, opțiunile A/B/C, cheia B, MASTER, HTML/APK sau ramura main, fără merge/release. Comentariul utilizatorului rămâne documentat cu argumente și contradovada legală exactă.
+
+## USER_LEG017_A_AGREEMENT_20261116
+
+**Feedback ulterior explicit al utilizatorului:** „Ai dreptate, la intrebarea anterioara este corect A.” Referentul din conversație este `G1-LEG-017`, discutat imediat înaintea `G1-NOR-090`. Utilizatorul **revizuiește ipoteza inițială C** și confirmă **A** după lectura diferenței legale **reziliere vs deconectare**.
+
+**Temei exact pentru varianta A:** Legea nr. 123/2012, **art.58 alin.(4) lit.a)**, tratează dreptul furnizorului de a rezilia contractul în caz de **sustragere a energiei constatată prin hotărâre judecătorească definitivă**. Varianta **C**, refuzul constituirii garanției, corespunde **art.58 alin.(5)–(6)**, care dă dreptul furnizorului să **solicite deconectarea clientului** operatorului de distribuție; nu este același remediu. **B** „racordare ilegală” nu are în acest context probă pozitivă echivalentă celei pentru A. Referințe: https://legislatie.just.ro/Public/DetaliiDocument/249550 și https://legislatie.just.ro/Public/DetaliiDocument/280249 (Ordinul 5/2023, condițiile garanției/deconectării).
+
+**Adjudecare evoluată:** `USER_INITIAL_C_HYPOTHESIS_RETAINED_FOR_AUDIT_TRACE` → `USER_CONFIRMED_A_AFTER_ART58_EVIDENCE`; `A_STRONG_PRIMARY_LAW_SUPPORT`; `B_IMPORTED_KEY_DISAGREEMENT_OPEN`; `CURRENT_VERSION_EXHAUSTIVE_CHECK_PENDING`; `OFFICIAL_ANRE_KEY_VERIFICATION_PENDING`; `INDEPENDENT_LEGAL_QA_PENDING`; `LEARNING_APPROVAL=NO`. Acordul utilizatorului **nu este dovadă de barem oficial** și nu modifică automat cheia B importată. În calculul progresului: **0 unități noi, 0 ID-uri noi**, doar clarificarea unei analize deja contabilizate.
+
+**Control de regresie semantic:** utilizatorul a observat capcana „poate constitui garanție”; remediul din normă este **solicitarea deconectării**, nu rezilierea. Păstrăm ipoteza inițială și explicația corectivă ca experiențe cumulative.
+
+Nu s-au modificat enunțul/ABC, cheia B, MASTER, HTML/APK/main; PR #7 rămâne Draft, fără merge/release.
