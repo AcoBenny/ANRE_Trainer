@@ -1,0 +1,715 @@
+{
+  "checkpoint": "CKPT-147",
+  "date": "2026-11-17",
+  "input_checkpoint": "CKPT-144",
+  "source_HEAD": "47cd6cca8669009fa84b1ec1bb8e49c0b1193aeb",
+  "phase": "SOURCE_SCOPE_ONE_PASS_TECHNICAL_TRIAGE_NOT_FINAL_LEARNING_SIGNOFF",
+  "method": "Four non-overlapping 15-unit batches using already documented original A/B/C and grade keys, compare exact original question, record technical model and absence of independent review. Prevent duplicate research.",
+  "status_counts": {
+    "CONDITIONAL_MODEL_OR_SOURCE": 8,
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 7
+  },
+  "count_unique_units": 15,
+  "count_grade_members": 30,
+  "immutability": "no QABC, imported answer key, HTML, APK, main, merge, release changes",
+  "independent_QA": "NOT_EXECUTED_NO_INDEPENDENT_AGENT_RUNTIME",
+  "learner_approvals": 0,
+  "source_reuse": "Prior source cards marked as not reopened. Browser-open evidence limited to an explicit allow-list. Titles without exact source support are flagged conditional/blocked.",
+  "cards": [
+    {
+      "unit_id": "AU-3ca1801a2969b0b8",
+      "representative_id": "G1-ELE-031",
+      "grade_member_ids": [
+        "G1-ELE-031",
+        "G2-ELEC-180"
+      ],
+      "canonical_sha256": "3ca1801a2969b0b869946801dad131bd65dd210263f9841091840fb01dd8e943",
+      "original_question_UNCHANGED": "Celulele prefabricate monobloc se caracterizează în principal prin:",
+      "original_ABC_UNCHANGED": {
+        "A": "securitate ridicată a persoanelor;",
+        "B": "gamă largă de configuraţii ale schemei de conexiuni;",
+        "C": "eliminarea totală a posibilităţii de producere a unui scurtcircuit între faze"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-031": "A",
+        "G2-ELEC-180": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Prefab switchgear enhances operator safety with designed enclosures/interlocks; not absolute elimination of all phase-to-phase short circuits.",
+      "A_B_C_analysis_reused": {
+        "A": "A: enclosure/interlocks can improve personnel protection compared to open assemblies.",
+        "B": "B: monobloc often less configurable than modular open-bay solutions.",
+        "C": "C: 'eliminarea totală' of phase faults untrue; internal arc faults remain possible.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Prefab enclosed switchgear personnel safety and interlocks",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://library.e.abb.com/public/7dca4ffad2206d36c1257be30048d4be/DAHandbook_Section_3_Power_distribution_systems_757959_ENa.pdf",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/switchgear/air-insulated/unigear",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-7074edfad26b4917",
+      "representative_id": "G1-ELE-033",
+      "grade_member_ids": [
+        "G1-ELE-033",
+        "G2-ELEC-181"
+      ],
+      "canonical_sha256": "7074edfad26b49177e1c01d7c41606c195519588ee656d2b8e442c64e370dc87",
+      "original_question_UNCHANGED": "Comparativ cu cele imersate, transformatoarele uscate prezintă :",
+      "original_ABC_UNCHANGED": {
+        "A": "o bună rezistenţă la foc;",
+        "B": "risc redus de poluare acustică a mediului ambiant;",
+        "C": "necesitatea unor amenajări speciale la instalare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-033": "A",
+        "G2-ELEC-181": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Dry transformers can reduce liquid fire/containment hazards; fire performance depends class/insulation and specific comparison.",
+      "A_B_C_analysis_reused": {
+        "A": "A: dry-type absent mineral oil mitigates liquid fire risk; resin materials still have fire classifications.",
+        "B": "B: audible noise depends design and loading; not universal dry advantage.",
+        "C": "C: both kinds need site-specific arrangements; oil-containing variants require specific spill/fire measures.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Dry vs liquid transformer fire properties",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.eaton.com/us/en-us/catalog/medium-voltage-power-distribution-control-systems/transformers.html",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-488565899c5bffe1",
+      "representative_id": "G1-ELE-034",
+      "grade_member_ids": [
+        "G1-ELE-034",
+        "G2-ELEC-182"
+      ],
+      "canonical_sha256": "488565899c5bffe17e15de5a8977dc147abb17c10a3c2827718ceb18e2bf67e3",
+      "original_question_UNCHANGED": "Daca la un circuit al unei staţii de 6 sau 20 kV care funcţionează cu neutrul izolat apare o punere monofazatã netã la pământ, tensiunea fata de pământ a celorlalte doua faze:",
+      "original_ABC_UNCHANGED": {
+        "A": "scade de 1,41 ori",
+        "B": "rămâne constanta",
+        "C": "creste de 1,73 ori"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-034": "C",
+        "G2-ELEC-182": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Single-line-to-earth fault in ideally ungrounded neutral can shift healthy phase-to-earth voltage from phase to line value: sqrt(3)≈1.732; exact topology required.",
+      "A_B_C_analysis_reused": {
+        "A": "A: voltage does not fall; ground fault neutral displacement raises remaining earth voltages",
+        "B": "B: does not stay unchanged under metallic fault; neutral shifts",
+        "C": "C: sqrt3 = 1.732 rise matches fault phasors",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-b3508186779ffeba",
+      "representative_id": "G1-ELE-035",
+      "grade_member_ids": [
+        "G1-ELE-035",
+        "G2-ELEC-183"
+      ],
+      "canonical_sha256": "b3508186779ffebafa12c6633156766d2c22892b799424f0acb20d6ba14af03c",
+      "original_question_UNCHANGED": "Compartimentarea unei celule electrice se utilizează",
+      "original_ABC_UNCHANGED": {
+        "A": "în scopul evitării extinderii avariilor;",
+        "B": "numai  în scopul protejării personalului de exploatare;",
+        "C": "protecţiei la supratensiuni"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-035": "A",
+        "G2-ELEC-183": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Cell compartmentalization helps prevent fault propagation to other sections; 'numai' protecting personnel unduly narrow.",
+      "A_B_C_analysis_reused": {
+        "A": "A: compartment walls can segregate fault damage between sections",
+        "B": "B: safety of personnel is also important but 'numai' excludes fault segregation",
+        "C": "C: surge protection is separate device function, not compartment purpose",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": [
+          {
+            "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/switchgear/gas-insulated/zx-portfolio/zx2",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-d6eca0a23c35e299",
+      "representative_id": "G1-ELE-038",
+      "grade_member_ids": [
+        "G1-ELE-038",
+        "G2-ELEC-184"
+      ],
+      "canonical_sha256": "d6eca0a23c35e2994085601c951cb3fe784052f71482edaa660eb4356e8eb7e5",
+      "original_question_UNCHANGED": "Componenta simetrică directă produce, în cazul unui motor electric:",
+      "original_ABC_UNCHANGED": {
+        "A": "cuplul util",
+        "B": "cuplul de frânare",
+        "C": "oscilaţii ale rotorului"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-038": "A",
+        "G2-ELEC-184": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Positive sequence current produces forward useful torque in a motor; negative sequence gives countertorque. Need exact machine operating model.",
+      "A_B_C_analysis_reused": {
+        "A": "A: forward-sequence field is aligned with useful motor rotation",
+        "B": "B: counteracting torque is associated with negative sequence, not positive",
+        "C": "C: vibration can be unbalance byproduct but not defining positive-sequence torque",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-392983895ec560c1",
+      "representative_id": "G1-ELE-039",
+      "grade_member_ids": [
+        "G1-ELE-039",
+        "G2-ELEC-185"
+      ],
+      "canonical_sha256": "392983895ec560c1049637c87addc9a0860d2c5adc0c99770cb4c5620725a023",
+      "original_question_UNCHANGED": "Conform Legii lui Coulomb, forţa de atracţie sau de repulsie care se exercită între sarcinile electrice este:",
+      "original_ABC_UNCHANGED": {
+        "A": "direct proporţională cu pătratul distanţei",
+        "B": "invers proporţională cu pătratul distanţei",
+        "C": "direct proporţională cu distanţa"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-039": "B",
+        "G2-ELEC-185": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Coulomb force magnitude scales inverse with squared separation for point charges: F=k|q1q2|/r².",
+      "A_B_C_analysis_reused": {
+        "A": "A: direct with r² contradicts denominator",
+        "B": "B: force inversely proportional to r²",
+        "C": "C: direct with r contradicts 1/r²",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-687aeeb1afce89dd",
+      "representative_id": "G1-ELE-040",
+      "grade_member_ids": [
+        "G1-ELE-040",
+        "G2-ELEC-186"
+      ],
+      "canonical_sha256": "687aeeb1afce89ddb241710167191d09c86fb528c9eb6e54a3ac2fceb03705d9",
+      "original_question_UNCHANGED": "Constanta de timp a unui circuit format dintr-un rezistor de rezistenţă R înseriat cu un condensator de capacitate C, este:",
+      "original_ABC_UNCHANGED": {
+        "A": "RC",
+        "B": "R/C",
+        "C": "1/(RC)"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-040": "A",
+        "G2-ELEC-186": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Ideal series RC time constant τ=RC, not R/C or 1/RC.",
+      "A_B_C_analysis_reused": {
+        "A": "A: RC has units seconds and is exponential time constant",
+        "B": "B: R/C not units seconds",
+        "C": "C: 1/(RC) is rate s^-1, not the time constant",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-a78d43f34f008ad1",
+      "representative_id": "G1-ELE-041",
+      "grade_member_ids": [
+        "G1-ELE-041",
+        "G2-ELEC-187"
+      ],
+      "canonical_sha256": "a78d43f34f008ad15e4b5b82bcbe5ed9e9a7c94e11ce8397df246f8b2eda75c2",
+      "original_question_UNCHANGED": "Delimitările prin pereţi între celulele unei staţii electrice de interior se utilizează în principal în scopul:",
+      "original_ABC_UNCHANGED": {
+        "A": "asigurării unui acces mai comod la aparataj;",
+        "B": "limitării zgomotului în corpul de conexiuni;",
+        "C": "evitării extinderii avariilor."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-041": "C",
+        "G2-ELEC-187": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Walls limit possible internal fault spread among station cells, but cannot guarantee fault isolation if openings/common air paths exist.",
+      "A_B_C_analysis_reused": {
+        "A": "A: convenience of access is not main purpose of fire/fault segmentation",
+        "B": "B: reducing noise is not principal partition function",
+        "C": "C: fault propagation limitation matches protective separation role",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-14c80fd791619835",
+      "representative_id": "G1-ELE-042",
+      "grade_member_ids": [
+        "G1-ELE-042",
+        "G2-ELEC-188"
+      ],
+      "canonical_sha256": "14c80fd7916198355d370848225107f1432c1050d5c62ce6a29818124ad2ee89",
+      "original_question_UNCHANGED": "Curentul care circula printr-un circuit de curent alternativ, având rezistenta r=3 Ω, reactanţa x= 4 Ω si la bornele căruia se aplica o tensiune de 220 V este:",
+      "original_ABC_UNCHANGED": {
+        "A": "31,5 A",
+        "B": "44 A",
+        "C": "53,4 A"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-042": "B",
+        "G2-ELEC-188": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Magnitude of impedance sqrt(3²+4²)=5Ω; I=220/5=44A, B.",
+      "A_B_C_analysis_reused": {
+        "A": "A: 31.5A would imply Z≈6.98ohm not sqrt(3²+4²)",
+        "B": "B: 220V/5ohm=44A",
+        "C": "C: 53.4A would imply Z≈4.12ohm not resultant magnitude",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-3-rlc-series-circuits-with-ac",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-51b584ba99cd3a8f",
+      "representative_id": "G1-ELE-044",
+      "grade_member_ids": [
+        "G1-ELE-044",
+        "G2-ELEC-190"
+      ],
+      "canonical_sha256": "51b584ba99cd3a8fca969d71d28cbe5bd26b4ce95835a0440d614d190f5e6b58",
+      "original_question_UNCHANGED": "Durata de viata a lămpilor cu incandescenta:",
+      "original_ABC_UNCHANGED": {
+        "A": "creste odată cu creşterea frecventei",
+        "B": "scade odată cu scăderea tensiunii",
+        "C": "scade odată cu creşterea tensiunii"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-044": "C",
+        "G2-ELEC-190": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Higher voltage accelerates incandescent filament evaporation and shortens lamp life, but need same lamp rated conditions.",
+      "A_B_C_analysis_reused": {
+        "A": "A: frequency increase is not key standard lifetime driver",
+        "B": "B: lowering applied voltage tends to extend, not shorten filament life",
+        "C": "C: higher voltage increases filament temperature and reduces lifespan",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f37afc22dcfbb8b1",
+      "representative_id": "G1-ELE-045",
+      "grade_member_ids": [
+        "G1-ELE-045",
+        "G2-ELEC-191"
+      ],
+      "canonical_sha256": "f37afc22dcfbb8b1de6e851bf6532da739b53e370e3c47c5836331891439e80e",
+      "original_question_UNCHANGED": "Curentul electric generat prin deplasarea cu viteza v a unui corp încărcat cu o sarcină electrică se numeşte:",
+      "original_ABC_UNCHANGED": {
+        "A": "curent electric de conducţie",
+        "B": "curent electric de convecţie",
+        "C": "curent electric de deplasare (Maxwell)"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-045": "B",
+        "G2-ELEC-191": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Motion of a charged body in space produces convection current, not drift conduction in a fixed material or Maxwell displacement current.",
+      "A_B_C_analysis_reused": {
+        "A": "A: conduction is drift in conducting medium",
+        "B": "B: convection = transport of charge with moving charged body",
+        "C": "C: Maxwell displacement current = time changing electric flux, not literal body motion",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-85d098218275d33f",
+      "representative_id": "G1-ELE-047",
+      "grade_member_ids": [
+        "G1-ELE-047",
+        "G2-ELEC-193"
+      ],
+      "canonical_sha256": "85d098218275d33f4839b05b31f1bbb0c8b5cf24fa9ec9b81f892865a756a5f8",
+      "original_question_UNCHANGED": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unei bobine este:",
+      "original_ABC_UNCHANGED": {
+        "A": "mai puţin deformat decât tensiunea care i-a dat naştere",
+        "B": "mult mai deformat decât tensiunea care i-a dat naştere",
+        "C": "sinusoidal"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-047": "A",
+        "G2-ELEC-193": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Ideal inductor harmonic current scales inversely with frequency so high-order harmonics attenuate; quantitative distortion definition and DC component missing.",
+      "A_B_C_analysis_reused": {
+        "A": "A: higher order harmonic amplitude weighted 1/n leads to smoother current than same voltage",
+        "B": "B: much more distorted applies capacitor-type differentiating, not ideal L",
+        "C": "C: input nonsinusoidal generally still yields harmonics in I",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-cfff1eac871e686f",
+      "representative_id": "G1-ELE-048",
+      "grade_member_ids": [
+        "G1-ELE-048",
+        "G2-ELEC-194"
+      ],
+      "canonical_sha256": "cfff1eac871e686f9b58a7af7598767a037a7a9126851fafd2cc5862f6f92566",
+      "original_question_UNCHANGED": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unui condensator este:",
+      "original_ABC_UNCHANGED": {
+        "A": "mult mai deformat decât tensiunea care i-a dat naştere",
+        "B": "sinusoidal",
+        "C": "mai puţin deformat decât tensiune care i-a dat naştere"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-048": "A",
+        "G2-ELEC-194": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Ideal capacitor current harmonic amplitude scales with frequency, tending more harmonic distortion; exceptions depend spectrum and exact metric.",
+      "A_B_C_analysis_reused": {
+        "A": "A: derivative operation weights high-order n, generally more distorted current",
+        "B": "B: nonsinusoidal input generically produces harmonic current",
+        "C": "C: 1/n smoothing describes inductive not capacitive model",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-807a4eaec50a6d09",
+      "representative_id": "G1-ELE-050",
+      "grade_member_ids": [
+        "G1-ELE-050",
+        "G2-ELEC-196"
+      ],
+      "canonical_sha256": "807a4eaec50a6d0944c468621141141e597b6fc9e2843018972ac452f39fefbb",
+      "original_question_UNCHANGED": "Energia transmisă de undele electromagnetice cu intensitatea câmpului electric E şi intensitatea câmpului magnetic H se propagă după un vector:",
+      "original_ABC_UNCHANGED": {
+        "A": "S=E+H",
+        "B": "S=HxE",
+        "C": "S=ExH"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-050": "C",
+        "G2-ELEC-196": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Poynting energy-flux vector is E×H and directed by cross product, C; H×E reverses direction.",
+      "A_B_C_analysis_reused": {
+        "A": "A: adding vectors E+H has mismatched physical units and direction",
+        "B": "B: H×E is minus E×H, wrong propagation direction",
+        "C": "C: E×H correct ordered cross product",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-ecaa28b689c1ea32",
+      "representative_id": "G1-ELE-052",
+      "grade_member_ids": [
+        "G1-ELE-052",
+        "G2-ELEC-198"
+      ],
+      "canonical_sha256": "ecaa28b689c1ea32fc82bbefe4ed3395ff22b5516a89b812188a2f946c7e3da1",
+      "original_question_UNCHANGED": "Dacă printr-un condensator circulă un curent alternativ sinusoidal, la bornele sale se produce o cădere de tensiune:",
+      "original_ABC_UNCHANGED": {
+        "A": "defazată cu 90 de grade în urma curentului",
+        "B": "defazată cu 90 de grade înaintea curentului",
+        "C": "în fază cu curentul"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-052": "A",
+        "G2-ELEC-198": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "For ideal capacitor sinusoidal current leads its terminal voltage by 90°, equivalently voltage lags current.",
+      "A_B_C_analysis_reused": {
+        "A": "A: capacitor voltage lags current by 90°",
+        "B": "B: voltage leading current corresponds to inductor",
+        "C": "C: in phase describes pure resistance",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}
