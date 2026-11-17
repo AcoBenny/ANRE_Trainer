@@ -1,0 +1,445 @@
+{
+  "checkpoint": "CKPT-130",
+  "date": "2026-11-17",
+  "baseline_head": "54e0ed2b5d4417f44202db9a30d83e8fb33a737e",
+  "protocol": "15 QABC units batch 2/2, 30 original grade IDs",
+  "real_execution": "One assistant technical, source, linguistic, QA checklists. Independent subagents not started",
+  "constraints": "No original QABC/keys/MASTER/HTML/APK changes; PR #7 Draft, no merge/release",
+  "gates": {
+    "exam_edition": "UNVERIFIED",
+    "source_approval": "PRELIMINARY",
+    "independent_review": "NOT_RUN",
+    "learning": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-b7d66728b46cca52",
+      "representative_id": "G1-ELE-227",
+      "member_ids": "G1-ELE-227;G2-ELEC-363",
+      "qabc_sha256": "b7d66728b46cca52e686e2ddf464e51c681b4c599c99752cd0ec7079768f6fe9",
+      "original_keys_by_id_JSON": "{\"G1-ELE-227\":\"B\",\"G2-ELEC-363\":\"B\"}",
+      "question_original": "Separatorul, ca echipament în cadrul unei staţii electrice, are rolul:",
+      "A_original": "de a proteja circuitul la supracurenţi",
+      "B_original": "de a separa vizibil un circuit",
+      "C_original": "de a măsură nivelul de izolaţie",
+      "original_stored_key_UNCHANGED": "B",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Interlocks_and_conditioned_operations",
+        "locator": "Schneider EIG: disconnectors and interlocks; related source lead from prior batches",
+        "access": "PRIOR_TOPICAL_LEAD_NOT_REOPENED",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Separare electrica, cu distanta de izolatie vizibila sau indicata fiabil; nu protectie la supracurent sau masurare izolatie.",
+      "ABC_reasoning": {
+        "A": "A: Supracurenții necesită echipament de protecție adecvat, nu separator obișnuit.",
+        "B": "B: Separatorul are rol de separare electrică/vizibilă a circuitului fără manevră de sarcină, în configurație adecvată.",
+        "C": "C: Măsurarea izolației se face cu echipamente de măsurare, nu prin funcția separatorului."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Carcasele pot ascunde contactele; vizibil trebuie interpretat tehnic, nu instructiune de manevra.",
+      "source_limitation": "Unele separatoare sunt carcasate fără ruptură vizibilă în sens fizic; definirea «vizibil» poate presupune indicare sigură a poziției.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-2adbbc1923c09d54",
+      "representative_id": "G1-ELE-228",
+      "member_ids": "G1-ELE-228;G2-ELEC-364",
+      "qabc_sha256": "2adbbc1923c09d543d565a182e5d4c38b2e90673c553d6b51ce621921a84a096",
+      "original_keys_by_id_JSON": "{\"G1-ELE-228\":\"A\",\"G2-ELEC-364\":\"A\"}",
+      "question_original": "Siguranţele electrice au rolul de a:",
+      "A_original": "proteja instalaţia din aval la defecte la scurtcircuit ca si la suprasarcini de lunga durata",
+      "B_original": "face trecerea din linie electrica aeriana în line electrica în cablu",
+      "C_original": "asigura protecţia personalului",
+      "original_stored_key_UNCHANGED": "A",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Protection_by_fuses",
+        "locator": "Manufacturer fuse gG full-range vs aM backup protection to confirm",
+        "access": "TOPICAL_REFERENCE_NOT_DIRECTLY_OPENED",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Fuzibil selectat dupa curba timp-curent poate proteja de scurtcircuit si suprasarcina; depinde de clasa gG/aM.",
+      "ABC_reasoning": {
+        "A": "A: Unele clase de siguranță fuzibilă, precum gG, protejează și la suprasarcină durabilă și scurtcircuit.",
+        "B": "B: Trecerea de la LEA la cablu este rol de racordare/protecții mecanice, nu al siguranței.",
+        "C": "C: Siguranța singură nu asigură toate măsurile de protecție a personalului; este parte a unui sistem de protecție."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Fuzibil aM poate necesita un dispozitiv suplimentar de suprasarcina, deci A nu e universal.",
+      "source_limitation": "A nu este universal pentru toate tipurile de fuzibil; aM motor fuses nu acoperă integral suprasarcina.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-0c5f070083b2cd0a",
+      "representative_id": "G1-ELE-232",
+      "member_ids": "G1-ELE-232;G2-ELEC-368",
+      "qabc_sha256": "0c5f070083b2cd0a0adec7df64a0801072e2953c0453221694533a05dc17898c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-232\":\"B\",\"G2-ELEC-368\":\"B\"}",
+      "question_original": "Sistemele simetrice de fazori în care se descompun sistemele de tensiuni sau de curenţi dezechilibraţi:",
+      "A_original": "corespund unor realităţi fizice",
+      "B_original": "reprezintă artificii de calcul",
+      "C_original": "numai sistemul direct corespunde unei realităţi fizice",
+      "original_stored_key_UNCHANGED": "B",
+      "source": {
+        "url": "https://www.phasetophase.nl/book/book_2_7.html | https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_%28Kirtley%29/04%3A_Introduction_to_symmetrical_components/4.01%3A_The_Symmetrical_Component_Transformation",
+        "locator": "Phase to Phase ch7.5.3: fictitious decomposition; LibreTexts Kirtley §4.1 sequence transform",
+        "access": "TECHNICAL_HTML_OPENED_PLUS_SEARCH",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Componentele directe, inverse si homopolare descompun matematic un sistem trifazat dezechilibrat.",
+      "ABC_reasoning": {
+        "A": "A: Componentelor li se pot asocia efecte fizice reale (încălzire de secvență inversă), dar seturile separate nu sunt 3 sisteme fizice independente efectiv prezente.",
+        "B": "B: Transformarea Fortescue este descompunere matematică a sistemului dezechilibrat în componente simetrice.",
+        "C": "C: Nu doar componenta directă poate avea efecte fizice; inversă și homopolară au contribuții măsurabile."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Componentele sunt artificii de calcul dar pot avea consecinte fizice reale, inclusiv incalzirea unui motor.",
+      "source_limitation": "«artificii» este un termen didactic; nu înseamnă că secvența negativă/homopolară sunt fără efecte reale.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-bc2eb2f0b798f3dc",
+      "representative_id": "G1-ELE-234",
+      "member_ids": "G1-ELE-234;G2-ELEC-370",
+      "qabc_sha256": "bc2eb2f0b798f3dc69512d0c89bf7ff09692cf7b1538c69dc7b7363b51361880",
+      "original_keys_by_id_JSON": "{\"G1-ELE-234\":\"C\",\"G2-ELEC-370\":\"C\"}",
+      "question_original": "Transformatoarele de măsurare de tensiune se construiesc pentru tensiuni în secundar de:",
+      "A_original": "10 V",
+      "B_original": "50 V",
+      "C_original": "100 V",
+      "original_stored_key_UNCHANGED": "C",
+      "source": {
+        "url": "https://standards.iteh.ai/catalog/standards/iec/301e2161-babf-44ad-9132-b85514d36f62/iec-61869-3-2011",
+        "locator": "IEC 61869-3:2011 §5.301.2, standard 100/110 V, US 115/120 V; public extract opened",
+        "access": "IEC_PUBLIC_EXTRACT_HTML_OPENED",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Transformator de tensiune de masura conventional european: secundar nominal de 100V, sau configuratie 100/sqrt(3)V.",
+      "ABC_reasoning": {
+        "A": "A: 10V nu este valoarea nominală europeană uzuală pentru VT convențional.",
+        "B": "B: 50V nu este valoarea nominală europeană uzuală de clasă din opțiuni.",
+        "C": "C: IEC 61869-3:2011 §5.301.2 include 100V ca tensiune secundară standard, alături de 110V (și variante)."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Alte standarde sau senzori speciali pot avea tensiuni secundare diferite; norma si editia sunt deschise.",
+      "source_limitation": "Valoarea 100V este corectă în convenție europeană, NU singura globală; confirmare ediție și bibliografie de examen încă necesare.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-8d58918256eddd79",
+      "representative_id": "G1-ELE-242",
+      "member_ids": "G1-ELE-242;G2-ELEC-378",
+      "qabc_sha256": "8d58918256eddd7969d7eb9bfdfec31a8a2f983ad8ba4e558093251ac584d50b",
+      "original_keys_by_id_JSON": "{\"G1-ELE-242\":\"C\",\"G2-ELEC-378\":\"C\"}",
+      "question_original": "Un motor electric trifazat legat în stea este în funcţiune si alimentat la 0,4 kV. Tensiunea între neutrul stelei si una dintre faze este:",
+      "A_original": "0,4 kV",
+      "B_original": "0 V",
+      "C_original": "230 V",
+      "original_stored_key_UNCHANGED": "C",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Characteristics_of_TT%2C_TN_and_IT_systems",
+        "locator": "Regim trifazat 400/230 V și relația fază-linie, sursă tematică",
+        "access": "DERIVED_FROM_STANDARD_BALANCED_THREE_PHASE",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Motor in stea simetrica: 400V intre faze da 400/sqrt(3) aproximativ 231V faza-neutru.",
+      "ABC_reasoning": {
+        "A": "A: 0.4kV este tensiunea nominală între faze, nu tensiunea fază–punct de stea în sistem echilibrat.",
+        "B": "B: Punctul stelei nu este la același potențial cu o fază alimentată; 0V ar necesita scurtare/condiție improprie.",
+        "C": "C: U_f=U_L/√3≈400/1.732=231V; aproximarea uzuală 230V."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Punct de stea flotant si sarcini dezechilibrate pot deplasa tensiunea fata de neutru.",
+      "source_limitation": "Punct de stea flotant cu bobinaje/sarcini asimetrice poate avea deplasare de potențial; enunțul este implicit simetric.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-425d96089f4f9c7e",
+      "representative_id": "G1-ELE-250",
+      "member_ids": "G1-ELE-250;G2-ELEC-385",
+      "qabc_sha256": "425d96089f4f9c7e8884a41f15578d0e556e28a66104541da2f4756017f5ab44",
+      "original_keys_by_id_JSON": "{\"G1-ELE-250\":\"A\",\"G2-ELEC-385\":\"A\"}",
+      "question_original": "Un motor electric sincron, care funcţionează subexcitat:",
+      "A_original": "absoarbe putere activă şi putere reactivă",
+      "B_original": "absoarbe putere activă şi produce putere reactivă",
+      "C_original": "produce putere activă şi putere reactivă",
+      "original_stored_key_UNCHANGED": "A",
+      "source": {
+        "url": "https://www.mdpi.com/1996-1073/17/17/4294",
+        "locator": "Synchronous condenser: underexcitation absorbs reactive energy; motor mechanical loading adds P",
+        "access": "ACADEMIC_HTML_SEARCH_RESULT",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Motor sincron subexcitat consuma P pentru sarcina mecanica si Q inductiv.",
+      "ABC_reasoning": {
+        "A": "A: Motorul sincron subexcitat absoarbe putere reactivă inductivă; în regim motor acționează sarcină mecanică și absoarbe putere activă.",
+        "B": "B: Motorul supraexcitat poate furniza reactiv, nu cel subexcitat.",
+        "C": "C: «produce putere activă» descrie generatorul, nu motorul cu sarcină."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Un motor compensator in gol consuma putere activa numai pentru pierderi; semnul lui Q depinde de conventie.",
+      "source_limitation": "Motor sincron folosit drept compensator în gol poate absorbi doar pierderi active, nu putere mecanică semnificativă; convenția de semn a Q.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-7886f412309c02b4",
+      "representative_id": "G1-ELE-253",
+      "member_ids": "G1-ELE-253;G2-ELEC-388",
+      "qabc_sha256": "7886f412309c02b41ee9b7344c38b9e565674c7450a7e6f1bc1df2e90acd4ff2",
+      "original_keys_by_id_JSON": "{\"G1-ELE-253\":\"A\",\"G2-ELEC-388\":\"A\"}",
+      "question_original": "Un receptor electric de rezistenţă R conectat la bornele AB ale unui circuit de alimentare oarecare absoarbe puterea maximă dacă:",
+      "A_original": "rezistenţa R este egală cu rezistenţa totală a circuitului văzută prin bornele AB",
+      "B_original": "rezistenţa R este egală cu rezistenţa internă a sursei de tem",
+      "C_original": "rezistenţa R tinde spre zero",
+      "original_stored_key_UNCHANGED": "A",
+      "source": {
+        "url": "https://www.sciencedirect.com/topics/engineering/maximum-power-transfer-theorem",
+        "locator": "Thevenin max power P=VTh²RL/(RTh+RL)², optimum RL=RTh",
+        "access": "SCHOLARLY_WEB_SEARCH_RESULT",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Teorema transferului maxim de putere: Rload=Rth pentru retea lineara rezistiva; P=Eth^2 R/(R+Rth)^2.",
+      "ABC_reasoning": {
+        "A": "A: Teorema puterii maxime: R_L=R_Th văzută prin bornele A–B la surse echivalente dezactivate.",
+        "B": "B: Rezistența internă a SURSEI electromotoare poate diferi de R_Th al întregii rețele active între AB.",
+        "C": "C: R_L→0 duce P_L≈0 pentru sursă cu R_Th>0, chiar dacă curentul crește."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "La circuit AC complex este necesara adaptare conjugata; enuntul retea oarecare este prea larg.",
+      "source_limitation": "Rețea oarecare trebuie să admită echivalent Thevenin rezistiv liniar și tensiune DC; pentru AC adaptare conjugată complexă.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-f08b11108a5525e8",
+      "representative_id": "G1-ELE-261",
+      "member_ids": "G1-ELE-261;G2-ELEC-396",
+      "qabc_sha256": "f08b11108a5525e804ca2feffbfd625a34dc4aae4bb89dafdb8a3a7d4ecdd62a",
+      "original_keys_by_id_JSON": "{\"G1-ELE-261\":\"A\",\"G2-ELEC-396\":\"A\"}",
+      "question_original": "Unitatea de măsură ohm x mmp / m este pentru:",
+      "A_original": "rezistivitate",
+      "B_original": "greutate specifica",
+      "C_original": "coeficient de dilataţie",
+      "original_stored_key_UNCHANGED": "A",
+      "source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b/conversion-factors",
+        "locator": "NIST lists Ω mm²/m for electrical resistivity (relevant NIST Appendix B.9)",
+        "access": "OFFICIAL_NIST_SEARCH_RESULT_RELEVANT_VARIANT",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Rezistivitate rho = R*A/L, unitatea ohm*mm2/m (echivalent SI ohm*m).",
+      "ABC_reasoning": {
+        "A": "A: ρ=R·S/L are unitate Ω·mm²/m (uz tehnic la cabluri).",
+        "B": "B: Greutatea specifică este forță pe volum, N/m³, nu Ω·mm²/m.",
+        "C": "C: Coeficientul de dilatație este ~1/K, nu unitate de rezistivitate."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Originalul mmp este corupt pentru mm patrat; nu modificam textul sursa si nu il consideram rezolvat tipografic.",
+      "source_limitation": "În original «mmp» este format garblat pentru mm², nu trebuie modificat fără aprobarea canonică.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-0408c2766ae899ad",
+      "representative_id": "G1-ELE-263",
+      "member_ids": "G1-ELE-263;G2-ELEC-398",
+      "qabc_sha256": "0408c2766ae899adeb658bb576d70e5c96d57aa60d646c6fa3097deb369c2070",
+      "original_keys_by_id_JSON": "{\"G1-ELE-263\":\"A\",\"G2-ELEC-398\":\"A\"}",
+      "question_original": "Unitatea de măsură pentru puterea reactiva este:",
+      "A_original": "kVAr",
+      "B_original": "kVA",
+      "C_original": "kW",
+      "original_stored_key_UNCHANGED": "A",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "Schneider Electrical Installation Guide P kW Q kvar S kVA",
+        "access": "TECHNICAL_SOURCE_PREVIOUSLY_USED",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Puterea reactiva Q foloseste simbolul var/kVAr, nu kVA aparent si nu kW activ.",
+      "ABC_reasoning": {
+        "A": "A: kVAr este uz tehnic pentru putere reactivă.",
+        "B": "B: kVA reprezintă putere aparentă, nu reactivă.",
+        "C": "C: kW reprezintă putere activă."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Unitatile exprima categorii de putere diferite; nu confunda Q (var) cu energia reactiva (varh).",
+      "source_limitation": "SI derivă var din W dimensional, dar denumirea var este pentru a distinge sensul fizic; notația standard var (lowercase) convențional.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-a8cf91ef3326a641",
+      "representative_id": "G1-ELE-268",
+      "member_ids": "G1-ELE-268;G2-ELEC-401",
+      "qabc_sha256": "a8cf91ef3326a641d35aff40f3d5f39bc9ee73083fd8489ba5e4de37bc627a67",
+      "original_keys_by_id_JSON": "{\"G1-ELE-268\":\"B\",\"G2-ELEC-401\":\"B\"}",
+      "question_original": "Utilizarea întreruptorului debroşabil:",
+      "A_original": "asigură doar compactarea celulei;",
+      "B_original": "asigură rapiditate în restabilirea alimentării în cazul unei defectări;",
+      "C_original": "creşte riscul de electrocutare a personalului care execută lucrări de revizie în celulă.",
+      "original_stored_key_UNCHANGED": "B",
+      "source": {
+        "url": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+        "access": "TECHNICAL_WEB_RESULT",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Intreruptor debrosabil permite potential inlocuirea rapida cu rezerva compatibila si reducerea indisponibilitatii.",
+      "ABC_reasoning": {
+        "A": "A: «doar» compactarea este fals: aparatul debroșabil oferă avantaj de acces/înlocuire.",
+        "B": "B: Poate reduce durata restabilirii prin înlocuirea unui întreruptor defect cu unul de rezervă, dacă echiparea permite.",
+        "C": "C: Nu crește automat riscul de electrocutare; segregarea interblocată poate reduce riscul, dar procedura rămâne obligatorie."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Rapiditatea nu este garantata fara aparat de rezerva si schema adecvata; nu se ofera instructiuni de operare.",
+      "source_limitation": "Restabilirea rapidă cere întreruptor compatibil disponibil și schemă care permite transfer. Nu se interpretează ca instrucțiune de operare.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-297a35488066b339",
+      "representative_id": "G1-ELE-271",
+      "member_ids": "G1-ELE-271;G2-ELEC-404",
+      "qabc_sha256": "297a35488066b3392783cb89ac0f2826b5443277d5e505b797382355402c2164",
+      "original_keys_by_id_JSON": "{\"G1-ELE-271\":\"A\",\"G2-ELEC-404\":\"A\"}",
+      "question_original": "Utilizarea vidului ca mediu de stingere a arcului electric:",
+      "A_original": "reduce pericolul de incendiu;",
+      "B_original": "nu reduce cheltuielile de întreţinere;",
+      "C_original": "creşte masa şi gabaritul întreruptoarelor",
+      "original_stored_key_UNCHANGED": "A",
+      "source": {
+        "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/grid-components/primary-vacuum-circuit-breakers",
+        "access": "ABB_MANUFACTURER_WEB_SEARCH",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Stingerea in vid evita mediul lichid inflamabil in camera de arc si poate reduce riscul de incendiu.",
+      "ABC_reasoning": {
+        "A": "A: În vid nu există ulei inflamabil/mediu de stingere combustibil, reducând riscul de incendiu din aparatul de stingere.",
+        "B": "B: De regulă vidul reduce mentenanța arcului, deci B este neadevărat ca generalizare.",
+        "C": "C: Întreruptorul în vid este adesea compact; nu implică creșterea obligatorie a masei."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Riscurile termice ale restului instalatiei raman; reduce nu inseamna elimina.",
+      "source_limitation": "Avantajele sunt tipice pentru întreruptor MV cu vid; tehnologia și clasa de tensiune contează.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-79117a57dd95aa36",
+      "representative_id": "G1-ELE-272",
+      "member_ids": "G1-ELE-272;G2-ELEC-405",
+      "qabc_sha256": "79117a57dd95aa36c817c0a1fdea765e0c217a4135186c3a13c21ddb8e5409b1",
+      "original_keys_by_id_JSON": "{\"G1-ELE-272\":\"A\",\"G2-ELEC-405\":\"A\"}",
+      "question_original": "Valoarea frecventei în sistemul electroenergetic este determinata în principal de:",
+      "A_original": "bilanţul puterilor active",
+      "B_original": "circulaţia puterii reactive",
+      "C_original": "modul de tratare a neutrului reţelei",
+      "original_stored_key_UNCHANGED": "A",
+      "source": {
+        "url": "https://eepublicdownloads.blob.core.windows.net/public-cdn-container/tyndp-documents/TYNDP2022/public/syst-dynamic-operational-challenges.pdf",
+        "access": "ENTSO_E_PUBLIC_PDF_SEARCH_SNIPPET_NOT_VISUALLY_VERIFIED",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Frecventa sistemului sincron este influentata fundamental de echilibrul puterii active generatie-consum.",
+      "ABC_reasoning": {
+        "A": "A: Dacă generarea activă diferă de consum+pierderi, energia cinetică a maselor sincronizate se modifică, schimbând frecvența.",
+        "B": "B: Puterea reactivă afectează în primul rând tensiunile, nu frecvența medie direct.",
+        "C": "C: Tratarea neutrului afectează defectele și protecția, nu frecvența fundamentală reglată."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Inertia si reglarile de frecventa modifica dinamica; puterea reactiva este mai legata de tensiune.",
+      "source_limitation": "ENTSO-E confirmă în rezultatul căutării mismatch active P demand/generation causes frequency deviation; dinamicile de inerție și serviciile de reglaj influențează răspunsul.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-d4e90d60c85b4947",
+      "representative_id": "G1-ELE-273",
+      "member_ids": "G1-ELE-273;G2-ELEC-406",
+      "qabc_sha256": "d4e90d60c85b49472d3c1470a361328c7e1af514f36b105d6302ac4bc75b96a7",
+      "original_keys_by_id_JSON": "{\"G1-ELE-273\":\"B\",\"G2-ELEC-406\":\"B\"}",
+      "question_original": "Valoarea medie a capacităţii lineice pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+      "A_original": "egală",
+      "B_original": "mai mică",
+      "C_original": "mai mare",
+      "original_stored_key_UNCHANGED": "B",
+      "source": {
+        "url": "https://opal-rt.atlassian.net/wiki/spaces/PDOCHS/pages/150307736/Typical%2BElectrical%2BParameters",
+        "access": "OPAL_RT_TECHNICAL_WEB_SEARCH",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Capacitatea lineica a LEA trifazate este tipic mai mica fata de cablul subteran, cu ecrane apropiate.",
+      "ABC_reasoning": {
+        "A": "A: Capacitatea lineică egală nu este tipică la geometrii standard LEA și LEC.",
+        "B": "B: Conductoarele apropiate și manta împământată plus dielectric fac LEC mai capacitivă per km decât LEA.",
+        "C": "C: LEA în aer are de regulă capacitate mai mică, nu mai mare."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Compara medii tipice si aceeasi clasa de tensiune; studiul comparativ PDF nu a fost verificat vizual.",
+      "source_limitation": "Comparație medie dependentă de diametru/distanță/izolație/tensiune, nu egalitate universală.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-e516a82782a6b935",
+      "representative_id": "G1-ELE-274",
+      "member_ids": "G1-ELE-274;G2-ELEC-407",
+      "qabc_sha256": "e516a82782a6b935f97a410ae0048b2840e81abafa622fec7b61b3501b04a292",
+      "original_keys_by_id_JSON": "{\"G1-ELE-274\":\"B\",\"G2-ELEC-407\":\"B\"}",
+      "question_original": "Valoarea medie a inductanţei de serviciu pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+      "A_original": "egală",
+      "B_original": "mai mare",
+      "C_original": "mai mică",
+      "original_stored_key_UNCHANGED": "B",
+      "source": {
+        "url": "https://www.electricalpowerengineering.nl/Electric-Power-Systems/Power-carriers",
+        "access": "POWER_SYSTEMS_TECHNICAL_WEB_SEARCH",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Inductanta lineica serie a unei LEA este de regula mai mare decat a cablurilor subterane cu faze apropiate.",
+      "ABC_reasoning": {
+        "A": "A: Inductanța lineică egală nu este tipică pentru geometrii diferite.",
+        "B": "B: LEA cu distanțe mari între conductoare are inductanța de serviciu de regulă mai mare decât cablul.",
+        "C": "C: Cablul cu conductoare apropiate are L lineică mai mică, nu mai mare."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "Alte geometrii sau ecrane pot schimba comparatia; nu deducem o valoare universala.",
+      "source_limitation": "Inductanța reală depinde de geometrie, ecran, retur de pământ și mediu, medie nu extremă.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-db01efb3f7d53777",
+      "representative_id": "G1-ELE-275",
+      "member_ids": "G1-ELE-275;G2-ELEC-408",
+      "qabc_sha256": "db01efb3f7d53777b89cf89807ce35ad1440acca1cb916dde53ff7a53c6c4674",
+      "original_keys_by_id_JSON": "{\"G1-ELE-275\":\"C\",\"G2-ELEC-408\":\"C\"}",
+      "question_original": "Valoarea medie pătratică a unei mărimi periodice se mai numeşte şi:",
+      "A_original": "amplitudine",
+      "B_original": "modul",
+      "C_original": "valoare efectivă sau valoarea eficace",
+      "original_stored_key_UNCHANGED": "C",
+      "source": {
+        "url": "https://www.bipm.org/en/publications/si-brochure",
+        "access": "SI_DEFINITION_GENERAL_LEAD",
+        "source_verification": "NOT_OFFICIAL_EXAM_BIBLIOGRAPHY_SIGNOFF"
+      },
+      "positive_context": "Valoarea eficace este RMS=sqrt((1/T)*integral(x(t)^2 dt)) pe o perioada.",
+      "ABC_reasoning": {
+        "A": "A: Amplitudinea este valoarea maximă, nu media pătratică.",
+        "B": "B: Modulul unui fazor nu este universal valoarea efectivă fără o convenție de normalizare.",
+        "C": "C: RMS=sqrt((1/T)∫x(t)²dt), numită valoarea efectivă/eficace."
+      },
+      "pairwise": "A/B, A/C, B/C compared via separate option rationales, with positive candidate evidence",
+      "reverse_counterexample_and_scope": "La sinus RMS=amplitudine/sqrt(2), nu amplitudine sau modul instantaneu.",
+      "source_limitation": "Media pe o perioadă completă; adevărat pentru mărime periodică finită pătrat integrabil.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}
