@@ -1,0 +1,505 @@
+{
+  "checkpoint": "CKPT-164",
+  "date": "2026-11-17",
+  "head_at_start": "32237e0570ddb7b69b517bf37b78da60bd54a9a3",
+  "units": 15,
+  "grade_ids": 15,
+  "status_counts": {
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 8,
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 5,
+    "CONDITIONAL_MODEL_OR_SOURCE": 2
+  },
+  "method": "Existing legal A/B/C source triage reopened by candidate current portal laws; some exact provisions directly indexed, others remain conditional/blocked. Separate official law truth from original imported answer key and from current exam bibliography.",
+  "new_critical_disagreements": [
+    "G1-LEG-019",
+    "G1-LEG-026",
+    "G1-LEG-032",
+    "G1-LEG-034",
+    "G1-LEG-048"
+  ],
+  "no_official_workbook_qa": true,
+  "no_independent_qa": true,
+  "learner_approvals": 0,
+  "cards": [
+    {
+      "unit_id": "AU-438f264b2a9d1929",
+      "representative_id": "G1-LEG-019",
+      "member_ids": [
+        "G1-LEG-019"
+      ],
+      "sha256_QABC": "438f264b2a9d19292b0ec1944457fbd82d925deff8f6b9dd682156689496d13f",
+      "original_question_UNCHANGED": "Nerespectarea normelor tehnice emise de către ANRE constituie:",
+      "original_ABC_UNCHANGED": {
+        "A": "Infracţiune",
+        "B": "Contravenţie",
+        "C": "Abatere"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-019": "C"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "Legea 123/2012 Art.93 expressly classifies violations of ANRE technical regulations as contraventions; 'abatere' is not the defined legal sanction category.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "art.93 alin.(1)",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: nerespectarea normelor tehnice nu este per se infractiune; B: Legea123 art93 include nerespectarea normelor tehnice ANRE intre contraventii; C: «abatere» poate fi termen informal dar nu incadrarea contraventionala specifica.",
+      "previous_source_scope": "Stored C contrazice clasificarea din lege, intr-o forma istorica accesata; consolidarea2026 incompleta.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-2b80efe97e6ae326",
+      "representative_id": "G1-LEG-020",
+      "member_ids": [
+        "G1-LEG-020"
+      ],
+      "sha256_QABC": "2b80efe97e6ae32672b740fa344c26466eb2ef2efc14078ac8e1694fda1b2b39",
+      "original_question_UNCHANGED": "Eventualele contestaţii ale avizelor tehnice de racordare se rezolvă de către:",
+      "original_ABC_UNCHANGED": {
+        "A": "organele ierarhice ale emitentului",
+        "B": "operatorul de distribuţie care a emis avizul",
+        "C": "ANRE"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-020": "A"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "ATR contestations are handled under regulator-specific ANRE dispute framework; neither issuer superior nor issuer alone is necessarily final independent deciding authority; original A requires same-era exact procedure.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "article": "contestare ATR; procedură ANRE (locator neconfirmat)",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: organele ierarhice emitentului ar putea descrie procedura istorica, dar nu este verificata actual; B: operatorul emitentului poate reexamina contestatii si nu este automat for decident; C: ANRE poate solutiona litigii in anumite proceduri, dar competenta exacta trebuie probata.",
+      "previous_source_scope": "Termenul «contestatii aviz tehnic» cere norma, competenta si cale specifica; nu extrapola generic.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-99a07af473ffa794",
+      "representative_id": "G1-LEG-024",
+      "member_ids": [
+        "G1-LEG-024"
+      ],
+      "sha256_QABC": "99a07af473ffa7942401003cb67972e68ef4c29de2257a0f369524a7f1db34c1",
+      "original_question_UNCHANGED": "Obţinerea avizului tehnic de racordare de către un utilizator:",
+      "original_ABC_UNCHANGED": {
+        "A": "nu este obligatorie pentru o durata mai mică de 6 luni",
+        "B": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+        "C": "este obligatorie pentru orice loc de consum/producere nou"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-024": "A"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "Blanket exception for temporary supplies less than 6 months is not established in current connection regulation; new consumption/generation locations generally need ATR, subject to defined exceptions. Imported A not supported.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "article": "obligații ATR + excepții",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: exceptie generala sub sase luni nu e sustinuta de regula de racordare pentru loc nou; B: puterea <100kW nu anuleaza obligatia; C: pentru locuri noi conectate la reteaua publica se solicita ATR, dar «orice» si exceptiile trebuie testate.",
+      "previous_source_scope": "Stored A suspect; trebuie distinse utilizatorii temporari, retelele private, racordarea existente/modificari.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-6b631320f93aae79",
+      "representative_id": "G1-LEG-026",
+      "member_ids": [
+        "G1-LEG-026"
+      ],
+      "sha256_QABC": "6b631320f93aae7901f2b30d11f91c89f619c118572be345fd8cf18ffa523cf9",
+      "original_question_UNCHANGED": "Executarea sau folosirea de instalaţii clandestine în scopul racordării directe la reţea constituie:",
+      "original_ABC_UNCHANGED": {
+        "A": "contravenţie",
+        "B": "infracţiune",
+        "C": "contravenţie sau infracţiune, după caz"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-026": "C"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "Legea 123/2012 Art.92(2) expressly makes clandestine installation used for direct grid connection a criminal offence; original C 'contravenție sau infracțiune după caz' contradicts that exact specific construction.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "art.92 alin.(2)",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: nu este clasificarea legala pentru executarea/folosirea instalatiilor clandestine; B: art92(2) o incadreaza ca infractiune; C: «contraventie sau infractiune dupa caz» extinde nejustificat clasificarea acelui act.",
+      "previous_source_scope": "Stored C contradict art92(2), care fixeaza infractiunea pentru conduita formulata.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-7c4766a940d41a2c",
+      "representative_id": "G1-LEG-028",
+      "member_ids": [
+        "G1-LEG-028"
+      ],
+      "sha256_QABC": "7c4766a940d41a2c5202bd88733f9d7189674c355d1ed1ca54049106f3f4b583",
+      "original_question_UNCHANGED": "În cazul unui ansamblu de blocuri de locuinţe, grupurile de măsurare individuale se poziţionează",
+      "original_ABC_UNCHANGED": {
+        "A": "pe tablourile din apartamente",
+        "B": "centralizat, la limita zonei de proprietate asupra terenului, in exteriorul construcţiei",
+        "C": "centralizat, la parter sau pe palier"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-028": "B"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "Apartment-block metering location is regulated by exact technical object and network operator connection procedure; old B exterior land boundary may differ from central at ground floor/palier; exact current provision not proven.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "article": "locație grupuri de măsurare multifamilial",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: tablourile din apartament nu corespund de obicei masurarii individuale centralizate; B: la limita proprietatii/exterior poate fi pentru unele scenarii ansambluri; C: la parter/palier este prevazut in unele cladiri colective, in functie de reglementari.",
+      "previous_source_scope": "Cheia B nu poate fi universala fara distinctie «ansamblu»/«bloc colectiv»/tip dezvoltare.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-3eaf7b37447fa7fb",
+      "representative_id": "G1-LEG-032",
+      "member_ids": [
+        "G1-LEG-032"
+      ],
+      "sha256_QABC": "3eaf7b37447fa7fb565132152e6e3b5fcc237dba40abc614ca178f8d04bf9778",
+      "original_question_UNCHANGED": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "Comiterea unei fapte prevăzute în Regulamentul de autorizare ca fiind interzisă",
+        "B": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+        "C": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-032": "B"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "Ordin ANRE 66/2023 Art.30 gives visa 5 years, so an authorization issued 4 years ago is not automatically a contravention (B); A prohibited act requires specific conduct and Article 93 matching.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article": "art.30 (5 ani); sancțiuni art.37",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: o interdictie poate declansa sanctiune doar daca exista contraventie legala tipizata; B: 4 ani nu inseamna automat nevizare (ciclul este de 5 ani); C: IIA poate proiecta instalatii interioare JT in limitele sale.",
+      "previous_source_scope": "Stored B contrazice durata de vizare; A depinde de art93 contraventie+competenta ANRE.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-a10827ec8ff27400",
+      "representative_id": "G1-LEG-034",
+      "member_ids": [
+        "G1-LEG-034"
+      ],
+      "sha256_QABC": "a10827ec8ff27400d16d6b74ce8549aef55da217d4cca2c90ad049940738525c",
+      "original_question_UNCHANGED": "Un electrician autorizat care execută lucrări de instalaţii electrice:",
+      "original_ABC_UNCHANGED": {
+        "A": "Are obligaţia de a respecta proiectul în baza căruia execută instalaţia electrică",
+        "B": "Are obligaţia de a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, chiar dacă nu i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare;",
+        "C": "Are dreptul de a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-034": "B"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "Ordin ANRE 66/2023 Art.37(e) requires following execution design (A); Art.37(h) requires joining reception only WHEN REQUESTED, whereas original imported B incorrectly says even when not requested.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article": "art.37 lit.e şi h",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: art37(e) obliga respectarea proiectului, cu sesizare proiectant la neconformitati; B: participarea la receptie/PIF este impusa numai daca i se solicita de beneficiar sau operator, nu «chiar daca nu»; C: racordarea SEN necesita acorduri contractuale prealabile.",
+      "previous_source_scope": "Stored B contine negația exact opusa conditiei din art37(h); A candidat puternic.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-4225b9d615d2a302",
+      "representative_id": "G1-LEG-048",
+      "member_ids": [
+        "G1-LEG-048"
+      ],
+      "sha256_QABC": "4225b9d615d2a302c8bd1cf0ea9e25909dfed019528ac7c39fb1598478346da4",
+      "original_question_UNCHANGED": "Clienţii casnici de energie electrică:",
+      "original_ABC_UNCHANGED": {
+        "A": "pot impune furnizorului orice modalitate de plată, chiar dacă nu este pusă la dispoziţie de către acesta",
+        "B": "pot să opteze pentru orice modalitate de plată pe care furnizorul o pune la dispoziţie",
+        "C": "sunt obligaţi să achite facturile pentru energia electrică la una din casieriile furnizorului"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-048": "A"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason_and_counterexamples": "Legea 123/2012 Art.57(2) requires provider offers several payment methods and lets households CHOOSE among OFFERED methods: original imported A ('any method even unavailable') is false, B literally matches.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "art.57 alin.(2)",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: clientul nu poate impune oricare mijloc neofertat; B: poate alege din modalitatile puse la dispozitie de furnizor; C: nu este limitat la casierii, exista multiple modalitati.",
+      "previous_source_scope": "Art57(2) suporta explicit B, stored A contrazice limitele ofertei.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-6e141e9ab07662e0",
+      "representative_id": "G1-LEG-001",
+      "member_ids": [
+        "G1-LEG-001"
+      ],
+      "sha256_QABC": "6e141e9ab07662e0069b0c9b11eda68925a1edb940dfa6084dd68ec74a3ccab6",
+      "original_question_UNCHANGED": "Clientul casnic este clientul care:",
+      "original_ABC_UNCHANGED": {
+        "A": "Utilizează energie electrică în exclusivitate pentru iluminatul artificial din propria locuinţă şi din afara acesteia, fiind racordat la o reţea electrică monofazată de joasă tensiune",
+        "B": "Utilizează energie electrică pentru funcţionarea receptoarelor electrocasnice din propria locuinţa, precum si pentru realizarea de activităţi comerciale sau prestarea de servicii",
+        "C": "cumpără energie electrică pentru propriul consum casnic, excluzând consumul pentru activităţi comerciale sau profesionale"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-001": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason_and_counterexamples": "Household customer defined by purchase for own domestic consumption excluding commercial/professional activity; A lighting-only and B commercial activity violate definition.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "art.3 definiții",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: iluminatul exclusiv si tipul monofazat nu definesc categoria; B: utilizarea profesionala/comerciala este exclusa; C: cumpara energie pentru consum casnic propriu fara activitati comerciale/profesionale.",
+      "previous_source_scope": "Legea160/2026 a modificat art3; **definitia actuala trebuie refacuta complet**, nu extrapolata din istoric.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-9ec6bec307a6e95f",
+      "representative_id": "G1-LEG-002",
+      "member_ids": [
+        "G1-LEG-002"
+      ],
+      "sha256_QABC": "9ec6bec307a6e95f6de5c15d5b9313bd57176f81c184b1e5cd1547be9855989d",
+      "original_question_UNCHANGED": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice în caz de:",
+      "original_ABC_UNCHANGED": {
+        "A": "neplata abonamentului radio-tv",
+        "B": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+        "C": "depășirea cu 30 de zile a termenului scadent al unei facturi"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-002": "B"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason_and_counterexamples": "Art.58(4)(a) allows contract termination for confirmed theft by final judicial decision; C invoice nonpayment may also permit termination depending notification/default rules, so single unique B needs scope.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "art.58 alin.(4) + notificări",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: abonament radio TV nu are legatura cu energia; B: furt constatat judecatoreste este motiv expres; C: factura neplatita dupa30 zile poate intra sub categoria «neplata facturilor» daca procedura/notificarile se aplica.",
+      "previous_source_scope": "Stored B este motiv clar, dar C ar putea fi si el motiv, in functie de procedura si formularea «30 zile».",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-0168b6030b923f3e",
+      "representative_id": "G1-LEG-003",
+      "member_ids": [
+        "G1-LEG-003"
+      ],
+      "sha256_QABC": "0168b6030b923f3edb87a9bf7d4cd61259304ec4a658ac2b9e158320548ef89e",
+      "original_question_UNCHANGED": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice numai în caz de:",
+      "original_ABC_UNCHANGED": {
+        "A": "consum de energie mai mare decât cel aferent puterii aprobate prin avizul tehnic de racordare",
+        "B": "consumarea unei cantităţi de energie mai mare decât cea contractată",
+        "C": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă, neplata facturilor sau în alte situaţii prevăzute de legislaţia în vigoare."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-003": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason_and_counterexamples": "Supplier termination categories theft, unpaid invoices and other legally defined reasons from Art.58(4) match broad C, not limited A/B alternatives.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "art.58 alin.(4)",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: depasirea puterii aprobate nu este motiv expres general; B: cantitatea contractata nu e motiv expres universal; C: include furt judiciar, neplata si alte situatii legale, astfel corespunde enumerarii din art58(4).",
+      "previous_source_scope": "«numai» reclama verificarea tuturor regulilor/contractelor si formei2026, nu doar extras istoric.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-6a88170638e52d9b",
+      "representative_id": "G1-LEG-004",
+      "member_ids": [
+        "G1-LEG-004"
+      ],
+      "sha256_QABC": "6a88170638e52d9b45874901aa38c17efd0caba1a560d2068a8fac85bb180595",
+      "original_question_UNCHANGED": "În cazul constatării, conform prevederilor legale în vigoare, a unor acţiuni menite să sustragă energia electrică prin ocolirea echipamentelor de măsurare:",
+      "original_ABC_UNCHANGED": {
+        "A": "clientul final va fi sancţionat contravenţional",
+        "B": "clientului final i se va rezilia contractul de furnizare",
+        "C": "furnizorul este îndreptăţit să solicite unui client final constituirea de garanţii financiare pentru o perioadă de consum echivalent de maximum un an"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-004": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason_and_counterexamples": "Legea 123/2012 art.58(5) and Ordin 5/2023 supplier rights allow financial security up to 1 year for documented meter circumvention/theft conduct; C, not mandatory automatic termination.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "art.58 alin.(5), Regulament furnizare",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: sanctionarea contraventionala nu rezulta automat din formularea generala; B: rezilierea nu este consecinta imediata obligatorie a constatarii; C: furnizorul poate cere garantie max un an pentru manipulare/ocolire contor.",
+      "previous_source_scope": "Art58(6) da drept la deconectare la refuzul garantiei, diferit de reziliere.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-4962b36571029868",
+      "representative_id": "G1-LEG-005",
+      "member_ids": [
+        "G1-LEG-005"
+      ],
+      "sha256_QABC": "4962b3657102986888ccb932403f32b664b73c8c8df57fd04402f4ff9ad8d740",
+      "original_question_UNCHANGED": "Pe piaţa  cu amănuntul, furnizorii vând energie electrică clienţilor finali prin:",
+      "original_ABC_UNCHANGED": {
+        "A": "Contracte bilaterale la preţuri reglementate",
+        "B": "Contracte bilaterale la tarife fixe",
+        "C": "prin contracte bilaterale, la preţuri negociate sau stabilite prin oferte-tip"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-005": "C"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason_and_counterexamples": "Retail bilateral contracts negotiated or standard-offer is typical in competitive market; regimes with protected or regulated tariffs may create specificity exceptions; C intended.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article": "regim piață cu amănuntul",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: preturile reglementate nu se aplica universal pietei retail; B: «tarife fixe» nu este unica modalitate; C: preturi negociate sau oferte-tip sunt tipice contractelor bilaterale.",
+      "previous_source_scope": "Regimul de plafonare/obligatii temporare in 2026 nu trebuie confundat cu definirea generala a contractului.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-586aaae325037430",
+      "representative_id": "G1-LEG-006",
+      "member_ids": [
+        "G1-LEG-006"
+      ],
+      "sha256_QABC": "586aaae325037430150f6345271ce5ee314908cfe97a8208e1cdce673c261235",
+      "original_question_UNCHANGED": "Tarifele de racordare la reţea sunt:",
+      "original_ABC_UNCHANGED": {
+        "A": "stabilite de operatorii de reţea",
+        "B": "negociate cu solicitantul",
+        "C": "reglementate de ANRE"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-006": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason_and_counterexamples": "Grid connection charges follow methodology approved by energy regulator ANRE, not freely negotiated with applicant; imported C.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "article": "art.35 alin.(1)",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: operatorul aplica tarife reglementate, nu le stabileste autonom ca norma; B: tarifele standard nu se negociaza liber; C: ANRE este autoritatea de reglementare.",
+      "previous_source_scope": "Diferentiaza tarif standard reglementat de cost specific al lucrarii/oferta de racordare.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    },
+    {
+      "unit_id": "AU-21dde7eeb35d938e",
+      "representative_id": "G1-LEG-007",
+      "member_ids": [
+        "G1-LEG-007"
+      ],
+      "sha256_QABC": "21dde7eeb35d938efbe2c37e02845bcdc3f6fa8c4e1ccf26415cd33b0d6cdf33",
+      "original_question_UNCHANGED": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :",
+      "original_ABC_UNCHANGED": {
+        "A": "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+        "B": "desfăşoară activităţi de realizare de instalații electrice, pe cont propriu, fără a deține adeverință de electrician autorizat",
+        "C": "autorizat gradul 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-007": "B"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason_and_counterexamples": "Carrying out electrical installation work without authorized qualification in the applicable capacity is subject to ANRE sanction rules; B contrasts permissible acts in A and grade-scope special-case in C.",
+      "primary_reference_candidate": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article": "art.35,37 + Legea123 art.93",
+        "access": "PRIMARY_PORTAL_INDEXED_EXCERPT_OR_HTML_PARTIAL; ACT_FINAL_CONSOLIDATION_NOT_PER_ID_VERIFIED"
+      },
+      "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "prior_ABC_analysis": "A: fapta permisa nu este prin ea insasi contraventie; B: proiectare/executare lucrari fara autorizatie ceruta este sanctionabila; C: electrician grad I PFA 9kW poate sau nu avea competente in functie de limitele actuale.",
+      "previous_source_scope": "Conditia «pe cont propriu» si grad I necesita limite exacte, dar B corespunde actului de exercitare neautorizata.",
+      "official_ANRE_answer_key_edition": "NOT_VERIFIED",
+      "independent_legal_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "key_change_authorized": "NO"
+    }
+  ]
+}
