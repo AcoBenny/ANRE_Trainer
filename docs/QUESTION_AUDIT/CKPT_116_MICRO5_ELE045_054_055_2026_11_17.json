@@ -1,0 +1,121 @@
+{
+  "checkpoint": "CKPT-116",
+  "date": "2026-11-17",
+  "input_head": "61fd346ac6fd02ff06f140e6900bf86b430d5df9",
+  "protocol": "MICRO5, 3 QABC units / 6 grade IDs, batch 1 of 2",
+  "execution": "One assistant applying electrical, source and linguistic checklists; no executable independent subagents in this chat",
+  "source_policy": "Only read public original technical references. Manufacturer products not automatic proof of ANRE bibliography",
+  "gates": {
+    "official_exam_2026_bibliography": "UNVERIFIED",
+    "official_key": "UNVERIFIED",
+    "independent_review": "NOT_RUN",
+    "learner_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-f37afc22dcfbb8b1",
+      "qabc_sha256": "f37afc22dcfbb8b1de6e851bf6532da739b53e370e3c47c5836331891439e80e",
+      "representative_id": "G1-ELE-045",
+      "member_ids": "G1-ELE-045;G2-ELEC-191",
+      "original_keys_by_id_JSON": "{\"G1-ELE-045\":\"B\",\"G2-ELEC-191\":\"B\"}",
+      "question_original": "Curentul electric generat prin deplasarea cu viteza v a unui corp încărcat cu o sarcină electrică se numeşte:",
+      "A_original": "curent electric de conducţie",
+      "B_original": "curent electric de convecţie",
+      "C_original": "curent electric de deplasare (Maxwell)",
+      "source": [
+        {
+          "url": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electromagnetics_I_%28Ellingson%29/06%3A_Steady_Current_and_Conductivity/6.01%3A_Convection_and_Conduction_Currents",
+          "locator": "Steven W. Ellingson, Electromagnetics I §6.1, definition of convection/conduction, accessed 2026-11-17",
+          "match": "Convection current from charged matter carried by mechanical motion; conduction differs."
+        },
+        {
+          "url": "https://sathee.iitk.ac.in/sathee-cuet/cuet-ug/physics/english/study-materials/ncert/nb-phy-12/phy-12-chapter-8-electromagnetic-waves/",
+          "locator": "IIT Kanpur SATHEE NCERT Ch8 eqs 8.4-8.5, displacement current is rate of electric flux change",
+          "match": "Displacement current not defined by charged-body transport."
+        }
+      ],
+      "context": "Curentul de convecție este transportul sarcinii electrice împreună cu deplasarea fizică a unui corp sau nor de particule încărcate, de pildă transportat de vânt. Textul spune explicit «deplasarea ... a unui corp încărcat», exact obiectul căutat. Curentul de conducție este mișcarea purtătorilor datorată câmpului într-un conductor; curentul Maxwell de deplasare este legat de variația fluxului electric, nu de transportul macroscopic. Prin urmare B are suport afirmativ, în interpretarea standard a curentului de convecție.",
+      "options": {
+        "A": "Conducția presupune transportul purtătorilor în mediul conductor sub influența câmpului, nu mișcarea ca întreg a corpului încărcat.",
+        "B": "Afirmativ: definiția explicită a curentului de convecție corespunde corpului încărcat în mișcare.",
+        "C": "Nu: termenul Maxwell se referă la ∂D/∂t și la flux variabil, nu doar la un corp încărcat care se deplasează."
+      },
+      "paired_checks": "A↔B: drift relativ în material vs transport de material încărcat; B↔C: sarcini reale vs variație a fluxului D; A↔C: conducție vs deplasare Maxwell.",
+      "reverse_counterexample": "Un condensator ideal între plăci poate susține curent de deplasare cu dielectric fără transport material de sarcină prin dielectric, deci C nu descrie mișcarea corpului.",
+      "finding": "B_SUPPORTED_EXACT_CONVECTION_OBJECT",
+      "caveat": "Ambele componente pot coexista în situații complexe; se cere clasificarea mecanismului descris.",
+      "qa": "SINGLE_ASSISTANT_REVIEW; INDEPENDENT_QA_NOT_RUN",
+      "approval": "NO"
+    },
+    {
+      "unit_id": "AU-a19b5090df2f044f",
+      "qabc_sha256": "a19b5090df2f044f4fe75838b3abcd68747f0a12dbf9ab899715b777740c7a16",
+      "representative_id": "G1-ELE-054",
+      "member_ids": "G1-ELE-054;G2-ELEC-200",
+      "original_keys_by_id_JSON": "{\"G1-ELE-054\":\"A\",\"G2-ELEC-200\":\"A\"}",
+      "question_original": "Descărcătoarele cu oxid de zinc protejează echipamentele din reţele împotriva:",
+      "A_original": "supratensiunilor",
+      "B_original": "supracurenţilor",
+      "C_original": "solicitărilor mecanice",
+      "source": [
+        {
+          "url": "https://www.hitachienergy.com/products-and-solutions/surge-arresters/medium-voltage-surge-arresters",
+          "locator": "Hitachi Energy, Medium-voltage surge arresters, opening definition and MO resistor construction",
+          "match": "Protection of electric equipment from switching/lightning overvoltages; metal-oxide element."
+        },
+        {
+          "url": "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/surge-arresters.html",
+          "locator": "Siemens Energy, How does a surge arrester work + MOV",
+          "match": "Nonlinear MO elements conduct during overvoltage and divert surge current."
+        }
+      ],
+      "context": "Descărcătorul cu oxid de zinc este un dispozitiv ne-liniar pe bază de varistoare metal-oxid, legat pentru limitarea supratensiunilor tranzitorii, în special de trăsnet și comutație. Producătorii Hitachi și Siemens afirmă explicit protecția echipamentelor împotriva supratensiunilor. Dispozitivul poate conduce impulsuri de curent, dar această funcție nu îl transformă într-o protecție la supracurent persistent: întrerupătorul și siguranța au alt rol. Nu elimină nici solicitările mecanice ale instalației. A este astfel susținut pe obiect și funcție.",
+      "options": {
+        "A": "Funcția afirmată direct de ambii producători: limitarea supratensiunilor.",
+        "B": "Supracurentul de scurtcircuit/suprasarcină cere protecții de curent, nu este funcția descărcătorului ZnO.",
+        "C": "Solicitările mecanice nu sunt obiectul dispozitivului."
+      },
+      "paired_checks": "A↔B: amplitudinea tensiunii vs curentului, funcții distincte; A↔C: protecție electrică tranzitorie vs efort mecanic; B↔C: două alternative fără suport pentru scopul descărcătorului.",
+      "reverse_counterexample": "Descărcătorul poate absorbi impuls de curent fără a declanșa un supracurent de durată. Rezistența mecanică a carcasei nu îl face dispozitiv pentru eliminarea solicitărilor mecanice ale rețelei.",
+      "finding": "A_SUPPORTED_DIRECT_MANUFACTURER_MO_OVER_VOLTAGE",
+      "caveat": "Nu se extrapolează că dispozitivul suprimă toate defectele de scurtcircuit sau orice supratensiune, indiferent de dimensionare.",
+      "qa": "SINGLE_ASSISTANT_REVIEW; INDEPENDENT_QA_NOT_RUN",
+      "approval": "NO"
+    },
+    {
+      "unit_id": "AU-ee276a1f7131316c",
+      "qabc_sha256": "ee276a1f7131316c82548b7d57aaf3cbfee9f2a3941c806876b9a43ff6c39117",
+      "representative_id": "G1-ELE-055",
+      "member_ids": "G1-ELE-055;G2-ELEC-201",
+      "original_keys_by_id_JSON": "{\"G1-ELE-055\":\"B\",\"G2-ELEC-201\":\"B\"}",
+      "question_original": "Descărcătoarele cu oxizi de zinc sunt echipamente destinate:",
+      "A_original": "protecţiei personalului de exploatare împotriva electrocutării",
+      "B_original": "protecţiei împotriva supratensiunilor",
+      "C_original": "protecţiei împotriva supracurenţilor",
+      "source": [
+        {
+          "url": "https://www.siemens-energy.com/global/en/home/products-services/product/mv-arresters.html",
+          "locator": "Siemens Energy, MV surge arresters, Overview and FAQs metal oxide blocks",
+          "match": "MO surge arresters protect networks against switching/lightning overvoltage."
+        },
+        {
+          "url": "https://www.hitachienergy.com/products-and-solutions/surge-arresters/medium-voltage-surge-arresters/polim-r-n",
+          "locator": "Hitachi Energy POLIM-R..N metal-oxide no-gap arrester description",
+          "match": "Protection from switching and atmospheric overvoltage."
+        }
+      ],
+      "context": "Descărcătoarele cu oxizi de zinc folosesc rezistența puternic neliniară a elementelor metal-oxid. La impulsuri de supratensiune, rezistența aparentă scade și energia impulsului este deviată în mod controlat, limitând tensiunea pe echipamentul protejat. Producătorii definesc explicit scopul ca protecție împotriva supratensiunilor, corespunzător variantei B. Protecția directă la electrocutare necesită alte măsuri de siguranță, iar detectarea/eliminarea supracurenților este funcția protecțiilor la supracurent.",
+      "options": {
+        "A": "Împământarea/dispozitivele de protecție și distanțele de izolație participă la siguranța personalului; ZnO nu este protecția directă de electrocutare.",
+        "B": "Dovadă afirmativă directă de producător: protecție la supratensiuni.",
+        "C": "Nu are rolul siguranței ori întreruptorului la suprasarcină/scurtcircuit."
+      },
+      "paired_checks": "A↔B: siguranță la atingere vs limitare tranzitorii; B↔C: supratensiune vs supracurent; A↔C: două protecții diferite de funcția ZnO.",
+      "reverse_counterexample": "Un impuls descarcat prin varistor nu implică protejare împotriva unui curent de sarcină prea mare; scopul este limitarea tensiunii, nu deconectarea termică.",
+      "finding": "B_SUPPORTED_DIRECT_MANUFACTURER_ZNO_OVERVOLTAGE",
+      "caveat": "ELE-054 și ELE-055 au același concept și surse intersectate dar QABC diferite; se păstrează ca 2 unități unice, nu se numără o întrebare de două ori.",
+      "qa": "SINGLE_ASSISTANT_REVIEW; INDEPENDENT_QA_NOT_RUN",
+      "approval": "NO"
+    }
+  ]
+}
