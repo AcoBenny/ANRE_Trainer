@@ -1,0 +1,135 @@
+{
+  "checkpoint": "CKPT-114",
+  "date": "2026-11-17",
+  "input_head": "1b11b547f2ebc10a0dda5365a04c262470bc2432",
+  "protocol": "MICRO5; 1 mini-batch 3 units, 6 IDs",
+  "actual_execution": "Single assistant used sequential specialist checklists. No independent subagent runtime or AI reviewer was launched",
+  "risk": "No original QABC/key/master/HTML/APK edits. No merge/release",
+  "gates": {
+    "canonical_original_hash": "Verify before ledger credit",
+    "technical_context": "PRELIMINARY_ONLY",
+    "official_exam_source_edition_2026": "UNVERIFIED",
+    "independent_QA": "NOT_RUN",
+    "approval_for_learning": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-488565899c5bffe1",
+      "representative_id": "G1-ELE-034",
+      "member_ids": "G1-ELE-034;G2-ELEC-182",
+      "qabc_sha256": "488565899c5bffe17e15de5a8977dc147abb17c10a3c2827718ceb18e2bf67e3",
+      "original_keys_by_id_JSON": "{\"G1-ELE-034\":\"C\",\"G2-ELEC-182\":\"C\"}",
+      "question_original": "Daca la un circuit al unei staţii de 6 sau 20 kV care funcţionează cu neutrul izolat apare o punere monofazatã netã la pământ, tensiunea fata de pământ a celorlalte doua faze:",
+      "A_original": "scade de 1,41 ori",
+      "B_original": "rămâne constanta",
+      "C_original": "creste de 1,73 ori",
+      "original_key_immutable": "C",
+      "technical_candidate_not_approved": "C",
+      "primary_and_secondary_sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+          "locator": "Schneider Electrical Installation Guide, First fault, Example 2, §healthy phases, lines 59-75",
+          "exact_scope": "IT first phase-to-earth fault healthy phase voltages; LV illustration, ratio transfers to balanced isolated-neutral MV regime",
+          "access": "HTML reopened 2026-11-17"
+        },
+        {
+          "url": "https://www.mdpi.com/2079-9292/15/11/2279",
+          "locator": "Electronics 2026 15(11) 2279, §2.1 Neutral Ungrounded Configuration",
+          "exact_scope": "Isolated-neutral distribution line-earth fault healthy phases rise by sqrt(3)",
+          "access": "Search excerpt; original full-text reopen pending"
+        }
+      ],
+      "context": "Pentru o rețea trifazată simetrică cu neutru izolat, un defect monofazat metalic la pământ fixează faza afectată la potențialul pământului. Tensiunile față de pământ ale fazelor neafectate devin tensiunile dintre faze, fără schimbare în valoarea tensiunii linie-linie a sursei. Rezultă raportul U_linie/U_fază=√3≈1,73, exact valoarea din C. Sursa Schneider prezintă explicit cazul IT și creșterea √3, iar lucrarea despre distribuție izolată indică același mecanism. În rețele reale cu rezistență de defect/cuplaje/nesimetrie raportul poate diferi; formularea «netă» sprijină modelul ideal.",
+      "options": {
+        "A": "Fals pentru defectul metalic în sistem izolat: fazele sănătoase nu pierd tensiune față de pământ în modelul descris.",
+        "B": "Fals în modelul de defect net: deplasarea neutrului crește tensiunile fazelor sănătoase.",
+        "C": "Pozitiv susținut: √3≈1,732 în defect fază-pământ ideal al sistemului cu neutru izolat."
+      },
+      "option_pairs": "A și C sunt variații în sensuri opuse; B este tensiune neschimbată, incompatibilă cu schimbarea referinței față de pământ; C reiese afirmativ din relațiile fazoriale, nu doar eliminare.",
+      "reverse_counterexample": "Dacă neutrul este legat solid la pământ, tensiunile fazelor sănătoase nu cresc obligatoriu cu √3; dacă defectul nu este metalic, creșterea exactă diferă.",
+      "scope_finding": "C_INTENDED_SQRT3_ISOLATED_NEUTRAL_BOLTED_GROUND_FAULT",
+      "source_grade_edition_gate": "NOT_SIGNED",
+      "independent_tech_source_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-d6eca0a23c35e299",
+      "representative_id": "G1-ELE-038",
+      "member_ids": "G1-ELE-038;G2-ELEC-184",
+      "qabc_sha256": "d6eca0a23c35e2994085601c951cb3fe784052f71482edaa660eb4356e8eb7e5",
+      "original_keys_by_id_JSON": "{\"G1-ELE-038\":\"A\",\"G2-ELEC-184\":\"A\"}",
+      "question_original": "Componenta simetrică directă produce, în cazul unui motor electric:",
+      "A_original": "cuplul util",
+      "B_original": "cuplul de frânare",
+      "C_original": "oscilaţii ale rotorului",
+      "original_key_immutable": "A",
+      "technical_candidate_not_approved": "A",
+      "primary_and_secondary_sources": [
+        {
+          "url": "https://www.intechopen.com/chapters/40947",
+          "locator": "Effects of Voltage Quality on Induction Motors’ Efficient Energy Usage, §3.3 Negative sequence currents and power losses",
+          "exact_scope": "Induction motor symmetrical components; negative sequence produces torque opposing motor useful torque",
+          "access": "Web text retrieved 2026-11-17"
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0378779616301055",
+          "locator": "Electric Power Systems Research 140 (2016) 942-949, abstract on sequence components torque",
+          "exact_scope": "Three-phase induction motor torque changes due to positive/negative sequences",
+          "access": "Abstract search retrieval, no full text signoff"
+        }
+      ],
+      "context": "Componenta simetrică directă este setul trifazat cu succesiunea normală a fazelor. Aceasta creează câmpul rotitor înainte în motor, din care apare componenta normală de cuplu util în regimul obișnuit de motor. Componenta inversă generează câmp în sens opus și cuplu care se opune rotației, în plus față de încălzire și pierderi. Oscilațiile de cuplu sunt fenomene ale dezechilibrelor/combinării componentelor, nu caracteristica definitorie a componentei directe. «Cuplul util» se interpretează în regimul de antrenare normal, nu garantează cuplu pozitiv în orice punct de funcționare, de exemplu în regim generator.",
+      "options": {
+        "A": "Susținut în regim motor: componenta directă produce câmpul și cuplul electromecanic în direcția utilă.",
+        "B": "Descrie efectul tipic al componentei inverse, nu al celei directe în regimul motor uzual.",
+        "C": "Pulsări pot apărea din dezechilibru, dar nu definesc efectul componentei directe izolate."
+      },
+      "option_pairs": "A vs B: sensul câmpului este opus; A vs C: cuplu mediu versus ondulații; B vs C: cuplu opus versus efect al interacțiunii componentelor.",
+      "reverse_counterexample": "Regim generator sau frânare cu slip diferit poate schimba semnul cuplului electromagnetic; nu extindem răspunsul A la orice regim mecanic.",
+      "scope_finding": "A_INTENDED_MOTORING_POSITIVE_SEQUENCE; OPERATING_REGIME_SCOPE",
+      "source_grade_edition_gate": "NOT_SIGNED",
+      "independent_tech_source_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-a78d43f34f008ad1",
+      "representative_id": "G1-ELE-041",
+      "member_ids": "G1-ELE-041;G2-ELEC-187",
+      "qabc_sha256": "a78d43f34f008ad15e4b5b82bcbe5ed9e9a7c94e11ce8397df246f8b2eda75c2",
+      "original_keys_by_id_JSON": "{\"G1-ELE-041\":\"C\",\"G2-ELEC-187\":\"C\"}",
+      "question_original": "Delimitările prin pereţi între celulele unei staţii electrice de interior se utilizează în principal în scopul:",
+      "A_original": "asigurării unui acces mai comod la aparataj;",
+      "B_original": "limitării zgomotului în corpul de conexiuni;",
+      "C_original": "evitării extinderii avariilor.",
+      "original_key_immutable": "C",
+      "technical_candidate_not_approved": "C",
+      "primary_and_secondary_sources": [
+        {
+          "url": "https://productinfo.se.com/doca0483en-00_dnf7_ioms/doca0483en-00_dnf7_ioms/English/DOCA0483EN_DNF7_IOMS_DD01459658.xml/%24/SwitchgearEnclosure-3D64907D",
+          "locator": "Schneider Switchgear Enclosure, Busbar Compartment: designed to confine arc faults within compartment, separate compartments",
+          "exact_scope": "MV metal-enclosed panel internal segregation and confined arc faults, related but not identical to walls between adjacent indoor station cells",
+          "access": "Indexed manufacturer text; direct page reopen pending"
+        },
+        {
+          "url": "https://www.se.com/uk/en/faqs/FA35365/",
+          "locator": "Schneider FAQ LSC2B IEC 62271-200, MV compartment separation using grounded metal partitions",
+          "exact_scope": "MV switchgear partitioning; chiefly for compartment separation/personnel safety, supporting context but not sole proof of between-cell propagation",
+          "access": "Web text retrieved"
+        }
+      ],
+      "context": "Pereții despărțitori dintre celule limitează trecerea efectelor unei avarii spre instalațiile vecine; la celule metalice segregarea funcțională este legată de protecția față de arcuri/defecte interne. Într-un exemplu MV fabricantul indică explicit compartimentul barelor proiectat pentru confinarea defectelor prin arc. Accesul comod la aparataj se obține prin amplasare și uși, nu este obiectivul principal al unui perete de protecție. Atenuarea zgomotului poate fi efect secundar de material, fără a fi principalul scop. C este candidat solid, dar dovada despre pereți între celule distincte, nu doar compartimentele aceleiași celule, încă necesită potrivire exactă la sursa de examen.",
+      "options": {
+        "A": "Nu funcția principală; barierele pot chiar restricționa accesul.",
+        "B": "Nu este obiectivul tehnic principal al delimitării; acustica depinde de construcție.",
+        "C": "Sprijinit contextual de segregarea și confinarea avariilor în echipamente MV, dar sursa exactă privind pereții între celule rămâne de verificat."
+      },
+      "option_pairs": "A vs C: ergonomie acces versus limitarea propagării defectelor; B vs C: atenuare acustică versus integritate a separării; A vs B: ambele pot fi efecte secundare, nu scopul principal.",
+      "reverse_counterexample": "Perete ușor de compartimentare interioară fără clasificare arc/foc nu garantează confinarea avariei; nu imputăm o clasă tehnică neprobată.",
+      "scope_finding": "C_INTENDED_PARTITION_FAULT_SPREAD; EXACT_BETWEEN_BAYS_SOURCE_REQUIRED",
+      "source_grade_edition_gate": "NOT_SIGNED",
+      "independent_tech_source_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ],
+  "next": "If documentation readback matches canonical evidence, update ledger 409→412 units; proceed one further batch only."
+}
