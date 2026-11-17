@@ -1,0 +1,630 @@
+{
+  "checkpoint": "CKPT-177",
+  "date": "2026-11-17",
+  "head_before": "5eaa086460ecca2be35760e93eeac4c1e42e4e29",
+  "unique_units": 15,
+  "grade_ids": 15,
+  "stage_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 14,
+    "CONDITIONAL_MODEL_OR_SOURCE": 1
+  },
+  "important": "G1-NOR-094 4Ω is stated in I7 §5.5.7.11 with 'poate fi' and earth protection requires disconnection per §5.5.7.10; not an absolute electrical safety guarantee. G1-NOR-088 uses §4.1.5.3.8.",
+  "method": "Same-assistant source, linguistic and counterexamples. No independent QA or learner approval.",
+  "cards": [
+    {
+      "unit_id": "AU-a66fb830776001de",
+      "representative_id": "G1-NOR-083",
+      "grade_ids": [
+        "G1-NOR-083"
+      ],
+      "qabc_sha256": "a66fb830776001decf06ac51c7c3273d48457cbc242d128f496ea101f2129b4b",
+      "question_UNCHANGED": "Prizele cu tensiunea de 230 V care se montează într-o instalație electrică trebuie să fie întotdeauna:",
+      "ABC_UNCHANGED": {
+        "A": "în construcţie capsulată",
+        "B": "cu contact de protecţie",
+        "C": "în execuţie sub tencuială"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-083": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §5.4.8",
+      "source_context_and_ABC": "Prizele 230V trebuie să aibă contact PE (B); A capsulare nu universal, C sub tencuială nu universal.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.4.8",
+        "original_rationales": {
+          "A": "A: encapsulated housing not universally required for socket",
+          "B": "B: 230V socket must be provided with protective earth contact",
+          "C": "C: flush mounting is not mandatory for every socket, can be surface-mounted to circumstances"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-885594f71de6cd26",
+      "representative_id": "G1-NOR-084",
+      "grade_ids": [
+        "G1-NOR-084"
+      ],
+      "qabc_sha256": "885594f71de6cd26447d371f8402d14532479eced342ab106a45ec7f3bcc7243",
+      "question_UNCHANGED": "Conform I7/2011, conductor de protecţie (PE)",
+      "ABC_UNCHANGED": {
+        "A": "este un conductor prevăzut în linile aeriene de joasă tensiune pentru protecția împotriva loviturilor de trăsnet",
+        "B": "este un conductor prevăzut în scopuri de securitate, de exemplu protecţia împotriva şocurilor electrice.",
+        "C": "nu există conductor de protecție în instalațiile de joasă tensiune"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-084": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 cap2 PE definiție; §5.5.3",
+      "source_context_and_ABC": "B PE conductor pentru securitate și protecție la șoc, nu conductor trăsnet și nici inexistent.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 definitions, conductor PE",
+        "original_rationales": {
+          "A": "A: aerial line lightning protection is a different wire/system",
+          "B": "B: protective conductor is intended for safety, e.g. electric shock protection",
+          "C": "C: PE exists in low-voltage systems and is necessary under conditions"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-0657cd8d2337fe03",
+      "representative_id": "G1-NOR-085",
+      "grade_ids": [
+        "G1-NOR-085"
+      ],
+      "qabc_sha256": "0657cd8d2337fe03272b7bb0c20d373f0be359dceda8a48daa377d8e00e390eb",
+      "question_UNCHANGED": "Legarea la pământ  reprezintă realizarea unei legături electrice",
+      "ABC_UNCHANGED": {
+        "A": "numai între un punct dat al unui echipament şi un pământ local.",
+        "B": "numai între un punct dat al unei reţele şi un pământ local.",
+        "C": "între un punct dat al unei reţele sau al unui echipament şi un pământ local."
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-085": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 cap2 definiție legare la pământ",
+      "source_context_and_ABC": "C include atât legarea unui punct de rețea, cât și a unui echipament la pământ local; A/B au «numai» nejustificat.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 definitions, legare la pământ",
+        "original_rationales": {
+          "A": "A: 'only equipment' falsely excludes electrical network too",
+          "B": "B: 'only network' falsely excludes equipment also",
+          "C": "C: either equipment or network point to local earth, a valid subset of definition"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-7a6eba3563d2ac8e",
+      "representative_id": "G1-NOR-086",
+      "grade_ids": [
+        "G1-NOR-086"
+      ],
+      "qabc_sha256": "7a6eba3563d2ac8e7a5b26af59749b4a6068bc62bf4f893f00a5b3e5560d4d45",
+      "question_UNCHANGED": "Conductoarele, barele, tuburile etc.",
+      "ABC_UNCHANGED": {
+        "A": "nu se pot dispune pe trasee comune cu traseele altor instalaţii",
+        "B": "se pot dispune pe trasee comune cu traseele altor instalaţii cu îndeplinirea unor condiţii",
+        "C": "se pot dispune pe trasee comune cu traseele altor instalaţii, fără alte condiții, dacă sunt în montaj aparent."
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-086": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §3.0.3.2-4",
+      "source_context_and_ABC": "B trasee comune posibile cu separări și condiții; A interdicție absolută, C lipsa condițiilor la montaj aparent false.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §3.0.3.2-3.0.3.4 / §5.2.12 route conditions",
+        "original_rationales": {
+          "A": "A: absolute non-shared routing is too restrictive",
+          "B": "B: combined route possible under separation and influence conditions",
+          "C": "C: apparent mounting does not nullify required separation, damage prevention and protection"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-417551cf20763d18",
+      "representative_id": "G1-NOR-087",
+      "grade_ids": [
+        "G1-NOR-087"
+      ],
+      "qabc_sha256": "417551cf20763d188d5e307e07e95a7f69f37b2af0d03c3fad35a67bba6c17a3",
+      "question_UNCHANGED": "Utilizarea conductelor metalice pentru gaze şi/sau lichide inflamabile drept conductoare de protecţie:",
+      "ABC_UNCHANGED": {
+        "A": "este recomandată",
+        "B": "este permisă condiţionat",
+        "C": "nu este permisă"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-087": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §5.5.3.2 și §5.5.7.3",
+      "source_context_and_ABC": "C nu se folosesc țevi de gaze/lichide inflamabile drept PE sau electrozi; se disting legături echipotențiale la țevi.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.5.3.2 / §5.5.7.3",
+        "original_rationales": {
+          "A": "A: using fuel/gas metal pipes as a PE is unsafe and forbidden",
+          "B": "B: no blanket conditional allowance for using gas piping itself as protective conductor",
+          "C": "C: not permitted by explicit PE and electrode restriction"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-4bef1ac22dc77e79",
+      "representative_id": "G1-NOR-088",
+      "grade_ids": [
+        "G1-NOR-088"
+      ],
+      "qabc_sha256": "4bef1ac22dc77e79e09b0c8f22f514855f12faca09ae551022ab4e330541be72",
+      "question_UNCHANGED": "Dacă instalaţiile electrice sunt în distribuţie prefabricată în învelişuri metalice (cutii, carcase), aceste învelişuri",
+      "ABC_UNCHANGED": {
+        "A": "pot fi utilizate drept conductoare de protecţie, în anumite condiții",
+        "B": "nu pot fi utilizate drept conductoare de protecţie",
+        "C": "pot fi utilizate întotdeauna drept conductoare de protecţie"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-088": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §4.1.5.3.8(a-c)",
+      "source_context_and_ABC": "A învelișuri metalice prefabricate ca PE NUMAI cu continuitate, secțiune conform subcap5.5 și racordarea altor PE; B/C absolutizări false.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.5.3.1 / §5.5.3.3",
+        "original_rationales": {
+          "A": "A: prefabricated metal enclosures may serve PE only when continuity/conductance and other conditions met",
+          "B": "B: blanket impossibility ignores conditional acceptance in I7",
+          "C": "C: always is too broad, cannot assume all fabricated enclosures satisfy PE reliability"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-78d9198a7f47d9d5",
+      "representative_id": "G1-NOR-091",
+      "grade_ids": [
+        "G1-NOR-091"
+      ],
+      "qabc_sha256": "78d9198a7f47d9d5eb2b33254e9fe1e34d0a2f8823ca3e0038d5d55f24552b6a",
+      "question_UNCHANGED": "Dozele de derivaţie se instalează",
+      "ABC_UNCHANGED": {
+        "A": "numai pe suprafeţele verticale ale elementelor de construcţii",
+        "B": "cu prioritate pe suprafeţele verticale ale elementelor de construcţii",
+        "C": "pe sau în pardoseală, indiferent de tipul dozei"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-091": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §5.2.12.3.7-8",
+      "source_context_and_ABC": "B prioritate doze pe verticale; A nu exclusiv vertical (pardoseală omologată), C indiferent de doza fals.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.2.12.3.7-3.8",
+        "original_rationales": {
+          "A": "A: 'only vertical' false because approved floor boxes are allowed",
+          "B": "B: normative priority goes to vertical surfaces",
+          "C": "C: floor position without approved special type conditions false"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-384b3aaa8eba709a",
+      "representative_id": "G1-NOR-092",
+      "grade_ids": [
+        "G1-NOR-092"
+      ],
+      "qabc_sha256": "384b3aaa8eba709aa2591b286922a12fa87562f600111923421e58fc7c8ea24a",
+      "question_UNCHANGED": "În fiecare instalaţie la nivelul tabloului general trebuie prevăzută",
+      "ABC_UNCHANGED": {
+        "A": "o bornă / bară principală de legare la pământ, numai atunci când reţeaua de distribuţie este TN-C;",
+        "B": "o bornă / bară principală de legare la pământ,",
+        "C": "o bornă / bară principală de legare la pământ, numai în cazul în care alimentarea receptoarelor se face în sistem TN-S"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-092": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §5.5.2.1",
+      "source_context_and_ABC": "B bara principală la tabloul general pentru fiecare instalație; A/C condiționări TN-C/TN-S false.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.5.2.1",
+        "original_rationales": {
+          "A": "A: not only TN-C supply; each installation has main earthing point",
+          "B": "B: main earth bar/terminal at main board in every installation",
+          "C": "C: not only TN-S supply; general article has broad scope"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-a81734c570654139",
+      "representative_id": "G1-NOR-093",
+      "grade_ids": [
+        "G1-NOR-093"
+      ],
+      "qabc_sha256": "a81734c5706541391aaec204d91c1ead555adb61555db4c21b1a2ebcf5520f97",
+      "question_UNCHANGED": "Circuitele iluminatului normal",
+      "ABC_UNCHANGED": {
+        "A": "trebuie să fie distincte de circuitele de prize.",
+        "B": "poate fi un circuit comun pentru iluminat normal și prize dacă puterea totală instalată pe circuit nu depășește 2 kW",
+        "C": "poate fi un circuit comun pentru iluminat normal și prize dacă puterea totală instalată pe circuit nu depășește3 kW pe un circuit monofazat şi 8 kW pe un circuit trifazat"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-093": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §5.4.1",
+      "source_context_and_ABC": "A iluminat normal distinct de prize; praguri kW nu permit amestec.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.4.1",
+        "original_rationales": {
+          "A": "A: light circuit must be distinct from socket circuits",
+          "B": "B: under2kW does not create exception for sharing light and socket, confuses dedicated socket circuit threshold",
+          "C": "C: suggested 3kW mono 8kW three phase concerns size of lighting circuits, not permission to mix socket+lighting"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-56400be12641a793",
+      "representative_id": "G1-NOR-094",
+      "grade_ids": [
+        "G1-NOR-094"
+      ],
+      "qabc_sha256": "56400be12641a79302b3a208be104d28d06d44884cdc08234e3ba2906fa56653",
+      "question_UNCHANGED": "Rezistenţa prizei de pământ a unei clădiri, atunci când este folosită numai pentru protecţia împotriva şocurilor electrice, trebuie să fie cel mult",
+      "ABC_UNCHANGED": {
+        "A": "10 Ω",
+        "B": "1 Ω",
+        "C": "4 Ω"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-094": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "exact_rule": "I7 §5.5.7.10–11",
+      "source_context_and_ABC": "C 4Ω indicat la §5.5.7.11 pentru priză numai de șoc, A10 nu e prag, B1 se referă comun cu trăsnet. Dar textul spune «poate fi» și §5.5.7.10 cere declanșare, deci «trebuie» e formulare mai puternică.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.5.7.10-5.5.7.11",
+        "original_rationales": {
+          "A": "A: <=10Ω is weaker than specific 4Ω for protection-only earth",
+          "B": "B: <=1Ω belongs to combined lightning-protection electrode case, not only shock-protection case",
+          "C": "C: <=4Ω is specific protection-only max in 5.5.7.11"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-721db7681719f9eb",
+      "representative_id": "G1-NOR-095",
+      "grade_ids": [
+        "G1-NOR-095"
+      ],
+      "qabc_sha256": "721db7681719f9eb24d95a0d9731d780fc49649178e57c56721b86857b7038ca",
+      "question_UNCHANGED": "Conductorul neutru (N):",
+      "ABC_UNCHANGED": {
+        "A": "este un conductor conectat electric la punctul neutru al sursei şi care poate contribui la distribuţia energiei electrice",
+        "B": "este un conductor conectat electric la punctul neutru al sursei şi care contribuie  la protecția contra atingerilor indirecte",
+        "C": "este un conductor conectat electric la punctul neutru al sursei şi care contribuie la distribuţia energiei electrice și la protecția contra atingerilor indirecte"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-095": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 cap2 N vs PE/PEN",
+      "source_context_and_ABC": "A N legat la neutrul sursei, poate distribui energie; B/C confundă cu PE/PEN.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 definitions, conductor neutru",
+        "original_rationales": {
+          "A": "A: N is connected to source neutral and can contribute to distributing electrical energy",
+          "B": "B: indirectly shock-protection is PE/PEN role not generic N definition",
+          "C": "C: mixes N function with PE/PEN and not generic N"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-508227abb043a8f8",
+      "representative_id": "G1-NOR-096",
+      "grade_ids": [
+        "G1-NOR-096"
+      ],
+      "qabc_sha256": "508227abb043a8f88caf987759482959d830ec51f0187b9881ac1879b3427071",
+      "question_UNCHANGED": "Curentul admisibil  este",
+      "ABC_UNCHANGED": {
+        "A": "valoarea maximă a curentului electric care poate parcurge în permanenţă un conductor, un dispozitiv sau un aparat, fără ca temperatura sa în regim permanent, în condiţii date, să fie superioară valorii specificate.",
+        "B": "valoarea maximă a curentului electric care poate parcurge un conductor, un dispozitiv sau un aparat, fără ca temperatura sa în regim de scurtcircuit să fie superioară valorii specificate.",
+        "C": "valoarea maximă a curentului electric care poate parcurge în permanenţă un conductor, un dispozitiv sau un aparat, fără ca temperatura sa în condiţiile unei puneri la pământ, să fie superioară valorii specificate."
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-096": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 cap2 curent admisibil (Iz)",
+      "source_context_and_ABC": "A exact maxim permanent în condiții date fără temperatură excesivă; B/C defect.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 definitions, curent admisibil Iz",
+        "original_rationales": {
+          "A": "A: maximum continuous current under stated conditions without exceeding steady-state temperature limit",
+          "B": "B: short circuit thermal criterion is different transient/current rating",
+          "C": "C: earth-fault heating is different fault condition, not steady-state Iz"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-db8ac3da5d827854",
+      "representative_id": "G1-NOR-097",
+      "grade_ids": [
+        "G1-NOR-097"
+      ],
+      "qabc_sha256": "db8ac3da5d827854379f5b1315b8652de12cfd2accbfa2ae2da041fa9c31dd07",
+      "question_UNCHANGED": "Curent nominal este un",
+      "ABC_UNCHANGED": {
+        "A": "curent electric destinat a fi transportat de un circuit în funcţionarea în regim de defect simplu un timp limitat",
+        "B": "curent electric destinat a fi transportat de un circuit în funcţionarea în regim de scurtcircuit un timp limitat",
+        "C": "curent electric destinat a fi transportat de un circuit în funcţionarea normală pe timp nelimitat"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-097": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 cap2 curent nominal",
+      "source_context_and_ABC": "C regim normal pe timp nelimitat, nu scurtcircuit sau defect.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 definitions, curent nominal",
+        "original_rationales": {
+          "A": "A: rated normal current not limited single fault transient operation",
+          "B": "B: short-circuit thermal withstand not rated current definition",
+          "C": "C: nominal current intended for normal service for indefinite duration per rating definition"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-f9d0079cffefc45c",
+      "representative_id": "G1-NOR-098",
+      "grade_ids": [
+        "G1-NOR-098"
+      ],
+      "qabc_sha256": "f9d0079cffefc45ca048ad99963ec5bc8ab9eb5160b4a8e62b56c4ac085cb7d1",
+      "question_UNCHANGED": "Pentru realizarea prizelor de pământ se recomandă electrozi din",
+      "ABC_UNCHANGED": {
+        "A": "bare rotunde, ţevi sau profil cruce",
+        "B": "conductele metalice pentru lichide inflamabile sau gaze.",
+        "C": "obiectele metalice cufundate în apă"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-098": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 §5.5.7.2-4",
+      "source_context_and_ABC": "A bare rotunde, țevi/profil cruce recomandate; B conductele inflamabile interzise, C obiecte cufundate în apă interzise.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.5.7.2-5.5.7.5",
+        "original_rationales": {
+          "A": "A bar, pipe or cross profile are allowed electrode shapes when correctly specified",
+          "B": "B metallic gas/liquid-fuel pipes must not be electrodes, I7 §5.5.7.3",
+          "C": "C metal objects immersed in water not allowed as electrodes, I7 §5.5.7.4"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-6050ffc3f4ef041c",
+      "representative_id": "G1-NOR-099",
+      "grade_ids": [
+        "G1-NOR-099"
+      ],
+      "qabc_sha256": "6050ffc3f4ef041cb7bc7eaeff8dc7442e2de7f67e2c71c246c8902d82103ada",
+      "question_UNCHANGED": "Priza de pământ este o",
+      "ABC_UNCHANGED": {
+        "A": "parte conductoare încorporată obligatoiu în pământ",
+        "B": "parte conductoare care poate fi încorporată într-un mediu conductor specific, de exemplu beton sau cărbune, izolat față de pământ.",
+        "C": "parte conductoare care poate fi încorporată în pământ sau într-un mediu conductor specific, de exemplu beton sau cărbune, în contact cu pământul."
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-099": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "exact_rule": "I7 cap2 electrod de pământ + §5.5.7.1–2",
+      "source_context_and_ABC": "C mediu conducător specific în contact cu pământul posibil; A doar sol natural fals, B mediu izolat de pământ fals.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "official_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "HTML_REOPENED_EXACT_PARAGRAPHS_AND_ADJACENT_EXCEPTIONS_FOR_EXPLICIT_CASES"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §3 definitions electrod de pământ/priză de pământ",
+        "original_rationales": {
+          "A": "A falsely requires every electrode to be physically buried in natural earth only, excluding special conductive media",
+          "B": "B allows media electrically isolated from earth, contrary to earth electrode purpose",
+          "C": "C includes electrode in earth or special conducting medium in contact with earth"
+        }
+      },
+      "exam_2026_edition_signed_off": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    }
+  ]
+}
