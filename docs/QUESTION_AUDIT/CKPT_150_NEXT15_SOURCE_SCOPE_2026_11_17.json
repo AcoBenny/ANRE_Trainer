@@ -1,0 +1,637 @@
+{
+  "checkpoint": "CKPT-150",
+  "date": "2026-11-17",
+  "baseline_head": "fafa3e89631d4c5b6beb12b60b299d88b9a6cae6",
+  "units": 15,
+  "grade_ids": 30,
+  "status_counts": {
+    "CONDITIONAL_MODEL_OR_SOURCE": 8,
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 5,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 2
+  },
+  "description": "Exact canonical QABC/key preserved, prior source and A/B/C review reused, no redundant source mapping; annotated technical model and counterexamples.",
+  "caution": "Independent review and official ANRE grade/key provenance not executed; source links tagged with access; no unit approved for study.",
+  "cards": [
+    {
+      "unit_id": "AU-5f29e93355b2dfbf",
+      "representative_id": "G1-ELE-092",
+      "member_ids": [
+        "G1-ELE-092",
+        "G2-ELEC-236"
+      ],
+      "qabc_sha256": "5f29e93355b2dfbfb83e43b4cf7f222e00f54b1a57c394aa54ceb9a2ff49d0f7",
+      "question_original_UNCHANGED": "În posturi de transformare se folosesc transformatoare răcite cu lichide neinflamabile atunci când:",
+      "options_original_UNCHANGED": {
+        "A": "sunt restricţii de poluare a mediului;",
+        "B": "sunt restricţii de toxicitate pentru personalul de exploatare;",
+        "C": "amplasarea postului se face în zone aglomerate."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-092": "C",
+        "G2-ELEC-236": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Nonflammable liquid cooling may be chosen for fire-safety in crowded premises, subject to fluid regulatory class and location; not universal preference.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-5ace91020dd39be6",
+      "representative_id": "G1-ELE-093",
+      "member_ids": [
+        "G1-ELE-093",
+        "G2-ELEC-237"
+      ],
+      "qabc_sha256": "5ace91020dd39be6f9884513d7d55ab4ddf45f6b0bda89e2bbc60ee6f76dcb19",
+      "question_original_UNCHANGED": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
+      "options_original_UNCHANGED": {
+        "A": "siguranţa fuzibilă realizează protecţia la suprasarcină;",
+        "B": "siguranţa fuzibilă realizează protecţia la scurtcircuit;",
+        "C": "siguranţa fuzibilă realizează protecţia la supratensiuni;"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-093": "B",
+        "G2-ELEC-237": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Fuse provides short-circuit protection when correctly rated; separate thermal relay overload in typical motor starter.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Protection_of_transformer_and_circuits",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-2dac9d4544257335",
+      "representative_id": "G1-ELE-095",
+      "member_ids": [
+        "G1-ELE-095",
+        "G2-ELEC-238"
+      ],
+      "qabc_sha256": "2dac9d454425733548916149132ea12b77d5090dd5ffac2bef3aa5e73f3b58f3",
+      "question_original_UNCHANGED": "În cazul în care rezultanta unui sistem de fazori (de tensiune sau de curent) este nulă:",
+      "options_original_UNCHANGED": {
+        "A": "sistemul nu are componentă simetrică inversă (negativă)",
+        "B": "sistemul nu are componentă simetrică homopolară (zero)",
+        "C": "sistemul nu are are componentă simetrică directă (pozitivă)"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-095": "B",
+        "G2-ELEC-238": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Sum of three phase phasors =3 times zero sequence component, so zero resultant means I0=0; positive/negative may be nonzero.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://archive.nptel.ac.in/content/storage2/courses/108104051/chapter_7/7_2.html",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-9319fbf1cac680b8",
+      "representative_id": "G1-ELE-096",
+      "member_ids": [
+        "G1-ELE-096",
+        "G2-ELEC-239"
+      ],
+      "qabc_sha256": "9319fbf1cac680b80ef2682ef8af1dd063a0d9cea0aa31ccb3afb8fdcc940001",
+      "question_original_UNCHANGED": "În cazul pornirii stea triunghi a motoarelor asincrone, curentul de pornire la conexiunea stea este:",
+      "options_original_UNCHANGED": {
+        "A": "1/3 din curentul de pornire la conexiunea triunghi",
+        "B": "de 3 ori curentul de pornire la conexiunea triunghi",
+        "C": "de 2 ori curentul de pornire la conexiunea triunghi"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-096": "A",
+        "G2-ELEC-239": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "For equal line voltage and motor impedance, Y start phase U=Uline/sqrt3 and Iline(Y)/Iline(delta)=1/3.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://library.e.abb.com/public/79b4636491024f61a7945a3dbb28e256/SoftstarterCatalog_1SFC132012C0201_revJ.pdf",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-c306917128be7575",
+      "representative_id": "G1-ELE-097",
+      "member_ids": [
+        "G1-ELE-097",
+        "G2-ELEC-240"
+      ],
+      "qabc_sha256": "c306917128be75758eab0a27760124941dc03d0e456f1865833d49aab3d173e3",
+      "question_original_UNCHANGED": "În posturi de transformare se preferă folosirea transformatoarelor răcite cu aer atunci când:",
+      "options_original_UNCHANGED": {
+        "A": "sunt restricţii de teren;",
+        "B": "sunt restricţii privitoare la zgomot;",
+        "C": "amplasarea postului se face în zone aglomerate."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-097": "C",
+        "G2-ELEC-240": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Air/dry-type transformer can be chosen for populous area due oil fire concerns, but location, rating, cooling and enclosure constraints needed.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-af1b2034e42c6be5",
+      "representative_id": "G1-ELE-098",
+      "member_ids": [
+        "G1-ELE-098",
+        "G2-ELEC-241"
+      ],
+      "qabc_sha256": "af1b2034e42c6be5a9ad4732aaa40fe2b52d6e82aa2b5888b441674e29bee095",
+      "question_original_UNCHANGED": "În cazul punerii nete la pământ a fazei S         într-o reţea de 20 kV cu neutrul izolat:",
+      "options_original_UNCHANGED": {
+        "A": "tensiunea pe fazele R si T rămâne neschimbata , iar tensiunea fazei defecte S se apropie de 0",
+        "B": "tensiunea pe fazele R si T creste la valoarea tensiunii de linie iar pe faza S se apropie de 0",
+        "C": "cresc tensiunile pe fazele R si T, iar pe faza defecta S rămâne neschimbata"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-098": "B",
+        "G2-ELEC-241": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "In isolated neutral system one phase-to-ground solid fault raises healthy-phase earth voltages to line voltage, and fault phase near zero.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Characteristics_of_TT%2C_TN_and_IT_systems",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-a75e421a4064ac4c",
+      "representative_id": "G1-ELE-100",
+      "member_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "qabc_sha256": "a75e421a4064ac4c7dcb1be4ab9def9482ab1e8d9952cb72b9c050df3e3ff1c8",
+      "question_original_UNCHANGED": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu ambele sisteme de bare sub tensiune este avantajoasă deoarece permite:",
+      "options_original_UNCHANGED": {
+        "A": "scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
+        "B": "micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
+        "C": "scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-100": "A",
+        "G2-ELEC-243": "A"
+      },
+      "technical_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_reason": "Double busbar both energized advantages depend feeder distribution, transfer topology, bypass available and fault effects; multiple options may be plausible.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://electrical-engineering-portal.com/respr/Useful-guide-to-all-practicing-engineers-power-system-protection.pdf | https://www.scientia.ro/tehnologie/96-internet/10558-test-oficial-anre-pentru-electricieni-275-de-intrebari-electrotehnica-masini-si-retele-electrice-cu-raspunsuri-si-explicatii.html",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-93e94ea7347046f2",
+      "representative_id": "G1-ELE-101",
+      "member_ids": [
+        "G1-ELE-101",
+        "G2-ELEC-244"
+      ],
+      "qabc_sha256": "93e94ea7347046f2d595f63f48e2379b01a152918004d65194d65683c0fdfa6a",
+      "question_original_UNCHANGED": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu unul dintre sistemele de bare în rezervă rece ( fără tensiune) este avantajoasă",
+      "options_original_UNCHANGED": {
+        "A": "numai atunci când se doreşte scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
+        "B": "atunci când se doreşte micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
+        "C": "atunci când se doreşte scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-101": "B",
+        "G2-ELEC-244": "B"
+      },
+      "technical_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_reason": "Cold spare bar may permit restoring after fault but protective isolation/reconfiguration requires diagram; compare competing availability and transfer claims.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://electrical-engineering-portal.com/respr/Useful-guide-to-all-practicing-engineers-power-system-protection.pdf | https://www.scientia.ro/tehnologie/96-internet/10558-test-oficial-anre-pentru-electricieni-275-de-intrebari-electrotehnica-masini-si-retele-electrice-cu-raspunsuri-si-explicatii.html",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-eea3e50085532d4d",
+      "representative_id": "G1-ELE-103",
+      "member_ids": [
+        "G1-ELE-103",
+        "G2-ELEC-246"
+      ],
+      "qabc_sha256": "eea3e50085532d4dbff43b545d1b41c96728197ee27987dbd354b1166f609e46",
+      "question_original_UNCHANGED": "În cazul unei staţii cu un sistem de bare colectoare secţionat longitudinal şi prevăzut cu o cuplă longitudinală cu întreruptor şi AAR, cupla se menţine:",
+      "options_original_UNCHANGED": {
+        "A": "în rezervă caldă;",
+        "B": "în rezervă rece;",
+        "C": "În funcţiune"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-103": "A",
+        "G2-ELEC-246": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Hot reserve of longitudinal bus coupler with AAR is plausible; exact interlock, normal state and automation sequence require original station diagram.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-2b1be51d65318af7",
+      "representative_id": "G1-ELE-105",
+      "member_ids": [
+        "G1-ELE-105",
+        "G2-ELEC-248"
+      ],
+      "qabc_sha256": "2b1be51d65318af7a7705a0948f5a972f9c5cfa55711951979584a2612a7863a",
+      "question_original_UNCHANGED": "Într-o schemă cu 1,5 întreruptoare pe circuit:",
+      "options_original_UNCHANGED": {
+        "A": "este necesară o cuplă de ocolire;",
+        "B": "este necesară o cuplă transversală;",
+        "C": "nu sunt necesare circuite de cuplă transversală şi de ocolire"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-105": "C",
+        "G2-ELEC-248": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "One-and-a-half-breaker scheme typically enables switching without separate transverse/bypass coupler, but exact bus arrangement and source need confirmation.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://electrical-engineering-portal.com/respr/Useful-guide-to-all-practicing-engineers-power-system-protection.pdf",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-51c5a0415804aa1e",
+      "representative_id": "G1-ELE-106",
+      "member_ids": [
+        "G1-ELE-106",
+        "G2-ELEC-249"
+      ],
+      "qabc_sha256": "51c5a0415804aa1e555abec0bba42243fe844d88b8eaf365fd4aade71515ffbe",
+      "question_original_UNCHANGED": "Într-o schemă de conexiuni bara şi cupla de ocolire servesc la:",
+      "options_original_UNCHANGED": {
+        "A": "scoaterea în revizie a unui întreruptor, cu două scurte întreruperi;",
+        "B": "scoaterea în revizie a unei bare colectoare;",
+        "C": "scoaterea în revizie a unui întreruptor, fără întreruperea alimentării pe circuitul respectiv."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-106": "C",
+        "G2-ELEC-249": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Bypass bus and coupler can permit breaker maintenance while continuing feeder supply; exact switching arrangement must be proven from one-line.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://electrical-engineering-portal.com/respr/Useful-guide-to-all-practicing-engineers-power-system-protection.pdf",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-d4e07df6ab5afb3e",
+      "representative_id": "G1-ELE-107",
+      "member_ids": [
+        "G1-ELE-107",
+        "G2-ELEC-250"
+      ],
+      "qabc_sha256": "d4e07df6ab5afb3e4329eaeb9bb3e66bfa655455338d705c86fda1b1e87af347",
+      "question_original_UNCHANGED": "În posturi de transformare se folosesc transformatoare uscate atunci când:",
+      "options_original_UNCHANGED": {
+        "A": "amplasarea postului se face în zone aglomerate;",
+        "B": "nu sunt restricţii de teren;",
+        "C": "nu este posibilă asigurarea unei răciri corespunzătoare a bobinajelor."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-107": "A",
+        "G2-ELEC-250": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Dry transformer chosen in crowded locations depending fire and containment requirements; not generic universal rule.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-58a8ac1ed6564893",
+      "representative_id": "G1-ELE-108",
+      "member_ids": [
+        "G1-ELE-108",
+        "G2-ELEC-251"
+      ],
+      "qabc_sha256": "58a8ac1ed65648933bcccffd0added4e78f5dec8a61e89c81d6f46d9a6572e9f",
+      "question_original_UNCHANGED": "Într-o schemă poligon cu patru laturi:",
+      "options_original_UNCHANGED": {
+        "A": "este necesară o cuplă de ocolire;",
+        "B": "este necesară o cuplă transversală;",
+        "C": "nu este necesară o cuplă transversală."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-108": "C",
+        "G2-ELEC-251": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Four-side ring-bus can function without dedicated transverse bus coupler; this is conditional on actual circuit configuration.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://electrical-engineering-portal.com/respr/Useful-guide-to-all-practicing-engineers-power-system-protection.pdf",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-79d3c0fe4aef4fe9",
+      "representative_id": "G1-ELE-111",
+      "member_ids": [
+        "G1-ELE-111",
+        "G2-ELEC-253"
+      ],
+      "qabc_sha256": "79d3c0fe4aef4fe9d55d4b923d513bc112ddba0f98256c040e6ed876d7989b32",
+      "question_original_UNCHANGED": "Scopul supraînaltarii echipamentelor electrice din instalatii electrice exterioare este asigurarea",
+      "options_original_UNCHANGED": {
+        "A": "accesului mai comod în instalatie",
+        "B": "esteticii si claritatii instalatiei",
+        "C": "securitatii personalului de exploatare"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-111": "C",
+        "G2-ELEC-253": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Equipment elevated for personnel clearance/safety; exact minimum distances and practical conditions must match voltage and design.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/General_principle_of_protection_against_electrical_shocks_in_electrical_installations",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-6f8ccf06678e0d4a",
+      "representative_id": "G1-ELE-112",
+      "member_ids": [
+        "G1-ELE-112",
+        "G2-ELEC-254"
+      ],
+      "qabc_sha256": "6f8ccf06678e0d4abd1f42f7a42747dd2b33cae4520dc3cf2ea8674369800e8e",
+      "question_original_UNCHANGED": "În tubul de porţelan al unei siguranţe de înalta tensiune, nisipul :",
+      "options_original_UNCHANGED": {
+        "A": "are numai rolul de a consolida elementele fuzibile",
+        "B": "are rolul de a mari puterea de rupere a siguranţei",
+        "C": "de a menţine temperatura constanta a siguranţei"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-112": "B",
+        "G2-ELEC-254": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "High-voltage fuse silica sand quenches arc, increases interruption capability and contains energy, not only physical support.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.mdpi.com/1996-1073/15/19/7171",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    }
+  ]
+}
