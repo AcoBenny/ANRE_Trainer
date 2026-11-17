@@ -1,0 +1,279 @@
+{
+  "checkpoint": "CKPT-120",
+  "date": "2026-11-17",
+  "baseline_head": "57d17bd853880d429d087155da0d1b7420eee999",
+  "protocol": "BATCH8 pilot 1/2, 8 unique QABC units / 16 grade IDs",
+  "real_execution": "Single assistant applies electrical, source, Romanian-language and structural QA checklists. NO independently executed child agents",
+  "policy": "Documentation only on PR #7 audit branch; immutable canonical keys/QABC, MASTER, HTML/APK; no merge/release",
+  "gates": {
+    "source_research": "PRELIMINARY; exact original exam bibliographic edition unverified",
+    "independent_QA": "NOT_RUN",
+    "learner_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-9319fbf1cac680b8",
+      "qabc_sha256": "9319fbf1cac680b80ef2682ef8af1dd063a0d9cea0aa31ccb3afb8fdcc940001",
+      "representative_id": "G1-ELE-096",
+      "member_ids": "G1-ELE-096;G2-ELEC-239",
+      "original_keys_by_id_JSON": "{\"G1-ELE-096\":\"A\",\"G2-ELEC-239\":\"A\"}",
+      "question_original": "În cazul pornirii stea triunghi a motoarelor asincrone, curentul de pornire la conexiunea stea este:",
+      "A_original": "1/3 din curentul de pornire la conexiunea triunghi",
+      "B_original": "de 3 ori curentul de pornire la conexiunea triunghi",
+      "C_original": "de 2 ori curentul de pornire la conexiunea triunghi",
+      "source": {
+        "url": "https://library.e.abb.com/public/1fdbe69d541a4dfaafbf24245dc1e9da/1SBC100179C0201_Main_Catalog_Motor_protection_and_control.pdf",
+        "locator": "ABB Motor Protection and Control catalog, Star-delta starting, technical data (PDF text pp. 3/28; screenshot unavailable, cache miss)",
+        "additional_url": null,
+        "access_qa": "PDF_TEXT_ONLY_SCREENSHOT_CACHE_MISS"
+      },
+      "context_positive": "Motorul pornit în stea la aceeași tensiune de linie are tensiunea de fază √3 mai mică, iar curentul de linie ≈1/3 față de pornirea în triunghi.",
+      "abc_analysis": {
+        "A": "A: √3 la tensiunea fazei și √3 la relația curentului de linie dau 1/3, condiții același motor/tensiune.",
+        "B": "B: raportul 3 este inversat.",
+        "C": "C: dublarea nu rezultă din relația Y/Δ."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: √3 la tensiunea fazei și √3 la relația curentului de linie dau 1/3, condiții același motor/tensiune. | B: raportul 3 este inversat.",
+        "B_C": "B: raportul 3 este inversat. | C: dublarea nu rezultă din relația Y/Δ.",
+        "A_C": "A: √3 la tensiunea fazei și √3 la relația curentului de linie dau 1/3, condiții același motor/tensiune. | C: dublarea nu rezultă din relația Y/Δ.",
+        "counterexample": "În tranziție pot apărea impulsuri; raportul 1/3 privește curentul de pornire în modelul standard."
+      },
+      "scope": "Stea la pornire, același motor adecvat Δ la rețeaua dată; comparație cu pornirea directă Δ; nu curent în timpul comutării",
+      "preliminary_candidate": "A",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-af1b2034e42c6be5",
+      "qabc_sha256": "af1b2034e42c6be5a9ad4732aaa40fe2b52d6e82aa2b5888b441674e29bee095",
+      "representative_id": "G1-ELE-098",
+      "member_ids": "G1-ELE-098;G2-ELEC-241",
+      "original_keys_by_id_JSON": "{\"G1-ELE-098\":\"B\",\"G2-ELEC-241\":\"B\"}",
+      "question_original": "În cazul punerii nete la pământ a fazei S         într-o reţea de 20 kV cu neutrul izolat:",
+      "A_original": "tensiunea pe fazele R si T rămâne neschimbata , iar tensiunea fazei defecte S se apropie de 0",
+      "B_original": "tensiunea pe fazele R si T creste la valoarea tensiunii de linie iar pe faza S se apropie de 0",
+      "C_original": "cresc tensiunile pe fazele R si T, iar pe faza defecta S rămâne neschimbata",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+        "locator": "Schneider Electric Electrical Installation Guide, IT system - Fault protection, Fig F34, first ground fault",
+        "additional_url": null,
+        "access_qa": "SOURCE_EXACT_EARTHING_PRINCIPLE_BUT_VOLTAGE_CLASS_GENERALIZATION"
+      },
+      "context_positive": "În defectul fază-pământ net, faza S defectă se apropie de 0 față de pământ, iar fazele R,T sănătoase ajung la tensiunea de linie (√3 din tensiunea fază-pământ nominală).",
+      "abc_analysis": {
+        "A": "A: sănătoasele nu rămân la tensiunea fazei inițiale față de pământ.",
+        "B": "B: creștere la tensiunea linie și fază defectă spre 0, rezultă direct din fazori.",
+        "C": "C: faza defectă nu rămâne cu tensiunea inițială față de pământ."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: sănătoasele nu rămân la tensiunea fazei inițiale față de pământ. | B: creștere la tensiunea linie și fază defectă spre 0, rezultă direct din fazori.",
+        "B_C": "B: creștere la tensiunea linie și fază defectă spre 0, rezultă direct din fazori. | C: faza defectă nu rămâne cu tensiunea inițială față de pământ.",
+        "A_C": "A: sănătoasele nu rămân la tensiunea fazei inițiale față de pământ. | C: faza defectă nu rămâne cu tensiunea inițială față de pământ.",
+        "counterexample": "Cu neutru solid legat la pământ, nu apare universal creșterea √3; cu defect rezistiv raportul diferă."
+      },
+      "scope": "Defect metalic, neutru izolat, măsurare față de pământ, 20 kV; sursa Schneider exemplifică IT JT, aplicabilitate exactă MT necertificată",
+      "preliminary_candidate": "B",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-6f8ccf06678e0d4a",
+      "qabc_sha256": "6f8ccf06678e0d4abd1f42f7a42747dd2b33cae4520dc3cf2ea8674369800e8e",
+      "representative_id": "G1-ELE-112",
+      "member_ids": "G1-ELE-112;G2-ELEC-254",
+      "original_keys_by_id_JSON": "{\"G1-ELE-112\":\"B\",\"G2-ELEC-254\":\"B\"}",
+      "question_original": "În tubul de porţelan al unei siguranţe de înalta tensiune, nisipul :",
+      "A_original": "are numai rolul de a consolida elementele fuzibile",
+      "B_original": "are rolul de a mari puterea de rupere a siguranţei",
+      "C_original": "de a menţine temperatura constanta a siguranţei",
+      "source": {
+        "url": "https://www.mdpi.com/1996-1073/15/19/7171",
+        "locator": "Energies 2022 15(19):7171 §3.1.1 Silica Quartz; ETI Fuse links for voltage transformers, fuse construction",
+        "additional_url": "https://www.etigroup.eu/pdf-catalogs/catalog/fuse-links-for-voltage-transformers",
+        "access_qa": "MANUFACTURER_HTML_TECH_DESCRIPTION_AND_JOURNAL; BIBLIOGRAPHY_NOT_VERIFIED"
+      },
+      "context_positive": "Nisipul de cuarț răcește și stinge arcul, favorizând capacitatea/presiunea de întrerupere a siguranței HV.",
+      "abc_analysis": {
+        "A": "A: «numai» consolidare fals; stingerea arcului este scop central.",
+        "B": "B: stingerea arcului permite creșterea capacității de întrerupere, răspunsul intenționat.",
+        "C": "C: încălzirea temporară este inevitabilă, nu menține temperatura constantă."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: «numai» consolidare fals; stingerea arcului este scop central. | B: stingerea arcului permite creșterea capacității de întrerupere, răspunsul intenționat.",
+        "B_C": "B: stingerea arcului permite creșterea capacității de întrerupere, răspunsul intenționat. | C: încălzirea temporară este inevitabilă, nu menține temperatura constantă.",
+        "A_C": "A: «numai» consolidare fals; stingerea arcului este scop central. | C: încălzirea temporară este inevitabilă, nu menține temperatura constantă.",
+        "counterexample": "Un corp de porțelan gol sau umplutură inertă necorespunzătoare nu are aceeași capacitate de rupere."
+      },
+      "scope": "Siguranță fuzibilă înaltă tensiune cu nisip de cuarț, nu orice cartuș și orice tip de nisip",
+      "preliminary_candidate": "B",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-3a39315d9afe0e3d",
+      "qabc_sha256": "3a39315d9afe0e3d2d4c098b4745bc92bc624782125c9e4d82d4979066a51509",
+      "representative_id": "G1-ELE-115",
+      "member_ids": "G1-ELE-115;G2-ELEC-257",
+      "original_keys_by_id_JSON": "{\"G1-ELE-115\":\"A\",\"G2-ELEC-257\":\"A\"}",
+      "question_original": "Inductanţa proprie a unei bobine prin care trece un curent de intensitate i este raportul între ....... şi acest curent",
+      "A_original": "fluxul propriu al bobinei",
+      "B_original": "inducţia magnetică",
+      "C_original": "forţa electromotoare",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/14-2-self-inductance-and-inductors",
+        "locator": "OpenStax University Physics Vol 2 §14.2, eq 14.9/14.13 magnetic flux linkage",
+        "additional_url": null,
+        "access_qa": "LINGUISTIC_CONCATENATED_FLUX_WARNING"
+      },
+      "context_positive": "L=NΦ/I în circuit liniar, unde NΦ este fluxul magnetic concatenat propriu bobinei.",
+      "abc_analysis": {
+        "A": "A: «flux propriu» este acceptabil numai interpretat ca flux propriu concatenat NΦ.",
+        "B": "B: inducția magnetică B se măsoară în tesla și nu este numărătorul fluxului concatenat.",
+        "C": "C: tensiunea electromotoare indusă corespunde variației fluxului în timp, nu raportului L."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: «flux propriu» este acceptabil numai interpretat ca flux propriu concatenat NΦ. | B: inducția magnetică B se măsoară în tesla și nu este numărătorul fluxului concatenat.",
+        "B_C": "B: inducția magnetică B se măsoară în tesla și nu este numărătorul fluxului concatenat. | C: tensiunea electromotoare indusă corespunde variației fluxului în timp, nu raportului L.",
+        "A_C": "A: «flux propriu» este acceptabil numai interpretat ca flux propriu concatenat NΦ. | C: tensiunea electromotoare indusă corespunde variației fluxului în timp, nu raportului L.",
+        "counterexample": "Pentru N spire L=NΦ/I, nu doar Φ/I fără calificare; semnalare terminologică obligatorie."
+      },
+      "scope": "Bobină liniară, flux concatenat; dacă se înțelege flux printr-o singură spiră și N>1, formularea A este incompletă",
+      "preliminary_candidate": "A",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-22626bd0e0006481",
+      "qabc_sha256": "22626bd0e00064817b053cf3bd85415b982f44850146971b836cbbb673eebc39",
+      "representative_id": "G1-ELE-116",
+      "member_ids": "G1-ELE-116;G2-ELEC-258",
+      "original_keys_by_id_JSON": "{\"G1-ELE-116\":\"A\",\"G2-ELEC-258\":\"A\"}",
+      "question_original": "Intensitatea câmpului electric într-un anumit punct se măsoară",
+      "A_original": "prin raportul dintre forţa exercitata asupra unei sarcini electrice în acel punct si mărimea sarcinii",
+      "B_original": "numai prin derivata în raport cu spaţiul cu semn schimbat a potenţialului în acel punct",
+      "C_original": "raportul dintre tensiunea aplicata unui conductor si rezistenta acestuia",
+      "source": {
+        "url": "https://openstax.org/books/physics/pages/18-3-electric-field",
+        "locator": "OpenStax Physics §18.3 Electric Field, eq E=F/q",
+        "additional_url": null,
+        "access_qa": "TERM_MEASURE_VS_DEFINE_WARNING"
+      },
+      "context_positive": "Definiția câmpului electric este vectorial E=F/q (sarcină de probă), unitate N/C.",
+      "abc_analysis": {
+        "A": "A: definiția directă a câmpului electric prin forță și sarcina de probă.",
+        "B": "B: «numai» fals, −grad V este o reprezentare de potențial în electrostatică, nu singura definiție/măsurare.",
+        "C": "C: U/R are unitatea amper, curent, nu câmp electric."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: definiția directă a câmpului electric prin forță și sarcina de probă. | B: «numai» fals, −grad V este o reprezentare de potențial în electrostatică, nu singura definiție/măsurare.",
+        "B_C": "B: «numai» fals, −grad V este o reprezentare de potențial în electrostatică, nu singura definiție/măsurare. | C: U/R are unitatea amper, curent, nu câmp electric.",
+        "A_C": "A: definiția directă a câmpului electric prin forță și sarcina de probă. | C: U/R are unitatea amper, curent, nu câmp electric.",
+        "counterexample": "Un câmp neconservativ nu se exprimă universal prin gradient scalar static; termenul «numai» blochează B."
+      },
+      "scope": "Câmp electric, sarcină de probă suficient de mică; formularea «se măsoară» are caracter didactic, nu instrument de măsură",
+      "preliminary_candidate": "A",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-6786771e3cfe2b2a",
+      "qabc_sha256": "6786771e3cfe2b2a569bc8115a6f22b386bc31ee36a96db64bcb4e2111a33bea",
+      "representative_id": "G1-ELE-117",
+      "member_ids": "G1-ELE-117;G2-ELEC-259",
+      "original_keys_by_id_JSON": "{\"G1-ELE-117\":\"A\",\"G2-ELEC-259\":\"A\"}",
+      "question_original": "Intensitatea câmpului magnetic într-un punct exterior unui conductor rectiliniu străbătut de curentul continuu de intensitate i, aflat la distanţă r de conductor este:",
+      "A_original": "invers proporţională cu r",
+      "B_original": "direct proporţională cu pătratul lui r",
+      "C_original": "direct proporţională cu r",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-2-magnetic-field-due-to-a-thin-straight-wire",
+        "locator": "OpenStax University Physics Vol 2 §12.2, B=μI/(2πr)",
+        "additional_url": null,
+        "access_qa": "MODEL_LONG_STRAIGHT_WIRE"
+      },
+      "context_positive": "Pentru conductor rectiliniu foarte lung, H=I/(2πr), deci invers proporțional cu r.",
+      "abc_analysis": {
+        "A": "A: expresia H=I/(2πr) confirmă inversa.",
+        "B": "B: r² în numărător contrazice legea Ampère.",
+        "C": "C: direct proporțional cu r este inversul comportamentului fizic."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: expresia H=I/(2πr) confirmă inversa. | B: r² în numărător contrazice legea Ampère.",
+        "B_C": "B: r² în numărător contrazice legea Ampère. | C: direct proporțional cu r este inversul comportamentului fizic.",
+        "A_C": "A: expresia H=I/(2πr) confirmă inversa. | C: direct proporțional cu r este inversul comportamentului fizic.",
+        "counterexample": "Conductor scurt în geometrie finită necesită Biot-Savart, nu expresie universală 1/r."
+      },
+      "scope": "Conductor rectiliniu suficient de lung, exterior, material omogen; «intensitate H» diferă de B prin permeabilitate",
+      "preliminary_candidate": "A",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-08f8669e2ad5aa56",
+      "qabc_sha256": "08f8669e2ad5aa5623610afc5fa616a28ddf36ad24222f1f5d8c3e60817a12cd",
+      "representative_id": "G1-ELE-119",
+      "member_ids": "G1-ELE-119;G2-ELEC-261",
+      "original_keys_by_id_JSON": "{\"G1-ELE-119\":\"C\",\"G2-ELEC-261\":\"C\"}",
+      "question_original": "Într-un circuit format dintr-un rezistor de rezistenta R în serie cu o bobina de inductanţa L, în momentul alimentarii de la o sursa de curent continuu cu tensiune U:",
+      "A_original": "curentul creste instantaneu la valoarea U/R",
+      "B_original": "curentul nu circula prin acest circuit",
+      "C_original": "curentul ajunge la valoarea U/R după un timp",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits",
+        "locator": "OpenStax University Physics Vol 2 §14.4 RL Circuits, current step response",
+        "additional_url": null,
+        "access_qa": "SEMANTIC_ASYMPTOTE_WARNING"
+      },
+      "context_positive": "i(t)=(U/R)(1−exp(−tR/L)) pornind de la i(0)=0; crește spre U/R.",
+      "abc_analysis": {
+        "A": "A: nu poate avea salt instantaneu într-o inductanță finită.",
+        "B": "B: curentul curge după comutare și crește exponențial.",
+        "C": "C: corespunde valorii-limită de regim staționar în model ideal, nu egalitate exactă la timp finit."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: nu poate avea salt instantaneu într-o inductanță finită. | B: curentul curge după comutare și crește exponențial.",
+        "B_C": "B: curentul curge după comutare și crește exponențial. | C: corespunde valorii-limită de regim staționar în model ideal, nu egalitate exactă la timp finit.",
+        "A_C": "A: nu poate avea salt instantaneu într-o inductanță finită. | C: corespunde valorii-limită de regim staționar în model ideal, nu egalitate exactă la timp finit.",
+        "counterexample": "La orice timp finit i(t)<U/R dacă i(0)=0 și R,L pozitive, deci expresia literală «ajunge» nu e exactă."
+      },
+      "scope": "R,L>0, sursă DC treaptă, curent inițial 0; formularea «ajunge după un timp» este asimptotică",
+      "preliminary_candidate": "C",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-62f80a8953e745f0",
+      "qabc_sha256": "62f80a8953e745f0d0a470cf5f786ce658317cc43f25a1832d921bff7e438c89",
+      "representative_id": "G1-ELE-120",
+      "member_ids": "G1-ELE-120;G2-ELEC-262",
+      "original_keys_by_id_JSON": "{\"G1-ELE-120\":\"C\",\"G2-ELEC-262\":\"C\"}",
+      "question_original": "Într-un circuit R-L serie de curent alternativ, tensiunea la bornele rezistorului este de 100 V, iar tensiunea la bornele bobinei este de 70 V. Tensiunea la bornele circuitului R-L este:",
+      "A_original": "170V",
+      "B_original": "30 V",
+      "C_original": "122 V",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-key-equations",
+        "locator": "OpenStax University Physics Vol 2 §15 AC RLC impedance and phasors",
+        "additional_url": null,
+        "access_qa": "REAL_COIL_SCOPE_WARNING"
+      },
+      "context_positive": "În circuit RL cu bobină ideală, UR și UL sunt în cuadratură: U=sqrt(100²+70²)=122,07 V.",
+      "abc_analysis": {
+        "A": "A: 170 V adună scalar tensiuni fazoriale în cuadratură.",
+        "B": "B: 30 V le scade scalar fără justificare.",
+        "C": "C: 122 V este valoarea rotunjită din suma pătratică."
+      },
+      "pairwise_and_reverse": {
+        "A_B": "A: 170 V adună scalar tensiuni fazoriale în cuadratură. | B: 30 V le scade scalar fără justificare.",
+        "B_C": "B: 30 V le scade scalar fără justificare. | C: 122 V este valoarea rotunjită din suma pătratică.",
+        "A_C": "A: 170 V adună scalar tensiuni fazoriale în cuadratură. | C: 122 V este valoarea rotunjită din suma pătratică.",
+        "counterexample": "Bobina reală cu rezistență proprie face ca 70V măsurați să aibă componentă în fază, rezultatul poate diferi de 122V."
+      },
+      "scope": "Sursă sinusoidală, bobină ideală fără rezistență internă; dacă bobina este reală, tensiunile pot să nu fie ortogonale",
+      "preliminary_candidate": "C",
+      "independent_qa": "NOT_RUN",
+      "learner_approval": "NO"
+    }
+  ]
+}
