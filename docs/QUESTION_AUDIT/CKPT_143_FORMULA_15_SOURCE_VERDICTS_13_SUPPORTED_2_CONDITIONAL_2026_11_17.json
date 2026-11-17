@@ -1,0 +1,569 @@
+{
+  "checkpoint": "CKPT-143",
+  "date": "2026-11-17",
+  "goal": "Close the technical adjudication without duplicating already stored research or misleading learning approvals",
+  "input_commit": "393fff9122a2db2c3c6ef81cb5616b1f05edf389",
+  "input_docs": [
+    "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+    "FINAL_ADJUDICATION_PHASE_QUEUE_568_2026_11_17.csv"
+  ],
+  "counts": {
+    "already_prechecked_units": 15,
+    "technical_answer_supported_with_source": 13,
+    "conditional_model_blocked": 2,
+    "new_units_in_queue": 0,
+    "approved_for_learning": 0
+  },
+  "method": "Closed technical verdict only on prior 15 cards. Every source reopened now; source applicability, key and alternative rationales from CKPT-139 preserved. Grade labels remain unchanged. Never confuse same-assistant review with independent signoff.",
+  "official_source_check": {
+    "index": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+    "xlsx_link": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+    "download_status": "FAILED_VIA_WEB_UNSUPPORTED_XLSX_AND_CONTAINER_DOWNLOAD",
+    "official_correct_answers": "NOT_PROVED",
+    "learning_gate": "CLOSED"
+  },
+  "source_access_erratum": "CKPT-141/142 source_evidence.access labels may overstate direct source reopening in that earlier session. Do not treat these metadata labels as independent proof; this CKPT-143 enumerates sources verified by this session separately.",
+  "gate": "15 final technical statuses within same-adjudication phase; 0 external independent reviewers; 0 approved for studying",
+  "cards": [
+    {
+      "unit_id": "AU-6786771e3cfe2b2a",
+      "representative_id": "G1-ELE-117",
+      "grade_member_ids": [
+        "G1-ELE-117",
+        "G2-ELEC-259"
+      ],
+      "qabc_sha256": "6786771e3cfe2b2a569bc8115a6f22b386bc31ee36a96db64bcb4e2111a33bea",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-117": "A",
+        "G2-ELEC-259": "A"
+      },
+      "original_options_UNCHANGED": {
+        "A": "invers proporţională cu r",
+        "B": "direct proporţională cu pătratul lui r",
+        "C": "direct proporţională cu r"
+      },
+      "resolved_model": "UNBOUNDED_STRAIGHT_WIRE",
+      "technical_result": "A under long-wire model; not unconditional",
+      "technical_evidence_status": "CONDITIONAL_MISSING_LONG_WIRE_OR_GEOMETRY",
+      "exact_rule": "H=I/(2πr) only for effectively infinite straight conductor; finite segment requires end-angle correction",
+      "original_source_reopened_in_this_session": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-2-magnetic-field-due-to-a-thin-straight-wire",
+        "locator": "§12.2 thin long straight wire",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-62f80a8953e745f0",
+      "representative_id": "G1-ELE-120",
+      "grade_member_ids": [
+        "G1-ELE-120",
+        "G2-ELEC-262"
+      ],
+      "qabc_sha256": "62f80a8953e745f0d0a470cf5f786ce658317cc43f25a1832d921bff7e438c89",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-120": "C",
+        "G2-ELEC-262": "C"
+      },
+      "original_options_UNCHANGED": {
+        "A": "170V",
+        "B": "30 V",
+        "C": "122 V"
+      },
+      "resolved_model": "IDEAL_SERIES_R_L",
+      "technical_result": "C under ideal inductive coil model; if bobina has nonzero winding resistance, terminal phasor is not 90 deg",
+      "technical_evidence_status": "CONDITIONAL_IDEAL_INDUCTOR_ASSUMPTION",
+      "exact_rule": "U=sqrt(U_R^2+U_L^2)=sqrt(10000+4900)=122.065556 V if coil resistive loss is negligible",
+      "original_source_reopened_in_this_session": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-key-equations",
+        "locator": "Ch.15 series RLC impedance and phase angle",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-57f2c737a49ceb8f",
+      "representative_id": "G1-ELE-127",
+      "grade_member_ids": [
+        "G1-ELE-127",
+        "G2-ELEC-267"
+      ],
+      "qabc_sha256": "57f2c737a49ceb8fe8763e3d9692785e4593ad46effe2b759a7a0357837180f9",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-127": "A",
+        "G2-ELEC-267": "A"
+      },
+      "original_options_UNCHANGED": {
+        "A": "0,8",
+        "B": "0,75",
+        "C": "4/3"
+      },
+      "resolved_model": "SINUSOIDAL_P_Q_TRIANGLE",
+      "technical_result": "A",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "S=sqrt(4^2+3^2)=5 kVA; PF=P/S=4/5=0.8",
+      "original_source_reopened_in_this_session": {
+        "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+        "locator": "Power vector diagram and P/S=cosφ, S²=P²+Q²",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-c8440bfef3fb1dbb",
+      "representative_id": "G1-ELE-132",
+      "grade_member_ids": [
+        "G1-ELE-132",
+        "G2-ELEC-272"
+      ],
+      "qabc_sha256": "c8440bfef3fb1dbb14e0c79f7bfdbe94005956f63d208e08d3682950ce1d679f",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-132": "A",
+        "G2-ELEC-272": "A"
+      },
+      "original_options_UNCHANGED": {
+        "A": "reactanţa totală a circuitului X este > 0",
+        "B": "reactanţa totală a circuitului            X este <0",
+        "C": "reactanţa totală a circuitului este =0"
+      },
+      "resolved_model": "SERIES_RLC",
+      "technical_result": "A",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "φ=arctan((X_L−X_C)/R) is positive precisely when X>0",
+      "original_source_reopened_in_this_session": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-key-equations",
+        "locator": "Ch.15 phase-angle formula",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-b0e65dd59633f0d4",
+      "representative_id": "G1-ELE-135",
+      "grade_member_ids": [
+        "G1-ELE-135",
+        "G2-ELEC-275"
+      ],
+      "qabc_sha256": "b0e65dd59633f0d4987e32668b19d53b1802e98e8155dba2fb7e4bd0b8564fc2",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-135": "B",
+        "G2-ELEC-275": "B"
+      },
+      "original_options_UNCHANGED": {
+        "A": "suma rezistenţelor celor n rezistoare",
+        "B": "suma inverselor rezistenţelor celor n rezistoare",
+        "C": "suma pătratelor rezistenţelor celor n rezistoare"
+      },
+      "resolved_model": "PARALLEL_RESISTORS",
+      "technical_result": "B",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "1/R_eq=∑1/R_i",
+      "original_source_reopened_in_this_session": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "§10.2 equivalent resistance of parallel resistors",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-4561e83c1254e35b",
+      "representative_id": "G1-ELE-143",
+      "grade_member_ids": [
+        "G1-ELE-143",
+        "G2-ELEC-281"
+      ],
+      "qabc_sha256": "4561e83c1254e35b55e38d9b3b1432b456a2481586f54d9690fdcaffcbb2469e",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-143": "B",
+        "G2-ELEC-281": "B"
+      },
+      "original_options_UNCHANGED": {
+        "A": "direct proporţionala cu capacitatea",
+        "B": "invers proporţionala cu capacitatea",
+        "C": "nu depinde de capacitate"
+      },
+      "resolved_model": "SERIES_CAPACITORS",
+      "technical_result": "B",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "Q is same on all capacitors in series; U_i=Q/C_i so inverse to capacitance",
+      "original_source_reopened_in_this_session": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "locator": "§8.2 series combination identical charge and V_i=Q/C_i",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-257eef55899c10f9",
+      "representative_id": "G1-ELE-201",
+      "grade_member_ids": [
+        "G1-ELE-201",
+        "G2-ELEC-337"
+      ],
+      "qabc_sha256": "257eef55899c10f979d6176010bc64eea37bcf821952c41f6a5c4a1ae6275c0c",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-201": "C",
+        "G2-ELEC-337": "C"
+      },
+      "original_options_UNCHANGED": {
+        "A": "5 ohm",
+        "B": "0,66 ohm",
+        "C": "6 ohm"
+      },
+      "resolved_model": "SERIES_RESISTORS",
+      "technical_result": "C",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "R_eq=2+2+2=6 ohm",
+      "original_source_reopened_in_this_session": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "§10.2 R_s=∑R_i",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-155e4f490d6c823f",
+      "representative_id": "G1-ELE-211",
+      "grade_member_ids": [
+        "G1-ELE-211",
+        "G2-ELEC-347"
+      ],
+      "qabc_sha256": "155e4f490d6c823fe2fa4e6f21ca5696a1b87df9cee0cf8fa4414caafdc21cbc",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-211": "B",
+        "G2-ELEC-347": "B"
+      },
+      "original_options_UNCHANGED": {
+        "A": "3 ohm",
+        "B": "1 ohm",
+        "C": "9 ohm"
+      },
+      "resolved_model": "PARALLEL_RESISTORS",
+      "technical_result": "B",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "1/R_eq=1/3+1/3+1/3=1; R_eq=1 ohm",
+      "original_source_reopened_in_this_session": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "§10.2 1/R_p=∑1/R_i",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-1c35c97f84354889",
+      "representative_id": "G1-ELE-239",
+      "grade_member_ids": [
+        "G1-ELE-239",
+        "G2-ELEC-375"
+      ],
+      "qabc_sha256": "1c35c97f84354889c5a5be708a2cee405a6065c3accacc910b8a6eb9344d7e3a",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-239": "A",
+        "G2-ELEC-375": "A"
+      },
+      "original_options_UNCHANGED": {
+        "A": "inducţiei magnetice",
+        "B": "fluxului magnetic",
+        "C": "intensităţii câmpului magnetic"
+      },
+      "resolved_model": "SI_UNIT_MAGNETIC_FLUX_DENSITY",
+      "technical_result": "A",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "Magnetic induction B is magnetic flux density; SI tesla T. Weber is magnetic flux; A/m is magnetic field H",
+      "original_source_reopened_in_this_session": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "§4.2.1 Table 3, magnetic flux density",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-8d58918256eddd79",
+      "representative_id": "G1-ELE-242",
+      "grade_member_ids": [
+        "G1-ELE-242",
+        "G2-ELEC-378"
+      ],
+      "qabc_sha256": "8d58918256eddd7969d7eb9bfdfec31a8a2f983ad8ba4e558093251ac584d50b",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-242": "C",
+        "G2-ELEC-378": "C"
+      },
+      "original_options_UNCHANGED": {
+        "A": "0,4 kV",
+        "B": "0 V",
+        "C": "230 V"
+      },
+      "resolved_model": "BALANCED_STAR_400V_LINE_TO_LINE",
+      "technical_result": "C; assumes 0.4kV denotes line-to-line supply as usual",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "For conventional balanced 0.4 kV three-phase line supply, U_phase=400/√3=230.94 V≈230 V",
+      "original_source_reopened_in_this_session": {
+        "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/AC_Electrical_Circuit_Analysis%3A_A_Practical_Approach_%28Fiore%29/09%3A_Polyphase_Power/9.3%3A_Three-Phase_Connections",
+        "locator": "§9.3 line-to-phase voltage for star",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-3f7da7e26b4c8f9e",
+      "representative_id": "G1-ELE-256",
+      "grade_member_ids": [
+        "G1-ELE-256",
+        "G2-ELEC-391"
+      ],
+      "qabc_sha256": "3f7da7e26b4c8f9eaee78da4523fd94cd07d50bac11a6ce6a6760bf11b1b8bda",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-256": "A",
+        "G2-ELEC-391": "A"
+      },
+      "original_options_UNCHANGED": {
+        "A": "F",
+        "B": "Axh",
+        "C": "A/h"
+      },
+      "resolved_model": "SI_UNIT_CAPACITANCE",
+      "technical_result": "A",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "Capacitance SI farad F=C/V",
+      "original_source_reopened_in_this_session": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "§4.2.1 Table 3 capacitance",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-94592d3e2533fbd0",
+      "representative_id": "G1-ELE-258",
+      "grade_member_ids": [
+        "G1-ELE-258",
+        "G2-ELEC-393"
+      ],
+      "qabc_sha256": "94592d3e2533fbd0f9286727a7d777aa11c0ce9a49ae9a7aaa3f67074c1bc766",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-258": "B",
+        "G2-ELEC-393": "B"
+      },
+      "original_options_UNCHANGED": {
+        "A": "Tesla",
+        "B": "Weber",
+        "C": "Farad"
+      },
+      "resolved_model": "SI_UNIT_MAGNETIC_FLUX",
+      "technical_result": "B",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "Magnetic flux SI weber Wb; tesla T is magnetic flux density",
+      "original_source_reopened_in_this_session": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "§4.2.1 Table 3 magnetic flux",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-d0500c04b777819e",
+      "representative_id": "G1-ELE-259",
+      "grade_member_ids": [
+        "G1-ELE-259",
+        "G2-ELEC-394"
+      ],
+      "qabc_sha256": "d0500c04b777819ee731204f61b7c5c8f2c21a7f23f039e4df65da25f456e5cf",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-259": "B",
+        "G2-ELEC-394": "B"
+      },
+      "original_options_UNCHANGED": {
+        "A": "Weber",
+        "B": "Hertz",
+        "C": "Henry"
+      },
+      "resolved_model": "SI_UNIT_FREQUENCY",
+      "technical_result": "B",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "Frequency SI hertz Hz=s^-1",
+      "original_source_reopened_in_this_session": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "§4.2.1 Table 3 frequency",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-259dc02132acad7b",
+      "representative_id": "G1-ELE-260",
+      "grade_member_ids": [
+        "G1-ELE-260",
+        "G2-ELEC-395"
+      ],
+      "qabc_sha256": "259dc02132acad7b84fdb337544099fd798d28f8cfad6768ce4bd25d6ad93fa6",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-260": "B",
+        "G2-ELEC-395": "B"
+      },
+      "original_options_UNCHANGED": {
+        "A": "V/m",
+        "B": "Coulomb",
+        "C": "Farad"
+      },
+      "resolved_model": "SI_UNIT_CHARGE",
+      "technical_result": "B",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "Electric charge SI coulomb C=A·s",
+      "original_source_reopened_in_this_session": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "§4.2.1 Table 3 electric charge",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    },
+    {
+      "unit_id": "AU-1d6d930623b4b59f",
+      "representative_id": "G1-ELE-262",
+      "grade_member_ids": [
+        "G1-ELE-262",
+        "G2-ELEC-397"
+      ],
+      "qabc_sha256": "1d6d930623b4b59f92c3bdcb44b5d8e8c8f4d9c728c561a51339479a712f30a3",
+      "original_keymap_UNCHANGED": {
+        "G1-ELE-262": "B",
+        "G2-ELEC-397": "B"
+      },
+      "original_options_UNCHANGED": {
+        "A": "kWh",
+        "B": "kW",
+        "C": "kW/h"
+      },
+      "resolved_model": "SI_UNIT_ACTIVE_POWER",
+      "technical_result": "B",
+      "technical_evidence_status": "TECHNICAL_KEY_SUPPORTED_SOURCE_REOPENED",
+      "exact_rule": "Power SI watt W=J/s; kW is valid scale. kWh energy, kW/h power rate",
+      "original_source_reopened_in_this_session": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "§4.2.1 Table 3 power",
+        "access": "WEB_HTML_REOPENED_AND_TEXT_READ",
+        "exam_edition_and_2024_question_identity_confirmed": "NO"
+      },
+      "ABC_reasoning_reused_from_checkpoint": "CKPT_139_FINAL_ADJUDICATION_FORMULA_BATCH15_2026_11_17.json",
+      "current_QA": "SAME_ASSISTANT_SOURCE_PLUS_CALCULATION_CHECK_NO_INDEPENDENT_REVIEWER",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "official_2024_source_workbook_question_verification": "UNAVAILABLE_XLSX_FETCH_FAILED",
+      "approved_for_learning": "NO",
+      "canonical_changes": "NONE"
+    }
+  ]
+}
