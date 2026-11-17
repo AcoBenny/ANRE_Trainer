@@ -1,0 +1,129 @@
+{
+  "checkpoint": "CKPT-115",
+  "date": "2026-11-17",
+  "input_head": "83b0885f21bb54718a02294707c433e42dc11db5",
+  "protocol": "MICRO5, batch 2 of 2 for this user message: 3 canonical units / 6 grade IDs",
+  "real_agent_status": "One assistant with technical/source/linguistic checklists. No independent child-agent runtime; no source/edition signoff.",
+  "scope": "Only document and ledger on audit branch, canonical QABC/key/master/HTML/APK untouched; no merge or release.",
+  "gates": {
+    "canonical": "TO_BE_VERIFIED_BEFORE_LEDGER_CREDIT",
+    "technical": "PRELIMINARY_WITH_SCOPE",
+    "official_2026_bibliography": "NOT_VERIFIED",
+    "independent": "NOT_RUN",
+    "learning": "NO"
+  },
+  "reusable_lesson": "In equal linear models, inductive 1/n attenuates higher harmonics, capacitive n amplifies them. Pairwise A/B/C exclusion must be followed by affirmative evidence.",
+  "cards": [
+    {
+      "unit_id": "AU-51b584ba99cd3a8f",
+      "representative_id": "G1-ELE-044",
+      "member_ids": "G1-ELE-044;G2-ELEC-190",
+      "qabc_sha256": "51b584ba99cd3a8fca969d71d28cbe5bd26b4ce95835a0440d614d190f5e6b58",
+      "original_keys_by_id_JSON": "{\"G1-ELE-044\":\"C\",\"G2-ELEC-190\":\"C\"}",
+      "question_original": "Durata de viata a lămpilor cu incandescenta:",
+      "A_original": "creste odată cu creşterea frecventei",
+      "B_original": "scade odată cu scăderea tensiunii",
+      "C_original": "scade odată cu creşterea tensiunii",
+      "stored_key_unchanged": "C",
+      "source": [
+        {
+          "url": "https://www.lamptech.co.uk/Documents/Catalogues/GEC%20-%20Catalogue%20-%201985%20UK.pdf",
+          "locator": "Osram-GEC Lighting Catalogue 1985, Tungsten Lamps / General Lighting Service, printed p182: Life, filament temperature and efficacy",
+          "access": "PDF text find confirmed, PDF screenshot failed cache miss; no visual approval",
+          "support": "Raising voltage increases filament temperature and evaporation; shorter life. Decreasing voltage has opposite effect."
+        },
+        {
+          "url": "https://www.sciencedirect.com/topics/engineering/incandescent-lamp",
+          "locator": "Incandescent Lamp - an overview, voltage vs life paragraph",
+          "access": "Search extract, direct page failed",
+          "support": "Service voltage +10% drastically reduces incandescent life, -10% extends it."
+        }
+      ],
+      "context": "La lampa cu incandescență, filamentul de wolfram emite prin încălzire. Creșterea tensiunii aplicate mărește temperatura filamentului și acceleră evaporarea materialului, ceea ce scurtează durata de viață, conform catalogului tehnic Osram-GEC. Scăderea tensiunii are în general efect invers, cu lumină emisă mai slabă. Frecvența rețelei la o tensiune eficace comparabilă nu este factorul principal al duratei de viață în domeniul uzual de funcționare. C este alegerea intenționată; variația tensiunii și alte condiții de utilizare trebuie separate de fenomenele tranzitorii.",
+      "options": {
+        "A": "Nu este legea generală a duratei de viață: creșterea frecvenței nu produce automat viață mai lungă.",
+        "B": "Este invers fenomenului descris de producător: reducerea tensiunii tinde să prelungească viața.",
+        "C": "Dovadă afirmativă: supratensiunea ridică temperatura filamentului și accelerează deteriorarea."
+      },
+      "pairwise": "A↔C: frecvență vs tensiune; B↔C: efecte opuse ale tensiunii; A↔B: niciunul nu descrie comportarea standard.",
+      "reverse_counterexample": "Lampa poate ceda și prin vibrații/șocuri ori defect de fabricație; C reflectă tendința statistică, nu timpul exact al fiecărui bec.",
+      "finding": "C_SUPPORTED_BY_ORIGINAL_MANUFACTURER_TEXT; PDF_VISUAL_SCREENSHOT_NOT_AVAILABLE",
+      "independent_review": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-85d098218275d33f",
+      "representative_id": "G1-ELE-047",
+      "member_ids": "G1-ELE-047;G2-ELEC-193",
+      "qabc_sha256": "85d098218275d33f4839b05b31f1bbb0c8b5cf24fa9ec9b81f892865a756a5f8",
+      "original_keys_by_id_JSON": "{\"G1-ELE-047\":\"A\",\"G2-ELEC-193\":\"A\"}",
+      "question_original": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unei bobine este:",
+      "A_original": "mai puţin deformat decât tensiunea care i-a dat naştere",
+      "B_original": "mult mai deformat decât tensiunea care i-a dat naştere",
+      "C_original": "sinusoidal",
+      "stored_key_unchanged": "A",
+      "source": [
+        {
+          "url": "https://openstax.org/books/college-physics/pages/23-11-reactance-inductive-and-capacitive",
+          "locator": "OpenStax College Physics 23.11, AC Voltage in an Inductor, paragraphs on XL=2πfL and attenuation of high frequencies; lines 30-80",
+          "access": "HTML reopened",
+          "support": "XL increases with frequency, reducing current amplitude of higher harmonic of applied voltage."
+        },
+        {
+          "url": "https://library.e.abb.com/public/4704e67320c08992c1257870002e4700/1SDC007107G0202.pdf",
+          "locator": "ABB Technical Application Paper 8, p21 Fig. 8.2 XL=ωL, web PDF page 22 visually checked",
+          "access": "PDF text and screenshot successful",
+          "support": "Inductor reactance proportional to frequency, compared directly with inverse capacitor reactance."
+        }
+      ],
+      "context": "Într-o bobină ideală liniară alimentată cu tensiune periodică nesinusoidală, fiecare armonică poate fi analizată separat. Reactanța bobinei pentru armonica de ordin n este X_L,n=n·ω·L; astfel I_n=U_n/(n·ω·L), pe când I_1=U_1/(ω·L). Raportul relativ I_n/I_1=(U_n/U_1)/n micșorează armonicile superioare față de fundamentală, ceea ce determină un curent mai puțin deformat. Bobina nu elimină în general toate armonicile, deci C nu este adevărat în regim generic. Concluzia presupune regim staționar periodic, inductanță ideală și analiză a distorsiunii de tip THD, nu un circuit rezonant combinat cu alte elemente.",
+      "options": {
+        "A": "Afirmativ: bobina atenuează mai mult armonicile superioare comparativ cu fundamentala.",
+        "B": "Fals pentru inductanță ideală: reactanța crește, nu descrește, cu ordinul armonicii.",
+        "C": "Fals în general: tensiunea nesinusoidală dă și armonici de curent, doar atenuate."
+      },
+      "pairwise": "A↔B direcții opuse; A↔C atenuare versus anulare totală; B↔C deformare mărită versus curent pur sinusoidal.",
+      "reverse_counterexample": "Dacă tensiunea are armonici dar curentul este calculat cu L ideal la frecvența de bază neschimbată, I_n relativ scade 1/n. Pentru DC sau tranzitorii, analiza THD periodică nu acoperă întreg semnalul.",
+      "finding": "A_SUPPORTED_IDEAL_LINEAR_INDUCTOR_HARMONIC_WEIGHTING_1_OVER_N",
+      "independent_review": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-cfff1eac871e686f",
+      "representative_id": "G1-ELE-048",
+      "member_ids": "G1-ELE-048;G2-ELEC-194",
+      "qabc_sha256": "cfff1eac871e686f9b58a7af7598767a037a7a9126851fafd2cc5862f6f92566",
+      "original_keys_by_id_JSON": "{\"G1-ELE-048\":\"A\",\"G2-ELEC-194\":\"A\"}",
+      "question_original": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unui condensator este:",
+      "A_original": "mult mai deformat decât tensiunea care i-a dat naştere",
+      "B_original": "sinusoidal",
+      "C_original": "mai puţin deformat decât tensiune care i-a dat naştere",
+      "stored_key_unchanged": "A",
+      "source": [
+        {
+          "url": "https://library.e.abb.com/public/4704e67320c08992c1257870002e4700/1SDC007107G0202.pdf",
+          "locator": "ABB Technical Application Paper 8, p21 Fig 8.2 & formula 8.1, screenshot web PDF page 22 inspected",
+          "access": "PDF text and visual screenshot successful",
+          "support": "XC=1/(ωC), current harmonic In proportional to n·ω·C·Un."
+        },
+        {
+          "url": "https://openstax.org/books/college-physics/pages/23-11-reactance-inductive-and-capacitive",
+          "locator": "OpenStax 23.11 Capacitors and Capacitive Reactance, XC=1/(2πfC)",
+          "access": "HTML reopened",
+          "support": "Capacitive reactance inversely proportional to frequency."
+        }
+      ],
+      "context": "În condensator ideal, relația temporală este i=C·dv/dt. Pentru armonica de ordin n a tensiunii periodice, I_n=n·ω·C·U_n, iar pentru fundamentală I_1=ω·C·U_1. Astfel raportul relativ I_n/I_1=n·(U_n/U_1): armonicile de ordin superior ale curentului sunt accentuate, iar curentul este în general mai deformat decât tensiunea, cum arată ABB. Varianta A exprimă această relație de model, nu o garanție pentru orice circuit real cu ESR/ESL, filtre și rezonante. Termenul «mult mai» este calitativ și depinde de compoziția armonicelor; nu impunem o valoare fixă a distorsiunii.",
+      "options": {
+        "A": "Susținut prin ponderea n pentru fiecare armonică în condensatorul ideal; «mult» rămâne necuantificat.",
+        "B": "Fals în general pentru un semnal nesinusoidal care conține armonici, deoarece derivata nu anulează toate armonicile.",
+        "C": "Ar fi fenomenul ideal asociat unei inductanțe, nu unui condensator."
+      },
+      "pairwise": "A↔C ponderare n față de 1/n; A↔B armonici accentuate vs inexistente; B↔C pure sinusoidale vs atenuate.",
+      "reverse_counterexample": "Armonica superioară absentă sau tensiunea ideal pur sinusoidală nu poate produce distorsiune adăugată; întrebarea presupune tensiune periodică nesinusoidală cu fundamentala nenulă. Circuitul rezonant poate schimba rezultatul.",
+      "finding": "A_SUPPORTED_IDEAL_CAPACITOR_HARMONIC_WEIGHTING_N; UNQUANTIFIED_MULT_MAI",
+      "independent_review": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}
