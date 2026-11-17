@@ -1,0 +1,683 @@
+{
+  "checkpoint": "CKPT-145",
+  "date": "2026-11-17",
+  "input_checkpoint": "CKPT-144",
+  "source_HEAD": "184d69a512fb11ea1746f2cca7f9ba9c922e3452",
+  "phase": "SOURCE_SCOPE_ONE_PASS_TECHNICAL_TRIAGE_NOT_FINAL_LEARNING_SIGNOFF",
+  "method": "Four non-overlapping 15-unit batches using already documented original A/B/C and grade keys, compare exact original question, record technical model and absence of independent review. Prevent duplicate research.",
+  "status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 6,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 3,
+    "CONDITIONAL_MODEL_OR_SOURCE": 6
+  },
+  "count_unique_units": 15,
+  "count_grade_members": 21,
+  "immutability": "no QABC, imported answer key, HTML, APK, main, merge, release changes",
+  "independent_QA": "NOT_EXECUTED_NO_INDEPENDENT_AGENT_RUNTIME",
+  "learner_approvals": 0,
+  "source_reuse": "Prior source cards marked as not reopened. Browser-open evidence limited to an explicit allow-list. Titles without exact source support are flagged conditional/blocked.",
+  "cards": [
+    {
+      "unit_id": "AU-7dd796665e360ff1",
+      "representative_id": "G1-ELE-091",
+      "grade_member_ids": [
+        "G1-ELE-091",
+        "G2-ELEC-235"
+      ],
+      "canonical_sha256": "7dd796665e360ff17fff8d5099b578c9fe455e8987b50b440213159c8458602b",
+      "original_question_UNCHANGED": "În cazul circuitelor de curent alternativ, teoremele lui Kirchhoff sunt întotdeauna satisfăcute pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "valorile instantanee ale tensiunilor şi curenţilor",
+        "B": "valorile efective ale tensiunilor şi curenţilor",
+        "C": "modulele fazorilor asociaţi tensiunilor şi curenţilor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-091": "A",
+        "G2-ELEC-235": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Kirchhoff KCL/KVL hold for signed instantaneous currents and voltages in lumped circuits; scalar RMS magnitudes do not add algebraically with phase.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A uses instantaneous i(t),v(t); B RMS scalars omit phase/sign; C phasor magnitudes likewise cannot satisfy sums generally.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "KVL/KCL in lumped circuits use signed instantaneous values",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://dpsim.fein-aachen.org/docs/concepts/nodal-analysis/",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-eb7771256ce738db",
+      "representative_id": "G1-ELE-094",
+      "grade_member_ids": [
+        "G1-ELE-094"
+      ],
+      "canonical_sha256": "eb7771256ce738dbb31d69ec908a698f699f89e1bc4fa3b4e36cdeb239519c97",
+      "original_question_UNCHANGED": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
+      "original_ABC_UNCHANGED": {
+        "A": "releele termice realizează protecţia la suprasarcină;",
+        "B": "releele termice realizează protecţia la scurtcircuit;",
+        "C": "releele termice realizează protecţia la supratensiuni;"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-094": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Thermal relay detects sustained overloading; fuse protects short-circuit path, not thermal relay overvoltage.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A overload protection by thermal relay; B fuse or instantaneous short-circuit protective device, not thermal relay; C no intrinsic overvoltage function.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Thermal overload relay in fuse-contactor motor starter NOT_LOCATED",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Motor_protection_functions",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-c9c9ff229afe157a",
+      "representative_id": "G1-ELE-126",
+      "grade_member_ids": [
+        "G1-ELE-126"
+      ],
+      "canonical_sha256": "c9c9ff229afe157a2f55a7e5f8e62db4c5c5df4bdc0e92aa4bee4d5747850796",
+      "original_question_UNCHANGED": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
+      "original_ABC_UNCHANGED": {
+        "A": "se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+        "B": "nu se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+        "C": "nu se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-126": "A"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_findings": "A bus coupler can parallel energized buses under synchronism/interlock; whether same apparatus bypasses feeder breaker or tests offline bus needs exact diagram.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A tie may connect two live buses with interlocks/synchronism; B inability to bypass line breaker may ALSO be true for ordinary scheme without bypass; C absolute denial of bus insulation testing needs diagram.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Double busbar transverse coupler with/without bypass disconnectors",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-5129ac7f8023aeea",
+      "representative_id": "G1-ELE-152",
+      "grade_member_ids": [
+        "G1-ELE-152"
+      ],
+      "canonical_sha256": "5129ac7f8023aeeafc22e621ec80781311aafd56e56504fbe0c2f078cf8ecf9d",
+      "original_question_UNCHANGED": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "original_ABC_UNCHANGED": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-152": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Gamma=alpha+j beta combines attenuation and phase per distance, so A intended; prior exact transmission line derivation exists but current direct fetch failed.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A names propagation constant containing attenuation+phase; B describes alpha amplitude only; C distortion constant not the standard complex term.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Propagation gamma=alpha+j beta controls amplitude and phase per unit length",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Fundamentals_of_Microwave_and_RF_Design_%28Steer%29/03%3A_Transmission_Lines/3.02%3A_Transmission_Line_Theory",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-e5d285536f0e9985",
+      "representative_id": "G1-ELE-165",
+      "grade_member_ids": [
+        "G1-ELE-165",
+        "G2-ELEC-303"
+      ],
+      "canonical_sha256": "e5d285536f0e998552db2e516fe6d4f7c32dc472e320dd3c8a328cc5b9637e1b",
+      "original_question_UNCHANGED": "O protecţie este selectivă atunci când:",
+      "original_ABC_UNCHANGED": {
+        "A": "deconectează numai consumatorul defect",
+        "B": "deconectează toţi consumatorii",
+        "C": "deconectează o jumătate dintre consumatori"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-165": "A",
+        "G2-ELEC-303": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Selectivity isolates the smallest faulted section by nearest suitable protective interruption device, not all loads.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A approximates disconnecting faulted circuit; B disconnecting all is nonselective; C half of consumers is arbitrary.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Protection selectivity trips only breakers needed to isolate fault",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.se.com/ww/en/tools/npag-online-re14y/pdf/a1-fundamentals_of_protection_practice.pdf?ICID=I-CT-TECH-RES-CLA-SEP_21-0",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Protection_of_transformer_and_circuits",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-735af908a7b436b4",
+      "representative_id": "G1-ELE-198",
+      "grade_member_ids": [
+        "G1-ELE-198",
+        "G2-ELEC-334"
+      ],
+      "canonical_sha256": "735af908a7b436b4093637f904e71cd240665b9dd61afe43ebb2dc8a105a5a56",
+      "original_question_UNCHANGED": "Printre măsurile de reducere a distanţelor de izolare pot fi:",
+      "original_ABC_UNCHANGED": {
+        "A": "folosirea dispozitivelor de limitare a curenţilor de scurtcircuit;",
+        "B": "aplicarea unui strat protector pe izolatoare pentru micşorarea efectelor poluării din marile oraşe sau de pe unele platforme industriale;",
+        "C": "micşorarea densităţii dielectricilor gazoşi."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-198": "B",
+        "G2-ELEC-334": "B"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_findings": "Insulator protective anti-pollution coating does not establish ability to reduce legal dielectric clearance without relevant IEC test/class; original comparison is unsupported.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A short circuit current limiting does not change dielectric creepage; B anti-pollution coating can improve performance but cannot universally reduce specified insulation clearances; C lowering gas density generally worsens withstand.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Protective insulator coating and creepage distance reduction NOT_LOCATED",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-5263065f82c0ae73",
+      "representative_id": "G1-ELE-210",
+      "grade_member_ids": [
+        "G1-ELE-210",
+        "G2-ELEC-346"
+      ],
+      "canonical_sha256": "5263065f82c0ae73a6fa5300a5faeec2b703b56e8d915f2e8209d65a7c96b1a8",
+      "original_question_UNCHANGED": "Spaţiul ocupat de o instalaţie capsulată depinde în principal de:",
+      "original_ABC_UNCHANGED": {
+        "A": "curentul nominal al legăturilor electrice;",
+        "B": "mediul de stingere a arcului electric;",
+        "C": "realizarea capsulării: capsulare tripolară sau monopolară."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-210": "C",
+        "G2-ELEC-346": "C"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_findings": "Mono-versus-tripolar GIS layout can affect footprint; 'în principal' needs comparable equal-rated manufacturer drawings and enclosure dimensions.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A current rating affects busbar sizing; B arc-extinguishing medium affects device dimensions; C encapsulation per phase strongly affects footprint, but 'în principal' needs matched specs.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Manufacturer equal-rating mono/tri encapsulation footprint comparison NOT_LOCATED",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-c4e7248255ee6702",
+      "representative_id": "G1-ELE-217",
+      "grade_member_ids": [
+        "G1-ELE-217",
+        "G2-ELEC-353"
+      ],
+      "canonical_sha256": "c4e7248255ee6702d92e5921a343fa7c8ac06e355acd9fc6ef4ddd387e01c53b",
+      "original_question_UNCHANGED": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit între două faze ale unei reţele izolat de pământ şi fără arc electric se compune din:",
+      "original_ABC_UNCHANGED": {
+        "A": "schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului",
+        "B": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel",
+        "C": "schemele de secvenţă directă (pozitivă), inversă (negativă) şi homopolară (zero) conectate în paralel"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-217": "B",
+        "G2-ELEC-353": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "A line-line solid fault excludes zero sequence; positive and negative sequence equivalents suffice, but exact parallel network arrangement must be diagram-checked.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A positive plus triple arc impedance not relevant to no-arc line-to-line fault; B positive/negative networks join with equal fault voltage; C zero sequence excluded because I0=0.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Line-to-line fault: I0=0, V1=V2 and I1=-I2 at fault",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-7be503721c30ebcc",
+      "representative_id": "G1-ELE-266",
+      "grade_member_ids": [
+        "G1-ELE-266"
+      ],
+      "canonical_sha256": "7be503721c30ebccc63490803fcdd2e1bba30eb128ff4a8707d70cf0d7efd042",
+      "original_question_UNCHANGED": "Utilizarea întreruptoarelor debroşabile:",
+      "original_ABC_UNCHANGED": {
+        "A": "asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+        "B": "nu asigură scurtarea duratei reviziilor la celule;",
+        "C": "nu asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-266": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Withdrawable interlocks can reduce some isolator maneuver errors; no guarantee from withdrawal feature without specific design documentation.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A can reduce some isolator operation mistakes if designed interlocks; B no shortening maintenance not universal; C deny worker isolation may be false with shutters.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Drawout breaker interlock and isolator maneuver error prevention NOT_LOCATED",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": [
+          {
+            "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/switchgear/air-insulated",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-c0dc67dc64e54715",
+      "representative_id": "G1-ELE-267",
+      "grade_member_ids": [
+        "G1-ELE-267"
+      ],
+      "canonical_sha256": "c0dc67dc64e547151341af00f737cd40b6e6cf651c31c82d35e3ce99371ad9ce",
+      "original_question_UNCHANGED": "Utilizarea întreruptoarelor debroşabile:",
+      "original_ABC_UNCHANGED": {
+        "A": "asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+        "B": "asigură numai scurtarea duratei reviziilor la celule;",
+        "C": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-267": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Safety shutters/isolation can protect maintenance personnel only with suitable switchgear type and verified isolation procedures.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A can separate personnel work space only with suitable construction and verified isolation; B 'numai' maintenance time too narrow; C excludes interlock benefits.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Drawout breaker shutter/LSC separation and personnel isolation NOT_LOCATED",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": [
+          {
+            "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/switchgear/air-insulated",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-4227cea322492431",
+      "representative_id": "G2-ELEC-030",
+      "grade_member_ids": [
+        "G2-ELEC-030"
+      ],
+      "canonical_sha256": "4227cea3224924313c392055e3f78f706923a738beceea5e1c4ac386102a4b4e",
+      "original_question_UNCHANGED": "Un transformator ideal nu poate funcționa în regim normal alimentat exclusiv cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "curent continuu constant",
+        "B": "curent alternativ",
+        "C": "tensiune alternativă"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-030": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "A steady DC supply cannot sustain changing core flux and secondary induced emf in ideal transformer normal operation.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A constant DC does not induce continuous secondary emf; B alternating current can, C alternating voltage can.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Induction requires time-varying magnetic flux; constant DC after transient no output",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/13-5-electric-generators",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-561b8e2f350ce192",
+      "representative_id": "G2-ELEC-051",
+      "grade_member_ids": [
+        "G2-ELEC-051"
+      ],
+      "canonical_sha256": "561b8e2f350ce1922fad8e4f7abb5f782a58a330d452e0c939ece2b4d977dd10",
+      "original_question_UNCHANGED": "Tensiunea nominală a unei instalații reprezintă:",
+      "original_ABC_UNCHANGED": {
+        "A": "valoarea de referință pentru care instalația și echipamentele sunt destinate să funcționeze",
+        "B": "curentul maxim permanent",
+        "C": "rezistența conductorului PE"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-051": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Nominal voltage is the system reference designation; exact IEC/ANRE nominal-versus-rated definition not reopened.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A voltage reference designating installation operating class; B rated current is different dimension; C protective conductor resistance is different dimension.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Nominal voltage Un reference vs rated voltage Ur IEC60038 NOT_LOCATED",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-0d5ea942e5799e03",
+      "representative_id": "G2-ELEC-052",
+      "grade_member_ids": [
+        "G2-ELEC-052"
+      ],
+      "canonical_sha256": "0d5ea942e5799e03e6a46fe5c35e387534c2bf0f732a4c2beeedd4b999ec7d6f",
+      "original_question_UNCHANGED": "Un circuit electric închis este necesar pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "circulația continuă a curentului într-un circuit alimentat",
+        "B": "măsurarea exclusivă a rezistenței",
+        "C": "anularea tensiunii sursei"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-052": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Continuous conductive current under a source requires a closed conductive path; voltage need not vanish.",
+      "A_B_C_analysis_reused": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "prior_joint_reasoning": "A continuous conductive current in supplied loop needs closed path; B resistance measurement not exclusive reason; C closed loop does not cancel source potential.",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Sustained conductive source-driven current requires closed loop",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://dpsim.fein-aachen.org/docs/concepts/nodal-analysis/",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-c402083bff80c5e8",
+      "representative_id": "G2-ELEC-063",
+      "grade_member_ids": [
+        "G2-ELEC-063"
+      ],
+      "canonical_sha256": "c402083bff80c5e82fbddf9b61fe208734e48ae9236eda48e6df5cd851220333",
+      "original_question_UNCHANGED": "La măsurarea unei tensiuni cu multimetrul, selectarea domeniului trebuie să fie:",
+      "original_ABC_UNCHANGED": {
+        "A": "adecvată valorii estimate și categoriei de măsurare",
+        "B": "întotdeauna cea mai mică posibilă",
+        "C": "aleasă fără conectarea sondelor"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-063": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Measurement range must fit expected voltage and equipment CAT rating; choosing minimum range blindly is unsafe.",
+      "A_B_C_analysis_reused": {
+        "A": "A: range compatible with expected voltage and measurement category CAT avoids overload/transient hazards.",
+        "B": "B: always lowest range risks overload/overrange, especially with unknown voltage.",
+        "C": "C: disconnecting probes can be a setup safety practice but does NOT itself define required range; not exclusive correct option.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Fluke multimeter safety, measurement CAT ratings",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://dam-assets.fluke.com.cn/s3fs-public/1263690_6003_ENG_J_W_0.PDF",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://www.fluke.com/en/learn/blog/digital-multimeters/how-to-measure-dc-voltage-with-a-digital-multimeter",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-593d396a103347b9",
+      "representative_id": "G1-ELE-001",
+      "grade_member_ids": [
+        "G1-ELE-001",
+        "G2-ELEC-154"
+      ],
+      "canonical_sha256": "593d396a103347b9a7f3e649cd49038c67d868fe6a3bf561458601406ee1c998",
+      "original_question_UNCHANGED": "Atunci când se compensează energia electrica reactiva prin baterii de condensatoare, tensiunea în reţeaua electrica:",
+      "original_ABC_UNCHANGED": {
+        "A": "scade",
+        "B": "nu se modifica",
+        "C": "creste"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-001": "C",
+        "G2-ELEC-154": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Reactive capacitor compensation generally tends to raise local voltage in inductive power networks, but size, controls and impedance matter; not universal.",
+      "A_B_C_analysis_reused": {
+        "A": "A: voltage can fall under other load/control conditions, but capacitive kvar normally reduces inductive drop locally.",
+        "B": "B: an ideal stiff supply may barely change; 'never' unchanged is too absolute.",
+        "C": "C: capacitor kvar may raise local voltage for inductive networks, contingent on impedance and regulator settings.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Reactive compensation and local voltage rise, dependency on grid impedance",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.se.com/ww/en/work/support/resources-and-tools/electrical-installation-guide/",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}
