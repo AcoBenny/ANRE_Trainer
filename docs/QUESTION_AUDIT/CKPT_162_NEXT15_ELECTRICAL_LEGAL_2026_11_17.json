@@ -1,0 +1,586 @@
+{
+  "checkpoint": "CKPT-162",
+  "date": "2026-11-17",
+  "input_head": "2b0f7a9465811bc749925c20dccec1bb23883105",
+  "unique_units": 15,
+  "grade_ids": 15,
+  "technical_status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 12,
+    "CONDITIONAL_MODEL_OR_SOURCE": 3
+  },
+  "method": "Existing full original Q/A/B/C/keys and ABC reasoning reused; exact 2026 legal articles checked only for two targeted legal cases; technical models verified against cached background and public technical definitions; direct primary source access labeled.",
+  "no_independent_agent_available": true,
+  "learning_approvals": 0,
+  "cards": [
+    {
+      "unit_id": "AU-25db8edfbf54a339",
+      "representative_id": "G2-ELEC-046",
+      "member_ids": [
+        "G2-ELEC-046"
+      ],
+      "qabc_sha256": "25db8edfbf54a3397e1ba254fb6bc3d1770456c698397d6b24c07ac71c94759c",
+      "question_original_UNCHANGED": "Pentru un conductor metalic, în intervale uzuale, creșterea temperaturii determină de regulă:",
+      "original_options_UNCHANGED": {
+        "A": "creșterea rezistenței",
+        "B": "scăderea rezistenței la zero",
+        "C": "inversarea polarității"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-046": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ordinary metallic conductor positive temperature coefficient means resistance rises as temperature increases within normal range.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "prior_source_locator": null,
+        "old_model_conditions": "Există intervale/materiale speciale cu comportare diferită; «de regulă» corect.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Pentru metal obișnuit coeficientul termic α>0 și R crește cu temperatura.",
+        "B": "Rezistența metalului nu scade în general la zero prin încălzire moderată.",
+        "C": "Polaritatea nu se inversează din simpla încălzire a conductorului."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-f590661ae91a6f35",
+      "representative_id": "G2-ELEC-047",
+      "member_ids": [
+        "G2-ELEC-047"
+      ],
+      "qabc_sha256": "f590661ae91a6f35e96ce0ce8b4cdcf6e63c95922401a5ecafe8eda41fc3d677",
+      "question_original_UNCHANGED": "Scopul principal al unei protecții la supracurent este:",
+      "original_options_UNCHANGED": {
+        "A": "limitarea efectelor curenților excesivi",
+        "B": "creșterea tensiunii de alimentare",
+        "C": "mărirea rezistenței sarcinii"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-047": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Overcurrent protective device trips/interrupts as appropriate to limit duration and harmful effects of excessive current, not voltage rising.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Protection_of_circuits",
+        "prior_source_locator": null,
+        "old_model_conditions": "Eficacitatea depinde de curba de declanșare și coordonarea cu circuitul.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Dispozitivul de supracurent limitează durata/efectul termic și electrodinamic al curentului excesiv.",
+        "B": "Protecția nu este destinată creșterii tensiunii.",
+        "C": "Protecția nu modifică intenționat rezistența sarcinii pentru a elimina defectul."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-469a92ef969989c2",
+      "representative_id": "G2-ELEC-048",
+      "member_ids": [
+        "G2-ELEC-048"
+      ],
+      "qabc_sha256": "469a92ef969989c2d52810a84f23548cec51c7fe9e9318dad42130258455fbc2",
+      "question_original_UNCHANGED": "Un întreruptor automat poate asigura protecția la:",
+      "original_options_UNCHANGED": {
+        "A": "suprasarcină și scurtcircuit, în funcție de caracteristicile aparatului",
+        "B": "doar iluminat natural",
+        "C": "doar lipsa fazei în orice situație"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-048": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Rated auto breaker with proper thermal/magnetic or electronic releases protects against overload and short circuit per characteristics.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Protection_of_circuits",
+        "prior_source_locator": null,
+        "old_model_conditions": "Depinde de model, caracteristici nominale, reglaje și protecțiile asociate.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Un disjunctor cu declanșatoare potrivite poate proteja la suprasarcină și scurtcircuit.",
+        "B": "Iluminatul natural nu are legătură cu protecția electrică.",
+        "C": "Lipsa fazei nu este detectată obligatoriu de orice disjunctor standard."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-0db556b4db451200",
+      "representative_id": "G2-ELEC-049",
+      "member_ids": [
+        "G2-ELEC-049"
+      ],
+      "qabc_sha256": "0db556b4db451200351d3b4c23c2bbcbdb9d960495e9b07ce28f4ce8f9ba039f",
+      "question_original_UNCHANGED": "Un dispozitiv diferențial detectează în principal:",
+      "original_options_UNCHANGED": {
+        "A": "un dezechilibru al curenților care indică un curent rezidual",
+        "B": "doar supratensiunea",
+        "C": "doar frecvența rețelei"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-049": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "RCD monitors imbalance of live conductors (residual current); not overvoltage/frequency detection.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.se.com/au/en/faqs/FAQ000210095/",
+        "prior_source_locator": null,
+        "old_model_conditions": "Funcționarea depinde de tipul AC/A/F/B, frecvență, curbe și montaj.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "RCD compară curenții conductorilor activi; diferența semnalează un curent rezidual.",
+        "B": "RCD nu este automat un detector de supratensiune.",
+        "C": "RCD nu este un frecvențmetru."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-007174eb14dedd2f",
+      "representative_id": "G2-ELEC-050",
+      "member_ids": [
+        "G2-ELEC-050"
+      ],
+      "qabc_sha256": "007174eb14dedd2f411df576cfef96b8564f432fb79dbad922abdad60278c482",
+      "question_original_UNCHANGED": "Împământarea de protecție are ca scop principal:",
+      "original_options_UNCHANGED": {
+        "A": "reducerea riscului de electrocutare prin asigurarea unei căi de defect și a condițiilor de declanșare a protecției",
+        "B": "creșterea consumului",
+        "C": "eliminarea completă a tuturor defectelor"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-050": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_verdict": "Protective earthing can provide fault path for automatic disconnection in TN, but in TT/IT protection depends additional system design, RCD and coordination. Wording includes 'conditions of trip'; conditional.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Protection_against_electric_shock",
+        "prior_source_locator": null,
+        "old_model_conditions": "TN/TT/IT cer măsuri specifice, uneori RCD; singur PE nu garantează protecția.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Legarea de protecție asigură cale de curent de defect și sprijină deconectarea automată, reducând șocul.",
+        "B": "Nu urmărește creșterea consumului de energie.",
+        "C": "Împământarea nu elimină complet apariția defectelor electrice."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-8bf5859656e32570",
+      "representative_id": "G2-ELEC-053",
+      "member_ids": [
+        "G2-ELEC-053"
+      ],
+      "qabc_sha256": "8bf5859656e32570e8b91edacd6b9fa30c67f403ae881496558477adfee6886a",
+      "question_original_UNCHANGED": "Puterea activă într-un circuit rezistiv este transformată în principal în:",
+      "original_options_UNCHANGED": {
+        "A": "energie termică",
+        "B": "energie magnetică stocată permanent",
+        "C": "energie chimică în orice rezistor"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-053": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Passive resistive circuit dissipates real electrical energy as Joule heat; not stored magnetic/chemical by definition.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "prior_source_locator": null,
+        "old_model_conditions": "La rezistor ideal P=I²R; conversiile secundare sunt neglijate.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Puterea activă absorbită de rezistor se disipă preponderent ca energie termică Joule.",
+        "B": "Rezistorul pur nu stochează permanent energie magnetică.",
+        "C": "Conversia în energie chimică nu apare în orice rezistor."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-68d55ceab5a81f7e",
+      "representative_id": "G2-ELEC-054",
+      "member_ids": [
+        "G2-ELEC-054"
+      ],
+      "qabc_sha256": "68d55ceab5a81f7e96076c308b350e6117f3104f9474996c5be17637e9296088",
+      "question_original_UNCHANGED": "Într-un circuit ideal pur inductiv, puterea activă medie este:",
+      "original_options_UNCHANGED": {
+        "A": "zero",
+        "B": "egală cu puterea aparentă",
+        "C": "întotdeauna maximă"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-054": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ideal lossless pure inductor has sinusoidal mean real power zero, exchanges reactive stored magnetic energy.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "prior_source_locator": null,
+        "old_model_conditions": "Regim sinusoidal staționar, L fără rezistență; pentru bobină reală P>0.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Inductorul ideal stochează și returnează energia în câmp; media P pe ciclu sinusoidal este zero.",
+        "B": "S=UI poate fi nenulă când P medie este zero.",
+        "C": "P activă maximă nu este specifică inductanței ideale pure."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-345c3f115e3a8af1",
+      "representative_id": "G2-ELEC-055",
+      "member_ids": [
+        "G2-ELEC-055"
+      ],
+      "qabc_sha256": "345c3f115e3a8af1baec0d7338ff7985ea7fc4ab4749d315539cd0fe64cf8b78",
+      "question_original_UNCHANGED": "Într-un circuit ideal pur capacitiv, puterea activă medie este:",
+      "original_options_UNCHANGED": {
+        "A": "zero",
+        "B": "egală cu puterea aparentă",
+        "C": "egală cu energia stocată"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-055": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ideal lossless pure capacitor has sinusoidal mean real power zero, exchanges electrostatic stored energy.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "prior_source_locator": null,
+        "old_model_conditions": "Sursă sinusoidală, capacitate ideală fără pierderi.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Într-un condensator ideal energia se stochează/returnează periodic, media puterii active este zero.",
+        "B": "Puterea aparentă S=UI poate fi nenulă chiar când P=0.",
+        "C": "Energia stocată se măsoară în J, nu are aceeași dimensiune cu puterea în W."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-acd7fadf59ffd603",
+      "representative_id": "G2-ELEC-056",
+      "member_ids": [
+        "G2-ELEC-056"
+      ],
+      "qabc_sha256": "acd7fadf59ffd6038dccbb168d647882a73209a6ced2ac111a4d2224ae84d25c",
+      "question_original_UNCHANGED": "Într-un sistem trifazat echilibrat, conductorul de nul poate avea curent:",
+      "original_options_UNCHANGED": {
+        "A": "nul, pentru sarcină perfect echilibrată și condițiile corespunzătoare",
+        "B": "întotdeauna egal cu curentul de fază",
+        "C": "întotdeauna dublu față de curentul de fază"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-056": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_verdict": "Balanced sinusoidal fundamental three-phase currents sum zero in neutral; harmonics of order 3 can generate neutral current even balanced phase loading.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "prior_source_locator": null,
+        "old_model_conditions": "Triplenele din sarcini neliniare pot circula pe nul chiar dacă anumite fundamente sunt echilibrate.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "În sistem trifazat perfect echilibrat și fără armonici de ordin 3, suma fazorială a curenților poate fi zero pe nul.",
+        "B": "Curentul nulului nu este obligatoriu egal cu cel al unei faze.",
+        "C": "Curentul nulului nu este obligatoriu dublul curentului de fază."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-3a89d119d8d12032",
+      "representative_id": "G2-ELEC-057",
+      "member_ids": [
+        "G2-ELEC-057"
+      ],
+      "qabc_sha256": "3a89d119d8d1203216297ddbb9e7b6b040f949b490a5d98a9ab7909776cf5662",
+      "question_original_UNCHANGED": "Eficiența/randamentul unui echipament este raportul dintre:",
+      "original_options_UNCHANGED": {
+        "A": "puterea utilă și puterea absorbită",
+        "B": "puterea absorbită și pierderi",
+        "C": "tensiune și curent"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-057": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Efficiency η=P_out useful / P_in absorbed at same operating point, not inverse or U/I.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Energy_efficiency_and_electricity_consumption",
+        "prior_source_locator": null,
+        "old_model_conditions": "Raportul puterilor se măsoară la același regim și interval.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Randamentul η=P_util/P_absorbită, pentru P_absorbită pozitivă.",
+        "B": "P_absorbită/pierderi nu este definiția η și poate fi >1.",
+        "C": "U/I are dimensiunea rezistenței electrice, nu a eficienței."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-545cd1006dc3e497",
+      "representative_id": "G2-ELEC-058",
+      "member_ids": [
+        "G2-ELEC-058"
+      ],
+      "qabc_sha256": "545cd1006dc3e497a02641e384028572544e39335e175af36f7379f42e0bdbcc",
+      "question_original_UNCHANGED": "Pierderile Joule într-un conductor cresc cu:",
+      "original_options_UNCHANGED": {
+        "A": "I²·R",
+        "B": "I/R",
+        "C": "U/R²"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-058": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Resistive heating P_loss=I²R using RMS current, not I/R or U/R².",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "prior_source_locator": null,
+        "old_model_conditions": "Curent RMS pentru AC, cu efect pelicular/temperatură tratate prin R efectivă.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Pierderile Joule la rezistor P_J=I²R la R constant.",
+        "B": "I/R are unitate A/Ω, nu putere.",
+        "C": "U/R² nu are unitate watt."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-406107db235e2329",
+      "representative_id": "G2-ELEC-059",
+      "member_ids": [
+        "G2-ELEC-059"
+      ],
+      "qabc_sha256": "406107db235e2329c5de74a7832f6735eda52e72e0c3f95b6a29619f050c771d",
+      "question_original_UNCHANGED": "Într-o linie electrică, creșterea tensiunii pentru aceeași putere transmisă determină, ideal, un curent:",
+      "original_options_UNCHANGED": {
+        "A": "mai mic",
+        "B": "mai mare de patru ori",
+        "C": "neschimbat obligatoriu"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-059": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_verdict": "At fixed real P AND power factor, higher U gives lower I; given same 'putere transmisă' absent explicit PF, conventional comparison is idealized.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "prior_source_locator": null,
+        "old_model_conditions": "«aceeași putere» necesită același factor de putere și comparație echivalentă de sistem.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "La P și cosφ fixe, I=P/(√3U cosφ), deci U mai mare reduce I.",
+        "B": "Nu există factor 4 obligatoriu pentru curent dacă U crește.",
+        "C": "I nu rămâne obligatoriu același când P fix și U variază."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-a0150b5b3af992f1",
+      "representative_id": "G2-ELEC-060",
+      "member_ids": [
+        "G2-ELEC-060"
+      ],
+      "qabc_sha256": "a0150b5b3af992f1aa51edd7c82ad437c6fd3b780e25724f4e2b90e4e451e99f",
+      "question_original_UNCHANGED": "Un wattmetru este destinat măsurării:",
+      "original_options_UNCHANGED": {
+        "A": "puterii electrice",
+        "B": "rezistenței de izolație exclusiv",
+        "C": "frecvenței exclusiv"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-060": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Wattmeter measures active electrical power when connected and calibrated for its rated regime; not insulation resistance or only frequency.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.fluke.com/en/learn/blog/electrical/power-measurements",
+        "prior_source_locator": null,
+        "old_model_conditions": "Măsurarea trifazată depinde de conectarea și clasa instrumentului.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Wattmetrul măsoară puterea electrică activă în circuit în condițiile de conectare specificate.",
+        "B": "Rezistența de izolație se măsoară cu megohmetru/echipament dedicat.",
+        "C": "Frecvența se măsoară cu frecvențmetru, nu exclusiv wattmetru."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-59b3bbc4578855a7",
+      "representative_id": "G2-ELEC-061",
+      "member_ids": [
+        "G2-ELEC-061"
+      ],
+      "qabc_sha256": "59b3bbc4578855a79b58bb444e5ac1ab1ad4cc5a5642dde50efb335373d5b69c",
+      "question_original_UNCHANGED": "Un frecvențmetru este destinat măsurării:",
+      "original_options_UNCHANGED": {
+        "A": "frecvenței",
+        "B": "rezistenței",
+        "C": "inductanței"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-061": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Frequency meter measures frequency f, not resistance or inductance.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.bipm.org/en/publications/si-brochure",
+        "prior_source_locator": null,
+        "old_model_conditions": "Semnalul măsurat trebuie în domeniul admis al aparatului.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Frecvențmetrul măsoară numărul ciclurilor pe secundă în Hz.",
+        "B": "Rezistența necesită ohmmetru.",
+        "C": "Inductanța necesită LCR-metru sau metodă dedicată."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-fd38731b580cdd50",
+      "representative_id": "G2-ELEC-062",
+      "member_ids": [
+        "G2-ELEC-062"
+      ],
+      "qabc_sha256": "fd38731b580cdd503106da11593bc29255d99fafd43f72c10266cc7405fff075",
+      "question_original_UNCHANGED": "Un megohmetru este utilizat în principal pentru măsurarea:",
+      "original_options_UNCHANGED": {
+        "A": "rezistenței de izolație la tensiuni de încercare specifice",
+        "B": "puterii active de rețea",
+        "C": "curentului de scurtcircuit al rețelei"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-062": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Insulation tester/megohmmeter measures insulation resistance under specified test voltage, with strict deenergized equipment precautions.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.fluke.com/en/learn/blog/insulation-testers/insulation-resistance-testing",
+        "prior_source_locator": null,
+        "old_model_conditions": "SAFETY: circuitul trebuie izolat, descărcat și verificat înainte de test, de personal autorizat.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Megohmetrul aplică tensiune DC de test și măsoară rezistența de izolație.",
+        "B": "Nu este wattmetru pentru măsurarea puterii active.",
+        "C": "Nu măsoară curentul de scurtcircuit al rețelei în exploatare."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    }
+  ]
+}
