@@ -1,0 +1,497 @@
+{
+  "checkpoint": "CKPT-129",
+  "date": "2026-11-17",
+  "baseline_head": "809293ec80b20f707e239522d2fec4088129f329",
+  "batch_size": 15,
+  "protocol": "BATCH15 adaptive pilot #1 15 unique QABC / 30 grade IDs",
+  "roles": "Electrical technical/source/linguistic/integrity QA sequential checklists in one assistant; no independent agent spawned",
+  "immutable": "Original question/ABC/key, MASTER, HTML, APK unchanged; PR #7 Draft only",
+  "gates": {
+    "source_scope": "PRELIMINARY_WITH_EXPLICIT_LIMITS",
+    "exam_edition": "NOT_VERIFIED",
+    "independent_QA": "NOT_RUN",
+    "learning": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-db93444ac6d593c2",
+      "representative_id": "G1-ELE-230",
+      "member_ids": "G1-ELE-230;G2-ELEC-366",
+      "qabc_sha256": "db93444ac6d593c2dad4109f110712ecc4d93973a19adcd7e1721b1feeafec90",
+      "original_keys_by_id_JSON": "{\"G1-ELE-230\":\"B\",\"G2-ELEC-366\":\"B\"}",
+      "question_original": "Siguranţele fuzibile sunt aparate utilizate pentru protecţie la:",
+      "A_original": "supratensiuni",
+      "B_original": "supracurenţi",
+      "C_original": "defect de izolaţie",
+      "stored_key_UNCHANGED": "B",
+      "positive_source_and_logic": "Siguranța fuzibilă este protecție la supracurenți: un curent peste caracteristica timp-curent topește elementul și întrerupe circuitul. Tensiunea nu este variabila de prag a funcției de protecție.",
+      "ABC_analysis": {
+        "A": "A: supratensiunea este tratată cu dispozitive dedicate, nu cu fuzibil de supracurent.",
+        "B": "B: întreruperea supracurenților este funcția afirmativă.",
+        "C": "C: defect de izolație nu este detectat direct în lipsa unui curent de defect suficient."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Defect de izolație fără curent de defect suficient poate rămâne nedetectat de fuzibil.",
+      "scope": "Fuzibil potrivit curenților și capacității de rupere; nu garantează protecție automată la orice defect de izolație.",
+      "sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Practical_values_for_a_protective_scheme",
+          "locator": "Schneider Electrical Installation Guide și protecție fuzibile, web source confirmed 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-d9e92eff86fb7e58",
+      "representative_id": "G1-ELE-235",
+      "member_ids": "G1-ELE-235;G2-ELEC-371",
+      "qabc_sha256": "d9e92eff86fb7e58accd750e1e56a0739d5022d76a92e92f66a7dbaf09ac0044",
+      "original_keys_by_id_JSON": "{\"G1-ELE-235\":\"B\",\"G2-ELEC-371\":\"B\"}",
+      "question_original": "Suma tensiunilor electromotoare ale unui sistem trifazat simetric este:",
+      "A_original": "egală cu 1",
+      "B_original": "nulă",
+      "C_original": "egală cu 1/2",
+      "stored_key_UNCHANGED": "B",
+      "positive_source_and_logic": "Trei t.e.m. simetrice de modul E și defazate 120° dau suma fazorială E[1+exp(j2π/3)+exp(−j2π/3)]=0.",
+      "ABC_analysis": {
+        "A": "A: 1 este scalar arbitrar; rezultanta vectorială simetrică nu poate fi 1.",
+        "B": "B: suma fazorială este 0; varianta intenționată.",
+        "C": "C: 1/2 este scalar arbitrar, nu rezultanta."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Suma modulelor este 3E, nu zero: întrebarea trebuie citită ca sumă fazorială, nu module.",
+      "scope": "Sistem trifazat echilibrat/simetric; fazori cu aceleași unități.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+          "locator": "IDENTITY_DERIVED_FROM_SYMMETRICAL_PHASE_GEOMETRY; exact exam edition not verified",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-e26a30a9f8345c73",
+      "representative_id": "G1-ELE-237",
+      "member_ids": "G1-ELE-237;G2-ELEC-373",
+      "qabc_sha256": "e26a30a9f8345c73d7f38e5f724ca9e5ca6b2be10ef976b43b8b2690dbeff2ac",
+      "original_keys_by_id_JSON": "{\"G1-ELE-237\":\"C\",\"G2-ELEC-373\":\"C\"}",
+      "question_original": "Un conductor în care circulaţia curentului electric nu se supune legii lui Ohm se numeşte:",
+      "A_original": "liniar",
+      "B_original": "neomogen",
+      "C_original": "neliniar",
+      "stored_key_UNCHANGED": "C",
+      "positive_source_and_logic": "În convenția ohmică didactică un conductor liniar are caracteristică u−i proporțională. Un element a cărui caracteristică nu respectă proporționalitatea este neliniar.",
+      "ABC_analysis": {
+        "A": "A: liniar contrazice caracteristica neliniară descrisă.",
+        "B": "B: neomogen se referă la variație spațială/compoziție, nu obligatoriu la u−i nonlinear.",
+        "C": "C: termenul potrivit pentru u−i neproporțională."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Un conductor omogen poate fi nonlinear la încălzire, iar un neomogen poate avea caracteristică lineară local.",
+      "scope": "«Legea Ohm» interpretată cu R constant, nu simpla definiție R=U/I la un punct.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+          "locator": "OPENSTAX_OHMS_LAW_TERMINOLOGY_PRETRIAGE",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-63c783e5b6853938",
+      "representative_id": "G1-ELE-238",
+      "member_ids": "G1-ELE-238;G2-ELEC-374",
+      "qabc_sha256": "63c783e5b6853938d09c85ea1f1ee94ccf1c34f155e62bcdced2a2fefc67b157",
+      "original_keys_by_id_JSON": "{\"G1-ELE-238\":\"A\",\"G2-ELEC-374\":\"A\"}",
+      "question_original": "Teoremele (formulele) Biot Savart Laplace se referă la:",
+      "A_original": "intensitatea câmpului magnetic produs de un curent care circulă printr-un conductor",
+      "B_original": "forţa electromagnetică",
+      "C_original": "forţa exercitată între două conductoare paralele parcurse de curenţi",
+      "stored_key_UNCHANGED": "A",
+      "positive_source_and_logic": "Legea Biot–Savart–Laplace calculează contribuția dB a elementului de curent Idl la câmpul magnetic, dB=(μ0/4π)(Idl×r̂/r²).",
+      "ABC_analysis": {
+        "A": "A: obiectul formulei este câmpul magnetic al curentului.",
+        "B": "B: forța electromagnetică folosește formula Lorentz/Laplace, dar nu aceasta este expresia completă Biot–Savart–Laplace.",
+        "C": "C: forța dintre doi conductori rezultă ulterior, nu definește formula de câmp."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Forța dintre două conductoare poate fi derivată din câmpul Biot–Savart și F=I l×B, dar derivarea nu transformă formula în lege a forței.",
+      "scope": "Conductor cu curent staționar, domeniu magnetostatic/quasi-staționar.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/12-2-magnetic-field-due-to-a-thin-straight-wire",
+          "locator": "OpenStax 12.2 original opened on 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-1c35c97f84354889",
+      "representative_id": "G1-ELE-239",
+      "member_ids": "G1-ELE-239;G2-ELEC-375",
+      "qabc_sha256": "1c35c97f84354889c5a5be708a2cee405a6065c3accacc910b8a6eb9344d7e3a",
+      "original_keys_by_id_JSON": "{\"G1-ELE-239\":\"A\",\"G2-ELEC-375\":\"A\"}",
+      "question_original": "Tesla este unitatea de măsură a:",
+      "A_original": "inducţiei magnetice",
+      "B_original": "fluxului magnetic",
+      "C_original": "intensităţii câmpului magnetic",
+      "stored_key_UNCHANGED": "A",
+      "positive_source_and_logic": "În SI, induția magnetică sau densitatea fluxului B se măsoară în tesla T; fluxul Φ în weber Wb și intensitatea câmpului H în A/m.",
+      "ABC_analysis": {
+        "A": "A: B în tesla, susținut de tabelul NIST SI.",
+        "B": "B: Φ este în weber, nu în tesla.",
+        "C": "C: H este în A/m, nu tesla."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "1 tesla=1 weber/m²; nu echivalează unitățile de flux și densitate.",
+      "scope": "Distinge B, Φ, H; sursă oficială NIST pentru unități SI.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+          "locator": "NIST SI derived units official HTML verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-458285e7f41f31c1",
+      "representative_id": "G1-ELE-241",
+      "member_ids": "G1-ELE-241;G2-ELEC-377",
+      "qabc_sha256": "458285e7f41f31c1ab79287b3771df90c6381118f68b4d9e02e46aff9dcbe0ae",
+      "original_keys_by_id_JSON": "{\"G1-ELE-241\":\"A\",\"G2-ELEC-377\":\"A\"}",
+      "question_original": "Transformatoarele de măsurare a curenţilor se construiesc pentru curenţi secundari de:",
+      "A_original": "1 sau 5 A",
+      "B_original": "5 sau 10 A",
+      "C_original": "1 sau 10 A",
+      "stored_key_UNCHANGED": "A",
+      "positive_source_and_logic": "Transformatoarele de măsurare de curent convenționale au curenți secundari nominali standard folosiți de relee și aparate, uzual 1A și 5A.",
+      "ABC_analysis": {
+        "A": "A: perechea uzuală 1A sau 5A se regăsește în oferta producătorilor.",
+        "B": "B: 10A nu este alegerea convențională în perechea indicată.",
+        "C": "C: 10A înlocuiește eronat 5A pentru gama uzuală."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Există CT-uri cu ieșire în mA sau tensiune pentru senzori speciali; «se construiesc» nu acoperă toate tehnologiile.",
+      "scope": "CT electromagnetice convenționale, ieșire secundar pentru metrologie/protecții; nu senzori electronici LPCT.",
+      "sources": [
+        {
+          "url": "https://www.nktechnologies.com/current-transformers/ct-ms-5a-secondary-current-transformer/",
+          "locator": "NK Technologies CT-MS 1A/5A manufacturer original HTML verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-6d7b60fad4a6e934",
+      "representative_id": "G1-ELE-251",
+      "member_ids": "G1-ELE-251;G2-ELEC-386",
+      "qabc_sha256": "6d7b60fad4a6e9347eb5501f1d93f9d1f3603f4be37b249cdd1cff378ede7030",
+      "original_keys_by_id_JSON": "{\"G1-ELE-251\":\"C\",\"G2-ELEC-386\":\"C\"}",
+      "question_original": "Valoarea conductivităţii electrice este în ordine crescătoare la următoarele materiale:",
+      "A_original": "aluminiu, argint, cupru",
+      "B_original": "argint, cupru, aluminiu",
+      "C_original": "aluminiu, cupru, argint",
+      "stored_key_UNCHANGED": "C",
+      "positive_source_and_logic": "La temperatura de referință aprox 20°C și în metale pure uzuale, conductivitatea crește în ordinea aluminiu < cupru < argint.",
+      "ABC_analysis": {
+        "A": "A: plasează argintul înaintea cuprului în ordine inversă.",
+        "B": "B: ordine descrescătoare argint-cupru-aluminiu, nu crescătoare.",
+        "C": "C: ordinea crescătoare corectă Al-Cu-Ag."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Compoziția/puritatea/temperatura aliajului pot schimba valorile; e o comparație de metale pure la condiții comparabile.",
+      "scope": "Metale pure uzuale la aceeași temperatură, nu orice aliaj/grad de prelucrare.",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity",
+          "locator": "Material conductivity comparative table found; publication PDF visual check NOT completed; no independent QA",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-998aff1c365a9d6a",
+      "representative_id": "G1-ELE-252",
+      "member_ids": "G1-ELE-252;G2-ELEC-387",
+      "qabc_sha256": "998aff1c365a9d6af98296eecb3f78e6e008c2439a3feefb8ff10c0d653dcacf",
+      "original_keys_by_id_JSON": "{\"G1-ELE-252\":\"A\",\"G2-ELEC-387\":\"A\"}",
+      "question_original": "Un număr de n surse  având fiecare tensiunea electromotoare continua e si rezistenta interioara r, legate în paralel pot fi înlocuite printr-o sursa echivalenta având:",
+      "A_original": "tensiunea electromotoare e si rezistenta r/n",
+      "B_original": "tensiunea electromotoare ne si rezistentă r/n",
+      "C_original": "tensiunea electromotoare e si rezistenta nr.",
+      "stored_key_UNCHANGED": "A",
+      "positive_source_and_logic": "n surse identice de tensiune e și rezistență internă r, în paralel și cu polarități concordante, păstrează aceeași t.e.m. e; rezistențele interne n identice se combină la r/n.",
+      "ABC_analysis": {
+        "A": "A: e și r/n rezultă prin paralelizarea surselor identice.",
+        "B": "B: ne ar însemna însumarea tensiunilor în serie, nu paralel.",
+        "C": "C: nr este rezistența internă rezultantă în serie, nu paralel."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Conectarea unor surse cu polarități opuse poate produce curenți interni periculoși și invalidează modelul de surse paralele identice.",
+      "scope": "n≥1, r>0, polarități și tensiuni identice; analiza teoretică, nu instrucțiuni practice de conexiuni.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+          "locator": "Original research card topical resistor parallel; source application to active-source parallel NOT independently confirmed",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-0831727b1bbb2e50",
+      "representative_id": "G1-ELE-254",
+      "member_ids": "G1-ELE-254;G2-ELEC-389",
+      "qabc_sha256": "0831727b1bbb2e505184bbe9f7e89fdfad4500064eb5a4aa7b0ad6dd0057bb5d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-254\":\"C\",\"G2-ELEC-389\":\"C\"}",
+      "question_original": "Valoarea intensităţii câmpului electric produs de o sarcină electrică la distanţa r este:",
+      "A_original": "direct proporţională cu r",
+      "B_original": "direct proporţională cu pătratul lui r",
+      "C_original": "invers proporţională cu pătratul lui r",
+      "stored_key_UNCHANGED": "C",
+      "positive_source_and_logic": "Câmpul electric al unei sarcini punctiforme Q în mediu omogen izotrop are modul E=(1/4πε)|Q|/r².",
+      "ABC_analysis": {
+        "A": "A: proporțional direct cu r contrazice legea Coulomb.",
+        "B": "B: proporțional direct cu r² inversează dependența fizică.",
+        "C": "C: invers proporțional cu r² pentru sarcină punctiformă."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Pentru un fir foarte lung încărcat câmpul exterior descrește aproximativ ca 1/r, deci 'sarcină' este incomplet dacă nu înseamnă punctiformă.",
+      "scope": "Sarcină electrică punctiformă ori distribuție văzută de la distanță mare; mediu omogen.",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+          "locator": "STEM_GENERIC_SARCINA_SCOPE_BUT_EXAM_INTENDED_POINT_CHARGE",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-52e8de711d93cd4c",
+      "representative_id": "G1-ELE-255",
+      "member_ids": "G1-ELE-255;G2-ELEC-390",
+      "qabc_sha256": "52e8de711d93cd4cbc019c461473137e2840451dcf920a54c76090615ee870f2",
+      "original_keys_by_id_JSON": "{\"G1-ELE-255\":\"B\",\"G2-ELEC-390\":\"B\"}",
+      "question_original": "Un transformator de măsurare de curent nu poate fi lăsat cu secundarul în gol, deoarece:",
+      "A_original": "împiedica circulaţia curentului primar",
+      "B_original": "apar supratensiuni periculoase in secundar",
+      "C_original": "nu indica aparatele de măsurare",
+      "stored_key_UNCHANGED": "B",
+      "positive_source_and_logic": "La transformatorul de măsurare a curentului cu primarul traversat de curent, deschiderea secundarului poate produce tensiuni foarte mari și risc grav de șoc sau avarie.",
+      "ABC_analysis": {
+        "A": "A: deschiderea secundarului CT nu oprește automat curentul din primar.",
+        "B": "B: supratensiuni periculoase în secundar, motivul tehnic și de securitate.",
+        "C": "C: lipsa indicației este efect secundar, nu pericolul definitoriu."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Fără curent primar și cu instalația scoasă în siguranță de sub tensiune nu se induce această supratensiune; nu interpreta întrebarea ca procedură de lucru.",
+      "scope": "CT cu primarul energizat sau prin care poate circula curent; avertisment de securitate, nu instrucțiune de intervenție.",
+      "sources": [
+        {
+          "url": "https://www.se.com/us/en/faqs/FA125574/",
+          "locator": "Schneider Electric original official FAQ FA125574 HTML verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-3f7da7e26b4c8f9e",
+      "representative_id": "G1-ELE-256",
+      "member_ids": "G1-ELE-256;G2-ELEC-391",
+      "qabc_sha256": "3f7da7e26b4c8f9eaee78da4523fd94cd07d50bac11a6ce6a6760bf11b1b8bda",
+      "original_keys_by_id_JSON": "{\"G1-ELE-256\":\"A\",\"G2-ELEC-391\":\"A\"}",
+      "question_original": "Unitatea de măsură a capacităţii unui condensator este:",
+      "A_original": "F",
+      "B_original": "Axh",
+      "C_original": "A/h",
+      "stored_key_UNCHANGED": "A",
+      "positive_source_and_logic": "Capacitatea electrică este măsurată în farad F, relație 1F=1C/V.",
+      "ABC_analysis": {
+        "A": "A: F este farad, unitatea capacității.",
+        "B": "B: A×h este unitate de sarcină electrică, nu capacitate.",
+        "C": "C: A/h nu este unitate a capacității."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Ah poate fi utilizată pentru capacitatea electrică a unei baterii în vorbire comercială, dar este sarcină, nu capacitanță în F.",
+      "scope": "Capacitanța electrică C=Q/U, nu capacitatea acumulatorului exprimată în Ah.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+          "locator": "NIST official SI table verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-94592d3e2533fbd0",
+      "representative_id": "G1-ELE-258",
+      "member_ids": "G1-ELE-258;G2-ELEC-393",
+      "qabc_sha256": "94592d3e2533fbd0f9286727a7d777aa11c0ce9a49ae9a7aaa3f67074c1bc766",
+      "original_keys_by_id_JSON": "{\"G1-ELE-258\":\"B\",\"G2-ELEC-393\":\"B\"}",
+      "question_original": "Unitatea de măsură a fluxului magnetic este:",
+      "A_original": "Tesla",
+      "B_original": "Weber",
+      "C_original": "Farad",
+      "stored_key_UNCHANGED": "B",
+      "positive_source_and_logic": "Fluxul magnetic Φ în SI se măsoară în weber Wb, iar densitatea fluxului B este în tesla T.",
+      "ABC_analysis": {
+        "A": "A: tesla măsoară inducția magnetică B.",
+        "B": "B: weber este unitatea fluxului Φ.",
+        "C": "C: farad este unitatea capacității electrice."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Φ=∫B·dA; integrarea densității T pe aria m² dă Wb.",
+      "scope": "Flux magnetic total, nu densitatea fluxului.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+          "locator": "NIST official SI table verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-d0500c04b777819e",
+      "representative_id": "G1-ELE-259",
+      "member_ids": "G1-ELE-259;G2-ELEC-394",
+      "qabc_sha256": "d0500c04b777819ee731204f61b7c5c8f2c21a7f23f039e4df65da25f456e5cf",
+      "original_keys_by_id_JSON": "{\"G1-ELE-259\":\"B\",\"G2-ELEC-394\":\"B\"}",
+      "question_original": "Unitatea de măsură a frecvenţei mărimilor periodice se numeşte:",
+      "A_original": "Weber",
+      "B_original": "Hertz",
+      "C_original": "Henry",
+      "stored_key_UNCHANGED": "B",
+      "positive_source_and_logic": "Frecvența f a unei mărimi periodice este numărul de perioade pe secundă, f=1/Tperioadă; în SI unitatea este hertz Hz (s⁻¹).",
+      "ABC_analysis": {
+        "A": "A: weber aparține fluxului magnetic.",
+        "B": "B: hertz măsoară frecvența.",
+        "C": "C: henry este unitatea inductanței."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Perioada se măsoară în secunde, frecvența în 1/s; nu se confundă cu timpul.",
+      "scope": "Mărime periodică cu perioadă T>0.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+          "locator": "NIST official SI table verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-259dc02132acad7b",
+      "representative_id": "G1-ELE-260",
+      "member_ids": "G1-ELE-260;G2-ELEC-395",
+      "qabc_sha256": "259dc02132acad7b84fdb337544099fd798d28f8cfad6768ce4bd25d6ad93fa6",
+      "original_keys_by_id_JSON": "{\"G1-ELE-260\":\"B\",\"G2-ELEC-395\":\"B\"}",
+      "question_original": "Unitatea de măsură a sarcinii electrice este:",
+      "A_original": "V/m",
+      "B_original": "Coulomb",
+      "C_original": "Farad",
+      "stored_key_UNCHANGED": "B",
+      "positive_source_and_logic": "Sarcina electrică Q se măsoară în coulomb C, echivalent A·s.",
+      "ABC_analysis": {
+        "A": "A: V/m este unitatea intensității câmpului electric.",
+        "B": "B: coulomb este unitatea sarcinii electrice.",
+        "C": "C: farad măsoară capacitatea, nu sarcina."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Litera C pentru coulomb este simbolul unității, nu litera variantei corecte B.",
+      "scope": "SI, sarcină electrică, nu capacitance notation C in circuits.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+          "locator": "NIST official SI table verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-1d6d930623b4b59f",
+      "representative_id": "G1-ELE-262",
+      "member_ids": "G1-ELE-262;G2-ELEC-397",
+      "qabc_sha256": "1d6d930623b4b59f92c3bdcb44b5d8e8c8f4d9c728c561a51339479a712f30a3",
+      "original_keys_by_id_JSON": "{\"G1-ELE-262\":\"B\",\"G2-ELEC-397\":\"B\"}",
+      "question_original": "Unitatea de măsură pentru măsurarea puterii active este:",
+      "A_original": "kWh",
+      "B_original": "kW",
+      "C_original": "kW/h",
+      "stored_key_UNCHANGED": "B",
+      "positive_source_and_logic": "Puterea activă se exprimă în W sau kW; energia activă rezultată prin integrarea puterii în timp se exprimă în Wh/kWh.",
+      "ABC_analysis": {
+        "A": "A: kWh este unitate de energie, nu putere.",
+        "B": "B: kW este unitate validă a puterii active.",
+        "C": "C: kW/h este variația temporală a puterii, nu puterea."
+      },
+      "ABC_pairwise": "A-B, A-C, B-C evaluate against each stated claim; positive affirmative proof does not rely on elimination alone",
+      "reverse_counterexample": "Contorul de energie raportează kWh, iar un wattmetru raportează W/kW: dispozitivele au mărimi distincte.",
+      "scope": "Distincție putere activă P versus energie electrică E=P×t.",
+      "sources": [
+        {
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+          "locator": "NIST SI watt official HTML verified 2026-11-17",
+          "source_access": "WEB_VERIFIED_THIS_SESSION_IF_STATED; ELSE_PRETRIAGE_ONLY"
+        }
+      ],
+      "source_scope_gate": "PRELIMINARY_NOT_2026_EXAM_BIBLIOGRAPHY_VERIFIED",
+      "technical_review": "SINGLE_ASSISTANT_CHECKLIST",
+      "independent_review": "NOT_RUN",
+      "learner_approval": "NO"
+    }
+  ]
+}
