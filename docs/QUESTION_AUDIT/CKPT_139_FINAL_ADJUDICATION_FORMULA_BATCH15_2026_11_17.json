@@ -1,0 +1,578 @@
+{
+  "checkpoint": "CKPT-139",
+  "date": "2026-11-17",
+  "phase": "FINAL_ADJUDICATION_TECHNICAL_FORMULA_ROUND",
+  "baseline_head": "43e7fbd09bd1a482457556c13b2f1e426a1d868e",
+  "count": {
+    "unique": 15,
+    "gradeIDs": 30
+  },
+  "method": "Reopen physical source equations, independently recompute elementary result within single assistant, compare original A/B/C and counterexamples/qualifiers. This is NOT independent specialist QA.",
+  "derived_checks": {
+    "parallel_three_3_ohm": 1,
+    "series_three_2_ohm": 6,
+    "star_400v": 230.94010767585033,
+    "RL_100_70": 122.06555615733703,
+    "PF_4_3": 0.8,
+    "passes": true
+  },
+  "source_qualifiers": "SI official NIST, OpenStax formulas and Schneider technical context; additional physical assumptions documented in individual cards",
+  "immutable_policies": "No original keys/QABC/HTML/APK/merge/release changes",
+  "cards": [
+    {
+      "unit_id": "AU-6786771e3cfe2b2a",
+      "representative_id": "G1-ELE-117",
+      "grade_member_ids": [
+        "G1-ELE-117",
+        "G2-ELEC-259"
+      ],
+      "qabc_sha256": "6786771e3cfe2b2a569bc8115a6f22b386bc31ee36a96db64bcb4e2111a33bea",
+      "original_keymap": {
+        "G1-ELE-117": "A",
+        "G2-ELEC-259": "A"
+      },
+      "question_original": "Intensitatea câmpului magnetic într-un punct exterior unui conductor rectiliniu străbătut de curentul continuu de intensitate i, aflat la distanţă r de conductor este:",
+      "original_options": {
+        "A": "invers proporţională cu r",
+        "B": "direct proporţională cu pătratul lui r",
+        "C": "direct proporţională cu r"
+      },
+      "source_object_formula": "For long straight conductor H=I/(2πr); inverse distance r",
+      "ABC_review": {
+        "A": "1/r correct long wire exterior",
+        "B": "r² direct false",
+        "C": "r direct false"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-2-magnetic-field-due-to-a-thin-straight-wire",
+        "locator": "OpenStax §12.2 straight current-carrying wire",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "VERY_LONG_STRAIGHT_NOT_FINITE_SHORT_WIRE",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-62f80a8953e745f0",
+      "representative_id": "G1-ELE-120",
+      "grade_member_ids": [
+        "G1-ELE-120",
+        "G2-ELEC-262"
+      ],
+      "qabc_sha256": "62f80a8953e745f0d0a470cf5f786ce658317cc43f25a1832d921bff7e438c89",
+      "original_keymap": {
+        "G1-ELE-120": "C",
+        "G2-ELEC-262": "C"
+      },
+      "question_original": "Într-un circuit R-L serie de curent alternativ, tensiunea la bornele rezistorului este de 100 V, iar tensiunea la bornele bobinei este de 70 V. Tensiunea la bornele circuitului R-L este:",
+      "original_options": {
+        "A": "170V",
+        "B": "30 V",
+        "C": "122 V"
+      },
+      "source_object_formula": "Ideal series RL: U_total=sqrt(100²+70²)=sqrt(14900)≈122.07 V",
+      "ABC_review": {
+        "A": "170V scalar addition ignores 90° phase",
+        "B": "30V scalar subtraction wrong",
+        "C": "122V nearest ideal phasor magnitude"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-key-equations",
+        "locator": "OpenStax Ch15 phasor impedance",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "BOBINA_REALĂ_MAY_BREAK_QUADRATURE",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-57f2c737a49ceb8f",
+      "representative_id": "G1-ELE-127",
+      "grade_member_ids": [
+        "G1-ELE-127",
+        "G2-ELEC-267"
+      ],
+      "qabc_sha256": "57f2c737a49ceb8fe8763e3d9692785e4593ad46effe2b759a7a0357837180f9",
+      "original_keymap": {
+        "G1-ELE-127": "A",
+        "G2-ELEC-267": "A"
+      },
+      "question_original": "Într-un circuit de curent alternativ în care puterea activa absorbita este 4 kW iar puterea reactiva este de 3 kVAr, factorul de putere este:",
+      "original_options": {
+        "A": "0,8",
+        "B": "0,75",
+        "C": "4/3"
+      },
+      "source_object_formula": "S=sqrt(P²+Q²)=sqrt(4²+3²)=5 kVA, P/S=4/5=0.8",
+      "ABC_review": {
+        "A": "0.8 follows power triangle",
+        "B": "0.75 is wrong P/S",
+        "C": "4/3 exceeds unity and is not PF in sinusoidal model"
+      },
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "Schneider PF=S and Q relationship",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "ASSUMES_SINUSOIDAL_TRIANGLE",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-c8440bfef3fb1dbb",
+      "representative_id": "G1-ELE-132",
+      "grade_member_ids": [
+        "G1-ELE-132",
+        "G2-ELEC-272"
+      ],
+      "qabc_sha256": "c8440bfef3fb1dbb14e0c79f7bfdbe94005956f63d208e08d3682950ce1d679f",
+      "original_keymap": {
+        "G1-ELE-132": "A",
+        "G2-ELEC-272": "A"
+      },
+      "question_original": "Într-un circuit serie format dintr-un rezistor de rezistenţă R, o bobină de inductanţă L şi un condensator de capacitate C, curentul din circuit este defazat în urma tensiunii la borne dacă:",
+      "original_options": {
+        "A": "reactanţa totală a circuitului X este > 0",
+        "B": "reactanţa totală a circuitului            X este <0",
+        "C": "reactanţa totală a circuitului este =0"
+      },
+      "source_object_formula": "For series RLC Z=R+j(XL-XC); current lags voltage if net X>0",
+      "ABC_review": {
+        "A": "X>0 inductive current lag",
+        "B": "X<0 capacitive current lead",
+        "C": "X=0 resistive phase-aligned"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-key-equations",
+        "locator": "OpenStax Ch15 impedance/phase angle",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "PHASOR_CONVENTION_XL_MINUS_XC",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-b0e65dd59633f0d4",
+      "representative_id": "G1-ELE-135",
+      "grade_member_ids": [
+        "G1-ELE-135",
+        "G2-ELEC-275"
+      ],
+      "qabc_sha256": "b0e65dd59633f0d4987e32668b19d53b1802e98e8155dba2fb7e4bd0b8564fc2",
+      "original_keymap": {
+        "G1-ELE-135": "B",
+        "G2-ELEC-275": "B"
+      },
+      "question_original": "Inversa rezistenţei echivalente a n rezistoare legate în paralel este egală cu:",
+      "original_options": {
+        "A": "suma rezistenţelor celor n rezistoare",
+        "B": "suma inverselor rezistenţelor celor n rezistoare",
+        "C": "suma pătratelor rezistenţelor celor n rezistoare"
+      },
+      "source_object_formula": "Parallel resistors 1/Req=Σ1/R_i",
+      "ABC_review": {
+        "A": "ΣR_i is series rule",
+        "B": "Σ1/R_i is parallel conductance",
+        "C": "ΣR_i² wrong dimension Ω²"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "OpenStax §10.2 parallel resistors",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "POSITIVE_OHMIC_RESISTORS",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-4561e83c1254e35b",
+      "representative_id": "G1-ELE-143",
+      "grade_member_ids": [
+        "G1-ELE-143",
+        "G2-ELEC-281"
+      ],
+      "qabc_sha256": "4561e83c1254e35b55e38d9b3b1432b456a2481586f54d9690fdcaffcbb2469e",
+      "original_keymap": {
+        "G1-ELE-143": "B",
+        "G2-ELEC-281": "B"
+      },
+      "question_original": "La o instalaţie cu mai multe condensatoare conectate în serie, căderea de tensiune pe fiecare condensator este:",
+      "original_options": {
+        "A": "direct proporţionala cu capacitatea",
+        "B": "invers proporţionala cu capacitatea",
+        "C": "nu depinde de capacitate"
+      },
+      "source_object_formula": "Series capacitors each have identical Q, V_i=Q/C_i",
+      "ABC_review": {
+        "A": "Direct V vs C false for same Q",
+        "B": "Inverse V vs C true",
+        "C": "No dependence on C false"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "locator": "OpenStax §8.2 eq V1=Q/C1",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "IDEAL_SERIES_CAPACITORS",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-257eef55899c10f9",
+      "representative_id": "G1-ELE-201",
+      "grade_member_ids": [
+        "G1-ELE-201",
+        "G2-ELEC-337"
+      ],
+      "qabc_sha256": "257eef55899c10f979d6176010bc64eea37bcf821952c41f6a5c4a1ae6275c0c",
+      "original_keymap": {
+        "G1-ELE-201": "C",
+        "G2-ELEC-337": "C"
+      },
+      "question_original": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 2 ohm, montate în serie este:",
+      "original_options": {
+        "A": "5 ohm",
+        "B": "0,66 ohm",
+        "C": "6 ohm"
+      },
+      "source_object_formula": "Three 2Ω resistors in series: Req=2+2+2=6Ω",
+      "ABC_review": {
+        "A": "5Ω wrong sum",
+        "B": "0.66Ω corresponds to parallel approx",
+        "C": "6Ω correct"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "OpenStax §10.2 series equivalent",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "IDEAL_SERIES_RESISTORS",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-155e4f490d6c823f",
+      "representative_id": "G1-ELE-211",
+      "grade_member_ids": [
+        "G1-ELE-211",
+        "G2-ELEC-347"
+      ],
+      "qabc_sha256": "155e4f490d6c823fe2fa4e6f21ca5696a1b87df9cee0cf8fa4414caafdc21cbc",
+      "original_keymap": {
+        "G1-ELE-211": "B",
+        "G2-ELEC-347": "B"
+      },
+      "question_original": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 3 ohm, montate în paralel, este:",
+      "original_options": {
+        "A": "3 ohm",
+        "B": "1 ohm",
+        "C": "9 ohm"
+      },
+      "source_object_formula": "Three 3Ω equal resistors in parallel: Req=3Ω/3=1Ω",
+      "ABC_review": {
+        "A": "3Ω equals one branch, not all parallel",
+        "B": "1Ω correct",
+        "C": "9Ω series answer"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "OpenStax §10.2 parallel equivalent",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "IDEAL_POSITIVE_RESISTORS",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-1c35c97f84354889",
+      "representative_id": "G1-ELE-239",
+      "grade_member_ids": [
+        "G1-ELE-239",
+        "G2-ELEC-375"
+      ],
+      "qabc_sha256": "1c35c97f84354889c5a5be708a2cee405a6065c3accacc910b8a6eb9344d7e3a",
+      "original_keymap": {
+        "G1-ELE-239": "A",
+        "G2-ELEC-375": "A"
+      },
+      "question_original": "Tesla este unitatea de măsură a:",
+      "original_options": {
+        "A": "inducţiei magnetice",
+        "B": "fluxului magnetic",
+        "C": "intensităţii câmpului magnetic"
+      },
+      "source_object_formula": "B in tesla (T), flux Φ in weber (Wb), magnetic field H in A/m",
+      "ABC_review": {
+        "A": "Tesla measures magnetic flux density B",
+        "B": "Weber measures magnetic flux, not density B",
+        "C": "Magnetic field H intensity has A/m units, not tesla"
+      },
+      "source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "NIST Guide SI derived units table",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "NO_AMBIGUITY_IN_SI_QUANTITIES",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-8d58918256eddd79",
+      "representative_id": "G1-ELE-242",
+      "grade_member_ids": [
+        "G1-ELE-242",
+        "G2-ELEC-378"
+      ],
+      "qabc_sha256": "8d58918256eddd7969d7eb9bfdfec31a8a2f983ad8ba4e558093251ac584d50b",
+      "original_keymap": {
+        "G1-ELE-242": "C",
+        "G2-ELEC-378": "C"
+      },
+      "question_original": "Un motor electric trifazat legat în stea este în funcţiune si alimentat la 0,4 kV. Tensiunea între neutrul stelei si una dintre faze este:",
+      "original_options": {
+        "A": "0,4 kV",
+        "B": "0 V",
+        "C": "230 V"
+      },
+      "source_object_formula": "Balanced Y connection U_phase=U_line/√3=400/√3≈230.94V",
+      "ABC_review": {
+        "A": "400V is line-to-line voltage",
+        "B": "0V neutral-to-same-point not neutral-to-live-phase",
+        "C": "230V rounded conventional phase-to-neutral"
+      },
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-key-equations",
+        "locator": "OpenStax sinusoidal phase relations; vector three phase geometry direct derivation",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "ASSUMES_SYMMETRICAL_THREE_PHASE_STAR",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-3f7da7e26b4c8f9e",
+      "representative_id": "G1-ELE-256",
+      "grade_member_ids": [
+        "G1-ELE-256",
+        "G2-ELEC-391"
+      ],
+      "qabc_sha256": "3f7da7e26b4c8f9eaee78da4523fd94cd07d50bac11a6ce6a6760bf11b1b8bda",
+      "original_keymap": {
+        "G1-ELE-256": "A",
+        "G2-ELEC-391": "A"
+      },
+      "question_original": "Unitatea de măsură a capacităţii unui condensator este:",
+      "original_options": {
+        "A": "F",
+        "B": "Axh",
+        "C": "A/h"
+      },
+      "source_object_formula": "Capacitance C=Q/U; SI 1 farad=1 coulomb per volt",
+      "ABC_review": {
+        "A": "F is farad and correct",
+        "B": "Ah is charge, not farad capacitive measurement",
+        "C": "A/h not a capacitance unit"
+      },
+      "source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "NIST SI derived units, farad",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "BATTERY_CHARGE_AH_VS_CAPACITANCE_F",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-94592d3e2533fbd0",
+      "representative_id": "G1-ELE-258",
+      "grade_member_ids": [
+        "G1-ELE-258",
+        "G2-ELEC-393"
+      ],
+      "qabc_sha256": "94592d3e2533fbd0f9286727a7d777aa11c0ce9a49ae9a7aaa3f67074c1bc766",
+      "original_keymap": {
+        "G1-ELE-258": "B",
+        "G2-ELEC-393": "B"
+      },
+      "question_original": "Unitatea de măsură a fluxului magnetic este:",
+      "original_options": {
+        "A": "Tesla",
+        "B": "Weber",
+        "C": "Farad"
+      },
+      "source_object_formula": "Magnetic flux Φ=∫ B·dA; SI unit Wb = T·m²",
+      "ABC_review": {
+        "A": "Tesla measures induction B, not Φ",
+        "B": "Weber unit of magnetic flux Φ",
+        "C": "Farad unit of capacitance"
+      },
+      "source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "NIST SI derived units weber and tesla",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "DENSITY_VS_INTEGRAL_FLUX",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-d0500c04b777819e",
+      "representative_id": "G1-ELE-259",
+      "grade_member_ids": [
+        "G1-ELE-259",
+        "G2-ELEC-394"
+      ],
+      "qabc_sha256": "d0500c04b777819ee731204f61b7c5c8f2c21a7f23f039e4df65da25f456e5cf",
+      "original_keymap": {
+        "G1-ELE-259": "B",
+        "G2-ELEC-394": "B"
+      },
+      "question_original": "Unitatea de măsură a frecvenţei mărimilor periodice se numeşte:",
+      "original_options": {
+        "A": "Weber",
+        "B": "Hertz",
+        "C": "Henry"
+      },
+      "source_object_formula": "For periodic function f=1/T and SI unit hertz Hz=s^(-1)",
+      "ABC_review": {
+        "A": "Weber is magnetic flux",
+        "B": "Hertz measures frequency",
+        "C": "Henry measures inductance"
+      },
+      "source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "NIST SI derived units hertz",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "PERIOD_T_VS_FREQUENCY_F",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-259dc02132acad7b",
+      "representative_id": "G1-ELE-260",
+      "grade_member_ids": [
+        "G1-ELE-260",
+        "G2-ELEC-395"
+      ],
+      "qabc_sha256": "259dc02132acad7b84fdb337544099fd798d28f8cfad6768ce4bd25d6ad93fa6",
+      "original_keymap": {
+        "G1-ELE-260": "B",
+        "G2-ELEC-395": "B"
+      },
+      "question_original": "Unitatea de măsură a sarcinii electrice este:",
+      "original_options": {
+        "A": "V/m",
+        "B": "Coulomb",
+        "C": "Farad"
+      },
+      "source_object_formula": "Charge Q=∫i dt, 1 coulomb=1 ampere second",
+      "ABC_review": {
+        "A": "V/m is E-field magnitude",
+        "B": "Coulomb measures charge",
+        "C": "Farad is capacitance"
+      },
+      "source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "NIST SI coulomb",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "SYMBOL_C_COULOMB_VS_OPTION_B",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-1d6d930623b4b59f",
+      "representative_id": "G1-ELE-262",
+      "grade_member_ids": [
+        "G1-ELE-262",
+        "G2-ELEC-397"
+      ],
+      "qabc_sha256": "1d6d930623b4b59f92c3bdcb44b5d8e8c8f4d9c728c561a51339479a712f30a3",
+      "original_keymap": {
+        "G1-ELE-262": "B",
+        "G2-ELEC-397": "B"
+      },
+      "question_original": "Unitatea de măsură pentru măsurarea puterii active este:",
+      "original_options": {
+        "A": "kWh",
+        "B": "kW",
+        "C": "kW/h"
+      },
+      "source_object_formula": "Power P=dE/dt has watt W, kilowatt kW; energy is kWh",
+      "ABC_review": {
+        "A": "kWh measures energy",
+        "B": "kW measures power",
+        "C": "kW/h is rate of power change"
+      },
+      "source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "locator": "NIST SI watt, prefixes",
+        "access": "OFFICIAL_HTML_REVIEWED_IF_NIST; OPENSTAX_HTML_REVIEWED_IF_DIRECT; otherwise topical source scoped by model"
+      },
+      "linguistic_scope_condition": "POWER_VS_ENERGY",
+      "technical_calc_checked": "YES_SINGLE_ASSISTANT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_grade_edition": "UNVERIFIED",
+      "approved_for_learning": "NO"
+    }
+  ]
+}
