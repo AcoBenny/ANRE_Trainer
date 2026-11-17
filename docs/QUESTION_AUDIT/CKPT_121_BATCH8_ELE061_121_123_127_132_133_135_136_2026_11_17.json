@@ -187,35 +187,6 @@
       "learner_approval": "NO"
     },
     {
-      "unit_id": "AU-b0e65dd59633f0d4",
-      "qabc_sha256": "b0e65dd59633f0d4987e32668b19d53b1802e98e8155dba2fb7e4bd0b8564fc2",
-      "representative_id": "G1-ELE-135",
-      "member_ids": "G1-ELE-135;G2-ELEC-275",
-      "original_keys_by_id_JSON": "{\"G1-ELE-135\":\"B\",\"G2-ELEC-275\":\"B\"}",
-      "question_original": "Inversa rezistenţei echivalente a n rezistoare legate în paralel este egală cu:",
-      "A_original": "suma rezistenţelor celor n rezistoare",
-      "B_original": "suma inverselor rezistenţelor celor n rezistoare",
-      "C_original": "suma pătratelor rezistenţelor celor n rezistoare",
-      "source": {
-        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
-        "locator": "OpenStax §10.2 Resistors in Parallel, 1/Req=Σ1/Ri",
-        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
-      },
-      "context_positive": "Curentul total paralel este suma curenților ramurilor la aceeași tensiune, deci 1/Req=Σ(1/Rk).",
-      "abc_analysis": {
-        "A": "Suma rezistențelor corespunde conexiunii serie.",
-        "B": "1/Req=Σ(1/R_i) pentru conexiunea în paralel.",
-        "C": "Suma pătratelor nu are dimensiunea corectă."
-      },
-      "pairwise_inference": "B inversul rezistenței total este suma inverselor; A suma R la serie; C suma R² incorect dimensional.",
-      "reverse_counterexample": "A este pentru serie; C suma pătratelor are unități incompatibile.",
-      "scope": "Rezistoare ohmice, contacte ideale.",
-      "linguistic_and_scope_gate": "DIMENSIONAL",
-      "preliminary_candidate": "B",
-      "independent_QA": "NOT_RUN",
-      "learner_approval": "NO"
-    },
-    {
       "unit_id": "AU-9fd84e7f1e23aac8",
       "qabc_sha256": "9fd84e7f1e23aac8ebad37e41641d4569a20f04b4096250d3347f7f296e6978c",
       "representative_id": "G1-ELE-136",
@@ -243,6 +214,42 @@
       "preliminary_candidate": "C",
       "independent_QA": "NOT_RUN",
       "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-4561e83c1254e35b",
+      "representative_id": "G1-ELE-143",
+      "member_ids": "G1-ELE-143;G2-ELEC-281",
+      "qabc_sha256": "4561e83c1254e35b55e38d9b3b1432b456a2481586f54d9690fdcaffcbb2469e",
+      "original_keys_by_id_JSON": "{\"G1-ELE-143\":\"B\",\"G2-ELEC-281\":\"B\"}",
+      "question_original": "La o instalaţie cu mai multe condensatoare conectate în serie, căderea de tensiune pe fiecare condensator este:",
+      "A_original": "direct proporţionala cu capacitatea",
+      "B_original": "invers proporţionala cu capacitatea",
+      "C_original": "nu depinde de capacitate",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "locator": "OpenStax §8.2 The Series Combination of Capacitors, V_i=Q/C_i",
+        "access": "HTML_WEB_RESEARCH"
+      },
+      "context_positive": "Într-un lanț de condensatoare ideale conectate în serie, toate poartă aceeași sarcină Q. Căderea de tensiune pe fiecare este V_i=Q/C_i, invers proporțională cu capacitatea. Pentru aceeași sarcină, condensatorul cu C mai mic are tensiunea mai mare. Nu confundăm acest rezultat cu paralelul unde toate au aceeași tensiune.",
+      "abc_analysis": {
+        "A": "Cu Q același în serie, V=Q/C, deci nu crește direct cu C.",
+        "B": "Cu aceeași sarcină serie, V este invers proporțional cu C.",
+        "C": "Tensiunea depinde de capacitate pentru condensatoare ideale în serie."
+      },
+      "pairwise_inference": "A raport direct cu C greșit; B raport invers cu C susținut afirmativ; C independență de C este falsă.",
+      "reverse_counterexample": "În paralel tensiunile sunt egale, dar întrebarea cere serie. Condensatoare reale cu scurgeri/regim tranzitoriu pot necesita condiții suplimentare.",
+      "scope": "Ideal capacitors, series, equal charge steady-state; no parasitic leakage/ESR",
+      "linguistic_and_scope_gate": "EXACT_SERIES_VS_PARALLEL",
+      "preliminary_candidate": "B",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
     }
-  ]
+  ],
+  "reconciliation_note": {
+    "issue": "G1-ELE-135 appeared in draft but was already YES_PRELIMINARY from CKPT-108; identified by ledger preflight. No ledger credit or duplicate research claimed.",
+    "resolution": "Replaced draft card with previously undocumented G1-ELE-143; preserved prior commit history. Full ledger readback still required.",
+    "original_reused": "G1-ELE-135;G2-ELEC-275",
+    "replacement": "G1-ELE-143;G2-ELEC-281",
+    "status": "DUPLICATE_PREVENTED_BEFORE_CREDIT"
+  }
 }
