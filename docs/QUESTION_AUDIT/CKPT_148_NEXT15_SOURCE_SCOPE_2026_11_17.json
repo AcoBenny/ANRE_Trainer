@@ -1,0 +1,751 @@
+{
+  "checkpoint": "CKPT-148",
+  "date": "2026-11-17",
+  "input_checkpoint": "CKPT-144",
+  "source_HEAD": "f6e9c05bc8912c38c0327dd0d091c96b4fd1e41b",
+  "phase": "SOURCE_SCOPE_ONE_PASS_TECHNICAL_TRIAGE_NOT_FINAL_LEARNING_SIGNOFF",
+  "method": "Four non-overlapping 15-unit batches using already documented original A/B/C and grade keys, compare exact original question, record technical model and absence of independent review. Prevent duplicate research.",
+  "status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 11,
+    "CONDITIONAL_MODEL_OR_SOURCE": 3,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 1
+  },
+  "count_unique_units": 15,
+  "count_grade_members": 30,
+  "immutability": "no QABC, imported answer key, HTML, APK, main, merge, release changes",
+  "independent_QA": "NOT_EXECUTED_NO_INDEPENDENT_AGENT_RUNTIME",
+  "learner_approvals": 0,
+  "source_reuse": "Prior source cards marked as not reopened. Browser-open evidence limited to an explicit allow-list. Titles without exact source support are flagged conditional/blocked.",
+  "cards": [
+    {
+      "unit_id": "AU-a19b5090df2f044f",
+      "representative_id": "G1-ELE-054",
+      "grade_member_ids": [
+        "G1-ELE-054",
+        "G2-ELEC-200"
+      ],
+      "canonical_sha256": "a19b5090df2f044f4fe75838b3abcd68747f0a12dbf9ab899715b777740c7a16",
+      "original_question_UNCHANGED": "Descărcătoarele cu oxid de zinc protejează echipamentele din reţele împotriva:",
+      "original_ABC_UNCHANGED": {
+        "A": "supratensiunilor",
+        "B": "supracurenţilor",
+        "C": "solicitărilor mecanice"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-054": "A",
+        "G2-ELEC-200": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "ZnO metal-oxide surge arresters limit overvoltages, not overload currents or mechanical stresses.",
+      "A_B_C_analysis_reused": {
+        "A": "A: MOV ZnO nonlinear behavior limits surge voltages",
+        "B": "B: current overload needs breakers/fuses",
+        "C": "C: mechanical forces are not directly controlled by ZnO arrester",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Protection_of_transformer_and_circuits",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-ee276a1f7131316c",
+      "representative_id": "G1-ELE-055",
+      "grade_member_ids": [
+        "G1-ELE-055",
+        "G2-ELEC-201"
+      ],
+      "canonical_sha256": "ee276a1f7131316c82548b7d57aaf3cbfee9f2a3941c806876b9a43ff6c39117",
+      "original_question_UNCHANGED": "Descărcătoarele cu oxizi de zinc sunt echipamente destinate:",
+      "original_ABC_UNCHANGED": {
+        "A": "protecţiei personalului de exploatare împotriva electrocutării",
+        "B": "protecţiei împotriva supratensiunilor",
+        "C": "protecţiei împotriva supracurenţilor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-055": "B",
+        "G2-ELEC-201": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "ZnO arresters for overvoltage surge protection, not direct electric shock/overcurrent protection.",
+      "A_B_C_analysis_reused": {
+        "A": "A: electric shock protection needs earthing/RCD and other measures",
+        "B": "B: directly intended for surge overvoltage protection",
+        "C": "C: overcurrent trip is another device's function",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [],
+        "session_leads": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Protection_of_transformer_and_circuits",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-613ea692a3390f13",
+      "representative_id": "G1-ELE-056",
+      "grade_member_ids": [
+        "G1-ELE-056",
+        "G2-ELEC-202"
+      ],
+      "canonical_sha256": "613ea692a3390f13c9e0b1ee591f1cd91bcb009799e52c7a6b614bdb21486979",
+      "original_question_UNCHANGED": "Diferenţa de potenţial la bornele a n baterii de condensatoare montate în serie este egală cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "suma diferenţelor de potenţial la bornele fiecărui condensator",
+        "B": "diferenţa de potenţial la bornele fiecărui condensator în parte",
+        "C": "diferenţa de potenţial a unui condensator împărţită la n"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-056": "A",
+        "G2-ELEC-202": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Series loop voltage is sum of each capacitor voltage with consistent polarity; C often not V_each/n.",
+      "A_B_C_analysis_reused": {
+        "A": "A: sum of individual potential differences equals total",
+        "B": "B: individual voltages differ unless special conditions",
+        "C": "C: Vindividual/n not general for series",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-8f8ab4fe551ac4b3",
+      "representative_id": "G1-ELE-059",
+      "grade_member_ids": [
+        "G1-ELE-059",
+        "G2-ELEC-204"
+      ],
+      "canonical_sha256": "8f8ab4fe551ac4b35fe33f9b1ac41e44664182210f979da5198c5acd8c7d21c5",
+      "original_question_UNCHANGED": "În cazul conexiunii în stea la transformator:",
+      "original_ABC_UNCHANGED": {
+        "A": "tensiunea de linie este egala cu tensiunea de faza",
+        "B": "curentul de linie este egal cu ~1,73 x curentul de faza",
+        "C": "tensiunea de linie este egala cu ~1,73 x tensiunea de faza"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-059": "C",
+        "G2-ELEC-204": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Balanced three-phase star line voltage magnitude √3 times phase voltage; line current equals phase current.",
+      "A_B_C_analysis_reused": {
+        "A": "A: phase and line voltages not equal for wye system",
+        "B": "B: line current equals phase, not sqrt3 phase current",
+        "C": "C: line voltage approx 1.73 times phase voltage",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-6727c53487b6bdbf",
+      "representative_id": "G1-ELE-060",
+      "grade_member_ids": [
+        "G1-ELE-060",
+        "G2-ELEC-205"
+      ],
+      "canonical_sha256": "6727c53487b6bdbfbf8f2096bfd196bc29a09620302df94387f7c7b63306c10c",
+      "original_question_UNCHANGED": "Efectul pelicular al curentului alternativ este utilizat în:",
+      "original_ABC_UNCHANGED": {
+        "A": "încălzirea materialelor prin inducţie",
+        "B": "eliminarea dezechilibrelor din reţeaua electrică",
+        "C": "eliminarea distorsiunilor undelor de curent"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-060": "A",
+        "G2-ELEC-205": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Skin effect can be exploited in induction heating; actual heating due induced currents/magnetic coupling, needs exact practical device source.",
+      "A_B_C_analysis_reused": {
+        "A": "A: skin effect increases near-surface dissipation used in induction heating",
+        "B": "B: skin effect does not remove network phase imbalances",
+        "C": "C: skin effect does not eliminate harmonic distortion",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://technav.ieee.org/topic/induction-heating/",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-8b49c420c2cfe045",
+      "representative_id": "G1-ELE-061",
+      "grade_member_ids": [
+        "G1-ELE-061",
+        "G2-ELEC-206"
+      ],
+      "canonical_sha256": "8b49c420c2cfe045195bf16be9f6d9e0171f09908e24a7be4f8c3146d688ec4d",
+      "original_question_UNCHANGED": "Efectul pelicular al unui curent alternativ care străbate un conductor masiv se datorează:",
+      "original_ABC_UNCHANGED": {
+        "A": "unor curenţi paraziţi induşi în conductor, simetrici faţă de axa acestuia",
+        "B": "numai unor forţe electromotoare induse datorită variaţiei curentului",
+        "C": "capacităţii conductorului faţă de pământ"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-061": "A",
+        "G2-ELEC-206": "A"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_findings": "Skin effect comes from induced fields and nonuniform internal current; options A and B compete, neither exactly states the general Maxwell mechanism.",
+      "A_B_C_analysis_reused": {
+        "A": "A local self-induced eddy field opposes interior current and crowds AC near surface",
+        "B": "B: not merely any changing EMF; skin-current redistribution involves conductor field/induction",
+        "C": "C: capacitance to ground is not principal cause",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://technav.ieee.org/topic/skin-effect-heating/",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f0166d3760ee1d1f",
+      "representative_id": "G1-ELE-062",
+      "grade_member_ids": [
+        "G1-ELE-062",
+        "G2-ELEC-207"
+      ],
+      "canonical_sha256": "f0166d3760ee1d1f9b64a1cdf619a7b7db73df69a2f34fd92da3ad332f87b67e",
+      "original_question_UNCHANGED": "Energia electrica reactiva:",
+      "original_ABC_UNCHANGED": {
+        "A": "este o energie electrica complementara, care serveşte la magnetizarea bobinajelor",
+        "B": "se poate transforma în energie mecanica",
+        "C": "se poate transforma în energie luminoasa"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-062": "A",
+        "G2-ELEC-207": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Reactive power exchanges stored electric/magnetic energy; 'reactive energy' phrasing is textbook shorthand, not real energy consumption.",
+      "A_B_C_analysis_reused": {
+        "A": "A: inductive reactive exchange magnetizes windings/fields without net average useful work",
+        "B": "B: a reactive-power component is not directly useful mechanical work",
+        "C": "C: reactive power is not direct light-producing active energy",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-599db2eade72bfaa",
+      "representative_id": "G1-ELE-063",
+      "grade_member_ids": [
+        "G1-ELE-063",
+        "G2-ELEC-208"
+      ],
+      "canonical_sha256": "599db2eade72bfaaec3818a92d1cf66e3833b34e44967db7f4e82276722c5708",
+      "original_question_UNCHANGED": "Energia magnetostatică produsă de curentul i care parcurge un circuit care conţine o inductanţă L este egală cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "1/2 L i",
+        "B": "1/2 Li2",
+        "C": "Li"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-063": "B",
+        "G2-ELEC-208": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Ideal inductor stored magnetic energy W=Li²/2; option B.",
+      "A_B_C_analysis_reused": {
+        "A": "A 1/2 Li misses second factor I and fails joule dimensions",
+        "B": "B: 1/2 L I² is magnetic field energy",
+        "C": "C: Li not energy, units Wb (flux linkage)",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-62d5caa5fe654d18",
+      "representative_id": "G1-ELE-064",
+      "grade_member_ids": [
+        "G1-ELE-064",
+        "G2-ELEC-209"
+      ],
+      "canonical_sha256": "62d5caa5fe654d18fd2d00292484b772b7019f00670d316c7495cb9c2a3e4163",
+      "original_question_UNCHANGED": "Energia electrostatică a unui conductor izolat în spaţiu, încărcat cu o sarcină q şi aflat la un potenţial V este egală cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "1/2 q V",
+        "B": "q V",
+        "C": "2 q V"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-064": "A",
+        "G2-ELEC-209": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Linear isolated conductor self-capacitance stored energy W=qV/2 with zero reference at infinity.",
+      "A_B_C_analysis_reused": {
+        "A": "A: U=1/2 qV for linear isolated conductor charged from 0",
+        "B": "B qV is twice U when V increases with charge",
+        "C": "C 2qV is four times actual for linear conductor",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-1-capacitors-and-capacitance",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-0a63250b325369f2",
+      "representative_id": "G1-ELE-065",
+      "grade_member_ids": [
+        "G1-ELE-065",
+        "G2-ELEC-210"
+      ],
+      "canonical_sha256": "0a63250b325369f244947c453b3e03891a164b72b00ca3e1df521dc87cacde9e",
+      "original_question_UNCHANGED": "În cazul producerii unui scurtcircuit într-o instalaţie, are loc următorul fenomen:",
+      "original_ABC_UNCHANGED": {
+        "A": "creste tensiunea de alimentare a instalaţiei",
+        "B": "creste impedanţa echivalenta a instalaţiei",
+        "C": "creste curentul de alimentare a instalaţiei"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-065": "C",
+        "G2-ELEC-210": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "At a fault, effective path impedance generally collapses increasing source current, but actual current depends source/protection and fault type.",
+      "A_B_C_analysis_reused": {
+        "A": "A supply voltage does not necessarily increase under a short; sag may occur",
+        "B": "B network equivalent impedance typically decreases when shorted, not increases",
+        "C": "C short lowers path impedance and raises fault current",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-8af7978825389399",
+      "representative_id": "G1-ELE-066",
+      "grade_member_ids": [
+        "G1-ELE-066",
+        "G2-ELEC-211"
+      ],
+      "canonical_sha256": "8af797882538939935a8a1beed7ff10ddc31f4fd3e2b55edbcd25839bf1f4e5a",
+      "original_question_UNCHANGED": "Enunţul \"sarcinile electrice nu pot fi create și nici distruse, ci doar mutate\" reprezintă o consecință pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "legea conservării sarcinii electrice",
+        "B": "legea lui Coulomb",
+        "C": "legea lui Laplace"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-066": "A",
+        "G2-ELEC-211": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Charge conservation means net charge is neither created nor destroyed in ordinary electric circuit processes.",
+      "A_B_C_analysis_reused": {
+        "A": "A direct statement of charge conservation",
+        "B": "B Coulomb describes charge force not conservation",
+        "C": "C Laplace law refers another physical context",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge-and-electric-field",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge-and-electric-field",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-e63952b743f529c0",
+      "representative_id": "G1-ELE-067",
+      "grade_member_ids": [
+        "G1-ELE-067",
+        "G2-ELEC-212"
+      ],
+      "canonical_sha256": "e63952b743f529c0cb34f40e33dd056b623dd9886135ae6b4026b327c50344a5",
+      "original_question_UNCHANGED": "Enunţul \"suma algebrică a tensiunilor electromotoare dintr-o buclă a unei reţele electrice este egală cu suma algebrică a căderilor de tensiune din buclă\" reprezintă:",
+      "original_ABC_UNCHANGED": {
+        "A": "Prima lege a lui Kirchhoff",
+        "B": "a doua lege a lui Kirchhoff",
+        "C": "Legea Joule -Lenz"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-067": "B",
+        "G2-ELEC-212": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Sum of emf equals signed drops around closed loop is Kirchhoff second voltage law.",
+      "A_B_C_analysis_reused": {
+        "A": "A KCL sums junction currents, not loop voltages",
+        "B": "B loop EMF balances drops (KVL)",
+        "C": "C Joule-Lenz heating relation P=I²R unrelated",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-058febcbfd238513",
+      "representative_id": "G1-ELE-068",
+      "grade_member_ids": [
+        "G1-ELE-068",
+        "G2-ELEC-213"
+      ],
+      "canonical_sha256": "058febcbfd2385135909a4993279a18bb9a425740b228542e43ae6d758eccb28",
+      "original_question_UNCHANGED": "Expresia B x i x l , unde i este intensitatea curentului care străbate un conductor de lungime l, situat perpendicular pe câmpul de inducţie magnetică de mărime B, reprezintă:",
+      "original_ABC_UNCHANGED": {
+        "A": "o forţă",
+        "B": "o tensiune",
+        "C": "o rezistenţă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-068": "A",
+        "G2-ELEC-213": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Perpendicular conductor magnetic force F=B I l, units N, option A.",
+      "A_B_C_analysis_reused": {
+        "A": "A |F|=B I l for perpendicular conductor",
+        "B": "B BIl has force unit N not voltage",
+        "C": "C BIl is not resistance Ω",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-4b53a6fa89a1be41",
+      "representative_id": "G1-ELE-069",
+      "grade_member_ids": [
+        "G1-ELE-069",
+        "G2-ELEC-214"
+      ],
+      "canonical_sha256": "4b53a6fa89a1be411d6cb6966bea30c5c5cd83473f4e04dd4a8496c00d7e767d",
+      "original_question_UNCHANGED": "Expresia matematica a legii lui Ohm pentru o porţiune de circuit este:",
+      "original_ABC_UNCHANGED": {
+        "A": "I = U / R",
+        "B": "I = UxR",
+        "C": "I = U - R"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-069": "A",
+        "G2-ELEC-214": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "For ohmic circuit portion Ohm current I=U/R, not U·R or U-R.",
+      "A_B_C_analysis_reused": {
+        "A": "A I=U/R exactly for ohmic circuit element",
+        "B": "B U×R units VΩ wrong",
+        "C": "C U−R subtraction incompatible units",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-482817fbce16f0be",
+      "representative_id": "G1-ELE-070",
+      "grade_member_ids": [
+        "G1-ELE-070",
+        "G2-ELEC-215"
+      ],
+      "canonical_sha256": "482817fbce16f0be1603a18b4d1a251d23ef0e36771943e8910214bccc5de4dc",
+      "original_question_UNCHANGED": "Extinderea domeniului de măsurare la ampermetre se realizează cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "rezistente adiţionale",
+        "B": "shunturi",
+        "C": "bobine înseriate"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-070": "B",
+        "G2-ELEC-215": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Analog ammeter galvanometer range increased by low-resistance parallel shunt; voltmeter uses series multiplier.",
+      "A_B_C_analysis_reused": {
+        "A": "A series additional resistor is standard voltmeter extension, not current meter",
+        "B": "B low-resistance shunt diverts current and increases range",
+        "C": "C series coils no general current range extension",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}
