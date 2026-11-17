@@ -1,0 +1,248 @@
+{
+  "checkpoint": "CKPT-121",
+  "date": "2026-11-17",
+  "baseline_head": "984e3da6634a47abbe00feeb07b125e4fc70c7e9",
+  "protocol": "BATCH8 pilot 2/2, eight unique QABC units / sixteen grade IDs",
+  "real_agents": "Single assistant using technical, source, linguistic, data QA role checklists; independent subagents NOT_RUN",
+  "policy": "Only documentary cards and progress ledger, original keys/QABC/MASTER/HTML/APK unchanged, no merge or release",
+  "gates": {
+    "source_verification": "PRELIMINARY_SCOPE_CHECK",
+    "exam_bibliography_2026": "UNVERIFIED",
+    "independent_QA": "NOT_RUN",
+    "learner_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-8b49c420c2cfe045",
+      "qabc_sha256": "8b49c420c2cfe045195bf16be9f6d9e0171f09908e24a7be4f8c3146d688ec4d",
+      "representative_id": "G1-ELE-061",
+      "member_ids": "G1-ELE-061;G2-ELEC-206",
+      "original_keys_by_id_JSON": "{\"G1-ELE-061\":\"A\",\"G2-ELEC-206\":\"A\"}",
+      "question_original": "Efectul pelicular al unui curent alternativ care străbate un conductor masiv se datorează:",
+      "A_original": "unor curenţi paraziţi induşi în conductor, simetrici faţă de axa acestuia",
+      "B_original": "numai unor forţe electromotoare induse datorită variaţiei curentului",
+      "C_original": "capacităţii conductorului faţă de pământ",
+      "source": {
+        "url": "https://technav.ieee.org/topic/skin-effect/",
+        "locator": "IEEE Technology Navigator Skin effect, self-induced eddy currents",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "Schimbarea câmpului magnetic în conductor induce curenți ce modifică densitatea spre periferie.",
+      "abc_analysis": {
+        "A": "A local self-induced eddy field opposes interior current and crowds AC near surface",
+        "B": "B: not merely any changing EMF; skin-current redistribution involves conductor field/induction",
+        "C": "C: capacitance to ground is not principal cause"
+      },
+      "pairwise_inference": "A/B ambele invocă inducția, A descrie curenții vs B numai FEM; C invocă eronat capacitatea de pământ.",
+      "reverse_counterexample": "B spune «numai» și exclude mecanismul complet; la conductor subțire și f mic efectul este slab.",
+      "scope": "Conductor masiv, secțiune simetrică; simplificare «curenți paraziți simetrici» versus FEM indusă în B.",
+      "linguistic_and_scope_gate": "LEXICAL_COMPLEMENTARY_INDUCTION_RATIONALES",
+      "preliminary_candidate": "A",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-3df98197d1baedc5",
+      "qabc_sha256": "3df98197d1baedc58ac26c74559ba634043054a70d3ff27b67d20298a005bd54",
+      "representative_id": "G1-ELE-121",
+      "member_ids": "G1-ELE-121;G2-ELEC-263",
+      "original_keys_by_id_JSON": "{\"G1-ELE-121\":\"B\",\"G2-ELEC-263\":\"B\"}",
+      "question_original": "Într-o schemă electrică având un sistem de bare colectoare, separatorul asigură:",
+      "A_original": "deconectarea unor curenţi de suprasarcină;",
+      "B_original": "izolarea unei părţi din instalaţie de altă parte a instalaţiei aflată sub tensiune;",
+      "C_original": "comutaţia curentului în regim normal de funcţionare.",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+        "locator": "Schneider Disconnector (or isolator), IEC60947-3, safe isolation, no load interruption",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "Separatorul realizează izolarea electrică pentru lucru în siguranță fără ruperea curentului de sarcină.",
+      "abc_analysis": {
+        "A": "Separatorul nu este întreruptor de suprasarcină.",
+        "B": "Izolează partea instalației pentru separare electrică.",
+        "C": "Nu este dispozitivul de comandă a curentului normal de sarcină."
+      },
+      "pairwise_inference": "B izolare vs A întrerupere suprasarcină și C manevră normală; A/C reprezintă funcții de întrerupere, nu de separare.",
+      "reverse_counterexample": "Un load-break switch poate comuta curentul, însă este alt dispozitiv și nu trebuie substituit.",
+      "scope": "Separator simplu, nu separator de sarcină; proceduri și interblocări locale.",
+      "linguistic_and_scope_gate": "EXACT_DEVICE_VS_LOAD_BREAK",
+      "preliminary_candidate": "B",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-7ae53daef19bfc2f",
+      "qabc_sha256": "7ae53daef19bfc2ff26e74e8cea57be4180a92eb4b4cbab88a9581ad4cce9246",
+      "representative_id": "G1-ELE-123",
+      "member_ids": "G1-ELE-123;G2-ELEC-265",
+      "original_keys_by_id_JSON": "{\"G1-ELE-123\":\"C\",\"G2-ELEC-265\":\"C\"}",
+      "question_original": "Într-un conductor curentul alternativ are densitatea:",
+      "A_original": "uniforma",
+      "B_original": "mai mare în centrul conductorului",
+      "C_original": "mai mare la periferia conductorului",
+      "source": {
+        "url": "https://technav.ieee.org/topic/skin-effect/",
+        "locator": "IEEE Skin effect, surface current density higher than central at relevant frequency",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "La frecvență suficient de mare, densitatea curentului alternativ este maximă spre periferie.",
+      "abc_analysis": {
+        "A": "Cu efect pelicular, densitatea nu rămâne uniformă la toate frecvențele.",
+        "B": "În AC cu efect pelicular densitatea este mai mică la centru.",
+        "C": "În conductorul de secțiune mare sau frecvență suficientă, densitatea crește spre periferie."
+      },
+      "pairwise_inference": "A uniformitatea aproximativă DC/δ mare, B maxim centru opus fizicii, C maxim periferie susținut în regimul skin.",
+      "reverse_counterexample": "Când δ≫raza, densitatea este aproape uniformă, ceea ce califică enunțul.",
+      "scope": "Frecvență și rază raportate la adâncimea peliculară δ; nu universal la orice AC.",
+      "linguistic_and_scope_gate": "FREQUENCY_RADIUS_UNQUALIFIED",
+      "preliminary_candidate": "C",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-57f2c737a49ceb8f",
+      "qabc_sha256": "57f2c737a49ceb8fe8763e3d9692785e4593ad46effe2b759a7a0357837180f9",
+      "representative_id": "G1-ELE-127",
+      "member_ids": "G1-ELE-127;G2-ELEC-267",
+      "original_keys_by_id_JSON": "{\"G1-ELE-127\":\"A\",\"G2-ELEC-267\":\"A\"}",
+      "question_original": "Într-un circuit de curent alternativ în care puterea activa absorbita este 4 kW iar puterea reactiva este de 3 kVAr, factorul de putere este:",
+      "A_original": "0,8",
+      "B_original": "0,75",
+      "C_original": "4/3",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+        "locator": "Schneider Definition of reactive power, S²=P²+Q², PF=P/S",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "S=√(4²+3²)=5 kVA, cosφ=P/S=4/5=0,8.",
+      "abc_analysis": {
+        "A": "S=√(4²+3²)=5 kVA; cosφ=4/5=0,8.",
+        "B": "0,75 este o valoare incorectă.",
+        "C": "4/3 depășește limita fizică 1 pentru factorul de putere sinusoidal."
+      },
+      "pairwise_inference": "A=0,8 confirmat; B=0,75 calcul greșit; C=1,333 depășește limitele.",
+      "reverse_counterexample": "C=4/3 depășește 1; B=0,75 nu rezultă din raportul corect.",
+      "scope": "Regim convențional sinusoidal și triunghiul puterilor; armonicile pot schimba factorul real.",
+      "linguistic_and_scope_gate": "SINUSOIDAL_MODEL",
+      "preliminary_candidate": "A",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-c8440bfef3fb1dbb",
+      "qabc_sha256": "c8440bfef3fb1dbb14e0c79f7bfdbe94005956f63d208e08d3682950ce1d679f",
+      "representative_id": "G1-ELE-132",
+      "member_ids": "G1-ELE-132;G2-ELEC-272",
+      "original_keys_by_id_JSON": "{\"G1-ELE-132\":\"A\",\"G2-ELEC-272\":\"A\"}",
+      "question_original": "Într-un circuit serie format dintr-un rezistor de rezistenţă R, o bobină de inductanţă L şi un condensator de capacitate C, curentul din circuit este defazat în urma tensiunii la borne dacă:",
+      "A_original": "reactanţa totală a circuitului X este > 0",
+      "B_original": "reactanţa totală a circuitului            X este <0",
+      "C_original": "reactanţa totală a circuitului este =0",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-key-equations",
+        "locator": "OpenStax Ch15 Key Equations, φ=atan[(XL−XC)/R]",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "În RLC serie X=ωL−1/(ωC)>0 înseamnă caracter inductiv: curentul întârzie față de tensiune.",
+      "abc_analysis": {
+        "A": "X=ωL−1/(ωC)>0 deci circuitul este inductiv, iar curentul întârzie față de tensiune.",
+        "B": "X<0 este caracter capacitiv și curentul înaintea tensiunii.",
+        "C": "X=0 la rezonanță dă regim rezistiv, în fază."
+      },
+      "pairwise_inference": "A inductiv întârziere; B capacitiv avans; C rezonant fără defazaj.",
+      "reverse_counterexample": "X=0 înseamnă defazaj zero; X<0 înseamnă caracter capacitiv, curent înainte.",
+      "scope": "Circuit liniar RLC serie sinusoidal și convenție X=XL−XC.",
+      "linguistic_and_scope_gate": "REACTANCE_SIGN_CONVENTION",
+      "preliminary_candidate": "A",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-37d8762ebf55d04c",
+      "qabc_sha256": "37d8762ebf55d04cf2f6a1edfcf5c55e0c802d785dd8165eb5adda40bf3d29f8",
+      "representative_id": "G1-ELE-133",
+      "member_ids": "G1-ELE-133;G2-ELEC-273",
+      "original_keys_by_id_JSON": "{\"G1-ELE-133\":\"C\",\"G2-ELEC-273\":\"C\"}",
+      "question_original": "La generatorul sincron viteza de rotaţie a câmpului magnetic al statorului fata de viteza de rotaţie a rotorului maşinii este:",
+      "A_original": "mai mare",
+      "B_original": "mai mica",
+      "C_original": "egala",
+      "source": {
+        "url": "https://www.sciencedirect.com/topics/engineering/synchronous-machine",
+        "locator": "Synchronous machine overview, speed fixed by frequency and poles; stable operation",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "Rotorul generatorului sincron și câmpul magnetic statoric se rotesc la aceeași viteză în regim sincron.",
+      "abc_analysis": {
+        "A": "Viteza câmpului magnetic statoric nu este mai mare decât cea a rotorului în sincronism stabil.",
+        "B": "Viteza câmpului magnetic statoric nu este mai mică decât cea a rotorului sincron.",
+        "C": "Mașină sincronă: rotorul urmărește câmpul rotitor cu aceeași viteză unghiulară în regim stabil."
+      },
+      "pairwise_inference": "A câmp mai rapid și B mai lent contrazic sincronismul; C egal susținut afirmativ.",
+      "reverse_counterexample": "În tranzitorii unghiul poate oscila, dar turația medie sincronă rămâne aceeași în condiții stabile.",
+      "scope": "Mașină sincronă, regim stabil; exclude pornire și pierderea sincronismului.",
+      "linguistic_and_scope_gate": "STEADY_STATE_SYNC",
+      "preliminary_candidate": "C",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-b0e65dd59633f0d4",
+      "qabc_sha256": "b0e65dd59633f0d4987e32668b19d53b1802e98e8155dba2fb7e4bd0b8564fc2",
+      "representative_id": "G1-ELE-135",
+      "member_ids": "G1-ELE-135;G2-ELEC-275",
+      "original_keys_by_id_JSON": "{\"G1-ELE-135\":\"B\",\"G2-ELEC-275\":\"B\"}",
+      "question_original": "Inversa rezistenţei echivalente a n rezistoare legate în paralel este egală cu:",
+      "A_original": "suma rezistenţelor celor n rezistoare",
+      "B_original": "suma inverselor rezistenţelor celor n rezistoare",
+      "C_original": "suma pătratelor rezistenţelor celor n rezistoare",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "OpenStax §10.2 Resistors in Parallel, 1/Req=Σ1/Ri",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "Curentul total paralel este suma curenților ramurilor la aceeași tensiune, deci 1/Req=Σ(1/Rk).",
+      "abc_analysis": {
+        "A": "Suma rezistențelor corespunde conexiunii serie.",
+        "B": "1/Req=Σ(1/R_i) pentru conexiunea în paralel.",
+        "C": "Suma pătratelor nu are dimensiunea corectă."
+      },
+      "pairwise_inference": "B inversul rezistenței total este suma inverselor; A suma R la serie; C suma R² incorect dimensional.",
+      "reverse_counterexample": "A este pentru serie; C suma pătratelor are unități incompatibile.",
+      "scope": "Rezistoare ohmice, contacte ideale.",
+      "linguistic_and_scope_gate": "DIMENSIONAL",
+      "preliminary_candidate": "B",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-9fd84e7f1e23aac8",
+      "qabc_sha256": "9fd84e7f1e23aac8ebad37e41641d4569a20f04b4096250d3347f7f296e6978c",
+      "representative_id": "G1-ELE-136",
+      "member_ids": "G1-ELE-136;G2-ELEC-276",
+      "original_keys_by_id_JSON": "{\"G1-ELE-136\":\"C\",\"G2-ELEC-276\":\"C\"}",
+      "question_original": "La maşina sincrona turaţia variază în funcţie de sarcina astfel:",
+      "A_original": "creste când sarcina creste",
+      "B_original": "scade când sarcina scade",
+      "C_original": "rămâne constanta la variaţia sarcinii",
+      "source": {
+        "url": "https://universalcurriculum.org/learn?content=644&path=all&unit=644",
+        "locator": "Synchronous machine construction and excitation: n_s=120f/P and rotor synchronous",
+        "access": "PUBLIC_SOURCE_WEB_RESEARCH; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "context_positive": "La frecvență și număr de poli fixe, în regim sincron variația sarcinii schimbă unghiul de cuplu, nu turația.",
+      "abc_analysis": {
+        "A": "Motorul sincron nu crește turația odată cu sarcina, la f fix.",
+        "B": "Motorul sincron nu scade turația la reducerea sarcinii, la f fix.",
+        "C": "Turația sincronă este fixată de frecvență și numărul polilor, în limita sincronismului."
+      },
+      "pairwise_inference": "A/B pretind variații direcționale de turație fără schimbarea f; C turație constantă la f fixă.",
+      "reverse_counterexample": "Generatorul insular cu frecvență variabilă poate avea altă turație odată cu sarcina, deci C nu e universal.",
+      "scope": "Mașină sincronă conectată la o rețea de frecvență fixă; fără pierderea sincronismului.",
+      "linguistic_and_scope_gate": "FREQUENCY_FIXED_GRID_SYNC",
+      "preliminary_candidate": "C",
+      "independent_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    }
+  ]
+}
