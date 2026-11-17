@@ -1,0 +1,556 @@
+{
+  "checkpoint": "CKPT-173",
+  "date": "2026-11-17",
+  "head_before": "a0bf01674506351ca6ef911b66790fda903a96e2",
+  "units": 15,
+  "grade_ids": 15,
+  "counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 6,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 3,
+    "CONDITIONAL_MODEL_OR_SOURCE": 6
+  },
+  "technical_findings": [
+    "I7 §5.2.6.4 allows designated connection accessories including other than box/junction box; NOR016 contains word numai narrowing C",
+    "I7 §5.2.6.6 traction prohibition has limited exceptions; NOR028 absolute wording not universally accurate",
+    "I7 §5.3.3.18 directly prohibits oil-insulated devices in distribution boards",
+    "I7 §5.4.7 exact 2kW standard outlet circuit residential"
+  ],
+  "applied": "Source contextual read, source-specificity no fallback. Prior originals unchanged.",
+  "learner_approved": 0,
+  "independent_QA": "NOT_RUN",
+  "cards": [
+    {
+      "unit_id": "AU-feed56e776efeebd",
+      "representative_id": "G1-NOR-014",
+      "grade_ids": [
+        "G1-NOR-014"
+      ],
+      "qabc_sha256": "feed56e776efeebdf9dc9600367b7d1da74feac3bb4c847fe95f9459c635f561",
+      "question_UNCHANGED": "Legăturile conductoarelor de protecţie trebuie executate:",
+      "ABC_UNCHANGED": {
+        "A": "numai prin sudare",
+        "B": "numai prin înşurubări, cu contrapiuliţe şi şaibă elastică",
+        "C": "prin sudare sau prin înşurubări cu contrapiuliţe şi inele de siguranţă (şaibă elastică)"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-014": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "rationale_with_ABCs": "I7 §5.2.6.12 prevede sudare SAU înșurubare asigurată contra desșurubării, contrapiuliță/șaibă elastică; A/B «numai» exclud metodă permisă, C concordă.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.2.6.12",
+        "access": "WEB_HTML_EXACT"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 5.2.6.12 protective conductor connection welding or anti-loosening screws",
+        "ABC": "A: welding-only excludes secure screw option; B: screw-only excludes welding; C: welding or secured threaded joints corresponds to documented cases."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-1ab57c30b3f6f8ba",
+      "representative_id": "G1-NOR-015",
+      "grade_ids": [
+        "G1-NOR-015"
+      ],
+      "qabc_sha256": "1ab57c30b3f6f8babfafd42b141d2c623b261951390feeff58845ec4f55fe948",
+      "question_UNCHANGED": "Legăturile conductoarelor izolate se acoperă cu material electroizolant (de ex. tub varniş, bandă izolantă, capsule izolante etc):",
+      "ABC_UNCHANGED": {
+        "A": "numai dacă sunt accesibile",
+        "B": "opţional",
+        "C": "întotdeauna"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-015": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "rationale_with_ABCs": "I7 §5.2.6.7 cere acoperirea îmbinărilor conductoarelor izolate cu material electroizolant. C corespunde regulii, A și B adaugă excepții nejustificate pentru tipul conexiunii întrebat.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.2.6.7",
+        "access": "WEB_HTML_EXACT; SAFETY_SCOPE_JOINTS"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 5.2.6.7 insulated conductor joints",
+        "ABC": "A: only if accessible excludes hidden joints in enclosures; B: optional protection contradicts insulation rule; C: joints need appropriate insulating protection, but modern approved insulated terminals could provide insulation intrinsically."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-c57ec6fca3d0e6f6",
+      "representative_id": "G1-NOR-016",
+      "grade_ids": [
+        "G1-NOR-016"
+      ],
+      "qabc_sha256": "c57ec6fca3d0e6f68afa4e838126740fdca103c8fc6fdc6f0c63a0618f14035c",
+      "question_UNCHANGED": "Legăturile electrice între conductoare izolate pentru îmbinări sau derivaţii se fac:",
+      "ABC_UNCHANGED": {
+        "A": "în interiorul tuburilor sau ţevilor de protecţie",
+        "B": "în interiorul golurilor din elementele de construcţie",
+        "C": "numai în doze sau cutii de legătură"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-016": "C"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "rationale_with_ABCs": "I7 §5.2.6.4 permite conexiuni în accesorii special prevăzute în acest scop (DOZE, CUTII ETC); C «numai în doze sau cutii» poate exclude alte accesorii omologate. A/B inadmisibile §5.2.6.5. Răspuns probabil intenționat C dar necondiționat este semantic prea îngust.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.2.6.4-5",
+        "access": "WEB_HTML_EXACT_WITH_NEIGHBOR"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 5.2.6.4–5 wiring joints in accessories",
+        "ABC": "A: standard unapproved in-tube free splices not allowed; B: unprotected building void splices not allowed; C: boxes are a typical place but 'numai' might exclude junction accessories/connector systems also permitted by article."
+      },
+      "provisional_other_choice": "C_INTENDED_BUT_ONLY_TOO_NARROW",
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-2f9375b44a4132da",
+      "representative_id": "G1-NOR-017",
+      "grade_ids": [
+        "G1-NOR-017"
+      ],
+      "qabc_sha256": "2f9375b44a4132daebdd8a45d90814715f151d1ec6cc0222bbb593ffa1c582eb",
+      "question_UNCHANGED": "Măsurile pentru evitarea contactului direct cu materialul combustibil al echipamentelor electrice cu grad de protecţie inferior IP54 se aplică:",
+      "ABC_UNCHANGED": {
+        "A": "numai la montarea aparentă a elementelor de instalaţii electrice",
+        "B": "numai la montarea sub tencuială a elementelor de instalaţii electrice",
+        "C": "atât la montarea aparentă cât şi la montarea îngropată"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-017": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "rationale_with_ABCs": "I7 §3.0.3.8 cere distanțare/material incombustibil pentru echipamente sub IP54 pe substrat combustibil; nu distinge doar aparent/îngropat, astfel C plauzibil, dar extensia la «în toate cazurile» cere sfera aplicației.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§3.0.3.7-8",
+        "access": "WEB_HTML_EXACT_RULE_PARTIAL_MOUNTING_SCOPES"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 3.0.3.8 installations on combustible materials for IP under54",
+        "ABC": "A: apparent only omits concealed mounting; B: under plaster only omits apparent; C: both exposed and concealed require prescribed thermal separation measures."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-52cd282dda37ea3f",
+      "representative_id": "G1-NOR-018",
+      "grade_ids": [
+        "G1-NOR-018"
+      ],
+      "qabc_sha256": "52cd282dda37ea3ff030b7b6f1ca5623d64a9d4f107dc7738a9aea35c7662097",
+      "question_UNCHANGED": "Montarea pe materiale combustibile a echipamentelor electrice cu grad de protecţie inferior IP54:",
+      "ABC_UNCHANGED": {
+        "A": "este strict interzisă",
+        "B": "este admisă fără restricţii",
+        "C": "se face interpunând materiale incombustibile între acestea şi materialul combustibil sau elementele de distanţare"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-018": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "rationale_with_ABCs": "I7 §3.0.3.8 permite montajul sub IP54 pe combustibile cu interpunere incombustibilă/distanțare, motiv pentru C; A interdicție absolută și B fără restricții false. Ediție, geometrie și clase încă de verificat.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§3.0.3.7-8",
+        "access": "WEB_HTML_EXACT_RULE_WITH_MATERIAL_SPEC"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 3.0.3.8 separation of low-IP equipment from combustible substrate",
+        "ABC": "A: blanket prohibition disregards safe separation measures; B: unrestricted mounting unsafe; C: incombustible barrier or stand-off elements in suitable configuration are prescribed."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-e3c541c776b035bc",
+      "representative_id": "G1-NOR-019",
+      "grade_ids": [
+        "G1-NOR-019"
+      ],
+      "qabc_sha256": "e3c541c776b035bc98b32ba98fb2f4fc811712b0b685eb10e3923bc8a824d5f3",
+      "question_UNCHANGED": "Montarea tuburilor de protecţie a conductoarelor electrice de j.t. pe pardoseala combustibilă a podurilor:",
+      "ABC_UNCHANGED": {
+        "A": "este strict interzisă",
+        "B": "este admisă fără restricţii",
+        "C": "trebuie evitată; se poate face excepţie pentru tuburi metalice"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-019": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "rationale_with_ABCs": "C «evitată, excepție pentru tuburi metalice» rezultă din cercetarea anterioară; I7 §5.2.12.2.12 permite tuburi metalice pe combustibile, dar pentru pardoseala podului este nevoie de clauza specifică privind podurile.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.2.12.2.12 generica vs poduri",
+        "access": "GENERIC_TO_SPECIFIC_GAP_NOT_SIGNED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 5.2.12.2.5 tube placement on combustible attic floors",
+        "ABC": "A: absolute ban ignores metal-tube exceptions; B: free mounting disregards fire precautions; C: avoid installation; metal-tube exception where necessary."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-fa666811491802b3",
+      "representative_id": "G1-NOR-020",
+      "grade_ids": [
+        "G1-NOR-020"
+      ],
+      "qabc_sha256": "fa666811491802b36ead2d9d594be31cd0c21790621dba4278fc5d403db1c3af",
+      "question_UNCHANGED": "Amplasarea aparatelor cu ulei în interiorul tablourilor electrice:",
+      "ABC_UNCHANGED": {
+        "A": "este interzisă",
+        "B": "este permisă în anumite condiţii",
+        "C": "este permisă, dar nu se recomandă"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-020": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "rationale_with_ABCs": "I7 §5.3.3.18 interzice instalarea în tablourile distribuție a aparatelor cu dielectric combustibil (ex. ulei). A corect față de B/C.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.3.3.18",
+        "access": "WEB_HTML_EXACT"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4 ; https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+        "locator": "I7 5.3.3.18 and PE102 historic5.2.57",
+        "ABC": "A: oil-bearing apparatus prohibited inside distribution panels under combustible dielectric interpretation; B: conditional permission not shown in applicable I7 passage for combustible oil; C: unrestricted 'permitted but not recommended' too weak."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-adf94c20afc16c13",
+      "representative_id": "G1-NOR-021",
+      "grade_ids": [
+        "G1-NOR-021"
+      ],
+      "qabc_sha256": "adf94c20afc16c13fc550c6b69fff00252e1cd64ef0926a0d475535a06576b27",
+      "question_UNCHANGED": "Căile de curent ce nu se pot realiza în execuţie etanşă, în încăperi şi în spaţii din exterior cu mediu coroziv, pot fi realizate întotdeauna din:",
+      "ABC_UNCHANGED": {
+        "A": "Cu",
+        "B": "Al",
+        "C": "otel"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-021": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "rationale_with_ABCs": "Cu are rezistență mai bună la condiții în care Al/otel nu sunt potrivite conform I7 §5.1.7.2(b), dar «întotdeauna Cu» poate ignora mediul coroziv concret și aliaje/protecții; material și excepții necesită cercetare specifică.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.1.7.1-2(b)",
+        "access": "WEB_HTML_EXACT_BUT_NO_ALL_ENVIRONMENTS"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 5.1.7.2(b) corrosive environments when protection of Al/steel impossible",
+        "ABC": "A: copper can be selected where unsealed Al/steel not resistant, not necessarily universal for every corrosive substance; B: unprotected Al may corrode, so not always; C: unprotected steel may corrode, so not always."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-b0e1dd6df5135cd3",
+      "representative_id": "G1-NOR-022",
+      "grade_ids": [
+        "G1-NOR-022"
+      ],
+      "qabc_sha256": "b0e1dd6df5135cd35e7835a28c9d1bd60e64042a8015dd269d975bb64b705203",
+      "question_UNCHANGED": "Puterea instalată pe un circuit monofazat de prize din clădirile de locuit şi social - culturale este de:",
+      "ABC_UNCHANGED": {
+        "A": "1 kW",
+        "B": "1,5 kW",
+        "C": "2 kW"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-022": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "rationale_with_ABCs": "I7 §5.4.7: puterea instalată pe un circuit monofazat de prize din clădiri locuit/social-culturale este 2 kW, C. Pentru receptoare >2kW circuite separate.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.4.7 cu contextualizare circuite separate",
+        "access": "WEB_HTML_EXACT"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 5.4.7 on residential/social-cultural single-phase socket circuits",
+        "ABC": "A: 1kW is not the stated nominal installed rating; B: 1.5kW not the designated value; C: 2kW is the older nominal default/circuit calculation rule."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-250aa31d22a753c4",
+      "representative_id": "G1-NOR-025",
+      "grade_ids": [
+        "G1-NOR-025"
+      ],
+      "qabc_sha256": "250aa31d22a753c4b14e1dd34290f609e6251b17b817b98f9e7c5143f7a3529c",
+      "question_UNCHANGED": "La realizarea tablourilor şi barelor de distribuţie de j.t., distanţa minimă de izolare în aer între piesele fixe sub tensiune ale diferitelor faze, precum şi între acestea şi părţi metalice legate la pământ trebuie să fie de cel puţin:",
+      "ABC_UNCHANGED": {
+        "A": "10 mm",
+        "B": "15 mm",
+        "C": "20 mm"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-025": "B"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "rationale_with_ABCs": "B 15mm este valoarea importată; I7 §5.3.3.19 se referă la bare neizolate și are distanțe de 50/100/200mm la elemente de construcție, nu direct între faze; distanța între bare stabilită STAS 7944. Fără sursă aplicabilă exact «între piese fixe» nu se certifică valoarea B.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.3.3.19.2 și STAS 7944 / standardul exact component",
+        "access": "SOURCE_SCOPE_MISMATCH_NOT_VERIFIED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf ; https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "PE102 5.2.62 15mm; I7 5.3.3.19–20 references harmonized product standard",
+        "ABC": "A: 10mm unsupported by old PE102 clause; B: 15mm given in historic PE102 for bare live busbars; C: 20mm exceeds that historical minimum, does not mean required minimum."
+      },
+      "provisional_other_choice": "NONE_UNTIL_ACTUAL_BAR_CLEARANCE",
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-be981412cea00b34",
+      "representative_id": "G1-NOR-028",
+      "grade_ids": [
+        "G1-NOR-028"
+      ],
+      "qabc_sha256": "be981412cea00b341db0ca9ead49cb68e49f2c0b289e3694ea38bb47dc6a892b",
+      "question_UNCHANGED": "Supunerea legăturilor electrice la eforturi de tracţiune:",
+      "ABC_UNCHANGED": {
+        "A": "este permisă întotdeauna",
+        "B": "este permisă în cazul conductoarelor de cupru",
+        "C": "este interzisă"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-028": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "rationale_with_ABCs": "I7 §5.2.6.6 interzice întinderea conexiunilor la tracțiune DAR enumeră excepții pentru liniile de contact și conductoare instalate liber. C este regula generală intenționată, «este interzisă» fără excepții nu e universal; A/B sunt nejustificat permisive.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "§5.2.6.6 + excepții în paragraful imediat",
+        "access": "WEB_HTML_EXACT_WITH_EXCEPTIONS"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 5.2.6.6 full paragraph, including exceptions",
+        "ABC": "A: universal permission false; B: copper material alone not permitted condition; C: general prohibition exists BUT explicitly exceptions for mobile receiving contact lines and free-laid conductor connections on support under proper design."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-ecfc1c65dfc8ff71",
+      "representative_id": "G1-NOR-033",
+      "grade_ids": [
+        "G1-NOR-033"
+      ],
+      "qabc_sha256": "ecfc1c65dfc8ff71638a68c51c7ec1c3c5d7e0c29ba2fdad280eeaccf13f1e5a",
+      "question_UNCHANGED": "Pentru asigurarea selectivităţii, între curenţii nominali ai fuzibilelor a două siguranţe consecutive, diferenţa trebuie să fie de cel puţin:",
+      "ABC_UNCHANGED": {
+        "A": "doua trepte",
+        "B": "o treapta",
+        "C": "trei trepte"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-033": "A"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "rationale_with_ABCs": "Selectivitatea siguranțelor nu este definită universal prin exact două trepte de curent nominal; depinde de caracteristica timp-curent și fabricant. A poate fi convenție istorică, necesită tabel/aparat exact din bibliografia Grad I.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7/IEC selectivitatea coordonării fuzibile, exact standard absent",
+        "access": "NO_EXACT_DOCUMENT_OR_DEVICE_CURVES"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+        "locator": "PE102 4.2 historical two fuse rating steps; modern selectivity curve",
+        "ABC": "A: two nominal rating steps is an historic rule of thumb; B: one step may not ensure selectivity; C: three might ensure but is not specified historical minimum."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-1fb0de7957f77c29",
+      "representative_id": "G1-NOR-034",
+      "grade_ids": [
+        "G1-NOR-034"
+      ],
+      "qabc_sha256": "1fb0de7957f77c294d0a1f6a324fb6d41103dee7f19a3b3037a8790f471ef8ed",
+      "question_UNCHANGED": "Încadrarea în clasele de reacţie la foc şi rezistenţă la foc a materialelor se face în conformitate cu prevederile:",
+      "ABC_UNCHANGED": {
+        "A": "PE 102",
+        "B": "reglementărilor specifice",
+        "C": "normativului    I 7"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-034": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "rationale_with_ABCs": "Clasificarea reacției/rezistenței la foc se face prin reglementări de incendiu specifice, B susținut ca obiect. I7 trimite la norme separate, dar articolul care definește exact «încadrarea» nu a fost redeschis.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §3.0.2 și §4.2, trimiteri la reglementări incendiu",
+        "access": "TOPIC_EXACT_SCOPE_NOT_YET_REOPENED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4",
+        "locator": "I7 3.0.2.2 fire reaction/resistance classes",
+        "ABC": "A: PE102 electrical installations standard not full fire classification framework; B: fire classification must follow specialized fire regulations/standards; C: I7 references those rules but isn't sole classification rule."
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-7b8f5e93bb763d6d",
+      "representative_id": "G1-NOR-035",
+      "grade_ids": [
+        "G1-NOR-035"
+      ],
+      "qabc_sha256": "7b8f5e93bb763d6d8ada1a39948775c58a10db74b7fb37d56c9b4a1aaadc253b",
+      "question_UNCHANGED": "Masă (a unui echipament sau element de construcţie)reprezintă:",
+      "ABC_UNCHANGED": {
+        "A": "elemente conductoare din instalaţie aflate sub tensiune",
+        "B": "elemente izolante din instalaţie aflate în legătură cu pământul",
+        "C": "parte conductoare accesibilă a unui echipament, care poate fi atinsă şi care în mod normal nu se află sub tensiune, dar care poate fi pusă sub tensiune în urma unui defect a zolaţiei de bază."
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-035": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "rationale_with_ABCs": "Definiția I7 cap.2 «masă» este parte conductoare accesibilă, în mod normal fără tensiune, posibil energizată la defectul izolației de bază; C. A este parte activă și B izolant, ambele false.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 cap 2 definiție «masă»",
+        "access": "WEB_HTML_EXACT_DEFINITION"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 2011 consolidat 12.07.2023 cap2 M: masă",
+        "ABC": {
+          "A": "A: element activ în regim normal nu este masă.",
+          "B": "B: izolantul nu este parte CONDUCTOARE accesibilă, deci nu se califică.",
+          "C": "C: masă este parte conductoare accesibilă normal nealimentată, dar poate deveni activă prin defectul izolației de bază."
+        }
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    },
+    {
+      "unit_id": "AU-f97b290dc4f08c18",
+      "representative_id": "G1-NOR-036",
+      "grade_ids": [
+        "G1-NOR-036"
+      ],
+      "qabc_sha256": "f97b290dc4f08c185f2cb6139a67152e51f40bacfb2540ea91251a62f5311b4a",
+      "question_UNCHANGED": "Se consideră atingere directă:",
+      "ABC_UNCHANGED": {
+        "A": "contactul persoanelor sau animalelor domestice sau de crescătorie cu mase puse accidental sub tensiune datorită unui defect electric",
+        "B": "contactul direct al persoanelor sau al animalelor cu părţi active",
+        "C": "contactul persoanelor sau animalelor domestice sau de crescătorie cu părţi ale unei instalaţii electrice"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-NOR-036": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "rationale_with_ABCs": "Atingerea directă este contact cu părțile active, B. A descrie contact cu masă pusă accidental sub tensiune, adică indirect; C vag, nu distinge partea.",
+      "source": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 cap2 definiție atingere directă și §4.1.1",
+        "access": "WEB_HTML_DEFINITION_AND_NEIGHBOR"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 cap2 A: atingere directă",
+        "ABC": {
+          "A": "A: contact cu mase puse sub tensiune prin defect înseamnă atingere indirectă.",
+          "B": "B: contact direct al unei persoane/animal cu o parte activă este definiția directă.",
+          "C": "C: orice parte de instalație este o definiție prea largă, inclusiv părți neactive."
+        }
+      },
+      "provisional_other_choice": null,
+      "official_exam_key_verified": "NO",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_edited": false
+    }
+  ]
+}
