@@ -1,0 +1,643 @@
+{
+  "checkpoint": "CKPT-141",
+  "date": "2026-11-17",
+  "baseline_head": "689fa661ef370ab18c5433b398b6bea3ea06114d",
+  "phase": "FINAL_ADJUDICATION_P0_NEXT15",
+  "scope": "15 unique canonical units, 30 grade IDs after CKPT-140; original 568 contextual documentation not repeated",
+  "status": "TECHNICAL_PRECHECK_ONLY_NO_INDEPENDENT_SIGNOFF",
+  "method": "Same-assistant domain/source/linguistic counterexamples with explicitly labeled source access; original QABC copied read-only from master",
+  "evidence_gate": "NO OFFICIAL EXAM KEY OR EDITION AUTHORIZATION; never mark learner-approved",
+  "cards": [
+    {
+      "unit_id": "AU-2c324f18fe2143ed",
+      "representative_id": "G1-ELE-014",
+      "grade_member_ids": [
+        "G1-ELE-014",
+        "G2-ELEC-166"
+      ],
+      "qabc_sha256": "2c324f18fe2143eda69d82af02e0984302bbfe8ef1de09f7ee83eb628a91a464",
+      "original_keymap": {
+        "G1-ELE-014": "C",
+        "G2-ELEC-166": "C"
+      },
+      "question_original": "Câmp fără surse este",
+      "original_options": {
+        "A": "numai un câmp de curenţi de conducţie în regim staţionar",
+        "B": "câmpul electric",
+        "C": "câmpul de inducţie electromagnetică"
+      },
+      "technical_precheck": "C is plausible only if 'câmp de inducţie electromagnetică' means magnetic induction B with div(B)=0.",
+      "abc_scope_analysis": {
+        "A": "conduction-current electric field is not automatically source-free.",
+        "B": "electric field may have charge sources.",
+        "C": "magnetic B is solenoidal, but original terminology is not identical."
+      },
+      "technical_classification": "BLOCKED_TERM_INDUCTION_VS_MAGNETIC_FLUX",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/calculus-volume-3/pages/6-5-divergence-and-curl",
+          "access": "HTML_REOPENED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-2cde95d7e7d5db22",
+      "representative_id": "G1-ELE-020",
+      "grade_member_ids": [
+        "G1-ELE-020",
+        "G2-ELEC-172"
+      ],
+      "qabc_sha256": "2cde95d7e7d5db224bab9db349a454498374a13032a45a8c74984d62f3008b21",
+      "original_keymap": {
+        "G1-ELE-020": "A",
+        "G2-ELEC-172": "A"
+      },
+      "question_original": "Capsularea monopolară conduce la :",
+      "original_options": {
+        "A": "eliminarea totală a posibilităţii apariţiei unui scurtcircuit între faze;",
+        "B": "micşorarea riscului unor pierderi de gaz izolant;",
+        "C": "reducerea cheltuielilor de realizare a instalaţiilor."
+      },
+      "technical_precheck": "Single-phase enclosed GIS separates phases internally, but 'total elimination' of phase-phase faults across the full installation is unproven.",
+      "abc_scope_analysis": {
+        "A": "word 'totală' exceeds evidence for terminals and external interconnections.",
+        "B": "leakage depends on compartment joints/design; not intrinsically reduced.",
+        "C": "costs vary by equipment and installation."
+      },
+      "technical_classification": "BLOCKED_ABSOLUTE_SINGLE_PHASE_ENCLOSURE",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://www.hitachienergy.com/in/en/products-and-solutions/high-voltage-switchgear-and-breakers/gas-insulated-switchgear/gis-for-72-5-1200-kv/gis-blf-pass-up-to-170-kv",
+          "access": "MANUFACTURER_HTML_REOPENED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-810f43a6cc6e125b",
+      "representative_id": "G1-ELE-028",
+      "grade_member_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "qabc_sha256": "810f43a6cc6e125b38a6c6cf3311d8c4b6f9ea59b2ef7c980f2f8ecd3bddf9cb",
+      "original_keymap": {
+        "G1-ELE-028": "B",
+        "G2-ELEC-177": "B"
+      },
+      "question_original": "Ce posibilităţi de limitare a curenţilor de scurtcirciut sunt de preferat pentru schema de mai sus ?",
+      "original_options": {
+        "A": "reducerea t.e.m., acţionând asupra circuitului de excitaţie al generatorului;",
+        "B": "mărirea reactanţei schemei de alimentare între sursă şi locul de defect;",
+        "C": "creşterea capacităţii de rupere a întreruptoarelor."
+      },
+      "technical_precheck": "Increasing source-to-fault reactance lowers prospective short-circuit current in the simple Thevenin model; the question's referenced diagram is missing here.",
+      "abc_scope_analysis": {
+        "A": "excitation control can alter generator contribution but not established for the omitted scheme.",
+        "B": "increased X generally reduces Isc=|E/Z|.",
+        "C": "breaker breaking capacity is interruption capability, not a direct reduction in prospective fault current."
+      },
+      "technical_classification": "CONDITIONAL_B_DIAGRAM_MISSING",
+      "linguistic_scope_warning": "CONDITIONAL_ONLY",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Calculation_of_minimum_levels_of_short-circuit_current",
+          "access": "WEB_SEARCH_MATCH_EXACT_DIAGRAM_NOT_PRESENT",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-74e7f2339e0faf2e",
+      "representative_id": "G1-ELE-029",
+      "grade_member_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "qabc_sha256": "74e7f2339e0faf2eec3c25b87291eeefffec562a4afed2db59e12f861e6cbb44",
+      "original_keymap": {
+        "G1-ELE-029": "C",
+        "G2-ELEC-178": "C"
+      },
+      "question_original": "Curentul electric alternativ poate fi produs numai prin fenomene:",
+      "original_options": {
+        "A": "termice",
+        "B": "chimice",
+        "C": "de inducţie electromagnetică"
+      },
+      "technical_precheck": "Electromagnetic induction is a standard method of generating AC in an alternator, not the only way to produce an AC output.",
+      "abc_scope_analysis": {
+        "A": "thermal phenomena alone do not specify alternation.",
+        "B": "electrochemical DC may feed electronics but is not sufficient alone.",
+        "C": "exam intended induction, refuted as exclusive by DC-to-AC power electronic inverter."
+      },
+      "technical_classification": "BLOCKED_WORD_NUMAI_INVERTER_COUNTEREXAMPLE",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics",
+          "access": "US_DOE_HTML_REOPENED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-61b27d9384e3d14f",
+      "representative_id": "G1-ELE-043",
+      "grade_member_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "qabc_sha256": "61b27d9384e3d14f6fe84793dd88cd8fe83a9ec1bf6deb5c784d8d1406b8cb41",
+      "original_keymap": {
+        "G1-ELE-043": "A",
+        "G2-ELEC-189": "A"
+      },
+      "question_original": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
+      "original_options": {
+        "A": "cu tensiunea între faze",
+        "B": "numai cu puterile active generate",
+        "C": "cu puterile reactive generate"
+      },
+      "technical_precheck": "For balanced sinusoidal three-phase: I=sqrt(P²+Q²)/(sqrt(3)*U), which refutes unqualified direct proportionality to U or only P or generally Q.",
+      "abc_scope_analysis": {
+        "A": "at constant P,Q I varies inversely with U.",
+        "B": "'numai' excludes Q and U.",
+        "C": "at fixed P,U, I depends on magnitude Q but is not linear in Q except special cases."
+      },
+      "technical_classification": "BLOCKED_NO_UNIQUE_LINEAR_PROPORTIONALITY",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+          "access": "SCHNEIDER_HTML_REOPENED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-cb4eef5092065cab",
+      "representative_id": "G1-ELE-049",
+      "grade_member_ids": [
+        "G1-ELE-049",
+        "G2-ELEC-195"
+      ],
+      "qabc_sha256": "cb4eef5092065cabd825d4201a1a28a22a29651e7731ccd7da9c40452cfa5955",
+      "original_keymap": {
+        "G1-ELE-049": "B",
+        "G2-ELEC-195": "B"
+      },
+      "question_original": "Dacă două conductoare parcurse de curenţi în acelaşi sens sunt aşezate paralel, unul lângă altul:",
+      "original_options": {
+        "A": "densitatea de curent crește în părţile apropiate ale conductoarelor",
+        "B": "densitatea de curent creşte în părţile mai depărtate ale conductoarelor",
+        "C": "densitatea de curent este uniformă pe ambele părţi ale conductoarelor"
+      },
+      "technical_precheck": "For adjacent AC conductors with equal-direction currents, proximity effect tends to crowd current toward outer faces; no AC frequency is stated.",
+      "abc_scope_analysis": {
+        "A": "inward crowding pertains other current orientations.",
+        "B": "supported for the AC proximity-effect regime, but not universally for DC.",
+        "C": "only as ideal DC/neglecting skin and proximity."
+      },
+      "technical_classification": "CONDITIONAL_B_AC_FREQUENCY_UNSTATED",
+      "linguistic_scope_warning": "CONDITIONAL_ONLY",
+      "source_evidence": [
+        {
+          "url": "https://graphsearch.epfl.ch/en/concept/12146395",
+          "access": "EPFL_CONCEPT_HTML_REOPENED_SECONDARY",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-84185dba0d7b87f1",
+      "representative_id": "G1-ELE-057",
+      "grade_member_ids": [
+        "G1-ELE-057",
+        "G2-ELEC-203"
+      ],
+      "qabc_sha256": "84185dba0d7b87f1af2bd7bce9a59ccfeabe83f8f278afb8a842419a491ac1d4",
+      "original_keymap": {
+        "G1-ELE-057": "A",
+        "G2-ELEC-203": "A"
+      },
+      "question_original": "Două funcţii periodice sinusoidale sunt armonice între ele dacă:",
+      "original_options": {
+        "A": "raportul perioadelor lor este un număr întreg oarecare",
+        "B": "au aceeaşi perioadă",
+        "C": "raportul perioadelor lor este egal cu 1/2"
+      },
+      "technical_precheck": "Sinusoids are harmonically related when one frequency is an integer multiple of a fundamental. The 'ratio of periods' order and unique-option logic are unspecified.",
+      "abc_scope_analysis": {
+        "A": "ratio integer works when properly oriented; can be 1 too.",
+        "B": "identical periods produce same frequency, a 1:1 special case.",
+        "C": "period ratio 1/2 corresponds to twice the frequency and is also harmonic in the usual sense."
+      },
+      "technical_classification": "BLOCKED_OVERLAPPING_A_B_C_AND_RATIO_DIRECTION",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://bmclab.github.io/BMC/notebooks_html/signal_basic_properties.html",
+          "access": "INDEXED_REFERENCE_ONLY",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-314bf304167de5c0",
+      "representative_id": "G1-ELE-073",
+      "grade_member_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "qabc_sha256": "314bf304167de5c0d19e018b8226f4ff2c69b4a1befb73cd15bf08a445e3ba03",
+      "original_keymap": {
+        "G1-ELE-073": "B",
+        "G2-ELEC-218": "B"
+      },
+      "question_original": "Fluxul electric total, produs de o sarcină electrică de valoare q printr-o suprafaţă închisă care o înconjoară, este egal cu:",
+      "original_options": {
+        "A": "valoarea numerică 2q",
+        "B": "valoarea numerică q",
+        "C": "valoarea numerică q/2"
+      },
+      "technical_precheck": "Gauss flux through a closed surface depends on whether flux of D or of E is meant; Romanian prior research uses D.",
+      "abc_scope_analysis": {
+        "A": "2q unsupported.",
+        "B": "q for closed flux ∮D·dS=q in electrotechnical terminology.",
+        "C": "q/2 unsupported. For E in vacuum, OpenStax has ∮E·dS=q/eps0, not q."
+      },
+      "technical_classification": "CONDITIONAL_B_DEFINED_D_NOT_E",
+      "linguistic_scope_warning": "CONDITIONAL_ONLY",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law",
+          "access": "OPENSTAX_HTML_REOPENED_PLUS_PRIOR_ROMANIAN_SOURCE_NOT_REOPENED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-ecef6c8f792ac410",
+      "representative_id": "G1-ELE-077",
+      "grade_member_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "qabc_sha256": "ecef6c8f792ac410ad67d7c14fd92cb53f01f5208d2c79d7c658e44568be10a3",
+      "original_keymap": {
+        "G1-ELE-077": "A",
+        "G2-ELEC-222": "A"
+      },
+      "question_original": "Forţa care se exercită asupra unui conductor rectiliniu, parcurs de curentul i, aflat în câmpul de inducţie magnetică B se numeşte:",
+      "original_options": {
+        "A": "forţă electromagnetică (Laplace)",
+        "B": "forţă electrodinamică",
+        "C": "forţă magnetomotoare"
+      },
+      "technical_precheck": "The physical force on a current-carrying conductor in B obeys Laplace/Ampere F=I*l cross B; exact Romanian competing names require exact glossary.",
+      "abc_scope_analysis": {
+        "A": "names the conventional Laplace force.",
+        "B": "'electrodynamic' may be a broader term in some literature and is not excluded without glossary.",
+        "C": "magnetomotive force denotes NI, not mechanical force."
+      },
+      "technical_classification": "CONDITIONAL_A_LINGUISTIC_GLOSSARY_PENDING",
+      "linguistic_scope_warning": "CONDITIONAL_ONLY",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+          "access": "OPENSTAX_INDEXED_FORMULA",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-d9b2acc9d5918419",
+      "representative_id": "G1-ELE-088",
+      "grade_member_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "qabc_sha256": "d9b2acc9d5918419d33407eede73f37aceafef41c4bc637015f13723c505fd52",
+      "original_keymap": {
+        "G1-ELE-088": "A",
+        "G2-ELEC-233": "A"
+      },
+      "question_original": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+      "original_options": {
+        "A": "limitarea posibilităţilor de producere a unui defect în instalaţie;",
+        "B": "mărirea riscului de producere a unor scăpări de gaz;",
+        "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment."
+      },
+      "technical_precheck": "GIS gas partitioning limits fault extent and service continuity impact; it does not necessarily reduce the likelihood a fault starts.",
+      "abc_scope_analysis": {
+        "A": "confuses possible occurrence with propagation/consequences.",
+        "B": "added seals could introduce leakage opportunities but needs design-specific risk.",
+        "C": "compartment service ordinarily manipulates less gas than opening entire vessel, contrary to claim."
+      },
+      "technical_classification": "BLOCKED_GIS_FAULT_PROBABILITY_VS_CONSEQUENCE",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/switchgear/gas-insulated",
+          "access": "ABB_CATEGORY_HTML_ONLY_EXACT_IEC_DIAGRAM_UNVERIFIED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-314df2294abc59d6",
+      "representative_id": "G1-ELE-099",
+      "grade_member_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "qabc_sha256": "314df2294abc59d60451a7a17d3874d416f928c8dd8ad8813e357435b4a4c54c",
+      "original_keymap": {
+        "G1-ELE-099": "A",
+        "G2-ELEC-242": "A"
+      },
+      "question_original": "În cazul scăderii sau întreruperii tensiunii de alimentare, motoarele asincrone se pot opri, iar la restabilirea tensiunii:",
+      "original_options": {
+        "A": "ele autopornesc, indiferent de tipul constructiv al rotorului în scurtcircuit",
+        "B": "pentru a reporni necesită dispozitiv de pornire",
+        "C": "ele autopornesc numai dacă au rotor în dublă colivie"
+      },
+      "technical_precheck": "Self-restart after voltage recovery depends on starter logic, under-voltage protection, contactor and load; rotor type is not the sole determinant.",
+      "abc_scope_analysis": {
+        "A": "'indiferent' ignores restart interlock and control supply.",
+        "B": "manual re-start may be required under some starter arrangements, not all.",
+        "C": "double-cage rotor is not a necessary condition of restart."
+      },
+      "technical_classification": "BLOCKED_MOTOR_RESTART_CONTROL_UNSPECIFIED",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Motor_protection_functions",
+          "access": "SCHNEIDER_HTML_REOPENED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-f7f04edda7082ffb",
+      "representative_id": "G1-ELE-104",
+      "grade_member_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "qabc_sha256": "f7f04edda7082ffbc8860e80ffdfaa556a83e46b96c1419997ada2cd1a56bf73",
+      "original_keymap": {
+        "G1-ELE-104": "A",
+        "G2-ELEC-247": "A"
+      },
+      "question_original": "În echipamentul electric, uleiul electroizolant, din punct de vedere electric:",
+      "original_options": {
+        "A": "asigură doar izolarea părților sub tensiune între ele si fatã de masã",
+        "B": "stinge arcul electric care apare in întrerupătoare",
+        "C": "asigura ungerea mecanismelor de acţionare"
+      },
+      "technical_precheck": "Oil is used for insulation and, in an oil circuit-breaker, arc extinction; the question does not identify exact equipment.",
+      "abc_scope_analysis": {
+        "A": "'doar' contradicted for oil-filled circuit breakers.",
+        "B": "true for an oil circuit breaker but not function of oil in every electrical apparatus.",
+        "C": "mechanical lubrication is not main electrical function."
+      },
+      "technical_classification": "BLOCKED_OIL_DUAL_ROLE_A_VS_B",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://edshare.gcu.ac.uk/4548/2/Wk_3/index.html",
+          "access": "UNIVERSITY_HTML_REOPENED",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-ccb0e324cfc845e2",
+      "representative_id": "G1-ELE-109",
+      "grade_member_ids": [
+        "G1-ELE-109",
+        "G2-ELEC-252"
+      ],
+      "qabc_sha256": "ccb0e324cfc845e2fbe321c9c9dfb3f92e2cebcd5281711a33a8c90687ba676d",
+      "original_keymap": {
+        "G1-ELE-109": "A",
+        "G2-ELEC-252": "A"
+      },
+      "question_original": "În sens general, actualizarea unui fond reprezintă:",
+      "original_options": {
+        "A": "calculul valorii acestui fond la un anumit an ales ca referinţă;",
+        "B": "calculul valorii acestui fond la N ani înainte de PIF;",
+        "C": "calculul valorii acestui fond la N ani după PIF."
+      },
+      "technical_precheck": "In financial discounting/accumulation, value is expressed at a selected reference date; relative PIF direction depends on reference.",
+      "abc_scope_analysis": {
+        "A": "general defining statement.",
+        "B": "an example before commissioning, not universal.",
+        "C": "an example after commissioning, not universal."
+      },
+      "technical_classification": "CONDITIONAL_A_DEFINITION_UNVERIFIED_ANRE_SOURCE",
+      "linguistic_scope_warning": "CONDITIONAL_ONLY",
+      "source_evidence": [],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-9c9c2de62a042f6a",
+      "representative_id": "G1-ELE-113",
+      "grade_member_ids": [
+        "G1-ELE-113",
+        "G2-ELEC-255"
+      ],
+      "qabc_sha256": "9c9c2de62a042f6ac24e6a40a7df272ac66a92392839de41f0d793195ed9a3cd",
+      "original_keymap": {
+        "G1-ELE-113": "C",
+        "G2-ELEC-255": "C"
+      },
+      "question_original": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
+      "original_options": {
+        "A": "numai de temperatura mediului ambiant",
+        "B": "de tensiunea între faze",
+        "C": "de pierderile Joule-Lenz"
+      },
+      "technical_precheck": "Joule I²R losses heat stator windings, but steady winding temperature is also affected by cooling, ambient and iron/stray losses.",
+      "abc_scope_analysis": {
+        "A": "'numai' ambient false.",
+        "B": "phase voltage can affect conditions but is not sole determinant.",
+        "C": "Joule losses drive heating, not by themselves the absolute winding temperature."
+      },
+      "technical_classification": "CONDITIONAL_C_HEAT_BALANCE_QUALIFIER",
+      "linguistic_scope_warning": "CONDITIONAL_ONLY",
+      "source_evidence": [
+        {
+          "url": "https://technav.ieee.org/topic/synchronous-generator/",
+          "access": "IEEE_TOPIC_INDEXED_NO_PRIMARY_HEAT_BALANCE_SOURCE",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-dac8a21bd3faca36",
+      "representative_id": "G1-ELE-122",
+      "grade_member_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "qabc_sha256": "dac8a21bd3faca36f265a1fb2834735d1476c8c95e4f5b5db3684f800544f235",
+      "original_keymap": {
+        "G1-ELE-122": "A",
+        "G2-ELEC-264": "A"
+      },
+      "question_original": "Într-o schemă electrică prevăzută cu mai multe sisteme de bare colectoare, separatorul de bare",
+      "original_options": {
+        "A": "asigură doar selectarea sistemului de bare pe care urmează a fi conectat circuitul;",
+        "B": "asigură izolarea unei părţi a circuitului de bara colectoare aflată sub tensiune;",
+        "C": "comutaţia curentului în regim normal de funcţionare."
+      },
+      "technical_precheck": "Busbar disconnectors select/isolate circuits from the live bus under proper off-load conditions; they are not load-breaking circuit breakers.",
+      "abc_scope_analysis": {
+        "A": "'doar selectarea' is too exclusive if isolation function counted.",
+        "B": "identifies separation/isolation function but requires topology and de-energized switching conditions.",
+        "C": "cannot routinely interrupt normal load current as a disconnector."
+      },
+      "technical_classification": "BLOCKED_SELECT_VS_ISOLATE_SEMANTIC_OVERLAP",
+      "linguistic_scope_warning": "BLOCKED_OR_AMBIGUOUS_NOT_SINGULARLY_ADJUDICATED",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+          "access": "SCHNEIDER_HTML_INDEXED_NO_EXACT_BUS_SCHEME",
+          "exact_exam_bibliography_grade_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_edition_exam_provenance": "NOT_VERIFIED",
+      "review_mode": "ONE_ASSISTANT_TECHNICAL_LINGUISTIC_SOURCE_CROSSCHECK_NOT_INDEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    }
+  ],
+  "integrity_checks": {
+    "unique_unit_ids": 15,
+    "unique_member_ids": 30,
+    "option_maps_complete": true,
+    "key_unchanged": true,
+    "approval_count": 0
+  }
+}
