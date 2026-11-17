@@ -1,0 +1,586 @@
+{
+  "checkpoint": "CKPT-161",
+  "date": "2026-11-17",
+  "input_head": "416384f520cd6529d1dad57b9a9cf9f0f6f40e7b",
+  "unique_units": 15,
+  "grade_ids": 15,
+  "technical_status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 14,
+    "CONDITIONAL_MODEL_OR_SOURCE": 1
+  },
+  "method": "Existing full original Q/A/B/C/keys and ABC reasoning reused; exact 2026 legal articles checked only for two targeted legal cases; technical models verified against cached background and public technical definitions; direct primary source access labeled.",
+  "no_independent_agent_available": true,
+  "learning_approvals": 0,
+  "cards": [
+    {
+      "unit_id": "AU-22ce32685d81a384",
+      "representative_id": "G2-ELEC-031",
+      "member_ids": [
+        "G2-ELEC-031"
+      ],
+      "qabc_sha256": "22ce32685d81a3849b3988e7d0aca7a0e32c100e46c4373c5e8dbf18d7cfbe34",
+      "question_original_UNCHANGED": "Motorul electric transformă în principal:",
+      "original_options_UNCHANGED": {
+        "A": "energia electrică în energie mecanică",
+        "B": "energia mecanică în energie electrică exclusiv",
+        "C": "energia termică în energie electrică"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-031": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Normal electric motor converts electrical input to mechanical shaft power, with secondary losses.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_15_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical4u.com/working-principle-of-electric-motor/",
+        "prior_source_locator": null,
+        "old_model_conditions": "Regim normal motor; există pierderi termice și magnetice.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Motorul convertește energia electrică în lucru mecanic la arbore.",
+        "B": "Conversia mecanică în electrică este funcția generatorului, nu exclusiv a motorului.",
+        "C": "Conversia termică în electrică nu este funcția dominantă a motorului."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-862299f3cc6cb15c",
+      "representative_id": "G2-ELEC-032",
+      "member_ids": [
+        "G2-ELEC-032"
+      ],
+      "qabc_sha256": "862299f3cc6cb15c1b1ffbed72063a74d5d0c3f4dc0ce6b218cc57894ac5dfb6",
+      "question_original_UNCHANGED": "Generatorul electric transformă în principal:",
+      "original_options_UNCHANGED": {
+        "A": "energia mecanică în energie electrică",
+        "B": "energia electrică în căldură",
+        "C": "energia chimică în lumină"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-032": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Electromagnetic electric generator converts mechanical shaft power into electrical output, with losses.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_15_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical4u.com/electric-generator/",
+        "prior_source_locator": null,
+        "old_model_conditions": "Generator electromagnetic clasic; sursa mecanică poate proveni din turbină.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Generatorul transformă energia mecanică furnizată prin arbore în electrică.",
+        "B": "Electric în căldură este disipare rezistivă, nu funcția generatorului.",
+        "C": "Conversia chimic în lumină nu este funcția generatorului."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-410aeacd75cd8505",
+      "representative_id": "G2-ELEC-033",
+      "member_ids": [
+        "G2-ELEC-033"
+      ],
+      "qabc_sha256": "410aeacd75cd850525962ad4fb6d11063835820886163124ab374ed448baa6bc",
+      "question_original_UNCHANGED": "Un multimetru setat pentru măsurarea tensiunii se conectează în mod normal:",
+      "original_options_UNCHANGED": {
+        "A": "în paralel cu elementul măsurat",
+        "B": "în serie cu elementul",
+        "C": "doar la pământ"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-033": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "For voltage difference across component, voltmeter senses both endpoints in parallel, not series; educational principle only, not energized-work instructions.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.fluke.com/en/learn/blog/maintenance-monitoring/how-to-use-a-multimeter-guide",
+        "prior_source_locator": null,
+        "old_model_conditions": "Doar context conceptual, nu instrucțiune de lucru la instalații sub tensiune.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Măsurarea U între două borne cere instrument conectat în paralel.",
+        "B": "Voltmetrul serie cu impedanță mare poate perturba curentul și nu măsoară căderea dorită.",
+        "C": "O conexiune doar la pământ nu identifică diferența între borne."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-3a69209e33d3bb91",
+      "representative_id": "G2-ELEC-034",
+      "member_ids": [
+        "G2-ELEC-034"
+      ],
+      "qabc_sha256": "3a69209e33d3bb91df4b1ac43611e61e3dc885bc8c474caf5688871c3009b6c4",
+      "question_original_UNCHANGED": "Un ampermetru se conectează în mod normal:",
+      "original_options_UNCHANGED": {
+        "A": "în serie cu circuitul",
+        "B": "în paralel pe sursă",
+        "C": "doar între fază și PE"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-034": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Amperemeter ideally measures branch current in series rather than placed across supply, which is dangerous; educational principle only.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.fluke.com/en/learn/blog/maintenance-monitoring/how-to-use-a-multimeter-guide",
+        "prior_source_locator": null,
+        "old_model_conditions": "Aparatul trebuie să aibă domeniu/categorie corectă, de către personal competent.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Ampermetrul este introdus în serie pentru ca același curent să-l străbată.",
+        "B": "Montarea unui ampermetru cu rezistență mică direct pe sursă produce potențial scurtcircuit.",
+        "C": "Conexiunea fază–PE nu este configurația obișnuită de măsurare a curentului."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-cc81794052a102ef",
+      "representative_id": "G2-ELEC-035",
+      "member_ids": [
+        "G2-ELEC-035"
+      ],
+      "qabc_sha256": "cc81794052a102ef4a732fded5aeebb79d0b71d2139515fafdffe47baf494e8e",
+      "question_original_UNCHANGED": "Un ohmmetru se folosește corect pentru măsurarea unei rezistențe atunci când circuitul este:",
+      "original_options_UNCHANGED": {
+        "A": "deconectat de la alimentare",
+        "B": "alimentat la tensiunea nominală",
+        "C": "scurtcircuitat"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-035": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ohmmeter uses its own test energy, so external circuit must be de-energized and stored energy addressed; no field-work authorization.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.fluke.com/en/learn/blog/maintenance-monitoring/how-to-use-a-multimeter-guide",
+        "prior_source_locator": null,
+        "old_model_conditions": "Oprirea alimentării și descărcarea elementelor reactive sunt condiții de siguranță necesare.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Ohmmetrul aplică sursa lui internă, deci circuitul se măsoară izolat de alimentare.",
+        "B": "Circuitul energizat poate deteriora aparatul și crea risc pentru persoană.",
+        "C": "Scurtcircuitarea completă a circuitului ar altera măsura rezistenței căutate."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-1ddf85c8f1a3d32d",
+      "representative_id": "G2-ELEC-036",
+      "member_ids": [
+        "G2-ELEC-036"
+      ],
+      "qabc_sha256": "1ddf85c8f1a3d32d762bff9a4cf5c68a419d2262feead247ce0be0b81d5f2149",
+      "question_original_UNCHANGED": "Un scurtcircuit este caracterizat ideal prin:",
+      "original_options_UNCHANGED": {
+        "A": "impedanță foarte mică și curent foarte mare",
+        "B": "impedanță foarte mare și curent nul",
+        "C": "putere reactivă nulă obligatoriu"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-036": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Short circuit constitutes low-impedance path with high prospective current bounded by source and upstream impedances.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+        "prior_source_locator": null,
+        "old_model_conditions": "Termenul «ideal» nu înseamnă curent matematic infinit în rețea reală.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "La sursă cu impedanță finită, calea de scurt impedanță joasă duce la curent mare.",
+        "B": "Impedanța foarte mare cu curent zero ar fi o întrerupere, nu scurtcircuit.",
+        "C": "Puterea reactivă nu e obligatoriu zero pentru o sursă/linie de defect inductivă."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-6eb04816474ac6ff",
+      "representative_id": "G2-ELEC-037",
+      "member_ids": [
+        "G2-ELEC-037"
+      ],
+      "qabc_sha256": "6eb04816474ac6ffbcee2cef91b7f77c5f41802b497f7517eed9b792ff430114",
+      "question_original_UNCHANGED": "Legea lui Kirchhoff a curenților se aplică unui nod și exprimă că:",
+      "original_options_UNCHANGED": {
+        "A": "suma algebrică a curenților din nod este zero",
+        "B": "toate tensiunile sunt zero",
+        "C": "puterea activă este întotdeauna zero"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-037": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "KCL signed sum of node currents is zero in lumped model from charge conservation.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "prior_source_locator": null,
+        "old_model_conditions": "Curentul de deplasare/stocare se ia în considerare la noduri capacitive dinamice.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Conservarea sarcinii într-un nod lumped: suma algebrică a curenților este zero.",
+        "B": "Legea nodului nu impune tuturor tensiunilor să fie zero.",
+        "C": "P în nod nu este prin definiție zero, ci balanța curenților."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-4f89b0a15a51ad32",
+      "representative_id": "G2-ELEC-038",
+      "member_ids": [
+        "G2-ELEC-038"
+      ],
+      "qabc_sha256": "4f89b0a15a51ad3228a29849a924a4de4a2103c06e7b10e6dfe69f8f49da8f48",
+      "question_original_UNCHANGED": "Legea lui Kirchhoff a tensiunilor exprimă, pe un contur închis, că:",
+      "original_options_UNCHANGED": {
+        "A": "suma algebrică a tensiunilor este zero",
+        "B": "suma curenților este întotdeauna zero",
+        "C": "toate rezistențele sunt egale"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-038": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "KVL signed sum of contour voltages is zero with induced emf consistently included, not KCL or equal resistances.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "prior_source_locator": null,
+        "old_model_conditions": "Inducția variabilă legată de contur necesită t.e.m. Faraday inclusă.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "KVL: suma algebrică a tensiunilor în jurul conturului închis este zero în model lumped.",
+        "B": "Suma curenților zero este legea nodului, nu relația pe contur.",
+        "C": "Rezistențele diferite pot exista într-o buclă Kirchhoff."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-692ff60e01bca71a",
+      "representative_id": "G2-ELEC-039",
+      "member_ids": [
+        "G2-ELEC-039"
+      ],
+      "qabc_sha256": "692ff60e01bca71a69d037b3a4b9822eb32abc39f1f91c037bee047baa67a843",
+      "question_original_UNCHANGED": "Conductanța electrică este inversul:",
+      "original_options_UNCHANGED": {
+        "A": "rezistenței",
+        "B": "tensiunii",
+        "C": "puterii"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-039": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ohmic conductance G=1/R for nonzero R, not 1/V or 1/P.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.bipm.org/en/publications/si-brochure",
+        "prior_source_locator": null,
+        "old_model_conditions": "G are unitatea S și cere R în Ω pozitivă/nenulă.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Conductanța G=1/R pentru rezistență ohmică nenulă.",
+        "B": "Tensiunea nu este inversa conductanței.",
+        "C": "Puterea nu este inversa conductanței."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-001cd626e18f4238",
+      "representative_id": "G2-ELEC-040",
+      "member_ids": [
+        "G2-ELEC-040"
+      ],
+      "qabc_sha256": "001cd626e18f4238f444d949bad82132b5762f4d3553590c458c3901ba859bdb",
+      "question_original_UNCHANGED": "Unitatea conductanței este:",
+      "original_options_UNCHANGED": {
+        "A": "siemens (S)",
+        "B": "tesla (T)",
+        "C": "henry (H)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-040": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "SI conductance unit siemens S=Ω^-1, not tesla or henry.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.bipm.org/en/publications/si-brochure",
+        "prior_source_locator": null,
+        "old_model_conditions": "S se distinge de simbolul S al puterii aparente prin context.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Siemens (S)=Ω^-1 măsoară conductanța electrică.",
+        "B": "Tesla (T) măsoară inducția magnetică.",
+        "C": "Henry (H) măsoară inductanța."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-e92da5be976f5175",
+      "representative_id": "G2-ELEC-041",
+      "member_ids": [
+        "G2-ELEC-041"
+      ],
+      "qabc_sha256": "e92da5be976f5175c01e72a3548c404fd80e84970711d3466ac515ac770b7762",
+      "question_original_UNCHANGED": "Capacitatea electrică se măsoară în:",
+      "original_options_UNCHANGED": {
+        "A": "farazi (F)",
+        "B": "henry (H)",
+        "C": "tesla (T)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-041": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "SI capacitance unit farad F, not H inductance or T magnetic induction.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.bipm.org/en/publications/si-brochure",
+        "prior_source_locator": null,
+        "old_model_conditions": "Capacitate electrostatică a unui condensator, nu capacitate energetică informală.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Farad (F)=C/V este unitatea SI a capacității.",
+        "B": "Henry (H) este inductanță.",
+        "C": "Tesla (T) este densitatea fluxului magnetic."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-bfe150a96b7b57af",
+      "representative_id": "G2-ELEC-042",
+      "member_ids": [
+        "G2-ELEC-042"
+      ],
+      "qabc_sha256": "bfe150a96b7b57afc9c07ca759d981202a976ef21433c31a0749dd555d5194cc",
+      "question_original_UNCHANGED": "Inductanța se măsoară în:",
+      "original_options_UNCHANGED": {
+        "A": "henry (H)",
+        "B": "farad (F)",
+        "C": "siemens (S)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-042": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Inductance unit henry H, not farad or siemens.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.bipm.org/en/publications/si-brochure",
+        "prior_source_locator": null,
+        "old_model_conditions": "Inductanță proprie L; unitățile de flux sunt Wb.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Henry (H)=V·s/A măsoară inductanța.",
+        "B": "Farad (F) măsoară capacitatea.",
+        "C": "Siemens (S) măsoară conductanța."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-2333f1797ed9c556",
+      "representative_id": "G2-ELEC-043",
+      "member_ids": [
+        "G2-ELEC-043"
+      ],
+      "qabc_sha256": "2333f1797ed9c55640312d1b91a984efb6fcb8eaefae1d2c93fb08ac17b106bb",
+      "question_original_UNCHANGED": "Densitatea de curent este raportul dintre:",
+      "original_options_UNCHANGED": {
+        "A": "curent și aria secțiunii",
+        "B": "tensiune și lungime",
+        "C": "putere și timp"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-043": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_verdict": "Current density local J(x) not always uniformly I/A; I/A is cross-sectional average current density for uniform current profile.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "prior_source_locator": null,
+        "old_model_conditions": "La efect pelicular distribuția locală J(x) nu este uniformă; formula I/A e medie.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Densitatea medie de curent J=I/A la repartizare uniformă.",
+        "B": "U/L are unitate V/m de câmp electric, nu A/m².",
+        "C": "P/t este rată de modificare a energiei pe timp², nu densitate de curent."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-b85a9e6a9700960e",
+      "representative_id": "G2-ELEC-044",
+      "member_ids": [
+        "G2-ELEC-044"
+      ],
+      "qabc_sha256": "b85a9e6a9700960e96a25569376d7884db1d57a956bfae49c09e945f03eff838",
+      "question_original_UNCHANGED": "Rezistența unui conductor omogen este proporțională cu:",
+      "original_options_UNCHANGED": {
+        "A": "lungimea și rezistivitatea",
+        "B": "doar curentul",
+        "C": "doar tensiunea"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-044": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Uniform conductor R=ρL/A is directly proportional to length and resistivity at given cross-section.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "prior_source_locator": null,
+        "old_model_conditions": "Secțiunea A și temperatura/materialul rămân implicit constante.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "R=ρL/A: rezistența crește cu lungimea și rezistivitatea la secțiune constantă.",
+        "B": "R nu depinde «doar de curent» pentru element ohmic cu temperatură fixă.",
+        "C": "R nu depinde «doar de tensiune» pentru conductor ohmic."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-b3a3d76388323d0c",
+      "representative_id": "G2-ELEC-045",
+      "member_ids": [
+        "G2-ELEC-045"
+      ],
+      "qabc_sha256": "b3a3d76388323d0cc5e069b37641a3e9f9742ea99f3ede475a5d7e5b8064329d",
+      "question_original_UNCHANGED": "Rezistența unui conductor omogen este invers proporțională cu:",
+      "original_options_UNCHANGED": {
+        "A": "aria secțiunii transversale",
+        "B": "lungimea",
+        "C": "rezistivitatea"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-045": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Uniform conductor R=ρL/A inverse to cross-sectional area at fixed ρ,L.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_16_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "prior_source_locator": null,
+        "old_model_conditions": "Conductor omogen, secțiune uniformă, fără efect pelicular dominant.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "La ρ și L fixe, R=ρL/A, invers proporțional cu aria.",
+        "B": "R crește direct cu L, nu invers.",
+        "C": "R crește direct cu rezistivitatea ρ, nu invers."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    }
+  ]
+}
