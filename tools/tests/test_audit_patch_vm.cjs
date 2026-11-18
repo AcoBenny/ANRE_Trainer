@@ -102,6 +102,18 @@ check('another_question_typo_fix_and_idempotence',()=>{
   assert.equal(metrics.inserts,4);
   const n=metrics.inserts;notify();drain();assert.equal(metrics.inserts,n);
 });
+check('negative_status_must_not_look_official',()=>{
+  for(const label of ['NOT_VERIFIED','UNVERIFIED','VERIFIED_PENDING','NOT VERIFIED']) {
+    meta.textContent=label;drain();
+    assert.ok(!auditBox.className.includes('audit-official'),label+' must not be official');
+  }
+});
+check('explicit_verified_and_i7_tags_still_recognized',()=>{
+  for(const label of ['VERIFIED','VERIFICAT CU I7','DOCUMENTAR OFICIAL ANRE']) {
+    meta.textContent=label;drain();
+    assert.ok(auditBox.className.includes('audit-official'),label+' must be recognized');
+  }
+});
 console.log(JSON.stringify({passed:true,test_count:Object.keys(tests).length,tests,
   source_blob_sha:blobSHA,stats:metrics,
   scope:'actual JS in Node VM simulated DOM/MutationObserver; NOT real browser/APK'},null,2));
