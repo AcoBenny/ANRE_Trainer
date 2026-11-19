@@ -41,7 +41,7 @@
 ## Gating, handoff, next
 1. **V143 is the next canonical research workqueue**. V140 case flags **4 distinct material QABC** + 1 numeric type only. These are source-fidelity blocks, distinct from answer-technical disputes. Do not overwrite user original XLSX, canonical QABC, or keys without explicit approval.
 2. Highest blocking questions: NOR048/072 source-versus-canonical options; ELE247 G1/G2 electrostatic vs electromagnetic; ELE152 dimensional stem and G2E290 link; the two crossgrade different imported-key conflicts ELE018/G2E170, ELE102/G2E245; current I7/PE155/PE102 edition gates.
-3. Continue risk-first remaining P0 **units**, and separate literal original source QABC from future teaching-enhanced versions. The created-for-trainer 153 ID rows (not directly imported from original three question workbooks) require explicit provenance labels, not an assumption that they are official ANRE example questions.
+3. Continue risk-first remaining P0 **units**, and separate literal original source QABC from future teaching-enhanced versions. The 153 ID rows attributed to bibliography, regulation or other non-workbook provenance (rather than imported from the original three question workbooks) require individual provenance labels; **not all 153 are proven author-created**, and none should automatically be described as official ANRE example questions.
 4. Until actual independent source+tech+language QA, `APPROVED_FOR_LEARNING=0/822`. **No canonical answer/text/HTML/APK edits; PR #7 Draft, no merge or release**.
 
 ## Evidence list
