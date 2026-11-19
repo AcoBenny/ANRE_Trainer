@@ -1,5 +1,17 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-19 | CKPT-255 | Latest source fidelity + normative P0 gate
+
+**Current checkpoint:** [CKPT-255: original XLSX fidelity and 14 normative cases](../QUESTION_AUDIT/CKPT_255_GFR_XLSX_FIDELITY_NOR_SOURCE_49_RECHECKS_2026_11_19.md)  
+**Current queue:** [V143 568 QABC, 49 recent source rechecks, 7 source-row discrepancies](../QUESTION_AUDIT/V143_568_QABC_WITH_49_TARGETED_RECHECKS_7_FIDELITY_DELTAS_2026_11_19.csv)  
+**Exact source fidelity cases:** [V140 7 ID differences: 5 material, 2 numeric type](../QUESTION_AUDIT/V140_7_SOURCE_XLSX_FIDELITY_DIFFERENCES_2026_11_19.csv)  
+**Normative proof cases:** [V142 14 original QABC including NOR048/072](../QUESTION_AUDIT/V142_FOURTEEN_P0_NOR_GRADE_PROVENANCE_2026_11_19.csv)  
+**Previous:** [CKPT-254](../QUESTION_AUDIT/CKPT_254_GFR_15_ELECTROTEHNICA_30_IDS_V139_AND_AI_CHALLENGE_2026_11_19.md)
+
+Read-only original Library XLSX comparison: 669 rows in three original workbooks, 662 normalized exact source QABC and 7 differences; **4 unique QABC materially different plus 1 numeric-only unique QABC**. 822 IDs/568 units unchanged, 0/822 learner approved. PR #7 Draft; independent signoff NOT_RUN.
+
+
+
 ## 2026-11-19 | CKPT-255 | Source workbook provenance and diagram recovery
 
 **Current checkpoint:** [CKPT-255: source provenance 664/5/153, ELE028 original figure recovered](../QUESTION_AUDIT/CKPT_255_GFR_OFFICIAL_SAMPLE_COPY_PROVENANCE_664_5_153_ELE028_FIGURE_2026_11_19.md)  
