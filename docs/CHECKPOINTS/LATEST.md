@@ -1,6 +1,21 @@
-# ANRE Trainer | Latest verified checkpoint
+# ANRE Trainer | Latest checkpoint index
 
-**Latest:** [CKPT-ANRE-20261108-02](./CKPT-ANRE-20261108-02.md)  
+**Current:** [CKPT-252 | Final-stage source / data QA](../QUESTION_AUDIT/CKPT_252_GFR_V132_HISTORICAL_RECONCILIATION_AND_V133_PRIMARY_LEGAL_2026_11_19.md) (2026-11-19)  
+**Prior:** [CKPT-251 | 568 QABC matrix + Academy pilot](../QUESTION_AUDIT/CKPT_251_GFR_568_DEDUP_WORKQUEUE_5_PILOT_CASES_SOURCE_SCOPE_2026_11_19.md)  
+**Active queue:** [V132 | 568 unique QABC, 822 grade IDs](../QUESTION_AUDIT/V132_CANONICAL_568_QABC_WORKQUEUE_HISTORY_POINTERS_RESOLVED_2026_11_19.csv)  
+**Primary legal risks:** [V133 | 5 source-versus-imported-key disputes](../QUESTION_AUDIT/V133_FIVE_LEGAL_PRIMARY_SOURCE_KEY_CONFLICT_RECHECK_2026_11_19.csv)
+
+## Current gates
+- Original canonical questions/A-B-C/keys unchanged; 2 exact cross-grade imported-key conflicts still unresolved
+- 37 historical evidence-file pointers exactly reconciled by [V131](../QUESTION_AUDIT/V131_37_HISTORICAL_POINTERS_EXACT_QABC_KEY_RECONCILED_2026_11_19.csv)
+- 0/822 learner approvals; independent content QA not run; PR #7 remains Draft and unmerged
+- Academy learning cases assigned and role-guided analysis recorded; no independent-agent training/evaluation claimed
+
+## Historical 2026-11-08 baseline (preserved)
+
+# ANRE Trainer | Historical checkpoint index (2026-11-08)
+
+**Historical latest (2026-11-08):** [CKPT-ANRE-20261108-02](./CKPT-ANRE-20261108-02.md)  
 **Previous:** [CKPT-ANRE-20261108-01](./CKPT-ANRE-20261108-01.md)
 
 ## Verified progression
@@ -14,3 +29,4 @@
 
 ## Resume
 Read CKPT-002 and its links, then check the 17 priority exact-evidence questions before promoting any source. Continue with G2-ELEC-051..100. Lot 2 historical uploads were received and screened (18 PDF files, 1,345 pages); see [interim Lot2 audit](../IMPORT_AUDIT_LOT2_2026_11_08.md) and [source/hash manifest](../QUESTION_BANKS/HISTORICAL_LOT2_MANIFEST_2026-11-08.json). Do not mint CKPT-003 until additional substantive review is validated. Do not assume uploaded PDF bytes are stored in GitHub, or that Android/file:// E2E passed.
+
