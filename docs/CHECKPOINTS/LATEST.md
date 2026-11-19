@@ -1,5 +1,18 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-19 | CKPT-255 | Source workbook provenance and diagram recovery
+
+**Current checkpoint:** [CKPT-255: source provenance 664/5/153, ELE028 original figure recovered](../QUESTION_AUDIT/CKPT_255_GFR_OFFICIAL_SAMPLE_COPY_PROVENANCE_664_5_153_ELE028_FIGURE_2026_11_19.md)  
+**Current QABC workqueue:** [V141: 568 QABC / 822 IDs with source provenance](../QUESTION_AUDIT/V141_568_QABC_822_IDS_SOURCE_PROVENANCE_AND_FIGURE_QUEUE_2026_11_19.csv)  
+**Underlying 822-ID comparison:** [V140: 664 original sample matches / 5 altered / 153 not matched](../QUESTION_AUDIT/V140_822_ID_FIVE_WORKBOOK_PROVENANCE_SCREEN_664_5_153_2026_11_19.csv)  
+**Critical source option differences:** [V142: 4 question rows (5 IDs)](../QUESTION_AUDIT/V142_FOUR_SOURCE_WORKBOOK_QUESTION_MUTATIONS_EXACT_DIFFERENCES_2026_11_19.csv)  
+**Academy training fixtures:** [8 source-provenance negative tests](../QUESTION_AUDIT/ANRE_ACADEMY_PROVENANCE_NEGATIVE_FIXTURES_V2_2026_11_19.json)  
+**Previous:** [CKPT-254](../QUESTION_AUDIT/CKPT_254_GFR_15_ELECTROTEHNICA_30_IDS_V139_AND_AI_CHALLENGE_2026_11_19.md)
+
+*No canonical QABC/key/HTML/APK changes. No accredited independent option QA, no verified 2026 official scored-key provenance, 0/822 learner approved; PR #7 remains Draft/unmerged.*
+
+
+
 ## 2026-11-19 | CKPT-254 | Latest GFR QABC source review
 
 **Current checkpoint:** [CKPT-254: 15 electrical QABC, 30 grade IDs](../QUESTION_AUDIT/CKPT_254_GFR_15_ELECTROTEHNICA_30_IDS_V139_AND_AI_CHALLENGE_2026_11_19.md)  
