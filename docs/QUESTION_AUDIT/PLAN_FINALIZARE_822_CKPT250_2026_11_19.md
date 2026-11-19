@@ -34,3 +34,9 @@
 - Escaladează utilizatorului numai întrebarea exactă, A/B/C și contradicția reală când datele sunt insuficiente sau trebuie aleasă o interpretare; observațiile utilizatorului sunt ipoteze pentru verificare, nu semnături de sursă.
 - Raport scurt la fiecare checkpoint: `unități revizuite / unități rămase / conflicte deschise / aprobări reale / blocaje` și fișierele/commitul. Nu eticheta recenzia făcută de un singur asistent drept QA independent.
 - Păstrează V129 și toate registrele istorice ca dovezi; corecțiile sunt **versionate și justifică supersedarea**, nu șterg concluziile anterioare.
+
+## Neural Academy / Avengers Asamble training bridge (2026-11-19)
+- The Academy is coupled to this existing one-pass audit; do **not** start parallel duplicate question rechecks. Role routing, exact-scope sources, Romanian linguistics, data audit, challenges, read-only evidence and staged QA are specified in [the training bridge](ANRE_NEURAL_ACADEMY_TRAINING_BRIDGE_2026_11_19.md).
+- Pre-registered, safe [pilot exercises](ANRE_ACADEMY_PILOT_CASES_2026_11_19.json) cover two cross-grade key conflicts and three failure classes (exclusive wording, source-scope mismatch, missing physical assumption).
+- Use actual installed Avengers Asamble and Precision Lab *skills* as workflow guides where relevant. Skills and role cards are not autonomous agents. Independent AI/multi-model execution, baseline-vs-skill trials and independent QA must be evidenced separately or remain `NOT_RUN`.
+- Feedback is saved as versioned, redacted, source-linked transferable lessons and negative fixtures; only promote to Academy code/registry after real repeatable evaluation and approval. Content QA for ANRE remains the priority, and approval counts remain evidence-gated.
