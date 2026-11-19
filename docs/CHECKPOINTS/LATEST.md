@@ -1,5 +1,16 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-19 | CKPT-254 | Latest GFR QABC source review
+
+**Current checkpoint:** [CKPT-254: 15 electrical QABC, 30 grade IDs](../QUESTION_AUDIT/CKPT_254_GFR_15_ELECTROTEHNICA_30_IDS_V139_AND_AI_CHALLENGE_2026_11_19.md)  
+**Current workqueue:** [V139 568 QABC, 35 recent source rechecks](../QUESTION_AUDIT/V139_568_QABC_QUEUE_WITH_35_UPDATED_SOURCE_RECHECKS_2026_11_19.csv)  
+**New evidence:** [V138 15 original QABC case cards](../QUESTION_AUDIT/V138_GFR_15_HIGH_RISK_ELECTROTECHNICS_OPTION_MODEL_RECHECK_2026_11_19.csv)  
+**Previous:** [CKPT-253](../QUESTION_AUDIT/CKPT_253_GFR_20_DISTINCT_SOURCE_RECHECK_AND_V137_CONSOLIDATED_2026_11_19.md)
+
+15 unique questions/30 cross-grade placements now source-context rechecked; two separate AI research analyses recorded as challenge material, **not independent qualified QA**. **0/822 approved**, original QABC/key/application unchanged, PR7 stays Draft.
+
+
+
 ## 2026-11-19 | CKPT-253 | Active final audit checkpoint
 
 **Current verified research checkpoint:** [CKPT-253 GFR 20 QABC rechecks](../QUESTION_AUDIT/CKPT_253_GFR_20_DISTINCT_SOURCE_RECHECK_AND_V137_CONSOLIDATED_2026_11_19.md)  
