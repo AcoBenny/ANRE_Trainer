@@ -1,5 +1,16 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-19 | CKPT-253 | Active final audit checkpoint
+
+**Current verified research checkpoint:** [CKPT-253 GFR 20 QABC rechecks](../QUESTION_AUDIT/CKPT_253_GFR_20_DISTINCT_SOURCE_RECHECK_AND_V137_CONSOLIDATED_2026_11_19.md)  
+**Current 568-unit source queue:** [V137 full 568 QABC](../QUESTION_AUDIT/V137_568_QABC_QUEUE_WITH_20_UPDATED_RECHECK_UNITS_2026_11_19.csv)  
+**Source recheck batches:** [V134 15 LEG/NOR](../QUESTION_AUDIT/V134_GFR_15_LEG_NOR_PRIMARY_SCOPE_RECHECK_2026_11_19.csv) and [V136 5 technical/normative](../QUESTION_AUDIT/V136_GFR_FIVE_HIGH_RISK_ELECTRICAL_NORMATIVE_ADJUDICATION_2026_11_19.csv)  
+**Previous checkpoint:** [CKPT-252](../QUESTION_AUDIT/CKPT_252_GFR_V132_HISTORICAL_RECONCILIATION_AND_V133_PRIMARY_LEGAL_2026_11_19.md)
+
+Research coverage link status: 822/822 IDs; 568 distinct QABC; 20 source cases revisited this session (not first-time coverage), 2 crossgrade key conflicts and other source-vs-key cases open, **0/822 learning approvals**, independent specialist QA NOT_RUN, app/keys unchanged, PR7 Draft.
+
+
+
 **Current:** [CKPT-252 | Final-stage source / data QA](../QUESTION_AUDIT/CKPT_252_GFR_V132_HISTORICAL_RECONCILIATION_AND_V133_PRIMARY_LEGAL_2026_11_19.md) (2026-11-19)  
 **Prior:** [CKPT-251 | 568 QABC matrix + Academy pilot](../QUESTION_AUDIT/CKPT_251_GFR_568_DEDUP_WORKQUEUE_5_PILOT_CASES_SOURCE_SCOPE_2026_11_19.md)  
 **Active queue:** [V132 | 568 unique QABC, 822 grade IDs](../QUESTION_AUDIT/V132_CANONICAL_568_QABC_WORKQUEUE_HISTORY_POINTERS_RESOLVED_2026_11_19.csv)  
