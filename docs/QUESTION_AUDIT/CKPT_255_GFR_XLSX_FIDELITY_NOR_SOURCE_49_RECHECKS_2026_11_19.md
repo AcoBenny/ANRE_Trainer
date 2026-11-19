@@ -49,3 +49,7 @@
 - [V141](V141_568_QABC_MASTER_WITH_7_SOURCE_FIDELITY_DELTAS_2026_11_19.csv) 568-unit queue post fidelity gate.
 - [V142](V142_FOURTEEN_P0_NOR_GRADE_PROVENANCE_2026_11_19.csv) 14 original QABC with normative source and option logic.
 - [V143](V143_568_QABC_WITH_49_TARGETED_RECHECKS_7_FIDELITY_DELTAS_2026_11_19.csv) **active** consolidated 568-unit queue.
+
+## Official ANRE live source navigation (verified 2026-11-19)
+- At [ANRE current electricity authorization page](https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/), the published **Sesiune TOAMNĂ 2026** link and the standing examination resources coexist. The page's linked electricity authorization bibliography is still labelled **“Tematica si bibliografie ... 2023”**, original example workbooks **ELECTROTEHNICA-09.2024**, LEGISLATIE GR1/GR2 05.2023 and NORME TEHNICE GR1/GR2 05.2023. This is **proof of what's currently linked**, not proof that no new 2026 session-specific rule exists elsewhere or that every older norm stays applicable without amendments.
+- Keep separate (a) current page listing/source identity (verified), (b) archive workbook copy binary equality to live ANRE download (not yet verified), (c) exam answer key (ANRE site lists examples, not key), and (d) subject-matter correctness (independent QA pending). The 2026 timing notice cannot substitute for source applicability review.
