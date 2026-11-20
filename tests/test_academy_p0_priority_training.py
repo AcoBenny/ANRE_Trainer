@@ -194,6 +194,66 @@ class PriorityAcademyTests(unittest.TestCase):
                                 "--mode", "live-free", "--confirm", "FREE_ONLY"])
             self.assertEqual(code, 1)
 
+    def test_bounded_free_routing_avoids_five_sequential_provider_timeouts(self):
+        self.assertEqual(p0.bounded_provider_candidates(
+            ("gemini", "openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning")
+        ), ("gemini", "requesty_gemma"))
+        self.assertEqual(p0.bounded_provider_candidates(
+            ("openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning")
+        ), ("openrouter", "requesty_gemma"))
+        self.assertEqual(p0.bounded_provider_candidates(("groq",)), ("groq",))
+        self.assertTrue(all(len(p0.bounded_provider_candidates(x[1])) <= 2
+                            for x in p0.SPECIALISTS))
+
+    def test_exact_single_unit_is_not_a_full_batch(self):
+        with tempfile.TemporaryDirectory() as td:
+            folder = pathlib.Path(td)
+            queue = make_queue(folder)
+            with mock.patch.object(p0, "route_agent") as api:
+                code = p0.main(["--queue", str(queue), "--out", str(folder / "out"),
+                                "--only-unit", "QABC-0050", "--mode", "dry-run"])
+                api.assert_not_called()
+            self.assertEqual(code, 0)
+            d = json.loads((folder / "out" / "results.json").read_text())
+            self.assertEqual([x["unit_id"] for x in d["records"]], ["QABC-0050"])
+            self.assertEqual(d["attempts"], 0)
+
+    def test_failed_role_only_retest_cannot_certify_independence(self):
+        with tempfile.TemporaryDirectory() as td:
+            folder = pathlib.Path(td)
+            queue = make_queue(folder)
+            state_capture = []
+            def one_role(system, message, candidates, state):
+                state_capture.append(candidates)
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {"ok": True, "model": "gemini-3.5-flash-lite",
+                        "provider": candidates[0], "text": FORMATTED,
+                        "finish_reason": "stop", "usage": {}}
+            with mock.patch.object(p0, "route_agent", side_effect=one_role):
+                code = p0.main(["--queue", str(queue), "--out", str(folder / "out"),
+                                "--mode", "live-free", "--only-unit", "QABC-0042",
+                                "--only-role", "independent_skeptic", "--confirm", "FREE_ONLY"])
+            d = json.loads((folder / "out" / "results.json").read_text())
+            self.assertEqual(code, 0)
+            self.assertEqual(d["attempts"], 1)
+            self.assertEqual(d["records"][0]["roles_selected"], ["independent_skeptic"])
+            self.assertEqual(d["records"][0]["gate"], "ROLE_RETEST_PRESENT_NOT_RECONCILED")
+            self.assertFalse(d["records"][0]["qa"]["independent_model_families_proven"])
+            self.assertTrue(d["records"][0]["qa"]["requires_prior_artifact_reconciliation"])
+            self.assertFalse(d["learner_approved"])
+            self.assertEqual(state_capture[0], ("gemini", "requesty_gemma"))
+
+    def test_only_role_requires_exact_unit(self):
+        with tempfile.TemporaryDirectory() as td:
+            folder=pathlib.Path(td)
+            q=make_queue(folder)
+            with self.assertRaises(SystemExit):
+                p0.main(["--queue",str(q),"--only-role","independent_skeptic"])
+            with self.assertRaises(SystemExit):
+                p0.main(["--queue",str(q),"--only-unit","QABC-0036",
+                         "--only-role","unknown_reviewer"])
+
     def test_unconfirmed_live_run_does_not_call_providers(self):
         with tempfile.TemporaryDirectory() as td:
             folder = pathlib.Path(td)
