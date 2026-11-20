@@ -176,6 +176,48 @@ class P0SourcedEvidenceTests(unittest.TestCase):
         with self.assertRaises(SystemExit):
             review.run(["--evidence", str(EVIDENCE), "--only-role", "technical_electrical"])
 
+    def test_independent_generator_current_arithmetic_and_units(self):
+        m = review.independent_math_reference("QABC-0036")
+        self.assertAlmostEqual(m["p10_q8_u400_volts_current_A"], 18.484, places=3)
+        self.assertAlmostEqual(m["p10_q8_u500_volts_current_A"], 14.787, places=3)
+        self.assertAlmostEqual(m["p10_q30_u400_volts_current_A"], 45.644, places=3)
+        self.assertTrue(m["not_an_ANRE_scored_key"])
+
+    def test_source_specific_real_world_negative_flag_examples(self):
+        bad_current = "A: P=10kW, Q=8kVAR, U=400V gives I=12.8 kA. Incorrect units."
+        bad_period = "B: Same period is necesară, dar nu suficientă for harmonics."
+        bad_flux = ("A: Gauss E = q/epsilon0. B: D flux gives q_free. "
+                    "SOURCE_SCOPE: Niciuna dintre surse nu susține q.")
+        self.assertIn("MATH_UNITS_KW_KV_AMPS_NOT_KAMPS",
+                      review.observed_negative_flags("QABC-0036", bad_current))
+        self.assertIn("NECESSITY_SUFFICIENCY_INVERSION_SAME_PERIOD",
+                      review.observed_negative_flags("QABC-0050", bad_period))
+        self.assertIn("D_FLUX_Q_SOURCE_SELF_CONTRADICTION",
+                      review.observed_negative_flags("QABC-0065", bad_flux))
+        self.assertEqual(review.observed_negative_flags(
+            "QABC-0036", "A: example P=10 kW gives I=18.5 A at 400 V"), [])
+
+    def test_bad_numeric_review_cannot_pass_even_with_all_required_labels(self):
+        bad_text = GOOD_TEXT + (
+            "\nA: At 400 volts with 10 kW and 8 kvar, I is 12.8 kA."
+        )
+        with tempfile.TemporaryDirectory() as td:
+            def wrong_role(system, message, candidates, state):
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {"ok": True, "model": "openai/gpt-oss-120b",
+                        "provider": candidates[0], "text": bad_text}
+            with mock.patch.object(review, "route_agent", side_effect=wrong_role):
+                code = review.run(["--evidence", str(EVIDENCE), "--unit", "QABC-0036",
+                                   "--only-role", "technical_electrical", "--mode", "live-free",
+                                   "--confirm", "FREE_ONLY", "--out", td])
+            self.assertEqual(code, 1)
+            item = json.loads((pathlib.Path(td)/"results.json").read_text())["records"][0]
+            self.assertEqual(item["status"], "SOURCE_OR_MODEL_STRUCTURAL_QA_BLOCKED")
+            self.assertTrue(item["role_qa"]["technical_electrical"]["format_ok"])
+            self.assertTrue(item["role_qa"]["technical_electrical"]["observed_negative_flags"])
+            self.assertFalse(item["approved_for_learning"])
+
     def test_live_requires_explicit_budget_confirmation(self):
         with self.assertRaises(SystemExit):
             review.run(["--evidence", str(EVIDENCE), "--mode", "live-free"])
