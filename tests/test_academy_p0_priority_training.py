@@ -212,6 +212,22 @@ class PriorityAcademyTests(unittest.TestCase):
             report = json.loads((folder / "out" / "results.json").read_text())
             self.assertFalse(report["learner_approved"])
 
+    def test_groq_linguistic_requests_low_reasoning_effort(self):
+        from scripts import academy_free_router as router
+        import os
+        response = {
+            "model": "openai/gpt-oss-20b",
+            "choices": [{"finish_reason": "stop",
+                         "message": {"content": "A: no; B: yes; C: no"}}],
+            "usage": {"total_tokens": 45},
+        }
+        with mock.patch.dict(os.environ, {"GROQ_API_KEY": "synthetic-secret"}):
+            with mock.patch.object(router, "post_json", return_value=response) as fn:
+                result = router.call_provider("groq_linguistic", "review", "sample")
+        self.assertIn("A:", result["text"])
+        self.assertEqual(fn.call_args.args[2]["reasoning_effort"], "low")
+        self.assertEqual(fn.call_args.args[2]["model"], "openai/gpt-oss-20b")
+
     def test_groq_20b_independent_linguistic_fallback_is_bounded(self):
         from scripts import academy_agent_orchestrator as orch
         from scripts import academy_free_router as router
