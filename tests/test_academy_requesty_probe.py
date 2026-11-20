@@ -50,6 +50,53 @@ class RequestyAdapterTests(unittest.TestCase):
                 self.assertEqual(ctx.exception.code,
                                  "REQUESTY_MODEL_NOT_ALLOWLISTED_AS_FREE")
 
+    def test_requesty_cost_missing_or_nonzero_blocked_in_role_router(self):
+        base = {
+            "model": router.MODELS["requesty_lightning"],
+            "choices": [{"message": {"content": "Reasoned answer."},
+                         "finish_reason": "stop"}],
+        }
+        with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": "fake"}):
+            for usage, code in (
+                ({"total_tokens": 12}, "REQUESTY_COST_NOT_ATTESTED"),
+                ({"cost": 0.005, "total_tokens": 12}, "REQUESTY_NONZERO_REPORTED_COST"),
+            ):
+                with mock.patch.object(router, "post_json", return_value={
+                    **base, "usage": usage,
+                }):
+                    with self.assertRaises(router.ProviderError) as ctx:
+                        router.call_provider("requesty_lightning", "review", "some question")
+                    self.assertEqual(ctx.exception.code, code)
+
+    def test_gateway_served_model_must_match_pinned_free_endpoint(self):
+        fake = {
+            "model": "openai/paid-model",
+            "choices": [{"message": {"content": "not appropriate"},
+                         "finish_reason": "stop"}],
+            "usage": {"cost": 0},
+        }
+        with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": "fake"}):
+            with mock.patch.object(router, "post_json", return_value=fake):
+                with self.assertRaises(router.ProviderError) as ctx:
+                    router.call_provider("requesty_lightning", "system", "message")
+        self.assertEqual(ctx.exception.code, "REQUESTY_UNEXPECTED_SERVED_MODEL")
+
+    def test_requesty_is_last_fallback_when_other_keys_absent(self):
+        with mock.patch.dict(os.environ, {
+                "GROQ_API_KEY": "", "GEMINI_API_KEY": "",
+                "OPENROUTER_API_KEY": "", "REQUESTY_API_KEY": "fake"}):
+            with mock.patch.object(router, "call_provider", return_value={
+                "model": router.MODELS["requesty_lightning"],
+                "text": "source checks need confirmation",
+                "finish_reason": "stop", "usage": {"cost": 0},
+            }) as fn:
+                role_name, candidates, instruction = router.AGENTS[0]
+                state = {"attempts": 0, "returned": 0}
+                result = router.route_agent("source auditor", "test", candidates, state)
+        self.assertEqual(result["provider"], "requesty_lightning")
+        self.assertEqual(fn.call_count, 1)
+        self.assertEqual(state["attempts"], 1)
+
     def test_missing_key_means_no_requests(self):
         with tempfile.TemporaryDirectory() as root:
             with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": ""}):
