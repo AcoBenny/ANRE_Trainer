@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/academy-p0-targeted-retest.yml'
       - 'docs/CKPT_275_P0_LINGUISTIC_RECOVERY_2026_11_20.md'
+      - 'docs/CKPT_276_P0_MISSING_ROLES_RECOVERY_2026_11_20.md'
   pull_request:
     paths:
       - '.github/workflows/academy-p0-targeted-retest.yml'
@@ -22,7 +23,7 @@ concurrency:
 jobs:
   source-preserving-one-role:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 9
     steps:
       - uses: actions/checkout@v4
         with:
@@ -34,22 +35,41 @@ jobs:
       - name: Confirm immutable original twelve-question P0 queue
         run: |
           test "$(git hash-object docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json)" = "db189edd918f5f780bb0ea75192b391deb165723"
-      - name: Request exact missing QABC-0065 linguistic role via distinct Groq 20B
-        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[p0-single]')
+      - name: Only unresolved six ANRE specialist role slots (free APIs only)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[p0-roles]')
         env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
         run: |
-          python3 scripts/academy_p0_priority_training.py \
-            --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
-            --out _academy_p0_single_0065 \
-            --mode live-free --confirm FREE_ONLY \
-            --only-unit QABC-0065 --only-role linguistic_scope
-      - name: Archive only one independently unapproved linguistic role trace
-        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-single]')
+          set +e
+          bad=0
+          # Original successful reviewer outputs are preserved from earlier runs.
+          # Never re-run QABC-0065, which already passed linguistic role retry.
+          for pair in \
+            "QABC-0050 independent_skeptic" \
+            "QABC-0050 linguistic_scope" \
+            "QABC-0080 independent_skeptic" \
+            "QABC-0091 linguistic_scope" \
+            "QABC-0096 linguistic_scope" \
+            "QABC-0025 linguistic_scope"; do
+            set -- $pair
+            unit="$1"
+            role="$2"
+            out="_p0_recovery_${unit}_${role}"
+            python3 scripts/academy_p0_priority_training.py \
+              --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
+              --mode live-free --confirm FREE_ONLY \
+              --only-unit "$unit" --only-role "$role" --out "$out" || bad=$((bad + 1))
+          done
+          echo "Targeted specialist retries requiring later reconciliation or failed: $bad"
+          test "$bad" -eq 0
+
+      - name: Archive precisely targeted role traces, no learner approvals
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-roles]')
         uses: actions/upload-artifact@v4
         with:
-          name: academy-p0-qabc-0065-linguistic-only
-          path: _academy_p0_single_0065/
+          name: academy-p0-six-only-role-retests
+          path: _p0_recovery_*/
           retention-days: 7
           if-no-files-found: warn
