@@ -128,6 +128,9 @@ def call_provider(provider: str, system: str, message: str):
         }
         if provider == "openrouter":
             payload["reasoning"] = {"effort": "low"}
+        if provider == "groq_linguistic":
+            # Groq GPT-OSS 20B: prioritize visible concise A/B/C over hidden reasoning.
+            payload["reasoning_effort"] = "low"
         headers = {"Authorization": "Bearer " + key}
         if provider.startswith("requesty_"):
             headers.update({"X-Title": "ANRE Academy read-only free-model QA",
