@@ -20,7 +20,7 @@ AGENTS = (
 )
 MODELS = {
     "groq": "openai/gpt-oss-120b",
-    "gemini": "gemini-2.5-flash-lite",
+    "gemini": "gemini-3.5-flash-lite",
     "openrouter": "openrouter/free",
 }
 KEYS = {
@@ -31,7 +31,7 @@ KEYS = {
 ENDPOINTS = {
     "groq": "https://api.groq.com/openai/v1/chat/completions",
     "openrouter": "https://openrouter.ai/api/v1/chat/completions",
-    "gemini": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent",
+    "gemini": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
 }
 MAX_TOTAL_CALLS = 24
 MAX_CASES = 6
@@ -76,7 +76,7 @@ def post_json(url: str, headers: dict, payload: dict):
             return json.load(resp)
     except urllib.error.HTTPError as exc:
         # Do not print the provider response or echo headers / keys.
-        raise ProviderError("HTTP_" + str(exc.code), exc.code in (408, 429, 500, 502, 503, 504)) from None
+        raise ProviderError("HTTP_" + str(exc.code), exc.code in (403, 404, 408, 429, 500, 502, 503, 504)) from None
     except (urllib.error.URLError, TimeoutError):
         raise ProviderError("NETWORK_TIMEOUT", True) from None
 
