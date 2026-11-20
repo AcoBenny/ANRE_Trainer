@@ -33,3 +33,8 @@
 - First four-case real run: https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44736791421 . Offline checks succeeded. Nine independent role attempts returned responses from Groq, Gemini and OpenRouter. QA correctly marked QABC-0004 incomplete because the skeptic named B but omitted explicit A and C. No answer approved.
 - A targeted, separate only-role retry is now available. The next gated run must use `--only-unit QABC-0004 --only-role independent_skeptic`, not replay the other seven previously sufficient model role traces. Quality status is `ROLE_RETEST_PRESENT_NOT_RECONCILED`, which cannot certify independent roles by itself.
 - Reconcile with the original technical trace and the actual primary source before any QA completion. Untrusted model output is not evidence of a correct key.
+
+## Continuare GFR pe următoarele opt întrebări
+- CKPT-265 documentează prima execuție și erorile semantice reale.
+- În această rulare se testează loturile QABC-0005–0008 și QABC-0009–0012 separat, cu aceleași secrete free-tier și fără apeluri OpenAI plătite.
+- Rapoartele sunt numai dovezi de model și QA preliminar. Nu se schimbă bareme și nu se aprobă învățarea.
