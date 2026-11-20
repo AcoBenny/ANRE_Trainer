@@ -138,6 +138,9 @@ def independent_math_reference(case_id: str) -> dict:
             "basis": "separately distinguish E and D field flux in SI",
             "E_vacuum_closed_surface_flux": "q/epsilon_0",
             "D_closed_surface_free_charge_flux": "q_free",
+            "epsilon0_vacuum_F_per_m_CODATA_2022": 8.8541878188e-12,
+            "q1C_E_vacuum_flux_V_m": round(1 / 8.8541878188e-12, 1),
+            "q1C_coulomb_constant_not_E_flux": round(1 / (4 * math.pi * 8.8541878188e-12), 1),
             "E_and_D_are_not_interchangeable_without_definition": True,
             "not_an_ANRE_scored_key": True,
         }
@@ -162,6 +165,16 @@ def observed_negative_flags(case_id: str, response_text: str) -> list[str]:
             ("niciuna dintre surse" in low or "nicio sursă" in low)
             and ("q_free" in low or "q\\_free" in low or "flux d" in low)):
             flags.append("D_FLUX_Q_SOURCE_SELF_CONTRADICTION")
+    if case_id == "QABC-0065":
+        # Observed real answer: q=1 C, E flux ~=8.99e9 V*m. This is the
+        # Coulomb constant 1/(4*pi*epsilon0), NOT Gauss's q/epsilon0.
+        # Narrow fact-pattern flag: not a general scientific truth grader.
+        has_q1 = bool(re.search(r"(?i)q\s*=\s*1\s*c\b", response_text))
+        has_coulomb_number = bool(re.search(
+            r"8[.,]99\s*(?:[×x*]\s*)?10(?:\^?9|⁹)", response_text))
+        has_flux_units = ("v·m" in low or "v*m" in low or "v.m" in low)
+        if has_q1 and has_coulomb_number and has_flux_units:
+            flags.append("GAUSS_E_FLUX_CONFUSED_WITH_COULOMB_CONSTANT")
     return flags
 
 
