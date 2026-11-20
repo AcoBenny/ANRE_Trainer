@@ -64,7 +64,7 @@ def read_cases(path: pathlib.Path):
 def build_prompt(case: dict) -> str:
     # The positive/negative rubrics are intentionally withheld from model evaluation.
     return json.dumps(
-        {k: case[k] for k in ("id", "anre_ids", "category", "given", "reference")},
+        {k: case[k] for k in ("id", "anre_ids", "given", "reference")},
         ensure_ascii=False, sort_keys=True,
     )
 
@@ -92,18 +92,19 @@ def call_provider(provider: str, system: str, message: str):
         payload = {
             "systemInstruction": {"parts": [{"text": system}]},
             "contents": [{"role": "user", "parts": [{"text": message}]}],
-            "generationConfig": {"maxOutputTokens": 850, "temperature": 0},
+            "generationConfig": {"maxOutputTokens": 1400, "temperature": 0},
         }
         obj = post_json(ENDPOINTS[provider], {"x-goog-api-key": key}, payload)
         text = "\n".join(p.get("text", "") for c in obj.get("candidates", [])
                          for p in c.get("content", {}).get("parts", []) if "text" in p)
         usage = obj.get("usageMetadata", {})
+        finish_reason = str((obj.get("candidates") or [{}])[0].get("finishReason", "UNKNOWN"))
         model = obj.get("modelVersion", MODELS[provider])
     else:
         payload = {
             "model": MODELS[provider],
             "stream": False,
-            "max_tokens": 1800 if provider.startswith("openrouter") else 850,
+            "max_tokens": 1800 if provider.startswith("openrouter") else 1400,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": message}],
         }
         if provider == "openrouter":
@@ -111,10 +112,13 @@ def call_provider(provider: str, system: str, message: str):
         obj = post_json(ENDPOINTS[provider], {"Authorization": "Bearer " + key}, payload)
         text = "\n".join(str(c.get("message", {}).get("content") or "") for c in obj.get("choices", []))
         usage = obj.get("usage", {})
+        finish_reason = str((obj.get("choices") or [{}])[0].get("finish_reason", "unknown"))
         model = obj.get("model") or MODELS[provider]
     if not text.strip():
         raise ProviderError("EMPTY_MODEL_OUTPUT", True)
-    return {"model": str(model), "usage": usage, "text": text[:14000]}
+    if finish_reason.upper() in ("MAX_TOKENS", "LENGTH", "SAFETY", "RECITATION"):
+        raise ProviderError("INCOMPLETE_OR_BLOCKED_" + finish_reason.upper(), False)
+    return {"model": str(model), "finish_reason": finish_reason, "usage": usage, "text": text[:14000]}
 
 
 def route_agent(system: str, message: str, candidates: tuple[str, ...], state: dict):
