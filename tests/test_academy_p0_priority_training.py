@@ -114,6 +114,22 @@ class PriorityAcademyTests(unittest.TestCase):
         self.assertFalse(p0.check_reviewer_text("A: Yes\nB: No\nC: Maybe")["all_required_fields"])
         self.assertTrue(p0.check_reviewer_text(FORMATTED)["all_required_fields"])
 
+    def test_markdown_bold_headings_do_not_hide_copied_original_options(self):
+        with tempfile.TemporaryDirectory() as td:
+            case = p0.load_priority_queue(make_queue(pathlib.Path(td)))[0]
+            output = (
+                "**A:** Opțiune A\n**B:** Opțiune B\n**C:** Opțiune C\n"
+                "**PAIRS:** Reviewed logical pairs.\n"
+                "**CONDITIONS:** Source context unknown.\n"
+                "**EVIDENCE_MISSING:** Need scoped source.\n"
+                "**VERDICT:** NOT_APPROVED."
+            )
+            result = p0.check_reviewer_text(output, case)
+            self.assertTrue(all(result["labels"].values()))
+            self.assertTrue(all(result["extra_fields"].values()))
+            self.assertEqual(result["option_copied_without_assessment"], ["A", "B", "C"])
+            self.assertFalse(result["all_required_fields"])
+
     def test_a_b_c_copied_only_is_not_a_review(self):
         with tempfile.TemporaryDirectory() as td:
             case = p0.load_priority_queue(make_queue(pathlib.Path(td)))[0]
