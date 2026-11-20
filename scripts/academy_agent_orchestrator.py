@@ -34,15 +34,15 @@ PROMPT_POLICY = (
     "Conclude with source/evidence needed and NO_LEARNER_APPROVAL."
 )
 SPECIALISTS = (
-    ("technical_electrical", ("groq", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
+    ("technical_electrical", ("groq", "openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning"),
      "Specialist in electrical engineering. Evaluate A, B and C separately for the exact "
      "object, quantities, assumptions and counterexamples. Use elimination only after "
      "affirmative physical reasoning. Mention possible conditional answer, not a scored key."),
-    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
+    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning"),
      "Independent adversarial reviewer. Do not see or assume a technical review exists. "
      "Challenge assumptions, false universal quantifiers, wrong physical or source scope, "
      "missing grade and edition. Offer at least one disconfirming case or say why none found."),
-    ("linguistic_scope", ("openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
+    ("linguistic_scope", ("openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning"),
      "Independent Romanian-language and technical semantics reviewer. Check exact stem-to-"
      "option fit and A-B, A-C, B-C exclusivity, 'numai', comparators, incomplete sentences "
      "and implicit conditions. Never correct or rewrite the original question."),
