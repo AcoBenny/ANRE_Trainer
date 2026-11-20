@@ -1,0 +1,136 @@
+{
+  "schema": "academy_p0_source_evidence_v1",
+  "created_utc": "2026-11-20",
+  "status": "RESEARCHED_EXTERNAL_TECHNICAL_SOURCES_NOT_ANRE_OFFICIAL_KEY",
+  "source_queue_blob": "db189edd918f5f780bb0ea75192b391deb165723",
+  "learner_approved": false,
+  "technical_source_links_opened_in_session": true,
+  "official_ANRE_key_authenticated": false,
+  "qualified_SME_review": false,
+  "version_2026_exam_applicability": false,
+  "originals_not_mutated": true,
+  "cases": [
+    {
+      "unit_id": "QABC-0036",
+      "grade_ids": "G1-ELE-043|G2-ELEC-189",
+      "question_original": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
+      "options_original": {
+        "A": "cu tensiunea între faze",
+        "B": "numai cu puterile active generate",
+        "C": "cu puterile reactive generate"
+      },
+      "tag": "THREE_PHASE_CURRENT",
+      "sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+          "title": "Schneider Electric Electrical Installation Guide, Definition of reactive power",
+          "section": "S^2=P^2+Q^2; three-phase S=sqrt(3)*U*I",
+          "short_evidence": "For balanced sinusoidal 3-phase power, S²=P²+Q² and S=√3 UI; specify fixed P, Q, U or power factor before claiming direct proportionality."
+        }
+      ],
+      "equations": [
+        "S^2=P^2+Q^2",
+        "I=sqrt(P^2+Q^2)/(sqrt(3)*U)"
+      ],
+      "key_uncertainty": "The question does not state fixed P, Q, U, power factor, or generator operating mode; unconditional direct proportionality cannot be inferred.",
+      "assumptions_to_check": [
+        "balanced sinusoidal 3-phase regime",
+        "which variables held constant",
+        "sign of reactive power"
+      ],
+      "math_regression": [
+        "if P=3,Q=4,U=1 I=5/sqrt(3)",
+        "if P=3,Q=8,U=1 I=sqrt(73)/sqrt(3), not 2* previous I"
+      ],
+      "blocked_reason": "SOURCE_SCOPED_PHYSICS_ONLY_NO_COURSE_KEY",
+      "verdict": "BLOCKED_NEED_SOURCE_SCOPE",
+      "source_review_type": "OPEN_PUBLIC_ENGINEERING_REFERENCE_NOT_PRIMARY_EXAM_SCORING"
+    },
+    {
+      "unit_id": "QABC-0050",
+      "grade_ids": "G1-ELE-057|G2-ELEC-203",
+      "question_original": "Două funcţii periodice sinusoidale sunt armonice între ele dacă:",
+      "options_original": {
+        "A": "raportul perioadelor lor este un număr întreg oarecare",
+        "B": "au aceeaşi perioadă",
+        "C": "raportul perioadelor lor este egal cu 1/2"
+      },
+      "tag": "HARMONIC_PERIOD_DIRECTION",
+      "sources": [
+        {
+          "url": "https://newt.phys.unsw.edu.au/jw/harmonics.html",
+          "title": "UNSW Physics: How harmonic are harmonics?",
+          "section": "nth harmonic frequency nf and second-harmonic period T/2",
+          "short_evidence": "nth harmonic frequency is n times the fundamental; T_n=T_1/n. For n=2, T_n/T_1=1/2 while T_1/T_n=2."
+        },
+        {
+          "url": "https://www.tek.com/en/support/faqs/how-many-harmonics-are-included-distortion-measurement",
+          "title": "Tektronix harmonics in measurement",
+          "section": "harmonic 10,20,30 kHz examples",
+          "short_evidence": "Test-equipment examples identify 10 kHz fundamental and 20,30 kHz harmonics; not a source for ANRE answer scoring."
+        }
+      ],
+      "equations": [
+        "T=1/f",
+        "f_n=n*f_1",
+        "T_n=T_1/n"
+      ],
+      "key_uncertainty": "Unspecified orientation of 'raportul perioadelor', possible n=1 inclusion, and nonexclusive option overlap make A/B/C not unconditionally mutually exclusive.",
+      "assumptions_to_check": [
+        "which period is numerator",
+        "whether identical frequencies count as first harmonic",
+        "whether question requires a distinct harmonic"
+      ],
+      "math_regression": [
+        "T_1=20ms,T_2=10ms => T_1/T_2=2 and T_2/T_1=1/2",
+        "if n=1 then T_n=T_1"
+      ],
+      "blocked_reason": "SEMANTICALLY_MULTIPLE_PLAUSIBLE_CHOICES",
+      "verdict": "BLOCKED_NEED_SOURCE_SCOPE",
+      "source_review_type": "OPEN_PUBLIC_ENGINEERING_REFERENCE_NOT_PRIMARY_EXAM_SCORING"
+    },
+    {
+      "unit_id": "QABC-0065",
+      "grade_ids": "G1-ELE-073|G2-ELEC-218",
+      "question_original": "Fluxul electric total, produs de o sarcină electrică de valoare q printr-o suprafaţă închisă care o înconjoară, este egal cu:",
+      "options_original": {
+        "A": "valoarea numerică 2q",
+        "B": "valoarea numerică q",
+        "C": "valoarea numerică q/2"
+      },
+      "tag": "FLUX_E_VS_D",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law",
+          "title": "OpenStax University Physics Volume 2, 6.2",
+          "section": "6.2 Gauss law for E: integral E dot dA=q_enc/epsilon0",
+          "short_evidence": "In SI units the closed-surface flux of electric-field intensity E is q enclosed divided by vacuum permittivity."
+        },
+        {
+          "url": "https://publishing.vt.edu/en/books/71/files/089f0317-2cfd-4eb5-ad14-d7f101a9e4b2.pdf",
+          "title": "Virginia Tech Electromagnetics, Section 5.5",
+          "section": "Gauss law for electric flux density D: integral D dot ds=Q_encl",
+          "short_evidence": "Closed surface flux of electric flux density D is enclosed charge (in C); D is not the same object as E."
+        }
+      ],
+      "equations": [
+        "oint(E dot dA)=q/epsilon_0 (vacuum, SI)",
+        "oint(D dot dA)=q_free (free-charge, SI)"
+      ],
+      "key_uncertainty": "Original question says 'flux electric total' but does not identify E or D and original choices omit q/epsilon0. Option B=q requires D-flux/older convention; not a safe direct reading of E.",
+      "assumptions_to_check": [
+        "which field is integrated E or D",
+        "unit system",
+        "whether q is free or total charge",
+        "edition and exact course definition"
+      ],
+      "math_regression": [
+        "q=1 C: E flux in vacuum numerically 1/epsilon0, not 1",
+        "q=1 C of free charge: D flux 1 C"
+      ],
+      "blocked_reason": "UNSPECIFIED_PHYSICAL_OBJECT_AND_UNITS",
+      "verdict": "BLOCKED_NEED_SOURCE_SCOPE",
+      "source_review_type": "OPEN_PUBLIC_ENGINEERING_REFERENCE_NOT_PRIMARY_EXAM_SCORING"
+    }
+  ]
+}
