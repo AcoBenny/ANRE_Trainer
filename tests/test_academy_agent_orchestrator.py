@@ -150,6 +150,34 @@ class AcademyOrchestrationTests(unittest.TestCase):
                                       "--mode", "live-free", "--confirm", "FREE_ONLY"])
             self.assertEqual(result, 1)
 
+    def test_focused_retest_replays_only_failed_unit_and_role(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = make_queue(pathlib.Path(d))
+            calls = []
+            def mock_api(system, message, providers, state):
+                calls.append((system, message))
+                state["attempts"] += 1
+                state["returned"] += 1
+                text = ("Option B is provisionally plausible, but unverified. " * 4
+                        if len(calls) == 2 else FULL_REVIEW)
+                model = "groq/oss" if len(calls) == 1 else "gemini/flash"
+                return {"ok": True, "model": model, "text": text,
+                        "provider": providers[0], "finish_reason": "stop"}
+            with mock.patch.object(academy, "route_agent", side_effect=mock_api):
+                code = academy.run(["--queue", str(p), "--out", str(pathlib.Path(d)/"retry"),
+                                    "--mode", "live-free", "--only-unit", "QABC-0004",
+                                    "--confirm", "FREE_ONLY"])
+            self.assertEqual(code, 0)
+            self.assertEqual(len(calls), 3)
+            self.assertEqual(calls[1][1], calls[2][1])
+            report = json.loads((pathlib.Path(d)/"retry"/"results.json").read_text())
+            self.assertEqual(report["only_unit"], "QABC-0004")
+            self.assertEqual(len(report["records"]), 1)
+            self.assertEqual(report["records"][0]["role_retests"][0]["role"], "independent_skeptic")
+            self.assertEqual(report["records"][0]["qa_evidence_gate"]["status"],
+                             "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED")
+            self.assertFalse(report["learner_approved"])
+
     def test_invalid_run_without_confirmation(self):
         with tempfile.TemporaryDirectory() as d:
             p = make_queue(pathlib.Path(d))
