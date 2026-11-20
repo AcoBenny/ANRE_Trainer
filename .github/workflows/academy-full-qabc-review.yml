@@ -1,0 +1,67 @@
+name: ANRE Academy source-vs-trainer QABC review (free-only)
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_full_qabc_review.py'
+      - 'scripts/academy_free_router.py'
+      - 'tests/test_academy_full_qabc_review.py'
+      - '.github/workflows/academy-full-qabc-review.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_full_qabc_review.py'
+      - 'scripts/academy_free_router.py'
+      - 'tests/test_academy_full_qabc_review.py'
+      - '.github/workflows/academy-full-qabc-review.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: academy-real-qabc-readonly
+  cancel-in-progress: false
+
+jobs:
+  run-source-fidelity-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Verify exact six original/canonical QABC cases, no external API
+        run: python3 -m unittest discover -s tests -p 'test_academy_full_qabc_review.py' -v
+
+      - name: Obtain pinned V144 original-versus-current data (read-only)
+        if: github.event_name == 'push' && contains(github.event.head_commit.message, '[qabc]')
+        shell: bash
+        run: |
+          git fetch --no-tags --depth=1 origin refs/heads/audit/anre-v8-priority-17-20261109
+          git show FETCH_HEAD:docs/QUESTION_AUDIT/V144_SIX_RELEASE_BLOCKERS_SOURCE_VERSUS_CANONICAL_ADJUDICATION_2026_11_20.csv > source_6_qabc.csv
+          test "$(git hash-object source_6_qabc.csv)" = '0fae5c2e3653c4cea2ced456ca768ddb01db733e' || {
+            echo 'Original/Trainer ledger unexpectedly changed: STOP'
+            exit 1
+          }
+
+      - name: Six distinct original/trainer QABC reviews, 12 roles, no paid API
+        if: github.event_name == 'push' && contains(github.event.head_commit.message, '[qabc]')
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python3 scripts/academy_full_qabc_review.py \
+            --ledger source_6_qabc.csv --mode live-free --confirm FREE_ONLY \
+            --out _academy_qabc_results
+
+      - name: Archive unapproved model QA traces for review
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[qabc]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-real-qabc-free-review
+          path: _academy_qabc_results/
+          retention-days: 4
+          if-no-files-found: warn
