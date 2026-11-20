@@ -1,0 +1,568 @@
+{
+  "schema": "v214_15_norm_i7_16_30_abc_explanations_with_2023_and_historical_exceptions",
+  "date": "2026-11-20",
+  "parent_commit": "f80a60fd5da86f5d018455245ba38aa48e94fa99",
+  "previous_manifest_blob": "2fddb49ea54ce09c9f4f83c943378dbf63129e7c",
+  "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "counts": {
+    "new_unique_qabc": 15,
+    "new_grade_routes": 15,
+    "separate_option_explanations": 45,
+    "reformulated_exercises": 15,
+    "new_explicit_semantic_holds": 8,
+    "learner_approvals": 0
+  },
+  "held_ids": [
+    "QABC-0335",
+    "QABC-0336",
+    "QABC-0337",
+    "QABC-0339",
+    "QABC-0341",
+    "QABC-0342",
+    "QABC-0343",
+    "QABC-0344"
+  ],
+  "normative_gate": "V90/V85/V77/CKPT218 and corrected CKPT220 previous source reviews. NOR021 CKPT220 supersedes CKPT218 source-not-found; exact I7 5.1.7.2(b) found but original always omits conditions. NOR027 contact screw terminology needs device diagram; NOR028 immediate I7 5.2.6.6 exception; NOR029 residential 2.5m exception conflicts imported B; NOR030 PE155 exact primary text not recovered. All imported keys kept. No independently certified applicable 2026 exam edition or technically qualified human reviewer.",
+  "cards": [
+    {
+      "unit_id": "QABC-0330",
+      "grade_ids": [
+        "G1-NOR-016"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "23",
+        "stem": "Legăturile electrice între conductoare izolate pentru îmbinări sau derivaţii se fac:",
+        "A": "în interiorul tuburilor sau ţevilor de protecţie",
+        "B": "în interiorul golurilor din elementele de construcţie",
+        "C": "numai în doze sau cutii de legătură",
+        "imported_keys_UNCHANGED": "G1-NOR-016=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-016:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md",
+        "original_source_links": "G1-NOR-016:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.6.4-5, CKPT218",
+      "editorial_draft": {
+        "A": "A o îmbinare executată ascunsă în interiorul unui tub este diferită de un conductor intact care trece prin tub și nu îndeplinește regula cutiilor de îmbinare.",
+        "B": "B golul de construcție nu este o doză prevăzută pentru derivații și nu oferă protecția cerută conexiunii.",
+        "C": "C îmbinările și derivațiile conductorilor izolați se realizează în doze/cutii de legătură în modelul I7 citat.",
+        "model_scope_or_trap": "Conductorul poate traversa un tub, dar legătura lui de îmbinare nu se face în orice loc ascuns.",
+        "reformulated_question": "Poți confunda traversarea unui tub cu o îmbinare electrică efectuată în interiorul tubului?",
+        "reformulated_solution": "Nu, sunt obiecte diferite și au reguli distincte.",
+        "editorial_disposition": "QUALIFIED_I7_JOINTS_IN_BOXES",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0331",
+      "grade_ids": [
+        "G1-NOR-017"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "24",
+        "stem": "Măsurile pentru evitarea contactului direct cu materialul combustibil al echipamentelor electrice cu grad de protecţie inferior IP54 se aplică:",
+        "A": "numai la montarea aparentă a elementelor de instalaţii electrice",
+        "B": "numai la montarea sub tencuială a elementelor de instalaţii electrice",
+        "C": "atât la montarea aparentă cât şi la montarea îngropată",
+        "imported_keys_UNCHANGED": "G1-NOR-017=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-017:V90_NORM_P1_TWELVE_I7_PRIMARY_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-017:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §3.0.3.8, V90",
+      "editorial_draft": {
+        "A": "A «numai la montarea aparentă» exclude greșit echipamentele montate îngropat care necesită protecție față de material combustibil.",
+        "B": "B «numai la montarea sub tencuială» exclude montajul aparent care poate necesita aceleași măsuri.",
+        "C": "C protecțiile împotriva contactului direct cu material combustibil se aplică atât la montaj aparent, cât și la cel îngropat în condițiile din I7.",
+        "model_scope_or_trap": "Condiția de IP inferior IP54 se citește împreună cu tipul de montaj și materialul suport, nu ca excepție pentru un singur mod.",
+        "reformulated_question": "Un aparat IP mai mic decât IP54 devine automat sigur la contact cu lemn doar fiind îngropat sub tencuială?",
+        "reformulated_solution": "Nu, se aplică măsurile de separare/protecție corespunzătoare.",
+        "editorial_disposition": "QUALIFIED_COMBUSTIBLE_IP54_BOTH_INSTALLATIONS",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0332",
+      "grade_ids": [
+        "G1-NOR-018"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "25",
+        "stem": "Montarea pe materiale combustibile a echipamentelor electrice cu grad de protecţie inferior IP54:",
+        "A": "este strict interzisă",
+        "B": "este admisă fără restricţii",
+        "C": "se face interpunând materiale incombustibile între acestea şi materialul combustibil sau elementele de distanţare",
+        "imported_keys_UNCHANGED": "G1-NOR-018=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-018:V90_NORM_P1_TWELVE_I7_PRIMARY_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-018:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §3.0.3.8, V90",
+      "editorial_draft": {
+        "A": "A «strict interzis» nu redă excepția de montaj pe combustibil cu interpunerea de protecții adecvate.",
+        "B": "B montajul complet fără restricții ignoră necesitatea materialelor incombustibile sau a distanțării specificate.",
+        "C": "C interpunerea materialelor incombustibile ori a elementelor de distanțare reprezintă soluția permisă în condițiile indicate.",
+        "model_scope_or_trap": "Nu orice separator improvizat este suficient; dimensiunile, temperatura și distanțarea se verifică după textul normei.",
+        "reformulated_question": "Este montajul pe lemn permis fără nicio măsură doar fiindcă echipamentul funcționează normal?",
+        "reformulated_solution": "Nu; se aplică protecții adaptate riscului de incendiu.",
+        "editorial_disposition": "QUALIFIED_NONCOMBUSTIBLE_SEPARATOR_OR_SPACER",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0333",
+      "grade_ids": [
+        "G1-NOR-019"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "26",
+        "stem": "Montarea tuburilor de protecţie a conductoarelor electrice de j.t. pe pardoseala combustibilă a podurilor:",
+        "A": "este strict interzisă",
+        "B": "este admisă fără restricţii",
+        "C": "trebuie evitată; se poate face excepţie pentru tuburi metalice",
+        "imported_keys_UNCHANGED": "G1-NOR-019=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-019:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md",
+        "original_source_links": "G1-NOR-019:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.12.2.4-5, CKPT218",
+      "editorial_draft": {
+        "A": "A interdicția absolută nu reflectă excepția expresă pentru tuburi metalice în condițiile specifice pardoselilor combustibile din pod.",
+        "B": "B permisiunea nelimitată este falsă întrucât norma cere evitarea traseelor de acest tip și precizează măsuri pentru excepții.",
+        "C": "C se preferă evitarea montajului pe pardoseala combustibilă a podurilor, cu posibilitatea prevăzută pentru tuburile metalice.",
+        "model_scope_or_trap": "O excepție de utilizare a tubului metalic nu autorizează orice cablu sau montaj fără evaluare, ci condițiile întregii secțiuni.",
+        "reformulated_question": "Este orice tub din plastic permis fără restricții pe pardoseala combustibilă a unui pod?",
+        "reformulated_solution": "Nu, există limitări și condiții specifice pentru traseele din poduri.",
+        "editorial_disposition": "QUALIFIED_METAL_CONDUIT_ATTIC_EXCEPTION",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0334",
+      "grade_ids": [
+        "G1-NOR-020"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "27",
+        "stem": "Amplasarea aparatelor cu ulei în interiorul tablourilor electrice:",
+        "A": "este interzisă",
+        "B": "este permisă în anumite condiţii",
+        "C": "este permisă, dar nu se recomandă",
+        "imported_keys_UNCHANGED": "G1-NOR-020=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-020:V90_NORM_P1_TWELVE_I7_PRIMARY_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-020:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.3.3.18, V90",
+      "editorial_draft": {
+        "A": "A exprimă interdicția din clauza I7 asupra aparatelor cu dielectric combustibil, precum uleiurile obișnuite, în interiorul tablourilor.",
+        "B": "B condițiile generale ale montajului nu reprezintă o derogare explicită pentru dielectricul combustibil interzis în acest tip de tablou.",
+        "C": "C «permis, dar nerecomandat» transformă o interdicție din text în sfat opțional.",
+        "model_scope_or_trap": "Enunțul spune simplu «cu ulei», iar regula interzice aparatele cu dielectric combustibil; natura unui ulei special necombustibil trebuie demonstrată separat.",
+        "reformulated_question": "Un aparat cu ulei dielectric combustibil poate fi considerat permis automat în interiorul tabloului?",
+        "reformulated_solution": "Nu, în cazul vizat de clauza normativă este interzis.",
+        "editorial_disposition": "QUALIFIED_COMBUSTIBLE_OIL_DIELECTRIC_SCOPE",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0335",
+      "grade_ids": [
+        "G1-NOR-021"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "28",
+        "stem": "Căile de curent ce nu se pot realiza în execuţie etanşă, în încăperi şi în spaţii din exterior cu mediu coroziv, pot fi realizate întotdeauna din:",
+        "A": "Cu",
+        "B": "Al",
+        "C": "otel",
+        "imported_keys_UNCHANGED": "G1-NOR-021=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-021:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md;CKPT_220_G1_NOR021_EXACT_I7_CORROSION_SUPERSEDES_CKPT218_2026_11_18.md",
+        "original_source_links": "G1-NOR-021:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.1.7.2(b), CKPT220 supersedes CKPT218",
+      "editorial_draft": {
+        "A": "A cuprul este materialul prescris în condițiile I7 §5.1.7.2(b) când aluminiul sau oțelul nu are stabilitate chimică suficientă și căile de curent nu pot fi protejate corespunzător.",
+        "B": "B aluminiul nu este ales în cazul special în care mediul îl atacă și protecția anticorozivă/etanșă nu este posibilă.",
+        "C": "C oțelul nu este ales în aceleași condiții de rezistență la coroziune insuficientă.",
+        "model_scope_or_trap": "**ERRATUM ISTORIC:** CKPT220 a găsit exact articolul lipsă din CKPT218. Enunțul omite condiția stabilității chimice și spune «întotdeauna», deci A este cheia intenționată, nu certitudine universală că orice agent chimic cruță Cu.",
+        "reformulated_question": "Dacă aluminiul și oțelul sunt instabile în mediul coroziv, iar protejarea nu este posibilă, ce material impune clauza I7 discutată?",
+        "reformulated_solution": "Cupru în condițiile exacte descrise de articol.",
+        "editorial_disposition": "HOLD_NOR021_OMITTED_CHEMICAL_STABILITY_AND_ALWAYS",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0336",
+      "grade_ids": [
+        "G1-NOR-022"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "29",
+        "stem": "Puterea instalată pe un circuit monofazat de prize din clădirile de locuit şi social - culturale este de:",
+        "A": "1 kW",
+        "B": "1,5 kW",
+        "C": "2 kW",
+        "imported_keys_UNCHANGED": "G1-NOR-022=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-022:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md",
+        "original_source_links": "G1-NOR-022:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.7, CKPT218",
+      "editorial_draft": {
+        "A": "A 1 kW este sub puterea de referință de 2 kW din regula generală pentru circuitul monofazat de prize analizat.",
+        "B": "B 1,5 kW este sub pragul nominal din clauză, dar nu valoarea de referință cerută.",
+        "C": "C 2 kW este puterea nominală instalată de referință pentru un circuit monofazat uzual de prize în clădirile descrise.",
+        "model_scope_or_trap": "Nu generaliza valoarea pentru toate circuitele dedicate: echipamentele cu putere mai mare au scheme dedicate și dimensionări specifice.",
+        "reformulated_question": "Este valoarea de 2 kW un plafon absolut pentru orice circuit dedicat unui receptor de peste 2 kW?",
+        "reformulated_solution": "Nu, regula generală și circuitele dedicate trebuie deosebite.",
+        "editorial_disposition": "HOLD_NOR022_GENERAL_CIRCUIT_VS_DEDICATED_RECEIVER",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0337",
+      "grade_ids": [
+        "G1-NOR-023"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "30",
+        "stem": "În cazul în care temperatura minimă este sub valorile stabilite de norme, montarea aparatelor înglobate în echipamentul de joasă tensiune :",
+        "A": "se admite dacă se prevede o încălzire locală",
+        "B": "nu se admite",
+        "C": "se admite în cazul în care aparatele au ulei",
+        "imported_keys_UNCHANGED": "G1-NOR-023=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-023:V85_NORM_NINE_P0_PRIMARY_SOURCE_AND_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-023:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.3.3.8, V85",
+      "editorial_draft": {
+        "A": "A încălzirea locală poate permite funcționarea unor aparate de măsurare atunci când mediul este prea rece, conform clauzei citate, dar enunțul vorbește mai larg de orice aparat înglobat.",
+        "B": "B interdicția totală la orice temperatură redusă nu rezultă din existența soluției de încălzire locală pentru aparatura vizată.",
+        "C": "C simpla prezență a uleiului nu dovedește că aparatul este permis la orice temperatură sub limita sa de funcționare.",
+        "model_scope_or_trap": "**LACUNĂ EXACT-OBIECT:** I7 §5.3.3.8 susține încălzirea locală pentru aparate de măsurare, nu automat pentru toate aparatele înglobate în echipamentul de joasă tensiune.",
+        "reformulated_question": "Poate un încălzitor anticondens să înlocuiască automat verificarea temperaturilor nominale a tuturor aparatelor din tablou?",
+        "reformulated_solution": "Nu, fiecare dispozitiv trebuie evaluat în limita specificațiilor sale.",
+        "editorial_disposition": "HOLD_NOR023_SCOPE_MEASUREMENT_DEVICE_VS_ALL_LV_EQUIPMENT",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0338",
+      "grade_ids": [
+        "G1-NOR-024"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "31",
+        "stem": "Întreruperea conductorului de protecţie prin aparate de conectare:",
+        "A": "este permisă",
+        "B": "nu este permisă",
+        "C": "de regula nu este permisă, cu excepţia anumitor cazuri",
+        "imported_keys_UNCHANGED": "G1-NOR-024=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-024:V85_NORM_NINE_P0_PRIMARY_SOURCE_AND_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-024:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.5.3.5, V85",
+      "editorial_draft": {
+        "A": "A permiterea întreruperii PE printr-un aparat de comutație ar elimina continuitatea de protecție, contrar prevederii.",
+        "B": "B conductorul de protecție nu se întrerupe printr-un aparat de conectare/deconectare, potrivit I7 §5.5.3.5.",
+        "C": "C posibilitatea unei legături de verificare demontabile cu unealtă nu este excepție de la interdicția aparatului de comutație pe PE.",
+        "model_scope_or_trap": "**Distincție de obiect:** legătura de probă securizată nu este un comutator care întrerupe PE în exploatare.",
+        "reformulated_question": "Este o bornă de probă demontabilă cu sculă echivalentă cu un întreruptor obișnuit montat pe PE?",
+        "reformulated_solution": "Nu, funcția și condițiile normative sunt diferite.",
+        "editorial_disposition": "QUALIFIED_PE_MUST_NOT_BE_SWITCHED",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0339",
+      "grade_ids": [
+        "G1-NOR-025"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "32",
+        "stem": "La realizarea tablourilor şi barelor de distribuţie de j.t., distanţa minimă de izolare în aer între piesele fixe sub tensiune ale diferitelor faze, precum şi între acestea şi părţi metalice legate la pământ trebuie să fie de cel puţin:",
+        "A": "10 mm",
+        "B": "15 mm",
+        "C": "20 mm",
+        "imported_keys_UNCHANGED": "G1-NOR-025=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-025:V90_NORM_P1_TWELVE_I7_PRIMARY_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-025:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.3.3.19.1–2 și §5.3.3.20, V90",
+      "editorial_draft": {
+        "A": "A 10 mm este inferior distanței minime de izolație în aer din cazul specific cu bare/piese fixe expuse în tablou.",
+        "B": "B 15 mm este distanța minimă în aer din categoria citată, nu obligatoriu regula unui tablou prefabricat certificat după alt standard de produs.",
+        "C": "C 20 mm poate satisface limita de cel puțin 15 mm, dar nu exprimă pragul minim normativ, deci sensul logic diferă.",
+        "model_scope_or_trap": "**Minim necesar vs suficient:** ≥20 mm satisface ≥15 mm; întrebarea urmărește pragul minim. Distanța de fugă poate avea o valoare diferită de izolarea în aer.",
+        "reformulated_question": "Dacă distanța minimă din cazul descris e 15 mm, 20 mm poate fi acceptabilă dar neidentică pragului normativ?",
+        "reformulated_solution": "Da, un prag minim nu fixează exact distanța tuturor execuțiilor.",
+        "editorial_disposition": "HOLD_NOR025_TWENTY_SUFFICIENT_BUT_NOT_MINIMUM_AND_PRODUCT_SCOPE",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0340",
+      "grade_ids": [
+        "G1-NOR-026"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "33",
+        "stem": "Montarea siguranţelor de j.t.pe conductoarele instalaţiei de protecţie:",
+        "A": "este interzisă",
+        "B": "este întotdeauna permisă",
+        "C": "este interzisă numai în cazul în care conductorul de protecţie este folosit drept conductor de nul",
+        "imported_keys_UNCHANGED": "G1-NOR-026=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-026:V85_NORM_NINE_P0_PRIMARY_SOURCE_AND_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-026:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.5.3.5 și §4.1.4.1.9, V85",
+      "editorial_draft": {
+        "A": "A interdicția siguranțelor pe conductorul PE protejează continuitatea funcției de protecție la defect.",
+        "B": "B «întotdeauna permisă» ar permite întreruperea intempestivă a PE prin fuzibil, contrar funcției sale.",
+        "C": "C limitarea interdicției doar la un conductor de protecție folosit ca nul/PEN omite PE propriu-zis, care nu trebuie protejat prin siguranță.",
+        "model_scope_or_trap": "PE și PEN au regimuri diferite dar ambele necesită continuitate de protecție, fără siguranțe inserate necorespunzător.",
+        "reformulated_question": "Poate un fuzibil obișnuit să protejeze conductorul PE prin întreruperea lui la o defecțiune?",
+        "reformulated_solution": "Nu; întreruperea lui ar elimina continuitatea de protecție.",
+        "editorial_disposition": "QUALIFIED_NO_FUSES_ON_PE",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0341",
+      "grade_ids": [
+        "G1-NOR-027"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "34",
+        "stem": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+        "A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+        "B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+        "C": "conductoarele de alimentare să fie legate la duliile filetate",
+        "imported_keys_UNCHANGED": "G1-NOR-027=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-027:V85_NORM_NINE_P0_PRIMARY_SOURCE_AND_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-027:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.3.4.3.1.1–1.2, V85",
+      "editorial_draft": {
+        "A": "A dacă «șurub de contact» înseamnă contactul central de alimentare, aceasta ar putea urma regula normativă pentru intrarea fazei, dar terminologia originală nu este demonstrată cu o schemă a siguranței.",
+        "B": "B «plecările la șuruburile de contact» este cheia importată, dar nu poate fi confirmată ca regulă generală fără identificarea exactă a șuruburilor față de contactul central.",
+        "C": "C legarea alimentării pe filetul soclului poate expune contacte accesibile în timpul înlocuirii și este contrară modelului de siguranță cu alimentarea la partea centrală.",
+        "model_scope_or_trap": "**CONFLICT DE TERMINOLOGIE:** I7 §5.3.4.3.1.1–1.2 descrie contactul central, iar opțiunile folosesc «șuruburi de contact». Nu afirma identitatea fără desenul produsului/sursei originale; B rămâne neschimbat.",
+        "reformulated_question": "Cum diferențiezi contactul central al unei siguranțe filetate de filetele soclului la analiză?",
+        "reformulated_solution": "Prin schema de conexiuni și construcția reală a soclului, nu prin presupunerea denumirii «șurub».",
+        "editorial_disposition": "HOLD_NOR027_SCREW_CONTACT_TERMINOLOGY_IMPORTED_B",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0342",
+      "grade_ids": [
+        "G1-NOR-028"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "35",
+        "stem": "Supunerea legăturilor electrice la eforturi de tracţiune:",
+        "A": "este permisă întotdeauna",
+        "B": "este permisă în cazul conductoarelor de cupru",
+        "C": "este interzisă",
+        "imported_keys_UNCHANGED": "G1-NOR-028=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-028:V90_NORM_P1_TWELVE_I7_PRIMARY_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-028:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.2.6.6 full text, V90/V97",
+      "editorial_draft": {
+        "A": "A permisiunea universală a oricărui efort de tracțiune pe îmbinări nu este compatibilă cu regula generală.",
+        "B": "B materialul conductorului cupru nu acordă prin sine drept general de a supune conexiunile la tracțiune.",
+        "C": "C interdicția generală a solicitării la tracțiune este descrisă în I7 §5.2.6.6, DAR aliniatul vecin prevede excepții pentru linii de contact/receptoare mobile și conductoare cu suporturi dimensionate.",
+        "model_scope_or_trap": "**HOLD EXCEPȚIE ADIACENTĂ:** baremul C nu este literal universal; întrebarea nu delimitează cazurile din alin. următor.",
+        "reformulated_question": "O îmbinare proiectată special pentru linie de contact cu conductor pe suport dimensionat poate avea cerințe distincte de o îmbinare obișnuită?",
+        "reformulated_solution": "Da, textul include excepții punctuale și condiții de fixare.",
+        "editorial_disposition": "HOLD_NOR028_TENSION_EXCEPTIONS_ADJACENT_PARAGRAPH",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0343",
+      "grade_ids": [
+        "G1-NOR-029"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "36",
+        "stem": "Tablourile de distribuţie din locuinţe se pot instala astfel încât înălţimea laturii de sus a tablourilor faţă de pardoseala finită să nu depăşească:",
+        "A": "2 m",
+        "B": "2,3 m",
+        "C": "2,5 m",
+        "imported_keys_UNCHANGED": "G1-NOR-029=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-029:V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+        "original_source_links": "G1-NOR-029:https://legislatie.just.ro/Public/FormaPrintabila/00000G1AGLK3X9HXIS43LTLA4TCXTBR4"
+      },
+      "source_locator": "I7 §5.3.3.21 + locuințe, V77, user earlier interpretation",
+      "editorial_draft": {
+        "A": "A 2 m este o limită sub valorile de referință, dar nu reprezintă limita maximă cerută de formularea din locuințe.",
+        "B": "B 2,3 m este limita generală citată pentru tablouri; cheia importată B omite excepția explicită pentru locuințe.",
+        "C": "C 2,5 m este excepția maximă permisă pentru tablouri din locuințe în articolul I7 §5.3.3.21, potrivit auditului și interpretării furnizate anterior de utilizator.",
+        "model_scope_or_trap": "**CONFLICT B vs C (EXCEPȚIA LOCUINȚE):** originalul conține exact «din locuințe» și «nu depășească»; 2,3 m general versus 2,5 m special. Nu schimba cheia fără aprobare.",
+        "reformulated_question": "Dacă un normativ stabilește în general 2,3 m, dar prevede explicit maxim 2,5 m pentru locuințe, ce limită folosești la un tablou din locuință?",
+        "reformulated_solution": "2,5 m, dacă excepția și toate condițiile ei se aplică.",
+        "editorial_disposition": "HOLD_NOR029_IMPORT_B_VS_RESIDENTIAL_2_5_C",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0344",
+      "grade_ids": [
+        "G1-NOR-030"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "37",
+        "stem": "Conductoarele coloanelor electrice:",
+        "A": "trebuie sa aibă aceeaşi secţiune pe toata lungimea lor",
+        "B": "pot avea doua secţiuni dacă lungimea coloanelor depăşeşte 20m",
+        "C": "pot avea doua secţiuni dacă lungimea coloanelor depăşeşte 10m",
+        "imported_keys_UNCHANGED": "G1-NOR-030=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_source_recheck": "G1-NOR-030:V85_NORM_NINE_P0_PRIMARY_SOURCE_AND_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-030:https://legislatie.just.ro/Public/DetaliiDocumentAfis/152201"
+      },
+      "source_locator": "PE155/1992 §3.2.1 candidate, V85",
+      "editorial_draft": {
+        "A": "A aceeași secțiune pe lungimea conductorului de coloană este cheia importată și regula istorică sugerată de PE155/1992 §3.2.1, dar textul primar nu a fost recuperat integral.",
+        "B": "B depășirea a 20 m nu dovedește o permisiune normativă generală de reducere/variație a secțiunii de coloană.",
+        "C": "C nici pragul de peste 10 m nu dovedește excepția de modificare a secțiunii în baza sursei localizate.",
+        "model_scope_or_trap": "**BLOCAJ SURSĂ-OBIECT:** această întrebare pare să provină din PE155/1992, nu din I7. Nu atribui un paragraf I7 generic și nu autentifica A fără documentul-sursă.",
+        "reformulated_question": "Poți susține o permisiune de schimbare a secțiunii doar fiindcă o coloană are peste 10 m?",
+        "reformulated_solution": "Nu, trebuie norma și calculul aplicabil, nu un prag inventat.",
+        "editorial_disposition": "HOLD_NOR030_PE155_EXACT_PRIMARY_TEXT_NOT_RETRIEVED",
+        "source_edition_check": "I7_WITH_2023_AMENDMENT_EXCEPT_NOR030_PE155_SOURCE_NOT_RETRIEVED_FINAL_2026_EDITION_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}
