@@ -1,0 +1,640 @@
+{
+  "schema": "v216_NOR31_45_all_original_ABC_15_editorial_drafts",
+  "date": "2026-11-21",
+  "parent_commit": "778a7f307dcef00291da32c367a01166c050c11e",
+  "previous_manifest_blob": "a7d18283520d31f0b1b46d0cb0f2c21101333f06",
+  "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "source_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "counts": {
+    "new_unique_qabc": 15,
+    "new_grade_routes": 15,
+    "separate_option_explanations": 45,
+    "reformulated_exercises": 15,
+    "new_explicit_semantic_holds": 4,
+    "learner_approvals": 0
+  },
+  "held_ids": [
+    "QABC-0347",
+    "QABC-0349",
+    "QABC-0355",
+    "QABC-0356"
+  ],
+  "normative_gate": "NOR031/032 source PE155 1992 from historical third party PDF; official 2026 applicability not certified; NOR033 recommendation vs obligation; NOR035 construction scope; NOR041 mono3 vs I7 mono2; NOR042 imported B conflicts with I7 candidate A. Technical/linguistic independent approval not run.",
+  "cards": [
+    {
+      "unit_id": "QABC-0345",
+      "grade_ids": [
+        "G1-NOR-031"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "38",
+        "stem": "Conductorul de protecţie al coloanelor electrice individuale trebuie să fie legat la pământ:",
+        "A": "numai dacă secţiunea conductorului este mai mică de 10 mm2",
+        "B": "în cazul tablourile de distribuţie ale consumatorilor, la borna de legare la pământ de pe rama metalică a tablourilor",
+        "C": "doar dacă secţiunea conductorului nu are valoare constantă pe toată lungimea coloanei",
+        "imported_keys_UNCHANGED": "G1-NOR-031=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-031:V85_NORM_NINE_P0_PRIMARY_SOURCE_AND_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-031:https://legislatie.just.ro/Public/DetaliiDocumentAfis/152201"
+      },
+      "source_locator": "PE155/1992 §3.2.3 (copie istorică terță, autentificare 2026 restantă)",
+      "editorial_draft": {
+        "A": "A confundă un prag de secțiune (<10 mm²) cu obligația de conectare a conductorului PE; clauza nu pune această condiție.",
+        "B": "B redă punctul PE pentru tabloul consumatorului: borna dedicată pe rama metalică; aceeași clauză distinge bara de pământ din firida de branșament.",
+        "C": "C condiționează eronat legarea PE de variația secțiunii; secțiunea constantă este tratată separat în normă.",
+        "model_scope_or_trap": "Firidă (bară PE) versus tablou de consumator (bornă PE). Text istoric găsit, nu autentificare oficială curentă.",
+        "reformulated_question": "Unde se leagă PE al coloanei individuale la tabloul consumatorului?",
+        "reformulated_solution": "La borna specială de legare la pământ a tabloului.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0346",
+      "grade_ids": [
+        "G1-NOR-032"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "39",
+        "stem": "Montarea dozelor de trecere este obligatorie în cazul în care lungimea coloanelor în linie dreapta, pe orizontală, depăşeşte:",
+        "A": "10 m",
+        "B": "15 m",
+        "C": "20 m",
+        "imported_keys_UNCHANGED": "G1-NOR-032=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-032:V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+        "original_source_links": "G1-NOR-032:https://legislatie.just.ro/Public/DetaliiDocumentAfis/287132"
+      },
+      "source_locator": "PE155/1992 §3.2.10 (coloane electrice, nu cutii generale I7)",
+      "editorial_draft": {
+        "A": "A 10 m nu este pragul acestei reguli despre coloana orizontală dreaptă.",
+        "B": "B 15 m este pragul din §3.2.10 pentru obligativitatea dozei când coloana dreaptă orizontală îl depășește.",
+        "C": "C 20 m ar amâna nejustificat doza față de pragul specific 15 m.",
+        "model_scope_or_trap": "Nu importa I7 §5.2.12.3.10 pentru tuburi generale; în PE155 există și regulă separată pentru curbe și excepție la verticală dreaptă.",
+        "reformulated_question": "O coloană dreaptă orizontală de 16 m cere doză de trecere potrivit PE155 §3.2.10?",
+        "reformulated_solution": "Da, depășește 15 m; regula nu se aplică identic traseului drept vertical.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0347",
+      "grade_ids": [
+        "G1-NOR-033"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "40",
+        "stem": "Pentru asigurarea selectivităţii, între curenţii nominali ai fuzibilelor a două siguranţe consecutive, diferenţa trebuie să fie de cel puţin:",
+        "A": "doua trepte",
+        "B": "o treapta",
+        "C": "trei trepte",
+        "imported_keys_UNCHANGED": "G1-NOR-033=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-033:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md",
+        "original_source_links": "G1-NOR-033:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "PE155/1992 §2.2.4 (copie istorică); CKPT218 I7 §4.3.3",
+      "editorial_draft": {
+        "A": "A două trepte corespunde diferenței MINIME recomandate pentru nominalele siguranțelor consecutive; nu este garanție universală de selectivitate.",
+        "B": "B o treaptă nu respectă recomandarea de două trepte menționată de sursa specifică.",
+        "C": "C trei trepte pot satisface expresia «cel puțin două», dar nu definesc minimul recomandat.",
+        "model_scope_or_trap": "HOLD: enunțul folosește «trebuie», PE155 scrie «se recomandă»; alegerea efectivă cere analiza caracteristicilor timp-curent.",
+        "reformulated_question": "Câte trepte recomandă PE155 între nominalele a două siguranțe succesive, și este o obligație necondiționată?",
+        "reformulated_solution": "Recomandă minimum două trepte; verificarea selectivității rămâne dependentă de aparate.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A două trepte corespunde diferenței MINIME recomandate pentru nominalele siguranțelor consecutive; nu este garanție universală de selectivitate.",
+            "B": "B o treaptă nu respectă recomandarea de două trepte menționată de sursa specifică.",
+            "C": "C trei trepte pot satisface expresia «cel puțin două», dar nu definesc minimul recomandat."
+          },
+          "option_vs_option": {
+            "A-B": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "A-C": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "B-C": "Compare scope, contradictions and possible co-truth using stated qualifiers"
+          },
+          "reverse_check": "Must corroborate model and any counterexample from same-object source, not merely eliminate choices",
+          "conclusion": "PROVISIONAL_HOLD_NOT_APPROVED"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0348",
+      "grade_ids": [
+        "G1-NOR-034"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "41",
+        "stem": "Încadrarea în clasele de reacţie la foc şi rezistenţă la foc a materialelor se face în conformitate cu prevederile:",
+        "A": "PE 102",
+        "B": "reglementărilor specifice",
+        "C": "normativului    I 7",
+        "imported_keys_UNCHANGED": "G1-NOR-034=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-034:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md",
+        "original_source_links": "G1-NOR-034:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §3.0.2.2–5 (clasificări de incendiu, CKPT218)",
+      "editorial_draft": {
+        "A": "A PE102 nu este norma indicată pentru clasificarea reacției și rezistenței la foc a materialelor din această clauză.",
+        "B": "B reglementările specifice sunt actele aplicabile încadrării în clase de reacție și rezistență la foc.",
+        "C": "C I7 folosește clasificările și trimite la reguli specifice; nu stabilește el singur toate clasele materialelor.",
+        "model_scope_or_trap": "Nu confunda cadrul general pentru instalații cu standardele/reglementările materialelor.",
+        "reformulated_question": "De unde se iau clasele de reacție și de rezistență la foc, doar din I7?",
+        "reformulated_solution": "Nu; din reglementările specifice la care trimite I7.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0349",
+      "grade_ids": [
+        "G1-NOR-035"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "42",
+        "stem": "Masă (a unui echipament sau element de construcţie)reprezintă:",
+        "A": "elemente conductoare din instalaţie aflate sub tensiune",
+        "B": "elemente izolante din instalaţie aflate în legătură cu pământul",
+        "C": "parte conductoare accesibilă a unui echipament, care poate fi atinsă şi care în mod normal nu se află sub tensiune, dar care poate fi pusă sub tensiune în urma unui defect a zolaţiei de bază.",
+        "imported_keys_UNCHANGED": "G1-NOR-035=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-035:V90_NORM_P1_TWELVE_I7_PRIMARY_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-035:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 capitolul 2 «masă», V90",
+      "editorial_draft": {
+        "A": "A descrie conductori care sunt sub tensiune în funcționare normală, nu masa echipamentului ce poate deveni activă doar la defect.",
+        "B": "B numește elemente izolante, incompatibile cu termenul «parte conductoare accesibilă».",
+        "C": "C identifică partea conductoare accesibilă a echipamentului, normal neenergizată și energizabilă la un defect al izolației.",
+        "model_scope_or_trap": "HOLD: enunțul extinde definiția de la echipament și la «element de construcție»; nu confunda masă cu parte conductoare străină.",
+        "reformulated_question": "Este carcasei conductoare nealimentate normal, dar energizabile la defect, corect să i se spună «masă»?",
+        "reformulated_solution": "Da, în definiția echipamentului; extensia la elemente de construcție necesită precizare.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A descrie conductori care sunt sub tensiune în funcționare normală, nu masa echipamentului ce poate deveni activă doar la defect.",
+            "B": "B numește elemente izolante, incompatibile cu termenul «parte conductoare accesibilă».",
+            "C": "C identifică partea conductoare accesibilă a echipamentului, normal neenergizată și energizabilă la un defect al izolației."
+          },
+          "option_vs_option": {
+            "A-B": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "A-C": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "B-C": "Compare scope, contradictions and possible co-truth using stated qualifiers"
+          },
+          "reverse_check": "Must corroborate model and any counterexample from same-object source, not merely eliminate choices",
+          "conclusion": "PROVISIONAL_HOLD_NOT_APPROVED"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0350",
+      "grade_ids": [
+        "G1-NOR-036"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "43",
+        "stem": "Se consideră atingere directă:",
+        "A": "contactul persoanelor sau animalelor domestice sau de crescătorie cu mase puse accidental sub tensiune datorită unui defect electric",
+        "B": "contactul direct al persoanelor sau al animalelor cu părţi active",
+        "C": "contactul persoanelor sau animalelor domestice sau de crescătorie cu părţi ale unei instalaţii electrice",
+        "imported_keys_UNCHANGED": "G1-NOR-036=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-036:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md",
+        "original_source_links": "G1-NOR-036:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 capitolul 2 «atingere directă», CKPT218",
+      "editorial_draft": {
+        "A": "A contactul cu o masă energizată accidental prin defect descrie atingerea indirectă.",
+        "B": "B contactul persoanei ori animalului cu o parte activă este atingere directă.",
+        "C": "C nu specifică partea activă, astfel că include și părți care nu îndeplinesc definiția.",
+        "model_scope_or_trap": "Direct/indirect se clasifică după obiectul atins, nu numai după existența unui contact nemijlocit.",
+        "reformulated_question": "Atingerea unei borne active neizolate este atingere directă?",
+        "reformulated_solution": "Da: este contact cu o parte activă.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0351",
+      "grade_ids": [
+        "G1-NOR-037"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "44",
+        "stem": "Se consideră atingere indirectă:",
+        "A": "contactul nemijlocit sau prin intermediul unui element conductor al persoanelor sau animalelor domestice sau de crescătorie cu părţi active ale unei instalaţii electrice",
+        "B": "contactul persoanelor sau animalelor domestice sau de crescătorie cu părţi ale unei instalaţii electrice",
+        "C": "contact electric al persoanelor sau al animalelor cu părţile conductoare accesibile\npuse sub tensiune ca urmare a unui defect.",
+        "imported_keys_UNCHANGED": "G1-NOR-037=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-037:CKPT_218_GFR_15_G1_NOR_I7_OFFICIAL_DIRECT_QABC_2026_11_18.md",
+        "original_source_links": "G1-NOR-037:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 capitolul 2 «atingere indirectă», CKPT218",
+      "editorial_draft": {
+        "A": "A descrie contact cu părți active, situația caracteristică atingerii directe.",
+        "B": "B contact cu orice parte a instalației este o formulare mult prea largă.",
+        "C": "C numește exact partea conductoare accesibilă devenită sub tensiune ca urmare a unui defect.",
+        "model_scope_or_trap": "Defectul care energizează o masă diferă de accesul la o parte normal activă.",
+        "reformulated_question": "O carcasă ajunsă sub tensiune din cauza izolării defecte produce atingere directă sau indirectă la contact?",
+        "reformulated_solution": "Indirectă.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0352",
+      "grade_ids": [
+        "G1-NOR-038"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "45",
+        "stem": "Conform I 7, parte activă a unei instalaţii este:",
+        "A": "conductorul PEN",
+        "B": "conductorul neutru (N)",
+        "C": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune",
+        "imported_keys_UNCHANGED": "G1-NOR-038=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-038:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "original_source_links": "G1-NOR-038:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 capitolul 2 «parte activă», CKPT219",
+      "editorial_draft": {
+        "A": "A conductorul PEN este exclus prin convenție din definiție, fără ca asta să-l facă lipsit de riscuri.",
+        "B": "B N este numit explicit parte activă în definiția I7.",
+        "C": "C descrie partea conductoare accesibilă, normal fără tensiune.",
+        "model_scope_or_trap": "Neutral N nu este identic cu PEN; nu transforma excluderea convențională a PEN în reguli de lucru nesigure.",
+        "reformulated_question": "N și PEN au aceeași clasificare ca «părți active»?",
+        "reformulated_solution": "Nu: N este inclus, PEN este exclus prin convenție.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0353",
+      "grade_ids": [
+        "G1-NOR-039"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "46",
+        "stem": "Conform I 7, parte activă a unei instalaţii este:",
+        "A": "conductor sau parte conductoare destinată să fie pusă sub tensiune în funcţionare normală",
+        "B": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune",
+        "C": "conductorul PEN",
+        "imported_keys_UNCHANGED": "G1-NOR-039=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-039:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "original_source_links": "G1-NOR-039:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 capitolul 2 «parte activă», CKPT219",
+      "editorial_draft": {
+        "A": "A descrie criteriul exact: conductor ori parte destinată să se afle sub tensiune în exploatarea normală.",
+        "B": "B este descrierea părții conductoare accesibile normal fără tensiune.",
+        "C": "C PEN este exclus prin convenție din definiție.",
+        "model_scope_or_trap": "Posibilitatea energizării la defect nu înseamnă destinație normală de funcționare sub tensiune.",
+        "reformulated_question": "O carcasă metalică nealimentată normal este parte activă doar pentru că se poate energiza prin defect?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0354",
+      "grade_ids": [
+        "G1-NOR-040"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "47",
+        "stem": "Conform I 7, parte conductoare accesibilă este:",
+        "A": "partea izolantă accesibilă a unui element de construcţie care poate fi atinsă,  şi care poate ajunge sub tensiune în caz de defect",
+        "B": "parte conductoare a unui echipament, care poate fi atinsă, şi care nu este în mod normal sub tensiune, dar care poate ajunge sub tensiune în cazul unui defect al izolaţiei de bază.",
+        "C": "elemente conductoare din instalaţie aflate sub tensiune",
+        "imported_keys_UNCHANGED": "G1-NOR-040=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-040:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "original_source_links": "G1-NOR-040:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 capitolul 2 «parte conductoare accesibilă», CKPT219",
+      "editorial_draft": {
+        "A": "A este o parte izolantă, deși categoria cerută e conductoare.",
+        "B": "B combină accesibilitate, conductivitate, normal fără tensiune și posibilitatea energizării prin defect de izolație.",
+        "C": "C sunt elemente sub tensiune normală, adică părți active.",
+        "model_scope_or_trap": "Criteriile se aplică împreună: conductivă + accesibilă + nealimentată normal.",
+        "reformulated_question": "Este o carcasă metalică accesibilă normal fără tensiune, dar energizabilă la defect, parte conductoare accesibilă?",
+        "reformulated_solution": "Da.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0355",
+      "grade_ids": [
+        "G1-NOR-041"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "48",
+        "stem": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "A": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 16 mm2Cu sau 25 mm2Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "imported_keys_UNCHANGED": "G1-NOR-041=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-041:V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+        "original_source_links": "G1-NOR-041:https://legislatie.just.ro/Public/FormaPrintabila/00000G1AGLK3X9HXIS43LTLA4TCXTBR4"
+      },
+      "source_locator": "I7 §5.2.4.6.1(a)-(d); V77, problemă mono TREI vs DOUĂ",
+      "editorial_draft": {
+        "A": "A extinde necondiționat la orice secțiune polifazată egalitatea N/fază, deși I7 admite condițional reducerea N.",
+        "B": "B pragurile 16 mm² Cu /25 mm² Al sunt cele pentru polifazat, dar adaugă monofazate cu TREI conductoare, în timp ce litera (a) se referă la DOUĂ.",
+        "C": "C folosește praguri 25 Cu /35 Al diferite de cele din clauza relevantă și aceeași problemă mono3.",
+        "model_scope_or_trap": "HOLD: B este doar parțial compatibil; nu rescrie «trei» în «două», nu autentifica cheia prin eliminare.",
+        "reformulated_question": "Ce praguri impune I7 pentru N egal cu fazele la polifazat și ce monofazat menționează expres?",
+        "reformulated_solution": "≤16 mm² Cu ori ≤25 mm² Al pentru polifazat; monofazat cu două conductoare este cazul explicit.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A extinde necondiționat la orice secțiune polifazată egalitatea N/fază, deși I7 admite condițional reducerea N.",
+            "B": "B pragurile 16 mm² Cu /25 mm² Al sunt cele pentru polifazat, dar adaugă monofazate cu TREI conductoare, în timp ce litera (a) se referă la DOUĂ.",
+            "C": "C folosește praguri 25 Cu /35 Al diferite de cele din clauza relevantă și aceeași problemă mono3."
+          },
+          "option_vs_option": {
+            "A-B": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "A-C": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "B-C": "Compare scope, contradictions and possible co-truth using stated qualifiers"
+          },
+          "reverse_check": "Must corroborate model and any counterexample from same-object source, not merely eliminate choices",
+          "conclusion": "PROVISIONAL_HOLD_NOT_APPROVED"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0356",
+      "grade_ids": [
+        "G1-NOR-042"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "49",
+        "stem": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază",
+        "imported_keys_UNCHANGED": "G1-NOR-042=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-042:V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+        "original_source_links": "G1-NOR-042:https://legislatie.just.ro/Public/FormaPrintabila/00000G1AGLK3X9HXIS43LTLA4TCXTBR4"
+      },
+      "source_locator": "I7 §5.2.4.6.1(a)-(b), conflict V77 cu cheia B",
+      "editorial_draft": {
+        "A": "A reflectă textual regula monofazată cu DOUĂ conductoare: N are secțiunea fazei indiferent de secțiune.",
+        "B": "B importat ca răspuns corect, dar menționează mono TREI și praguri eronate 25 mm² Cu /35 mm² Al; norma pentru polifazat indică 16 Cu/25 Al.",
+        "C": "C pretinde egalitate nelimitată la orice secțiune polifazată și păstrează problema mono3.",
+        "model_scope_or_trap": "HOLD: există candidat afirmativ A contrar cheii importate B; nu se face auto-corecție de barem.",
+        "reformulated_question": "La monofazat L+N cu două conductoare secțiunea neutrului este egală cu faza pentru orice secțiune?",
+        "reformulated_solution": "Da, conform §5.2.4.6.1(a); cheia B importată rămâne neschimbată până la adjudecare.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A reflectă textual regula monofazată cu DOUĂ conductoare: N are secțiunea fazei indiferent de secțiune.",
+            "B": "B importat ca răspuns corect, dar menționează mono TREI și praguri eronate 25 mm² Cu /35 mm² Al; norma pentru polifazat indică 16 Cu/25 Al.",
+            "C": "C pretinde egalitate nelimitată la orice secțiune polifazată și păstrează problema mono3."
+          },
+          "option_vs_option": {
+            "A-B": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "A-C": "Compare scope, contradictions and possible co-truth using stated qualifiers",
+            "B-C": "Compare scope, contradictions and possible co-truth using stated qualifiers"
+          },
+          "reverse_check": "Must corroborate model and any counterexample from same-object source, not merely eliminate choices",
+          "conclusion": "PROVISIONAL_HOLD_NOT_APPROVED"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0357",
+      "grade_ids": [
+        "G1-NOR-043"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "50",
+        "stem": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "tipul receptorului alimentat",
+        "B": "lungimea circuitului",
+        "C": "secţiunea conductorului",
+        "imported_keys_UNCHANGED": "G1-NOR-043=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-043:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "original_source_links": "G1-NOR-043:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.4.1–5.2.4.1.2 și tabele Iz; CKPT219",
+      "editorial_draft": {
+        "A": "A tipul receptorului indică sarcina cerută, nu limita termică a conductorului.",
+        "B": "B lungimea influențează căderea de tensiune, nu direct Iz de tabel pentru aceleași condiții.",
+        "C": "C secțiunea conductorului influențează direct curentul admisibil de durată.",
+        "model_scope_or_trap": "Separă «curent cerut de consumator» de «Iz admisibil al conductorului».",
+        "reformulated_question": "Două cabluri identice în rest, cu secțiuni diferite, au același Iz?",
+        "reformulated_solution": "Nu în general.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0358",
+      "grade_ids": [
+        "G1-NOR-044"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "51",
+        "stem": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "lungimea circuitului",
+        "B": "materialul conductorului",
+        "C": "tipul receptorului alimentat",
+        "imported_keys_UNCHANGED": "G1-NOR-044=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-044:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "original_source_links": "G1-NOR-044:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.4.1.2, tabele Iz; CKPT219",
+      "editorial_draft": {
+        "A": "A lungimea afectează căderea de tensiune, nu direct Iz termic de tabel în condiții identice.",
+        "B": "B materialul Cu/Al afectează conductivitatea și limita curentului admisibil.",
+        "C": "C tipul receptorului nu stabilește singur capacitatea conductorului.",
+        "model_scope_or_trap": "Al și Cu la aceeași secțiune nu au automat aceeași capacitate de curent.",
+        "reformulated_question": "Schimbarea materialului din Cu în Al poate schimba Iz?",
+        "reformulated_solution": "Da.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0359",
+      "grade_ids": [
+        "G1-NOR-045"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_SCORE_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "52",
+        "stem": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "lungimea circuitului",
+        "B": "natura izolaţiei conductorului",
+        "C": "tipul receptorului alimentat",
+        "imported_keys_UNCHANGED": "G1-NOR-045=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-045:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "original_source_links": "G1-NOR-045:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.3–5.2.4.1.2, tabele Iz; CKPT219",
+      "editorial_draft": {
+        "A": "A lungimea afectează mai ales căderea de tensiune, nu direct Iz termic de tabel.",
+        "B": "B natura izolației (PVC/XLPE etc.) schimbă temperatura admisibilă și Iz.",
+        "C": "C tipul de receptor influențează solicitarea, nu clasa termică a izolației.",
+        "model_scope_or_trap": "Nu confunda natura izolației cu natura receptorului.",
+        "reformulated_question": "Schimbarea clasei termice a izolației poate modifica Iz pentru aceeași secțiune?",
+        "reformulated_solution": "Da.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "APPLICABLE_2026_EDITION_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}
