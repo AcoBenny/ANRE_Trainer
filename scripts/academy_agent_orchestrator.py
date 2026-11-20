@@ -106,6 +106,16 @@ def known_semantic_risk_flags(unit_id: str, reviews: dict) -> list[dict]:
                  or "niciuna dintre variante nu corespunde" in text)):
             flagged.append({"role": role, "risk": "POSSIBLE_NUMERIC_SELF_CONTRADICTION",
                             "review_note": "B is 250 microfarads; parallel 100+50+100=250"})
+        normalized = re.sub(r"\s+", "", text)
+        if unit_id == "QABC-0005" and "n=3" in normalized and "l=3" in normalized:
+            flagged.append({"role": role, "risk": "POSSIBLE_INVALID_COUNTEREXAMPLE",
+                            "review_note": "The original question states L different from N"})
+        if unit_id == "QABC-0006" and ("auto-reclosing" in text or "reînchidere automată" in text):
+            flagged.append({"role": role, "risk": "POSSIBLE_AAR_RAR_CONFUSION",
+                            "review_note": "AAR is automatic transfer of reserve supply, not auto-reclosing RAR"})
+        if (unit_id == "QABC-0007" and "s=0" in normalized and "scurt" in text):
+            flagged.append({"role": role, "risk": "POSSIBLE_ZERO_SLIP_MISINTERPRETATION",
+                            "review_note": "s=0 is synchronous speed limit, not necessarily short circuit"})
     return flagged
 
 
@@ -231,9 +241,12 @@ def run(argv=None) -> int:
                         retry = route_agent(stricter, message, providers, state)
                         record["role_outputs"][name] = retry
             qa = quality_gate(case, record["role_outputs"], record["agent_selection"])
-            if args.only_role and qa["status"] != "INCOMPLETE_MODEL_TRACES":
-                qa["status"] = "ROLE_RETEST_PRESENT_NOT_RECONCILED"
+            if args.only_role:
                 qa["requires_original_role_artifact_reconciliation"] = True
+                if qa["status"] == "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED":
+                    qa["status"] = "ROLE_RETEST_PRESENT_NOT_RECONCILED"
+                elif qa["status"] == "CONTENT_WARNING_SOURCE_GATE_BLOCKED":
+                    qa["status"] = "ROLE_RETEST_CONTENT_WARNING_NOT_RECONCILED"
             record["qa_evidence_gate"] = qa
             report["proposed_lessons"].append({
                 "unit_id": case["unit_id"],
@@ -254,7 +267,10 @@ def run(argv=None) -> int:
     print(f"Academy selected {len(cases)} QABC, API attempts {state['attempts']}, "
           f"model roles {state['returned']}; paid OpenAI 0; 0 learner approvals.")
     if args.mode == "live-free" and any(
-        r["qa_evidence_gate"]["status"] == "INCOMPLETE_MODEL_TRACES" for r in report["records"]
+        r["qa_evidence_gate"]["status"] in (
+            "INCOMPLETE_MODEL_TRACES", "CONTENT_WARNING_SOURCE_GATE_BLOCKED",
+            "ROLE_RETEST_CONTENT_WARNING_NOT_RECONCILED"
+        ) for r in report["records"]
     ):
         print("Some reviewer traces incomplete: do not advance to release", file=sys.stderr)
         return 1
