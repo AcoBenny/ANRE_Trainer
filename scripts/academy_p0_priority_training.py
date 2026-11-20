@@ -251,6 +251,7 @@ def main(argv=None) -> int:
     if args.mode == "live-free" and any(
         item["gate"] not in (
             "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED",
+            "ROLE_RETEST_PRESENT_NOT_RECONCILED",  # evidence saved, never final QA
             "BLOCKED_FIGURE_MISSING_NO_MODEL_CALLS",
         )
         for item in report["records"]
