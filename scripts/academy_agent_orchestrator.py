@@ -102,7 +102,11 @@ def quality_gate(case: dict, reviews: dict, roles_requested: list[str]) -> dict:
               and bool(re.search(r"\bC\b", reviews[name]["text"]))
         for name in roles_requested if reviews.get(name, {}).get("ok")
     }
+    actual_models = [reviews[name].get("model", "") for name in roles_requested
+                     if reviews.get(name, {}).get("ok")]
+    distinct_models = len(set(actual_models)) == len(actual_models)
     return {
+        "independent_model_families_proven": distinct_models and len(actual_models) >= 2, 
         "source_authentication": "NOT_VERIFIED",
         "professional_review": "NOT_RUN",
         "technical_truth": "NOT_CERTIFIED",
@@ -112,7 +116,7 @@ def quality_gate(case: dict, reviews: dict, roles_requested: list[str]) -> dict:
         "missing_roles": failed,
         "short_responses": too_short,
         "a_b_c_mentions_only_not_semantic_correctness": option_coverage,
-        "status": "INCOMPLETE_MODEL_TRACES" if failed or too_short or not all(option_coverage.values())
+        "status": "INCOMPLETE_MODEL_TRACES" if failed or too_short or not all(option_coverage.values()) or not distinct_models
                   else "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED",
         "next_gate": "Exact-source paragraph, edition, context, three option analyses and qualified independent signoff",
     }
