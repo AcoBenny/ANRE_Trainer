@@ -249,7 +249,10 @@ def main(argv=None) -> int:
           "| API attempts:", state["attempts"], "| role outputs:", state["returned"],
           "| 0 approved, 0 paid OpenAI calls")
     if args.mode == "live-free" and any(
-        item["gate"] == "TRAINING_FORMAT_OR_MODEL_INDEPENDENCE_BLOCKED"
+        item["gate"] not in (
+            "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED",
+            "BLOCKED_FIGURE_MISSING_NO_MODEL_CALLS",
+        )
         for item in report["records"]
     ):
         print("Model content format or independence gate blocked; see artifacts", file=sys.stderr)
