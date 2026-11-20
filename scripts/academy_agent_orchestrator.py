@@ -187,7 +187,7 @@ def run(argv=None) -> int:
                 initial = route_agent(system, message, providers, state)
                 record["role_outputs"][name] = initial
                 if initial.get("ok"):
-                    covered = all(re.search(r"\\b" + option + r"\\b", initial.get("text", ""))
+                    covered = all(re.search(r"\b" + option + r"\b", initial.get("text", ""))
                                   for option in ("A", "B", "C"))
                     if not covered or len(initial.get("text", "").strip()) < 100:
                         record["role_retests"].append({
