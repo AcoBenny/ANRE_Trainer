@@ -5,6 +5,7 @@ on:
     paths:
       - 'scripts/academy_free_router.py'
       - 'scripts/academy_requesty_probe.py'
+      - 'scripts/academy_requesty_role_smoke.py'
       - 'tests/test_academy_requesty_probe.py'
       - '.github/workflows/academy-requesty-free-probe.yml'
   push:
@@ -13,6 +14,7 @@ on:
     paths:
       - 'scripts/academy_free_router.py'
       - 'scripts/academy_requesty_probe.py'
+      - 'scripts/academy_requesty_role_smoke.py'
       - 'tests/test_academy_requesty_probe.py'
       - 'docs/CKPT_267_REQUESTY_FREE_ADAPTER_2026_11_20.md'
       - '.github/workflows/academy-requesty-free-probe.yml'
@@ -49,6 +51,24 @@ jobs:
           python3 scripts/academy_requesty_probe.py \
             --confirm FREE_ONLY \
             --out _requesty_probe
+
+      - name: One synthetic Academy technical reviewer via Requesty, no ANRE data
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[requesty-role]')
+        env:
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          python3 scripts/academy_requesty_role_smoke.py \
+            --confirm FREE_ONLY \
+            --out _requesty_role_probe
+
+      - name: Save role-model and A/B/C formatting evidence without answer text
+        if: always() && github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[requesty-role]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-requesty-role-smoke
+          path: _requesty_role_probe/
+          if-no-files-found: warn
+          retention-days: 3
 
       - name: Preserve Requesty model, usage and cost metadata, not secrets or response text
         if: always() && github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[requesty]')
