@@ -110,17 +110,21 @@ def run(argv=None):
     p.add_argument("--evidence", type=pathlib.Path, required=True)
     p.add_argument("--out", type=pathlib.Path, default=pathlib.Path("_academy_sourced_p0"))
     p.add_argument("--unit", choices=EXPECTED_IDS, default=None)
+    p.add_argument("--only-role", choices=[r[0] for r in ROLES], default=None)
     p.add_argument("--mode", choices=("dry-run", "live-free"), default="dry-run")
     p.add_argument("--confirm", default="")
     args = p.parse_args(argv)
     if args.mode == "live-free" and args.confirm != "FREE_ONLY":
         p.error("Live calls require --confirm FREE_ONLY")
+    if args.only_role and not args.unit:
+        p.error("--only-role requires --unit")
     cases = load_cases(args.evidence)
     if args.unit:
         cases = [c for c in cases if c["unit_id"] == args.unit]
     report = {
         "mode": args.mode, "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "evidence_sha256": hashlib.sha256(args.evidence.read_bytes()).hexdigest(),
+        "only_unit": args.unit, "only_role": args.only_role,
         "source_class": "OPEN_EXTERNAL_PHYSICS_REFERENCE_NOT_ANRE_OFFICIAL_EXAM_SOURCE",
         "actual_api_attempts": 0, "successful_role_outputs": 0, "paid_openai_calls": 0,
         "trained_model_weights": False, "changed_original_QABC": False,
@@ -136,6 +140,8 @@ def run(argv=None):
         if args.mode == "live-free":
             prompt = compiled_prompt(case)
             for role, candidate_models, instruction in ROLES:
+                if args.only_role and role != args.only_role:
+                    continue
                 resp = route_agent(RULES + "\n" + instruction, prompt,
                                    bounded_provider_candidates(candidate_models), state)
                 item["role_outputs"][role] = resp
@@ -146,12 +152,21 @@ def run(argv=None):
             models = [r.get("model") for r in item["role_outputs"].values() if r.get("ok")]
             item["model_independence"] = (
                 len(models) == 2 and len(set(map(normalized_model_family, models))) == 2)
-            item["status"] = (
-                "RAW_MODEL_EVIDENCE_PRESENT_NOT_SOURCE_CERTIFIED"
-                if item["model_independence"] and all(r.get("format_ok")
-                                                    for r in item["role_qa"].values())
-                else "SOURCE_OR_MODEL_STRUCTURAL_QA_BLOCKED"
-            )
+            if args.only_role:
+                item["requires_previous_artifact_reconciliation"] = True
+                item["model_independence"] = False  # a single rerun proves nothing
+                item["status"] = (
+                    "ONE_ROLE_RETEST_PRESENT_NOT_RECONCILED"
+                    if len(models) == 1 and all(x.get("format_ok") for x in item["role_qa"].values())
+                    else "SOURCE_OR_MODEL_STRUCTURAL_QA_BLOCKED"
+                )
+            else:
+                item["status"] = (
+                    "RAW_MODEL_EVIDENCE_PRESENT_NOT_SOURCE_CERTIFIED"
+                    if item["model_independence"] and all(x.get("format_ok")
+                                                        for x in item["role_qa"].values())
+                    else "SOURCE_OR_MODEL_STRUCTURAL_QA_BLOCKED"
+                )
         else:
             item["status"] = "DRY_RUN_NO_PROVIDER_CALLS"
         report["records"].append(item)
