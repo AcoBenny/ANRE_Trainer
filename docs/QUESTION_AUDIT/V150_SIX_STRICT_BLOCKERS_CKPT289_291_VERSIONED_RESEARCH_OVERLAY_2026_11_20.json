@@ -1,0 +1,197 @@
+{
+  "schema_version": "research_overlay_v150_1",
+  "created_date": "2026-11-20",
+  "purpose": "Append-only research and version-separation overlay for the six EXISTING strict blockers; not modification of V149, keys or trainer",
+  "base_v149_git_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "base_v144_git_blob": "0fae5c2e3653c4cea2ced456ca768ddb01db733e",
+  "units_count": 6,
+  "grade_placements_count": 9,
+  "ready_to_learn_count": 0,
+  "original_official_anre_key_authenticated": false,
+  "qualified_independent_technical_signoff": false,
+  "originals_modified": false,
+  "imported_keys_modified": false,
+  "pr_merge_authorized": false,
+  "source_limitations": "One Electrotehnica workbook physically present; 2023 NOR workbook only V144 versioned source snapshots available; official portal 502; mirror clauses corroborated",
+  "sources": [
+    "docs/QUESTION_AUDIT/CKPT_289_GFR_ELE017_CAPACITATE_SERVICIU_CROSSGRADE_SOURCE_CONTEXT_2026_11_20.md",
+    "docs/QUESTION_AUDIT/CKPT_290_GFR_THREE_ELECTROTEHNICA_BLOCKERS_EXACT_TEXT_SCOPED_SOURCES_2026_11_20.md",
+    "docs/QUESTION_AUDIT/CKPT_291_GFR_TWO_NOR_I7_ORIGINAL_VERSUS_CORRECTED_STRICT_GATES_2026_11_20.md"
+  ],
+  "units": [
+    {
+      "unit_id": "QABC-0017",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "original_imported_keys_unmodified": {
+        "G1-ELE-018": "A",
+        "G2-ELEC-170": "C"
+      },
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_row": 25,
+      "original_xlsx_read_directly_this_run": false,
+      "original_source_snapshot_from": "CKPT-289",
+      "uploaded_original_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_candidate_technical": "A",
+      "current_trainer_candidate_technical": "A",
+      "disposition": "A_UNDER_BALANCED_POSITIVE_SEQUENCE_SERVICE_CAPACITANCE",
+      "evidence_checkpoint": "CKPT-289",
+      "critical_remaining": [
+        "original_exam_key",
+        "qualified_independent_QA",
+        "source_edition",
+        "visual_pdf_page"
+      ],
+      "grade_placements": 2,
+      "learner_approved": false,
+      "official_original_scored_key_verified": false,
+      "qualified_independent_review_done": false
+    },
+    {
+      "unit_id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "original_imported_keys_unmodified": {
+        "G1-ELE-102": "A",
+        "G2-ELEC-245": "C"
+      },
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_row": 109,
+      "original_xlsx_read_directly_this_run": true,
+      "uploaded_original_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_candidate_technical": "C",
+      "current_trainer_candidate_technical": "C",
+      "disposition": "C_SUPPORTED_FOR_HOT_STANDBY_TOPOLOGY_SOURCE_5_3_NOT_UNIVERSAL_PREFERENCE",
+      "evidence_checkpoint": "CKPT-290",
+      "critical_remaining": [
+        "preferred_operating_policy",
+        "original_exam_key",
+        "qualified_independent_QA",
+        "source_edition"
+      ],
+      "grade_placements": 2,
+      "learner_approved": false,
+      "official_original_scored_key_verified": false,
+      "qualified_independent_review_done": false
+    },
+    {
+      "unit_id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "original_imported_keys_unmodified": {
+        "G1-ELE-152": "A"
+      },
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_row": 159,
+      "original_xlsx_read_directly_this_run": true,
+      "uploaded_original_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_candidate_technical": "A_TERM_ONLY",
+      "current_trainer_candidate_technical": "A",
+      "disposition": "ORIGINAL_DIMENSIONLESS_WORDING_DIFFERS_FROM_PHYSICAL_PROPAGATION_CONSTANT_1_OVER_LENGTH",
+      "evidence_checkpoint": "CKPT-290",
+      "material_question_mutation": "adimensională -> caracteristică",
+      "critical_remaining": [
+        "school_explanation_of_1km_normalization",
+        "original_exam_key",
+        "qualified_independent_QA"
+      ],
+      "grade_placements": 1,
+      "learner_approved": false,
+      "official_original_scored_key_verified": false,
+      "qualified_independent_review_done": false
+    },
+    {
+      "unit_id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "original_imported_keys_unmodified": {
+        "G1-ELE-247": "B",
+        "G2-ELEC-383": "B"
+      },
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_row": 254,
+      "original_xlsx_read_directly_this_run": true,
+      "uploaded_original_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_candidate_technical": null,
+      "current_trainer_candidate_technical": "B_UNDER_ELECTROSTATIC_INFLUENCE",
+      "disposition": "ORIGINAL_B_EM_INDUCTION_NOT_ELECTROSTATIC_INDUCTION_NO_STRICT_VALID_CHOICE_IN_STATIC_E",
+      "evidence_checkpoint": "CKPT-290",
+      "material_question_mutation": "inducţie electromagnetică -> inducţie electrostatică",
+      "critical_remaining": [
+        "historic_school_electrization_definition",
+        "original_exam_key",
+        "qualified_independent_QA",
+        "net_charge_vs_charge_separation"
+      ],
+      "grade_placements": 2,
+      "learner_approved": false,
+      "official_original_scored_key_verified": false,
+      "qualified_independent_review_done": false
+    },
+    {
+      "unit_id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "original_imported_keys_unmodified": {
+        "G1-NOR-048": "A"
+      },
+      "original_source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "original_row": 55,
+      "original_xlsx_read_directly_this_run": false,
+      "original_source_snapshot_from": "V144",
+      "uploaded_original_sha256": null,
+      "original_candidate_technical": "C",
+      "current_trainer_candidate_technical": "A",
+      "disposition": "I7_5_4_13_ORIGINAL_C_PERMITTED_TWO_NUMAI_OPTIONS_FALSE",
+      "evidence_checkpoint": "CKPT-291",
+      "material_question_mutation": "all original options rewritten in trainer",
+      "critical_remaining": [
+        "original_NOR_workbook_bytes",
+        "ANRE_original_scored_key",
+        "qualified_independent_QA",
+        "official_source_currentness"
+      ],
+      "grade_placements": 1,
+      "learner_approved": false,
+      "official_original_scored_key_verified": false,
+      "qualified_independent_review_done": false
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "original_imported_keys_unmodified": {
+        "G1-NOR-072": "B"
+      },
+      "original_source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "original_row": 79,
+      "original_xlsx_read_directly_this_run": false,
+      "original_source_snapshot_from": "V144",
+      "uploaded_original_sha256": null,
+      "original_candidate_technical": "C",
+      "current_trainer_candidate_technical": "B",
+      "disposition": "I7_5_5_2_3_ORIGINAL_C_INDIVIDUAL_DISCONNECT_TRUE_B_WITHOUT_TOOL_FALSE",
+      "evidence_checkpoint": "CKPT-291",
+      "material_question_mutation": "B original fără utilizarea unei scule -> trainer B numai prin intermediul unei scule",
+      "critical_remaining": [
+        "original_NOR_workbook_bytes",
+        "ANRE_original_scored_key",
+        "qualified_independent_QA",
+        "official_source_currentness"
+      ],
+      "grade_placements": 1,
+      "learner_approved": false,
+      "official_original_scored_key_verified": false,
+      "qualified_independent_review_done": false
+    }
+  ]
+}
