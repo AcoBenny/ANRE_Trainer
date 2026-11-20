@@ -23,19 +23,31 @@ MODELS = {
     "gemini": "gemini-3.5-flash-lite",
     "openrouter": "openrouter/free",
     "openrouter_fixed": "google/gemma-4-31b-it:free",
+    "requesty_nano": "nvidia/nemotron-3-nano-30b-a3b",
+    "requesty_gemma": "google/gemma-4-31b-it",
 }
 KEYS = {
     "groq": "GROQ_API_KEY",
     "gemini": "GEMINI_API_KEY",
     "openrouter": "OPENROUTER_API_KEY",
     "openrouter_fixed": "OPENROUTER_API_KEY",
+    "requesty_nano": "REQUESTY_API_KEY",
+    "requesty_gemma": "REQUESTY_API_KEY",
 }
 ENDPOINTS = {
     "groq": "https://api.groq.com/openai/v1/chat/completions",
     "openrouter": "https://openrouter.ai/api/v1/chat/completions",
     "openrouter_fixed": "https://openrouter.ai/api/v1/chat/completions",
+    "requesty_nano": "https://router.requesty.ai/v1/chat/completions",
+    "requesty_gemma": "https://router.requesty.ai/v1/chat/completions",
     "gemini": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
 }
+# Exact provider-specific model IDs listed as free by Requesty on 2026-11-20.
+# Do not replace with generic model names or paid-routing policies.
+REQUESTY_FREE_MODEL_IDS = frozenset({
+    "nvidia/nemotron-3-nano-30b-a3b",
+    "google/gemma-4-31b-it",
+})
 MAX_TOTAL_CALLS = 24
 MAX_CASES = 6
 
@@ -85,6 +97,9 @@ def post_json(url: str, headers: dict, payload: dict):
 
 
 def call_provider(provider: str, system: str, message: str):
+    # Hard stop before credentials or network if a Requesty model changes to paid.
+    if provider.startswith("requesty_") and MODELS[provider] not in REQUESTY_FREE_MODEL_IDS:
+        raise ProviderError("REQUESTY_MODEL_NOT_ALLOWLISTED_AS_FREE", False)
     key = os.environ.get(KEYS[provider], "")
     if not key:
         raise ProviderError("SECRET_MISSING", True)
@@ -109,7 +124,11 @@ def call_provider(provider: str, system: str, message: str):
         }
         if provider == "openrouter":
             payload["reasoning"] = {"effort": "low"}
-        obj = post_json(ENDPOINTS[provider], {"Authorization": "Bearer " + key}, payload)
+        headers = {"Authorization": "Bearer " + key}
+        if provider.startswith("requesty_"):
+            headers.update({"X-Title": "ANRE Academy read-only free-model QA",
+                            "HTTP-Referer": "https://github.com/AcoBenny/ANRE_Trainer"})
+        obj = post_json(ENDPOINTS[provider], headers, payload)
         text = "\n".join(str(c.get("message", {}).get("content") or "") for c in obj.get("choices", []))
         usage = obj.get("usage", {})
         finish_reason = str((obj.get("choices") or [{}])[0].get("finish_reason", "unknown"))
