@@ -1,0 +1,55 @@
+name: ANRE Academy P0 targeted free-tier role recovery
+
+on:
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - '.github/workflows/academy-p0-targeted-retest.yml'
+      - 'docs/CKPT_275_P0_LINGUISTIC_RECOVERY_2026_11_20.md'
+  pull_request:
+    paths:
+      - '.github/workflows/academy-p0-targeted-retest.yml'
+      - 'scripts/academy_p0_priority_training.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anre-p0-one-role-retest
+  cancel-in-progress: false
+
+jobs:
+  source-preserving-one-role:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Offline focused regression tests (zero provider calls)
+        run: |
+          python3 -m unittest discover -s tests -p 'test_academy_p0_priority_training.py' -v
+          python3 -m unittest discover -s tests -p 'test_academy_agent_orchestrator.py' -v
+      - name: Confirm immutable original twelve-question P0 queue
+        run: |
+          test "$(git hash-object docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json)" = "db189edd918f5f780bb0ea75192b391deb165723"
+      - name: Request exact missing QABC-0065 linguistic role via distinct Groq 20B
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[p0-single]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          python3 scripts/academy_p0_priority_training.py \
+            --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
+            --out _academy_p0_single_0065 \
+            --mode live-free --confirm FREE_ONLY \
+            --only-unit QABC-0065 --only-role linguistic_scope
+      - name: Archive only one independently unapproved linguistic role trace
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-single]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-p0-qabc-0065-linguistic-only
+          path: _academy_p0_single_0065/
+          retention-days: 7
+          if-no-files-found: warn
