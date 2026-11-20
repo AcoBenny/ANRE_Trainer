@@ -28,3 +28,8 @@
 - Evaluate structured outputs *semantically* against original A/B/C and independent sources with exact physical object, conditions, grade and edition.
 - Apply test/retest and negative false-positive cases, including false equivalence between model roles, no source, reasoning contradiction, outdated edition and option bias.
 - Require human/expert approval before learner release. No canonical data changes under this integration.
+
+## First live run and focused retest
+- First four-case real run: https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44736791421 . Offline checks succeeded. Nine independent role attempts returned responses from Groq, Gemini and OpenRouter. QA correctly marked QABC-0004 incomplete because the skeptic named B but omitted explicit A and C. No answer approved.
+- A targeted, separate only-role retry is now available. The next gated run must use `--only-unit QABC-0004 --only-role independent_skeptic`, not replay the other seven previously sufficient model role traces. Quality status is `ROLE_RETEST_PRESENT_NOT_RECONCILED`, which cannot certify independent roles by itself.
+- Reconcile with the original technical trace and the actual primary source before any QA completion. Untrusted model output is not evidence of a correct key.
