@@ -206,6 +206,42 @@ class AcademyOrchestrationTests(unittest.TestCase):
         self.assertEqual(academy.known_semantic_risk_flags(
             "QABC-0004", {"technical": {"ok": True, "text": FULL_REVIEW}}), [])
 
+    def test_other_actual_model_failure_modes_are_preserved(self):
+        bad = {
+            "technical_electrical": {
+                "ok": True, "model": "groq/oss", "text": FULL_REVIEW
+            }
+        }
+        examples = [
+            ("QABC-0005", " N = 3 nodes and L = 3 branches.", "POSSIBLE_INVALID_COUNTEREXAMPLE"),
+            ("QABC-0006", " AAR means Auto-Reclosing.", "POSSIBLE_AAR_RAR_CONFUSION"),
+            ("QABC-0007", " At s = 0 there is a scurt-circuit.", "POSSIBLE_ZERO_SLIP_MISINTERPRETATION"),
+        ]
+        for unit, phrase, expected in examples:
+            bad["technical_electrical"]["text"] = FULL_REVIEW + phrase
+            flags = academy.known_semantic_risk_flags(unit, bad)
+            self.assertEqual(flags[0]["risk"], expected)
+            self.assertFalse(academy.quality_gate(
+                {"unit_id": unit}, bad, ["technical_electrical"])["learner_approved"])
+
+    def test_focused_retest_with_semantic_warning_returns_failure(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = make_queue(pathlib.Path(d))
+            bad = FULL_REVIEW + " Totuși, nicio variantă nu corespunde corect sumei."
+            def mock_api(system, message, providers, state):
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {"ok": True, "model": "gemini/flash", "text": bad}
+            with mock.patch.object(academy, "route_agent", side_effect=mock_api):
+                code = academy.run(["--queue", str(p), "--out", str(pathlib.Path(d)/"bad"),
+                                    "--mode", "live-free", "--only-unit", "QABC-0004",
+                                    "--only-role", "independent_skeptic", "--confirm", "FREE_ONLY"])
+            self.assertEqual(code, 1)
+            report = json.loads((pathlib.Path(d)/"bad"/"results.json").read_text())
+            self.assertEqual(report["records"][0]["qa_evidence_gate"]["status"],
+                             "ROLE_RETEST_CONTENT_WARNING_NOT_RECONCILED")
+            self.assertFalse(report["learner_approved"])
+
     def test_invalid_run_without_confirmation(self):
         with tempfile.TemporaryDirectory() as d:
             p = make_queue(pathlib.Path(d))
