@@ -39,6 +39,13 @@ RULES = (
     "Return concise Romanian lines each starting exactly A:, B:, C:, ASSUMPTIONS:, "
     "COUNTEREXAMPLE:, SOURCE_SCOPE:, VERDICT: NOT_APPROVED. "
     "For A/B/C actually ANALYZE option claims: do not merely quote or copy the original text. "
+    "Logically distinguish NECESSARY from SUFFICIENT: a second-harmonic 1/2 period "
+    "ratio is a valid special case even if third harmonics have ratio 1/3; existence "
+    "of another valid case does not falsify a sufficient condition. "
+    "If a source explicitly supports D-flux equals q, do not later claim NO source "
+    "supports q; distinguish D-flux from E-flux q/epsilon0 and check units. "
+    "Do not infer a global generator I-versus-P/Q/U proportionality without "
+    "specifying what operating quantities are held constant. "
     "Clearly distinguish technical plausibility, insufficient stem conditions, "
     "and required source or edition evidence. Avoid unsupported source quotations."
 )
