@@ -13,9 +13,9 @@ import urllib.request
 
 EXPECTED = {f"ACA-ANRE-{i:03d}" for i in range(1, 7)}
 AGENTS = (
-    ("technical_reviewer", ("groq", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
+    ("technical_reviewer", ("groq", "openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning"),
      "You are an electrical engineering and source-scope ANRE reviewer. Identify hidden assumptions, compare original versus edited wording if actually supplied, and examine each supplied A/B/C. Do not guess an official answer key or claim direct source access. Output uncertainty and requested source evidence."),
-    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
+    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning"),
      "You are a separate adversarial reviewer. You have not seen any other review. Challenge physical models, edition applicability, ambiguous wording, different imported grades and claimed citations. Do not approve exam answers or invent exact normative quotations."),
 )
 MODELS = {
