@@ -34,3 +34,9 @@
 - Latest source/figure safety and training tests: [P0 workflow 44757899317](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44757899317), PASS with source-pinned queue and a strict no-model QABC-0024 figure gate.
 - First priority 4-case cohort covers QABC-0013, 0019, 0024 (blocked because original drawing not included in model queue), 0025. 3 case texts go through technical+skeptic, optional linguistic where selected. Max 24 API attempts and **0 OpenAI paid calls**.
 - This `[academy-p0]` commit launches only that initial cohort with model responses kept in temporary GitHub Actions artifact. Source truth/exact grade edition still absent, hence all responses are preliminary and no learner approval.
+
+## Executed first P0 cohort; launch remaining eight
+- Completed first four-unit cohort [run 44757996875](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44757996875): **10 real API attempts, 6 successful reviewer outputs, 1 source-diagram case blocked and 1 required linguistic role unavailable**. Partial run correctly failed closed, all traces preserved. See [CKPT-271](CKPT_271_ACADEMY_P0_FIRST_COHORT_2026_11_20.md).
+- The previously recovered ELE028 drawing remains excluded from *model requests* until a verified image payload is present, not relabelled “absent in source”.
+- New negative tests block verbatim copied A/B/C pretending to be reasoning and require linguistic review when a risky qualifier occurs only in an option. Offline source integrity checks [run 44759051310](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44759051310) passed before extending batches.
+- This explicit `[academy-p0]` commit runs **only the remaining eight** QABC (start 4 and 8). Both batches write independent partial result artifacts; role/provider or semantic failures still cause a fail-closed workflow and no learner approval. No previously completed first-batch question is automatically repeated.
