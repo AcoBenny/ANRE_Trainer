@@ -6,8 +6,12 @@ import json
 import pathlib
 import sys
 
-from academy_full_qabc_review import load_ledger, build_case
-from academy_free_router import route_agent
+try:
+    from .academy_full_qabc_review import load_ledger, build_case
+    from .academy_free_router import route_agent
+except ImportError:
+    from academy_full_qabc_review import load_ledger, build_case
+    from academy_free_router import route_agent
 
 EXPECTED = {"QABC-0362": "5.4.13", "QABC-0386": "5.5.2.3"}
 PROMPT_TECH = (
