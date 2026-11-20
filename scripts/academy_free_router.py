@@ -20,6 +20,7 @@ AGENTS = (
 )
 MODELS = {
     "groq": "openai/gpt-oss-120b",
+    "groq_linguistic": "openai/gpt-oss-20b",
     "gemini": "gemini-3.5-flash-lite",
     "openrouter": "openrouter/free",
     "openrouter_fixed": "google/gemma-4-31b-it:free",
@@ -28,6 +29,7 @@ MODELS = {
 }
 KEYS = {
     "groq": "GROQ_API_KEY",
+    "groq_linguistic": "GROQ_API_KEY",
     "gemini": "GEMINI_API_KEY",
     "openrouter": "OPENROUTER_API_KEY",
     "openrouter_fixed": "OPENROUTER_API_KEY",
@@ -36,6 +38,7 @@ KEYS = {
 }
 ENDPOINTS = {
     "groq": "https://api.groq.com/openai/v1/chat/completions",
+    "groq_linguistic": "https://api.groq.com/openai/v1/chat/completions",
     "openrouter": "https://openrouter.ai/api/v1/chat/completions",
     "openrouter_fixed": "https://openrouter.ai/api/v1/chat/completions",
     "requesty_lightning": "https://router.requesty.ai/v1/chat/completions",
