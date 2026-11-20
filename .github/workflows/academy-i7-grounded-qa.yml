@@ -1,0 +1,66 @@
+name: ANRE Academy I7 evidence-grounded two-case QA
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_source_excerpt_i7_pilot.py'
+      - 'tests/test_academy_source_excerpt_i7_pilot.py'
+      - 'docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json'
+      - '.github/workflows/academy-i7-grounded-qa.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_source_excerpt_i7_pilot.py'
+      - 'tests/test_academy_source_excerpt_i7_pilot.py'
+      - 'docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json'
+      - '.github/workflows/academy-i7-grounded-qa.yml'
+
+permissions:
+  contents: read
+concurrency:
+  group: academy-i7-evidence-gate
+  cancel-in-progress: false
+
+jobs:
+  source-grounding:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout source with no persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Offline source-integrity and negative QA
+        run: python3 -m unittest discover -s tests -p test_academy_source_excerpt_i7_pilot.py -v
+
+      - name: Retrieve pinned source-versus-trainer dataset
+        if: github.event_name == 'push' && contains(github.event.head_commit.message, '[evidence]')
+        shell: bash
+        run: |
+          git fetch --no-tags --depth=1 origin refs/heads/audit/anre-v8-priority-17-20261109
+          git show FETCH_HEAD:docs/QUESTION_AUDIT/V144_SIX_RELEASE_BLOCKERS_SOURCE_VERSUS_CANONICAL_ADJUDICATION_2026_11_20.csv > source_6_qabc.csv
+          test "$(git hash-object source_6_qabc.csv)" = '0fae5c2e3653c4cea2ced456ca768ddb01db733e' || exit 1
+          test "$(git hash-object docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json)" = '3bbb905c5fc2b4456b1a6cb5b64e3e4e5d1e5cdd' || exit 1
+
+      - name: Two grounded I7 clauses - 4 independent free model calls maximum
+        if: github.event_name == 'push' && contains(github.event.head_commit.message, '[evidence]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python3 scripts/academy_source_excerpt_i7_pilot.py \
+            --ledger source_6_qabc.csv \
+            --context docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json \
+            --mode live-free --confirm FREE_ONLY --out _academy_i7_results
+
+      - name: Archive unapproved source-grounded traces
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[evidence]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-grounded-i7-free-results
+          path: _academy_i7_results/
+          retention-days: 4
+          if-no-files-found: warn
