@@ -1,0 +1,72 @@
+name: ANRE Avengers Academy agent orchestration (free-only)
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_agent_orchestrator.py'
+      - 'tests/test_academy_agent_orchestrator.py'
+      - 'docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json'
+      - '.github/workflows/academy-agent-orchestration.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_agent_orchestrator.py'
+      - 'tests/test_academy_agent_orchestrator.py'
+      - 'docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json'
+      - 'docs/CKPT_264_ACADEMY_ROLE_INTEGRATION_2026_11_20.md'
+      - '.github/workflows/academy-agent-orchestration.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anre-academy-roles-free-pilot
+  cancel-in-progress: false
+
+jobs:
+  academy-role-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout original trusted Academy pilot branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Offline Python regression tests (no secrets exposed)
+        run: python3 -m unittest discover -s tests -p 'test_academy_agent_orchestrator.py' -v
+
+      - name: Verify twelve-question immutable queue
+        shell: bash
+        run: |
+          test "$(git hash-object docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json)" = "dc66cf1aa4ff96afe11385b5c6f59c27727f16e1" || {
+            echo "Original QABC queue has changed: STOP"
+            exit 1
+          }
+
+      - name: Preflight Academy routing without any provider calls
+        run: |
+          python3 scripts/academy_agent_orchestrator.py \
+            --queue docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json \
+            --out _academy_agent_preflight --mode dry-run --start 0
+
+      - name: Four-question pilot with real blind expert roles, free APIs only
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[academy]')
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python3 scripts/academy_agent_orchestrator.py \
+            --queue docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json \
+            --out _academy_agent_results --mode live-free --start 0 --confirm FREE_ONLY
+
+      - name: Save unapproved model traces and usage
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[academy]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-roles-first-4-qabc
+          path: _academy_agent_results/
+          if-no-files-found: warn
+          retention-days: 7
