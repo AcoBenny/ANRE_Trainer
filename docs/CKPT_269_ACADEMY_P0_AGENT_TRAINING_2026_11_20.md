@@ -40,3 +40,8 @@
 - The previously recovered ELE028 drawing remains excluded from *model requests* until a verified image payload is present, not relabelled “absent in source”.
 - New negative tests block verbatim copied A/B/C pretending to be reasoning and require linguistic review when a risky qualifier occurs only in an option. Offline source integrity checks [run 44759051310](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44759051310) passed before extending batches.
 - This explicit `[academy-p0]` commit runs **only the remaining eight** QABC (start 4 and 8). Both batches write independent partial result artifacts; role/provider or semantic failures still cause a fail-closed workflow and no learner approval. No previously completed first-batch question is automatically repeated.
+
+## GFR follow-up | launch remaining eight explicitly
+- Verified current PR #13 already contains new P0 loader, source-pinned queue, trained prompts and a tested CI workflow. Earlier P0 first cohort has 6 model outputs, 1 diagram blocked, and 1 linguistic failure. The newer two batches have NOT yet produced live API artifacts on their latest runs (CI preflight only).
+- This checkpoint commits **only a scoped `[academy-p0]` trigger** for QABC-0036, 0042, 0050, 0065 and QABC-0069, 0080, 0091, 0096, using existing authenticated GitHub Actions secrets and free-only router. Each group writes its own artifact and returns fail-closed if roles or format are incomplete. Original questions/keys/HTML/APK are immutable.
+- Do NOT use a model answer as official key or release. This is execution evidence and prompt QA training, not model fine-tuning.
