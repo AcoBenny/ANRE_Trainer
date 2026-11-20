@@ -79,6 +79,12 @@ def build_case(row):
     return item, changed
 
 
+def changed_after_whitespace_normalization(row):
+    """Preserve raw bytes while distinguishing whitespace-only changes from lexical changes."""
+    return [label for label, source, trainer in STEM_FIELDS
+            if " ".join(row[source].split()) != " ".join(row[trainer].split())]
+
+
 def write_result(out, report):
     out.mkdir(parents=True, exist_ok=True)
     (out / "results.json").write_text(
@@ -119,6 +125,7 @@ def main(argv=None):
         record = {
             "unit_id": row["unit_id"], "grade_ids": row["grade_ids"],
             "changed_fields_actual": changed,
+            "changed_fields_after_whitespace_normalization": changed_after_whitespace_normalization(row),
             "original_source_question_sha256": hashlib.sha256(
                 json.dumps(item["original_workbook_QABC"], ensure_ascii=False, sort_keys=True).encode()
             ).hexdigest(),
