@@ -37,7 +37,7 @@ class P0SourcedEvidenceTests(unittest.TestCase):
         equations = " ".join(e["equations"]).lower()
         self.assertIn("epsilon_0", equations)
         self.assertIn("oint(d dot da)=q_free", equations)
-        self.assertIn("units", e["key_uncertainty"])
+        self.assertIn("unit system", e["assumptions_to_check"])
         self.assertFalse(e.get("learner_approved", False))
 
     def test_period_direction_and_generator_condition_not_silently_filled(self):
