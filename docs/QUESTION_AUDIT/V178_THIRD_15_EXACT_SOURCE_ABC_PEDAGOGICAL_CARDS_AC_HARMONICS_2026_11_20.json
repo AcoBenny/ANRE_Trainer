@@ -17,25 +17,26 @@
   "live_reopened_supporting_sources": [
     {
       "relevant_units": [
+        "QABC-0040",
         "QABC-0041",
-        "QABC-0042"
-      ],
-      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
-      "context": "Capacitor and inductor AC phase (not scored keys)"
-    },
-    {
-      "relevant_units": [
         "QABC-0045"
       ],
-      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
-      "context": "Poynting vector energy flux"
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "context": "Ideal linear L/C AC reactance, harmonic frequency weighting and the 90-degree voltage lag in a capacitor; textbooks support models only."
     },
     {
       "relevant_units": [
-        "QABC-0044"
+        "QABC-0043"
+      ],
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
+      "context": "Poynting vector E × H and energy flux direction; note vacuum OpenStax uses E × B/μ0."
+    },
+    {
+      "relevant_units": [
+        "QABC-0042"
       ],
       "url": "https://www.mdpi.com/1996-1073/17/12/2828",
-      "context": "AC proximity effect requires geometry and frequency"
+      "context": "Same-direction parallel-conductor AC proximity requires geometry and frequency, not applicable as a universal DC claim."
     }
   ],
   "review_note": "Careful: QABC with AC proximity and massive-conductor skin and reactive-energy are not unconditionally validated. User-study release stays closed. Supporting sources and old URLs do not establish official ANRE grading key.",
@@ -55,7 +56,9 @@
       "ideal_capacitor_fifth": true,
       "star_230V": true,
       "series_cap_V": true
-    }
+    },
+    "source_urls_to_matching_QABC_ids": true,
+    "all_live_source_links_are_relevant_id": true
   },
   "cards": [
     {
@@ -658,5 +661,6 @@
         "approved_for_learning": false
       }
     }
-  ]
+  ],
+  "editorial_erratum": "Corrected live-source relevance IDs: QABC-0043 is Poynting (not QABC-0045); QABC-0042 is AC proximity (not QABC-0044). No original question/choice or imported key changes."
 }
