@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""P0 ANRE Academy source-preserving question/agent-training pilot, no release."""
+"""P0 ANRE Academy source-preserving question/agent-training pilot; not updating model weights."""
 from __future__ import annotations
 
 import argparse
