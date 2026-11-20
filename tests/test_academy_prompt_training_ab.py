@@ -69,6 +69,36 @@ class AcademyTrainingABTests(unittest.TestCase):
         self.assertEqual(set(source), set(lab.SELECTED_IDS))
         self.assertTrue(all(c["pdf_page"] in (70, 72) for c in source.values()))
 
+    def test_transfer_lesson_not_exhaustive_does_not_mean_false(self):
+        from scripts.academy_source_excerpt_i7_pilot import load_context
+        sources = load_context(pathlib.Path(
+            "docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json"))
+        clause = sources["QABC-0362"]["text"]
+        self.assertIn("dintr-un circuit de prize", clause)
+        self.assertIn("sau", clause)
+        original_c = "dintr-un circuit de prize"
+        exclusive_c = "numai dintr-un circuit de prize"
+        self.assertIn(original_c, clause)
+        self.assertFalse(original_c.startswith("numai"))
+        self.assertNotEqual(original_c, exclusive_c)
+        prompt = lab.trained_instruction("technical", "I7 source")
+        self.assertIn("X OR Y OR Z", prompt)
+        self.assertIn("nonexclusive", prompt)
+        self.assertIn("ONLY Y", prompt)
+        self.assertIn("true partial condition", prompt)
+
+    def test_without_tool_is_not_equivalent_to_missing_tool_detail(self):
+        from scripts.academy_source_excerpt_i7_pilot import load_context
+        sources = load_context(pathlib.Path(
+            "docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json"))
+        clause = sources["QABC-0386"]["text"]
+        self.assertIn("numai prin intermediul unei scule", clause)
+        self.assertIn("deconectat individual", clause)
+        prompt = lab.trained_instruction("skeptic", "I7 source")
+        self.assertIn("WITHOUT a tool", prompt)
+        self.assertIn("ONLY with a tool", prompt)
+        self.assertIn("another necessary detail is omitted", prompt)
+
     def test_dry_run_persists_eight_slots_without_api(self):
         with tempfile.TemporaryDirectory() as td:
             ledger = pathlib.Path(td) / "ledger.csv"
