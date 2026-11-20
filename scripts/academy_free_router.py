@@ -23,7 +23,7 @@ MODELS = {
     "gemini": "gemini-3.5-flash-lite",
     "openrouter": "openrouter/free",
     "openrouter_fixed": "google/gemma-4-31b-it:free",
-    "requesty_nano": "nvidia/nemotron-3-nano-30b-a3b",
+    "requesty_lightning": "nvidia/nemotron-3.5-lightning-30b-a3b",
     "requesty_gemma": "google/gemma-4-31b-it",
 }
 KEYS = {
@@ -31,21 +31,21 @@ KEYS = {
     "gemini": "GEMINI_API_KEY",
     "openrouter": "OPENROUTER_API_KEY",
     "openrouter_fixed": "OPENROUTER_API_KEY",
-    "requesty_nano": "REQUESTY_API_KEY",
+    "requesty_lightning": "REQUESTY_API_KEY",
     "requesty_gemma": "REQUESTY_API_KEY",
 }
 ENDPOINTS = {
     "groq": "https://api.groq.com/openai/v1/chat/completions",
     "openrouter": "https://openrouter.ai/api/v1/chat/completions",
     "openrouter_fixed": "https://openrouter.ai/api/v1/chat/completions",
-    "requesty_nano": "https://router.requesty.ai/v1/chat/completions",
+    "requesty_lightning": "https://router.requesty.ai/v1/chat/completions",
     "requesty_gemma": "https://router.requesty.ai/v1/chat/completions",
     "gemini": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
 }
 # Exact provider-specific model IDs listed as free by Requesty on 2026-11-20.
 # Do not replace with generic model names or paid-routing policies.
 REQUESTY_FREE_MODEL_IDS = frozenset({
-    "nvidia/nemotron-3-nano-30b-a3b",
+    "nvidia/nemotron-3.5-lightning-30b-a3b",
     "google/gemma-4-31b-it",
 })
 MAX_TOTAL_CALLS = 24
@@ -91,7 +91,7 @@ def post_json(url: str, headers: dict, payload: dict):
             return json.load(resp)
     except urllib.error.HTTPError as exc:
         # Do not print the provider response or echo headers / keys.
-        raise ProviderError("HTTP_" + str(exc.code), exc.code in (403, 404, 408, 429, 500, 502, 503, 504)) from None
+        raise ProviderError("HTTP_" + str(exc.code), exc.code in (403, 404, 408, 410, 429, 500, 502, 503, 504)) from None
     except (urllib.error.URLError, TimeoutError):
         raise ProviderError("NETWORK_TIMEOUT", True) from None
 
