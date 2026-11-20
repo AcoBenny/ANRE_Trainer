@@ -13,9 +13,9 @@ import urllib.request
 
 EXPECTED = {f"ACA-ANRE-{i:03d}" for i in range(1, 7)}
 AGENTS = (
-    ("technical_reviewer", ("groq", "openrouter", "openrouter_fixed"),
+    ("technical_reviewer", ("groq", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
      "You are an electrical engineering and source-scope ANRE reviewer. Identify hidden assumptions, compare original versus edited wording if actually supplied, and examine each supplied A/B/C. Do not guess an official answer key or claim direct source access. Output uncertainty and requested source evidence."),
-    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed"),
+    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
      "You are a separate adversarial reviewer. You have not seen any other review. Challenge physical models, edition applicability, ambiguous wording, different imported grades and claimed citations. Do not approve exam answers or invent exact normative quotations."),
 )
 MODELS = {
@@ -135,6 +135,19 @@ def call_provider(provider: str, system: str, message: str):
         model = obj.get("model") or MODELS[provider]
     if not text.strip():
         raise ProviderError("EMPTY_MODEL_OUTPUT", True)
+    if provider.startswith("requesty_"):
+        # Requesty free endpoints are provider-pinned. A changed actual model is
+        # potentially a paid-route change, so do not accept it without review.
+        if str(model) != MODELS[provider]:
+            raise ProviderError("REQUESTY_UNEXPECTED_SERVED_MODEL", False)
+        # A successful network response is not a proof of a free response unless
+        # Requesty explicitly returns a numeric cost of exactly zero.
+        try:
+            cost = float(usage["cost"])
+        except (KeyError, TypeError, ValueError, AttributeError):
+            raise ProviderError("REQUESTY_COST_NOT_ATTESTED", False) from None
+        if cost != 0:
+            raise ProviderError("REQUESTY_NONZERO_REPORTED_COST", False)
     if finish_reason.upper() in ("MAX_TOKENS", "LENGTH", "SAFETY", "RECITATION"):
         raise ProviderError("INCOMPLETE_OR_BLOCKED_" + finish_reason.upper(), False)
     return {"model": str(model), "finish_reason": finish_reason, "usage": usage, "text": text[:14000]}
