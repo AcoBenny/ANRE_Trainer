@@ -47,7 +47,7 @@ jobs:
             exit 1
           }
 
-      - name: One-case free-only smoke (max 4 calls, paid OpenAI never injected)
+      - name: Six-case Academy free-only pilot (max 24 calls, paid OpenAI never injected)
         if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[smoke]')
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -56,7 +56,7 @@ jobs:
         run: |
           python3 scripts/academy_free_router.py \
             --fixtures academy_fixtures.json --out _academy_free_results \
-            --mode live-free --cases 1 --confirm FREE_ONLY
+            --mode live-free --cases 6 --confirm FREE_ONLY
 
       - name: Upload read-only model traces, never answer keys
         if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[smoke]')
