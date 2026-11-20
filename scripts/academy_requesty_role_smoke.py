@@ -44,7 +44,7 @@ def run(argv=None) -> int:
               "that no source or official ANRE answer has been authenticated.")
     state = {"attempts": 0, "returned": 0}
     result = route_agent(system, json.dumps(SYNTHETIC_QABC, sort_keys=True),
-                         ("requesty_lightning",), state)
+                         ("requesty_lightning", "requesty_gemma"), state)
     qa = {
         "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "kind": "SYNTHETIC_ROLE_ONLY_NO_INDEPENDENT_QA",
