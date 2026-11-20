@@ -15,6 +15,7 @@ on:
       - 'tests/test_academy_p0_source_conditioned_review.py'
       - 'docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json'
       - 'docs/CKPT_279_P0_THREE_SOURCED_BLIND_AGENT_QA_2026_11_20.md'
+      - 'docs/CKPT_280_P0_SOURCE_QA_ROLE_RECOVERY_2026_11_20.md'
       - '.github/workflows/academy-p0-three-source-conditioned.yml'
 
 permissions:
@@ -59,6 +60,40 @@ jobs:
           python3 scripts/academy_p0_source_conditioned_review.py \
             --evidence docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json \
             --mode live-free --confirm FREE_ONLY --out _p0_source_live
+
+      - name: Retry only three missing sourced-QABC model roles, never whole cases
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[p0-source-retry]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          set +e
+          failures=0
+          for pair in \
+            "QABC-0036 technical_electrical" \
+            "QABC-0050 technical_electrical" \
+            "QABC-0065 independent_skeptic"; do
+            set -- $pair
+            unit="$1"
+            role="$2"
+            python3 scripts/academy_p0_source_conditioned_review.py \
+              --evidence docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json \
+              --mode live-free --confirm FREE_ONLY \
+              --unit "$unit" --only-role "$role" \
+              --out "_p0_source_retry_${unit}_${role}" || failures=$((failures + 1))
+          done
+          echo "Unresolved model-role retrials: $failures"
+          test "$failures" -eq 0
+
+      - name: Archive only missing model-role traces and API usage
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-source-retry]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-p0-three-source-role-only-retries
+          path: _p0_source_retry_*/
+          retention-days: 7
+          if-no-files-found: warn
 
       - name: Preserve model disagreements and usage for source-led adjudication
         if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-source]')
