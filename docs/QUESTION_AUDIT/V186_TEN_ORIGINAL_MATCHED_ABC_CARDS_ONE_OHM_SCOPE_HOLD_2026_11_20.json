@@ -1,0 +1,384 @@
+{
+  "schema": "v186_ten_exact_original_source_abc_cards_and_one_semantic_hold",
+  "date": "2026-11-20",
+  "evidence_sha": {
+    "CKPT237": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+    "V149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "V175": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_qabc": 10,
+    "grade_routes": 20,
+    "ABC_explanations": 30,
+    "reformulations": 10,
+    "semantic_hold": [
+      "QABC-0132"
+    ],
+    "approved": 0
+  },
+  "math": {
+    "sync_1500_2": true,
+    "inductor_2H_3As": true,
+    "Coulomb_2r": true
+  },
+  "live_technical_source": [
+    {
+      "id": "QABC-0130",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+      "scope": "Only ohmic components have linear constant R, making any-circuit Ohm phrase overbroad"
+    }
+  ],
+  "warnings": "Exact original ANRE question and A/B/C text verified; technical proof is same-assistant model-limited review, not an official scored grade-specific key or independent evaluator. G1-ELE-141 kept separate semantic HOLD because AC/DC versus nonlinear devices changes the truth value of C.",
+  "cards": [
+    {
+      "unit_id": "QABC-0124",
+      "grade_ids": [
+        "G1-ELE-133",
+        "G2-ELEC-273"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "140",
+        "stem": "La generatorul sincron viteza de rotaţie a câmpului magnetic al statorului fata de viteza de rotaţie a rotorului maşinii este:",
+        "A": "mai mare",
+        "B": "mai mica",
+        "C": "egala",
+        "keys_unchanged": "G1-ELE-133=C | G2-ELEC-273=C"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "At a synchronized steady generator the stator rotating magnetic field and rotor have equal mechanical speed. A higher and B lower would entail sustained relative slip and contradict synchronous operation. Transient oscillations are excluded by the steady-operation reading.",
+        "source_url_reported": "https://www.ece.lsu.edu/mendrela/EE3410Electricgenerators.pdf"
+      },
+      "editorial": {
+        "A": "La generatorul sincron în regim stabil câmpul rotitor nu poate avea viteză mai mare persistentă decât rotorul sincronizat.",
+        "B": "Nici o viteză relativă permanent mai mică nu este compatibilă cu regimul sincron.",
+        "C": "Viteza mecanică a rotorului și viteza mecanică a câmpului magnetic statoric coincid în regim sincron.",
+        "model_and_counterexample": "Oscilații tranzitorii ale unghiului de putere nu înseamnă alunecare susținută.",
+        "unofficial_reformulation": "Cum este viteza rotorului generatorului sincron față de câmpul rotitor în stare stabilă?",
+        "answer": "Sunt egale în regim sincron.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0127",
+      "grade_ids": [
+        "G1-ELE-136",
+        "G2-ELEC-276"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "143",
+        "stem": "La maşina sincrona turaţia variază în funcţie de sarcina astfel:",
+        "A": "creste când sarcina creste",
+        "B": "scade când sarcina scade",
+        "C": "rămâne constanta la variaţia sarcinii",
+        "keys_unchanged": "G1-ELE-136=C | G2-ELEC-276=C"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Steady-state grid-connected synchronous-machine speed follows grid frequency and pole count, n=120f/P and does not normally vary with load; load changes torque angle. A and B confuse speed with torque/load adjustment. Frequency excursions or loss of synchronism are explicit exceptions.",
+        "source_url_reported": "https://electrical-engineering-portal.com/res/res5/Synchrounous-Generators-and-Motors.pdf"
+      },
+      "editorial": {
+        "A": "La frecvență fixă nu rezultă creștere continuă de viteză prin mărirea sarcinii.",
+        "B": "O scădere a sarcinii nu obligă la scăderea turației generatorului sincron conectat la rețea.",
+        "C": "În sincronism n=60f/p perechi de poli, turația este fixată de frecvență și poli.",
+        "model_and_counterexample": "În pierdere de sincronism sau oscilații de frecvență, turația poate varia; răspunsul este pentru regim stabil.",
+        "unofficial_reformulation": "Ce se schimbă în principal când sarcina generatorului sincron crește la frecvență constantă?",
+        "answer": "Unghiul de sarcină și puterea, nu turația sincronă staționară.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0132",
+      "grade_ids": [
+        "G1-ELE-141",
+        "G2-ELEC-279"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "148",
+        "stem": "Legea lui Ohm pentru o porţiune de circuit este valabila:",
+        "A": "doar în curent continuu",
+        "B": "doar în curent alternativ",
+        "C": "indiferent de natura circuitului",
+        "keys_unchanged": "G1-ELE-141=C | G2-ELEC-279=C"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Imported C intends AC or DC application of U=RI for an ohmic section. A only-DC and B only-AC are false. However 'indiferent de natura circuitului' is not universally true for diodes and other nonlinear nonohmic elements. Flag ambiguous rather than certify C universally.",
+        "source_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+      },
+      "editorial": {
+        "A": "Legea Ohm pentru elemente ohmice nu este limitată doar la DC.",
+        "B": "Nici doar la AC nu se aplică: poate descrie rezistorul ohmic la DC și în model AC rezistiv.",
+        "C": "C este intenția că forma U=RI se poate folosi în AC/DC la elemente ohmice; «indiferent de natura circuitului» este fals pentru diode nonohmice.",
+        "model_and_counterexample": "**HOLD SEMANTIC:** orice circuit nu este ohmic; proprietatea de material/element trebuie specificată.",
+        "unofficial_reformulation": "O diodă nonohmică respectă o relație liniară U=R·I cu R constant în orice punct?",
+        "answer": "Nu. Legea Ohm cu R constantă descrie elemente ohmice, nu orice circuit.",
+        "status": "BLOCKED_SEMANTIC_UNIVERSAL_OHM",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0135",
+      "grade_ids": [
+        "G1-ELE-144",
+        "G2-ELEC-282"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "151",
+        "stem": "La o maşina electrica asincrona turaţia variază:",
+        "A": "cu curentul de excitaţie",
+        "B": "cu frecventa",
+        "C": "numai cu sarcina",
+        "keys_unchanged": "G1-ELE-144=B | G2-ELEC-282=B"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Induction speed n=(120f/P)*(1-s); B frequency affects speed. A excitation current is not primary speed law. C 'only load' is false; speed varies with load-induced slip as well, so B is true but not complete or exclusive.",
+        "source_url_reported": "https://www.ibiblio.org/kuphaldt/electricCircuits/AC/AC_13.html"
+      },
+      "editorial": {
+        "A": "Curentul de excitație nu este parametrul universal al turației mașinii asincrone.",
+        "B": "n=(60f/p)·(1−s): frecvența de alimentare influențează direct turația sincronă.",
+        "C": "«Numai cu sarcina» exclude influența frecvenței și numărului de poli; este fals.",
+        "model_and_counterexample": "Alunecarea s variază și cu sarcina, deci nu afirma că frecvența este singurul factor.",
+        "unofficial_reformulation": "Un motor asincron alimentat prin VFD își poate modifica turația prin ce parametru electric?",
+        "answer": "Frecvența tensiunii de alimentare, cu alunecare dependentă de regim.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0136",
+      "grade_ids": [
+        "G1-ELE-145",
+        "G2-ELEC-283"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "152",
+        "stem": "La pornirea motoarelor electrice asincrone se urmăreşte:",
+        "A": "reducerea vibraţiilor rotorului",
+        "B": "reducerea curentului electric absorbit de motor",
+        "C": "reducerea tensiunii la bornele de alimentare ale motorului",
+        "keys_unchanged": "G1-ELE-145=B | G2-ELEC-283=B"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Induction-motor start current can greatly exceed rated; reduced-voltage starters and VFD address current B. A vibrations may be another objective and C reduced terminal voltage is one possible method rather than universal goal. Torque and acceleration must remain sufficient.",
+        "source_url_reported": "https://library.e.abb.com/public/1fd380f8ca8b4934ae3fa609d764fd33/21043_ABB_Motor_Guide_REV_D.pdf"
+      },
+      "editorial": {
+        "A": "Vibrațiile pot constitui și ele obiectiv de confort sau fiabilitate, dar nu caracterizează principalul motiv electric al pornirii controlate.",
+        "B": "Pornirea directă poate absorbi curenți mari; reducerea curentului este un obiectiv de proiectare al starterului.",
+        "C": "Reducerea tensiunii este una dintre metode, nu scopul universal; alte soluții folosesc VFD.",
+        "model_and_counterexample": "Scăderea curentului nu trebuie să compromită cuplul de pornire necesar.",
+        "unofficial_reformulation": "De ce se instalează demaroare soft sau convertizoare în unele acționări?",
+        "answer": "Pentru limitarea curentului tranzitoriu și controlul accelerației/cuplului.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0138",
+      "grade_ids": [
+        "G1-ELE-147",
+        "G2-ELEC-285"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "154",
+        "stem": "Materialele feromagnetice au permeabilitatea relativa:",
+        "A": "mai mica decât 1",
+        "B": "puţin mai mare decât 1",
+        "C": "mult mai mare decât 1",
+        "keys_unchanged": "G1-ELE-147=C | G2-ELEC-285=C"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Ordinary ferromagnets in unsaturated operating range have high relative permeability compared with unity; C represents textbook regime. A mu_r<1 describes diamagnetism; B near-unity is not typical low-field ferromagnetic response. Under saturation and frequency-dependent conditions mu_r is not universally much greater than one.",
+        "source_url_reported": "https://www.sciencedirect.com/topics/engineering/material-loss"
+      },
+      "editorial": {
+        "A": "μr<1 este tipic comportamentului diamagnetic, nu feromagnetic clasic.",
+        "B": "«Puțin peste 1» nu descrie permeabilitatea relativă mare a unui feromagnet nesaturat uzual.",
+        "C": "În regim nesaturat, feromagneții au de regulă μr mult peste 1.",
+        "model_and_counterexample": "La saturație și în regim AC, permeabilitatea efectivă poate scădea; nu este regulă absolută.",
+        "unofficial_reformulation": "Ce efect are saturația magnetică asupra permeabilității diferențiale?",
+        "answer": "Poate scădea sensibil față de regimul de câmp redus.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0139",
+      "grade_ids": [
+        "G1-ELE-148",
+        "G2-ELEC-286"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "155",
+        "stem": "Ecuația constitutivă a bobinei ideale are forma:",
+        "A": "u = R i",
+        "B": "u= L di/dt",
+        "C": "du = i/C dt",
+        "keys_unchanged": "G1-ELE-148=B | G2-ELEC-286=B"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "For an ideal lumped linear inductor in passive sign convention u=L di/dt B. A is resistor constitutive law; C is a capacitor relation and its differential notation is incomplete. Different terminal polarity changes sign; avoid confusing induced EMF sign with terminal voltage.",
+        "source_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+      },
+      "editorial": {
+        "A": "u=Ri este legea elementului rezistiv ideal, nu a bobinei.",
+        "B": "Pentru inductor ideal L constant, convenție pasivă: u=L·di/dt.",
+        "C": "Varianta C este o exprimare asemănătoare unei relații capacitive, dar notația diferențială nu descrie inductanța.",
+        "model_and_counterexample": "La polaritate de referință schimbată, semnul tensiunii se schimbă; u=Ldi/dt presupune convenția pasivă.",
+        "unofficial_reformulation": "La L=2 H și variația di/dt=3 A/s, cât este u?",
+        "answer": "6 V, în convenția pasivă.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0140",
+      "grade_ids": [
+        "G1-ELE-149",
+        "G2-ELEC-287"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "156",
+        "stem": "Legea lui Coulomb exprimã:",
+        "A": "forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice",
+        "B": "fluxul electric printr-o suprafaţa sferica",
+        "C": "diferenţa de potenţial între doua puncte",
+        "keys_unchanged": "G1-ELE-149=A | G2-ELEC-287=A"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Coulomb law states electrostatic interaction force between ideal point charges A with magnitude k|q1q2|/r^2. B describes electric flux/Gauss law and C potential difference not Coulomb's force law. Static-point-charge approximation matters.",
+        "source_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law"
+      },
+      "editorial": {
+        "A": "Legea Coulomb descrie forța electrostatică între sarcini punctiforme, cu |F|=k|q1q2|/r².",
+        "B": "Fluxul electric prin suprafețe este tratat de legea Gauss, nu direct de legea Coulomb.",
+        "C": "Diferența de potențial se calculează din câmp electric, dar nu este enunțul forței Coulomb.",
+        "model_and_counterexample": "Sarcini punctiforme fixe în mediu omogen; la conductori extinși intervin distribuții și frontiere.",
+        "unofficial_reformulation": "La dublarea distanței dintre sarcini punctiforme, ce raport F2/F1 rezultă?",
+        "answer": "1/4.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0144",
+      "grade_ids": [
+        "G1-ELE-153",
+        "G2-ELEC-291"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "160",
+        "stem": "Mărimea caracteristică circuitelor magnetice şi care este analoagă cu rezistenţa circuitelor electrice se numeşte:",
+        "A": "impedanţă",
+        "B": "reluctanţă",
+        "C": "permeanţă",
+        "keys_unchanged": "G1-ELE-153=B | G2-ELEC-291=B"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Magnetic reluctance is analogous to electric resistance B with flux versus current and magnetomotive force versus voltage. A impedance is an AC electrical quantity; C permeance is reciprocal of reluctance and corresponds to conductance.",
+        "source_url_reported": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Electromagnetic_Field_Theory%3A_A_Problem_Solving_Approach_%28Zahn%29/06%3A_Electromagnetic_Induction/6.02%3A_Faraday%27s_Law_for_Moving_Media"
+      },
+      "editorial": {
+        "A": "Impedanța este noțiune de circuit electric, nu analogul R pentru circuit magnetic.",
+        "B": "Reluctanța ℜ=ℓ/(μA) este analogul rezistenței electrice, pentru flux și forță magnetomotoare.",
+        "C": "Permeanța este inversul reluctanței, analog cu conductanța.",
+        "model_and_counterexample": "Analogul se aplică magnetic-circuit lumped, fără a elimina efectele de saturare/flux de dispersie.",
+        "unofficial_reformulation": "Ce mărime magnetică este analogă conductanței G=1/R?",
+        "answer": "Permeanța, inversul reluctanței.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0149",
+      "grade_ids": [
+        "G1-ELE-158",
+        "G2-ELEC-296"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "165",
+        "stem": "Miezul magnetic al rotorului unei maşini electrice asincrone se realizează din tole pentru:",
+        "A": "reducerea curenţilor turbionari",
+        "B": "reducerea tensiunii electromotoare induse",
+        "C": "numai din motive constructive",
+        "keys_unchanged": "G1-ELE-158=A | G2-ELEC-296=A"
+      },
+      "history": {
+        "filename": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "blob": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "prior_ABC_analysis": "Laminated iron rotor core helps impede circulating eddy currents and reduces their losses A. B reduction in intended induced EMF is not the objective; C only construction is disproved by electrodynamic loss mitigation. Steel grade and lamination thickness matter.",
+        "source_url_reported": "https://coefs.charlotte.edu/mnoras/files/2013/03/Transformer-and-Inductor-Design-Handbook_Chapter_3.pdf"
+      },
+      "editorial": {
+        "A": "Miezurile din tole izolate reduc curenții turbionari și pierderile prin limitarea buclelor de curent.",
+        "B": "Reducerea FEM utile induse în rotor nu este ținta principală a laminării.",
+        "C": "«Numai constructiv» exclude rolul electromagnetic și este fals.",
+        "model_and_counterexample": "Eficiența depinde de grosimea tolelor, rezistivitate, frecvență și calitatea izolării.",
+        "unofficial_reformulation": "De ce este preferată realizarea miezurilor magnetice din tole izolate în loc de oțel masiv?",
+        "answer": "Pentru a limita buclele de curenți turbionari și încălzirea aferentă.",
+        "status": "PRELIMINARY_CONTENT_DRAFT",
+        "source_text_ANRE_matched": true,
+        "independent_qualified_review": "NOT_RUN",
+        "current_official_scored_answer": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    }
+  ]
+}
