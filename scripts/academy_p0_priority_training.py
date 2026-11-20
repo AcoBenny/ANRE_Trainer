@@ -102,6 +102,14 @@ def role_plan(case: dict):
     return reviewers
 
 
+def bounded_provider_candidates(candidates: tuple[str, ...]) -> tuple[str, ...]:
+    """At most two free API requests per role; avoid cascading 5 x 25s timeouts."""
+    first = candidates[0]
+    fallback = ("requesty_gemma" if "requesty_gemma" in candidates
+                and first != "requesty_gemma" else None)
+    return (first, fallback) if fallback else (first,)
+
+
 def prompt_data(case: dict) -> str:
     # Exclude source's imported scored key, history/rubric, risk labels and old conclusions.
     return json.dumps({
@@ -154,28 +162,40 @@ def main(argv=None) -> int:
     p.add_argument("--queue", type=pathlib.Path, required=True)
     p.add_argument("--out", type=pathlib.Path, default=pathlib.Path("_academy_p0_results"))
     p.add_argument("--start", type=int, default=0, choices=(0, 4, 8))
+    p.add_argument("--only-unit", choices=EXPECTED_IDS, default=None)
+    p.add_argument("--only-role", choices=[x[0] for x in SPECIALISTS], default=None)
     p.add_argument("--mode", choices=("dry-run", "live-free"), default="dry-run")
     p.add_argument("--confirm", default="")
     args = p.parse_args(argv)
     if args.mode == "live-free" and args.confirm != "FREE_ONLY":
         p.error("Live providers require FREE_ONLY; no paid API permitted")
-    cases = load_priority_queue(args.queue)[args.start:args.start + 4]
+    if args.only_role and not args.only_unit:
+        p.error("--only-role requires --only-unit")
+    all_cases = load_priority_queue(args.queue)
+    cases = ([next(x for x in all_cases if x["unit_id"] == args.only_unit)]
+             if args.only_unit else all_cases[args.start:args.start + 4])
     state = {"attempts": 0, "returned": 0}
     report = {
         "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "queue_sha256": hashlib.sha256(args.queue.read_bytes()).hexdigest(),
         "training_recipe": TRAINING_RECIPE, "mode": args.mode,
-        "first_index": args.start, "attempts": 0, "responses": 0,
+        "first_index": args.start, "only_unit": args.only_unit, "only_role": args.only_role,
+        "attempts": 0, "responses": 0,
         "figure_blockers": 0, "paid_openai_calls": 0, "keys_modified": False,
         "learner_approved": False, "professional_qa": False,
         "records": [], "training_observations": [],
     }
     for case in cases:
+        selected_roles = role_plan(case)
+        if args.only_role:
+            selected_roles = tuple(r for r in selected_roles if r[0] == args.only_role)
+            if not selected_roles:
+                p.error("Selected role is not needed for this exact case")
         item = {
             "unit_id": case["unit_id"], "grade_ids": case["grade_ids"],
             "source_fidelity": "USER_WORKBOOK_COPY_TEXT_MATCH_NOT_SOURCE_TRUTH",
             "prompt_sha256": hashlib.sha256(prompt_data(case).encode()).hexdigest(),
-            "roles_selected": [x[0] for x in role_plan(case)],
+            "roles_selected": [x[0] for x in selected_roles],
             "roles": {},
             "source_evidence_authentication": "NOT_VERIFIED",
             "learner_approved": False,
@@ -188,9 +208,9 @@ def main(argv=None) -> int:
             continue
         if args.mode == "live-free":
             text = prompt_data(case)
-            for name, candidates, speciality in role_plan(case):
+            for name, candidates, speciality in selected_roles:
                 instruction = TRAINING_RULES + " Reviewer specialty: " + speciality
-                result = route_agent(instruction, text, candidates, state)
+                result = route_agent(instruction, text, bounded_provider_candidates(candidates), state)
                 item["roles"][name] = result
                 if result.get("ok"):
                     result["training_format_check"] = check_reviewer_text(result["text"], case)
@@ -205,6 +225,12 @@ def main(argv=None) -> int:
                 (not trained_format_ok or qa["status"] == "INCOMPLETE_MODEL_TRACES")
                 else qa["status"]
             )
+            if args.only_role:
+                # One successful model cannot stand in for all earlier reviewers.
+                qa["requires_prior_artifact_reconciliation"] = True
+                qa["independent_model_families_proven"] = False
+                if trained_format_ok and all(x.get("ok") for x in item["roles"].values()):
+                    qa["status"] = "ROLE_RETEST_PRESENT_NOT_RECONCILED"
             item["gate"] = qa["status"]
             item["qa"] = qa
             report["training_observations"].append({
