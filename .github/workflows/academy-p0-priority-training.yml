@@ -63,7 +63,7 @@ jobs:
               --mode dry-run --start "$batch" --out "_academy_p0_preflight_$batch"
           done
 
-      - name: First four P0 questions, hard missing-figure stop, free AI model calls
+      - name: Two remaining P0 cohorts, separate artifacts, free AI only
         if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[academy-p0]')
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -71,16 +71,29 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
         run: |
+          set +e
           python3 scripts/academy_p0_priority_training.py \
             --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
-            --mode live-free --confirm FREE_ONLY --start 0 \
-            --out _academy_p0_model_traces
+            --mode live-free --confirm FREE_ONLY --start 4 \
+            --out _academy_p0_batch4
+          status4=$?
+          python3 scripts/academy_p0_priority_training.py \
+            --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
+            --mode live-free --confirm FREE_ONLY --start 8 \
+            --out _academy_p0_batch8
+          status8=$?
+          if test "$status4" -ne 0 || test "$status8" -ne 0; then
+            echo "P0 model QA warnings; preserve both partial artifacts, no approval."
+            exit 1
+          fi
 
-      - name: Archive unapproved first-P0 source and model-training traces
+      - name: Archive unapproved P0 cohorts even on fail-closed warnings
         if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[academy-p0]')
         uses: actions/upload-artifact@v4
         with:
-          name: academy-p0-first-four-source-gated
-          path: _academy_p0_model_traces/
+          name: academy-p0-remaining-eight-source-gated
+          path: |
+            _academy_p0_batch4/
+            _academy_p0_batch8/
           if-no-files-found: warn
           retention-days: 7
