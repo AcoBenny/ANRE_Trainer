@@ -1,0 +1,64 @@
+name: ANRE Academy | independent AI pilot (manual only)
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: "DRY_RUN is free; paid modes make at most 12 or 18 API calls"
+        required: true
+        type: choice
+        default: DRY_RUN
+        options:
+          - DRY_RUN
+          - RUN_OPENAI
+          - RUN_BOTH
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anre-academy-paid-api-pilot
+  cancel-in-progress: false
+
+jobs:
+  validate-and-evaluate:
+    name: Validate CKPT-256 fixtures and optionally call independent agents
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout reviewed main
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Retrieve immutable source-only Academy fixtures (not executable code)
+        run: |
+          git fetch --no-tags --depth=1 origin audit/anre-v8-priority-17-20261109
+          git show FETCH_HEAD:docs/QUESTION_AUDIT/ACADEMY_CKPT256_SIX_NEGATIVE_REGRESSION_FIXTURES_2026_11_20.json > academy_fixtures.json
+          actual="$(git hash-object academy_fixtures.json)"
+          test "$actual" = "c6bcd7ef734323e33963c99d3526584125fa0e1c" || { echo "Fixture content changed: refusing run"; exit 1; }
+
+      - name: Dry run or 6-case paid benchmark (max 18 calls)
+        env:
+          RUN_MODE: ${{ inputs.run_mode }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        shell: bash
+        run: |
+          case "$RUN_MODE" in
+            DRY_RUN) mode="dry-run"; confirmation="" ;;
+            RUN_OPENAI) mode="openai"; confirmation="RUN" ;;
+            RUN_BOTH) mode="both"; confirmation="RUN" ;;
+            *) echo "Unsupported mode"; exit 1 ;;
+          esac
+          python3 scripts/academy_api_pilot.py --fixtures academy_fixtures.json --out _academy_results --mode "$mode" --confirm "$confirmation"
+
+      - name: Save benchmark traces and usage without changing the app
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: anre-academy-pilot-traces
+          path: _academy_results/
+          retention-days: 7
+          if-no-files-found: warn
