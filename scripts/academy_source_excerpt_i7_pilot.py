@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Read-only source-grounded I7 comparison (two cases, four free-tier evaluations)."""
+# Second probe: generic Academy transfer rules, source/answers unchanged.
 import argparse
 import datetime as dt
 import json
