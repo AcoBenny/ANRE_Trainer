@@ -87,14 +87,14 @@ class RequestyAdapterTests(unittest.TestCase):
                 "GROQ_API_KEY": "", "GEMINI_API_KEY": "",
                 "OPENROUTER_API_KEY": "", "REQUESTY_API_KEY": "fake"}):
             with mock.patch.object(router, "call_provider", return_value={
-                "model": router.MODELS["requesty_lightning"],
+                "model": router.MODELS["requesty_gemma"],
                 "text": "source checks need confirmation",
                 "finish_reason": "stop", "usage": {"cost": 0},
             }) as fn:
                 role_name, candidates, instruction = router.AGENTS[0]
                 state = {"attempts": 0, "returned": 0}
                 result = router.route_agent("source auditor", "test", candidates, state)
-        self.assertEqual(result["provider"], "requesty_lightning")
+        self.assertEqual(result["provider"], "requesty_gemma")
         self.assertEqual(fn.call_count, 1)
         self.assertEqual(state["attempts"], 1)
 
@@ -175,7 +175,7 @@ class RequestyAdapterTests(unittest.TestCase):
                     result = role.run(["--confirm", "FREE_ONLY", "--out", root])
             self.assertEqual(result, 0)
             self.assertEqual(fn.call_count, 1)
-            self.assertEqual(fn.call_args.args[2], ("requesty_lightning", "requesty_gemma"))
+            self.assertEqual(fn.call_args.args[2], ("requesty_gemma", "requesty_lightning"))
             payload = json.loads((pathlib.Path(root)/"report.json").read_text())
             self.assertFalse(payload["learner_approved"])
             self.assertFalse(payload["source_authenticated"])
