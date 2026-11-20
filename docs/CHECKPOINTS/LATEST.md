@@ -1,5 +1,15 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-20 | CKPT-257 | Academy six negative-fixture structural preflight
+
+**Current checkpoint:** [CKPT-257: 10/10 deterministic structural preflight checks, 6 scenarios](../QUESTION_AUDIT/CKPT_257_GFR_ACADEMY_SIX_FIXTURE_STRUCTURAL_PREFLIGHT_2026_11_20.md)  
+**Active matrix remains:** [V149 | 568 distinct QABC / 822 IDs](../QUESTION_AUDIT/V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv)  
+**Six unresolved blockers:** [V144](../QUESTION_AUDIT/V144_SIX_RELEASE_BLOCKERS_SOURCE_VERSUS_CANONICAL_ADJUDICATION_2026_11_20.csv)  
+**Previous:** [CKPT-256](../QUESTION_AUDIT/CKPT_256_GFR_SIX_BLOCKERS_153_ALL_A_SOURCE_GATE_2026_11_20.md)
+
+10/10 data-structure checks executed and passed, including all six Academy negative-fixture conditions and 153/153 A-position verification. **Structural-only QA, NOT actual model benchmark, independent subject-matter QA, or learner approval**. No QABC/answer/key/HTML/APK edits; 0/822 learner-approved; PR7 Draft/unmerged.
+
+
 ## 2026-11-20 | CKPT-256 | Active final source/key/Academy gate
 
 **Current checkpoint:** [CKPT-256: six blockers, 153 all-A, external AI QA corrections](../QUESTION_AUDIT/CKPT_256_GFR_SIX_BLOCKERS_153_ALL_A_SOURCE_GATE_2026_11_20.md)  
