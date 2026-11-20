@@ -116,7 +116,7 @@ class AcademyOrchestrationTests(unittest.TestCase):
 
     def test_requesty_fallback_is_available_to_all_adaptive_roles(self):
         for role, providers, system in academy.SPECIALISTS:
-            self.assertEqual(providers[-2:], ("requesty_lightning", "requesty_gemma"))
+            self.assertEqual(providers[-2:], ("requesty_gemma", "requesty_lightning"))
             self.assertNotIn("openai", providers)
 
     def test_missing_abc_coverage_blocks(self):
