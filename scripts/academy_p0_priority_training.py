@@ -113,13 +113,23 @@ def prompt_data(case: dict) -> str:
     }, ensure_ascii=False, sort_keys=True)
 
 
-def check_reviewer_text(text: str) -> dict:
+def check_reviewer_text(text: str, case: dict | None = None) -> dict:
     text = text.strip()
     labels = {k: bool(re.search(r"(?im)^\s*" + k + r"\s*:", text)) for k in ("A", "B", "C")}
     rest = {k: bool(re.search(r"(?im)^\s*" + k + r"\s*:", text)) for k in
             ("PAIRS", "CONDITIONS", "EVIDENCE_MISSING", "VERDICT")}
+    copy_only = []
+    if case is not None:
+        for k in ("A", "B", "C"):
+            matched = re.search(r"(?im)^\s*" + k + r"\s*:\s*(.+)$", text)
+            if matched:
+                one_line = " ".join(matched.group(1).casefold().strip().rstrip(".;").split())
+                original = " ".join(case[f"{k}_original"].casefold().strip().rstrip(".;").split())
+                if one_line == original:
+                    copy_only.append(k)
     return {"labels": labels, "extra_fields": rest,
-            "all_required_fields": all(labels.values()) and all(rest.values())}
+            "option_copied_without_assessment": copy_only,
+            "all_required_fields": all(labels.values()) and all(rest.values()) and not copy_only}
 
 
 def write_result(out: pathlib.Path, report: dict) -> None:
@@ -183,7 +193,7 @@ def main(argv=None) -> int:
                 result = route_agent(instruction, text, candidates, state)
                 item["roles"][name] = result
                 if result.get("ok"):
-                    result["training_format_check"] = check_reviewer_text(result["text"])
+                    result["training_format_check"] = check_reviewer_text(result["text"], case)
             qa = quality_gate(case, item["roles"], item["roles_selected"])
             trained_format_ok = all(
                 r.get("ok") and r.get("training_format_check", {}).get("all_required_fields")
