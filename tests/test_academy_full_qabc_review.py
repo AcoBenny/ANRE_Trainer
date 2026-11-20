@@ -56,6 +56,19 @@ class ReviewQA(unittest.TestCase):
             self.assertEqual(case["original_workbook_QABC"]["A"], "Source A")
             self.assertEqual(case["trainer_current_QABC"]["A"], "Edited A")
 
+    def test_whitespace_only_does_not_count_as_meaning_change(self):
+        row = {
+            "source_stem_from_workbook": " Sonerie  :  . ",
+            "current_stem_UNCHANGED": "Sonerie : .",
+            "source_A_from_workbook": "numai din tablou",
+            "current_A_UNCHANGED": "numai din tablou",
+            "source_B_from_workbook": " numai din circuit",
+            "current_B_UNCHANGED": "numai din circuit",
+            "source_C_from_workbook": "din circuit",
+            "current_C_UNCHANGED": "numai din circuit",
+        }
+        self.assertEqual(qabc.changed_after_whitespace_normalization(row), ["C"])
+
     def test_keys_and_rationale_never_sent(self):
         with tempfile.TemporaryDirectory() as temp:
             path = pathlib.Path(temp) / "ledger.csv"
