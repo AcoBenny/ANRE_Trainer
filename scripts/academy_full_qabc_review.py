@@ -8,7 +8,10 @@ import json
 import pathlib
 import sys
 
-from academy_free_router import AGENTS, MAX_TOTAL_CALLS, MODELS, route_agent
+try:
+    from .academy_free_router import AGENTS, MAX_TOTAL_CALLS, MODELS, route_agent
+except ImportError:
+    from academy_free_router import AGENTS, MAX_TOTAL_CALLS, MODELS, route_agent
 
 EXPECTED_UNITS = {
     "QABC-0017", "QABC-0094", "QABC-0143",
