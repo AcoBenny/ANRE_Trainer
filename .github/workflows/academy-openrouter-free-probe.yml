@@ -1,0 +1,42 @@
+name: ANRE Academy OpenRouter free fallback probe
+
+on:
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - '.github/workflows/academy-openrouter-free-probe.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  free-openrouter-compatibility:
+    if: contains(github.event.head_commit.message, '[probe]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read-only checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check one free OpenRouter provider (never OpenAI)
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python3 - <<'PY'
+          from scripts.academy_free_router import call_provider, ProviderError
+          import os
+          if not os.getenv('OPENROUTER_API_KEY'):
+              raise SystemExit('STOP: OPENROUTER_API_KEY secret missing')
+          for provider in ('openrouter_fixed', 'openrouter'):
+              try:
+                  obj = call_provider(provider, 'Answer clearly and briefly.', 'Answer only: 2 + 2 = ?')
+                  print('FREE_PROVIDER_SUCCESS:', provider, 'actual_model:', obj['model'])
+                  print('Total token usage:', obj['usage'].get('total_tokens', 'unknown'))
+                  break
+              except ProviderError as exc:
+                  print('Free provider refused:', provider, exc.code)
+          else:
+              raise SystemExit('STOP: no free OpenRouter model provided nonempty output')
+          PY

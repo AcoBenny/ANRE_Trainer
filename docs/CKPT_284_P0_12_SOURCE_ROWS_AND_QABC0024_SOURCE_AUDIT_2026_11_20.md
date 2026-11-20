@@ -1,0 +1,39 @@
+# CKPT-284 | P0 source-row completion + source-scope QABC-0024 A/B/C assessment | 2026-11-20
+
+## Executed against uploaded workbook, not memory
+- Reopened user upload `ELECTROTEHNICA-09.2024-2(2).xlsx` in the current ChatGPT session, without editing it. **SHA-256** `2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c`, 67,250 bytes, single worksheet `Sheet1!A1:D282`. Spreadsheet contents were inspected with the spreadsheet import tool, drawing geometry via direct OOXML ZIP inspection.
+- **All 12 selected P0 QABC source rows** from the pinned Academy 12-question queue were located, and all 12 have nonempty stem + A/B/C cells; 12 trimmed A:D row hashes recorded at [source-row fingerprint ledger](QUESTION_AUDIT/CKPT_284_UPLOADED_ELECTROTEHNICA_12_P0_ROW_FINGERPRINTS_2026_11_20.json). This is 12/12 **structural availability**, **NOT** 12 independent technical reviews or graded keys. The previously investigated four question texts/options QABC-0024/0036/0050/0065 were re-read and correspond to the pinned Academy source queue.
+- Whole `xl/drawings/drawing1.xml` actually includes **128 two-cell anchors** and **477 native shape elements**. **Anchor #2** (0-based) at Excel zero-based rows 33–34 contains **exactly 22 shapes**, the QABC-0024 drawing. This corrects potential confusion between **22 in the relevant group** and the entire workbook drawing inventory. Drawing part SHA-256 `c3339775430c6e7838405ef21c26bdd9b81426a88816fb5b15746ee20c958689`. Extracted preview is a derivative; no original artwork distributed in this commit.
+- Source headers are `Enunt, Varianta a, Varianta b, Varianta c`, without separate answer-key field. Do not infer an authoritative ANRE answer letter. Public ANRE page continues to show September 2024 electrotechnics examples and its 2023 syllabus; the uploaded workbook has **not** been byte-matched to the official server binary: https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/ .
+
+## QABC-0024 | Source-object alignment and technical content
+- Original source **row 35**:
+  - Stem: `Ce posibilităţi de limitare a curenţilor de scurtcirciut sunt de preferat pentru schema de mai sus ?`
+  - A: `reducerea t.e.m., acţionând asupra circuitului de excitaţie al generatorului;`
+  - B: `mărirea reactanţei schemei de alimentare între sursă şi locul de defect;`
+  - C: `creşterea capacităţii de rupere a întreruptoarelor.`
+- Physical object & action: a source/generator marked `E`, a distribution bus, multiple branches and fault indication in the branch route; the question asks for a **preferred short-circuit-current limitation method for this diagram**, not merely which devices can interrupt a fault.
+- **B, affirmative direct technical support:** with fixed source voltage and a simple inductive fault path `|I_sc|≈|E|/|Z_sc|`, increasing the series reactance on the source-to-fault path lowers the prospective fault-current magnitude. Independent hypothetical unit-check: phase-to-neutral equivalent 230 V, purely inductive 0.20 Ω -> 1150 A, 0.40 Ω -> 575 A. This is **illustrative arithmetic, NOT workbook data and NOT a real design specification**. Reactor location, impedance, source contribution and voltage drops remain design-dependent.
+- **A, precise exclusion boundary:** changing excitation EMF **may alter** fault current, especially in generator steady/transient states, so the option is **not universally physically impossible**. But a generator-wide excitation change is not established as the preferred **local series-impedance** method for the depicted outgoing branch; generator dynamics and operating constraints are unspecified. Do not claim A cannot ever limit a fault. Schneider explicitly discusses the role of excitation **and** fault-path impedance at different stages of generator faults: https://www.electrical-installation.org/enwiki/Generator_protection .
+- **C, exact property mismatch:** merely increasing circuit-breaker **rated breaking capacity** (Icu/Icn) specifies interrupting ability, not reduction of prospective upstream short-circuit current. Some **current-limiting** breakers separately limit let-through current, but the stem option only specifies increased breaking capacity, not a limiting design. Source: https://www.electrical-installation.org/enwiki/Other_characteristics_of_a_circuit-breaker .
+- **B source:** Schneider Electric author Terence Hazel's description of series reactors and fault reactance via EEP reference https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/reduce-short-circuit-currents . It explicitly describes reactors inserted in distribution circuits to lower fault current, with side effects (motor-start voltage drop), so this is an **engineering support** and not a signed ANRE official scored answer.
+- **Reverse option challenge:** could A also reduce current? Yes under specified generator conditions. Could C also limit let-through current? Only if the different property `current-limiting capability` is present. Does B *always* improve the installation? No, extra reactance has voltage-drop/operational tradeoffs. These counterexamples prevent false uniqueness proofs, while B remains the most defensible *intended* answer for the stated circuit.
+- The phrase `sunt de preferat` is a design-preference qualifier; it cannot be converted to `singura metodă posibilă`. Need official source-specific teaching material, intended 2026 exam key and an independent qualified content reviewer before claiming grading authenticity.
+- **Provisional disposition: `QABC-0024 TECHNICALLY_PREFER_B_WITH_CONDITIONS / KEY_NOT_AUTHENTICATED / LEARNING_NOT_APPROVED`**. This matches a prior candidate without modifying any stored answer.
+
+## Other priority cases: preserve existing blockers, no duplicate AI calls
+- **QABC-0036** `Sheet1!A50:D50`: `I=sqrt(P²+Q²)/(sqrt(3)U)` is a **balanced sinusoidal 3-phase relation**, not universal proportionality to P or Q alone. Prior CKPT-282 identified concrete incorrect AI arithmetic and units; no 2026 scored key authenticated.
+- **QABC-0050** `Sheet1!A64:D64`: 1/2 period ratio may be one sufficient second-harmonic case, but A and C may overlap depending on numerator direction and accepted n=1 convention; no unique mutually-exclusive scored key established.
+- **QABC-0065** `Sheet1!A80:D80`: E-field flux `q/epsilon0` versus displacement-field D flux `q_free` is unresolved without an exact definition; prior second AI reviewer unavailable. The observed missing factor `4*pi` was regression-tested in CKPT-282.
+- These three are **already investigated and reconciled in CKPT-282**. Re-reading original rows is source provenance QA, not three new specialist reviews.
+
+## Scope and approvals
+- Source fidelity / original 12 row presence: **12/12 recorded**; QABC-0024 original artwork shape group: **verified and recoverable**.
+- QABC-0024 A/B/C option-specific engineering case: **analyzed with open public technical sources and explicit limitations**; no separate professional reviewer was invoked for this checkpoint.
+- Authoritative 2026 answer key: **NOT authenticated**; exact original official-server binary identity: **NOT proven**; approved for student learning: **0**.
+- **No new paid or free model API requests, no original workbook/QABC/key/HTML/APK/main changes, no PR merge or release. PR #7 and #13 stay Draft.**
+
+## Next
+1. Put QABC-0024 in the **source-supported conditional B candidate** queue, not the approved queue.
+2. Prioritize a *different* independent source/expert review for the 4 disputed cases and authenticity of official keyed answers; do not repeat unchanged failed Gemini/Requesty route.
+3. Extend the same source-specific A/B/C review to the remaining 8 structurally available P0 questions, reusing their existing reviews before doing any new API work.
