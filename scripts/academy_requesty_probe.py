@@ -16,7 +16,7 @@ except ImportError:
     from academy_free_router import (MODELS, REQUESTY_FREE_MODEL_IDS,
                                      ProviderError, call_provider)
 
-PROBE_ORDER = ("requesty_nano", "requesty_gemma")
+PROBE_ORDER = ("requesty_lightning", "requesty_gemma")
 QUESTION = "Reply with only the number that equals 2 + 2."
 
 
