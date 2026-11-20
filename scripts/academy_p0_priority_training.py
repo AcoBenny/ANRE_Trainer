@@ -94,7 +94,9 @@ def load_priority_queue(path: pathlib.Path) -> list[dict]:
 
 def role_plan(case: dict):
     reviewers = SPECIALISTS[:2]
-    words = case["question_original"].casefold()
+    # Wording traps can live in original options, not just in the question stem.
+    words = " ".join([case["question_original"]] +
+                     [case[f"{k}_original"] for k in "ABC"]).casefold()
     if any(token in words for token in LANGUAGE_TRIGGERS):
         reviewers = reviewers + (SPECIALISTS[2],)
     return reviewers
