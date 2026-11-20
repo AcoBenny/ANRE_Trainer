@@ -128,6 +128,54 @@ class P0SourcedEvidenceTests(unittest.TestCase):
             self.assertFalse(report["records"][0]["model_independence"])
             self.assertFalse(report["approved_for_learning"])
 
+    def test_source_trained_prompt_respects_sufficient_vs_necessary(self):
+        self.assertIn("NECESSARY from SUFFICIENT", review.RULES)
+        self.assertIn("third harmonics", review.RULES)
+        self.assertIn("D-flux", review.RULES)
+        self.assertIn("E-flux", review.RULES)
+        self.assertIn("held constant", review.RULES)
+
+    def test_one_role_retest_preserves_qa_status_without_independence(self):
+        with tempfile.TemporaryDirectory() as td:
+            outputs = []
+            def single_agent(system, message, candidates, state):
+                outputs.append((system, message))
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {"ok": True, "provider": candidates[0],
+                        "model": "openai/gpt-oss-120b", "text": GOOD_TEXT}
+            with mock.patch.object(review, "route_agent", side_effect=single_agent):
+                code = review.run(["--evidence", str(EVIDENCE), "--unit", "QABC-0036",
+                                   "--only-role", "technical_electrical", "--mode", "live-free",
+                                   "--confirm", "FREE_ONLY", "--out", td])
+            self.assertEqual(code, 0)
+            self.assertEqual(len(outputs), 1)
+            report = json.loads((pathlib.Path(td)/"results.json").read_text())
+            self.assertEqual(report["only_unit"], "QABC-0036")
+            self.assertEqual(report["only_role"], "technical_electrical")
+            self.assertFalse(report["records"][0]["model_independence"])
+            self.assertTrue(report["records"][0]["requires_previous_artifact_reconciliation"])
+            self.assertEqual(report["records"][0]["status"], "ONE_ROLE_RETEST_PRESENT_NOT_RECONCILED")
+            self.assertFalse(report["approved_for_learning"])
+
+    def test_retest_missing_role_fails_and_does_not_invent_approval(self):
+        with tempfile.TemporaryDirectory() as td:
+            with mock.patch.object(review, "route_agent", return_value={
+                "ok": False, "errors": [{"provider": "gemini", "error": "HTTP_503"}],
+            }) as agent:
+                code = review.run(["--evidence", str(EVIDENCE), "--unit", "QABC-0065",
+                                   "--only-role", "independent_skeptic", "--mode", "live-free",
+                                   "--confirm", "FREE_ONLY", "--out", td])
+            self.assertEqual(code, 1)
+            self.assertEqual(agent.call_count, 1)
+            report = json.loads((pathlib.Path(td)/"results.json").read_text())
+            self.assertEqual(report["successful_role_outputs"], 0)
+            self.assertFalse(report["approved_for_learning"])
+
+    def test_only_role_requires_specific_question(self):
+        with self.assertRaises(SystemExit):
+            review.run(["--evidence", str(EVIDENCE), "--only-role", "technical_electrical"])
+
     def test_live_requires_explicit_budget_confirmation(self):
         with self.assertRaises(SystemExit):
             review.run(["--evidence", str(EVIDENCE), "--mode", "live-free"])
