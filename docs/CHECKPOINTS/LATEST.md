@@ -1,5 +1,16 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-20 | CKPT-256 | Active final source/key/Academy gate
+
+**Current checkpoint:** [CKPT-256: six blockers, 153 all-A, external AI QA corrections](../QUESTION_AUDIT/CKPT_256_GFR_SIX_BLOCKERS_153_ALL_A_SOURCE_GATE_2026_11_20.md)  
+**Current master:** [V149 568 QABC / 822 grade IDs](../QUESTION_AUDIT/V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv)  
+**Critical six:** [V144 precise original-versus-canonical and different-key dispositions](../QUESTION_AUDIT/V144_SIX_RELEASE_BLOCKERS_SOURCE_VERSUS_CANONICAL_ADJUDICATION_2026_11_20.csv)  
+**External AI challenge:** [V146 five cases incl. two concrete research errors](../QUESTION_AUDIT/V146_FIVE_EXTERNAL_AI_CHALLENGE_CHECKS_TWO_FALSE_INFERENCES_2026_11_20.csv)  
+**Academy regression:** [six unexecuted negative test fixtures](../QUESTION_AUDIT/ACADEMY_CKPT256_SIX_NEGATIVE_REGRESSION_FIXTURES_2026_11_20.json)  
+**Prior:** [CKPT-255](../QUESTION_AUDIT/CKPT_255_GFR_XLSX_FIDELITY_NOR_SOURCE_49_RECHECKS_2026_11_19.md)
+
+Counts (exclusive source/provenance gate): 408 exact original-question units (658 IDs), 6 release blockers (9 IDs), 1 numeric cell type only (2 IDs), 153 non-workbook items (153 IDs), **all 153 imported answer A**. **0 learner approved**, no independent qualified QA; no canonical/HTML/APK changes, PR7 Draft.
+
 ## 2026-11-19 | CKPT-255 | Latest source fidelity + normative P0 gate
 
 **Current checkpoint:** [CKPT-255: original XLSX fidelity and 14 normative cases](../QUESTION_AUDIT/CKPT_255_GFR_XLSX_FIDELITY_NOR_SOURCE_49_RECHECKS_2026_11_19.md)  
