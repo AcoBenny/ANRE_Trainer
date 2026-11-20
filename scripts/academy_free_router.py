@@ -123,13 +123,14 @@ def call_provider(provider: str, system: str, message: str):
             "model": MODELS[provider],
             "stream": False,
             "max_tokens": (2600 if provider.startswith("requesty_") else
-                           1800 if provider.startswith("openrouter") else 1400),
+                           1800 if provider.startswith("openrouter") or provider == "groq" else 1400),
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": message}],
         }
         if provider == "openrouter":
             payload["reasoning"] = {"effort": "low"}
-        if provider == "groq_linguistic":
-            # Groq GPT-OSS 20B: prioritize visible concise A/B/C over hidden reasoning.
+        if provider in ("groq", "groq_linguistic"):
+            # Groq GPT-OSS 20B/120B support low reasoning effort, preserving output
+            # budget for visible A/B/C, per Groq reasoning documentation.
             payload["reasoning_effort"] = "low"
         headers = {"Authorization": "Bearer " + key}
         if provider.startswith("requesty_"):
