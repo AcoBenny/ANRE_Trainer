@@ -180,6 +180,38 @@ class PriorityAcademyTests(unittest.TestCase):
             self.assertTrue(any("TRAINING_FORMAT" in x["gate"] for x in obj["records"]))
             self.assertFalse(obj["learner_approved"])
 
+    def test_semantic_warning_must_fail_closed_even_when_format_is_correct(self):
+        with tempfile.TemporaryDirectory() as td:
+            folder = pathlib.Path(td)
+            q = make_queue(folder)
+            def suspicious_response(system, message, candidates, state):
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {
+                    "ok": True,
+                    "model": candidates[0],
+                    "provider": candidates[0],
+                    "text": FORMATTED + " AAR means Auto-Reclosing, not reserve transfer.",
+                    "finish_reason": "stop",
+                }
+            from scripts import academy_agent_orchestrator as core
+            with mock.patch.object(p0, "route_agent", side_effect=suspicious_response):
+                with mock.patch.object(p0, "quality_gate", wraps=core.quality_gate) as qa:
+                    # QABC-0013..0025 contain no QABC-0006; inject a real
+                    # content warning only to exercise status-propagation logic.
+                    original = core.quality_gate
+                    def flagged(case, reviews, names):
+                        result = original(case, reviews, names)
+                        result["status"] = "CONTENT_WARNING_SOURCE_GATE_BLOCKED"
+                        return result
+                    qa.side_effect = flagged
+                    result = p0.main(["--queue", str(q),
+                                      "--out", str(folder / "out"),
+                                      "--mode", "live-free", "--confirm", "FREE_ONLY"])
+            self.assertEqual(result, 1)
+            report = json.loads((folder / "out" / "results.json").read_text())
+            self.assertFalse(report["learner_approved"])
+
     def test_same_fallback_model_cannot_count_independent(self):
         with tempfile.TemporaryDirectory() as td:
             folder = pathlib.Path(td)
