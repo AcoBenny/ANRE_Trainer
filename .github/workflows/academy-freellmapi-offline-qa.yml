@@ -1,0 +1,31 @@
+name: ANRE Academy FreeLLMAPI offline QA
+
+on:
+  pull_request:
+    paths:
+      - 'integrations/academy-freellmapi/**'
+      - '.github/workflows/academy-freellmapi-offline-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test-readonly-router-adapter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout proposed code without writing credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Python unit tests (no API calls)
+        run: python -m unittest discover -s integrations/academy-freellmapi -p 'test_*.py' -v
+      - name: Pull exact immutable CKPT-256 fixture (read-only)
+        run: |
+          git fetch --no-tags --depth=1 origin audit/anre-v8-priority-17-20261109
+          git show FETCH_HEAD:docs/QUESTION_AUDIT/ACADEMY_CKPT256_SIX_NEGATIVE_REGRESSION_FIXTURES_2026_11_20.json > /tmp/academy_fixture.json
+          test "$(git hash-object /tmp/academy_fixture.json)" = c6bcd7ef734323e33963c99d3526584125fa0e1c
+      - name: Fixture-integrated preflight (zero AI calls)
+        run: |
+          python integrations/academy-freellmapi/academy_freellmapi_pilot.py --fixtures /tmp/academy_fixture.json --output /tmp/academy_preflight_report.json --mode preflight
+          python -c 'import json; x=json.load(open("/tmp/academy_preflight_report.json")); assert x["case_count"] == 6 and x["ai_calls_attempted"] == 0 and x["qa_approved"] == 0'
