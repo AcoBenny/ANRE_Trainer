@@ -158,24 +158,26 @@ class AcademyOrchestrationTests(unittest.TestCase):
                 calls.append((system, message))
                 state["attempts"] += 1
                 state["returned"] += 1
-                text = ("Option B is provisionally plausible, but unverified. " * 4
-                        if len(calls) == 2 else FULL_REVIEW)
-                model = "groq/oss" if len(calls) == 1 else "gemini/flash"
-                return {"ok": True, "model": model, "text": text,
+                output = ("Only B is discussed, other options remain unspecified. " * 4
+                          if len(calls) == 1 else FULL_REVIEW)
+                return {"ok": True, "model": "gemini/flash", "text": output,
                         "provider": providers[0], "finish_reason": "stop"}
             with mock.patch.object(academy, "route_agent", side_effect=mock_api):
                 code = academy.run(["--queue", str(p), "--out", str(pathlib.Path(d)/"retry"),
                                     "--mode", "live-free", "--only-unit", "QABC-0004",
-                                    "--confirm", "FREE_ONLY"])
+                                    "--only-role", "independent_skeptic", "--confirm", "FREE_ONLY"])
             self.assertEqual(code, 0)
-            self.assertEqual(len(calls), 3)
-            self.assertEqual(calls[1][1], calls[2][1])
+            self.assertEqual(len(calls), 2)
+            self.assertEqual(calls[0][1], calls[1][1])
             report = json.loads((pathlib.Path(d)/"retry"/"results.json").read_text())
             self.assertEqual(report["only_unit"], "QABC-0004")
+            self.assertEqual(report["only_role"], "independent_skeptic")
             self.assertEqual(len(report["records"]), 1)
+            self.assertEqual(report["records"][0]["agent_selection"], ["independent_skeptic"])
             self.assertEqual(report["records"][0]["role_retests"][0]["role"], "independent_skeptic")
             self.assertEqual(report["records"][0]["qa_evidence_gate"]["status"],
-                             "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED")
+                             "ROLE_RETEST_PRESENT_NOT_RECONCILED")
+            self.assertFalse(report["records"][0]["qa_evidence_gate"]["independent_model_families_proven"])
             self.assertFalse(report["learner_approved"])
 
     def test_invalid_run_without_confirmation(self):
