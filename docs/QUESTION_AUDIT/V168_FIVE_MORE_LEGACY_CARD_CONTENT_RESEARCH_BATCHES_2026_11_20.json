@@ -1,0 +1,2415 @@
+{
+  "schema": "v168_five_didactic_and_documentary_source_bodies",
+  "date": "2026-11-20",
+  "parent": "CKPT-295 + V167",
+  "V149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "counts": {
+    "source_sections": 75,
+    "new_unique": 75,
+    "previously_migrated": 0,
+    "missing": 0,
+    "duplicate": 0,
+    "cumulative_previous": 267,
+    "cumulative_now": 342,
+    "remaining_to_migrate": 226,
+    "approval": 0
+  },
+  "sourcecounts": [
+    {
+      "file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+      "sections": 15
+    },
+    {
+      "file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+      "sections": 15
+    },
+    {
+      "file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+      "sections": 15
+    },
+    {
+      "file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+      "sections": 15
+    },
+    {
+      "file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "sections": 15
+    }
+  ],
+  "skipped": [],
+  "missing": [],
+  "duplicate": [],
+  "policy": "Mechanical migration only; full reported research sections and canonical QABC preserved. Practice/nonworkbook cases are not authenticated ANRE originals. No official grade, currentness, independent review, rewrite or release asserted.",
+  "cards": [
+    {
+      "unit_id": "QABC-0475",
+      "grade_from_source_section": "G2-ELEC-001",
+      "grade_ids": [
+        "G2-ELEC-001"
+      ],
+      "original_question": "Ce relație exprimă legea lui Ohm pentru un rezistor?",
+      "original_ABC": {
+        "A": "U = R·I",
+        "B": "P = U·I",
+        "C": "Q = U/R"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-001=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-001\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Ce relație exprimă legea lui Ohm pentru un rezistor?\n- A: U = R·I\n- B: P = U·I\n- C: Q = U/R\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** U=R·I pentru un rezistor ohmic în condiții fixe. B P=UI descrie puterea și nu relația cerută; C Q=U/R are dimensiunea unui curent dar simbolul Q este neadecvat pentru curent/sarcină. Condiție: rezistor liniar; nu atribui universal diodei.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0476",
+      "grade_from_source_section": "G2-ELEC-002",
+      "grade_ids": [
+        "G2-ELEC-002"
+      ],
+      "original_question": "Unitatea SI pentru rezistența electrică este:",
+      "original_ABC": {
+        "A": "ohmul (Ω)",
+        "B": "voltul (V)",
+        "C": "wattul (W)"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-002=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-002\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Unitatea SI pentru rezistența electrică este:\n- A: ohmul (Ω)\n- B: voltul (V)\n- C: wattul (W)\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A ohmul Ω măsoară rezistența R. B voltul V măsoară tensiunea; C wattul W puterea.\n- **Sursă tehnică deschisă:** https://www.nist.gov/pml/owm/si-units-electric-current\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/owm/si-units-electric-current"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0477",
+      "grade_from_source_section": "G2-ELEC-003",
+      "grade_ids": [
+        "G2-ELEC-003"
+      ],
+      "original_question": "Unitatea SI pentru intensitatea curentului electric este:",
+      "original_ABC": {
+        "A": "amperul (A)",
+        "B": "ohmul (Ω)",
+        "C": "joule (J)"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-003=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-003\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Unitatea SI pentru intensitatea curentului electric este:\n- A: amperul (A)\n- B: ohmul (Ω)\n- C: joule (J)\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A amperul A măsoară intensitatea curentului. B ohmul Ω rezistența, C joule J energia.\n- **Sursă tehnică deschisă:** https://www.nist.gov/pml/owm/si-units-electric-current\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/owm/si-units-electric-current"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0478",
+      "grade_from_source_section": "G2-ELEC-004",
+      "grade_ids": [
+        "G2-ELEC-004"
+      ],
+      "original_question": "Unitatea SI pentru tensiunea electrică este:",
+      "original_ABC": {
+        "A": "voltul (V)",
+        "B": "amperul (A)",
+        "C": "wattul (W)"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-004=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-004\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Unitatea SI pentru tensiunea electrică este:\n- A: voltul (V)\n- B: amperul (A)\n- C: wattul (W)\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A voltul V este unitatea diferenței de potențial electric. B A curent, C W putere.\n- **Sursă tehnică deschisă:** https://www.nist.gov/pml/owm/si-units-electric-current\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/owm/si-units-electric-current"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0479",
+      "grade_from_source_section": "G2-ELEC-005",
+      "grade_ids": [
+        "G2-ELEC-005"
+      ],
+      "original_question": "Puterea electrică activă într-un circuit de curent continuu se poate calcula cu:",
+      "original_ABC": {
+        "A": "P = U·I",
+        "B": "P = U/I",
+        "C": "P = R/I"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-005=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-005\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Puterea electrică activă într-un circuit de curent continuu se poate calcula cu:\n- A: P = U·I\n- B: P = U/I\n- C: P = R/I\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A P=UI pentru puterea la borne în curent continuu cu convenția de semn pasivă; B U/I are unitatea Ω; C R/I nu este relație dimensional coerentă pentru W. Pentru generatoare convenția de semn se inversează.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0480",
+      "grade_from_source_section": "G2-ELEC-006",
+      "grade_ids": [
+        "G2-ELEC-006"
+      ],
+      "original_question": "Energia electrică consumată într-un interval de timp se poate exprima prin:",
+      "original_ABC": {
+        "A": "E = P·t",
+        "B": "E = P/t",
+        "C": "E = U/R"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-006=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-006\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Energia electrică consumată într-un interval de timp se poate exprima prin:\n- A: E = P·t\n- B: E = P/t\n- C: E = U/R\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A E=P·t pentru P constantă sau Pmedie pe interval; B P/t nu reprezintă energie, C U/R reprezintă curent, nu energie. Pentru P variabilă E=∫P(t)dt, calificare obligatorie.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0481",
+      "grade_from_source_section": "G2-ELEC-007",
+      "grade_ids": [
+        "G2-ELEC-007"
+      ],
+      "original_question": "Pentru două rezistențe în serie, rezistența echivalentă este:",
+      "original_ABC": {
+        "A": "R1 + R2",
+        "B": "R1·R2",
+        "C": "R1/R2"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-007=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-007\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Pentru două rezistențe în serie, rezistența echivalentă este:\n- A: R1 + R2\n- B: R1·R2\n- C: R1/R2\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A Req=R1+R2 pentru rezistoare ideale în serie. B produs R1R2 are Ω², C raport R1/R2 este adimensional. Condiție: legare strict în serie fără ramificări.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0482",
+      "grade_from_source_section": "G2-ELEC-008",
+      "grade_ids": [
+        "G2-ELEC-008"
+      ],
+      "original_question": "Pentru două rezistențe în paralel, rezistența echivalentă este:",
+      "original_ABC": {
+        "A": "R1·R2/(R1+R2)",
+        "B": "R1+R2",
+        "C": "R1-R2"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-008=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-008\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Pentru două rezistențe în paralel, rezistența echivalentă este:\n- A: R1·R2/(R1+R2)\n- B: R1+R2\n- C: R1-R2\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A Req=R1R2/(R1+R2) pentru R1,R2 finite pozitive în paralel. B suma R1+R2 este regula seriei, C diferența nu definește paralel.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0483",
+      "grade_from_source_section": "G2-ELEC-009",
+      "grade_ids": [
+        "G2-ELEC-009"
+      ],
+      "original_question": "Într-un circuit serie, curentul prin elementele conectate în serie este:",
+      "original_ABC": {
+        "A": "același",
+        "B": "zero în toate elementele",
+        "C": "diferit obligatoriu în fiecare element"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-009=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-009\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Într-un circuit serie, curentul prin elementele conectate în serie este:\n- A: același\n- B: zero în toate elementele\n- C: diferit obligatoriu în fiecare element\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A același curent prin elementele unei căi serie (fără noduri de ramificare). B zero nu este necesar dacă circuitul e închis și alimentat, C diferit obligatoriu e incompatibil cu conservarea sarcinii într-un model concentrat.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0484",
+      "grade_from_source_section": "G2-ELEC-010",
+      "grade_ids": [
+        "G2-ELEC-010"
+      ],
+      "original_question": "Într-un circuit paralel, tensiunea pe ramurile conectate în paralel este:",
+      "original_ABC": {
+        "A": "aceeași",
+        "B": "zero",
+        "C": "întotdeauna diferită"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-010=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-010\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Într-un circuit paralel, tensiunea pe ramurile conectate în paralel este:\n- A: aceeași\n- B: zero\n- C: întotdeauna diferită\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A aceeași diferență de potențial între două noduri comune pentru ramuri paralele. B zero doar într-un caz particular, C «întotdeauna diferită» contrazice conectarea paralelă ideală.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0485",
+      "grade_from_source_section": "G2-ELEC-011",
+      "grade_ids": [
+        "G2-ELEC-011"
+      ],
+      "original_question": "Frecvența unei mărimi sinusoidale este măsurată în:",
+      "original_ABC": {
+        "A": "hertzi (Hz)",
+        "B": "ohmi (Ω)",
+        "C": "farazi (F)"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-011=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-011\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Frecvența unei mărimi sinusoidale este măsurată în:\n- A: hertzi (Hz)\n- B: ohmi (Ω)\n- C: farazi (F)\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A hertz Hz=s⁻¹ este unitatea frecvenței. B Ω rezistență, C F capacitate.\n- **Sursă tehnică deschisă:** https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0486",
+      "grade_from_source_section": "G2-ELEC-012",
+      "grade_ids": [
+        "G2-ELEC-012"
+      ],
+      "original_question": "Perioada T și frecvența f sunt legate prin:",
+      "original_ABC": {
+        "A": "T = 1/f",
+        "B": "T = f",
+        "C": "T = f²"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-012=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-012\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Perioada T și frecvența f sunt legate prin:\n- A: T = 1/f\n- B: T = f\n- C: T = f²\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A T=1/f pentru f pozitiv și semnal periodic; B T=f nu are unități compatibile (secunde vs s⁻¹), C T=f² și mai nepotrivit. Sursa descrie frecvența ω și perioada, relația dedusă pentru sinusoide.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0487",
+      "grade_from_source_section": "G2-ELEC-013",
+      "grade_ids": [
+        "G2-ELEC-013"
+      ],
+      "original_question": "Valoarea efectivă a unei tensiuni sinusoidale este folosită pentru:",
+      "original_ABC": {
+        "A": "evaluarea efectului echivalent în regim energetic/termic",
+        "B": "determinarea directă a frecvenței",
+        "C": "înlocuirea rezistenței"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-013=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-013\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Valoarea efectivă a unei tensiuni sinusoidale este folosită pentru:\n- A: evaluarea efectului echivalent în regim energetic/termic\n- B: determinarea directă a frecvenței\n- C: înlocuirea rezistenței\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A RMS oferă curent/tensiune echivalente energetic termic pentru rezistor; B frecvența nu se determină direct din RMS și C RMS nu înlocuiește rezistența. Temperatura/pierderea depind de rezistența specifică și de forma semnalului.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0488",
+      "grade_from_source_section": "G2-ELEC-014",
+      "grade_ids": [
+        "G2-ELEC-014"
+      ],
+      "original_question": "Într-un circuit pur rezistiv de c.a., defazajul dintre tensiune și curent este:",
+      "original_ABC": {
+        "A": "0°",
+        "B": "90°",
+        "C": "180°"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-014=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-014\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Într-un circuit pur rezistiv de c.a., defazajul dintre tensiune și curent este:\n- A: 0°\n- B: 90°\n- C: 180°\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A într-un rezistor ideal R pur, tensiunea și curentul sunt în fază φ=0°, B 90° bobină sau condensator ideal, C 180° nu este regimul pasiv rezistiv cu referințe coerente.\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0489",
+      "grade_from_source_section": "G2-ELEC-015",
+      "grade_ids": [
+        "G2-ELEC-015"
+      ],
+      "original_question": "Într-o bobină ideală, curentul este în urmă față de tensiune cu:",
+      "original_ABC": {
+        "A": "90°",
+        "B": "0°",
+        "C": "180°"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-015=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_245_GFR_15_TRAINER_AUTHORED_NOT_OFFICIAL_2026_11_19.md",
+        "source_blob": "c7658641c8bafdba4b2fc2e636027e1e7783fc7e",
+        "prior_unedited_ABC_section": "### G2-ELEC-015\n- **Proveniență explicită V63:** TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE (nu întrebare ANRE oficială verificată)\n- **Întrebare:** Într-o bobină ideală, curentul este în urmă față de tensiune cu:\n- A: 90°\n- B: 0°\n- C: 180°\n- **Barem importat păstrat:** A\n- **Analiză A/B/C:** A în bobină ideală L curentul rămâne în urma tensiunii cu 90°. B 0° pur rezistiv, C 180° nu este defazajul inductorului sinusoidal. Diferențiați acest item explicit «bobină ideală» de ELE-128, doar «caracter inductiv».\n- **Sursă tehnică deschisă:** https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- **Ediție ANRE/cheie autentificată:** NOT_APPLICABLE_OFFICIAL_QUESTION_NOT_PROVEN; QA independent: NOT_RUN.\n\n## QA, numărări și restricții\n- 15 ID-uri G2 nou documentate: 109 -> **94** rămase fără verificare focalizată; 822 ID-uri originale intacte și cu aceeași ordine.\n- Proveniența `TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE` este metadată distinctă de adevărul tehnic și de statutul cheii oficiale; nu există aprobare pentru învățare pentru niciun ID în acest lot.\n- 50 rânduri CSV serializate neuniform în V123 rămân byte-identice. Originalele, baremurile, riscurile, HTML/APK/main, PR Draft/merge/release sunt nemodificate.\n- Grade II G2-ELEC-001..015 nu sunt echivalente exact QABC cu alt item G1, deci nu se pretinde deduplicare sau reutilizare între grade.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0490",
+      "grade_from_source_section": "G2-ELEC-016",
+      "grade_ids": [
+        "G2-ELEC-016"
+      ],
+      "original_question": "Într-un condensator ideal, curentul este înaintea tensiunii cu:",
+      "original_ABC": {
+        "A": "90°",
+        "B": "0°",
+        "C": "180°"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-016=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-016 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Într-un condensator ideal, curentul este înaintea tensiunii cu:\n- A: 90°\n- B: 0°\n- C: 180°\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** Într-un condensator ideal și sinusoidal, curentul precedă tensiunea cu π/2, deci A. B 0° este R pur, C 180° nu descrie elementul capacitiv. Condiție: capacitate ideală sinusoidală.\n- **Sursă tehnică recitită:** https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0491",
+      "grade_from_source_section": "G2-ELEC-017",
+      "grade_ids": [
+        "G2-ELEC-017"
+      ],
+      "original_question": "Reactanța inductivă a unei bobine ideale este:",
+      "original_ABC": {
+        "A": "XL = 2πfL",
+        "B": "XL = 1/(2πfL)",
+        "C": "XL = R/I"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-017=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-017 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Reactanța inductivă a unei bobine ideale este:\n- A: XL = 2πfL\n- B: XL = 1/(2πfL)\n- C: XL = R/I\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A: XL=ωL=2πfL. B este formula reactanței capacitive dacă L ar fi C, C R/I nu are dimensiunea corectă. Bobină liniară și frecvență definită.\n- **Sursă tehnică recitită:** https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0492",
+      "grade_from_source_section": "G2-ELEC-018",
+      "grade_ids": [
+        "G2-ELEC-018"
+      ],
+      "original_question": "Reactanța capacitivă este:",
+      "original_ABC": {
+        "A": "XC = 1/(2πfC)",
+        "B": "XC = 2πfC",
+        "C": "XC = R·C"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-018=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-018 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Reactanța capacitivă este:\n- A: XC = 1/(2πfC)\n- B: XC = 2πfC\n- C: XC = R·C\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A: |XC|=1/(ωC)=1/(2πfC) pentru f>0. B 2πfC reprezintă susceptanță capacitivă (S), nu reactanță (Ω). C R·C are dimensiune de timp (s), nu Ω. Semnul impedanței este -jXC.\n- **Sursă tehnică recitită:** https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0493",
+      "grade_from_source_section": "G2-ELEC-019",
+      "grade_ids": [
+        "G2-ELEC-019"
+      ],
+      "original_question": "Puterea aparentă într-un circuit monofazat este:",
+      "original_ABC": {
+        "A": "S = U·I",
+        "B": "S = U/I",
+        "C": "S = R·I"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-019=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-019 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Puterea aparentă într-un circuit monofazat este:\n- A: S = U·I\n- B: S = U/I\n- C: S = R·I\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A S=Urms·Irms în circuit monofazat, în VA. B U/I exprimă ohmi, C R·I tensiune, nu putere. Necesită valori efective, nu orice produse arbitrare de valori instantanee.\n- **Sursă tehnică recitită:** https://openstax.org/books/college-physics-2e/pages/23-section-summary\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/college-physics-2e/pages/23-section-summary"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0494",
+      "grade_from_source_section": "G2-ELEC-020",
+      "grade_ids": [
+        "G2-ELEC-020"
+      ],
+      "original_question": "Unitatea puterii aparente este:",
+      "original_ABC": {
+        "A": "VA",
+        "B": "W",
+        "C": "var"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-020=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-020 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Unitatea puterii aparente este:\n- A: VA\n- B: W\n- C: var\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A volt-amperul VA pentru puterea aparentă. B W este putere activă, C var este putere reactivă. Nomenclatura specială VA pentru mărimea aparentă.\n- **Sursă tehnică recitită:** https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0495",
+      "grade_from_source_section": "G2-ELEC-021",
+      "grade_ids": [
+        "G2-ELEC-021"
+      ],
+      "original_question": "Puterea reactivă se exprimă în:",
+      "original_ABC": {
+        "A": "var",
+        "B": "W",
+        "C": "VAh"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-021=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-021 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Puterea reactivă se exprimă în:\n- A: var\n- B: W\n- C: VAh\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A var (volt-amper reactiv) pentru putere reactivă; B W pentru putere activă, C VAh unitate de energie aparentă, nu putere. Domeniu sinusoidal periodic.\n- **Sursă tehnică recitită:** https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0496",
+      "grade_from_source_section": "G2-ELEC-022",
+      "grade_ids": [
+        "G2-ELEC-022"
+      ],
+      "original_question": "Factorul de putere în regim sinusoidal este:",
+      "original_ABC": {
+        "A": "cos φ",
+        "B": "sin φ",
+        "C": "tan φ"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-022=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-022 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Factorul de putere în regim sinusoidal este:\n- A: cos φ\n- B: sin φ\n- C: tan φ\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A cosφ este factorul de putere în regim sinusoidal. B sinφ corespunde componentei reactive normalizate, C tanφ raportului Q/P. Pentru forme deformate, factorul de putere global poate diferi de cosφ.\n- **Sursă tehnică recitită:** https://openstax.org/books/college-physics-2e/pages/23-section-summary\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/college-physics-2e/pages/23-section-summary"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0497",
+      "grade_from_source_section": "G2-ELEC-023",
+      "grade_ids": [
+        "G2-ELEC-023"
+      ],
+      "original_question": "Pentru o sarcină pur rezistivă, factorul de putere este:",
+      "original_ABC": {
+        "A": "1",
+        "B": "0",
+        "C": "-1"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-023=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-023 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Pentru o sarcină pur rezistivă, factorul de putere este:\n- A: 1\n- B: 0\n- C: -1\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A factor de putere 1 într-o sarcină pur rezistivă ideală: φ=0. B 0 în sarcină ideal reactivă, C -1 nu corespunde acestei convenții de consum. Nu trebuie inversată implicația: PF=1 nu implică circuit exclusiv rezistiv.\n- **Sursă tehnică recitită:** https://openstax.org/books/college-physics-2e/pages/23-section-summary\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/college-physics-2e/pages/23-section-summary"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0498",
+      "grade_from_source_section": "G2-ELEC-024",
+      "grade_ids": [
+        "G2-ELEC-024"
+      ],
+      "original_question": "Într-un sistem trifazat echilibrat, suma vectorială a curenților de fază este:",
+      "original_ABC": {
+        "A": "zero",
+        "B": "egală cu curentul de linie",
+        "C": "întotdeauna 3 A"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-024=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-024 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Într-un sistem trifazat echilibrat, suma vectorială a curenților de fază este:\n- A: zero\n- B: egală cu curentul de linie\n- C: întotdeauna 3 A\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A Ia+Ib+Ic=0 pentru trei curenți echilibrați cu module egale și defazaj ±120°. B curentul de linie nu este suma fasorială, C «3 A» dimensional și fizic arbitrar.\n- **Sursă tehnică recitită:** https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0499",
+      "grade_from_source_section": "G2-ELEC-025",
+      "grade_ids": [
+        "G2-ELEC-025"
+      ],
+      "original_question": "Pentru un sistem trifazat echilibrat, puterea activă se poate calcula cu:",
+      "original_ABC": {
+        "A": "P = √3·UL·IL·cosφ",
+        "B": "P = UL/IL",
+        "C": "P = 3·UL·IL"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-025=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-025 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Pentru un sistem trifazat echilibrat, puterea activă se poate calcula cu:\n- A: P = √3·UL·IL·cosφ\n- B: P = UL/IL\n- C: P = 3·UL·IL\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A P=√3·U_L·I_L·cosφ pentru sistem trifazat sinusoidal echilibrat. B U_L/I_L este impedanță, C 3U_LI_L fără cosφ și factor geometric corect nu este formula totală generală.\n- **Sursă tehnică recitită:** https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0500",
+      "grade_from_source_section": "G2-ELEC-026",
+      "grade_ids": [
+        "G2-ELEC-026"
+      ],
+      "original_question": "În conexiunea stea, tensiunea de linie este:",
+      "original_ABC": {
+        "A": "√3 ori tensiunea de fază",
+        "B": "egală cu zero",
+        "C": "jumătate din tensiunea de fază"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-026=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-026 / probă de lecție, nu item oficial ANRE\n- **Enunț:** În conexiunea stea, tensiunea de linie este:\n- A: √3 ori tensiunea de fază\n- B: egală cu zero\n- C: jumătate din tensiunea de fază\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A la stea trifazată simetrică U_linie=√3·U_fază. B zero contrazice alimentarea, C jumătate contrazice geometria fazorială. Necesită fazori simetrici.\n- **Sursă tehnică recitită:** https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0501",
+      "grade_from_source_section": "G2-ELEC-027",
+      "grade_ids": [
+        "G2-ELEC-027"
+      ],
+      "original_question": "În conexiunea triunghi, tensiunea de linie este:",
+      "original_ABC": {
+        "A": "egală cu tensiunea de fază",
+        "B": "√3 ori tensiunea de fază",
+        "C": "jumătate din tensiunea de fază"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-027=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-027 / probă de lecție, nu item oficial ANRE\n- **Enunț:** În conexiunea triunghi, tensiunea de linie este:\n- A: egală cu tensiunea de fază\n- B: √3 ori tensiunea de fază\n- C: jumătate din tensiunea de fază\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A în triunghi fiecare ramură este conectată între două linii, deci U_linie=U_fază. B √3 este pentru stea, C 1/2 fals. Relația tensiunilor depinde de topologie; nu presupune automat curenți echilibrați.\n- **Sursă tehnică recitită:** https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0502",
+      "grade_from_source_section": "G2-ELEC-028",
+      "grade_ids": [
+        "G2-ELEC-028"
+      ],
+      "original_question": "Transformatorul electric funcționează pe baza:",
+      "original_ABC": {
+        "A": "inducției electromagnetice",
+        "B": "efectului fotoelectric",
+        "C": "efectului Hall exclusiv"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-028=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-028 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Transformatorul electric funcționează pe baza:\n- A: inducției electromagnetice\n- B: efectului fotoelectric\n- C: efectului Hall exclusiv\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A transformatorul electromagnet clasic utilizează inducția prin flux magnetic variabil și două înfășurări. B efect fotoelectric și C efect Hall nu fundamentează transformatorul de putere.\n- **Sursă tehnică recitită:** https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0503",
+      "grade_from_source_section": "G2-ELEC-029",
+      "grade_ids": [
+        "G2-ELEC-029"
+      ],
+      "original_question": "Într-un transformator ideal, raportul tensiunilor este egal cu raportul:",
+      "original_ABC": {
+        "A": "numărului de spire",
+        "B": "rezistențelor de sarcină",
+        "C": "frecvențelor"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-029=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-029 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Într-un transformator ideal, raportul tensiunilor este egal cu raportul:\n- A: numărului de spire\n- B: rezistențelor de sarcină\n- C: frecvențelor\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A pentru transformator ideal Vs/Vp=Ns/Np din legea inducției, cu același flux prin înfășurări. B raportul rezistențelor de sarcină și C raportul frecvențelor nu determină acest raport de transformare. În realitate există abateri la sarcină.\n- **Sursă tehnică recitită:** https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0505",
+      "grade_from_source_section": "G2-ELEC-031",
+      "grade_ids": [
+        "G2-ELEC-031"
+      ],
+      "original_question": "Motorul electric transformă în principal:",
+      "original_ABC": {
+        "A": "energia electrică în energie mecanică",
+        "B": "energia mecanică în energie electrică exclusiv",
+        "C": "energia termică în energie electrică"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-031=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_246_GFR_15_AUTHORED_AC_THREEPHASE_TRANSFORMER_2026_11_19.md",
+        "source_blob": "b976f7462d727394170c80008fe76db132626a04",
+        "prior_unedited_ABC_section": "### G2-ELEC-031 / probă de lecție, nu item oficial ANRE\n- **Enunț:** Motorul electric transformă în principal:\n- A: energia electrică în energie mecanică\n- B: energia mecanică în energie electrică exclusiv\n- C: energia termică în energie electrică\n- **Răspuns importat nemodificat:** A\n- **Analiză și contraexemple:** A motorul convertește în principal energie electrică în lucru mecanic la arbore. B reprezintă direcția generică a unui generator și are «exclusiv» fals pentru motor, C nu este conversia principală. Mașinile electrice reversibile pot funcționa în regim de frânare/generator, deci «în principal» contează.\n- **Sursă tehnică recitită:** https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. QA independent NOT_RUN.\n\n## Integritate și restricții\n- 15/15 ID-uri legate la noile fișe, 94 -> **79** fără verificare focalizată în registru. Original 822 ID-uri și ordinea neschimbate; fără modificare a întrebărilor, alternativelor, baremurilor sau priorităților.\n- Atenție G2-ELEC-018: reactanța capacitivă este mărimea |X_C| în A; semnul impedanței complexe e separat. G2-ELEC-023: PF=1 pentru R pur, dar implicația inversă este falsă.\n- Proveniența autentică de examen rămâne neverificată pentru itemii anexați bibliografiei ANRE; nu-i prezenta ca subiecte oficiale.\n- 50 rânduri preexistente cu CSV neuniform au rămas byte-identice, niciun conținut de sursă originală nu a fost suprascris.\n- 0 aprobări pentru învățare; independent technical/linguistic QA NOT_RUN, PR #7 Draft/unmerged, fără merge/release sau modificare HTML/APK.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0506",
+      "grade_from_source_section": "G2-ELEC-032",
+      "grade_ids": [
+        "G2-ELEC-032"
+      ],
+      "original_question": "Generatorul electric transformă în principal:",
+      "original_ABC": {
+        "A": "energia mecanică în energie electrică",
+        "B": "energia electrică în căldură",
+        "C": "energia chimică în lumină"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-032=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-032\n- **Întrebarea originală:** Generatorul electric transformă în principal:\n- **A:** energia mecanică în energie electrică\n- **B:** energia electrică în căldură\n- **C:** energia chimică în lumină\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A generatorul convertește predominant energie mecanică în energie electrică prin inducție; B transformarea în căldură este o pierdere, C conversia chimică-lumină nu descrie mașina. «În principal» permite pierderile și regimurile reversibile.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0507",
+      "grade_from_source_section": "G2-ELEC-033",
+      "grade_ids": [
+        "G2-ELEC-033"
+      ],
+      "original_question": "Un multimetru setat pentru măsurarea tensiunii se conectează în mod normal:",
+      "original_ABC": {
+        "A": "în paralel cu elementul măsurat",
+        "B": "în serie cu elementul",
+        "C": "doar la pământ"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-033=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-033\n- **Întrebarea originală:** Un multimetru setat pentru măsurarea tensiunii se conectează în mod normal:\n- **A:** în paralel cu elementul măsurat\n- **B:** în serie cu elementul\n- **C:** doar la pământ\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A voltmetrul/multimetrul pe tensiune se conectează în paralel la bornele elementului; B în serie este conexiunea tipică pentru curent și poate modifica circuitul; C doar la pământ nu măsoară diferența între borne. Aparatul și domeniul de măsură trebuie alese după categorie și tensiune.\n- **Sursă tehnică:** https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0508",
+      "grade_from_source_section": "G2-ELEC-034",
+      "grade_ids": [
+        "G2-ELEC-034"
+      ],
+      "original_question": "Un ampermetru se conectează în mod normal:",
+      "original_ABC": {
+        "A": "în serie cu circuitul",
+        "B": "în paralel pe sursă",
+        "C": "doar între fază și PE"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-034=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-034\n- **Întrebarea originală:** Un ampermetru se conectează în mod normal:\n- **A:** în serie cu circuitul\n- **B:** în paralel pe sursă\n- **C:** doar între fază și PE\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A ampermetrul convențional se introduce în serie în ramura măsurată; B legarea directă în paralel peste sursă poate produce scurtcircuit periculos; C legarea între fază și PE nu este procedura de măsurare a curentului. Excepție: cleștele ampermetric neintruziv măsoară fără întreruperea conductoarelor, nu este montajul convențional cerut.\n- **Sursă tehnică:** https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0509",
+      "grade_from_source_section": "G2-ELEC-035",
+      "grade_ids": [
+        "G2-ELEC-035"
+      ],
+      "original_question": "Un ohmmetru se folosește corect pentru măsurarea unei rezistențe atunci când circuitul este:",
+      "original_ABC": {
+        "A": "deconectat de la alimentare",
+        "B": "alimentat la tensiunea nominală",
+        "C": "scurtcircuitat"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-035=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-035\n- **Întrebarea originală:** Un ohmmetru se folosește corect pentru măsurarea unei rezistențe atunci când circuitul este:\n- **A:** deconectat de la alimentare\n- **B:** alimentat la tensiunea nominală\n- **C:** scurtcircuitat\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A ohmmetrul pe circuit deconectat și verificat fără tensiune; B sub tensiune nu este permis deoarece afectează rezultatul și poate avaria instrumentul; C scurtcircuitarea poate masca rezistența reală. Pentru măsurări precise elementele se pot izola de căile paralele.\n- **Sursă tehnică:** https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-resistance\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-resistance"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0510",
+      "grade_from_source_section": "G2-ELEC-036",
+      "grade_ids": [
+        "G2-ELEC-036"
+      ],
+      "original_question": "Un scurtcircuit este caracterizat ideal prin:",
+      "original_ABC": {
+        "A": "impedanță foarte mică și curent foarte mare",
+        "B": "impedanță foarte mare și curent nul",
+        "C": "putere reactivă nulă obligatoriu"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-036=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-036\n- **Întrebarea originală:** Un scurtcircuit este caracterizat ideal prin:\n- **A:** impedanță foarte mică și curent foarte mare\n- **B:** impedanță foarte mare și curent nul\n- **C:** putere reactivă nulă obligatoriu\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A scurtcircuitul are impedanță de defect mică și curent potențial mare, limitat de impedanța sursei/rețelei; B mare impedanță și curent nul descriu circuit deschis, nu scurt; C Q=0 nu este o consecință generală. „Foarte mare” depinde de sursă și protecții.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0511",
+      "grade_from_source_section": "G2-ELEC-037",
+      "grade_ids": [
+        "G2-ELEC-037"
+      ],
+      "original_question": "Legea lui Kirchhoff a curenților se aplică unui nod și exprimă că:",
+      "original_ABC": {
+        "A": "suma algebrică a curenților din nod este zero",
+        "B": "toate tensiunile sunt zero",
+        "C": "puterea activă este întotdeauna zero"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-037=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-037\n- **Întrebarea originală:** Legea lui Kirchhoff a curenților se aplică unui nod și exprimă că:\n- **A:** suma algebrică a curenților din nod este zero\n- **B:** toate tensiunile sunt zero\n- **C:** puterea activă este întotdeauna zero\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A KCL afirmă suma algebrică a curenților într-un nod =0 (conservarea sarcinii în model concentrat); B nu impune tensiuni zero, C nici putere activă zero. Pentru condiții electromagnetice distribuite se ține cont de curentul de deplasare.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0512",
+      "grade_from_source_section": "G2-ELEC-038",
+      "grade_ids": [
+        "G2-ELEC-038"
+      ],
+      "original_question": "Legea lui Kirchhoff a tensiunilor exprimă, pe un contur închis, că:",
+      "original_ABC": {
+        "A": "suma algebrică a tensiunilor este zero",
+        "B": "suma curenților este întotdeauna zero",
+        "C": "toate rezistențele sunt egale"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-038=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-038\n- **Întrebarea originală:** Legea lui Kirchhoff a tensiunilor exprimă, pe un contur închis, că:\n- **A:** suma algebrică a tensiunilor este zero\n- **B:** suma curenților este întotdeauna zero\n- **C:** toate rezistențele sunt egale\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A KVL în aproximația circuitului concentrat: suma algebrică a tensiunilor pe un contur închis este zero; B suma curenților nu este KVL, C egalitatea rezistențelor nu rezultă. Dacă există flux magnetic variabil ce străbate conturul, formularea simplă necesită includerea fem induse și poate fi incompletă.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0513",
+      "grade_from_source_section": "G2-ELEC-039",
+      "grade_ids": [
+        "G2-ELEC-039"
+      ],
+      "original_question": "Conductanța electrică este inversul:",
+      "original_ABC": {
+        "A": "rezistenței",
+        "B": "tensiunii",
+        "C": "puterii"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-039=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-039\n- **Întrebarea originală:** Conductanța electrică este inversul:\n- **A:** rezistenței\n- **B:** tensiunii\n- **C:** puterii\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A conductanța G a unui rezistor ohmic =1/R în siemens; B inversul tensiunii nu este conductanță, C inversul puterii nici atât. Pentru componente AC complexe inversul impedanței este admitanța Y=1/Z, nu conductanța pură.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0514",
+      "grade_from_source_section": "G2-ELEC-040",
+      "grade_ids": [
+        "G2-ELEC-040"
+      ],
+      "original_question": "Unitatea conductanței este:",
+      "original_ABC": {
+        "A": "siemens (S)",
+        "B": "tesla (T)",
+        "C": "henry (H)"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-040=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-040\n- **Întrebarea originală:** Unitatea conductanței este:\n- **A:** siemens (S)\n- **B:** tesla (T)\n- **C:** henry (H)\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A siemens (S) unitate de conductanță; B tesla (T) este unitatea inducției magnetice, C henry (H) inductanței. 1 S=1/Ω.\n- **Sursă tehnică:** https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0515",
+      "grade_from_source_section": "G2-ELEC-041",
+      "grade_ids": [
+        "G2-ELEC-041"
+      ],
+      "original_question": "Capacitatea electrică se măsoară în:",
+      "original_ABC": {
+        "A": "farazi (F)",
+        "B": "henry (H)",
+        "C": "tesla (T)"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-041=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-041\n- **Întrebarea originală:** Capacitatea electrică se măsoară în:\n- **A:** farazi (F)\n- **B:** henry (H)\n- **C:** tesla (T)\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A capacitatea se măsoară în farazi F=C/V; B henry este inductanță, C tesla inducție magnetică. Faradul nu este coulombul (unitate de sarcină).\n- **Sursă tehnică:** https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0516",
+      "grade_from_source_section": "G2-ELEC-042",
+      "grade_ids": [
+        "G2-ELEC-042"
+      ],
+      "original_question": "Inductanța se măsoară în:",
+      "original_ABC": {
+        "A": "henry (H)",
+        "B": "farad (F)",
+        "C": "siemens (S)"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-042=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-042\n- **Întrebarea originală:** Inductanța se măsoară în:\n- **A:** henry (H)\n- **B:** farad (F)\n- **C:** siemens (S)\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A inductanța se măsoară în henry H=V·s/A; B farad măsoară capacitatea, C siemens conductanța. Formula U=L di/dt în convenție pasivă.\n- **Sursă tehnică:** https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0517",
+      "grade_from_source_section": "G2-ELEC-043",
+      "grade_ids": [
+        "G2-ELEC-043"
+      ],
+      "original_question": "Densitatea de curent este raportul dintre:",
+      "original_ABC": {
+        "A": "curent și aria secțiunii",
+        "B": "tensiune și lungime",
+        "C": "putere și timp"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-043=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-043\n- **Întrebarea originală:** Densitatea de curent este raportul dintre:\n- **A:** curent și aria secțiunii\n- **B:** tensiune și lungime\n- **C:** putere și timp\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A densitatea medie a curentului J=I/A prin suprafața transversală în conductor uniform; B U/l exprimă intensitate de câmp E în V/m, C putere/timp nu este densitate. Pentru distribuții neuniforme, J este locală și I=∫J·dA, nu doar simplul raport uniform.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0518",
+      "grade_from_source_section": "G2-ELEC-044",
+      "grade_ids": [
+        "G2-ELEC-044"
+      ],
+      "original_question": "Rezistența unui conductor omogen este proporțională cu:",
+      "original_ABC": {
+        "A": "lungimea și rezistivitatea",
+        "B": "doar curentul",
+        "C": "doar tensiunea"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-044=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-044\n- **Întrebarea originală:** Rezistența unui conductor omogen este proporțională cu:\n- **A:** lungimea și rezistivitatea\n- **B:** doar curentul\n- **C:** doar tensiunea\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A R=ρl/A pentru conductor omogen la temperatură constantă: direct proporțională cu lungimea l și rezistivitatea ρ; B numai curentul și C numai tensiunea nu determină R în model ohmic. Secțiunea A și temperatura contează și ele, iar «proporțională» ține ceilalți parametri constanți.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0519",
+      "grade_from_source_section": "G2-ELEC-045",
+      "grade_ids": [
+        "G2-ELEC-045"
+      ],
+      "original_question": "Rezistența unui conductor omogen este invers proporțională cu:",
+      "original_ABC": {
+        "A": "aria secțiunii transversale",
+        "B": "lungimea",
+        "C": "rezistivitatea"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-045=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-045\n- **Întrebarea originală:** Rezistența unui conductor omogen este invers proporțională cu:\n- **A:** aria secțiunii transversale\n- **B:** lungimea\n- **C:** rezistivitatea\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A din R=ρl/A rezultă dependența inversă de aria secțiunii A, la l,ρ fixate. B lungimea produce proporționalitate directă, C rezistivitatea tot directă. Unitățile trebuie să fie compatibile.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0520",
+      "grade_from_source_section": "G2-ELEC-046",
+      "grade_ids": [
+        "G2-ELEC-046"
+      ],
+      "original_question": "Pentru un conductor metalic, în intervale uzuale, creșterea temperaturii determină de regulă:",
+      "original_ABC": {
+        "A": "creșterea rezistenței",
+        "B": "scăderea rezistenței la zero",
+        "C": "inversarea polarității"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-046=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_247_GFR_15_AUTHORED_MEASUREMENTS_KIRCHHOFF_RESISTIVITY_2026_11_19.md",
+        "source_blob": "b76550c2dfc1ff2d7649af0c40fbe584bc8cba62",
+        "prior_unedited_ABC_section": "### G2-ELEC-046\n- **Întrebarea originală:** Pentru un conductor metalic, în intervale uzuale, creșterea temperaturii determină de regulă:\n- **A:** creșterea rezistenței\n- **B:** scăderea rezistenței la zero\n- **C:** inversarea polarității\n- **Barem importat, nemodificat:** A\n- **Analiză A/B/C și limite:** A pentru majoritatea metalelor obișnuite în intervalul normal, ρ(T)≈ρ0(1+αΔT) cu α>0, deci rezistența crește (la geometrie aproximativ fixă). B scade la zero este fals în intervalul dat și C inversarea polarității nu rezultă din temperatură. Materiale speciale și superconductivitatea nu sunt în domeniu.\n- **Sursă tehnică:** https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance\n- Proveniență V63: TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE. Nu este întrebare oficială ANRE autentificată; QA independent NOT_RUN.\n\n## Blocaje / QA\n- G2-ELEC-034: ampermetrul convențional se conectează în serie, dar un clește ampermetric funcționează fără deschiderea ramurii; diferența trebuie păstrată.\n- G2-ELEC-035: măsurare rezistență doar după deconectare, verificarea lipsei tensiunii și descărcarea eventuală a condensatoarelor, conform procedurii de siguranță.\n- G2-ELEC-038: KVL cere regimul circuitului concentrat sau fem de inducție inclusă la câmpuri variabile.\n- 15 rânduri originale documentate; **79 -> 64 fără verificare focalizată**; 822 unice, păstrate în aceeași ordine, numai metadate de evidență actualizate. Alte 807 rânduri identice ca text.\n- 50 rânduri CSV preexistente neuniform serializate au rămas byte-identice, fără normalizare ireversibilă.\n- Nu există QA independent pe acest lot, nicio ediție/barem oficial ANRE2026 autentificat, niciun rând aprobat pentru învățare; originalele, baremurile, HTML, APK, main și PR #7 Draft sunt păstrate.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0521",
+      "grade_from_source_section": "G2-ELEC-047",
+      "grade_ids": [
+        "G2-ELEC-047"
+      ],
+      "original_question": "Scopul principal al unei protecții la supracurent este:",
+      "original_ABC": {
+        "A": "limitarea efectelor curenților excesivi",
+        "B": "creșterea tensiunii de alimentare",
+        "C": "mărirea rezistenței sarcinii"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-047=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-047\n- **Întrebarea:** Scopul principal al unei protecții la supracurent este:\n- A: limitarea efectelor curenților excesivi\n- B: creșterea tensiunii de alimentare\n- C: mărirea rezistenței sarcinii\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V63 explicit TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE.\n- **Verificare model și A/B/C:** A limitează efectele supracurenților prin declanșarea/întreruperea alimentării potrivit curbei și coordonării protecțiilor. B creșterea tensiunii nu este funcția dispozitivului, C schimbarea rezistenței sarcinii nu constituie scopul. Limitarea curentului instantaneu nu este garantată de orice protecție.\n- **Sursă tehnică candidat:** https://www.se.com/sg/en/product-subcategory/4670-overcurrent-protection/. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.se.com/sg/en/product-subcategory/4670-overcurrent-protection/"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0522",
+      "grade_from_source_section": "G2-ELEC-048",
+      "grade_ids": [
+        "G2-ELEC-048"
+      ],
+      "original_question": "Un întreruptor automat poate asigura protecția la:",
+      "original_ABC": {
+        "A": "suprasarcină și scurtcircuit, în funcție de caracteristicile aparatului",
+        "B": "doar iluminat natural",
+        "C": "doar lipsa fazei în orice situație"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-048=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-048\n- **Întrebarea:** Un întreruptor automat poate asigura protecția la:\n- A: suprasarcină și scurtcircuit, în funcție de caracteristicile aparatului\n- B: doar iluminat natural\n- C: doar lipsa fazei în orice situație\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V63 explicit TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE.\n- **Verificare model și A/B/C:** A întreruptorul automat adecvat poate proteja la suprasarcină și scurtcircuit în funcție de declanșatoare și setări. B iluminatul natural este irelevant, C lipsa de fază nu e detectată universal de orice întreruptor. Nu se implică automat protecție diferențială.\n- **Sursă tehnică candidat:** https://www.electrical-installation.org/enwiki/Fundamental_characteristics_of_a_circuit-breaker. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.electrical-installation.org/enwiki/Fundamental_characteristics_of_a_circuit-breaker"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0523",
+      "grade_from_source_section": "G2-ELEC-049",
+      "grade_ids": [
+        "G2-ELEC-049"
+      ],
+      "original_question": "Un dispozitiv diferențial detectează în principal:",
+      "original_ABC": {
+        "A": "un dezechilibru al curenților care indică un curent rezidual",
+        "B": "doar supratensiunea",
+        "C": "doar frecvența rețelei"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-049=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-049\n- **Întrebarea:** Un dispozitiv diferențial detectează în principal:\n- A: un dezechilibru al curenților care indică un curent rezidual\n- B: doar supratensiunea\n- C: doar frecvența rețelei\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V63 explicit TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE.\n- **Verificare model și A/B/C:** A RCD compară vectorial curenții prin conductoarele active și detectează curent rezidual. B supratensiunea și C frecvența nu sunt funcțiile primare. Nu se confundă RCCB cu RCBO; RCCB de regulă nu oferă protecție de supracurent.\n- **Sursă tehnică candidat:** https://www.se.com/nz/en/faqs/FAQ000210095/. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.se.com/nz/en/faqs/FAQ000210095/"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0524",
+      "grade_from_source_section": "G2-ELEC-050",
+      "grade_ids": [
+        "G2-ELEC-050"
+      ],
+      "original_question": "Împământarea de protecție are ca scop principal:",
+      "original_ABC": {
+        "A": "reducerea riscului de electrocutare prin asigurarea unei căi de defect și a condițiilor de declanșare a protecției",
+        "B": "creșterea consumului",
+        "C": "eliminarea completă a tuturor defectelor"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-050=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-050\n- **Întrebarea:** Împământarea de protecție are ca scop principal:\n- A: reducerea riscului de electrocutare prin asigurarea unei căi de defect și a condițiilor de declanșare a protecției\n- B: creșterea consumului\n- C: eliminarea completă a tuturor defectelor\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V63 explicit TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE.\n- **Verificare model și A/B/C:** A împământarea de protecție și legarea la PE contribuie la reducerea tensiunilor de atingere și la funcționarea deconectării automate în sistemul potrivit. B creșterea consumului nu este scop; C nu elimină orice defect. Funcționarea exactă diferă între TN, TT și IT; nu e suficient doar electrodul.\n- **Sursă tehnică candidat:** https://www.eaton.com/content/dam/eaton/markets/buildings/how-we-drive-building-efficiency-and-safety/eaton-guide-fundamentals-of-electrical-safety-in-lv-installations-buildings-en-us.pdf. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.eaton.com/content/dam/eaton/markets/buildings/how-we-drive-building-efficiency-and-safety/eaton-guide-fundamentals-of-electrical-safety-in-lv-installations-buildings-en-us.pdf"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0527",
+      "grade_from_source_section": "G2-ELEC-053",
+      "grade_ids": [
+        "G2-ELEC-053"
+      ],
+      "original_question": "Puterea activă într-un circuit rezistiv este transformată în principal în:",
+      "original_ABC": {
+        "A": "energie termică",
+        "B": "energie magnetică stocată permanent",
+        "C": "energie chimică în orice rezistor"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-053=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-053\n- **Întrebarea:** Puterea activă într-un circuit rezistiv este transformată în principal în:\n- A: energie termică\n- B: energie magnetică stocată permanent\n- C: energie chimică în orice rezistor\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V63 explicit TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE.\n- **Verificare model și A/B/C:** A în rezistor, puterea activă P=I²R este disipată preponderent termic; B stocarea magnetică permanentă și C transformarea chimică în orice rezistor sunt false. Nu toate componentele rezistive sunt încălzitoare utile, dar căldura este conversia principală.\n- **Sursă tehnică candidat:** https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0528",
+      "grade_from_source_section": "G2-ELEC-054",
+      "grade_ids": [
+        "G2-ELEC-054"
+      ],
+      "original_question": "Într-un circuit ideal pur inductiv, puterea activă medie este:",
+      "original_ABC": {
+        "A": "zero",
+        "B": "egală cu puterea aparentă",
+        "C": "întotdeauna maximă"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-054=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-054\n- **Întrebarea:** Într-un circuit ideal pur inductiv, puterea activă medie este:\n- A: zero\n- B: egală cu puterea aparentă\n- C: întotdeauna maximă\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V63 explicit TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE.\n- **Verificare model și A/B/C:** A pentru inductor pur ideal curentul întârzie cu 90°, cosφ=0 și puterea activă medie P=UIcosφ=0. B S este pozitivă la valori nenule, C puterea activă nu este maximă. Energie alternantă stocată și returnată, nu consum activ net.\n- **Sursă tehnică candidat:** https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0529",
+      "grade_from_source_section": "G2-ELEC-055",
+      "grade_ids": [
+        "G2-ELEC-055"
+      ],
+      "original_question": "Într-un circuit ideal pur capacitiv, puterea activă medie este:",
+      "original_ABC": {
+        "A": "zero",
+        "B": "egală cu puterea aparentă",
+        "C": "egală cu energia stocată"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-055=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-055\n- **Întrebarea:** Într-un circuit ideal pur capacitiv, puterea activă medie este:\n- A: zero\n- B: egală cu puterea aparentă\n- C: egală cu energia stocată\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V63 explicit TRAINER_AUTHORED_NOT_OFFICIAL_QUESTION_SAMPLE.\n- **Verificare model și A/B/C:** A pentru condensator pur ideal curentul precedă tensiunea cu 90°, deci P medie=0. B S este diferită de zero pentru curent/tensiune nenule și C are unități de energie, nu putere. Dielectric real cu pierderi poate avea P>0.\n- **Sursă tehnică candidat:** https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0530",
+      "grade_from_source_section": "G2-ELEC-056",
+      "grade_ids": [
+        "G2-ELEC-056"
+      ],
+      "original_question": "Într-un sistem trifazat echilibrat, conductorul de nul poate avea curent:",
+      "original_ABC": {
+        "A": "nul, pentru sarcină perfect echilibrată și condițiile corespunzătoare",
+        "B": "întotdeauna egal cu curentul de fază",
+        "C": "întotdeauna dublu față de curentul de fază"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-056=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-056\n- **Întrebarea:** Într-un sistem trifazat echilibrat, conductorul de nul poate avea curent:\n- A: nul, pentru sarcină perfect echilibrată și condițiile corespunzătoare\n- B: întotdeauna egal cu curentul de fază\n- C: întotdeauna dublu față de curentul de fază\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A într-un sistem trifazat sinusoidal perfect echilibrat curentul conductorului neutru poate fi zero (suma fasorială curenți =0). B și C «întotdeauna» sunt false. Armonicile triplen și dezechilibrele pot produce curent în nul, chiar dacă fazele fundamentale sunt apropiate.\n- **Sursă tehnică candidat:** https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0531",
+      "grade_from_source_section": "G2-ELEC-057",
+      "grade_ids": [
+        "G2-ELEC-057"
+      ],
+      "original_question": "Eficiența/randamentul unui echipament este raportul dintre:",
+      "original_ABC": {
+        "A": "puterea utilă și puterea absorbită",
+        "B": "puterea absorbită și pierderi",
+        "C": "tensiune și curent"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-057=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-057\n- **Întrebarea:** Eficiența/randamentul unui echipament este raportul dintre:\n- A: puterea utilă și puterea absorbită\n- B: puterea absorbită și pierderi\n- C: tensiune și curent\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A randamentul η=Putilă/Pabsorbită pentru bilanț energetic al echipamentului (0..1 pasiv). B Pabsorbită/pierderi nu definește eficiența, C U/I are unitatea ohm, nu raport adimensional.\n- **Sursă tehnică candidat:** https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0532",
+      "grade_from_source_section": "G2-ELEC-058",
+      "grade_ids": [
+        "G2-ELEC-058"
+      ],
+      "original_question": "Pierderile Joule într-un conductor cresc cu:",
+      "original_ABC": {
+        "A": "I²·R",
+        "B": "I/R",
+        "C": "U/R²"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-058=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-058\n- **Întrebarea:** Pierderile Joule într-un conductor cresc cu:\n- A: I²·R\n- B: I/R\n- C: U/R²\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A pierderile Joule sunt P_J=I²R pentru rezistor ohmic la R constant. B I/R și C U/R² nu au dimensiunea W. R poate varia cu temperatura și frecvența, deci relația se aplică local parametrilor corecți.\n- **Sursă tehnică candidat:** https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0533",
+      "grade_from_source_section": "G2-ELEC-059",
+      "grade_ids": [
+        "G2-ELEC-059"
+      ],
+      "original_question": "Într-o linie electrică, creșterea tensiunii pentru aceeași putere transmisă determină, ideal, un curent:",
+      "original_ABC": {
+        "A": "mai mic",
+        "B": "mai mare de patru ori",
+        "C": "neschimbat obligatoriu"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-059=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-059\n- **Întrebarea:** Într-o linie electrică, creșterea tensiunii pentru aceeași putere transmisă determină, ideal, un curent:\n- A: mai mic\n- B: mai mare de patru ori\n- C: neschimbat obligatoriu\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A pentru P și factorul de putere constante, creșterea tensiunii liniei scade curentul I=P/(√3 U cosφ) în trifazat echilibrat. B creștere de patru ori și C neschimbat sunt false în modelul precizat; topologia și pierderile pot modifica rezultatul real.\n- **Sursă tehnică candidat:** https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0534",
+      "grade_from_source_section": "G2-ELEC-060",
+      "grade_ids": [
+        "G2-ELEC-060"
+      ],
+      "original_question": "Un wattmetru este destinat măsurării:",
+      "original_ABC": {
+        "A": "puterii electrice",
+        "B": "rezistenței de izolație exclusiv",
+        "C": "frecvenței exclusiv"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-060=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-060\n- **Întrebarea:** Un wattmetru este destinat măsurării:\n- A: puterii electrice\n- B: rezistenței de izolație exclusiv\n- C: frecvenței exclusiv\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A wattmetrul măsoară puterea electrică, în mod uzual cea activă în watt; B testerul de rezistență de izolație și C frecvențmetrul au alte funcții. Aparatele moderne multifuncționale pot avea mai multe măsurători, dar numele funcției rămâne clar.\n- **Sursă tehnică candidat:** https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0535",
+      "grade_from_source_section": "G2-ELEC-061",
+      "grade_ids": [
+        "G2-ELEC-061"
+      ],
+      "original_question": "Un frecvențmetru este destinat măsurării:",
+      "original_ABC": {
+        "A": "frecvenței",
+        "B": "rezistenței",
+        "C": "inductanței"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-061=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-061\n- **Întrebarea:** Un frecvențmetru este destinat măsurării:\n- A: frecvenței\n- B: rezistenței\n- C: inductanței\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A frecvențmetrul măsoară frecvența semnalului, exprimată în Hz; B rezistența și C inductanța nu sunt mărimile sale specifice. Frecvența necesită un semnal periodic adecvat.\n- **Sursă tehnică candidat:** https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0536",
+      "grade_from_source_section": "G2-ELEC-062",
+      "grade_ids": [
+        "G2-ELEC-062"
+      ],
+      "original_question": "Un megohmetru este utilizat în principal pentru măsurarea:",
+      "original_ABC": {
+        "A": "rezistenței de izolație la tensiuni de încercare specifice",
+        "B": "puterii active de rețea",
+        "C": "curentului de scurtcircuit al rețelei"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-062=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-062\n- **Întrebarea:** Un megohmetru este utilizat în principal pentru măsurarea:\n- A: rezistenței de izolație la tensiuni de încercare specifice\n- B: puterii active de rețea\n- C: curentului de scurtcircuit al rețelei\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A megohmetrul este destinat verificării rezistenței izolației cu tensiune de încercare DC selectată adecvat. B puterea activă și C curentul de scurtcircuit nu sunt scopurile testului. Testul poate implica tensiuni periculoase, necesită deconectarea obiectului și descărcare conform manualului.\n- **Sursă tehnică candidat:** https://www.fluke.com/en/learn/blog/electrical/how-to-choose-an-insulation-resistance-tester. Ediție ANRE2026 și QA independent neverificate.",
+        "reported_candidate_urls": [
+          "https://www.fluke.com/en/learn/blog/electrical/how-to-choose-an-insulation-resistance-tester"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0538",
+      "grade_from_source_section": "G2-ELEC-064",
+      "grade_ids": [
+        "G2-ELEC-064"
+      ],
+      "original_question": "Simbolul electric pentru rezistență este în mod uzual:",
+      "original_ABC": {
+        "A": "R",
+        "B": "C",
+        "C": "L"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-064=A",
+      "provenance": {
+        "category": "Electrotehnică",
+        "source": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+        "source_blob": "0c0aad3395df0ccaf8f8b8797264fcd21cf3c123",
+        "prior_unedited_ABC_section": "### G2-ELEC-064\n- **Întrebarea:** Simbolul electric pentru rezistență este în mod uzual:\n- A: R\n- B: C\n- C: L\n- **Cheia importată nemodificată:** A\n- **Proveniență:** V73 indică domeniul tematic ANRE 2023, DAR proveniența întrebării originale nu este confirmată.\n- **Verificare model și A/B/C:** A simbolul convențional al rezistenței electrice este R. B C capacitate electrică, C L inductanță. A nu se confunda simbolul variabilei R cu unitatea Ω.\n- **Sursă tehnică candidat:** https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law. Ediție ANRE2026 și QA independent neverificate.\n\n## QA/release gates\n- Exactly 15 Grade-II ID source-scope checks; 64 -> **49** records without focused recheck; 822 IDs unique, same order. 807 untouched lines byte-identical.\n- Safety: RCD is not automatically overcurrent protection; protective earth doesn't eliminate all risks; megohmeter tests can apply hazardous voltage and require safe de-energizing.\n- Both types of provenance are segregated; no case marked officially ANRE-certified. Independent technical/linguistic QA NOT_RUN, 0 learning approvals, key modifications zero.\n- 50 previously non-standard serialized CSV rows carried unchanged; proper CSV reconciliation separate.\n- PR #7 remains Draft; no QABC edits/HTML/APK/merge/release.",
+        "reported_candidate_urls": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+        ]
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0541",
+      "grade_from_source_section": "G2-LEG-067",
+      "grade_ids": [
+        "G2-LEG-067"
+      ],
+      "original_question": "Care dintre următoarele este prevăzută de ANRE ca document pentru solicitarea autorizării?",
+      "original_ABC": {
+        "A": "Cererea de autorizare completată electronic pe portalul ANRE sau în PCUe",
+        "B": "Doar o cerere scrisă depusă fizic la ANRE",
+        "C": "Doar recomandarea angajatorului"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-067=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "113",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-067 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Care dintre următoarele este prevăzută de ANRE ca document pentru solicitarea autorizării?\n- A: Cererea de autorizare completată electronic pe portalul ANRE sau în PCUe\n- B: Doar o cerere scrisă depusă fizic la ANRE\n- C: Doar recomandarea angajatorului\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `113`.\n- Exact clause: Ordin ANRE 66/2023 art. 17(1)(a), 21.\n- A/B/C negative tests and context: A electronic application via ANRE/PCUe correct; B only paper and C only employer recommendation not sufficient.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0542",
+      "grade_from_source_section": "G2-LEG-068",
+      "grade_ids": [
+        "G2-LEG-068"
+      ],
+      "original_question": "Care dintre documentele următoare este indicat de ANRE în dosarul de autorizare?",
+      "original_ABC": {
+        "A": "Copia actului de identitate",
+        "B": "Doar permisul de conducere",
+        "C": "Doar certificatul medical"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-068=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "114",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-068 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Care dintre documentele următoare este indicat de ANRE în dosarul de autorizare?\n- A: Copia actului de identitate\n- B: Doar permisul de conducere\n- C: Doar certificatul medical\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `114`.\n- Exact clause: Ordin ANRE 66/2023 art.17(1)(b).\n- A/B/C negative tests and context: A copy personal ID required; B driving licence only and C medical certificate only not the prescribed application identity document.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0543",
+      "grade_from_source_section": "G2-LEG-069",
+      "grade_ids": [
+        "G2-LEG-069"
+      ],
+      "original_question": "Ce document trebuie să ateste calificarea profesională, conform informațiilor ANRE privind autorizarea?",
+      "original_ABC": {
+        "A": "Certificatele sau diplomele care atestă calificarea profesională",
+        "B": "Doar o declarație verbală",
+        "C": "Doar o recomandare de la un electrician autorizat"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-069=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "115",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-069 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Ce document trebuie să ateste calificarea profesională, conform informațiilor ANRE privind autorizarea?\n- A: Certificatele sau diplomele care atestă calificarea profesională\n- B: Doar o declarație verbală\n- C: Doar o recomandare de la un electrician autorizat\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `115`.\n- Exact clause: Ordin ANRE 66/2023 art.17(1)(c), art.14.\n- A/B/C negative tests and context: A diploma/certificate to prove accepted professional qualification; B verbal declaration or C electrician recommendation not documentation.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0544",
+      "grade_from_source_section": "G2-LEG-070",
+      "grade_ids": [
+        "G2-LEG-070"
+      ],
+      "original_question": "Cum poate fi dovedită experiența profesională, acolo unde este cazul, conform informațiilor ANRE?",
+      "original_ABC": {
+        "A": "Prin carnet de muncă sau adeverințe și, după caz, raport/extras din Registrul de evidență a salariaților",
+        "B": "Numai prin declarație verbală",
+        "C": "Numai prin factura de energie electrică"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-070=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "117",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-070 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Cum poate fi dovedită experiența profesională, acolo unde este cazul, conform informațiilor ANRE?\n- A: Prin carnet de muncă sau adeverințe și, după caz, raport/extras din Registrul de evidență a salariaților\n- B: Numai prin declarație verbală\n- C: Numai prin factura de energie electrică\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `117`.\n- Exact clause: Ordin ANRE 66/2023 art.17(1)(e), art.15/16.\n- A/B/C negative tests and context: A employment booklet/employer certs and personnel register extract where relevant; B verbal only and C electric bill irrelevant. Employment experience conditional **acolo unde este cazul** for relevant qualification/grade.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0545",
+      "grade_from_source_section": "G2-LEG-071",
+      "grade_ids": [
+        "G2-LEG-071"
+      ],
+      "original_question": "Declarația de consimțământ privind colectarea și prelucrarea datelor personale este enumerată de ANRE în documentele pentru autorizare?",
+      "original_ABC": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru verificatori"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-071=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "118",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-071 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Declarația de consimțământ privind colectarea și prelucrarea datelor personale este enumerată de ANRE în documentele pentru autorizare?\n- A: Da\n- B: Nu\n- C: Doar pentru verificatori\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `118`.\n- Exact clause: Ordin ANRE 66/2023 art.17(1)(f).\n- A/B/C negative tests and context: A GDPR/privacy consent listed in dossier; B not listed false, C only reviewers false, electricians also.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0546",
+      "grade_from_source_section": "G2-LEG-072",
+      "grade_ids": [
+        "G2-LEG-072"
+      ],
+      "original_question": "Ce dovadă financiară este enumerată în dosarul de autorizare?",
+      "original_ABC": {
+        "A": "Copia chitanței de achitare a tarifului pentru autorizare",
+        "B": "Extrasul de cont al angajatorului",
+        "C": "Factura de energie electrică a locuinței"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-072=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "119",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-072 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Ce dovadă financiară este enumerată în dosarul de autorizare?\n- A: Copia chitanței de achitare a tarifului pentru autorizare\n- B: Extrasul de cont al angajatorului\n- C: Factura de energie electrică a locuinței\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `119`.\n- Exact clause: Ordin ANRE 66/2023 art.17(1)(g).\n- A/B/C negative tests and context: A proof of paying authorization fee; B employer bank statements and C household energy bill irrelevant.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0547",
+      "grade_from_source_section": "G2-LEG-073",
+      "grade_ids": [
+        "G2-LEG-073"
+      ],
+      "original_question": "Pentru acceptarea dosarului de autorizare, cererea trebuie să fie însoțită de toate documentele cerute de regulament?",
+      "original_ABC": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar de actul de identitate"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-073=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "122",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-073 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Pentru acceptarea dosarului de autorizare, cererea trebuie să fie însoțită de toate documentele cerute de regulament?\n- A: Da\n- B: Nu\n- C: Doar de actul de identitate\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `122`.\n- Exact clause: Ordin ANRE 66/2023 art.29(b).\n- A/B/C negative tests and context: A all required documents cumulatively for admission, B no and C only ID false; other prerequisites experience/calification also apply.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0548",
+      "grade_from_source_section": "G2-LEG-074",
+      "grade_ids": [
+        "G2-LEG-074"
+      ],
+      "original_question": "Acceptarea dosarului de autorizare presupune și demonstrarea experienței profesionale minime, în conformitate cu cerințele regulamentului?",
+      "original_ABC": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Numai pentru Gradul I"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-074=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "124",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-074 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Acceptarea dosarului de autorizare presupune și demonstrarea experienței profesionale minime, în conformitate cu cerințele regulamentului?\n- A: Da\n- B: Nu\n- C: Numai pentru Gradul I\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `124`.\n- Exact clause: Ordin ANRE 66/2023 art.29(c), art.16 and annex 2.\n- A/B/C negative tests and context: A minimum experience according to applicable grade/qualification and legal admissibility; B no wrong; C only Grade I excludes other grade rules. Nu inventăm număr identic de ani pentru toți solicitanții.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0549",
+      "grade_from_source_section": "G2-LEG-075",
+      "grade_ids": [
+        "G2-LEG-075"
+      ],
+      "original_question": "Examenele de autorizare a electricienilor se organizează, de regulă, de câte ori pe an?",
+      "original_ABC": {
+        "A": "De două ori pe an",
+        "B": "O singură dată la cinci ani",
+        "C": "În fiecare lună, obligatoriu"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-075=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "129",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-075 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Examenele de autorizare a electricienilor se organizează, de regulă, de câte ori pe an?\n- A: De două ori pe an\n- B: O singură dată la cinci ani\n- C: În fiecare lună, obligatoriu\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `129`.\n- Exact clause: Ordin ANRE 66/2023 Annex 1, 1.1(1).\n- A/B/C negative tests and context: A normally two exam sessions per year explicitly specified `de regulă`; B one per 5 years relates incorrectly to authorization visa; C mandatory monthly unsupported.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0550",
+      "grade_from_source_section": "G2-LEG-076",
+      "grade_ids": [
+        "G2-LEG-076"
+      ],
+      "original_question": "La ce interval este prevăzută vizarea periodică a autorizației de electrician?",
+      "original_ABC": {
+        "A": "O dată la cinci ani",
+        "B": "Lunar",
+        "C": "O dată la zece ani"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-076=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "132",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-076 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: La ce interval este prevăzută vizarea periodică a autorizației de electrician?\n- A: O dată la cinci ani\n- B: Lunar\n- C: O dată la zece ani\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `132`.\n- Exact clause: Ordin ANRE 66/2023 art.18(1), art.30(1).\n- A/B/C negative tests and context: A visa every five years; B monthly and C ten years not interval. Authorized status indefinite but practicing conditional on valid visa.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0551",
+      "grade_from_source_section": "G2-LEG-077",
+      "grade_ids": [
+        "G2-LEG-077"
+      ],
+      "original_question": "Pentru vizarea periodică a autorizației de electrician, ANRE enumeră dovada absolvirii în ultimele 12 luni a unui curs de pregătire teoretică de minimum: ",
+      "original_ABC": {
+        "A": "20 de ore",
+        "B": "2 ore",
+        "C": "100 de ore"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-077=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "137",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-077 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Pentru vizarea periodică a autorizației de electrician, ANRE enumeră dovada absolvirii în ultimele 12 luni a unui curs de pregătire teoretică de minimum: \n- A: 20 de ore\n- B: 2 ore\n- C: 100 de ore\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `137`.\n- Exact clause: Ordin ANRE 66/2023 art.30(2)(c) / art.34(1).\n- A/B/C negative tests and context: A minimum 20 hours training completed within 12 months prior to request. B 2h and C 100h don't match. Course content and issuer conditions apply.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0552",
+      "grade_from_source_section": "G2-LEG-078",
+      "grade_ids": [
+        "G2-LEG-078"
+      ],
+      "original_question": "Ce se întâmplă dacă autorizația de electrician nu este vizată până la termenul de vizare?",
+      "original_ABC": {
+        "A": "Titularul nu are dreptul să desfășoare activități de proiectare, executare și verificare până la vizare",
+        "B": "Autorizația se transformă automat în Gradul I",
+        "C": "Nu există nicio consecință"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-078=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "139",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-078 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Ce se întâmplă dacă autorizația de electrician nu este vizată până la termenul de vizare?\n- A: Titularul nu are dreptul să desfășoare activități de proiectare, executare și verificare până la vizare\n- B: Autorizația se transformă automat în Gradul I\n- C: Nu există nicio consecință\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `139`.\n- Exact clause: Ordin ANRE 66/2023 art.18(1), art.30(3).\n- A/B/C negative tests and context: A may not practice design/execution/verification until visa; B automatic grade I downgrade false; C no consequence false.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0553",
+      "grade_from_source_section": "G2-LEG-079",
+      "grade_ids": [
+        "G2-LEG-079"
+      ],
+      "original_question": "Autorizația de electrician este valabilă numai în concordanță cu ce evidență a autorității competente?",
+      "original_ABC": {
+        "A": "Registrul electronic de evidență",
+        "B": "Registrul auto",
+        "C": "Registrul comerțului al angajatorului, exclusiv"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-079=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "133",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-079 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Autorizația de electrician este valabilă numai în concordanță cu ce evidență a autorității competente?\n- A: Registrul electronic de evidență\n- B: Registrul auto\n- C: Registrul comerțului al angajatorului, exclusiv\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `133`.\n- Exact clause: Ordin ANRE 66/2023 art.18(2).\n- A/B/C negative tests and context: A authorization validity requires concordance with regulator electronic register and accompanying ID; B car register and C employer trade register not statutory authoritative identity.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0554",
+      "grade_from_source_section": "G2-LEG-080",
+      "grade_ids": [
+        "G2-LEG-080"
+      ],
+      "original_question": "Prin ce mijloace poate solicita solicitantul înregistrarea la ANRE a documentelor prevăzute în regulament?",
+      "original_ABC": {
+        "A": "Prin portalul autorității competente sau prin încărcare în platforma PCUe",
+        "B": "Numai prin telefon",
+        "C": "Numai prin mesaj SMS"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-080=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "205",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-080 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Prin ce mijloace poate solicita solicitantul înregistrarea la ANRE a documentelor prevăzute în regulament?\n- A: Prin portalul autorității competente sau prin încărcare în platforma PCUe\n- B: Numai prin telefon\n- C: Numai prin mesaj SMS\n- Imported key **A** unchanged. Original source `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` row `205`.\n- Exact clause: Ordin ANRE 66/2023 art.21(2), art.33.\n- A/B/C negative tests and context: A document submission through ANRE portal or PCUe; B telephone-only and C SMS-only not accepted as formal means.\n- No human/independent QA, source match only, learner approval NO.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    },
+    {
+      "unit_id": "QABC-0555",
+      "grade_from_source_section": "G2-LEG-081",
+      "grade_ids": [
+        "G2-LEG-081"
+      ],
+      "original_question": "Conform tarifelor publicate de ANRE, care este tariful pentru autorizarea Gradului II de tip A sau de tip B?",
+      "original_ABC": {
+        "A": "250 lei",
+        "B": "125 lei",
+        "C": "500 lei"
+      },
+      "imported_keys_UNCHANGED": "G2-LEG-081=A",
+      "provenance": {
+        "category": "Legislație",
+        "source": "Ordinul ANRE nr. 118/2023 privind tarifele, informații oficiale ANRE",
+        "source_row": "220",
+        "source_class": "SUPPLEMENTAL_PRACTICE",
+        "official_exam_2026_question_and_key_NOT_AUTHENTICATED": true
+      },
+      "research": {
+        "source_file": "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+        "source_blob": "9c4b5bc387c393c2542f7fb6f4351f3356ab9328",
+        "prior_unedited_ABC_section": "### G2-LEG-081 | EXACT_PRIMARY_REGULATORY_MATCH\n- Original: Conform tarifelor publicate de ANRE, care este tariful pentru autorizarea Gradului II de tip A sau de tip B?\n- A: 250 lei\n- B: 125 lei\n- C: 500 lei\n- Imported key **A** unchanged. Original source `Ordinul ANRE nr. 118/2023 privind tarifele, informații oficiale ANRE` row `220`.\n- Exact clause: Ordin ANRE 82/2025 approved 2026 tariffs Table 1 item2.\n- A/B/C negative tests and context: A 250 lei Grade II type A OR B authorization in the specific 2026 tariff schedule; B 125 lei = periodic visa A/B; C 500 lei = combined A+B. Tariff annually updated, not timeless law.\n- No human/independent QA, source match only, learner approval NO.\n\n## Handoff\n- 15 Grade II metadata/administrative questions receive source and distractor check, including legally specified 20 hours, 5 years, typical two yearly exams, current 250 lei 2026 type A OR B fee; 0 key changes, 0 new bank questions, 0 learning approvals. Next 082-083 and Grade II norms 142-147 then reconcile previous focused NOR and duplicated technical grade IDs. No app work, main or release merge.",
+        "reported_candidate_urls": []
+      },
+      "explanation_state": "HISTORICAL_MATERIAL_MIGRATED_PER_OPTION_EDITING_SOURCE_EDITION_AND_QA_PENDING",
+      "independent_QA": "NOT_RUN",
+      "learning_approved": false
+    }
+  ]
+}
