@@ -25,7 +25,12 @@ PROMPT_TECH = (
     "4 TRAINER: separately evaluate A/B/C; "
     "5 GATE: say which source edition and official examination key checks remain. "
     "Do not invent STAS clauses or extrapolate from a different topic. "
-    "Distinguish permissive alternatives from exclusive 'numai'."
+    "Use prior Academy rule: where source permits X OR Y OR Z, a nonexclusive "
+    "statement X can be TRUE even if it does not list Y or Z; 'ONLY X' is "
+    "false if alternatives are permitted. Omission of a second necessary condition "
+    "does not automatically make a first true condition false; explicit 'WITHOUT X' "
+    "contradicts mandatory X. Evaluate original and trainer A/B/C separately and "
+    "do not infer a unique official scoring key from partial source-truth."
 )
 PROMPT_SKEPTIC = (
     "You are a different skeptical auditor who has NOT seen technical reviewer outputs. "
@@ -35,7 +40,12 @@ PROMPT_SKEPTIC = (
     "1 FIELD DIFFERENCE, 2 I7 EVIDENCE with exact phrase, "
     "3 WRONG-OPTION COUNTEREXAMPLE, 4 SCOPE/2026 VALIDITY LIMIT, "
     "5 RELEASE GATE. Do not invent other normative documents, make up scored exam keys, "
-    "or claim the 2023 user PDF alone proves 2026 applicability."
+    "or claim the 2023 user PDF alone proves 2026 applicability. "
+    "Apply the Academy allowed-vs-exclusive transfer rule: 'X' as a permissible "
+    "single example is not false merely because 'Y' is also allowed; 'ONLY X' "
+    "is false when other options are allowed. Distinguish 'WITHOUT X' negation "
+    "from omitted details which may leave an option incomplete but true. "
+    "Inspect ALL source and trainer A/B/C, not just the first option."
 )
 
 
