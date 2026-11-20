@@ -90,6 +90,25 @@ def choose_roles(case: dict) -> tuple[tuple[str, tuple[str, ...], str], ...]:
     return roles
 
 
+def known_semantic_risk_flags(unit_id: str, reviews: dict) -> list[dict]:
+    """Conservative pointers for human QA; not a general semantic truth classifier."""
+    flagged = []
+    for role, item in reviews.items():
+        if not item.get("ok"):
+            continue
+        text = item.get("text", "").casefold()
+        if (unit_id == "QABC-0002"
+            and re.search(r"psi.{0,80}presiune.{0,100}securitate.{0,100}izola", text, re.S)):
+            flagged.append({"role": role, "risk": "POSSIBLE_PSI_ACRONYM_HALLUCINATION",
+                            "review_note": "PSI normally means prevenirea si stingerea incendiilor"})
+        if (unit_id == "QABC-0004"
+            and ("nicio variantă nu corespunde" in text
+                 or "niciuna dintre variante nu corespunde" in text)):
+            flagged.append({"role": role, "risk": "POSSIBLE_NUMERIC_SELF_CONTRADICTION",
+                            "review_note": "B is 250 microfarads; parallel 100+50+100=250"})
+    return flagged
+
+
 def quality_gate(case: dict, reviews: dict, roles_requested: list[str]) -> dict:
     """Independent deterministic QA gate; no hidden automated source approval."""
     failed = [name for name in roles_requested if not reviews.get(name, {}).get("ok")]
@@ -105,7 +124,9 @@ def quality_gate(case: dict, reviews: dict, roles_requested: list[str]) -> dict:
     actual_models = [reviews[name].get("model", "") for name in roles_requested
                      if reviews.get(name, {}).get("ok")]
     distinct_models = len(set(actual_models)) == len(actual_models)
+    semantic_flags = known_semantic_risk_flags(case.get("unit_id", ""), reviews)
     return {
+        "known_semantic_risk_flags_for_human_review": semantic_flags,
         "independent_model_families_proven": distinct_models and len(actual_models) >= 2, 
         "source_authentication": "NOT_VERIFIED",
         "professional_review": "NOT_RUN",
@@ -116,8 +137,9 @@ def quality_gate(case: dict, reviews: dict, roles_requested: list[str]) -> dict:
         "missing_roles": failed,
         "short_responses": too_short,
         "a_b_c_mentions_only_not_semantic_correctness": option_coverage,
-        "status": "INCOMPLETE_MODEL_TRACES" if failed or too_short or not all(option_coverage.values()) or not distinct_models
-                  else "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED",
+        "status": ("INCOMPLETE_MODEL_TRACES" if failed or too_short or not all(option_coverage.values()) or not distinct_models
+                   else "CONTENT_WARNING_SOURCE_GATE_BLOCKED" if semantic_flags
+                   else "MODEL_TRACES_PRESENT_SOURCE_GATE_BLOCKED"),
         "next_gate": "Exact-source paragraph, edition, context, three option analyses and qualified independent signoff",
     }
 
