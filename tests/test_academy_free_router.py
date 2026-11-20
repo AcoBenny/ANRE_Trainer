@@ -60,6 +60,28 @@ class RouterTests(unittest.TestCase):
         self.assertEqual(state["attempts"], 2)
         self.assertEqual(fn.call_count, 2)
 
+    def test_model_or_region_error_can_use_free_fixed_model(self):
+        state = {"attempts": 0, "returned": 0}
+        def simulate(provider, system, message):
+            if provider == "groq":
+                raise router.ProviderError("HTTP_403", True)
+            if provider == "openrouter":
+                raise router.ProviderError("EMPTY_MODEL_OUTPUT", True)
+            return {"model": "google/gemma-4-31b-it:free", "usage": {}, "text": "assessment"}
+        with mock.patch.dict(os.environ, {"GROQ_API_KEY": "fake", "OPENROUTER_API_KEY": "fake"}):
+            with mock.patch.object(router, "call_provider", side_effect=simulate) as fn:
+                result = router.route_agent("role", "case", ("groq", "openrouter", "openrouter_fixed"), state)
+        self.assertTrue(result["ok"])
+        self.assertEqual(result["provider"], "openrouter_fixed")
+        self.assertEqual(fn.call_count, 3)
+        self.assertEqual(state["attempts"], 3)
+
+    def test_paid_openai_is_never_in_free_routes(self):
+        for name, options, system in router.AGENTS:
+            self.assertNotIn("openai", options)
+        self.assertNotIn("OPENAI_API_KEY", router.KEYS.values())
+        self.assertTrue(router.MODELS["openrouter_fixed"].endswith(":free"))
+
     def test_auth_failure_never_attempts_fallback(self):
         state = {"attempts": 0, "returned": 0}
         with mock.patch.dict(os.environ, {"GROQ_API_KEY": "fake", "OPENROUTER_API_KEY": "fake"}):
