@@ -1,0 +1,23 @@
+# CKPT-269 | ANRE Avengers Academy: P0 question backlog and source-grounded agent prompt training | 2026-11-20
+
+## Restored and immutable sources
+- Current ANRE audit primary work ledger is **V149**, versioned on audit branch `audit/anre-v8-priority-17-20261109`, Git blob `ee2ac5536c78eb06a0461243be34c117e257188f`. Registry holds **568 distinct QABC and 822 grade placements**, not 822 unique QABC. Source-copy fidelity does not attest technically correct answers, current ANRE scoring, or official 2026 law.
+- Six serious V144 source-versus-canonical blockers are separately audited in previous CKPT-262, NOT re-scored by this run; original source blob `0fae5c2e3653c4cea2ced456ca768ddb01db733e`.
+- User-provided 2023 I7 PDF historical excerpts were opened and described previously; locally pinned excerpt pack `docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json`, Git blob `3bbb905c5fc2b4456b1a6cb5b64e3e4e5d1e5cdd`, §5.4.13 p70 and §5.5.2.3 p72. **Not** reauthenticated as the complete 2026 consolidated edition.
+
+## Changes implemented now
+- New read-only P0 work queue `docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json`: 12 original exact-copy QABC, 24 grade placements, source references, no canonical key values. Selected as high-priority QABC 0013/0019/0024/0025/0036/0042/0050/0065/0069/0080/0091/0096.
+- **QABC-0024** says “schema de mai sus”; no diagram supplied in the queue, therefore `BLOCKED_FIGURE_MISSING_NO_MODEL_CALLS`. Must recover the real original diagram before a verdict, not hallucinate it.
+- `scripts/academy_p0_priority_training.py` applies Avengers adaptive technical, skeptic and selected linguistic roles. Uses actual provider API via free-only routing when explicitly authorized; 24 provider attempts hard cap per four-QABC call. Training recipe tests stem-vs-options, A-B/A-C/B-C, scope-bound counterexamples, numerical contradiction, phantom acronyms, source/edition gates. This is **prompt/QA refinement**, NOT training of AI model weights or approved skill promotion.
+- `tests/test_academy_p0_priority_training.py` and `.github/workflows/academy-p0-priority-training.yml`: first four P0 source integrity, figure-stop, model diversity, no key leakage, fail-closed tests, pinned raw V149 original and unapproved traces.
+- `scripts/academy_prompt_training_ab.py` and `tests/test_academy_prompt_training_ab.py`: blinded baseline-versus-trained prompts on **same** Groq and Gemini models, same two source passages and original/trainer A/B/C. Maximum eight real requests, **one observation per condition** only, not a statistical performance certification; preserve actual response and finish metadata for separate source-based adjudication. CI source pin and offline tests pass at [GitHub Actions](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44756392063).
+
+## Scope of immediately authorized live evaluation
+1. This CKPT-269 commit explicitly triggers only the eight-call `[academy-train]` pilot on two I7 problem cases. Both existing reference text and new trained prompt use the **same** 2023 user-PDF source excerpt, with official 2026 source and ANRE scored key NOT VERIFIED.
+2. Keep actual outputs and compare evidence quality and errors before starting the new 12-P0 backlog with the `[academy-p0]` trigger. Do not blindly rerun the six original blockers.
+3. Neither run may touch original QABC/grade mapping, canonical keys, user-facing ANRE HTML/APK or main branch. Do not merge/release; PR #7 and PR #13 remain Draft.
+
+## Remaining QA and realistic stop conditions
+- A+B prompt comparison does not prove model training or expert accuracy; semantic source-grounded independent grading and repeated holdout benchmark still pending.
+- Exact source edition, scoped neighboring paragraphs and current applicability required before **any** answer can be learner-approved. Existing old historical sourced decisions remain preserved, not overwritten by model outputs.
+- Provider budget and free-tier quotas are external account-level controls: stop on provider errors and preserve successful outputs; avoid unintended OpenAI paid calls.
