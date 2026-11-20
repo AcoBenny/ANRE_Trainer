@@ -34,15 +34,15 @@ PROMPT_POLICY = (
     "Conclude with source/evidence needed and NO_LEARNER_APPROVAL."
 )
 SPECIALISTS = (
-    ("technical_electrical", ("groq", "openrouter", "openrouter_fixed"),
+    ("technical_electrical", ("groq", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
      "Specialist in electrical engineering. Evaluate A, B and C separately for the exact "
      "object, quantities, assumptions and counterexamples. Use elimination only after "
      "affirmative physical reasoning. Mention possible conditional answer, not a scored key."),
-    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed"),
+    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
      "Independent adversarial reviewer. Do not see or assume a technical review exists. "
      "Challenge assumptions, false universal quantifiers, wrong physical or source scope, "
      "missing grade and edition. Offer at least one disconfirming case or say why none found."),
-    ("linguistic_scope", ("openrouter", "openrouter_fixed"),
+    ("linguistic_scope", ("openrouter", "openrouter_fixed", "requesty_lightning", "requesty_gemma"),
      "Independent Romanian-language and technical semantics reviewer. Check exact stem-to-"
      "option fit and A-B, A-C, B-C exclusivity, 'numai', comparators, incomplete sentences "
      "and implicit conditions. Never correct or rewrite the original question."),
@@ -119,6 +119,13 @@ def known_semantic_risk_flags(unit_id: str, reviews: dict) -> list[dict]:
     return flagged
 
 
+def normalized_model_family(model_id: str) -> str:
+    """Conservative identifier; provider gateways do not create new AI identities."""
+    model = str(model_id).casefold().strip()
+    model = model.split(":free")[0]
+    return model.rsplit("/", 1)[-1]
+
+
 def quality_gate(case: dict, reviews: dict, roles_requested: list[str]) -> dict:
     """Independent deterministic QA gate; no hidden automated source approval."""
     failed = [name for name in roles_requested if not reviews.get(name, {}).get("ok")]
@@ -133,7 +140,10 @@ def quality_gate(case: dict, reviews: dict, roles_requested: list[str]) -> dict:
     }
     actual_models = [reviews[name].get("model", "") for name in roles_requested
                      if reviews.get(name, {}).get("ok")]
-    distinct_models = len(set(actual_models)) == len(actual_models)
+    # Same underlying model is NOT independent just because a gateway added
+    # a different provider prefix or a :free suffix.
+    normalized_models = [normalized_model_family(m) for m in actual_models]
+    distinct_models = len(set(normalized_models)) == len(normalized_models)
     semantic_flags = known_semantic_risk_flags(case.get("unit_id", ""), reviews)
     return {
         "known_semantic_risk_flags_for_human_review": semantic_flags,
