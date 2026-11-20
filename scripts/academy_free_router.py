@@ -13,24 +13,27 @@ import urllib.request
 
 EXPECTED = {f"ACA-ANRE-{i:03d}" for i in range(1, 7)}
 AGENTS = (
-    ("technical_reviewer", ("groq", "openrouter"),
+    ("technical_reviewer", ("groq", "openrouter", "openrouter_fixed"),
      "You are an electrical engineering and source-scope ANRE reviewer. Identify hidden assumptions, compare original versus edited wording if actually supplied, and examine each supplied A/B/C. Do not guess an official answer key or claim direct source access. Output uncertainty and requested source evidence."),
-    ("independent_skeptic", ("gemini", "openrouter"),
+    ("independent_skeptic", ("gemini", "openrouter", "openrouter_fixed"),
      "You are a separate adversarial reviewer. You have not seen any other review. Challenge physical models, edition applicability, ambiguous wording, different imported grades and claimed citations. Do not approve exam answers or invent exact normative quotations."),
 )
 MODELS = {
     "groq": "openai/gpt-oss-120b",
     "gemini": "gemini-3.5-flash-lite",
     "openrouter": "openrouter/free",
+    "openrouter_fixed": "google/gemma-4-31b-it:free",
 }
 KEYS = {
     "groq": "GROQ_API_KEY",
     "gemini": "GEMINI_API_KEY",
     "openrouter": "OPENROUTER_API_KEY",
+    "openrouter_fixed": "OPENROUTER_API_KEY",
 }
 ENDPOINTS = {
     "groq": "https://api.groq.com/openai/v1/chat/completions",
     "openrouter": "https://openrouter.ai/api/v1/chat/completions",
+    "openrouter_fixed": "https://openrouter.ai/api/v1/chat/completions",
     "gemini": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
 }
 MAX_TOTAL_CALLS = 24
@@ -69,7 +72,7 @@ def build_prompt(case: dict) -> str:
 def post_json(url: str, headers: dict, payload: dict):
     request = urllib.request.Request(
         url, data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
-        headers={"Content-Type": "application/json", **headers}, method="POST"
+        headers={"Content-Type": "application/json", "User-Agent": "ANRE-Academy-Source-Audit/1.0", **headers}, method="POST"
     )
     try:
         with urllib.request.urlopen(request, timeout=25) as resp:
@@ -100,9 +103,11 @@ def call_provider(provider: str, system: str, message: str):
         payload = {
             "model": MODELS[provider],
             "stream": False,
-            "max_tokens": 850,
+            "max_tokens": 1800 if provider.startswith("openrouter") else 850,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": message}],
         }
+        if provider == "openrouter":
+            payload["reasoning"] = {"effort": "low"}
         obj = post_json(ENDPOINTS[provider], {"Authorization": "Bearer " + key}, payload)
         text = "\n".join(str(c.get("message", {}).get("content") or "") for c in obj.get("choices", []))
         usage = obj.get("usage", {})
