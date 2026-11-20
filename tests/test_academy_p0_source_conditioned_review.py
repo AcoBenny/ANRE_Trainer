@@ -218,6 +218,31 @@ class P0SourcedEvidenceTests(unittest.TestCase):
             self.assertTrue(item["role_qa"]["technical_electrical"]["observed_negative_flags"])
             self.assertFalse(item["approved_for_learning"])
 
+    def test_gauss_numeric_1c_reference_is_not_coulomb_constant(self):
+        m = review.independent_math_reference("QABC-0065")
+        self.assertAlmostEqual(m["q1C_E_vacuum_flux_V_m"], 1.1294090666e11,
+                               delta=1e3)
+        self.assertAlmostEqual(m["q1C_coulomb_constant_not_E_flux"], 8.987551786e9,
+                               delta=1e3)
+        self.assertAlmostEqual(m["q1C_E_vacuum_flux_V_m"] /
+                               m["q1C_coulomb_constant_not_E_flux"],
+                               4 * 3.141592653589793, places=7)
+        self.assertTrue(m["not_an_ANRE_scored_key"])
+
+    def test_observed_wrong_gauss_e_flux_number_fail_closed(self):
+        wrong = ("COUNTEREXAMPLE: Pentru q = 1 C si flux E, "
+                 "∮E·dA = q/epsilon0 ≈ 8.99 × 10⁹ V·m.")
+        correct = ("COUNTEREXAMPLE: Pentru q = 1 C si flux E, "
+                   "∮E·dA = q/epsilon0 ≈ 1.1294 × 10¹¹ V·m.")
+        unrelated = ("COUNTEREXAMPLE: Pentru q = 1 C, "
+                     "constanta Coulomb este 8.99 × 10⁹ N·m²/C².")
+        self.assertIn("GAUSS_E_FLUX_CONFUSED_WITH_COULOMB_CONSTANT",
+                      review.observed_negative_flags("QABC-0065", wrong))
+        self.assertNotIn("GAUSS_E_FLUX_CONFUSED_WITH_COULOMB_CONSTANT",
+                         review.observed_negative_flags("QABC-0065", correct))
+        self.assertNotIn("GAUSS_E_FLUX_CONFUSED_WITH_COULOMB_CONSTANT",
+                         review.observed_negative_flags("QABC-0065", unrelated))
+
     def test_live_requires_explicit_budget_confirmation(self):
         with self.assertRaises(SystemExit):
             review.run(["--evidence", str(EVIDENCE), "--mode", "live-free"])
