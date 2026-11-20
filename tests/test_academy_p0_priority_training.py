@@ -212,6 +212,19 @@ class PriorityAcademyTests(unittest.TestCase):
             report = json.loads((folder / "out" / "results.json").read_text())
             self.assertFalse(report["learner_approved"])
 
+    def test_groq_20b_independent_linguistic_fallback_is_bounded(self):
+        from scripts import academy_agent_orchestrator as orch
+        from scripts import academy_free_router as router
+        language = next(x for x in orch.SPECIALISTS if x[0] == "linguistic_scope")
+        technical = next(x for x in orch.SPECIALISTS if x[0] == "technical_electrical")
+        self.assertEqual(language[1][0], "groq_linguistic")
+        self.assertEqual(p0.bounded_provider_candidates(language[1]),
+                         ("groq_linguistic", "requesty_gemma"))
+        self.assertEqual(router.KEYS["groq_linguistic"], "GROQ_API_KEY")
+        self.assertEqual(router.MODELS["groq_linguistic"], "openai/gpt-oss-20b")
+        self.assertNotEqual(router.MODELS["groq_linguistic"],
+                            router.MODELS[technical[1][0]])
+
     def test_same_fallback_model_cannot_count_independent(self):
         with tempfile.TemporaryDirectory() as td:
             folder = pathlib.Path(td)
