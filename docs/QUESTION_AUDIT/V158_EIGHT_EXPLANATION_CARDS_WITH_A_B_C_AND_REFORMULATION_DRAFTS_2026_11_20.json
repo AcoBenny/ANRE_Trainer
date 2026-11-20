@@ -1,0 +1,527 @@
+{
+  "schema": "v158_eight_reformulation_resilient_card_content_drafts",
+  "created_date": "2026-11-20",
+  "basis_v152_git_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+  "explanation_card_registry_manifest": "docs/QUESTION_AUDIT/V156_568_REUSABLE_EXPLANATION_CARD_SCAFFOLDS_2026_11_20.json",
+  "eight_unit_ids": [
+    "QABC-0104",
+    "QABC-0119",
+    "QABC-0169",
+    "QABC-0178",
+    "QABC-0209",
+    "QABC-0211",
+    "QABC-0218",
+    "QABC-0234"
+  ],
+  "count_cards": 8,
+  "count_grade_ids": 16,
+  "notes": "Content is educational research draft derived from V152 and scoped physics, not certified official answer. Exact cited source paragraph not re-opened in this seed run. Reformulation exercises are independently authored practice, not ANRE question publication.",
+  "learner_approvals": 0,
+  "notes_on_ambiguity": "Cards with conditional candidates explicitly preserve general countermodels; none may be used as a silent scored-key correction or shown as validated before final QA.",
+  "cards": [
+    {
+      "unit_id": "QABC-0104",
+      "card_id": "EXPL_QABC-0104",
+      "grade_ids": [
+        "G1-ELE-113",
+        "G2-ELEC-255"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 120,
+        "original_question": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
+        "original_options": {
+          "A": "numai de temperatura mediului ambiant",
+          "B": "de tensiunea între faze",
+          "C": "de pierderile Joule-Lenz"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-113=C | G2-ELEC-255=C"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://info.ornl.gov/sites/publications/Files/Pub172075.pdf",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "Temperatura unei înfășurări rezultă din echilibrul dintre căldura produsă (inclusiv pierderile Joule) și evacuarea căldurii, influențată de mediu și răcire.",
+        "options": {
+          "A": {
+            "state": "CONTRADICTS_ONLY",
+            "why": "Termenul «numai» exclude pierderile proprii ale înfășurării; la curent nenul există încălzire Joule."
+          },
+          "B": {
+            "state": "INSUFFICIENT",
+            "why": "Tensiunea între faze nu fixează singură curentul, rezistența, răcirea sau temperatura."
+          },
+          "C": {
+            "state": "SUPPORTS_CONTRIBUTING_FACTOR",
+            "why": "Pierderile Joule-Lenz I²R produc căldură în bobinaj, dar nu determină singure temperatura finală."
+          }
+        },
+        "takeaway": "La variația curentului, pierderile Joule cresc cu pătratul intensității, pentru R constant.",
+        "reformulation": {
+          "question": "Dacă intensitatea se dublează, iar rezistența rămâne constantă, de câte ori cresc pierderile Joule?",
+          "answer": "De patru ori: (2I)²R=4I²R."
+        },
+        "caution": "Nu confundați cauza încălzirii cu modelul complet al temperaturii stabilizate.",
+        "imported_letter_not_authenticated": "C",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    },
+    {
+      "unit_id": "QABC-0119",
+      "card_id": "EXPL_QABC-0119",
+      "grade_ids": [
+        "G1-ELE-128",
+        "G2-ELEC-268"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 135,
+        "original_question": "Într-un circuit electric monofazat cu caracter inductiv tensiunea este defazata fata de curent:",
+        "original_options": {
+          "A": "înainte cu 90 de grade",
+          "B": "cu zero grade (sunt în faza)",
+          "C": "cu 90 de grade în urma"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-128=A | G2-ELEC-268=A"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://www.met.reading.ac.uk/pplato2/h-flap/phys5_4.html",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "În sarcină sinusoidală inductivă, tensiunea este înaintea curentului; unghiul este exact 90° numai pentru un element inductiv ideal, fără componentă rezistivă.",
+        "options": {
+          "A": {
+            "state": "CONDITIONAL",
+            "why": "+90° este cazul ideal pur inductiv; enunțul nu precizează «pur»."
+          },
+          "B": {
+            "state": "CONTRADICTS_NONZERO_INDUCTIVE_REACTANCE",
+            "why": "0° ar corespunde factorului de putere 1, fără defazaj inductiv net."
+          },
+          "C": {
+            "state": "WRONG_DIRECTION",
+            "why": "Tensiunea în urmă cu 90° față de curent caracterizează sensul capacitiv ideal, nu inductiv."
+          }
+        },
+        "takeaway": "Pentru RL serie, φ=arctan(X_L/R), deci 0°<φ<90° când R și X_L sunt pozitive.",
+        "reformulation": {
+          "question": "Ce unghi are un circuit RL serie dacă R=X_L?",
+          "answer": "45°, absent între alternativele grilei originale."
+        },
+        "caution": "Întrebarea originală oferă un caz-limită drept opțiune; nu-l aplica universal.",
+        "imported_letter_not_authenticated": "A",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    },
+    {
+      "unit_id": "QABC-0169",
+      "card_id": "EXPL_QABC-0169",
+      "grade_ids": [
+        "G1-ELE-180",
+        "G2-ELEC-316"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 187,
+        "original_question": "Pentru micşorarea pierderilor de putere prin curenţi turbionari în piesele metalice mari parcurse de fluxuri magnetice variabile:",
+        "original_options": {
+          "A": "se limitează dimensiunile pieselor",
+          "B": "se execută piesele metalice din tole de oţel  cu adaus de siliciu pentru mărirea rezistivităţii, subţiri și izolate între ele",
+          "C": "se evită plasarea pieselor metalice masive în câmpuri magnetice variabile"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-180=B | G2-ELEC-316=B"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://www.energyrating.gov.au/sites/default/files/2023-10/tech-transform2000.pdf",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "Curenții turbionari se reduc prin micșorarea traseelor disponibile curenților induși și prin creșterea rezistivității sau reducerea expunerii la flux variabil.",
+        "options": {
+          "A": {
+            "state": "POSSIBLE_WITH_GEOMETRIC_CONDITIONS",
+            "why": "Dimensiunile traseelor pot influența buclele de curent turbionar; nu este o metodă imposibilă în general."
+          },
+          "B": {
+            "state": "STANDARD_CONSTRUCTION_METHOD",
+            "why": "Tolele subțiri, izolate între ele, din oțel cu siliciu reduc buclele conductoare și măresc rezistivitatea."
+          },
+          "C": {
+            "state": "POSSIBLE_FIELD_AVOIDANCE",
+            "why": "Evitarea pieselor masive în flux magnetic variabil poate reduce pierderile, deși nu descrie metoda tipică de construcție a miezului."
+          }
+        },
+        "takeaway": "Relația aproximativă de pierderi prin curenți turbionari include pătratul grosimii tolei pentru ipoteze comparabile.",
+        "reformulation": {
+          "question": "În modelul ideal, ce se întâmplă cu pierderile turbionare dacă grosimea tolei se înjumătățește?",
+          "answer": "Se reduc aproximativ la un sfert, dacă ceilalți parametri rămân constanți."
+        },
+        "caution": "Variantele A și C au posibile nuclee de adevăr. Nu transforma o preferință constructivă într-o unicitate fizică nedemonstrată.",
+        "imported_letter_not_authenticated": "B",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    },
+    {
+      "unit_id": "QABC-0178",
+      "card_id": "EXPL_QABC-0178",
+      "grade_ids": [
+        "G1-ELE-189",
+        "G2-ELEC-325"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 196,
+        "original_question": "Potenţialul electrostatic în punctul M este  :",
+        "original_options": {
+          "A": "lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M.",
+          "B": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă de la infinit până în punctul M",
+          "C": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă din punctul M până la infinit"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-189=A | G2-ELEC-325=A"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "Potențialul electric într-un punct reprezintă energia potențială electrică per unitate de sarcină; diferențele de potențial se leagă de lucrul mecanic per sarcină.",
+        "options": {
+          "A": {
+            "state": "SUPPORTS_WITH_WORK_SIGN_CONVENTION",
+            "why": "Descrie lucrul mecanic necesar pe unitate de sarcină pozitivă, cu referința potențial zero la infinit și convenție adecvată pentru lucrul exterior."
+          },
+          "B": {
+            "state": "WRONG_PHYSICAL_QUANTITY",
+            "why": "Forța are unitatea newton, în timp ce potențialul are J/C (volt)."
+          },
+          "C": {
+            "state": "WRONG_PHYSICAL_QUANTITY_AND_DIRECTION",
+            "why": "Folosește forță în loc de lucru mecanic; schimbarea direcției de deplasare nu repară unitatea."
+          }
+        },
+        "takeaway": "Verifică unitatea: potențialul în V=J/C, nu în N.",
+        "reformulation": {
+          "question": "Dacă mutarea lentă a unei sarcini de test +2 C cere lucru exterior de +10 J față de referința la infinit, care este potențialul punctului?",
+          "answer": "+5 V în acea convenție: V=W_ext/q."
+        },
+        "caution": "Semnul depinde de cine efectuează lucrul (câmpul versus agentul exterior).",
+        "imported_letter_not_authenticated": "A",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    },
+    {
+      "unit_id": "QABC-0209",
+      "card_id": "EXPL_QABC-0209",
+      "grade_ids": [
+        "G1-ELE-220",
+        "G2-ELEC-356"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 227,
+        "original_question": "Transformatoarele  de măsură se folosesc",
+        "original_options": {
+          "A": "în instalaţiile de curent alternativ de înaltă tensiune",
+          "B": "numai în instalaţiile de curent alternativ de medie tensiune",
+          "C": "în instalaţiile de curent continuu de înaltă şi joasă tensiune"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-220=A | G2-ELEC-356=A"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://knowledge.bsigroup.com/products/instrument-transformers-general-requirements-1",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "Transformatoarele de măsură electromagnetice convenționale reduc/scalază mărimi de c.a. pentru măsură și protecție, inclusiv la înaltă tensiune; pentru c.c. există și tehnologii specializate.",
+        "options": {
+          "A": {
+            "state": "CONVENTIONAL_TRUE",
+            "why": "Transformatoarele convenționale CT/VT sunt utilizate în instalații de c.a. de înaltă tensiune."
+          },
+          "B": {
+            "state": "FALSE_ONLY",
+            "why": "«Numai medie tensiune» exclude utilizarea documentată la înaltă tensiune."
+          },
+          "C": {
+            "state": "TERM_SCOPE_NEEDS_REVIEW",
+            "why": "Măsurarea în c.c. necesită definirea tehnologiei și standardului aplicabil; nu deduce un «niciodată» universal."
+          }
+        },
+        "takeaway": "Identifică tehnologia reală și dacă înseamnă transformator electromagnetic convențional sau traductor/instrument specializat pentru HVDC.",
+        "reformulation": {
+          "question": "Dacă schema este de c.c. HVDC, este suficient să alegi un transformator clasic de tensiune pentru c.a.?",
+          "answer": "Nu; trebuie un dispozitiv de măsură compatibil cu c.c. și standardele aferente."
+        },
+        "caution": "Nu importa definiții moderne de echipamente în formulări vechi fără verificarea ediției.",
+        "imported_letter_not_authenticated": "A",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    },
+    {
+      "unit_id": "QABC-0211",
+      "card_id": "EXPL_QABC-0211",
+      "grade_ids": [
+        "G1-ELE-222",
+        "G2-ELEC-358"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 229,
+        "original_question": "Susceptanţa unui circuit de curent alternativ sinusoidal este inversul:",
+        "original_options": {
+          "A": "impedanţei",
+          "B": "rezistenţei",
+          "C": "reactanţei"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-222=C | G2-ELEC-358=C"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electricity_and_Magnetism_%28Tatum%29/13%253A_Alternating_Current/13.06%253A_Admittance",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "Admitanța este inversul impedanței complexe; susceptanța este partea imaginară a admitanței, nu inversul reactanței în general.",
+        "options": {
+          "A": {
+            "state": "CONFUSES_ADMITTANCE",
+            "why": "1/Z reprezintă Y, care include conductanța G și susceptanța B."
+          },
+          "B": {
+            "state": "CONFUSES_RESISTANCE_AND_CONDUCTANCE",
+            "why": "1/R descrie G doar în model pur rezistiv, nu susceptanța generală."
+          },
+          "C": {
+            "state": "ONLY_IDEAL_REACTIVE_MAGNITUDE",
+            "why": "Pentru R=0, modulul susceptanței este 1/|X|; semnul și cazul R>0 invalidează formula simplificată ca identitate generală."
+          }
+        },
+        "takeaway": "Z=R+jX, Y=1/Z=(R−jX)/(R²+X²), B=−X/(R²+X²).",
+        "reformulation": {
+          "question": "Pentru R=X=1 Ω, care este susceptanța semnată?",
+          "answer": "−0,5 S; nu +1 S."
+        },
+        "caution": "Verifică dacă se întreabă despre modul, semn și model pur reactiv.",
+        "imported_letter_not_authenticated": "C",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    },
+    {
+      "unit_id": "QABC-0218",
+      "card_id": "EXPL_QABC-0218",
+      "grade_ids": [
+        "G1-ELE-229",
+        "G2-ELEC-365"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 236,
+        "original_question": "Siguranţele electrice sunt aparate electrice care împiedica:",
+        "original_options": {
+          "A": "creşterea tensiunii peste o valoare limita",
+          "B": "creşterea curentului peste o valoare limita",
+          "C": "scăderea curentului sub o valoare limita"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-229=B | G2-ELEC-365=B"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://www.iteh.us/catalog/standards/iec/fe837e9d-7dfb-4b66-aac4-ebea676ed50e/iec-tr-60269-5-2014",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "Siguranța fuzibilă protejează împotriva supracurenților prin topirea elementului și întreruperea circuitului potrivit caracteristicii timp-curent.",
+        "options": {
+          "A": {
+            "state": "WRONG_PROTECTION_OBJECT",
+            "why": "Protecția la supratensiune nu este funcția fundamentală a siguranței fuzibile."
+          },
+          "B": {
+            "state": "PROTECTIVE_PURPOSE_CONDITIONAL",
+            "why": "Scopul este întreruperea supracurentului, dar formularea «împiedică creșterea curentului» nu garantează limitarea instantanee sub valoarea nominală."
+          },
+          "C": {
+            "state": "WRONG_PROTECTION_OBJECT",
+            "why": "Siguranța nu este protecție la scăderea curentului sub un prag."
+          }
+        },
+        "takeaway": "Distinge protecția prin întrerupere temporizată de o limitare ideală instantanee a valorii curentului.",
+        "reformulation": {
+          "question": "Poate curentul să depășească temporar valoarea nominală înainte să se topească o siguranță?",
+          "answer": "Da, depinde de curba timp-curent și tipul siguranței."
+        },
+        "caution": "Curentul prospectiv, curentul lăsat să treacă și capacitatea de rupere sunt concepte distincte.",
+        "imported_letter_not_authenticated": "B",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    },
+    {
+      "unit_id": "QABC-0234",
+      "card_id": "EXPL_QABC-0234",
+      "grade_ids": [
+        "G1-ELE-245",
+        "G2-ELEC-381"
+      ],
+      "source_pointer": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 252,
+        "original_question": "Un circuit de curent alternativ, pentru care factorul de putere este egal cu 1, este un circuit:",
+        "original_options": {
+          "A": "pur rezistiv",
+          "B": "pur inductiv",
+          "C": "pur capacitiv"
+        },
+        "original_imported_keys_UNCHANGED": "G1-ELE-245=A | G2-ELEC-381=A"
+      },
+      "evidence": {
+        "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+        "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+        "prior_research_external_url": "https://openstax.org/books/university-physics-volume-2/pages/15-3-rlc-series-circuits-with-ac",
+        "exact_original_clause_or_course_page": null,
+        "source_version_certified": false,
+        "offline_anchor": null,
+        "source_reopened_in_this_content_seed": false
+      },
+      "explanation": {
+        "principle": "Factorul de putere 1 în c.a. sinusoidal indică defazaj nul între tensiunea și curentul de intrare și reactanță netă nulă; circuitul poate conține L și C care se compensează.",
+        "options": {
+          "A": {
+            "state": "EQUIVALENT_INPUT_ONLY",
+            "why": "«Pur rezistiv» descrie bine comportamentul echivalent la intrare, dar nu dovedește existența exclusivă a rezistențelor în structură."
+          },
+          "B": {
+            "state": "PURE_INDUCTIVE_PF_ZERO",
+            "why": "Pentru L ideal, defazajul este +90°, deci factorul de putere este zero în regim sinusoidal."
+          },
+          "C": {
+            "state": "PURE_CAPACITIVE_PF_ZERO",
+            "why": "Pentru C ideal, defazajul este −90°, iar factorul de putere este zero."
+          }
+        },
+        "takeaway": "La rezonanță serie RLC, dacă X_L=X_C, impedanța văzută de sursă este R și PF=1.",
+        "reformulation": {
+          "question": "Poate un circuit cu R, L și C să aibă factor de putere 1?",
+          "answer": "Da, la rezonanță în modelul serie sinusoidal, când reactanțele L și C se compensează."
+        },
+        "caution": "Nu inversa incorect implicația «pur rezistiv ⇒ PF=1» în «PF=1 ⇒ numai rezistențe».",
+        "imported_letter_not_authenticated": "A",
+        "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+        "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+        "authored_reformulation_is_unofficial_practice": true
+      },
+      "QA": {
+        "source_specific": "NOT_SIGNED",
+        "independent_electrical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false,
+        "offline_ready": false
+      }
+    }
+  ]
+}
