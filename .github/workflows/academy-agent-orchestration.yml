@@ -51,22 +51,32 @@ jobs:
             --queue docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json \
             --out _academy_agent_preflight --mode dry-run --start 0
 
-      - name: Targeted independent skeptic retest for QABC-0004 (free API)
+      - name: Second and third four-question Academy cohorts (free APIs only)
         if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[academy]')
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
+          set +e
           python3 scripts/academy_agent_orchestrator.py \
             --queue docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json \
-            --out _academy_agent_results --mode live-free --only-unit QABC-0004 --only-role independent_skeptic --confirm FREE_ONLY
+            --out _academy_agent_results_batch2 --mode live-free --start 4 --confirm FREE_ONLY
+          status_batch2=$?
+          python3 scripts/academy_agent_orchestrator.py \
+            --queue docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json \
+            --out _academy_agent_results_batch3 --mode live-free --start 8 --confirm FREE_ONLY
+          status_batch3=$?
+          if test "$status_batch2" -ne 0 || test "$status_batch3" -ne 0; then
+            echo "One or more Academy cohorts require targeted retest and human QA."
+            exit 1
+          fi
 
       - name: Save unapproved model traces and usage
         if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[academy]')
         uses: actions/upload-artifact@v4
         with:
-          name: academy-skeptic-retest-qabc-0004
-          path: _academy_agent_results/
+          name: academy-roles-qabc-0005-to-0012
+          path: |\n            _academy_agent_results_batch2/\n            _academy_agent_results_batch3/
           if-no-files-found: warn
           retention-days: 7
