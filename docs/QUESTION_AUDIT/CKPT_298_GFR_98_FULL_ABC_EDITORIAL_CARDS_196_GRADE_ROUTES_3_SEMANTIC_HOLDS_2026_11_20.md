@@ -40,3 +40,15 @@ Cross-batch audit fetched all final V176 through V182 files from the actual GitH
 - V182: `docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json` (15 QABC, blob `ec247d596737c3763032694469bf5c220f125346`)
 
 Active branch: `audit/anre-v8-priority-17-20261109`. Review PR #7 Draft; no merge.
+
+## Addendum: V183 source-scope countermodels (same GFR run)
+After CKPT-298's initial commit, V183 was completed: `docs/QUESTION_AUDIT/V183_THREE_SEMANTIC_HOLDS_MANUFACTURER_EVIDENCE_AND_COUNTERMODELS_2026_11_20.json`, blob `be1623c9d0f740c834be4b7332773a353c9ef29e`.
+
+The three separately identified *semantic* holds were challenged against external manufacturer/technology literature, without presuming an official ANRE scored key:
+- **QABC-0091** / G1-ELE-099, G2 counterpart: Schneider Electric manufacturer documents differentiate control on two vs three wires and explicit auto-restart functions. Rotor type alone does not decide restart on restored supply. Original A/B/C are conditional/overbroad under differing real controls.
+- **QABC-0092** / G1-ELE-100: main/transfer double-bus and single-breaker variants have materially different bus-fault, breaker bypass and maintenance behavior. Without the original single-line and coupler arrangement, A/B/C cannot be judged uniquely.
+- **QABC-0096** / G1-ELE-104: technical literature documents transformer oil's insulation/cooling, and oil breaker arc interruption. Restrictive `doar` in A is overbroad, while B applies to oil circuit-breaker context but not generic apparatus.
+
+All **3 remain learning-release blocked**. V183 is a second external-source *counterexample research* layer, **not** independent human QA or an independent specialist/model run. The original six V150 strict edit/key holds remain unchanged. No new approved questions, no key changes, no app change.
+
+Latest continuation from CKPT-298 + V183; prioritize exact source/context for the above three and the remaining original 470 editorial cards, with specific-version primary references and real independent QA.
