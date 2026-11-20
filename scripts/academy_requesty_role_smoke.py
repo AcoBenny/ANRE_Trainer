@@ -37,14 +37,14 @@ def run(argv=None) -> int:
         print("Missing Requesty secret; no calls made", file=sys.stderr)
         return 2
     technical = next(r for r in SPECIALISTS if r[0] == "technical_electrical")
-    if technical[1][-2:] != ("requesty_lightning", "requesty_gemma"):
+    if technical[1][-2:] != ("requesty_gemma", "requesty_lightning"):
         raise ValueError("Requesty not routed as last fallback in Academy specialist")
     system = (PROMPT_POLICY + "\n" + technical[2] +
               "\nReply concisely, with distinct labels A:, B:, C: and state "
               "that no source or official ANRE answer has been authenticated.")
     state = {"attempts": 0, "returned": 0}
     result = route_agent(system, json.dumps(SYNTHETIC_QABC, sort_keys=True),
-                         ("requesty_lightning", "requesty_gemma"), state)
+                         ("requesty_gemma", "requesty_lightning"), state)
     qa = {
         "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "kind": "SYNTHETIC_ROLE_ONLY_NO_INDEPENDENT_QA",
