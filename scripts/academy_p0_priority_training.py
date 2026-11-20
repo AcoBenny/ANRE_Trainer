@@ -124,13 +124,15 @@ def prompt_data(case: dict) -> str:
 
 def check_reviewer_text(text: str, case: dict | None = None) -> dict:
     text = text.strip()
-    labels = {k: bool(re.search(r"(?im)^\s*" + k + r"\s*:", text)) for k in ("A", "B", "C")}
-    rest = {k: bool(re.search(r"(?im)^\s*" + k + r"\s*:", text)) for k in
+    # Accept Markdown-bold headings for recognition, but copied-only lines still fail.
+    label_re = lambda k: r"(?im)^\\s*(?:\\*\\*)?" + re.escape(k) + r"\\s*:\\s*(?:\\*\\*)?"
+    labels = {k: bool(re.search(label_re(k), text)) for k in ("A", "B", "C")}
+    rest = {k: bool(re.search(label_re(k), text)) for k in
             ("PAIRS", "CONDITIONS", "EVIDENCE_MISSING", "VERDICT")}
     copy_only = []
     if case is not None:
         for k in ("A", "B", "C"):
-            matched = re.search(r"(?im)^\s*" + k + r"\s*:\s*(.+)$", text)
+            matched = re.search(label_re(k) + r"\\s*(.+)$", text)
             if matched:
                 one_line = " ".join(matched.group(1).casefold().strip().rstrip(".;").split())
                 original = " ".join(case[f"{k}_original"].casefold().strip().rstrip(".;").split())
