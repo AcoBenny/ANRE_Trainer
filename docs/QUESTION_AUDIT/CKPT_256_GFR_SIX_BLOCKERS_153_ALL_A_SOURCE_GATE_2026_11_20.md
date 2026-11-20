@@ -1,0 +1,52 @@
+# CKPT-256 | ANRE GFR | 6 proven blockers, 153 all-A provenance, Academy adversarial correction | 2026-11-20
+
+## Execution in this checkpoint, exact scope
+- Continue from [CKPT-255](CKPT_255_GFR_XLSX_FIDELITY_NOR_SOURCE_49_RECHECKS_2026_11_19.md), V143 and canonical read-only V73, on `audit/anre-v8-priority-17-20261109` / PR #7 Draft.
+- **No original question/ABC, canonical key, HTML, APK, merge or release changes. No approvals for learning.** Source workbook server SHA still unverified; Library copy read independently in CKPT-255.
+- **New V144**: [six distinct QABC release blockers](V144_SIX_RELEASE_BLOCKERS_SOURCE_VERSUS_CANONICAL_ADJUDICATION_2026_11_20.csv) / **nine grade IDs** separated into (a) two exact same-QABC different-key groups and (b) four question/option mutations against original workbook. No suggestion in V144 is an approved answer.
+- **New V145**: [complete 568 QABC release gate classification](V145_568_QABC_RELEASE_GATE_SEGREGATION_2026_11_20.csv). Quote-aware CSV parser checked 822 unique IDs, 568 units, no canonical edits. Four mutually exclusive classes below.
+- **New V146**: [five separately invoked AI research challenges](V146_FIVE_EXTERNAL_AI_CHALLENGE_CHECKS_TWO_FALSE_INFERENCES_2026_11_20.csv), documenting two *real* source/option inference defects in the external model. These are external assistant challenges, **not independent professional technical QA**, and are not measured Academy baseline-versus-skill trials.
+- **New V148**: [153 non-workbook items](V148_153_NONWORKBOOK_QABC_ALL_A_BIAS_TARIFF_CURRENCY_2026_11_20.csv), including two 2026 fee-year source checks. `153/153` imported answers are **A**. Prior V63/V64 evidence marked **76** of these authored; the other **77 have not been proven to match the original three ANRE example workbooks or specifically author-classified here**. Do not falsely infer all 153 are originals or all 153 author-made.
+- **New active V149**: [full 568-unit working master](V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv). Combines V143's 49 targeted source recheck pointers, V140's 7 workbook differences, V144's 6 blockers, V146's 5 AI challenges and V148's 153 provenance flags. Exact previous columns immutable in V145→V147→V149.
+- **Academy [six negative regression fixtures](ACADEMY_CKPT256_SIX_NEGATIVE_REGRESSION_FIXTURES_2026_11_20.json)** registered for eventual baseline-versus-skilled model evaluation. Tests registered; **NOT executed / NOT promoted to Academy stable**.
+
+## Unambiguous current classification (content approval separate)
+| Exclusive gate | Distinct QABC | Grade IDs | Meaning |
+| --- | ---: | ---: | --- |
+| Original workbook normalized QABC match, no known crossgrade different-key conflict | **408** | **658** | Fidelity against user's 2023–2024 Library workbook copies verified in previous deterministic scan; no inference of correct A/B/C or official key |
+| **Six high-priority strict blocks** | **6** | **9** | 2 crossgrade key conflicts (4 IDs), 4 different source-versus-canonical QABC (5 IDs) |
+| Excel number storage type only | **1** | **2** | 1 vs "1", 0 vs "0" options, semantic unchanged |
+| Not from three 2023–2024 question workbooks | **153** | **153** | Bibliography/regulation-derived or other practice sources, not authenticated original exam sample questions |
+| **TOTAL** | **568** | **822** | **0/822 APPROVED FOR LEARNING** |
+
+This classification represents **provenance+priority**, not assertion that only 6 questions among 568 are technically disputed: earlier LEG/NOR/ELE specific source-vs-key issues remain pending in original V133/V134/V136/V138/V142 and V149 pointers.
+
+## Two crossgrade contradictory imported-key groups
+1. **G1-ELE-018=A / G2-ELEC-170=C** `QABC-0017`: Under balanced line and neglecting earth, with interphase C, `q_a=C(V_a-V_b)+C(V_a-V_c)=3CV_a`. Technical A (`Cs=3C`) supported, including separately invoked AI search `resp_35e27524-7a00-46e4-9a10-9f1979066b96`. **Need exact original Romanian textbook definition of service capacitance Cs** and independent signoff, not silent official-key correction. ANRE example XLSX contains QABC but no separately authenticated scoring key.
+2. **G1-ELE-102=A / G2-ELEC-245=C** `QABC-0094`: NTE 009/10/00 ([official](https://legislatie.just.ro/Public/DetaliiDocument/122751)) specifies different operative reserve conditions, but not a universal preferred configuration for **transverse** coupler in two busbars and one breaker per circuit. Independent research `resp_923a4f75-b6cc-4ecb-9233-7b23eac49a25` corroborates missing objective, distinguishes longitudinal vs transverse schemes. Keep **AMBIGUOUS_BLOCKED**, original A/C unchanged.
+
+## Four material source fidelity issues
+- `QABC-0143` **G1-ELE-152**: original A159 workbook calls quantity “adimensională”, canonical says “caracteristică”; `G2-ELEC-290` elsewhere retains exact workbook stem. General propagation constant gamma has inverse-length SI dimension, so even source wording needs pedagogical qualification, not a blind restore.
+- `QABC-0236` **G1-ELE-247/G2-ELEC-383**: original workbook option B “inducţie electromagnetică”, canonical “inducţie electrostatică”. Extra external AI challenge `resp_908c3ff9-c07b-48ff-9a94-4c4c2489eb51`: a static electric field polarizes an isolated conductor but does not necessarily impart **net charge**. Original B is an inappropriate mechanism; modified B is a concept improvement but still conditionally worded. No official key proof.
+- `QABC-0362` **G1-NOR-048**: original workbook A/B both exclusive “numai”, C socket supply permitted by I7 §5.4.13; canonical A rewrites to entire correct three-method list, canonical C *adds* “numai”, making that C false. **Independent AI source-reviewer assumed C unchanged**, an actual fidelity mistake from `resp_7c8c79a5-7047-4123-b26a-d8372870717e`.
+- `QABC-0386` **G1-NOR-072**: original workbook B explicitly **“fără utilizarea unei scule”**, canonical B **“numai prin intermediul unei scule”**. Consolidated 2023 I7 §5.5.2.3 p72 (user Library) expressly requires securely connecting each conductor with individual disconnectibility **only using a tool**; [official Portal Legislativ](https://legislatie.just.ro/Public/DetaliiDocumentAfis/286763) indexes same exact wording. Independent AI source review wrongly asserted tool text absent in I7 and only in IEC: this is an **observed AI source false negative**. Original C individual disconnectibility true but less complete; official scoring key still not proven. **Never transfer canonical B answer to original B**.
+- `QABC-0145` ELE154/G2ELEC292 type-only numeric cells are not material and should not be blocked as a rewriting problem.
+
+## 153 didactic/provenance cases and 2026 legal currency
+- Direct V149 inspection establishes all **153** keys are A; group provenance: bibliography 2023 (60); bibliography 2023 “pct. 1” (76); Regulation 66/2023 (15); tariff regulation 118/2023 (2). All are Grade II; none are textually sourced in the three verified original question workbooks. Original comparison from CKPT099 showed 62 G2-LEG items do not match G2-LEG 05.2023 sample workbook; do not confuse bibliographic content with published exam question.
+- **Answers must not be offered to learners merely because A appears consistently.** After professional QA and approval only, future practice mode may deterministically shuffle **didactic** A/B/C and remap the correct key; preserve original source order in *exam sample* mode. No HTML/APK code changed here.
+- `G2-LEG-081` imported A=**250 lei** for Grade II A *or* B; `G2-LEG-082` imported A=**500 lei** for Grade II A+B. Both values also appear in **2026 ANRE Ordin 82/2025, Annex table 1** ([official Portal](https://legislatie.just.ro/Public/DetaliiDocument/305643)), whereas source field points to Ordin 118/2023. **Year/source citation needs update** but numerical answer remains supported in 2026 table, pending latest amendment/current applicability check. No canonical change.
+- Official ANRE [electrician exam page](https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/) continues to link original example workbooks and 2023 bibliography for autumn 2026, but **direct XLSX binary download failed** in web/container. Library copies are not server-SHA certified.
+
+## Academy QA evidence and deliberately limited claims
+- Additional research involved separate AI responses, but source claims were checked against exact local I7 and official Portal snippets. Two concrete AI errors found: source false-negative NOR072 and version/option assumption NOR048. This is actionable test data, **not proof the agent system improved**.
+- New negative tests include primary source literal, option version exactness, net charging vs polarization, crossgrade key collision, transverse vs longitudinal coupler, and 153 all-A position bias.
+- Execution status: `SINGLE_ASSISTANT_AUDIT=YES`, `EXTERNAL_AI_CHALLENGES=4_RESPONSES_ACROSS_FIVE_CASES`, `REAL_INDEPENDENT_QUALIFIED_SME_QA=NOT_RUN`, `ACADEMY_BENCHMARK_TRIALS=NOT_RUN`, `LEARNER_APPROVED=0`.
+
+## Next actionable sequence
+1. **Content first:** Resolve the six critical cases by exact 2023/2024 original-source wording, intended pedagogical corrections as separately versioned didactic items and independent QABC/technical review. Keep source version and didactic corrected version separate; do not invent a single original exam key.
+2. For **408 original-copy-exact** question units (658 ID placements), reuse existing CKPT technical/source evidence to run one **distinct, independent expert option and linguistic QA per QABC**, then confirm examination normative edition, not repeat the original source fingerprint scan. Extra LEG/NOR/ELE unresolved technical conflicts in prior batch registries are prioritized even if source QABC matched.
+3. For **153 non-workbook** practice items, confirm law/standard currentness and professional option review and flag pedagogy/provenance; only after approval apply A/B/C shuffling with key remap in *practice* mode to defeat all-A memorization. Distinguish those 76 previously tagged trainer-authored from the 77 still requiring exact author provenance.
+4. Only after independent signoff and content gate, build/retest offline HTML and Android APK; no merge/release without user authorization.
+
+**Immutable and release safety:** 822 canonical IDs and 568 groups, all old question/option/key columns unchanged, PR #7 Draft/unmerged, HTML/APK not edited, `APPROVED_FOR_LEARNING=0/822`.
