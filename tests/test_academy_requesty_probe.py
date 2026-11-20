@@ -11,18 +11,18 @@ from scripts import academy_requesty_probe as probe
 
 class RequestyAdapterTests(unittest.TestCase):
     def test_only_two_documented_provider_specific_free_models(self):
-        self.assertEqual(router.MODELS["requesty_nano"],
-                         "nvidia/nemotron-3-nano-30b-a3b")
+        self.assertEqual(router.MODELS["requesty_lightning"],
+                         "nvidia/nemotron-3.5-lightning-30b-a3b")
         self.assertEqual(router.MODELS["requesty_gemma"],
                          "google/gemma-4-31b-it")
         self.assertTrue(all(router.MODELS[p] in router.REQUESTY_FREE_MODEL_IDS
                             for p in probe.PROBE_ORDER))
         self.assertNotIn("OPENAI_API_KEY", [router.KEYS[p] for p in probe.PROBE_ORDER])
-        self.assertEqual(router.KEYS["requesty_nano"], "REQUESTY_API_KEY")
+        self.assertEqual(router.KEYS["requesty_lightning"], "REQUESTY_API_KEY")
 
     def test_adapter_uses_correct_requesty_url_auth_and_short_prompt(self):
         fake = {
-            "model": "nvidia/nemotron-3-nano-30b-a3b",
+            "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
             "choices": [{"finish_reason": "stop",
                          "message": {"content": "4"}}],
             "usage": {"total_tokens": 31, "cost": 0},
@@ -31,21 +31,21 @@ class RequestyAdapterTests(unittest.TestCase):
                              clear=False):
             with mock.patch.object(router, "post_json", return_value=fake) as fn:
                 result = router.call_provider(
-                    "requesty_nano", "answer simply", "2 + 2?")
+                    "requesty_lightning", "answer simply", "2 + 2?")
         self.assertEqual(result["text"], "4")
         self.assertEqual(fn.call_count, 1)
         url, headers, payload = fn.call_args.args
         self.assertEqual(url, "https://router.requesty.ai/v1/chat/completions")
         self.assertEqual(headers["Authorization"], "Bearer FAKE_API_KEY")
-        self.assertEqual(payload["model"], router.MODELS["requesty_nano"])
+        self.assertEqual(payload["model"], router.MODELS["requesty_lightning"])
         self.assertNotIn("OPENAI_API_KEY", headers)
 
     def test_non_allowlisted_model_stops_before_network(self):
         with mock.patch.dict(router.MODELS,
-                             {"requesty_nano": "openai/gpt-5.6-sol"}):
+                             {"requesty_lightning": "openai/gpt-5.6-sol"}):
             with mock.patch.object(router, "post_json") as network:
                 with self.assertRaises(router.ProviderError) as ctx:
-                    router.call_provider("requesty_nano", "a", "b")
+                    router.call_provider("requesty_lightning", "a", "b")
                 network.assert_not_called()
                 self.assertEqual(ctx.exception.code,
                                  "REQUESTY_MODEL_NOT_ALLOWLISTED_AS_FREE")
@@ -62,7 +62,7 @@ class RequestyAdapterTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as root:
             with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": "FAKE_SECRET"}):
                 with mock.patch.object(probe, "call_provider", return_value={
-                    "model": router.MODELS["requesty_nano"],
+                    "model": router.MODELS["requesty_lightning"],
                     "finish_reason": "stop",
                     "text": "4",
                     "usage": {"cost": 0.0, "total_tokens": 30},
@@ -79,7 +79,7 @@ class RequestyAdapterTests(unittest.TestCase):
     def test_rate_limit_can_use_secondary_free_model_only(self):
         with tempfile.TemporaryDirectory() as root:
             def provider(name, system, message):
-                if name == "requesty_nano":
+                if name == "requesty_lightning":
                     raise router.ProviderError("HTTP_429", True)
                 return {"model": router.MODELS[name], "finish_reason": "stop",
                         "text": "4", "usage": {"cost": 0.0}}
@@ -95,7 +95,7 @@ class RequestyAdapterTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as root:
             with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": "fake"}):
                 with mock.patch.object(probe, "call_provider", return_value={
-                    "model": router.MODELS["requesty_nano"],
+                    "model": router.MODELS["requesty_lightning"],
                     "finish_reason": "stop", "text": "4", "usage": {"cost": 0.01},
                 }) as fn:
                     result = probe.run(["--out", root, "--confirm", "FREE_ONLY"])
