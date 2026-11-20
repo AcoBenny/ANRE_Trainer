@@ -1,0 +1,60 @@
+name: ANRE Academy | Requesty free API isolated probe
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_free_router.py'
+      - 'scripts/academy_requesty_probe.py'
+      - 'tests/test_academy_requesty_probe.py'
+      - '.github/workflows/academy-requesty-free-probe.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_free_router.py'
+      - 'scripts/academy_requesty_probe.py'
+      - 'tests/test_academy_requesty_probe.py'
+      - 'docs/CKPT_267_REQUESTY_FREE_ADAPTER_2026_11_20.md'
+      - '.github/workflows/academy-requesty-free-probe.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: academy-requesty-free-isolated-probe
+  cancel-in-progress: false
+
+jobs:
+  requesty-offline-qa:
+    name: Validate free-model-only Requesty adapter; optionally make one small probe
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout repo without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Offline Requesty free-only regression tests, no API secrets
+        run: python3 -m unittest discover -s tests -p 'test_academy_requesty_probe.py' -v
+
+      - name: Offline baseline router regressions, no secrets
+        run: python3 -m unittest discover -s tests -p 'test_academy_free_router.py' -v
+
+      - name: One arithmetic Requesty free-model probe, max two attempts
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[requesty]')
+        env:
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          python3 scripts/academy_requesty_probe.py \
+            --confirm FREE_ONLY \
+            --out _requesty_probe
+
+      - name: Preserve Requesty model, usage and cost metadata, not secrets or response text
+        if: always() && github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[requesty]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-requesty-free-probe
+          path: _requesty_probe/
+          if-no-files-found: warn
+          retention-days: 3
