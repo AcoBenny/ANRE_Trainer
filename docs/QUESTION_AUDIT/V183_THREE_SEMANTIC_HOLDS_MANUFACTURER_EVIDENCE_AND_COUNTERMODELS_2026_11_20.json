@@ -1,0 +1,237 @@
+{
+  "schema": "v183_three_independent_public_source_countermodel_scope_challenges",
+  "date": "2026-11-20",
+  "parent_v182_blob": "ec247d596737c3763032694469bf5c220f125346",
+  "original_fidelity_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "counts": {
+    "targeted_semantic_hold_units": 3,
+    "grade_routes": 6,
+    "independent_assistant_runs": 0,
+    "official_exam_key_proven": 0,
+    "learner_approved": 0
+  },
+  "scope_note": "Independent published manufacturer/technical literature is used as external counterexample evidence; this is NOT a separately running independent AI specialist and not a qualified ANRE technical reviewer. Original source/version and score keys untouched; all three remain hard hold for learning.",
+  "qa": {
+    "unique_originals": 3,
+    "all_three_exact_source_text_match": true,
+    "all_options_challenged": true,
+    "explicit_counterexamples": true,
+    "no_released_answers": true
+  },
+  "cases": [
+    {
+      "unit_id": "QABC-0091",
+      "grade_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "official_exam_sample_original_as_recorded": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "106",
+        "stem": "În cazul scăderii sau întreruperii tensiunii de alimentare, motoarele asincrone se pot opri, iar la restabilirea tensiunii:",
+        "options": {
+          "A": "ele autopornesc, indiferent de tipul constructiv al rotorului în scurtcircuit",
+          "B": "pentru a reporni necesită dispozitiv de pornire",
+          "C": "ele autopornesc numai dacă au rotor în dublă colivie"
+        },
+        "keys_unchanged": "G1-ELE-099=A | G2-ELEC-242=A"
+      },
+      "imported_key_UNCHANGED": "G1-ELE-099=A | G2-ELEC-242=A",
+      "question_version": "ANRE-hosted source V175 normalized text; not a scored key",
+      "issue": "MOTOR_AUTO_RESTART_DEPENDS_ON_CONTROL_ARCHITECTURE",
+      "object": "Motor asincron după scădere/întrerupere a tensiunii, cu revenire alimentare; nici schema de comandă, nici interblocările de restart nu sunt precizate",
+      "candidate": "NO_UNIVERSAL_VALID_ABC_FROM_STEM_ALONE",
+      "positive_evidence": "Documentația producătorului diferențiază comanda pe 2 fire, care poate menține cererea de RUN și produce restart la revenirea tensiunii, de comanda pe 3 fire, în care impulsul START trebuie repetat. Tipul rotorului nu decide singur.",
+      "per_option": {
+        "A": {
+          "assessment": "NOT_UNIVERSAL",
+          "reason": "Afirmația «autopornesc, indiferent» este contrazisă de comandă în 3 fire care nu reinițiază pornirea doar la revenirea tensiunii."
+        },
+        "B": {
+          "assessment": "CONDITIONAL",
+          "reason": "Dacă «necesită dispozitiv de pornire» se referă la o comandă nouă, poate fi adevărat în schemele cu reset/START manual, dar nu la toate schemele auto-restart."
+        },
+        "C": {
+          "assessment": "FALSE_EXCLUSIVE",
+          "reason": "Rotorul în dublă colivie nu este condiție pentru orice auto-restart; logica de comandă este independentă de construcția rotorului."
+        }
+      },
+      "counterexamples": [
+        {
+          "case": "contactor control 3-wire with loss-of-voltage",
+          "prediction": "nu repornește fără nouă comandă START",
+          "opposes": "A"
+        },
+        {
+          "case": "maintained run 2-wire or drive auto restart permitted and enabled",
+          "prediction": "poate reporni fără un nou impuls manual",
+          "opposes": "B universal"
+        },
+        {
+          "case": "rotor clasic colivie simplă, drive cu auto-restart configurat",
+          "prediction": "autopornirea nu necesită dublă colivie",
+          "opposes": "C"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.se.com/uk/en/faqs/FA147367/",
+          "type": "MANUFACTURER_DIRECT_2_WIRE_3_WIRE_EXPLANATION",
+          "scope": "Motor starter control"
+        },
+        {
+          "url": "https://productinfo.se.com/tesys_t_user_guides/viewer?docidentity=D-SE-0063333&extension=xml&lang=en&manualidentity=D-SE-0063613",
+          "type": "MANUFACTURER_CONTROL_AND_PROTECTION",
+          "scope": "Auto restart behavior by wiring"
+        }
+      ],
+      "necessary_further": "Locate exact intended historical motor control scheme or didactic definition; a scored official original key and competent independent reviewer absent",
+      "review_status": {
+        "primary_exam_key_NOT_AUTHENTICATED": true,
+        "independent_qualified_QA": "NOT_RUN",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0092",
+      "grade_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "official_exam_sample_original_as_recorded": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "107",
+        "stem": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu ambele sisteme de bare sub tensiune este avantajoasă deoarece permite:",
+        "options": {
+          "A": "scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
+          "B": "micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
+          "C": "scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
+        },
+        "keys_unchanged": "G1-ELE-100=A | G2-ELEC-243=A"
+      },
+      "imported_key_UNCHANGED": "G1-ELE-100=A | G2-ELEC-243=A",
+      "question_version": "ANRE-hosted source V175 normalized text; not a scored key",
+      "issue": "DOUBLE_BUSBAR_ADVANTAGE_DEPENDS_ON_ONE_LINE_TOPOLOGY",
+      "object": "Două sisteme de bare colectoare cu un întreruptor pe circuit, ambele energizate, avantaj pretins la ocolire/revizie/defect",
+      "candidate": "NO_EXCLUSIVE_ABC_WITHOUT_EXACT_ONE_LINE_AND_RECONFIGURATION_POLICY",
+      "positive_evidence": "Literatura de configurații diferențiază dublă bară cu selector, dublă bară cu by-pass și schemă cu bară de transfer. Starea energizată a ambelor bare nu dovedește singură existența by-pass-ului sau duratei de transfer.",
+      "per_option": {
+        "A": {
+          "assessment": "UNSUPPORTED_WITHOUT_BYPASS",
+          "reason": "Manevra de ocolire a unui întreruptor cere schemă specifică de ocolire; ea nu rezultă doar din două bare energizate."
+        },
+        "B": {
+          "assessment": "POSSIBLE_WITH_FAULT_PROTECTION_TOPOLOGY",
+          "reason": "Repartizarea consumatorilor și selectivitatea pot limita întreruperile la defect pe o bară, dar nu garantează «micșorarea daunelor» în orice schemă."
+        },
+        "C": {
+          "assessment": "POSSIBLE_WITH_BUS_TRANSFER_ARRANGEMENT",
+          "reason": "Revizia unei bare poate beneficia de transferul circuitelor; durata manevrelor depinde de tipul selectoarelor, cuplei și proceduri."
+        }
+      },
+      "counterexamples": [
+        {
+          "case": "double-busbar one-breaker without transfer/bypass scheme",
+          "prediction": "ocolirea întreruptorului nu este demonstrată",
+          "opposes": "A universal"
+        },
+        {
+          "case": "fault protection treats buses as one zone during certain tie conditions",
+          "prediction": "un defect de bară poate întrerupe alimentarea extins",
+          "opposes": "B universal"
+        },
+        {
+          "case": "double-busbar with appropriate bus-transfer switching and healthy bus",
+          "prediction": "revizia poate fi facilitată",
+          "opposes": "C false universal"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://electrical-engineering-portal.com/circuit-configurations-hv-mv-switchgear-installations",
+          "type": "TECHNICAL_TOPOLOGY_COMPARISON",
+          "scope": "Double buses with bypass/transfer examples"
+        },
+        {
+          "url": "https://electrical-engineering-portal.com/design-issues-hv-busbar-protection-systems",
+          "type": "PROTECTION_CONFIGURATION_COMPARISON",
+          "scope": "Bus protection and bus coupler operating modes"
+        }
+      ],
+      "necessary_further": "Diagram/source section specifying the single-breaker two-bus arrangement, bypass and fault scenario; historical operating criterion and independent engineering QA",
+      "review_status": {
+        "primary_exam_key_NOT_AUTHENTICATED": true,
+        "independent_qualified_QA": "NOT_RUN",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0096",
+      "grade_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "official_exam_sample_original_as_recorded": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "111",
+        "stem": "În echipamentul electric, uleiul electroizolant, din punct de vedere electric:",
+        "options": {
+          "A": "asigură doar izolarea părților sub tensiune între ele si fatã de masã",
+          "B": "stinge arcul electric care apare in întrerupătoare",
+          "C": "asigura ungerea mecanismelor de acţionare"
+        },
+        "keys_unchanged": "G1-ELE-104=A | G2-ELEC-247=A"
+      },
+      "imported_key_UNCHANGED": "G1-ELE-104=A | G2-ELEC-247=A",
+      "question_version": "ANRE-hosted source V175 normalized text; not a scored key",
+      "issue": "INSULATING_OIL_ELECTRICAL_FUNCTION_VARIES_BY_APPARATUS",
+      "object": "Ulei electroizolant în «echipamentul electric» nedefinit: transformator versus întreruptor cu ulei",
+      "candidate": "A_FALSE_EXCLUSIVE_B_TRUE_IN_OIL_BREAKER_ONLY_NO_UNIVERSAL_EXAM_CHOICE",
+      "positive_evidence": "Sursele tehnice descriu trei funcții în echipamente diferite: izolație dielectrică, evacuarea căldurii în transformatoare și suprimarea arcului în aparate cu contacte de întrerupere în ulei. «doar izolare» nu rezistă ca afirmație universală.",
+      "per_option": {
+        "A": {
+          "assessment": "FALSE_ONLY_UNIVERSALLY",
+          "reason": "«Doar» este fals pentru uleiul ce răcește transformatoare sau contribuie la stingerea arcului în întreruptoare."
+        },
+        "B": {
+          "assessment": "TRUE_IF_OIL_CIRCUIT_BREAKER",
+          "reason": "Întreruptorul cu ulei poate folosi uleiul pentru stingerea arcului; propoziția nu definește toate echipamentele cu ulei."
+        },
+        "C": {
+          "assessment": "NOT_GENERIC_ELECTRICAL_PURPOSE",
+          "reason": "Ungerea mecanismelor nu reprezintă rolul electric esențial al uleiului dielectric în cele două obiecte comparate."
+        }
+      },
+      "counterexamples": [
+        {
+          "case": "oil-filled transformer without switching contacts",
+          "prediction": "huile: izolează și răcește, nu stinge arc de comutație normal",
+          "opposes": "B universal"
+        },
+        {
+          "case": "oil circuit breaker",
+          "prediction": "uleiul participă la stingerea arcului; nu doar izolează",
+          "opposes": "A universal"
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://technav.ieee.org/topic/insulating-oil/",
+          "type": "IEEE_TECHNOLOGY_OVERVIEW",
+          "scope": "Insulation, arc suppression and heat transfer"
+        },
+        {
+          "url": "https://www.shell.co.uk/business/industrial-lubricants/lubricants-product-range/shell-diala-transfomer-oils/_jcr_content/root/main/containersection-0/simple/promo_1055924022/links/item0.stream/1757431733698/37a076c5c7f986cabc76c26784371af0c61fe3a4/shell-diala-maintenance-guide-v3.pdf",
+          "type": "MANUFACTURER_PDF_BACKGROUND_NOT_VISUALLY_AUDITED",
+          "scope": "Transformer oil is both dielectric and cooling medium"
+        }
+      ],
+      "necessary_further": "Exact intended apparatus definition and official scored ANRE original key; independent expert review; do not select A simply because stored key says A",
+      "review_status": {
+        "primary_exam_key_NOT_AUTHENTICATED": true,
+        "independent_qualified_QA": "NOT_RUN",
+        "learner_approved": false
+      }
+    }
+  ]
+}
