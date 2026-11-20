@@ -1,0 +1,554 @@
+{
+  "schema": "v184_fifteen_original_anre_source_matched_full_abc_editorial_cards",
+  "date": "2026-11-20",
+  "basis_sha": {
+    "CKPT240": "f39bce708c49a15368c014fab084aab26da989ba",
+    "V149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "V175": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_qabc": 15,
+    "grade_routes": 30,
+    "ABC_explanations": 45,
+    "practice_reformulations": 15,
+    "final_approved": 0
+  },
+  "qa": {
+    "distinct_QABC": 15,
+    "grade_routes": 30,
+    "per_option_explanations": 45,
+    "practice_questions": 15,
+    "math_passes": true,
+    "flags": true
+  },
+  "live_public_references": [
+    {
+      "unit_id": "QABC-0202",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit",
+      "point": "In series RLC, inductive/capacitive reactances balance at resonance"
+    },
+    {
+      "unit_id": "QABC-0212",
+      "url": "https://www.se.com/us/en/faqs/FA125574/",
+      "point": "Current transformer secondary must not be open when primary current flows"
+    },
+    {
+      "unit_id": "QABC-0233",
+      "url": "https://productinfo.se.com/ion8650/viewer?docidentity=SafetyPrecautions-E7EF9BB7&extension=xml&lang=en&manualidentity=InstallationGuidePowerLogicION8650S-FA60A018",
+      "point": "Voltage transformer secondary short circuit is forbidden (contrast to CT)"
+    }
+  ],
+  "cautions": "Text fidelity means same imported question source, not authenticated official ANRE answer keys. Exact primary technical standard and 2026 grade/edition validity still unresolved. Never use source notes as live electrical switching procedures. No signed independent technical/linguistic review and no release.",
+  "cards": [
+    {
+      "unit_id": "QABC-0200",
+      "grade_ids": [
+        "G1-ELE-211",
+        "G2-ELEC-347"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "218",
+        "stem": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 3 ohm, montate în paralel, este:",
+        "A": "3 ohm",
+        "B": "1 ohm",
+        "C": "9 ohm",
+        "imported_keys_UNCHANGED": "G1-ELE-211=B | G2-ELEC-347=B"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "previous_A_B_C_reasoning": "1/Req=1/3+1/3+1/3=1 S, deci Req=1Ω: B. A 3Ω este o singură rezistență, C 9Ω rezultatul seriei."
+      },
+      "editorial_draft": {
+        "A": "3 Ω este valoarea unei singure rezistențe, nu a celor trei legate în paralel.",
+        "B": "Prin 1/Req=1/3+1/3+1/3, rezistența echivalentă este 1 Ω.",
+        "C": "9 Ω reprezintă suma pentru trei rezistențe de 3 Ω montate în serie.",
+        "model_scope_or_trap": "Rezistențele în paralel au tensiune comună și conductanțele se adună.",
+        "reformulated_question": "Trei rezistențe identice de 6 Ω în paralel. Cât este Req?",
+        "reformulated_solution": "2 Ω, deoarece 6/3=2 Ω.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0201",
+      "grade_ids": [
+        "G1-ELE-212",
+        "G2-ELEC-348"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "219",
+        "stem": "Rezistivitatea unui conductor electric depinde de:",
+        "A": "natura materialului",
+        "B": "lungime, direct proporţional",
+        "C": "masa, direct proporţional",
+        "imported_keys_UNCHANGED": "G1-ELE-212=A | G2-ELEC-348=A"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "previous_A_B_C_reasoning": "A materialul determină rezistivitatea ρ, împreună cu temperatura și starea sa. Lungimea B și masa C nu determină direct ρ; lungimea afectează R=ρL/A, nu ρ în material uniform."
+      },
+      "editorial_draft": {
+        "A": "Rezistivitatea ρ este caracteristica materialului și depinde și de temperatură.",
+        "B": "Lungimea modifică rezistența R=ρL/A, nu rezistivitatea materialului în condiții uniforme.",
+        "C": "Masa nu stabilește direct rezistivitatea materialului; poate corela geometria dar nu proprietatea intrinsecă.",
+        "model_scope_or_trap": "Nu confunda rezistența unui fir cu rezistivitatea substanței.",
+        "reformulated_question": "Dublarea lungimii unui conductor omogen la A și temperatură fixe schimbă ρ?",
+        "reformulated_solution": "Nu. ρ rămâne constantă, R se dublează.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0202",
+      "grade_ids": [
+        "G1-ELE-213",
+        "G2-ELEC-349"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "220",
+        "stem": "Rezonanţa se obţine într-un circuit electric de curent alternativ dacă:",
+        "A": "reactanţele inductivă şi capacitivă în valoare absolută sunt egale",
+        "B": "reactanţa inductivă este mai mare decât reactanţa capacitivă",
+        "C": "reactanţa capacitivă este mai mare decât reactanţa inductivă",
+        "imported_keys_UNCHANGED": "G1-ELE-213=A | G2-ELEC-349=A"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit",
+        "previous_A_B_C_reasoning": "La rezonanța RLC ideală în regim sinusoidal XL=XC, A. B circuit inductiv net, C capacitiv net. Condiția se raportează la modelul serie/rezonator corespunzător, nu la orice topologie arbitrară."
+      },
+      "editorial_draft": {
+        "A": "În modelul RLC serie, rezonanța se produce când |X_L|=|X_C| astfel încât reactanțele se compensează.",
+        "B": "Dacă X_L>X_C, circuitul rămâne net inductiv și nu este la rezonanța serie.",
+        "C": "Dacă X_C>X_L, circuitul este net capacitiv și nu este la rezonanța serie.",
+        "model_scope_or_trap": "Regula simplă descrie RLC serie ideal; în alte topologii sau pierderi condiția trebuie adaptată.",
+        "reformulated_question": "La X_L=40 Ω și X_C=40 Ω într-un RLC serie, care este reactanța totală?",
+        "reformulated_solution": "X_L−X_C=0 Ω, deci rezonanță în modelul ideal.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0204",
+      "grade_ids": [
+        "G1-ELE-215",
+        "G2-ELEC-351"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "222",
+        "stem": "Rolul dominant pentru reglarea nivelului de tensiune pe o linie electrica îl are:",
+        "A": "circulaţia de putere activa",
+        "B": "circulaţia de putere reactiva",
+        "C": "nici una din cele doua",
+        "imported_keys_UNCHANGED": "G1-ELE-215=B | G2-ELEC-351=B"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://technav.ieee.org/topic/voltage-control/",
+        "previous_A_B_C_reasoning": "În sistemele cu reactanță dominantă, circulația și compensarea puterii reactive influențează decisiv tensiunea, B. A puterea activă influențează și ea căderile de tensiune în rețele rezistive; C ignoră relația Q-U. Nu este o regulă universală pentru rețele R/X mici."
+      },
+      "editorial_draft": {
+        "A": "Puterea activă influențează căderea de tensiune mai ales în rețele rezistive; nu este în mod tipic parametrul principal în rețele inductive.",
+        "B": "În rețele cu reactanță dominantă, circulația puterii reactive influențează substanțial nivelul tensiunii.",
+        "C": "«Niciuna» ignoră rolul fluxurilor de putere în tensiunea liniei.",
+        "model_scope_or_trap": "B nu este universal pentru orice linie cu R/X mare; trebuie evaluat regimul rețelei.",
+        "reformulated_question": "Într-un feeder de joasă tensiune predominant rezistiv, poate fluxul de putere activă să influențeze căderea de tensiune?",
+        "reformulated_solution": "Da; relația P/Q cu tensiunea depinde de R și X.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0207",
+      "grade_ids": [
+        "G1-ELE-218",
+        "G2-ELEC-354"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "225",
+        "stem": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat, al unei reţele, izolat de pământ se compune din:",
+        "A": "schemele de secvenţă directă (pozitivă) , inversă (negativă) şi homopolară (zero) conectate în serie",
+        "B": "schema de secvenţă directă (pozitivă)",
+        "C": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel",
+        "imported_keys_UNCHANGED": "G1-ELE-218=B | G2-ELEC-354=B"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://www.phasetophase.nl/book/book_2_10.html",
+        "previous_A_B_C_reasoning": "Defectul trifazat simetric în calculul componentelor simetrice folosește doar rețeaua directă pozitivă, B. A ar introduce incorect toate rețelele; C adaugă inutil secvența negativă. Model simetric și condiții de defect explicit cerute."
+      },
+      "editorial_draft": {
+        "A": "Rețelele de secvență directă, inversă și homopolară în serie corespund altor tipuri de defect, nu unui defect trifazat simetric.",
+        "B": "Pentru un scurtcircuit trifazat simetric se folosește rețeaua de secvență directă pozitivă.",
+        "C": "Secvența inversă introdusă în paralel nu este necesară în modelul defectului trifazat echilibrat.",
+        "model_scope_or_trap": "Chiar dacă sistemul are neutru izolat, defectul trifazat simetric rămâne analizabil prin secvența directă.",
+        "reformulated_question": "Ce secvență este excitată de un defect trifazat perfect simetric?",
+        "reformulated_solution": "Doar secvența directă pozitivă în modelul clasic.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0212",
+      "grade_ids": [
+        "G1-ELE-223",
+        "G2-ELEC-359"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "230",
+        "stem": "Transformatoarele de măsurare de curent:",
+        "A": "pot fi racordate în circuitul primar cu înfăşurarea secundara deschisa",
+        "B": "pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
+        "C": "nu pot fi racordate in circuitul primar cu înfăşurarea secundara deschisa",
+        "imported_keys_UNCHANGED": "G1-ELE-223=C | G2-ELEC-359=C"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://www.se.com/us/en/faqs/FA125574/",
+        "previous_A_B_C_reasoning": "C: nu se exploatează CT cu primarul energizat și secundarul deschis, deoarece pot apărea supratensiuni foarte periculoase. A și B permit tocmai condiția interzisă. Regula privește CT convențional cu curent primar, nu senzorii speciali de mică putere."
+      },
+      "editorial_draft": {
+        "A": "Nu se permite conectarea cu primar energizat și secundar convențional deschis, din cauza supratensiunilor periculoase.",
+        "B": "Lăsarea în funcțiune a unui TC cu primar parcurs de curent și secundar deschis poate genera tensiuni periculoase și supraîncălzire.",
+        "C": "Varianta C exprimă interdicția pentru TC convențional cu primarul parcurs de curent.",
+        "model_scope_or_trap": "Este regulă de securitate pentru transformatoare de curent convenționale; nu aplica automat senzorilor speciali.",
+        "reformulated_question": "Care este riscul principal al secundarului deschis la un transformator de curent cu primarul energizat?",
+        "reformulated_solution": "Poate apărea supratensiune periculoasă; operația este interzisă.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0216",
+      "grade_ids": [
+        "G1-ELE-227",
+        "G2-ELEC-363"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "234",
+        "stem": "Separatorul, ca echipament în cadrul unei staţii electrice, are rolul:",
+        "A": "de a proteja circuitul la supracurenţi",
+        "B": "de a separa vizibil un circuit",
+        "C": "de a măsură nivelul de izolaţie",
+        "imported_keys_UNCHANGED": "G1-ELE-227=B | G2-ELEC-363=B"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://www.abb.com/global/en/areas/electrification/medium-voltage/grid-components/switch-disconnectors",
+        "previous_A_B_C_reasoning": "Separatorul are rol de izolare/separare vizibilă sau distanță de izolare verificabilă, B. A protecția la supracurenți aparține protecțiilor, C măsurarea izolației altor aparate. Nu confundați separatorul simplu cu separatorul de sarcină care poate întrerupe curent nominal."
+      },
+      "editorial_draft": {
+        "A": "Supracurentul este gestionat de aparate și protecții dedicate, nu de separatorul obișnuit.",
+        "B": "Separatorul asigură izolarea unui circuit, cu distanță de separare identificabilă/verificabilă.",
+        "C": "Măsurarea rezistenței/gradului de izolație necesită alte instrumente și metode.",
+        "model_scope_or_trap": "Separatorul simplu nu este echivalent cu un separator de sarcină capabil să rupă curentul nominal.",
+        "reformulated_question": "Care este diferența funcțională între separatorul simplu și întreruptor?",
+        "reformulated_solution": "Separatorul izolează, întreruptorul poate comuta curentul pentru care este certificat.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0219",
+      "grade_ids": [
+        "G1-ELE-230",
+        "G2-ELEC-366"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "237",
+        "stem": "Siguranţele fuzibile sunt aparate utilizate pentru protecţie la:",
+        "A": "supratensiuni",
+        "B": "supracurenţi",
+        "C": "defect de izolaţie",
+        "imported_keys_UNCHANGED": "G1-ELE-230=B | G2-ELEC-366=B"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://www.eaton.com/us/en-us/products/electronic-components/topics/fuse-technology.html",
+        "previous_A_B_C_reasoning": "Siguranțele fuzibile sunt dispozitive de protecție la supracurenți, B, incluzând de regulă scurtcircuite și, în limitele caracteristicii, suprasarcini. A supratensiuni nu este funcția lor; C defect de izolație nu constituie o categorie de declanșare în sine decât când provoacă supracurent."
+      },
+      "editorial_draft": {
+        "A": "O siguranță fuzibilă nu este dispozitiv obișnuit de limitare a supratensiunii.",
+        "B": "Siguranța este destinată întreruperii supracurenților peste caracteristica sa, incluzând scurtcircuite și unele suprasarcini.",
+        "C": "Un defect de izolație fără supracurent nu reprezintă obligatoriu condiția de acționare a siguranței.",
+        "model_scope_or_trap": "Evaluează tipul de siguranță și curba timp-curent pentru domeniul protejat.",
+        "reformulated_question": "O siguranță fuzibilă întrerupe la o supratensiune dacă curentul nu crește?",
+        "reformulated_solution": "Nu doar din cauza tensiunii, în absența unui supracurent adecvat.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0224",
+      "grade_ids": [
+        "G1-ELE-235",
+        "G2-ELEC-371"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "242",
+        "stem": "Suma tensiunilor electromotoare ale unui sistem trifazat simetric este:",
+        "A": "egală cu 1",
+        "B": "nulă",
+        "C": "egală cu 1/2",
+        "imported_keys_UNCHANGED": "G1-ELE-235=B | G2-ELEC-371=B"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://www.phasetophase.nl/book/book_2_7.html",
+        "previous_A_B_C_reasoning": "Pentru trei t.e.m. egale și fazate la 120°, suma vectorială (și instantanee pentru sinusoidale echilibrate) este zero, B. A=1 și C=1/2 sunt scalari arbitrar fără unități. Condiție: amplitudini egale și decalaj exact 120°."
+      },
+      "editorial_draft": {
+        "A": "O sumă de FEM exprimată ca «1» ignoră că tensiunile sunt fazori cu unități.",
+        "B": "Trei tensiuni electromotoare egale și decalate cu 120° au suma fazorială nulă.",
+        "C": "«1/2» nu este suma fazorială a trei FEM simetrice.",
+        "model_scope_or_trap": "Necesar sistem trifazat simetric; pentru amplitudini/decalaje inegale suma poate să nu fie zero.",
+        "reformulated_question": "Ce este 1∠0°+1∠120°+1∠240°?",
+        "reformulated_solution": "Zero, ca sumă de trei fazori simetrici.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0226",
+      "grade_ids": [
+        "G1-ELE-237",
+        "G2-ELEC-373"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "244",
+        "stem": "Un conductor în care circulaţia curentului electric nu se supune legii lui Ohm se numeşte:",
+        "A": "liniar",
+        "B": "neomogen",
+        "C": "neliniar",
+        "imported_keys_UNCHANGED": "G1-ELE-237=C | G2-ELEC-373=C"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+        "previous_A_B_C_reasoning": "Un element cu caracteristică U-I neproporțională este neliniar C. A liniar contrazice enunțul, B neomogen se referă la variația structurii/proprietăților, nu indică automat încălcarea relației Ohm. Domeniul tensiunilor și temperatura contează."
+      },
+      "editorial_draft": {
+        "A": "«Liniar» implică proporționalitate U-I într-un domeniu și contrazice caracteristica explicit neohmică.",
+        "B": "Neomogenitatea spațială a materialului nu este echivalentă logic cu caracteristica neliniară U-I.",
+        "C": "Elementul cu relație U-I neproporțională este numit neliniar.",
+        "model_scope_or_trap": "Un material neomogen poate avea totuși elemente cu răspuns ohmic în anumite condiții.",
+        "reformulated_question": "Un diod redresor cu caracteristică curbată U-I este liniar sau neliniar?",
+        "reformulated_solution": "Neliniar.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0227",
+      "grade_ids": [
+        "G1-ELE-238",
+        "G2-ELEC-374"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "245",
+        "stem": "Teoremele (formulele) Biot Savart Laplace se referă la:",
+        "A": "intensitatea câmpului magnetic produs de un curent care circulă printr-un conductor",
+        "B": "forţa electromagnetică",
+        "C": "forţa exercitată între două conductoare paralele parcurse de curenţi",
+        "imported_keys_UNCHANGED": "G1-ELE-238=A | G2-ELEC-374=A"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/12-1-the-biot-savart-law",
+        "previous_A_B_C_reasoning": "Biot-Savart-Laplace descrie contribuția elementelor de curent la inducția/câmpul magnetic, A. B este forță electromagnetică, C forță între conductoare, nu obiectul direct al formulei Biot-Savart."
+      },
+      "editorial_draft": {
+        "A": "Biot–Savart–Laplace determină câmpul magnetic produs de elementele de curent.",
+        "B": "Formula forței pe conductor este distinctă de legea Biot–Savart, chiar dacă folosește câmpul B.",
+        "C": "Interacțiunea a două fire se poate deriva folosind B, dar nu este enunțul direct al formulei Biot–Savart.",
+        "model_scope_or_trap": "Nu confunda calculul câmpului cu calculul forței asupra unui conductor.",
+        "reformulated_question": "Ce mărime determină legea Biot–Savart din distribuția curentului?",
+        "reformulated_solution": "Inducția magnetică B produsă de curent.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0228",
+      "grade_ids": [
+        "G1-ELE-239",
+        "G2-ELEC-375"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "246",
+        "stem": "Tesla este unitatea de măsură a:",
+        "A": "inducţiei magnetice",
+        "B": "fluxului magnetic",
+        "C": "intensităţii câmpului magnetic",
+        "imported_keys_UNCHANGED": "G1-ELE-239=A | G2-ELEC-375=A"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://goldbook.iupac.org/terms/view/T06283",
+        "previous_A_B_C_reasoning": "Tesla (T) măsoară inducția magnetică B, A. B fluxul magnetic se măsoară în weber, C intensitatea H în A/m. Relația 1 T=1 Wb/m²."
+      },
+      "editorial_draft": {
+        "A": "Tesla este unitatea SI a inducției magnetice B, adică densitatea fluxului magnetic.",
+        "B": "Fluxul magnetic Φ are unitatea weber (Wb), nu tesla.",
+        "C": "Intensitatea câmpului magnetic H are unitatea A/m, nu tesla.",
+        "model_scope_or_trap": "Relația dimensională este 1 T=1 Wb/m².",
+        "reformulated_question": "Un flux de 2 Wb uniform pe 1 m² corespunde ce inducție medie?",
+        "reformulated_solution": "B=2 T.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0231",
+      "grade_ids": [
+        "G1-ELE-242",
+        "G2-ELEC-378"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "249",
+        "stem": "Un motor electric trifazat legat în stea este în funcţiune si alimentat la 0,4 kV. Tensiunea între neutrul stelei si una dintre faze este:",
+        "A": "0,4 kV",
+        "B": "0 V",
+        "C": "230 V",
+        "imported_keys_UNCHANGED": "G1-ELE-242=C | G2-ELEC-378=C"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://www.electrical-installation.org/enwiki/Definition_of_voltage_ranges",
+        "previous_A_B_C_reasoning": "La stea echilibrată, dacă 0,4kV este tensiunea între faze, Uf=400/√3≈230,9V, deci C 230V. A=400V este tensiune de linie, B=0V greșit. Se presupune un sistem trifazat nominal echilibrat și neutru de referință."
+      },
+      "editorial_draft": {
+        "A": "0,4 kV este tensiunea între faze a rețelei nominale, nu tensiunea unei înfășurări în stea.",
+        "B": "Neutrul stelei nu are 0 V față de fază în funcționare normală la tensiune nominală.",
+        "C": "În stea simetrică, U_fază=400/√3≈230,9 V.",
+        "model_scope_or_trap": "Se presupune conexiune stea echilibrată, 0,4 kV tensiune de linie și punct neutru definit.",
+        "reformulated_question": "Dacă tensiunea de linie este 690 V, cât este tensiunea fază-neutru în stea echilibrată?",
+        "reformulated_solution": "690/√3≈398,4 V.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0232",
+      "grade_ids": [
+        "G1-ELE-243",
+        "G2-ELEC-379"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "250",
+        "stem": "Un separator pe un circuit de înalta tensiune poate fi manevrat:",
+        "A": "sub tensiune si cu curent",
+        "B": "cu curent fara tensiune",
+        "C": "fãrã curent, fãrã tensiune sau sub tensiune, fãrã curent",
+        "imported_keys_UNCHANGED": "G1-ELE-243=C | G2-ELEC-379=C"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://www.abb.com/global/en/areas/electrification/medium-voltage/grid-components/switch-disconnectors",
+        "previous_A_B_C_reasoning": "Pentru separator simplu C: manevra se face fără curent de sarcină, posibil sub tensiune dacă lipsește curentul. A sub tensiune și cu curent de sarcină nu este capacitatea tipică, B cu curent și fără tensiune este inconsecvent pentru sarcina normală. Manevrele reale se fac numai conform procedurilor și clasificării aparatului."
+      },
+      "editorial_draft": {
+        "A": "Separatorul simplu nu este proiectat să întrerupă curentul de sarcină.",
+        "B": "«Cu curent fără tensiune» este incompatibil cu situația de sarcină obișnuită pentru separator; pot exista tranzitorii, dar nu acesta este regimul cerut.",
+        "C": "Varianta C specifică lipsa curentului și admite instalație fără tensiune sau separare fără sarcină sub tensiune.",
+        "model_scope_or_trap": "Dispozitivele combinate sau cu performanțe specifice pot avea alte capacități; manevre reale numai autorizate.",
+        "reformulated_question": "Când poate fi manevrat un separator simplu într-o stație, din perspectiva curentului de sarcină?",
+        "reformulated_solution": "Numai în condițiile nominale fără curent de sarcină, conform clasificării și procedurii.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0233",
+      "grade_ids": [
+        "G1-ELE-244",
+        "G2-ELEC-380"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "251",
+        "stem": "Transformatoarele de măsurare de tensiune:",
+        "A": "nu pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
+        "B": "nu pot fi lăsate în exploatare cu înfăşurarea secundara în scurtcircuit",
+        "C": "pot fi puse sub tensiune cu înfăşurarea secundara in scurtcircuit",
+        "imported_keys_UNCHANGED": "G1-ELE-244=B | G2-ELEC-380=B"
+      },
+      "historic": {
+        "filename": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+        "blob_sha": "f39bce708c49a15368c014fab084aab26da989ba",
+        "reported_source": "https://control.com/textbook/electric-power-measurement-and-control/electrical-sensors/",
+        "previous_A_B_C_reasoning": "Secundarul transformatorului de tensiune nu trebuie scurtcircuitat: B. A spune că nu poate rămâne deschis, dar mersul în gol poate fi admis; C permite scurtcircuit periculos. Nu confundați VT/PT cu CT, la care pericolul caracteristic apare la secundar deschis."
+      },
+      "editorial_draft": {
+        "A": "Pentru TT de tensiune, secundarul deschis poate fi un regim admis, deci A nu este regulă.",
+        "B": "Scurtcircuitarea secundarului unui transformator de tensiune poate produce supracurent și defect; nu este permisă.",
+        "C": "Punerea sub tensiune cu secundar în scurtcircuit este periculoasă, deci C este falsă.",
+        "model_scope_or_trap": "Nu inversa regulile TC/TT: TC secundar deschis periculos; TT secundar scurtcircuitat periculos.",
+        "reformulated_question": "Care secundar de transformator de măsură este periculos dacă îl scurtcircuitezi, în schema clasică?",
+        "reformulated_solution": "Cel al transformatorului de tensiune (TT/VT), spre deosebire de TC.",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}
