@@ -34,3 +34,9 @@ See [CKPT-265](CKPT_265_ACADEMY_ROLE_SEMANTIC_NEGATIVES_2026_11_20.md) for QABC-
 - **0/822** independently approved for student learning; source/edition exactness and qualified professional review remain pending.
 - No canonical question, original workbook, answer keys, HTML, APK, branch main, merge or release modifications. Audit PR #7 still Draft; router PR #13 still Draft.
 - Next productive work is targeted evidence-backed correction/independent QA of the six high-risk units (0002, 0004, 0005, 0006, 0007, 0011), then reuse these regression patterns in later source-verbatim batches. No automatic knowledge-bank promotion.
+
+## Post-execution deterministic regression upgrade
+- Additional conservative semantic QA flags now recognize suspected invalid L=N counterexamples despite original L≠N (QABC-0005), AAR/RAR acronym confusion (QABC-0006), and unsupported zero-slip/short-circuit claims (QABC-0007), alongside earlier PSI and 250 μF cases. These are human-review leads, **not automatic semantic truth verdicts**.
+- Content-warning flags now cause live workflow exit nonzero, including targeted role retests; a role retry cannot hide a content warning by reporting a valid format.
+- **14/14 focused Python regression tests PASS** in [GitHub Actions run 44739401082](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44739401082); all 12-source IDs checksum and dry-run preflight PASS. This CI run did not make new API calls.
+- Historical live traces above precede this extra QA rule; they are labeled by this checkpoint, not falsely claimed to have been re-evaluated by the newer code during their original runs. No silent retrospective upgrade.
