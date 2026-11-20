@@ -114,6 +114,17 @@ class PriorityAcademyTests(unittest.TestCase):
         self.assertFalse(p0.check_reviewer_text("A: Yes\nB: No\nC: Maybe")["all_required_fields"])
         self.assertTrue(p0.check_reviewer_text(FORMATTED)["all_required_fields"])
 
+    def test_a_b_c_copied_only_is_not_a_review(self):
+        with tempfile.TemporaryDirectory() as td:
+            case = p0.load_priority_queue(make_queue(pathlib.Path(td)))[0]
+            repeated = ("A: Opțiune A\nB: Opțiune B\nC: Opțiune C\n"
+                        "PAIRS: Could be different.\nCONDITIONS: Unknown.\n"
+                        "EVIDENCE_MISSING: Source.\nVERDICT: NOT_APPROVED.")
+            result = p0.check_reviewer_text(repeated, case)
+            self.assertEqual(result["option_copied_without_assessment"], ["A", "B", "C"])
+            self.assertFalse(result["all_required_fields"])
+            self.assertTrue(p0.check_reviewer_text(FORMATTED, case)["all_required_fields"])
+
     def test_dry_run_makes_no_api_calls_and_blocks_figure(self):
         with tempfile.TemporaryDirectory() as td:
             folder = pathlib.Path(td)
