@@ -34,3 +34,8 @@ Official docs (consulted 2026-11-20):
 - Added synthetic-A/B/C specialist probe, without any actual ANRE questions, which exercises the Academy specialist system prompt, model router and source-protection checks. In this document's `[requesty-role]` commit, the CI workflow runs **one additional live model call** for this test, with a three-day metadata artifact.
 - Offline Requesty adapter/Academy tests PASSED in [run 44744453397](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44744453397), with no live calls made by that particular run.
 - No merge/release, no original bareme, HTML, APK, source edit, or approval for learner use.
+
+## Synthetic role smoke: first observed issue and fix
+- First role-level attempt [44744533441](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44744533441) had one Requesty model call, but returned `EMPTY_MODEL_OUTPUT`. The free Nemotron reasoning model can consume the completion budget without a visible answer. **This was a model response/format failure**, not missing secret or an ANRE source verdict.
+- Raised the fixed free-model max output budget from 1,400 to 2,600 tokens, with exact model allowlist and reported-zero-cost gate unchanged. Added a second explicitly free fallback `google/gemma-4-31b-it` if Lightning fails or returns empty.
+- Revised Python tests pass (see [44744790620](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44744790620)). This `[requesty-role]` commit performs one further synthetic A/B/C role probe, maximum **two free Requesty attempts**, never ANRE originals. Full model response is not uploaded; only metadata/format markers.
