@@ -150,16 +150,19 @@ def run(argv=None) -> int:
     parser.add_argument("--mode", choices=("dry-run", "live-free"), default="dry-run")
     parser.add_argument("--start", type=int, choices=(0, 4, 8), default=0)
     parser.add_argument("--only-unit", choices=EXPECTED_IDS, default=None)
+    parser.add_argument("--only-role", choices=[r[0] for r in SPECIALISTS], default=None)
     parser.add_argument("--confirm", default="")
     args = parser.parse_args(argv)
     all_cases = load_queue(args.queue)
     cases = ([next(c for c in all_cases if c["unit_id"] == args.only_unit)]
              if args.only_unit else all_cases[args.start:args.start + 4])
+    if args.only_role and not args.only_unit:
+        parser.error("--only-role requires --only-unit")
     if args.mode == "live-free" and args.confirm != "FREE_ONLY":
         parser.error("LIVE API requires explicit FREE_ONLY")
     report = {
         "policy": ACADEMY_POLICY, "mode": args.mode, "batch_start": args.start,
-        "only_unit": args.only_unit,
+        "only_unit": args.only_unit, "only_role": args.only_role,
         "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "queue_sha256": hashlib.sha256(args.queue.read_bytes()).hexdigest(),
         "attempted": 0, "responses": 0, "paid_openai_calls": 0,
@@ -169,6 +172,10 @@ def run(argv=None) -> int:
     state = {"attempts": 0, "returned": 0}
     for case in cases:
         roles = choose_roles(case)
+        if args.only_role:
+            roles = tuple(r for r in roles if r[0] == args.only_role)
+            if not roles:
+                parser.error("Requested role is not selected for that exact case")
         record = {
             "unit_id": case["unit_id"], "grade_ids": case["grade_ids"],
             "compiled_prompt_sha256": hashlib.sha256(compiled_prompt(case).encode()).hexdigest(),
@@ -202,6 +209,9 @@ def run(argv=None) -> int:
                         retry = route_agent(stricter, message, providers, state)
                         record["role_outputs"][name] = retry
             qa = quality_gate(case, record["role_outputs"], record["agent_selection"])
+            if args.only_role and qa["status"] != "INCOMPLETE_MODEL_TRACES":
+                qa["status"] = "ROLE_RETEST_PRESENT_NOT_RECONCILED"
+                qa["requires_original_role_artifact_reconciliation"] = True
             record["qa_evidence_gate"] = qa
             report["proposed_lessons"].append({
                 "unit_id": case["unit_id"],
