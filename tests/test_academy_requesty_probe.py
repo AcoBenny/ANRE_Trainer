@@ -7,6 +7,7 @@ from unittest import mock
 
 from scripts import academy_free_router as router
 from scripts import academy_requesty_probe as probe
+from scripts import academy_requesty_role_smoke as role
 
 
 class RequestyAdapterTests(unittest.TestCase):
@@ -160,6 +161,48 @@ class RequestyAdapterTests(unittest.TestCase):
                     result = probe.run(["--out", root, "--confirm", "FREE_ONLY"])
             self.assertEqual(result, 1)
             self.assertEqual(fn.call_count, 1)
+
+    def test_synthetic_academy_role_invokes_only_requesty_and_never_approves(self):
+        with tempfile.TemporaryDirectory() as root:
+            with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": "fake"}):
+                with mock.patch.object(role, "route_agent", return_value={
+                    "ok": True, "model": router.MODELS["requesty_lightning"],
+                    "provider": "requesty_lightning",
+                    "usage": {"cost": 0, "total_tokens": 75},
+                    "finish_reason": "stop",
+                    "text": "A: Too low. B: 2 + 3 = 5. C: Too high. No ANRE source verified.",
+                }) as fn:
+                    result = role.run(["--confirm", "FREE_ONLY", "--out", root])
+            self.assertEqual(result, 0)
+            self.assertEqual(fn.call_count, 1)
+            self.assertEqual(fn.call_args.args[2], ("requesty_lightning",))
+            payload = json.loads((pathlib.Path(root)/"report.json").read_text())
+            self.assertFalse(payload["learner_approved"])
+            self.assertFalse(payload["source_authenticated"])
+            self.assertEqual(payload["status"],
+                             "FORMAT_VALID_BUT_SOURCE_AND_INDEPENDENT_QA_BLOCKED")
+            self.assertNotIn("text", payload)
+
+    def test_synthetic_academy_role_requires_all_A_B_C(self):
+        with tempfile.TemporaryDirectory() as root:
+            with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": "fake"}):
+                with mock.patch.object(role, "route_agent", return_value={
+                    "ok": True, "model": router.MODELS["requesty_lightning"],
+                    "provider": "requesty_lightning",
+                    "usage": {"cost": 0},
+                    "finish_reason": "stop", "text": "I think B is 5.",
+                }):
+                    result = role.run(["--confirm", "FREE_ONLY", "--out", root])
+            self.assertEqual(result, 1)
+            payload = json.loads((pathlib.Path(root)/"report.json").read_text())
+            self.assertEqual(payload["status"], "ABC_FORMAT_INCOMPLETE")
+            self.assertFalse(payload["learner_approved"])
+
+    def test_synthetic_role_without_key_makes_zero_calls(self):
+        with mock.patch.dict(os.environ, {"REQUESTY_API_KEY": ""}):
+            with mock.patch.object(role, "route_agent") as fn:
+                self.assertEqual(role.run(["--confirm", "FREE_ONLY"]), 2)
+                fn.assert_not_called()
 
     def test_probe_requires_explicit_confirmation(self):
         with tempfile.TemporaryDirectory() as root:
