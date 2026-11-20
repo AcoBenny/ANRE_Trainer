@@ -1,0 +1,621 @@
+{
+  "schema": "v179_fourth_source_matched_ABC_card_and_reformulation_batch",
+  "date": "2026-11-20",
+  "basis": {
+    "CKPT231": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+    "v149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "v175": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_unique_qabc": 15,
+    "grade_instances": 30,
+    "individual_ABC_reasonings": 45,
+    "reformulations": 15,
+    "final_approvals": 0
+  },
+  "qa": {
+    "cards": 15,
+    "grade_routes": 30,
+    "individual_ABC_explanations": 45,
+    "all_have_reformulation": true,
+    "math": {
+      "inductor_2H_3A": true,
+      "conductor_2C_3V": true,
+      "force_0_5T_3A_2m": true,
+      "freq_1500_2p": true,
+      "Ohm_12V_4ohm": true,
+      "RL_alpha": true,
+      "induced_emf": true
+    }
+  },
+  "live_textbook_sources_reopened": [
+    {
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/14-3-energy-in-a-magnetic-field",
+      "QABC": "QABC-0055",
+      "purpose": "Energy W=½Li²"
+    },
+    {
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf",
+      "QABC": "QABC-0067",
+      "purpose": "Motional electromagnetic induction"
+    },
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "QABC": null,
+      "purpose": "SI unit henry future group, not in this 15"
+    }
+  ],
+  "disclaimer": "The 15 QABC original full texts and keys correspond to ANRE-hosted spreadsheet as transcribed in V175, but actual original ANRE exam scoring has no official answer key here. Technical materials are pedagogical evidence, not independent specialist signoff. Do not modify originals or release learner app.",
+  "cards": [
+    {
+      "unit_id": "QABC-0055",
+      "grade_ids": [
+        "G1-ELE-063",
+        "G2-ELEC-208"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "70",
+        "stem": "Energia magnetostatică produsă de curentul i care parcurge un circuit care conţine o inductanţă L este egală cu:",
+        "options": {
+          "A": "1/2 L i",
+          "B": "1/2 Li2",
+          "C": "Li"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-063=B | G2-ELEC-208=B"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_MAGNETIC_ENERGY_QUADRATIC",
+        "prior_assessment": "Inductor magnetic field stored energy W_L=∫0^i L i' di'=½ L i², B, assuming constant L linear magnetic core. A ½ L i and C Li are not Joules dimensionally (H·A versus J).",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/14-3-energy-in-a-magnetic-field"
+      },
+      "explanation_card": {
+        "A": "½Li nu este energie: lipsește al doilea factor i și unitățile nu corespund joule-ului.",
+        "B": "Energia unui inductor liniar cu L constant este W=½Li².",
+        "C": "Li nu exprimă energia stocată, ci legătura de flux în modelul ideal.",
+        "trap_or_exception": "În bobină saturată relația W=½Li² nu mai este general valabilă pentru L variabil.",
+        "reformulation_question": "La L=2 H și i=3 A, ce energie este stocată într-o bobină liniară?",
+        "reformulation_solution": "W=½·2·3²=9 J.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0056",
+      "grade_ids": [
+        "G1-ELE-064",
+        "G2-ELEC-209"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "71",
+        "stem": "Energia electrostatică a unui conductor izolat în spaţiu, încărcat cu o sarcină q şi aflat la un potenţial V este egală cu:",
+        "options": {
+          "A": "1/2 q V",
+          "B": "q V",
+          "C": "2 q V"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-064=A | G2-ELEC-209=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_ELECTROSTATIC_ENERGY",
+        "prior_assessment": "Charged isolated conductor effective capacitance C=q/V has electrostatic field stored energy W=∫0^q (q'/C)dq'=½qV, A. B qV overstates double and C 2qV fourfold. Requires linear relation q=CV, constant geometry and zero infinity reference.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor"
+      },
+      "explanation_card": {
+        "A": "Pentru conductor cu capacitate C=q/V, energia electrostatică este ½qV.",
+        "B": "qV este dublul energiei stocate pentru același q și V.",
+        "C": "2qV este de patru ori ½qV.",
+        "trap_or_exception": "Se presupune capacitate constantă, echilibru electrostatic și potențial de referință definit.",
+        "reformulation_question": "Un conductor cu q=2 C și V=3 V are ce energie electrostatică în model liniar?",
+        "reformulation_solution": "W=½·2·3=3 J.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0057",
+      "grade_ids": [
+        "G1-ELE-065",
+        "G2-ELEC-210"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "72",
+        "stem": "În cazul producerii unui scurtcircuit într-o instalaţie, are loc următorul fenomen:",
+        "options": {
+          "A": "creste tensiunea de alimentare a instalaţiei",
+          "B": "creste impedanţa echivalenta a instalaţiei",
+          "C": "creste curentul de alimentare a instalaţiei"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-065=C | G2-ELEC-210=C"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "CONDITIONAL_SHORT_CIRCUIT_PRETRIP",
+        "prior_assessment": "A low-impedance fault usually raises supply/fault current C up to source impedance and protection, whereas equivalent fault-path impedance decreases not increases (B), upstream voltage at fault may sag rather than rise (A). After fast protection trip supply current can fall to zero: time interval/relay state not specified, so standard moment-of-fault intended only.",
+        "prior_source_link": "https://www.mdpi.com/1996-1073/16/2/811"
+      },
+      "explanation_card": {
+        "A": "Într-un scurtcircuit uzual tensiunea la locul defectului poate scădea, nu crește.",
+        "B": "Un traseu cu defect de impedanță mică nu crește de regulă impedanța echivalentă către sursă.",
+        "C": "Curentul de defect crește brusc înainte de intervenția protecțiilor, limitat de sursa reală și impedanța buclei.",
+        "trap_or_exception": "Se referă la momentul inițial al defectului; după declanșare curentul poate fi zero.",
+        "reformulation_question": "Ce se întâmplă cu curentul imediat după un scurtcircuit de impedanță mică, înainte să deschidă protecția?",
+        "reformulation_solution": "Tinde să crească puternic, în limitele impedanței sursei.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0058",
+      "grade_ids": [
+        "G1-ELE-066",
+        "G2-ELEC-211"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "73",
+        "stem": "Enunţul \"sarcinile electrice nu pot fi create și nici distruse, ci doar mutate\" reprezintă o consecință pentru:",
+        "options": {
+          "A": "legea conservării sarcinii electrice",
+          "B": "legea lui Coulomb",
+          "C": "legea lui Laplace"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-066=A | G2-ELEC-211=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_CHARGE_CONSERVATION",
+        "prior_assessment": "Statement 'charges cannot be created/destroyed, only moved' is conservation of electric charge A. B Coulomb law governs forces between charges; C Laplace's law unrelated to global charge conservation. Modern particle processes can create paired +q and -q but net charge conserved; wording about individual charges is didactic shorthand.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
+      },
+      "explanation_card": {
+        "A": "Enunțul exprimă conservarea sarcinii electrice totale.",
+        "B": "Legea Coulomb descrie forța electrostatică, nu conservarea sarcinii.",
+        "C": "Legea Laplace descrie o forță magnetică, nu conservarea sarcinii.",
+        "trap_or_exception": "Se pot crea perechi de sarcini opuse în procese fizice, dar sarcina netă totală se conservă.",
+        "reformulation_question": "La un sistem izolat apar +2 C și −2 C prin separare. Cum se modifică sarcina totală?",
+        "reformulation_solution": "Rămâne 0 C.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0059",
+      "grade_ids": [
+        "G1-ELE-067",
+        "G2-ELEC-212"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "74",
+        "stem": "Enunţul \"suma algebrică a tensiunilor electromotoare dintr-o buclă a unei reţele electrice este egală cu suma algebrică a căderilor de tensiune din buclă\" reprezintă:",
+        "options": {
+          "A": "Prima lege a lui Kirchhoff",
+          "B": "a doua lege a lui Kirchhoff",
+          "C": "Legea Joule -Lenz"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-067=B | G2-ELEC-212=B"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_KIRCHHOFF_VOLTAGE",
+        "prior_assessment": "Algebraic sum of EMFs and voltage drops in a circuit loop is Kirchhoff second law, B. A first law is current conservation at node; C Joule-Lenz concerns heat I²Rt. Normal lumped-quasi-static circuit assumption for KVL, excludes strong time-variable external magnetic flux unless induced emf included.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules"
+      },
+      "explanation_card": {
+        "A": "Prima lege Kirchhoff se referă la suma curenților într-un nod.",
+        "B": "A doua lege Kirchhoff exprimă relația algebrică între electromotoare și căderile de tensiune într-o buclă.",
+        "C": "Joule-Lenz descrie transformarea în căldură prin curent.",
+        "trap_or_exception": "Model de circuit concentrat; un flux magnetic extern variabil poate necesita FEM indusă explicit.",
+        "reformulation_question": "Ce lege aplici când însumezi tensiunile pe conturul unei bucle?",
+        "reformulation_solution": "Legea a doua a lui Kirchhoff (regula tensiunilor).",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0060",
+      "grade_ids": [
+        "G1-ELE-068",
+        "G2-ELEC-213"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "75",
+        "stem": "Expresia B x i x l , unde i este intensitatea curentului care străbate un conductor de lungime l, situat perpendicular pe câmpul de inducţie magnetică de mărime B, reprezintă:",
+        "options": {
+          "A": "o forţă",
+          "B": "o tensiune",
+          "C": "o rezistenţă"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-068=A | G2-ELEC-213=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_LORENTZ_FORCE_WIRE",
+        "prior_assessment": "A force magnitude F=B·i·l·sinθ, θ=90° by stem, so F=B i l (newtons), A. B voltage and C resistance have incompatible dimensions. Homogeneous magnetic field perpendicular to straight wire.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor"
+      },
+      "explanation_card": {
+        "A": "Pentru conductor perpendicular pe B, modulul forței magnetice este F=B·i·l, în N.",
+        "B": "Formula nu are unitatea unui volt.",
+        "C": "Formula nu are unitatea unui ohm.",
+        "trap_or_exception": "Valabil pentru fir rectiliniu și câmp aproximativ uniform, perpendicularitate indicată în enunț.",
+        "reformulation_question": "În câmp B=0,5 T, un conductor de 2 m cu curent 3 A perpendicular pe B simte ce forță?",
+        "reformulation_solution": "F=0,5·2·3=3 N.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0061",
+      "grade_ids": [
+        "G1-ELE-069",
+        "G2-ELEC-214"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "76",
+        "stem": "Expresia matematica a legii lui Ohm pentru o porţiune de circuit este:",
+        "options": {
+          "A": "I = U / R",
+          "B": "I = UxR",
+          "C": "I = U - R"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-069=A | G2-ELEC-214=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "CONDITIONAL_OHMIC_CONDUCTOR",
+        "prior_assessment": "For a linear Ohmic resistance R, I=U/R, A. B U·R wrong units; C U−R subtracts incompatible physical units. The stem 'porțiune de circuit' might include nonlinear element, but resistance as Ohmic parameter presumes fixed R in stated range; don't claim all semiconductor devices are Ohmic.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+      },
+      "explanation_card": {
+        "A": "Legea Ohm pentru rezistență R nenulă este I=U/R.",
+        "B": "U×R nu are unitatea amperului.",
+        "C": "U−R nu este o scădere între mărimi compatibile dimensional.",
+        "trap_or_exception": "Elementele neliniare pot să nu aibă R constantă; relația este pentru regim ohmic definit.",
+        "reformulation_question": "La 12 V și 4 Ω, care este intensitatea curentului?",
+        "reformulation_solution": "3 A.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0062",
+      "grade_ids": [
+        "G1-ELE-070",
+        "G2-ELEC-215"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "77",
+        "stem": "Extinderea domeniului de măsurare la ampermetre se realizează cu:",
+        "options": {
+          "A": "rezistente adiţionale",
+          "B": "shunturi",
+          "C": "bobine înseriate"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-070=B | G2-ELEC-215=B"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_AMMETER_ANALOG_MULTIRANGE",
+        "prior_assessment": "Shunt low resistor in parallel with ammeter movement bypasses additional current and extends measurement range, B. A series multiplier is voltmeter technique; C series inductors not generic extension for DC ammeter. Applies to conventional moving-coil/analogue instruments; modern clamp/current transformers are another technique.",
+        "prior_source_link": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters"
+      },
+      "explanation_card": {
+        "A": "Rezistența adițională serie extinde domeniul unui voltmetru analogic, nu este răspunsul uzual pentru ampermetru.",
+        "B": "Șuntul de rezistență mică, montat în paralel cu mecanismul, deviază o parte din curent.",
+        "C": "O bobină în serie nu constituie procedeul standard de extindere pentru ampermetru DC.",
+        "trap_or_exception": "Tehnica descrie ampermetru convențional cu mecanism sensibil; instrumentele moderne folosesc și traductoare.",
+        "reformulation_question": "Pentru a măsura curenți mai mari fără a trece tot curentul prin galvanometru, cum conectezi un șunt?",
+        "reformulation_solution": "În paralel cu galvanometrul.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0063",
+      "grade_ids": [
+        "G1-ELE-071",
+        "G2-ELEC-216"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "78",
+        "stem": "Extinderea domeniului de măsurare la voltmetre se realizează cu:",
+        "options": {
+          "A": "shunturi",
+          "B": "rezistente adiţionale",
+          "C": "condensatoare montate în paralel"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-071=B | G2-ELEC-216=B"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_VOLTMETER_MULTIPLIER",
+        "prior_assessment": "Series additional high resistance limits meter movement current at higher voltages, thus extends range B. A parallel shunts apply ammeters; C capacitors in parallel not generic voltmeter multiplier. Traditional analogue galvanometer context, not necessarily all modern electronic meters.",
+        "prior_source_link": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters"
+      },
+      "explanation_card": {
+        "A": "Șunturile în paralel extind domeniul ampermetrelor, nu voltmetrelor analogice.",
+        "B": "O rezistență adițională mare, în serie cu voltmetrul, limitează curentul mecanismului.",
+        "C": "Condensatoarele în paralel nu sunt extensia tipică a domeniului de măsurare DC a voltmetrului.",
+        "trap_or_exception": "Distinge voltmetrul analog cu rezistență serie de măsurările moderne cu amplificatoare/divizoare.",
+        "reformulation_question": "Cum mărești domeniul unui voltmetru analogic pe bază de galvanometru?",
+        "reformulation_solution": "Prin rezistență suplimentară în serie.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0064",
+      "grade_ids": [
+        "G1-ELE-072",
+        "G2-ELEC-217"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "79",
+        "stem": "Factorul de atenuare al unui circuit format dintr-un rezistor de rezistenţă R înseriat cu o bobină de inductanţă L, alimentate de o tensiune electromotoare constantă este egal cu:",
+        "options": {
+          "A": "R/L",
+          "B": "L/R",
+          "C": "1"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-072=A | G2-ELEC-217=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_RL_DECAY_COEFFICIENT",
+        "prior_assessment": "For L di/dt+R i=E constant, transient e^{-t R/L}; exponential attenuation rate α=R/L (s^-1), A. B L/R is time constant τ (s), not attenuation rate; C dimensionless 1 cannot equal R/L generally. Note 'factor de atenuare' may be ambiguous label but conventional decay coefficient rate.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits"
+      },
+      "explanation_card": {
+        "A": "Pentru circuit RL, factorul de atenuare temporală α este R/L, cu unitatea s⁻¹.",
+        "B": "L/R este constanta de timp τ, cu unitatea secunde, nu rata de atenuare.",
+        "C": "Constanta adimensională 1 nu poate exprima în general coeficientul R/L.",
+        "trap_or_exception": "Denumirea «factor de atenuare» poate fi neclară; aici se interpretează rata din exp(−Rt/L).",
+        "reformulation_question": "La R=2 Ω și L=1 H, care este α și τ?",
+        "reformulation_solution": "α=2 s⁻¹, τ=0,5 s.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0066",
+      "grade_ids": [
+        "G1-ELE-074",
+        "G2-ELEC-219"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "81",
+        "stem": "Folosirea conductoarelor jumelate în construcţia LEA are ca scop principal:",
+        "options": {
+          "A": "reducerea pierderilor Corona",
+          "B": "reducerea solicitărilor mecanice ale stâlpilor",
+          "C": "reducerea curenţilor de scurtcircuit"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-074=A | G2-ELEC-219=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_BUNDLED_CORONA_MITIGATION",
+        "prior_assessment": "Bundled/jumelate overhead transmission conductors increase equivalent radius, reduce surface electric field gradients and Corona discharge losses A. B mechanical post force reduction not primary (more conductors can increase weight/drag), C short circuit current limited by network impedance not bundle split. Bundles also affect reactance/capacity/noise, not sole objective.",
+        "prior_source_link": "https://ctcglobal.com/wp-content/uploads/2023/05/Engineering_Transmission_Lines_with_ACCC_Conductor.pdf"
+      },
+      "explanation_card": {
+        "A": "Conductoarele jumelate reduc gradientul electric local la suprafață și ajută la reducerea fenomenului Corona.",
+        "B": "Mai mulți subconductori nu garantează reducerea solicitărilor mecanice ale stâlpilor.",
+        "C": "Nu sunt un dispozitiv de limitare a curentului de scurtcircuit.",
+        "trap_or_exception": "Alte avantaje sunt zgomotul/radiointerferența și parametrii liniei, în funcție de proiect.",
+        "reformulation_question": "De ce poate un fascicul de conductoare reduce pierderile Corona la LEA?",
+        "reformulation_solution": "Crește raza electrică echivalentă și reduce intensitatea câmpului la suprafață.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0067",
+      "grade_ids": [
+        "G1-ELE-075",
+        "G2-ELEC-220"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "82",
+        "stem": "Formula de calcul a frecventei produsa în sistemul electroenergetic de un generator cu n [rot/min] si p perechi de poli este:",
+        "options": {
+          "A": "f =n p / 60",
+          "B": "f = 60 n / p",
+          "C": "f = 60 p / n"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-075=A | G2-ELEC-220=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_ALTERNATOR_RPM_POLE_PAIRS",
+        "prior_assessment": "Mechanical speed n rpm and p POLE PAIRS gives electrical frequency f=n p /60 Hz, A. B f=60n/p and C f=60p/n invert units. Example n=1500rpm,p=2 -> f=50Hz, consistent with 4-pole synchronous alternator.",
+        "prior_source_link": "https://www.pjm.com/-/media/DotCom/training/nerc-certifications/trans-exam-materials/bet/bet-lesson6-generator-theory.ashx"
+      },
+      "explanation_card": {
+        "A": "Pentru n rotații/min și p perechi de poli, frecvența este f=np/60.",
+        "B": "60n/p inversează formula sincronă și nu respectă dependența cerută.",
+        "C": "60p/n nu reflectă frecvența generată de rotor și are alte dimensiuni.",
+        "trap_or_exception": "p reprezintă perechi de poli, nu numărul total de poli; trebuie verificată această distincție.",
+        "reformulation_question": "Un generator sincron de 1500 rpm cu 2 perechi de poli produce ce frecvență?",
+        "reformulation_solution": "f=1500×2/60=50 Hz.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0068",
+      "grade_ids": [
+        "G1-ELE-076",
+        "G2-ELEC-221"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "83",
+        "stem": "Formula e = B l v, unde e este tensiune electromotoare, B este inducţia magnetică, l este lungimea unui conductor, v este viteza de deplasare a acestuia, reprezintă o forma particulară a:",
+        "options": {
+          "A": "teoremelor Biot-Savart",
+          "B": "legii inducţiei electromagnetice",
+          "C": "legii circuitului magnetic"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-076=B | G2-ELEC-221=B"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_MOTIONAL_EMF_FARADAY",
+        "prior_assessment": "Motional emf |e|=B l v when moving rod of length l perpendicular to both field and movement, Faraday induction in moving conductor, B. A Biot-Savart determines B from current, C magnetic-circuit law different relation. Correct orientation is crucial, not universal formula for arbitrary angles.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf"
+      },
+      "explanation_card": {
+        "A": "Biot-Savart determină câmpul magnetic produs de curenți, nu FEM de mișcare.",
+        "B": "e=Blv este un caz particular al inducției electromagnetice, pentru orientări reciproce perpendiculare.",
+        "C": "Legea circuitului magnetic tratează alte relații de flux și excitație.",
+        "trap_or_exception": "Dacă conductorul și deplasarea nu sunt perpendiculare pe câmp, formula cere factor geometric.",
+        "reformulation_question": "Pentru B=0,5 T, l=2 m și v=3 m/s perpendiculare, cât este FEM indusă?",
+        "reformulation_solution": "e=0,5×2×3=3 V.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0070",
+      "grade_ids": [
+        "G1-ELE-078",
+        "G2-ELEC-223"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "85",
+        "stem": "Forţa care se exercită între două conductoare străbătute de curenţi electrici se numeşte:",
+        "options": {
+          "A": "forţă electrocinetică",
+          "B": "forţă electrodinamică",
+          "C": "forţă magnetomotoare"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-078=B | G2-ELEC-223=B"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_FORCE_BETWEEN_CURRENTS",
+        "prior_assessment": "Magnetic interaction between two current-carrying conductors is electrodynamic force, B. A electrocinetic is nonstandard/other designation and C magnetomotive force is NI in ampere-turns, not mechanical force.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents"
+      },
+      "explanation_card": {
+        "A": "Forța electrocinetică nu este termenul tehnic neechivoc folosit aici pentru interacțiunea a doi curenți.",
+        "B": "Forța electrodinamică descrie interacțiunea mecanică dintre conductoare străbătute de curenți.",
+        "C": "Forța magnetomotoare NI se exprimă în amper-spire, nu este forță mecanică în N.",
+        "trap_or_exception": "Sensurile curenților determină atracția sau respingerea; terminologia exactă cere manualul aplicabil.",
+        "reformulation_question": "Ce se întâmplă între două fire paralele cu curenți staționari în același sens?",
+        "reformulation_solution": "Se atrag, în regim clasic de fire paralele.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0071",
+      "grade_ids": [
+        "G1-ELE-079",
+        "G2-ELEC-224"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "86",
+        "stem": "Tensiunea electromotoare indusă într-un circuit închis, prin variaţia fluxului magnetic, este:",
+        "options": {
+          "A": "direct proporţională cu variaţia în timp a fluxului magnetic",
+          "B": "invers proporţională cu variaţia în timp a fluxului magnetic",
+          "C": "dependentă de modul în care este produs fluxul magnetic"
+        },
+        "imported_grade_keys_UNCHANGED": "G1-ELE-079=A | G2-ELEC-224=A"
+      },
+      "historical": {
+        "source": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "model": "DIRECT_FARADAY_TIME_DERIVATIVE",
+        "prior_assessment": "Faraday e=-dΦ/dt for single turn (or -N dΦ/dt coil), A intended 'variația în timp' means time derivative, not just total Φ. B inverse change false, C dependence on how flux was produced false at fixed dΦ/dt; minus sign denotes Lenz polarity.",
+        "prior_source_link": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf"
+      },
+      "explanation_card": {
+        "A": "Legea Faraday afirmă că modulul FEM depinde de viteza variației fluxului magnetic; A este intenția didactică.",
+        "B": "Dependența nu este invers proporțională cu variația în timp a fluxului.",
+        "C": "Pentru același dΦ/dt, FEM nu depinde de metoda concretă de producere a fluxului; semnul depinde de convenția de orientare.",
+        "trap_or_exception": "Formularea «variația în timp» trebuie citită ca derivata temporală, iar semnul minus este legea Lenz.",
+        "reformulation_question": "Dacă fluxul printr-o singură spiră crește liniar cu 0,2 Wb/s, cât este modulul FEM?",
+        "reformulation_solution": "0,2 V; polaritatea se opune variației fluxului.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      }
+    }
+  ]
+}
