@@ -51,7 +51,7 @@ jobs:
             --queue docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json \
             --out _academy_agent_preflight --mode dry-run --start 0
 
-      - name: Four-question pilot with real blind expert roles, free APIs only
+      - name: Targeted independent skeptic retest for QABC-0004 (free API)
         if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[academy]')
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -60,13 +60,13 @@ jobs:
         run: |
           python3 scripts/academy_agent_orchestrator.py \
             --queue docs/ACADEMY_NEXT_12_EXACT_SOURCE_QABC_QUEUE_2026_11_20.json \
-            --out _academy_agent_results --mode live-free --start 0 --confirm FREE_ONLY
+            --out _academy_agent_results --mode live-free --only-unit QABC-0004 --only-role independent_skeptic --confirm FREE_ONLY
 
       - name: Save unapproved model traces and usage
         if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[academy]')
         uses: actions/upload-artifact@v4
         with:
-          name: academy-roles-first-4-qabc
+          name: academy-skeptic-retest-qabc-0004
           path: _academy_agent_results/
           if-no-files-found: warn
           retention-days: 7
