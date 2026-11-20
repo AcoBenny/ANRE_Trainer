@@ -1,0 +1,27 @@
+# CKPT-283 | User-supplied original Electrotehnica 09.2024 workbook: QABC-0024 drawing recovered | 2026-11-20
+
+## Original-source inspection, read only
+- The user uploaded `ELECTROTEHNICA-09.2024-2(2).xlsx` in the current ChatGPT conversation. **The file is a conversation upload, not a verified direct ANRE-server retrieval**. It remains unmodified; source SHA-256: `2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c`; size **67,250 bytes**; valid ZIP archive (`testzip() = None`).
+- The source is one worksheet `Sheet1`, used range `A1:D282`. Row 7 has exactly `Enunt | Varianta a | Varianta b | Varianta c`, **not an authenticated scored-answer key column**. Search for independent answer-key labels returned none. Do not infer official answer letters from the presence of public example alternatives.
+- Exact canonical P0 questions and option order were checked against the previously pinned original queue (`docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json`, original Git blob `db189edd918f5f780bb0ea75192b391deb165723`):
+  - QABC-0024, `A35:D35`: original short-circuit diagram stem and options A, B, C present, including original typo `scurtcirciut`; G1-ELE-028 / G2-ELEC-177.
+  - QABC-0036, `A50:D50`: generator stator current, all three unchanged original options.
+  - QABC-0050, `A64:D64`: harmonic periods, all three unchanged original options.
+  - QABC-0065, `A80:D80`: electric flux, all three unchanged original options.
+- Original drawing `xl/drawings/drawing1.xml` is **464,354 uncompressed XML bytes** and contains a `twoCellAnchor` with group of **22 native DrawingML shapes** crossing 0-based rows 33–34, directly above/around source Excel row 35. No embedded `xl/media` bitmap exists. The source figure is a vector object group, not a missing bitmap.
+- Geometrical SVG/PNG **inspection preview** created from all 22 original OOXML shape positions, custom-path control points, text, and line geometry. Text positioning and some font/line rendering may differ from desktop Excel. **These previews are derivatives**, not official byte-exact Excel screenshots and must not silently replace canonical drawing XML in the trainer. Original OOXML group was separately preserved as an isolated extracted XML for review.
+- We tried fetching the official live `https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx` again, but download failed in this session. **No server-side SHA/binary identity proof**; uploaded workbook establishes availability of an actual detailed source copy, not formal authenticity of official-server bytes.
+
+## QABC-0024 technical preliminary interpretation with original drawing
+- The recovered vector depicts a generator/source `E`, outgoing branches and a marked short-circuit/fault path. It removes the prior **missing local original-figure** barrier for human investigation.
+- A (reduce generator excitation EMF) can reduce available source voltage but is not necessarily the *preferred* local/selective method for restricting a downstream short-circuit. Source and fault-operating regime need to be stated.
+- B (increase reactance between source and fault) is a **technically supported provisional candidate**: with short-circuit source voltage held constant, magnitude depends on series fault-loop impedance, `I_sc≈|E|/|Z_sc|`. Schneider's electrical distribution design guide calls a current-limiting reactor a series reactor to limit trip/fault current: https://productinfo.se.com/0100db2301_elecdistfunddesignguide/0100db2301-electrical-distribution-fundamentals-design-guide/English/0100DB2301%20Electrical%20Distribution%20Fundamentals%20Design%20Guide%20%28bookmap%29_DD00648155.xml/%24/SystemProtection-A4A695C5 .
+- C (increase circuit-breaker breaking capacity) primarily raises its interrupting withstand rating and does **not automatically reduce the prospective fault current**. Some special current-limiting breakers do reduce let-through current, but *interrupting capacity* and *current limiting* are different specifications, as described by Schneider: https://www.electrical-installation.org/enwiki/Other_characteristics_of_a_circuit-breaker and https://www.electrical-installation.org/enwiki/Selection_of_a_circuit-breaker .
+- **No scored ANRE key certified**. Preserve source-first, exact A/B/C, independent professional and linguistic review, and source applicability. This is not a license to modify trainer source/key.
+
+## Operational handoff, no new API use
+- **Resolved only locally:** original workbook bytes and vector diagram are present and inspected in this conversation; original shape group is recoverable and complete (22 native shapes).
+- **Still blocked for unattended GitHub reviewer runs:** original workbook and derivative preview have **not** been copied into the GitHub repo or Actions artifacts, respecting source/redistribution rights and avoiding accidental use of an unreviewed rasterization. Future prompt injection of source drawing requires controlled, faithful transfer and image-interpretation QA.
+- **Still blocked:** official ANRE-server binary comparison, authentic 2026 key, applicable examination bibliography, independent qualified SME signoff, and remaining physical/linguistic conditions.
+- CKPT-282's **19/19** recent source-conditioned offline tests are separate code regressions; not approval of 19 ANRE questions.
+- **0 learning approvals; 0 new AI-model calls; 0 original question/key/HTML/APK/main edits; no merge/release; PR #7/#13 Draft.**
