@@ -15,6 +15,7 @@ def ledger_rows():
             "unit_id": unit,
             "grade_ids": "G1-NOR-048" if unit == "QABC-0362" else "G1-NOR-072",
             "source_workbook": "original_2023.xlsx", "source_row": "55",
+            "evidence_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
             "source_stem_from_workbook": "Original source stem",
             "source_A_from_workbook": "Original exclusive A",
             "source_B_from_workbook": "Original B without tool",
@@ -57,7 +58,7 @@ class AcademyTrainingABTests(unittest.TestCase):
 
     def test_trained_instruction_constrains_exact_I7_and_incomplete_exam_evidence(self):
         prompt = lab.trained_instruction("skeptic", "electrical scope")
-        for essential in ("CONDITIONS", "arithmetic", "scoring key", "2026", "A-B", "B-C",
+        for essential in ("CONDITIONS", "arithmetic", "scored key", "2026", "A-B", "B-C",
                           "original workbook"):
             self.assertIn(essential.casefold(), prompt.casefold())
 
