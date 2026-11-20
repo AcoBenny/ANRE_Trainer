@@ -175,7 +175,7 @@ class RequestyAdapterTests(unittest.TestCase):
                     result = role.run(["--confirm", "FREE_ONLY", "--out", root])
             self.assertEqual(result, 0)
             self.assertEqual(fn.call_count, 1)
-            self.assertEqual(fn.call_args.args[2], ("requesty_lightning",))
+            self.assertEqual(fn.call_args.args[2], ("requesty_lightning", "requesty_gemma"))
             payload = json.loads((pathlib.Path(root)/"report.json").read_text())
             self.assertFalse(payload["learner_approved"])
             self.assertFalse(payload["source_authenticated"])
