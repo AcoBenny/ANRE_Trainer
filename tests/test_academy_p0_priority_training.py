@@ -89,6 +89,15 @@ class PriorityAcademyTests(unittest.TestCase):
             self.assertIn(word.casefold(), t.casefold())
         self.assertIn("not updating model weights", p0.__doc__)
 
+    def test_past_i7_false_exclusivity_and_outside_standard_lessons_are_reused(self):
+        rule = p0.TRAINING_RULES
+        self.assertIn("missing ONLY/numai quantifier", rule)
+        self.assertIn("nonexclusive in the PAIRS section", rule)
+        self.assertIn("positive evidence for that condition", rule)
+        self.assertIn("unrelated physical experiments", rule)
+        self.assertIn("WITHOUT a tool", rule)
+        self.assertIn("ONLY with a tool", rule)
+
     def test_structured_review_not_falsely_implied_by_abc_mentions(self):
         self.assertFalse(p0.check_reviewer_text("A, B, C all exist")["all_required_fields"])
         self.assertFalse(p0.check_reviewer_text("A: Yes\nB: No\nC: Maybe")["all_required_fields"])
