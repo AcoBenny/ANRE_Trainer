@@ -1,0 +1,22 @@
+name: Academy Cloudflare bridge offline QA
+
+on:
+  pull_request:
+    paths:
+      - 'integrations/academy-cloudflare/**'
+      - '.github/workflows/academy-cloudflare-offline-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Offline webhook security tests (no AI API)
+        run: node --test integrations/academy-cloudflare/test/worker.test.mjs
