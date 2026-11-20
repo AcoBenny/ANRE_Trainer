@@ -1,0 +1,618 @@
+{
+  "schema": "v182_source_matched_substation_and_motor_preliminary_explanation_cards",
+  "date": "2026-11-20",
+  "sha": {
+    "ckpt233": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+    "v149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "v175": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_qabc": 15,
+    "grade_routes": 30,
+    "ABC_reasonings": 45,
+    "reformulations": 15,
+    "strict_semantic_holds": 3,
+    "independent_approvals": 0
+  },
+  "holds": [
+    "QABC-0091",
+    "QABC-0092",
+    "QABC-0096"
+  ],
+  "live_reopened_context_sources": [
+    {
+      "id": "QABC-0091",
+      "url": "https://www.se.com/uk/en/faqs/FA147367/",
+      "use": "Auto-restart depends on control scheme and safety, not rotor only"
+    },
+    {
+      "id": "QABC-0090",
+      "url": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+      "use": "Healthy phase to ground voltage during earth fault"
+    },
+    {
+      "id": "QABC-0097",
+      "url": "https://electrical-engineering-portal.com/bus-configurations-substations-345-kv",
+      "use": "Breaker-and-half topology concept"
+    }
+  ],
+  "qa": {
+    "original_stem_choice_and_key_matched_against_ANRE_hosted_source": true,
+    "all_ABC_explanations": true,
+    "all_rephrasings": true,
+    "semantically_blocked_items_not_approved": true
+  },
+  "policy": "Drafts only, no official exam scored-key authentication or genuinely independent qualified QA. Three strict semantic holds are separate from original six release blockers; don't automatically add them to V150 six. No switching instructions, no original QABC/key or app mutations.",
+  "cards": [
+    {
+      "unit_id": "QABC-0084",
+      "grade_ids": [
+        "G1-ELE-092",
+        "G2-ELEC-236"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "99",
+        "stem": "În posturi de transformare se folosesc transformatoare răcite cu lichide neinflamabile atunci când:",
+        "options": {
+          "A": "sunt restricţii de poluare a mediului;",
+          "B": "sunt restricţii de toxicitate pentru personalul de exploatare;",
+          "C": "amplasarea postului se face în zone aglomerate."
+        },
+        "keys_unchanged": "G1-ELE-092=C | G2-ELEC-236=C"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "CONDITIONAL_LIQUID_TRANSFORMER_URBAN",
+        "prior_A_B_C": "Non-flammable or high-fire-point insulating liquids can help when substations are installed in crowded areas (C). A pollution restrictions might also motivate special biodegradable fluids, so selection is not exclusively about population density; B personnel toxicity is liquid-specific.",
+        "source_url_reported": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer"
+      },
+      "card": {
+        "A": "Poluarea poate favoriza lichide biodegradabile, nu neapărat alegerea exclusivă după inflamabilitate.",
+        "B": "Toxicitatea depinde de tipul de lichid și de expunere.",
+        "C": "Un lichid cu inflamabilitate redusă poate fi avantajos în zone aglomerate.",
+        "trap": "C este intenție condiționată; și A poate fi relevant în alt proiect.",
+        "rephrased": "De ce contează riscul de incendiu pentru un transformator în zonă populată?",
+        "rephrased_solution": "Pentru protecția persoanelor și a vecinătăților.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0085",
+      "grade_ids": [
+        "G1-ELE-093",
+        "G2-ELEC-237"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "100",
+        "stem": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
+        "options": {
+          "A": "siguranţa fuzibilă realizează protecţia la suprasarcină;",
+          "B": "siguranţa fuzibilă realizează protecţia la scurtcircuit;",
+          "C": "siguranţa fuzibilă realizează protecţia la supratensiuni;"
+        },
+        "keys_unchanged": "G1-ELE-093=B | G2-ELEC-237=B"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "DIRECT_FUSE_SHORT_CIRCUIT_WITH_THERMAL_RELAY",
+        "prior_A_B_C": "B fuse is assigned short-circuit protection in a fuse+contactor+thermal relay starter, relay handles thermal overload; A can be true for other all-range fuse arrangements but this question expressly includes the thermal relay; C overvoltage a different hazard.",
+        "source_url_reported": "https://www.se.com/uk/en/product-range/1271-tesys-d"
+      },
+      "card": {
+        "A": "Releul termic tratează uzual suprasarcina în ansamblul dat.",
+        "B": "Siguranța fuzibilă realizează protecția la scurtcircuit în schema precizată.",
+        "C": "Supratensiunea nu este obiectul specific al siguranței.",
+        "trap": "Nu extrapola la orice configurație de siguranțe.",
+        "rephrased": "Ce aparat gestionează suprasarcina motorului în starterul cu siguranță și releu termic?",
+        "rephrased_solution": "Releul termic.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0087",
+      "grade_ids": [
+        "G1-ELE-095",
+        "G2-ELEC-238"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "102",
+        "stem": "În cazul în care rezultanta unui sistem de fazori (de tensiune sau de curent) este nulă:",
+        "options": {
+          "A": "sistemul nu are componentă simetrică inversă (negativă)",
+          "B": "sistemul nu are componentă simetrică homopolară (zero)",
+          "C": "sistemul nu are are componentă simetrică directă (pozitivă)"
+        },
+        "keys_unchanged": "G1-ELE-095=B | G2-ELEC-238=B"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "DIRECT_ZERO_SEQUENCE_FORTESCUE",
+        "prior_A_B_C": "For three phase phasors, zero sequence X0=(X1+X2+X3)/3. Sum zero implies no zero-sequence component (B). Positive and negative symmetrical sequences may remain, so A/C are not proven by zero sum.",
+        "source_url_reported": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_%28Kirtley%29/04%3A_Introduction_to_symmetrical_components/4.02%3A_The_Symmetrical_Component_Transformation"
+      },
+      "card": {
+        "A": "Sumă nulă nu exclude secvența inversă.",
+        "B": "Secvența zero X0 este o treime din suma fazorilor, deci nulă.",
+        "C": "Secvența directă poate exista chiar dacă suma fazorilor este zero.",
+        "trap": "Nu confunda lipsa secvenței zero cu echilibrarea completă.",
+        "rephrased": "Dacă suma celor trei fazori este zero, cât este componenta homopolară?",
+        "rephrased_solution": "Zero.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0088",
+      "grade_ids": [
+        "G1-ELE-096",
+        "G2-ELEC-239"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "103",
+        "stem": "În cazul pornirii stea triunghi a motoarelor asincrone, curentul de pornire la conexiunea stea este:",
+        "options": {
+          "A": "1/3 din curentul de pornire la conexiunea triunghi",
+          "B": "de 3 ori curentul de pornire la conexiunea triunghi",
+          "C": "de 2 ori curentul de pornire la conexiunea triunghi"
+        },
+        "keys_unchanged": "G1-ELE-096=A | G2-ELEC-239=A"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "DIRECT_STAR_DELTA_START_CURRENT",
+        "prior_A_B_C": "Same three-phase motor and supply with delta-rated windings: Y line starting current about one-third of direct Δ starting line current, A. B 3 times and C 2 times do not fit. Motor must be suited for Y-Δ and line vs phase currents must not be confused.",
+        "source_url_reported": "https://fuse.etigroup.eu/media-center/eti-blog/star-delta-switch-a-smarter-way-to-start-three-phase-motors?lang=en-GB"
+      },
+      "card": {
+        "A": "Pornirea stea necesită aproximativ o treime din curentul de linie la pornirea direct triunghi.",
+        "B": "Curentul stea nu este de trei ori cel în triunghi.",
+        "C": "Curentul stea nu este de două ori cel în triunghi.",
+        "trap": "Motor compatibil cu stea-triunghi; compară curenți de linie.",
+        "rephrased": "Dacă în triunghi curentul de pornire este 300 A, în stea cât este?",
+        "rephrased_solution": "Aproximativ 100 A.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0089",
+      "grade_ids": [
+        "G1-ELE-097",
+        "G2-ELEC-240"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "104",
+        "stem": "În posturi de transformare se preferă folosirea transformatoarelor răcite cu aer atunci când:",
+        "options": {
+          "A": "sunt restricţii de teren;",
+          "B": "sunt restricţii privitoare la zgomot;",
+          "C": "amplasarea postului se face în zone aglomerate."
+        },
+        "keys_unchanged": "G1-ELE-097=C | G2-ELEC-240=C"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "CONDITIONAL_DRY_TYPE_CROWDED_SITE",
+        "prior_A_B_C": "Dry transformer lacks mineral insulating oil/fire spill hazard and is often preferred indoors in populated areas C. A restricted land may be relevant to compact siting, B sound emissions vary, and thermal ventilation requirements remain.",
+        "source_url_reported": "https://new.abb.com/news/detail/5787/home-and-dry"
+      },
+      "card": {
+        "A": "Restricția de teren nu este o explicație obligatorie pentru transformator uscat.",
+        "B": "Zgomotul nu este automat mai mic la variantele uscate.",
+        "C": "Lipsa uleiului mineral reduce unele riscuri de incendiu/scurgeri în zone aglomerate.",
+        "trap": "Răcirea și ventilația rămân obligatorii.",
+        "rephrased": "Ce avantaj poate avea transformatorul uscat într-un spațiu populat?",
+        "rephrased_solution": "Mai puțin risc legat de ulei inflamabil.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0090",
+      "grade_ids": [
+        "G1-ELE-098",
+        "G2-ELEC-241"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "105",
+        "stem": "În cazul punerii nete la pământ a fazei S         într-o reţea de 20 kV cu neutrul izolat:",
+        "options": {
+          "A": "tensiunea pe fazele R si T rămâne neschimbata , iar tensiunea fazei defecte S se apropie de 0",
+          "B": "tensiunea pe fazele R si T creste la valoarea tensiunii de linie iar pe faza S se apropie de 0",
+          "C": "cresc tensiunile pe fazele R si T, iar pe faza defecta S rămâne neschimbata"
+        },
+        "keys_unchanged": "G1-ELE-098=B | G2-ELEC-241=B"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "DIRECT_ISOLATED_NEUTRAL_EARTH_FAULT",
+        "prior_A_B_C": "Bolted line-to-earth fault of isolated-neutral phase S shifts healthy R/T voltage to ground up to line-to-line nominal voltage, S-earth drops near zero; B. A/C miss healthy rise or fault voltage drop. Steady ideal model; arcing earth fault transient not captured.",
+        "source_url_reported": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection"
+      },
+      "card": {
+        "A": "Tensiunea fazelor sănătoase față de pământ nu rămâne neschimbată.",
+        "B": "La neutru izolat, fazele sănătoase ajung la tensiunea între faze față de pământ, iar faza defectă la zero.",
+        "C": "Faza defectă nu rămâne la tensiunea normală față de pământ.",
+        "trap": "Regim ideal staționar; tranzitorii posibili.",
+        "rephrased": "În rețeaua de 20 kV cu neutru izolat, ce tensiune au fazele sănătoase față de pământ după defect net?",
+        "rephrased_solution": "Aproximativ 20 kV.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0091",
+      "grade_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "106",
+        "stem": "În cazul scăderii sau întreruperii tensiunii de alimentare, motoarele asincrone se pot opri, iar la restabilirea tensiunii:",
+        "options": {
+          "A": "ele autopornesc, indiferent de tipul constructiv al rotorului în scurtcircuit",
+          "B": "pentru a reporni necesită dispozitiv de pornire",
+          "C": "ele autopornesc numai dacă au rotor în dublă colivie"
+        },
+        "keys_unchanged": "G1-ELE-099=A | G2-ELEC-242=A"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "BLOCKED_AUTO_RESTART_CONTROL_NOT_ROTOR",
+        "prior_A_B_C": "A claims all short-circuit-rotor induction motors restart autonomously on voltage return, false without a self-holding or auto-restart control and may be unsafe. B says all need a starter, not true for all controls. C incorrectly limits auto-start to double-cage rotor. Contactor, undervoltage protection and safety conditions absent. Key A NOT certified.",
+        "source_url_reported": "https://www.se.com/us/en/faqs/FA175133/"
+      },
+      "card": {
+        "A": "Autopornirea nu depinde automat doar de rotorul în scurtcircuit.",
+        "B": "Necesitatea unei noi comenzi depinde de schema de pornire, fără regulă universală B.",
+        "C": "Dublă colivie nu este condiție necesară și suficientă pentru repornire.",
+        "trap": "BLOCAT: lipsesc comanda, protecțiile și condițiile de securitate.",
+        "rephrased": "Ce condiții dictează repornirea după căderea tensiunii?",
+        "rephrased_solution": "Circuitul de comandă, protecțiile și autorizarea auto-restart.",
+        "state": "STRICT_SEMANTIC_HOLD",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0092",
+      "grade_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "107",
+        "stem": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu ambele sisteme de bare sub tensiune este avantajoasă deoarece permite:",
+        "options": {
+          "A": "scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
+          "B": "micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
+          "C": "scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
+        },
+        "keys_unchanged": "G1-ELE-100=A | G2-ELEC-243=A"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "BLOCKED_DOUBLE_BUS_SCHEME_UNDERSPECIFIED",
+        "prior_A_B_C": "Both main buses energized may reduce some transfer operations, but original A specifically assumes breaker bypass possibility without defining bypass bus/coupler. B avoiding loss on a busbar fault depends on load distribution; C busbar maintenance transfer likewise topology-specific. No single unconditional truth without SLD.",
+        "source_url_reported": "https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/"
+      },
+      "card": {
+        "A": "Beneficiul ocolirii întreruptorului necesită schemă de ocolire, nespecificată.",
+        "B": "Limitarea pierderilor de alimentare la defect depinde de repartizarea circuitelor și protecție.",
+        "C": "Revizia barelor poate fi facilitată de unele topologii, nu de simpla etichetă «două bare».",
+        "trap": "BLOCAT: schema unifilară și criteriul de preferință lipsesc.",
+        "rephrased": "Ce dovezi sunt necesare pentru avantajul unei stații cu două bare?",
+        "rephrased_solution": "Schema unifilară și criteriile de exploatare.",
+        "state": "STRICT_SEMANTIC_HOLD",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0093",
+      "grade_ids": [
+        "G1-ELE-101",
+        "G2-ELEC-244"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "108",
+        "stem": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu unul dintre sistemele de bare în rezervă rece ( fără tensiune) este avantajoasă",
+        "options": {
+          "A": "numai atunci când se doreşte scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
+          "B": "atunci când se doreşte micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
+          "C": "atunci când se doreşte scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
+        },
+        "keys_unchanged": "G1-ELE-101=B | G2-ELEC-244=B"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "CONDITIONAL_COLD_RESERVE_TRANSFER",
+        "prior_A_B_C": "Cold reserve bus can reduce busbar-fault outage impact if healthy bus transfer path and source exist, B. A only breaker-bypass is too restrictive, C maintenance transfer may also be relevant. Needs switchgear single-line and protection details; no operational instructions.",
+        "source_url_reported": "https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/"
+      },
+      "card": {
+        "A": "«Numai» ocolirea unui întreruptor restrânge nejustificat rolul barei reci.",
+        "B": "Rezerva rece poate permite transfer după defect al barei active în condiții adecvate.",
+        "C": "Transferul pentru revizie poate fi un alt avantaj, dependent de configurație.",
+        "trap": "B este condiționat; nu garantează alimentare neîntreruptă.",
+        "rephrased": "La avaria barei active, ce rol poate avea bara de rezervă rece?",
+        "rephrased_solution": "Poate primi sarcinile prin transfer autorizat dacă este disponibilă.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0095",
+      "grade_ids": [
+        "G1-ELE-103",
+        "G2-ELEC-246"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "110",
+        "stem": "În cazul unei staţii cu un sistem de bare colectoare secţionat longitudinal şi prevăzut cu o cuplă longitudinală cu întreruptor şi AAR, cupla se menţine:",
+        "options": {
+          "A": "în rezervă caldă;",
+          "B": "în rezervă rece;",
+          "C": "În funcţiune"
+        },
+        "keys_unchanged": "G1-ELE-103=A | G2-ELEC-246=A"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "CONDITIONAL_AAR_COUPLER_READY",
+        "prior_A_B_C": "With divided busbar and automatic reserve transfer, bus coupler often normally open but armed/ready for automatic transfer, matching A warm standby. B cold reserve and C always closed do not reflect intended arrangement. Exact definition of warm standby and protection permissives topology-dependent.",
+        "source_url_reported": "https://www.phasetophase.nl/book/book_1_2.html"
+      },
+      "card": {
+        "A": "Cu AAR, cupla normal deschisă, pregătită, este compatibilă cu rezervă caldă.",
+        "B": "Rezerva rece presupune altă disponibilitate de cuplare.",
+        "C": "Cuplarea permanentă ar putea invalida separarea normală între secții.",
+        "trap": "Regim exact de rezervă și interblocări de protecție necesită schemă.",
+        "rephrased": "Cum este uzual pregătită cupla pentru AAR, fără cuplare permanentă?",
+        "rephrased_solution": "În rezervă caldă, întreruptor deschis, pregătită de comandă.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0096",
+      "grade_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "111",
+        "stem": "În echipamentul electric, uleiul electroizolant, din punct de vedere electric:",
+        "options": {
+          "A": "asigură doar izolarea părților sub tensiune între ele si fatã de masã",
+          "B": "stinge arcul electric care apare in întrerupătoare",
+          "C": "asigura ungerea mecanismelor de acţionare"
+        },
+        "keys_unchanged": "G1-ELE-104=A | G2-ELEC-247=A"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "BLOCKED_DIELECTRIC_OIL_ALSO_QUENCHES_ARC",
+        "prior_A_B_C": "A includes restrictive doar (only dielectric insulation), but in oil circuit breakers the oil also quenches electric arc. B holds for oil circuit breaker but not all oil-insulated transformers. C lubrication mechanical is not generic electrical role. Equipment unspecified -> cannot certify A as only answer.",
+        "source_url_reported": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer"
+      },
+      "card": {
+        "A": "«Doar izolarea» omite rolul de stingere a arcului în întreruptorul cu ulei.",
+        "B": "Stingerea arcului este un rol adevărat în unele întreruptoare, nu în orice aparat cu ulei.",
+        "C": "Ungerea nu definește funcția electrică a uleiului izolant.",
+        "trap": "BLOCAT: enunțul nu identifică aparatul, iar A spune «doar».",
+        "rephrased": "De ce uleiul izolant nu are universal o singură funcție?",
+        "rephrased_solution": "În anumite aparate izolează și contribuie la stingerea arcului.",
+        "state": "STRICT_SEMANTIC_HOLD",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0097",
+      "grade_ids": [
+        "G1-ELE-105",
+        "G2-ELEC-248"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "112",
+        "stem": "Într-o schemă cu 1,5 întreruptoare pe circuit:",
+        "options": {
+          "A": "este necesară o cuplă de ocolire;",
+          "B": "este necesară o cuplă transversală;",
+          "C": "nu sunt necesare circuite de cuplă transversală şi de ocolire"
+        },
+        "keys_unchanged": "G1-ELE-105=C | G2-ELEC-248=C"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "SOURCE_COMPATIBLE_BREAKER_AND_HALF",
+        "prior_A_B_C": "One-and-a-half breaker arrangement connects two feeders through three breakers between two main busbars. No separate bypass (A) or transverse bus coupler (B) inherently necessary; C is usual topology. Product/configuration-dependent engineering safeguards.",
+        "source_url_reported": "https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/"
+      },
+      "card": {
+        "A": "Schema cu 1,5 întreruptoare nu cere inerent cuplă separată de ocolire.",
+        "B": "Nici cupla transversală separată nu este o necesitate intrinsecă în configurația clasică.",
+        "C": "Trei întreruptoare partajate la două circuite între două bare permit funcționarea fără acele cuple dedicate.",
+        "trap": "Necesită evaluarea protecțiilor, nu instrucțiuni de comutare.",
+        "rephrased": "Câte întreruptoare apar pentru două circuite în schema 1,5?",
+        "rephrased_solution": "Trei.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0098",
+      "grade_ids": [
+        "G1-ELE-106",
+        "G2-ELEC-249"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "113",
+        "stem": "Într-o schemă de conexiuni bara şi cupla de ocolire servesc la:",
+        "options": {
+          "A": "scoaterea în revizie a unui întreruptor, cu două scurte întreruperi;",
+          "B": "scoaterea în revizie a unei bare colectoare;",
+          "C": "scoaterea în revizie a unui întreruptor, fără întreruperea alimentării pe circuitul respectiv."
+        },
+        "keys_unchanged": "G1-ELE-106=C | G2-ELEC-249=C"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "CONDITIONAL_TRANSFER_BYPASS_BUS",
+        "prior_A_B_C": "Transfer/bypass bus and coupler intended to allow circuit breaker maintenance while preserving feeder energization where switching arrangement permits, C. A two short interruptions are not intrinsic, B busbar revision not primary role. No switching sequence provided.",
+        "source_url_reported": "https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/"
+      },
+      "card": {
+        "A": "Două întreruperi de alimentare nu sunt cerute inerent de schema de ocolire.",
+        "B": "Revizia barei colectoare nu este scopul principal al cuplei de ocolire.",
+        "C": "Bara și cupla de ocolire facilitează revizia întreruptorului păstrând alimentarea dacă schema permite.",
+        "trap": "Operațiile concrete necesită proceduri și autorizare.",
+        "rephrased": "Ce permite bara de ocolire la mentenanța întreruptorului?",
+        "rephrased_solution": "Potențial menținerea alimentării circuitului.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0099",
+      "grade_ids": [
+        "G1-ELE-107",
+        "G2-ELEC-250"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "114",
+        "stem": "În posturi de transformare se folosesc transformatoare uscate atunci când:",
+        "options": {
+          "A": "amplasarea postului se face în zone aglomerate;",
+          "B": "nu sunt restricţii de teren;",
+          "C": "nu este posibilă asigurarea unei răciri corespunzătoare a bobinajelor."
+        },
+        "keys_unchanged": "G1-ELE-107=A | G2-ELEC-250=A"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "DIRECT_DRY_TRANSFORMER_CROWDED_SITE",
+        "prior_A_B_C": "Dry-type safer near populated / indoor sites where oil fire and leaks problematic, intended A. B no land restrictions irrelevant; C insufficient ability to cool windings would be unsafe for any transformer.",
+        "source_url_reported": "https://new.abb.com/news/detail/5787/home-and-dry"
+      },
+      "card": {
+        "A": "Varianta uscată poate reduce riscurile specifice uleiului în zone aglomerate.",
+        "B": "Lipsa restricțiilor de teren nu justifică în sine transformatorul uscat.",
+        "C": "Lipsa răcirii corespunzătoare nu justifică niciun transformator în funcțiune.",
+        "trap": "Și varianta uscată necesită ventilație și limite termice.",
+        "rephrased": "Ce verifici înainte să montezi un transformator uscat?",
+        "rephrased_solution": "Răcirea, ventilația și protecția termică.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0100",
+      "grade_ids": [
+        "G1-ELE-108",
+        "G2-ELEC-251"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "115",
+        "stem": "Într-o schemă poligon cu patru laturi:",
+        "options": {
+          "A": "este necesară o cuplă de ocolire;",
+          "B": "este necesară o cuplă transversală;",
+          "C": "nu este necesară o cuplă transversală."
+        },
+        "keys_unchanged": "G1-ELE-108=C | G2-ELEC-251=C"
+      },
+      "historical": {
+        "source_file": "CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+        "source_blob": "0ca43dc2e5d22153b778d800905dc033245f4d80",
+        "scope": "SOURCE_COMPATIBLE_RING_BUSBAR",
+        "prior_A_B_C": "Four-side ring bus uses its circuit breakers as interconnected ring; separate transverse coupler not necessary C, A bypass coupler not required, B transverse coupler not required. Real arc-fault protection and operational reliability vary by ring state.",
+        "source_url_reported": "https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/"
+      },
+      "card": {
+        "A": "Schema inelară nu cere inerent o cuplă de ocolire.",
+        "B": "Cupla transversală separată nu este inerent necesară în poligon.",
+        "C": "Legăturile sunt asigurate de întreruptoarele inelului; cupla transversală separată nu este obligatorie.",
+        "trap": "Un defect sau o revizie poate deschide inelul și reduce redundanța.",
+        "rephrased": "Cum sunt legate circuitele într-o configurație ring-bus?",
+        "rephrased_solution": "Într-un inel de întreruptoare.",
+        "state": "DRAFT_P0_REVIEW",
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    }
+  ]
+}
