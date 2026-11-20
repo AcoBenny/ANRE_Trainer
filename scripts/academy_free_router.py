@@ -119,7 +119,8 @@ def call_provider(provider: str, system: str, message: str):
         payload = {
             "model": MODELS[provider],
             "stream": False,
-            "max_tokens": 1800 if provider.startswith("openrouter") else 1400,
+            "max_tokens": (2600 if provider.startswith("requesty_") else
+                           1800 if provider.startswith("openrouter") else 1400),
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": message}],
         }
         if provider == "openrouter":
