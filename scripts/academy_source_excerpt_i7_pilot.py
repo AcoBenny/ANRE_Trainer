@@ -47,6 +47,17 @@ def load_context(path):
     for x in clauses:
         if not x.get("pdf_page") or not x.get("text") or not x.get("verified_by"):
             raise ValueError("Missing verbatim context")
+    exact_clauses = {
+        "QABC-0362": (70, ("dintr-un circuit de iluminat normal",
+                               "dintr-un circuit de prize", "direct din tabloul de distribuţie")),
+        "QABC-0386": (72, ("deconectat individual",
+                               "numai prin intermediul unei scule")),
+    }
+    for x in clauses:
+        expected_page, expected_fragments = exact_clauses[x["unit_id"]]
+        if x["pdf_page"] != expected_page or any(fragment not in x["text"]
+                                                 for fragment in expected_fragments):
+            raise ValueError("Authenticated I7 2023 source excerpt changed: STOP")
     return {x["unit_id"]: x for x in clauses}
 
 
