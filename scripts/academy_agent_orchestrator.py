@@ -42,7 +42,7 @@ SPECIALISTS = (
      "Independent adversarial reviewer. Do not see or assume a technical review exists. "
      "Challenge assumptions, false universal quantifiers, wrong physical or source scope, "
      "missing grade and edition. Offer at least one disconfirming case or say why none found."),
-    ("linguistic_scope", ("openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning"),
+    ("linguistic_scope", ("groq_linguistic", "openrouter", "openrouter_fixed", "requesty_gemma", "requesty_lightning"),
      "Independent Romanian-language and technical semantics reviewer. Check exact stem-to-"
      "option fit and A-B, A-C, B-C exclusivity, 'numai', comparators, incomplete sentences "
      "and implicit conditions. Never correct or rewrite the original question."),
