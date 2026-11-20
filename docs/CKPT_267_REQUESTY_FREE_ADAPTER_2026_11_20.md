@@ -26,3 +26,11 @@ Official docs (consulted 2026-11-20):
 - Retired old model removed from the active Requesty exact-free allowlist. Replaced with provider-pinned free endpoint `nvidia/nemotron-3.5-lightning-30b-a3b`, listed at https://www.requesty.ai/model/nvidia/nemotron-3.5-lightning-30b-a3b; `google/gemma-4-31b-it` retained as secondary free fallback.
 - 410 is now treated as model-unavailable and may fall back to **the other allowlisted free model** only. No automatic paid switching.
 - Updated offline regression run [44743559792](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44743559792) passed. This checkpoint commit triggers one new live Requesty smoke test, max 2 requests.
+
+## Confirmed free Requesty connectivity and Academy wiring
+- Actual provider call [44743640687](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44743640687) **PASS**, served `nvidia/nemotron-3.5-lightning-30b-a3b`, reported `usage.cost=0` USD, 169 total tokens, status `stop`. No ANRE content was sent and no paid OpenAI call.
+- The two pinned Requesty free model IDs are now placed as the **last candidates** for each technical, skeptic and linguistic role, after current Groq/Gemini/OpenRouter routes. Runtime refuses an unexpected actual model or Requesty-reported nonzero/missing cost; this is a detection gate, **not** a spending refund or proof of future billing.
+- Existing live Academy workflows receive `REQUESTY_API_KEY` only inside their gated execution steps. No PR events can consume that secret or run live models. Same underlying model via differently named gateways does not count as independent review.
+- Added synthetic-A/B/C specialist probe, without any actual ANRE questions, which exercises the Academy specialist system prompt, model router and source-protection checks. In this document's `[requesty-role]` commit, the CI workflow runs **one additional live model call** for this test, with a three-day metadata artifact.
+- Offline Requesty adapter/Academy tests PASSED in [run 44744453397](https://github.com/AcoBenny/ANRE_Trainer/actions/runs/44744453397), with no live calls made by that particular run.
+- No merge/release, no original bareme, HTML, APK, source edit, or approval for learner use.
