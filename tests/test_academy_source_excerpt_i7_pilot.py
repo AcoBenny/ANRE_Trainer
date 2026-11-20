@@ -16,6 +16,13 @@ class GroundedI7Tests(unittest.TestCase):
         self.assertEqual(clauses["QABC-0362"]["pdf_page"], 70)
         self.assertEqual(clauses["QABC-0386"]["pdf_page"], 72)
 
+    def test_reused_nonexclusive_logic_is_in_both_agents(self):
+        self.assertIn("ONLY X", pilot.PROMPT_TECH)
+        self.assertIn("WITHOUT X", pilot.PROMPT_TECH)
+        self.assertIn("ONLY X", pilot.PROMPT_SKEPTIC)
+        self.assertIn("WITHOUT X", pilot.PROMPT_SKEPTIC)
+        self.assertIn("2026", pilot.PROMPT_SKEPTIC)
+
     def test_context_false_positive_rejected(self):
         original = json.loads(CONTEXT.read_text(encoding="utf-8"))
         original["clauses"][0]["text"] = "Alimentarea numai direct din tablou."
