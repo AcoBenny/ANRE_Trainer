@@ -96,6 +96,29 @@ class AcademyOrchestrationTests(unittest.TestCase):
         self.assertFalse(result["independent_model_families_proven"])
         self.assertEqual(result["status"], "INCOMPLETE_MODEL_TRACES")
 
+    def test_same_model_different_gateway_is_not_independent(self):
+        same = {
+            "technical_electrical": {
+                "ok": True, "model": "google/gemma-4-31b-it:free",
+                "text": FULL_REVIEW,
+            },
+            "independent_skeptic": {
+                "ok": True, "model": "requesty/google/gemma-4-31b-it",
+                "text": FULL_REVIEW,
+            },
+        }
+        self.assertEqual(academy.normalized_model_family(
+            "google/gemma-4-31b-it:free"),
+            academy.normalized_model_family("requesty/google/gemma-4-31b-it"))
+        gate = academy.quality_gate({"unit_id": "QABC-0001"}, same, list(same))
+        self.assertFalse(gate["independent_model_families_proven"])
+        self.assertEqual(gate["status"], "INCOMPLETE_MODEL_TRACES")
+
+    def test_requesty_fallback_is_available_to_all_adaptive_roles(self):
+        for role, providers, system in academy.SPECIALISTS:
+            self.assertEqual(providers[-2:], ("requesty_lightning", "requesty_gemma"))
+            self.assertNotIn("openai", providers)
+
     def test_missing_abc_coverage_blocks(self):
         reviews = {
             "technical_electrical": {"ok": True, "model": "oss", "text": "A and B were assessed. " * 15},
