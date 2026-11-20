@@ -82,6 +82,17 @@ class PriorityAcademyTests(unittest.TestCase):
             case["question_original"] = "Ce este curentul?"
             self.assertEqual(len(p0.role_plan(case)), 2)
 
+    def test_option_only_absolute_word_routes_to_linguistic_reviewer(self):
+        with tempfile.TemporaryDirectory() as td:
+            case = p0.load_priority_queue(make_queue(pathlib.Path(td)))[0]
+            case["question_original"] = "Câmp fără surse este"
+            case["A_original"] = "numai o categorie specială"
+            case["B_original"] = "un câmp electric"
+            case["C_original"] = "un câmp magnetic"
+            self.assertEqual(len(p0.role_plan(case)), 3)
+            case["A_original"] = "o categorie specială"
+            self.assertEqual(len(p0.role_plan(case)), 2)
+
     def test_training_prompt_covers_source_scope_and_error_patterns(self):
         t = p0.TRAINING_RULES
         for word in ("Counterexamples", "arithmetic", "abbreviations",
