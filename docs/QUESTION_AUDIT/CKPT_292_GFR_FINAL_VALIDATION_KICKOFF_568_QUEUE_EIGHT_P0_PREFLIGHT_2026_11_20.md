@@ -16,7 +16,7 @@
   - L4: 348 **ordinary exact-copy** cases pending independent review.
   - L5: 150 **nonworkbook didactic/provenance** practice cases to establish original author and correct edition before review, including position-bias challenge.
 - **Lane counts are not the same as original provenance classes**: the 153 nonworkbook cases include 3 prioritized P0 cases in L2 and 150 in L5. Original exclusive provenance classes stay **408 exact source-copy, 6 strict, 1 numeric-type, 153 nonworkbook** = 568. This distinction prevents accidentally reporting 150 as the full didactic item count.
-- `P0` includes 65 groups total in V149: six original strict blockers intersect P0, pilot eight and remaining L2 55 grouped by explicit lane; lane classification is priority plus provenance, not answer approval.
+- `P0` includes 65 groups total in V149: two of the six strict blockers intersect P0, pilot eight and remaining L2 55 grouped by explicit lane; four strict blockers are not tagged P0; lane classification is priority plus provenance, not answer approval.
 - No new original 2026 answer-key source discovered on the official public ANRE exam information page. Official exam page **publishes syllabus and examples** but does not directly authenticate each imported answer letter in our master: https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/ .
 
 ## New V152 | eight actual original-source cards
