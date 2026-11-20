@@ -37,7 +37,7 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_academy_free_router.py' -v
 
       - name: Reuse pinned six CKPT-256 challenge fixtures (only for trusted branch)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[smoke]')
         shell: bash
         run: |
           git fetch --no-tags --depth=1 origin refs/heads/audit/anre-v8-priority-17-20261109
@@ -48,7 +48,7 @@ jobs:
           }
 
       - name: One-case free-only smoke (max 4 calls, paid OpenAI never injected)
-        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[smoke]')
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -59,7 +59,7 @@ jobs:
             --mode live-free --cases 1 --confirm FREE_ONLY
 
       - name: Upload read-only model traces, never answer keys
-        if: always() && github.event_name == 'push'
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[smoke]')
         uses: actions/upload-artifact@v4
         with:
           name: academy-free-router-smoke
