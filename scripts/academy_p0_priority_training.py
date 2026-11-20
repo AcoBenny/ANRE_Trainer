@@ -51,6 +51,7 @@ TRAINING_RULES = (
     "the literal original option before a conclusion. "
     "Distinguish possible exam intent from universal technical correctness. "
     "Do not claim to have read a web page or standard. "
+    "Each A:, B:, C: line MUST add independent reasoning, not repeat the original option verbatim; copied-only lines are invalid. "
     "Output short Romanian lines starting A:, B:, C:, then PAIRS:, CONDITIONS:, "
     "EVIDENCE_MISSING:, and VERDICT: NOT_APPROVED. "
     "Original question and option strings must not be edited, repaired or re-ordered."
