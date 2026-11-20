@@ -180,6 +180,32 @@ class AcademyOrchestrationTests(unittest.TestCase):
             self.assertFalse(report["records"][0]["qa_evidence_gate"]["independent_model_families_proven"])
             self.assertFalse(report["learner_approved"])
 
+    def test_known_model_hallucinations_become_review_flags_not_source_proof(self):
+        psi = {
+            "technical_electrical": {
+                "ok": True, "model": "oss",
+                "text": FULL_REVIEW + " PSI (Presiune, Securitate, Izolație).",
+            },
+            "independent_skeptic": {"ok": True, "model": "flash", "text": FULL_REVIEW},
+        }
+        flags = academy.known_semantic_risk_flags("QABC-0002", psi)
+        self.assertEqual(flags[0]["risk"], "POSSIBLE_PSI_ACRONYM_HALLUCINATION")
+        qa = academy.quality_gate({"unit_id": "QABC-0002"}, psi, list(psi))
+        self.assertEqual(qa["status"], "CONTENT_WARNING_SOURCE_GATE_BLOCKED")
+        self.assertFalse(qa["learner_approved"])
+        numeric = {
+            "independent_skeptic": {
+                "ok": True, "model": "flash",
+                "text": FULL_REVIEW + " Totuși, nicio variantă nu corespunde corect acestei sume.",
+            }
+        }
+        numeric_flags = academy.known_semantic_risk_flags("QABC-0004", numeric)
+        self.assertEqual(numeric_flags[0]["risk"], "POSSIBLE_NUMERIC_SELF_CONTRADICTION")
+        self.assertFalse(academy.quality_gate({"unit_id": "QABC-0004"},
+                                               numeric, list(numeric))["learner_approved"])
+        self.assertEqual(academy.known_semantic_risk_flags(
+            "QABC-0004", {"technical": {"ok": True, "text": FULL_REVIEW}}), [])
+
     def test_invalid_run_without_confirmation(self):
         with tempfile.TemporaryDirectory() as d:
             p = make_queue(pathlib.Path(d))
