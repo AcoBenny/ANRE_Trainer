@@ -149,13 +149,17 @@ def run(argv=None) -> int:
     parser.add_argument("--out", type=pathlib.Path, default=pathlib.Path("_academy_agent_results"))
     parser.add_argument("--mode", choices=("dry-run", "live-free"), default="dry-run")
     parser.add_argument("--start", type=int, choices=(0, 4, 8), default=0)
+    parser.add_argument("--only-unit", choices=EXPECTED_IDS, default=None)
     parser.add_argument("--confirm", default="")
     args = parser.parse_args(argv)
-    cases = load_queue(args.queue)[args.start:args.start + 4]
+    all_cases = load_queue(args.queue)
+    cases = ([next(c for c in all_cases if c["unit_id"] == args.only_unit)]
+             if args.only_unit else all_cases[args.start:args.start + 4])
     if args.mode == "live-free" and args.confirm != "FREE_ONLY":
         parser.error("LIVE API requires explicit FREE_ONLY")
     report = {
         "policy": ACADEMY_POLICY, "mode": args.mode, "batch_start": args.start,
+        "only_unit": args.only_unit,
         "created_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "queue_sha256": hashlib.sha256(args.queue.read_bytes()).hexdigest(),
         "attempted": 0, "responses": 0, "paid_openai_calls": 0,
@@ -173,20 +177,38 @@ def run(argv=None) -> int:
                                 if case["unit_id"] in HIGH_RISK else "two core independent reviewers"),
             "prompt_architect": "DETERMINISTIC_TEMPLATE_NOT_SEPARATE_MODEL",
             "source_auditor": "NO_AUTHENTICATED_SOURCE_TEXT_IN_QUEUE",
-            "role_outputs": {},
+            "role_outputs": {}, "role_retests": [],
         }
         if args.mode == "live-free":
             message = compiled_prompt(case)
             # All reviewers get the same blind source prompt. No preceding agent output is shared.
             for name, providers, specialization in roles:
                 system = PROMPT_POLICY + " Your independent specialty: " + specialization
-                record["role_outputs"][name] = route_agent(system, message, providers, state)
+                initial = route_agent(system, message, providers, state)
+                record["role_outputs"][name] = initial
+                if initial.get("ok"):
+                    covered = all(re.search(r"\\b" + option + r"\\b", initial.get("text", ""))
+                                  for option in ("A", "B", "C"))
+                    if not covered or len(initial.get("text", "").strip()) < 100:
+                        record["role_retests"].append({
+                            "role": name, "cause": "MISSING_ABC_COVERAGE_OR_TOO_SHORT",
+                            "first_model": initial.get("model"),
+                            "first_attempt_kept_for_audit": initial,
+                        })
+                        stricter = (system + " MANDATORY RETEST FORMAT: Write three separate "
+                                    "lines starting exactly 'A:', 'B:' and 'C:', one for each "
+                                    "original option. Then add context and missing source. "
+                                    "This is a self-retest, not an independent third opinion.")
+                        retry = route_agent(stricter, message, providers, state)
+                        record["role_outputs"][name] = retry
             qa = quality_gate(case, record["role_outputs"], record["agent_selection"])
             record["qa_evidence_gate"] = qa
             report["proposed_lessons"].append({
                 "unit_id": case["unit_id"],
                 "trigger": qa["status"],
-                "hypothesis": "Require direct primary sources and human adjudication before promotion",
+                "hypothesis": ("Require complete separate A/B/C coverage, source edition, "
+                               "and human adjudication before promotion"),
+                "role_retests": [x["role"] for x in record["role_retests"]],
                 "status": "PENDING_VALIDATION_NOT_INSTALLED_AS_SKILL",
             })
         else:
