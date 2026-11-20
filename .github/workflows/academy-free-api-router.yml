@@ -1,0 +1,68 @@
+name: ANRE Academy free-API router smoke / QA
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_free_router.py'
+      - 'tests/test_academy_free_router.py'
+      - 'docs/ACADEMY_FREE_API_ROUTER_GFR_2026_11_20.md'
+      - '.github/workflows/academy-free-api-router.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_free_router.py'
+      - 'tests/test_academy_free_router.py'
+      - 'docs/ACADEMY_FREE_API_ROUTER_GFR_2026_11_20.md'
+      - '.github/workflows/academy-free-api-router.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anre-free-router-smoke
+  cancel-in-progress: false
+
+jobs:
+  offline-and-one-live-free-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout trusted source / no stored Git credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Offline regression tests (zero provider calls)
+        run: python3 -m unittest discover -s tests -p 'test_academy_free_router.py' -v
+
+      - name: Reuse pinned six CKPT-256 challenge fixtures (only for trusted branch)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120'
+        shell: bash
+        run: |
+          git fetch --no-tags --depth=1 origin refs/heads/audit/anre-v8-priority-17-20261109
+          git show FETCH_HEAD:docs/QUESTION_AUDIT/ACADEMY_CKPT256_SIX_NEGATIVE_REGRESSION_FIXTURES_2026_11_20.json > academy_fixtures.json
+          test "$(git hash-object academy_fixtures.json)" = 'c6bcd7ef734323e33963c99d3526584125fa0e1c' || {
+            echo 'Fixture changed: STOP; no provider call.'
+            exit 1
+          }
+
+      - name: One-case free-only smoke (max 4 calls, paid OpenAI never injected)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python3 scripts/academy_free_router.py \
+            --fixtures academy_fixtures.json --out _academy_free_results \
+            --mode live-free --cases 1 --confirm FREE_ONLY
+
+      - name: Upload read-only model traces, never answer keys
+        if: always() && github.event_name == 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-free-router-smoke
+          path: _academy_free_results/
+          retention-days: 3
+          if-no-files-found: warn
