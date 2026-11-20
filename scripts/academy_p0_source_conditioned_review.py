@@ -6,6 +6,7 @@ import argparse
 import datetime as dt
 import hashlib
 import json
+import math
 import pathlib
 import re
 import sys
@@ -112,6 +113,58 @@ def structural_qa(text: str, case: dict):
             "verbatim_only_options": copy_only, "format_ok": all(matched.values()) and not copy_only}
 
 
+def independent_math_reference(case_id: str) -> dict:
+    """Independent arithmetic/physics references, not official ANRE answers."""
+    if case_id == "QABC-0036":
+        amp = lambda p_kw, q_kvar, u_kv: math.hypot(p_kw, q_kvar) / (math.sqrt(3) * u_kv)
+        return {
+            "basis": "balanced sinusoidal three-phase, S=sqrt(P^2+Q^2), S=sqrt(3)*U*I",
+            "p10_q8_u400_volts_current_A": round(amp(10, 8, .4), 3),
+            "p10_q8_u500_volts_current_A": round(amp(10, 8, .5), 3),
+            "p10_q30_u400_volts_current_A": round(amp(10, 30, .4), 3),
+            "not_an_ANRE_scored_key": True,
+        }
+    if case_id == "QABC-0050":
+        return {
+            "basis": "f_n=n*f_1 and T_n=T_1/n",
+            "fundamental_to_second_period_ratio": 2,
+            "second_to_fundamental_period_ratio": .5,
+            "first_to_first_period_ratio": 1,
+            "second_harmonic_ratio_is_valid_special_case_not_exhaustive": True,
+            "not_an_ANRE_scored_key": True,
+        }
+    if case_id == "QABC-0065":
+        return {
+            "basis": "separately distinguish E and D field flux in SI",
+            "E_vacuum_closed_surface_flux": "q/epsilon_0",
+            "D_closed_surface_free_charge_flux": "q_free",
+            "E_and_D_are_not_interchangeable_without_definition": True,
+            "not_an_ANRE_scored_key": True,
+        }
+    raise ValueError("No independent mathematical reference for unknown P0 question")
+
+
+def observed_negative_flags(case_id: str, response_text: str) -> list[str]:
+    """Conservative real-world regression leads; NOT a general truth or key grader."""
+    low = response_text.casefold()
+    flags = []
+    if case_id == "QABC-0036":
+        # Reject the *observed* fabricated kA scale for a 10kW/400V example.
+        if ("400" in low and "10" in low and
+                re.search(r"\b(?:12[.,]8|18[.,]5)\s*k[aà]\b", low)):
+            flags.append("MATH_UNITS_KW_KV_AMPS_NOT_KAMPS")
+    if case_id == "QABC-0050":
+        line = re.search(r"(?im)^\s*(?:\*\*)?B\s*:\s*(.+)$", response_text)
+        if (line and re.search(r"necesar\w*\s*,?\s*dar\s+nu\s+suficient\w*", line.group(1).casefold())):
+            flags.append("NECESSITY_SUFFICIENCY_INVERSION_SAME_PERIOD")
+    if case_id == "QABC-0065":
+        if ("d" in low and "q" in low and
+            ("niciuna dintre surse" in low or "nicio sursă" in low)
+            and ("q_free" in low or "q\\_free" in low or "flux d" in low)):
+            flags.append("D_FLUX_Q_SOURCE_SELF_CONTRADICTION")
+    return flags
+
+
 def run(argv=None):
     p = argparse.ArgumentParser()
     p.add_argument("--evidence", type=pathlib.Path, required=True)
@@ -142,6 +195,7 @@ def run(argv=None):
     args.out.mkdir(parents=True, exist_ok=True)
     for case in cases:
         item = {"id": case["unit_id"], "source_gate": "EXAM_SOURCE_AND_EDITION_NOT_VERIFIED",
+                "independent_math_reference": independent_math_reference(case["unit_id"]),
                 "role_outputs": {}, "role_qa": {},
                 "model_independence": False, "approved_for_learning": False}
         if args.mode == "live-free":
@@ -154,6 +208,8 @@ def run(argv=None):
                 item["role_outputs"][role] = resp
                 if resp.get("ok"):
                     item["role_qa"][role] = structural_qa(resp["text"], case)
+                    item["role_qa"][role]["observed_negative_flags"] = observed_negative_flags(
+                        case["unit_id"], resp["text"])
                 else:
                     item["role_qa"][role] = {"format_ok": False, "errors": resp.get("errors", [])}
             models = [r.get("model") for r in item["role_outputs"].values() if r.get("ok")]
@@ -164,13 +220,14 @@ def run(argv=None):
                 item["model_independence"] = False  # a single rerun proves nothing
                 item["status"] = (
                     "ONE_ROLE_RETEST_PRESENT_NOT_RECONCILED"
-                    if len(models) == 1 and all(x.get("format_ok") for x in item["role_qa"].values())
+                    if len(models) == 1 and all(x.get("format_ok") and not x.get("observed_negative_flags")
+                                                for x in item["role_qa"].values())
                     else "SOURCE_OR_MODEL_STRUCTURAL_QA_BLOCKED"
                 )
             else:
                 item["status"] = (
                     "RAW_MODEL_EVIDENCE_PRESENT_NOT_SOURCE_CERTIFIED"
-                    if item["model_independence"] and all(x.get("format_ok")
+                    if item["model_independence"] and all(x.get("format_ok") and not x.get("observed_negative_flags")
                                                         for x in item["role_qa"].values())
                     else "SOURCE_OR_MODEL_STRUCTURAL_QA_BLOCKED"
                 )
