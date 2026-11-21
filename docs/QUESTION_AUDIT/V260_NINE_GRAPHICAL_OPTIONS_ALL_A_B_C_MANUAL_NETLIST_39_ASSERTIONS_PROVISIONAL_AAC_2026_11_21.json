@@ -1,0 +1,148 @@
+{
+  "schema": "V260 source original nine graphical choices compared by manual topology full three-by-three",
+  "created": "2026-11-21",
+  "parentHead": "2f68b19da7d12103d00722827d507539421a9fd4",
+  "sourceFile": "ELECTROTEHNICA-09.2024-2.xlsx",
+  "sourceSHA256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+  "basis": "V257 native source DrawingML shapes/anchors and V258 fingerprints, nine actual original Excel B/C/D option drawings; approximate visual transcriptions to human-specified circuit graphs.",
+  "modelDefinitions": {
+    "A_SHARED": "One central X breaker links selector hub {L_UP,L_DOWN} to {R_UP,R_DOWN}. Four alternative selector pairs: two longitudinal + two diagonal.",
+    "B30": "One central X links {L_UP,R_DOWN} to {L_DOWN,R_UP}. Four alternative selector pairs: two longitudinal + two transversal, no diagonal through that breaker.",
+    "C30": "Two geometric same-level routes L_UP-R_UP and L_DOWN-R_DOWN, with blank-circle and crossed-circle symbols NOT proven standard breaker devices.",
+    "B31": "Two separate X paths: L_UP-R_DOWN and L_DOWN-R_UP; two physical diagonal routes.",
+    "B32": "Two X paths: L_UP-R_DOWN and L_DOWN-R_DOWN; suspected direct R_UP-R_DOWN junction cannot qualify as breaker-controlled transversal.",
+    "C_SHARED": "One X connects {L_UP,R_UP} to {L_DOWN,R_DOWN}; four alternative modes: two transversal and two diagonal."
+  },
+  "sourceGraphAssumptions": [
+    "Each image is a single-line diagram of four physically distinct section/level busbar terminal nodes L_UP,L_DOWN,R_UP,R_DOWN. A line crossing without a junction marker may NOT connect.",
+    "Only through-breaker routes counted; closing parallel isolators on the same side of breaker is not a substitute for proper protected coupler.",
+    "A single shared breaker yields selectable modes sequentially, not two simultaneously independent couplers; two separate X symbols can represent two branches only after topological validation.",
+    "The source preview renderer uses approximate SVG rendering of DrawingML; topology models are manually entered and not generated from a verified machine netlist.",
+    "Row EL30 C and EL32 B contain symbol/junction uncertainty that cannot be fully resolved via these models alone."
+  ],
+  "questionGraphComparisons": {
+    "EL30": {
+      "purpose": "two diagonal couplers",
+      "options": {
+        "A": {
+          "fingerprint": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+          "model": "A_SHARED",
+          "paths": {
+            "diagonal": 2,
+            "longitudinal": 2,
+            "transversal": 0
+          }
+        },
+        "B": {
+          "fingerprint": "3a1c94d042a796d23e072abfef287cbb65e866928b81a03aa455ddca8cfb7ec5",
+          "model": "B30",
+          "paths": {
+            "diagonal": 0,
+            "longitudinal": 2,
+            "transversal": 2
+          }
+        },
+        "C": {
+          "fingerprint": "852de516cfbff010181195dad7a1bc326d3ee68aab10fd90b9f514cb95a58d17",
+          "model": "C30",
+          "paths": {
+            "diagonal": 0,
+            "longitudinal": 2,
+            "transversal": 0
+          },
+          "symbol_hold": "Cross-in-circle and blank circle are not asserted to be standard X breaker marks."
+        }
+      }
+    },
+    "EL31": {
+      "purpose": "two longitudinal couplers",
+      "options": {
+        "A": {
+          "fingerprint": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+          "model": "A_SHARED",
+          "paths": {
+            "diagonal": 2,
+            "longitudinal": 2,
+            "transversal": 0
+          }
+        },
+        "B": {
+          "fingerprint": "1e386dd25ca220c76921413a7988b7620408196b9e2deac1a0998018258fb3a5",
+          "model": "B31",
+          "paths": {
+            "diagonal": 2,
+            "longitudinal": 0,
+            "transversal": 0
+          },
+          "separate_X_breaker_paths": 2
+        },
+        "C": {
+          "fingerprint": "88deae6f61a535a2482c26e5c6d5e7a73d60cf64ba76c4062c4dfa9ec3ef8849",
+          "model": "C_SHARED",
+          "paths": {
+            "diagonal": 2,
+            "longitudinal": 0,
+            "transversal": 2
+          }
+        }
+      }
+    },
+    "EL32": {
+      "purpose": "two transversal couplers",
+      "options": {
+        "A": {
+          "fingerprint": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+          "model": "A_SHARED",
+          "paths": {
+            "diagonal": 2,
+            "longitudinal": 2,
+            "transversal": 0
+          }
+        },
+        "B": {
+          "fingerprint": "feb487417a69af46256e12ffff62d7d80e4eda03c92b63ae6ab1e88ac2c6c39f",
+          "model": "B32",
+          "paths": {
+            "diagonal": 1,
+            "longitudinal": 1,
+            "transversal": 0
+          },
+          "possible_unprotected_tie": "R_UP to R_DOWN; crossing vs actual junction not certified"
+        },
+        "C": {
+          "fingerprint": "88deae6f61a535a2482c26e5c6d5e7a73d60cf64ba76c4062c4dfa9ec3ef8849",
+          "model": "C_SHARED",
+          "paths": {
+            "diagonal": 2,
+            "longitudinal": 0,
+            "transversal": 2
+          }
+        }
+      }
+    }
+  },
+  "conditionalExamCandidateNotAuthenticated": {
+    "EL30": "A",
+    "EL31": "A",
+    "EL32": "C"
+  },
+  "runEvidence": {
+    "localPython": "/mnt/data/anre_ckpt348_all_busbar_graphs.py",
+    "testSummaryJson": "/mnt/data/ANRE_CKPT348_full_9_option_graph_regression.json",
+    "testsRun": 39,
+    "testsPassed": 39,
+    "nativePictureIdentityTestsRun": false,
+    "preciseElectricalNetlistProven": false,
+    "qualifiedSecondElectricalReviewer": false
+  },
+  "riskAndGuardrails": [
+    "Not an ANRE scored answer key, even though the apparent intended pattern A/A/C matches a third-party explanation.",
+    "Manual graph tests are deterministic unit tests of proposed topology, not proof that proposed topology matches every junction in official Excel display.",
+    "No 2026 validity or exam key certification.",
+    "Do not alter canonical bank, A/B/C or program based on this research."
+  ],
+  "officialScoredKeysAuthenticated": 0,
+  "learnerApprovals": 0,
+  "insertedQabc": 0,
+  "changedKeys": 0
+}
