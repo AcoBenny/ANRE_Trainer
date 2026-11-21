@@ -1,0 +1,199 @@
+{
+  "schema": "V259 conditional graph reachability for source-original busbar diagram A and C, not examiner key",
+  "date": "2026-11-21",
+  "parent_head": "91ae67cc5e8f8f20c3bc7917b23df280b7751b19",
+  "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+  "original_diagram_ABC_EVIDENCE": "V258 V257, source original graphical choices in Excel B/C/D, verified source-fingerprint equality",
+  "source_and_execution": "Actual python topology enumerator run in local container on manual graph abstractions from original DrawingML previews; no automatic netlist extraction; no qualified specialist reviewer",
+  "QA_test_results": {
+    "passed": 10,
+    "total": 10,
+    "all_tests": [
+      {
+        "test": "A_two_distinct_longitudinal_selectable_modes",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "A_two_distinct_diagonal_selectable_modes",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "A_zero_transverse_modes_through_breaker",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "A_one_breaker_only_simultaneous_limit",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "C_two_transverse_selectable_modes",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "C_two_diagonal_selectable_modes",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "C_zero_longitudinal_modes_through_breaker",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "C_one_breaker_only_simultaneous_limit",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "all_source_defined_terminal_names",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      },
+      {
+        "test": "A_and_C_topologies_are_distinct",
+        "status": "PASS_CONDITIONAL_MODEL_ONLY"
+      }
+    ]
+  },
+  "real_prior_regression_suite": "CKPT-346 18/18 original workbook structure tests passed",
+  "models": [
+    {
+      "model": "A",
+      "source_rows": [
+        "EL30.A",
+        "EL31.A",
+        "EL32.A"
+      ],
+      "source_fingerprint": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+      "source_topology_inference": "one breaker connects left hub selecting left upper/lower busbar to right hub selecting right upper/lower busbar",
+      "left_breaker_node": [
+        "L_UP",
+        "L_DOWN"
+      ],
+      "right_breaker_node": [
+        "R_UP",
+        "R_DOWN"
+      ],
+      "supported_link_types_if_one_switch_each_side": {
+        "longitudinal": [
+          [
+            "L_UP",
+            "R_UP"
+          ],
+          [
+            "L_DOWN",
+            "R_DOWN"
+          ]
+        ],
+        "diagonal": [
+          [
+            "L_UP",
+            "R_DOWN"
+          ],
+          [
+            "L_DOWN",
+            "R_UP"
+          ]
+        ],
+        "transversal": []
+      },
+      "independent_simultaneous_breaker_paths": 1,
+      "confirm": "Manual topology read of approximate source native vector rendering only, not automatic wire-netlist from OOXML."
+    },
+    {
+      "model": "C",
+      "source_rows": [
+        "EL31.C",
+        "EL32.C"
+      ],
+      "source_fingerprint": "88deae6f61a535a2482c26e5c6d5e7a73d60cf64ba76c4062c4dfa9ec3ef8849",
+      "source_topology_inference": "one breaker connects outer hub with two upper busbar sections to inner hub with two lower busbar sections",
+      "left_breaker_node": [
+        "L_UP",
+        "R_UP"
+      ],
+      "right_breaker_node": [
+        "L_DOWN",
+        "R_DOWN"
+      ],
+      "supported_link_types_if_one_switch_each_side": {
+        "transversal": [
+          [
+            "L_UP",
+            "L_DOWN"
+          ],
+          [
+            "R_UP",
+            "R_DOWN"
+          ]
+        ],
+        "diagonal": [
+          [
+            "L_UP",
+            "R_DOWN"
+          ],
+          [
+            "R_UP",
+            "L_DOWN"
+          ]
+        ],
+        "longitudinal": []
+      },
+      "independent_simultaneous_breaker_paths": 1,
+      "confirm": "Manual topology inferred from original image; can be revised if native Excel graph visibility/topology differs."
+    }
+  ],
+  "effect_on_source_only_qabc": [
+    {
+      "source_row": 30,
+      "stem_type": "two diagonal couplers",
+      "A": "Model A gives 2 selectable cross-level connections, both involving central breaker, not concurrent",
+      "B": "not modeled",
+      "C": "not modeled (EL30.C different from EL31/32.C)",
+      "uniqueness": "UNPROVEN"
+    },
+    {
+      "source_row": 31,
+      "stem_type": "two longitudinal couplers",
+      "A": "Model A gives 2 selectable same-level connections, not concurrent",
+      "B": "not modeled",
+      "C": "Model C does not provide longitudinal path through breaker in this topology",
+      "uniqueness": "UNPROVEN because B not modeled"
+    },
+    {
+      "source_row": 32,
+      "stem_type": "two transverse couplers",
+      "A": "Model A provides no through-breaker same-side upper/lower coupling",
+      "B": "not modeled",
+      "C": "Model C gives 2 selectable same-side upper/lower links through its breaker",
+      "uniqueness": "UNPROVEN because B not modeled"
+    }
+  ],
+  "safety_negative_tests": [
+    {
+      "case": "TWO_INDEPENDENT_SIMULTANEOUS_FROM_SINGLE_BREAKER",
+      "expect": "BLOCK; one breaker only forms one controlled path at a time"
+    },
+    {
+      "case": "CLOSE_TWO_SAME_HUB_ISOLATORS_TO_PRETEND_TRANVERSE_VIA_Q",
+      "expect": "BLOCK; same-hub tie bypasses breaker rather than constituting an interrupted transversal coupler"
+    },
+    {
+      "case": "MODEL_A_PERFORMS_DIAGONAL_THEREFORE_ANRE_EL30_KEY_PROVEN",
+      "expect": "BLOCK; only one choice tested, full A/B/C uniqueness not established"
+    },
+    {
+      "case": "MODEL_C_PERFORMS_TRANSVERSAL_THEREFORE_ANRE_EL32_KEY_PROVEN",
+      "expect": "BLOCK; other source options and exact native display not fully tested"
+    }
+  ],
+  "packaging": {
+    "local_QA_bundle": "ANRE_CKPT347_modele_cuple_testate_QA.zip",
+    "SHA256": "5320f0053fce4974333e22ddef1abf305b652a2a151ed9578286d90d6dd3c9d4",
+    "contents": "source test script, exact model test JSON, 3x3 illustrated original vector QA plate, CKPT346 source-structure regression JSON"
+  },
+  "gate": {
+    "native_excel_pixel_verified": false,
+    "real_qualified_independent_engineering_reviewer": false,
+    "official_2026_exam_scoring_key_authenticated": false,
+    "source_only_added_to_canonical_822": 0,
+    "original_imported_answers_changed": 0,
+    "learner_approved": 0
+  }
+}
