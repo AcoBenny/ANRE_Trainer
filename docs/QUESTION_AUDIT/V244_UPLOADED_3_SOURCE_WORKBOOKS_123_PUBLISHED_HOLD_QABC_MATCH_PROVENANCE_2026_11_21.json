@@ -1,0 +1,1866 @@
+{
+  "schema": "v244_uploaded_source_original_123_QABC_original_fields_audit",
+  "date": "2026-11-21",
+  "origin": "USER_UPLOADED_XLSX_FILES_NOT_2026_ANRE_REMOTE_BYTE_AUTHENTICATION",
+  "parent_commit": "e05ad07eabb3bd9c9a2d6952bde6acdb79e2edaf",
+  "source_files": {
+    "EL": {
+      "uploaded_filename": "ELECTROTEHNICA-09.2024-2(1).xlsx",
+      "sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "sheet": "Sheet1",
+      "source_rows": "8:282",
+      "question_rows": 275,
+      "flagged_qabc_compared": 69
+    },
+    "LE": {
+      "uploaded_filename": "LEGISLATIE-GR.-1-05.2023(1).xlsx",
+      "sha256": "b683200db51a20b625d00ed9680e4f9b6fd354535fa3cd6c277b632312d17f29",
+      "sheet": "Sheet1",
+      "source_rows": "7:57",
+      "question_rows": 51,
+      "flagged_qabc_compared": 17
+    },
+    "NO": {
+      "uploaded_filename": "NORME-TEHNICE-Gr.-1-05.2023(1).xlsx",
+      "sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+      "sheet": "Sheet1",
+      "source_rows": "8:107",
+      "question_rows": 100,
+      "flagged_qabc_compared": 37
+    }
+  },
+  "counts": {
+    "source_question_rows_total": 426,
+    "flagged_published_QABC_exact_normalized_matches": 123,
+    "flagged_published_QABC_mismatches": 0,
+    "flagged_published_QABC_unmatched": 0,
+    "unique_uploaded_row_references": 122,
+    "flagged_supplemental_didactic_QABC_not_comparable_to_official_workbook": 13,
+    "learner_approvals": 0
+  },
+  "matching_algorithm": "For each original editorial card, original stem and A/B/C strings compared to named uploaded Excel row's A/B/C/D after Unicode NFKC, collapsed whitespace and trim, via two independent 32-bit checksums (FNV-1a and djb2) concatenated. This is normalized textual equivalence, NOT binary-equivalence or technical answer correctness. Special layer schemas V240.four_versioned_records.original_hosted and V188.original were explicitly used. All 123 matches observed in this session.",
+  "diagram_findings": [
+    {
+      "source_file": "EL",
+      "row": 174,
+      "identification": "H inferior original vector schematic visible in spreadsheet render",
+      "candidate_unit_id": "QABC-0158",
+      "status": "VISUAL_SOURCE_FIGURE_RECOVERED_NOT_TECHNICALLY_VALIDATED"
+    },
+    {
+      "source_file": "EL",
+      "row": 175,
+      "identification": "H superior original vector schematic visible in spreadsheet render",
+      "candidate_unit_id": "QABC-0159",
+      "status": "VISUAL_SOURCE_FIGURE_RECOVERED_NOT_TECHNICALLY_VALIDATED"
+    },
+    {
+      "source_file": "EL",
+      "row": 35,
+      "identification": "QABC-0024 says schema de mai sus, workbook DrawingML shapes near row 34/35; rendered row 35 did not show complete figure",
+      "candidate_unit_id": "QABC-0024",
+      "status": "VECTOR_SHAPES_PRESENT_VISUAL_EXACT_ASSIGNMENT_PENDING"
+    },
+    {
+      "source_file": "EL",
+      "row": 30,
+      "identification": "Several other embedded vector diagram shapes in DrawingML near rows 30 to 32; do not infer answer without visual extraction",
+      "status": "DIAGRAM_EXISTS_NOT_YET_AUDITED"
+    }
+  ],
+  "notes": [
+    "No answer key exists as a canonical verified answer column for the examples in A:D; the imported answer letters and 2026 official-scoring authenticity remain separate unknowns.",
+    "Source file names and SHA256s identify the exact uploaded bytes; they do not establish equality to the current ANRE hosted files.",
+    "Re-check grade-specific original question/ABC independently if old card/editorial versions were mutated; preserve both original and Trainer versions.",
+    "User-approved application card context still requires verbatim same-edition before/focus-bold/after from exact normative/didactic source; uploaded question-workbook A:D is not a substitute for normative clauses.",
+    "This manifest adds file-level provenance and exact normalized question/ABC matching. Does not modify source files, existing barems, HTML, APK, or promote learner approval."
+  ],
+  "records": [
+    {
+      "unit_id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 55,
+      "original_A_to_D_fingerprint": "c7b17f0c3ee88b50",
+      "editorial_evidence_file": "V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 79,
+      "original_A_to_D_fingerprint": "9bae4e44f21802ac",
+      "editorial_evidence_file": "V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 159,
+      "original_A_to_D_fingerprint": "7b8817b9418a26c1",
+      "editorial_evidence_file": "V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 254,
+      "original_A_to_D_fingerprint": "49d30a4714ecbdc9",
+      "editorial_evidence_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0017",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 25,
+      "original_A_to_D_fingerprint": "2c7e9aa8aa8b40f2",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 109,
+      "original_A_to_D_fingerprint": "f7dfb6a7eec6feed",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0013",
+      "grade_ids": [
+        "G1-ELE-014",
+        "G2-ELEC-166"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 21,
+      "original_A_to_D_fingerprint": "249b8f7995eebeb7",
+      "editorial_evidence_file": "V188_QABC0013_SOURCE_FREE_FIELD_EXACT_ANRE_TERM_COUNTEREXAMPLES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0019",
+      "grade_ids": [
+        "G1-ELE-020",
+        "G2-ELEC-172"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 27,
+      "original_A_to_D_fingerprint": "72edf484f0a5c88a",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0024",
+      "grade_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 35,
+      "original_A_to_D_fingerprint": "7554e5d237cb14c2",
+      "editorial_evidence_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0025",
+      "grade_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 36,
+      "original_A_to_D_fingerprint": "bdd436af11862059",
+      "editorial_evidence_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0036",
+      "grade_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 50,
+      "original_A_to_D_fingerprint": "c546e6ea3fb0526e",
+      "editorial_evidence_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0044",
+      "grade_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 58,
+      "original_A_to_D_fingerprint": "7332eccf5cd4c517",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0046",
+      "grade_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 60,
+      "original_A_to_D_fingerprint": "718d4f248e9210d8",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0050",
+      "grade_ids": [
+        "G1-ELE-057",
+        "G2-ELEC-203"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 64,
+      "original_A_to_D_fingerprint": "510b2d35c7b858a5",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0065",
+      "grade_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 80,
+      "original_A_to_D_fingerprint": "9a0fc79c87b53d66",
+      "editorial_evidence_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0069",
+      "grade_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 84,
+      "original_A_to_D_fingerprint": "351fd6747694b514",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0080",
+      "grade_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 95,
+      "original_A_to_D_fingerprint": "8b3f08c3ceefb73d",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0082",
+      "grade_ids": [
+        "G1-ELE-090",
+        "G2-ELEC-234"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 97,
+      "original_A_to_D_fingerprint": "7ffc5c1450e3ea6a",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0091",
+      "grade_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 106,
+      "original_A_to_D_fingerprint": "c9d3feddb6b6845d",
+      "editorial_evidence_file": "V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0092",
+      "grade_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 107,
+      "original_A_to_D_fingerprint": "51c4ce442151663c",
+      "editorial_evidence_file": "V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0096",
+      "grade_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 111,
+      "original_A_to_D_fingerprint": "e031fd7603a9f64a",
+      "editorial_evidence_file": "V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0105",
+      "grade_ids": [
+        "G1-ELE-114",
+        "G2-ELEC-256"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 121,
+      "original_A_to_D_fingerprint": "7bd1dc3f941e7929",
+      "editorial_evidence_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0113",
+      "grade_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 129,
+      "original_A_to_D_fingerprint": "d64789418005b24f",
+      "editorial_evidence_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0115",
+      "grade_ids": [
+        "G1-ELE-124",
+        "G2-ELEC-266"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 131,
+      "original_A_to_D_fingerprint": "943b4763d33ea523",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0116",
+      "grade_ids": [
+        "G1-ELE-125"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 132,
+      "original_A_to_D_fingerprint": "43298bdf969763e3",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0117",
+      "grade_ids": [
+        "G1-ELE-126"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 133,
+      "original_A_to_D_fingerprint": "ed31184e56f390cc",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0119",
+      "grade_ids": [
+        "G1-ELE-128",
+        "G2-ELEC-268"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 135,
+      "original_A_to_D_fingerprint": "ad33429366ddd21d",
+      "editorial_evidence_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0125",
+      "grade_ids": [
+        "G1-ELE-134",
+        "G2-ELEC-274"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 141,
+      "original_A_to_D_fingerprint": "0cd78bbe82d51b2e",
+      "editorial_evidence_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0130",
+      "grade_ids": [
+        "G1-ELE-139",
+        "G2-ELEC-277"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 146,
+      "original_A_to_D_fingerprint": "75aec8afc64e7725",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0131",
+      "grade_ids": [
+        "G1-ELE-140",
+        "G2-ELEC-278"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 147,
+      "original_A_to_D_fingerprint": "e99f1f2eca1d9bac",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0132",
+      "grade_ids": [
+        "G1-ELE-141",
+        "G2-ELEC-279"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 148,
+      "original_A_to_D_fingerprint": "ba481bf4d926f646",
+      "editorial_evidence_file": "V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0137",
+      "grade_ids": [
+        "G1-ELE-146",
+        "G2-ELEC-284"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 153,
+      "original_A_to_D_fingerprint": "31a8e1c91fd290bb",
+      "editorial_evidence_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0141",
+      "grade_ids": [
+        "G1-ELE-150",
+        "G2-ELEC-288"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 157,
+      "original_A_to_D_fingerprint": "63006037fe27ddef",
+      "editorial_evidence_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0142",
+      "grade_ids": [
+        "G1-ELE-151",
+        "G2-ELEC-289"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 158,
+      "original_A_to_D_fingerprint": "f661b53015a34fea",
+      "editorial_evidence_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0147",
+      "grade_ids": [
+        "G1-ELE-156",
+        "G2-ELEC-294"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 163,
+      "original_A_to_D_fingerprint": "d352b19eeba1b700",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0156",
+      "grade_ids": [
+        "G1-ELE-165",
+        "G2-ELEC-303"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 172,
+      "original_A_to_D_fingerprint": "ffb21764b24ce552",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0157",
+      "grade_ids": [
+        "G1-ELE-166",
+        "G2-ELEC-304"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 173,
+      "original_A_to_D_fingerprint": "73859563df00bf4f",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0158",
+      "grade_ids": [
+        "G1-ELE-167",
+        "G2-ELEC-305"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 174,
+      "original_A_to_D_fingerprint": "2094425e9b2b5c6e",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0159",
+      "grade_ids": [
+        "G1-ELE-168",
+        "G2-ELEC-306"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 175,
+      "original_A_to_D_fingerprint": "2b24c56adf2e23ee",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0161",
+      "grade_ids": [
+        "G1-ELE-171",
+        "G2-ELEC-308"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 178,
+      "original_A_to_D_fingerprint": "2728f34c56701322",
+      "editorial_evidence_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0162",
+      "grade_ids": [
+        "G1-ELE-172",
+        "G2-ELEC-309"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 179,
+      "original_A_to_D_fingerprint": "e2511eb5aed1c51d",
+      "editorial_evidence_file": "V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0163",
+      "grade_ids": [
+        "G1-ELE-173",
+        "G2-ELEC-310"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 180,
+      "original_A_to_D_fingerprint": "5b7fec83c0284159",
+      "editorial_evidence_file": "V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0167",
+      "grade_ids": [
+        "G1-ELE-178",
+        "G2-ELEC-314"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 185,
+      "original_A_to_D_fingerprint": "a5ced682debfc15a",
+      "editorial_evidence_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0169",
+      "grade_ids": [
+        "G1-ELE-180",
+        "G2-ELEC-316"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 187,
+      "original_A_to_D_fingerprint": "1b99966a40cec244",
+      "editorial_evidence_file": "V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0183",
+      "grade_ids": [
+        "G1-ELE-194",
+        "G2-ELEC-330"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 201,
+      "original_A_to_D_fingerprint": "5f96b3e565704fe3",
+      "editorial_evidence_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0187",
+      "grade_ids": [
+        "G1-ELE-198",
+        "G2-ELEC-334"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 205,
+      "original_A_to_D_fingerprint": "4b83ea502834d95c",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0188",
+      "grade_ids": [
+        "G1-ELE-199",
+        "G2-ELEC-335"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 206,
+      "original_A_to_D_fingerprint": "36d101981670337a",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0192",
+      "grade_ids": [
+        "G1-ELE-203",
+        "G2-ELEC-339"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 210,
+      "original_A_to_D_fingerprint": "ced6750207201baa",
+      "editorial_evidence_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0196",
+      "grade_ids": [
+        "G1-ELE-207",
+        "G2-ELEC-343"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 214,
+      "original_A_to_D_fingerprint": "8cda00397e7d59f3",
+      "editorial_evidence_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0199",
+      "grade_ids": [
+        "G1-ELE-210",
+        "G2-ELEC-346"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 217,
+      "original_A_to_D_fingerprint": "80d35b8ed3d8e702",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0205",
+      "grade_ids": [
+        "G1-ELE-216",
+        "G2-ELEC-352"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 223,
+      "original_A_to_D_fingerprint": "4c162d01c0c551e1",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0208",
+      "grade_ids": [
+        "G1-ELE-219",
+        "G2-ELEC-355"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 226,
+      "original_A_to_D_fingerprint": "f69497351e604331",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0210",
+      "grade_ids": [
+        "G1-ELE-221",
+        "G2-ELEC-357"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 228,
+      "original_A_to_D_fingerprint": "3f5cd214b0c8a2d8",
+      "editorial_evidence_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0211",
+      "grade_ids": [
+        "G1-ELE-222",
+        "G2-ELEC-358"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 229,
+      "original_A_to_D_fingerprint": "6e10cf29ff8073a5",
+      "editorial_evidence_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0213",
+      "grade_ids": [
+        "G1-ELE-224",
+        "G2-ELEC-360"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 231,
+      "original_A_to_D_fingerprint": "8f4d5e63a64144bf",
+      "editorial_evidence_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0214",
+      "grade_ids": [
+        "G1-ELE-225",
+        "G2-ELEC-361"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 232,
+      "original_A_to_D_fingerprint": "624e4f7410563974",
+      "editorial_evidence_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0215",
+      "grade_ids": [
+        "G1-ELE-226",
+        "G2-ELEC-362"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 233,
+      "original_A_to_D_fingerprint": "c8c1d699faf249dd",
+      "editorial_evidence_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0217",
+      "grade_ids": [
+        "G1-ELE-228",
+        "G2-ELEC-364"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 235,
+      "original_A_to_D_fingerprint": "f33f16fcc6eb7948",
+      "editorial_evidence_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0218",
+      "grade_ids": [
+        "G1-ELE-229",
+        "G2-ELEC-365"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 236,
+      "original_A_to_D_fingerprint": "643357f815556af8",
+      "editorial_evidence_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0220",
+      "grade_ids": [
+        "G1-ELE-231",
+        "G2-ELEC-367"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 238,
+      "original_A_to_D_fingerprint": "dc2f6809b9f31313",
+      "editorial_evidence_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0221",
+      "grade_ids": [
+        "G1-ELE-232",
+        "G2-ELEC-368"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 239,
+      "original_A_to_D_fingerprint": "25aba9214e8bd9a3",
+      "editorial_evidence_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0222",
+      "grade_ids": [
+        "G1-ELE-233",
+        "G2-ELEC-369"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 240,
+      "original_A_to_D_fingerprint": "0275a18b3eb20a4f",
+      "editorial_evidence_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0234",
+      "grade_ids": [
+        "G1-ELE-245",
+        "G2-ELEC-381"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 252,
+      "original_A_to_D_fingerprint": "bf71b7142448f1ee",
+      "editorial_evidence_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0235",
+      "grade_ids": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 253,
+      "original_A_to_D_fingerprint": "601b0a31cc66de23",
+      "editorial_evidence_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0243",
+      "grade_ids": [
+        "G1-ELE-254",
+        "G2-ELEC-389"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 261,
+      "original_A_to_D_fingerprint": "5f47646ee41e5c64",
+      "editorial_evidence_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0246",
+      "grade_ids": [
+        "G1-ELE-257",
+        "G2-ELEC-392"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 264,
+      "original_A_to_D_fingerprint": "fe19844f9cf2604b",
+      "editorial_evidence_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0250",
+      "grade_ids": [
+        "G1-ELE-261",
+        "G2-ELEC-396"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 268,
+      "original_A_to_D_fingerprint": "61124a338c5ec85f",
+      "editorial_evidence_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0253",
+      "grade_ids": [
+        "G1-ELE-264",
+        "G2-ELEC-399"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 271,
+      "original_A_to_D_fingerprint": "f8cbe326c594cea4",
+      "editorial_evidence_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0254",
+      "grade_ids": [
+        "G1-ELE-265",
+        "G2-ELEC-400"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 272,
+      "original_A_to_D_fingerprint": "9d15cb9042d47d80",
+      "editorial_evidence_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0256",
+      "grade_ids": [
+        "G1-ELE-267"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 274,
+      "original_A_to_D_fingerprint": "b4bf53a839a804c4",
+      "editorial_evidence_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0266",
+      "grade_ids": [
+        "G1-LEG-002"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 9,
+      "original_A_to_D_fingerprint": "8c7c2e1f38397273",
+      "editorial_evidence_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0271",
+      "grade_ids": [
+        "G1-LEG-007"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 14,
+      "original_A_to_D_fingerprint": "cb11f3074d93304f",
+      "editorial_evidence_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0275",
+      "grade_ids": [
+        "G1-LEG-011"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 18,
+      "original_A_to_D_fingerprint": "4c8d9e0548818183",
+      "editorial_evidence_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0279",
+      "grade_ids": [
+        "G1-LEG-015"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 22,
+      "original_A_to_D_fingerprint": "337a081b503ba699",
+      "editorial_evidence_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0281",
+      "grade_ids": [
+        "G1-LEG-017"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 24,
+      "original_A_to_D_fingerprint": "01d66b74eb649812",
+      "editorial_evidence_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0283",
+      "grade_ids": [
+        "G1-LEG-019"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 26,
+      "original_A_to_D_fingerprint": "e68cfc76a5f44e62",
+      "editorial_evidence_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0284",
+      "grade_ids": [
+        "G1-LEG-020"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 27,
+      "original_A_to_D_fingerprint": "817631add632a7f5",
+      "editorial_evidence_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0288",
+      "grade_ids": [
+        "G1-LEG-024"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 31,
+      "original_A_to_D_fingerprint": "3d3b88e198f2b885",
+      "editorial_evidence_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0290",
+      "grade_ids": [
+        "G1-LEG-026"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 33,
+      "original_A_to_D_fingerprint": "b8a9ef5b9abf5dbb",
+      "editorial_evidence_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0292",
+      "grade_ids": [
+        "G1-LEG-028"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 35,
+      "original_A_to_D_fingerprint": "bf1ae82c04361148",
+      "editorial_evidence_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0293",
+      "grade_ids": [
+        "G1-LEG-029"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 36,
+      "original_A_to_D_fingerprint": "a486337e758438fe",
+      "editorial_evidence_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0295",
+      "grade_ids": [
+        "G1-LEG-031"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 38,
+      "original_A_to_D_fingerprint": "193acd812e4f4f51",
+      "editorial_evidence_file": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0296",
+      "grade_ids": [
+        "G1-LEG-032"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 39,
+      "original_A_to_D_fingerprint": "3e216dec47af7788",
+      "editorial_evidence_file": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0298",
+      "grade_ids": [
+        "G1-LEG-034"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 41,
+      "original_A_to_D_fingerprint": "d812dbdf90f681d1",
+      "editorial_evidence_file": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0304",
+      "grade_ids": [
+        "G1-LEG-040"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 47,
+      "original_A_to_D_fingerprint": "faa20749bb69d2eb",
+      "editorial_evidence_file": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0307",
+      "grade_ids": [
+        "G1-LEG-043"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 50,
+      "original_A_to_D_fingerprint": "6580356e7c6b080e",
+      "editorial_evidence_file": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0312",
+      "grade_ids": [
+        "G1-LEG-048"
+      ],
+      "uploaded_file_key": "LE",
+      "sheet": "Sheet1",
+      "excel_row": 55,
+      "original_A_to_D_fingerprint": "36dab39a965c4790",
+      "editorial_evidence_file": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0316",
+      "grade_ids": [
+        "G1-NOR-002"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 9,
+      "original_A_to_D_fingerprint": "7aede3ac958e9028",
+      "editorial_evidence_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0321",
+      "grade_ids": [
+        "G1-NOR-007"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 14,
+      "original_A_to_D_fingerprint": "ee47d6b7156f1b5d",
+      "editorial_evidence_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0322",
+      "grade_ids": [
+        "G1-NOR-008"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 15,
+      "original_A_to_D_fingerprint": "635f35d59997f1ab",
+      "editorial_evidence_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0324",
+      "grade_ids": [
+        "G1-NOR-010"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 17,
+      "original_A_to_D_fingerprint": "cc4cefe0033e5568",
+      "editorial_evidence_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0326",
+      "grade_ids": [
+        "G1-NOR-012"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 19,
+      "original_A_to_D_fingerprint": "0302dbb0addd7be0",
+      "editorial_evidence_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0335",
+      "grade_ids": [
+        "G1-NOR-021"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 28,
+      "original_A_to_D_fingerprint": "996c622336dc14e5",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0336",
+      "grade_ids": [
+        "G1-NOR-022"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 29,
+      "original_A_to_D_fingerprint": "e740329d3d831d77",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0337",
+      "grade_ids": [
+        "G1-NOR-023"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 30,
+      "original_A_to_D_fingerprint": "b869d9f44ee2c240",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0339",
+      "grade_ids": [
+        "G1-NOR-025"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 32,
+      "original_A_to_D_fingerprint": "eeab98f5215e8c37",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0341",
+      "grade_ids": [
+        "G1-NOR-027"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 34,
+      "original_A_to_D_fingerprint": "dcebdd2e7abb7f1a",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0342",
+      "grade_ids": [
+        "G1-NOR-028"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 35,
+      "original_A_to_D_fingerprint": "a8fb1354110e04e0",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0343",
+      "grade_ids": [
+        "G1-NOR-029"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 36,
+      "original_A_to_D_fingerprint": "55ec2a0c22963f7e",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0344",
+      "grade_ids": [
+        "G1-NOR-030"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 37,
+      "original_A_to_D_fingerprint": "38fa510d89ecc683",
+      "editorial_evidence_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0347",
+      "grade_ids": [
+        "G1-NOR-033"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 40,
+      "original_A_to_D_fingerprint": "c5b7fbd2cb90dc5c",
+      "editorial_evidence_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0349",
+      "grade_ids": [
+        "G1-NOR-035"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 42,
+      "original_A_to_D_fingerprint": "14e6ee68796eca30",
+      "editorial_evidence_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0355",
+      "grade_ids": [
+        "G1-NOR-041"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 48,
+      "original_A_to_D_fingerprint": "53ba6345fe45d5cf",
+      "editorial_evidence_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0356",
+      "grade_ids": [
+        "G1-NOR-042"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 49,
+      "original_A_to_D_fingerprint": "c452dd3ac3dd1d22",
+      "editorial_evidence_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0365",
+      "grade_ids": [
+        "G1-NOR-051"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 58,
+      "original_A_to_D_fingerprint": "92782e4049fa4850",
+      "editorial_evidence_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0367",
+      "grade_ids": [
+        "G1-NOR-053"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 60,
+      "original_A_to_D_fingerprint": "74c17ebf9c2b595b",
+      "editorial_evidence_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0368",
+      "grade_ids": [
+        "G1-NOR-054"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 61,
+      "original_A_to_D_fingerprint": "68735ac7606df037",
+      "editorial_evidence_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0372",
+      "grade_ids": [
+        "G1-NOR-058"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 65,
+      "original_A_to_D_fingerprint": "75d707ab5fc9fc2b",
+      "editorial_evidence_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0374",
+      "grade_ids": [
+        "G1-NOR-060"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 67,
+      "original_A_to_D_fingerprint": "4265b48916cc7e73",
+      "editorial_evidence_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0375",
+      "grade_ids": [
+        "G1-NOR-061"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 68,
+      "original_A_to_D_fingerprint": "9ee3cdf2546acb46",
+      "editorial_evidence_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0376",
+      "grade_ids": [
+        "G1-NOR-062"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 69,
+      "original_A_to_D_fingerprint": "2ea88b121215f4f6",
+      "editorial_evidence_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0379",
+      "grade_ids": [
+        "G1-NOR-065"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 72,
+      "original_A_to_D_fingerprint": "803b71ddde97201d",
+      "editorial_evidence_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0380",
+      "grade_ids": [
+        "G1-NOR-066"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 73,
+      "original_A_to_D_fingerprint": "7a98fce955e4f725",
+      "editorial_evidence_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0381",
+      "grade_ids": [
+        "G1-NOR-067"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 74,
+      "original_A_to_D_fingerprint": "9c65a574e3bef5a0",
+      "editorial_evidence_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0385",
+      "grade_ids": [
+        "G1-NOR-071"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 78,
+      "original_A_to_D_fingerprint": "cb457d5650166dec",
+      "editorial_evidence_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0394",
+      "grade_ids": [
+        "G1-NOR-080"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 87,
+      "original_A_to_D_fingerprint": "9811533c534ab84e",
+      "editorial_evidence_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0395",
+      "grade_ids": [
+        "G1-NOR-081"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 88,
+      "original_A_to_D_fingerprint": "a45904dbe54c04b3",
+      "editorial_evidence_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0396",
+      "grade_ids": [
+        "G1-NOR-082"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 89,
+      "original_A_to_D_fingerprint": "23321d56f4e8e2bc",
+      "editorial_evidence_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0403",
+      "grade_ids": [
+        "G1-NOR-089"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 96,
+      "original_A_to_D_fingerprint": "893b7b0069bf554c",
+      "editorial_evidence_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0404",
+      "grade_ids": [
+        "G1-NOR-090"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 97,
+      "original_A_to_D_fingerprint": "d9ab2baa82910e62",
+      "editorial_evidence_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0408",
+      "grade_ids": [
+        "G1-NOR-094"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 101,
+      "original_A_to_D_fingerprint": "08ad0e928f2387ce",
+      "editorial_evidence_file": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0414",
+      "grade_ids": [
+        "G1-NOR-100"
+      ],
+      "uploaded_file_key": "NO",
+      "sheet": "Sheet1",
+      "excel_row": 107,
+      "original_A_to_D_fingerprint": "73e17eba63e84cf4",
+      "editorial_evidence_file": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    },
+    {
+      "unit_id": "QABC-0568",
+      "grade_ids": [
+        "G2-ELEC-290"
+      ],
+      "uploaded_file_key": "EL",
+      "sheet": "Sheet1",
+      "excel_row": 159,
+      "original_A_to_D_fingerprint": "7b8817b9418a26c1",
+      "editorial_evidence_file": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+      "comparison": "PASS_NORMALIZED_STEM_PLUS_ABC",
+      "official_scored_key_authenticated": false,
+      "independent_quality_approval": false
+    }
+  ]
+}
