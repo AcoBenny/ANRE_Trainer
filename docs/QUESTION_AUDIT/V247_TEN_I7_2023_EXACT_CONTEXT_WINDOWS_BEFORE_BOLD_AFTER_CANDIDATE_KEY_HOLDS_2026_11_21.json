@@ -26,10 +26,10 @@
       "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
       "source_row": 55,
       "source_original_stem_ABC": {
-        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
-        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
-        "B": "numai dintr-un circuit de iluminat normal",
-        "C": "numai dintr-un circuit de prize"
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
       },
       "imported_grade_keys_unmodified": "G1-NOR-048=A",
       "source_scope": "I7/2011 building electrical installations",
@@ -53,7 +53,15 @@
       "independent_technical_legal_QA": false,
       "independent_linguistic_QA": false,
       "approved_for_learning": false,
-      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED",
+      "trainer_master_changed_stem_ABC": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "xlsx_original_matched_v246_normalized": true,
+      "original_source_vs_master_material_mutation": true
     },
     {
       "unit_id": "QABC-0386",
@@ -63,9 +71,9 @@
       "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
       "source_row": 79,
       "source_original_stem_ABC": {
-        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
         "A": "nu este obligatoriu să poată fi deconectat individual",
-        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
         "C": "trebuie să poată fi deconectat individual"
       },
       "imported_grade_keys_unmodified": "G1-NOR-072=B",
@@ -90,7 +98,15 @@
       "independent_technical_legal_QA": false,
       "independent_linguistic_QA": false,
       "approved_for_learning": false,
-      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED",
+      "trainer_master_changed_stem_ABC": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "xlsx_original_matched_v246_normalized": true,
+      "original_source_vs_master_material_mutation": true
     },
     {
       "unit_id": "QABC-0343",
@@ -389,5 +405,6 @@
       "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
     }
   ],
-  "clarification_2026_11_21": "V247 source-window highlight QA: for QABC-0386 remove following section heading from focus; focus now contains only §5.5.2.3; adjacent after paragraph starts §5.5.3.1. Historical wording and all keys intact."
+  "clarification_2026_11_21": "V247 source-window highlight QA: for QABC-0386 remove following section heading from focus; focus now contains only §5.5.2.3; adjacent after paragraph starts §5.5.3.1. Historical wording and all keys intact.",
+  "versioned_correction_2026_11_21": "QA fixed the original-version provenance lookup in V247 for QABC-0362 and QABC-0386: v246.mutations identifies records with .id, not .unit_id. Replaced mistaken Trainer-original alias with the authentic uploaded Excel A/B/C; preserved Trainer-mutated set separately. No physical normative excerpts or answer keys changed."
 }
