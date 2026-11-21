@@ -1,0 +1,177 @@
+{
+  "checkpoint": "CKPT-118",
+  "date": "2026-11-17",
+  "baseline_head": "dd341530ce0071cbd2e433f3ac52ae485450b003",
+  "protocol": "BATCH5, first of two batches: 5 QABC units / 10 grade IDs",
+  "team": "Avengers specialized workflow single assistant; real independent reviewer NOT_RUN, no child agent runtime",
+  "safety": "Documentation and progress ledger only; QABC, keys, MASTER, HTML, APK unchanged; PR Draft no merge",
+  "gates": {
+    "question_original_hash": "PREFLIGHT_PENDING_LEDGER_RECONCILIATION",
+    "source_specificity": "PRELIMINARY_WITH_CAVEATS",
+    "bibliography_2026": "UNVERIFIED",
+    "independent_review": "NOT_RUN",
+    "learning": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-f0166d3760ee1d1f",
+      "representative_id": "G1-ELE-062",
+      "member_ids": "G1-ELE-062;G2-ELEC-207",
+      "qabc_sha256": "f0166d3760ee1d1f9b64a1cdf619a7b7db73df69a2f34fd92da3ad332f87b67e",
+      "original_keys_by_id_JSON": "{\"G1-ELE-062\":\"A\",\"G2-ELEC-207\":\"A\"}",
+      "question_original": "Energia electrica reactiva:",
+      "A_original": "este o energie electrica complementara, care serveşte la magnetizarea bobinajelor",
+      "B_original": "se poate transforma în energie mecanica",
+      "C_original": "se poate transforma în energie luminoasa",
+      "candidate_NOT_APPROVED": "A",
+      "source": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Equipment_and_appliances_requiring_reactive_energy",
+          "locator": "Schneider Electrical Installation Guide, Equipment and appliances requiring reactive energy: flux in coils of motors and transformers",
+          "access": "ORIGINAL_HTML_OPENED"
+        }
+      ],
+      "context": "Echipamentele inductive de c.a. solicită energie reactivă pentru stabilirea câmpului magnetic. Energia se schimbă ciclic între câmp și sursă; media sa nu reprezintă transfer net de lucru mecanic sau lumină, spre deosebire de energia activă. Formularea «energie complementară» este didactică; Q reactiv se exprimă în var, energia reactivă acumulată în varh în metrologie. Sursa descrie explicit magnetizarea înfășurărilor, sprijinind A pentru sarcini inductive, nu universal toate formele de energie reactivă.",
+      "options": {
+        "A": "Susținut în regim inductiv: câmpul magnetic al bobinelor necesită componenta reactivă.",
+        "B": "Puterea/energia activă produce lucrul mecanic util; energia reactivă nu se transformă net în lucru mecanic.",
+        "C": "Emisia de lumină este rezultatul conversiei energiei active, nu funcția de bază a schimbului reactiv."
+      },
+      "paired_checks": "A vs B/C: câmp stocat și restituit versus consum util ireversibil; B vs C sunt două transformări active diferite.",
+      "reverse_counterexample": "Capacitorul schimbă energie reactivă cu un câmp electric, deci A nu e definiție completă pentru toate aparatele. Întrebarea rămâne în domeniul bobinelor.",
+      "finding": "INTENDED_A_FOR_INDUCTIVE_REACTIVE_EXCHANGE; TERM_ENERGY_VS_POWER_UNVERIFIED",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-5392bfc5b34cdb66",
+      "representative_id": "G1-ELE-074",
+      "member_ids": "G1-ELE-074;G2-ELEC-219",
+      "qabc_sha256": "5392bfc5b34cdb664c0a2497cce42dff5569428c43cbf119ea24151fc5a19c4f",
+      "original_keys_by_id_JSON": "{\"G1-ELE-074\":\"A\",\"G2-ELEC-219\":\"A\"}",
+      "question_original": "Folosirea conductoarelor jumelate în construcţia LEA are ca scop principal:",
+      "A_original": "reducerea pierderilor Corona",
+      "B_original": "reducerea solicitărilor mecanice ale stâlpilor",
+      "C_original": "reducerea curenţilor de scurtcircuit",
+      "candidate_NOT_APPROVED": "A",
+      "source": [
+        {
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/108104051/chapter_1/1_10.html",
+          "locator": "NPTEL, Power System Analysis, Ch1 §1.10 Bundled Conductors, lines 2–4",
+          "access": "ORIGINAL_HTML_OPENED"
+        },
+        {
+          "url": "https://www.mdpi.com/2227-7080/14/5/255",
+          "locator": "Technologies 2026, conductor bundling reduces maximum surface voltage gradient and corona",
+          "access": "SEARCH_SNIPPET_ONLY"
+        }
+      ],
+      "context": "Conductoarele jumelate LEA sunt mai multe subconductoare ale aceleiași faze, montate în fascicul cu distanțiere. Crește raza echivalentă și scade gradientul câmpului electric la suprafață pentru aceeași tensiune, ceea ce reduce ionizarea aerului, efectul corona și pierderile aferente. NPTEL indică explicit relația corona/fascicul. Nu rezultă reducerea efortului mecanic în stâlpi, deoarece masa, încărcările de vânt și distanțierele pot crește, și nu acesta este mecanismul de limitare a curenților de scurtcircuit.",
+      "options": {
+        "A": "Dovadă pozitivă directă: fasciculul scade gradientul superficial și pierderile corona.",
+        "B": "Nu: forțele mecanice țin de geometrie, greutate, vânt și întinderi, nu de funcția principală.",
+        "C": "Nu: curentul de scurtcircuit depinde de impedanța sursei/buclei, nu de jumelare ca scop principal."
+      },
+      "paired_checks": "A-B: izolație aer electrică versus efort mecanic; A-C: pierderi corona versus curent de defect; B-C scopuri distincte fără sursă de susținere.",
+      "reverse_counterexample": "La tensiuni reduse corona poate fi neglijabilă și jumelarea poate avea alt beneficiu; enunțul reflectă scopul principal la LEA de tensiune înaltă.",
+      "finding": "INTENDED_A_BUNDLE_CORONA_SCOPE_HV",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-a408acb2b4d82a9d",
+      "representative_id": "G1-ELE-080",
+      "member_ids": "G1-ELE-080;G2-ELEC-225",
+      "qabc_sha256": "a408acb2b4d82a9d2ca85ebbf7a049d5b04eb66ac8a00a26695c049dce55887e",
+      "original_keys_by_id_JSON": "{\"G1-ELE-080\":\"B\",\"G2-ELEC-225\":\"B\"}",
+      "question_original": "Forţa electrodinamică exercitată între două conductoare filiforme, paralele, lungi, aflate la distanţa r, străbătute de câte un curent:",
+      "A_original": "este direct proporţională cu distanţa r dintre conductoare",
+      "B_original": "este invers proporţională cu distanţa r dintre conductoare",
+      "C_original": "nu depinde de distanţa r dintre conductoare",
+      "candidate_NOT_APPROVED": "B",
+      "source": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+          "locator": "OpenStax §12.3 equations 12.9–12.11 F/l=μ0I1I2/(2πr)",
+          "access": "ORIGINAL_HTML_OPENED"
+        }
+      ],
+      "context": "La doi conductori lungi, drepți, paraleli, la distanța r, câmpul produs de unul are modul B=μ0I/(2πr), iar forța pe unitatea de lungime exercitată asupra celuilalt este F/l=μ0I1I2/(2πr). Pentru aceiași curenți și aceeași geometrie, forța scade invers proporțional cu r. Sensul forței poate fi atractiv sau repulsiv după orientarea curenților; întrebarea cere mărimea forței. B are susținere matematică directă.",
+      "options": {
+        "A": "Fals: cu r dublu modulul F/l se înjumătățește.",
+        "B": "Corect: F/l∝1/r în modelul conductoarelor filiforme lungi.",
+        "C": "Fals: r apare explicit la numitor."
+      },
+      "paired_checks": "A-B relație directă versus inversă; B-C dependență versus independență; A-C sunt incompatibile amândouă cu formula.",
+      "reverse_counterexample": "Pentru conductoare foarte scurte ori la distanță comparabilă cu lungimea, aproximația 1/r necesită corecții.",
+      "finding": "INTENDED_B_EXACT_OPENSTAX_FORCE_INV_R",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-aca4c87a31330958",
+      "representative_id": "G1-ELE-081",
+      "member_ids": "G1-ELE-081;G2-ELEC-226",
+      "qabc_sha256": "aca4c87a31330958e85f9cfd7c0307262e008287329dffaf6239ac378d6cbe20",
+      "original_keys_by_id_JSON": "{\"G1-ELE-081\":\"B\",\"G2-ELEC-226\":\"B\"}",
+      "question_original": "Forţa F care se exercită asupra unei sarcini electrice q aflată într-un câmp electric de intensitate E are expresia:",
+      "A_original": "F=E/q",
+      "B_original": "F=qE",
+      "C_original": "F=q/E",
+      "candidate_NOT_APPROVED": "B",
+      "source": [
+        {
+          "url": "https://openstax.org/books/physics/pages/18-3-electric-field",
+          "locator": "OpenStax Physics §18.3 eq 18.15 E=F/q, equivalent vector F=qE",
+          "access": "ORIGINAL_HTML_OPENED"
+        }
+      ],
+      "context": "Intensitatea câmpului electric E este forța electrică pe unitatea de sarcină de probă, E=F/q. Prin urmare forța asupra sarcinii q în acel câmp este vectorial F=qE. Sarcina negativă schimbă direcția vectorului față de E, dar nu relația. Forma B are unitatea corectă N, în timp ce A și C nu satisfac definiția sau analiza dimensională.",
+      "options": {
+        "A": "Greșit: E/q nu este forța, are dimensiuni incorecte.",
+        "B": "Afirmativ: F=qE în scriere vectorială (modul |q|E).",
+        "C": "Greșit: q/E nu are unitățile unei forțe."
+      },
+      "paired_checks": "B↔A inversează multiplicarea cu q; B↔C inversează E; A↔C ambele sunt rapoarte neconforme.",
+      "reverse_counterexample": "Pentru q negativ forța vectorială este opusă câmpului; dacă se discută doar modulul trebuie |q|E.",
+      "finding": "INTENDED_B_EXACT_FIELD_DEFINITION",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-f47bb328406b52ef",
+      "representative_id": "G1-ELE-083",
+      "member_ids": "G1-ELE-083;G2-ELEC-228",
+      "qabc_sha256": "f47bb328406b52efb6d26a910010161c7f30c312a34065e63b50bd9c64bde74c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-083\":\"A\",\"G2-ELEC-228\":\"A\"}",
+      "question_original": "Funcţionarea contoarelor de inducţie are la baza:",
+      "A_original": "curenţii turbionari",
+      "B_original": "efectul termic al curentului electric",
+      "C_original": "forţa electrostatica",
+      "candidate_NOT_APPROVED": "A",
+      "source": [
+        {
+          "url": "https://maglabweb.magnet.fsu.edu/magnet-academy/watch-play/interactive-tutorials/electricity-meter/",
+          "locator": "FSU National High Magnetic Field Laboratory Magnet Academy, Electricity Meter, induction coils induce eddy currents in rotating disc",
+          "access": "SEARCH_EXCERPT_CONFIRMED_DIRECT_OPEN_CACHE_MISS"
+        },
+        {
+          "url": "https://www.eit.edu.au/resources/fundamentals-of-smart-metering-kwh-and-kvarh-meters/",
+          "locator": "Engineering Institute of Technology, fundamentals of electromechanical induction energy meter",
+          "access": "SOURCE_PRIOR_LEDGER_NOT_REOPENED"
+        }
+      ],
+      "context": "Contorul electromagnetic de inducție clasic are bobine de tensiune și de curent care generează fluxuri alternative printr-un disc metalic. În disc se induc curenți turbionari; interacțiunea lor cu fluxurile creează cuplul ce rotește discul proporțional cu energia măsurată. Materialul FSU enunță explicit acești curenți, dar deschiderea directă a paginii a eșuat; dovada este numai fragmentul indexat. Încălzirea este pierdere secundară, iar forța electrostatică nu este principiul măsurării.",
+      "options": {
+        "A": "Candidat afirmativ: curenții turbionari induși în disc creează cuplul electromagnetic.",
+        "B": "Nu, încălzirea Joule este pierdere, nu mecanismul util al discului contorului.",
+        "C": "Nu, în construcția contorului de inducție acțiunea este electromagnetică, nu electrostatică."
+      },
+      "paired_checks": "A-B curent turbionar ca mecanism vs căldură parazită; A-C electromagnetic vs electrostatic; B-C efecte fizice diferite, niciunul cuplul util.",
+      "reverse_counterexample": "Un contor digital modern fără disc nu utilizează acest mecanism; «de inducție» restrânge obiectul.",
+      "finding": "INTENDED_A_QUALITY_GATE_SOURCE_DIRECT_ACCESS_FAILED",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    }
+  ]
+}

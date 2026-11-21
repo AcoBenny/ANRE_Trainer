@@ -1,0 +1,1147 @@
+{
+  "schema": "v165_eight_overlap_explanation_source_convergence_research",
+  "date": "2026-11-20",
+  "parent_checkpoint": "CKPT-295",
+  "source_blobs": {
+    "v163": "21faf9b62eb4d4ccc4b83a380a2207a5926049c3",
+    "v158": "eb9988116cec10cfdc2c50a63c7d45583bbdb778",
+    "v160": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+    "v164": "056be38e12cf053c4ade5fe899bdadd8d8a4a548"
+  },
+  "counts": {
+    "overlap_units": 8,
+    "grade_id_refs": 16,
+    "prior_layer_occurrences": 17,
+    "independent_QA_approved": 0,
+    "source_edition_certified": 0
+  },
+  "source_policy": "Web technical sources reopened as supporting concepts, not authenticated original ANRE exam keys or approved exam editions. Preserve original full V158/V160/V163 records, no forced winner by recency.",
+  "scope_note": "Only eight overlap QABC, not all 568. 68 unique prior drafts remain 68; 500 card bodies still need source-by-source migration.",
+  "no_original_QABC_or_key_changes": true,
+  "no_HTML_or_APK_changes": true,
+  "cards": [
+    {
+      "unit_id": "QABC-0069",
+      "card_id": "EXPL_QABC-0069",
+      "grade_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "original_question": "Forţa care se exercită asupra unui conductor rectiliniu, parcurs de curentul i, aflat în câmpul de inducţie magnetică B se numeşte:",
+      "original_options": {
+        "A": "forţă electromagnetică (Laplace)",
+        "B": "forţă electrodinamică",
+        "C": "forţă magnetomotoare"
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "84",
+      "imported_key_not_authenticated": "A",
+      "research_layers_preserved": {
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0069",
+            "card_id": "EXPL_QABC-0069",
+            "grade_id_audited_in_prior_research": "G1-ELE-077",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-077",
+              "G2-ELEC-222"
+            ],
+            "imported_grade_key_UNCHANGED": "A",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "84",
+              "question": "Forţa care se exercită asupra unui conductor rectiliniu, parcurs de curentul i, aflat în câmpul de inducţie magnetică B se numeşte:",
+              "options": {
+                "A": "forţă electromagnetică (Laplace)",
+                "B": "forţă electrodinamică",
+                "C": "forţă magnetomotoare"
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "Formula F=I l cross B for a straight conductor in a uniform field.",
+              "reason_A_from_v87": "A names the magnetic force on a current conductor.",
+              "reason_B_from_v87": "B may be used broadly for current-current interactions; precise Romanian terminology still requires a Romanian primary glossary.",
+              "reason_C_from_v87": "C is an excitation quantity (NI), not a mechanical force.",
+              "language_trap_from_v87": "electromagnetic/electrodynamic names",
+              "source_locator": {
+                "prior_research_url": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+                "reported_source_edition": "University Physics vol2 online; consulted 2026-11-11",
+                "reported_article_or_page": "11.4 Calculating the Magnetic Force, equation 11.13",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "TERMINOLOGY_GATE",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        },
+        "v163": {
+          "source_file": "V163_CKPT250_23_EXACT_MATCHED_TECHNICAL_CARD_DRAFTS_2026_11_20.json",
+          "blob_sha": "21faf9b62eb4d4ccc4b83a380a2207a5926049c3",
+          "original_draft": {
+            "unit_id": "QABC-0069",
+            "card_id": "EXPL_QABC-0069",
+            "legacy_grade_ids": [
+              "G2-ELEC-222",
+              "G1-ELE-077"
+            ],
+            "all_grade_ids": [
+              "G1-ELE-077",
+              "G2-ELEC-222"
+            ],
+            "original_imported_letter_UNCHANGED": "A",
+            "original_question_and_A_B_C_matching_v149": true,
+            "prior_research": {
+              "source": "CKPT-250",
+              "source_and_page_locator": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+              "reasoning_options_models_counterexamples": "A forța electromagnetică asupra conductorului parcurs de curent într-un câmp B se descrie prin vectorul F=I L×B; denumirea «Laplace» este potrivită. B «electrodinamică» poate fi folosit mai larg pentru forțe între circuite curente, deci nu este un termen exclus complet fără glosar românesc exact. C forța magnetomotoare NI nu este forță mecanică. G1-ELE-077 are V87 cu terminologie în așteptare; corelare exactă, fără semnătură nouă independentă.",
+              "prior_status_and_hard_gate": "PREVIOUS_V87_TERMINOLOGY_GATE; **risc:** LAPLACE_FORCE_VS_ELECTRODYNAMIC_TERMS; **verdict:** CONDITIONAL_PRELIMINARY; **aprobare pentru învățare: NU.**",
+              "source_reopened_for_this_mapping": false,
+              "offline_anchor": null
+            },
+            "explanation_card_status": "PRELIMINARY_RESEARCH_DRAFT_NOT_FINAL",
+            "reformulation_example": null,
+            "version_and_source_gates": {
+              "official_scored_key_proven": false,
+              "independent_technical_QA": "NOT_RUN",
+              "independent_linguistic_QA": "NOT_RUN",
+              "source_edition_QA": "NOT_RUN",
+              "learning_approved": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "MODEL_COMPATIBLE_TERMINOLOGY_PENDING",
+        "options": {
+          "A": "În modelul de conductor parcurs de curent într-un câmp B, forța mecanică este F=I·l×B; denumirea Laplace este compatibilă.",
+          "B": "Termenul «electrodinamică» poate desemna mai larg interacțiuni de curent, deci nu se exclude lexical fără glosarul românesc din bibliografia aplicabilă.",
+          "C": "Forța magnetomotoare NI exprimă excitația magnetică, nu o forță mecanică măsurată în newtoni."
+        },
+        "rephrased": "Ce mărime rezultă pentru un conductor de lungime l perpendicular pe B, străbătut de curent I? Exprimă F și unitatea.",
+        "answer": "F=I·l·B, în N; dacă conductorul este paralel cu B, modulul forței devine zero.",
+        "technical_gate": "Romanian exact terminology for Laplace versus electrodynamic force; official-key authenticity",
+        "public_source": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0080",
+      "card_id": "EXPL_QABC-0080",
+      "grade_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "original_question": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+      "original_options": {
+        "A": "limitarea posibilităţilor de producere a unui defect în instalaţie;",
+        "B": "mărirea riscului de producere a unor scăpări de gaz;",
+        "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment."
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "95",
+      "imported_key_not_authenticated": "A",
+      "research_layers_preserved": {
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0080",
+            "card_id": "EXPL_QABC-0080",
+            "grade_id_audited_in_prior_research": "G1-ELE-088",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-088",
+              "G2-ELEC-233"
+            ],
+            "imported_grade_key_UNCHANGED": "A",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "95",
+              "question": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+              "options": {
+                "A": "limitarea posibilităţilor de producere a unui defect în instalaţie;",
+                "B": "mărirea riscului de producere a unor scăpări de gaz;",
+                "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment."
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "Small compartments typically retain comparable seals/access ports; equal mass leakage causes faster relative pressure loss.",
+              "reason_A_from_v87": "A prevention of defect occurrence is not established by this monitoring source. Compartmentalization may limit consequences instead.",
+              "reason_B_from_v87": "B more seals could create more leakage points, but this is an engineering inference not a quantified proof for this question.",
+              "reason_C_from_v87": "C smaller isolated volume normally means less gas handled locally, but exact maintenance source remains required.",
+              "language_trap_from_v87": "occurrence versus consequences; segmentation",
+              "source_locator": {
+                "prior_research_url": "https://www.hitachienergy.com/content/dam/web/products-services/products-systems/high-voltage-switchgear/documents/msm/2ghv045871-msm-user-manual-rev-r.pdf",
+                "reported_source_edition": "Hitachi Energy 2GHV045871 Rev R, copyright2023",
+                "reported_article_or_page": "p98, section5.1 small gas compartments note",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "SOURCE_GAP",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        },
+        "v163": {
+          "source_file": "V163_CKPT250_23_EXACT_MATCHED_TECHNICAL_CARD_DRAFTS_2026_11_20.json",
+          "blob_sha": "21faf9b62eb4d4ccc4b83a380a2207a5926049c3",
+          "original_draft": {
+            "unit_id": "QABC-0080",
+            "card_id": "EXPL_QABC-0080",
+            "legacy_grade_ids": [
+              "G2-ELEC-233",
+              "G1-ELE-088"
+            ],
+            "all_grade_ids": [
+              "G1-ELE-088",
+              "G2-ELEC-233"
+            ],
+            "original_imported_letter_UNCHANGED": "A",
+            "original_question_and_A_B_C_matching_v149": true,
+            "prior_research": {
+              "source": "CKPT-250",
+              "source_and_page_locator": "https://switchgearcontent.com/2019/05/23/494/requirements-for-enclosure-partitioning-in-gis-design-according-to-iec-standard/",
+              "reasoning_options_models_counterexamples": "A susține că împărțirea compartimentelor reduce «posibilitățile de producere» a defectului, deși documentația tehnică demonstrează mai clar limitarea PROPAGĂRII/întinderii unui defect și segmentarea volumului de gaz, nu reducerea frecvenței inițierii. B mai multe etanșări POT mări puncte potențiale de scăpare, dar nu dovedește o creștere automată; C volumele de gaz manipulate pot fi mai mici în fiecare compartiment. V87 a rămas NOT_ADJUDICATED, deci conflictul semantic/probator nu este rezolvat.",
+              "prior_status_and_hard_gate": "PREVIOUS_V87_AND_WEB_INDEX_SOURCE_GAP; **risc:** GIS_COMPARTMENT_FAULT_OCCURRENCE_VS_PROPAGATION; **verdict:** CONDITIONAL_PRELIMINARY; **aprobare pentru învățare: NU.**",
+              "source_reopened_for_this_mapping": false,
+              "offline_anchor": null
+            },
+            "explanation_card_status": "PRELIMINARY_RESEARCH_DRAFT_NOT_FINAL",
+            "reformulation_example": null,
+            "version_and_source_gates": {
+              "official_scored_key_proven": false,
+              "independent_technical_QA": "NOT_RUN",
+              "independent_linguistic_QA": "NOT_RUN",
+              "source_edition_QA": "NOT_RUN",
+              "learning_approved": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "CONFLICT_SEMANTIC_FAULT_OCCURRENCE_VS_LOCALIZATION",
+        "options": {
+          "A": "Compartimentarea poate limita extinderea defectului, dar aceasta nu demonstrează că împiedică apariția inițială a defectului.",
+          "B": "Un număr suplimentar de interfețe poate crea posibilități de pierderi de gaz; nu rezultă automat un risc cuantificat mai mare.",
+          "C": "Izolarea unui volum mai mic tinde să reducă gazul manipulat într-o intervenție locală; verificarea depinde de arhitectura reală."
+        },
+        "rephrased": "Dacă două compartimente sunt izolate între ele, se reduce neapărat frecvența inițierii defectelor sau se poate limita zona afectată?",
+        "answer": "Limitarea zonei afectate nu demonstrează singură reducerea probabilității de inițiere.",
+        "technical_gate": "Exact IEC/GIS original wording; distinction initiation, fault propagation and leak localization; no unique key proven",
+        "public_source": "https://www.hitachienergy.com/in/en/products-and-solutions/high-voltage-switchgear-and-breakers/monitoring-and-controlled-switching/modular-switchgear-monitoring-msm",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0104",
+      "card_id": "EXPL_QABC-0104",
+      "grade_ids": [
+        "G1-ELE-113",
+        "G2-ELEC-255"
+      ],
+      "original_question": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
+      "original_options": {
+        "A": "numai de temperatura mediului ambiant",
+        "B": "de tensiunea între faze",
+        "C": "de pierderile Joule-Lenz"
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "120",
+      "imported_key_not_authenticated": "C",
+      "research_layers_preserved": {
+        "v158": {
+          "source_file": "V158_EIGHT_EXPLANATION_CARDS_WITH_A_B_C_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "eb9988116cec10cfdc2c50a63c7d45583bbdb778",
+          "original_draft": {
+            "unit_id": "QABC-0104",
+            "card_id": "EXPL_QABC-0104",
+            "grade_ids": [
+              "G1-ELE-113",
+              "G2-ELEC-255"
+            ],
+            "source_pointer": {
+              "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "row": 120,
+              "original_question": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
+              "original_options": {
+                "A": "numai de temperatura mediului ambiant",
+                "B": "de tensiunea între faze",
+                "C": "de pierderile Joule-Lenz"
+              },
+              "original_imported_keys_UNCHANGED": "G1-ELE-113=C | G2-ELEC-255=C"
+            },
+            "evidence": {
+              "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+              "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+              "prior_research_external_url": "https://info.ornl.gov/sites/publications/Files/Pub172075.pdf",
+              "exact_original_clause_or_course_page": null,
+              "source_version_certified": false,
+              "offline_anchor": null,
+              "source_reopened_in_this_content_seed": false
+            },
+            "explanation": {
+              "principle": "Temperatura unei înfășurări rezultă din echilibrul dintre căldura produsă (inclusiv pierderile Joule) și evacuarea căldurii, influențată de mediu și răcire.",
+              "options": {
+                "A": {
+                  "state": "CONTRADICTS_ONLY",
+                  "why": "Termenul «numai» exclude pierderile proprii ale înfășurării; la curent nenul există încălzire Joule."
+                },
+                "B": {
+                  "state": "INSUFFICIENT",
+                  "why": "Tensiunea între faze nu fixează singură curentul, rezistența, răcirea sau temperatura."
+                },
+                "C": {
+                  "state": "SUPPORTS_CONTRIBUTING_FACTOR",
+                  "why": "Pierderile Joule-Lenz I²R produc căldură în bobinaj, dar nu determină singure temperatura finală."
+                }
+              },
+              "takeaway": "La variația curentului, pierderile Joule cresc cu pătratul intensității, pentru R constant.",
+              "reformulation": {
+                "question": "Dacă intensitatea se dublează, iar rezistența rămâne constantă, de câte ori cresc pierderile Joule?",
+                "answer": "De patru ori: (2I)²R=4I²R."
+              },
+              "caution": "Nu confundați cauza încălzirii cu modelul complet al temperaturii stabilizate.",
+              "imported_letter_not_authenticated": "C",
+              "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+              "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+              "authored_reformulation_is_unofficial_practice": true
+            },
+            "QA": {
+              "source_specific": "NOT_SIGNED",
+              "independent_electrical": "NOT_RUN",
+              "independent_linguistic": "NOT_RUN",
+              "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+              "learner_approved": false,
+              "offline_ready": false
+            }
+          }
+        },
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0104",
+            "card_id": "EXPL_QABC-0104",
+            "grade_id_audited_in_prior_research": "G2-ELEC-255",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-113",
+              "G2-ELEC-255"
+            ],
+            "imported_grade_key_UNCHANGED": "C",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "120",
+              "question": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
+              "options": {
+                "A": "numai de temperatura mediului ambiant",
+                "B": "de tensiunea între faze",
+                "C": "de pierderile Joule-Lenz"
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "Armature resistive losses produce heating; cooling efficacy changes thermal limits.",
+              "reason_A_from_v87": "A only ambient is contradicted by internal heating and cooling discussion.",
+              "reason_B_from_v87": "B not a sufficient determinant of winding temperature; source distinguishes voltage/core-flux limit from armature-current heating.",
+              "reason_C_from_v87": "C identifies copper heating mechanism, but final temperature also depends on cooling and ambient.",
+              "language_trap_from_v87": "numai in A; temperature versus heat source",
+              "source_locator": {
+                "prior_research_url": "https://archive.nptel.ac.in/content/storage2/courses/108101040/module%202/html/l2_s1.htm",
+                "reported_source_edition": "IIT/NPTEL course108101040 archival online; consulted2026-11-11",
+                "reported_article_or_page": "Module2 Lecture5 Generator Constraints; armature heating limit and cooling paragraph",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "VALID_TRAP_CONDITIONAL",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "MODEL_COMPATIBLE_CONDITIONAL_TEMPERATURE",
+        "options": {
+          "A": "«Numai» mediul ambiant nu explică încălzirea prin pierderi electrice interne.",
+          "B": "Tensiunea între faze singură nu fixează curentul prin înfășurări, pierderile și condițiile de răcire.",
+          "C": "Pierderile Joule I²R contribuie direct la încălzire; temperatura finală rezultă și din evacuarea căldurii."
+        },
+        "rephrased": "La curent dublu și rezistență constantă, cu cât cresc pierderile Joule în înfășurări?",
+        "answer": "De patru ori; aceasta nu înseamnă automat temperatură finală de patru ori mai mare.",
+        "technical_gate": "Generator heat balance, exact original source edition and official key",
+        "public_source": "https://archive.nptel.ac.in/content/storage2/courses/108101040/module%202/html/l2_s1.htm",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0113",
+      "card_id": "EXPL_QABC-0113",
+      "grade_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "original_question": "Într-o schemă electrică prevăzută cu mai multe sisteme de bare colectoare, separatorul de bare",
+      "original_options": {
+        "A": "asigură doar selectarea sistemului de bare pe care urmează a fi conectat circuitul;",
+        "B": "asigură izolarea unei părţi a circuitului de bara colectoare aflată sub tensiune;",
+        "C": "comutaţia curentului în regim normal de funcţionare."
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "129",
+      "imported_key_not_authenticated": "A",
+      "research_layers_preserved": {
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0113",
+            "card_id": "EXPL_QABC-0113",
+            "grade_id_audited_in_prior_research": "G2-ELEC-264",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-122",
+              "G2-ELEC-264"
+            ],
+            "imported_grade_key_UNCHANGED": "A",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "129",
+              "question": "Într-o schemă electrică prevăzută cu mai multe sisteme de bare colectoare, separatorul de bare",
+              "options": {
+                "A": "asigură doar selectarea sistemului de bare pe care urmează a fi conectat circuitul;",
+                "B": "asigură izolarea unei părţi a circuitului de bara colectoare aflată sub tensiune;",
+                "C": "comutaţia curentului în regim normal de funcţionare."
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "Disconnector provides isolation and is not designed for ordinary load-current making/breaking.",
+              "reason_A_from_v87": "A selecting a bus is a use, but only excludes its isolation function.",
+              "reason_B_from_v87": "B is consistent with isolating a circuit from an energized bus.",
+              "reason_C_from_v87": "C describes normal-load switching rather than a plain disconnector.",
+              "language_trap_from_v87": "doar; plain separator versus switch-disconnector",
+              "source_locator": {
+                "prior_research_url": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+                "reported_source_edition": "Schneider EIG online; consulted2026-11-11",
+                "reported_article_or_page": "Disconnector (or isolator)",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "KEY_CONFLICT_CANDIDATE",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        },
+        "v163": {
+          "source_file": "V163_CKPT250_23_EXACT_MATCHED_TECHNICAL_CARD_DRAFTS_2026_11_20.json",
+          "blob_sha": "21faf9b62eb4d4ccc4b83a380a2207a5926049c3",
+          "original_draft": {
+            "unit_id": "QABC-0113",
+            "card_id": "EXPL_QABC-0113",
+            "legacy_grade_ids": [
+              "G1-ELE-122",
+              "G2-ELEC-264"
+            ],
+            "all_grade_ids": [
+              "G1-ELE-122",
+              "G2-ELEC-264"
+            ],
+            "original_imported_letter_UNCHANGED": "A",
+            "original_question_and_A_B_C_matching_v149": true,
+            "prior_research": {
+              "source": "CKPT-250",
+              "source_and_page_locator": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+              "reasoning_options_models_counterexamples": "Separatorul de bare este dispozitiv de izolare și poate selecta bara. A conține «doar», care exclude izolarea; B exprimă funcția de izolare față de bara sub tensiune; C solicită comutație sub sarcină, rezervată întreruptorului/aparatului apt. V87 pentru duplicate G2-ELEC-264 a ridicat deja B candidat, NU a autorizat schimbare. Caz conflict A/B de verificat cu schema exactă și terminologia aplicabilă.",
+              "prior_status_and_hard_gate": "PREVIOUS_V87_AND_WEB_CONTEXT; **risc:** KEY_CONFLICT_B_PLAUSIBLE; **verdict:** SOURCE_CONFLICT; **aprobare pentru învățare: NU.**",
+              "source_reopened_for_this_mapping": false,
+              "offline_anchor": null
+            },
+            "explanation_card_status": "PRELIMINARY_RESEARCH_DRAFT_NOT_FINAL",
+            "reformulation_example": null,
+            "version_and_source_gates": {
+              "official_scored_key_proven": false,
+              "independent_technical_QA": "NOT_RUN",
+              "independent_linguistic_QA": "NOT_RUN",
+              "source_edition_QA": "NOT_RUN",
+              "learning_approved": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "POTENTIAL_KEY_CONFLICT_A_VS_B",
+        "options": {
+          "A": "Selectarea barei este o utilizare posibilă, dar «doar» exclude funcția de izolare a separatorului.",
+          "B": "Un separator este destinat izolării circuitului față de partea sub tensiune în condițiile prevăzute; este un candidat tehnic puternic.",
+          "C": "Separatorul simplu nu este un aparat proiectat pentru întreruperea curentului de sarcină normal."
+        },
+        "rephrased": "De ce un separator simplu nu trebuie confundat cu un întreruptor capabil de comutație sub sarcină?",
+        "answer": "Separatorul asigură separarea/izolarea, nu ruperea curentului de sarcină pentru care nu este proiectat.",
+        "technical_gate": "Reopen exact busbar installation topology and historical applicable switch-disconnector terminology; stored key A conflicts with candidate B",
+        "public_source": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0157",
+      "card_id": "EXPL_QABC-0157",
+      "grade_ids": [
+        "G1-ELE-166",
+        "G2-ELEC-304"
+      ],
+      "original_question": "Pe măsură ce creşte tensiunea la care se realizează instalaţiile electrice, costul pierderilor de putere Cp este:",
+      "original_options": {
+        "A": "constant",
+        "B": "crescător",
+        "C": "descrescător"
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "173",
+      "imported_key_not_authenticated": "C",
+      "research_layers_preserved": {
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0157",
+            "card_id": "EXPL_QABC-0157",
+            "grade_id_audited_in_prior_research": "G2-ELEC-304",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-166",
+              "G2-ELEC-304"
+            ],
+            "imported_grade_key_UNCHANGED": "C",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "173",
+              "question": "Pe măsură ce creşte tensiunea la care se realizează instalaţiile electrice, costul pierderilor de putere Cp este:",
+              "options": {
+                "A": "constant",
+                "B": "crescător",
+                "C": "descrescător"
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "For unchanged transmitted power, higher voltage lowers current and ohmic line losses.",
+              "reason_A_from_v87": "A not generally constant under this fixed-power comparison.",
+              "reason_B_from_v87": "B not the fixed-power ohmic-loss trend.",
+              "reason_C_from_v87": "C follows for fixed power, resistance, power factor and loss-price assumptions. Total installation costs are a different question.",
+              "language_trap_from_v87": "Cp cost; omitted fixed conditions",
+              "source_locator": {
+                "prior_research_url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+                "reported_source_edition": "University Physics vol2 online; consulted2026-11-11",
+                "reported_article_or_page": "15.6 introduction and Example15.6",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "AMBIGUOUS",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        },
+        "v163": {
+          "source_file": "V163_CKPT250_23_EXACT_MATCHED_TECHNICAL_CARD_DRAFTS_2026_11_20.json",
+          "blob_sha": "21faf9b62eb4d4ccc4b83a380a2207a5926049c3",
+          "original_draft": {
+            "unit_id": "QABC-0157",
+            "card_id": "EXPL_QABC-0157",
+            "legacy_grade_ids": [
+              "G1-ELE-166",
+              "G2-ELEC-304"
+            ],
+            "all_grade_ids": [
+              "G1-ELE-166",
+              "G2-ELEC-304"
+            ],
+            "original_imported_letter_UNCHANGED": "C",
+            "original_question_and_A_B_C_matching_v149": true,
+            "prior_research": {
+              "source": "CKPT-250",
+              "source_and_page_locator": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+              "reasoning_options_models_counterexamples": "La putere transferată, factor de putere, rezistență și tarif similare, I≈P/(sqrt3 U cosφ) și pierderea Joule 3I²R scade aproximativ cu U²; C este tendința intenționată. A constantă și B crescătoare nu corespund ipotezei. Dar «costul pierderilor Cp» poate include pierderi corona, investiții și modificarea rezistenței; fără date, tendința nu este lege universală.",
+              "prior_status_and_hard_gate": "PREVIOUS_V87_DIRECT_SOURCE; **risc:** LOSS_COST_FIXED_ASSUMPTIONS; **verdict:** CONDITIONAL_PRELIMINARY; **aprobare pentru învățare: NU.**",
+              "source_reopened_for_this_mapping": false,
+              "offline_anchor": null
+            },
+            "explanation_card_status": "PRELIMINARY_RESEARCH_DRAFT_NOT_FINAL",
+            "reformulation_example": null,
+            "version_and_source_gates": {
+              "official_scored_key_proven": false,
+              "independent_technical_QA": "NOT_RUN",
+              "independent_linguistic_QA": "NOT_RUN",
+              "source_edition_QA": "NOT_RUN",
+              "learning_approved": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "MODEL_COMPATIBLE_UNDER_FIXED_POWER_NOT_UNIVERSAL_COST",
+        "options": {
+          "A": "În modelul cu puterea transferată constantă, pierderea ohmică nu rămâne în general constantă la creșterea tensiunii.",
+          "B": "În aceleași condiții, creșterea tensiunii reduce curentul și deci pierderea I²R; B nu exprimă acea tendință.",
+          "C": "Descrescător este candidat în modelul cu putere, rezistență și preț al energiei similare; nu demonstrează orice cost Cp."
+        },
+        "rephrased": "La aceeași putere transferată și aceeași rezistență de linie, ce se întâmplă cu pierderile Joule dacă tensiunea se dublează?",
+        "answer": "Curentul se înjumătățește, iar pierderea I²R scade la un sfert, în modelul idealizat.",
+        "technical_gate": "Exact definition of Cp from course and whether corona/other losses and tariffs included",
+        "public_source": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0167",
+      "card_id": "EXPL_QABC-0167",
+      "grade_ids": [
+        "G1-ELE-178",
+        "G2-ELEC-314"
+      ],
+      "original_question": "Puterea electrică reactivă:",
+      "original_options": {
+        "A": "permite definirea limitelor de utilizare ale unui aparat electric",
+        "B": "produce transformarea energiei electrice în energie mecanică",
+        "C": "este variaţia în timp a energiei magnetice şi electrice"
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "185",
+      "imported_key_not_authenticated": "C",
+      "research_layers_preserved": {
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0167",
+            "card_id": "EXPL_QABC-0167",
+            "grade_id_audited_in_prior_research": "G2-ELEC-314",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-178",
+              "G2-ELEC-314"
+            ],
+            "imported_grade_key_UNCHANGED": "C",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "185",
+              "question": "Puterea electrică reactivă:",
+              "options": {
+                "A": "permite definirea limitelor de utilizare ale unui aparat electric",
+                "B": "produce transformarea energiei electrice în energie mecanică",
+                "C": "este variaţia în timp a energiei magnetice şi electrice"
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "Reactive power relates to out-of-phase voltage/current and exchange in fields; apparent power gives equipment current loading.",
+              "reason_A_from_v87": "A most directly describes apparent power/equipment loading; reactive power affects loading but wording alone is broad.",
+              "reason_B_from_v87": "B mechanical useful conversion belongs to active power.",
+              "reason_C_from_v87": "C loosely describes oscillating stored-energy exchange, not a general definition Q=dW/dt; lacks time convention.",
+              "language_trap_from_v87": "variation in time versus reactive-power definition",
+              "source_locator": {
+                "prior_research_url": "https://www.energy.gov/sites/default/files/Voltage&ReactivePower_Dec2012Final.pdf",
+                "reported_source_edition": "US DOE December2012",
+                "reported_article_or_page": "AppendixA pA-2 (PDFpage36), FigureA-1 discussion",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "AMBIGUOUS",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        },
+        "v163": {
+          "source_file": "V163_CKPT250_23_EXACT_MATCHED_TECHNICAL_CARD_DRAFTS_2026_11_20.json",
+          "blob_sha": "21faf9b62eb4d4ccc4b83a380a2207a5926049c3",
+          "original_draft": {
+            "unit_id": "QABC-0167",
+            "card_id": "EXPL_QABC-0167",
+            "legacy_grade_ids": [
+              "G1-ELE-178",
+              "G2-ELEC-314"
+            ],
+            "all_grade_ids": [
+              "G1-ELE-178",
+              "G2-ELEC-314"
+            ],
+            "original_imported_letter_UNCHANGED": "C",
+            "original_question_and_A_B_C_matching_v149": true,
+            "prior_research": {
+              "source": "CKPT-250",
+              "source_and_page_locator": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+              "reasoning_options_models_counterexamples": "C evocă schimbul periodic de energie stocată în câmpurile L/C, dar Q=UI sinφ [var] nu este identică în general cu dW/dt instantaneu [W]; semnele și regimul contează. A limitele aparatelor pot depinde de S și I, deci «permite definirea limitelor» poate fi uneori adevărat indirect; B conversia utilă în energie mecanică ține mai ales de P. V87 a rămas NOT_ADJUDICATED, iar C necesită un model explicit.",
+              "prior_status_and_hard_gate": "PREVIOUS_V87_AMBIGUITY_SOURCE; **risc:** REACTIVE_POWER_NOT_GENERAL_DWDT; **verdict:** SCOPE_BLOCKED; **aprobare pentru învățare: NU.**",
+              "source_reopened_for_this_mapping": false,
+              "offline_anchor": null
+            },
+            "explanation_card_status": "PRELIMINARY_RESEARCH_DRAFT_NOT_FINAL",
+            "reformulation_example": null,
+            "version_and_source_gates": {
+              "official_scored_key_proven": false,
+              "independent_technical_QA": "NOT_RUN",
+              "independent_linguistic_QA": "NOT_RUN",
+              "source_edition_QA": "NOT_RUN",
+              "learning_approved": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "UNRESOLVED_REACTIVE_POWER_DEFINITION",
+        "options": {
+          "A": "Puterea reactivă afectează curenții și încărcarea, dar limitele de utilizare sunt asociate mai direct cu puterea aparentă și regimul aparatului.",
+          "B": "Transformarea utilă în energie mecanică este legată de transferul de putere activă, nu o definiție a puterii reactive.",
+          "C": "Schimbul periodic de energie în câmpuri electrice și magnetice este modelul fizic; expresia generică «variația în timp» nu este identică cu Q=UI sinφ în orice moment."
+        },
+        "rephrased": "Cum diferențiezi Q=UI·sinφ de derivata instantanee dW/dt și de P=UI·cosφ?",
+        "answer": "Q este mărime reactivă în regim sinusoidal și se exprimă în var; dW/dt este rată instantanee de energie în W; P este putere activă medie în W.",
+        "technical_gate": "Definition under exact curriculum and sinusoidal regime; no exclusive A/B/C established",
+        "public_source": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0178",
+      "card_id": "EXPL_QABC-0178",
+      "grade_ids": [
+        "G1-ELE-189",
+        "G2-ELEC-325"
+      ],
+      "original_question": "Potenţialul electrostatic în punctul M este  :",
+      "original_options": {
+        "A": "lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M.",
+        "B": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă de la infinit până în punctul M",
+        "C": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă din punctul M până la infinit"
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "196",
+      "imported_key_not_authenticated": "A",
+      "research_layers_preserved": {
+        "v158": {
+          "source_file": "V158_EIGHT_EXPLANATION_CARDS_WITH_A_B_C_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "eb9988116cec10cfdc2c50a63c7d45583bbdb778",
+          "original_draft": {
+            "unit_id": "QABC-0178",
+            "card_id": "EXPL_QABC-0178",
+            "grade_ids": [
+              "G1-ELE-189",
+              "G2-ELEC-325"
+            ],
+            "source_pointer": {
+              "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "row": 196,
+              "original_question": "Potenţialul electrostatic în punctul M este  :",
+              "original_options": {
+                "A": "lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M.",
+                "B": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă de la infinit până în punctul M",
+                "C": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă din punctul M până la infinit"
+              },
+              "original_imported_keys_UNCHANGED": "G1-ELE-189=A | G2-ELEC-325=A"
+            },
+            "evidence": {
+              "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+              "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+              "prior_research_external_url": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+              "exact_original_clause_or_course_page": null,
+              "source_version_certified": false,
+              "offline_anchor": null,
+              "source_reopened_in_this_content_seed": false
+            },
+            "explanation": {
+              "principle": "Potențialul electric într-un punct reprezintă energia potențială electrică per unitate de sarcină; diferențele de potențial se leagă de lucrul mecanic per sarcină.",
+              "options": {
+                "A": {
+                  "state": "SUPPORTS_WITH_WORK_SIGN_CONVENTION",
+                  "why": "Descrie lucrul mecanic necesar pe unitate de sarcină pozitivă, cu referința potențial zero la infinit și convenție adecvată pentru lucrul exterior."
+                },
+                "B": {
+                  "state": "WRONG_PHYSICAL_QUANTITY",
+                  "why": "Forța are unitatea newton, în timp ce potențialul are J/C (volt)."
+                },
+                "C": {
+                  "state": "WRONG_PHYSICAL_QUANTITY_AND_DIRECTION",
+                  "why": "Folosește forță în loc de lucru mecanic; schimbarea direcției de deplasare nu repară unitatea."
+                }
+              },
+              "takeaway": "Verifică unitatea: potențialul în V=J/C, nu în N.",
+              "reformulation": {
+                "question": "Dacă mutarea lentă a unei sarcini de test +2 C cere lucru exterior de +10 J față de referința la infinit, care este potențialul punctului?",
+                "answer": "+5 V în acea convenție: V=W_ext/q."
+              },
+              "caution": "Semnul depinde de cine efectuează lucrul (câmpul versus agentul exterior).",
+              "imported_letter_not_authenticated": "A",
+              "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+              "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+              "authored_reformulation_is_unofficial_practice": true
+            },
+            "QA": {
+              "source_specific": "NOT_SIGNED",
+              "independent_electrical": "NOT_RUN",
+              "independent_linguistic": "NOT_RUN",
+              "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+              "learner_approved": false,
+              "offline_ready": false
+            }
+          }
+        },
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0178",
+            "card_id": "EXPL_QABC-0178",
+            "grade_id_audited_in_prior_research": "G2-ELEC-325",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-189",
+              "G2-ELEC-325"
+            ],
+            "imported_grade_key_UNCHANGED": "A",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "196",
+              "question": "Potenţialul electrostatic în punctul M este  :",
+              "options": {
+                "A": "lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M.",
+                "B": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă de la infinit până în punctul M",
+                "C": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă din punctul M până la infinit"
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "Potential is energy per charge relative to a reference; field work has opposite sign to potential-energy change.",
+              "reason_A_from_v87": "A holds for quasistatic external work per positive test charge with V(infinity)=0.",
+              "reason_B_from_v87": "B is force rather than work/charge, wrong dimension.",
+              "reason_C_from_v87": "C also force rather than potential, wrong dimension.",
+              "language_trap_from_v87": "whose work; infinity reference",
+              "source_locator": {
+                "prior_research_url": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+                "reported_source_edition": "University Physics vol2 online; consulted2026-11-11",
+                "reported_article_or_page": "7.2 definition DeltaV=DeltaU/q; reference infinity and equation7.6",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "VALID_TRAP_CONDITIONAL",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "MODEL_COMPATIBLE_REFERENCE_AND_WORK_SIGN",
+        "options": {
+          "A": "Potențialul este energia potențială pe sarcina pozitivă de probă; aducerea de la infinit corespunde lucrului exterior în condiții cvasistatice și V∞=0.",
+          "B": "«Forța» este exprimată în newtoni, nu în V=J/C; direcția deplasării nu schimbă tipul mărimii.",
+          "C": "Aceeași confuzie între forță și lucru pe unitate de sarcină; inversarea drumului nu repară unitățile."
+        },
+        "rephrased": "Dacă U=6 J pentru q=2 C față de referință, cât este potențialul?",
+        "answer": "V=U/q=3 J/C=3 V.",
+        "technical_gate": "Check sign of field versus external work, infinity reference and exact source grade",
+        "public_source": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0209",
+      "card_id": "EXPL_QABC-0209",
+      "grade_ids": [
+        "G1-ELE-220",
+        "G2-ELEC-356"
+      ],
+      "original_question": "Transformatoarele  de măsură se folosesc",
+      "original_options": {
+        "A": "în instalaţiile de curent alternativ de înaltă tensiune",
+        "B": "numai în instalaţiile de curent alternativ de medie tensiune",
+        "C": "în instalaţiile de curent continuu de înaltă şi joasă tensiune"
+      },
+      "original_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_row": "227",
+      "imported_key_not_authenticated": "A",
+      "research_layers_preserved": {
+        "v158": {
+          "source_file": "V158_EIGHT_EXPLANATION_CARDS_WITH_A_B_C_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "eb9988116cec10cfdc2c50a63c7d45583bbdb778",
+          "original_draft": {
+            "unit_id": "QABC-0209",
+            "card_id": "EXPL_QABC-0209",
+            "grade_ids": [
+              "G1-ELE-220",
+              "G2-ELEC-356"
+            ],
+            "source_pointer": {
+              "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "row": 227,
+              "original_question": "Transformatoarele  de măsură se folosesc",
+              "original_options": {
+                "A": "în instalaţiile de curent alternativ de înaltă tensiune",
+                "B": "numai în instalaţiile de curent alternativ de medie tensiune",
+                "C": "în instalaţiile de curent continuu de înaltă şi joasă tensiune"
+              },
+              "original_imported_keys_UNCHANGED": "G1-ELE-220=A | G2-ELEC-356=A"
+            },
+            "evidence": {
+              "source_research_file": "docs/QUESTION_AUDIT/V152_EIGHT_P0_FINAL_VALIDATION_PRELIMINARY_SOURCE_CARDS_2026_11_20.json",
+              "source_research_blob": "81310d1245a4dce93b251b6ea695c8f9b26f34b7",
+              "prior_research_external_url": "https://knowledge.bsigroup.com/products/instrument-transformers-general-requirements-1",
+              "exact_original_clause_or_course_page": null,
+              "source_version_certified": false,
+              "offline_anchor": null,
+              "source_reopened_in_this_content_seed": false
+            },
+            "explanation": {
+              "principle": "Transformatoarele de măsură electromagnetice convenționale reduc/scalază mărimi de c.a. pentru măsură și protecție, inclusiv la înaltă tensiune; pentru c.c. există și tehnologii specializate.",
+              "options": {
+                "A": {
+                  "state": "CONVENTIONAL_TRUE",
+                  "why": "Transformatoarele convenționale CT/VT sunt utilizate în instalații de c.a. de înaltă tensiune."
+                },
+                "B": {
+                  "state": "FALSE_ONLY",
+                  "why": "«Numai medie tensiune» exclude utilizarea documentată la înaltă tensiune."
+                },
+                "C": {
+                  "state": "TERM_SCOPE_NEEDS_REVIEW",
+                  "why": "Măsurarea în c.c. necesită definirea tehnologiei și standardului aplicabil; nu deduce un «niciodată» universal."
+                }
+              },
+              "takeaway": "Identifică tehnologia reală și dacă înseamnă transformator electromagnetic convențional sau traductor/instrument specializat pentru HVDC.",
+              "reformulation": {
+                "question": "Dacă schema este de c.c. HVDC, este suficient să alegi un transformator clasic de tensiune pentru c.a.?",
+                "answer": "Nu; trebuie un dispozitiv de măsură compatibil cu c.c. și standardele aferente."
+              },
+              "caution": "Nu importa definiții moderne de echipamente în formulări vechi fără verificarea ediției.",
+              "imported_letter_not_authenticated": "A",
+              "learner_mode_display": "ONLY_AFTER_RESPONSE_AND_ONLY_AFTER_CONTENT_APPROVAL",
+              "status": "PRELIMINARY_PEDAGOGICAL_DRAFT",
+              "authored_reformulation_is_unofficial_practice": true
+            },
+            "QA": {
+              "source_specific": "NOT_SIGNED",
+              "independent_electrical": "NOT_RUN",
+              "independent_linguistic": "NOT_RUN",
+              "official_ANRE_exam_key": "NOT_AUTHENTICATED",
+              "learner_approved": false,
+              "offline_ready": false
+            }
+          }
+        },
+        "v160": {
+          "source_file": "V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json",
+          "blob_sha": "44ba46ff846681fe65384c8db5df45fde732e4c1",
+          "original_draft": {
+            "unit_id": "QABC-0209",
+            "card_id": "EXPL_QABC-0209",
+            "grade_id_audited_in_prior_research": "G2-ELEC-356",
+            "all_grade_ids_sharing_core": [
+              "G1-ELE-220",
+              "G2-ELEC-356"
+            ],
+            "imported_grade_key_UNCHANGED": "A",
+            "original_source": {
+              "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+              "source_row": "227",
+              "question": "Transformatoarele  de măsură se folosesc",
+              "options": {
+                "A": "în instalaţiile de curent alternativ de înaltă tensiune",
+                "B": "numai în instalaţiile de curent alternativ de medie tensiune",
+                "C": "în instalaţiile de curent continuu de înaltă şi joasă tensiune"
+              }
+            },
+            "reusable_pedagogical_draft": {
+              "source_specific_principle_from_v87": "Official examples establish both high-voltage and low-voltage AC instrument transformers.",
+              "reason_A_from_v87": "A true as a use case; not exhaustive but contains no only.",
+              "reason_B_from_v87": "B only MV is contradicted by HV and600V examples.",
+              "reason_C_from_v87": "C conventional inductive transformers do not transform steady DC; specialized DC sensors are distinct.",
+              "language_trap_from_v87": "only occurs in B, not A",
+              "source_locator": {
+                "prior_research_url": "https://www.hitachienergy.com/products-and-solutions/instrument-transformers ; https://electrification.us.abb.com/products/instrument-transformers-sensors/600-volt-current-transformers",
+                "reported_source_edition": "Hitachi Energy/ABB official product pages, consulted2026-11-11",
+                "reported_article_or_page": "Hitachi portfolio transformer TVI72.5-420kV; ABB600V models25-400Hz",
+                "exact_source_quote": null,
+                "offline_paragraph_anchor": null
+              },
+              "status": "PRELIMINARY_REUSE_NO_NEW_INDEPENDENT_VALIDATION",
+              "rephrase_practice_prompt": null,
+              "assumptions_changed_example": null
+            },
+            "review_gate": {
+              "prior_source_review_status": "NEW_PRIMARY_SOURCE_OPENED_2026_11_11",
+              "prior_technical_status": "MODEL_ASSISTED_PRELIMINARY",
+              "prior_linguistic_status": "NO_TRAP_DETECTED_PRELIMINARY",
+              "reviewed_by_distinct_human": "NO",
+              "offline_anchor_validated": false,
+              "exam_official_scored_key_verified": false,
+              "approved_for_learning": false
+            }
+          }
+        },
+        "v163": {
+          "source_file": "V163_CKPT250_23_EXACT_MATCHED_TECHNICAL_CARD_DRAFTS_2026_11_20.json",
+          "blob_sha": "21faf9b62eb4d4ccc4b83a380a2207a5926049c3",
+          "original_draft": {
+            "unit_id": "QABC-0209",
+            "card_id": "EXPL_QABC-0209",
+            "legacy_grade_ids": [
+              "G1-ELE-220",
+              "G2-ELEC-356"
+            ],
+            "all_grade_ids": [
+              "G1-ELE-220",
+              "G2-ELEC-356"
+            ],
+            "original_imported_letter_UNCHANGED": "A",
+            "original_question_and_A_B_C_matching_v149": true,
+            "prior_research": {
+              "source": "CKPT-250",
+              "source_and_page_locator": "https://www.hitachienergy.com/products-and-solutions/instrument-transformers",
+              "reasoning_options_models_counterexamples": "A transformatoarele de măsură convenționale se folosesc în instalații CA de înaltă tensiune; B «numai de medie tensiune» este fals, iar C transformatoare inductive convenționale nu transformă un curent continuu staționar. Există senzori/convertizoare pentru DC care sunt tehnologii distincte, nu schimbă sensul uzual al întrebării. V87 a verificat deja duplicatul G2-ELEC-356.",
+              "prior_status_and_hard_gate": "PREVIOUS_V87_MANUFACTURER; **risc:** AC_INSTRUMENT_TRANSFORMER_WITH_DC_SENSOR_EXCEPTIONS; **verdict:** CONDITIONAL_PRELIMINARY; **aprobare pentru învățare: NU.**",
+              "source_reopened_for_this_mapping": false,
+              "offline_anchor": null
+            },
+            "explanation_card_status": "PRELIMINARY_RESEARCH_DRAFT_NOT_FINAL",
+            "reformulation_example": null,
+            "version_and_source_gates": {
+              "official_scored_key_proven": false,
+              "independent_technical_QA": "NOT_RUN",
+              "independent_linguistic_QA": "NOT_RUN",
+              "source_edition_QA": "NOT_RUN",
+              "learning_approved": false
+            }
+          }
+        }
+      },
+      "convergence_review": {
+        "review_type": "SAME_ASSISTANT_EVIDENCE_SYNTHESIS_NOT_INDEPENDENT_QA",
+        "state": "PRELIMINARY_CONTENT_RECONCILED_WITH_REMAINING_SCOPE_GATES",
+        "convergence": "MODEL_COMPATIBLE_TECHNOLOGY_ERA_CA_DC",
+        "options": {
+          "A": "Transformatoarele convenționale CT/VT sunt folosite la înaltă tensiune de curent alternativ.",
+          "B": "«Numai» medie tensiune este fals, deoarece există aplicații HV documentate.",
+          "C": "Transformatoarele inductive convenționale nu transformă curent continuu staționar, însă există tehnologii speciale de măsurare DC, care trebuie delimitate."
+        },
+        "rephrased": "De ce un transformator de măsură inductiv convențional folosește flux variabil? Ce se întâmplă la DC staționar?",
+        "answer": "Inducția necesită variație de flux; la DC staționar nu apare tensiune secundară susținută prin transformarea inductivă obișnuită.",
+        "technical_gate": "Exam-era definition CT/VT versus modern special DC sensors; original scored key",
+        "public_source": "https://www.hitachienergy.com/products-and-solutions/instrument-transformers",
+        "per_option_status": "WORKING_DRAFT_NOT_FOR_LEARNER",
+        "official_source_auth": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "offline_paragraph_auth": false,
+        "learning_approved": false
+      }
+    }
+  ]
+}

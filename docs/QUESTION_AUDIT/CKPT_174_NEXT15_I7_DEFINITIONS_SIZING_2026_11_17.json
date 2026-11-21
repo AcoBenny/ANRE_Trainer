@@ -1,0 +1,584 @@
+{
+  "checkpoint": "CKPT-174",
+  "date": "2026-11-17",
+  "head_before": "23f781b9926bde685e89c15cedb610f1208b81ad",
+  "units": 15,
+  "grade_ids": 15,
+  "counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 9,
+    "CONDITIONAL_MODEL_OR_SOURCE": 6
+  },
+  "evidence_warning": "Norm I7 exact def and relevant sizing checked, but some grade/source/annex not reopened, conditional. Distinct independent QA not available, no learning approvals.",
+  "cards": [
+    {
+      "unit_id": "AU-0a13c98b9d8d94f6",
+      "representative_id": "G1-NOR-037",
+      "member_ids": [
+        "G1-NOR-037"
+      ],
+      "qabc_sha256": "0a13c98b9d8d94f6ce0dc3553367740c4c3de24727b012e1cd0012fe07e116be",
+      "question_original_UNCHANGED": "Se consideră atingere indirectă:",
+      "ABC_UNCHANGED": {
+        "A": "contactul nemijlocit sau prin intermediul unui element conductor al persoanelor sau animalelor domestice sau de crescătorie cu părţi active ale unei instalaţii electrice",
+        "B": "contactul persoanelor sau animalelor domestice sau de crescătorie cu părţi ale unei instalaţii electrice",
+        "C": "contact electric al persoanelor sau al animalelor cu părţile conductoare accesibile\npuse sub tensiune ca urmare a unui defect."
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-037": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "C definește contactul cu parte conductoare accesibilă devenită sub tensiune prin defect, atingere indirectă. A descrie parte activă (directă), B nu precizează defectul.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 cap2 «atingere indirectă» & §4.1.1",
+        "access": "REOPENED_DEFINITION_AND_PROTECTION_CONTEXT"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 cap2 A: atingere indirectă",
+        "ABC": {
+          "A": "A: contact cu părți active corespunde atingerii directe, nu indirecte.",
+          "B": "B: «părți ale unei instalații» nu precizează masă devenită sub tensiune după defect.",
+          "C": "C: contactul cu părți conductoare accesibile puse sub tensiune ca urmare a defectului este atingerea indirectă."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-4ca1d31419be2b5d",
+      "representative_id": "G1-NOR-038",
+      "member_ids": [
+        "G1-NOR-038"
+      ],
+      "qabc_sha256": "4ca1d31419be2b5d32db68257e7ed10223ad7010f077849e1430afefef57575f",
+      "question_original_UNCHANGED": "Conform I 7, parte activă a unei instalaţii este:",
+      "ABC_UNCHANGED": {
+        "A": "conductorul PEN",
+        "B": "conductorul neutru (N)",
+        "C": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-038": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "Definiția I7 cap2 «parte activă» include N, dar exclude convențional PEN/PEM/PEL. B corect; A PEN exclus; C este masă.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 cap2 «parte activă»",
+        "access": "REOPENED_EXACT_DEFINITION"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 cap2 P: parte activă, include N şi exclude PEN",
+        "ABC": {
+          "A": "A: PEN este în mod convențional exclus din definiția părților active pentru scopul protecției.",
+          "B": "B: neutrul N este inclus în definiția părții active dacă poate fi sub tensiune în funcționare normală.",
+          "C": "C: parte conductoare accesibilă nu e normal activă, reprezintă masă."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-b19cb36137d26cad",
+      "representative_id": "G1-NOR-039",
+      "member_ids": [
+        "G1-NOR-039"
+      ],
+      "qabc_sha256": "b19cb36137d26cad2c33981331cc3abcfb30236661bfc276623ab9355c8e54a7",
+      "question_original_UNCHANGED": "Conform I 7, parte activă a unei instalaţii este:",
+      "ABC_UNCHANGED": {
+        "A": "conductor sau parte conductoare destinată să fie pusă sub tensiune în funcţionare normală",
+        "B": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune",
+        "C": "conductorul PEN"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-039": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "A redă definiția generală I7 «parte activă»; B descrie parte conductoare accesibilă neenergizată în normal, C PEN exclus prin convenție.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 cap2 «parte activă»",
+        "access": "REOPENED_EXACT_DEFINITION"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 cap2 P: parte activă",
+        "ABC": {
+          "A": "A: definiție corectă, conductor/parte destinată alimentării sub tensiune normală.",
+          "B": "B: masă accesibilă normal nealimentată nu se încadrează la parte activă.",
+          "C": "C: PEN este exceptat convențional pentru protecția la șoc electric."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-178291d2ac6cdaa5",
+      "representative_id": "G1-NOR-040",
+      "member_ids": [
+        "G1-NOR-040"
+      ],
+      "qabc_sha256": "178291d2ac6cdaa5b0e1aaee11371d2a6a3214960583abefc6380adebce92061",
+      "question_original_UNCHANGED": "Conform I 7, parte conductoare accesibilă este:",
+      "ABC_UNCHANGED": {
+        "A": "partea izolantă accesibilă a unui element de construcţie care poate fi atinsă,  şi care poate ajunge sub tensiune în caz de defect",
+        "B": "parte conductoare a unui echipament, care poate fi atinsă, şi care nu este în mod normal sub tensiune, dar care poate ajunge sub tensiune în cazul unui defect al izolaţiei de bază.",
+        "C": "elemente conductoare din instalaţie aflate sub tensiune"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-040": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "B este definiția I7 parte conductoare accesibilă/masă, care devine sub tensiune la defect; A izolant nu conductor, C în tensiune în normal este parte activă.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 cap2 «parte conductoare accesibilă» și «masă»",
+        "access": "REOPENED_EXACT_DEFINITION"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 cap2 P: parte conductoare accesibilă",
+        "ABC": {
+          "A": "A: izolantul nu devine parte CONDUCTOARE printr-un defect.",
+          "B": "B: material conductor accesibil normal fără tensiune dar posibil alimentat în defect definește partea conductoare accesibilă.",
+          "C": "C: element activ sub tensiune normal nu este masă accesibilă."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-99b8ab6ece5c6728",
+      "representative_id": "G1-NOR-041",
+      "member_ids": [
+        "G1-NOR-041"
+      ],
+      "qabc_sha256": "99b8ab6ece5c6728470e4e95c5969c5e26b5caf2017f452523d0377db475aa3d",
+      "question_original_UNCHANGED": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+      "ABC_UNCHANGED": {
+        "A": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 16 mm2Cu sau 25 mm2Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-041": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "ABC_and_model_reason": "B conține pragurile reale 16mm² Cu și 25mm² Al pentru polifazate, versus C valori greșite. Însă textul include «monofazate cu trei conductoare» în timp ce I7 §5.2.4.6.1(a) specifică monofazate CU DOUĂ conductoare; necesită clarificat domeniul acelui sistem cu trei conductoare.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.2.4.6.1(a)-(d) exact",
+        "access": "REOPENED_HTML_TEXT_SCOPE_MISMATCH_MONO_THREE_WIRE"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.2.4.6.1 a-d, 16 mm² Cu/25 mm² Al la circuite polifazate",
+        "ABC": {
+          "A": "A: «indiferent de secțiune» pentru polifazate ignoră posibilitatea neutralului redus și condițiile de armonici.",
+          "B": "B: 16Cu/25Al este pragul normativ pentru polifazate; însă enunțul vorbește despre MONOFAZATE CU TREI conductoare, în timp ce §a menționează două.",
+          "C": "C: pragurile 25Cu/35Al nu sunt cele din textul I7 invocat."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-9cb1607710a26d88",
+      "representative_id": "G1-NOR-043",
+      "member_ids": [
+        "G1-NOR-043"
+      ],
+      "qabc_sha256": "9cb1607710a26d88a8b665cf0f9fb3f34cf0efb3edfebd8a3e6374cc96b00f15",
+      "question_original_UNCHANGED": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+      "ABC_UNCHANGED": {
+        "A": "tipul receptorului alimentat",
+        "B": "lungimea circuitului",
+        "C": "secţiunea conductorului"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-043": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "I7 §5.2.4.1 și tabelele curentului admisibil depind de secțiune; C. Lungimea afectează căderea de tensiune, nu curentul termic admis permanent la condiții fixate.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.2.4.1; anexa curenți admisibili",
+        "access": "REOPENED_GENERAL_RULE_AMPACITY"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.2.3 și §5.2.4 dimensionare secțiune și curent admisibil",
+        "ABC": {
+          "A": "A: tipul receptorului influențează sarcina, dar nu direct capacitatea termică a CONDUCTORULUI.",
+          "B": "B: lungimea determină cădere tensiune și impedanță, nu singură limita termică a curentului.",
+          "C": "C: secțiunea conductoarelor modifică disiparea și curentul permanent admisibil."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-47114162838c25cb",
+      "representative_id": "G1-NOR-044",
+      "member_ids": [
+        "G1-NOR-044"
+      ],
+      "qabc_sha256": "47114162838c25cb8dba3097e41e174b50e8c72ec43daca80da6864e92238997",
+      "question_original_UNCHANGED": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+      "ABC_UNCHANGED": {
+        "A": "lungimea circuitului",
+        "B": "materialul conductorului",
+        "C": "tipul receptorului alimentat"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-044": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "Conductivitatea/rezistivitatea diferă Cu/Al și încălzirea I²R determină curentul termic admis; B materialul. A lungime afectează căderea de tensiune, C tip receptor nu determină admisibilitatea termică.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.1.7.1-2 și §5.2.4.1",
+        "access": "REOPENED_GENERAL_AMPACITY_MATERIAL"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.2.3 și anexa 5.32, material conductor",
+        "ABC": {
+          "A": "A: lungimea contează la căderea de tensiune, nu capacitatea termică tabelată izolată.",
+          "B": "B: materialul Cu/Al influențează rezistivitatea/încălzirea, deci curentul admisibil.",
+          "C": "C: receptorul determină curent cerut, dar nu direct curent maxim admisibil conductoare."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-ab9be7d69db03902",
+      "representative_id": "G1-NOR-045",
+      "member_ids": [
+        "G1-NOR-045"
+      ],
+      "qabc_sha256": "ab9be7d69db039023005d59ac4cd57b5d9832fa506b8bf5d1e2e30b2e919f455",
+      "question_original_UNCHANGED": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+      "ABC_UNCHANGED": {
+        "A": "lungimea circuitului",
+        "B": "natura izolaţiei conductorului",
+        "C": "tipul receptorului alimentat"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-045": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "B natura izolației determină temperatura permisă de lucru și curentul admis; lungimea influențează căderea tensiunii, nu curentul termic de catalog, tip receptor este criteriu sarcină nu de admisibilitate.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.2.4.1 și tabele PVC/XLPE",
+        "access": "REOPENED_GENERAL_AMPACITY_INSULATION"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.2.3, temperatura maximă a izolației",
+        "ABC": {
+          "A": "A: lungimea nu stabilește direct limita termică locală a conductorului.",
+          "B": "B: PVC/XLPE sau altă izolație determină temperatura admisibilă, influențând ampacitatea.",
+          "C": "C: tipul receptorului nu definește direct temperatura conductorului."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-f57fbf3133e0d4ae",
+      "representative_id": "G1-NOR-046",
+      "member_ids": [
+        "G1-NOR-046"
+      ],
+      "qabc_sha256": "f57fbf3133e0d4ae69835dcc6f860fd778779e55b0791c0e44cb58c32497e051",
+      "question_original_UNCHANGED": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+      "ABC_UNCHANGED": {
+        "A": "modul de montare",
+        "B": "tipul receptorului alimentat",
+        "C": "lungimea circuitului"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-046": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "A modul montare afectează disiparea căldurii, deci curentul admis. Tip receptor/lungimea nu sunt parametri direcți ai curentului termic admis în condiții fixate.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.2.4.1, metode de pozare anexe",
+        "access": "REOPENED_GENERAL_AMPACITY_INSTALLATION"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.2.3 sistem de pozare și curent admisibil",
+        "ABC": {
+          "A": "A: aer liber, în tub, izolație și gruparea conductoarelor modifică disiparea termică.",
+          "B": "B: tipul receptorului poate modifica curentul de proiect, nu curentul maxim termic admisibil.",
+          "C": "C: lungimea contează la căderi de tensiune, nu la ampacitatea de bază."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-1364005e21b67d9e",
+      "representative_id": "G1-NOR-047",
+      "member_ids": [
+        "G1-NOR-047"
+      ],
+      "qabc_sha256": "1364005e21b67d9e3b67eaf8bf4cb4a4f42f0a6dfecc79a177cd9bbf19b919f3",
+      "question_original_UNCHANGED": "Pentru motoarele monofazate, protecţia contra suprasarcinilor se face:",
+      "ABC_UNCHANGED": {
+        "A": "obligatoriu pe conductorul de fază",
+        "B": "obligatoriu pe conductorul neutru",
+        "C": "opţional pentru motoare mai mici de 1,1 kW"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-047": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "ABC_and_model_reason": "A protecția motorului monofazat pe fază, nu numai pe N, reprezintă principiu de protecție uzual; pentru excepții dispozitive bipolare și exact I7 §4.3/5.4 cere redeschidere în ediția examenului.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §4.3 și §5.4 motoare; exact clauză încă lipsă",
+        "access": "PREVIOUS_SOURCE_REUSED_ONLY_EXACT_CLAUSE_NOT_CONFIRMED"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.3.4.3 protecție supracurenți, conductor fază",
+        "ABC": {
+          "A": "A: protecția la suprasarcină trebuie să acționeze asupra circuitului de fază; formularea «obligatoriu pe conductorul de fază» necesită caz dispozitiv bipolar și excepții.",
+          "B": "B: neutralul singur nu poate asigura protecție adecvată la defect de fază.",
+          "C": "C: prag 1,1kW nu oferă scutire universală de protecție la suprasarcină."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-f3b5cb597852886c",
+      "representative_id": "G1-NOR-048",
+      "member_ids": [
+        "G1-NOR-048"
+      ],
+      "qabc_sha256": "f3b5cb597852886c9213127716a22837371c92914ab66f1264066227fbe6127d",
+      "question_original_UNCHANGED": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+      "ABC_UNCHANGED": {
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-048": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "ABC_and_model_reason": "A oferă trei opțiuni de alimentare sonerie (iluminat, prize, tablou); B/C «numai» prea înguste. Regula de I7 pentru sursă și protecție transformator sonerie nu a fost redeschisă exact.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 circuite sonerii/alimentare la 230 V, sursa specifică lipsă",
+        "access": "PREVIOUS_RESEARCH_ONLY"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/FormaPrintabila/00000G10MW5T4RY169V2WV71OFS9E4W0",
+        "locator": "I7 §5.4 circuite pentru iluminat și prize; cap5 sonerie",
+        "ABC": {
+          "A": "A: listarea iluminat/priză/tablou are sens ca posibilități de alimentare, dar trebuie verificată norma specifică transformatorului de sonerie.",
+          "B": "B: «numai iluminat normal» exclude alte alimentări posibile, fără justificare.",
+          "C": "C: «numai prize» exclude iluminat/tablou, fără justificare."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-b14eafbd80eaf588",
+      "representative_id": "G1-NOR-049",
+      "member_ids": [
+        "G1-NOR-049"
+      ],
+      "qabc_sha256": "b14eafbd80eaf5886839a1c3a15eb730da06aaa274e1cf0afb56dbe522ca0196",
+      "question_original_UNCHANGED": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+      "ABC_UNCHANGED": {
+        "A": "numai direct din tabloul de distribuţie",
+        "B": "dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-049": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "ABC_and_model_reason": "B din circuit iluminat normal este una dintre metodele admise, A/C «numai» exclud alternative. În aceeași temă NOR048 confirmă modelul multiplu, dar nu înlocuiește paragraful normativ exact.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 sonerie alimentare, sursă originală exactă rămasă",
+        "access": "PREVIOUS_RESEARCH_ONLY"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/FormaPrintabila/00000G10MW5T4RY169V2WV71OFS9E4W0",
+        "locator": "I7 §5.4 circuit iluminat și alimentare sonerie, paragraf specific NEIDENTIFICAT",
+        "ABC": {
+          "A": "A: «numai direct tablou» este exclusiv și nu apare ca regulă demonstrată.",
+          "B": "B: circuitul iluminat normal poate fi o cale de alimentare permisă; fără exclusivitate, probabil valid.",
+          "C": "C: «numai prize» nejustificat dacă se acceptă iluminat."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-3be24b475fa72956",
+      "representative_id": "G1-NOR-050",
+      "member_ids": [
+        "G1-NOR-050"
+      ],
+      "qabc_sha256": "3be24b475fa72956cd0e4f29ed96d643158ec9cf1965c115ad0db62321d2f19c",
+      "question_original_UNCHANGED": "Secţiunea minimă admisă pentru conductoare de fază din circuite pentru prize monofazate în instalaţiile electrice din interiorul clădirilor este de:",
+      "ABC_UNCHANGED": {
+        "A": "2,5 mm2 cupru,",
+        "B": "1,5 mm2 cupru,                           2,5 mm2 aluminiu",
+        "C": "4 mm2 aluminiu"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-050": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "ABC_and_model_reason": "A 2,5mm² Cu ca secțiune minimă a prizei monofazate este criteriul didactic din anexa 5.32; B include 1,5Cu greșit, C 4 Al poate fi opțiune separată de cablare, necesitând clarificare dacă enunțul cere un UNIC minim indiferent de metal.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 Anexa5.32 secțiuni circuite prize, not directly re-opened",
+        "access": "EXACT_ANNEX_ROW_NOT_REOPENED"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.4.6 + Anexa5.32, secțiune minimă circuite prize",
+        "ABC": {
+          "A": "A: 2,5mm² Cu este valoarea curentă folosită tipic la circuite prize; necesită tabel anexă 5.32.",
+          "B": "B: 1,5Cu sub minimul tipic de prize; opțiunea compusă cu Al nu salvează varianta.",
+          "C": "C: 4mm² Al poate fi de asemenea minim permis pentru unele conductoare de Al; enunțul nu spune explicit că întrebarea cere Cu, posibilă ambiguitate."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-4ea3c3aea641d24d",
+      "representative_id": "G1-NOR-051",
+      "member_ids": [
+        "G1-NOR-051"
+      ],
+      "qabc_sha256": "4ea3c3aea641d24dc2c8ae8256b5975b8677a295c9e0e384656352cc84cbb5d6",
+      "question_original_UNCHANGED": "Secţiunea minimă admisă a conductorului de fază pentru circuitul unui receptor electrocasnic monofazat cu putere de peste 2 kW este de:",
+      "ABC_UNCHANGED": {
+        "A": "2,5 mm2 cupru",
+        "B": "1,5 mm2 cupru,                           2,5 mm2 aluminiu",
+        "C": "4 mm2 aluminiu"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-051": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "ABC_and_model_reason": "A 2,5mm² Cu intenționat pentru receptor electrocasnic monofazat peste 2kW; I7 §5.4.7 impune circuit separat >2kW însă SECȚIUNEA determinată și de sarcină, mod de instalare/rezervă, nu pot confirma minimul universal 2,5 din acest paragraf singur.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.4.7 și Anexa5.32/instalare",
+        "access": "EXACT_MINIMUM_CROSSREF_NOT_DIRECTLY_REOPENED"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.3.1/5.4.6 + Anexa5.32 receptor >2kW",
+        "ABC": {
+          "A": "A: 2,5 Cu este plauzibil ca secțiune minimă individual pentru receptor >2kW.",
+          "B": "B: opțiunea cu 1,5Cu sub prag dacă circuitul necesită 2,5Cu.",
+          "C": "C: 4mm² Al ar putea reprezenta alt material, dar admisibilitatea depinde de anexa tabelară și de tipul circuitului; nu exclus fără verificare."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-a7109d7e2265fa6a",
+      "representative_id": "G1-NOR-052",
+      "member_ids": [
+        "G1-NOR-052"
+      ],
+      "qabc_sha256": "a7109d7e2265fa6a96cba030fec5f804af16ead26d2f46adde0201d100a1781c",
+      "question_original_UNCHANGED": "Pentru circuite monofazate, conductorul neutru (N) va avea:",
+      "ABC_UNCHANGED": {
+        "A": "aceeaşi secţiune ca şi conductorul de fază",
+        "B": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de cupru",
+        "C": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de aluminiu"
+      },
+      "original_grade_keys_UNCHANGED": {
+        "G1-NOR-052": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "ABC_and_model_reason": "I7 §5.2.4.6.1(a) neutru N aceeași secțiune cu faza în circuit monofazat cu două conductoare indiferent de material; A. B/C «numai Cu/Al» false. Pentru circuite 3 fire, aplicația poate avea nuanțe, dar răspunsul general intenționat este A.",
+      "evidence": {
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "locator": "I7 §5.2.4.6.1(a); vecini armonici",
+        "access": "REOPENED_EXACT_DEFINITION_MONO_TWO_WIRE"
+      },
+      "prior": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "locator": "I7 §5.2.4.6.1 a) monofazat 2 conductoare",
+        "ABC": {
+          "A": "A: conductorul N pentru un circuit monofazat L+N trebuie egal cu conductor fază, în condițiile secțiunii normative.",
+          "B": "B: nu doar Cu, și Al supus cerinței, deci «numai Cu» prea restrictiv.",
+          "C": "C: nu doar Al, și Cu, deci «numai Al» prea restrictiv."
+        }
+      },
+      "exam_edition": "UNVERIFIED",
+      "key_revision_authorized": false,
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}

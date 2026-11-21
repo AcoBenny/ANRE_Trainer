@@ -1,0 +1,400 @@
+{
+  "schema": "v224_final_10_ABC_ANRE_original_workbook_matches",
+  "date": "2026-11-21",
+  "parent_commit": "73f6225d4a8133e63aa121cb2e8be94e52c2e7fa",
+  "previous_manifest_blob": "24d44f91b8c2e00a38e282ffdb1b8d2d4c29d520",
+  "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "source_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "counts": {
+    "new_unique_qabc": 10,
+    "new_grade_routes": 10,
+    "explanations_by_option": 30,
+    "unofficial_reformulations": 10,
+    "new_semantic_holds": 3,
+    "learner_approvals": 0
+  },
+  "semantic_held_ids": [
+    "QABC-0408",
+    "QABC-0414",
+    "QABC-0568"
+  ],
+  "normative_gate": "CKPT223 primary source research NOR92-93 and NOR95-99, CKPT226 exact I7 NOR94 and NOR100, V77 gamma dimension NOR G2-ELEC290. Direct official I7 HTTP 502 and LibreTexts cache miss in this turn; no independent source/edition review.",
+  "cards": [
+    {
+      "unit_id": "QABC-0406",
+      "grade_ids": [
+        "G1-NOR-092"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "99",
+        "stem": "În fiecare instalaţie la nivelul tabloului general trebuie prevăzută",
+        "A": "o bornă / bară principală de legare la pământ, numai atunci când reţeaua de distribuţie este TN-C;",
+        "B": "o bornă / bară principală de legare la pământ,",
+        "C": "o bornă / bară principală de legare la pământ, numai în cazul în care alimentarea receptoarelor se face în sistem TN-S",
+        "imported_keys_UNCHANGED": "G1-NOR-092=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-092:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "source_links": "G1-NOR-092:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.5.2.1–3, CKPT223",
+      "editorial_draft": {
+        "A": "A «numai TN-C» exclude instalații în care bara principală de pământ este tot necesară, fără baza acestei excepții.",
+        "B": "B bara/borna principală de legare la pământ la tabloul general este cerința de bază pentru instalația descrisă.",
+        "C": "C «numai TN-S» exclude nejustificat celelalte configurații admise.",
+        "model_scope_or_trap": "TN-C și TN-S sunt moduri de realizare a schemelor de legare, nu condiții exclusive pentru existența barei principale de pământ.",
+        "reformulated_question": "O instalație de distribuție care nu e TN-S are automat voie să nu aibă bară principală de pământ?",
+        "reformulated_solution": "Nu, necesitatea barei principale de împământare nu este limitată la TN-S.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0407",
+      "grade_ids": [
+        "G1-NOR-093"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "100",
+        "stem": "Circuitele iluminatului normal",
+        "A": "trebuie să fie distincte de circuitele de prize.",
+        "B": "poate fi un circuit comun pentru iluminat normal și prize dacă puterea totală instalată pe circuit nu depășește 2 kW",
+        "C": "poate fi un circuit comun pentru iluminat normal și prize dacă puterea totală instalată pe circuit nu depășește3 kW pe un circuit monofazat şi 8 kW pe un circuit trifazat",
+        "imported_keys_UNCHANGED": "G1-NOR-093=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-093:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "source_links": "G1-NOR-093:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.1–3, CKPT223",
+      "editorial_draft": {
+        "A": "A circuitele pentru iluminatul normal trebuie separate de circuitele prizelor, potrivit prevederii menționate.",
+        "B": "B pragul total de 2 kW nu instituie o excepție de amestecare a circuitelor de lumină cu prize.",
+        "C": "C limitele de putere 3/8 kW nu anulează cerința de separare a funcțiilor.",
+        "model_scope_or_trap": "Nu confunda dimensionarea puterii circuitelor cu regula distinctă de separare iluminat/prize.",
+        "reformulated_question": "Poate un circuit comun pentru lămpi și prize fi justificat doar prin consumul total de 1,5 kW?",
+        "reformulated_solution": "Nu, dacă regula impune circuite distincte.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0408",
+      "grade_ids": [
+        "G1-NOR-094"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "101",
+        "stem": "Rezistenţa prizei de pământ a unei clădiri, atunci când este folosită numai pentru protecţia împotriva şocurilor electrice, trebuie să fie cel mult",
+        "A": "10 Ω",
+        "B": "1 Ω",
+        "C": "4 Ω",
+        "imported_keys_UNCHANGED": "G1-NOR-094=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-094:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "source_links": "G1-NOR-094:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.5.7.11, CKPT226 superseding",
+      "editorial_draft": {
+        "A": "A valoarea 10 Ω depășește limita nominală de 4 Ω pentru cazul unei prize folosite exclusiv la protecția față de șoc, potrivit clauzei citate.",
+        "B": "B 1 Ω este limita mai strictă asociată și situației în care priza îndeplinește și o altă funcție, dar 1 Ω satisface numeric și ≤4 Ω; nu este limita caracteristică exclusiv șocului.",
+        "C": "C 4 Ω este limita nominală menționată pentru priza de pământ folosită doar contra șocurilor electrice, cu diferența normativă dintre «poate fi» și «trebuie».",
+        "model_scope_or_trap": "HOLD: sursa formulează «poate fi» 4Ω, întrebarea «trebuie cel mult»; 1Ω este și el ≤4Ω, nu transforma opțiunile în valori fizice exclusive.",
+        "reformulated_question": "Care este valoarea de referință menționată de I7 pentru o priză de pământ folosită NUMAI contra șocurilor, distinct de priza comună cu instalația de paratrăsnet?",
+        "reformulated_solution": "4 Ω pentru primul caz în condițiile exact descrise de normă.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_exclusion_check": "Do not conflate imported choice with source-backed answer or truth of more restrictive values. Independent source and counterexamples required."
+      }
+    },
+    {
+      "unit_id": "QABC-0409",
+      "grade_ids": [
+        "G1-NOR-095"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "102",
+        "stem": "Conductorul neutru (N):",
+        "A": "este un conductor conectat electric la punctul neutru al sursei şi care poate contribui la distribuţia energiei electrice",
+        "B": "este un conductor conectat electric la punctul neutru al sursei şi care contribuie  la protecția contra atingerilor indirecte",
+        "C": "este un conductor conectat electric la punctul neutru al sursei şi care contribuie la distribuţia energiei electrice și la protecția contra atingerilor indirecte",
+        "imported_keys_UNCHANGED": "G1-NOR-095=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-095:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "source_links": "G1-NOR-095:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 definiția «conductor neutru (N)», CKPT223",
+      "editorial_draft": {
+        "A": "A conectat la punctul neutru al sursei și poate contribui la distribuția energiei, conform definiției N.",
+        "B": "B funcția specială de protecție față de atingerile indirecte este atribuită PE/PEN în condițiile sistemului, nu neutrului N definit separat.",
+        "C": "C adună funcțiile N și PE și poate descrie un PEN, dar NU definiția N singur.",
+        "model_scope_or_trap": "N ≠ PE ≠ PEN, chiar dacă un sistem poate avea un punct neutru legat la pământ.",
+        "reformulated_question": "Conductorul N este definit drept conductor cu rol obligatoriu de protecție împotriva contactului indirect?",
+        "reformulated_solution": "Nu; este conectat la neutru și poate distribui energie.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0410",
+      "grade_ids": [
+        "G1-NOR-096"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "103",
+        "stem": "Curentul admisibil  este",
+        "A": "valoarea maximă a curentului electric care poate parcurge în permanenţă un conductor, un dispozitiv sau un aparat, fără ca temperatura sa în regim permanent, în condiţii date, să fie superioară valorii specificate.",
+        "B": "valoarea maximă a curentului electric care poate parcurge un conductor, un dispozitiv sau un aparat, fără ca temperatura sa în regim de scurtcircuit să fie superioară valorii specificate.",
+        "C": "valoarea maximă a curentului electric care poate parcurge în permanenţă un conductor, un dispozitiv sau un aparat, fără ca temperatura sa în condiţiile unei puneri la pământ, să fie superioară valorii specificate.",
+        "imported_keys_UNCHANGED": "G1-NOR-096=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-096:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "source_links": "G1-NOR-096:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 «curent admisibil (Iz)», CKPT223",
+      "editorial_draft": {
+        "A": "A curentul admisibil este curentul maxim susținut în regim permanent fără depășirea temperaturii admise în condiții specificate.",
+        "B": "B limitele de temperatură în timpul scurtcircuitului sunt analizate ca solicitări tranzitorii, nu curent admisibil permanent.",
+        "C": "C solicitarea la punere la pământ este regim de defect, nu definiție a capacității termice în funcționare permanentă.",
+        "model_scope_or_trap": "Nu transfera puterea de suport la scurtcircuit în curentul admisibil Iz pentru sarcină permanentă.",
+        "reformulated_question": "Un conductor care suportă un curent timp de 0,2 secunde suportă automat acel curent continuu?",
+        "reformulated_solution": "Nu, admisibilitatea continuă cere limită termică în regim permanent.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0411",
+      "grade_ids": [
+        "G1-NOR-097"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "104",
+        "stem": "Curent nominal este un",
+        "A": "curent electric destinat a fi transportat de un circuit în funcţionarea în regim de defect simplu un timp limitat",
+        "B": "curent electric destinat a fi transportat de un circuit în funcţionarea în regim de scurtcircuit un timp limitat",
+        "C": "curent electric destinat a fi transportat de un circuit în funcţionarea normală pe timp nelimitat",
+        "imported_keys_UNCHANGED": "G1-NOR-097=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-097:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "source_links": "G1-NOR-097:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 «curent nominal», CKPT223",
+      "editorial_draft": {
+        "A": "A curentul în defect simplu pentru o durată limitată nu definește curentul nominal continuu.",
+        "B": "B curentul de scurtcircuit pentru timp limitat este categorie de solicitare de defect, nu nominal.",
+        "C": "C curentul destinat transportului în condiții normale fără limitare temporală corespunde definiției curentului nominal.",
+        "model_scope_or_trap": "Curentul nominal nu este același lucru cu cel mai mare curent de scurtcircuit suportat.",
+        "reformulated_question": "Este un curent de scurtcircuit de 5 kA curentul nominal al unui circuit de 16 A?",
+        "reformulated_solution": "Nu, reprezintă alt parametru de proiectare.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0412",
+      "grade_ids": [
+        "G1-NOR-098"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "105",
+        "stem": "Pentru realizarea prizelor de pământ se recomandă electrozi din",
+        "A": "bare rotunde, ţevi sau profil cruce",
+        "B": "conductele metalice pentru lichide inflamabile sau gaze.",
+        "C": "obiectele metalice cufundate în apă",
+        "imported_keys_UNCHANGED": "G1-NOR-098=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-098:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "source_links": "G1-NOR-098:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.5.7.1–4, CKPT223",
+      "editorial_draft": {
+        "A": "A bare, țevi și profile adecvate, inclusiv profil cruce, sunt recomandate ca electrozi pentru prizele de pământ.",
+        "B": "B conductele pentru gaze și lichide inflamabile nu sunt admise drept electrozi de împământare.",
+        "C": "C un obiect metalic scufundat în apă nu este automat un electrod admis pentru priza de pământ; apa nu înlocuiește cerințele normative.",
+        "model_scope_or_trap": "Legarea echipotențială a unei conducte nu înseamnă folosirea ei ca electrod de împământare.",
+        "reformulated_question": "Poate o conductă de gaz îngropată fi alesă drept electrod de pământ pentru că este metalică?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0413",
+      "grade_ids": [
+        "G1-NOR-099"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "106",
+        "stem": "Priza de pământ este o",
+        "A": "parte conductoare încorporată obligatoiu în pământ",
+        "B": "parte conductoare care poate fi încorporată într-un mediu conductor specific, de exemplu beton sau cărbune, izolat față de pământ.",
+        "C": "parte conductoare care poate fi încorporată în pământ sau într-un mediu conductor specific, de exemplu beton sau cărbune, în contact cu pământul.",
+        "imported_keys_UNCHANGED": "G1-NOR-099=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-099:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "source_links": "G1-NOR-099:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 «priză de pământ», CKPT223",
+      "editorial_draft": {
+        "A": "A «obligatoriu în pământ» exclude electrozi în mediu conductor corespunzător, cum ar fi betonul în contact cu solul.",
+        "B": "B electrodul complet izolat de pământ nu mai realizează legătura necesară cu pământul.",
+        "C": "C electrodul poate fi încorporat direct în sol sau în mediu conductor specific, DAR în contact cu solul.",
+        "model_scope_or_trap": "Condiția «în contact cu pământul» este esențială, chiar dacă electrodul se află într-un mediu conductor intermediar.",
+        "reformulated_question": "Un electrod în beton izolat complet de sol poate constitui fără alte condiții o priză de pământ?",
+        "reformulated_solution": "Nu, lipsește contactul cu pământul.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0414",
+      "grade_ids": [
+        "G1-NOR-100"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "107",
+        "stem": "Rezistenţa de izolaţie a pardoselii şi pereţilor în fiecare punct de măsurare în condiţiile specificate în SR EN 61140 şi verificate printr-o metoda recomandată în Anexa 8.1 din I7/2011, dacă tensiunea nominală a instalaţiei nu depăşeşte 500 V în tensiune continuă sau alternativă, trebuie să fie mai mare de",
+        "A": "75 kΩ",
+        "B": "50 kΩ",
+        "C": "100 kΩ",
+        "imported_keys_UNCHANGED": "G1-NOR-100=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-100:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "source_links": "G1-NOR-100:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §4.1.5.5.6 și Anexa 8.1, CKPT226 superseding",
+      "editorial_draft": {
+        "A": "A 75 kΩ depășește pragul de 50 kΩ, dar nu este valoarea minimă de referință din clauză.",
+        "B": "B 50 kΩ este valoarea nominală din sursă pentru domeniul ≤500 V; norma spune NU MAI MICĂ de 50 kΩ, nu strict >50 kΩ.",
+        "C": "C 100 kΩ este o valoare mai mare care poate fi cerută altor domenii sau situații, dar nu este pragul minim pentru cazul descris.",
+        "model_scope_or_trap": "HOLD: sursa cere R ≥50 kΩ, enunțul «mai mare de» cere matematic R > X; egalitatea 50 kΩ este permisă în normă dar nu în text. Alte variante A/C sunt valori mai mari, nu pragul de referință.",
+        "reformulated_question": "La o măsurare de 50 kΩ exact, este respectată cerința «nu mai mică decât 50 kΩ»?",
+        "reformulated_solution": "Da, egalitatea este admisă pentru condițiile acestei clauze.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_exclusion_check": "Do not conflate imported choice with source-backed answer or truth of more restrictive values. Independent source and counterexamples required."
+      }
+    },
+    {
+      "unit_id": "QABC-0568",
+      "grade_ids": [
+        "G2-ELEC-290"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_OR_2024_EXAMPLE_NORMALIZED_ORIGINAL_ABC_MATCH_EXAM_SCORING_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "159",
+        "stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei",
+        "imported_keys_UNCHANGED": "G2-ELEC-290=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G2-ELEC-290:V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+        "source_links": "G2-ELEC-290:https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Fundamentals_of_Microwave_and_RF_Design_%28Steer%29/03%3A_Transmission_Lines/3.02%3A_Transmission_Line_Theory"
+      },
+      "source_locator": "Engineering LibreTexts Steer «Transmission Line Theory» §3.2.2–3.2.3; V77",
+      "editorial_draft": {
+        "A": "A constanta de propagare complexă γ=α+jβ descrie împreună variația de amplitudine și fază a undei de-a lungul liniei; DIMENSIUNEA ei este 1/lungime, nu adimensională.",
+        "B": "B constanta de atenuare α reprezintă doar modificarea amplitudinii (partea reală a lui γ), nu și faza.",
+        "C": "C «constanta de distorsiune» nu desemnează constanta complexă standard ce codifică simultan atenuarea și defazajul pe unitatea de lungime.",
+        "model_scope_or_trap": "HOLD: în întrebare «mărime adimensională pe 1 km», dar γ are unitatea km⁻¹ (sau m⁻¹); γ·1 km este adimensional. Cheia A este didactic intenționată, însă enunțul greșește analiza dimensională.",
+        "reformulated_question": "Pentru e^(−γ·l), ce unitate are constanta complexă de propagare γ dacă lungimea l este măsurată în kilometri?",
+        "reformulated_solution": "Unitatea km⁻¹, astfel încât exponentul γ·l să fie adimensional.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "CURRENT_EXAM_VERSION_OR_PRIMARY_WEB_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_exclusion_check": "Do not conflate imported choice with source-backed answer or truth of more restrictive values. Independent source and counterexamples required."
+      }
+    }
+  ]
+}

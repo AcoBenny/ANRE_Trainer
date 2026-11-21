@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-19",
+  "reference": "CKPT-255",
+  "baseline": "V73 original 822 ID / 568 QABC",
+  "purpose": "Adversarial training cases for source identity, provenance, exact option and normative exception gates",
+  "training_trials_executed": 0,
+  "independent_professional_review": "NOT_RUN",
+  "approval_for_learning": "NONE",
+  "prohibited_overclaim": "Deterministic data-QA fixture pass is not a model benchmark, ANRE scored key or authorizing release",
+  "cases": [
+    {
+      "id": "PROV-001",
+      "name": "Source spreadsheet object drawings are not blank",
+      "example_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "source": "Excel Sheet1 A35:D35 / drawing1.xml Group 551 / 22 OOXML shapes",
+      "negative_input": "Cell-only extraction yields no figure",
+      "expected": "Find linked drawing group and preserve original fault topology; reject hallucinated generic schematic; B only candidate",
+      "status": "EVIDENCE_CASE_PREPARED"
+    },
+    {
+      "id": "PROV-002",
+      "name": "Same question but altered options reverse exam candidate letter",
+      "example_ids": [
+        "G1-NOR-048",
+        "G1-NOR-072"
+      ],
+      "source": "Original 2023 workbook rows 55 and 79 versus I7 2023 §§5.4.13 and 5.5.2.3",
+      "negative_input": "Import the trainer A/B barem as if source workbook A/B were identical",
+      "expected": "Reject source QABC identity, keep original C as source-supported candidate and trainer modified A/B separately, demand qualified signoff",
+      "status": "EVIDENCE_CASE_PREPARED"
+    },
+    {
+      "id": "PROV-003",
+      "name": "Same options but altered enunciation changes technical scope",
+      "example_ids": [
+        "G1-ELE-152",
+        "G2-ELEC-290"
+      ],
+      "source": "Source Electro 2024 row 159",
+      "negative_input": "Treat adimensională and caracteristică as synonyms",
+      "expected": "Record original stem vs rewritten stem, inverse-length propagation unit trap; never call exact duplicate",
+      "status": "EVIDENCE_CASE_PREPARED"
+    },
+    {
+      "id": "PROV-004",
+      "name": "Physical mechanism in an option materially modified",
+      "example_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "source": "Source Electro 2024 row 254",
+      "negative_input": "Treat electromagnetic induction and electrostatic induction as literal original-option synonyms",
+      "expected": "Mark modified B in both grade IDs; preserve original candidate dispute and technical mechanism",
+      "status": "EVIDENCE_CASE_PREPARED"
+    },
+    {
+      "id": "PROV-005",
+      "name": "Question from bibliography does not prove official sample origin",
+      "example_ids": [
+        "G2-LEG-001",
+        "G2-NOR-137"
+      ],
+      "source": "V140 153 no-stem-match across five source examples",
+      "negative_input": "Label derived training question 'verbatim official ANRE exam sample' because source is official syllabus",
+      "expected": "Segregate as DIDACTIC_OR_UNVERIFIED_OFFICIAL_ORIGIN, independently audit technical answer, no claim excluded from every possible historical ANRE publication",
+      "status": "EVIDENCE_CASE_PREPARED"
+    },
+    {
+      "id": "PROV-006",
+      "name": "Numeric zero must be preserved in source worksheet parser",
+      "example_ids": [
+        "G1-ELE-154",
+        "G2-ELEC-292"
+      ],
+      "source": "2024 Electro workbook row 161 contains numeric option 0",
+      "negative_input": "Use Python str(cell or '') before matching, thus turning 0 into missing",
+      "expected": "Preserve 0 as value; no false source mismatch; re-run strict normalization before counting",
+      "status": "EVIDENCE_CASE_PREPARED"
+    },
+    {
+      "id": "PROV-007",
+      "name": "Rule prohibition has exact source exceptions",
+      "example_ids": [
+        "G1-NOR-028"
+      ],
+      "source": "I7 2023 supplied copy §5.2.6.6 page56",
+      "negative_input": "Conclude tensile forces forbidden universally with zero exceptions",
+      "expected": "Read adjacent text: two exceptions; classify exam general rule vs universal technical truth, preserve imported key until approval",
+      "status": "EVIDENCE_CASE_PREPARED"
+    },
+    {
+      "id": "PROV-008",
+      "name": "Cross-grade exact QABC has different imported keys",
+      "example_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170",
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "source": "2024 workbook rows 25 and 109 have no graded key column",
+      "negative_input": "Use an unlabelled source workbook A/B/C text to certify one imported key as official",
+      "expected": "Keep key conflict open, distinguish physical candidate from official scored key, demand independent review",
+      "status": "EVIDENCE_CASE_PREPARED"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "checkpoint": "CKPT-127",
+  "date": "2026-11-17",
+  "input_head": "2df36d22e925555980a5adb50f8df652797315e0",
+  "protocol": "BATCH12 adaptive pilot batch 2/2; twelve QABC unique units / 24 grade IDs",
+  "roles": "One assistant using specialist technical, sources, linguistics, data-integrity QA checklists, NOT independent child-agent execution",
+  "gates": {
+    "canonical_hash_key": "VERIFY_BEFORE_LEDGER_CREDIT",
+    "source_exact_exam_scope": "PRELIMINARY",
+    "exam_edition_2026": "UNVERIFIED",
+    "independent_QA": "NOT_RUN",
+    "learning": "NO"
+  },
+  "immutability": "No original QABC, key, HTML, APK, MASTER, release or merge",
+  "cards": [
+    {
+      "unit_id": "AU-ddcbcb01a488a7c0",
+      "representative_id": "G1-ELE-176",
+      "member_ids": "G1-ELE-176;G2-ELEC-312",
+      "qabc_sha256": "ddcbcb01a488a7c0cc46e845ff7aafbc8aaf989b24985f8c35db9836c0c7c3a5",
+      "original_keys_by_id_JSON": "{\"G1-ELE-176\":\"A\",\"G2-ELEC-312\":\"A\"}",
+      "question_original": "Pentru calculul curenţilor de scurtcircuit într-o reţea prin metoda componentelor simetrice, reţeaua inversă (negativă) se compune din:",
+      "A_original": "impedanţe identice cu ale reţelei directe (pozitive) pentru elemente statice și impedanţe diferite de ale reţelei directe (pozitive) pentru maşini rotative",
+      "B_original": "impedanţe identice cu ale reţelei directe (pozitive) atât pentru elemente statice cât și pentru maşini rotative",
+      "C_original": "impedanţe diferite de ale reţelei directe (pozitive) pentru elemente statice",
+      "source": {
+        "url": "https://www.phasetophase.nl/book/book_2_10.html",
+        "locator": "Chapter 10 sequence networks Z2=Z1 far from generators, exceptions rotating machinery; index read",
+        "access_gate": "SOURCE_INDEXED_ONLY"
+      },
+      "context_positive": "În rețeaua de secvență negativă, liniile și transformatoarele statice pasive simetrice au de regulă Z2=Z1; în mașini rotative, câmpul de secvență inversă se rotește în sens opus rotorului și impedanța poate diferi.",
+      "ABC_reasoning": {
+        "A": "Liniile/transformatoarele statice echilibrate au de regulă Z2=Z1; mașinile rotative pot avea Z2 diferit.",
+        "B": "Generalizarea Z2=Z1 și la mașini rotative nu este validă universal.",
+        "C": "Elementele statice pasive echilibrate de regulă nu au Z2 diferit de Z1."
+      },
+      "pairwise": "A distinge corect elemente statice vs mașini; B generalizează fals egalitatea la mașini, C afirmă fals că staticele au în mod obișnuit impedanțe diferite.",
+      "reverse_counterexample": "Un motor asincron poate avea impedanță negativă de secvență diferită de impedanța pozitivă din cauza alunecării diferite.",
+      "linguistic_and_scope_warning": "IEC60909_MACHINE_TYPE_AND_OPERATING_POINT_UNVERIFIED",
+      "candidate_not_approved": "A",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-09b82f2ca47b4542",
+      "representative_id": "G1-ELE-177",
+      "member_ids": "G1-ELE-177;G2-ELEC-313",
+      "qabc_sha256": "09b82f2ca47b454273d7d93b15ee17fe8765d249d4e1190c58a6b824875191cc",
+      "original_keys_by_id_JSON": "{\"G1-ELE-177\":\"A\",\"G2-ELEC-313\":\"A\"}",
+      "question_original": "Pentru limitarea curenţilor de scurtcircuit se utilizează bobine:",
+      "A_original": "înseriate pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+      "B_original": "racordate în derivaţie pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+      "C_original": "înseriate pe circuit, monofazate, cu miez de fier, răcite cu ulei, de tip interior;",
+      "source": {
+        "url": "https://standards.ieee.org/ieee/C57.16/6696/",
+        "locator": "IEEE C57.16-2025 official summary: dry type air-core series connected reactors for fault current limiting; site oficial indexat",
+        "access_gate": "IEEE_OFFICIAL_PUBLIC_SUMMARY_OPENED"
+      },
+      "context_positive": "O bobină de limitare a curentului de scurtcircuit se introduce în serie cu circuitul; reactanța sa inductivă reduce curentul prospectiv. Standardul IEEE C57.16-2025 confirmă reactoarele serie uscate fără miez de fier, cu răcire naturală.",
+      "ABC_reasoning": {
+        "A": "Reactanța serie a bobinei reduce amplitudinea curentului de defect; dispozitivul uscat fără miez este utilizat.",
+        "B": "Bobina shunt nu introduce impedanță serie pentru limitarea directă a curentului defectului.",
+        "C": "Un miez de fier poate satura în scurtcircuit; varianta C nu exprimă tipologia standard fără miez."
+      },
+      "pairwise": "A este un exemplu aplicabil; B în derivație nu adaugă reactanță în serie; C cu miez de fier poate satura și nu este modelul tipic fără miez.",
+      "reverse_counterexample": "Standardul IEEE descrie și reactoare trifazate și de exterior, astfel textul A nu enumeră singura configurație permisă.",
+      "linguistic_and_scope_warning": "A_EXAMPLE_NOT_UNIVERSAL_DEVICE_CLASS",
+      "candidate_not_approved": "A_NOT_EXCLUSIVE_DEVICE_CLASS",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-f4b8ff0c03cd3eb8",
+      "representative_id": "G1-ELE-181",
+      "member_ids": "G1-ELE-181;G2-ELEC-317",
+      "qabc_sha256": "f4b8ff0c03cd3eb880e7673aeee2cc59a1629c7fb9abee934baf208cd1177310",
+      "original_keys_by_id_JSON": "{\"G1-ELE-181\":\"A\",\"G2-ELEC-317\":\"A\"}",
+      "question_original": "Pentru o linie electrică lungă care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei, puterea activă la extremitatea receptoare:",
+      "A_original": "se numeşte putere caracteristică sau putere naturală",
+      "B_original": "depinde de lungimea liniei",
+      "C_original": "este independentă de tensiunea liniei",
+      "source": {
+        "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/gtd2.70203",
+        "locator": "IET 2026, §2 HSIL: SIL=3Vφ²/Zc; pagină indexată",
+        "access_gate": "TECHNICAL_ARTICLE_INDEXED_SCOPE_PENDING"
+      },
+      "context_positive": "O linie de transmisie idealizată încărcată la impedanța sa caracteristică are încărcarea naturală (surge impedance loading), de ordinul P_n=U²/Zc pentru model fără pierderi.",
+      "ABC_reasoning": {
+        "A": "La ZL=Zc se transportă puterea caracteristică/naturală (SIL), de regulă P_nat≈U²/Zc pentru linie idealizată.",
+        "B": "Puterea la receptor poate scădea cu lungimea la linie cu pierderi; nu este esența definiției puterii naturale.",
+        "C": "La U fix, P_nat depinde pătratic de U, deci C e fals."
+      },
+      "pairwise": "A numește puterea naturală; B poate fi efect de pierderi reale, dar nu definește SIL; C neagă dependența de U² evidentă în model.",
+      "reverse_counterexample": "Linia cu rezistență semnificativă are P la receptor influențată de lungime; ecuația SIL nu este un bilanț universal pentru orice linie reală.",
+      "linguistic_and_scope_warning": "LOSSLESS_CHARACTERISTIC_IMPEDANCE_POWER_DEFINITION",
+      "candidate_not_approved": "A_WITH_LOSSLESS_LINE_MODEL",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-b917c698c5766939",
+      "representative_id": "G1-ELE-182",
+      "member_ids": "G1-ELE-182;G2-ELEC-318",
+      "qabc_sha256": "b917c698c5766939acfc5a7d0ed99d37fd5d5752b10398723760f473d8d1c0d8",
+      "original_keys_by_id_JSON": "{\"G1-ELE-182\":\"A\",\"G2-ELEC-318\":\"A\"}",
+      "question_original": "Pentru o linie electrică care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei:",
+      "A_original": "energiile reactive, inductivă şi capacitivă, se compensează",
+      "B_original": "energia reactivă inductivă este mai mare decât cea capacitivă",
+      "C_original": "energia reactivă capacitivă este mai mare decât cea inductivă",
+      "source": {
+        "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/gtd2.70203",
+        "locator": "IET SIL natural load reactive balance, site indexat",
+        "access_gate": "TECHNICAL_ARTICLE_INDEXED_SCOPE_PENDING"
+      },
+      "context_positive": "La încărcarea naturală a unei linii fără pierderi, necesarul inductiv longitudinal și producția capacitivă transversală de energie reactivă se echilibrează aproximativ.",
+      "ABC_reasoning": {
+        "A": "La încărcare naturală, Q al inductanței longitudinale este aproximativ egal cu Q capacitiv produs.",
+        "B": "B apare dacă transferul depășește încărcarea naturală în model simplificat.",
+        "C": "C apare sub încărcarea naturală; nu la adaptarea ideală."
+      },
+      "pairwise": "A este condiția de echilibru Q ideal; B corespunde unei linii supraîncărcate peste SIL; C unei linii subîncărcate.",
+      "reverse_counterexample": "Compensări, pierderi și parametri distribuiți reali modifică bilanțul reactivei; egalitatea exactă cere modelul liniei.",
+      "linguistic_and_scope_warning": "IDEAL_SIL_VS_REAL_LINE_REACTIVE_BALANCE",
+      "candidate_not_approved": "A_ONLY_LOSSLESS_SIL",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-54f4d050b8ccb919",
+      "representative_id": "G1-ELE-191",
+      "member_ids": "G1-ELE-191;G2-ELEC-327",
+      "qabc_sha256": "54f4d050b8ccb919701202e09c20f7cef61cb09c66aefb160403a3561e89e89f",
+      "original_keys_by_id_JSON": "{\"G1-ELE-191\":\"A\",\"G2-ELEC-327\":\"A\"}",
+      "question_original": "Prin adăugarea, pe toate laturile pornind din acelaşi nod al unei reţele buclate, a unor tensiuni electromotoare (t.e.m.) egale şi la fel orientate faţă de nod (teorema lui Vaschy):",
+      "A_original": "circulaţia de curenţi existentă anterior în reţea nu se modifică",
+      "B_original": "se pot modifica curenţii din laturile cu t.e.m. adăugate",
+      "C_original": "se modifică circulaţia de curenţi din laturile pe care nu se adaugă t.e.m.",
+      "source": {
+        "url": "https://www.afahc.ro/ro/facultate/cursuri/electro_b.pdf",
+        "locator": "Marian Pearsică, Electrotehnică (2004), §9.10.5, pagină tipărită 165 (PDF text paragraful de lângă Fig.9.34)",
+        "access_gate": "PRIOR_PDF_EXTRACT_ONLY_NOT_VISUALLY_SIGNED"
+      },
+      "context_positive": "Teorema lui Vaschy permite adăugarea de t.e.m. ideale egale, orientate la fel către sau dinspre un nod pe ramurile incidente, fără modificarea circulației curenților; se modifică numai referințele de potențial în acel model.",
+      "ABC_reasoning": {
+        "A": "Vaschy: adăugarea unor surse ideale egale, la fel orientate față de nod, lasă neschimbate intensitățile din toate ramurile în rețea.",
+        "B": "B afirmă modificarea curenților laturilor afectate, contrar teoremei în condițiile sale.",
+        "C": "C afirmă schimbări în laturile neafectate, contrar invariabilității curenților."
+      },
+      "pairwise": "A menține intensitățile; B și C afirmă variații în ramuri în contradicție cu invariabilitatea teoremei sub ipoteze.",
+      "reverse_counterexample": "Dacă sursele adăugate nu sunt identice sau au impedanțe interne, ipotezele de invariabilitate nu mai sunt îndeplinite.",
+      "linguistic_and_scope_warning": "PREVIOUS_PDF_TEXT_ONLY_VISUAL_SCREENSHOT_NOT_COMPLETED_EXACT_SECTION",
+      "candidate_not_approved": "A_CONDITIONAL_IDEAL_SOURCES",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-1438096c869529cf",
+      "representative_id": "G1-ELE-208",
+      "member_ids": "G1-ELE-208;G2-ELEC-344",
+      "qabc_sha256": "1438096c869529cf461e9eec6db15a2e28c778e0b1f8af0df3fdfe3c512e20d8",
+      "original_keys_by_id_JSON": "{\"G1-ELE-208\":\"A\",\"G2-ELEC-344\":\"A\"}",
+      "question_original": "Relaţia între curenţii de linie si de fazã în sisteme cu generatoare si receptoare conectate în triunghi este:",
+      "A_original": "curentul de linie este mai mare de 1,73 ori decât curentul de fazã",
+      "B_original": "curentul de linie este egal cu curentul de fazã",
+      "C_original": "curentul de fazã este mai mare de de 1,73 ori decât curentul de linie",
+      "source": {
+        "url": "https://eepower.com/technical-articles/determining-phase-and-line-voltages-and-currents-in-delta-connected-generators/",
+        "locator": "EEPower 2022 line/phase currents delta balanced, equation IL=sqrt(3)Ip, 30° phase difference",
+        "access_gate": "EEPOWER_HTML_OPENED_THIS_RUN"
+      },
+      "context_positive": "Pentru conexiune Δ echilibrată, curentul de linie este diferența fazorială a doi curenți de fază defazați la 120°, deci I_L=√3 I_f≈1,732 I_f. Site-ul EE Power arată explicit diagrama.",
+      "ABC_reasoning": {
+        "A": "În conexiunea triunghi echilibrată IL=√3·If≈1,73205·If; A este singura direcție corectă. «mai mare de 1,73 ori» numeric/lingvistic imprecis.",
+        "B": "IL=If este caracteristica conexiunii stea echilibrate, nu triunghi.",
+        "C": "If>IL cu √3 este relația inversată, falsă în sistem triunghi echilibrat."
+      },
+      "pairwise": "A are direcția corectă a raportului, B este relația din stea, iar C inversează raportul.",
+      "reverse_counterexample": "Dacă sarcinile din cele trei ramuri nu sunt echilibrate, curentul de linie nu este un multiplu constant √3 din curentul de fază; «mai mare de 1,73 ori» este lingvistic neclar.",
+      "linguistic_and_scope_warning": "UNBALANCED_DELTA_AND_MAI_MARE_DE_1_73_WORDING",
+      "candidate_not_approved": "A_BALANCED_DELTA_ONLY",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-8e6be4e5686894c8",
+      "representative_id": "G1-ELE-209",
+      "member_ids": "G1-ELE-209;G2-ELEC-345",
+      "qabc_sha256": "8e6be4e5686894c857b48006aca71f2900b05ecd64869a0680f4581ad84f1d5d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-209\":\"C\",\"G2-ELEC-345\":\"C\"}",
+      "question_original": "Se considera ca un transformator funcţionează în gol atunci când:",
+      "A_original": "sarcina transformatorului este foarte mica",
+      "B_original": "curentul primar si curentul secundar sunt foarte mici",
+      "C_original": "o înfăşurare este conectata la reţea, iar cealaltă este deschisa",
+      "source": {
+        "url": "https://www.se.com/ie/en/faqs/FA133146/",
+        "locator": "Schneider Electric FAQ, definition of transformer no-load: one winding rated voltage, others open-circuited",
+        "access_gate": "MANUFACTURER_PRIOR_HTML_READ"
+      },
+      "context_positive": "Regimul în gol la transformator înseamnă înfășurare primară alimentată și secundară deschisă, cu curent secundar zero; primarul absoarbe doar curentul de magnetizare și pierderi.",
+      "ABC_reasoning": {
+        "A": "Sarcina foarte mică nu echivalează strict cu mersul în gol, dacă înfășurarea secundară nu este deschisă.",
+        "B": "Curentul primar de magnetizare nu este zero, iar expresia «ambii foarte mici» nu definește golul; curentul secundar este ideal zero.",
+        "C": "Secundarul deschis, primarul energizat definește mersul în gol convențional."
+      },
+      "pairwise": "C definește exact starea circuitului; A încărcare mică nu este secundar deschis, B curenți mici nu precizează deschiderea secundară.",
+      "reverse_counterexample": "Primarul absoarbe curent de mers în gol nenul, astfel «ambii curenți foarte mici» nu este o definiție formală.",
+      "linguistic_and_scope_warning": "TWO_WINDING_TRANSFORMER_OPEN_SECONDARY",
+      "candidate_not_approved": "C",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-155e4f490d6c823f",
+      "representative_id": "G1-ELE-211",
+      "member_ids": "G1-ELE-211;G2-ELEC-347",
+      "qabc_sha256": "155e4f490d6c823fe2fa4e6f21ca5696a1b87df9cee0cf8fa4414caafdc21cbc",
+      "original_keys_by_id_JSON": "{\"G1-ELE-211\":\"B\",\"G2-ELEC-347\":\"B\"}",
+      "question_original": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 3 ohm, montate în paralel, este:",
+      "A_original": "3 ohm",
+      "B_original": "1 ohm",
+      "C_original": "9 ohm",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "OpenStax 10.2, parallel resistance",
+        "access_gate": "OPENSTAX_TECHNICAL_FORMULA"
+      },
+      "context_positive": "Trei rezistoare de 3 Ω montate în paralel: 1/R_eq=1/3+1/3+1/3=1 Ω⁻¹, deci R_eq=1 Ω.",
+      "ABC_reasoning": {
+        "A": "3Ω este valoarea fiecărei ramuri, nu echivalenta celor trei paralele.",
+        "B": "1/Req=1/3+1/3+1/3=1 Ω^-1 -> Req=1Ω.",
+        "C": "9Ω este suma pentru serie, nu paralel."
+      },
+      "pairwise": "A reprezintă valoarea unei ramuri, B este echivalenta calculată, C suma celor trei pentru serie.",
+      "reverse_counterexample": "Aceleași trei rezistoare în serie au 9 Ω, ceea ce corespunde C doar în cazul altui montaj.",
+      "linguistic_and_scope_warning": "THREE_POSITIVE_EQUAL_PARALLEL_RESISTORS",
+      "candidate_not_approved": "B",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-1a4e525d6932d877",
+      "representative_id": "G1-ELE-212",
+      "member_ids": "G1-ELE-212;G2-ELEC-348",
+      "qabc_sha256": "1a4e525d6932d8775e4bccceecb25b4a397b7fe6a0a7ccab15356118e06b0576",
+      "original_keys_by_id_JSON": "{\"G1-ELE-212\":\"A\",\"G2-ELEC-348\":\"A\"}",
+      "question_original": "Rezistivitatea unui conductor electric depinde de:",
+      "A_original": "natura materialului",
+      "B_original": "lungime, direct proporţional",
+      "C_original": "masa, direct proporţional",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "locator": "OpenStax 9.3 resistivity versus length; temperature dependence",
+        "access_gate": "OPENSTAX_TECHNICAL_FORMULA"
+      },
+      "context_positive": "Rezistivitatea ρ este o proprietate materială, dependentă de tipul substanței, temperatură și stare, distinctă de rezistența firului R=ρL/A.",
+      "ABC_reasoning": {
+        "A": "Rezistivitatea este o proprietate de material și depinde de compoziție/structură și temperatură; A oferă un factor real.",
+        "B": "Lungimea intră în rezistența R=ρL/A, nu în rezistivitatea materialului la mediu constant.",
+        "C": "Masa nu este argument direct al lui ρ; poate corela cu geometria prin volum și densitate."
+      },
+      "pairwise": "A numește un factor constitutiv; B confundă ρ cu R dependentă de lungime; C masa nu este factor direct proporțional al ρ.",
+      "reverse_counterexample": "Două conductoare din același material la aceeași temperatură, dar lungimi diferite, au rezistivitate egală și rezistențe diferite.",
+      "linguistic_and_scope_warning": "DEPENDENT_ON_MATERIAL_NOT_EXHAUSTIVE_TEMPERATURE",
+      "candidate_not_approved": "A_NOT_EXCLUSIVE_TEMPERATURE",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-93574653f700962e",
+      "representative_id": "G1-ELE-213",
+      "member_ids": "G1-ELE-213;G2-ELEC-349",
+      "qabc_sha256": "93574653f700962e95de2ef0ba4960da4c4c4255488ea69bc925293e953cd232",
+      "original_keys_by_id_JSON": "{\"G1-ELE-213\":\"A\",\"G2-ELEC-349\":\"A\"}",
+      "question_original": "Rezonanţa se obţine într-un circuit electric de curent alternativ dacă:",
+      "A_original": "reactanţele inductivă şi capacitivă în valoare absolută sunt egale",
+      "B_original": "reactanţa inductivă este mai mare decât reactanţa capacitivă",
+      "C_original": "reactanţa capacitivă este mai mare decât reactanţa inductivă",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-3-rlc-series-circuits-with-ac",
+        "locator": "OpenStax RLC series resonance f0=1/(2πsqrt(LC))",
+        "access_gate": "OPENSTAX_SERIES_RESONANCE"
+      },
+      "context_positive": "În circuitul RLC serie ideal alimentat sinusoidal, rezonanța se obține când X_L=X_C în modul, deci X_total=ωL−1/(ωC)=0.",
+      "ABC_reasoning": {
+        "A": "La rezonanță pentru circuit RLC rezonant XL=XC (în modul) și reactanța netă se anulează.",
+        "B": "XL>XC implică caracter inductiv, nu egalitatea necesară pentru rezonanța serie ideală.",
+        "C": "XC>XL implică caracter capacitiv, nu rezonanța ideală."
+      },
+      "pairwise": "A anulează reactanța netă, B este comportare inductivă, C capacitivă.",
+      "reverse_counterexample": "Într-un circuit paralel real cu rezistențe și pierderi, frecvența la care se minimizează susceptanța poate necesita o ecuație mai complexă.",
+      "linguistic_and_scope_warning": "IDEAL_SERIES_RLC_NOT_UNQUALIFIED_ALL_NETWORKS",
+      "candidate_not_approved": "A_IDEAL_RLC_SERIES",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-08d309e3e5bd20dd",
+      "representative_id": "G1-ELE-218",
+      "member_ids": "G1-ELE-218;G2-ELEC-354",
+      "qabc_sha256": "08d309e3e5bd20dd3dabc5718202d0116def6d3b39982f1de65bec43ff3f4839",
+      "original_keys_by_id_JSON": "{\"G1-ELE-218\":\"B\",\"G2-ELEC-354\":\"B\"}",
+      "question_original": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat, al unei reţele, izolat de pământ se compune din:",
+      "A_original": "schemele de secvenţă directă (pozitivă) , inversă (negativă) şi homopolară (zero) conectate în serie",
+      "B_original": "schema de secvenţă directă (pozitivă)",
+      "C_original": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel",
+      "source": {
+        "url": "https://electrical-engineering-portal.com/resources/knowledge/fault-calculations",
+        "locator": "Fault Calculations, secțiunea 'Three phase (and three phase to earth)', I_a1=E_a/Z1, I_a2=I_a0=0",
+        "access_gate": "FAULT_CALCULATION_WEB_TECHNICAL_SOURCE"
+      },
+      "context_positive": "Un scurtcircuit trifazat perfect simetric generează numai componenta directă. Inversă și homopolară rămân zero, chiar dacă rețeaua are neutrul izolat.",
+      "ABC_reasoning": {
+        "A": "A: Conexiunea serie directă/inversă/homopolară este asociată defectelor nesimetrice la pământ, nu scurtcircuitului trifazat simetric.",
+        "B": "B: La defect trifazat echilibrat contribuie doar rețeaua de secvență directă.",
+        "C": "C: Secvența inversă nu este excitată într-un defect trifazat perfect simetric."
+      },
+      "pairwise": "B este rețeaua de secvență directă; A cu toate trei în serie este pentru alt tip defect, iar C presupune inversă nenulă.",
+      "reverse_counterexample": "Defect monofazat pământ poate cupla trei rețele de secvență, dar nu se substituie defectului trifazat simetric.",
+      "linguistic_and_scope_warning": "PERFECT_THREE_PHASE_BALANCED_FAULT",
+      "candidate_not_approved": "B",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-4685bf42e604ea53",
+      "representative_id": "G1-ELE-223",
+      "member_ids": "G1-ELE-223;G2-ELEC-359",
+      "qabc_sha256": "4685bf42e604ea53f183caa4e5e191d83ad45e68f461b5a383d07b63153295b4",
+      "original_keys_by_id_JSON": "{\"G1-ELE-223\":\"C\",\"G2-ELEC-359\":\"C\"}",
+      "question_original": "Transformatoarele de măsurare de curent:",
+      "A_original": "pot fi racordate în circuitul primar cu înfăşurarea secundara deschisa",
+      "B_original": "pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
+      "C_original": "nu pot fi racordate in circuitul primar cu înfăşurarea secundara deschisa",
+      "source": {
+        "url": "https://www.se.com/nz/en/faqs/FA125574/",
+        "locator": "Schneider Electric FAQ FA125574: CT must NEVER be open circuit while current may pass through primary; opened HTML",
+        "access_gate": "SCHNEIDER_OFFICIAL_HTML_OPENED_THIS_RUN"
+      },
+      "context_positive": "Transformatorul de măsurare a curentului are pericol de supratensiune mare pe secundar dacă primarul transportă curent și secundarul este deschis. Schneider Electric avertizează explicit despre electrocutare și avarii.",
+      "ABC_reasoning": {
+        "A": "A: CT cu primar energizat și secundar deschis poate genera tensiuni periculoase; nu se recomandă racordare în această stare.",
+        "B": "B: Lăsarea în exploatare cu secundar deschis poate deteriora izolația și răni operatori.",
+        "C": "C: În situația de racordare cu primarul ce poate transporta curent, secundarul CT trebuie conectat la sarcină sau scurtcircuitat."
+      },
+      "pairwise": "A/B permit un circuit secundar deschis la primar alimentat, ceea ce este periculos; C este interdicția pentru exploatare/energizare.",
+      "reverse_counterexample": "Un CT complet dezenergizat nu generează această tensiune, astfel absolutul «nu pot» se interpretează în contextul racordării circuitului primar ce poate fi energizat.",
+      "linguistic_and_scope_warning": "CT_SAFETY_NEVER_OPEN_SECONDARY_WITH_PRIMARY_CURRENT",
+      "candidate_not_approved": "C_ENERGIZED_CT_SAFE_PRACTICE",
+      "independent_review": "NOT_RUN",
+      "learning_approval": "NO"
+    }
+  ]
+}

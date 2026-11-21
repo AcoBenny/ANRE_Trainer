@@ -1,0 +1,740 @@
+{
+  "checkpoint": "CKPT-146",
+  "date": "2026-11-17",
+  "input_checkpoint": "CKPT-144",
+  "source_HEAD": "cfe8776df55d835bb403fcc2f361b5ddc3bd2f68",
+  "phase": "SOURCE_SCOPE_ONE_PASS_TECHNICAL_TRIAGE_NOT_FINAL_LEARNING_SIGNOFF",
+  "method": "Four non-overlapping 15-unit batches using already documented original A/B/C and grade keys, compare exact original question, record technical model and absence of independent review. Prevent duplicate research.",
+  "status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 9,
+    "CONDITIONAL_MODEL_OR_SOURCE": 6
+  },
+  "count_unique_units": 15,
+  "count_grade_members": 30,
+  "immutability": "no QABC, imported answer key, HTML, APK, main, merge, release changes",
+  "independent_QA": "NOT_EXECUTED_NO_INDEPENDENT_AGENT_RUNTIME",
+  "learner_approvals": 0,
+  "source_reuse": "Prior source cards marked as not reopened. Browser-open evidence limited to an explicit allow-list. Titles without exact source support are flagged conditional/blocked.",
+  "cards": [
+    {
+      "unit_id": "AU-da4039895b7fb870",
+      "representative_id": "G1-ELE-002",
+      "grade_member_ids": [
+        "G1-ELE-002",
+        "G2-ELEC-155"
+      ],
+      "canonical_sha256": "da4039895b7fb87044011d3c3fa4f41b58d65575f7d448ec8b2bc11b6f6d3d43",
+      "original_question_UNCHANGED": "Bobinele de stingere din staţiile electrice de transformare sunt echipamente pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "compensarea factorului de putere",
+        "B": "dotări PSI",
+        "C": "compensarea curenţilor capacitivi"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-002": "C",
+        "G2-ELEC-155": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Petersen/arc suppression coil compensates capacitive earth-fault current via inductive neutral grounding.",
+      "A_B_C_analysis_reused": {
+        "A": "A: Petersen coil is not primarily correction of commercial power factor.",
+        "B": "B: is not fire-fighting/PSI equipment.",
+        "C": "C: compensates capacitive ground-fault currents from feeder-to-earth capacitances.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "ABB Distribution Automation Handbook §3.15.5.3 Arc Suppression Coil",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://library.e.abb.com/public/7dca4ffad2206d36c1257be30048d4be/DAHandbook_Section_3_Power_distribution_systems_757959_ENa.pdf",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://library.e.abb.com/public/7dca4ffad2206d36c1257be30048d4be/DAHandbook_Section_3_Power_distribution_systems_757959_ENa.pdf",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-76fbc39a8cc4f1f8",
+      "representative_id": "G1-ELE-003",
+      "grade_member_ids": [
+        "G1-ELE-003",
+        "G2-ELEC-156"
+      ],
+      "canonical_sha256": "76fbc39a8cc4f1f8ff638a3d784a0d3636e17b3b4b4957f5e37059919c7b812c",
+      "original_question_UNCHANGED": "Câmpul magnetic poate fi produs:",
+      "original_ABC_UNCHANGED": {
+        "A": "numai de magneţi permanenţi",
+        "B": "numai de electromagneţi",
+        "C": "de magneţi permanenţi si de electromagneţi"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-003": "C",
+        "G2-ELEC-156": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Permanent magnets and current-driven electromagnets each create magnetic fields, disproving two 'numai' alternatives.",
+      "A_B_C_analysis_reused": {
+        "A": "A: 'only' permanent magnets excludes electromagnet magnetic fields.",
+        "B": "B: 'only' electromagnets excludes permanent magnets.",
+        "C": "C: both magnet and solenoid/coil sources produce fields; more generally currents also do.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Magnetic fields produced by permanent magnets and energized coils",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/12-introduction",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/11-2-magnetic-fields-and-lines",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-17c9eb481bdb49b4",
+      "representative_id": "G1-ELE-004",
+      "grade_member_ids": [
+        "G1-ELE-004",
+        "G2-ELEC-157"
+      ],
+      "canonical_sha256": "17c9eb481bdb49b4ef7e76008fdf3a653519e9e52ba6060bb3174dc2c38a7150",
+      "original_question_UNCHANGED": "3 condensatoare având capacitatea C1=100 μF, C2=50 μF, C3=100 μF legate în paralel, au capacitatea echivalentă.",
+      "original_ABC_UNCHANGED": {
+        "A": "25 μF",
+        "B": "250 μF",
+        "C": "50 μF"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-004": "B",
+        "G2-ELEC-157": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Parallel capacitors add: 100+50+100=250 μF, key B.",
+      "A_B_C_analysis_reused": {
+        "A": "A: 25 μF not equal to sum of parallel capacitances.",
+        "B": "B: 100+50+100=250 μF, three parallel elements share same voltage.",
+        "C": "C: 50 μF is merely one element, not whole parallel network.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "OpenStax University Physics 8.2 Parallel Combination",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-d511701e7d49fb58",
+      "representative_id": "G1-ELE-006",
+      "grade_member_ids": [
+        "G1-ELE-006",
+        "G2-ELEC-159"
+      ],
+      "canonical_sha256": "d511701e7d49fb587aa6b7cb6c62dba3cad9e22e7d789976b8800242d9dc7a76",
+      "original_question_UNCHANGED": "AAR se utilizează în scopul:",
+      "original_ABC_UNCHANGED": {
+        "A": "limitării curenţilor de scurtcircuit;",
+        "B": "creşterii continuităţii în alimentare;",
+        "C": "reducerii pierderilor de energie pe linii."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-006": "B",
+        "G2-ELEC-159": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Automatic reserve supply transfer AAR improves supply continuity. Distinguish AAR from autoreclosing RAR, exact protection manual not reopened.",
+      "A_B_C_analysis_reused": {
+        "A": "A: automatic supply transfer does not inherently reduce prospective short-circuit current.",
+        "B": "B: AAR transfers to alternate source and reduces interruption, improving availability.",
+        "C": "C: the primary aim is not line-loss reduction, which depends on loading/topology.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Automatic transfer/automatic reserve restoration operational principle",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://library.e.abb.com/public/7dca4ffad2206d36c1257be30048d4be/DAHandbook_Section_3_Power_distribution_systems_757959_ENa.pdf",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-7e7d5305cca562a8",
+      "representative_id": "G1-ELE-007",
+      "grade_member_ids": [
+        "G1-ELE-007",
+        "G2-ELEC-160"
+      ],
+      "canonical_sha256": "7e7d5305cca562a8430268e4cc52759bb182bec6053a4257e2a8de12a7a031c7",
+      "original_question_UNCHANGED": "Alunecarea s a unui motor asincron are valori:",
+      "original_ABC_UNCHANGED": {
+        "A": "cuprinse între 1 si 0",
+        "B": "cuprinse între -1 si 0",
+        "C": "de regulă, mai mari decât 1"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-007": "A",
+        "G2-ELEC-160": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Motor slip s=(ns-n)/ns is between 0 and 1 in conventional motoring, but not all braking/generating machine regimes.",
+      "A_B_C_analysis_reused": {
+        "A": "A: for motoring above rest to below synchronous speed, 0<s<1, with endpoints limiting cases.",
+        "B": "B: negative slip applies to generating/supersynchronous regime, not ordinary motor motoring.",
+        "C": "C: slip >1 occurs in braking/plugging modes, not normal motor operation.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Asynchronous machine slip s=(ns-n)/ns operating regimes",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.electrical4u.com/slip-of-induction-motor/",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f536d45b5c983c0a",
+      "representative_id": "G1-ELE-009",
+      "grade_member_ids": [
+        "G1-ELE-009",
+        "G2-ELEC-161"
+      ],
+      "canonical_sha256": "f536d45b5c983c0ae743516830e289fb2fb163d789cb282060ce6668b4985989",
+      "original_question_UNCHANGED": "Care element nu se foloseşte la reglarea tensiunii în reţelele electrice:",
+      "original_ABC_UNCHANGED": {
+        "A": "bobina de compensare",
+        "B": "transformatorul",
+        "C": "rezistorul"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-009": "C",
+        "G2-ELEC-161": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Resistor not standard grid voltage-control actuator compared with taps and reactive compensation; 'not used' absolute has edge cases.",
+      "A_B_C_analysis_reused": {
+        "A": "A: shunt reactors vary reactive power and can influence system voltage.",
+        "B": "B: OLTC transformer taps regulate voltage directly.",
+        "C": "C: resistor changes voltage via loss, but not typical controlled grid-voltage regulation component; 'nu se foloseşte' absolute overstatement.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Voltage regulation by reactive power and transformer taps; resistor not standard grid voltage device",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://library.e.abb.com/public/7dca4ffad2206d36c1257be30048d4be/DAHandbook_Section_3_Power_distribution_systems_757959_ENa.pdf",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-7b6602f5bea62535",
+      "representative_id": "G1-ELE-011",
+      "grade_member_ids": [
+        "G1-ELE-011",
+        "G2-ELEC-163"
+      ],
+      "canonical_sha256": "7b6602f5bea625356f7dd351c2ce123e8cb144c58fc56c12adf869829446dfc2",
+      "original_question_UNCHANGED": "Bobinele pentru limitarea curenţilor de scurtcircuit au:",
+      "original_ABC_UNCHANGED": {
+        "A": "rezistenta mare",
+        "B": "inductanţa mare",
+        "C": "inductanţa mica"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-011": "B",
+        "G2-ELEC-163": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Fault limiting reactor raises series inductive reactance X=ωL, reducing prospective fault current at constant source.",
+      "A_B_C_analysis_reused": {
+        "A": "A: large resistance causes heat losses and is not preferred characteristic for fault-limiting inductors.",
+        "B": "B: large inductance gives large reactance at system frequency, lowering prospective Isc.",
+        "C": "C: small inductance provides insufficient fault-current limiting reactance.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Series reactor X_L=2πfL increases short-circuit impedance",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.gevernova.com/grid-solutions/sites/default/files/resources/products/applications/series%20reactors%20in%20power%20systems%20whitepaper-en-31993.pdf",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://www.electrical-installation.org/enwiki/Calculation_of_minimum_levels_of_short-circuit_current",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-1fe7273b5327331d",
+      "representative_id": "G1-ELE-012",
+      "grade_member_ids": [
+        "G1-ELE-012",
+        "G2-ELEC-164"
+      ],
+      "canonical_sha256": "1fe7273b5327331d15338a135917763812d64dfe8f7a040d8a62181f14dbb1ce",
+      "original_question_UNCHANGED": "Câmpul electrostatic este descris",
+      "original_ABC_UNCHANGED": {
+        "A": "prin: intensitatea câmpului electric",
+        "B": "numai prin inducţia electrică",
+        "C": "inducţia magnetică"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-012": "A",
+        "G2-ELEC-164": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Electrostatic field is characterized by electric field intensity E; magnetic B is a separate field; 'numai D' too exclusive.",
+      "A_B_C_analysis_reused": {
+        "A": "A: field intensity vector E characterizes electrostatic field.",
+        "B": "B: 'only D' ignores E and constitutive relation, too restrictive.",
+        "C": "C: B magnetic induction is different vector field, not descriptor of pure electrostatic field.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Electric field intensity E; electric displacement D=epsilon E",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge-and-electric-field",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+            "provenance": "PRIOR_EXACT_SOURCE_OR_SEARCH_INDEXED_ONLY_NOT_DIRECTLY_VERIFIED"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-e22d96ebe2f2bccc",
+      "representative_id": "G1-ELE-013",
+      "grade_member_ids": [
+        "G1-ELE-013",
+        "G2-ELEC-165"
+      ],
+      "canonical_sha256": "e22d96ebe2f2bcccda757f9eac8d49c12f31d0284370e0953eacc19eece7f1db",
+      "original_question_UNCHANGED": "Comparativ cu cele uscate, transformatoarele imersate prezintă :",
+      "original_ABC_UNCHANGED": {
+        "A": "o bună rezistenţă la foc;",
+        "B": "risc crescut de poluare acustică a mediului ambiant;",
+        "C": "necesitatea unor amenajări speciale la instalare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-013": "C",
+        "G2-ELEC-165": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Oil immersed transformers may require containment/fire/environment provisions, depending on oil type/site; dry transformer not identical.",
+      "A_B_C_analysis_reused": {
+        "A": "A: oil liquid is combustible in conventional mineral-oil design, not inherently superior fire resistance.",
+        "B": "B: oil vs dry audible noise depends design/cooling, cannot assert universal increased noise.",
+        "C": "C: oil liquid containment/spill/fire arrangement can require extra special installation provisions.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Oil-filled transformers need containment/fire/environmental controls",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://www.eaton.com/us/en-us/catalog/medium-voltage-power-distribution-control-systems/transformers.html",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-78f1b11743f3810c",
+      "representative_id": "G1-ELE-016",
+      "grade_member_ids": [
+        "G1-ELE-016",
+        "G2-ELEC-168"
+      ],
+      "canonical_sha256": "78f1b11743f3810c5ad8305eeb6f6d122ea5abe917b1acad66f6aaaaa70f4015",
+      "original_question_UNCHANGED": "Cantitatea de căldura produsã la trecerea curentului electric printr-un conductor este:",
+      "original_ABC_UNCHANGED": {
+        "A": "direct proporţională cu secţiunea conductorului",
+        "B": "direct proporţionala cu pătratul intensităţii curentului",
+        "C": "invers proporţionala cu rezistenta conductorului"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-016": "B",
+        "G2-ELEC-168": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Joule energy Q=I²Rt for fixed resistance/current/time, supports B; other options reverse dependencies.",
+      "A_B_C_analysis_reused": {
+        "A": "A: at fixed current/length, R=ρL/S falls with S, so heat is not directly proportional to S.",
+        "B": "B: Q=I² R t, proportional to square of current when R,t fixed.",
+        "C": "C: Q is proportional to R for fixed current, not inverse; at fixed voltage alternate scaling differs.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "OpenStax University Physics 9.5 Electrical Energy and Power",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-636b4d65f0575451",
+      "representative_id": "G1-ELE-017",
+      "grade_member_ids": [
+        "G1-ELE-017",
+        "G2-ELEC-169"
+      ],
+      "canonical_sha256": "636b4d65f0575451df79046f0beb171e5bb3e5dd687db8267ccf574719aebbc0",
+      "original_question_UNCHANGED": "Cantitatea de electricitate cu care se încarcă o baterie de n condensatoare montate în serie, fiecare de capacitate C, este:",
+      "original_ABC_UNCHANGED": {
+        "A": "aceeaşi cu care se încarcă fiecare element component",
+        "B": "suma cantităţilor cu care se înarcă fiecare element în parte",
+        "C": "egală cu de două ori cantitatea de electricitate cu care se încarcă fiecare condensator"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-017": "A",
+        "G2-ELEC-169": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "For initially uncharged ideal series capacitors, each stores the same magnitude of charge Q as the series string.",
+      "A_B_C_analysis_reused": {
+        "A": "A: ideal series capacitors all carry equal magnitude of charge Q.",
+        "B": "B: summed charges nQ is not the charge transferred through equivalent series branch.",
+        "C": "C: twice element charge fails unless arbitrary special case; not general.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "OpenStax University Physics 8.2 capacitor series charge equality",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-ade65052d2abd805",
+      "representative_id": "G1-ELE-019",
+      "grade_member_ids": [
+        "G1-ELE-019",
+        "G2-ELEC-171"
+      ],
+      "canonical_sha256": "ade65052d2abd805e2711f76ba193d96abaf7dd84572ce0f70f77382801f0313",
+      "original_question_UNCHANGED": "Capacitatea echivalentă a 2 condensatoare, fiecare având capacitatea C, montate în serie este egală cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "2 C",
+        "B": "C/2",
+        "C": "C"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-019": "B",
+        "G2-ELEC-171": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "Two equal C capacitors in series 1/Ceq=2/C, hence Ceq=C/2.",
+      "A_B_C_analysis_reused": {
+        "A": "A: 2C is two parallel equal capacitors, not series.",
+        "B": "B: 1/Ceq=1/C+1/C=2/C, therefore Ceq=C/2.",
+        "C": "C: one capacitor value is not equivalent of two ideal series capacitors.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "OpenStax University Physics 8.2 series equivalent",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-8f2ab3317eee872d",
+      "representative_id": "G1-ELE-021",
+      "grade_member_ids": [
+        "G1-ELE-021",
+        "G2-ELEC-173"
+      ],
+      "canonical_sha256": "8f2ab3317eee872dfba59b459d2e4083b024aedeb66ff6089175c11a2f823d92",
+      "original_question_UNCHANGED": "Care dintre materialele electrotehnice admit o densitate de curent mai mare:",
+      "original_ABC_UNCHANGED": {
+        "A": "aluminiu",
+        "B": "cupru",
+        "C": "ambele admit aceeaşi densitate de curent"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-021": "B",
+        "G2-ELEC-173": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "Copper has generally higher conductivity than aluminium; permitted ampacity/current density also depends on cross-section, cooling, insulation and installation.",
+      "A_B_C_analysis_reused": {
+        "A": "A: aluminum higher resistivity typically lower ampacity at same cross-section/conditions.",
+        "B": "B: copper lower resistivity permits greater current density under comparable heat rise/installation constraints.",
+        "C": "C: same density is not generally valid for identical conductor section/temperature limits.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Resistivity copper vs aluminum, ampacity dependent on installation",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-26424e4766cae74d",
+      "representative_id": "G1-ELE-022",
+      "grade_member_ids": [
+        "G1-ELE-022",
+        "G2-ELEC-174"
+      ],
+      "canonical_sha256": "26424e4766cae74d49bcaf28d0bc12769f530d5503585dfffbe7942f8f1210aa",
+      "original_question_UNCHANGED": "Care dintre relaţiile următoare este adevărată:",
+      "original_ABC_UNCHANGED": {
+        "A": "inducţia electrică = permitivitatea x intensitatea câmpului electric",
+        "B": "inducţia electrică = intensitatea câmpului electric/ permitivitate",
+        "C": "inducţia electrică=sarcina x intensitatea câmpului electric"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-022": "A",
+        "G2-ELEC-174": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_findings": "D=εE is valid for linear isotropic dielectric at the defined permittivity; universal medium relationship requires qualification.",
+      "A_B_C_analysis_reused": {
+        "A": "A: in a linear isotropic dielectric D=εE, contingent on medium and constitutive model.",
+        "B": "B: dividing E by permittivity has wrong dimensions for D.",
+        "C": "C: Q×E is force-related quantity not electric displacement.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "Electric displacement D=εE in linear isotropic medium",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/6-4-dielectrics",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": []
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f1e6cf045a481a30",
+      "representative_id": "G1-ELE-027",
+      "grade_member_ids": [
+        "G1-ELE-027",
+        "G2-ELEC-176"
+      ],
+      "canonical_sha256": "f1e6cf045a481a30c92d464d469b6e2569cff9c6e02d295aed5049b12bb8e841",
+      "original_question_UNCHANGED": "Care este energia consumata de o rezistenta electrica r = 10 Ω, prin care trece un curent de 2 A timp de 10 ore:",
+      "original_ABC_UNCHANGED": {
+        "A": "200 Wh",
+        "B": "400 Wh",
+        "C": "800 Wh"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-027": "B",
+        "G2-ELEC-176": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_findings": "P=I²R=(2A)²*(10Ω)=40W; 10h gives 400Wh, key B.",
+      "A_B_C_analysis_reused": {
+        "A": "A: 200Wh is half of calculated energy.",
+        "B": "B: P=2²×10=40 W; t=10h => 400 Wh.",
+        "C": "C: 800Wh is double of calculated energy.",
+        "prior_joint_reasoning": "",
+        "prior_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv"
+      },
+      "source_scope": {
+        "previous_source_locator": "OpenStax 9.5 P=I²R and E=P*t",
+        "previous_source_edition": "NOT_VERIFIED_2026",
+        "previous_sources": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+            "provenance": "PRIOR_RESEARCH_LOCATOR_NOT_REOPENED_IN_THIS_BATCH"
+          }
+        ],
+        "session_leads": [
+          {
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+            "provenance": "WEB_HTML_OPENED_EXACT_TOPIC_SESSION"
+          }
+        ]
+      },
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "officially_graded_anre_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}

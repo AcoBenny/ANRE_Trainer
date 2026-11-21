@@ -1,0 +1,601 @@
+{
+  "checkpoint": "CKPT-158",
+  "date": "2026-11-17",
+  "baseline_head": "94e9492fdead882e1be700e683d7f93d2544e75c",
+  "units": 15,
+  "grade_ids": 30,
+  "counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 5,
+    "CONDITIONAL_MODEL_OR_SOURCE": 10
+  },
+  "phase": "SAME_ASSISTANT_SOURCE_SCOPE_NOT_INDEPENDENT_APPROVAL",
+  "method": "Compare original master QABC/hash and previously completed complete ABC evidence. Confirm formula or object/scope only; attach reasons for ambiguity and leave source access honest.",
+  "safety": "No official workbook answer key verified; no external independent reviewers; no changes to question, key, HTML, APK, main.",
+  "cards": [
+    {
+      "unit_id": "AU-425d96089f4f9c7e",
+      "representative_id": "G1-ELE-250",
+      "canonical_sha256": "425d96089f4f9c7e8884a41f15578d0e556e28a66104541da2f4756017f5ab44",
+      "member_ids": [
+        "G1-ELE-250",
+        "G2-ELEC-385"
+      ],
+      "original_question_UNCHANGED": "Un motor electric sincron, care funcţionează subexcitat:",
+      "original_ABC_UNCHANGED": {
+        "A": "absoarbe putere activă şi putere reactivă",
+        "B": "absoarbe putere activă şi produce putere reactivă",
+        "C": "produce putere activă şi putere reactivă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-250": "A",
+        "G2-ELEC-385": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Synchronous under-excited motor convention absorbs active power as load and reactive power from grid; over-excited motor may supply Q.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Motorul sincron subexcitat absoarbe putere reactivă inductivă; în regim motor acționează sarcină mecanică și absoarbe putere activă.",
+        "B": "B: Motorul supraexcitat poate furniza reactiv, nu cel subexcitat.",
+        "C": "C: «produce putere activă» descrie generatorul, nu motorul cu sarcină."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.mdpi.com/1996-1073/17/17/4294",
+        "prior_scope_gap": "Motor sincron folosit drept compensator în gol poate absorbi doar pierderi active, nu putere mecanică semnificativă; convenția de semn a Q.",
+        "prior_access": "ACADEMIC_HTML_SEARCH_RESULT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-6d7b60fad4a6e934",
+      "representative_id": "G1-ELE-251",
+      "canonical_sha256": "6d7b60fad4a6e9347eb5501f1d93f9d1f3603f4be37b249cdd1cff378ede7030",
+      "member_ids": [
+        "G1-ELE-251",
+        "G2-ELEC-386"
+      ],
+      "original_question_UNCHANGED": "Valoarea conductivităţii electrice este în ordine crescătoare la următoarele materiale:",
+      "original_ABC_UNCHANGED": {
+        "A": "aluminiu, argint, cupru",
+        "B": "argint, cupru, aluminiu",
+        "C": "aluminiu, cupru, argint"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-251": "C",
+        "G2-ELEC-386": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Pure silver highest conductivity followed copper then aluminum at common temperature; impurities, alloys, temperature change values, so C relies standard pure-metal comparison.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Aluminiu < argint < cupru inversează ordinea argint/cupru.",
+        "B": "B: Argint > cupru > aluminiu este ordine descrescătoare, nu crescătoare.",
+        "C": "C: Pentru metale pure la circa 20°C, conductivitate Al (~61% IACS) < Cu (100%) < Ag (~106%)."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://help.copper.fyi/hc/en-us/articles/4410229175442-How-does-copper-set-the-standard-for-electrical-conductivity",
+        "prior_scope_gap": "Valori depind de puritate, aliaje, temperatură; materialele specificate sunt tratate ca metale uzuale pure.",
+        "prior_access": "TECHNICAL_HTML_SEARCH_RESULT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-998aff1c365a9d6a",
+      "representative_id": "G1-ELE-252",
+      "canonical_sha256": "998aff1c365a9d6af98296eecb3f78e6e008c2439a3feefb8ff10c0d653dcacf",
+      "member_ids": [
+        "G1-ELE-252",
+        "G2-ELEC-387"
+      ],
+      "original_question_UNCHANGED": "Un număr de n surse  având fiecare tensiunea electromotoare continua e si rezistenta interioara r, legate în paralel pot fi înlocuite printr-o sursa echivalenta având:",
+      "original_ABC_UNCHANGED": {
+        "A": "tensiunea electromotoare e si rezistenta r/n",
+        "B": "tensiunea electromotoare ne si rezistentă r/n",
+        "C": "tensiunea electromotoare e si rezistenta nr."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-252": "A",
+        "G2-ELEC-387": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "n identical same-polarity EMF sources parallel yield same e and internal r/n; reversed polarity/unequal initial conditions not allowed.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Surse identice, polarizate la fel: tensiune e neschimbată și r_eq=r/n pentru n ramuri în paralel.",
+        "B": "B: n·e ar fi pentru n surse în SERIE cu aceeași orientare, nu paralel.",
+        "C": "C: n·r ar fi rezistență adunată în serie, nu paralel."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "prior_scope_gap": "Enunțul nu precizează polaritatea; sursele paralele cu polarități opuse ar produce conflict și curenți interni.",
+        "prior_access": "DERIVED_WITH_TEXTBOOK_TOPICAL_LEAD",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-7886f412309c02b4",
+      "representative_id": "G1-ELE-253",
+      "canonical_sha256": "7886f412309c02b41ee9b7344c38b9e565674c7450a7e6f1bc1df2e90acd4ff2",
+      "member_ids": [
+        "G1-ELE-253",
+        "G2-ELEC-388"
+      ],
+      "original_question_UNCHANGED": "Un receptor electric de rezistenţă R conectat la bornele AB ale unui circuit de alimentare oarecare absoarbe puterea maximă dacă:",
+      "original_ABC_UNCHANGED": {
+        "A": "rezistenţa R este egală cu rezistenţa totală a circuitului văzută prin bornele AB",
+        "B": "rezistenţa R este egală cu rezistenţa internă a sursei de tem",
+        "C": "rezistenţa R tinde spre zero"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-253": "A",
+        "G2-ELEC-388": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Maximum power transfer from linear resistive Thevenin network gives R_load=R_th; arbitrary 'orice' network AC requires conjugate match, nonlinear networks not generally.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Teorema puterii maxime: R_L=R_Th văzută prin bornele A–B la surse echivalente dezactivate.",
+        "B": "B: Rezistența internă a SURSEI electromotoare poate diferi de R_Th al întregii rețele active între AB.",
+        "C": "C: R_L→0 duce P_L≈0 pentru sursă cu R_Th>0, chiar dacă curentul crește."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.sciencedirect.com/topics/engineering/maximum-power-transfer-theorem",
+        "prior_scope_gap": "Rețea oarecare trebuie să admită echivalent Thevenin rezistiv liniar și tensiune DC; pentru AC adaptare conjugată complexă.",
+        "prior_access": "SCHOLARLY_WEB_SEARCH_RESULT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-0831727b1bbb2e50",
+      "representative_id": "G1-ELE-254",
+      "canonical_sha256": "0831727b1bbb2e505184bbe9f7e89fdfad4500064eb5a4aa7b0ad6dd0057bb5d",
+      "member_ids": [
+        "G1-ELE-254",
+        "G2-ELEC-389"
+      ],
+      "original_question_UNCHANGED": "Valoarea intensităţii câmpului electric produs de o sarcină electrică la distanţa r este:",
+      "original_ABC_UNCHANGED": {
+        "A": "direct proporţională cu r",
+        "B": "direct proporţională cu pătratul lui r",
+        "C": "invers proporţională cu pătratul lui r"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-254": "C",
+        "G2-ELEC-389": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "E(r)=|q|/(4 pi eps r²) for isolated point charge in homogeneous medium; extended charge distributions do not universally follow inverse r².",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Intensitatea câmpului unei sarcini punctiforme nu crește cu distanța r.",
+        "B": "B: Nu crește cu r²; formula Coulomb are denominator r².",
+        "C": "C: E=|q|/(4π ε r²) pentru sarcina punctiformă într-un mediu omogen."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+        "prior_scope_gap": "«sarcină electrică» cu distribuție spațială nespecificată nu respectă întotdeauna 1/r² (ex. linie lungă 1/r).",
+        "prior_access": "TEXTBOOK_TOPICAL_LEAD_NOT_REOPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-52e8de711d93cd4c",
+      "representative_id": "G1-ELE-255",
+      "canonical_sha256": "52e8de711d93cd4cbc019c461473137e2840451dcf920a54c76090615ee870f2",
+      "member_ids": [
+        "G1-ELE-255",
+        "G2-ELEC-390"
+      ],
+      "original_question_UNCHANGED": "Un transformator de măsurare de curent nu poate fi lăsat cu secundarul în gol, deoarece:",
+      "original_ABC_UNCHANGED": {
+        "A": "împiedica circulaţia curentului primar",
+        "B": "apar supratensiuni periculoase in secundar",
+        "C": "nu indica aparatele de măsurare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-255": "B",
+        "G2-ELEC-390": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Energized CT secondary open-circuit leads potentially dangerous induced voltage; B. This is an exam safety fact, not permission for user switching actions.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Deschiderea secundarului nu întrerupe automat curentul din circuitul primar.",
+        "B": "B: Cu primar energizat, secundarul CT deschis poate prezenta tensiuni foarte înalte și distruge izolația.",
+        "C": "C: Lipsa indicației instrumentelor este efect secundar, nu riscul esențial."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.se.com/nz/en/faqs/FA125574/",
+        "prior_scope_gap": "SAFETY: nu face manevre pe secundar CT sub tensiune; pentru intervenții se folosesc proceduri și personal autorizat.",
+        "prior_access": "MANUFACTURER_HTML_OPENED_PREVIOUS_BATCH",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-f08b11108a5525e8",
+      "representative_id": "G1-ELE-261",
+      "canonical_sha256": "f08b11108a5525e804ca2feffbfd625a34dc4aae4bb89dafdb8a3a7d4ecdd62a",
+      "member_ids": [
+        "G1-ELE-261",
+        "G2-ELEC-396"
+      ],
+      "original_question_UNCHANGED": "Unitatea de măsură ohm x mmp / m este pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "rezistivitate",
+        "B": "greutate specifica",
+        "C": "coeficient de dilataţie"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-261": "A",
+        "G2-ELEC-396": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "rho=R*A/l has units Ω mm²/m when A in mm²; the original 'mmp' is garbled, so intended A is conditional on reading mm squared.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: ρ=R·S/L are unitate Ω·mm²/m (uz tehnic la cabluri).",
+        "B": "B: Greutatea specifică este forță pe volum, N/m³, nu Ω·mm²/m.",
+        "C": "C: Coeficientul de dilatație este ~1/K, nu unitate de rezistivitate."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b/conversion-factors",
+        "prior_scope_gap": "În original «mmp» este format garblat pentru mm², nu trebuie modificat fără aprobarea canonică.",
+        "prior_access": "OFFICIAL_NIST_SEARCH_RESULT_RELEVANT_VARIANT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-0408c2766ae899ad",
+      "representative_id": "G1-ELE-263",
+      "canonical_sha256": "0408c2766ae899adeb658bb576d70e5c96d57aa60d646c6fa3097deb369c2070",
+      "member_ids": [
+        "G1-ELE-263",
+        "G2-ELEC-398"
+      ],
+      "original_question_UNCHANGED": "Unitatea de măsură pentru puterea reactiva este:",
+      "original_ABC_UNCHANGED": {
+        "A": "kVAr",
+        "B": "kVA",
+        "C": "kW"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-263": "A",
+        "G2-ELEC-398": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Reactive power uses var or kvar, unlike apparent kVA and active kW, so key A.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: kVAr este uz tehnic pentru putere reactivă.",
+        "B": "B: kVA reprezintă putere aparentă, nu reactivă.",
+        "C": "C: kW reprezintă putere activă."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "prior_scope_gap": "SI derivă var din W dimensional, dar denumirea var este pentru a distinge sensul fizic; notația standard var (lowercase) convențional.",
+        "prior_access": "TECHNICAL_SOURCE_PREVIOUSLY_USED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-293ce70b3187433b",
+      "representative_id": "G1-ELE-264",
+      "canonical_sha256": "293ce70b3187433ba76a233ee516794fe05be4f468dd1542b2bdf8076b61d3f8",
+      "member_ids": [
+        "G1-ELE-264",
+        "G2-ELEC-399"
+      ],
+      "original_question_UNCHANGED": "Utilizarea întreruptoarelor debroşabile:",
+      "original_ABC_UNCHANGED": {
+        "A": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+        "B": "asigură scurtarea duratei reviziilor la celule;",
+        "C": "asigură numai izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-264": "B",
+        "G2-ELEC-399": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Withdrawable breakers often reduce replacement/maintenance outage time for device itself; cell-bus maintenance doesn't uniformly improve.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Debroșabilul reduce necesitatea separatoarelor externe în anumite configurații și poate evita unele erori, deci negația universală A este problematică.",
+        "B": "B: Aparatul debroșabil poate fi scos/înlocuit mai ușor, reducând timpul de revizie al întreruptorului dacă instalația este proiectată pentru aceasta.",
+        "C": "C: «numai» izolare personalului ignoră flexibilitate/mentenanță; siguranța cere măsuri suplimentare."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+        "prior_scope_gap": "B nu garantează timp mai scurt pentru ORICE revizie a celulei; pentru bare, contact fix, shutters trebuie dezenergizări.",
+        "prior_access": "TECHNICAL_WEB_SEARCH_RESULT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-2232f8027e68ac0e",
+      "representative_id": "G1-ELE-265",
+      "canonical_sha256": "2232f8027e68ac0e67915007c9954b66c0f418dc1e2ff127e2ce99ebd4c90b86",
+      "member_ids": [
+        "G1-ELE-265",
+        "G2-ELEC-400"
+      ],
+      "original_question_UNCHANGED": "Autotransformatoarele sunt folosite",
+      "original_ABC_UNCHANGED": {
+        "A": "între reţelele de                     110 kV şi 220 kV",
+        "B": "numai între reţelele de              220 kV şi 400 kV",
+        "C": "între reţelele de                   20 kV şi 110 kV"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-265": "A",
+        "G2-ELEC-400": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "110/220kV autotransformer application valid, but transformer can also bridge 220/400kV; B says 'numai' making it false. Requires actual network/examples for C.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Autotransformatoare 220/110 kV sunt folosite în transport; este un exemplu real, nu un interval exclusiv.",
+        "B": "B: «numai» 220/400 kV este fals: alte perechi de rețele sunt documentate.",
+        "C": "C: 20/110 kV este un raport mult mai mare și adesea se preferă transformatoare cu înfășurări separate, dar imposibilitatea tehnică nu este demonstrată."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.transelectrica.ro/documents/10179/20107575/01_Nota%2BPD%2BRET%2B2026-2035%2Binclusiv%2Banexe_EN.pdf/2ff26066-2f3a-4401-91d6-863abec723ed?version=1.0",
+        "prior_scope_gap": "Documentul public menționează AT2 220/110 kV Stupărei și AT4 400/220 kV Arefu. Nu confirmă unicitatea A sau excluderea oricărei configurații C; PDF nu a fost inspectat vizual.",
+        "prior_access": "TRANSELECTRICA_PUBLIC_PDF_SEARCH_SNIPPET_NO_VISUAL_SCREENSHOT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-a8cf91ef3326a641",
+      "representative_id": "G1-ELE-268",
+      "canonical_sha256": "a8cf91ef3326a641d35aff40f3d5f39bc9ee73083fd8489ba5e4de37bc627a67",
+      "member_ids": [
+        "G1-ELE-268",
+        "G2-ELEC-401"
+      ],
+      "original_question_UNCHANGED": "Utilizarea întreruptorului debroşabil:",
+      "original_ABC_UNCHANGED": {
+        "A": "asigură doar compactarea celulei;",
+        "B": "asigură rapiditate în restabilirea alimentării în cazul unei defectări;",
+        "C": "creşte riscul de electrocutare a personalului care execută lucrări de revizie în celulă."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-268": "B",
+        "G2-ELEC-401": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Withdrawable breaker can enable fast restoration if compatible spare and topology available; no automatic guarantee of rapid reenergization.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: «doar» compactarea este fals: aparatul debroșabil oferă avantaj de acces/înlocuire.",
+        "B": "B: Poate reduce durata restabilirii prin înlocuirea unui întreruptor defect cu unul de rezervă, dacă echiparea permite.",
+        "C": "C: Nu crește automat riscul de electrocutare; segregarea interblocată poate reduce riscul, dar procedura rămâne obligatorie."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+        "prior_scope_gap": "Restabilirea rapidă cere întreruptor compatibil disponibil și schemă care permite transfer. Nu se interpretează ca instrucțiune de operare.",
+        "prior_access": "TECHNICAL_WEB_RESULT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-297a35488066b339",
+      "representative_id": "G1-ELE-271",
+      "canonical_sha256": "297a35488066b3392783cb89ac0f2826b5443277d5e505b797382355402c2164",
+      "member_ids": [
+        "G1-ELE-271",
+        "G2-ELEC-404"
+      ],
+      "original_question_UNCHANGED": "Utilizarea vidului ca mediu de stingere a arcului electric:",
+      "original_ABC_UNCHANGED": {
+        "A": "reduce pericolul de incendiu;",
+        "B": "nu reduce cheltuielile de întreţinere;",
+        "C": "creşte masa şi gabaritul întreruptoarelor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-271": "A",
+        "G2-ELEC-404": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Vacuum interrupter avoids oil-fire hazard during arc interruption and typically reduces fire risk; performance rating and insulation still matter.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: În vid nu există ulei inflamabil/mediu de stingere combustibil, reducând riscul de incendiu din aparatul de stingere.",
+        "B": "B: De regulă vidul reduce mentenanța arcului, deci B este neadevărat ca generalizare.",
+        "C": "C: Întreruptorul în vid este adesea compact; nu implică creșterea obligatorie a masei."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.abb.com/global/en/areas/electrification/medium-voltage/grid-components/primary-vacuum-circuit-breakers",
+        "prior_scope_gap": "Avantajele sunt tipice pentru întreruptor MV cu vid; tehnologia și clasa de tensiune contează.",
+        "prior_access": "ABB_MANUFACTURER_WEB_SEARCH",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-79117a57dd95aa36",
+      "representative_id": "G1-ELE-272",
+      "canonical_sha256": "79117a57dd95aa36c817c0a1fdea765e0c217a4135186c3a13c21ddb8e5409b1",
+      "member_ids": [
+        "G1-ELE-272",
+        "G2-ELEC-405"
+      ],
+      "original_question_UNCHANGED": "Valoarea frecventei în sistemul electroenergetic este determinata în principal de:",
+      "original_ABC_UNCHANGED": {
+        "A": "bilanţul puterilor active",
+        "B": "circulaţia puterii reactive",
+        "C": "modul de tratare a neutrului reţelei"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-272": "A",
+        "G2-ELEC-405": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Power system frequency governed predominantly by mismatch generation-demand active power (rotor kinetic balance), not reactive-power flow or neutral grounding.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Dacă generarea activă diferă de consum+pierderi, energia cinetică a maselor sincronizate se modifică, schimbând frecvența.",
+        "B": "B: Puterea reactivă afectează în primul rând tensiunile, nu frecvența medie direct.",
+        "C": "C: Tratarea neutrului afectează defectele și protecția, nu frecvența fundamentală reglată."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://eepublicdownloads.blob.core.windows.net/public-cdn-container/tyndp-documents/TYNDP2022/public/syst-dynamic-operational-challenges.pdf",
+        "prior_scope_gap": "ENTSO-E confirmă în rezultatul căutării mismatch active P demand/generation causes frequency deviation; dinamicile de inerție și serviciile de reglaj influențează răspunsul.",
+        "prior_access": "ENTSO_E_PUBLIC_PDF_SEARCH_SNIPPET_NOT_VISUALLY_VERIFIED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-d4e90d60c85b4947",
+      "representative_id": "G1-ELE-273",
+      "canonical_sha256": "d4e90d60c85b49472d3c1470a361328c7e1af514f36b105d6302ac4bc75b96a7",
+      "member_ids": [
+        "G1-ELE-273",
+        "G2-ELEC-406"
+      ],
+      "original_question_UNCHANGED": "Valoarea medie a capacităţii lineice pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+      "original_ABC_UNCHANGED": {
+        "A": "egală",
+        "B": "mai mică",
+        "C": "mai mare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-273": "B",
+        "G2-ELEC-406": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Typical overhead line shunt capacitance per km is lower than closely spaced underground cable with high permittivity; depends cable/geometry.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Capacitatea lineică egală nu este tipică la geometrii standard LEA și LEC.",
+        "B": "B: Conductoarele apropiate și manta împământată plus dielectric fac LEC mai capacitivă per km decât LEA.",
+        "C": "C: LEA în aer are de regulă capacitate mai mică, nu mai mare."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://opal-rt.atlassian.net/wiki/spaces/PDOCHS/pages/150307736/Typical%2BElectrical%2BParameters",
+        "prior_scope_gap": "Comparație medie dependentă de diametru/distanță/izolație/tensiune, nu egalitate universală.",
+        "prior_access": "OPAL_RT_TECHNICAL_WEB_SEARCH",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-e516a82782a6b935",
+      "representative_id": "G1-ELE-274",
+      "canonical_sha256": "e516a82782a6b935f97a410ae0048b2840e81abafa622fec7b61b3501b04a292",
+      "member_ids": [
+        "G1-ELE-274",
+        "G2-ELEC-407"
+      ],
+      "original_question_UNCHANGED": "Valoarea medie a inductanţei de serviciu pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+      "original_ABC_UNCHANGED": {
+        "A": "egală",
+        "B": "mai mare",
+        "C": "mai mică"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-274": "B",
+        "G2-ELEC-407": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Typical overhead line inductance per unit length exceeds compact cable, but depends phases/return/sheath and geometry; no universal bound.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Inductanța lineică egală nu este tipică pentru geometrii diferite.",
+        "B": "B: LEA cu distanțe mari între conductoare are inductanța de serviciu de regulă mai mare decât cablul.",
+        "C": "C: Cablul cu conductoare apropiate are L lineică mai mică, nu mai mare."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.electricalpowerengineering.nl/Electric-Power-Systems/Power-carriers",
+        "prior_scope_gap": "Inductanța reală depinde de geometrie, ecran, retur de pământ și mediu, medie nu extremă.",
+        "prior_access": "POWER_SYSTEMS_TECHNICAL_WEB_SEARCH",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    }
+  ]
+}

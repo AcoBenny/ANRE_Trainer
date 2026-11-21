@@ -1,0 +1,2644 @@
+{
+  "schema": "v166_52_historical_three_option_research_bodies_migrated",
+  "date": "2026-11-20",
+  "starting_checkpoint": "CKPT-295",
+  "base_v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "base_v164_sha": "056be38e12cf053c4ade5fe899bdadd8d8a4a548",
+  "source_checkpoint_files": [
+    "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+    "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+    "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+    "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md"
+  ],
+  "counts": {
+    "source_sections": 53,
+    "existing_duplicate_skipped": 1,
+    "new_migrated_qabc": 52,
+    "grade_routes_covered_by_new": 104,
+    "unique_prior_drafts_before": 68,
+    "unique_research_bodies_migrated_after": 120,
+    "remaining_unmigrated_QABC": 448,
+    "independently_approved": 0
+  },
+  "QA": {
+    "source_section_count": 53,
+    "source_keys_match": 53,
+    "all_ABC_present": 53,
+    "source_row_match": 53,
+    "new_cards": 52,
+    "all_keys_exact_against_V149": true,
+    "all_question_stems_exact_normalized": true,
+    "all_original_ABC_referenced_from_master": true,
+    "source_URLs_are_LEGACY_REPORTED_NOT_ALL_REOPENED": true
+  },
+  "existing_skipped": [
+    {
+      "unit_id": "QABC-0042",
+      "prior_checkpoint": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "reason": "EXISTING_DRAFT_DO_NOT_OVERWRITE"
+    }
+  ],
+  "restrictions": "Read-only migration of 18 Nov prior preliminary research. No question, A/B/C, score key, V149/V151/V156/V164, HTML, APK, release or PR merge changed. Historical analysis copied verbatim into principle draft: per-option learner-ready explanations and reformulations still require explicit editorial work and independent source-version QA.",
+  "cards": [
+    {
+      "unit_id": "QABC-0018",
+      "card_id": "EXPL_QABC-0018",
+      "grade_ids": [
+        "G1-ELE-019",
+        "G2-ELEC-171"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "26",
+        "original_question": "Capacitatea echivalentă a 2 condensatoare, fiecare având capacitatea C, montate în serie este egală cu:",
+        "options": {
+          "A": "2 C",
+          "B": "C/2",
+          "C": "C"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-019=B | G2-ELEC-171=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-019",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DIRECT_SERIES_CAPACITANCE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "2 C",
+          "B": "C/2",
+          "C": "C"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Equal capacitors in series: 1/Ceq=1/C+1/C=2/C -> Ceq=C/2. A=2C is parallel result, C=C ignores second capacitor. Ideal lossless series model."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Equal capacitors in series: 1/Ceq=1/C+1/C=2/C -> Ceq=C/2. A=2C is parallel result, C=C ignores second capacitor. Ideal lossless series model.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0020",
+      "card_id": "EXPL_QABC-0020",
+      "grade_ids": [
+        "G1-ELE-021",
+        "G2-ELEC-173"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "28",
+        "original_question": "Care dintre materialele electrotehnice admit o densitate de curent mai mare:",
+        "options": {
+          "A": "aluminiu",
+          "B": "cupru",
+          "C": "ambele admit aceeaşi densitate de curent"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-021=B | G2-ELEC-173=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-021",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "CONDITIONAL_EQUAL_GEOMETRY_AND_TEMPERATURE",
+        "prior_technical_url_as_reported": "https://www.electrical-installation.org/enwiki/Conductor_sizing%3A_methodology_and_definition",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "aluminiu",
+          "B": "cupru",
+          "C": "ambele admit aceeaşi densitate de curent"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Copper has lower resistivity and at equal area/insulation/installation allowable current density generally exceeds aluminium. A Al not higher at same conditions; C equal false generically. But bare question omits section, temperature rise, insulation/installation, so does not state a universal independent material constant for J_limit."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Copper has lower resistivity and at equal area/insulation/installation allowable current density generally exceeds aluminium. A Al not higher at same conditions; C equal false generically. But bare question omits section, temperature rise, insulation/installation, so does not state a universal independent material constant for J_limit.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0021",
+      "card_id": "EXPL_QABC-0021",
+      "grade_ids": [
+        "G1-ELE-022",
+        "G2-ELEC-174"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "29",
+        "original_question": "Care dintre relaţiile următoare este adevărată:",
+        "options": {
+          "A": "inducţia electrică = permitivitatea x intensitatea câmpului electric",
+          "B": "inducţia electrică = intensitatea câmpului electric/ permitivitate",
+          "C": "inducţia electrică=sarcina x intensitatea câmpului electric"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-022=A | G2-ELEC-174=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-022",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "CONDITIONAL_LINEAR_DIELECTRIC",
+        "prior_technical_url_as_reported": "https://www.mdpi.com/1996-1944/18/18/4282",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "inducţia electrică = permitivitatea x intensitatea câmpului electric",
+          "B": "inducţia electrică = intensitatea câmpului electric/ permitivitate",
+          "C": "inducţia electrică=sarcina x intensitatea câmpului electric"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For linear homogeneous isotropic dielectric D=εE, A. B E/ε is dimensionally wrong, C charge·E gives electric force (units N), not displacement D (C/m²). In general polarizable/nonlinear media D=ε0 E+P and ε may be tensor or field-dependent; A not fully universal without media definition."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For linear homogeneous isotropic dielectric D=εE, A. B E/ε is dimensionally wrong, C charge·E gives electric force (units N), not displacement D (C/m²). In general polarizable/nonlinear media D=ε0 E+P and ε may be tensor or field-dependent; A not fully universal without media definition.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0022",
+      "card_id": "EXPL_QABC-0022",
+      "grade_ids": [
+        "G1-ELE-026",
+        "G2-ELEC-175"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "33",
+        "original_question": "Utilizarea unei cuple cu functiuni multiple se prefera atunci cand dorim",
+        "options": {
+          "A": "scurtarea duratei manevrelor",
+          "B": "cresterea continuitatii  in alimentare",
+          "C": "reducerea investitiei in echiparea statiei."
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-026=C | G2-ELEC-175=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-026",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "SECONDARY_SOURCE_COST_MODEL_ONLY",
+        "prior_technical_url_as_reported": "https://licentiada.org/proiectarea-circuitelor-electrice-principale-ale-unei-cet-echipata-cu-doua-grupuri-turbogeneratoare-de-30-mw-311383-e7da9c75/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "scurtarea duratei manevrelor",
+          "B": "cresterea continuitatii  in alimentare",
+          "C": "reducerea investitiei in echiparea statiei."
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Multifunction bus coupler can combine switching roles of separate sectional/transverse couplers and reduce installed breaker count/investment, making imported C plausible. A reducing switch-operation time not necessarily and B supply continuity can be worse vs dedicated couplers; source is Romanian secondary educational material, no product-specific engineering tradeoff/official scoring key. Strong safety-context qualifier."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Multifunction bus coupler can combine switching roles of separate sectional/transverse couplers and reduce installed breaker count/investment, making imported C plausible. A reducing switch-operation time not necessarily and B supply continuity can be worse vs dedicated couplers; source is Romanian secondary educational material, no product-specific engineering tradeoff/official scoring key. Strong safety-context qualifier.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0023",
+      "card_id": "EXPL_QABC-0023",
+      "grade_ids": [
+        "G1-ELE-027",
+        "G2-ELEC-176"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "34",
+        "original_question": "Care este energia consumata de o rezistenta electrica r = 10 Ω, prin care trece un curent de 2 A timp de 10 ore:",
+        "options": {
+          "A": "200 Wh",
+          "B": "400 Wh",
+          "C": "800 Wh"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-027=B | G2-ELEC-176=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-027",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DETERMINISTIC_ENERGY_CALC",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "200 Wh",
+          "B": "400 Wh",
+          "C": "800 Wh"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "P=I²R=(2A)²·10Ω=40W; E=P·10h=400Wh =0.4kWh =1.44MJ, B. A=200Wh (half), C=800Wh (double). Inputs fixed, resistive heating assumption."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "P=I²R=(2A)²·10Ω=40W; E=P·10h=400Wh =0.4kWh =1.44MJ, B. A=200Wh (half), C=800Wh (double). Inputs fixed, resistive heating assumption.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0026",
+      "card_id": "EXPL_QABC-0026",
+      "grade_ids": [
+        "G1-ELE-030",
+        "G2-ELEC-179"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "37",
+        "original_question": "Scheme cu un sistem de bare colectoare şi un întreruptor pe circuit sunt folosite",
+        "options": {
+          "A": "numai pentru staţii de conexiuni de 6 kV",
+          "B": "pentru toate treptele de tensiune din reţelele de distribuţie",
+          "C": "numai pentru staţii de conexiuni de medie tensiune până la 6o kV"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-030=B | G2-ELEC-179=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-030",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "CONDITIONAL_ALL_VOLTAGES_WORDING",
+        "prior_technical_url_as_reported": "https://electrical-engineering-portal.com/bus-configurations-substations-345-kv",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "numai pentru staţii de conexiuni de 6 kV",
+          "B": "pentru toate treptele de tensiune din reţelele de distribuţie",
+          "C": "numai pentru staţii de conexiuni de medie tensiune până la 6o kV"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Single busbar / one-breaker per circuit scheme is used at multiple distribution voltage levels; A only 6kV and C only MV up to typo '6o kV' overrestrict. B 'toate treptele' as applicability is possible conceptually but not a rule to install at EVERY distribution voltage, as reliability/voltage-dependent designs differ. Treat as intended but universal overstatement."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Single busbar / one-breaker per circuit scheme is used at multiple distribution voltage levels; A only 6kV and C only MV up to typo '6o kV' overrestrict. B 'toate treptele' as applicability is possible conceptually but not a rule to install at EVERY distribution voltage, as reliability/voltage-dependent designs differ. Treat as intended but universal overstatement.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0027",
+      "card_id": "EXPL_QABC-0027",
+      "grade_ids": [
+        "G1-ELE-031",
+        "G2-ELEC-180"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "38",
+        "original_question": "Celulele prefabricate monobloc se caracterizează în principal prin:",
+        "options": {
+          "A": "securitate ridicată a persoanelor;",
+          "B": "gamă largă de configuraţii ale schemei de conexiuni;",
+          "C": "eliminarea totală a posibilităţii de producere a unui scurtcircuit între faze"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-031=A | G2-ELEC-180=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-031",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "CONDITIONAL_PRODUCT_SPECIFIC_SAFETY",
+        "prior_technical_url_as_reported": "https://productinfo.se.com/doca0483en-00_dnf7_ioms/doca0483en-00_dnf7_ioms/English/DOCA0483EN_DNF7_IOMS_DD01459658.xml/%24/SwitchgearEnclosure-3D64907D",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "securitate ridicată a persoanelor;",
+          "B": "gamă largă de configuraţii ale schemei de conexiuni;",
+          "C": "eliminarea totală a posibilităţii de producere a unui scurtcircuit între faze"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Prefabricated metal-enclosed monobloc switchgear emphasizes enclosure, interlocks and internal arc protections to improve personnel safety, A. B a broad range of freely configurable schemes can be less true for monobloc units vs modular systems; C 'total elimination' of phase-to-phase short circuit impossible. Actual safety is product/IAC/operating procedure-specific, not automatically guaranteed by 'prefabricated'."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Prefabricated metal-enclosed monobloc switchgear emphasizes enclosure, interlocks and internal arc protections to improve personnel safety, A. B a broad range of freely configurable schemes can be less true for monobloc units vs modular systems; C 'total elimination' of phase-to-phase short circuit impossible. Actual safety is product/IAC/operating procedure-specific, not automatically guaranteed by 'prefabricated'.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0028",
+      "card_id": "EXPL_QABC-0028",
+      "grade_ids": [
+        "G1-ELE-033",
+        "G2-ELEC-181"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "40",
+        "original_question": "Comparativ cu cele imersate, transformatoarele uscate prezintă :",
+        "options": {
+          "A": "o bună rezistenţă la foc;",
+          "B": "risc redus de poluare acustică a mediului ambiant;",
+          "C": "necesitatea unor amenajări speciale la instalare"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-033=A | G2-ELEC-181=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-033",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "CONDITIONAL_DRY_TYPE_FIRE_CLASS",
+        "prior_technical_url_as_reported": "https://www.se.com/uk/en/product-subcategory/3610-dry-type-distribution-transformers/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "o bună rezistenţă la foc;",
+          "B": "risc redus de poluare acustică a mediului ambiant;",
+          "C": "necesitatea unor amenajări speciale la instalare"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Dry-type/cast resin transformers avoid bulk mineral insulating oil and generally lower fire and spill hazards, imported A intent. B sound emission is design-specific not automatically lower, C oil-immersed units often have special containment not dry. Dry units can still burn; some ester/silicone liquid units are fire-resistant, so 'bună rezistență la foc' only relative to conventional oil type and certified design."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Dry-type/cast resin transformers avoid bulk mineral insulating oil and generally lower fire and spill hazards, imported A intent. B sound emission is design-specific not automatically lower, C oil-immersed units often have special containment not dry. Dry units can still burn; some ester/silicone liquid units are fire-resistant, so 'bună rezistență la foc' only relative to conventional oil type and certified design.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0029",
+      "card_id": "EXPL_QABC-0029",
+      "grade_ids": [
+        "G1-ELE-034",
+        "G2-ELEC-182"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "41",
+        "original_question": "Daca la un circuit al unei staţii de 6 sau 20 kV care funcţionează cu neutrul izolat apare o punere monofazatã netã la pământ, tensiunea fata de pământ a celorlalte doua faze:",
+        "options": {
+          "A": "scade de 1,41 ori",
+          "B": "rămâne constanta",
+          "C": "creste de 1,73 ori"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-034=C | G2-ELEC-182=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-034",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DIRECT_IDEAL_ISOLATED_NEUTRAL_SLG",
+        "prior_technical_url_as_reported": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "scade de 1,41 ori",
+          "B": "rămâne constanta",
+          "C": "creste de 1,73 ori"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "On bolted phase-to-earth fault with isolated neutral, faulted phase-earth drops to 0, two healthy phase-earth voltages rise from U_phase to U_line=√3 U_phase≈1.732 U_phase: C. A decrease by 1.41 and B constant are false in model. Severe transients/overvoltages can differ from steady ideal result."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "On bolted phase-to-earth fault with isolated neutral, faulted phase-earth drops to 0, two healthy phase-earth voltages rise from U_phase to U_line=√3 U_phase≈1.732 U_phase: C. A decrease by 1.41 and B constant are false in model. Severe transients/overvoltages can differ from steady ideal result.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0030",
+      "card_id": "EXPL_QABC-0030",
+      "grade_ids": [
+        "G1-ELE-035",
+        "G2-ELEC-183"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "42",
+        "original_question": "Compartimentarea unei celule electrice se utilizează",
+        "options": {
+          "A": "în scopul evitării extinderii avariilor;",
+          "B": "numai  în scopul protejării personalului de exploatare;",
+          "C": "protecţiei la supratensiuni"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-035=A | G2-ELEC-183=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-035",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DIRECT_COMPARTMENTALIZATION_PURPOSE",
+        "prior_technical_url_as_reported": "https://productinfo.se.com/0100db2301_elecdistfunddesignguide/viewer?docidentity=PowerDistributionEquipment-A630D34D&extension=xml&lang=en&manualidentity=DocumentTypeProductCategoryRangeNam-A482E1D1",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "în scopul evitării extinderii avariilor;",
+          "B": "numai  în scopul protejării personalului de exploatare;",
+          "C": "protecţiei la supratensiuni"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Walls/partitions between switchgear cells limit spread of arcs, hot gases or damage between equipment; A. B says personnel protection *only*, which is not sole purpose, C overvoltage protection different surge protection apparatus. Compartment design/arc performance must be rated/verified."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Walls/partitions between switchgear cells limit spread of arcs, hot gases or damage between equipment; A. B says personnel protection *only*, which is not sole purpose, C overvoltage protection different surge protection apparatus. Compartment design/arc performance must be rated/verified.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0031",
+      "card_id": "EXPL_QABC-0031",
+      "grade_ids": [
+        "G1-ELE-038",
+        "G2-ELEC-184"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "45",
+        "original_question": "Componenta simetrică directă produce, în cazul unui motor electric:",
+        "options": {
+          "A": "cuplul util",
+          "B": "cuplul de frânare",
+          "C": "oscilaţii ale rotorului"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-038=A | G2-ELEC-184=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-038",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "CONDITIONAL_MOTORING_POSITIVE_SEQUENCE",
+        "prior_technical_url_as_reported": "https://cms-cdn.selinc.com/assets/Literature/Publications/Technical%20Papers/6779_NegativeSequence_NM_20170209_Web3.pdf?v=20171110-231733",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "cuplul util",
+          "B": "cuplul de frânare",
+          "C": "oscilaţii ale rotorului"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Positive-sequence 3-phase flux rotates in normal forward direction and produces positive driving torque at motoring slip, imported A. B braking torque belongs negative sequence or generating/other braking regimes; C rotor oscillations not primary positive-sequence torque. In generation negative slip positive-sequence electromagnetic torque resists rotation, so 'produce cuplul util' is didactic motoring model not universal operating modes."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Positive-sequence 3-phase flux rotates in normal forward direction and produces positive driving torque at motoring slip, imported A. B braking torque belongs negative sequence or generating/other braking regimes; C rotor oscillations not primary positive-sequence torque. In generation negative slip positive-sequence electromagnetic torque resists rotation, so 'produce cuplul util' is didactic motoring model not universal operating modes.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0032",
+      "card_id": "EXPL_QABC-0032",
+      "grade_ids": [
+        "G1-ELE-039",
+        "G2-ELEC-185"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "46",
+        "original_question": "Conform Legii lui Coulomb, forţa de atracţie sau de repulsie care se exercită între sarcinile electrice este:",
+        "options": {
+          "A": "direct proporţională cu pătratul distanţei",
+          "B": "invers proporţională cu pătratul distanţei",
+          "C": "direct proporţională cu distanţa"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-039=B | G2-ELEC-185=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-039",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DIRECT_COULOMB_INVERSE_SQUARE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "direct proporţională cu pătratul distanţei",
+          "B": "invers proporţională cu pătratul distanţei",
+          "C": "direct proporţională cu distanţa"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For point charges at fixed charge/dielectric F=k|q1q2|/r²: B inversely proportional to square of distance. A directly proportional r² and C to r contradict. Model presumes electrostatic point charges and homogeneous medium; interaction can be more complex with conductors/boundaries."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For point charges at fixed charge/dielectric F=k|q1q2|/r²: B inversely proportional to square of distance. A directly proportional r² and C to r contradict. Model presumes electrostatic point charges and homogeneous medium; interaction can be more complex with conductors/boundaries.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0033",
+      "card_id": "EXPL_QABC-0033",
+      "grade_ids": [
+        "G1-ELE-040",
+        "G2-ELEC-186"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "47",
+        "original_question": "Constanta de timp a unui circuit format dintr-un rezistor de rezistenţă R înseriat cu un condensator de capacitate C, este:",
+        "options": {
+          "A": "RC",
+          "B": "R/C",
+          "C": "1/(RC)"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-040=A | G2-ELEC-186=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-040",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DIRECT_RC_TIME_CONSTANT",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "RC",
+          "B": "R/C",
+          "C": "1/(RC)"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For ideal single series resistor R and capacitor C, τ=RC (seconds because ΩF=s), A. B R/C has wrong units, C 1/(RC) is inverse time / characteristic frequency not time constant."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For ideal single series resistor R and capacitor C, τ=RC (seconds because ΩF=s), A. B R/C has wrong units, C 1/(RC) is inverse time / characteristic frequency not time constant.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0034",
+      "card_id": "EXPL_QABC-0034",
+      "grade_ids": [
+        "G1-ELE-041",
+        "G2-ELEC-187"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "48",
+        "original_question": "Delimitările prin pereţi între celulele unei staţii electrice de interior se utilizează în principal în scopul:",
+        "options": {
+          "A": "asigurării unui acces mai comod la aparataj;",
+          "B": "limitării zgomotului în corpul de conexiuni;",
+          "C": "evitării extinderii avariilor."
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-041=C | G2-ELEC-187=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-041",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DIRECT_CELL_PARTITION_FAULT_CONTAINMENT",
+        "prior_technical_url_as_reported": "https://productinfo.se.com/0100db2301_elecdistfunddesignguide/viewer?docidentity=PowerDistributionEquipment-A630D34D&extension=xml&lang=en&manualidentity=DocumentTypeProductCategoryRangeNam-A482E1D1",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "asigurării unui acces mai comod la aparataj;",
+          "B": "limitării zgomotului în corpul de conexiuni;",
+          "C": "evitării extinderii avariilor."
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Walls between indoor substation bays chiefly reduce consequences and propagation of an internal arc/fire/fault to neighboring bays; C. A convenient access can be secondary, B noise isolation not principal electrical safety rationale. Source manufacturer notes compartmentation reduces internal fault propagation, but exact historical exam topology unspecified."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Walls between indoor substation bays chiefly reduce consequences and propagation of an internal arc/fire/fault to neighboring bays; C. A convenient access can be secondary, B noise isolation not principal electrical safety rationale. Source manufacturer notes compartmentation reduces internal fault propagation, but exact historical exam topology unspecified.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0035",
+      "card_id": "EXPL_QABC-0035",
+      "grade_ids": [
+        "G1-ELE-042",
+        "G2-ELEC-188"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "49",
+        "original_question": "Curentul care circula printr-un circuit de curent alternativ, având rezistenta r=3 Ω, reactanţa x= 4 Ω si la bornele căruia se aplica o tensiune de 220 V este:",
+        "options": {
+          "A": "31,5 A",
+          "B": "44 A",
+          "C": "53,4 A"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-042=B | G2-ELEC-188=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-042",
+        "source_file": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+        "source_blob": "7c5710d9aa583e57a3272ffe934af44a609aa097",
+        "tag": "DETERMINISTIC_AC_IMPEDANCE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/college-physics/pages/23-section-summary",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "31,5 A",
+          "B": "44 A",
+          "C": "53,4 A"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Single series equivalent impedance magnitude |Z|=sqrt(R²+X²)=sqrt(3²+4²)=5Ω; I_rms=U_rms/|Z|=220/5=44A -> B. A31.5 and C53.4 not consistent. Model assumes 220 V RMS phasor, passive linear one-port series R/X; without explicit 'series' or convention, question uses textbook series equivalent simplification."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Single series equivalent impedance magnitude |Z|=sqrt(R²+X²)=sqrt(3²+4²)=5Ω; I_rms=U_rms/|Z|=220/5=44A -> B. A31.5 and C53.4 not consistent. Model assumes 220 V RMS phasor, passive linear one-port series R/X; without explicit 'series' or convention, question uses textbook series equivalent simplification.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0037",
+      "card_id": "EXPL_QABC-0037",
+      "grade_ids": [
+        "G1-ELE-044",
+        "G2-ELEC-190"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "51",
+        "original_question": "Durata de viata a lămpilor cu incandescenta:",
+        "options": {
+          "A": "creste odată cu creşterea frecventei",
+          "B": "scade odată cu scăderea tensiunii",
+          "C": "scade odată cu creşterea tensiunii"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-044=C | G2-ELEC-190=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-044",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_INCANDESCENT_VOLTAGE_LIFESPAN",
+        "prior_technical_url_as_reported": "https://www.mdpi.com/1996-1073/17/22/5590",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "creste odată cu creşterea frecventei",
+          "B": "scade odată cu scăderea tensiunii",
+          "C": "scade odată cu creşterea tensiunii"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Incandescent filament temperature and evaporation rise with increased supply voltage, life decreases (C). A mains frequency increase not the determining relation; B reduced voltage generally increases life, not decreases it. Source uses ~voltage to -12..-16 exponent for specified lamp families, not universal constants for LEDs."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Incandescent filament temperature and evaporation rise with increased supply voltage, life decreases (C). A mains frequency increase not the determining relation; B reduced voltage generally increases life, not decreases it. Source uses ~voltage to -12..-16 exponent for specified lamp families, not universal constants for LEDs.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0038",
+      "card_id": "EXPL_QABC-0038",
+      "grade_ids": [
+        "G1-ELE-045",
+        "G2-ELEC-191"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "52",
+        "original_question": "Curentul electric generat prin deplasarea cu viteza v a unui corp încărcat cu o sarcină electrică se numeşte:",
+        "options": {
+          "A": "curent electric de conducţie",
+          "B": "curent electric de convecţie",
+          "C": "curent electric de deplasare (Maxwell)"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-045=B | G2-ELEC-191=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-045",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_CONVECTION_CURRENT_OBJECT",
+        "prior_technical_url_as_reported": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Electromagnetics_I_%28Ellingson%29/06%3A_Steady_Current_and_Conductivity/6.01%3A_Convection_and_Conduction_Currents",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "curent electric de conducţie",
+          "B": "curent electric de convecţie",
+          "C": "curent electric de deplasare (Maxwell)"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Movement of physically charged macroscopic body at velocity v transports charge and is convection current B. A conduction refers drift due to electric field in conducting material; C Maxwell displacement current ∂D/∂t is not charge-body transport, even though both participate in Ampère-Maxwell equation. Wording 'corp încărcat' material transport matters."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Movement of physically charged macroscopic body at velocity v transports charge and is convection current B. A conduction refers drift due to electric field in conducting material; C Maxwell displacement current ∂D/∂t is not charge-body transport, even though both participate in Ampère-Maxwell equation. Wording 'corp încărcat' material transport matters.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0039",
+      "card_id": "EXPL_QABC-0039",
+      "grade_ids": [
+        "G1-ELE-046",
+        "G2-ELEC-192"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "53",
+        "original_question": "Curentul produs într-un circuit care conţine elemente neliniare şi care este alimentat cu o tensiune sinusoidală este:",
+        "options": {
+          "A": "întotdeauna nesinusoidal",
+          "B": "întotdeauna sinusoidal",
+          "C": "nesinusoidal sau sinusoidal, depinde de natura elementelor neliniare"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-046=C | G2-ELEC-192=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-046",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "CONDITIONAL_NONLINEAR_ELEMENT_MODE",
+        "prior_technical_url_as_reported": "https://www.allaboutcircuits.com/industry-articles/harmonic-current-in-power-supplies-and-iec-61000-3-2/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "întotdeauna nesinusoidal",
+          "B": "întotdeauna sinusoidal",
+          "C": "nesinusoidal sau sinusoidal, depinde de natura elementelor neliniare"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "A 'întotdeauna nesinusoidal' false: nonlinear element can operate in a small locally linear regime, or the nonlinear component may be inactive. B 'întotdeauna sinusoidal' false: rectifiers and magnetic saturation produce harmonics. C either sine/non-sine depending actual nonlinear law and operating region. Real source confirms typical nonlinear loads distort but does not by itself prove all allowed cancellation/pathological cases."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "A 'întotdeauna nesinusoidal' false: nonlinear element can operate in a small locally linear regime, or the nonlinear component may be inactive. B 'întotdeauna sinusoidal' false: rectifiers and magnetic saturation produce harmonics. C either sine/non-sine depending actual nonlinear law and operating region. Real source confirms typical nonlinear loads distort but does not by itself prove all allowed cancellation/pathological cases.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0040",
+      "card_id": "EXPL_QABC-0040",
+      "grade_ids": [
+        "G1-ELE-047",
+        "G2-ELEC-193"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "54",
+        "original_question": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unei bobine este:",
+        "options": {
+          "A": "mai puţin deformat decât tensiunea care i-a dat naştere",
+          "B": "mult mai deformat decât tensiunea care i-a dat naştere",
+          "C": "sinusoidal"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-047=A | G2-ELEC-193=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-047",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_PURE_INDUCTOR_HARMONIC_FILTER",
+        "prior_technical_url_as_reported": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "mai puţin deformat decât tensiunea care i-a dat naştere",
+          "B": "mult mai deformat decât tensiunea care i-a dat naştere",
+          "C": "sinusoidal"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For an ideal L, each nth voltage harmonic U_n leads to I_n=U_n/(nωL); high-frequency harmonics suppressed versus fundamental, so A current usually less distorted than applied voltage. B more distorted describes an ideal C under same assumptions; C purely sinusoidal unsupported when applied waveform has nonzero harmonics. Assumes ideal linear L and steady periodic source with fundamental."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For an ideal L, each nth voltage harmonic U_n leads to I_n=U_n/(nωL); high-frequency harmonics suppressed versus fundamental, so A current usually less distorted than applied voltage. B more distorted describes an ideal C under same assumptions; C purely sinusoidal unsupported when applied waveform has nonzero harmonics. Assumes ideal linear L and steady periodic source with fundamental.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0041",
+      "card_id": "EXPL_QABC-0041",
+      "grade_ids": [
+        "G1-ELE-048",
+        "G2-ELEC-194"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "55",
+        "original_question": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unui condensator este:",
+        "options": {
+          "A": "mult mai deformat decât tensiunea care i-a dat naştere",
+          "B": "sinusoidal",
+          "C": "mai puţin deformat decât tensiune care i-a dat naştere"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-048=A | G2-ELEC-194=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-048",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_PURE_CAPACITOR_HARMONIC_WEIGHT",
+        "prior_technical_url_as_reported": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "mult mai deformat decât tensiunea care i-a dat naştere",
+          "B": "sinusoidal",
+          "C": "mai puţin deformat decât tensiune care i-a dat naştere"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For ideal C, i=C dv/dt, nth harmonic amplitude I_n=nω C U_n, hence higher n harmonics enhanced relative to fundamental, intended A. B purely sinusoidal cannot hold generally for non-sinusoidal v, C less distorted matches ideal inductor not capacitor. Assumes ideal capacitance and comparable harmonic spectrum; nonlinear dielectric/ESR modify."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For ideal C, i=C dv/dt, nth harmonic amplitude I_n=nω C U_n, hence higher n harmonics enhanced relative to fundamental, intended A. B purely sinusoidal cannot hold generally for non-sinusoidal v, C less distorted matches ideal inductor not capacitor. Assumes ideal capacitance and comparable harmonic spectrum; nonlinear dielectric/ESR modify.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0043",
+      "card_id": "EXPL_QABC-0043",
+      "grade_ids": [
+        "G1-ELE-050",
+        "G2-ELEC-196"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "57",
+        "original_question": "Energia transmisă de undele electromagnetice cu intensitatea câmpului electric E şi intensitatea câmpului magnetic H se propagă după un vector:",
+        "options": {
+          "A": "S=E+H",
+          "B": "S=HxE",
+          "C": "S=ExH"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-050=C | G2-ELEC-196=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-050",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_POYNTING_VECTOR_ORIENTATION",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "S=E+H",
+          "B": "S=HxE",
+          "C": "S=ExH"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Electromagnetic energy flux vector is S=E×H in SI (W/m²), direction propagation for plane wave, C. B H×E reverses vector sign, A adds incompatible E and H vectors with different units."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Electromagnetic energy flux vector is S=E×H in SI (W/m²), direction propagation for plane wave, C. B H×E reverses vector sign, A adds incompatible E and H vectors with different units.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0045",
+      "card_id": "EXPL_QABC-0045",
+      "grade_ids": [
+        "G1-ELE-052",
+        "G2-ELEC-198"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "59",
+        "original_question": "Dacă printr-un condensator circulă un curent alternativ sinusoidal, la bornele sale se produce o cădere de tensiune:",
+        "options": {
+          "A": "defazată cu 90 de grade în urma curentului",
+          "B": "defazată cu 90 de grade înaintea curentului",
+          "C": "în fază cu curentul"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-052=A | G2-ELEC-198=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-052",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_CAPACITOR_PHASE_90",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "defazată cu 90 de grade în urma curentului",
+          "B": "defazată cu 90 de grade înaintea curentului",
+          "C": "în fază cu curentul"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "In ideal capacitor under sinusoidal AC, current leads voltage by 90° hence voltage lags current 90°, A. B reverse direction, C in-phase for resistor. ESR/leakage not ideal 90°, but prompt assumes condensator pure model."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "In ideal capacitor under sinusoidal AC, current leads voltage by 90° hence voltage lags current 90°, A. B reverse direction, C in-phase for resistor. ESR/leakage not ideal 90°, but prompt assumes condensator pure model.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0047",
+      "card_id": "EXPL_QABC-0047",
+      "grade_ids": [
+        "G1-ELE-054",
+        "G2-ELEC-200"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "61",
+        "original_question": "Descărcătoarele cu oxid de zinc protejează echipamentele din reţele împotriva:",
+        "options": {
+          "A": "supratensiunilor",
+          "B": "supracurenţilor",
+          "C": "solicitărilor mecanice"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-054=A | G2-ELEC-200=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-054",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_ZNO_OVERVOLTAGE",
+        "prior_technical_url_as_reported": "https://productinfo.se.com/0100db2301_elecdistfunddesignguide/0100db2301-electrical-distribution-fundamentals-design-guide/English/0100DB2301%20Electrical%20Distribution%20Fundamentals%20Design%20Guide%20%28bookmap%29_DD00648155.xml/%24/SystemProtection-A4A695C5",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "supratensiunilor",
+          "B": "supracurenţilor",
+          "C": "solicitărilor mecanice"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "ZnO surge arrester clamps transient overvoltage (A); B overcurrent protective fuse/CB different; C mechanical loads outside arrester function. Long-duration overvoltage can overheat arrester, no blanket guarantee."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "ZnO surge arrester clamps transient overvoltage (A); B overcurrent protective fuse/CB different; C mechanical loads outside arrester function. Long-duration overvoltage can overheat arrester, no blanket guarantee.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0048",
+      "card_id": "EXPL_QABC-0048",
+      "grade_ids": [
+        "G1-ELE-055",
+        "G2-ELEC-201"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "62",
+        "original_question": "Descărcătoarele cu oxizi de zinc sunt echipamente destinate:",
+        "options": {
+          "A": "protecţiei personalului de exploatare împotriva electrocutării",
+          "B": "protecţiei împotriva supratensiunilor",
+          "C": "protecţiei împotriva supracurenţilor"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-055=B | G2-ELEC-201=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-055",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_ZNO_OVERVOLTAGE",
+        "prior_technical_url_as_reported": "https://www.se.com/us/en/faqs/FA301291/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "protecţiei personalului de exploatare împotriva electrocutării",
+          "B": "protecţiei împotriva supratensiunilor",
+          "C": "protecţiei împotriva supracurenţilor"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Same protected object as 054 but A/B/C permuted: B overvoltage is ZnO arrester purpose; A no universal shock protection by itself and C excessive current requires other protective device. Manufacturer identifies ZnO MOV as surge clamping element."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Same protected object as 054 but A/B/C permuted: B overvoltage is ZnO arrester purpose; A no universal shock protection by itself and C excessive current requires other protective device. Manufacturer identifies ZnO MOV as surge clamping element.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0049",
+      "card_id": "EXPL_QABC-0049",
+      "grade_ids": [
+        "G1-ELE-056",
+        "G2-ELEC-202"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "63",
+        "original_question": "Diferenţa de potenţial la bornele a n baterii de condensatoare montate în serie este egală cu:",
+        "options": {
+          "A": "suma diferenţelor de potenţial la bornele fiecărui condensator",
+          "B": "diferenţa de potenţial la bornele fiecărui condensator în parte",
+          "C": "diferenţa de potenţial a unui condensator împărţită la n"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-056=A | G2-ELEC-202=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-056",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_SERIES_CAPACITOR_KVL",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "suma diferenţelor de potenţial la bornele fiecărui condensator",
+          "B": "diferenţa de potenţial la bornele fiecărui condensator în parte",
+          "C": "diferenţa de potenţial a unui condensator împărţită la n"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Total terminal voltage across n series capacitors is the algebraic sum of individual capacitor voltages, A, by Kirchhoff voltage law. B one element voltage only if n=1 or other voltages zero; C V_element/n false for equal nonzero elements, true total is n·V_element for equal identical elements."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Total terminal voltage across n series capacitors is the algebraic sum of individual capacitor voltages, A, by Kirchhoff voltage law. B one element voltage only if n=1 or other voltages zero; C V_element/n false for equal nonzero elements, true total is n·V_element for equal identical elements.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0051",
+      "card_id": "EXPL_QABC-0051",
+      "grade_ids": [
+        "G1-ELE-059",
+        "G2-ELEC-204"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "66",
+        "original_question": "În cazul conexiunii în stea la transformator:",
+        "options": {
+          "A": "tensiunea de linie este egala cu tensiunea de faza",
+          "B": "curentul de linie este egal cu ~1,73 x curentul de faza",
+          "C": "tensiunea de linie este egala cu ~1,73 x tensiunea de faza"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-059=C | G2-ELEC-204=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-059",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_THREE_PHASE_WYE_BALANCED",
+        "prior_technical_url_as_reported": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_%28Kirtley%29/03%3A_Polyphase_Networks/3.03%3A_Line-Line_Voltages",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "tensiunea de linie este egala cu tensiunea de faza",
+          "B": "curentul de linie este egal cu ~1,73 x curentul de faza",
+          "C": "tensiunea de linie este egala cu ~1,73 x tensiunea de faza"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "In balanced Y/star system line voltage magnitude sqrt(3) times phase (line-neutral) voltage, C. A equality is delta voltage relation, B sqrt3 line current to phase current is delta, not Y. If unbalanced, individual line voltages not a single sqrt3 of arbitrary phase magnitude; standard balanced regime implied."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "In balanced Y/star system line voltage magnitude sqrt(3) times phase (line-neutral) voltage, C. A equality is delta voltage relation, B sqrt3 line current to phase current is delta, not Y. If unbalanced, individual line voltages not a single sqrt3 of arbitrary phase magnitude; standard balanced regime implied.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0052",
+      "card_id": "EXPL_QABC-0052",
+      "grade_ids": [
+        "G1-ELE-060",
+        "G2-ELEC-205"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "67",
+        "original_question": "Efectul pelicular al curentului alternativ este utilizat în:",
+        "options": {
+          "A": "încălzirea materialelor prin inducţie",
+          "B": "eliminarea dezechilibrelor din reţeaua electrică",
+          "C": "eliminarea distorsiunilor undelor de curent"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-060=A | G2-ELEC-205=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-060",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_INDUCTION_HEATING_SKIN",
+        "prior_technical_url_as_reported": "https://technav.ieee.org/topic/skin-effect/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "încălzirea materialelor prin inducţie",
+          "B": "eliminarea dezechilibrelor din reţeaua electrică",
+          "C": "eliminarea distorsiunilor undelor de curent"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Skin effect concentrates AC/induced eddy current near surface, supporting localized induction heating A. B grid imbalance removal and C harmonic distortion elimination unrelated. Skin depth depends on frequency, permeability and conductivity; effect alone isn't the induction heating power supply."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Skin effect concentrates AC/induced eddy current near surface, supporting localized induction heating A. B grid imbalance removal and C harmonic distortion elimination unrelated. Skin depth depends on frequency, permeability and conductivity; effect alone isn't the induction heating power supply.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0053",
+      "card_id": "EXPL_QABC-0053",
+      "grade_ids": [
+        "G1-ELE-061",
+        "G2-ELEC-206"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "68",
+        "original_question": "Efectul pelicular al unui curent alternativ care străbate un conductor masiv se datorează:",
+        "options": {
+          "A": "unor curenţi paraziţi induşi în conductor, simetrici faţă de axa acestuia",
+          "B": "numai unor forţe electromotoare induse datorită variaţiei curentului",
+          "C": "capacităţii conductorului faţă de pământ"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-061=A | G2-ELEC-206=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-061",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "CONDITIONAL_SKIN_INDUCED_EDDIES",
+        "prior_technical_url_as_reported": "https://technav.ieee.org/topic/skin-effect/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "unor curenţi paraziţi induşi în conductor, simetrici faţă de axa acestuia",
+          "B": "numai unor forţe electromotoare induse datorită variaţiei curentului",
+          "C": "capacităţii conductorului faţă de pământ"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Skin effect occurs from time-varying magnetic fields and induced counter EMF/eddy current redistribution; for axially symmetric solid conductor current distribution changes with radius, matches intended A. B 'numai FEM induse' refers to cause but omits induced current effects and is not cleanly false; C capacitance to ground unrelated. Original 'simetrici faţă de axa' assumes homogeneous cylindrical geometry, not arbitrary massive conductor cross section."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Skin effect occurs from time-varying magnetic fields and induced counter EMF/eddy current redistribution; for axially symmetric solid conductor current distribution changes with radius, matches intended A. B 'numai FEM induse' refers to cause but omits induced current effects and is not cleanly false; C capacitance to ground unrelated. Original 'simetrici faţă de axa' assumes homogeneous cylindrical geometry, not arbitrary massive conductor cross section.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0054",
+      "card_id": "EXPL_QABC-0054",
+      "grade_ids": [
+        "G1-ELE-062",
+        "G2-ELEC-207"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "69",
+        "original_question": "Energia electrica reactiva:",
+        "options": {
+          "A": "este o energie electrica complementara, care serveşte la magnetizarea bobinajelor",
+          "B": "se poate transforma în energie mecanica",
+          "C": "se poate transforma în energie luminoasa"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-062=A | G2-ELEC-207=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-062",
+        "source_file": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "source_blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "tag": "DIRECT_REACTIVE_EXCHANGE_WITH_WORDING_QUALIFICATION",
+        "prior_technical_url_as_reported": "https://technav.ieee.org/topic/reactive-power/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "este o energie electrica complementara, care serveşte la magnetizarea bobinajelor",
+          "B": "se poate transforma în energie mecanica",
+          "C": "se poate transforma în energie luminoasa"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Reactive power/current required to magnetize inductive windings and establish fields; A matches common textbook description. B/C mechanical and light output represent net active power conversions, not oscillatory reactive exchange. But 'energie electrică reactivă' is metered exchange term not separately consumable work, and capacitive elements exchange electric field energy too, so A describes common role, not full definition."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Reactive power/current required to magnetize inductive windings and establish fields; A matches common textbook description. B/C mechanical and light output represent net active power conversions, not oscillatory reactive exchange. But 'energie electrică reactivă' is metered exchange term not separately consumable work, and capacitive elements exchange electric field energy too, so A describes common role, not full definition.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0055",
+      "card_id": "EXPL_QABC-0055",
+      "grade_ids": [
+        "G1-ELE-063",
+        "G2-ELEC-208"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "70",
+        "original_question": "Energia magnetostatică produsă de curentul i care parcurge un circuit care conţine o inductanţă L este egală cu:",
+        "options": {
+          "A": "1/2 L i",
+          "B": "1/2 Li2",
+          "C": "Li"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-063=B | G2-ELEC-208=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-063",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_MAGNETIC_ENERGY_QUADRATIC",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/14-3-energy-in-a-magnetic-field",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "1/2 L i",
+          "B": "1/2 Li2",
+          "C": "Li"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Inductor magnetic field stored energy W_L=∫0^i L i' di'=½ L i², B, assuming constant L linear magnetic core. A ½ L i and C Li are not Joules dimensionally (H·A versus J)."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Inductor magnetic field stored energy W_L=∫0^i L i' di'=½ L i², B, assuming constant L linear magnetic core. A ½ L i and C Li are not Joules dimensionally (H·A versus J).",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0056",
+      "card_id": "EXPL_QABC-0056",
+      "grade_ids": [
+        "G1-ELE-064",
+        "G2-ELEC-209"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "71",
+        "original_question": "Energia electrostatică a unui conductor izolat în spaţiu, încărcat cu o sarcină q şi aflat la un potenţial V este egală cu:",
+        "options": {
+          "A": "1/2 q V",
+          "B": "q V",
+          "C": "2 q V"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-064=A | G2-ELEC-209=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-064",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_ELECTROSTATIC_ENERGY",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "1/2 q V",
+          "B": "q V",
+          "C": "2 q V"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Charged isolated conductor effective capacitance C=q/V has electrostatic field stored energy W=∫0^q (q'/C)dq'=½qV, A. B qV overstates double and C 2qV fourfold. Requires linear relation q=CV, constant geometry and zero infinity reference."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Charged isolated conductor effective capacitance C=q/V has electrostatic field stored energy W=∫0^q (q'/C)dq'=½qV, A. B qV overstates double and C 2qV fourfold. Requires linear relation q=CV, constant geometry and zero infinity reference.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0057",
+      "card_id": "EXPL_QABC-0057",
+      "grade_ids": [
+        "G1-ELE-065",
+        "G2-ELEC-210"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "72",
+        "original_question": "În cazul producerii unui scurtcircuit într-o instalaţie, are loc următorul fenomen:",
+        "options": {
+          "A": "creste tensiunea de alimentare a instalaţiei",
+          "B": "creste impedanţa echivalenta a instalaţiei",
+          "C": "creste curentul de alimentare a instalaţiei"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-065=C | G2-ELEC-210=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-065",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "CONDITIONAL_SHORT_CIRCUIT_PRETRIP",
+        "prior_technical_url_as_reported": "https://www.mdpi.com/1996-1073/16/2/811",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "creste tensiunea de alimentare a instalaţiei",
+          "B": "creste impedanţa echivalenta a instalaţiei",
+          "C": "creste curentul de alimentare a instalaţiei"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "A low-impedance fault usually raises supply/fault current C up to source impedance and protection, whereas equivalent fault-path impedance decreases not increases (B), upstream voltage at fault may sag rather than rise (A). After fast protection trip supply current can fall to zero: time interval/relay state not specified, so standard moment-of-fault intended only."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "A low-impedance fault usually raises supply/fault current C up to source impedance and protection, whereas equivalent fault-path impedance decreases not increases (B), upstream voltage at fault may sag rather than rise (A). After fast protection trip supply current can fall to zero: time interval/relay state not specified, so standard moment-of-fault intended only.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0058",
+      "card_id": "EXPL_QABC-0058",
+      "grade_ids": [
+        "G1-ELE-066",
+        "G2-ELEC-211"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "73",
+        "original_question": "Enunţul \"sarcinile electrice nu pot fi create și nici distruse, ci doar mutate\" reprezintă o consecință pentru:",
+        "options": {
+          "A": "legea conservării sarcinii electrice",
+          "B": "legea lui Coulomb",
+          "C": "legea lui Laplace"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-066=A | G2-ELEC-211=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-066",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_CHARGE_CONSERVATION",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "legea conservării sarcinii electrice",
+          "B": "legea lui Coulomb",
+          "C": "legea lui Laplace"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Statement 'charges cannot be created/destroyed, only moved' is conservation of electric charge A. B Coulomb law governs forces between charges; C Laplace's law unrelated to global charge conservation. Modern particle processes can create paired +q and -q but net charge conserved; wording about individual charges is didactic shorthand."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Statement 'charges cannot be created/destroyed, only moved' is conservation of electric charge A. B Coulomb law governs forces between charges; C Laplace's law unrelated to global charge conservation. Modern particle processes can create paired +q and -q but net charge conserved; wording about individual charges is didactic shorthand.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0059",
+      "card_id": "EXPL_QABC-0059",
+      "grade_ids": [
+        "G1-ELE-067",
+        "G2-ELEC-212"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "74",
+        "original_question": "Enunţul \"suma algebrică a tensiunilor electromotoare dintr-o buclă a unei reţele electrice este egală cu suma algebrică a căderilor de tensiune din buclă\" reprezintă:",
+        "options": {
+          "A": "Prima lege a lui Kirchhoff",
+          "B": "a doua lege a lui Kirchhoff",
+          "C": "Legea Joule -Lenz"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-067=B | G2-ELEC-212=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-067",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_KIRCHHOFF_VOLTAGE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "Prima lege a lui Kirchhoff",
+          "B": "a doua lege a lui Kirchhoff",
+          "C": "Legea Joule -Lenz"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Algebraic sum of EMFs and voltage drops in a circuit loop is Kirchhoff second law, B. A first law is current conservation at node; C Joule-Lenz concerns heat I²Rt. Normal lumped-quasi-static circuit assumption for KVL, excludes strong time-variable external magnetic flux unless induced emf included."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Algebraic sum of EMFs and voltage drops in a circuit loop is Kirchhoff second law, B. A first law is current conservation at node; C Joule-Lenz concerns heat I²Rt. Normal lumped-quasi-static circuit assumption for KVL, excludes strong time-variable external magnetic flux unless induced emf included.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0060",
+      "card_id": "EXPL_QABC-0060",
+      "grade_ids": [
+        "G1-ELE-068",
+        "G2-ELEC-213"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "75",
+        "original_question": "Expresia B x i x l , unde i este intensitatea curentului care străbate un conductor de lungime l, situat perpendicular pe câmpul de inducţie magnetică de mărime B, reprezintă:",
+        "options": {
+          "A": "o forţă",
+          "B": "o tensiune",
+          "C": "o rezistenţă"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-068=A | G2-ELEC-213=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-068",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_LORENTZ_FORCE_WIRE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "o forţă",
+          "B": "o tensiune",
+          "C": "o rezistenţă"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "A force magnitude F=B·i·l·sinθ, θ=90° by stem, so F=B i l (newtons), A. B voltage and C resistance have incompatible dimensions. Homogeneous magnetic field perpendicular to straight wire."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "A force magnitude F=B·i·l·sinθ, θ=90° by stem, so F=B i l (newtons), A. B voltage and C resistance have incompatible dimensions. Homogeneous magnetic field perpendicular to straight wire.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0061",
+      "card_id": "EXPL_QABC-0061",
+      "grade_ids": [
+        "G1-ELE-069",
+        "G2-ELEC-214"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "76",
+        "original_question": "Expresia matematica a legii lui Ohm pentru o porţiune de circuit este:",
+        "options": {
+          "A": "I = U / R",
+          "B": "I = UxR",
+          "C": "I = U - R"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-069=A | G2-ELEC-214=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-069",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "CONDITIONAL_OHMIC_CONDUCTOR",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "I = U / R",
+          "B": "I = UxR",
+          "C": "I = U - R"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For a linear Ohmic resistance R, I=U/R, A. B U·R wrong units; C U−R subtracts incompatible physical units. The stem 'porțiune de circuit' might include nonlinear element, but resistance as Ohmic parameter presumes fixed R in stated range; don't claim all semiconductor devices are Ohmic."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For a linear Ohmic resistance R, I=U/R, A. B U·R wrong units; C U−R subtracts incompatible physical units. The stem 'porțiune de circuit' might include nonlinear element, but resistance as Ohmic parameter presumes fixed R in stated range; don't claim all semiconductor devices are Ohmic.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0062",
+      "card_id": "EXPL_QABC-0062",
+      "grade_ids": [
+        "G1-ELE-070",
+        "G2-ELEC-215"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "77",
+        "original_question": "Extinderea domeniului de măsurare la ampermetre se realizează cu:",
+        "options": {
+          "A": "rezistente adiţionale",
+          "B": "shunturi",
+          "C": "bobine înseriate"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-070=B | G2-ELEC-215=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-070",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_AMMETER_ANALOG_MULTIRANGE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "rezistente adiţionale",
+          "B": "shunturi",
+          "C": "bobine înseriate"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Shunt low resistor in parallel with ammeter movement bypasses additional current and extends measurement range, B. A series multiplier is voltmeter technique; C series inductors not generic extension for DC ammeter. Applies to conventional moving-coil/analogue instruments; modern clamp/current transformers are another technique."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Shunt low resistor in parallel with ammeter movement bypasses additional current and extends measurement range, B. A series multiplier is voltmeter technique; C series inductors not generic extension for DC ammeter. Applies to conventional moving-coil/analogue instruments; modern clamp/current transformers are another technique.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0063",
+      "card_id": "EXPL_QABC-0063",
+      "grade_ids": [
+        "G1-ELE-071",
+        "G2-ELEC-216"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "78",
+        "original_question": "Extinderea domeniului de măsurare la voltmetre se realizează cu:",
+        "options": {
+          "A": "shunturi",
+          "B": "rezistente adiţionale",
+          "C": "condensatoare montate în paralel"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-071=B | G2-ELEC-216=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-071",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_VOLTMETER_MULTIPLIER",
+        "prior_technical_url_as_reported": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "shunturi",
+          "B": "rezistente adiţionale",
+          "C": "condensatoare montate în paralel"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Series additional high resistance limits meter movement current at higher voltages, thus extends range B. A parallel shunts apply ammeters; C capacitors in parallel not generic voltmeter multiplier. Traditional analogue galvanometer context, not necessarily all modern electronic meters."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Series additional high resistance limits meter movement current at higher voltages, thus extends range B. A parallel shunts apply ammeters; C capacitors in parallel not generic voltmeter multiplier. Traditional analogue galvanometer context, not necessarily all modern electronic meters.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0064",
+      "card_id": "EXPL_QABC-0064",
+      "grade_ids": [
+        "G1-ELE-072",
+        "G2-ELEC-217"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "79",
+        "original_question": "Factorul de atenuare al unui circuit format dintr-un rezistor de rezistenţă R înseriat cu o bobină de inductanţă L, alimentate de o tensiune electromotoare constantă este egal cu:",
+        "options": {
+          "A": "R/L",
+          "B": "L/R",
+          "C": "1"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-072=A | G2-ELEC-217=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-072",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_RL_DECAY_COEFFICIENT",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "R/L",
+          "B": "L/R",
+          "C": "1"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For L di/dt+R i=E constant, transient e^{-t R/L}; exponential attenuation rate α=R/L (s^-1), A. B L/R is time constant τ (s), not attenuation rate; C dimensionless 1 cannot equal R/L generally. Note 'factor de atenuare' may be ambiguous label but conventional decay coefficient rate."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For L di/dt+R i=E constant, transient e^{-t R/L}; exponential attenuation rate α=R/L (s^-1), A. B L/R is time constant τ (s), not attenuation rate; C dimensionless 1 cannot equal R/L generally. Note 'factor de atenuare' may be ambiguous label but conventional decay coefficient rate.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0066",
+      "card_id": "EXPL_QABC-0066",
+      "grade_ids": [
+        "G1-ELE-074",
+        "G2-ELEC-219"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "81",
+        "original_question": "Folosirea conductoarelor jumelate în construcţia LEA are ca scop principal:",
+        "options": {
+          "A": "reducerea pierderilor Corona",
+          "B": "reducerea solicitărilor mecanice ale stâlpilor",
+          "C": "reducerea curenţilor de scurtcircuit"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-074=A | G2-ELEC-219=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-074",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_BUNDLED_CORONA_MITIGATION",
+        "prior_technical_url_as_reported": "https://ctcglobal.com/wp-content/uploads/2023/05/Engineering_Transmission_Lines_with_ACCC_Conductor.pdf",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "reducerea pierderilor Corona",
+          "B": "reducerea solicitărilor mecanice ale stâlpilor",
+          "C": "reducerea curenţilor de scurtcircuit"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Bundled/jumelate overhead transmission conductors increase equivalent radius, reduce surface electric field gradients and Corona discharge losses A. B mechanical post force reduction not primary (more conductors can increase weight/drag), C short circuit current limited by network impedance not bundle split. Bundles also affect reactance/capacity/noise, not sole objective."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Bundled/jumelate overhead transmission conductors increase equivalent radius, reduce surface electric field gradients and Corona discharge losses A. B mechanical post force reduction not primary (more conductors can increase weight/drag), C short circuit current limited by network impedance not bundle split. Bundles also affect reactance/capacity/noise, not sole objective.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0067",
+      "card_id": "EXPL_QABC-0067",
+      "grade_ids": [
+        "G1-ELE-075",
+        "G2-ELEC-220"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "82",
+        "original_question": "Formula de calcul a frecventei produsa în sistemul electroenergetic de un generator cu n [rot/min] si p perechi de poli este:",
+        "options": {
+          "A": "f =n p / 60",
+          "B": "f = 60 n / p",
+          "C": "f = 60 p / n"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-075=A | G2-ELEC-220=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-075",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_ALTERNATOR_RPM_POLE_PAIRS",
+        "prior_technical_url_as_reported": "https://www.pjm.com/-/media/DotCom/training/nerc-certifications/trans-exam-materials/bet/bet-lesson6-generator-theory.ashx",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "f =n p / 60",
+          "B": "f = 60 n / p",
+          "C": "f = 60 p / n"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Mechanical speed n rpm and p POLE PAIRS gives electrical frequency f=n p /60 Hz, A. B f=60n/p and C f=60p/n invert units. Example n=1500rpm,p=2 -> f=50Hz, consistent with 4-pole synchronous alternator."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Mechanical speed n rpm and p POLE PAIRS gives electrical frequency f=n p /60 Hz, A. B f=60n/p and C f=60p/n invert units. Example n=1500rpm,p=2 -> f=50Hz, consistent with 4-pole synchronous alternator.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0068",
+      "card_id": "EXPL_QABC-0068",
+      "grade_ids": [
+        "G1-ELE-076",
+        "G2-ELEC-221"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "83",
+        "original_question": "Formula e = B l v, unde e este tensiune electromotoare, B este inducţia magnetică, l este lungimea unui conductor, v este viteza de deplasare a acestuia, reprezintă o forma particulară a:",
+        "options": {
+          "A": "teoremelor Biot-Savart",
+          "B": "legii inducţiei electromagnetice",
+          "C": "legii circuitului magnetic"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-076=B | G2-ELEC-221=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-076",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_MOTIONAL_EMF_FARADAY",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "teoremelor Biot-Savart",
+          "B": "legii inducţiei electromagnetice",
+          "C": "legii circuitului magnetic"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Motional emf |e|=B l v when moving rod of length l perpendicular to both field and movement, Faraday induction in moving conductor, B. A Biot-Savart determines B from current, C magnetic-circuit law different relation. Correct orientation is crucial, not universal formula for arbitrary angles."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Motional emf |e|=B l v when moving rod of length l perpendicular to both field and movement, Faraday induction in moving conductor, B. A Biot-Savart determines B from current, C magnetic-circuit law different relation. Correct orientation is crucial, not universal formula for arbitrary angles.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0070",
+      "card_id": "EXPL_QABC-0070",
+      "grade_ids": [
+        "G1-ELE-078",
+        "G2-ELEC-223"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "85",
+        "original_question": "Forţa care se exercită între două conductoare străbătute de curenţi electrici se numeşte:",
+        "options": {
+          "A": "forţă electrocinetică",
+          "B": "forţă electrodinamică",
+          "C": "forţă magnetomotoare"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-078=B | G2-ELEC-223=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-078",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_FORCE_BETWEEN_CURRENTS",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "forţă electrocinetică",
+          "B": "forţă electrodinamică",
+          "C": "forţă magnetomotoare"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Magnetic interaction between two current-carrying conductors is electrodynamic force, B. A electrocinetic is nonstandard/other designation and C magnetomotive force is NI in ampere-turns, not mechanical force."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Magnetic interaction between two current-carrying conductors is electrodynamic force, B. A electrocinetic is nonstandard/other designation and C magnetomotive force is NI in ampere-turns, not mechanical force.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0071",
+      "card_id": "EXPL_QABC-0071",
+      "grade_ids": [
+        "G1-ELE-079",
+        "G2-ELEC-224"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "86",
+        "original_question": "Tensiunea electromotoare indusă într-un circuit închis, prin variaţia fluxului magnetic, este:",
+        "options": {
+          "A": "direct proporţională cu variaţia în timp a fluxului magnetic",
+          "B": "invers proporţională cu variaţia în timp a fluxului magnetic",
+          "C": "dependentă de modul în care este produs fluxul magnetic"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-079=A | G2-ELEC-224=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-079",
+        "source_file": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+        "source_blob": "795759bb9ae453c5fafdb0624a83b14658cb8d57",
+        "tag": "DIRECT_FARADAY_TIME_DERIVATIVE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "direct proporţională cu variaţia în timp a fluxului magnetic",
+          "B": "invers proporţională cu variaţia în timp a fluxului magnetic",
+          "C": "dependentă de modul în care este produs fluxul magnetic"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Faraday e=-dΦ/dt for single turn (or -N dΦ/dt coil), A intended 'variația în timp' means time derivative, not just total Φ. B inverse change false, C dependence on how flux was produced false at fixed dΦ/dt; minus sign denotes Lenz polarity."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Faraday e=-dΦ/dt for single turn (or -N dΦ/dt coil), A intended 'variația în timp' means time derivative, not just total Φ. B inverse change false, C dependence on how flux was produced false at fixed dΦ/dt; minus sign denotes Lenz polarity.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0072",
+      "card_id": "EXPL_QABC-0072",
+      "grade_ids": [
+        "G1-ELE-080",
+        "G2-ELEC-225"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "87",
+        "original_question": "Forţa electrodinamică exercitată între două conductoare filiforme, paralele, lungi, aflate la distanţa r, străbătute de câte un curent:",
+        "options": {
+          "A": "este direct proporţională cu distanţa r dintre conductoare",
+          "B": "este invers proporţională cu distanţa r dintre conductoare",
+          "C": "nu depinde de distanţa r dintre conductoare"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-080=B | G2-ELEC-225=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-080",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "DIRECT_LONG_PARALLEL_WIRE_FORCE_1_OVER_R",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "este direct proporţională cu distanţa r dintre conductoare",
+          "B": "este invers proporţională cu distanţa r dintre conductoare",
+          "C": "nu depinde de distanţa r dintre conductoare"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "For long parallel wires F/ℓ=μ0 I1 I2/(2πr), so B inversely proportional to r. A directly proportional and C independent of r false. Assumes equal fixed currents and separation r, long thin parallel wires in homogeneous nonmagnetic medium; not generic short/angled wires."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "For long parallel wires F/ℓ=μ0 I1 I2/(2πr), so B inversely proportional to r. A directly proportional and C independent of r false. Assumes equal fixed currents and separation r, long thin parallel wires in homogeneous nonmagnetic medium; not generic short/angled wires.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0073",
+      "card_id": "EXPL_QABC-0073",
+      "grade_ids": [
+        "G1-ELE-081",
+        "G2-ELEC-226"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "88",
+        "original_question": "Forţa F care se exercită asupra unei sarcini electrice q aflată într-un câmp electric de intensitate E are expresia:",
+        "options": {
+          "A": "F=E/q",
+          "B": "F=qE",
+          "C": "F=q/E"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-081=B | G2-ELEC-226=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-081",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "DIRECT_ELECTRIC_FIELD_FORCE",
+        "prior_technical_url_as_reported": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "F=E/q",
+          "B": "F=qE",
+          "C": "F=q/E"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Electric field E defined by F=qE on test charge; B. A E/q and C q/E do not give force dimensions; vector direction for negative q reversed, magnitude |q|E."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Electric field E defined by F=qE on test charge; B. A E/q and C q/E do not give force dimensions; vector direction for negative q reversed, magnitude |q|E.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0074",
+      "card_id": "EXPL_QABC-0074",
+      "grade_ids": [
+        "G1-ELE-082",
+        "G2-ELEC-227"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "89",
+        "original_question": "Frecvenţa unei mărimi periodice este inversul:",
+        "options": {
+          "A": "amplitudinii",
+          "B": "perioadei",
+          "C": "fazei"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-082=B | G2-ELEC-227=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-082",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "DIRECT_PERIOD_FREQUENCY_RECIPROCAL",
+        "prior_technical_url_as_reported": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-f",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "amplitudinii",
+          "B": "perioadei",
+          "C": "fazei"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Frequency f=1/T in Hz (1/s), B inverse period. A amplitude inverse dimensionally wrong, C phase inverse unrelated frequency. No need to assume sinusoid, applies any periodic parameter."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Frequency f=1/T in Hz (1/s), B inverse period. A amplitude inverse dimensionally wrong, C phase inverse unrelated frequency. No need to assume sinusoid, applies any periodic parameter.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0075",
+      "card_id": "EXPL_QABC-0075",
+      "grade_ids": [
+        "G1-ELE-083",
+        "G2-ELEC-228"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "90",
+        "original_question": "Funcţionarea contoarelor de inducţie are la baza:",
+        "options": {
+          "A": "curenţii turbionari",
+          "B": "efectul termic al curentului electric",
+          "C": "forţa electrostatica"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-083=A | G2-ELEC-228=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-083",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "DIRECT_INDUCTION_WATTHOUR_EDDY_CURRENT",
+        "prior_technical_url_as_reported": "https://www.eit.edu.au/resources/fundamentals-of-smart-metering-kwh-and-kvarh-meters/",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "curenţii turbionari",
+          "B": "efectul termic al curentului electric",
+          "C": "forţa electrostatica"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Legacy induction electricity meter has rotating conductive disk with induced eddy currents generating meter driving torque and electromagnetic braking, so A. B thermal effects and C electrostatic force not meter induction operating principle. Does not describe digital/static electronic meter, but original explicitly says induction type."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Legacy induction electricity meter has rotating conductive disk with induced eddy currents generating meter driving torque and electromagnetic braking, so A. B thermal effects and C electrostatic force not meter induction operating principle. Does not describe digital/static electronic meter, but original explicitly says induction type.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0076",
+      "card_id": "EXPL_QABC-0076",
+      "grade_ids": [
+        "G1-ELE-084",
+        "G2-ELEC-229"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "91",
+        "original_question": "În instalaţiile de joasa tensiune, legarea la pământ este justificatã:",
+        "options": {
+          "A": "din motive economice",
+          "B": "pentru diminuarea suprasolicitărilor echipamentelor electrice",
+          "C": "pentru securitatea muncii"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-084=C | G2-ELEC-229=C",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-084",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "DIRECT_EARTHING_SHOCK_PROTECTION_PURPOSE",
+        "prior_technical_url_as_reported": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "din motive economice",
+          "B": "pentru diminuarea suprasolicitărilor echipamentelor electrice",
+          "C": "pentru securitatea muncii"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Low voltage safety grounding/PE and equipotential bonding primarily protects people/animals against electric shock under fault, so C. A purely economics not basis, B limiting equipment stress can be ancillary function but not core protection claim. Need distinguish earthing, bonding, disconnection and network TN/TT/IT details from generic one-line purpose."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Low voltage safety grounding/PE and equipotential bonding primarily protects people/animals against electric shock under fault, so C. A purely economics not basis, B limiting equipment stress can be ancillary function but not core protection claim. Need distinguish earthing, bonding, disconnection and network TN/TT/IT details from generic one-line purpose.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0077",
+      "card_id": "EXPL_QABC-0077",
+      "grade_ids": [
+        "G1-ELE-085",
+        "G2-ELEC-230"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "92",
+        "original_question": "Funcţionarea în suprasarcinã a unui transformator reprezintă:",
+        "options": {
+          "A": "un regim de avarie",
+          "B": "un regim temporar admisibil",
+          "C": "un regim inadmisibil"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-085=B | G2-ELEC-230=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-085",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "CONDITIONAL_TEMPORARY_TRANSFORMER_OVERLOAD",
+        "prior_technical_url_as_reported": "https://www.iteh.fr/catalog/standards/iec/924f42fe-e556-4197-b0fd-ca0cd3c56f58/iec-60076-7-2005",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "un regim de avarie",
+          "B": "un regim temporar admisibil",
+          "C": "un regim inadmisibil"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "Transformer can tolerate short/limited overload based on ambient, prior load, thermal rise, aging and protection settings, so B `regim temporar admisibil` in supervised conditions. A all overload automatically fault false, C all prohibited false. Does NOT authorize unbounded overload or guarantee safe without transformer loading guide. Specific regime dry vs immersed, IEC 60076-7/12 applicability must be checked."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "Transformer can tolerate short/limited overload based on ambient, prior load, thermal rise, aging and protection settings, so B `regim temporar admisibil` in supervised conditions. A all overload automatically fault false, C all prohibited false. Does NOT authorize unbounded overload or guarantee safe without transformer loading guide. Specific regime dry vs immersed, IEC 60076-7/12 applicability must be checked.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0078",
+      "card_id": "EXPL_QABC-0078",
+      "grade_ids": [
+        "G1-ELE-086",
+        "G2-ELEC-231"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "93",
+        "original_question": "Funcţionarea transformatoarelor electrice are la bazã:",
+        "options": {
+          "A": "fenomenul inducţiei electromagnetice",
+          "B": "efectul termic al curentului electric",
+          "C": "curenţii turbionari"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-086=A | G2-ELEC-231=A",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-086",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "DIRECT_ELECTROMAGNETIC_INDUCTION_TRANSFORMER",
+        "prior_technical_url_as_reported": "https://openstax.org/books/college-physics-2e/pages/23-7-transformers",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "fenomenul inducţiei electromagnetice",
+          "B": "efectul termic al curentului electric",
+          "C": "curenţii turbionari"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "AC transformer works mutual electromagnetic induction from changing magnetic flux A. B thermal effect is loss, C eddy currents are mostly parasitic core losses (not principle of intended winding transfer). Constant DC steady state gives no normal secondary induced voltage."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "AC transformer works mutual electromagnetic induction from changing magnetic flux A. B thermal effect is loss, C eddy currents are mostly parasitic core losses (not principle of intended winding transfer). Constant DC steady state gives no normal secondary induced voltage.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0079",
+      "card_id": "EXPL_QABC-0079",
+      "grade_ids": [
+        "G1-ELE-087",
+        "G2-ELEC-232"
+      ],
+      "original_snapshot": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "94",
+        "original_question": "Henry este unitatea de măsură pentru:",
+        "options": {
+          "A": "fluxul magnetic",
+          "B": "inductanţă",
+          "C": "inducţia magnetică"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-087=B | G2-ELEC-232=B",
+        "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_review": {
+        "grade_id_researched": "G1-ELE-087",
+        "source_file": "CKPT_232_GFR_8_FINAL_FRESH_P2_LEGACY_G1_ELE_080_087_PLUS_4_HISTORY_2026_11_18.md",
+        "source_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "tag": "DIRECT_NIST_SI_HENRY_UNIT",
+        "prior_technical_url_as_reported": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "original_ABC_as_transcribed_in_legacy_checkpoint": {
+          "A": "fluxul magnetic",
+          "B": "inductanţă",
+          "C": "inducţia magnetică"
+        },
+        "prior_A_B_C_and_counterexample_analysis": "SI derived unit henry H measures inductance B. A magnetic flux measured weber Wb; C magnetic flux density (magnetic induction B) tesla T. Dimensional H=V·s/A."
+      },
+      "explanation_card": {
+        "migration_status": "PRIOR_RESEARCH_BODY_MIGRATED_NOT_OPTION_BY_OPTION_REWRITTEN",
+        "technical_principle_draft": "SI derived unit henry H measures inductance B. A magnetic flux measured weber Wb; C magnetic flux density (magnetic induction B) tesla T. Dimensional H=V·s/A.",
+        "original_options_preserved": true,
+        "per_option_rationales": {
+          "A": null,
+          "B": null,
+          "C": null
+        },
+        "rephrase_prompt": null,
+        "source_context_exact_clause": null,
+        "source_reopened_this_batch": false,
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_key_authenticated": false,
+        "learner_approved": false
+      }
+    }
+  ]
+}

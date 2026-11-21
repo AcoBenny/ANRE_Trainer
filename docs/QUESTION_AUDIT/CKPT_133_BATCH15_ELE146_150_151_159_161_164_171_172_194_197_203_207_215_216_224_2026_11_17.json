@@ -1,0 +1,456 @@
+{
+  "checkpoint": "CKPT-133",
+  "date": "2026-11-17",
+  "input_head": "d460cf30082d59073ec79a4689a202f1147ccbd0",
+  "protocol": "BATCH15 2 of 2, 15 original QABC / 30 grade IDs",
+  "execution": "One assistant applying source, electrical, linguistic and integrity checks; no independent subagent or model retraining",
+  "permission": "Audit documentation and ledger only; no canonical QABC/key/MASTER/HTML/APK changes; PR #7 remains Draft; no merge/release",
+  "status": "PRELIMINARY_SOURCE_RESEARCH_NOT_LEARNING_APPROVAL",
+  "cards": [
+    {
+      "unit_id": "AU-a6b1ed9a6c1a5fc9",
+      "representative_id": "G1-ELE-146",
+      "member_ids": "G1-ELE-146;G2-ELEC-284",
+      "qabc_sha256": "a6b1ed9a6c1a5fc90e779df10786993fd5f7238912b5075e02f437dea3081152",
+      "original_keys_by_id_JSON": "{\"G1-ELE-146\":\"B\",\"G2-ELEC-284\":\"B\"}",
+      "question_original": "La transformatoarele la care comutarea ploturilor se face cu transformatorul în sarcina, comutatorul de ploturi se montează:",
+      "A_original": "pe înfăşurarea de tensiune mai mica, deoarece tensiunea este mai mica",
+      "B_original": "pe înfăşurarea de tensiune mai mare, deoarece curentul este mai mic",
+      "C_original": "pe oricare dintre înfăşurări",
+      "original_stored_key": "B",
+      "source": {
+        "url": "https://www.reinhausen.com/newsroom/mr-knowledge-base/tap-changer-basics",
+        "scope": "Sursă de OLTC arată amplasări alternative, nu dovedește preferința obligatorie HV pentru toate aplicațiile; nu extrapola din off-circuit changer.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "HV-side OLTC usual due lower current at same kVA, but particular connection/neutral design allows exceptions",
+      "option_rationale": {
+        "A": "Pe bobinajul de joasă tensiune ar fi curent nominal mai mare, elemente de comutație mai solicitate.",
+        "B": "Pe înfășurarea HV, același kVA înseamnă curent mai mic, deci soluție tehnică frecventă pentru reglaj sub sarcină.",
+        "C": "«pe oricare» ignoră rațiunea de dimensionare, dar există și excepții constructive/tap changer plasat în alt punct."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "TAP_HV_LOWER_CURRENT_TYPICAL_NOT_UNIVERSAL",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-d846879acd350185",
+      "representative_id": "G1-ELE-150",
+      "member_ids": "G1-ELE-150;G2-ELEC-288",
+      "qabc_sha256": "d846879acd350185b5ee8dce3b2a96126b99b9d15bb4ca9ac1939d03fe7c4981",
+      "original_keys_by_id_JSON": "{\"G1-ELE-150\":\"C\",\"G2-ELEC-288\":\"C\"}",
+      "question_original": "O reţea electricã trifazatã de medie tensiune are neutrul transformatoarelor tratat prin bobina. Pentru regimul normal de funcţionare sa se precizeze efectul bobinei:",
+      "A_original": "deplasarea neutrului",
+      "B_original": "creşterea curenţilor de scurtcircuit",
+      "C_original": "nici un efect",
+      "original_stored_key": "C",
+      "source": {
+        "url": "https://iaeimagazine.org/2015/september-october2015/medium-voltage-earthing-systems-arrangements-and-comparison/",
+        "scope": "«Regim normal» nu garantează echilibru perfect; capacități asimetrice pot induce tensiune neutru-pământ; verificare de sursă pentru caz realist.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Petersen coil compensates earth-fault capacitive current, little effect in perfectly balanced healthy system, but normal asymmetry may shift neutral",
+      "option_rationale": {
+        "A": "Bobina Petersen nu deplasează neutrul în rețea trifazată perfect simetrică, dar poate influența deplasarea în dezechilibru.",
+        "B": "La defect monofazat, scopul bobinei este compensarea curentului capacitiv, nu creșterea sa.",
+        "C": "În regim normal perfect simetric nu circulă curent rezidual de defect și efectul bobinei este ideal nul."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "PETERSEN_NORMAL_NOT_NECESSARILY_BALANCED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-27e6fc6c792d50e2",
+      "representative_id": "G1-ELE-151",
+      "member_ids": "G1-ELE-151;G2-ELEC-289",
+      "qabc_sha256": "27e6fc6c792d50e2a7156eef70bba808b13f8b907c23be5f94f7653a2b372d2a",
+      "original_keys_by_id_JSON": "{\"G1-ELE-151\":\"C\",\"G2-ELEC-289\":\"C\"}",
+      "question_original": "O siguranţa mai mare în alimentarea consumatorilor de energie electrica se realizează prin:",
+      "A_original": "reţele radiale",
+      "B_original": "reţele buclate cu funcţionare radialã",
+      "C_original": "reţele buclate",
+      "original_stored_key": "C",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_a_distribution_architecture",
+        "scope": "Fiabilitatea nu derivă automat doar din eticheta «buclate»: redundanță, protecții, încărcare, operare și defect comun.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Closed-ring distribution may provide redundancy and alternate feeds; actual continuity depends on protection and topology and open-ring can be competitive",
+      "option_rationale": {
+        "A": "Rețele radiale au o singură cale de alimentare, deci redundanță redusă.",
+        "B": "Buclate operând radial permit comutare, dar nu asigură din start aceeași continuitate ca buclă închisă protejată.",
+        "C": "Buclate cu căi alternative de alimentare pot spori siguranța dacă protecțiile și schema permit."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "RELIABILITY_NOT_DERIVED_SOLELY_FROM_RING_LABEL",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-94851097c3aa485d",
+      "representative_id": "G1-ELE-159",
+      "member_ids": "G1-ELE-159;G2-ELEC-297",
+      "qabc_sha256": "94851097c3aa485d97b9651417dffeb6ae63a22e77e609dee7f9c629007ec35c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-159\":\"A\",\"G2-ELEC-297\":\"A\"}",
+      "question_original": "Montajul fix al aparatelor în interiorul celulelor conduce la:",
+      "A_original": "realizări constructive simple, fără blocaje suplimentare;",
+      "B_original": "reducerea dimensiunilor celulelor;",
+      "C_original": "reducerea timpului necesar reviziilor şi reparaţiilor.",
+      "original_stored_key": "A",
+      "source": {
+        "url": "https://www.se.com/uk/en/faqs/FA332901/",
+        "scope": "Afirmația absolută A «fără blocaje suplimentare» poate fi falsă pentru scheme cu interblocaje de securitate, chiar montaj fix.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Fixed installation is often structurally simpler than withdrawable, but interlocks may still be required and maintenance access differs",
+      "option_rationale": {
+        "A": "Montajul fix simplifică de obicei construcția față de aparat debroșabil, dar interblocările suplimentare nu sunt întotdeauna absente.",
+        "B": "Dimensiunile nu sunt universal mai mici; depind de tensiune, distanțe și proiect.",
+        "C": "Timpul de revizie/reparație poate fi mai mare la montaj fix decât la aparataj debroșabil."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "FIXED_CUBICLE_WITHOUT_INTERLOCK_ABSOLUTE_UNPROVEN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-b71ca544d6a38f3b",
+      "representative_id": "G1-ELE-161",
+      "member_ids": "G1-ELE-161;G2-ELEC-299",
+      "qabc_sha256": "b71ca544d6a38f3b95549f56e839ff00291fce7582af3ed1791a8be4fb23ba77",
+      "original_keys_by_id_JSON": "{\"G1-ELE-161\":\"C\",\"G2-ELEC-299\":\"C\"}",
+      "question_original": "Nivelul de tensiune în sistem se reglează",
+      "A_original": "încărcarea generatoarelor cu putere activa",
+      "B_original": "numai prin încărcarea generatoarelor cu putere reactiva",
+      "C_original": "prin utilizare de compensatoare",
+      "original_stored_key": "C",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Equipment_to_improve_power_factor",
+        "scope": "Tensiunea poate fi reglată și cu prize transformator sau excitație; candidatul C este exemplu permis, nu definiție exhaustivă.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Reactive power compensators can regulate bus voltage. Generator excitation and transformer taps are other valid controls, rejecting B's numai",
+      "option_rationale": {
+        "A": "Schimbarea P influențează frecvența/transferul și poate indirect influența U, dar nu este regulator direct universal.",
+        "B": "«Numai» prin putere reactivă a generatoarelor este fals: mai multe aparate pot regla tensiunea.",
+        "C": "Compensatoarele statice/sincrone pot injecta/absorbi Q și regla U, dar nu sunt unicul mijloc."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "COMPENSATOR_VALID_NOT_EXCLUSIVE_VOLTAGE_REGULATION",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-3e71e86b2e5372dc",
+      "representative_id": "G1-ELE-164",
+      "member_ids": "G1-ELE-164;G2-ELEC-302",
+      "qabc_sha256": "3e71e86b2e5372dcfc15f2740ba5cd073906084740338b97d306bb252155c36c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-164\":\"A\",\"G2-ELEC-302\":\"A\"}",
+      "question_original": "O linie electrică lungă funcţionând în scurtcircuit:",
+      "A_original": "absoarbe putere reactivă",
+      "B_original": "produce putere reactivă",
+      "C_original": "nu produce şi nu absoarbe putere reactivă",
+      "original_stored_key": "A",
+      "source": {
+        "url": "https://www3.ntu.edu.sg/home/eccboon/DIP%20website/impedance.html",
+        "locator": "Z_in for short-circuited transmission line depends on distributed inductance and length, not exact original electrical power statement",
+        "scope": "Nu confunda linie în scurtcircuit cu linie în gol; unghiul de lungime/parametrii pot inversa reactanța echivalentă la lungimi speciale. Necesită sursă precisă.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "For usual mains-frequency short-ended lines, series inductance makes them draw reactive power. Distributed input impedance jZc tan(beta L) may reverse for special electrical lengths",
+      "option_rationale": {
+        "A": "La scurtcircuit la capăt, linia prezintă impedanță predominant inductivă și absoarbe putere reactivă de la sursă.",
+        "B": "Lipsa receptorului nu o transformă în sursă capacitivă netă în scurtcircuit.",
+        "C": "Există curent mare și energie în reactanță, deci schimb reactiv nenul."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "SHORT_CIRCUITED_LONG_LINE_INPUT_REACTANCE_FREQUENCY_DEPENDENT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-eb4dc05aacd1ed67",
+      "representative_id": "G1-ELE-171",
+      "member_ids": "G1-ELE-171;G2-ELEC-308",
+      "qabc_sha256": "eb4dc05aacd1ed67fdd8a68700e68fef7258f617ad05932d5566b5e3fca11fc8",
+      "original_keys_by_id_JSON": "{\"G1-ELE-171\":\"C\",\"G2-ELEC-308\":\"C\"}",
+      "question_original": "Pentru limitarea curenţilor de scurtcircuit, puterea totalã instalatã într-o staţie trebuie:",
+      "A_original": "mărită",
+      "B_original": "micşorată",
+      "C_original": "divizatã în mai multe unităţi",
+      "original_stored_key": "C",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+        "locator": "EIG short circuit equivalent source impedance; topic-only, nu dovedește divizarea stației",
+        "scope": "Împărțirea puterii totale fără separarea electrică poate NU reduce deloc curentul de scurtcircuit. Formulare de revizuit.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Dividing sources into electrically separated sections with open tie reduces their simultaneous contribution to a fault; just splitting nameplate total without separation does not",
+      "option_rationale": {
+        "A": "Creșterea surselor conectate poate crește curentul maxim de defect.",
+        "B": "Scăderea capacității poate limita defectul dar nu este obiectiv de proiectare «puterea totală instalată» necesară.",
+        "C": "Divizarea în unități/segmente și exploatarea cu cuple deschise poate limita contribuțiile simultane la defect."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "SOURCE_SECTIONALIZATION_MISSING_FROM_STEM",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-5cba109346b5399e",
+      "representative_id": "G1-ELE-172",
+      "member_ids": "G1-ELE-172;G2-ELEC-309",
+      "qabc_sha256": "5cba109346b5399eafa4933fe29da4311a0f0f4e643936a2d8a0d6bc8d826e68",
+      "original_keys_by_id_JSON": "{\"G1-ELE-172\":\"C\",\"G2-ELEC-309\":\"C\"}",
+      "question_original": "Pentru materialele magnetice, relaţia dintre inducţia magnetică şi intensitatea câmpului magnetic:",
+      "A_original": "este liniară",
+      "B_original": "este o egalitate",
+      "C_original": "este neliniară",
+      "original_stored_key": "C",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-8-magnetism-in-matter",
+        "locator": "OpenStax magnetism in matter / ferromagnetics saturation; indicat, neconsultat integral",
+        "scope": "«materialele magnetice» nu precizează feromagnetice; generalizare C poate fi falsă pentru dia/paramagnetice.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Ferromagnetic B-H relation has saturation/hysteresis nonlinearity. General magnetic materials include linear dia/paramagnetic media; C is not universal",
+      "option_rationale": {
+        "A": "Pentru paramagnetice/diamagnetice, B≈μH liniar; A poate fi adevărată în domenii reale.",
+        "B": "B și H sunt mărimi diferite cu unități diferite, nu egalitate numerică.",
+        "C": "Feromagnetele au curbă B-H neliniară, cu saturație și histerezis."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "MAGNETIC_MATERIALS_TOO_BROAD_C_AND_A_BOTH_POSSIBLE",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-cd7d237bb69685ab",
+      "representative_id": "G1-ELE-194",
+      "member_ids": "G1-ELE-194;G2-ELEC-330",
+      "qabc_sha256": "cd7d237bb69685ab9eec6920606686ba1118a4aefb8f3cc62d6c061ad726cf7f",
+      "original_keys_by_id_JSON": "{\"G1-ELE-194\":\"B\",\"G2-ELEC-330\":\"B\"}",
+      "question_original": "Principalul avantaj al motoarelor asincrone cu rotorul în scurtcircuit cu simplă colivie îl constituie:",
+      "A_original": "curentul mic de pornire",
+      "B_original": "pornirea fără dispozitiv de pornire",
+      "C_original": "cuplul de pornire foarte bun",
+      "original_stored_key": "B",
+      "source": {
+        "url": "https://www.iteh.us/catalog/standards/iec/259c098e-532d-4997-85ca-2c4f25537ef2/iec-ts-61200-201-2026",
+        "locator": "IEC TS 61200-201:2026 public preview §7.2.2, DOL current 5-8In; manufacturer DOL starter often includes contactor/relay",
+        "scope": "Expresia B «fără dispozitiv de pornire» nu înseamnă fără niciun aparat de comutație/protecție; rețeaua poate interzice DOL pentru puteri mari.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Squirrel cage rotor permits direct-on-line starting without special rotor resistance on suitable network, but still requires switching/protection and can have high inrush",
+      "option_rationale": {
+        "A": "Motoarele simple-cage DOL au curent de pornire semnificativ, deci A nu este un avantaj general.",
+        "B": "Rotorul în colivie permite pornirea directă de la rețea fără rezistențe rotorice sau dispozitiv SPECIAL de pornire, la putere/rețea potrivite.",
+        "C": "Cuplul la pornire diferă mult în funcție de design; nu este universal «foarte bun»."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "WITHOUT_STARTING_DEVICE_CONDITIONAL_DOL",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-4398a0cf77f51bce",
+      "representative_id": "G1-ELE-197",
+      "member_ids": "G1-ELE-197;G2-ELEC-333",
+      "qabc_sha256": "4398a0cf77f51bce71e01648946aef93dbf92a266c6545ce2553e6df854efdaf",
+      "original_keys_by_id_JSON": "{\"G1-ELE-197\":\"B\",\"G2-ELEC-333\":\"B\"}",
+      "question_original": "Reducerea nivelului de izolație din instalațiile capsulate cu SF6 poate fi provocată",
+      "A_original": "numai de produse de descompunere ale SF6 şi compuşii lor cu materiale izolante sau metale, sub influenţa umidităţii;",
+      "B_original": "de impurităţi ca urmare a unui montaj necorespunzător (dacă montajul se face cu mâini murdare, transpirate, urme de grăsime, praf de diferite feluri şi mai ales pilituri metalice);",
+      "C_original": "umiditatea reziduală scăzută a gazului izolant",
+      "original_stored_key": "B",
+      "source": {
+        "url": "https://www.mdpi.com/1996-1073/15/8/2804",
+        "locator": "IEEE TDEI 2017 abstract particle contamination GIS; IEC 62271-4:2022 scope handling gases, not clause about dirty hands",
+        "scope": "Nu există în sursa disponibilă paragraf exact despre mâini murdare/grăsime/pilituri de la montaj. Sursa IEC integrală e cu acces limitat.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Metallic particle contamination of SF6 GIS can lower breakdown withstand, supported by 2022 Hitachi peer-reviewed study; specific dirt/grease details not directly proved",
+      "option_rationale": {
+        "A": "«numai» produsele de descompunere este fals: contaminarea cu particule este mecanism distinct de degradare dielectrică.",
+        "B": "Montajul necorespunzător poate introduce pilituri metalice/praf; particulele conducătoare agravează câmpul și descărcările parțiale.",
+        "C": "Umiditate reziduală scăzută nu reprezintă, prin sine, cauză de reducere a izolației; excesul de umiditate este relevant."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "SF6_METAL_PARTICLES_EXACT_EVIDENCE_DIRTY_HANDS_UNVERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-6cc7b15e758e6dc6",
+      "representative_id": "G1-ELE-203",
+      "member_ids": "G1-ELE-203;G2-ELEC-339",
+      "qabc_sha256": "6cc7b15e758e6dc6801c21d1250746ccd1b1279bd11932fb09adfb6a61c75dc2",
+      "original_keys_by_id_JSON": "{\"G1-ELE-203\":\"B\",\"G2-ELEC-339\":\"B\"}",
+      "question_original": "Reactanţa supratranzitorie a unui motor este:",
+      "A_original": "direct proporţionala cu curentul de pornire",
+      "B_original": "invers proporţionala cu curentul de pornire",
+      "C_original": "invers proporţionala cu pătratul tensiunii de alimentare",
+      "original_stored_key": "B",
+      "source": {
+        "url": "https://ccaps.umn.edu/documents/CPE-Conferences/MIPSYCON-PowerPoints/2019/Done/MatchingGenerators.pdf",
+        "locator": "Generator reactance and transient model, sursă analogă; NU dovedește reactanța supratranzitorie a MOTORULUI din enunț",
+        "scope": "BLOCKED_SOURCE_SCOPE: generator != motor; trebuie manual pentru motor sincron/asincron și definirea X'' pentru obiectul exact.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Motor start current generally inversely related to applicable subtransient/effective reactance at fixed voltage, but prior cited generator X'' is not motor X'' proof",
+      "option_rationale": {
+        "A": "La U fix, o reactanță efectivă de pornire mai mare reduce curentul de pornire, nu îl crește.",
+        "B": "I_start≈U/X'' doar dacă reactanța supratranzitorie domină impedanța echivalentă a motorului la pornire.",
+        "C": "I_start și X'' nu se leagă universal de pătratul tensiunii; există rezistențe/alte impedanțe."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "SOURCE_SCOPE_BLOCKED_GENERATOR_VS_MOTOR",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-f4e6494793117210",
+      "representative_id": "G1-ELE-207",
+      "member_ids": "G1-ELE-207;G2-ELEC-343",
+      "qabc_sha256": "f4e6494793117210e864f6bbac3523ae41442f54419a77fe2caaea2b306b2833",
+      "original_keys_by_id_JSON": "{\"G1-ELE-207\":\"C\",\"G2-ELEC-343\":\"C\"}",
+      "question_original": "Comparativ cu un transformator, autotransformatorul are tensiunea de scurtcircuit:",
+      "A_original": "mai mare",
+      "B_original": "egală",
+      "C_original": "mai mică",
+      "original_stored_key": "C",
+      "source": {
+        "url": "https://eepower.com/technical-articles/constructing-and-operating-an-autotransformer/",
+        "locator": "EEPower Autotransformer Operating, percent impedance reduction example 3% ->1.5% for 240/120",
+        "scope": "Compară modele cu aceeași bază de tensiune/putere și proiectare echivalentă; «comparativ» altfel nu garantează întotdeauna uk mai mic.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Autotransformers normally have reduced percent short circuit impedance compared to similar isolated two winding designs, but can be designed for higher impedance",
+      "option_rationale": {
+        "A": "Autotransformatorul similar, cu înfășurare comună, are în general impedanța procentuală de scurtcircuit mai mică.",
+        "B": "Raportul nu este în mod universal egal cu acela al transformatorului cu două înfășurări.",
+        "C": "Legătura magnetică/electrică reduce impedanța de scurtcircuit și poate mări curentul de defect."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "AUTO_TRANSFORMER_COMPARISON_NEEDS_SAME_BASE",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-9049cdd393354845",
+      "representative_id": "G1-ELE-215",
+      "member_ids": "G1-ELE-215;G2-ELEC-351",
+      "qabc_sha256": "9049cdd39335484586bff306c114c8a5a0650e5624ec5ee6d886e08322135166",
+      "original_keys_by_id_JSON": "{\"G1-ELE-215\":\"B\",\"G2-ELEC-351\":\"B\"}",
+      "question_original": "Rolul dominant pentru reglarea nivelului de tensiune pe o linie electrica îl are:",
+      "A_original": "circulaţia de putere activa",
+      "B_original": "circulaţia de putere reactiva",
+      "C_original": "nici una din cele doua",
+      "original_stored_key": "B",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "Schneider reactive power factor, voltage regulation formula derivation; URL generic, formula exactă trebuie găsită",
+        "scope": "La linii de JT cu R/X mare, P poate afecta tensiunea comparabil sau mai mult; «rol dominant» este dependent de sistem, nu absolut.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Voltage variation approximately (R P + X Q)/U; Q dominates inductive HV lines but P may dominate resistive LV lines",
+      "option_rationale": {
+        "A": "În rețele cu X/R mare, componenta R·P contribuie mai puțin la căderea de tensiune decât X·Q.",
+        "B": "Reglarea Q compensează tensiunea în rețele cu impedanță inductivă dominantă, tipic HV.",
+        "C": "«niciuna» contrazice ecuația ΔU≈(RP+XQ)/U în condiții date."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "REACTIVE_DOMINANT_IF_X_OVER_R_LARGE_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-883587c552ff3f75",
+      "representative_id": "G1-ELE-216",
+      "member_ids": "G1-ELE-216;G2-ELEC-352",
+      "qabc_sha256": "883587c552ff3f757687e977d4cb95d988ae2d3682e2ae421d9c83085c23b89f",
+      "original_keys_by_id_JSON": "{\"G1-ELE-216\":\"B\",\"G2-ELEC-352\":\"B\"}",
+      "question_original": "În cazul transformatoarelor de tensiune, care dintre urmatoarele enunturi nu este adevarat:",
+      "A_original": "alegerea transformatorului de tensiune presupune verificarea nivelului sau de izolatie;",
+      "B_original": "alegerea transformatorului de tensiune presupune verificarea sa la stabilitate electrodinamica in caz de scurtcircuit",
+      "C_original": "transformatorul de tensiune trebuie sa functioneze in domeniul de frecventa indicat de fabricant",
+      "original_stored_key": "B",
+      "source": {
+        "url": "https://webstore.iec.ch/en/publication/6051",
+        "locator": "IEC 61869-3:2011 scope VT 15–100Hz (official publisher); IEC 61869-2:2012 §3.3.204 dynamic current specifically CT",
+        "scope": "Nu se exclude automat orice cerință mecanică/de scurtcircuit secundar pentru VT; text integral și ediția de examen neconfirmate.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "VT insulation and frequency are required, while primary high-current dynamic withstand is characteristic of CT. VT secondary short circuit requirements still exist",
+      "option_rationale": {
+        "A": "A: La transformatorul de măsurare a tensiunii se verifică nivelul de izolație corespunzător tensiunii rețelei.",
+        "B": "B: Stabilitatea electrodinamică la curentul de scurtcircuit primar este o verificare specifică transformatorului de curent; pentru VT cerințele de scurtcircuit secundar pot fi diferite, nu afirmație universală.",
+        "C": "C: Domeniul de frecvență al VT este o cerință explicită de aplicație și performanță."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "VT_CT_ED_WITHSTAND_EXACT_IEC_CLAUSE_NOT_PROVED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-aa97f571be06c844",
+      "representative_id": "G1-ELE-224",
+      "member_ids": "G1-ELE-224;G2-ELEC-360",
+      "qabc_sha256": "aa97f571be06c844aacd31330b0e36de402b11df006e594bc507cf37198ba201",
+      "original_keys_by_id_JSON": "{\"G1-ELE-224\":\"A\",\"G2-ELEC-360\":\"A\"}",
+      "question_original": "Secţionarea barelor colectoare ale unei staţii electrice conduce",
+      "A_original": "la mărirea continuităţii în alimentare a consumatorilor racordaţi la bare;",
+      "B_original": "limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face printr-un singur transformator;",
+      "C_original": "numai la limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face prin două transformatoare sau printr-un transformator cu înfăşurare divizată.",
+      "original_stored_key": "A",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_a_distribution_architecture",
+        "locator": "Topology, bus sectionalization and continuity, conceptual lead",
+        "scope": "Schema barelor/cuplei, sursele și selectivitatea nu sunt furnizate; nu se poate afirma avantaj universal.",
+        "source_2026_exam_edition": "UNVERIFIED"
+      },
+      "context_positive_and_limit": "Bus sectionalizing can isolate faulty section and improve continuity with independently available supply and selective protection; not an unconditional effect",
+      "option_rationale": {
+        "A": "A: Secționarea poate izola defectul și menține alimentarea secțiilor sănătoase dacă există alimentări/protecții corespunzătoare.",
+        "B": "B: Un transformator unic poate alimenta ambele secții; secționarea singură nu garantează reducerea curentului la defect când sursa este aceeași.",
+        "C": "C: «numai» pretinde exclusiv limitarea curentului și ignoră continuitatea; chiar cu două transformatoare depinde de cupla închisă/deschisă."
+      },
+      "pairwise_and_reverse": "Compared A-B, A-C and B-C via source-aware option rationales; contrary situations are described in the specific scope gate.",
+      "linguistic_and_source_gate": "SECTIONALIZED_BUS_CONTINUITY_REQUIRES_SOURCE_AND_PROTECTION",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}

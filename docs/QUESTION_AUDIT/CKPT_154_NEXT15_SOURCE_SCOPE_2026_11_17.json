@@ -1,0 +1,633 @@
+{
+  "checkpoint": "CKPT-154",
+  "date": "2026-11-17",
+  "head_at_start": "66f93970ad63b87b3890b76876cb0331ddab6ba9",
+  "phase": "TECHNICAL_SCOPE_ADJUDICATION_NOT_LEARNER_APPROVED",
+  "units": 15,
+  "grade_ids": 30,
+  "stages": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 8,
+    "CONDITIONAL_MODEL_OR_SOURCE": 7
+  },
+  "method": "Reuse prior source/ABC and preserve canonical option/key SHA; record scoped verdict only, no independent agent runtime",
+  "cards": [
+    {
+      "unit_id": "AU-ffb7ae6db29c4b53",
+      "representative_id": "G1-ELE-185",
+      "member_ids": [
+        "G1-ELE-185",
+        "G2-ELEC-321"
+      ],
+      "qabc_sha256": "ffb7ae6db29c4b531b2b390165a46a602544a98b9a335d226c9f8a0ae79933fe",
+      "original_question_UNCHANGED": "Permitivitatea este o mărime:",
+      "original_ABC_UNCHANGED": {
+        "A": "electrică",
+        "B": "magnetică",
+        "C": "chimică"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-185": "A",
+        "G2-ELEC-321": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Permittivity ε is dielectric/electric response quantity, not magnetic permeability or chemistry.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/8-4-capacitor-with-a-dielectric",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-a81a9f23f130f960",
+      "representative_id": "G1-ELE-186",
+      "member_ids": [
+        "G1-ELE-186",
+        "G2-ELEC-322"
+      ],
+      "qabc_sha256": "a81a9f23f130f9605a1454cf07a49ad61d5349a5d9359a156c7c091df4b009df",
+      "original_question_UNCHANGED": "Regulatorul automat de tensiune (RAT) asigurã:",
+      "original_ABC_UNCHANGED": {
+        "A": "deconectarea automatã a liniilor la suprasarcinã",
+        "B": "conectarea automatã a unui transformator de rezervã",
+        "C": "modificarea curentului (tensiunii) de excitaţie la generatoarele sincrone"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-186": "C",
+        "G2-ELEC-322": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Generator AVR/RAT modulates field excitation to regulate terminal voltage, not line disconnection or reserve transformer start.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.basler.com/solutions/voltage-regulation/",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-a9ad0c0b03459da8",
+      "representative_id": "G1-ELE-187",
+      "member_ids": [
+        "G1-ELE-187",
+        "G2-ELEC-323"
+      ],
+      "qabc_sha256": "a9ad0c0b03459da878b9299f1ff5099ce763615118f86746ce11189d24b08550",
+      "original_question_UNCHANGED": "Pierderile de putere activã si reactivã pe o linie electricã, la aceeaşi putere aparentã vehiculatã, sunt invers proporţionale cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "pătratul curentului",
+        "B": "pătratul tensiunii",
+        "C": "pătratul puterii active"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-187": "B",
+        "G2-ELEC-323": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "For fixed transferred apparent power S and fixed line Z, |I|=S/(sqrt3 U), loss P and Q scale inverse U²; variation in impedance or voltage class changes this.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-8ee6bfde6a7016da",
+      "representative_id": "G1-ELE-188",
+      "member_ids": [
+        "G1-ELE-188",
+        "G2-ELEC-324"
+      ],
+      "qabc_sha256": "8ee6bfde6a7016dab52bc58da1ea731abece777cfab793d6e5470e66a80f68be",
+      "original_question_UNCHANGED": "Pierderile de putere într-o linie electrică prin care se transportă o putere activă P la un factor de putere = 0,9, faţă de cazul când se transportă aceeaşi putere la un factor de putere = 0,8 sunt:",
+      "original_ABC_UNCHANGED": {
+        "A": "mai mici",
+        "B": "egale",
+        "C": "mai mari"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-188": "A",
+        "G2-ELEC-324": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "At same P,U,R, I=P/(sqrt3 U pf); pf=0.9 reduces I²R relative to pf=0.8, option A.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f81f859ff8464e00",
+      "representative_id": "G1-ELE-190",
+      "member_ids": [
+        "G1-ELE-190",
+        "G2-ELEC-326"
+      ],
+      "qabc_sha256": "f81f859ff8464e0036a7af04294c01c439964c7cf44451a6d94cea96b603fc5d",
+      "original_question_UNCHANGED": "Prima teoremă a lui Kirchhoff, pentru o reţea electrică buclată cu N noduri, ne dă, pentru curenţii care circulă prin reţea:",
+      "original_ABC_UNCHANGED": {
+        "A": "N-1 relaţii distincte",
+        "B": "N relaţii distincte",
+        "C": "N+1 relaţii distincte"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-190": "A",
+        "G2-ELEC-326": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "For connected network KCL has N node equations with one dependent, giving N-1 independent, option A.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-54f4d050b8ccb919",
+      "representative_id": "G1-ELE-191",
+      "member_ids": [
+        "G1-ELE-191",
+        "G2-ELEC-327"
+      ],
+      "qabc_sha256": "54f4d050b8ccb919701202e09c20f7cef61cb09c66aefb160403a3561e89e89f",
+      "original_question_UNCHANGED": "Prin adăugarea, pe toate laturile pornind din acelaşi nod al unei reţele buclate, a unor tensiuni electromotoare (t.e.m.) egale şi la fel orientate faţă de nod (teorema lui Vaschy):",
+      "original_ABC_UNCHANGED": {
+        "A": "circulaţia de curenţi existentă anterior în reţea nu se modifică",
+        "B": "se pot modifica curenţii din laturile cu t.e.m. adăugate",
+        "C": "se modifică circulaţia de curenţi din laturile pe care nu se adaugă t.e.m."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-191": "A",
+        "G2-ELEC-327": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Vaschy theorem adding identical oriented electromotive forces to all branches incident to a node yields no change in circulating currents under ideal circuit assumptions; exact source required.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://www.afahc.ro/ro/facultate/cursuri/electro_b.pdf",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f618f29b82626850",
+      "representative_id": "G1-ELE-192",
+      "member_ids": [
+        "G1-ELE-192",
+        "G2-ELEC-328"
+      ],
+      "qabc_sha256": "f618f29b82626850f3a31fa8e2c90ae170b2d8477c6f59765f7f6737c6d3c18d",
+      "original_question_UNCHANGED": "Principalele elemente feromagnetice sunt:",
+      "original_ABC_UNCHANGED": {
+        "A": "Fierul, nichelul şi cobaltul",
+        "B": "Fierul, cuprul, zincul",
+        "C": "Fierul, aluminiul, cuprul"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-192": "A",
+        "G2-ELEC-328": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Iron, cobalt and nickel are standard ferromagnetic elemental examples, versus copper/zinc/aluminium alternatives.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-8-magnetism-in-matter",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-cd7d237bb69685ab",
+      "representative_id": "G1-ELE-194",
+      "member_ids": [
+        "G1-ELE-194",
+        "G2-ELEC-330"
+      ],
+      "qabc_sha256": "cd7d237bb69685ab9eec6920606686ba1118a4aefb8f3cc62d6c061ad726cf7f",
+      "original_question_UNCHANGED": "Principalul avantaj al motoarelor asincrone cu rotorul în scurtcircuit cu simplă colivie îl constituie:",
+      "original_ABC_UNCHANGED": {
+        "A": "curentul mic de pornire",
+        "B": "pornirea fără dispozitiv de pornire",
+        "C": "cuplul de pornire foarte bun"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-194": "B",
+        "G2-ELEC-330": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Squirrel cage motors often direct-on-line start with no additional starter but protection/control equipment may still be mandatory, and small vs large grid matters.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://www.iteh.us/catalog/standards/iec/259c098e-532d-4997-85ca-2c4f25537ef2/iec-ts-61200-201-2026",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f77fc81368a71f8b",
+      "representative_id": "G1-ELE-195",
+      "member_ids": [
+        "G1-ELE-195",
+        "G2-ELEC-331"
+      ],
+      "qabc_sha256": "f77fc81368a71f8b288e46f6522cd5ad33bc0d4547c7c71a7bef3fa0e9178114",
+      "original_question_UNCHANGED": "Principalul avantaj al motoarelor de curent continuu îl constituie faptul că:",
+      "original_ABC_UNCHANGED": {
+        "A": "permit reglarea în limite largi a turaţiei",
+        "B": "nu necesită întreţinere permanentă",
+        "C": "prezintă o construcţie simplă şi robustă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-195": "A",
+        "G2-ELEC-331": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "DC motor historically has wide speed control advantage; modern inverter driven AC motors can also regulate speed, so comparative claim era-bound.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://www.electrical4u.com/speed-control-of-dc-motor/",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-dfdebb74edc19585",
+      "representative_id": "G1-ELE-196",
+      "member_ids": [
+        "G1-ELE-196",
+        "G2-ELEC-332"
+      ],
+      "qabc_sha256": "dfdebb74edc19585940e07fe6e2d81c9b7ffc7357f8ab6493927d8635944af68",
+      "original_question_UNCHANGED": "Rezistenţa echivalentă a două rezistenţe cu valori diferite montate în paralel este:",
+      "original_ABC_UNCHANGED": {
+        "A": "mai mare decât rezistenţa mai mare",
+        "B": "mai mică decât rezistenţa mai mică",
+        "C": "egală cu suma rezistenţelor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-196": "B",
+        "G2-ELEC-332": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Two positive resistors in parallel have Req=R1R2/(R1+R2) below smaller of R1,R2, B.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-4398a0cf77f51bce",
+      "representative_id": "G1-ELE-197",
+      "member_ids": [
+        "G1-ELE-197",
+        "G2-ELEC-333"
+      ],
+      "qabc_sha256": "4398a0cf77f51bce71e01648946aef93dbf92a266c6545ce2553e6df854efdaf",
+      "original_question_UNCHANGED": "Reducerea nivelului de izolație din instalațiile capsulate cu SF6 poate fi provocată",
+      "original_ABC_UNCHANGED": {
+        "A": "numai de produse de descompunere ale SF6 şi compuşii lor cu materiale izolante sau metale, sub influenţa umidităţii;",
+        "B": "de impurităţi ca urmare a unui montaj necorespunzător (dacă montajul se face cu mâini murdare, transpirate, urme de grăsime, praf de diferite feluri şi mai ales pilituri metalice);",
+        "C": "umiditatea reziduală scăzută a gazului izolant"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-197": "B",
+        "G2-ELEC-333": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Foreign conductive particles after dirty assembly can degrade SF6 dielectric clearance; decomposition/moisture also matters, so A 'numai' false. Specific evidence needed.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://ieeexplore.ieee.org/abstract/document/8120269 | https://webstore.iec.ch/en/publication/64701",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-572b6c0bb32498d2",
+      "representative_id": "G1-ELE-200",
+      "member_ids": [
+        "G1-ELE-200",
+        "G2-ELEC-336"
+      ],
+      "qabc_sha256": "572b6c0bb32498d28681f37a62ce4d78528fc2600c0a92424ff65a9465a76fbc",
+      "original_question_UNCHANGED": "Releul termic se foloseşte pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "protejarea motoarelor electrice la scurtcircuit",
+        "B": "protejarea generatoarelor si motoarelor electrice împotriva punerii la pământ",
+        "C": "protejarea motoarelor electrice împotriva suprasarcinilor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-200": "C",
+        "G2-ELEC-336": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Thermal motor relay protects against overload heating, not direct short circuit/earth fault; C.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://www.voltimum.co.uk/news/abb/q-day-how-do-i-set-dol-starter-motor",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://www.electrical-installation.org/enwiki/Motor_protection_functions",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-18aff4b6c41b6bf4",
+      "representative_id": "G1-ELE-202",
+      "member_ids": [
+        "G1-ELE-202",
+        "G2-ELEC-338"
+      ],
+      "qabc_sha256": "18aff4b6c41b6bf4b5905d48d3237d635d8a585d810aaabc838d47007fac733d",
+      "original_question_UNCHANGED": "Raportul nominal de transformare al unui transformator de putere este:",
+      "original_ABC_UNCHANGED": {
+        "A": "raportul dintre tensiunea primara si secundara de mers în gol",
+        "B": "raportul dintre curentul primar si secundar la sarcina nominala",
+        "C": "raportul dintre tensiunea primara si secundara la sarcina nominala"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-202": "A",
+        "G2-ELEC-338": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Nominal voltage ratio transformer tied to nameplate rated HV/LV at no-load convention; exact standard terms and tap position require verification.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://standards.iteh.ai/catalog/standards/clc/33be2880-e28a-46be-b8e0-a8c356f95892/en-60076-1-2011",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-6cc7b15e758e6dc6",
+      "representative_id": "G1-ELE-203",
+      "member_ids": [
+        "G1-ELE-203",
+        "G2-ELEC-339"
+      ],
+      "qabc_sha256": "6cc7b15e758e6dc6801c21d1250746ccd1b1279bd11932fb09adfb6a61c75dc2",
+      "original_question_UNCHANGED": "Reactanţa supratranzitorie a unui motor este:",
+      "original_ABC_UNCHANGED": {
+        "A": "direct proporţionala cu curentul de pornire",
+        "B": "invers proporţionala cu curentul de pornire",
+        "C": "invers proporţionala cu pătratul tensiunii de alimentare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-203": "B",
+        "G2-ELEC-339": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Starting/subtransient current proportional to 1/X'' for fixed U; absolute 'direct/inverse' valid under fixed source/other machine parameters.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://ccaps.umn.edu/documents/CPE-Conferences/MIPSYCON-PowerPoints/2019/Done/MatchingGenerators.pdf",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-e7333964a01d3ff7",
+      "representative_id": "G1-ELE-204",
+      "member_ids": [
+        "G1-ELE-204",
+        "G2-ELEC-340"
+      ],
+      "qabc_sha256": "e7333964a01d3ff786d8de0b24b1adcff907aa6b29912bd90ee391a45621cc94",
+      "original_question_UNCHANGED": "Un regim energetic  este deformant",
+      "original_ABC_UNCHANGED": {
+        "A": "dacă undele de curent şi tensiune nu sunt periodice",
+        "B": "numai dacă undele de curent şi de tensiune sunt ambele periodice şi nesinusoidale",
+        "C": "undele de curent şi tensiune sunt periodice iar cel puțin una este nesinusoidală"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-204": "C",
+        "G2-ELEC-340": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Periodic nonsinusoidal current OR voltage suffices distorted regime; B both-required false, A nonperiodic not the relevant classification.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Harmonic_currents_in_the_electrical_distribution_system",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}

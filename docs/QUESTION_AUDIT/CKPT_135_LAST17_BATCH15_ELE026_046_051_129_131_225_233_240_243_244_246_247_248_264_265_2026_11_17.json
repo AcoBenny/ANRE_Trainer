@@ -1,0 +1,596 @@
+{
+  "checkpoint": "CKPT-135",
+  "date": "2026-11-17",
+  "baseline_head": "7e5db0e493a69ed581b3f394a45ba2cf99cde7f2",
+  "protocol": "BATCH15 last unresolved 17, first 15 unique question units/30 grade IDs",
+  "review_team": "One assistant applying Avengers technical/source/scope/linguistic/QA checklists; no genuine independent agents",
+  "warnings": "Evidence cards PRELIMINARY, deliberately not resolving source scope where absent. No operational high-voltage instructions. Original QABC and keys immutable. No merge/release.",
+  "source_gate": {
+    "anre_public_page": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+    "visible_electrotehnica_examples": "ELECTROTEHNICA-09.2024",
+    "visible_exam_bibliography": "2023",
+    "source_to_grade_exact_edition": "UNVERIFIED"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-2835f4d5d0cd454f",
+      "representative_id": "G1-ELE-129",
+      "member_ids": "G1-ELE-129;G2-ELEC-269",
+      "qabc_sha256": "2835f4d5d0cd454f0e6ed2b1cfc4dddc4daeee5fda0065df9b085dd04a1049e1",
+      "original_keys_by_id_JSON": "{\"G1-ELE-129\":\"C\",\"G2-ELEC-269\":\"C\"}",
+      "question_original": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "A_original": "separatorul de linie, separatorul de bare, întreruptorul;",
+      "B_original": "separatorul de bare, întreruptorul, separatorul de linie;",
+      "C_original": "separatorul de bare, separatorul de linie, întreruptorul .",
+      "original_imported_keys": {
+        "G1-ELE-129": "C",
+        "G2-ELEC-269": "C"
+      },
+      "source_file": "DEEP_ELE_08_ALL_20_SOURCE_FORMULA_ABC_TRIAGE_2026_11_12.csv",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Interlocks_and_conditioned_operations",
+          "locator": "Schneider EIG isolation/interlocks, scope does NOT prescribe specific bus/line switching sequence",
+          "access": "PUBLIC_HTML_GENERIC_SAFETY_ONLY"
+        }
+      ],
+      "context_positive": "Intended multiple-choice C places a normal load-breaking breaker after non-load-breaking disconnectors. Technical requirement: separators must not be asked to interrupt load current. This is question-analysis only, never switching instructions.",
+      "ABC_analysis": {
+        "A": "A: alternative switching order not disproved for every arrangement without exact system diagram/interlocks.",
+        "B": "B: closes breaker before last disconnector, which may place current burden across a disconnector and is unsafe for ordinary isolator assumptions.",
+        "C": "C: imported test order presupposes the station's disconnector/breaker type, absence of load, interlocking and an authorized local procedure."
+      },
+      "pairwise_and_counterexample": "Some switchgear types are load-break disconnectors and supply arrangements differ; generic source on interlocks cannot certify exact local line/bus order or switching safety.",
+      "scope_and_linguistic_gate": "SAFETY_OPERATIONAL_ORDER_EXACT_STATION_DIAGRAM_AND_APPROVED_PROCEDURE_MISSING",
+      "dispute_status": "BLOCKED_FOR_OPERATIONAL_USE_STORED_C_UNCHANGED",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-4e84ba50de6e8429",
+      "representative_id": "G1-ELE-131",
+      "member_ids": "G1-ELE-131;G2-ELEC-271",
+      "qabc_sha256": "4e84ba50de6e8429d7f3082c27525620b95770336f1869dd7bf0b1f8548443cc",
+      "original_keys_by_id_JSON": "{\"G1-ELE-131\":\"C\",\"G2-ELEC-271\":\"C\"}",
+      "question_original": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "A_original": "separatorul de linie, întreruptorul, separatorul de bare;",
+      "B_original": "separatorul de bare, întreruptorul, separatorul de linie;",
+      "C_original": "întreruptorul, separatorul de  linie, separatorul de bare.",
+      "original_imported_keys": {
+        "G1-ELE-131": "C",
+        "G2-ELEC-271": "C"
+      },
+      "source_file": "DEEP_ELE_08_ALL_20_SOURCE_FORMULA_ABC_TRIAGE_2026_11_12.csv",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Interlocks_and_conditioned_operations",
+          "locator": "Schneider isolation interlock principles, not exact operation order",
+          "access": "PUBLIC_HTML_GENERIC_ONLY"
+        }
+      ],
+      "context_positive": "The intended C puts a dedicated breaker before any ordinary off-load disconnector in the test logic, consistent with isolator not being a load-current-breaking device. The requested full order is NOT established by this generic rule.",
+      "ABC_analysis": {
+        "A": "A: places disconnector before breaker, incompatible with normal isolator load-breaking restrictions.",
+        "B": "B: places bus isolator before breaker, incompatible with normal off-load isolator assumptions.",
+        "C": "C: intended exam sequence; remaining two isolator steps require exact station schematic, interlocks and local switching procedure."
+      },
+      "pairwise_and_counterexample": "A different bay layout or energized adjacent bus may require different approved isolation sequence; no instruction for physical HV operations is authorized by a quiz key.",
+      "scope_and_linguistic_gate": "SAFETY_NO_REAL_WORLD_SWITCHING_SEQUENCE_CERTIFIED",
+      "dispute_status": "BLOCKED_FOR_OPERATIONAL_USE_STORED_C_UNCHANGED",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-1dd81277db60df82",
+      "representative_id": "G1-ELE-225",
+      "member_ids": "G1-ELE-225;G2-ELEC-361",
+      "qabc_sha256": "1dd81277db60df8266f7891a7bbac6edd4e804f675716d496ea340418265cdae",
+      "original_keys_by_id_JSON": "{\"G1-ELE-225\":\"A\",\"G2-ELEC-361\":\"A\"}",
+      "question_original": "Secţionarea barelor colectoare în staţiile electrice are scopul:",
+      "A_original": "de limitare a curenţilor de scurtcircuit",
+      "B_original": "de a reduce costul instalaţiei",
+      "C_original": "de a reduce pierderile de putere",
+      "original_imported_keys": {
+        "G1-ELE-225": "A",
+        "G2-ELEC-361": "A"
+      },
+      "source_file": "DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Choice_of_a_distribution_architecture",
+          "locator": "Schneider topology discussion, conceptual evidence only",
+          "access": "GENERAL_ARCHITECTURE_NOT_EXACT_SCHEME"
+        }
+      ],
+      "context_positive": "Sectionalizing busbars can reduce bus fault current when source contributions are separated and the coupling breaker remains open. It can also improve availability by isolating faults; context determines dominant objective.",
+      "ABC_analysis": {
+        "A": "A: potential legitimate purpose in two-source sectionalized configuration; not guaranteed for one transformer.",
+        "B": "B: additional cubicle/coupler usually raises rather than automatically lowers capex.",
+        "C": "C: Joule losses are not the defining design target of bus sectioning."
+      },
+      "pairwise_and_counterexample": "With one transformer feeding two bus sections via closed tie, splitting labels does not reduce available short-circuit current at a common location.",
+      "scope_and_linguistic_gate": "SCHEME_REQUIRED_SINGLE_VS_MULTIPLE_TRANSFORMER_AND_TIE_POSITION",
+      "dispute_status": "INTENDED_A_SCHEME_CONDITIONAL",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-20da5c546bddc262",
+      "representative_id": "G1-ELE-233",
+      "member_ids": "G1-ELE-233;G2-ELEC-369",
+      "qabc_sha256": "20da5c546bddc26292089a2013aae0a29cbfa3c910c11fbfd1e532eccd8a441a",
+      "original_keys_by_id_JSON": "{\"G1-ELE-233\":\"C\",\"G2-ELEC-369\":\"C\"}",
+      "question_original": "Sistemul de tensiuni al unei reţele racordate la un generator electric care produce tensiuni electromotoare simetrice:",
+      "A_original": "este întotdeauna simetric",
+      "B_original": "este simetric chiar dacă fazele sunt neegal încărcate",
+      "C_original": "este simetric dacă fazele sunt egal încărcate",
+      "original_imported_keys": {
+        "G1-ELE-233": "C",
+        "G2-ELEC-369": "C"
+      },
+      "source_file": "DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_%28Kirtley%29/04%3A_Introduction_to_symmetrical_components/4.01%3A_The_Symmetrical_Component_Transformation",
+          "locator": "Kirtley symmetrical-component decomposition, technical background not direct guarantee under equal load",
+          "access": "PUBLIC_TECHNICAL_CONTEXT"
+        }
+      ],
+      "context_positive": "Symmetrical three-phase source EMFs and equal phase loadings lead to symmetrical bus voltages only when phase impedances, topology and fault conditions are also symmetrical.",
+      "ABC_analysis": {
+        "A": "A: 'always symmetrical' false because network impedance and loads can be asymmetrical.",
+        "B": "B: unequal loading can yield unequal voltage drops and asymmetrical received voltages.",
+        "C": "C: exam intended under symmetric network assumption not explicit in stem."
+      },
+      "pairwise_and_counterexample": "Balanced three-phase generator feeds equal loads via three lines of different resistances: delivered terminal voltages unequal even though generator EMFs and load resistances are symmetric.",
+      "scope_and_linguistic_gate": "EQUAL_LOAD_DOES_NOT_GUARANTEE_SYMMETRY_WITH_NONUNIFORM_NETWORK",
+      "dispute_status": "INTENDED_C_MISSING_SYMMETRIC_NETWORK_PREMISE",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-142ba1cf4ec35c97",
+      "representative_id": "G1-ELE-240",
+      "member_ids": "G1-ELE-240;G2-ELEC-376",
+      "qabc_sha256": "142ba1cf4ec35c97f657881fc18a0c91c6cd182184bc6dd1a62722251a5eaf7f",
+      "original_keys_by_id_JSON": "{\"G1-ELE-240\":\"B\",\"G2-ELEC-376\":\"B\"}",
+      "question_original": "Transformatoarele cu ulei prevăzute cu conservator prezintă următoarele caracteristici:",
+      "A_original": "dilatarea lichidului este compensată prin deformarea elastică a pereţilor cuvei;",
+      "B_original": "împiedică, dar nu elimină, pătrunderea umidităţii în interiorul rezervorului de expansiune;",
+      "C_original": "asigură facilităţi în modul de dispunere a bornelor şi deci de racordare la reţea.",
+      "original_imported_keys": {
+        "G1-ELE-240": "B",
+        "G2-ELEC-376": "B"
+      },
+      "source_file": "DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://www.hitachienergy.com/ca/en/products-and-solutions/insulation-and-components/transformer-insulation-components/measurement-and-safety-devices/dehydrating-breathers/conventional",
+          "locator": "Hitachi dehydrating breather for moisture control with transformer conservators",
+          "access": "MANUFACTURER_PRODUCT_CONTEXT"
+        }
+      ],
+      "context_positive": "Oil conservator is an expansion volume for transformer oil; when a silica-gel/dehydrating breather is fitted it reduces moisture intake but does not guarantee absolutely dry interior.",
+      "ABC_analysis": {
+        "A": "A: elastic tank-wall expansion is sealed-tank strategy distinct from conservator expansion.",
+        "B": "B: plausible for conservator PLUS correctly serviced dehydrating breather, not existence of conservator alone.",
+        "C": "C: terminal/bushing arrangement not central function of conservator."
+      },
+      "pairwise_and_counterexample": "Conservator ventilating directly to humid atmosphere without dehydrating breather may allow moisture ingress; B does not automatically follow from word 'conservator'.",
+      "scope_and_linguistic_gate": "B_NEEDS_CONSERVATOR_PLUS_BREATHER_ASSUMPTION",
+      "dispute_status": "INTENDED_B_ACCESSORY_DEPENDENT",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-4edef99fd78e2416",
+      "representative_id": "G1-ELE-243",
+      "member_ids": "G1-ELE-243;G2-ELEC-379",
+      "qabc_sha256": "4edef99fd78e2416f78d04f921faf935d1caab1faf236a4b11df254ebfc036a2",
+      "original_keys_by_id_JSON": "{\"G1-ELE-243\":\"C\",\"G2-ELEC-379\":\"C\"}",
+      "question_original": "Un separator pe un circuit de înalta tensiune poate fi manevrat:",
+      "A_original": "sub tensiune si cu curent",
+      "B_original": "cu curent fara tensiune",
+      "C_original": "fãrã curent, fãrã tensiune sau sub tensiune, fãrã curent",
+      "original_imported_keys": {
+        "G1-ELE-243": "C",
+        "G2-ELEC-379": "C"
+      },
+      "source_file": "DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Interlocks_and_conditioned_operations",
+          "locator": "General isolator/interlock principles; not site-specific MV/HV procedure",
+          "access": "PUBLIC_GENERAL_SAFE_PRINCIPLE"
+        }
+      ],
+      "context_positive": "An ordinary high-voltage disconnector is an off-load isolating device; the given C is conceptually aimed at no-load operation and differs from a circuit breaker or load-break switch. No field instructions follow.",
+      "ABC_analysis": {
+        "A": "A: an ordinary disconnector cannot safely interrupt operating load current.",
+        "B": "B: inconsistent phrase current without voltage does not provide standard rated load-switching duty.",
+        "C": "C: intended normal off-load disconnector answer, but special charging/commutation abilities and interlocks may vary."
+      },
+      "pairwise_and_counterexample": "Load-break switch-disconnector is a distinct device rated for certain load switching; equipment category, local SOP and actual station safety must be checked.",
+      "scope_and_linguistic_gate": "HIGH_VOLTAGE_OPERATION_SAFETY_OFF_LOAD_ISOLATOR_NOT_LIVE_PROCEDURE",
+      "dispute_status": "INTENDED_C_CONDITIONED",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-9b94e9faac5f495b",
+      "representative_id": "G1-ELE-244",
+      "member_ids": "G1-ELE-244;G2-ELEC-380",
+      "qabc_sha256": "9b94e9faac5f495b5fcf6a157e8f82826b36c5043047d9390d4b866b82e1f3d2",
+      "original_keys_by_id_JSON": "{\"G1-ELE-244\":\"B\",\"G2-ELEC-380\":\"B\"}",
+      "question_original": "Transformatoarele de măsurare de tensiune:",
+      "A_original": "nu pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
+      "B_original": "nu pot fi lăsate în exploatare cu înfăşurarea secundara în scurtcircuit",
+      "C_original": "pot fi puse sub tensiune cu înfăşurarea secundara in scurtcircuit",
+      "original_imported_keys": {
+        "G1-ELE-244": "B",
+        "G2-ELEC-380": "B"
+      },
+      "source_file": "DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://library.e.abb.com/public/620fcb1de2c6404ba432738c0a187583/1VAP429501_CVC-110B_MV%20outdoor%20combination%20transformers%20IOMM_012523.pdf",
+          "locator": "ABB installation manual §1.5.1 safety, VT secondary short circuit warning, indexed PDF text",
+          "access": "MANUFACTURER_PDF_TEXT_SEARCH_SNIPPET_SCREENSHOT_NOT_REVIEWED"
+        }
+      ],
+      "context_positive": "A conventional voltage transformer secondary behaves as voltage source: it can run unloaded/open, but shorting it can produce dangerous excessive current/heat. This contrasts with the high-voltage hazard from opening an energized current-transformer secondary.",
+      "ABC_analysis": {
+        "A": "A: VT can work at no secondary load (open circuit).",
+        "B": "B: correct general prohibition against leaving a VT secondary shorted under normal operation.",
+        "C": "C: energization with VT secondary shorted is unsafe."
+      },
+      "pairwise_and_counterexample": "Manufacturer ABB CVC-110B combination instrument transformer manual 2026 explicitly warns 'Never short circuit ... voltage transformer' and overheating. PDF text indexed, not visually reviewed via screenshot.",
+      "scope_and_linguistic_gate": "ELECTRICAL_SAFETY_VT_SHORT_IS_NOT_CT_OPEN; USER_NOT_GIVEN_PROCEDURE",
+      "dispute_status": "INTENDED_B_SAFETY_CONFIRMED_CONCEPT_NOT_OPERATIONAL_GUIDANCE",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-bfa0211e53d3d4a0",
+      "representative_id": "G1-ELE-246",
+      "member_ids": "G1-ELE-246;G2-ELEC-382",
+      "qabc_sha256": "bfa0211e53d3d4a0058258d83ce3639d129a72f9a577a36025d8cd35a36640c0",
+      "original_keys_by_id_JSON": "{\"G1-ELE-246\":\"B\",\"G2-ELEC-382\":\"B\"}",
+      "question_original": "Utilizarea unei cuple longo-transversale se preferă atunci când dorim:",
+      "A_original": "scurtarea manevrelor;",
+      "B_original": "o siguranţă în funcţionare mai mare;",
+      "C_original": "reducerea investiţiei în echiparea staţiei.",
+      "original_imported_keys": {
+        "G1-ELE-246": "B",
+        "G2-ELEC-382": "B"
+      },
+      "source_file": "DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+          "locator": "MV switchgear general article NOT exact combined coupler single-line",
+          "access": "TOPIC_ONLY_MISMATCH"
+        }
+      ],
+      "context_positive": "A longitudinal/transverse combined bus coupler may increase supply transfer flexibility and continuity in an appropriate bay layout. However the exact authentic single-line diagram and historical exam source is missing.",
+      "ABC_analysis": {
+        "A": "A: shortening maneuvers could be a possible implementation effect, not a proven primary preference.",
+        "B": "B: plausible intended operational reliability benefit only with exact topology and protection layout.",
+        "C": "C: a combined coupler can change capex either way, so claim of uniform saving unsupported."
+      },
+      "pairwise_and_counterexample": "Compare ELE-026 which imports C for multifunction coupler cost reduction; two similarly worded items may refer to distinct topologies or contradictory exam assumptions. Without two exact diagrams cannot adjudicate the pair.",
+      "scope_and_linguistic_gate": "CRITICAL_TOPOLOGY_IDENTITY_AND_CROSS_ITEM_026_VS_246_KEY_CONFLICT",
+      "dispute_status": "BLOCKED_IMPORTED_B_NEEDS_AUTHENTIC_SCHEME",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-6a5ef86fd79a798a",
+      "representative_id": "G1-ELE-247",
+      "member_ids": "G1-ELE-247;G2-ELEC-383",
+      "qabc_sha256": "6a5ef86fd79a798a8a8c9fedeaf7cb822fcf095378649b4253256858e1693033",
+      "original_keys_by_id_JSON": "{\"G1-ELE-247\":\"B\",\"G2-ELEC-383\":\"B\"}",
+      "question_original": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "A_original": "prin conducţie",
+      "B_original": "prin inducţie electrostatică",
+      "C_original": "prin magnetizare",
+      "original_imported_keys": {
+        "G1-ELE-247": "B",
+        "G2-ELEC-383": "B"
+      },
+      "source_file": "DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction",
+          "locator": "OpenStax electrostatic induction/charging, separate induced redistribution from net charge",
+          "access": "ACADEMIC_OPEN_TEXT"
+        }
+      ],
+      "context_positive": "An initially neutral conductor placed in external electric field redistributes mobile free charges by electrostatic induction, yielding separated positive and negative surface regions.",
+      "ABC_analysis": {
+        "A": "A: conduction charging requires net charge transfer through physical connection, not merely exposure.",
+        "B": "B: induced polarization/charge separation is intended; cannot claim conductor necessarily acquires NET electric charge.",
+        "C": "C: magnetization pertains to magnetic response, not electrostatic charge redistribution."
+      },
+      "pairwise_and_counterexample": "Neutral isolated metal sphere in static field becomes polarized yet total net charge is zero. To gain lasting net charge by induction normally grounding or charge transfer step is needed.",
+      "scope_and_linguistic_gate": "STEM_SE_INCARCA_MAY_MEAN_CHARGE_SEPARATION_VS_NET_CHARGE",
+      "dispute_status": "INTENDED_B_SEMANTIC_NET_CHARGE_GAP",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-874d080137beb7ea",
+      "representative_id": "G1-ELE-248",
+      "member_ids": "G1-ELE-248;G2-ELEC-384",
+      "qabc_sha256": "874d080137beb7ea992931ca75bfef4822ea817c79f9f641d76edddd11a46273",
+      "original_keys_by_id_JSON": "{\"G1-ELE-248\":\"C\",\"G2-ELEC-384\":\"C\"}",
+      "question_original": "Un întreruptor debroşabil asigură:",
+      "A_original": "numai protecţia în caz de scurtcircuit;",
+      "B_original": "protecţia la supratensiuni;",
+      "C_original": "izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+      "original_imported_keys": {
+        "G1-ELE-248": "C",
+        "G2-ELEC-384": "C"
+      },
+      "source_file": "DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+          "locator": "Fixed and withdrawable MV switchgear advantages, not site-specific safety certificate",
+          "access": "TECHNICAL_GENERAL_CONTEXT"
+        }
+      ],
+      "context_positive": "A withdrawable breaker in a correctly built cell can be withdrawn to a separated position with shutters and interlocks protecting personnel from energized fixed parts.",
+      "ABC_analysis": {
+        "A": "A: 'only' short-circuit protection false, breaker is also operating switching component.",
+        "B": "B: voltage surge protection typically relies on dedicated arresters and insulation coordination.",
+        "C": "C: intended improved separation during breaker maintenance, but not sufficient without PPE, isolation verification and site rules."
+      },
+      "pairwise_and_counterexample": "Withdrawable mechanism with shutters damaged or incompletely isolated can still expose dangerous energized components; the mere word 'withdrawable' is not a guarantee of personal isolation.",
+      "scope_and_linguistic_gate": "SAFETY_ABSOLUTE_ISOLATION_NOT_GUARANTEED_BY_DRAWOUT_DEVICE_ALONE",
+      "dispute_status": "INTENDED_C_WITH_EXPLICIT_SAFETY_GATES",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-293ce70b3187433b",
+      "representative_id": "G1-ELE-264",
+      "member_ids": "G1-ELE-264;G2-ELEC-399",
+      "qabc_sha256": "293ce70b3187433ba76a233ee516794fe05be4f468dd1542b2bdf8076b61d3f8",
+      "original_keys_by_id_JSON": "{\"G1-ELE-264\":\"B\",\"G2-ELEC-399\":\"B\"}",
+      "question_original": "Utilizarea întreruptoarelor debroşabile:",
+      "A_original": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+      "B_original": "asigură scurtarea duratei reviziilor la celule;",
+      "C_original": "asigură numai izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+      "original_imported_keys": {
+        "G1-ELE-264": "B",
+        "G2-ELEC-399": "B"
+      },
+      "source_file": "DEEP_ELE_13_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+          "locator": "Fixed versus withdrawable maintenance, engineering comparison",
+          "access": "GENERAL_ENGINEERING_CONTEXT"
+        }
+      ],
+      "context_positive": "Withdrawable breakers allow replacing/servicing movable switching assembly independently of fixed cubicle, potentially shortening breaker-specific maintenance outages.",
+      "ABC_analysis": {
+        "A": "A: some withdrawal interlocks eliminate isolator sequencing errors, so blanket negative is unjustified.",
+        "B": "B: valid in appropriate switchgear design and for breaker-specific servicing, not universal every cubicle overhaul.",
+        "C": "C: 'only' misses maintainability and operational flexibility; personnel still need isolation checks."
+      },
+      "pairwise_and_counterexample": "Maintenance of fixed busbar/shutters may still require full station outage and may be no quicker than fixed-pattern equipment.",
+      "scope_and_linguistic_gate": "B_SCOPE_SPECIFIC_BREAKER_MAINTENANCE_NOT_ANY_CUBICLE_WORK",
+      "dispute_status": "INTENDED_B_CONDITIONAL",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-2232f8027e68ac0e",
+      "representative_id": "G1-ELE-265",
+      "member_ids": "G1-ELE-265;G2-ELEC-400",
+      "qabc_sha256": "2232f8027e68ac0e67915007c9954b66c0f418dc1e2ff127e2ce99ebd4c90b86",
+      "original_keys_by_id_JSON": "{\"G1-ELE-265\":\"A\",\"G2-ELEC-400\":\"A\"}",
+      "question_original": "Autotransformatoarele sunt folosite",
+      "A_original": "între reţelele de                     110 kV şi 220 kV",
+      "B_original": "numai între reţelele de              220 kV şi 400 kV",
+      "C_original": "între reţelele de                   20 kV şi 110 kV",
+      "original_imported_keys": {
+        "G1-ELE-265": "A",
+        "G2-ELEC-400": "A"
+      },
+      "source_file": "DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+      "source_evidence": [
+        {
+          "url": "https://www.transelectrica.ro/documents/10179/20107575/01_Nota%2BPD%2BRET%2B2026-2035%2Binclusiv%2Banexe_EN.pdf/2ff26066-2f3a-4401-91d6-863abec723ed?version=1.0",
+          "locator": "Transelectrica official PD RET 2026-2035 mentions 220/110 Stupărei and 400/220 Arefu, PDF search text not screenshot QA",
+          "access": "OPERATOR_OFFICIAL_PDF_SEARCH_ONLY"
+        }
+      ],
+      "context_positive": "Autotransformer commonly interconnects transmission networks with relatively close HV levels, including actual 220/110 kV; the 400/220 kV pair is also used, so option B's 'only' is contradicted.",
+      "ABC_analysis": {
+        "A": "A: documented valid real-world 220/110 kV example and intended exam answer.",
+        "B": "B: 'only' 220/400 kV false because 220/110 is also documented.",
+        "C": "C: 20/110 kV high ratio is less typical for transmission autotransformer, but technical impossibility not proven."
+      },
+      "pairwise_and_counterexample": "Transelectrica power-system plan lists 220/110 and 400/220 examples; it is a report, not the sole valid voltage-ratio taxonomy. PDF has not received visual screenshot QA.",
+      "scope_and_linguistic_gate": "AUTOTRANSFORMER_220_110_EXAMPLE_NOT_PROOF_20_110_IMPOSSIBLE",
+      "dispute_status": "INTENDED_A_NONEXCLUSIVE",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-da0512acac25df72",
+      "representative_id": "G1-ELE-026",
+      "member_ids": "G1-ELE-026;G2-ELEC-175",
+      "qabc_sha256": "da0512acac25df7260c2943413ebadcae76c6b5947c2aafb9a8ab7cc1995cc33",
+      "original_keys_by_id_JSON": "{\"G1-ELE-026\":\"C\",\"G2-ELEC-175\":\"C\"}",
+      "question_original": "Utilizarea unei cuple cu functiuni multiple se prefera atunci cand dorim",
+      "A_original": "scurtarea duratei manevrelor",
+      "B_original": "cresterea continuitatii  in alimentare",
+      "C_original": "reducerea investitiei in echiparea statiei.",
+      "original_imported_keys": {
+        "G1-ELE-026": "C",
+        "G2-ELEC-175": "C"
+      },
+      "source_file": "DEEP_ELE_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "source_evidence": [
+        {
+          "url": "https://library.e.abb.com/public/7dca4ffad2206d36c1257be30048d4be/DAHandbook_Section_3_Power_distribution_systems_757959_ENa.pdf",
+          "locator": "Original ABB power distribution handbook cited in pre-review; exact diagram/capex equation not visually checked",
+          "access": "PDF_PRIOR_RESEARCH_NO_VISUAL_REVIEW"
+        }
+      ],
+      "context_positive": "Multifunction bus coupler may combine switching/section coupling functions and reduce duplicated switchgear investment, explaining intended C as a cost tradeoff, but schematic/cost comparison is not available.",
+      "ABC_analysis": {
+        "A": "A: maneuver time is topology and interlock dependent; cannot affirm as primary advantage without a switching study.",
+        "B": "B: availability might improve but cannot be deduced solely from multifunction label.",
+        "C": "C: fewer separate devices can lower capex in an applicable substation, NOT always."
+      },
+      "pairwise_and_counterexample": "A multifunction coupler with extra interrupter/interlocking can cost more than separate simpler equipment in a particular station. Do NOT conflate this item with ELE-246 longitudinal-transverse coupler imported B.",
+      "scope_and_linguistic_gate": "BLOCKED_EXACT_MULTIFUNCTION_COUPLER_DIAGRAM_AND_COST_REFERENCE",
+      "dispute_status": "UNRESOLVED_EXAM_INTENDED_C_CONDITIONAL",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-d73dc731a7bc3e89",
+      "representative_id": "G1-ELE-046",
+      "member_ids": "G1-ELE-046;G2-ELEC-192",
+      "qabc_sha256": "d73dc731a7bc3e89287b1883c48fa691fe87869a48be3feb69b3fd64bada3089",
+      "original_keys_by_id_JSON": "{\"G1-ELE-046\":\"C\",\"G2-ELEC-192\":\"C\"}",
+      "question_original": "Curentul produs într-un circuit care conţine elemente neliniare şi care este alimentat cu o tensiune sinusoidală este:",
+      "A_original": "întotdeauna nesinusoidal",
+      "B_original": "întotdeauna sinusoidal",
+      "C_original": "nesinusoidal sau sinusoidal, depinde de natura elementelor neliniare",
+      "original_imported_keys": {
+        "G1-ELE-046": "C",
+        "G2-ELEC-192": "C"
+      },
+      "source_file": "DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Risk_of_resonance_due_to_power-system_harmonics",
+          "locator": "Schneider harmonic generation by nonlinear loads, only supports typical distortion",
+          "access": "PUBLIC_HTML_SOURCE_TOPIC_SCOPE"
+        },
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+          "locator": "OpenStax ohmic vs non-ohmic material behavior",
+          "access": "PUBLIC_TEXT_EXAMPLE"
+        }
+      ],
+      "context_positive": "Nonlinear load voltage-current relation may introduce waveform harmonics with a sinusoidal voltage; shape depends on nonlinear device, operating point and circuit. An unused/unexcited nonlinear branch may coexist with a purely sinusoidal active branch.",
+      "ABC_analysis": {
+        "A": "A: 'always nonsinusoidal' fails if nonlinear element is not conducting/excited or effective composite response remains linear in tested range.",
+        "B": "B: 'always sinusoidal' fails for ordinary diode rectifier or saturation cases producing harmonics.",
+        "C": "C: plausible intended conditional category, not a formal guarantee of all possible nonlinear circuits without specifying operating conditions."
+      },
+      "pairwise_and_counterexample": "Take sinusoidal voltage across an ohmic resistor in one branch and a reverse-biased ideal blocking nonlinear diode in another branch, current is sinusoidal. Conversely, a nonlinear polynomial i=gv+av³ yields third harmonic when a≠0.",
+      "scope_and_linguistic_gate": "STEM_CONTAINS_NONLINEAR_ELEMENT_VS_ACTIVELY_EXCITED_NONLINEAR_BEHAVIOR",
+      "dispute_status": "INTENDED_C_CONDITIONALLY_SUPPORTED",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-21064933b66a7f13",
+      "representative_id": "G1-ELE-051",
+      "member_ids": "G1-ELE-051;G2-ELEC-197",
+      "qabc_sha256": "21064933b66a7f132dec38688307460deaf86c7f3aec7502c8efcb1899a13273",
+      "original_keys_by_id_JSON": "{\"G1-ELE-051\":\"B\",\"G2-ELEC-197\":\"B\"}",
+      "question_original": "Dacă o tensiune electromotoare E, montată în latura AB a unei reţele pasive, produce în latura CD a reţelei un curent I, montarea t.e.m. E în latura CD va produce în latura AB:",
+      "A_original": "un curent - (minus) I",
+      "B_original": "un curent I",
+      "C_original": "un curent I/2",
+      "original_imported_keys": {
+        "G1-ELE-051": "B",
+        "G2-ELEC-197": "B"
+      },
+      "source_file": "DEEP_ELE_05_ALL_20_SOURCE_AWARE_PRE_QA_2026_11_12.csv",
+      "source_evidence": [
+        {
+          "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2000/Archive/ERL-00-31.pdf",
+          "locator": "Niknejad UC Berkeley 2000, Chapter2 §2.1.2 Reciprocity, printed p17, equation2.9 and passive gyrator counterexample",
+          "access": "PDF_TEXT_OPENED_SCREENSHOT_CACHE_MISS"
+        },
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/14-1-mutual-inductance",
+          "locator": "OpenStax mutual inductance symmetry special case, NOT general passive network reciprocity proof",
+          "access": "TOPIC_ADJACENT_NOT_EXACT_PROOF"
+        }
+      ],
+      "context_positive": "The imported B requires a reciprocal transfer theorem: for linear bilateral reciprocal networks with consistent source/current reference directions, transfer admittances match when source and response branches are interchanged. However PASSIVE is insufficient to ensure reciprocity.",
+      "ABC_analysis": {
+        "A": "A: sign depends on reference choices and is not determined by the passive property alone.",
+        "B": "B: valid under reciprocal bilateral linear network and matching reference conventions, but NOT derivable from passivity alone.",
+        "C": "C: factor 1/2 not entailed generally; passive nonreciprocal networks can have unequal transfer coefficients."
+      },
+      "pairwise_and_counterexample": "Berkeley electrical-engineering doctoral thesis (Niknejad 2000, p17, §2.1.2) explicitly describes a passive gyrator as nonreciprocal. Its transfer behavior breaks the 'equal currents' inference. PDF text found; web page screenshot failed (cache miss).",
+      "scope_and_linguistic_gate": "CRITICAL_PASSIVE_NOT_EQUIVALENT_RECIPROCAL_SOURCE_OBJECT_MISMATCH_IN_ORIGINAL_OPENSTAX",
+      "dispute_status": "BLOCKED_EXAM_KEY_B_NOT_JUSTIFIED_BY_PASSIVITY_ONLY",
+      "source_edition_ANRE_2026": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    }
+  ]
+}

@@ -1,0 +1,539 @@
+{
+  "checkpoint": "CKPT-165",
+  "date": "2026-11-17",
+  "units": 15,
+  "grade_ids": 15,
+  "counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 8,
+    "CONDITIONAL_MODEL_OR_SOURCE": 6,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 1
+  },
+  "caveat": "Older prior source card ABC justification missing for 12 of 15; flagged per card. Current law source supports limited cases but does not supply ANRE official answer key or independent legal review.",
+  "cards": [
+    {
+      "unit_id": "AU-c3d53ea5018c31b5",
+      "representative_id": "G1-LEG-008",
+      "member_ids": [
+        "G1-LEG-008"
+      ],
+      "qabc_sha256": "c3d53ea5018c31b59620dbf225f22d187bdc16d3fd85b91a098efefdfc3eb67c",
+      "original_question_UNCHANGED": "Autorizarea electricienilor în domeniul instalaţiilor electrice, respectiv a verificatorilor de proiecte şi a experţilor tehnici de calitate şi extrajudiciari în domeniul instalaţiilor electrice tehnologice se realizează",
+      "original_ABC_UNCHANGED": {
+        "A": "de către Ministerul învăţământului",
+        "B": "de către operatorul de distribuţie",
+        "C": "numai conform reglementărilor emise de ANRE"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-008": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "ANRE governs and authorizes electrician/project-verifier/expert licensing under Ordin 66/2023. Education ministry and grid operator don't issue ANRE competence.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article_or_section": "Ordinul 66/2023 domeniu autorizare",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": "A: ministerul educatiei nu emite autorizatia electrica ANRE; B: operatorul de distributie nu este autoritatea de autorizare; C: ANRE reglementeaza si coordoneaza procesul de autorizare.",
+        "prior_reasoning_missing": false,
+        "prior_key_model": "C_CONDITIONAL"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-76efe053bf9d1536",
+      "representative_id": "G1-LEG-009",
+      "member_ids": [
+        "G1-LEG-009"
+      ],
+      "qabc_sha256": "76efe053bf9d1536741cb34b687977f74071bcd23f55e3f0a6e7aa4dee514bf9",
+      "original_question_UNCHANGED": "ANRE - Autoritatea Naţională de Reglementare în domeniul Energiei este abilitată prin lege să constate şi să sancţioneze:",
+      "original_ABC_UNCHANGED": {
+        "A": "nerespectarea normelor tehnice emise de către ANRE;",
+        "B": "sistarea justificată a alimentării cu energie electrică a clienţilor;",
+        "C": "încălcarea prevederilor legislaţiei muncii"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-009": "A"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "Legea 123/2012 Art.93 contraventions for violations of ANRE regulations and Art.95 sanction authority; labor law separately enforced.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article_or_section": "Art.93,95",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": "A: nerespectarea normelor tehnice ANRE poate fi sanctionata ca contraventie; B: sistarea justificata nu e prin ea insasi incalcare; C: legislatia muncii revine autoritatilor de resort, nu atributiei ANRE generice.",
+        "prior_reasoning_missing": false,
+        "prior_key_model": "A"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-1375f9a0cf4c58c5",
+      "representative_id": "G1-LEG-010",
+      "member_ids": [
+        "G1-LEG-010"
+      ],
+      "qabc_sha256": "1375f9a0cf4c58c547c96b17f01c983b36dcbedd265a482aa02f3afe01ee7c5a",
+      "original_question_UNCHANGED": "Electricienii care doresc să solicite autorizarea, pentru a fi acceptaţi la examen trebuie să îndeplinească următoarele condiţii:",
+      "original_ABC_UNCHANGED": {
+        "A": "Să transmită la ANRE o cerere şi documentaţie anexată, din care să reiasă doar calificarea profesională",
+        "B": "Să transmită la ANRE o cerere şi documentaţie anexată, din care să reiasă doar experienţa practică în domeniul instalaţiilor electrice",
+        "C": "Să transmită la ANRE o cerere şi documentaţie anexată, din care să reiasă atât calificarea cât si experienţa profesională în domeniul instalaţiilor electrice"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-010": "C"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason": "Qualification and professional experience evidence are eligibility criteria where appropriate to category, but not every grade requires identical experience.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article_or_section": "Art.14-17,29",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": "A: calificarea singura nu e formularul complet general; B: experienta singura nu e calificarea ceruta; C: combinatie calificare+experienta frecvent ceruta, dar exista posibile cai/grade cu conditii distincte.",
+        "prior_reasoning_missing": false,
+        "prior_key_model": "C_CONDITIONAL"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-840ae6f3d4f31fe8",
+      "representative_id": "G1-LEG-011",
+      "member_ids": [
+        "G1-LEG-011"
+      ],
+      "qabc_sha256": "840ae6f3d4f31fe81c52f69200cbc4ec1a4d7d55cd35e2853e9c97b4fad42114",
+      "original_question_UNCHANGED": "În cazul în care electricianul autorizat îşi pierde Legitimaţia/Adeverinţa de electrician autorizat, la solicitarea sa, ANRE poate emite un duplicat, dacă:",
+      "original_ABC_UNCHANGED": {
+        "A": "Legitimaţia/Adeverinţa de electrician autorizat este declarată nulă, într-un ziar local şi titularul achită tariful de autorizare aprobat",
+        "B": "Legitimaţia/Adeverinţa de electrician autorizat este declarată nulă, într-un ziar local şi titularul achită o penalitate în cuantum de 200 RON indiferent de gradul şi tipul de autorizare",
+        "C": "Legitimaţia/Adeverinţa de electrician autorizat este declarată nulă, într-un ziar local şi titularul achită un tarif de emitere a duplicatului, conform prevederilor din regulamentul de autorizare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-011": "C"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason": "Duplicate document rules/announcement and fee may have changed under electronically issued 2023 authorization; prior A/B/C explanation absent, exact requirement not authenticated.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article_or_section": "duplicat legitimație, cerințe curente",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "C_WITH_PUBLICATION_MISMATCH"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-44c163f216f108ed",
+      "representative_id": "G1-LEG-012",
+      "member_ids": [
+        "G1-LEG-012"
+      ],
+      "qabc_sha256": "44c163f216f108ed00976120b077c4e0800c64ffa5f8ae4d0dd4704fedecd8de",
+      "original_question_UNCHANGED": "Pentru a fi valabilă, adeverinţa de electrician autorizat",
+      "original_ABC_UNCHANGED": {
+        "A": "va fi prezentață ANRE pentru a fi vizată, la termenul prevăzut, după achitarea în prealabil a tariful de vizare, egal cu tariful de acordare a respectivului tip şi grad de autorizare",
+        "B": "va fi prezentață ANRE pentru a fi vizată, la termenul prevăzut, după susținerea în prealabil a unui nou examen",
+        "C": "va fi prezentață ANRE pentru a fi vizată, la termenul prevăzut, după achitarea în prealabil a tariful de vizare, diferit de tariful de acordare a respectivului tip şi grad de autorizare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-012": "C"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason": "Visa requires course, application, payment and other requirements; assertion visa fee differs from grant fee needs exact applicable fee order/year.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article_or_section": "Art.30,34 + tarife",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "C_NEEDS_ANNUAL_TARIFF"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-3cf704f03a0ae9c8",
+      "representative_id": "G1-LEG-013",
+      "member_ids": [
+        "G1-LEG-013"
+      ],
+      "qabc_sha256": "3cf704f03a0ae9c82e27cb29cdc2af50293c39ed270518bb9021e7b1e035158b",
+      "original_question_UNCHANGED": "Termenul de vizare a adeverinţei de electrician autorizat,  de la data emiterii documentului sau, după caz, de la data ultimei vizări, este de",
+      "original_ABC_UNCHANGED": {
+        "A": "3 ani",
+        "B": "4 ani",
+        "C": "5 ani"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-013": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "5-year periodic visa from issue or last approval is explicit in Ordin 66/2023 Art.30(1), original C.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article_or_section": "Art.30 alin.(1)",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "C"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-74174ee36e46c0d4",
+      "representative_id": "G1-LEG-014",
+      "member_ids": [
+        "G1-LEG-014"
+      ],
+      "qabc_sha256": "74174ee36e46c0d48c00e7401e4321f9936bab54348b8bc82d216159ec470af3",
+      "original_question_UNCHANGED": "Trecerea la un grad de autorizare superior se poate face:",
+      "original_ABC_UNCHANGED": {
+        "A": "după 5 ani de experienţă în baza gradului de autorizare deţinut",
+        "B": "prin vizarea la termen de către ANRE a adeverinței de electrician autorizat",
+        "C": "pe bază de examen"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-014": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "Upgrading authorized grade requires examination and applicable education/experience, unlike simple periodic visa.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "article_or_section": "Cap. III examen",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "C_CONDITIONAL"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-d1f421adc3ee5eb7",
+      "representative_id": "G1-LEG-016",
+      "member_ids": [
+        "G1-LEG-016"
+      ],
+      "qabc_sha256": "d1f421adc3ee5eb767ca42a28c9c0430c148848675b39144f17e19a38f4e2c15",
+      "original_question_UNCHANGED": "Constituie infracţiune:",
+      "original_ABC_UNCHANGED": {
+        "A": "Executarea de săpături sau lucrări de orice fel in zonele de protecţie a instalaţiilor, fara consimţământul prealabil al proprietarului acestora",
+        "B": "modificarea fără drept a componentelor instalaţiilor energetice",
+        "C": "Nerespectarea reglementărilor emise de ANRE"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-016": "B"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "Unauthorized modification of installations is crime per Legea123/2012 Art.92(1), original B. Other alternatives lack same specific criminal category.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article_or_section": "Art.92 alin.(1)",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "B"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-0f7b5812fcd1d965",
+      "representative_id": "G1-LEG-018",
+      "member_ids": [
+        "G1-LEG-018"
+      ],
+      "qabc_sha256": "0f7b5812fcd1d965a85121bfddb0f93f6076f88fab90061055c51a9fc73cca46",
+      "original_question_UNCHANGED": "În conformitate cu prevederile legii nr.123/2012  sunt considerate surse regenerabile de energie:",
+      "original_ABC_UNCHANGED": {
+        "A": "Energia electrică obţinută prin arderea gazelor naturale",
+        "B": "energia eoliană",
+        "C": "Energia electrică obţinută prin arderea combustibililor fosili"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-018": "B"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "Eolian/wind energy is a renewable source, unlike energy from gas/fossil combustion. Original B.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article_or_section": "Art.3 definiții/energie regenerabilă",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "B"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-dc8efb32174d7936",
+      "representative_id": "G1-LEG-021",
+      "member_ids": [
+        "G1-LEG-021"
+      ],
+      "qabc_sha256": "dc8efb32174d79365c3187ee8cdb13b1e13b1073914ad6a3818aa330bcb5ad97",
+      "original_question_UNCHANGED": "Pentru protejarea reţelelor electrice de distribuţie, persoanelor fizice si juridice:",
+      "original_ABC_UNCHANGED": {
+        "A": "li se interzice să consume energie electrica prin instalaţii racordate direct la cele ale reţelei electrice de distribuţie",
+        "B": "li se interzice să limiteze sau să îngrădească, prin execuţia de împrejmuire, prin construcţii ori prin orice alt mod, accesul la instalaţii al operatorului de distribuţie",
+        "C": "li se permite depozitarea de materiale pe culoarul de trecere si in zonele de protecţie si de siguranţa ale instalaţiilor, fara acordul operatorului de reţea, cu condiţia să fie proprietar al terenului"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-021": "B"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason": "Law protects distribution operator access to grid installations and forbids blocking it; B supported, but A also uses 'directly connected installations' and may require qualified exceptions.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article_or_section": "drepturi de acces, uz şi servitute",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "B_POSSIBLY_A"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-7b58bafb16809303",
+      "representative_id": "G1-LEG-022",
+      "member_ids": [
+        "G1-LEG-022"
+      ],
+      "qabc_sha256": "7b58bafb168093037ec78ab408eac66725afc29a5cc8a7b9a1952eec7c0a0f2a",
+      "original_question_UNCHANGED": "Pentru protejarea reţelelor electrice de distribuţie, persoanelor fizice si juridice:",
+      "original_ABC_UNCHANGED": {
+        "A": "li se interzice să efectueze construcţii de orice fel în zona de siguranţă a reţelelor electrice de distribuţie, fără avizul de amplasament al operatorului de distribuţie",
+        "B": "li se interzice să consume energie electrica prin instalaţii racordate direct la cele ale reţelei electrice de distribuţie",
+        "C": "li se permite depozitarea de materiale pe culoarul de trecere si in zonele de protecţie si de siguranţa ale instalaţiilor, fara acordul operatorului de reţea, cu condiţia să fie proprietar al terenului"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-022": "A"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason": "Building in safety zone without placement authorization is prohibited in applicable network conditions, A; generic B 'direct connections' may also be false/true depending legality.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article_or_section": "aviz amplasament şi zone de siguranţă",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "A_POSSIBLY_B"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-dd1836144a704636",
+      "representative_id": "G1-LEG-023",
+      "member_ids": [
+        "G1-LEG-023"
+      ],
+      "qabc_sha256": "dd1836144a704636a647552d1fdfcaa86d2e5368917201653f1c453b986afb7c",
+      "original_question_UNCHANGED": "Printre obiectivele de baza ale Legii nr. 123/2012 se regăsesc:",
+      "original_ABC_UNCHANGED": {
+        "A": "Promovarea utilizării gazelor naturale pentru producerea energiei electrice",
+        "B": "promovarea utilizării surselor noi şi regenerabile de energie",
+        "C": "Determinarea soluţiilor de racordare a utilizatorilor la reţelele electrice de interes public"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-023": "B"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "Energy Law objectives promote renewable/new energy sources, not natural gas exclusive; B supported.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article_or_section": "obiectivele Legii 123/2012",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "B"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-950954e2d16b0eb9",
+      "representative_id": "G1-LEG-025",
+      "member_ids": [
+        "G1-LEG-025"
+      ],
+      "qabc_sha256": "950954e2d16b0eb9edac4c4c6ccb01ee7f6feb226546b082fd9037b0b6eb3a3a",
+      "original_question_UNCHANGED": "Sursele staţionare de energie electrică în curent continuu, dacă nu sunt racordate prin invertoare la SEN, se supun supun dispoziţiilor Legii nr. 123/2012?",
+      "original_ABC_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Da, doar sub aspectul stabilirii preţului de vânzare e energiei electrice produse"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-025": "B"
+      },
+      "legal_verdict_class": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_reason": "Categorical exemption for off-grid stationary DC sources from Law123/2012 cannot be inferred without exact scope clause/version; imported B remains unverified.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "article_or_section": "aplicabilitate surse staționare CC",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "B"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-5c05cf24938e24dc",
+      "representative_id": "G1-LEG-027",
+      "member_ids": [
+        "G1-LEG-027"
+      ],
+      "qabc_sha256": "5c05cf24938e24dc03dd5d8774c9acb6ebec92570ca7c9c9b63d6507705db844",
+      "original_question_UNCHANGED": "Avizul tehnic de racordare emis îşi încetează valabilitatea:",
+      "original_ABC_UNCHANGED": {
+        "A": "la încheierea contractului de racordare",
+        "B": "în termen de 6 luni de la emitere, dacă nu a fost încheiat contractul de racordare;",
+        "C": "în termen de 12 luni de la emitere, dacă nu a fost încheiat contractul de racordare;"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-027": "C"
+      },
+      "legal_verdict_class": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_reason": "Racordare Ordin59/2013 Art33(1)(b): ATR lapses 12 months from issue if connection contract not concluded; matches C; 2026 rule changes require boundary scope.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "article_or_section": "Art.33 alin.(1) lit.b",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "C"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-b28cd8d1e7f1337e",
+      "representative_id": "G1-LEG-029",
+      "member_ids": [
+        "G1-LEG-029"
+      ],
+      "qabc_sha256": "b28cd8d1e7f1337ef4b49b516a4f63f1de0e76ad03afbaabc492e761c5a63dee",
+      "original_question_UNCHANGED": "Autoritatea  Naţională de Reglementare în domeniul Energiei analizează şi soluţionează eventualele contestaţii cu privire la:",
+      "original_ABC_UNCHANGED": {
+        "A": "avizele tehnice de racordare",
+        "B": "calitatea execuţiei instalaţiilor de racordare",
+        "C": "calitatea execuţiei instalaţiilor interioare ale clădirilor civile"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-029": "A"
+      },
+      "legal_verdict_class": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_reason": "ANRE adjudicates connection-related disagreements under specified complaint procedure; wording 'contestații la ATR' versus review of issuer may require process routing.",
+      "exact_scope_source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "article_or_section": "contestație ATR şi soluționare litigii",
+        "access": "PRIMARY_PORTAL_EXCERPT_OR_HTML; FULL_APPLICABLE_EDITION_NOT_ATTESTED"
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_original_A_B_C_reasoning": null,
+        "prior_reasoning_missing": true,
+        "prior_key_model": "A_CONDITIONAL"
+      },
+      "question_key_version": "OFFICIAL_GRADING_KEY_NOT_AUTHENTICATED",
+      "independent_law_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}

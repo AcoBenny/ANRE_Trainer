@@ -1,0 +1,591 @@
+{
+  "schema": "ANRE_REAL_CASE_CONTEXT_GATE_V1",
+  "source": "CKPT048 repaired 47",
+  "cases": [
+    {
+      "original_ID": "G1-NOR-010",
+      "original": {
+        "ID": "G1-NOR-010",
+        "question": "În instalaţiile de joasă tensiune aferente clădirilor, rezistenţa electrică a izolaţiei trebuie măsurată:",
+        "A": "numai între două conductoare active",
+        "B": "numai între conductoarele active luate 2 câte 2",
+        "C": "între conductoarele active şi conductorul de protecţie conectat la reţeaua de legare la pământ",
+        "key_UNCHANGED": "B"
+      },
+      "original_key_UNCHANGED": "B",
+      "anchor": {
+        "claim": "În instalaţiile de joasă tensiune aferente clădirilor, rezistenţa electrică a izolaţiei trebuie măsurată:",
+        "object": "test insulation relative to protective conductor",
+        "scope": "I",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "I7 §8.1.1.3.3"
+      },
+      "context_steps": [
+        {
+          "direction": "EXCEPTION",
+          "locator": "§8.1.1.3.3",
+          "detail": "C requires active conductors to PE; B restricts to active pairs only; original B conflicts scoped insulation test.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "CONTRADICTS"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+          "detail": "La verificarea instalațiilor de joasă tensiune, **I7 §8.1.1.3.3** prevede măsurarea rezistenței izolației între **conductoarele active și conductorul de protecție legat la pământ**. Conductoarele active pot fi reunite pentru această încercare. Variantele A și B folosesc **„numai”** și omit legătura față de PE. Varianta **C** redă cerința specifică; baremul istoric **B** necesită corecție numai după verificarea ediției și QA independent.",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "C",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A spune «numai» între două active, fără PE; nu este regula generală din I7.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B limitează exclusiv la active două câte două; omite cerința expresă față de PE.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C coincide cu obiectul și direcția măsurării impuse de §8.1.1.3.3.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "test insulation relative to protective conductor",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "Exact complete official 2026 clause not independently reopened",
+          "Original key B contradicts research finding C"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "NONE",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    },
+    {
+      "original_ID": "G1-NOR-012",
+      "original": {
+        "ID": "G1-NOR-012",
+        "question": "La circuitele electrice pentru alimentarea receptoarelor de importanţă deosebită (receptoare din blocul operator al spitalelor, iluminat de siguranţă, etc) materialul conductoarelor este:",
+        "A": "întotdeauna aluminiu",
+        "B": "întotdeauna cupru",
+        "C": "cupru sau aluminiu, condiţionat",
+        "key_UNCHANGED": "B"
+      },
+      "original_key_UNCHANGED": "B",
+      "anchor": {
+        "claim": "La circuitele electrice pentru alimentarea receptoarelor de importanţă deosebită (receptoare din blocul operator al spitalelor, iluminat de siguranţă, etc) materialul conductoarelor este:",
+        "object": "circuits supplying critical receivers; specific copper/aluminium conditions",
+        "scope": "I",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "I7 §5.1.7.1–5.1.7.2(a)"
+      },
+      "context_steps": [
+        {
+          "direction": "EXCEPTION",
+          "locator": "§5.1.7.2(a)",
+          "detail": "Source has material conditions for circuits supplying critical receivers; absolute «întotdeauna» options risk overgeneralizing.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+          "detail": "În **I7 §5.1.7.2(a)**, pentru receptoarele de importanță deosebită se prevăd conductoare de **cupru** când secțiunea calculată în **aluminiu ar fi sub 10 mm²**. Textul nu spune fără condiții că tot cuprul este obligatoriu pentru orice asemenea circuit. A și B au adverbul **„întotdeauna”**, care elimină nuanța normativă. C reflectă corect **alegerea condiționată** în sursa disponibilă. Răspunsul original B rămâne nemodificat în date până la QA teh",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "C",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A «întotdeauna aluminiu» contrazice recomandarea expresă pentru Cu în situații particulare.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B «întotdeauna cupru» transformă condiția specifică din §5.1.7.2(a) într-o interdicție universală pentru aluminiu.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C «cupru sau aluminiu, condiționat» corespunde caracterului condițional al materialului/sectiunii în §5.1.7.1-2.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "circuits supplying critical receivers; specific copper/aluminium conditions",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "2026 edition and exclusion classes pending",
+          "Original key B differs from provisional C"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "NONE",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    },
+    {
+      "original_ID": "G1-NOR-042",
+      "original": {
+        "ID": "G1-NOR-042",
+        "question": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază",
+        "key_UNCHANGED": "B"
+      },
+      "original_key_UNCHANGED": "B",
+      "anchor": {
+        "claim": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "object": "neutral sizing for single phase 2-wire versus multi-phase",
+        "scope": "I",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "I7 §5.2.4.6.1(a)(b) și §5.2.4.6.3"
+      },
+      "context_steps": [
+        {
+          "direction": "CROSS_REFERENCE",
+          "locator": "§5.2.4.6.1(a),(b)",
+          "detail": "Two-wire single phase always equal section; polyphase equality has 16Cu/25Al thresholds, not option B 25Cu/35Al.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "CONTRADICTS"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+          "detail": "Potrivit **I7 §5.2.4.6.1(a)**, neutrul trebuie să fie egal cu faza în **circuitele monofazate cu două conductoare**, fără limită de secțiune. La **polifazate**, lit. b indică pragurile **16 mm² Cu / 25 mm² Al**, nu 25/35. De aceea B amestecă o topologie neprecizată cu praguri greșite, iar C generalizează peste condițiile reale. Răspunsul specific **A** este argumentat textual, dar baremul B rămâne neschimbat până la autorizarea corecției.",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "A",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A reproduce literal cazul monofazat cu două conductoare, indiferent de secțiune, din I7 lit. a.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B invocă monofazate cu 3 conductoare și praguri Cu25/Al35, care nu corespund lit. b din I7.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C extinde necondiționat egalitatea la toate secțiunile polifazate; §5.2.4.6.3 permite reducerea în anumite condiții.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "neutral sizing for single phase 2-wire versus multi-phase",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "Grade/edition and independent linguistic signoff pending",
+          "Stored B differs from provisional A"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "NONE",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    },
+    {
+      "original_ID": "G1-NOR-089",
+      "original": {
+        "ID": "G1-NOR-089",
+        "question": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+        "A": "este interzisă",
+        "B": "este permisă, cu marcarea corespunzătoare la cele două extremităţi",
+        "C": "este permisă dacă nu se folosește una dintre culorile verde sau galben",
+        "key_UNCHANGED": "A"
+      },
+      "original_key_UNCHANGED": "A",
+      "anchor": {
+        "claim": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+        "object": "colour coding phase conductors and ends identification",
+        "scope": "I",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "I7 §5.1.4.3.3"
+      },
+      "context_steps": [
+        {
+          "direction": "EXCEPTION",
+          "locator": "§5.1.4.3.3",
+          "detail": "Same color for phase conductors is allowed subject to identifying the ends; universal ban A cannot be inferred.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "CONTRADICTS"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+          "detail": "În **I7 §5.1.4.3.3**, conductoarele de fază pot avea **o singură culoare**, cu condiția marcării corespunzătoare **la ambele extremități**. A transformă această permisiune într-o interdicție absolută. C se referă doar la evitarea unor culori fără să rezolve identificarea fiecărei faze. B include tocmai condiția cerută și este candidatul susținut, în timp ce baremul original A nu a fost modificat.",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "B",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A susține interdicție, contrazisă de permisiunea expresă la §5.1.4.3.3.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B corespunde permisiunii de aceeași culoare pentru faze, cu marcare corectă la ambele capete.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C omiterea regulilor PE/N și reducerea identificării la interdicția verde/galben nu este suficientă.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "colour coding phase conductors and ends identification",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "2026 exact edition and primary source independent review pending",
+          "Stored A differs from provisional B"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "NONE",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    },
+    {
+      "original_ID": "G1-NOR-090",
+      "original": {
+        "ID": "G1-NOR-090",
+        "question": "Tuburile şi ţevile metalice",
+        "A": "nu se pot monta direct pe elementele de construcţie din materiale combustibile.",
+        "B": "se pot monta direct pe elementele de construcţie din materiale combustibile, condiționat.",
+        "C": "se pot monta direct pe elementele de construcţie din materiale combustibile",
+        "key_UNCHANGED": "B"
+      },
+      "original_key_UNCHANGED": "B",
+      "anchor": {
+        "claim": "Tuburile şi ţevile metalice",
+        "object": "metallic tubes direct combustible mounting vs special rooms AD3/AD4/AF2b/AF3/AF4",
+        "scope": "I",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "I7 §5.2.12.2.12"
+      },
+      "context_steps": [
+        {
+          "direction": "BEFORE",
+          "locator": "§5.2.12.2.11–.12",
+          "detail": "Nearby section requires 3cm in special environmental classes, yet next section explicitly permits direct mounting on combustible construction.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+          "detail": "Conform **I7 §5.2.12.2.12**, **tuburile și țevile metalice se pot monta direct pe elemente combustibile**. Aceasta exclude răspunsul A. B adaugă **„condiționat”**, fără să precizeze condiția, iar C redă exact permisiunea din textul disponibil. Ambele formulări pot fi interpretate drept compatibile cu un montaj corect, dar **C este reproducerea textuală**, iar B este baremul original. E necesară o decizie lingvistică privind rolul cuvântului «cond",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "B_OR_C_SEMANTIC_GATE",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A spune că nu se pot monta direct pe material combustibil; I7 §5.2.12.2.12 permite.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B spune «se pot ... condiționat», interpretabil ca respectarea condițiilor generale ale montajului, dar nu definește condiția.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C coincide literal cu propoziția «se pot monta direct» din I7 §5.2.12.2.12, fără a interzice respectarea altor cerințe.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "metallic tubes direct combustible mounting vs special rooms AD3/AD4/AF2b/AF3/AF4",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "B says conditionally; C reproduces explicit general permission; not uniquely resolved",
+          "Full 2026 edition and separate linguistic QA pending"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "USER_INTERPRETATION_HYPOTHESIS",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    },
+    {
+      "original_ID": "G1-NOR-007",
+      "original": {
+        "ID": "G1-NOR-007",
+        "question": "Este admisă racordarea prin prize la circuitul de alimentare al receptoarelor electrice cu putere nominală până la:",
+        "A": "0,5 kW",
+        "B": "1 kW",
+        "C": "2 kW",
+        "key_UNCHANGED": "C"
+      },
+      "original_key_UNCHANGED": "C",
+      "anchor": {
+        "claim": "Este admisă racordarea prin prize la circuitul de alimentare al receptoarelor electrice cu putere nominală până la:",
+        "object": "general receptacle plug-in power <=2kW",
+        "scope": "I",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "I7 §5.3.2.3"
+      },
+      "context_steps": [
+        {
+          "direction": "CROSS_REFERENCE",
+          "locator": "§5.3.2.3",
+          "detail": "2kW is an upper power threshold for ordinary plug-in receivers; do not equate smaller compliant values with the maximum threshold.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+          "detail": "Potrivit **I7 §5.3.2.3**, receptoarele cu putere nominală **până la 2 kW** se pot racorda prin prize în regimul general. Pentru receptoarele **peste 2 kW**, norma prevede prize dedicate sau racorduri fixe, cu cerințe privind acționarea. De aceea C este valoarea pragului exact, iar A și B indică limite mai mici decât cea cerută.",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "C",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A 0,5 kW nu este pragul formulat în I7 §5.3.2.3.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B 1 kW nu este pragul de aplicare din §5.3.2.3.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C 2 kW este pragul nominal până la care norma admite racordarea generală prin prize.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "general receptacle plug-in power <=2kW",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "2026 norm edition not fully reverified"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "NONE",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    },
+    {
+      "original_ID": "G1-NOR-065",
+      "original": {
+        "ID": "G1-NOR-065",
+        "question": "În locuinţe se prevede câte un circuit de priză separat numai pentru receptoare cu puteri de peste:",
+        "A": "2 kW",
+        "B": "2,5 kW",
+        "C": "3 kW",
+        "key_UNCHANGED": "A"
+      },
+      "original_key_UNCHANGED": "A",
+      "anchor": {
+        "claim": "În locuinţe se prevede câte un circuit de priză separat numai pentru receptoare cu puteri de peste:",
+        "object": "household dedicated circuit power above 2kW",
+        "scope": "I",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "I7 §5.4.7"
+      },
+      "context_steps": [
+        {
+          "direction": "CROSS_REFERENCE",
+          "locator": "§5.4.7",
+          "detail": "For dwellings receivers above 2kW need separate socket circuit; this is not the same object as generic plug-in allowance <=2kW.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+          "detail": "I7 **§5.4.7** prevede că în **locuințe**, receptoarele cu puteri **peste 2 kW** necesită **circuite de priză separate**. A reproduce exact pragul. B și C oferă praguri mai mari și ar exclude în mod eronat receptoare care au nevoie de circuit dedicat. Aici enunțul precizează **locuințe** și **circuit de priză**, deci nu este necesar să presupunem o categorie de echipament.",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "A",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A 2kW este exact limita pentru circuitul de priză separat din locuințe.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B 2,5kW ar lăsa fără circuit dedicat un receptor între 2-2,5kW, contrar §5.4.7.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C 3kW ar lăsa fără circuit dedicat un receptor între 2-3kW, contrar §5.4.7.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "household dedicated circuit power above 2kW",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "2026 normative edition not fully reverified"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "NONE",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    },
+    {
+      "original_ID": "G2-NOR-137",
+      "original": {
+        "ID": "G2-NOR-137",
+        "question": "Prin ce act este aprobat documentul „Normativul pentru proiectarea, execuția și exploatarea instalațiilor electrice aferente clădirilor”, conform bibliografiei ANRE?",
+        "A": "I7-2011",
+        "B": "PE 102/1986",
+        "C": "PE 155/1992",
+        "key_UNCHANGED": "A"
+      },
+      "original_key_UNCHANGED": "A",
+      "anchor": {
+        "claim": "Prin ce act este aprobat documentul „Normativul pentru proiectarea, execuția și exploatarea instalațiilor electrice aferente clădirilor”, conform bibliografiei ANRE?",
+        "object": "approval act versus named normative identifier in bibliography",
+        "scope": "II",
+        "version": "I7/2011 working copy or ANRE 2023 bibliography; 2026 exam edition unverified",
+        "source_locator": "Bibliografie ANRE 05.2023, tabel Norme tehnice, pct. 14, PDF pagina 2"
+      },
+      "context_steps": [
+        {
+          "direction": "DEFINITION",
+          "locator": "ANRE bibliography 2023 row14",
+          "detail": "The answers are document indicatives, while the question asks for the approval act; these are different legal objects.",
+          "relevance": "same regulatory object as question only within specified scope; source is preliminary",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "CONTRADICTS"
+        },
+        {
+          "direction": "COMPETING_SOURCE",
+          "locator": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+          "detail": "Bibliografia ANRE 05.2023 indică la poziția **14** normativul **I7-2011**, însă enunțul întreabă **„Prin ce act este aprobat...”**. Răspunsurile A, B și C reprezintă exclusiv **indicative de normative**, nu ordine sau decizii de aprobare. Identificarea normativului și identificarea actului prin care a fost aprobat sunt **operații juridice distincte**. Nu există opțiune validă pentru formularea exactă, chiar dacă baremul original este **A**. Este ",
+          "relevance": "preliminary contextual card preserved, independent source not reopened in this pass",
+          "scope_match": true,
+          "trust": "SOURCE_PARTIAL",
+          "effect": "QUALIFIES"
+        }
+      ],
+      "question_type": "MULTIPLE_CHOICE",
+      "candidate": "NONE",
+      "alternatives": [
+        {
+          "choice": "A",
+          "reason": "A = I7-2011 este indicativul unui normativ, NU actul de aprobare cerut în întrebare.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "B",
+          "reason": "B = PE 102/1986 este un alt indicativ de normativ, NU act de aprobare.",
+          "assessment": "UNVERIFIED"
+        },
+        {
+          "choice": "C",
+          "reason": "C = PE 155/1992 este un alt indicativ de normativ, NU act de aprobare.",
+          "assessment": "UNVERIFIED"
+        }
+      ],
+      "conclusion": {
+        "text": "Contextual clue isolated; answer not certified, evaluate original normative scope and independent QA",
+        "scope": "approval act versus named normative identifier in bibliography",
+        "status": "BLOCKED",
+        "stop_reason": "UNRESOLVED_CONFLICT",
+        "unresolved_conflicts": [
+          "Original question may be synthetic and requires ANRE source XLSX provenance",
+          "None of A/B/C names an approval act",
+          "2026 bibliography not verified"
+        ]
+      },
+      "independent_QA": "NOT_RUN",
+      "user_input_role": "NONE",
+      "approved_for_learning": false,
+      "source_scope_mismatch": false,
+      "evidence_provenance": "CKPT047 research artifact corrected by CKPT048 plus indexed official texts; no re-opened authenticated full 2026 normative source"
+    }
+  ],
+  "QA_gate_status": "DOCUMENTARY_PREFLIGHT_ONLY",
+  "answer_approved_count": 0
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "NOR032_SCOPE_SPECIFICITY_CONTEXT_V1",
+  "date": "2026-11-13",
+  "unit_id": "AU-b8fe3982d5083999",
+  "representative_id": "G1-NOR-032",
+  "member_ids": "G1-NOR-032",
+  "original_keys_UNCHANGED": {
+    "G1-NOR-032": "B"
+  },
+  "original_QABC": {
+    "question": "Montarea dozelor de trecere este obligatorie în cazul în care lungimea coloanelor în linie dreapta, pe orizontală, depăşeşte:",
+    "A": "10 m",
+    "B": "15 m",
+    "C": "20 m"
+  },
+  "positive_source": {
+    "source_id": "PE155",
+    "document": "PE155/92 Normativ privind proiectarea si executarea bransamentelor electrice pentru cladiri civile",
+    "issuer": "RENEL / ICEMENERG",
+    "date_original": "1992",
+    "url": "https://www.baluna.ro/wp-content/uploads/2018/02/pe_155_92.pdf",
+    "source_exact_clause": "§3.2.10, coloane electrice, doze de trecere, traseu drept orizontal",
+    "source_scope": "service_connection_electrical_column_horizontal_straight",
+    "source_access": "FULL_PRIMARY_DOCUMENT_TEXT_IN_PDF_MIRROR_READ; WEB_PDF_SCREENSHOT_CACHE_MISS",
+    "source_edition": "PE155/92_PDF_TEXT_REPRODUCTION_NOT_VISUALLY_VERIFIED",
+    "exam_2026_applicability": "NOT_VERIFIED",
+    "rights": "SHORT_QUOTE_AND_ORIGINAL_PARAPHRASE_ONLY"
+  },
+  "rejected_generic_source": {
+    "source_id": "I7_2011",
+    "document": "I7/2011 Normativul instalațiilor electrice aferente clădirilor",
+    "source_exact_clause": "§5.2.12.3.10",
+    "source_object": "generic_tube_wiring_conductor_pulling_box_on_straight_conduit",
+    "threshold": "25m",
+    "url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G21NAWUB675P0O2JT8X45KA4QZH",
+    "access": "OFFICIAL_GOVERNMENT_SEARCH_INDEX_MATCHED_CLAUSE; OPEN_HTTP_502",
+    "rejection": "SCOPE_MISMATCH: 25m generic conduit pulling box not 15m branch-column junction box"
+  },
+  "source_short_quote": "lungimea coloanelor pe un traseu in linie dreapta pe orizontala depaseste 15m",
+  "short_quote_from": "PE155/92 §3.2.10, textual PDF mirror",
+  "context_type": "ORIGINAL_ROMANIAN_PARAPHRASE_5_SENTENCES_NOT_VERBATIM",
+  "context_md": "În cadrul **branșamentelor electrice pentru clădiri civile**, coloana electrică face legătura dintre **firida de branșament** și instalația interioară a abonatului. Pentru această componentă, **PE 155/92 §3.2.10** stabilește necesitatea **dozelor de trecere** când traseul este **drept, orizontal și depășește 15 m**. Același articol tratează separat traseele cu **mai multe curbe** și precizează că pentru o coloană **dreaptă pe verticală** regula nu se aplică identic. Normativul **I7 §5.2.12.3.10** menționează **25 m** pentru **doze de tragere a conductoarelor în tuburi**, dar are un **alt obiect tehnic**, astfel încât valoarea lui nu poate înlocui automat pragul pentru coloana de branșament. Prin urmare, în contextul expres al coloanei electrice orizontale din PE 155/92, **15 m** este valoarea justificată în documentul identificat, sub rezerva confirmării **ediției aplicabile examenului actual**.",
+  "highlights": [
+    "branșamentelor electrice pentru clădiri civile",
+    "firida de branșament",
+    "PE 155/92 §3.2.10",
+    "dozelor de trecere",
+    "drept, orizontal și depășește 15 m",
+    "mai multe curbe",
+    "dreaptă pe verticală",
+    "I7 §5.2.12.3.10",
+    "25 m",
+    "doze de tragere a conductoarelor în tuburi",
+    "alt obiect tehnic",
+    "15 m",
+    "ediției aplicabile examenului actual"
+  ],
+  "ABC_technical_research": {
+    "A": "10 m este inferior pragului special de 15 m prevăzut pentru coloana orizontală dreaptă în PE155/92; nu reprezintă limita cerută de articol.",
+    "B": "15 m este pragul specific din §3.2.10: dozele devin obligatorii când traseul drept orizontal îl depășește. Baremul original B este susținut textual pentru obiectul PE155/92, dar statusul de ediție 2026 și QA independent rămân neconfirmate.",
+    "C": "20 m depășește pragul specific de 15 m; este nejustificat pentru acest obiect. Nici valoarea generică de 25 m din I7 nu este aplicabilă automat unei coloane de branșament."
+  },
+  "source_scope_regression": {
+    "test_design": "translated JS equivalent of skill source_scope_gate.py using exact bundled six fixtures",
+    "results": {
+      "tests": 6,
+      "passed": 6
+    },
+    "wrong_generic": "BLOCKED_SOURCE_SCOPE DIFFERENT_PHYSICAL_OBJECT DIFFERENT_RULE_TYPE",
+    "specific_positive_synthetic": "SCOPE_PREFLIGHT_PASS_NOT_ANSWER_APPROVAL when edition booleans are hypothetical TRUE",
+    "actual_current_edition_unknown": "BLOCKED_SOURCE_SCOPE SOURCE_EDITION_UNVERIFIED EXAM_EDITION_UNVERIFIED",
+    "disclaimer": "Synthetic source-scope regression only; no independent real model/expert QA and no proof 2026 source applicability"
+  },
+  "independent_source_QA": "NOT_RUN",
+  "independent_technical_QA": "NOT_RUN",
+  "independent_linguistic_QA": "NOT_RUN",
+  "exam_bibliography_edition_verified": "NO",
+  "provisional_key_NOT_APPLIED": "B_ORIGINAL_MATCHES_PE155_1992_ONLY",
+  "approved_for_learning": "NO"
+}

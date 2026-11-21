@@ -1,0 +1,254 @@
+{
+  "schema": "v240_4_variant_original_vs_trainer_3_new_dual_editorials",
+  "date": "2026-11-21",
+  "parent_commit": "504b1a6301a4344f8fea79df3c782ad430fae5a8",
+  "provenance_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "original_master_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "previous_manifest_blob": "53de1dd48bce40ad7ae8614b61b4180c81650c3a",
+  "immutable_originals": "Source-original and Trainer-altered versions preserved verbatim as different objects. No canonical question, answer, key, or Trainer data modified.",
+  "counts": {
+    "original_source_vs_trainer_material_mismatches": 4,
+    "new_complete_dual_variant_groups": 3,
+    "prior_completed_reconciled_without_double_count": 1,
+    "source_original_option_reasons_new": 9,
+    "trainer_altered_option_reasons_new": 9,
+    "unofficial_didactic_reformulations_new": 3,
+    "new_explicit_semantic_holds": 3,
+    "final_learner_approvals": 0
+  },
+  "reconciliation_status": "EDITORIAL_EXPLANATION_COMPLETE_BUT_ALL_FOUR_HOLD_STRICT_SOURCE_PROVENANCE_INDEPENDENT_EXPERT_QA",
+  "four_versioned_records": [
+    {
+      "unit_id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "source_file": "ELE",
+      "source_row": 159,
+      "original_source_format": "ANRE_HOSTED_WORKBOOK_SOURCE_VERSION",
+      "trainer_format": "TRAINER_ALTERED_VERSION_NOT_SAME_ABC",
+      "original_hosted": {
+        "question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "trainer": {
+        "question": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "fields_matching": {
+        "question": false,
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "imported_keys_UNCHANGED": "G1-ELE-152=A",
+      "source_locator": "ELECTROTEHNICA-09.2024-2.xlsx row159; transmission-line γ=α+jβ, SI m⁻¹ (Engineering LibreTexts Steer §3.2; NIST calibration SP250-32 §1.3.12).",
+      "source_original_option_review": {
+        "A": "A este termenul tehnic intenționat pentru mărimea complexă ce exprimă atenuare și defazaj pe unitatea de lungime, ÎNSĂ textul publicat o numește «adimensională», ceea ce este fals pentru γ (m⁻¹). Este adimensional doar produsul γ·l.",
+        "B": "B constanta de atenuare α exprimă modificarea amplitudinii pe unitatea de lungime, nu cuprinde simultan defazajul β.",
+        "C": "C «constanta de distorsiune» nu denumește mărimea complexă standard γ=α+jβ care exprimă ambele efecte."
+      },
+      "trainer_altered_option_review": {
+        "A": "A «constanta de propagare» este potrivită pentru enunțul Trainer «mărimea caracteristică», care nu mai atribuie γ în mod eronat lipsa dimensiunii.",
+        "B": "B constanta de atenuare nu descrie și schimbarea fazei, deci e parțială.",
+        "C": "C «constanta de distorsiune» nu este simbolul γ/termenul standard al propagării."
+      },
+      "exact_difference": "Original spune «mărimea adimensională» și e incompatibil dimensional cu γ (1/lungime); Trainer a schimbat exact acest atribut în «mărimea caracteristică». Deși A e intenția pedagogică, în original calificativul e fals. Nu le trata ca același enunț.",
+      "source_favored_original": "A INTENDED BUT STEM PHYSICALLY CONTRADICTORY, NO FULLY VALID UNQUALIFIED ANSWER",
+      "source_favored_trainer": "A CONDITIONALLY SUPPORTED BY TECHNICAL THEORY",
+      "teaching_reformulation": {
+        "question": "Constanta complexă de propagare γ=α+jβ descrie atenuarea și faza pe unitate de lungime. Ce unitate SI are γ?",
+        "solution": "m⁻¹, astfel γ·l e adimensional. A nu susține originalul «mărime adimensională».",
+        "unofficial": true
+      },
+      "risk": "STRICT_STEM_DIMENSION_CONTRADICTION",
+      "source_urls": [
+        "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Fundamentals_of_Microwave_and_RF_Design_%28Steer%29/03%3A_Transmission_Lines/3.02%3A_Transmission_Line_Theory",
+        "https://www.nist.gov/system/files/documents/calibrations/sp250-32.pdf"
+      ],
+      "qualified_independent_electrical_review": "NOT_RUN",
+      "linguistic_independent_review": "NOT_RUN",
+      "original_scored_exam_key": "NOT_AUTHENTICATED",
+      "approved_for_learning": false,
+      "previous_draft_not_repeated": null
+    },
+    {
+      "unit_id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "source_file": "ELE",
+      "source_row": 254,
+      "original_source_format": "ANRE_HOSTED_WORKBOOK_SOURCE_VERSION",
+      "trainer_format": "TRAINER_ALTERED_VERSION_NOT_SAME_ABC",
+      "original_hosted": {
+        "question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "trainer": {
+        "question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "fields_matching": {
+        "question": true,
+        "A": true,
+        "B": false,
+        "C": true
+      },
+      "imported_keys_UNCHANGED": "G1-ELE-247=B | G2-ELEC-383=B",
+      "source_locator": "ELECTROTEHNICA-09.2024-2.xlsx row254; electrostatic polarization in external E, not electromagnetic induction, with net charge caveat. Existing V194/CKPT242 full card preserved.",
+      "source_original_option_review": {
+        "A": "A conducția necesită contact/conexiune și transfer, nu simpla prezență a unui câmp electric exterior.",
+        "B": "B ORIGINAL «inducţie electromagnetică» nu este sinonimă cu inducția ELECTROSTATICĂ necesară redistribuirii sarcinilor în conductor aflat într-un câmp E static. Nu este răspuns neechivoc la literalul original.",
+        "C": "C magnetizarea privește răspunsul materialului la câmp magnetic, nu redistribuirea pur electrostatică a sarcinilor."
+      },
+      "trainer_altered_option_review": {
+        "A": "A conducția prin contact nu este mecanismul polarizării sub acțiunea unui câmp exterior fără contact.",
+        "B": "B TRAINER «inducție electrostatică» denumește corect redistribuirea sarcinilor într-un conductor expus la E, fără a implica automat încărcarea netă.",
+        "C": "C magnetizarea privește un fenomen magnetic, nu inducția electrostatică din câmp electric."
+      },
+      "exact_difference": "Original B este «prin inducție electromagnetică»; Trainer a înlocuit-o cu «prin inducție electrostatică». Mai există capcana «se încarcă» versus polarizare fără dobândire de sarcină netă.",
+      "source_favored_original": "B IN ORIGINAL IS TECHNICALLY MISLABELED; SOURCE DOES NOT AUTHENTICATE A UNIQUE CORRECT RESPONSE",
+      "source_favored_trainer": "B FOR POLARIZATION ONLY, NOT NECESSARILY NET CHARGING",
+      "teaching_reformulation": {
+        "question": "Un conductor izolat neutru introdus într-un câmp electrostatic devine obligatoriu încărcat net?",
+        "solution": "Nu; sarcinile se redistribuie (polarizare), dar sarcina totală poate rămâne zero.",
+        "unofficial": true
+      },
+      "risk": "PREEXISTING_V194_STRICT_B_SOURCE_VARIANT_HOLD",
+      "source_urls": [
+        "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction"
+      ],
+      "qualified_independent_electrical_review": "NOT_RUN",
+      "linguistic_independent_review": "NOT_RUN",
+      "original_scored_exam_key": "NOT_AUTHENTICATED",
+      "approved_for_learning": false,
+      "previous_draft_not_repeated": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json"
+    },
+    {
+      "unit_id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "source_file": "NOR",
+      "source_row": 55,
+      "original_source_format": "ANRE_HOSTED_WORKBOOK_SOURCE_VERSION",
+      "trainer_format": "TRAINER_ALTERED_VERSION_NOT_SAME_ABC",
+      "original_hosted": {
+        "question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "trainer": {
+        "question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "fields_matching": {
+        "question": true,
+        "A": false,
+        "B": true,
+        "C": false
+      },
+      "imported_keys_UNCHANGED": "G1-NOR-048=A",
+      "source_locator": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx row55; I7-2011 §5.4.13, feeding a doorbell transformer/230 V bell via lighting circuit, socket circuit OR directly from distribution board.",
+      "source_original_option_review": {
+        "A": "A «numai direct din tabloul de distribuţie» este falsă ca exclusivitate: I7 §5.4.13 admite și alimentarea din circuite de iluminat normal sau de prize.",
+        "B": "B «numai dintr-un circuit de iluminat normal» este tot falsă ca exclusivitate; sursa admite și alte trasee.",
+        "C": "C «dintr-un circuit de prize» reprezintă una dintre alimentările admise de articol, fără «numai»; dintre cele trei variante originale, este cea susținută direct."
+      },
+      "trainer_altered_option_review": {
+        "A": "A în Trainer enumeră explicit cele TREI soluții autorizate de I7 §5.4.13, deci este susținută de normă și diferă material de originalul A.",
+        "B": "B în Trainer rămâne «numai ... iluminat normal»; exclude prizele și tabloul, de aceea este falsă.",
+        "C": "C în Trainer a devenit «numai dintr-un circuit de prize», ceea ce exclude alte alimentări admise și face noua C falsă; originalul C nu avea «numai»."
+      },
+      "exact_difference": "Identicul stem ascunde mutarea logicii opțiunilor: original A exclusiv și fals, C neexclusiv adevărat; Trainer A enumeră cele 3 căi, C a devenit exclusiv. Cheia importată A este compatibilă cu Trainer, NU cu opțiunile originale publicate.",
+      "source_favored_original": "C SOURCE-FAVORED FOR PUBLISHED ORIGINAL; IMPORTED A CONFLICTS",
+      "source_favored_trainer": "A SOURCE-FAVORED ONLY FOR TRAINER-ALTERED ABC",
+      "teaching_reformulation": {
+        "question": "Conform I7 §5.4.13, numește toate cele trei moduri de alimentare admise pentru transformatorul soneriei.",
+        "solution": "Circuit de iluminat normal, circuit de prize sau direct din tabloul de distribuție. Niciunul nu este «numai» opțiunea unică.",
+        "unofficial": true
+      },
+      "risk": "STRICT_ABC_MUTATION_REVERSING_SOURCE_FAVORED_ANSWER",
+      "source_urls": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "https://ro.scribd.com/doc/187231692/Normativ-I7-2011"
+      ],
+      "qualified_independent_electrical_review": "NOT_RUN",
+      "linguistic_independent_review": "NOT_RUN",
+      "original_scored_exam_key": "NOT_AUTHENTICATED",
+      "approved_for_learning": false,
+      "previous_draft_not_repeated": null
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "source_file": "NOR",
+      "source_row": 79,
+      "original_source_format": "ANRE_HOSTED_WORKBOOK_SOURCE_VERSION",
+      "trainer_format": "TRAINER_ALTERED_VERSION_NOT_SAME_ABC",
+      "original_hosted": {
+        "question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "trainer": {
+        "question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "fields_matching": {
+        "question": true,
+        "A": true,
+        "B": false,
+        "C": true
+      },
+      "imported_keys_UNCHANGED": "G1-NOR-072=B",
+      "source_locator": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx row79; I7 §5.5.2.3 fiecare conductor la bara principală trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă NUMAI cu o sculă.",
+      "source_original_option_review": {
+        "A": "A «nu este obligatoriu să poată fi deconectat individual» contrazice expres cerința I7 §5.5.2.3.",
+        "B": "B ORIGINAL «deconectat uşor, FĂRĂ utilizarea unei scule» contrazice cerința exactă «deconectabilă NUMAI prin intermediul unei scule»; această variantă originală nu este susținută.",
+        "C": "C ORIGINAL «trebuie să poată fi deconectat individual» este adevărată conform primului segment al §5.5.2.3, dar nu menționează și cerința suplimentară a unei scule."
+      },
+      "trainer_altered_option_review": {
+        "A": "A negația deconectării individuale rămâne falsă și în Trainer conform I7 §5.5.2.3.",
+        "B": "B TRAINER prevede individual, conectare sigură și numai cu sculă, reproducând cele două condiții cumulative ale articolului; originalul B spunea exact invers despre sculă.",
+        "C": "C TRAINER rămâne adevărată pentru prima condiție (deconectare individuală), dar incompletă față de B; apare suprapunere A/B/C dacă se cer variante unice strict false."
+      },
+      "exact_difference": "Original B «fără sculă» versus Trainer B «numai cu o sculă» sunt norme opuse. Cheia importată B este incompatibilă cu B ORIGINAL, iar în Trainer B este cea mai completă, deși C enunță o cerință adevărată parțială.",
+      "source_favored_original": "C TRUE BUT INCOMPLETE; B FALSE IN ORIGINAL, IMPORTED B CONFLICTS",
+      "source_favored_trainer": "B MOST COMPLETE, C ALSO PARTIALLY TRUE (OVERLAP)",
+      "teaching_reformulation": {
+        "question": "I7 §5.5.2.3: ce două condiții trebuie să respecte fiecare conductor conectat la bara principală de pământ?",
+        "solution": "Deconectare individuală; conexiune sigură, deconectabilă numai cu ajutorul unei scule.",
+        "unofficial": true
+      },
+      "risk": "STRICT_B_REVERSAL_TOOL_CONDITION_AND_TRAINER_C_OVERLAP",
+      "source_urls": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "https://legis.medleg.ro/legislatie/2011-reglementari-reglementare-tehnica-3"
+      ],
+      "qualified_independent_electrical_review": "NOT_RUN",
+      "linguistic_independent_review": "NOT_RUN",
+      "original_scored_exam_key": "NOT_AUTHENTICATED",
+      "approved_for_learning": false,
+      "previous_draft_not_repeated": null
+    }
+  ]
+}

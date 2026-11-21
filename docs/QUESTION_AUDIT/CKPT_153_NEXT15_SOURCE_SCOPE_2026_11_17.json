@@ -1,0 +1,625 @@
+{
+  "checkpoint": "CKPT-153",
+  "date": "2026-11-17",
+  "head_at_start": "32b3970af57bd03338d0f3e4a8c4a01f00a90b2f",
+  "phase": "TECHNICAL_SCOPE_ADJUDICATION_NOT_LEARNER_APPROVED",
+  "units": 15,
+  "grade_ids": 30,
+  "stages": {
+    "CONDITIONAL_MODEL_OR_SOURCE": 7,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 2,
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 6
+  },
+  "method": "Reuse prior source/ABC and preserve canonical option/key SHA; record scoped verdict only, no independent agent runtime",
+  "cards": [
+    {
+      "unit_id": "AU-8a03dd33196cf5a0",
+      "representative_id": "G1-ELE-163",
+      "member_ids": [
+        "G1-ELE-163",
+        "G2-ELEC-301"
+      ],
+      "qabc_sha256": "8a03dd33196cf5a0c235d0d846456d81d48371c93e57613c89fdeceb7fe8aa83",
+      "original_question_UNCHANGED": "O linie electrică lungă funcţionând în gol:",
+      "original_ABC_UNCHANGED": {
+        "A": "produce putere reactivă",
+        "B": "absoarbe putere reactivă",
+        "C": "nu produce şi nu absoarbe putere reactivă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-163": "A",
+        "G2-ELEC-301": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Open circuit of an energized long AC line acts capacitively and injects reactive power in standard unloaded-line approximation; actual P/Q sign depends line parameters.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://vp-dei.vlabs.ac.in/exp/ferranti-effect/theory.html",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-3e71e86b2e5372dc",
+      "representative_id": "G1-ELE-164",
+      "member_ids": [
+        "G1-ELE-164",
+        "G2-ELEC-302"
+      ],
+      "qabc_sha256": "3e71e86b2e5372dcfc15f2740ba5cd073906084740338b97d306bb252155c36c",
+      "original_question_UNCHANGED": "O linie electrică lungă funcţionând în scurtcircuit:",
+      "original_ABC_UNCHANGED": {
+        "A": "absoarbe putere reactivă",
+        "B": "produce putere reactivă",
+        "C": "nu produce şi nu absoarbe putere reactivă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-164": "A",
+        "G2-ELEC-302": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Short-circuit receiving end yields predominantly inductive demand for long AC line; resistance and distributed shunt affect exact reactive balance.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www3.ntu.edu.sg/home/eccboon/DIP%20website/impedance.html",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-b157329216a487e9",
+      "representative_id": "G1-ELE-167",
+      "member_ids": [
+        "G1-ELE-167",
+        "G2-ELEC-305"
+      ],
+      "qabc_sha256": "b157329216a487e9fbcd346a89f15d2f9f6aede38636269735352a288244a52f",
+      "original_question_UNCHANGED": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" inferior este de preferat unei scheme de tip ,, H \" superior atunci când:",
+      "original_ABC_UNCHANGED": {
+        "A": "se fac manevre dese cu circuitele de linie;",
+        "B": "se fac manevre dese cu circuitele de transformator;",
+        "C": "pe legătura dintre blocuri circulă un curent mic."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-167": "A",
+        "G2-ELEC-305": "A"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_reason": "Inferior versus superior H bridge preference under frequent line maneuvers requires exact station diagram and naming convention; archived source insufficient.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-914d53da0bed681e",
+      "representative_id": "G1-ELE-168",
+      "member_ids": [
+        "G1-ELE-168",
+        "G2-ELEC-306"
+      ],
+      "qabc_sha256": "914d53da0bed681e565f24c7c840cdfa527ac1864eff3f0c488c4fc01fac2c81",
+      "original_question_UNCHANGED": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" superior este de preferat unei scheme de tip ,, H \" inferior atunci când:",
+      "original_ABC_UNCHANGED": {
+        "A": "se fac manevre dese cu circuitele de linie;",
+        "B": "se fac manevre dese cu circuitele de transformator;",
+        "C": "pe legătura dintre blocuri circulă un curent mic."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-168": "B",
+        "G2-ELEC-306": "B"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_reason": "Superior H for frequent transformer switching is a candidate but topology and switching-device positions needed; avoid simply mirroring ELE167.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-8d4929c5fe919e7c",
+      "representative_id": "G1-ELE-170",
+      "member_ids": [
+        "G1-ELE-170",
+        "G2-ELEC-307"
+      ],
+      "qabc_sha256": "8d4929c5fe919e7c1395805851e1e1fe18420a760069c0e57108804f985b1ff7",
+      "original_question_UNCHANGED": "Între două noduri oarecare A şi B ale unei reţele electrice active, o sursă de tensiune de tensiune electromotoare E şi  fără impedanţă interioară, dar legată în serie cu o impedanţă Z, poate fi înlocuită cu o sursă de curent, de intensitate J şi fără admitanţă interioară, şuntată cu admitanţa Y, fără ca parametrii electrici la bornele A şi B  - tensiunea la borne şi curentul debitat prin aceste borne- să se schimbe,  dacă sunt îndeplinite condiţiile:",
+      "original_ABC_UNCHANGED": {
+        "A": "Z Y = 1                                        J=YE",
+        "B": "J=YE                                         Z=Y",
+        "C": "Z Y = 1                                       Z=Y"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-170": "A",
+        "G2-ELEC-307": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Thevenin-to-Norton conversion has Y=1/Z and J=E/Z=YE, so imported A mathematically exact for linear 2-terminal equivalent.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-eb4dc05aacd1ed67",
+      "representative_id": "G1-ELE-171",
+      "member_ids": [
+        "G1-ELE-171",
+        "G2-ELEC-308"
+      ],
+      "qabc_sha256": "eb4dc05aacd1ed67fdd8a68700e68fef7258f617ad05932d5566b5e3fca11fc8",
+      "original_question_UNCHANGED": "Pentru limitarea curenţilor de scurtcircuit, puterea totalã instalatã într-o staţie trebuie:",
+      "original_ABC_UNCHANGED": {
+        "A": "mărită",
+        "B": "micşorată",
+        "C": "divizatã în mai multe unităţi"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-171": "C",
+        "G2-ELEC-308": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Splitting transformer capacity into units and using separation can reduce prospective contributions, but actual fault current depends coupling and total network impedance.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-8a01a3c937be20b1",
+      "representative_id": "G1-ELE-173",
+      "member_ids": [
+        "G1-ELE-173",
+        "G2-ELEC-310"
+      ],
+      "qabc_sha256": "8a01a3c937be20b1b9bc02204552ce237b936d90cda493837a64d38f8e290470",
+      "original_question_UNCHANGED": "Pierderea de putere activa într-un element de reţea (transformator, LEA, LEC) , la aceeaşi putere aparentã vehiculatã, este direct proportionalã cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "pătratul frecventei",
+        "B": "pătratul tensiunii reţelei",
+        "C": "pătratul curentului"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-173": "C",
+        "G2-ELEC-310": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Resistive I²R line/transformer copper loss varies as current squared for given equivalent resistance; frequency dependence not selected.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-db241766c21e1079",
+      "representative_id": "G1-ELE-175",
+      "member_ids": [
+        "G1-ELE-175",
+        "G2-ELEC-311"
+      ],
+      "qabc_sha256": "db241766c21e10791b5ffe85a671fca3ec59ddb1faa10dcfa7b3723e01bd327d",
+      "original_question_UNCHANGED": "Care dintre urmatoarele enunturi nu este adevarat:",
+      "original_ABC_UNCHANGED": {
+        "A": "energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;",
+        "B": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de functionare",
+        "C": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de utilizare al puterii maxime."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-175": "B",
+        "G2-ELEC-311": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Energy W=Pavg*t=Pmax*t_util; Pmax*t_actual overstates for varying load, hence B is false among A/B/C by definition.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-ddcbcb01a488a7c0",
+      "representative_id": "G1-ELE-176",
+      "member_ids": [
+        "G1-ELE-176",
+        "G2-ELEC-312"
+      ],
+      "qabc_sha256": "ddcbcb01a488a7c0cc46e845ff7aafbc8aaf989b24985f8c35db9836c0c7c3a5",
+      "original_question_UNCHANGED": "Pentru calculul curenţilor de scurtcircuit într-o reţea prin metoda componentelor simetrice, reţeaua inversă (negativă) se compune din:",
+      "original_ABC_UNCHANGED": {
+        "A": "impedanţe identice cu ale reţelei directe (pozitive) pentru elemente statice și impedanţe diferite de ale reţelei directe (pozitive) pentru maşini rotative",
+        "B": "impedanţe identice cu ale reţelei directe (pozitive) atât pentru elemente statice cât și pentru maşini rotative",
+        "C": "impedanţe diferite de ale reţelei directe (pozitive) pentru elemente statice"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-176": "A",
+        "G2-ELEC-312": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Static lines/cables often Z2=Z1 while rotating machinery Z2 may differ; precise generator/motor negative-sequence standard required.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.phasetophase.nl/book/book_2_10.html",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-09b82f2ca47b4542",
+      "representative_id": "G1-ELE-177",
+      "member_ids": [
+        "G1-ELE-177",
+        "G2-ELEC-313"
+      ],
+      "qabc_sha256": "09b82f2ca47b454273d7d93b15ee17fe8765d249d4e1190c58a6b824875191cc",
+      "original_question_UNCHANGED": "Pentru limitarea curenţilor de scurtcircuit se utilizează bobine:",
+      "original_ABC_UNCHANGED": {
+        "A": "înseriate pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+        "B": "racordate în derivaţie pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+        "C": "înseriate pe circuit, monofazate, cu miez de fier, răcite cu ulei, de tip interior;"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-177": "A",
+        "G2-ELEC-313": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Air-core series reactors can limit fault current; option A describes typical design but not uniquely required for all short-circuit current reactors.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://standards.ieee.org/ieee/C57.16/6696/",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-ca4b2268c626382c",
+      "representative_id": "G1-ELE-179",
+      "member_ids": [
+        "G1-ELE-179",
+        "G2-ELEC-315"
+      ],
+      "qabc_sha256": "ca4b2268c626382c8631d0d4864530685bbdfa0bcdc03d03539ba339c666d64d",
+      "original_question_UNCHANGED": "Puterea nominala a unui motor electric se defineşte astfel:",
+      "original_ABC_UNCHANGED": {
+        "A": "puterea activã absorbitã de motor de la reţea când este alimentat la Un si absoarbe In",
+        "B": "puterea activã transmisã prin întrefierul motorului când este alimentat la Un si absoarbe In",
+        "C": "puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-179": "C",
+        "G2-ELEC-315": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Motor nominal power usually rated mechanical shaft output kW, not input or air-gap power, under specified speed/voltage rating.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Induction_motor",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-f4b8ff0c03cd3eb8",
+      "representative_id": "G1-ELE-181",
+      "member_ids": [
+        "G1-ELE-181",
+        "G2-ELEC-317"
+      ],
+      "qabc_sha256": "f4b8ff0c03cd3eb880e7673aeee2cc59a1629c7fb9abee934baf208cd1177310",
+      "original_question_UNCHANGED": "Pentru o linie electrică lungă care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei, puterea activă la extremitatea receptoare:",
+      "original_ABC_UNCHANGED": {
+        "A": "se numeşte putere caracteristică sau putere naturală",
+        "B": "depinde de lungimea liniei",
+        "C": "este independentă de tensiunea liniei"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-181": "A",
+        "G2-ELEC-317": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Matched lossless transmission line characteristic/surge impedance loading is called natural power; power at load under lossy line differs, exact conditions needed.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/gtd2.70203",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-b917c698c5766939",
+      "representative_id": "G1-ELE-182",
+      "member_ids": [
+        "G1-ELE-182",
+        "G2-ELEC-318"
+      ],
+      "qabc_sha256": "b917c698c5766939acfc5a7d0ed99d37fd5d5752b10398723760f473d8d1c0d8",
+      "original_question_UNCHANGED": "Pentru o linie electrică care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei:",
+      "original_ABC_UNCHANGED": {
+        "A": "energiile reactive, inductivă şi capacitivă, se compensează",
+        "B": "energia reactivă inductivă este mai mare decât cea capacitivă",
+        "C": "energia reactivă capacitivă este mai mare decât cea inductivă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-182": "A",
+        "G2-ELEC-318": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "At natural/surge impedance load, distributed line inductive and capacitive reactive exchanges balance in ideal lossless model, option A conditional.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/gtd2.70203",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-094bc9b42d1f90c2",
+      "representative_id": "G1-ELE-183",
+      "member_ids": [
+        "G1-ELE-183",
+        "G2-ELEC-319"
+      ],
+      "qabc_sha256": "094bc9b42d1f90c2ec723daafd3a3d513105008331401462dccd7bf642ace28d",
+      "original_question_UNCHANGED": "Pentru o putere aparenta data puterea activa are valoarea maxima:",
+      "original_ABC_UNCHANGED": {
+        "A": "când factorul de putere =1",
+        "B": "când factorul de putere = 0",
+        "C": "când U = U max"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-183": "A",
+        "G2-ELEC-319": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "For fixed apparent power S, active P=S cosφ maximized when power factor is one, A.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": {
+        "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+        "verification": "PUBLIC_TECHNICAL_RESOURCE_EXISTENCE/EXCERPT_CONFIRMED; NOT ANRE GRADING KEY"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-140102d9fb309cbd",
+      "representative_id": "G1-ELE-184",
+      "member_ids": [
+        "G1-ELE-184",
+        "G2-ELEC-320"
+      ],
+      "qabc_sha256": "140102d9fb309cbd90deb169b536b160ebc437c8f8cf32c811aac476d85f684d",
+      "original_question_UNCHANGED": "Permeabilitatea este o mărime:",
+      "original_ABC_UNCHANGED": {
+        "A": "magnetică",
+        "B": "electrică",
+        "C": "mecanică"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-184": "A",
+        "G2-ELEC-320": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Permeability μ describes response to magnetic field, not electrical permittivity or mechanics.",
+      "prior_ABC_rationales": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_10_ALL_20_TECHNICAL_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-8-magnetism-in-matter",
+        "locator": "",
+        "status": "PREVIOUS_RESEARCH_REUSED_NOT_ALL_SOURCES_REOPENED"
+      },
+      "technical_reference": null,
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "exam_key_provenance": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}

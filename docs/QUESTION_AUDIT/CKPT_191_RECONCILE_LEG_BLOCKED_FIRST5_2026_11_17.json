@@ -1,0 +1,157 @@
+{
+  "checkpoint": "CKPT-191",
+  "date": "2026-11-17",
+  "scope": "Microbatch 1: reconciliation of five existing blocked Grade I legislative QABC units; NO new research and NO released learner answer key.",
+  "repo": "AcoBenny/ANRE_Trainer",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "source_head": "4165f0fd129cb6a24fcefb1a25b3a9135dbbbe7f",
+  "base_status_from_CKPT_180": {
+    "total_unique_QABC": 568,
+    "grade_IDs": 822,
+    "blocked": 50,
+    "older_prechecks_only": 45,
+    "learning_approved": 0
+  },
+  "source_paths": [
+    "docs/QUESTION_AUDIT/CKPT_163_NEXT15_ELECTRICAL_LEGAL_2026_11_17.json",
+    "docs/QUESTION_AUDIT/CKPT_164_NEXT15_LEGAL_SCOPE_PRIMARY_2026_11_17.json",
+    "docs/QUESTION_AUDIT/CKPT_190_LEGISLATION_11_BLOCKED_PRIMARY_ARTICLE_QA_2026_11_17.md",
+    "docs/QUESTION_AUDIT/V73_ALL_822_EVIDENCE_AND_RELEASE_GATES_MASTER.csv",
+    "docs/QUESTION_AUDIT/INTEGRATED_ADJUDICATION_2026_11_13/GRADE_RELEASE_LEDGER_822.csv"
+  ],
+  "counts": {
+    "existing_blocked_cases_reconciled": 5,
+    "new_QABC_units": 0,
+    "new_learner_approvals": 0,
+    "canonical_edits": 0,
+    "remaining_cases_from_50": "NOT_YET_FULLY_RECONCILED",
+    "blocked_50_decremented": false
+  },
+  "records": [
+    {
+      "id": "G1-LEG-015",
+      "unit_id": "AU-02ceaf178f459982",
+      "qabc_sha256": "02ceaf178f45998282b68de947fbbb5da87c25d5f460f3620bc679f9e76ad6e4",
+      "question_UNCHANGED": "Constituie contravenţie:",
+      "ABC_UNCHANGED": {
+        "A": "refuzul clienţilor finali de a permite accesul la grupurile de măsurare",
+        "B": "modificarea fără drept a componentelor instalaţiilor energetice",
+        "C": "sustragerea de energie electrica"
+      },
+      "original_key_UNCHANGED": "B",
+      "original_block_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "previous_evidence": "CKPT-163",
+      "reviewed_in": "CKPT-190",
+      "source_locator": "Legea 123/2012, art.92(1)/art.93(1) pct.28",
+      "candidate_NOT_APPLIED": "A",
+      "reconciled_as": "CONFLICT_REVIEWED_NOT_CLOSED",
+      "reason": "Contravenție art.93 vs infracțiune art.92; imported B conflicts with cited law.",
+      "edition_2026": "NOT_VERIFIED",
+      "independent_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "id": "G1-LEG-017",
+      "unit_id": "AU-4b365bd0966b300d",
+      "qabc_sha256": "4b365bd0966b300dae3c29d7f13e0374bb346425e99cc7bfbbd047855d820e70",
+      "question_UNCHANGED": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+      "ABC_UNCHANGED": {
+        "A": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+        "B": "racordare ilegală la reţeaua de distribuţie",
+        "C": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+      },
+      "original_key_UNCHANGED": "B",
+      "original_block_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "previous_evidence": "CKPT-163",
+      "reviewed_in": "CKPT-190",
+      "source_locator": "Legea 123/2012 art.58 + Ordin 5/2023 art.18/26",
+      "candidate_NOT_APPLIED": "UNDETERMINED",
+      "reconciled_as": "BLOCKED_EXACT_LAW_AND_EDITION",
+      "reason": "Reziliere contract vs deconectare, racordare ilegală, garanție; same-edition clause missing.",
+      "edition_2026": "NOT_VERIFIED",
+      "independent_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "id": "G1-LEG-019",
+      "unit_id": "AU-438f264b2a9d1929",
+      "qabc_sha256": "438f264b2a9d19292b0ec1944457fbd82d925deff8f6b9dd682156689496d13f",
+      "question_UNCHANGED": "Nerespectarea normelor tehnice emise de către ANRE constituie:",
+      "ABC_UNCHANGED": {
+        "A": "Infracţiune",
+        "B": "Contravenţie",
+        "C": "Abatere"
+      },
+      "original_key_UNCHANGED": "C",
+      "original_block_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "previous_evidence": "CKPT-164",
+      "reviewed_in": "CKPT-190",
+      "source_locator": "Legea 123/2012 art.93(1) pct.3",
+      "candidate_NOT_APPLIED": "B",
+      "reconciled_as": "CONFLICT_REVIEWED_NOT_CLOSED",
+      "reason": "«Contravenție» in art.93 vs imported «abatere».",
+      "edition_2026": "NOT_VERIFIED",
+      "independent_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "id": "G1-LEG-020",
+      "unit_id": "AU-2b80efe97e6ae326",
+      "qabc_sha256": "2b80efe97e6ae32672b740fa344c26466eb2ef2efc14078ac8e1694fda1b2b39",
+      "question_UNCHANGED": "Eventualele contestaţii ale avizelor tehnice de racordare se rezolvă de către:",
+      "ABC_UNCHANGED": {
+        "A": "organele ierarhice ale emitentului",
+        "B": "operatorul de distribuţie care a emis avizul",
+        "C": "ANRE"
+      },
+      "original_key_UNCHANGED": "A",
+      "original_block_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "previous_evidence": "CKPT-164",
+      "reviewed_in": "CKPT-190",
+      "source_locator": "Regulament racordare: contestații ATR",
+      "candidate_NOT_APPLIED": "UNDETERMINED",
+      "reconciled_as": "BLOCKED_PROCEDURE_COMPETENCE",
+      "reason": "Contestații ATR: no exact same-era competent authority provision established.",
+      "edition_2026": "NOT_VERIFIED",
+      "independent_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "id": "G1-LEG-024",
+      "unit_id": "AU-99a07af473ffa794",
+      "qabc_sha256": "99a07af473ffa7942401003cb67972e68ef4c29de2257a0f369524a7f1db34c1",
+      "question_UNCHANGED": "Obţinerea avizului tehnic de racordare de către un utilizator:",
+      "ABC_UNCHANGED": {
+        "A": "nu este obligatorie pentru o durata mai mică de 6 luni",
+        "B": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+        "C": "este obligatorie pentru orice loc de consum/producere nou"
+      },
+      "original_key_UNCHANGED": "A",
+      "original_block_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "previous_evidence": "CKPT-164",
+      "reviewed_in": "CKPT-190",
+      "source_locator": "Regulament racordare: obligație ATR și excepții",
+      "candidate_NOT_APPLIED": "C_CONDITIONAL",
+      "reconciled_as": "BLOCKED_EXCEPTION_AND_ERA",
+      "reason": "ATR for new site general vs temporary/other statutory exceptions; «orice» too absolute.",
+      "edition_2026": "NOT_VERIFIED",
+      "independent_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ],
+  "QA": {
+    "V73_count": 822,
+    "release_ledger_count": 822,
+    "exact_original_question_ABC_imported_key_unit_hash": "PASS_5_OF_5",
+    "CKPT190_continuity": "PASS_5_OF_5",
+    "old_blocked_status": "PASS_5_OF_5",
+    "independent_review": "NOT_RUN"
+  },
+  "constraints": "Keep original QABC/barems, HTML/APK and main intact; no merge/release; PR #7 stays Draft",
+  "next": "Reconcile next disjoint 5 cases from prior blocked ledger and do not double count prior source reviews."
+}

@@ -1,0 +1,630 @@
+{
+  "schema": "v203_15_more_anre_hosted_source_original_ABC_editorials_switchgear_sequence_relay_SF6",
+  "date": "2026-11-20",
+  "prior_head": "e9a07b6507085e25b3db906b1bf16cbe90fd69f9",
+  "parent_v202_sha": "e0e20a39538d1d854ad1ccab778ecead69d9e85c",
+  "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "ckpt250_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+  "counts": {
+    "new_unique_qabc": 15,
+    "grade_routes": 30,
+    "explanations_A_B_C": 45,
+    "unofficial_reformulation_exercises": 15,
+    "explicit_semantic_holds": 10,
+    "learner_approved": 0
+  },
+  "held_units": [
+    "QABC-0147",
+    "QABC-0157",
+    "QABC-0158",
+    "QABC-0159",
+    "QABC-0187",
+    "QABC-0188",
+    "QABC-0199",
+    "QABC-0205",
+    "QABC-0208",
+    "QABC-0210"
+  ],
+  "limitations": "Historical same-assistant analysis and candidate technical documentation. No independently qualified SME/linguistic source QA or officially scored 2026 key. Some questions contain physically overlapping alternatives; especially QABC-0208, the imported A with 3Zarc differs from standard balanced fault Zf per phase. No original question/key/app edits, no live switching procedures, no rights to reproduce standards.",
+  "live_source_spotchecks": [
+    {
+      "item": "QABC-0187",
+      "url": "https://electra.cigre.org/317-august-2021/technical-brochures/coatings-for-improvement-of-electrical-performance-of-outdoor-insulators-under-pollution-conditions.html"
+    },
+    {
+      "item": "QABC-0208",
+      "url": "https://www.electronicsguide.net/systems-and-technologies/power-electronics/power-system-analysis/fault-analysis-and-symmetrical-components/"
+    },
+    {
+      "item": "QABC-0210",
+      "url": "https://www.iteh.us/catalog/standards/clc/1b0a0556-70ff-4d0f-a322-ca2d7d05af90/en-50110-1-2023"
+    }
+  ],
+  "cards": [
+    {
+      "unit_id": "QABC-0147",
+      "grade_ids": [
+        "G1-ELE-156",
+        "G2-ELEC-294"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "163",
+        "stem": "Pe liniile electrice de înaltă tensiune, unde se preferă montarea transformatoarelor de  curent ?:",
+        "A": "între barele colectoare şi separatorul de bare;",
+        "B": "între separatorul de bare şi întreruptor;",
+        "C": "între întreruptor şi separatorul de linie.",
+        "imported_keys_UNCHANGED": "G1-ELE-156=B | G2-ELEC-294=B"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-156:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-294:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-156:https://electrical-engineering-portal.com/control-system-equipment-substation-operation | G2-ELEC-294:https://electrical-engineering-portal.com/control-system-equipment-substation-operation",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Montarea între bară și separatorul de bare ar include/disloca anumite zone de protecție; nu este automat amplasarea preferată.",
+        "B": "B este o soluție posibilă într-o schemă clasică pentru limitele zonelor diferențiale și de protecție, însă depinde de amplasarea întreruptorului și de măsurare.",
+        "C": "Montarea între întreruptor și separatorul de linie poate fi validă în proiecte cu alte zone de protecție, deci C nu este exclusă universal.",
+        "model_scope_or_trap": "Preferința CT nu rezultă fără diagramă, scheme de protecție și poziția limitelor zonelor. B importat se păstrează condiționat; A/C pot fi valide în alte proiecte.",
+        "reformulated_question": "De ce poziția CT la o celulă de înaltă tensiune nu se decide doar după litera răspunsului?",
+        "reformulated_solution": "Pentru că poziția definește zonele de protecție și depinde de configurația celulei.",
+        "editorial_disposition": "HOLD_CT_LOCATION_PROTECTION_TOPOLOGY",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0150",
+      "grade_ids": [
+        "G1-ELE-159",
+        "G2-ELEC-297"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "166",
+        "stem": "Montajul fix al aparatelor în interiorul celulelor conduce la:",
+        "A": "realizări constructive simple, fără blocaje suplimentare;",
+        "B": "reducerea dimensiunilor celulelor;",
+        "C": "reducerea timpului necesar reviziilor şi reparaţiilor.",
+        "imported_keys_UNCHANGED": "G1-ELE-159=A | G2-ELEC-297=A"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-159:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-297:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-159:https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear | G2-ELEC-297:https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Montajul fix elimină mecanismele de debroșare și poate simplifica constructiv celula, dar nu înseamnă absența tuturor interblocărilor de siguranță.",
+        "B": "Un montaj fix poate permite unele soluții compacte, însă dimensiunea depinde de izolarea și funcțiile proiectate; nu este reducere universală.",
+        "C": "Reviziile pot dura mai mult când echipamentele fixe necesită izolare/dezasamblare; avantajul de înlocuire rapidă aparține de obicei sistemelor debroșabile.",
+        "model_scope_or_trap": "«Fără blocaje suplimentare» în A este condițional: interblocările obligatorii nu dispar. Dimensiunile și timpii depind de comparația constructivă.",
+        "reformulated_question": "Un întreruptor montat fix trebuie să fie lipsit de orice interblocare de securitate?",
+        "reformulated_solution": "Nu. Simplificarea mecanismului de debroșare nu elimină cerințele de siguranță.",
+        "editorial_disposition": "QUALIFIED_FIXED_SWITCHGEAR_DESIGN",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0157",
+      "grade_ids": [
+        "G1-ELE-166",
+        "G2-ELEC-304"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "173",
+        "stem": "Pe măsură ce creşte tensiunea la care se realizează instalaţiile electrice, costul pierderilor de putere Cp este:",
+        "A": "constant",
+        "B": "crescător",
+        "C": "descrescător",
+        "imported_keys_UNCHANGED": "G1-ELE-166=C | G2-ELEC-304=C"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-166:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-304:V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+        "source_web_refs": "G1-ELE-166:https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers | G2-ELEC-304:https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Costul pierderilor nu rămâne constant dacă se modifică curentul, rezistența sau costul energiei.",
+        "B": "În unele tehnologii la tensiuni mai ridicate pot crește alte pierderi (de exemplu corona) și costuri, deci B nu poate fi exclus fără restricții.",
+        "C": "La putere transferată, cosφ și R similare, curentul scade aproximativ invers cu tensiunea, iar pierderile Joule 3I²R scad: C este tendința-model.",
+        "model_scope_or_trap": "«Costul pierderilor Cp» nu este exclusiv I²R. Modificarea nivelului de tensiune poate schimba infrastructura, pierderile și tarifele; C nu e lege universală.",
+        "reformulated_question": "Pentru același P, cosφ și rezistență, dacă U se dublează într-un sistem trifazat, cât se schimbă pierderea I²R?",
+        "reformulated_solution": "Scade aproximativ la un sfert, dacă toate celelalte condiții rămân fixe.",
+        "editorial_disposition": "HOLD_COST_LOSSES_VOLTAGE_MODEL",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0158",
+      "grade_ids": [
+        "G1-ELE-167",
+        "G2-ELEC-305"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "174",
+        "stem": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" inferior este de preferat unei scheme de tip ,, H \" superior atunci când:",
+        "A": "se fac manevre dese cu circuitele de linie;",
+        "B": "se fac manevre dese cu circuitele de transformator;",
+        "C": "pe legătura dintre blocuri circulă un curent mic.",
+        "imported_keys_UNCHANGED": "G1-ELE-167=A | G2-ELEC-305=A"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-167:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-305:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-167:https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php | G2-ELEC-305:https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "În clasificarea tradițională din cercetarea CKPT250, puntea H inferioară este favorizată când manevrele pe circuitele de linie sunt frecvente, în comparație cu H superioară.",
+        "B": "Manevrele dese ale transformatoarelor corespund condiției de preferință a H superioare în clasificarea citată.",
+        "C": "Curentul mic în punte nu este criteriul de alegere explicit între aceste două poziții constructive fără alte calcule.",
+        "model_scope_or_trap": "Definiția «H inferior» versus «H superior» și topologia originală trebuie fixate în manual; enunțul nu conține desen. Nu genera schițe originale fictive.",
+        "reformulated_question": "Ce condiție operațională compară în esență schemele H superior și inferior în didactica existentă?",
+        "reformulated_solution": "Unde se execută mai des manevrele, pe linii sau pe transformatoare, pentru topologia definită.",
+        "editorial_disposition": "HOLD_H_BRIDGE_TOPOLOGY_SOURCE_FIGURE",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0159",
+      "grade_ids": [
+        "G1-ELE-168",
+        "G2-ELEC-306"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "175",
+        "stem": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" superior este de preferat unei scheme de tip ,, H \" inferior atunci când:",
+        "A": "se fac manevre dese cu circuitele de linie;",
+        "B": "se fac manevre dese cu circuitele de transformator;",
+        "C": "pe legătura dintre blocuri circulă un curent mic.",
+        "imported_keys_UNCHANGED": "G1-ELE-168=B | G2-ELEC-306=B"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-168:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-306:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-168:https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php | G2-ELEC-306:https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Manevrele dese pe linii sunt asociate în modelul istoric cu H inferioară, nu cu H superioară.",
+        "B": "Cheia B reflectă preferința H superioară în cazul manevrelor dese pe circuitele transformatoarelor, conform clasificării din CKPT250.",
+        "C": "Circulația redusă pe punte poate fi relevantă pentru dimensionare, dar nu înlocuiește condiția de exploatare căutată.",
+        "model_scope_or_trap": "Împerechere logică cu QABC-0158: enunțele și opțiunile par similare, dar poziția punții se inversează și importul este B versus A; necesită diagramă/definiție de ediție.",
+        "reformulated_question": "Dacă preferința se mută de la manevre dese pe linie la manevre dese pe transformator, se schimbă tipul H tradițional selectat?",
+        "reformulated_solution": "Da, în clasificarea didactică CKPT250, dar numai pentru configurații definite explicit.",
+        "editorial_disposition": "HOLD_H_BRIDGE_TOP_VS_BOTTOM_MODEL",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0180",
+      "grade_ids": [
+        "G1-ELE-191",
+        "G2-ELEC-327"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "198",
+        "stem": "Prin adăugarea, pe toate laturile pornind din acelaşi nod al unei reţele buclate, a unor tensiuni electromotoare (t.e.m.) egale şi la fel orientate faţă de nod (teorema lui Vaschy):",
+        "A": "circulaţia de curenţi existentă anterior în reţea nu se modifică",
+        "B": "se pot modifica curenţii din laturile cu t.e.m. adăugate",
+        "C": "se modifică circulaţia de curenţi din laturile pe care nu se adaugă t.e.m.",
+        "imported_keys_UNCHANGED": "G1-ELE-191=A | G2-ELEC-327=A"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-191:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-327:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-191:https://www.academia.edu/11524302/I_METODE_PENTRU_REZOLVAREA_CIRCUITELOR_ELECTRICE_DE_CURENT_ALTERNATIV | G2-ELEC-327:https://www.academia.edu/11524302/I_METODE_PENTRU_REZOLVAREA_CIRCUITELOR_ELECTRICE_DE_CURENT_ALTERNATIV",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Adăugarea de surse egale și la fel orientate către nod poate fi absorbită prin deplasarea potențialului nodal, menținând diferențele relevante și curenții în modelul teoremei Vaschy.",
+        "B": "Modificarea curenților pe laturile cu surse adăugate nu rezultă în condițiile ideale exacte ale transformării de potențial nodal.",
+        "C": "Nici curenții pe laturile fără surse introduse nu trebuie modificați dacă întreaga transformare respectă teorema și configurația rețelei.",
+        "model_scope_or_trap": "Teorema cere toate laturile incidentale nodului, aceeași t.e.m., orientare coerentă și surse ideale. Dacă lipsește o latură, poate schimba curenții.",
+        "reformulated_question": "Ce se întâmplă cu circulația de curenți dacă se adaugă exact aceeași t.e.m. în orientarea corespunzătoare pe toate ramurile ce pleacă dintr-un nod?",
+        "reformulated_solution": "Nu se modifică în condițiile teoremei Vaschy.",
+        "editorial_disposition": "QUALIFIED_VASCHY_ALL_INCIDENT_BRANCHES",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0186",
+      "grade_ids": [
+        "G1-ELE-197",
+        "G2-ELEC-333"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "204",
+        "stem": "Reducerea nivelului de izolație din instalațiile capsulate cu SF6 poate fi provocată",
+        "A": "numai de produse de descompunere ale SF6 şi compuşii lor cu materiale izolante sau metale, sub influenţa umidităţii;",
+        "B": "de impurităţi ca urmare a unui montaj necorespunzător (dacă montajul se face cu mâini murdare, transpirate, urme de grăsime, praf de diferite feluri şi mai ales pilituri metalice);",
+        "C": "umiditatea reziduală scăzută a gazului izolant",
+        "imported_keys_UNCHANGED": "G1-ELE-197=B | G2-ELEC-333=B"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-197:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-333:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-197:https://www.iteh.fr/catalog/standards/clc/07aa27f7-728c-4d22-b513-4e84b563db36/en-iec-60480-2019 | G2-ELEC-333:https://www.iteh.fr/catalog/standards/clc/07aa27f7-728c-4d22-b513-4e84b563db36/en-iec-60480-2019",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "«Numai produse de descompunere» este fals prin exclusivitate: particule metalice și alte impurități pot reduce rezistența dielectrică.",
+        "B": "Impuritățile din montaj, inclusiv pilituri și contaminanți, pot genera intensificări locale ale câmpului și scăderea izolației.",
+        "C": "Umiditatea reziduală scăzută este în general de dorit, nu un factor tipic de degradare dielectrică; umiditatea ridicată este problematică.",
+        "model_scope_or_trap": "Într-un GIS cu SF6, proprietățile dielectricului, contaminarea, presiunea și umiditatea sunt factori separați. Beneficiul istoric nu permite instalarea fără verificarea restricțiilor F-gaz aplicabile.",
+        "reformulated_question": "Pot particule metalice lăsate în compartimentul GIS să degradeze izolația chiar dacă SF6 nu s-a descompus?",
+        "reformulated_solution": "Da, prin distorsionarea locală a câmpului electric și inițiere de descărcări.",
+        "editorial_disposition": "QUALIFIED_GIS_CONTAMINATION",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0187",
+      "grade_ids": [
+        "G1-ELE-198",
+        "G2-ELEC-334"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "205",
+        "stem": "Printre măsurile de reducere a distanţelor de izolare pot fi:",
+        "A": "folosirea dispozitivelor de limitare a curenţilor de scurtcircuit;",
+        "B": "aplicarea unui strat protector pe izolatoare pentru micşorarea efectelor poluării din marile oraşe sau de pe unele platforme industriale;",
+        "C": "micşorarea densităţii dielectricilor gazoşi.",
+        "imported_keys_UNCHANGED": "G1-ELE-198=B | G2-ELEC-334=B"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-198:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-334:CKPT_217_GFR_7_P1_GRADEII_TECHNICAL_QABC_FAULTS_REACTOR_GIS_2026_11_18.md",
+        "source_web_refs": "G1-ELE-198:https://electra.cigre.org/317-august-2021/technical-brochures/coatings-for-improvement-of-electrical-performance-of-outdoor-insulators-under-pollution-conditions.html | G2-ELEC-334:Source technical/engineering references in CKPT217",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Dispozitivele de limitare a curentului de scurtcircuit nu stabilesc direct distanța dielectrică necesară pentru supratensiuni/poluare.",
+        "B": "Un strat hidrofob pe izolatoare poate îmbunătăți comportarea la poluare și permite, în condiții justificate, reducerea lungimii izolatorului ori a distanței de fugă cerute.",
+        "C": "Scăderea densității unui gaz dielectric nu îmbunătățește de regulă rigiditatea dielectrică în ipotezele obișnuite, deci nu justifică micșorarea distanței.",
+        "model_scope_or_trap": "Distinge «distanțe de izolare în aer» de «lungimea izolatorului/distanța de fugă»; CIGRE susține acoperirea hidrofobă la poluare, dar nu dovedește reducerea oricărei distanțe în aer.",
+        "reformulated_question": "Acoperirea hidrofobă schimbă în principal comportarea suprafeței izolatorului sau distanța geometrică liberă între două bare?",
+        "reformulated_solution": "În primul rând comportarea suprafeței la poluare; dimensionarea distanțelor în aer se verifică separat.",
+        "editorial_disposition": "HOLD_CREEPAGE_VS_AIR_CLEARANCE",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0188",
+      "grade_ids": [
+        "G1-ELE-199",
+        "G2-ELEC-335"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "206",
+        "stem": "Producerea dublei puneri la pământ a bobinajului rotoric al unui generator sincron are ca efect negativ",
+        "A": "numai creșterea foarte mare a curentului prin circuitul rotoric",
+        "B": "faptul că tensiunile electromotoare nu mai sunt sinusoidale",
+        "C": "apar scântei la periile colectorului",
+        "imported_keys_UNCHANGED": "G1-ELE-199=A | G2-ELEC-335=A"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-199:CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md | G2-ELEC-335:V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+        "source_web_refs": "G1-ELE-199:Source scientific/technical references in CKPT216 | G2-ELEC-335:https://new.abb.com/medium-voltage/digital-substations/protection-relays/power-generator-protection-and-control/current-injection-device-rek-510",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "«Numai creșterea foarte mare a curentului rotoric» nu este garantată pentru toate defectele duble la pământ; distribuția curenților și efectele depind de locuri și excitație.",
+        "B": "Scurtarea unor spire poate induce dezechilibre și armonici ale câmpului, dar distorsiunea tensiunilor nu este universală, depinzând de mașină și control.",
+        "C": "Scânteierea la perii poate apărea în anumite condiții de defect, dar generatorul sincron poate avea excitație fără perii, deci C nu este universală.",
+        "model_scope_or_trap": "Defectul dublu al circuitului rotoric poate produce scurtcircuite locale, dezechilibru magnetic, vibrații sau supraîncălzire. «Numai» face A precar; alte efecte depind de construcție.",
+        "reformulated_question": "Un generator sincron fără perii poate suferi defect dublu la pământ în circuitul rotorului fără scântei la periile inexistente?",
+        "reformulated_solution": "Da. Acest contraexemplu arată de ce alternativa C nu poate fi universală.",
+        "editorial_disposition": "HOLD_ROTOR_DOUBLE_GROUND_ONLY_AND_BRUSHES",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0199",
+      "grade_ids": [
+        "G1-ELE-210",
+        "G2-ELEC-346"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "217",
+        "stem": "Spaţiul ocupat de o instalaţie capsulată depinde în principal de:",
+        "A": "curentul nominal al legăturilor electrice;",
+        "B": "mediul de stingere a arcului electric;",
+        "C": "realizarea capsulării: capsulare tripolară sau monopolară.",
+        "imported_keys_UNCHANGED": "G1-ELE-210=C | G2-ELEC-346=C"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-210:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-346:CKPT_217_GFR_7_P1_GRADEII_TECHNICAL_QABC_FAULTS_REACTOR_GIS_2026_11_18.md",
+        "source_web_refs": "G1-ELE-210:https://www.electrical4u.com/gis-or-gas-insulated-switchgear/ | G2-ELEC-346:Source technical/engineering references in CKPT217",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Curentul nominal influențează secțiunile barelor și cerințele termice, deci poate afecta gabaritul, dar nu distinge explicit arhitectura capsulării.",
+        "B": "Mediul de stingere al arcului poate schimba tehnologia întreruptorului și dimensiunile, deci B poate conta în proiectări concrete.",
+        "C": "Capsularea tripolară comună și cea monopolară separată modifică direct numărul de anvelope și configurația gazului, un determinant major al spațiului.",
+        "model_scope_or_trap": "«În principal» nu este demonstrabil fără comparație de proiect: A, B, C pot influența toate amprenta; C descrie diferența geometrică explicită.",
+        "reformulated_question": "Dacă trei faze sunt în anvelope separate în locul uneia comune, este posibil să se schimbe spațiul ocupat?",
+        "reformulated_solution": "Da, configurația carcaselor poate modifica amprenta întregului ansamblu.",
+        "editorial_disposition": "HOLD_GIS_SPACE_MULTIPLE_DETERMINANTS",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0205",
+      "grade_ids": [
+        "G1-ELE-216",
+        "G2-ELEC-352"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "223",
+        "stem": "În cazul transformatoarelor de tensiune, care dintre urmatoarele enunturi nu este adevarat:",
+        "A": "alegerea transformatorului de tensiune presupune verificarea nivelului sau de izolatie;",
+        "B": "alegerea transformatorului de tensiune presupune verificarea sa la stabilitate electrodinamica in caz de scurtcircuit",
+        "C": "transformatorul de tensiune trebuie sa functioneze in domeniul de frecventa indicat de fabricant",
+        "imported_keys_UNCHANGED": "G1-ELE-216=B | G2-ELEC-352=B"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-216:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-352:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-216:https://www.iteh.eu/catalog/standards/iec/301e2161-babf-44ad-9132-b85514d36f62/iec-61869-3-2011 | G2-ELEC-352:https://www.iteh.eu/catalog/standards/iec/301e2161-babf-44ad-9132-b85514d36f62/iec-61869-3-2011",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Verificarea nivelului de izolație al transformatorului de tensiune în raport cu sistemul este necesară la alegerea sa.",
+        "B": "Verificarea la stabilitate electrodinamică prin curent de scurtcircuit este o cerință tipică pentru aparate parcurse de curenți mari (de exemplu CT); în mod obișnuit TT nu se selectează în aceiași termeni, dar standardul exact trebuie consultat.",
+        "C": "Transformatorul de tensiune trebuie folosit în domeniul de frecvență pentru care a fost proiectat și evaluat.",
+        "model_scope_or_trap": "Se cere varianta neadevărată. B este cheia importată, însă anumite TT pot necesita verificări suplimentare la defectul secundar, iar gama de aparate este largă; nu afirma că stabilitatea electrodinamică este imposibilă.",
+        "reformulated_question": "Un transformator de tensiune inductiv convențional este destinat să conducă curentul nominal primar mare al liniei?",
+        "reformulated_solution": "Nu, este conectat în paralel și are sarcină secundară limitată, în condiții normale.",
+        "editorial_disposition": "HOLD_VT_SHORT_CIRCUIT_WITHSTAND_SCOPE",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0206",
+      "grade_ids": [
+        "G1-ELE-217",
+        "G2-ELEC-353"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "224",
+        "stem": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit între două faze ale unei reţele izolat de pământ şi fără arc electric se compune din:",
+        "A": "schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului",
+        "B": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel",
+        "C": "schemele de secvenţă directă (pozitivă), inversă (negativă) şi homopolară (zero) conectate în paralel",
+        "imported_keys_UNCHANGED": "G1-ELE-217=B | G2-ELEC-353=B"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-217:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-353:CKPT_217_GFR_7_P1_GRADEII_TECHNICAL_QABC_FAULTS_REACTOR_GIS_2026_11_18.md",
+        "source_web_refs": "G1-ELE-217:https://studylib.net/doc/27674693/lwp0010-02-tutorialsymmetrical-pt2-ah-20201019 | G2-ELEC-353:Source technical/engineering references in CKPT217",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Impedanța de arc din A contrazice expresia «fără arc» și nu descrie rețeaua de secvență completă a scurtcircuitului bifazat.",
+        "B": "Pentru un scurtcircuit între două faze fără pământ, se folosesc componentele pozitivă și negativă; relațiile de conectare la punctul de defect trebuie desenate cu orientări și impedanță de defect definite.",
+        "C": "Secvența homopolară nu contribuie într-un defect bifazat fără cale spre pământ, deci C este nepotrivită.",
+        "model_scope_or_trap": "Varianta B spune «paralel». În unele diagrame de secvență LL, rețelele + și − sunt conectate la același nod de defect cu curenți opuși; nu confunda cu o aplicare automată a formulei cu conexiune în serie. Ediție de manual necesară.",
+        "reformulated_question": "Pentru un defect între fazele b și c fără pământ, poate apărea curent de secvență zero ideal?",
+        "reformulated_solution": "Nu, I0=0; componentele directă și inversă sunt cele relevante.",
+        "editorial_disposition": "QUALIFIED_LL_SEQUENCE_NO_ZERO",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0208",
+      "grade_ids": [
+        "G1-ELE-219",
+        "G2-ELEC-355"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "226",
+        "stem": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat şi la pământ, cu arc, se compune din:",
+        "A": "schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului",
+        "B": "schema de secvenţă directă (pozitivă)",
+        "C": "schema de secvenţă directă (pozitivă) înseriată cu schema de secvenţă inversă (negativă).",
+        "imported_keys_UNCHANGED": "G1-ELE-219=A | G2-ELEC-355=A"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-219:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-355:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-219:https://studylib.net/doc/27674693/lwp0010-02-tutorialsymmetrical-pt2-ah-20201019 | G2-ELEC-355:https://studylib.net/doc/27674693/lwp0010-02-tutorialsymmetrical-pt2-ah-20201019",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Cheia importată A introduce 3Z_arc în rețeaua directă. Pentru defect trifazat simetric cu fiecare fază având impedanță egală Zf, formula standard este I1=E/(Z1+Zf), nu E/(Z1+3Zf). Factorul 3 este asociat frecvent defectului monofazat la pământ.",
+        "B": "Rețeaua directă singură descrie defectul trifazat simetric fără impedanță, dar B ignoră impedanța arcului cerută explicit, dacă aceasta este nenulă.",
+        "C": "Rețelele directă și inversă în serie sunt proprii altor tipuri de defect/dezechilibru, nu defectului trifazat simetric.",
+        "model_scope_or_trap": "**CONFLICT DE MODEL IMPORTANT:** A e importat dar 3Z_arc pare din alt defect; trebuie autentificată convenția «cu arc» și schema sa. Nu schimbăm baremul. Verificarea independentă a formulei și sursei de examen este obligatorie.",
+        "reformulated_question": "La un defect trifazat simetric, cu impedanță de defect Zf egală în fiecare fază, ce secvență este prezentă?",
+        "reformulated_solution": "Doar secvența directă în modelul echilibrat; Zf se include per fază în impedanță.",
+        "editorial_disposition": "HOLD_3ZARC_MISAPPLIED_TO_THREE_PHASE_SYMMETRIC",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0209",
+      "grade_ids": [
+        "G1-ELE-220",
+        "G2-ELEC-356"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "227",
+        "stem": "Transformatoarele  de măsură se folosesc",
+        "A": "în instalaţiile de curent alternativ de înaltă tensiune",
+        "B": "numai în instalaţiile de curent alternativ de medie tensiune",
+        "C": "în instalaţiile de curent continuu de înaltă şi joasă tensiune",
+        "imported_keys_UNCHANGED": "G1-ELE-220=A | G2-ELEC-356=A"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-220:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-356:V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+        "source_web_refs": "G1-ELE-220:https://www.hitachienergy.com/products-and-solutions/instrument-transformers | G2-ELEC-356:https://www.hitachienergy.com/products-and-solutions/instrument-transformers ; https://electrification.us.abb.com/products/instrument-transformers-sensors/600-volt-current-transformers",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Transformatoarele de măsură convenționale se folosesc frecvent în instalații CA de înaltă tensiune, pentru a furniza secundare măsurabile și izolate.",
+        "B": "«Numai de medie tensiune» este fals: există CT/TT convenționale și pentru înaltă tensiune.",
+        "C": "Transformatoarele inductive obișnuite nu transformă un curent continuu staționar; pentru DC se folosesc senzori sau convertoare cu alt principiu.",
+        "model_scope_or_trap": "Se cere o utilizare posibilă, nu o definiție exhaustivă. Apar și instrumente de măsură pentru joasă tensiune CA, iar DC cere terminologie distinctă.",
+        "reformulated_question": "Un transformator de curent inductiv convențional poate reproduce curent continuu staționar în secundar prin inducție magnetică periodică?",
+        "reformulated_solution": "Nu, pentru DC sunt necesare alte tehnologii de măsurare.",
+        "editorial_disposition": "QUALIFIED_INSTRUMENT_TRANSFORMER_AC",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0210",
+      "grade_ids": [
+        "G1-ELE-221",
+        "G2-ELEC-357"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "228",
+        "stem": "Scopul normării distanţelor de izolare în aer minime admisibile pentru instalaţiile electrice este asigurarea:",
+        "A": "protecţiei personalului de exploatare a instalaţiei;",
+        "B": "siguranţei în funcţionare a instalaţiei, prin reducerea numărului de defecte în instalaţie;",
+        "C": "realizării unei economii de teren.",
+        "imported_keys_UNCHANGED": "G1-ELE-221=A | G2-ELEC-357=A"
+      },
+      "historic": {
+        "source_file": "V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv",
+        "source_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "context_checkpoint": "CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "context_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "prior_per_grade_history": "G1-ELE-221:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-357:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_web_refs": "G1-ELE-221:https://www.iteh.fr/catalog/standards/iec/244e704a-597d-4988-8e09-eaadccdbe8fb/iec-ts-61936-0-2023 | G2-ELEC-357:https://www.iteh.fr/catalog/standards/iec/244e704a-597d-4988-8e09-eaadccdbe8fb/iec-ts-61936-0-2023",
+        "source_grade_edition": "EXAM_2026_NOT_AUTHENTICATED"
+      },
+      "editorial_draft": {
+        "A": "Protecția personalului de exploatare este o cerință a distanțelor de siguranță și a zonelor de acces, dar nu trebuie confundată cu simpla distanță electrică de izolație aer.",
+        "B": "Distanțele minime de izolație fază-fază/fază-pământ contribuie direct și la funcționarea dielectrică sigură a instalației, reducând riscul de descărcare; B poate fi tehnic adevărată.",
+        "C": "Economia de teren nu este obiectivul primar al normării unei distanțe minime; poate fi doar constrângere de proiect.",
+        "model_scope_or_trap": "**A/B pot fi ambele adevărate pe obiecte diferite:** distanța de siguranță a personalului versus distanța dielectrică minimă în aer. Fără definiția din normativ a distanței cerute, baremul A nu este univoc.",
+        "reformulated_question": "Care este diferența dintre distanța de apropiere a personalului și distanța dielectrică fază-fază?",
+        "reformulated_solution": "Prima ține de protecția persoanelor în operare; a doua de prevenirea descărcărilor între părți electrice.",
+        "editorial_disposition": "HOLD_PERSONNEL_DISTANCE_VS_DIELECTRIC_CLEARANCE",
+        "technical_research": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_qa": "NOT_RUN",
+        "qualified_independent_linguistic_qa": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    }
+  ]
+}

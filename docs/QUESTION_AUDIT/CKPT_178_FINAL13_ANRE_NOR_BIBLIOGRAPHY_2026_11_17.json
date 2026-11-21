@@ -1,0 +1,524 @@
+{
+  "checkpoint": "CKPT-178",
+  "date": "2026-11-17",
+  "input_HEAD": "8fe09445d68de3aa2e68cb6718f083b15a403123",
+  "count": 13,
+  "grade_ids": 13,
+  "counts": {
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 1,
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 12
+  },
+  "method": "Official original ANRE May 2023 4-page bibliography pages2-3 screen-verified; same I7 printed norm exact 4.1.5.5.6 re-opened. Preserve exact original QABC and imported grades; do not treat exam intended as certified key.",
+  "non_approvals": [
+    "G1-NOR-100 literal threshold ambiguity, B intended but no unique universal answer",
+    "2026 exam official answer key not verified",
+    "independent source/technical/linguistic QA NOT_RUN"
+  ],
+  "cards": [
+    {
+      "unit_id": "AU-7f4876eff2e3a044",
+      "representative_id": "G1-NOR-100",
+      "grade_ids": [
+        "G1-NOR-100"
+      ],
+      "qabc_sha256": "7f4876eff2e3a04476deeb0c397bdb62cbb5b97f0ecba93d37d0897f61531f17",
+      "question_UNCHANGED": "Rezistenţa de izolaţie a pardoselii şi pereţilor în fiecare punct de măsurare în condiţiile specificate în SR EN 61140 şi verificate printr-o metoda recomandată în Anexa 8.1 din I7/2011, dacă tensiunea nominală a instalaţiei nu depăşeşte 500 V în tensiune continuă sau alternativă, trebuie să fie mai mare de",
+      "ABC_UNCHANGED": {
+        "A": "75 kΩ",
+        "B": "50 kΩ",
+        "C": "100 kΩ"
+      },
+      "keys_UNCHANGED": {
+        "G1-NOR-100": "B"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "source_rule": "I7 §4.1.5.5.6: R ≥50kΩ at Un ≤500V",
+      "inference": "B is intended threshold, but stem asks 'mai mare de' (strict >) rather than normative minimum 'nu mai mică de' (≥). A=75kΩ and C=100kΩ can be simultaneously satisfied by higher measured resistance. Literal multiple-true answers and equality edge block unconditional approval.",
+      "source": {
+        "url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+        "access": "OFFICIAL_ROMANIAN_GOVERNMENT_PRINT_HTML_TEXT_OPENED",
+        "exact_locator": "§4.1.5.5.6 and immediately following sentence"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A 75kΩ is higher than source threshold and would falsely reject values 50–75kΩ if taken as specified bound",
+          "B": "B normative 50kΩ limit for nominal voltage at most 500V, hence intended choice",
+          "C": "C 100kΩ pertains above 500V, not same voltage condition"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-462ffd19f9947c7c",
+      "representative_id": "G2-NOR-136",
+      "grade_ids": [
+        "G2-NOR-136"
+      ],
+      "qabc_sha256": "462ffd19f9947c7c888951f0c0a81a1e7e1e0d00ff37b9be7dd3df653622896f",
+      "question_UNCHANGED": "Care este documentul indicat de ANRE la punctul 14 pentru tematica Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "I7-2011",
+        "B": "PE 102/1986",
+        "C": "PE 155/1992"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-136": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (Document indicativ) confirmat la rândul 14 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: I7-2011, clădiri.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 2,
+        "table_row": 14,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A names the normative document in official ANRE bibliography point 14: I7-2011",
+          "B": "B 'PE 102/1986' is a different document than point 14",
+          "C": "C 'PE 155/1992' is not the document at point 14"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-47678ba446478d29",
+      "representative_id": "G2-NOR-138",
+      "grade_ids": [
+        "G2-NOR-138"
+      ],
+      "qabc_sha256": "47678ba446478d294b5647ccfa978e0ad7c24ad48d64387bab9809f68f6eda59",
+      "question_UNCHANGED": "Este „Normativul pentru proiectarea, execuția și exploatarea instalațiilor electrice aferente clădirilor” inclus în bibliografia aplicabilă Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-138": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (DA Grade II) confirmat la rândul 14 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: I7-2011, clădiri.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 2,
+        "table_row": 14,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A applicable to Grade II, official bibliography Grade II column marked DA for I7-2011",
+          "B": "B false: Grade II is marked DA for I7-2011",
+          "C": "C false exclusion of Grade II, which is included"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-0990969e7a5d1c30",
+      "representative_id": "G2-NOR-139",
+      "grade_ids": [
+        "G2-NOR-139"
+      ],
+      "qabc_sha256": "0990969e7a5d1c3011f63f22b3f7fd5ab38fa83ae5f1f2d2b4e4acb9d6699065",
+      "question_UNCHANGED": "În ce domeniu tematic este încadrat „Normativul pentru proiectarea, execuția și exploatarea instalațiilor electrice aferente clădirilor” în bibliografia ANRE?",
+      "ABC_UNCHANGED": {
+        "A": "Norme tehnice",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-139": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (Norme tehnice) confirmat la rândul 14 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: I7-2011, clădiri.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 2,
+        "table_row": 14,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A category Norme tehnice: official ANRE bibliography header for this entry",
+          "B": "B Electrotehnică is a different part of the syllabus",
+          "C": "C Măsurări electrice is not this norm's section"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-a9b3884b82b3560b",
+      "representative_id": "G2-NOR-140",
+      "grade_ids": [
+        "G2-NOR-140"
+      ],
+      "qabc_sha256": "a9b3884b82b3560bcb69c06323ebbe3a31f1a601b067c4c33aaaccb1429c3351",
+      "question_UNCHANGED": "Care este documentul indicat de ANRE la punctul 22 pentru tematica Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "PE 102/1986",
+        "B": "I7-2011",
+        "C": "PE 155/1992"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-140": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (Document indicativ) confirmat la rândul 22 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE102/1986, instalații conexiuni 1000V c.a..",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 22,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A names the normative document in official ANRE bibliography point 22: PE 102/1986",
+          "B": "B 'I7-2011' is a different document than point 22",
+          "C": "C 'PE 155/1992' is not the document at point 22"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-e1fb8895fe111b3f",
+      "representative_id": "G2-NOR-142",
+      "grade_ids": [
+        "G2-NOR-142"
+      ],
+      "qabc_sha256": "e1fb8895fe111b3f1162fa66b1b62974d982cdf9cec3bbbe7b3d06e2266b332e",
+      "question_UNCHANGED": "Este „Normativul pentru proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a.” inclus în bibliografia aplicabilă Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-142": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (DA Grade II) confirmat la rândul 22 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE102/1986, instalații conexiuni 1000V c.a..",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 22,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A applicable to Grade II, official bibliography Grade II column marked DA for PE 102/1986",
+          "B": "B false: Grade II is marked DA for PE 102/1986",
+          "C": "C false exclusion of Grade II, which is included"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-44b40fc73fdd2d61",
+      "representative_id": "G2-NOR-143",
+      "grade_ids": [
+        "G2-NOR-143"
+      ],
+      "qabc_sha256": "44b40fc73fdd2d619845866eabab289f51a64f1abfccc3c7e3c0aee312394d2a",
+      "question_UNCHANGED": "În ce domeniu tematic este încadrat „Normativul pentru proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a.” în bibliografia ANRE?",
+      "ABC_UNCHANGED": {
+        "A": "Norme tehnice",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-143": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (Norme tehnice) confirmat la rândul 22 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE102/1986, instalații conexiuni 1000V c.a..",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 22,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A category Norme tehnice: official ANRE bibliography header for this entry",
+          "B": "B Electrotehnică is a different part of the syllabus",
+          "C": "C Măsurări electrice is not this norm's section"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-a70467655ab0b8f8",
+      "representative_id": "G2-NOR-144",
+      "grade_ids": [
+        "G2-NOR-144"
+      ],
+      "qabc_sha256": "a70467655ab0b8f84e86011380fafa356e83484d14a16ff67ca690978b6a9c2f",
+      "question_UNCHANGED": "Care este documentul indicat de ANRE la punctul 29 pentru tematica Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "PE 155/1992",
+        "B": "PE 102/1986",
+        "C": "I7-2011"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-144": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (Document indicativ) confirmat la rândul 29 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE155/1992, branșamente clădiri civile.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 29,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A names the normative document in official ANRE bibliography point 29: PE 155/1992",
+          "B": "B 'PE 102/1986' is a different document than point 29",
+          "C": "C 'I7-2011' is not the document at point 29"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-31477acb661c144e",
+      "representative_id": "G2-NOR-146",
+      "grade_ids": [
+        "G2-NOR-146"
+      ],
+      "qabc_sha256": "31477acb661c144e6a0e3b34f1061d55e43365542ee952c2a1796b6d739af822",
+      "question_UNCHANGED": "Este „Normativul pentru proiectarea și executarea branșamentelor pentru clădiri civile” inclus în bibliografia aplicabilă Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-146": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (DA Grade II) confirmat la rândul 29 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE155/1992, branșamente clădiri civile.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 29,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A applicable to Grade II, official bibliography Grade II column marked DA for PE 155/1992",
+          "B": "B false: Grade II is marked DA for PE 155/1992",
+          "C": "C false exclusion of Grade II, which is included"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-4131b813d2f3332a",
+      "representative_id": "G2-NOR-147",
+      "grade_ids": [
+        "G2-NOR-147"
+      ],
+      "qabc_sha256": "4131b813d2f3332aeeb65d4cdce28b4ad5935b818c21b3d07d762ef920c2019b",
+      "question_UNCHANGED": "În ce domeniu tematic este încadrat „Normativul pentru proiectarea și executarea branșamentelor pentru clădiri civile” în bibliografia ANRE?",
+      "ABC_UNCHANGED": {
+        "A": "Norme tehnice",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "keys_UNCHANGED": {
+        "G2-NOR-147": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (Norme tehnice) confirmat la rândul 29 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE155/1992, branșamente clădiri civile.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 29,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A category Norme tehnice: official ANRE bibliography header for this entry",
+          "B": "B Electrotehnică is a different part of the syllabus",
+          "C": "C Măsurări electrice is not this norm's section"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-806b579cad356606",
+      "representative_id": "G2-NORM-001",
+      "grade_ids": [
+        "G2-NORM-001"
+      ],
+      "qabc_sha256": "806b579cad356606882bcaaf642571887594aa30ffbb0e6f2d77001c1f97035c",
+      "question_UNCHANGED": "Normativul I7-2011 pentru proiectarea, execuția și exploatarea instalațiilor electrice aferente clădirilor este aplicabil Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "keys_UNCHANGED": {
+        "G2-NORM-001": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (DA Grade II) confirmat la rândul 14 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: I7-2011, clădiri.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 2,
+        "table_row": 14,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A applicable to Grade II, official bibliography Grade II column marked DA for I7-2011",
+          "B": "B false: Grade II is marked DA for I7-2011",
+          "C": "C false exclusion of Grade II, which is included"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-762014d31a4e3dee",
+      "representative_id": "G2-NORM-002",
+      "grade_ids": [
+        "G2-NORM-002"
+      ],
+      "qabc_sha256": "762014d31a4e3deec3bd2f1e8c565fc1a4592cb55a50c98ad0bbc957310f1810",
+      "question_UNCHANGED": "Normativul PE 102/1986 privind proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a. este inclus pentru Gradul II?",
+      "ABC_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradul I"
+      },
+      "keys_UNCHANGED": {
+        "G2-NORM-002": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (DA Grade II) confirmat la rândul 22 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE102/1986, instalații conexiuni 1000V c.a..",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 22,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A applicable to Grade II, official bibliography Grade II column marked DA for PE 102/1986",
+          "B": "B false: Grade II is marked DA for PE 102/1986",
+          "C": "C false exclusion of Grade II, which is included"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    },
+    {
+      "unit_id": "AU-f85c371b57d8589f",
+      "representative_id": "G2-NORM-003",
+      "grade_ids": [
+        "G2-NORM-003"
+      ],
+      "qabc_sha256": "f85c371b57d8589f3302bd0db7a57fdba8b97fb03043cf7acaac763cfda0321b",
+      "question_UNCHANGED": "Normativul PE 155/1992 privind proiectarea și executarea branșamentelor pentru clădiri civile este aplicabil Gradului II?",
+      "ABC_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "keys_UNCHANGED": {
+        "G2-NORM-003": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "source_rule": "Bibliografia ANRE 05.2023 Norme tehnice Grad II DA",
+      "source_analysis": "A (DA Grade II) confirmat la rândul 29 din bibliografia oficială ANRE 05.2023, tabel «Norme tehnice» și coloana Grad II=DA; B/C indică alt normativ sau exclud gradul II / clasificare falsă. Identitatea normativului: PE155/1992, branșamente clădiri civile.",
+      "source": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "pdf_page": 3,
+        "table_row": 29,
+        "access": "OFFICIAL_ANRE_PDF_AND_PAGE_SCREENSHOT_VISUALLY_VERIFIED_IN_SESSION"
+      },
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_06_ALL_15_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "ABC": {
+          "A": "A applicable to Grade II, official bibliography Grade II column marked DA for PE 155/1992",
+          "B": "B false: Grade II is marked DA for PE 155/1992",
+          "C": "C false exclusion of Grade II, which is included"
+        }
+      },
+      "official_exam_editions": "EXACT_2026_EXAM_REPLACEMENT_NOT_INDEPENDENTLY_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "official_ANRE_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "key_changed": false
+    }
+  ]
+}

@@ -1,0 +1,2344 @@
+{
+  "schema": "v170_seven_more_scoped_legacy_evidence_card_migrations",
+  "date": "2026-11-20",
+  "basis": "CKPT-295 V149 pinned read-only + V164/V166/V167/V168/V169",
+  "count": {
+    "sources": 7,
+    "source_sections": 65,
+    "new_unique": 60,
+    "prior_reused": 5,
+    "duplicate": 0,
+    "unknown_grade_refs": 0,
+    "previous": 445,
+    "now": 505,
+    "left": 63,
+    "approved": 0
+  },
+  "source_counts": [
+    {
+      "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+      "sections": 8
+    },
+    {
+      "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+      "sections": 15
+    },
+    {
+      "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+      "sections": 12
+    },
+    {
+      "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+      "sections": 10
+    },
+    {
+      "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+      "sections": 10
+    },
+    {
+      "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+      "sections": 7
+    },
+    {
+      "file": "CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md",
+      "sections": 3
+    }
+  ],
+  "reused": [
+    {
+      "grade": "G1-ELE-128",
+      "unit": "QABC-0119",
+      "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md"
+    },
+    {
+      "grade": "G1-ELE-155",
+      "unit": "QABC-0146",
+      "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md"
+    },
+    {
+      "grade": "G1-ELE-189",
+      "unit": "QABC-0178",
+      "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md"
+    },
+    {
+      "grade": "G1-ELE-193",
+      "unit": "QABC-0182",
+      "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md"
+    },
+    {
+      "grade": "G1-ELE-180",
+      "unit": "QABC-0169",
+      "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md"
+    }
+  ],
+  "unmatched": [],
+  "duplicates": [],
+  "guardrails": "All source sections preserved without original Q/A/B/C/keys or application changes. Status is prior historical research body migration, not independent final ANRE content approval. No invented normative clause or official answer key.",
+  "cards": [
+    {
+      "unit_id": "QABC-0368",
+      "grade_id_from_legacy_heading": "G1-NOR-054",
+      "grade_ids": [
+        "G1-NOR-054"
+      ],
+      "original_question": "Întrerupătoarele, comutatoarele şi butoanele de lumină se montează, faţă de nivelul pardoselii finite, la înălţimea de:",
+      "original_options": {
+        "A": "1m de la axul aparatului",
+        "B": "(0,6-1,5) m de la axul aparatului",
+        "C": "1,5 m de la axul aparatului"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-054=A",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "61",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-054\n- Original: Întrerupătoarele, comutatoarele şi butoanele de lumină se montează, faţă de nivelul pardoselii finite, la înălţimea de:\n- A: 1m de la axul aparatului\n- B: (0,6-1,5) m de la axul aparatului\n- C: 1,5 m de la axul aparatului\n- Imported key **A** untouched; source-favored B **NOT_APPLIED**.\n- Exact official clause: I7 §5.4.22.\n- A/B/C, exception and semantics: I7 recommends 0.6–1.5m from device, not exactly 'axis of device'. B is intended complete interval, imported A=1m is merely one permissible value; also recommendation not mandatory. No unconditional unique key.\n- Status: `CURRENT_IMPORT_CONTRADICTS_PRIMARY_SOURCE`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0372",
+      "grade_id_from_legacy_heading": "G1-NOR-058",
+      "grade_ids": [
+        "G1-NOR-058"
+      ],
+      "original_question": "Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:",
+      "original_options": {
+        "A": "se admite întotdeauna",
+        "B": "este total interzisă",
+        "C": "se admite condiţionat"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-058=B",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "65",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-058\n- Original: Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:\n- A: se admite întotdeauna\n- B: este total interzisă\n- C: se admite condiţionat\n- Imported key **B** untouched; source-favored C **NOT_APPLIED**.\n- Exact official clause: I7 §3.0.3.5.\n- A/B/C, exception and semantics: C conditionally admitted IP >=33 sealed and corrosion-resistant, importing B total ban ignores explicit exception. A always permission false.\n- Status: `CURRENT_IMPORT_CONTRADICTS_PRIMARY_SOURCE`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0374",
+      "grade_id_from_legacy_heading": "G1-NOR-060",
+      "grade_ids": [
+        "G1-NOR-060"
+      ],
+      "original_question": "Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:",
+      "original_options": {
+        "A": "este recomandată",
+        "B": "este permisă condiţionat",
+        "C": "nu este permisă"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-060=B",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "67",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-060\n- Original: Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:\n- A: este recomandată\n- B: este permisă condiţionat\n- C: nu este permisă\n- Imported key **B** untouched; source-favored C **NOT_APPLIED**.\n- Exact official clause: I7 §5.5.3.2.\n- A/B/C, exception and semantics: Water pipes prohibited AS protective conductor PE; C direct exact. B 'conditional' confuses equipotential bonding with using plumbing AS PE; A recommended false.\n- Status: `CURRENT_IMPORT_CONTRADICTS_PRIMARY_SOURCE`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0375",
+      "grade_id_from_legacy_heading": "G1-NOR-061",
+      "grade_ids": [
+        "G1-NOR-061"
+      ],
+      "original_question": "Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:",
+      "original_options": {
+        "A": "admisă",
+        "B": "interzisă",
+        "C": "admisă doar pentru tuburi cu diametru mai mic de 16 mm"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-061=A",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "68",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-061\n- Original: Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:\n- A: admisă\n- B: interzisă\n- C: admisă doar pentru tuburi cu diametru mai mic de 16 mm\n- Imported key **A** untouched; source-favored B **NOT_APPLIED**.\n- Exact official clause: I7 §5.2.12.3.4.\n- A/B/C, exception and semantics: Jointing protection tubes at structural passage expressly forbidden, no diameter<16mm exception. B direct exact.\n- Status: `CURRENT_IMPORT_CONTRADICTS_PRIMARY_SOURCE`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0376",
+      "grade_id_from_legacy_heading": "G1-NOR-062",
+      "grade_ids": [
+        "G1-NOR-062"
+      ],
+      "original_question": "În camerele de copii din creşe, grădiniţe, spitale de copii, prizele trebuie montate pe pereţi la următoarele înălţimi măsurate de la axul aparatului la nivelul pardoselii finite:",
+      "original_options": {
+        "A": "peste 1m",
+        "B": "peste 1,5 m",
+        "C": "peste 2m"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-062=A",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "69",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-062\n- Original: În camerele de copii din creşe, grădiniţe, spitale de copii, prizele trebuie montate pe pereţi la următoarele înălţimi măsurate de la axul aparatului la nivelul pardoselii finite:\n- A: peste 1m\n- B: peste 1,5 m\n- C: peste 2m\n- Imported key **A** untouched; source-favored B **NOT_APPLIED**.\n- Exact official clause: I7 §5.4.25.\n- A/B/C, exception and semantics: Recommendation sockets above 1.5m in child care, B intended threshold. Stem says mandatory where norm says recommended; C >2m is stricter subset, A >1m fails 1.5m threshold for some permitted heights.\n- Status: `CURRENT_IMPORT_CONTRADICTS_PRIMARY_SOURCE`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0380",
+      "grade_id_from_legacy_heading": "G1-NOR-066",
+      "grade_ids": [
+        "G1-NOR-066"
+      ],
+      "original_question": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+      "original_options": {
+        "A": "este interzisă",
+        "B": "este admisă",
+        "C": "este admisă numai pentru conductoare de cupru"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-066=B",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "73",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-066\n- Original: Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:\n- A: este interzisă\n- B: este admisă\n- C: este admisă numai pentru conductoare de cupru\n- Imported key **B** untouched; source-favored A **NOT_APPLIED**.\n- Exact official clause: I7 §5.2.12.1.4.\n- A/B/C, exception and semantics: Buried conductor inside tubes expressly forbidden by precise I7 provision, although §5.2.12.1.3 generic conductors in tubes allowed elsewhere. Historical CKPT179/181 already superseded initial generic inference; A exact.\n- Status: `CURRENT_IMPORT_CONTRADICTS_PRIMARY_SOURCE`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0408",
+      "grade_id_from_legacy_heading": "G1-NOR-094",
+      "grade_ids": [
+        "G1-NOR-094"
+      ],
+      "original_question": "Rezistenţa prizei de pământ a unei clădiri, atunci când este folosită numai pentru protecţia împotriva şocurilor electrice, trebuie să fie cel mult",
+      "original_options": {
+        "A": "10 Ω",
+        "B": "1 Ω",
+        "C": "4 Ω"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-094=C",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "101",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-094\n- Original: Rezistenţa prizei de pământ a unei clădiri, atunci când este folosită numai pentru protecţia împotriva şocurilor electrice, trebuie să fie cel mult\n- A: 10 Ω\n- B: 1 Ω\n- C: 4 Ω\n- Imported key **C** untouched; source-favored C **NOT_APPLIED**.\n- Exact official clause: I7 §5.5.7.11.\n- A/B/C, exception and semantics: Source says electrode `poate fi` max 4Ω if ONLY electric-shock protection, whereas 1Ω if combined lightning protection. C intended max threshold, B 1Ω more restrictive but also satisfies a <=4Ω bound; wording `trebuie` stronger than `poate fi`.\n- Status: `INTENDED_KEY_MATCH_WITH_LANGUAGE_QUALIFICATION`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0414",
+      "grade_id_from_legacy_heading": "G1-NOR-100",
+      "grade_ids": [
+        "G1-NOR-100"
+      ],
+      "original_question": "Rezistenţa de izolaţie a pardoselii şi pereţilor în fiecare punct de măsurare în condiţiile specificate în SR EN 61140 şi verificate printr-o metoda recomandată în Anexa 8.1 din I7/2011, dacă tensiunea nominală a instalaţiei nu depăşeşte 500 V în tensiune continuă sau alternativă, trebuie să fie mai mare de",
+      "original_options": {
+        "A": "75 kΩ",
+        "B": "50 kΩ",
+        "C": "100 kΩ"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-NOR-100=B",
+      "canonical_source": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "row": "107",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "sha": "aa90a9e125b1107d7fe3c3b2a362f2899187e053",
+        "unmodified_historical_section": "### G1-NOR-100\n- Original: Rezistenţa de izolaţie a pardoselii şi pereţilor în fiecare punct de măsurare în condiţiile specificate în SR EN 61140 şi verificate printr-o metoda recomandată în Anexa 8.1 din I7/2011, dacă tensiunea nominală a instalaţiei nu depăşeşte 500 V în tensiune continuă sau alternativă, trebuie să fie mai mare de\n- A: 75 kΩ\n- B: 50 kΩ\n- C: 100 kΩ\n- Imported key **B** untouched; source-favored B **NOT_APPLIED**.\n- Exact official clause: I7 §4.1.5.5.6.\n- A/B/C, exception and semantics: I7 requires resistance NOT less than 50kΩ (≥ 50), whereas stem says greater than (>50). B is intended nominal figure, but equality edge differs; A 75 and C 100 also are >50 values, not new threshold.\n- Status: `INTENDED_KEY_MATCH_WITH_LANGUAGE_QUALIFICATION`, NOT approved, official ANRE exam key NOT_VERIFIED, independent reviewer NOT_RUN.\n\n## Newly rescued G1-NOR-056 source locator, supersedes CKPT-221 miss\n- CKPT-221 accurately noted source-exact clause not found then, but **official I7 §5.5.3.5 explicitly prohibits devices of switching placed in series with protective conductor**, while allowing joints removable with tool for tests. §5.5.3.6 separately prevents series dedicated devices. Imported G1-NOR-056 key **A** remains unchanged, now source-intended and qualified: do not confuse test-disconnectable joint requiring tool with user-operated interruption device. This is ONE source locator repair for pre-existing CKPT-221 case, not a new QABC count.\n\n## Grade cross-membership evidence reuse, not new QA\n- CKPT-216 compared exact original QABC for G1-ELE-090 vs G2-ELEC-234 (resonance), G1-ELE-091 vs G2-ELEC-235 (Kirchhoff instantaneous), G1-ELE-165 vs G2-ELEC-303 (protection selectivity). All grade IDs have imported A, and same original A/B/C; G2 evidence may reference CKPT216 but it is NOT separately independently source audited. Technical resonance `numai` remains conditional on ideal steady linear AC model.\n\n## Gate\n- Existing 8 previous QABC reopened on official exact source; 1 source locator rescue NOR056; 3 exact crossgrade evidence links; 0 new unique bank units; 0 learner approvals; 0 answer-key edits; no HTML/APK/app/main/release or merge. Preserve historical CKPTs. PR#7 Draft.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0125",
+      "grade_id_from_legacy_heading": "G1-ELE-134",
+      "grade_ids": [
+        "G1-ELE-134",
+        "G2-ELEC-274"
+      ],
+      "original_question": "Intr-un tor (solenoid de formă circulară bobinat), energia magnetică produsă de un curent care străbate bobinajul torului este localizată:",
+      "original_options": {
+        "A": "integral în câmpul magnetic din volumul torului",
+        "B": "integral în câmpul magnetic din afara torului",
+        "C": "1/2 din energie este înmagazinată în volumul torului, iar 1/2 în afara torului"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-134=A | G2-ELEC-274=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "141",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-134 ↔ G2-ELEC-274\n- **Original Q:** Intr-un tor (solenoid de formă circulară bobinat), energia magnetică produsă de un curent care străbate bobinajul torului este localizată:\n- **A:** integral în câmpul magnetic din volumul torului\n- **B:** integral în câmpul magnetic din afara torului\n- **C:** 1/2 din energie este înmagazinată în volumul torului, iar 1/2 în afara torului\n- **Imported key unchanged:** A\n- **A/B/C and model / exceptions:** A corespunde toroidului ideal uniform bobinat: câmpul și energia sa sunt localizate în interior. B pretinde exclusiv exterior, fals în model. C împărțire 50/50 nejustificată. Sursa confirmă un câmp de scăpări mic la spire reale, deci «integral» nu este absolut pentru toroid fizic; condiție de model.\n- **Source directly relevant to model:** https://openstax.org/books/university-physics-volume-2/pages/12-6-solenoids-and-toroids\n- **Exact target locator:** Toroids paragraphs 113-145; outside ideal toroid B=0; finite winding leakage\n- **Actual retrieval status:** OPENED_HTML. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/university-physics-volume-2/pages/12-6-solenoids-and-toroids"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0137",
+      "grade_id_from_legacy_heading": "G1-ELE-146",
+      "grade_ids": [
+        "G1-ELE-146",
+        "G2-ELEC-284"
+      ],
+      "original_question": "La transformatoarele la care comutarea ploturilor se face cu transformatorul în sarcina, comutatorul de ploturi se montează:",
+      "original_options": {
+        "A": "pe înfăşurarea de tensiune mai mica, deoarece tensiunea este mai mica",
+        "B": "pe înfăşurarea de tensiune mai mare, deoarece curentul este mai mic",
+        "C": "pe oricare dintre înfăşurări"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-146=B | G2-ELEC-284=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "153",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-146 ↔ G2-ELEC-284\n- **Original Q:** La transformatoarele la care comutarea ploturilor se face cu transformatorul în sarcina, comutatorul de ploturi se montează:\n- **A:** pe înfăşurarea de tensiune mai mica, deoarece tensiunea este mai mica\n- **B:** pe înfăşurarea de tensiune mai mare, deoarece curentul este mai mic\n- **C:** pe oricare dintre înfăşurări\n- **Imported key unchanged:** B\n- **A/B/C and model / exceptions:** B descrie amplasarea uzuală pe înfășurarea cu tensiune mai mare și curent mai mic pentru aceeași putere; A are argumentul tensiunii mici dar nu acoperă practica tipică. C «oricare» poate fi tehnic posibil în proiectări speciale, iar Reinhausen afirmă explicit că poziționarea este condiționată de design. Nu declara B universal.\n- **Source directly relevant to model:** https://www.reinhausen.com/newsroom/mr-knowledge-base/tap-changer-basics\n- **Exact target locator:** OLTC position high-voltage or low-voltage winding depends on transformer design and client requirements\n- **Actual retrieval status:** OPENED_HTML. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.reinhausen.com/newsroom/mr-knowledge-base/tap-changer-basics"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0142",
+      "grade_id_from_legacy_heading": "G1-ELE-151",
+      "grade_ids": [
+        "G1-ELE-151",
+        "G2-ELEC-289"
+      ],
+      "original_question": "O siguranţa mai mare în alimentarea consumatorilor de energie electrica se realizează prin:",
+      "original_options": {
+        "A": "reţele radiale",
+        "B": "reţele buclate cu funcţionare radialã",
+        "C": "reţele buclate"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-151=C | G2-ELEC-289=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "158",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-151 ↔ G2-ELEC-289\n- **Original Q:** O siguranţa mai mare în alimentarea consumatorilor de energie electrica se realizează prin:\n- **A:** reţele radiale\n- **B:** reţele buclate cu funcţionare radialã\n- **C:** reţele buclate\n- **Imported key unchanged:** C\n- **A/B/C and model / exceptions:** C rețele buclate exploatate efectiv în buclă pot furniza redundanță și căi alternative; A radial simplu poate pierde alimentarea pentru un defect pe trunchi. B buclat cu exploatare radială permite restabilire prin manevre, poate oferi fiabilitate ridicată. Comparația B vs C nu este universală: protecția, exploatarea și continuitatea serviciului fac verdictul dependent de condiții. MARCAT AMBIGUU; sursa este numai rezumatul de căutare.\n- **Source directly relevant to model:** https://ieeexplore.ieee.org/document/9162500/\n- **Exact target locator:** IEEE urban mesh-constructed radial-operated outage transfer adjacent feeders; full paper not available\n- **Actual retrieval status:** SEARCH_ONLY_SOURCE_ABSTRACT. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://ieeexplore.ieee.org/document/9162500/"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0164",
+      "grade_id_from_legacy_heading": "G1-ELE-175",
+      "grade_ids": [
+        "G1-ELE-175",
+        "G2-ELEC-311"
+      ],
+      "original_question": "Care dintre urmatoarele enunturi nu este adevarat:",
+      "original_options": {
+        "A": "energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;",
+        "B": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de functionare",
+        "C": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de utilizare al puterii maxime."
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-175=B | G2-ELEC-311=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "182",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-175 ↔ G2-ELEC-311\n- **Original Q:** Care dintre urmatoarele enunturi nu este adevarat:\n- **A:** energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;\n- **B:** energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de functionare\n- **C:** energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de utilizare al puterii maxime.\n- **Imported key unchanged:** B\n- **A/B/C and model / exceptions:** A E=Pmediu·T este definiția puterii medii pe interval; C E=Pmax·T_utilizare este definiția timpului echivalent de utilizare a puterii maxime. B E=Pmax·T_total nu este adevărat în general decât încărcare constantă la maxim, de aceea este enunțul fals cerut. Sursa EIA verifică termenii mediu/vârf dar definiția specifică T_utilizare trebuie confirmată în materialul ANRE.\n- **Source directly relevant to model:** https://www.eia.gov/tools/glossary/index.php?id=load\n- **Exact target locator:** Glossary load factor average and peak load; mathematical relation E=P_avg*T=P_max*T_equiv derived\n- **Actual retrieval status:** OPENED_HTML_PARTIAL_SCOPE. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.eia.gov/tools/glossary/index.php?id=load"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0165",
+      "grade_id_from_legacy_heading": "G1-ELE-176",
+      "grade_ids": [
+        "G1-ELE-176",
+        "G2-ELEC-312"
+      ],
+      "original_question": "Pentru calculul curenţilor de scurtcircuit într-o reţea prin metoda componentelor simetrice, reţeaua inversă (negativă) se compune din:",
+      "original_options": {
+        "A": "impedanţe identice cu ale reţelei directe (pozitive) pentru elemente statice și impedanţe diferite de ale reţelei directe (pozitive) pentru maşini rotative",
+        "B": "impedanţe identice cu ale reţelei directe (pozitive) atât pentru elemente statice cât și pentru maşini rotative",
+        "C": "impedanţe diferite de ale reţelei directe (pozitive) pentru elemente statice"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-176=A | G2-ELEC-312=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "183",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-176 ↔ G2-ELEC-312\n- **Original Q:** Pentru calculul curenţilor de scurtcircuit într-o reţea prin metoda componentelor simetrice, reţeaua inversă (negativă) se compune din:\n- **A:** impedanţe identice cu ale reţelei directe (pozitive) pentru elemente statice și impedanţe diferite de ale reţelei directe (pozitive) pentru maşini rotative\n- **B:** impedanţe identice cu ale reţelei directe (pozitive) atât pentru elemente statice cât și pentru maşini rotative\n- **C:** impedanţe diferite de ale reţelei directe (pozitive) pentru elemente statice\n- **Imported key unchanged:** A\n- **A/B/C and model / exceptions:** A corespunde analizei uzuale: elementele statice liniare și simetrice au Z2≈Z1, iar mașinile rotative au impedanțe de secvență diferite. B impune Z2=Z1 inclusiv pentru mașini rotative, fals în general. C susține că Z2 static diferă, în general fals. Necesită exacta ediție oficială și condițiile mașinii; oglindă a unui standard restricționat nu este sursă certificată.\n- **Source directly relevant to model:** https://studylib.net/doc/28003419/30023-2018\n- **Exact target locator:** IEEE 3002.3-2018 section 6.7.2: static sequence impedances same positive/negative; rotating differ\n- **Actual retrieval status:** OPENED_HTML_SECONDARY_STANDARD_MIRROR. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://studylib.net/doc/28003419/30023-2018"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0166",
+      "grade_id_from_legacy_heading": "G1-ELE-177",
+      "grade_ids": [
+        "G1-ELE-177",
+        "G2-ELEC-313"
+      ],
+      "original_question": "Pentru limitarea curenţilor de scurtcircuit se utilizează bobine:",
+      "original_options": {
+        "A": "înseriate pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+        "B": "racordate în derivaţie pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+        "C": "înseriate pe circuit, monofazate, cu miez de fier, răcite cu ulei, de tip interior;"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-177=A | G2-ELEC-313=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "184",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-177 ↔ G2-ELEC-313\n- **Original Q:** Pentru limitarea curenţilor de scurtcircuit se utilizează bobine:\n- **A:** înseriate pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;\n- **B:** racordate în derivaţie pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;\n- **C:** înseriate pe circuit, monofazate, cu miez de fier, răcite cu ulei, de tip interior;\n- **Imported key unchanged:** A\n- **A/B/C and model / exceptions:** A descrie o configurație tipică pentru limitarea curentului de defect: reactor în serie fără miez feromagnetic pentru a evita saturarea. B în derivație nu crește reactanța serie a traseului de scurtcircuit; C cu fier și ulei poate exista în alte aplicații dar nu este tipul uzual menționat. Specificațiile «monofazat de interior și uscat» nu sunt demonstrate ca obligatorii pentru orice caz.\n- **Source directly relevant to model:** https://trench-group.com/air-core-coils/air-core-series-reactors/\n- **Exact target locator:** Current Limiting Reactors: series air-core line/bus-tie reactors\n- **Actual retrieval status:** OPENED_HTML. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://trench-group.com/air-core-coils/air-core-series-reactors/"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0168",
+      "grade_id_from_legacy_heading": "G1-ELE-179",
+      "grade_ids": [
+        "G1-ELE-179",
+        "G2-ELEC-315"
+      ],
+      "original_question": "Puterea nominala a unui motor electric se defineşte astfel:",
+      "original_options": {
+        "A": "puterea activã absorbitã de motor de la reţea când este alimentat la Un si absoarbe In",
+        "B": "puterea activã transmisã prin întrefierul motorului când este alimentat la Un si absoarbe In",
+        "C": "puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-179=C | G2-ELEC-315=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "186",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-179 ↔ G2-ELEC-315\n- **Original Q:** Puterea nominala a unui motor electric se defineşte astfel:\n- **A:** puterea activã absorbitã de motor de la reţea când este alimentat la Un si absoarbe In\n- **B:** puterea activã transmisã prin întrefierul motorului când este alimentat la Un si absoarbe In\n- **C:** puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In\n- **Imported key unchanged:** C\n- **A/B/C and model / exceptions:** C definește puterea mecanică nominală la arbore. A este puterea electrică absorbită înainte de pierderi; B puterea electromagnetică de întrefier, înainte de pierderile rotor/mecanice. Barem C este compatibil cu definițiile uzuale, dar pagina ABB a fost returnată incomplet la deschidere; locatorul exact nu este certificat.\n- **Source directly relevant to model:** https://www.abb.com/global/en/news/132261/how-to-read-a-nema-motor-nameplate\n- **Exact target locator:** ABB search excerpt: horsepower is mechanical motor output rating\n- **Actual retrieval status:** SEARCH_ONLY_FETCHEd_MINIMAL. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.abb.com/global/en/news/132261/how-to-read-a-nema-motor-nameplate"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0183",
+      "grade_id_from_legacy_heading": "G1-ELE-194",
+      "grade_ids": [
+        "G1-ELE-194",
+        "G2-ELEC-330"
+      ],
+      "original_question": "Principalul avantaj al motoarelor asincrone cu rotorul în scurtcircuit cu simplă colivie îl constituie:",
+      "original_options": {
+        "A": "curentul mic de pornire",
+        "B": "pornirea fără dispozitiv de pornire",
+        "C": "cuplul de pornire foarte bun"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-194=B | G2-ELEC-330=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "201",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-194 ↔ G2-ELEC-330\n- **Original Q:** Principalul avantaj al motoarelor asincrone cu rotorul în scurtcircuit cu simplă colivie îl constituie:\n- **A:** curentul mic de pornire\n- **B:** pornirea fără dispozitiv de pornire\n- **C:** cuplul de pornire foarte bun\n- **Imported key unchanged:** B\n- **A/B/C and model / exceptions:** B sugerează că motorul simplă colivie poate porni direct la rețea fără dispozitiv special de pornire, avantaj uzual față de rotor bobinat. A «curent mic» este fals la pornirea directă; C «cuplu foarte bun» nu se aplică universal simplei colivii. B este condiționată de mărime/rețea/sarcină și tot este necesar aparat de manevră.\n- **Source directly relevant to model:** https://easa.com/resources/resource-library/squirrel-cage-induction-motor-starting-methods\n- **Exact target locator:** Across-the-line starting applies full voltage; reduced voltage starters alternatives\n- **Actual retrieval status:** OPENED_HTML. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://easa.com/resources/resource-library/squirrel-cage-induction-motor-starting-methods"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0184",
+      "grade_id_from_legacy_heading": "G1-ELE-195",
+      "grade_ids": [
+        "G1-ELE-195",
+        "G2-ELEC-331"
+      ],
+      "original_question": "Principalul avantaj al motoarelor de curent continuu îl constituie faptul că:",
+      "original_options": {
+        "A": "permit reglarea în limite largi a turaţiei",
+        "B": "nu necesită întreţinere permanentă",
+        "C": "prezintă o construcţie simplă şi robustă"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-195=A | G2-ELEC-331=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "202",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-195 ↔ G2-ELEC-331\n- **Original Q:** Principalul avantaj al motoarelor de curent continuu îl constituie faptul că:\n- **A:** permit reglarea în limite largi a turaţiei\n- **B:** nu necesită întreţinere permanentă\n- **C:** prezintă o construcţie simplă şi robustă\n- **Imported key unchanged:** A\n- **A/B/C and model / exceptions:** A turație reglabilă în limite largi prin tensiunea armăturii sau excitare descrie avantaj istoric al motoarelor DC. B lipsa întreținerii este fals pentru modelele cu colector; C construcția simplă robustă nu caracterizează tipic DC cu perii. Azi VFD pentru AC poate oferi beneficii comparabile; context istoric al baremului trebuie păstrat.\n- **Source directly relevant to model:** https://technav.ieee.org/topic/dc-motors/\n- **Exact target locator:** IEEE topic summary wide-range speed control; page fetch cache miss\n- **Actual retrieval status:** SEARCH_ONLY_OPEN_FAILED. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://technav.ieee.org/topic/dc-motors/"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0192",
+      "grade_id_from_legacy_heading": "G1-ELE-203",
+      "grade_ids": [
+        "G1-ELE-203",
+        "G2-ELEC-339"
+      ],
+      "original_question": "Reactanţa supratranzitorie a unui motor este:",
+      "original_options": {
+        "A": "direct proporţionala cu curentul de pornire",
+        "B": "invers proporţionala cu curentul de pornire",
+        "C": "invers proporţionala cu pătratul tensiunii de alimentare"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-203=B | G2-ELEC-339=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "210",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-203 ↔ G2-ELEC-339\n- **Original Q:** Reactanţa supratranzitorie a unui motor este:\n- **A:** direct proporţionala cu curentul de pornire\n- **B:** invers proporţionala cu curentul de pornire\n- **C:** invers proporţionala cu pătratul tensiunii de alimentare\n- **Imported key unchanged:** B\n- **A/B/C and model / exceptions:** B: la aceeași tensiune și bază de putere, reactanța/impedanța supratranzitorie echivalentă estimată este invers proporțională cu curentul de rotor blocat pornire. A inversează dependența; C indică pătratul tensiunii, nejustificat pentru reactanța intrinsecă. Precizare esențială: sursa tratează Xʺ sau Xlr aproximativ prin impedanță, neglijând explicit R și variații de saturație. Nu universal pentru orice motor.\n- **Source directly relevant to model:** https://help.easypower.com/ezp/25.0/Content/13_Database_Technical_Ref/Motor/Short_Circuit_Tab.htm\n- **Exact target locator:** X double prime or locked-rotor reactance estimated as 100/LRM percent; starting current multiplier\n- **Actual retrieval status:** OPENED_HTML. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://help.easypower.com/ezp/25.0/Content/13_Database_Technical_Ref/Motor/Short_Circuit_Tab.htm"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0193",
+      "grade_id_from_legacy_heading": "G1-ELE-204",
+      "grade_ids": [
+        "G1-ELE-204",
+        "G2-ELEC-340"
+      ],
+      "original_question": "Un regim energetic  este deformant",
+      "original_options": {
+        "A": "dacă undele de curent şi tensiune nu sunt periodice",
+        "B": "numai dacă undele de curent şi de tensiune sunt ambele periodice şi nesinusoidale",
+        "C": "undele de curent şi tensiune sunt periodice iar cel puțin una este nesinusoidală"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-204=C | G2-ELEC-340=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "211",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "unmodified_historical_section": "## G1-ELE-204 ↔ G2-ELEC-340\n- **Original Q:** Un regim energetic  este deformant\n- **A:** dacă undele de curent şi tensiune nu sunt periodice\n- **B:** numai dacă undele de curent şi de tensiune sunt ambele periodice şi nesinusoidale\n- **C:** undele de curent şi tensiune sunt periodice iar cel puțin una este nesinusoidală\n- **Imported key unchanged:** C\n- **A/B/C and model / exceptions:** C: regim periodic în care cel puțin unul dintre curent/tensiune este nesinusoidal constituie regim deformant. A nu cere periodicitate, nu descrie modelul armonic staționar; B «numai ambele» fals pentru sarcină neliniară alimentată de tensiune sinusoidală cu curent distorsionat. Condițiile periodicității și frecvenței fundamentale sunt relevante.\n- **Source directly relevant to model:** https://www.electrical-installation.org/enwiki/Definition_of_harmonics\n- **Exact target locator:** Harmonic currents and/or voltages deviate from sinusoidal waveforms under periodic operation\n- **Actual retrieval status:** OPENED_HTML. NOT authenticated ANRE exam key; technical source QA by same assistant, not independent review.\n\n## High-risk observations\n- **G1-ELE-128:** A requires pure inductance; general inductive circuits need not be 90 degrees.\n- **G1-ELE-134:** 'integral' only follows from ideal toroid; real toroidal windings leak magnetic field.\n- **G1-ELE-146:** manufacturer states tap-changer placement depends on transformer design; do not claim high-voltage mounting mandatory.\n- **G1-ELE-151:** network reliability comparison lacks protection, operation, switching and outage criteria. FLAG AMBIGUOUS.\n- **G1-ELE-203:** Xʺ vs locked rotor current is an approximation under normalized assumptions, not universal circuit law.\n\n## QA structural and scope\n- Exact original question+A+B+C+key matches 15/15; Grade-II counterpart keys identical; 26 changed rows with allowed metadata only; unchanged grade rows preserved byte for byte; 822 IDs retained in original order.\n- Existing 50 non-standard serialized comma rows remain intact, not silently repaired; separate full CSV parser/reconciliation gate remains.\n- **No** key modification, app HTML/APK modification, merge/release, or learning approval. PR #7 stays Draft.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.electrical-installation.org/enwiki/Definition_of_harmonics"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0145",
+      "grade_id_from_legacy_heading": "G1-ELE-154",
+      "grade_ids": [
+        "G1-ELE-154",
+        "G2-ELEC-292"
+      ],
+      "original_question": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "original_options": {
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-154=B | G2-ELEC-292=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "161",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-154 / G2-ELEC-292\n- Original: Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:\n- A: 1\n- B: 0\n- C: 1,5\n- Key unchanged: B\n- A/B/C evidence and exceptions: The algebraic mean of an alternating AC quantity without a DC component over a period is zero; alternatives A and C are arbitrary numbers. A general sign-changing periodic wave with DC offset is a scope exception.\n- Source: https://openstax.org/books/college-physics-2e/pages/20-5-alternating-current-versus-direct-current\n- Risk qualifier: ALTERNATING_MEAN_ZERO; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/college-physics-2e/pages/20-5-alternating-current-versus-direct-current"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0148",
+      "grade_id_from_legacy_heading": "G1-ELE-157",
+      "grade_ids": [
+        "G1-ELE-157",
+        "G2-ELEC-295"
+      ],
+      "original_question": "Metoda transfigurării reţelelor electrice este folosita pentru a:",
+      "original_options": {
+        "A": "reduce pierderile de putere activa în reţea",
+        "B": "simplifica structura reţelelor echivalente pentru a reduce volumul de calcule",
+        "C": "diminua consumul specific de material conductor"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-157=B | G2-ELEC-295=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "164",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-157 / G2-ELEC-295\n- Original: Metoda transfigurării reţelelor electrice este folosita pentru a:\n- A: reduce pierderile de putere activa în reţea\n- B: simplifica structura reţelelor echivalente pentru a reduce volumul de calcule\n- C: diminua consumul specific de material conductor\n- Key unchanged: B\n- A/B/C evidence and exceptions: Mathematical network transformation simplifies equivalent circuit computation B; neither A physical loss reduction nor C metal material saving is entailed by an equivalent network transformation.\n- Source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/AC_Electrical_Circuit_Analysis%3A_A_Practical_Approach_%28Fiore%29/05%3A_Analysis_Theorems_and_Techniques/5.4%3A_Thevenin%27s_and_Norton%27s_Theorems\n- Risk qualifier: EQUIVALENT_NETWORK_SIMPLIFICATION; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/AC_Electrical_Circuit_Analysis%3A_A_Practical_Approach_%28Fiore%29/05%3A_Analysis_Theorems_and_Techniques/5.4%3A_Thevenin%27s_and_Norton%27s_Theorems"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0153",
+      "grade_id_from_legacy_heading": "G1-ELE-162",
+      "grade_ids": [
+        "G1-ELE-162",
+        "G2-ELEC-300"
+      ],
+      "original_question": "O linie electrică foarte lungă se comportă ca o linie adaptată:",
+      "original_options": {
+        "A": "dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică",
+        "B": "dacă funcţionează  în scurtcircuit",
+        "C": "dacă funcţionează în gol"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-162=A | G2-ELEC-300=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "169",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-162 / G2-ELEC-300\n- Original: O linie electrică foarte lungă se comportă ca o linie adaptată:\n- A: dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică\n- B: dacă funcţionează  în scurtcircuit\n- C: dacă funcţionează în gol\n- Key unchanged: A\n- A/B/C evidence and exceptions: A long line is matched when receiver impedance equals line characteristic impedance A; B short circuit and C open circuit are mismatches for finite Zc.\n- Source: https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models\n- Risk qualifier: MATCHED_LINE_ZC; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0154",
+      "grade_id_from_legacy_heading": "G1-ELE-163",
+      "grade_ids": [
+        "G1-ELE-163",
+        "G2-ELEC-301"
+      ],
+      "original_question": "O linie electrică lungă funcţionând în gol:",
+      "original_options": {
+        "A": "produce putere reactivă",
+        "B": "absoarbe putere reactivă",
+        "C": "nu produce şi nu absoarbe putere reactivă"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-163=A | G2-ELEC-301=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "170",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-163 / G2-ELEC-301\n- Original: O linie electrică lungă funcţionând în gol:\n- A: produce putere reactivă\n- B: absoarbe putere reactivă\n- C: nu produce şi nu absoarbe putere reactivă\n- Key unchanged: A\n- A/B/C evidence and exceptions: At no load an ordinary high voltage AC line has charging capacitance and produces capacitive reactive power A; B and C neglect line capacitance or reverse the dominant regime. Sign convention and AC assumption apply.\n- Source: https://www2.iea.lth.se/publications/MS-Theses/Full%20document/5330_full_document.pdf\n- Risk qualifier: OPEN_LINE_CAPACITIVE_REACTIVE; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www2.iea.lth.se/publications/MS-Theses/Full%20document/5330_full_document.pdf"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0155",
+      "grade_id_from_legacy_heading": "G1-ELE-164",
+      "grade_ids": [
+        "G1-ELE-164",
+        "G2-ELEC-302"
+      ],
+      "original_question": "O linie electrică lungă funcţionând în scurtcircuit:",
+      "original_options": {
+        "A": "absoarbe putere reactivă",
+        "B": "produce putere reactivă",
+        "C": "nu produce şi nu absoarbe putere reactivă"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-164=A | G2-ELEC-302=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "171",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-164 / G2-ELEC-302\n- Original: O linie electrică lungă funcţionând în scurtcircuit:\n- A: absoarbe putere reactivă\n- B: produce putere reactivă\n- C: nu produce şi nu absoarbe putere reactivă\n- Key unchanged: A\n- A/B/C evidence and exceptions: In standard non-resonant short-circuited AC line approximations inductive series impedance absorbs reactive power A; capacitive shunt and resonant long-line cases prevent universal extrapolation. B and C are not the intended standard circuit model.\n- Source: https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models\n- Risk qualifier: SHORT_LINE_INDUCTIVE_REACTIVE_CONDITIONAL; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0160",
+      "grade_id_from_legacy_heading": "G1-ELE-170",
+      "grade_ids": [
+        "G1-ELE-170",
+        "G2-ELEC-307"
+      ],
+      "original_question": "Între două noduri oarecare A şi B ale unei reţele electrice active, o sursă de tensiune de tensiune electromotoare E şi  fără impedanţă interioară, dar legată în serie cu o impedanţă Z, poate fi înlocuită cu o sursă de curent, de intensitate J şi fără admitanţă interioară, şuntată cu admitanţa Y, fără ca parametrii electrici la bornele A şi B  - tensiunea la borne şi curentul debitat prin aceste borne- să se schimbe,  dacă sunt îndeplinite condiţiile:",
+      "original_options": {
+        "A": "Z Y = 1                                        J=YE",
+        "B": "J=YE                                         Z=Y",
+        "C": "Z Y = 1                                       Z=Y"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-170=A | G2-ELEC-307=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "177",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-170 / G2-ELEC-307\n- Original: Între două noduri oarecare A şi B ale unei reţele electrice active, o sursă de tensiune de tensiune electromotoare E şi  fără impedanţă interioară, dar legată în serie cu o impedanţă Z, poate fi înlocuită cu o sursă de curent, de intensitate J şi fără admitanţă interioară, şuntată cu admitanţa Y, fără ca parametrii electrici la bornele A şi B  - tensiunea la borne şi curentul debitat prin aceste borne- să se schimbe,  dacă sunt îndeplinite condiţiile:\n- A: Z Y = 1                                        J=YE\n- B: J=YE                                         Z=Y\n- C: Z Y = 1                                       Z=Y\n- Key unchanged: A\n- A/B/C evidence and exceptions: Voltage source E with series Z converts to current source J=E/Z with shunt Y=1/Z, so ZY=1 and J=YE A. B and C equate quantities with different dimensions.\n- Source: https://www.sciencedirect.com/topics/engineering/norton-equivalent-circuit\n- Risk qualifier: NORTON_Y_EQUALS_INVZ; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.sciencedirect.com/topics/engineering/norton-equivalent-circuit"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0162",
+      "grade_id_from_legacy_heading": "G1-ELE-172",
+      "grade_ids": [
+        "G1-ELE-172",
+        "G2-ELEC-309"
+      ],
+      "original_question": "Pentru materialele magnetice, relaţia dintre inducţia magnetică şi intensitatea câmpului magnetic:",
+      "original_options": {
+        "A": "este liniară",
+        "B": "este o egalitate",
+        "C": "este neliniară"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-172=C | G2-ELEC-309=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "179",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-172 / G2-ELEC-309\n- Original: Pentru materialele magnetice, relaţia dintre inducţia magnetică şi intensitatea câmpului magnetic:\n- A: este liniară\n- B: este o egalitate\n- C: este neliniară\n- Key unchanged: C\n- A/B/C evidence and exceptions: Ferromagnetic B-H dependence exhibits saturation and hysteresis C; A only local approximation and B equality is dimensionally invalid.\n- Source: https://link.springer.com/chapter/10.1007/978-981-95-8090-3_2\n- Risk qualifier: FERROMAGNETIC_BH_NONLINEAR; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://link.springer.com/chapter/10.1007/978-981-95-8090-3_2"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0163",
+      "grade_id_from_legacy_heading": "G1-ELE-173",
+      "grade_ids": [
+        "G1-ELE-173",
+        "G2-ELEC-310"
+      ],
+      "original_question": "Pierderea de putere activa într-un element de reţea (transformator, LEA, LEC) , la aceeaşi putere aparentã vehiculatã, este direct proportionalã cu:",
+      "original_options": {
+        "A": "pătratul frecventei",
+        "B": "pătratul tensiunii reţelei",
+        "C": "pătratul curentului"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-173=C | G2-ELEC-310=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "180",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-173 / G2-ELEC-310\n- Original: Pierderea de putere activa într-un element de reţea (transformator, LEA, LEC) , la aceeaşi putere aparentã vehiculatã, este direct proportionalã cu:\n- A: pătratul frecventei\n- B: pătratul tensiunii reţelei\n- C: pătratul curentului\n- Key unchanged: C\n- A/B/C evidence and exceptions: For fixed equivalent resistance copper/Joule load loss is proportional to current squared C; not directly frequency squared A or voltage squared B at fixed apparent power. Total transformer loss includes core no-load components and is NOT universally I squared.\n- Source: https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power\n- Risk qualifier: RESISTIVE_LOAD_LOSS_I_SQUARED; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0170",
+      "grade_id_from_legacy_heading": "G1-ELE-181",
+      "grade_ids": [
+        "G1-ELE-181",
+        "G2-ELEC-317"
+      ],
+      "original_question": "Pentru o linie electrică lungă care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei, puterea activă la extremitatea receptoare:",
+      "original_options": {
+        "A": "se numeşte putere caracteristică sau putere naturală",
+        "B": "depinde de lungimea liniei",
+        "C": "este independentă de tensiunea liniei"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-181=A | G2-ELEC-317=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "188",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-181 / G2-ELEC-317\n- Original: Pentru o linie electrică lungă care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei, puterea activă la extremitatea receptoare:\n- A: se numeşte putere caracteristică sau putere naturală\n- B: depinde de lungimea liniei\n- C: este independentă de tensiunea liniei\n- Key unchanged: A\n- A/B/C evidence and exceptions: At load equal Zc the received power in ideal line is natural/characteristic power A; depends on voltage squared and Zc, so C is wrong. B may depend on lossy-line model but not definition of natural power.\n- Source: https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models\n- Risk qualifier: SURGE_IMPEDANCE_LOADING; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0171",
+      "grade_id_from_legacy_heading": "G1-ELE-182",
+      "grade_ids": [
+        "G1-ELE-182",
+        "G2-ELEC-318"
+      ],
+      "original_question": "Pentru o linie electrică care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei:",
+      "original_options": {
+        "A": "energiile reactive, inductivă şi capacitivă, se compensează",
+        "B": "energia reactivă inductivă este mai mare decât cea capacitivă",
+        "C": "energia reactivă capacitivă este mai mare decât cea inductivă"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-182=A | G2-ELEC-318=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "189",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-182 / G2-ELEC-318\n- Original: Pentru o linie electrică care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei:\n- A: energiile reactive, inductivă şi capacitivă, se compensează\n- B: energia reactivă inductivă este mai mare decât cea capacitivă\n- C: energia reactivă capacitivă este mai mare decât cea inductivă\n- Key unchanged: A\n- A/B/C evidence and exceptions: At surge impedance loading with lossless line its capacitive reactive production balances inductive absorption A; B and C incorrectly assert imbalance. Real line losses require qualification.\n- Source: https://eepowerschool.com/tools/transmission-line-parameters/\n- Risk qualifier: SIL_REACTIVE_BALANCE; no independent grade-II source review and no exam-key approval.",
+        "reported_urls_NOT_REOPENED": [
+          "https://eepowerschool.com/tools/transmission-line-parameters/"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0172",
+      "grade_id_from_legacy_heading": "G1-ELE-183",
+      "grade_ids": [
+        "G1-ELE-183",
+        "G2-ELEC-319"
+      ],
+      "original_question": "Pentru o putere aparenta data puterea activa are valoarea maxima:",
+      "original_options": {
+        "A": "când factorul de putere =1",
+        "B": "când factorul de putere = 0",
+        "C": "când U = U max"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-183=A | G2-ELEC-319=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "190",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_238_GFR_12_SCOPED_QABC_2026_11_18.md",
+        "sha": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "unmodified_historical_section": "## G1-ELE-183 / G2-ELEC-319\n- Original: Pentru o putere aparenta data puterea activa are valoarea maxima:\n- A: când factorul de putere =1\n- B: când factorul de putere = 0\n- C: când U = U max\n- Key unchanged: A\n- A/B/C evidence and exceptions: At fixed S power P=S*PF is maximized at PF=1 A; B PF=0 gives zero active power and C alone is insufficient. Standard passive steady-state meaning.\n- Source: https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit\n- Risk qualifier: ACTIVE_POWER_FACTOR_UNITY; no independent grade-II source review and no exam-key approval.\n\n## Data and release gate\n- New source-scope notes 12; new ID-row links 23. 299 previously unfocused -> 276 remaining.\n- 822 original IDs, original keys and question text unchanged; zero learning approvals.\n- ELE-164 resonance/line assumptions and ELE-173 distinction between resistive Joule loss and total transformer loss remain explicit cautions. All 12 require independent source/edition and option review.\n- No canonical text, keys, HTML, APK, merge or release edits. PR #7 Draft.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0124",
+      "grade_id_from_legacy_heading": "G1-ELE-133",
+      "grade_ids": [
+        "G1-ELE-133",
+        "G2-ELEC-273"
+      ],
+      "original_question": "La generatorul sincron viteza de rotaţie a câmpului magnetic al statorului fata de viteza de rotaţie a rotorului maşinii este:",
+      "original_options": {
+        "A": "mai mare",
+        "B": "mai mica",
+        "C": "egala"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-133=C | G2-ELEC-273=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "140",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-133 / G2-ELEC-273\n- Q: La generatorul sincron viteza de rotaţie a câmpului magnetic al statorului fata de viteza de rotaţie a rotorului maşinii este:\n- A: mai mare\n- B: mai mica\n- C: egala\n- Imported key (unchanged): C\n- Scoped A/B/C reasoning: At a synchronized steady generator the stator rotating magnetic field and rotor have equal mechanical speed. A higher and B lower would entail sustained relative slip and contradict synchronous operation. Transient oscillations are excluded by the steady-operation reading.\n- Research source: https://www.ece.lsu.edu/mendrela/EE3410Electricgenerators.pdf\n- Preliminary flag: SYNC_GENERATOR_FIELD_ROTOR_MATCH. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.ece.lsu.edu/mendrela/EE3410Electricgenerators.pdf"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0127",
+      "grade_id_from_legacy_heading": "G1-ELE-136",
+      "grade_ids": [
+        "G1-ELE-136",
+        "G2-ELEC-276"
+      ],
+      "original_question": "La maşina sincrona turaţia variază în funcţie de sarcina astfel:",
+      "original_options": {
+        "A": "creste când sarcina creste",
+        "B": "scade când sarcina scade",
+        "C": "rămâne constanta la variaţia sarcinii"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-136=C | G2-ELEC-276=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "143",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-136 / G2-ELEC-276\n- Q: La maşina sincrona turaţia variază în funcţie de sarcina astfel:\n- A: creste când sarcina creste\n- B: scade când sarcina scade\n- C: rămâne constanta la variaţia sarcinii\n- Imported key (unchanged): C\n- Scoped A/B/C reasoning: Steady-state grid-connected synchronous-machine speed follows grid frequency and pole count, n=120f/P and does not normally vary with load; load changes torque angle. A and B confuse speed with torque/load adjustment. Frequency excursions or loss of synchronism are explicit exceptions.\n- Research source: https://electrical-engineering-portal.com/res/res5/Synchrounous-Generators-and-Motors.pdf\n- Preliminary flag: SYNCHRONOUS_SPEED_LOAD_QUALIFIED. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://electrical-engineering-portal.com/res/res5/Synchrounous-Generators-and-Motors.pdf"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0132",
+      "grade_id_from_legacy_heading": "G1-ELE-141",
+      "grade_ids": [
+        "G1-ELE-141",
+        "G2-ELEC-279"
+      ],
+      "original_question": "Legea lui Ohm pentru o porţiune de circuit este valabila:",
+      "original_options": {
+        "A": "doar în curent continuu",
+        "B": "doar în curent alternativ",
+        "C": "indiferent de natura circuitului"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-141=C | G2-ELEC-279=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "148",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-141 / G2-ELEC-279\n- Q: Legea lui Ohm pentru o porţiune de circuit este valabila:\n- A: doar în curent continuu\n- B: doar în curent alternativ\n- C: indiferent de natura circuitului\n- Imported key (unchanged): C\n- Scoped A/B/C reasoning: Imported C intends AC or DC application of U=RI for an ohmic section. A only-DC and B only-AC are false. However 'indiferent de natura circuitului' is not universally true for diodes and other nonlinear nonohmic elements. Flag ambiguous rather than certify C universally.\n- Research source: https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law\n- Preliminary flag: OHM_LAW_NONOHMIC_AMBIGUITY. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0135",
+      "grade_id_from_legacy_heading": "G1-ELE-144",
+      "grade_ids": [
+        "G1-ELE-144",
+        "G2-ELEC-282"
+      ],
+      "original_question": "La o maşina electrica asincrona turaţia variază:",
+      "original_options": {
+        "A": "cu curentul de excitaţie",
+        "B": "cu frecventa",
+        "C": "numai cu sarcina"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-144=B | G2-ELEC-282=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "151",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-144 / G2-ELEC-282\n- Q: La o maşina electrica asincrona turaţia variază:\n- A: cu curentul de excitaţie\n- B: cu frecventa\n- C: numai cu sarcina\n- Imported key (unchanged): B\n- Scoped A/B/C reasoning: Induction speed n=(120f/P)*(1-s); B frequency affects speed. A excitation current is not primary speed law. C 'only load' is false; speed varies with load-induced slip as well, so B is true but not complete or exclusive.\n- Research source: https://www.ibiblio.org/kuphaldt/electricCircuits/AC/AC_13.html\n- Preliminary flag: INDUCTION_MOTOR_FREQUENCY_AND_SLIP. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.ibiblio.org/kuphaldt/electricCircuits/AC/AC_13.html"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0136",
+      "grade_id_from_legacy_heading": "G1-ELE-145",
+      "grade_ids": [
+        "G1-ELE-145",
+        "G2-ELEC-283"
+      ],
+      "original_question": "La pornirea motoarelor electrice asincrone se urmăreşte:",
+      "original_options": {
+        "A": "reducerea vibraţiilor rotorului",
+        "B": "reducerea curentului electric absorbit de motor",
+        "C": "reducerea tensiunii la bornele de alimentare ale motorului"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-145=B | G2-ELEC-283=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "152",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-145 / G2-ELEC-283\n- Q: La pornirea motoarelor electrice asincrone se urmăreşte:\n- A: reducerea vibraţiilor rotorului\n- B: reducerea curentului electric absorbit de motor\n- C: reducerea tensiunii la bornele de alimentare ale motorului\n- Imported key (unchanged): B\n- Scoped A/B/C reasoning: Induction-motor start current can greatly exceed rated; reduced-voltage starters and VFD address current B. A vibrations may be another objective and C reduced terminal voltage is one possible method rather than universal goal. Torque and acceleration must remain sufficient.\n- Research source: https://library.e.abb.com/public/1fd380f8ca8b4934ae3fa609d764fd33/21043_ABB_Motor_Guide_REV_D.pdf\n- Preliminary flag: INDUCTION_STARTING_CURRENT_OBJECTIVE. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://library.e.abb.com/public/1fd380f8ca8b4934ae3fa609d764fd33/21043_ABB_Motor_Guide_REV_D.pdf"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0138",
+      "grade_id_from_legacy_heading": "G1-ELE-147",
+      "grade_ids": [
+        "G1-ELE-147",
+        "G2-ELEC-285"
+      ],
+      "original_question": "Materialele feromagnetice au permeabilitatea relativa:",
+      "original_options": {
+        "A": "mai mica decât 1",
+        "B": "puţin mai mare decât 1",
+        "C": "mult mai mare decât 1"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-147=C | G2-ELEC-285=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "154",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-147 / G2-ELEC-285\n- Q: Materialele feromagnetice au permeabilitatea relativa:\n- A: mai mica decât 1\n- B: puţin mai mare decât 1\n- C: mult mai mare decât 1\n- Imported key (unchanged): C\n- Scoped A/B/C reasoning: Ordinary ferromagnets in unsaturated operating range have high relative permeability compared with unity; C represents textbook regime. A mu_r<1 describes diamagnetism; B near-unity is not typical low-field ferromagnetic response. Under saturation and frequency-dependent conditions mu_r is not universally much greater than one.\n- Research source: https://www.sciencedirect.com/topics/engineering/material-loss\n- Preliminary flag: FERROMAGNETIC_HIGH_MU_R_NOT_UNIVERSAL. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www.sciencedirect.com/topics/engineering/material-loss"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0139",
+      "grade_id_from_legacy_heading": "G1-ELE-148",
+      "grade_ids": [
+        "G1-ELE-148",
+        "G2-ELEC-286"
+      ],
+      "original_question": "Ecuația constitutivă a bobinei ideale are forma:",
+      "original_options": {
+        "A": "u = R i",
+        "B": "u= L di/dt",
+        "C": "du = i/C dt"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-148=B | G2-ELEC-286=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "155",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-148 / G2-ELEC-286\n- Q: Ecuația constitutivă a bobinei ideale are forma:\n- A: u = R i\n- B: u= L di/dt\n- C: du = i/C dt\n- Imported key (unchanged): B\n- Scoped A/B/C reasoning: For an ideal lumped linear inductor in passive sign convention u=L di/dt B. A is resistor constitutive law; C is a capacitor relation and its differential notation is incomplete. Different terminal polarity changes sign; avoid confusing induced EMF sign with terminal voltage.\n- Research source: https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits\n- Preliminary flag: IDEAL_INDUCTOR_PASSIVE_SIGN. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0140",
+      "grade_id_from_legacy_heading": "G1-ELE-149",
+      "grade_ids": [
+        "G1-ELE-149",
+        "G2-ELEC-287"
+      ],
+      "original_question": "Legea lui Coulomb exprimã:",
+      "original_options": {
+        "A": "forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice",
+        "B": "fluxul electric printr-o suprafaţa sferica",
+        "C": "diferenţa de potenţial între doua puncte"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-149=A | G2-ELEC-287=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "156",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-149 / G2-ELEC-287\n- Q: Legea lui Coulomb exprimã:\n- A: forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice\n- B: fluxul electric printr-o suprafaţa sferica\n- C: diferenţa de potenţial între doua puncte\n- Imported key (unchanged): A\n- Scoped A/B/C reasoning: Coulomb law states electrostatic interaction force between ideal point charges A with magnitude k|q1q2|/r^2. B describes electric flux/Gauss law and C potential difference not Coulomb's force law. Static-point-charge approximation matters.\n- Research source: https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law\n- Preliminary flag: COULOMB_POINT_CHARGES. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0144",
+      "grade_id_from_legacy_heading": "G1-ELE-153",
+      "grade_ids": [
+        "G1-ELE-153",
+        "G2-ELEC-291"
+      ],
+      "original_question": "Mărimea caracteristică circuitelor magnetice şi care este analoagă cu rezistenţa circuitelor electrice se numeşte:",
+      "original_options": {
+        "A": "impedanţă",
+        "B": "reluctanţă",
+        "C": "permeanţă"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-153=B | G2-ELEC-291=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "160",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-153 / G2-ELEC-291\n- Q: Mărimea caracteristică circuitelor magnetice şi care este analoagă cu rezistenţa circuitelor electrice se numeşte:\n- A: impedanţă\n- B: reluctanţă\n- C: permeanţă\n- Imported key (unchanged): B\n- Scoped A/B/C reasoning: Magnetic reluctance is analogous to electric resistance B with flux versus current and magnetomotive force versus voltage. A impedance is an AC electrical quantity; C permeance is reciprocal of reluctance and corresponds to conductance.\n- Research source: https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Electromagnetic_Field_Theory%3A_A_Problem_Solving_Approach_%28Zahn%29/06%3A_Electromagnetic_Induction/6.02%3A_Faraday%27s_Law_for_Moving_Media\n- Preliminary flag: MAGNETIC_RELUCTANCE_ANALOGY. Not an authenticated ANRE-2026 exam key, not an independent expert review.",
+        "reported_urls_NOT_REOPENED": [
+          "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Electromagnetic_Field_Theory%3A_A_Problem_Solving_Approach_%28Zahn%29/06%3A_Electromagnetic_Induction/6.02%3A_Faraday%27s_Law_for_Moving_Media"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0149",
+      "grade_id_from_legacy_heading": "G1-ELE-158",
+      "grade_ids": [
+        "G1-ELE-158",
+        "G2-ELEC-296"
+      ],
+      "original_question": "Miezul magnetic al rotorului unei maşini electrice asincrone se realizează din tole pentru:",
+      "original_options": {
+        "A": "reducerea curenţilor turbionari",
+        "B": "reducerea tensiunii electromotoare induse",
+        "C": "numai din motive constructive"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-158=A | G2-ELEC-296=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "165",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_237_GFR_10_ELECTROTEHNICA_EXACT_QABC_2026_11_18.md",
+        "sha": "6919d18b89b83c7efe99f83a44fac1995db6ad55",
+        "unmodified_historical_section": "## G1-ELE-158 / G2-ELEC-296\n- Q: Miezul magnetic al rotorului unei maşini electrice asincrone se realizează din tole pentru:\n- A: reducerea curenţilor turbionari\n- B: reducerea tensiunii electromotoare induse\n- C: numai din motive constructive\n- Imported key (unchanged): A\n- Scoped A/B/C reasoning: Laminated iron rotor core helps impede circulating eddy currents and reduces their losses A. B reduction in intended induced EMF is not the objective; C only construction is disproved by electrodynamic loss mitigation. Steel grade and lamination thickness matter.\n- Research source: https://coefs.charlotte.edu/mnoras/files/2013/03/Transformer-and-Inductor-Design-Handbook_Chapter_3.pdf\n- Preliminary flag: ROTOR_LAMINATION_EDDY_LOSS. Not an authenticated ANRE-2026 exam key, not an independent expert review.\n\n## QA and limitations\n- 10/10 exact crossgrade question+A+B+C+key comparisons passed against V73 source.\n- 20 ID-level evidence links, no canonical text/answer/key edits and no key change authorized.\n- V115 P2 unfocused 319 -> V116 P2 unfocused 299.\n- G1-ELE-141 expressly ambiguous if nonohmic circuits are admitted; no blanket learning approval.\n- Educational/manufacturer external sources and same-assistant derivations are preliminary. NOT direct authentication of ANRE 2026 bibliographic editions or official exam keys; independent technical/linguistic source QA NOT_RUN.\n- PR #7 should remain Draft with no merge and no HTML/APK/application edits.",
+        "reported_urls_NOT_REOPENED": [
+          "https://coefs.charlotte.edu/mnoras/files/2013/03/Transformer-and-Inductor-Design-Handbook_Chapter_3.pdf"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0453",
+      "grade_id_from_legacy_heading": "G2-LEG-126",
+      "grade_ids": [
+        "G2-LEG-126"
+      ],
+      "original_question": "Este „Regulamentul pentru atestarea operatorilor economici care proiectează, execută și verifică instalații electrice” inclus în bibliografia aplicabilă Gradului II?",
+      "original_options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-126=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "11",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-126\nOriginal: Este „Regulamentul pentru atestarea operatorilor economici care proiectează, execută și verifică instalații electrice” inclus în bibliografia aplicabilă Gradului II?\nA: Da\nB: Nu\nC: Doar pentru Gradele III și IV\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 11.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 11: Atestare operatori economici, approved by ANRE 134/2021; Grade II DA.\nA/B/C: A yes: official Grade II column is DA. B no and C only Grade III/IV contradict the explicit DA for Grade II.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0454",
+      "grade_id_from_legacy_heading": "G2-LEG-127",
+      "grade_ids": [
+        "G2-LEG-127"
+      ],
+      "original_question": "În ce domeniu tematic este încadrat „Regulamentul pentru atestarea operatorilor economici care proiectează, execută și verifică instalații electrice” în bibliografia ANRE?",
+      "original_options": {
+        "A": "Legislație",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-127=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "11",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-127\nOriginal: În ce domeniu tematic este încadrat „Regulamentul pentru atestarea operatorilor economici care proiectează, execută și verifică instalații electrice” în bibliografia ANRE?\nA: Legislație\nB: Electrotehnică\nC: Măsurări electrice\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 11.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 11: Atestare operatori economici, approved by ANRE 134/2021; Grade II DA.\nA/B/C: A is Legislație, official category. B Electrotehnică / C Măsurări electrice belong to another domain, not the document's domain.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0455",
+      "grade_id_from_legacy_heading": "G2-LEG-128",
+      "grade_ids": [
+        "G2-LEG-128"
+      ],
+      "original_question": "Care este documentul indicat de ANRE la punctul 12 pentru tematica Gradului II?",
+      "original_options": {
+        "A": "Ordinul ANRE nr. 102/2015",
+        "B": "Ordinul ANRE nr. 59/2013",
+        "C": "Ordinul ANRE nr. 46/2021"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-128=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "12",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-128\nOriginal: Care este documentul indicat de ANRE la punctul 12 pentru tematica Gradului II?\nA: Ordinul ANRE nr. 102/2015\nB: Ordinul ANRE nr. 59/2013\nC: Ordinul ANRE nr. 46/2021\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 12.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 12: Stabilire solutii racordare, approved by ANRE 102/2015; Grade II DA.\nA/B/C: A (Ordinul ANRE nr. 102/2015) matches exactly the identified approving order for source item 12. B (Ordinul ANRE nr. 59/2013) and C (Ordinul ANRE nr. 46/2021) are distinct documents/orders not approving this exact item.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0456",
+      "grade_id_from_legacy_heading": "G2-LEG-129",
+      "grade_ids": [
+        "G2-LEG-129"
+      ],
+      "original_question": "Prin ce act este aprobat documentul „Regulamentul privind stabilirea soluțiilor de racordare a utilizatorilor la rețelele electrice de interes public”, conform bibliografiei ANRE?",
+      "original_options": {
+        "A": "Ordinul ANRE nr. 102/2015",
+        "B": "Ordinul ANRE nr. 59/2013",
+        "C": "Ordinul ANRE nr. 46/2021"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-129=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "12",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-129\nOriginal: Prin ce act este aprobat documentul „Regulamentul privind stabilirea soluțiilor de racordare a utilizatorilor la rețelele electrice de interes public”, conform bibliografiei ANRE?\nA: Ordinul ANRE nr. 102/2015\nB: Ordinul ANRE nr. 59/2013\nC: Ordinul ANRE nr. 46/2021\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 12.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 12: Stabilire solutii racordare, approved by ANRE 102/2015; Grade II DA.\nA/B/C: A (Ordinul ANRE nr. 102/2015) matches exactly the identified approving order for source item 12. B (Ordinul ANRE nr. 59/2013) and C (Ordinul ANRE nr. 46/2021) are distinct documents/orders not approving this exact item.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0457",
+      "grade_id_from_legacy_heading": "G2-LEG-130",
+      "grade_ids": [
+        "G2-LEG-130"
+      ],
+      "original_question": "Este „Regulamentul privind stabilirea soluțiilor de racordare a utilizatorilor la rețelele electrice de interes public” inclus în bibliografia aplicabilă Gradului II?",
+      "original_options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-130=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "12",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-130\nOriginal: Este „Regulamentul privind stabilirea soluțiilor de racordare a utilizatorilor la rețelele electrice de interes public” inclus în bibliografia aplicabilă Gradului II?\nA: Da\nB: Nu\nC: Doar pentru Gradele III și IV\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 12.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 12: Stabilire solutii racordare, approved by ANRE 102/2015; Grade II DA.\nA/B/C: A yes: official Grade II column is DA. B no and C only Grade III/IV contradict the explicit DA for Grade II.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0458",
+      "grade_id_from_legacy_heading": "G2-LEG-131",
+      "grade_ids": [
+        "G2-LEG-131"
+      ],
+      "original_question": "În ce domeniu tematic este încadrat „Regulamentul privind stabilirea soluțiilor de racordare a utilizatorilor la rețelele electrice de interes public” în bibliografia ANRE?",
+      "original_options": {
+        "A": "Legislație",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-131=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "12",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-131\nOriginal: În ce domeniu tematic este încadrat „Regulamentul privind stabilirea soluțiilor de racordare a utilizatorilor la rețelele electrice de interes public” în bibliografia ANRE?\nA: Legislație\nB: Electrotehnică\nC: Măsurări electrice\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 12.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 12: Stabilire solutii racordare, approved by ANRE 102/2015; Grade II DA.\nA/B/C: A is Legislație, official category. B Electrotehnică / C Măsurări electrice belong to another domain, not the document's domain.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0459",
+      "grade_id_from_legacy_heading": "G2-LEG-132",
+      "grade_ids": [
+        "G2-LEG-132"
+      ],
+      "original_question": "Care este documentul indicat de ANRE la punctul 13 pentru tematica Gradului II?",
+      "original_options": {
+        "A": "Ordinul ANRE nr. 128/2020",
+        "B": "Ordinul ANRE nr. 5/2023",
+        "C": "Ordinul ANRE nr. 134/2021"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-132=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "13",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-132\nOriginal: Care este documentul indicat de ANRE la punctul 13 pentru tematica Gradului II?\nA: Ordinul ANRE nr. 128/2020\nB: Ordinul ANRE nr. 5/2023\nC: Ordinul ANRE nr. 134/2021\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 13.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 13: Solutionare neintelegeri contracte, approved by ANRE 128/2020; Grade II DA.\nA/B/C: A (Ordinul ANRE nr. 128/2020) matches exactly the identified approving order for source item 13. B (Ordinul ANRE nr. 5/2023) and C (Ordinul ANRE nr. 134/2021) are distinct documents/orders not approving this exact item.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0460",
+      "grade_id_from_legacy_heading": "G2-LEG-133",
+      "grade_ids": [
+        "G2-LEG-133"
+      ],
+      "original_question": "Prin ce act este aprobat documentul „Procedura privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei electrice”, conform bibliografiei ANRE?",
+      "original_options": {
+        "A": "Ordinul ANRE nr. 128/2020",
+        "B": "Ordinul ANRE nr. 5/2023",
+        "C": "Ordinul ANRE nr. 134/2021"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-133=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "13",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-133\nOriginal: Prin ce act este aprobat documentul „Procedura privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei electrice”, conform bibliografiei ANRE?\nA: Ordinul ANRE nr. 128/2020\nB: Ordinul ANRE nr. 5/2023\nC: Ordinul ANRE nr. 134/2021\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 13.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 13: Solutionare neintelegeri contracte, approved by ANRE 128/2020; Grade II DA.\nA/B/C: A (Ordinul ANRE nr. 128/2020) matches exactly the identified approving order for source item 13. B (Ordinul ANRE nr. 5/2023) and C (Ordinul ANRE nr. 134/2021) are distinct documents/orders not approving this exact item.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0461",
+      "grade_id_from_legacy_heading": "G2-LEG-134",
+      "grade_ids": [
+        "G2-LEG-134"
+      ],
+      "original_question": "Este „Procedura privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei electrice” inclus în bibliografia aplicabilă Gradului II?",
+      "original_options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-134=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "13",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-134\nOriginal: Este „Procedura privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei electrice” inclus în bibliografia aplicabilă Gradului II?\nA: Da\nB: Nu\nC: Doar pentru Gradele III și IV\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 13.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 13: Solutionare neintelegeri contracte, approved by ANRE 128/2020; Grade II DA.\nA/B/C: A yes: official Grade II column is DA. B no and C only Grade III/IV contradict the explicit DA for Grade II.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0462",
+      "grade_id_from_legacy_heading": "G2-LEG-135",
+      "grade_ids": [
+        "G2-LEG-135"
+      ],
+      "original_question": "În ce domeniu tematic este încadrat „Procedura privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei electrice” în bibliografia ANRE?",
+      "original_options": {
+        "A": "Legislație",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-135=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "13",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_215_GFR_G2LEG_126_135_OFFICIAL_ANRE_BIBLIO_2026_11_18.md",
+        "sha": "c4591408df89af7e56fc451c64af48076f481cc1",
+        "unmodified_historical_section": "## G2-LEG-135\nOriginal: În ce domeniu tematic este încadrat „Procedura privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei electrice” în bibliografia ANRE?\nA: Legislație\nB: Electrotehnică\nC: Măsurări electrice\nImported key: A, preserved. Source workbook: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, row 13.\nPrimary legal/bibliography locator: ANRE official PDF page 2, item 13: Solutionare neintelegeri contracte, approved by ANRE 128/2020; Grade II DA.\nA/B/C: A is Legislație, official category. B Electrotehnică / C Măsurări electrice belong to another domain, not the document's domain.\nGate: EXACT_2023_DOCUMENTARY_MATCH; no official 2026 exam key, no independent source/technical/linguistic reviewer; approved_for_learning=NO.\n\n## Count and safety\n10 existing Grade II cards source-matched to May 2023 bibliography, 0 newly authored questions, 0 key changes, 0 learner-approved. Do not equate repeated bibliography metadata with independent technical-question certification. No changes to HTML, APK, main or release. PR #7 remains Draft.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0556",
+      "grade_id_from_legacy_heading": "G2-LEG-082",
+      "grade_ids": [
+        "G2-LEG-082"
+      ],
+      "original_question": "Conform tarifelor publicate de ANRE, care este tariful pentru autorizarea Gradului II de tip A+B?",
+      "original_options": {
+        "A": "500 lei",
+        "B": "250 lei",
+        "C": "125 lei"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-082=A",
+      "canonical_source": {
+        "workbook": "Ordinul ANRE nr. 118/2023 privind tarifele, informații oficiale ANRE",
+        "row": "222",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+        "sha": "06e30eb249ad52a58e10b579ea2baaff6da23067",
+        "unmodified_historical_section": "### G2-LEG-082 | DOCUMENT/REGULATORY_MATCH_ONLY\n- Original question: Conform tarifelor publicate de ANRE, care este tariful pentru autorizarea Gradului II de tip A+B?\n- A: 500 lei\n- B: 250 lei\n- C: 125 lei\n- Imported key **A**, unchanged. Original source file `Ordinul ANRE nr. 118/2023 privind tarifele, informații oficiale ANRE` source row `222`.\n- Exact source object: Ordinul ANRE 82/2025, tabelul nr.1 punctul 4 pentru tarife 2026.\n- Option elimination: A 500 lei for type A+B combined, B 250 type single A or B, C 125 periodic visa (single) not combined authorization.\n- `approved_for_learning=NO`, `independent_QA=NOT_RUN`, `official_ANRE_exam_2026_key=NOT_VERIFIED`.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0557",
+      "grade_id_from_legacy_heading": "G2-LEG-083",
+      "grade_ids": [
+        "G2-LEG-083"
+      ],
+      "original_question": "Unde este publicat, de regulă, anunțul privind desfășurarea unei sesiuni de autorizare?",
+      "original_options": {
+        "A": "Pe pagina de internet a Autorității competente",
+        "B": "Doar la sediul angajatorului",
+        "C": "Doar în presa locală"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-LEG-083=A",
+      "canonical_source": {
+        "workbook": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "row": "127",
+        "category": "Legislație",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+        "sha": "06e30eb249ad52a58e10b579ea2baaff6da23067",
+        "unmodified_historical_section": "### G2-LEG-083 | DOCUMENT/REGULATORY_MATCH_ONLY\n- Original question: Unde este publicat, de regulă, anunțul privind desfășurarea unei sesiuni de autorizare?\n- A: Pe pagina de internet a Autorității competente\n- B: Doar la sediul angajatorului\n- C: Doar în presa locală\n- Imported key **A**, unchanged. Original source file `Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare` source row `127`.\n- Exact source object: Regulamentul ANRE 66/2023 Anexa 1 §1.1(2).\n- Option elimination: A announcement published on competent authority website; B only employer site and C only local press not as described. Source uses 'se publică', not necessarily every external publicity excluded.\n- `approved_for_learning=NO`, `independent_QA=NOT_RUN`, `official_ANRE_exam_2026_key=NOT_VERIFIED`.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0469",
+      "grade_id_from_legacy_heading": "G2-NOR-142",
+      "grade_ids": [
+        "G2-NOR-142"
+      ],
+      "original_question": "Este „Normativul pentru proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a.” inclus în bibliografia aplicabilă Gradului II?",
+      "original_options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-NOR-142=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "22",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+        "sha": "06e30eb249ad52a58e10b579ea2baaff6da23067",
+        "unmodified_historical_section": "### G2-NOR-142 | DOCUMENT/REGULATORY_MATCH_ONLY\n- Original question: Este „Normativul pentru proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a.” inclus în bibliografia aplicabilă Gradului II?\n- A: Da\n- B: Nu\n- C: Doar pentru Gradele III și IV\n- Imported key **A**, unchanged. Original source file `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023` source row `22`.\n- Exact source object: ANRE official May2023 bibliography PDF p3, item22, Grade II DA.\n- Option elimination: A yes PE102 Grade II, B no contradicted, C only III/IV contradicted by II DA.\n- `approved_for_learning=NO`, `independent_QA=NOT_RUN`, `official_ANRE_exam_2026_key=NOT_VERIFIED`.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0470",
+      "grade_id_from_legacy_heading": "G2-NOR-143",
+      "grade_ids": [
+        "G2-NOR-143"
+      ],
+      "original_question": "În ce domeniu tematic este încadrat „Normativul pentru proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a.” în bibliografia ANRE?",
+      "original_options": {
+        "A": "Norme tehnice",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-NOR-143=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "22",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+        "sha": "06e30eb249ad52a58e10b579ea2baaff6da23067",
+        "unmodified_historical_section": "### G2-NOR-143 | DOCUMENT/REGULATORY_MATCH_ONLY\n- Original question: În ce domeniu tematic este încadrat „Normativul pentru proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a.” în bibliografia ANRE?\n- A: Norme tehnice\n- B: Electrotehnică\n- C: Măsurări electrice\n- Imported key **A**, unchanged. Original source file `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023` source row `22`.\n- Exact source object: ANRE official May2023 bibliography PDF p3 item22, domain Norme tehnice.\n- Option elimination: A technical standards, B electrotechnics and C measurement other categories.\n- `approved_for_learning=NO`, `independent_QA=NOT_RUN`, `official_ANRE_exam_2026_key=NOT_VERIFIED`.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0471",
+      "grade_id_from_legacy_heading": "G2-NOR-144",
+      "grade_ids": [
+        "G2-NOR-144"
+      ],
+      "original_question": "Care este documentul indicat de ANRE la punctul 29 pentru tematica Gradului II?",
+      "original_options": {
+        "A": "PE 155/1992",
+        "B": "PE 102/1986",
+        "C": "I7-2011"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-NOR-144=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "29",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+        "sha": "06e30eb249ad52a58e10b579ea2baaff6da23067",
+        "unmodified_historical_section": "### G2-NOR-144 | DOCUMENT/REGULATORY_MATCH_ONLY\n- Original question: Care este documentul indicat de ANRE la punctul 29 pentru tematica Gradului II?\n- A: PE 155/1992\n- B: PE 102/1986\n- C: I7-2011\n- Imported key **A**, unchanged. Original source file `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023` source row `29`.\n- Exact source object: ANRE official May2023 bibliography PDF p3 item29 PE155/1992, Grade II DA.\n- Option elimination: A PE155 item29; B PE102 item22; C I7 item14. Distinguish branch norm from I7 (explicit exclusion of branșamente I7 §1.2(j)).\n- `approved_for_learning=NO`, `independent_QA=NOT_RUN`, `official_ANRE_exam_2026_key=NOT_VERIFIED`.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0473",
+      "grade_id_from_legacy_heading": "G2-NOR-146",
+      "grade_ids": [
+        "G2-NOR-146"
+      ],
+      "original_question": "Este „Normativul pentru proiectarea și executarea branșamentelor pentru clădiri civile” inclus în bibliografia aplicabilă Gradului II?",
+      "original_options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-NOR-146=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "29",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+        "sha": "06e30eb249ad52a58e10b579ea2baaff6da23067",
+        "unmodified_historical_section": "### G2-NOR-146 | DOCUMENT/REGULATORY_MATCH_ONLY\n- Original question: Este „Normativul pentru proiectarea și executarea branșamentelor pentru clădiri civile” inclus în bibliografia aplicabilă Gradului II?\n- A: Da\n- B: Nu\n- C: Doar pentru Gradele III și IV\n- Imported key **A**, unchanged. Original source file `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023` source row `29`.\n- Exact source object: ANRE official May2023 bibliography PDF p3 item29, Grade II DA.\n- Option elimination: A PE155 included Grade II; B No and C only III/IV false. May 2023 bibliography edition not independently authenticated as newest 2026.\n- `approved_for_learning=NO`, `independent_QA=NOT_RUN`, `official_ANRE_exam_2026_key=NOT_VERIFIED`.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0474",
+      "grade_id_from_legacy_heading": "G2-NOR-147",
+      "grade_ids": [
+        "G2-NOR-147"
+      ],
+      "original_question": "În ce domeniu tematic este încadrat „Normativul pentru proiectarea și executarea branșamentelor pentru clădiri civile” în bibliografia ANRE?",
+      "original_options": {
+        "A": "Norme tehnice",
+        "B": "Electrotehnică",
+        "C": "Măsurări electrice"
+      },
+      "imported_grade_keys_UNCHANGED": "G2-NOR-147=A",
+      "canonical_source": {
+        "workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+        "row": "29",
+        "category": "Norme tehnice",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_225_GFR_7_G2_LEG_NOR_FEES_PE102_PE155_2026_11_18.md",
+        "sha": "06e30eb249ad52a58e10b579ea2baaff6da23067",
+        "unmodified_historical_section": "### G2-NOR-147 | DOCUMENT/REGULATORY_MATCH_ONLY\n- Original question: În ce domeniu tematic este încadrat „Normativul pentru proiectarea și executarea branșamentelor pentru clădiri civile” în bibliografia ANRE?\n- A: Norme tehnice\n- B: Electrotehnică\n- C: Măsurări electrice\n- Imported key **A**, unchanged. Original source file `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023` source row `29`.\n- Exact source object: ANRE official May2023 bibliography PDF p3 item29, domain Norme tehnice.\n- Option elimination: A technical norms, B electrotechnics and C measurements not this bibliographic category.\n- `approved_for_learning=NO`, `independent_QA=NOT_RUN`, `official_ANRE_exam_2026_key=NOT_VERIFIED`.\n\n## Count and next gate\n- Seven previously-unfocused P1 cases in this group (two fees/exam administration, five bibliography). Both item22 and item29 are **2023 ANRE Grade II DA** and scope-specific PE155 / PE102. No unique new bank questions; no key edits, no learner approvals; PR7 Draft. Resume metadata reconciliation of earlier CKPT-179/182/183 and 216 cross-grade duplicates instead of duplicate research, then 50 blocked and 45 legacy-only exact-source gates.",
+        "reported_urls_NOT_REOPENED": []
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0131",
+      "grade_id_from_legacy_heading": "G1-ELE-140",
+      "grade_ids": [
+        "G1-ELE-140",
+        "G2-ELEC-278"
+      ],
+      "original_question": "La funcţionarea în gol a unei linii electrice tensiunea la capăt:",
+      "original_options": {
+        "A": "creşte faţă de tensiunea la sursă proporţional cu pătratul lungimii liniei",
+        "B": "scade faţă de tensiunea la sursă proporţional cu lungimea liniei",
+        "C": "nu se modifică"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-140=A | G2-ELEC-278=A",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "147",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md",
+        "sha": "09c18f16758ec66b888b4f8b3de55bdf3ddb9b7c",
+        "unmodified_historical_section": "## G1-ELE-140 / G2-ELEC-278\n- Original Q: La funcţionarea în gol a unei linii electrice tensiunea la capăt:\n- A: creşte faţă de tensiunea la sursă proporţional cu pătratul lungimii liniei\n- B: scade faţă de tensiunea la sursă proporţional cu lungimea liniei\n- C: nu se modifică\n- Imported key UNCHANGED: A\n- Source/option analysis: Efectul Ferranti: capătul receptor al unei linii CA lungi, în gol, poate avea tensiune mai mare decât sursa. Creșterea aproximativ proporțională cu lungimea la pătrat se deduce în aproximația liniei cu pierderi neglijabile și beta*l mic; NU este o lege universal exactă pentru toate lungimile și regimurile. B și C nu descriu efectul în modelul vizat.\n- Direct source: https://www2.iea.lth.se/publications/MS-Theses/Full%20document/5330_full_document.pdf\n- Flag: MODEL_LIMITATION_QUADRATIC_APPROXIMATION; grade-II evidence reuse is structural only; edition and independent QA pending.",
+        "reported_urls_NOT_REOPENED": [
+          "https://www2.iea.lth.se/publications/MS-Theses/Full%20document/5330_full_document.pdf"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0133",
+      "grade_id_from_legacy_heading": "G1-ELE-142",
+      "grade_ids": [
+        "G1-ELE-142",
+        "G2-ELEC-280"
+      ],
+      "original_question": "Teoremele lui Kirchhoff se aplică:",
+      "original_options": {
+        "A": "numai circuitelor liniare",
+        "B": "numai circuitelor cu elemente neliniare",
+        "C": "circuitelor liniare şi circuitelor neliniare"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-142=C | G2-ELEC-280=C",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "149",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md",
+        "sha": "09c18f16758ec66b888b4f8b3de55bdf3ddb9b7c",
+        "unmodified_historical_section": "## G1-ELE-142 / G2-ELEC-280\n- Original Q: Teoremele lui Kirchhoff se aplică:\n- A: numai circuitelor liniare\n- B: numai circuitelor cu elemente neliniare\n- C: circuitelor liniare şi circuitelor neliniare\n- Imported key UNCHANGED: C\n- Source/option analysis: Legile Kirchhoff se bazează pe conservarea sarcinii și pe condițiile circuitului concentrat/quasistatic, nu pe liniaritatea elementelor. A și B introduc restricții exclusive false. C corespunde modelului circuitelor concentrate; nu afirmăm universal valabilitatea unei legi simple a ochiurilor la cuplaj electromagnetic arbitrar.\n- Direct source: https://openstax.org/books/college-physics/pages/21-3-kirchhoffs-rules\n- Flag: LUMPED_CIRCUIT_ASSUMPTION; grade-II evidence reuse is structural only; edition and independent QA pending.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/college-physics/pages/21-3-kirchhoffs-rules"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0134",
+      "grade_id_from_legacy_heading": "G1-ELE-143",
+      "grade_ids": [
+        "G1-ELE-143",
+        "G2-ELEC-281"
+      ],
+      "original_question": "La o instalaţie cu mai multe condensatoare conectate în serie, căderea de tensiune pe fiecare condensator este:",
+      "original_options": {
+        "A": "direct proporţionala cu capacitatea",
+        "B": "invers proporţionala cu capacitatea",
+        "C": "nu depinde de capacitate"
+      },
+      "imported_grade_keys_UNCHANGED": "G1-ELE-143=B | G2-ELEC-281=B",
+      "canonical_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "150",
+        "category": "Electrotehnică",
+        "pinned_v149_hash": "ee2ac5536c78eb06a0461243be34c117e257188f"
+      },
+      "legacy_research": {
+        "file": "CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md",
+        "sha": "09c18f16758ec66b888b4f8b3de55bdf3ddb9b7c",
+        "unmodified_historical_section": "## G1-ELE-143 / G2-ELEC-281\n- Original Q: La o instalaţie cu mai multe condensatoare conectate în serie, căderea de tensiune pe fiecare condensator este:\n- A: direct proporţionala cu capacitatea\n- B: invers proporţionala cu capacitatea\n- C: nu depinde de capacitate\n- Imported key UNCHANGED: B\n- Source/option analysis: În seria de condensatoare ideale la echilibru, sarcina în modul pe fiecare condensator este aceeași, iar U_i=Q/C_i. De aceea B este susținut; A inversează raportul și C ignoră C_i. Real: curenți de scurgere, tensiuni inițiale și distribuție tranzitorie pot modifica repartizarea; se cere explicit modelul ideal.\n- Direct source: https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel\n- Flag: IDEAL_STEADY_STATE_ASSUMPTION; grade-II evidence reuse is structural only; edition and independent QA pending.\n\n## QA gates\n- 3/3 exact crossgrade matches: question, all options and imported key, checked against original V73.\n- Previous unfocused rows 325; remaining 319 after six *grade-specific records* linked, representing 3 original source checks + 3 grade-reuse links; NOT 6 independent source reviews.\n- Original 822 grade IDs retained, no imported key changes, no approval for learning, no qualified reviewer approval. PR #7 remains Draft, no merge.",
+        "reported_urls_NOT_REOPENED": [
+          "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel"
+        ]
+      },
+      "status": {
+        "research_content_migrated": true,
+        "ready_for_option_card": false,
+        "ready_for_rephrasing": false,
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exam_bibliography_version": "NOT_AUTHENTICATED",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+{
+  "schema": "v181_fifteen_verified_original_ABC_explanation_and_reformulation_drafts",
+  "date": "2026-11-20",
+  "source_hashes": {
+    "ckpt234": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+    "v149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "v175": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_unique_qabc": 15,
+    "grade_routes": 30,
+    "individual_ABC_explanations": 45,
+    "reformulations": 15,
+    "final_approved": 0
+  },
+  "qa": {
+    "groups": 15,
+    "grade_routes": 30,
+    "all_ABC_reasonings": true,
+    "all_reformulations": true,
+    "numerical": {
+      "stator4": true,
+      "fluxlinkage": true,
+      "Efield": true,
+      "RL63": true,
+      "RLhypot": true,
+      "powerfactor": true,
+      "Ohm": true,
+      "Rparallel": true
+    }
+  },
+  "limitations": "Original text and imported keys checked against V149 and ANRE hosted workbook as indexed V175. Content remains single-assistant technical editorial synthesis, not separately qualified independent QA or official ANRE scoring. Grounding and station-switching examples are not operational instructions. Source version and paragraph checks still pending.",
+  "cards": [
+    {
+      "unit_id": "QABC-0102",
+      "grade_ids": [
+        "G1-ELE-111",
+        "G2-ELEC-253"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "118",
+        "question": "Scopul supraînaltarii echipamentelor electrice din instalatii electrice exterioare este asigurarea",
+        "A": "accesului mai comod în instalatie",
+        "B": "esteticii si claritatii instalatiei",
+        "C": "securitatii personalului de exploatare",
+        "original_imported_keys_UNCHANGED": "G1-ELE-111=C | G2-ELEC-253=C"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "PERSONNEL_ELEVATION_SAFETY",
+        "prior_ABC_assessment": "Elevated outdoor electrical apparatus improves personnel clearance/safety C. A ease of access or B aesthetics not core. Specific clearance depends on voltage and site geometry.",
+        "reported_technical_url": "https://electrical-engineering-portal.com/download-center/books-and-guides/electricity-generation-t-d/construction-grid-substation"
+      },
+      "explanation_draft": {
+        "A": "Comoditatea accesului nu este scopul primordial al supraînălțării aparatajului sub tensiune.",
+        "B": "Estetica și claritatea nu justifică izolarea prin înălțime.",
+        "C": "Ridicarea aparatelor poate asigura distanțe de securitate pentru personal.",
+        "scope_or_ambiguity": "Nu oferă automat siguranță: distanțele depind de tensiune și geometrie.",
+        "rephrased_question": "De ce aparatajul exterior este montat la o anumită înălțime de siguranță?",
+        "rephrased_answer": "Pentru a preveni apropierea/atingerea periculoasă, conform regulilor de distanță aplicabile.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0103",
+      "grade_ids": [
+        "G1-ELE-112",
+        "G2-ELEC-254"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "119",
+        "question": "În tubul de porţelan al unei siguranţe de înalta tensiune, nisipul :",
+        "A": "are numai rolul de a consolida elementele fuzibile",
+        "B": "are rolul de a mari puterea de rupere a siguranţei",
+        "C": "de a menţine temperatura constanta a siguranţei",
+        "original_imported_keys_UNCHANGED": "G1-ELE-112=B | G2-ELEC-254=B"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "QUARTZ_SAND_FUSE_BREAKING",
+        "prior_ABC_assessment": "Quartz sand in HV fuse helps quench arc and increase breaking capacity B. A mechanical support only and C constant temperature not its main function.",
+        "reported_technical_url": "https://www.eplan.etigroup.eu/media-center/eti-blog/high-voltage-hv-fuses-in-particular-applications?lang=en-GB"
+      },
+      "explanation_draft": {
+        "A": "Nisipul de cuarț nu are «numai» rol mecanic; participă la stingerea arcului.",
+        "B": "Nisipul ajută stingerea arcului și mărește capacitatea de rupere a siguranței.",
+        "C": "Nu este un regulator care menține temperatura absolut constantă.",
+        "scope_or_ambiguity": "Funcția trebuie raportată la proiectul siguranței de înaltă tensiune.",
+        "rephrased_question": "Ce rol are nisipul dintr-o siguranță de înaltă tensiune la topirea fuzibilului?",
+        "rephrased_answer": "Ajută la răcirea și stingerea arcului electric.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0104",
+      "grade_ids": [
+        "G1-ELE-113",
+        "G2-ELEC-255"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "120",
+        "question": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
+        "A": "numai de temperatura mediului ambiant",
+        "B": "de tensiunea între faze",
+        "C": "de pierderile Joule-Lenz",
+        "original_imported_keys_UNCHANGED": "G1-ELE-113=C | G2-ELEC-255=C"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "STATOR_JOULE_HEAT_CONTEXT",
+        "prior_ABC_assessment": "I²R stator copper losses generate heat C. A environment temperature also contributes to actual temperature, B phase voltage influences losses indirectly; not solely Joule heat for actual temperature. Source/wording conditional.",
+        "reported_technical_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+      },
+      "explanation_draft": {
+        "A": "Temperatura mediului influențează temperatura finală, dar «numai» este fals deoarece există încălzire internă.",
+        "B": "Tensiunea între faze singură nu determină pierderile din înfășurări și răcirea.",
+        "C": "Pierderile Joule I²R sunt o contribuție directă la încălzire; C exprimă cauza urmărită.",
+        "scope_or_ambiguity": "Temperatura reală depinde și de aer/agent de răcire, pierderi în fier și regim.",
+        "rephrased_question": "Dacă I se dublează și R rămâne constantă, ce se întâmplă cu pierderea Joule?",
+        "rephrased_answer": "Crește de patru ori; nu neapărat și temperatura de patru ori.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0106",
+      "grade_ids": [
+        "G1-ELE-115",
+        "G2-ELEC-257"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "122",
+        "question": "Inductanţa proprie a unei bobine prin care trece un curent de intensitate i este raportul între ....... şi acest curent",
+        "A": "fluxul propriu al bobinei",
+        "B": "inducţia magnetică",
+        "C": "forţa electromotoare",
+        "original_imported_keys_UNCHANGED": "G1-ELE-115=A | G2-ELEC-257=A"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "LINKED_FLUX_N_TURNS_MISSING",
+        "prior_ABC_assessment": "Inductance L=linked flux λ/I, where λ=NΦ for N-turn coil. A intended self-flux, but if 'fluxul' means single turn Φ then missing N. B magnetic flux density and C emf have wrong units for ratio defining inductance.",
+        "reported_technical_url": "https://openstax.org/books/university-physics-volume-2/pages/14-2-self-inductance-and-inductors"
+      },
+      "explanation_draft": {
+        "A": "A este intenția didactică dacă «flux propriu» înseamnă fluxul total înlănțuit λ=NΦ.",
+        "B": "Inducția B în tesla nu este fluxul înlănțuit care definește L.",
+        "C": "FEM în volți nu este numărătorul λ al raportului inductanței.",
+        "scope_or_ambiguity": "Pentru bobină cu N spire, L=λ/I=NΦ/I, nu mereu Φ/I.",
+        "rephrased_question": "La N=100 spire, flux pe spiră 0,01 Wb și I=2 A, ce inductanță rezultă?",
+        "rephrased_answer": "L=NΦ/I=0,5 H.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0107",
+      "grade_ids": [
+        "G1-ELE-116",
+        "G2-ELEC-258"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "123",
+        "question": "Intensitatea câmpului electric într-un anumit punct se măsoară",
+        "A": "prin raportul dintre forţa exercitata asupra unei sarcini electrice în acel punct si mărimea sarcinii",
+        "B": "numai prin derivata în raport cu spaţiul cu semn schimbat a potenţialului în acel punct",
+        "C": "raportul dintre tensiunea aplicata unui conductor si rezistenta acestuia",
+        "original_imported_keys_UNCHANGED": "G1-ELE-116=A | G2-ELEC-258=A"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "ELECTRIC_FIELD_DEFINITION",
+        "prior_ABC_assessment": "E=F/q direct force per unit charge A. B only negative spatial derivative potential excludes general dynamical nonconservative field; C U/R is current, not E.",
+        "reported_technical_url": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field"
+      },
+      "explanation_draft": {
+        "A": "Prin definiție E=F/q pentru sarcină de probă, în limita acesteia.",
+        "B": "«Numai» minus derivata spațială a potențialului descrie câmp electrostatic conservativ, nu orice regim dinamic.",
+        "C": "U/R este curent conform legii Ohm, nu intensitatea câmpului.",
+        "scope_or_ambiguity": "În câmp variabil în timp pot exista componente neconservative ale lui E.",
+        "rephrased_question": "La F=6 N asupra q=2 C, ce intensitate are E?",
+        "rephrased_answer": "3 N/C.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0108",
+      "grade_ids": [
+        "G1-ELE-117",
+        "G2-ELEC-259"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "124",
+        "question": "Intensitatea câmpului magnetic într-un punct exterior unui conductor rectiliniu străbătut de curentul continuu de intensitate i, aflat la distanţă r de conductor este:",
+        "A": "invers proporţională cu r",
+        "B": "direct proporţională cu pătratul lui r",
+        "C": "direct proporţională cu r",
+        "original_imported_keys_UNCHANGED": "G1-ELE-117=A | G2-ELEC-259=A"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "H_FIELD_LONG_WIRE_INVERSE_DISTANCE",
+        "prior_ABC_assessment": "For long straight wire H=I/(2πr), A inverse proportional r. B r² growth and C r growth fail; finite wire near ends differs, so ideal long wire model required.",
+        "reported_technical_url": "https://openstax.org/books/university-physics-volume-2/pages/12-2-magnetic-field-due-to-a-thin-straight-wire"
+      },
+      "explanation_draft": {
+        "A": "La conductor rectiliniu suficient de lung H=I/(2πr), deci depinde invers de r.",
+        "B": "Creșterea cu r² contrazice formula pentru fir lung.",
+        "C": "Creșterea liniară cu r contrazice formula pentru fir lung.",
+        "scope_or_ambiguity": "Formula idealizată cere fir lung; aproape de capete relația se modifică.",
+        "rephrased_question": "La dublarea distanței de firul lung, cât devine H?",
+        "rephrased_answer": "Se înjumătățește.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0109",
+      "grade_ids": [
+        "G1-ELE-118",
+        "G2-ELEC-260"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "125",
+        "question": "Într-o reţea cu neutrul legat la pământ, valoarea cea mai mare a intensităţii curentului de scurtcircuit, pentru acelaşi punct de defect, corespunde, de regulã, defectului:",
+        "A": "monofazat",
+        "B": "trifazat",
+        "C": "bifazat",
+        "original_imported_keys_UNCHANGED": "G1-ELE-118=B | G2-ELEC-260=B"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "THREE_PHASE_FAULT_TYPICAL_NOT_ABSOLUTE",
+        "prior_ABC_assessment": "Usually symmetrical 3-phase fault is largest B, but single-ground can exceed it when Z0 low enough; wording 'de regulă' makes B plausible, not universal. A/C can produce less depending impedances.",
+        "reported_technical_url": "https://www.phasetophase.nl/book/book_2_10.html"
+      },
+      "explanation_draft": {
+        "A": "Defectul monofazat nu este generic cel mai mare în toate sistemele, dar poate depăși trifazatul la anumite Z0.",
+        "B": "În multe rețele defectul trifazat simetric produce curentul maxim: «de regulă» este calificativul-cheie.",
+        "C": "Defectul bifazat nu este universal maxim, depinde de impedanțele de secvență.",
+        "scope_or_ambiguity": "Z0 mic poate face defectul monofazat mai sever: nu transforma B într-o lege absolută.",
+        "rephrased_question": "Poate un defect monofazat la pământ depăși curentul de defect trifazat?",
+        "rephrased_answer": "Da, în anumite regimuri ale impedanțelor de secvență.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0110",
+      "grade_ids": [
+        "G1-ELE-119",
+        "G2-ELEC-261"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "126",
+        "question": "Într-un circuit format dintr-un rezistor de rezistenta R în serie cu o bobina de inductanţa L, în momentul alimentarii de la o sursa de curent continuu cu tensiune U:",
+        "A": "curentul creste instantaneu la valoarea U/R",
+        "B": "curentul nu circula prin acest circuit",
+        "C": "curentul ajunge la valoarea U/R după un timp",
+        "original_imported_keys_UNCHANGED": "G1-ELE-119=C | G2-ELEC-261=C"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "RL_DC_EXPONENTIAL_APPROACH",
+        "prior_ABC_assessment": "Series R-L step from DC source i(t)=(U/R)(1−e^(−Rt/L)); tends to U/R as t grows C. A immediate U/R false, B never conducts false. 'Ajunge' exactly in finite time false in ideal asymptote.",
+        "reported_technical_url": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits"
+      },
+      "explanation_draft": {
+        "A": "La conectarea sursei DC, curentul bobinei nu sare instantaneu de la zero la U/R.",
+        "B": "Un curent tranzitoriu începe să circule și crește gradual; B este fals.",
+        "C": "Curentul tinde spre U/R pentru t≫L/R, nu atinge exact această limită într-un timp finit în modelul ideal.",
+        "scope_or_ambiguity": "C folosește «ajunge» ca aproximare de regim permanent, matematic este asimptotă.",
+        "rephrased_question": "Pentru R=2 Ω, L=1 H, ce procent din curentul final curge după o constantă de timp?",
+        "rephrased_answer": "1−e⁻¹≈63,2%.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0111",
+      "grade_ids": [
+        "G1-ELE-120",
+        "G2-ELEC-262"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "127",
+        "question": "Într-un circuit R-L serie de curent alternativ, tensiunea la bornele rezistorului este de 100 V, iar tensiunea la bornele bobinei este de 70 V. Tensiunea la bornele circuitului R-L este:",
+        "A": "170V",
+        "B": "30 V",
+        "C": "122 V",
+        "original_imported_keys_UNCHANGED": "G1-ELE-120=C | G2-ELEC-262=C"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "R_L_VECTOR_VOLTAGE_122",
+        "prior_ABC_assessment": "With ideal inductor, UR=100V and UL=70V orthogonal phasors, supply sqrt(100²+70²)=122.065V ≈122V C; A170 and B30 ignore phase. Real lossy coil angle differs: assumption needed.",
+        "reported_technical_url": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive"
+      },
+      "explanation_draft": {
+        "A": "170 V ar fi suma scalară, dar U_R și U_L sunt ortogonale în modelul de R și L ideale.",
+        "B": "30 V este diferența scalară, nejustificată pentru fazori perpendiculari.",
+        "C": "U=√(100²+70²)≈122 V, rezultatul vectorial.",
+        "scope_or_ambiguity": "O bobină cu pierderi are și componentă rezistivă, deci 122 V este model idealizat.",
+        "rephrased_question": "Dacă U_R=3 V și U_L=4 V pentru R-L serie ideal, cât este tensiunea totală eficace?",
+        "rephrased_answer": "5 V.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0112",
+      "grade_ids": [
+        "G1-ELE-121",
+        "G2-ELEC-263"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "128",
+        "question": "Într-o schemă electrică având un sistem de bare colectoare, separatorul asigură:",
+        "A": "deconectarea unor curenţi de suprasarcină;",
+        "B": "izolarea unei părţi din instalaţie de altă parte a instalaţiei aflată sub tensiune;",
+        "C": "comutaţia curentului în regim normal de funcţionare.",
+        "original_imported_keys_UNCHANGED": "G1-ELE-121=B | G2-ELEC-263=B"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "DISCONNECTOR_NO_LOAD_SWITCH",
+        "prior_ABC_assessment": "Disconnector/isolator separates installation from live bus B; not designed to interrupt overload A or normal load C in usual generic role; safe operations depend device ratings.",
+        "reported_technical_url": "https://www.phasetophase.nl/book/book_1_2.html"
+      },
+      "explanation_draft": {
+        "A": "Un separator obișnuit nu este întreruptor de suprasarcină.",
+        "B": "Separatorul asigură separarea/izolarea vizibilă sau garantată a părții de instalație.",
+        "C": "Comutarea curentului de sarcină este funcția echipamentelor cu capacitate de rupere, nu a separatorului simplu.",
+        "scope_or_ambiguity": "Excepțiile de rating pentru aparate combinate nu trebuie confundate cu separatorul simplu.",
+        "rephrased_question": "De ce nu se folosește un separator simplu pentru deschiderea sub sarcină?",
+        "rephrased_answer": "Nu este proiectat să întrerupă curentul de sarcină; se utilizează aparataj adecvat.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0114",
+      "grade_ids": [
+        "G1-ELE-123",
+        "G2-ELEC-265"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "130",
+        "question": "Într-un conductor curentul alternativ are densitatea:",
+        "A": "uniforma",
+        "B": "mai mare în centrul conductorului",
+        "C": "mai mare la periferia conductorului",
+        "original_imported_keys_UNCHANGED": "G1-ELE-123=C | G2-ELEC-265=C"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "SKIN_EFFECT_AC_DEPENDS_FREQUENCY",
+        "prior_ABC_assessment": "AC skin effect can concentrate current near outer periphery C. A uniform approx at low frequencies/thin wires, B center higher contrary typical high-frequency case. Frequency and geometry missing, C not universal.",
+        "reported_technical_url": "https://technav.ieee.org/topic/skin-effect/"
+      },
+      "explanation_draft": {
+        "A": "În curent alternativ și la frecvențe relevante apare efect pelicular, deci nu mereu densitate uniformă.",
+        "B": "Concentrația tipică la frecvență mai mare este la suprafață, nu în centru.",
+        "C": "C este tendința curentului AC în conductor masiv, cu densitate mai mare spre periferie.",
+        "scope_or_ambiguity": "La frecvență joasă sau fir subțire distribuția se poate apropia de uniformitate: enunț condiționat.",
+        "rephrased_question": "Ce se întâmplă cu adâncimea de pătrundere a curentului AC la frecvență mai mare?",
+        "rephrased_answer": "Scade, pentru material și geometrie comparabile.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0118",
+      "grade_ids": [
+        "G1-ELE-127",
+        "G2-ELEC-267"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "134",
+        "question": "Într-un circuit de curent alternativ în care puterea activa absorbita este 4 kW iar puterea reactiva este de 3 kVAr, factorul de putere este:",
+        "A": "0,8",
+        "B": "0,75",
+        "C": "4/3",
+        "original_imported_keys_UNCHANGED": "G1-ELE-127=A | G2-ELEC-267=A"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "POWER_FACTOR_3_4_5",
+        "prior_ABC_assessment": "P=4kW and Q=3kVAr gives S=sqrt(4²+3²)=5kVA; cosφ=P/S=0.8 A. B0.75 and C1.333 wrong; assumes sinusoidal no harmonic displacement vs true PF.",
+        "reported_technical_url": "https://openstax.org/books/college-physics-2e/pages/23-13-power-in-an-ac-circuit"
+      },
+      "explanation_draft": {
+        "A": "P=4 kW și Q=3 kvar dau S=5 kVA și factorul de putere P/S=0,8.",
+        "B": "0,75 nu corespunde triunghiului de puteri 3–4–5.",
+        "C": "4/3 depășește 1, deci este imposibil pentru acest factor de putere.",
+        "scope_or_ambiguity": "Se presupune regim sinusoidal, fără armonici care complică factorul de putere total.",
+        "rephrased_question": "Pentru P=6 kW, Q=8 kvar, cât este factorul de putere?",
+        "rephrased_answer": "6/10=0,6.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0121",
+      "grade_ids": [
+        "G1-ELE-130",
+        "G2-ELEC-270"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "137",
+        "question": "Într-un circuit rezistiv, având rezistenta R=5 ohm si la bornele căruia se aplica o tensiune de 100 V, curentul este de:",
+        "A": "20 A",
+        "B": "500 A",
+        "C": "95 A",
+        "original_imported_keys_UNCHANGED": "G1-ELE-130=A | G2-ELEC-270=A"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "OHM_100V_5OHM",
+        "prior_ABC_assessment": "I=100V/5Ω=20A A. B500A incorrect multiplication, C95A dimensionally invalid subtraction; pure R and RMS/steady state.",
+        "reported_technical_url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+      },
+      "explanation_draft": {
+        "A": "I=U/R=100/5=20 A.",
+        "B": "500 A rezultă din multiplicare eronată U·R.",
+        "C": "95 A rezultă din scăderea unor mărimi cu unități diferite.",
+        "scope_or_ambiguity": "Este circuit rezistiv liniar, tensiune și rezistență specificate.",
+        "rephrased_question": "La U=12 V și R=3 Ω, cât este I?",
+        "rephrased_answer": "4 A.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0123",
+      "grade_ids": [
+        "G1-ELE-132",
+        "G2-ELEC-272"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "139",
+        "question": "Într-un circuit serie format dintr-un rezistor de rezistenţă R, o bobină de inductanţă L şi un condensator de capacitate C, curentul din circuit este defazat în urma tensiunii la borne dacă:",
+        "A": "reactanţa totală a circuitului X este > 0",
+        "B": "reactanţa totală a circuitului            X este <0",
+        "C": "reactanţa totală a circuitului este =0",
+        "original_imported_keys_UNCHANGED": "G1-ELE-132=A | G2-ELEC-272=A"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "RLC_INDUCTIVE_X_POSITIVE",
+        "prior_ABC_assessment": "Series RLC with total X=XL−XC >0 is inductive, current lags voltage A; B X<0 capacitive current leads, C X=0 resonance current in phase.",
+        "reported_technical_url": "https://openstax.org/books/college-physics-2e/pages/23-12-rlc-series-ac-circuits"
+      },
+      "explanation_draft": {
+        "A": "Pentru X=X_L−X_C>0 circuitul este inductiv, iar curentul rămâne în urma tensiunii.",
+        "B": "X<0 înseamnă regim capacitiv; curentul precedă tensiunea.",
+        "C": "La X=0, curentul și tensiunea sunt în fază în modelul RLC serie.",
+        "scope_or_ambiguity": "Semnul lui X total, nu doar existența bobinei, dictează comportamentul.",
+        "rephrased_question": "În RLC serie cu X_L=15 Ω și X_C=5 Ω, ce tip de defazaj apare?",
+        "rephrased_answer": "Inductiv; curentul rămâne în urma tensiunii.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    },
+    {
+      "unit_id": "QABC-0126",
+      "grade_ids": [
+        "G1-ELE-135",
+        "G2-ELEC-275"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "142",
+        "question": "Inversa rezistenţei echivalente a n rezistoare legate în paralel este egală cu:",
+        "A": "suma rezistenţelor celor n rezistoare",
+        "B": "suma inverselor rezistenţelor celor n rezistoare",
+        "C": "suma pătratelor rezistenţelor celor n rezistoare",
+        "original_imported_keys_UNCHANGED": "G1-ELE-135=B | G2-ELEC-275=B"
+      },
+      "old_research": {
+        "file": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+        "blob": "ceb35cbc00a9b6c038c9328d23006014087a4299",
+        "tag": "PARALLEL_RESISTOR_RECIPROCAL",
+        "prior_ABC_assessment": "Parallel resistors have common voltage and conductance sum: 1/Req=Σ(1/Ri) -> B. A sum R applies series, C squared R not dimensional formula.",
+        "reported_technical_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+      },
+      "explanation_draft": {
+        "A": "Suma rezistențelor este expresia pentru conectarea lor în serie.",
+        "B": "Pentru paralel: 1/R_eq=Σ(1/R_i), suma conductanțelor.",
+        "C": "Suma pătratelor nu are dimensiunea potrivită pentru inversul rezistenței.",
+        "scope_or_ambiguity": "Rezistențe pozitive finite; un scurt în paralel dă o limită specială.",
+        "rephrased_question": "Două rezistențe identice de 10 Ω în paralel au ce rezistență echivalentă?",
+        "rephrased_answer": "5 Ω.",
+        "learner_approved": false,
+        "independent_review": "NOT_RUN",
+        "official_ANRE_scored_key": "NOT_AUTHENTICATED"
+      }
+    }
+  ]
+}

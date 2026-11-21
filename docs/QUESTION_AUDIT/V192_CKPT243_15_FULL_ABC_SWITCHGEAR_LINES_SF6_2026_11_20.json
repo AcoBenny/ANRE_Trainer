@@ -1,0 +1,631 @@
+{
+  "schema": "v192_ckpt243_15_full_option_ABC_and_unofficial_practice_source_exact_provisional",
+  "date": "2026-11-20",
+  "prior_head": "c5b7e82076b68302941c46ed3e727c43e7ccd5a3",
+  "v191_blob_sha": "2870efa17f29b9b7d041cd41a06992a86d4f4c33",
+  "source_checkpoint_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+  "counts": {
+    "new_qabc": 15,
+    "grade_routes": 30,
+    "per_option_explanations": 45,
+    "practice_reformulations": 15,
+    "semantic_hold_candidates": 5,
+    "learner_approved": 0
+  },
+  "semantic_hold_candidates": [
+    {
+      "unit_id": "QABC-0217",
+      "status": "HOLD_FUSE_CLASS_SCOPE"
+    },
+    {
+      "unit_id": "QABC-0218",
+      "status": "HOLD_FUSE_ABSOLUTE_LIMIT_WORDING"
+    },
+    {
+      "unit_id": "QABC-0220",
+      "status": "HOLD_ONLY_REAL_QUANTITIES"
+    },
+    {
+      "unit_id": "QABC-0253",
+      "status": "HOLD_REVISION_SCOPE"
+    },
+    {
+      "unit_id": "QABC-0254",
+      "status": "HOLD_AUTOTRANSFORMER_OPTION_OVERLAP"
+    }
+  ],
+  "legal_context": {
+    "regulation": "EU 2024/573",
+    "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj",
+    "context": "Putting into operation new electrical switchgear relying on F-gases has category and voltage-dependent restrictions and exceptions, from 2026 for MV up to 24kV. This context does not alter historical exam A/B/C or approve the item.",
+    "scope": "for QABC-0258 and QABC-0259; edition-specific applicability to the ANRE exam remains unverified"
+  },
+  "review_note": "CKPT-243 source research partly SEARCH_INDEX_ONLY; new text reuses it, with only a limited subset of source pages reopened live. No rights to mirror source standards, no independent reviewer, no current ANRE bibliography or official scored answers authenticated. SF6 regulation is a current external caveat, not a change to the historical A/B/C key.",
+  "cards": [
+    {
+      "unit_id": "QABC-0217",
+      "grade_ids": [
+        "G1-ELE-228",
+        "G2-ELEC-364"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "235",
+        "stem": "Siguranţele electrice au rolul de a:",
+        "A": "proteja instalaţia din aval la defecte la scurtcircuit ca si la suprasarcini de lunga durata",
+        "B": "face trecerea din linie electrica aeriana în line electrica în cablu",
+        "C": "asigura protecţia personalului",
+        "imported_keys_UNCHANGED": "G1-ELE-228=A | G2-ELEC-364=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.iteh.eu/catalog/standards/iec/147f17fc-7f2f-4220-a1d7-f86427ceabd5/iec-tr-60269-5-2010",
+        "prior_option_reasoning": "A indică protecție aval la scurtcircuit și suprasarcină, dar numai dacă tipul/curba fuzibilului și coordonarea sunt potrivite. B trecere LEA/cablu nu este funcția siguranței; C protecția persoanelor nu este garantată doar de fuzibil. Unele clase sunt specializate pe scurtcircuit și nu protejează toate suprasarcinile.",
+        "source_access_2026_11_20": "SEARCH_INDEX_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Cu siguranța potrivită clasei, curbei și coordonării, fuzibilul protejează instalația aval la scurtcircuit și unele suprasarcini de lungă durată.",
+        "B": "Conversia între LEA și cablu nu reprezintă funcția unui element de protecție fuzibil.",
+        "C": "Siguranța singură nu garantează protecția persoanelor la atingere; sunt necesare măsuri de protecție coordonate.",
+        "model_scope_or_trap": "Nu toate clasele fuzibile protejează toate suprasarcinile; unele sunt pentru domeniu parțial, deci A cere tip potrivit.",
+        "reformulated_question": "Un fuzibil proiectat numai pentru scurtcircuite protejează automat și toate suprasarcinile mici?",
+        "reformulated_solution": "Nu; clasa/curba timp-curent trebuie aleasă și coordonată.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "HOLD_FUSE_CLASS_SCOPE",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0218",
+      "grade_ids": [
+        "G1-ELE-229",
+        "G2-ELEC-365"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "236",
+        "stem": "Siguranţele electrice sunt aparate electrice care împiedica:",
+        "A": "creşterea tensiunii peste o valoare limita",
+        "B": "creşterea curentului peste o valoare limita",
+        "C": "scăderea curentului sub o valoare limita",
+        "imported_keys_UNCHANGED": "G1-ELE-229=B | G2-ELEC-365=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.iteh.eu/catalog/standards/sist/5591b278-481b-44fe-9f3b-d990a37656db/sist-tp-iec-60269-5-trtr-ed-1-0-2022",
+        "prior_option_reasoning": "B este funcția intenționată: întrerupe circuitele în cazul depășirii pragului curentului potrivit caracteristicii timp-curent. A limitarea supratensiunii nu este funcția sa; C lipsa curentului nu declanșează fuzibilul. Formularea «împiedică creșterea peste o valoare limită» este literal inexactă: curentul poate depăși nominalul un interval înaintea topirii și nu este obligatoriu limitat la o valoare instantanee.",
+        "source_access_2026_11_20": "SEARCH_INDEX_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Supratensiunea necesită mijloace dedicate (de exemplu descărcătoare), nu fuzibilul obișnuit.",
+        "B": "Fuzibilul întrerupe la supracurent conform curbei timp-curent, însă nu menține curentul instantaneu sub un prag fix.",
+        "C": "Un fuzibil nu declanșează din cauza unui curent prea mic; la curent mic poate rămâne intact.",
+        "model_scope_or_trap": "«Împiedică creșterea peste limită» este exagerat: se permite depășire temporară înainte de topire; B exprimă numai intenția funcțională.",
+        "reformulated_question": "La 120% din curentul nominal, o siguranță fuzibilă întrerupe întotdeauna instantaneu?",
+        "reformulated_solution": "Nu; depinde de caracteristica timp-curent și clasa fuzibilului.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_FUSE_ABSOLUTE_LIMIT_WORDING",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0220",
+      "grade_ids": [
+        "G1-ELE-231",
+        "G2-ELEC-367"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "238",
+        "stem": "Singurele mărimi fizice reale în curent alternativ sunt:",
+        "A": "mărimile efective de curent sau de tensiune",
+        "B": "mărimile instantanee de curent sau de tensiune",
+        "C": "valorile medii de curent sau de tensiune",
+        "imported_keys_UNCHANGED": "G1-ELE-231=B | G2-ELEC-367=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "prior_option_reasoning": "B este răspunsul importat și poate reflecta faptul că i(t) și u(t) sunt funcțiile fizice instantanee. Totuși A valorile RMS sunt măsurabile și fizic semnificative pentru încălzire/putere, iar C mediile sunt de asemenea cantități fizice definite; «singurele mărimi fizice reale» nu este o afirmație tehnică riguros exclusivă. Marcați AMBIGUITATE_CONCEPTUALĂ și nu certificați B ca adevăr universal.",
+        "source_access_2026_11_20": "LIVE_OPENSTAX"
+      },
+      "editorial_draft": {
+        "A": "Valoarea eficace RMS este o mărime fizică reală și măsurabilă, relevantă la încălzire; nu poate fi exclusă ontologic.",
+        "B": "i(t) și u(t) sunt valorile instantanee ale mărimilor variabile, probabil modelul intenționat de autor.",
+        "C": "Valorile medii pe intervale sunt și ele matematic și fizic definite; pentru o sinusoidă completă media algebrică este zero.",
+        "model_scope_or_trap": "Cuvântul «singurele» face afirmația conceptual nesustenabilă: instantaneu, RMS și medie sunt toate mărimi bine definite.",
+        "reformulated_question": "Dacă i(t) este sinusoidal cu vârful 10 A, este RMS o mărime «ireală»?",
+        "reformulated_solution": "Nu: Ief=10/√2≈7,07 A, cu semnificație energetică.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_ONLY_REAL_QUANTITIES",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0251",
+      "grade_ids": [
+        "G1-ELE-262",
+        "G2-ELEC-397"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "269",
+        "stem": "Unitatea de măsură pentru măsurarea puterii active este:",
+        "A": "kWh",
+        "B": "kW",
+        "C": "kW/h",
+        "imported_keys_UNCHANGED": "G1-ELE-262=B | G2-ELEC-397=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php",
+        "prior_option_reasoning": "B kilowatt kW măsoară putere activă; A kilowatt-oră kWh energie, C kW/h variația puterii per timp. Barem B compatibil cu SI și terminologia tehnică.",
+        "source_access_2026_11_20": "LIVE_EIA"
+      },
+      "editorial_draft": {
+        "A": "kWh este energie electrică, nu putere.",
+        "B": "kW este unitate pentru putere activă.",
+        "C": "kW/h descrie o rată de variație a puterii, nu puterea.",
+        "model_scope_or_trap": "Deosebește simbolurile cu înmulțirea h (energie) și împărțirea prin h (variație).",
+        "reformulated_question": "Un consumator de 2 kW funcționează 3 ore. Puterea și energia sunt?",
+        "reformulated_solution": "P=2 kW, E=6 kWh.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0252",
+      "grade_ids": [
+        "G1-ELE-263",
+        "G2-ELEC-398"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "270",
+        "stem": "Unitatea de măsură pentru puterea reactiva este:",
+        "A": "kVAr",
+        "B": "kVA",
+        "C": "kW",
+        "imported_keys_UNCHANGED": "G1-ELE-263=A | G2-ELEC-398=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.epo.org/en/legal/guidelines-epc/2025/f_iia2_1_2_2.html",
+        "prior_option_reasoning": "A kVAr este unitatea specială var pentru putere reactivă, cu prefix kilo; B kVA putere aparentă și C kW putere activă. Răspuns tehnic compatibil cu nomenclatura IEC.",
+        "source_access_2026_11_20": "HISTORICAL_EPO_PAGE_NOT_REOPENED"
+      },
+      "editorial_draft": {
+        "A": "kvar este simbolul tehnic folosit pentru puterea reactivă, notat frecvent kVAr în enunțuri.",
+        "B": "kVA exprimă puterea aparentă, nu componenta reactivă.",
+        "C": "kW exprimă puterea activă.",
+        "model_scope_or_trap": "Unitățile W, var și VA au aceeași dimensiune dar semnificații distincte în regimul AC.",
+        "reformulated_question": "La S=10 kVA și P=8 kW, cât este Q pentru regim sinusoidal echilibrat?",
+        "reformulated_solution": "Q=√(S²−P²)=6 kvar, conform triunghiului puterilor.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0253",
+      "grade_ids": [
+        "G1-ELE-264",
+        "G2-ELEC-399"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "271",
+        "stem": "Utilizarea întreruptoarelor debroşabile:",
+        "A": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+        "B": "asigură scurtarea duratei reviziilor la celule;",
+        "C": "asigură numai izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+        "imported_keys_UNCHANGED": "G1-ELE-264=B | G2-ELEC-399=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+        "prior_option_reasoning": "B: întreruptorul debroșabil poate permite intervenție/înlocuire mai rapidă și reduce întreruperea serviciului. A presupune că nu previne erorile separatoarelor, dar elimină unele manevre de separare; C «numai» exclude alte beneficii. Timpul real al reviziilor depinde de părțile fixe rămase, interblocări, proceduri și condiții de siguranță.",
+        "source_access_2026_11_20": "LIVE_EEP"
+      },
+      "editorial_draft": {
+        "A": "Formularea negativă «nu asigură» este prea largă: sistemele debroșabile și interblocările pot elimina unele manevre cu separatoare, nu automat toate erorile.",
+        "B": "Un întreruptor debroșabil poate fi înlocuit/revizuit mai rapid, reducând unele indisponibilități, dar durata depinde de lucrare.",
+        "C": "«Numai izolarea personalului» ignoră accesibilitatea, interschimbabilitatea și întreținerea; securitatea rămâne procedurală.",
+        "model_scope_or_trap": "Nu promite revizii universal mai scurte pentru toate compartimentele celulei; debroșarea nu înlocuiește LOTO, testarea absenței tensiunii sau interblocările.",
+        "reformulated_question": "Revizia unei celule cu bare fixe defecte devine automat rapidă prin debroșarea întreruptorului?",
+        "reformulated_solution": "Nu, beneficiul este condiționat de elementul intervenției și de siguranța ansamblului.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_REVISION_SCOPE",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0254",
+      "grade_ids": [
+        "G1-ELE-265",
+        "G2-ELEC-400"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "272",
+        "stem": "Autotransformatoarele sunt folosite",
+        "A": "între reţelele de                     110 kV şi 220 kV",
+        "B": "numai între reţelele de              220 kV şi 400 kV",
+        "C": "între reţelele de                   20 kV şi 110 kV",
+        "imported_keys_UNCHANGED": "G1-ELE-265=A | G2-ELEC-400=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.transelectrica.ro/web/tel/codul-comercial-al-pietei-angro-de-energie-electrica%3Bjsessionid%3DB4866C5188A72F028074678AAF1B2543?_77_advancedSearch=false&_77_andOperator=false",
+        "prior_option_reasoning": "A: utilizare posibilă între 110 și 220 kV este compatibilă cu stații interconectate românești; B «numai între 220 și 400kV» este fals prin exclusivitate, C 20/110kV necesită analiză exactă a raportului/izolării. Sursa Transelectrica confirmă existența nivelurilor și stațiilor, dar NU dovedește că toate transformările 110/220 sunt autotransformatoare sau că 20/110 nu poate folosi niciodată autotransformator. FLAG SOURCE_SCOPE_PARTIAL.",
+        "source_access_2026_11_20": "HISTORICAL_TRANSELECTRICA_SEARCH_ONLY"
+      },
+      "editorial_draft": {
+        "A": "110/220 kV este o utilizare posibilă a autotransformatoarelor când raportul și nivelurile de izolație sunt potrivite.",
+        "B": "«Numai între 220 și 400 kV» e fals ca regulă exclusivă; există și alte tensiuni de interconectare.",
+        "C": "20/110 kV nu este imposibil fizic în toate cazurile; uzual se folosesc alte configurații, dar fără bibliografie specifică nu se exclude universal.",
+        "model_scope_or_trap": "A este exemplu valid, dar nu este demonstrată unicitatea față de C numai din simpla existență a nivelurilor 110/220.",
+        "reformulated_question": "Este autotransformatorul limitat din principiu fizic la perechea 220/400 kV?",
+        "reformulated_solution": "Nu. Depinde de raport, izolație, împământare și proiect.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "HOLD_AUTOTRANSFORMER_OPTION_OVERLAP",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0257",
+      "grade_ids": [
+        "G1-ELE-268",
+        "G2-ELEC-401"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "275",
+        "stem": "Utilizarea întreruptorului debroşabil:",
+        "A": "asigură doar compactarea celulei;",
+        "B": "asigură rapiditate în restabilirea alimentării în cazul unei defectări;",
+        "C": "creşte riscul de electrocutare a personalului care execută lucrări de revizie în celulă.",
+        "imported_keys_UNCHANGED": "G1-ELE-268=B | G2-ELEC-401=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+        "prior_option_reasoning": "B permite restabilirea relativ rapidă după defect de întreruptor prin înlocuirea modulului debroșabil dacă există rezervă compatibilă, personal autorizat și celula fixă este sigură. A «doar compactarea» fals, C creșterea riscului nu este avantaj intrinsec, dar operația de debroșare are riscuri specifice. NU afirmați restaurare automată.",
+        "source_access_2026_11_20": "LIVE_EEP"
+      },
+      "editorial_draft": {
+        "A": "«Doar compactarea» este fals: un ansamblu debroșabil poate susține întreținerea și înlocuirea modulară.",
+        "B": "Cu unitate de schimb compatibilă, personal autorizat și condiții sigure, revenirea în funcțiune poate fi mai rapidă după defectul modulului.",
+        "C": "Echipamentul debroșabil nu produce intrinsec un risc mai mare dacă este proiectat și operat corect; manevrele rămân periculoase fără proceduri.",
+        "model_scope_or_trap": "Rapiditatea nu este automată dacă defectul este în compartimentul fix, nu în modulul înlocuibil.",
+        "reformulated_question": "Dacă doar modulul întreruptorului este defect și există rezervă, ce avantaj are soluția debroșabilă?",
+        "reformulated_solution": "Înlocuirea modulară poate reduce durata întreruperii, cu proceduri de securitate.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0258",
+      "grade_ids": [
+        "G1-ELE-269",
+        "G2-ELEC-402"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "276",
+        "stem": "Utilizarea SF6 ca mediu de izolare",
+        "A": "conduce la realizarea unor celule cu pericol de incendiu",
+        "B": "conduce numai la realizarea unor celule cu întreţinere mult simplificată;",
+        "C": "conduce la realizarea unor celule compacte",
+        "imported_keys_UNCHANGED": "G1-ELE-269=C | G2-ELEC-402=C"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.csemag.com/saving-space/",
+        "prior_option_reasoning": "C: gazul SF6 permite izolarea cu distanțe mici, deci celule compacte. A pericol incendiu nu rezultă din caracterul său izolant, B «numai întreținere simplificată» este exclusivitate falsă. Important: impact climatic mare al SF6 și cerințe de etanșeitate/management gaze, fără a le confunda cu răspunsul de examen.",
+        "source_access_2026_11_20": "HISTORICAL_SEARCH_ONLY_AND_LIVE_EURLEX_REGULATION"
+      },
+      "editorial_draft": {
+        "A": "SF6 ca gaz izolant necombustibil nu implică prin sine un pericol crescut de incendiu în celule.",
+        "B": "«Numai întreținere simplificată» e restrictiv: există și compactitate, dielectricitate ridicată și alte caracteristici.",
+        "C": "Rigiditatea dielectrică permite distanțe izolante mai mici și celule mai compacte.",
+        "model_scope_or_trap": "Atenție 2026: Regulamentul UE 2024/573 restricționează punerea în funcțiune de celule noi cu gaze fluorurate în anumite clase; beneficiul istoric nu este recomandare de instalare actuală.",
+        "reformulated_question": "Ce proprietate a unui gaz dielectric performant permite reducerea spațiilor de izolație?",
+        "reformulated_solution": "Rigiditatea dielectrică ridicată poate reduce distanțele necesare.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED_F_GAS_EU_2026",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0259",
+      "grade_ids": [
+        "G1-ELE-270",
+        "G2-ELEC-403"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "277",
+        "stem": "Utilizarea SF6 ca mediu de stingere a arcului electric permite",
+        "A": "doar realizarea unor întreruptoare fără pericol de incendiu;",
+        "B": "realizarea unor întreruptoare cu întreţinere mult simplificată;",
+        "C": "puţin silenţioase.",
+        "imported_keys_UNCHANGED": "G1-ELE-270=B | G2-ELEC-403=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.se.com/eg/en/faqs/FA22640/",
+        "prior_option_reasoning": "B este efect plauzibil în întreruptoare moderne SF6 cu întreținere simplificată față de tehnologii istorice, dar nu lipsită complet de verificări de presiune/etanșeitate. A «doar fără incendiu» falsă exclusivitate; C «puțin silențioase» nu descrie beneficiul principal. Sursa Schneider compară tehnologii și arată întreținere redusă, nu certifică toate tipurile.",
+        "source_access_2026_11_20": "LIVE_SCHNEIDER_AND_EURLEX"
+      },
+      "editorial_draft": {
+        "A": "«Doar» absența incendiului ignoră alte caracteristici și nu certifică risc total zero.",
+        "B": "Întreruptoarele SF6 etanșe au avut în mod tipic întreținere simplificată comparativ cu anumite tehnologii anterioare; tot necesită verificări adecvate.",
+        "C": "«Puțin silențioase» nu descrie avantajul invocat; zgomotul depinde de mecanism și condiții.",
+        "model_scope_or_trap": "Nu interpreta «întreținere simplificată» drept lipsă totală de verificări. Legislația UE 2024/573 privind gaze fluorurate modifică posibilitatea de punere în funcțiune a echipamentelor noi.",
+        "reformulated_question": "Care este diferența între întreținere redusă și întreținere inexistentă la un întreruptor etanș?",
+        "reformulated_solution": "Întreținerea redusă poate însemna intervale mari, dar verificările și cerințele legale rămân.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED_F_GAS_EU_2026",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0260",
+      "grade_ids": [
+        "G1-ELE-271",
+        "G2-ELEC-404"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "278",
+        "stem": "Utilizarea vidului ca mediu de stingere a arcului electric:",
+        "A": "reduce pericolul de incendiu;",
+        "B": "nu reduce cheltuielile de întreţinere;",
+        "C": "creşte masa şi gabaritul întreruptoarelor",
+        "imported_keys_UNCHANGED": "G1-ELE-271=A | G2-ELEC-404=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://www.abb.com/global/en/areas/electrification/medium-voltage/grid-components/primary-vacuum-circuit-breakers",
+        "prior_option_reasoning": "A: întreruperea în vid elimină uleiul combustibil ca mediu de stingere și reduce un mecanism de incendiu. B nu reduce întreținere contrazice tehnologia cu vid, C dimensiuni/masă crescute nu sunt efect universal. Protecția nu înseamnă risc total de incendiu zero.",
+        "source_access_2026_11_20": "HISTORICAL_ABB_SEARCH_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Vidul evită utilizarea unui ulei de stingere combustibil și astfel reduce un mecanism de incendiu.",
+        "B": "Afirmația că vidul nu reduce întreținerea este prea generală; tehnologia are frecvent cerințe mici de mentenanță.",
+        "C": "Creșterea masei și gabaritului nu este consecință universală a întreruperii în vid.",
+        "model_scope_or_trap": "Reducerea riscului de incendiu nu este risc zero pentru întregul tablou și instalație.",
+        "reformulated_question": "De ce întreruperea în vid evită un mecanism clasic de incendiu din întreruptoarele cu ulei?",
+        "reformulated_solution": "Nu utilizează ulei combustibil ca mediu principal de întrerupere.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0261",
+      "grade_ids": [
+        "G1-ELE-272",
+        "G2-ELEC-405"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "279",
+        "stem": "Valoarea frecventei în sistemul electroenergetic este determinata în principal de:",
+        "A": "bilanţul puterilor active",
+        "B": "circulaţia puterii reactive",
+        "C": "modul de tratare a neutrului reţelei",
+        "imported_keys_UNCHANGED": "G1-ELE-272=A | G2-ELEC-405=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://link.springer.com/article/10.1186/s43067-022-00053-2",
+        "prior_option_reasoning": "A: frecvența sistemului sincron reflectă bilanțul dintre producția de putere activă și consum, prin accelerația rotorilor / ecuația de oscilație. B puterea reactivă influențează mai direct tensiunea; C tratarea neutrului vizează defecte la pământ. Excepție: sisteme cu convertoare și control sintetic păstrează corelația bilanț-frecvență dar dinamica diferă.",
+        "source_access_2026_11_20": "HISTORICAL_OPENED_SPRINGER_NOT_REOPENED"
+      },
+      "editorial_draft": {
+        "A": "În sistemele sincronizate, deficitul ori surplusul de putere activă accelerează sau frânează grupurile și schimbă frecvența.",
+        "B": "Fluxul de putere reactivă este legat în principal de tensiune, nu de determinarea directă a frecvenței.",
+        "C": "Tratarea neutrului influențează curenții de defect la pământ, nu echilibrul principal al frecvenței.",
+        "model_scope_or_trap": "Modelul cu mașini sincrone se generalizează cu atenție la sisteme dominate de invertoare și control sintetic.",
+        "reformulated_question": "Ce se întâmplă inițial cu frecvența dacă cererea activă depășește producția disponibilă într-un sistem sincron?",
+        "reformulated_solution": "Tinde să scadă până la intervenția controlului și reechilibrare.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0262",
+      "grade_ids": [
+        "G1-ELE-273",
+        "G2-ELEC-406"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "280",
+        "stem": "Valoarea medie a capacităţii lineice pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+        "A": "egală",
+        "B": "mai mică",
+        "C": "mai mare",
+        "imported_keys_UNCHANGED": "G1-ELE-273=B | G2-ELEC-406=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://opal-rt.atlassian.net/wiki/spaces/PDOCHS/pages/150307736",
+        "prior_option_reasoning": "B: în medie capacitatea liniei aeriene pe kilometru este mult mai mică decât a cablului subteran, deoarece spațiile dintre conductoare și pământ sunt mai mari. A egalitate și C mai mare nu sunt tipice. Depinde de tensiune, geometrie, manta, material izolant și tipul instalației; comparați unități aceleași.",
+        "source_access_2026_11_20": "HISTORICAL_OPALRT_SEARCH_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Capacități linice egale nu sunt tipice pentru comparația LEA cu cablu de aceeași clasă.",
+        "B": "LEA are în medie capacitate pe lungime mai mică datorită distanțelor și dielectricului aer.",
+        "C": "Capacitatea LEA mai mare decât cablul nu este cazul mediu pentru geometrii comparabile.",
+        "model_scope_or_trap": "Este o medie, nu o regulă absolută; compară valori per km la aceeași structură de sistem.",
+        "reformulated_question": "Ce instalație are de regulă capacitate pe kilometru mai mare: un cablu subteran compact sau o LEA?",
+        "reformulated_solution": "Cablul subteran, prin geometrie compactă și dielectric.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED_AVERAGE",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0263",
+      "grade_ids": [
+        "G1-ELE-274",
+        "G2-ELEC-407"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "281",
+        "stem": "Valoarea medie a inductanţei de serviciu pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+        "A": "egală",
+        "B": "mai mare",
+        "C": "mai mică",
+        "imported_keys_UNCHANGED": "G1-ELE-274=B | G2-ELEC-407=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://opal-rt.atlassian.net/wiki/spaces/PDOCHS/pages/150307736",
+        "prior_option_reasoning": "B: pentru sisteme trifazate comparabile, LEA are de regulă inductanță linică mai mare decât cablul compact, unde conductoarele sunt apropiate. A egalitate, C mai mică nu corespund cazului tipic; structură ecran și construcție pot altera cifrele. Susținut doar ca comparație medie de configurații.",
+        "source_access_2026_11_20": "HISTORICAL_OPALRT_SEARCH_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Egalitatea inductanțelor pe lungime nu este caracteristica medie a LEA și cablurilor comparabile.",
+        "B": "LEA are, în medie, inductanță serie mai mare din cauza distanțelor geometrice între conductoare.",
+        "C": "Inductanța LEA mai mică nu este cazul tipic față de cablurile compacte.",
+        "model_scope_or_trap": "Diferența variază după geometrie, ecrane, configurație și parametrii cablului; «în medie» e esențial.",
+        "reformulated_question": "De ce un cablu trifazat compact tinde să aibă inductanță liniară redusă față de LEA?",
+        "reformulated_solution": "Conductoarele apropiate reduc inductanța buclei față de distanțele mari din aer.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED_AVERAGE",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0264",
+      "grade_ids": [
+        "G1-ELE-275",
+        "G2-ELEC-408"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "282",
+        "stem": "Valoarea medie pătratică a unei mărimi periodice se mai numeşte şi:",
+        "A": "amplitudine",
+        "B": "modul",
+        "C": "valoare efectivă sau valoarea eficace",
+        "imported_keys_UNCHANGED": "G1-ELE-275=C | G2-ELEC-408=C"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_243_GFR_15_SWITCHGEAR_SF6_LINES_POWER_2026_11_19.md",
+        "source_blob_sha": "c615b937b06b895ff31ec53e925d940f8ebbbc3d",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "prior_option_reasoning": "C: rădăcina mediei pătratelor (RMS) este valoarea efectivă/eficace. A amplitudinea reprezintă vârful unui semnal, B modul nu desemnează definiția RMS. Pentru semnal sinusoidal U_rms=Umax/√2; pentru forme arbitrarii formula generală de mediere pătratică.",
+        "source_access_2026_11_20": "LIVE_OPENSTAX"
+      },
+      "editorial_draft": {
+        "A": "Amplitudinea reprezintă vârful semnalului, nu media pătratelor.",
+        "B": "«Modul» înseamnă valoare absolută sau altă magnitudine, nu RMS prin definiție.",
+        "C": "Rădăcina mediei pătratice (RMS) este prin definiție valoarea efectivă/eficace.",
+        "model_scope_or_trap": "Uef=Umax/√2 numai pentru sinusoidă pură; RMS general este sqrt(media(u²)).",
+        "reformulated_question": "Pentru o sinusoidă cu amplitudine 20 V, ce valoare RMS are?",
+        "reformulated_solution": "20/√2≈14,14 V.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "edition_specific_exam_bibliography": "NOT_VERIFIED",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

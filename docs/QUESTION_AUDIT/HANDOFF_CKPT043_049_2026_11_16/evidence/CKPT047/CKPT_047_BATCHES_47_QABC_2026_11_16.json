@@ -1,0 +1,62 @@
+{
+  "checkpoint": "CKPT-047",
+  "date": "2026-11-16",
+  "status": "LOCAL_RESEARCH_ONLY_GITHUB_CONNECTOR_UNAVAILABLE",
+  "input_library_file": "ANRE_Trainer_MAPPING_FINAL_V1.csv",
+  "input_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+  "read_only_input_rows": 822,
+  "previous_local_contextual_unique_expected": 19,
+  "new_research_unique": 47,
+  "combined_contextual_if_successfully_reconciled_with_CKPT046": 66,
+  "remaining_without_contextual_if_reconciled": 502,
+  "preliminary_from_older_repo": {
+    "all_unique": 568,
+    "grade_ID_placements": 822,
+    "problem_first_unique": 297,
+    "deferred_unique": 271,
+    "approved_for_learning": 0
+  },
+  "new_batches": {
+    "L047-A-G2-BIBLIOGRAPHY": 12,
+    "L047-B-G1-CONFLICT": 11,
+    "L047-C-G1-GROUPED": 9,
+    "L047-D-G1-I7-EXACT": 15
+  },
+  "new_cases_NO_VALID_OPTION": [
+    "G2-NOR-137",
+    "G2-NOR-141",
+    "G2-NOR-145"
+  ],
+  "new_existing_key_mismatch_candidates": [
+    "G1-NOR-010",
+    "G1-NOR-012",
+    "G1-NOR-042",
+    "G1-NOR-089"
+  ],
+  "interpretation_followup": [
+    "G1-NOR-090 B vs C: conditonat vs textual se pot monta; options and exact §5.2.12.2.12 can be shown to user"
+  ],
+  "source_notes": [
+    "Official ANRE May2023 bibliography PDF inspected with two actual screenshots",
+    "I7 working HTML synchronized Portal Legis 2026-05-11; official portal direct 502",
+    "Full 2026 grade-edition and independent separate technical QA remain blocked",
+    "G2-NOR-137,141,145 are derived-bibliography items with no valid option because they ask approval ACT, options are normative INDICATIVES. Their direct provenance from official ANRE exam XLSX is NOT proven.",
+    "User guidance applied: general rule absent exception; elimination of unsupported distractors, with exception/scope gate"
+  ],
+  "qa": {
+    "read_only_original_keys_unchanged": "47/47",
+    "source_locator_url_present": "47/47",
+    "ABC_reasoning_nonempty": "47/47",
+    "context_nonempty": "47/47",
+    "unique_ids": 47,
+    "no_approvals": "47/47",
+    "separate_independent_reviewer": "NOT_RUN"
+  },
+  "files": [
+    "L047-A-G2-BIBLIOGRAPHY_2026_11_16.json",
+    "L047-B-G1-CONFLICT_2026_11_16.json",
+    "L047-C-G1-GROUPED_2026_11_16.json",
+    "L047-D-G1-I7-EXACT_2026_11_16.json",
+    "CKPT_047_BATCH_SUMMARY_2026_11_16.csv"
+  ]
+}

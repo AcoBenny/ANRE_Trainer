@@ -1,0 +1,554 @@
+{
+  "schema": "v218_14_exact_original_ABC_NOR46_60_skip_NOR48_mutated",
+  "date": "2026-11-21",
+  "parent_commit": "28b3fc688d12006642b18b3c16ad5537f9908bc1",
+  "previous_manifest_blob": "805aea763b4edb5ab95a0e6972e82df24af103fc",
+  "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "source_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "counts": {
+    "new_unique_qabc": 14,
+    "new_grade_routes": 14,
+    "separate_option_explanations": 42,
+    "reformulated_exercises": 14,
+    "new_explicit_semantic_holds": 5,
+    "excluded_original_text_mutation": 1,
+    "learner_approvals": 0
+  },
+  "excluded": {
+    "unit_id": "QABC-0362",
+    "grade_id": "G1-NOR-048",
+    "reason": "V175 original hosted workbook A/C differ materially from trainer A/C; original hosted A='numai direct din tabloul de distribuţie', C='dintr-un circuit de prize', imported trainer rewrites A to combined alternatives, C to 'numai dintr-un circuit de prize'. No source-exact editorial draft credited here."
+  },
+  "held_ids": [
+    "QABC-0365",
+    "QABC-0367",
+    "QABC-0368",
+    "QABC-0372",
+    "QABC-0374"
+  ],
+  "cards": [
+    {
+      "unit_id": "QABC-0360",
+      "grade_ids": [
+        "G1-NOR-046"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "53",
+        "stem": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "modul de montare",
+        "B": "tipul receptorului alimentat",
+        "C": "lungimea circuitului",
+        "imported_keys_UNCHANGED": "G1-NOR-046=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-046:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-046:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.3/§5.2.4.1.2",
+      "editorial_draft": {
+        "A": "A modul de montare influențează disiparea termică și factorii de corecție ai curentului admisibil Iz.",
+        "B": "B tipul receptorului determină sarcina, nu Iz al conductorului în condiții identice.",
+        "C": "C lungimea afectează căderea de tensiune, nu direct valoarea Iz de tabel.",
+        "model_scope_or_trap": "Iz depinde de montaj, nu numai de puterea consumatorului.",
+        "reformulated_question": "Are același cablu Iz identic în tub și în aer liber?",
+        "reformulated_solution": "Nu, modul de montaj schimbă răcirea.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0361",
+      "grade_ids": [
+        "G1-NOR-047"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "54",
+        "stem": "Pentru motoarele monofazate, protecţia contra suprasarcinilor se face:",
+        "A": "obligatoriu pe conductorul de fază",
+        "B": "obligatoriu pe conductorul neutru",
+        "C": "opţional pentru motoare mai mici de 1,1 kW",
+        "imported_keys_UNCHANGED": "G1-NOR-047=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-047:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-047:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.3.1.7.2.1",
+      "editorial_draft": {
+        "A": "A protecția la suprasarcină se pune pe conductorul activ nelegat la pământ; la monofazat L-N uzual acesta este faza.",
+        "B": "B protecția exclusiv pe N nu înlocuiește protecția fazei.",
+        "C": "C nu este prevăzută o excepție generală sub 1,1 kW.",
+        "model_scope_or_trap": "Nu generaliza monofazatul uzual la orice sistem de legare la pământ.",
+        "reformulated_question": "Un motor monofazat sub 1,1 kW este automat scutit de protecție la suprasarcină?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0363",
+      "grade_ids": [
+        "G1-NOR-049"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "56",
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": "dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize",
+        "imported_keys_UNCHANGED": "G1-NOR-049=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-049:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-049:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.13",
+      "editorial_draft": {
+        "A": "A «numai direct din tablou» exclude circuitul de iluminat permis.",
+        "B": "B alimentarea soneriei dintr-un circuit de iluminat normal este una dintre opțiunile admise.",
+        "C": "C «numai din prize» exclude celelalte opțiuni permise.",
+        "model_scope_or_trap": "B este exemplu valid, nu metoda exclusivă. A nu se confunda cu originalul diferit NOR048.",
+        "reformulated_question": "Soneria alimentată din iluminat exclude prin lege alimentarea dintr-un circuit de prize?",
+        "reformulated_solution": "Nu, există mai multe moduri permise.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0364",
+      "grade_ids": [
+        "G1-NOR-050"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "57",
+        "stem": "Secţiunea minimă admisă pentru conductoare de fază din circuite pentru prize monofazate în instalaţiile electrice din interiorul clădirilor este de:",
+        "A": "2,5 mm2 cupru,",
+        "B": "1,5 mm2 cupru,                           2,5 mm2 aluminiu",
+        "C": "4 mm2 aluminiu",
+        "imported_keys_UNCHANGED": "G1-NOR-050=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-050:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-050:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.6; Anexa 5.32 pct.1.2",
+      "editorial_draft": {
+        "A": "A Cu 2,5 mm² este minimul pentru conductorul de fază din circuitul de prize monofazate vizat.",
+        "B": "B Cu 1,5 mm² este sub pragul circuitului de prize indicat.",
+        "C": "C Al 4 mm² nu este răspunsul aferent rândului exact de prize din anexă.",
+        "model_scope_or_trap": "Nu confunda circuitul de prize cu alte tipuri de circuit pentru care apar alte valori.",
+        "reformulated_question": "Ce minim Cu rezultă pentru faza circuitelor de prize monofazate din anexa specifică?",
+        "reformulated_solution": "2,5 mm², înainte de verificarea tuturor condițiilor de dimensionare.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0365",
+      "grade_ids": [
+        "G1-NOR-051"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "58",
+        "stem": "Secţiunea minimă admisă a conductorului de fază pentru circuitul unui receptor electrocasnic monofazat cu putere de peste 2 kW este de:",
+        "A": "2,5 mm2 cupru",
+        "B": "1,5 mm2 cupru,                           2,5 mm2 aluminiu",
+        "C": "4 mm2 aluminiu",
+        "imported_keys_UNCHANGED": "G1-NOR-051=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-051:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-051:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.7; Anexa 5.32 și CKPT219",
+      "editorial_draft": {
+        "A": "A Cu 2,5 mm² este minimul intenționat pentru un electrocasnic alimentat din circuit de priză, nu dimensionare suficientă la orice putere.",
+        "B": "B Cu 1,5 mm² nu atinge minimul pentru circuitul de priză presupus.",
+        "C": "C Al 4 mm² se referă la alt rând de circuit, nu probează adecvarea universală.",
+        "model_scope_or_trap": "HOLD: «electrocasnic» nu spune explicit priză și «peste 2 kW» nu limitează puterea superioară.",
+        "reformulated_question": "Un electrocasnic monofazat de 8 kW are automat conductor suficient de 2,5 mm²?",
+        "reformulated_solution": "Nu; trebuie calculat curentul, protecția, Iz și căderea de tensiune.",
+        "editorial_disposition": "SEMANTIC_HOLD",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0366",
+      "grade_ids": [
+        "G1-NOR-052"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "59",
+        "stem": "Pentru circuite monofazate, conductorul neutru (N) va avea:",
+        "A": "aceeaşi secţiune ca şi conductorul de fază",
+        "B": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de cupru",
+        "C": "aceeaşi secţiune ca şi conductorul de fază, numai pentru conductoare de aluminiu",
+        "imported_keys_UNCHANGED": "G1-NOR-052=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-052:CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-052:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.4.6.1(a); Anexa 5.32",
+      "editorial_draft": {
+        "A": "A într-un circuit monofazat cu două conductoare secțiunea neutrului N este egală cu cea a fazei, indiferent de material.",
+        "B": "B «numai Cu» exclude nejustificat aluminiul.",
+        "C": "C «numai Al» exclude nejustificat cuprul.",
+        "model_scope_or_trap": "Nu amesteca N cu PEN sau circuite polifazate ce au alte condiții.",
+        "reformulated_question": "Într-un circuit monofazat L-N regula de egalitate a secțiunii este valabilă numai pentru cupru?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0367",
+      "grade_ids": [
+        "G1-NOR-053"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "60",
+        "stem": "Branşamentul electric este partea din instalaţia de distribuţie a energiei electrice cuprinsă între linia electrică şi:",
+        "A": "firida de branşament",
+        "B": "coloana electrică",
+        "C": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului",
+        "imported_keys_UNCHANGED": "G1-NOR-053=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-053:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-053:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "PE155/1992 §1.2.1–2, copie istorică; CKPT221",
+      "editorial_draft": {
+        "A": "A firida este capătul racordului, nu neapărat al întregului branșament; cheia importată A are obiect diferit.",
+        "B": "B coloana este doar componenta care continuă după firidă spre abonat.",
+        "C": "C delimitarea de la bornele de ieșire ale contorului apare în definiția istorică; candidatul cere verificare de ediție și obiect.",
+        "model_scope_or_trap": "HOLD: branșament complet ≠ racord; sursa istorică conturează o altă limită decât A importat.",
+        "reformulated_question": "Unde se termină RACORDUL față de BRANȘAMENT în PE155?",
+        "reformulated_solution": "Racordul se termină la firidă; branșamentul cuprinde și legătura spre instalația interioară.",
+        "editorial_disposition": "SEMANTIC_HOLD",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0368",
+      "grade_ids": [
+        "G1-NOR-054"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "61",
+        "stem": "Întrerupătoarele, comutatoarele şi butoanele de lumină se montează, faţă de nivelul pardoselii finite, la înălţimea de:",
+        "A": "1m de la axul aparatului",
+        "B": "(0,6-1,5) m de la axul aparatului",
+        "C": "1,5 m de la axul aparatului",
+        "imported_keys_UNCHANGED": "G1-NOR-054=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-054:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-054:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.22; CKPT226 supersedes anterioare",
+      "editorial_draft": {
+        "A": "A 1 m este un exemplu în interval, nu singura cotă recomandată.",
+        "B": "B 0,6–1,5 m reprezintă intervalul normativ recomandat, iar reperul de măsurare trebuie verificat exact.",
+        "C": "C 1,5 m este limita superioară posibilă, nu o înălțime unică.",
+        "model_scope_or_trap": "HOLD: cheia A este doar un exemplu; I7 recomandă un interval, nu o singură poziție obligatorie.",
+        "reformulated_question": "Toate comutatoarele trebuie amplasate obligatoriu la axul exact la 1 m?",
+        "reformulated_solution": "Nu, sursa prezintă un interval recomandat.",
+        "editorial_disposition": "SEMANTIC_HOLD",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0369",
+      "grade_ids": [
+        "G1-NOR-055"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "62",
+        "stem": "Prevederile normativului  I 7 – 2011 se aplică la proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente:",
+        "A": "clădirilor cu funcţiuni agroindustriale şi agrozootehnice",
+        "B": "minelor şi carierelor",
+        "C": "depozitelor de materiale pirotehnice şi explozive",
+        "imported_keys_UNCHANGED": "G1-NOR-055=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-055:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-055:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §1.1–1.2; CKPT221",
+      "editorial_draft": {
+        "A": "A clădirile cu funcții agroindustriale/agrozootehnice intră în aria aplicabilă conform domeniului precizat.",
+        "B": "B minele și carierele sunt excluse din aria generală a I7 pentru instalațiile clădirilor.",
+        "C": "C depozitele de pirotehnice/explozivi au reglementări specifice, nu tratamentul general invocat.",
+        "model_scope_or_trap": "Instalațiile aferente clădirii nu sunt identice cu procesele tehnologice specializate.",
+        "reformulated_question": "Clădirea agrozootehnică este automat exclusă din I7?",
+        "reformulated_solution": "Nu, pentru instalația clădirii se aplică domeniul prevăzut.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0370",
+      "grade_ids": [
+        "G1-NOR-056"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "63",
+        "stem": "Montarea, pe conductoarele de protecţie, a unor elemente care pot produce întreruperea circuitului este:",
+        "A": "interzisă",
+        "B": "permisă în anumite condiţii",
+        "C": "la latitudinea consumatorului",
+        "imported_keys_UNCHANGED": "G1-NOR-056=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-056:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-056:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.5.3.5–3.6; CKPT226 a găsit clauza exactă",
+      "editorial_draft": {
+        "A": "A elementele de comutație ce pot întrerupe PE sunt interzise.",
+        "B": "B îmbinările demontabile cu unealtă pentru teste nu înseamnă permisiunea montării unui comutator pe PE.",
+        "C": "C continuitatea PE nu este alegere discreționară a utilizatorului.",
+        "model_scope_or_trap": "Test-joint demontabil cu unealtă ≠ comutator pe PE în serviciu.",
+        "reformulated_question": "Poate utilizatorul instala un întrerupător obișnuit pe PE?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0371",
+      "grade_ids": [
+        "G1-NOR-057"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "64",
+        "stem": "Amplasarea aparatelor, echipamentelor şi receptoarelor electrice în locuri în care ar putea fi expuse direct la apă, ulei, substanţe corozive, căldură sau şocuri mecanice:",
+        "A": "se admite",
+        "B": "se admite condiţionat",
+        "C": "este interzisă",
+        "imported_keys_UNCHANGED": "G1-NOR-057=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-057:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-057:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.1.6.11; CKPT221",
+      "editorial_draft": {
+        "A": "A acceptarea necondiționată ignoră expunerea la apă, ulei, coroziune ori șoc.",
+        "B": "B acceptarea condiționată presupune protecții corespunzătoare mediului când amplasarea nu poate fi evitată.",
+        "C": "C interdicția absolută ignoră cazurile de protecție admisă.",
+        "model_scope_or_trap": "Protecție IP și rezistență la mediu depind de riscurile concrete.",
+        "reformulated_question": "Se poate admite aparat electric la stropire fără protecție adecvată?",
+        "reformulated_solution": "Nu; admiterea este condiționată.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0372",
+      "grade_ids": [
+        "G1-NOR-058"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "65",
+        "stem": "Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:",
+        "A": "se admite întotdeauna",
+        "B": "este total interzisă",
+        "C": "se admite condiţionat",
+        "imported_keys_UNCHANGED": "G1-NOR-058=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-058:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-058:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §3.0.3.5; CKPT226 superseding",
+      "editorial_draft": {
+        "A": "A «întotdeauna» ignoră riscul condensului și cerințele de protecție.",
+        "B": "B «total interzisă», cheia importată, ignoră excepția din norma I7.",
+        "C": "C permite condiționat protecția împotriva condensului (IP≥33, etanșare, anticoroziv în contextul sursei).",
+        "model_scope_or_trap": "HOLD: cheia B ignoră permisiunea condiționată C. Nu schimba cheia automat.",
+        "reformulated_question": "Montarea sub conductă cu condens este întotdeauna interzisă, chiar cu protecție specială?",
+        "reformulated_solution": "Nu, norma prevede admitere condiționată.",
+        "editorial_disposition": "SEMANTIC_HOLD",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0373",
+      "grade_ids": [
+        "G1-NOR-059"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "66",
+        "stem": "Corpurile de iluminat echipate cu lămpi cu descărcări se prevăd în orice tip de încăpere cu:",
+        "A": "grătar protector",
+        "B": "dispozitiv pentru îmbunătăţirea factorului de putere",
+        "C": "difuzor",
+        "imported_keys_UNCHANGED": "G1-NOR-059=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-059:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-059:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.20; CKPT221",
+      "editorial_draft": {
+        "A": "A grătarul protector are rol pentru medii specifice, nu compensare de factor de putere.",
+        "B": "B echipamentul de îmbunătățire a factorului de putere este prevederea indicată pentru lămpile cu descărcări.",
+        "C": "C difuzorul este element optic și nu rezolvă cerința electrică.",
+        "model_scope_or_trap": "Nu confunda grătarul/difuzorul cu echipamentul de compensare.",
+        "reformulated_question": "Ce urmărește dispozitivul pentru o lampă cu descărcări din regula dată?",
+        "reformulated_solution": "Îmbunătățirea factorului de putere.",
+        "editorial_disposition": "PROVISIONAL_STUDY_DRAFT",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0374",
+      "grade_ids": [
+        "G1-NOR-060"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "67",
+        "stem": "Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:",
+        "A": "este recomandată",
+        "B": "este permisă condiţionat",
+        "C": "nu este permisă",
+        "imported_keys_UNCHANGED": "G1-NOR-060=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-060:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "source_url_or_provenance": "G1-NOR-060:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.5.3.2; CKPT226 superseding",
+      "editorial_draft": {
+        "A": "A recomandarea folosirii țevilor de apă în loc de PE contrazice interdicția exactă.",
+        "B": "B «permis condiționat», cheia importată, confundă legarea echipotențială a conductei cu folosirea ei CA PE.",
+        "C": "C normativul citat nu permite conductele metalice de apă drept conductoare de protecție.",
+        "model_scope_or_trap": "HOLD: cheia B versus sursa ce favorizează C, fără schimbare automată.",
+        "reformulated_question": "Legarea echipotențială a unei țevi de apă permite înlocuirea PE cu țeava?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "SEMANTIC_HOLD",
+        "source_edition_check": "2026_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    }
+  ]
+}

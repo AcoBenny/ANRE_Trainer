@@ -1,0 +1,643 @@
+{
+  "checkpoint": "CKPT-152",
+  "date": "2026-11-17",
+  "baseline_head": "648b2e62ea41219e805a236ad8db09ecbff02d4c",
+  "units": 15,
+  "grade_ids": 30,
+  "status_counts": {
+    "CONDITIONAL_MODEL_OR_SOURCE": 6,
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 8,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 1
+  },
+  "description": "Exact canonical QABC/key preserved, prior source and A/B/C review reused, no redundant source mapping; annotated technical model and counterexamples.",
+  "caution": "Independent review and official ANRE grade/key provenance not executed; source links tagged with access; no unit approved for study.",
+  "cards": [
+    {
+      "unit_id": "AU-579cc6968817497a",
+      "representative_id": "G1-ELE-145",
+      "member_ids": [
+        "G1-ELE-145",
+        "G2-ELEC-283"
+      ],
+      "qabc_sha256": "579cc6968817497a84b7361d34fab735a52dea10f966d37c4cff29440fe8c4b6",
+      "question_original_UNCHANGED": "La pornirea motoarelor electrice asincrone se urmăreşte:",
+      "options_original_UNCHANGED": {
+        "A": "reducerea vibraţiilor rotorului",
+        "B": "reducerea curentului electric absorbit de motor",
+        "C": "reducerea tensiunii la bornele de alimentare ale motorului"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-145": "B",
+        "G2-ELEC-283": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Starting design often minimizes inrush current while preserving adequate torque; reduction of voltage at terminals may also be method.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Motor_starting",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-a6b1ed9a6c1a5fc9",
+      "representative_id": "G1-ELE-146",
+      "member_ids": [
+        "G1-ELE-146",
+        "G2-ELEC-284"
+      ],
+      "qabc_sha256": "a6b1ed9a6c1a5fc90e779df10786993fd5f7238912b5075e02f437dea3081152",
+      "question_original_UNCHANGED": "La transformatoarele la care comutarea ploturilor se face cu transformatorul în sarcina, comutatorul de ploturi se montează:",
+      "options_original_UNCHANGED": {
+        "A": "pe înfăşurarea de tensiune mai mica, deoarece tensiunea este mai mica",
+        "B": "pe înfăşurarea de tensiune mai mare, deoarece curentul este mai mic",
+        "C": "pe oricare dintre înfăşurări"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-146": "B",
+        "G2-ELEC-284": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Tap changer commonly installed on HV winding to reduce current through contacts for equal kVA, but exceptions from construction possible.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.hitachienergy.com/in/en/products-and-solutions/insulation-and-components/transformer-insulation-components/tap-changers/conventional-on-load-tap-changers/on-load-tap-changers-type-uze",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-1ee87c061c6da278",
+      "representative_id": "G1-ELE-147",
+      "member_ids": [
+        "G1-ELE-147",
+        "G2-ELEC-285"
+      ],
+      "qabc_sha256": "1ee87c061c6da2789f555918f1d8199277c58a1892877c4643009e0eba0f023a",
+      "question_original_UNCHANGED": "Materialele feromagnetice au permeabilitatea relativa:",
+      "options_original_UNCHANGED": {
+        "A": "mai mica decât 1",
+        "B": "puţin mai mare decât 1",
+        "C": "mult mai mare decât 1"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-147": "C",
+        "G2-ELEC-285": "C"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Ferromagnets can have very high relative permeability in unsaturated range, unlike dia/paramagnetic near unity; strong saturation nonlinear.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://phys.libretexts.org/Bookshelves/University_Physics/University_Physics_(OpenStax)/University_Physics_II_-_Thermodynamics_Electricity_and_Magnetism_(OpenStax)/12%3A_Sources_of_Magnetic_Fields/12.08%3A_Magnetism_in_Matter",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-4766d8cd015739c1",
+      "representative_id": "G1-ELE-148",
+      "member_ids": [
+        "G1-ELE-148",
+        "G2-ELEC-286"
+      ],
+      "qabc_sha256": "4766d8cd015739c1bbe597c230d39aa25ec5c3ebf7e5949040b678a0dcbf4a8e",
+      "question_original_UNCHANGED": "Ecuația constitutivă a bobinei ideale are forma:",
+      "options_original_UNCHANGED": {
+        "A": "u = R i",
+        "B": "u= L di/dt",
+        "C": "du = i/C dt"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-148": "B",
+        "G2-ELEC-286": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Ideal inductor u=L di/dt for constant linear L; resistor u=Ri and capacitor i=C du/dt.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/14-2-mutual-inductance",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/14-1-mutual-inductance",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-54516b6f6bd9a71c",
+      "representative_id": "G1-ELE-149",
+      "member_ids": [
+        "G1-ELE-149",
+        "G2-ELEC-287"
+      ],
+      "qabc_sha256": "54516b6f6bd9a71ccba80bfdb3666bf0757374a16dd738f6e1b27f7bd0439834",
+      "question_original_UNCHANGED": "Legea lui Coulomb exprimã:",
+      "options_original_UNCHANGED": {
+        "A": "forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice",
+        "B": "fluxul electric printr-o suprafaţa sferica",
+        "C": "diferenţa de potenţial între doua puncte"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-149": "A",
+        "G2-ELEC-287": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Coulomb law describes forces between electric point charges; electric flux and voltage different laws.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/5-1-electric-charge-and-electric-field",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-d846879acd350185",
+      "representative_id": "G1-ELE-150",
+      "member_ids": [
+        "G1-ELE-150",
+        "G2-ELEC-288"
+      ],
+      "qabc_sha256": "d846879acd350185b5ee8dce3b2a96126b99b9d15bb4ca9ac1939d03fe7c4981",
+      "question_original_UNCHANGED": "O reţea electricã trifazatã de medie tensiune are neutrul transformatoarelor tratat prin bobina. Pentru regimul normal de funcţionare sa se precizeze efectul bobinei:",
+      "options_original_UNCHANGED": {
+        "A": "deplasarea neutrului",
+        "B": "creşterea curenţilor de scurtcircuit",
+        "C": "nici un efect"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-150": "C",
+        "G2-ELEC-288": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Compensation neutral grounding coil has no zero-sequence effect ideally under balanced steady operation; real unbalance may displace neutral.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://iaeimagazine.org/2015/september-october2015/medium-voltage-earthing-systems-arrangements-and-comparison/",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-27e6fc6c792d50e2",
+      "representative_id": "G1-ELE-151",
+      "member_ids": [
+        "G1-ELE-151",
+        "G2-ELEC-289"
+      ],
+      "qabc_sha256": "27e6fc6c792d50e2a7156eef70bba808b13f8b907c23be5f94f7653a2b372d2a",
+      "question_original_UNCHANGED": "O siguranţa mai mare în alimentarea consumatorilor de energie electrica se realizează prin:",
+      "options_original_UNCHANGED": {
+        "A": "reţele radiale",
+        "B": "reţele buclate cu funcţionare radialã",
+        "C": "reţele buclate"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-151": "C",
+        "G2-ELEC-289": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Closed looped network has alternate supply path for faults and can improve reliability, but protective schemes and operational radial mode matter.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_a_distribution_architecture",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-2bf004b643dff489",
+      "representative_id": "G1-ELE-153",
+      "member_ids": [
+        "G1-ELE-153",
+        "G2-ELEC-291"
+      ],
+      "qabc_sha256": "2bf004b643dff48931fe66f5cc65fdc21bec5df7591f7b77c6ac9276c891fe19",
+      "question_original_UNCHANGED": "Mărimea caracteristică circuitelor magnetice şi care este analoagă cu rezistenţa circuitelor electrice se numeşte:",
+      "options_original_UNCHANGED": {
+        "A": "impedanţă",
+        "B": "reluctanţă",
+        "C": "permeanţă"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-153": "B",
+        "G2-ELEC-291": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Magnetic circuit reluctance = magnetomotive force / flux analogous to electrical R=V/I; permeance its inverse.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical4u.com/magnetic-reluctance/",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-91f26539b55c8086",
+      "representative_id": "G1-ELE-154",
+      "member_ids": [
+        "G1-ELE-154",
+        "G2-ELEC-292"
+      ],
+      "qabc_sha256": "91f26539b55c8086163e9abe12c8199e6cd739ad6a204d788cc282d397671411",
+      "question_original_UNCHANGED": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "options_original_UNCHANGED": {
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-154": "B",
+        "G2-ELEC-292": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Alternating periodic quantity by definition zero mean over full period, as distinct merely time-varying periodic signal.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/college-physics-2e/pages/23-2-ac-sources",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-1-ac-sources",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-40f8cfc8258ff1fe",
+      "representative_id": "G1-ELE-156",
+      "member_ids": [
+        "G1-ELE-156",
+        "G2-ELEC-294"
+      ],
+      "qabc_sha256": "40f8cfc8258ff1feb352a76a5436c05717705272811baee5ebd42eace5950c46",
+      "question_original_UNCHANGED": "Pe liniile electrice de înaltă tensiune, unde se preferă montarea transformatoarelor de  curent ?:",
+      "options_original_UNCHANGED": {
+        "A": "între barele colectoare şi separatorul de bare;",
+        "B": "între separatorul de bare şi întreruptor;",
+        "C": "între întreruptor şi separatorul de linie."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-156": "B",
+        "G2-ELEC-294": "B"
+      },
+      "technical_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_reason": "Current transformer position depends switchgear topology, protection zone/overlap and utility practice; preference B not universal.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://cache.industry.siemens.com/dl/files/494/109743494/att_995924/v1/7SS52xx_Manual_A8_V047401_en.pdf",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-790154215e939246",
+      "representative_id": "G1-ELE-157",
+      "member_ids": [
+        "G1-ELE-157",
+        "G2-ELEC-295"
+      ],
+      "qabc_sha256": "790154215e9392467ca88dadad4cee3e269043b875ab889ed98f31ddb6ca37e7",
+      "question_original_UNCHANGED": "Metoda transfigurării reţelelor electrice este folosita pentru a:",
+      "options_original_UNCHANGED": {
+        "A": "reduce pierderile de putere activa în reţea",
+        "B": "simplifica structura reţelelor echivalente pentru a reduce volumul de calcule",
+        "C": "diminua consumul specific de material conductor"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-157": "B",
+        "G2-ELEC-295": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Network transfiguration reduces equivalent network complexity and numerical calculations, without automatically reducing physical losses/material.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://en.wikipedia.org/wiki/Star-mesh_transform",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-b7f2fab6b20faa6d",
+      "representative_id": "G1-ELE-158",
+      "member_ids": [
+        "G1-ELE-158",
+        "G2-ELEC-296"
+      ],
+      "qabc_sha256": "b7f2fab6b20faa6de507361739561b8bc836aef5e3b620026bc4964f3e9b313f",
+      "question_original_UNCHANGED": "Miezul magnetic al rotorului unei maşini electrice asincrone se realizează din tole pentru:",
+      "options_original_UNCHANGED": {
+        "A": "reducerea curenţilor turbionari",
+        "B": "reducerea tensiunii electromotoare induse",
+        "C": "numai din motive constructive"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-158": "A",
+        "G2-ELEC-296": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Laminations interrupt eddy current loops and reduce magnetic rotor core losses.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-5-eddy-currents",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-94851097c3aa485d",
+      "representative_id": "G1-ELE-159",
+      "member_ids": [
+        "G1-ELE-159",
+        "G2-ELEC-297"
+      ],
+      "qabc_sha256": "94851097c3aa485d97b9651417dffeb6ae63a22e77e609dee7f9c629007ec35c",
+      "question_original_UNCHANGED": "Montajul fix al aparatelor în interiorul celulelor conduce la:",
+      "options_original_UNCHANGED": {
+        "A": "realizări constructive simple, fără blocaje suplimentare;",
+        "B": "reducerea dimensiunilor celulelor;",
+        "C": "reducerea timpului necesar reviziilor şi reparaţiilor."
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-159": "A",
+        "G2-ELEC-297": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Fixed mounting can simplify cell design but maintenance duration and size depend construction; comparative source needed.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.se.com/uk/en/faqs/FA332901/",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-b71ca544d6a38f3b",
+      "representative_id": "G1-ELE-161",
+      "member_ids": [
+        "G1-ELE-161",
+        "G2-ELEC-299"
+      ],
+      "qabc_sha256": "b71ca544d6a38f3b95549f56e839ff00291fce7582af3ed1791a8be4fb23ba77",
+      "question_original_UNCHANGED": "Nivelul de tensiune în sistem se reglează",
+      "options_original_UNCHANGED": {
+        "A": "încărcarea generatoarelor cu putere activa",
+        "B": "numai prin încărcarea generatoarelor cu putere reactiva",
+        "C": "prin utilizare de compensatoare"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-161": "C",
+        "G2-ELEC-299": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Compensators can regulate system voltage via reactive exchange; active power and reactive excitation can also alter voltage, eliminating 'numai'.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Equipment_to_improve_power_factor",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-9dba2e4ffde7e0bb",
+      "representative_id": "G1-ELE-162",
+      "member_ids": [
+        "G1-ELE-162",
+        "G2-ELEC-300"
+      ],
+      "qabc_sha256": "9dba2e4ffde7e0bbeb35fa53ef94e7b533b39bbd5778ec4984257a7c0a6fc5ed",
+      "question_original_UNCHANGED": "O linie electrică foarte lungă se comportă ca o linie adaptată:",
+      "options_original_UNCHANGED": {
+        "A": "dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică",
+        "B": "dacă funcţionează  în scurtcircuit",
+        "C": "dacă funcţionează în gol"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-162": "A",
+        "G2-ELEC-300": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Transmission line terminated by characteristic impedance has matched nonreflecting load; short/open mismatches reflect wave.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_09_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://vlab.amrita.edu/?brch=180&cnt=1&sim=298&sub=3",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    }
+  ]
+}

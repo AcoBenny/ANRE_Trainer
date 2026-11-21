@@ -1,0 +1,112 @@
+{
+  "checkpoint": "CKPT-136",
+  "date": "2026-11-17",
+  "baseline_head": "5e669b383ced85f2ee47fd19ac35f2647f3b314b",
+  "scope": "Last 2 uncarded question units, four G1/G2 IDs, two legacy SF6 questions",
+  "source_policy": "Historical physical facts distinguished from legality of commissioning F-gas electrical switchgear 2026+, no autonomous interpretation of EU exemptions; user has not approved any answer-key changes",
+  "review": "One assistant with technical, sourcing, linguistic, QA checklists. No separately instantiated independent evaluator",
+  "originals_immutable": "YES",
+  "learning_approval": "NO",
+  "cards": [
+    {
+      "unit_id": "AU-0f5eba70714b631a",
+      "representative_id": "G1-ELE-269",
+      "member_ids": "G1-ELE-269;G2-ELEC-402",
+      "qabc_sha256": "0f5eba70714b631a5ba146bfb9c80c6fb810611e4a2a9ac92949f61f250727f6",
+      "original_keys_by_id_JSON": "{\"G1-ELE-269\":\"C\",\"G2-ELEC-402\":\"C\"}",
+      "question_original": "Utilizarea SF6 ca mediu de izolare",
+      "A_original": "conduce la realizarea unor celule cu pericol de incendiu",
+      "B_original": "conduce numai la realizarea unor celule cu întreţinere mult simplificată;",
+      "C_original": "conduce la realizarea unor celule compacte",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "SF6 possesses high dielectric strength, enabling compact gas-insulated switchgear cubicles compared to air-insulated equipment. The imported key C is a HISTORICAL TECHNICAL PROPERTY, not permission to commission new SF6 designs in 2026.",
+      "ABC_analysis": {
+        "A": "False as stated: SF6 itself is non-flammable, and using it is not a cause of flammable gas hazard (although equipment can have other fire risks).",
+        "B": "'numai' invalid: maintenance reduction is not the only or definitional advantage, compactness is also a design effect.",
+        "C": "Yes as engineering property: high dielectric strength can yield smaller clearances and compact enclosures."
+      },
+      "pairwise_and_reverse": "Modern SF6-free switchgear can also be compact; source does not prove SF6 is legally usable in all projects. Siemens documentation distinguishes SF6 for insulating dielectric versus vacuum for interruption in mixed designs.",
+      "legal_era_exception": "Regulation EU 2024/573 art 13(9) prohibits PUTTING INTO OPERATION F-gas electrical switchgear <=24kV for primary/secondary distribution from 1 Jan 2026, subject to derogations and prior order article 13(14); further ranges have staggered 2028/2030/2032 milestones. These are prospective commissioning restrictions, not that the physical answer C became false.",
+      "source_and_terminology_gate": "TECHNICAL_HISTORY_VS_EU_2026_NEW_INSTALLATION_LEGAL_SCOPE_AND_ANRE_EXAM_EDITION_NOT_SIGNED",
+      "sources": [
+        {
+          "url": "https://www.siemens-energy.com/global/en/home/products-services/product-offerings/gas-insulated-switchgear.html",
+          "locator": "Siemens Energy GIS technical compactness and SF6 historical gas usage",
+          "access": "MANUFACTURER_HTML_OPENED"
+        },
+        {
+          "url": "https://climate.ec.europa.eu/areas-action/fluorinated-greenhouse-gases/climate-friendly-alternatives-f-gases/electrical-equipment-sf6_en",
+          "locator": "European Commission SF6 technical dielectric properties, GWP 24300",
+          "access": "EU_COMMISSION_OFFICIAL_HTML_OPENED"
+        },
+        {
+          "url": "https://www.esbnetworks.ie/services/get-connected/renewable-connection/f-gas-regulation",
+          "locator": "Electrical operator EU 2024/573 Art13(9), (14) dates and derogations",
+          "access": "OPERATOR_HTML_OPENED_INTERPRETATION_OF_EU_LAW"
+        },
+        {
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj/eng",
+          "locator": "Regulation (EU) 2024/573 official text, Art13(9) and related exceptions; complete exact text not opened this batch",
+          "access": "OFFICIAL_LEGAL_REFERENCE_NOT_FULLY_REVIEWED"
+        }
+      ],
+      "finding": "INTENDED_C_ENGINEERING_TRUE_WITH_LEGAL_SCOPE_GATE",
+      "exam_edition_2026": "UNVERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    },
+    {
+      "unit_id": "AU-f00e93d3c3d33c77",
+      "representative_id": "G1-ELE-270",
+      "member_ids": "G1-ELE-270;G2-ELEC-403",
+      "qabc_sha256": "f00e93d3c3d33c77efdb43b3a4787b2dcb268a8ab691eb33c71814d2c97bb511",
+      "original_keys_by_id_JSON": "{\"G1-ELE-270\":\"B\",\"G2-ELEC-403\":\"B\"}",
+      "question_original": "Utilizarea SF6 ca mediu de stingere a arcului electric permite",
+      "A_original": "doar realizarea unor întreruptoare fără pericol de incendiu;",
+      "B_original": "realizarea unor întreruptoare cu întreţinere mult simplificată;",
+      "C_original": "puţin silenţioase.",
+      "stored_key_UNCHANGED": "B",
+      "positive_context": "SF6 arc-interrupting gas equipment historically allowed lower routine maintenance compared with oil-based breakers thanks to enclosure and arc extinction design. Not MAINTENANCE-FREE: gas leakage checks, service after faults and environmental handling matter.",
+      "ABC_analysis": {
+        "A": "'doar' precludes other benefits and even a nonflammable extinguishing gas does not make all equipment fireproof.",
+        "B": "Typical historical advantage: reduced routine maintenance of an appropriately designed SF6 breaker versus oil-based equipment, subject to inspections.",
+        "C": "'puţin silenţioase' is an unclear negative claim, not the defining arc-interruption benefit."
+      },
+      "pairwise_and_reverse": "Vacuum interrupters also offer low maintenance, while SF6 handling has climate compliance obligations. Mixing SF6-insulated but vacuum-breaking Siemens 8DA/8DB with SF6 arc-breaking breakers would be a source-object error; use exact arc-breaking reference.",
+      "legal_era_exception": "The staged F-gas electrical switchgear restrictions apply to gas as INSULATING OR BREAKING medium, so new equipment legal status is separate from the legacy physical answer. >=? No broad universal ban of existing equipment is implied from 1 Jan 2026; check applicable exceptions and upgrade conditions.",
+      "source_and_terminology_gate": "SF6_ARC_BREAKING_VS_SF6_INSULATION_NOT_SAME_OBJECT_EU_2026_RESTRICTIONS",
+      "sources": [
+        {
+          "url": "https://www.esbnetworks.ie/services/get-connected/renewable-connection/f-gas-regulation",
+          "locator": "EU Article13(9) includes insulating OR breaking gas, commissioning dates and exceptions",
+          "access": "OPERATOR_HTML_OPENED"
+        },
+        {
+          "url": "https://eepower.com/technical-articles/substation-componentspart-3-circuit-breakers/",
+          "locator": "Circuit breaker historical SF6 arc-quenching technical overview, exact maintenance comparison not independently reviewed",
+          "access": "TECHNICAL_ARTICLE_RESEARCH_LEAD"
+        },
+        {
+          "url": "https://www.rb-marine.com/wp-content/uploads/2018/08/HSE_Keeping_Electrical_Switchgear_SafeHSG230.pdf",
+          "locator": "HSE HSG230 section 105-107: non-oil switchgear SF6 sealed envelopes classified reduced maintenance, not maintenance-free",
+          "access": "OFFICIAL_SAFETY_GUIDANCE_PDF_SEARCH_TEXT_NOT_VISUAL_REVIEWED"
+        },
+        {
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj/eng",
+          "locator": "Official EU legal regulation Art13(9),(14) exact scope, not fully opened",
+          "access": "OFFICIAL_LINK_RESEARCH_LEAD"
+        }
+      ],
+      "finding": "INTENDED_B_HISTORICAL_COMPARISON_WITH_ARC_BREAKER_SPECIFIC_AND_EU_2026_GATES",
+      "exam_edition_2026": "UNVERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "original_key_changed": "NO"
+    }
+  ]
+}

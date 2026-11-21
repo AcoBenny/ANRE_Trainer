@@ -1,0 +1,8 @@
+"ID","batch_id","risk","semantic_class","target_bound_recheck","finding","next_gate"
+"G1-LEG-039","DEEP-LEG-02","P1","MAX_LEGAL_DEADLINE","YES","30 days MT vs possible general scoped deadline","Compare exact article on ATR after solution file, JT/MT 2026 edition, no unconditional inference"
+"G1-NOR-005","DEEP-NOR-02","P1","QUANTIFIER_ON_OTHER_OBJECT","NO","cel puțin 3 measurements, response asks distance in m","Do not apply threshold equality to distance; bind quantifier to measurement-count noun"
+"G1-NOR-007","DEEP-NOR-02","P1","MAX_RATED_POWER","YES","Permitted plug-in appliance nominal power upper cutoff","Verify exact regulation edition and appliance/circuit scope; choose equality with limit"
+"G1-NOR-025","DEEP-NOR-02","P1","MIN_AIR_CLEARANCE","YES","At least specified phase-to-phase/phase-to-earthed-metal distance","Verify minimum air clearance exact voltage class and component object before equality"
+"G1-NOR-029","DEEP-NOR-01","P0","MAX_HEIGHT_DWELLING_EXCEPTION","YES","2.3 m general vs 2.5 m dwelling exception; candidate C, stored B","Already classified as false ambiguity in CKPT024; independent source QA before key correction"
+"G1-NOR-032","DEEP-NOR-01","P0","GREATER_THAN_THRESHOLD","YES","PE155 specific horizontal straight column >15 m, candidate B","Apply specialized PE155 §3.2.10 rather than generic I7; PDF figure/source edition QA"
+"G2-LEG-077","DEEP-LEG-04","P1","MIN_TRAINING_HOURS","YES","Periodic authorization visa course minimum training hours","Verify ANRE specific regulation for type of course and latest edition; target hours, not 12-month context"

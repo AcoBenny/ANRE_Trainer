@@ -1,0 +1,210 @@
+{
+  "schema": "v198_ckpt254_four_high_risk_source_matched_full_abc_and_reformulation_drafts",
+  "date": "2026-11-20",
+  "parent_head": "2e446468f773249ae9eafeeff8ccf7b5d07b4e9f",
+  "source_v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "source_v138_blob_sha": "869dd1ea3f0500f7d04751fe8a230e02b37824d1",
+  "source_v197_blob_sha": "b30343b5200fa6d0383134a8caae264588477765",
+  "counts": {
+    "new_unique_qabc": 4,
+    "new_grade_routes": 8,
+    "per_option_explanations": 12,
+    "reformulations": 4,
+    "explicit_semantic_holds": 4,
+    "learner_approved": 0
+  },
+  "key_scope": "Imported per-grade keys preserved exactly, source-grade pairing verified. Source exact normalized is question+option fidelity, NOT scored key authentication. QABC-0024 missing original figure; no hypothetical reconstruction. External technical sources support partial scopes not 2026 ANRE bibliography; single-assistant reasoning, NO independent professional QA.",
+  "cards": [
+    {
+      "unit_id": "QABC-0024",
+      "grade_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_UNAUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "35",
+        "stem": "Ce posibilităţi de limitare a curenţilor de scurtcirciut sunt de preferat pentru schema de mai sus ?",
+        "A": "reducerea t.e.m., acţionând asupra circuitului de excitaţie al generatorului;",
+        "B": "mărirea reactanţei schemei de alimentare între sursă şi locul de defect;",
+        "C": "creşterea capacităţii de rupere a întreruptoarelor.",
+        "imported_keys_UNCHANGED": "G1-ELE-028=B | G2-ELEC-177=B"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v138_sha": "869dd1ea3f0500f7d04751fe8a230e02b37824d1",
+        "previous_research_layer": "v172",
+        "prior_risk": "MISSING_DIAGRAM",
+        "prior_source_quality": "SECONDARY_GENERAL_SOURCE_ONLY",
+        "candidate_NOT_APPROVED": "BLOCKED_MISSING_FIGURE"
+      },
+      "editorial_draft": {
+        "A": "Reducerea excitației generatorului poate influența curentul de scurtcircuit, mai ales componentele susținute, dar eficiența și admisibilitatea depind de excitație, regimul generatorului și schema neprezentată.",
+        "B": "Mărirea reactanței între sursă și defect reduce curentul prospectiv în modelul simplificat I_sc≈U/Z; este candidatul importat B, fără confirmarea că e metoda «de preferat» pentru figura lipsă.",
+        "C": "Creșterea capacității de rupere a întreruptoarelor permite întreruperea unui curent mai mare, dar nu reduce curentul prospectiv de scurtcircuit.",
+        "model_scope_or_trap": "Enunțul trimite explicit la «schema de mai sus». Figura originală nu a fost recuperată din registrul text; nu inventăm topologia și nu declarăm B răspuns universal. Concluzia pentru exercițiul abstract este diferită de decizia pentru schema autentică.",
+        "reformulated_question": "Pentru un circuit monofazat idealizat cu U=100 V și impedanță de defect de 5 Ω, cum se schimbă curentul dacă impedanța crește la 10 Ω?",
+        "reformulated_solution": "Scade de la 20 A la 10 A în modelul I=U/Z, fără a decide o schemă reală.",
+        "editorial_disposition": "HOLD_MISSING_AUTHENTIC_FIGURE",
+        "option_comparison_pairs": [
+          "A vs B: reducerea excitației acționează asupra sursei, mărirea reactanței asupra traseului; efectul depinde de schema reală",
+          "A vs C: intervenție în excitație versus capacitate de întrerupere, doar prima poate schimba aportul generatorului",
+          "B vs C: limitarea curentului versus capacitate de întrerupere sunt funcții distincte"
+        ],
+        "source_url_candidates": [
+          "https://www.electrical-installation.org/enwiki/3-phase_short-circuit_current_%28Isc%29_at_any_point_within_a_LV_installation",
+          "https://www.electrical-installation.org/enwiki/Generator_protection"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "authentic_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0025",
+      "grade_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_UNAUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "36",
+        "stem": "Curentul electric alternativ poate fi produs numai prin fenomene:",
+        "A": "termice",
+        "B": "chimice",
+        "C": "de inducţie electromagnetică",
+        "imported_keys_UNCHANGED": "G1-ELE-029=C | G2-ELEC-178=C"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v138_sha": "869dd1ea3f0500f7d04751fe8a230e02b37824d1",
+        "previous_research_layer": "v171",
+        "prior_risk": "ABSOLUTE_NUMAI_FALSE_BROAD_SCOPE",
+        "prior_source_quality": "DOE_TECHNICAL_DESCRIPTION",
+        "candidate_NOT_APPROVED": "C_CLASSICAL_GENERATOR_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Fenomenele termice pot modifica proprietăți electrice și pot produce t.e.m. termoelectrică, dar singure nu definesc universal un curent alternativ periodic.",
+        "B": "Fenomenele chimice furnizează de obicei t.e.m. de curent continuu în pile; producerea AC necesită o evoluție sau conversie suplimentară.",
+        "C": "Inducția electromagnetică produce AC în alternatoare convenționale. Totuși convertoarele electronice pot sintetiza AC dintr-o sursă DC prin comutație, deci «numai» nu este adevărat pentru toate metodele.",
+        "model_scope_or_trap": "«Numai» are o excepție fizică explicită: invertorul DC→AC. Baremul importat C poate reflecta manualul alternatorului, nu o afirmație universală din 2026.",
+        "reformulated_question": "Un invertor semiconductor poate genera tensiune AC la ieșire alimentat de o baterie DC fără rotor de alternator?",
+        "reformulated_solution": "Da, prin comutație electronică și control al formei de undă; este contraexemplu la «numai prin inducție electromagnetică».",
+        "editorial_disposition": "HOLD_EXCLUSIVE_NUMAI_INVERTER_COUNTEREXAMPLE",
+        "option_comparison_pairs": [
+          "A vs B: căldura și reacțiile chimice nu sunt definiții generale ale AC",
+          "A vs C: inducția în alternator este cazul clasic, efectul termic nu este singura sursă posibilă",
+          "B vs C: energia chimică DC poate fi convertită electronic în AC fără inducție de alternator"
+        ],
+        "source_url_candidates": [
+          "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "authentic_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0036",
+      "grade_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_UNAUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "50",
+        "stem": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
+        "A": "cu tensiunea între faze",
+        "B": "numai cu puterile active generate",
+        "C": "cu puterile reactive generate",
+        "imported_keys_UNCHANGED": "G1-ELE-043=A | G2-ELEC-189=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v138_sha": "869dd1ea3f0500f7d04751fe8a230e02b37824d1",
+        "previous_research_layer": "v172",
+        "prior_risk": "MISSING_OPERATING_CONDITIONS",
+        "prior_source_quality": "GENERAL_3PHASE_EQUATION_AND_PRIOR_V82",
+        "candidate_NOT_APPROVED": "NO_UNIVERSAL_PROPORTIONALITY"
+      },
+      "editorial_draft": {
+        "A": "Dacă aparenta S este fixată, I=|S|/(√3 U_LL) și crește când U scade; dependența de tensiune nu este universal direct proporțională. Un model Z constant poate da I∝U, dar nu reiese din întrebare.",
+        "B": "«Numai cu puterile active» ignoră componenta reactivă: la U fix, |I|=√(P²+Q²)/(√3 U). Creșterea P poate crește I dar nu exclusiv.",
+        "C": "La tensiune constantă și P fix, creșterea modulului lui Q poate crește curentul, dar acesta nu este în general direct proporțional doar cu Q atunci când P≠0.",
+        "model_scope_or_trap": "Întrebarea nu fixează U, P, Q, cosφ sau impedanța generatorului. Niciuna dintre A/B/C nu este demonstrată ca lege direct proporțională universală; importul A se păstrează, verdict tehnic blocat.",
+        "reformulated_question": "Într-un sistem trifazat simetric cu S=100 kVA fix, ce se întâmplă cu I dacă tensiunea între faze crește de la 400 V la 800 V?",
+        "reformulated_solution": "Curentul se înjumătățește în modelul S fix: I=S/(√3 U).",
+        "editorial_disposition": "HOLD_NO_UNIVERSAL_OPTION_STATOR_CURRENT",
+        "option_comparison_pairs": [
+          "A vs B: U și P sunt variabile diferite; «numai» în B este fals fără Q",
+          "A vs C: un raport direct la U nu implică raport direct la Q, ambele depind de condiții",
+          "B vs C: P și Q contribuie împreună la |S|, nu separat exclusiv"
+        ],
+        "source_url_candidates": [
+          "https://www.phasetophase.nl/book/book_2_8.html",
+          "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "authentic_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0065",
+      "grade_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_UNAUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "80",
+        "stem": "Fluxul electric total, produs de o sarcină electrică de valoare q printr-o suprafaţă închisă care o înconjoară, este egal cu:",
+        "A": "valoarea numerică 2q",
+        "B": "valoarea numerică q",
+        "C": "valoarea numerică q/2",
+        "imported_keys_UNCHANGED": "G1-ELE-073=B | G2-ELEC-218=B"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v138_sha": "869dd1ea3f0500f7d04751fe8a230e02b37824d1",
+        "previous_research_layer": "v171",
+        "prior_risk": "UNDECLARED_E_VS_D_FLUX",
+        "prior_source_quality": "OPENSTAX_GENERAL_GAUSS_LAW_PRIOR_V77",
+        "candidate_NOT_APPROVED": "B_ONLY_FOR_D_FLUX"
+      },
+      "editorial_draft": {
+        "A": "ΦE=2q nu corespunde legii lui Gauss pentru câmp E în SI; nici pentru deplasarea D a unei sarcini libere singulare.",
+        "B": "ΦD=∮D·dA=q_libera, astfel B este corectă dacă «flux electric» înseamnă fluxul inducției/deplasării electrice D; pentru câmpul E în vid este ΦE=q/ε0.",
+        "C": "ΦE=q/2 nu este forma generală a legii lui Gauss; un factor 1/2 ar apărea în altă geometrie/suprafață, nu pentru suprafață închisă ce înconjoară sarcina.",
+        "model_scope_or_trap": "Ambiguitate de definiție: «flux electric total» al E versus fluxul D. Unitatea lui ΦD este C, a lui ΦE este V·m. Enunțul nu precizează câmpul; B importat rămâne condiționat.",
+        "reformulated_question": "Pentru o suprafață închisă cu sarcina liberă q=3 C, cât este fluxul D? Și ce expresie are fluxul E în vid?",
+        "reformulated_solution": "ΦD=3 C; ΦE=3 C/ε0 cu unitățile corespunzătoare câmpului E.",
+        "editorial_disposition": "HOLD_ELECTRIC_FLUX_FIELD_E_VS_DISPLACEMENT_D",
+        "option_comparison_pairs": [
+          "A vs B: 2q nu respectă convenția Gauss-D; B corespunde numai fluxului D",
+          "A vs C: factorii 2 și 1/2 sunt amândoi fără bază pentru o suprafață închisă înconjurând q",
+          "B vs C: B este convenția D, C nu derivă din lege"
+        ],
+        "source_url_candidates": [
+          "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law",
+          "https://mochizuki-tus.github.io/UnivPhys_Textbook_EN/ch41_fields_in_matter.html"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "authentic_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    }
+  ]
+}

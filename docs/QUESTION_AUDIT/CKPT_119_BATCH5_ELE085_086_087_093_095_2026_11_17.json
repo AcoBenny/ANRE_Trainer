@@ -1,0 +1,184 @@
+{
+  "checkpoint": "CKPT-119",
+  "date": "2026-11-17",
+  "baseline_head": "00fcfecd3753104b94dacb7ecc2356ccbf53f4f1",
+  "protocol": "BATCH5, second of two: 5 QABC units / 10 grade IDs",
+  "team": "Single assistant applies electrical, source, linguistic, QA checklists; independent agent not launched",
+  "source_policy": "Documentation preliminary; HTML originals reopened where stated; source failures preserved",
+  "constraints": "No changes to QABC, key, MASTER, HTML, APK; no merge/release",
+  "gates": {
+    "canonical": "REQUIRES_READBACK_BEFORE_LEDGER_UPDATE",
+    "bibliography_2026": "UNVERIFIED",
+    "independent_QA": "NOT_RUN",
+    "learner_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-6f8481cd5092811f",
+      "representative_id": "G1-ELE-085",
+      "member_ids": "G1-ELE-085;G2-ELEC-230",
+      "qabc_sha256": "6f8481cd5092811f9b24fa0acab7bc3dd10be16a8fd98dd27c3372e64b180652",
+      "original_keys_by_id_JSON": "{\"G1-ELE-085\":\"B\",\"G2-ELEC-230\":\"B\"}",
+      "question_original": "Funcţionarea în suprasarcinã a unui transformator reprezintă:",
+      "A_original": "un regim de avarie",
+      "B_original": "un regim temporar admisibil",
+      "C_original": "un regim inadmisibil",
+      "source": [
+        {
+          "url": "https://www.se.com/eg/en/faqs/FA335959/",
+          "locator": "Schneider Electric FAQ FA335959 updated 28 June 2026, overload durations IEC 60076-12 for dry transformers",
+          "access": "ORIGINAL_HTML_OPENED",
+          "scope": "Thermal temporary permissible overload of dry-type transformer; product/time dependent"
+        }
+      ],
+      "context": "Funcționarea peste puterea nominală nu este automat avarie dacă supraîncărcarea se încadrează în condițiile de durată și temperatură aprobate pentru transformator. Schneider precizează explicit că un transformator uscat cu sarcină anterioară de 50% poate admite 120% sau 150%, diferența fiind timpul permis. Relația arată existența unui regim temporar admisibil, candidat B. O suprasarcină nelimitată poate degrada izolația și deveni avarie; întrebarea nu precizează durată, tehnologie ori temperatură. B descrie cazul recunoscut uzual în proiectare, nu orice suprasarcină.",
+      "options": {
+        "A": "Prea categoric: depășirea temporară admisă nu reprezintă obligatoriu avarie.",
+        "B": "Suport afirmativ condiționat: admisibilitate temporară în limitele termice și de durată.",
+        "C": "Prea categoric: există regimuri de suprasarcină acceptate și documentate."
+      },
+      "paired_checks": "A vs B diferența regim permis/avarie; B vs C existența posibilității de suprasarcină temporară; A vs C ambele categorice, fără calificarea duratei.",
+      "reverse_counterexample": "Dacă se depășesc limitele termice/timpul proiectat, poate fi regim inadmisibil; nu promitem supraîncărcare mereu sigură.",
+      "finding": "INTENDED_B_WITH_DURATION_TEMPERATURE_SCOPE",
+      "source_limits": "FAQ specific dry-type, nu validare normativă a tuturor tipurilor de transformatoare.",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-1af9cea16ad64670",
+      "representative_id": "G1-ELE-086",
+      "member_ids": "G1-ELE-086;G2-ELEC-231",
+      "qabc_sha256": "1af9cea16ad64670a9611a01ec70ca324ac8da51063669a3fd61724f9ebb5e9a",
+      "original_keys_by_id_JSON": "{\"G1-ELE-086\":\"A\",\"G2-ELEC-231\":\"A\"}",
+      "question_original": "Funcţionarea transformatoarelor electrice are la bazã:",
+      "A_original": "fenomenul inducţiei electromagnetice",
+      "B_original": "efectul termic al curentului electric",
+      "C_original": "curenţii turbionari",
+      "source": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+          "locator": "OpenStax University Physics 2 §15.6, Faraday vP=-NP dΦ/dt, vS=-NS dΦ/dt, lines 33-55",
+          "access": "ORIGINAL_HTML_OPENED",
+          "scope": "Physical transformer principle induction electromagnetic, not parasitic eddy heating"
+        }
+      ],
+      "context": "Transformatorul transferă energie între două înfășurări cuplate magnetic, prin variația fluxului magnetic și inducerea tensiunii în secundar. Legea Faraday descrie vS=-NS·dΦ/dt, pe baza aceluiași flux ce leagă înfășurările. Efectul termic Joule este pierdere și nu procesul de transformare. Curenții turbionari apar în miez ca efect parazit ce se reduce prin tole/miez construit corespunzător. A este confirmată direct de ecuațiile de inducție.",
+      "options": {
+        "A": "Dovadă afirmativă: transformarea tensiunii se bazează pe inducția electromagnetică.",
+        "B": "Încălzirea este pierdere, nu principiul util.",
+        "C": "Curenții turbionari sunt pierderi parazite, nu mecanismul normal al cuplării magnetice."
+      },
+      "paired_checks": "A-B conversie utilă vs pierdere rezistivă; A-C cuplare prin flux vs curenți paraziți; B-C două mecanisme de pierdere diferite.",
+      "reverse_counterexample": "Un transformator ideal are pierderi Joule și prin curenți turbionari neglijate, dar continuă să transforme tensiunea prin inducție.",
+      "finding": "INTENDED_A_DIRECT_FARADAY_TRANSFORMER",
+      "source_limits": "Aplicații speciale cu transformatoare electronice necesită delimitare; întrebarea vizează transformatorul clasic.",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-3ae4f7dcfcda3f36",
+      "representative_id": "G1-ELE-087",
+      "member_ids": "G1-ELE-087;G2-ELEC-232",
+      "qabc_sha256": "3ae4f7dcfcda3f36093a7cbd84e2b42c8756b361f900fe4b8c7fee28688301f7",
+      "original_keys_by_id_JSON": "{\"G1-ELE-087\":\"B\",\"G2-ELEC-232\":\"B\"}",
+      "question_original": "Henry este unitatea de măsură pentru:",
+      "A_original": "fluxul magnetic",
+      "B_original": "inductanţă",
+      "C_original": "inducţia magnetică",
+      "source": [
+        {
+          "url": "https://physics.nist.gov/cuu/Units/register2.html",
+          "locator": "US NIST Federal Register SI tables, Table 3 rows magnetic flux Wb / magnetic flux density T / inductance H",
+          "access": "ORIGINAL_HTML_OPENED"
+        },
+        {
+          "url": "https://www.bipm.org/en/publications/si-brochure/",
+          "locator": "BIPM SI Brochure official 2026 updated 9th ed. index",
+          "access": "OFFICIAL_HTML_INDEX_OPENED_TABLE_PDF_NOT_VISUALLY_REVIEWED"
+        }
+      ],
+      "context": "Unitățile SI disting flux magnetic Φ în weber (Wb), inducție/densitate de flux magnetic B în tesla (T), și inductanță L în henry (H). Tabelul NIST le prezintă împreună, separând exact trei variante ale întrebării. Henry este definit dimensional H=Wb/A. Prin urmare B este univoc în sistemul SI. Indexul BIPM confirmă existența ediției SI actualizate în 2026, fără a fi folosit ca certificare a programei ANRE.",
+      "options": {
+        "A": "Fluxul magnetic este măsurat în Wb, nu H.",
+        "B": "Henry (H) este unitatea inductanței: Wb/A.",
+        "C": "Inducția magnetică este măsurată în T, nu H."
+      },
+      "paired_checks": "A-B flux vs inductanță; B-C inductanță vs densitatea fluxului; A-C flux total vs flux pe suprafață.",
+      "reverse_counterexample": "Permeabilitatea magnetică poate avea unitate H/m, nu înseamnă că inducția magnetică se măsoară în H.",
+      "finding": "INTENDED_B_EXACT_SI_NIST_TABLE",
+      "source_limits": "No source edition 2026 exam signoff.",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-5ace91020dd39be6",
+      "representative_id": "G1-ELE-093",
+      "member_ids": "G1-ELE-093;G2-ELEC-237",
+      "qabc_sha256": "5ace91020dd39be6f9884513d7d55ab4ddf45f6b0bda89e2bbc60ee6f76dcb19",
+      "original_keys_by_id_JSON": "{\"G1-ELE-093\":\"B\",\"G2-ELEC-237\":\"B\"}",
+      "question_original": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
+      "A_original": "siguranţa fuzibilă realizează protecţia la suprasarcină;",
+      "B_original": "siguranţa fuzibilă realizează protecţia la scurtcircuit;",
+      "C_original": "siguranţa fuzibilă realizează protecţia la supratensiuni;",
+      "source": [
+        {
+          "url": "https://productinfo.se.com/9065ct9701_catalog/9065ct9701-overload-relays-and-thermal-units-catalog/English/Motor%20Branch%20Circuit%20Design%20%28CPT%29_0000354328.xml",
+          "locator": "Schneider Electric Motor Branch Circuit Design, coordinated thermal overload relay/fuse short-circuit protection",
+          "access": "INDEXED_EXCERPT_DIRECT_OPEN_CACHE_MISS"
+        },
+        {
+          "url": "https://www.se.com/us/en/faqs/FA357406/",
+          "locator": "Schneider motor starter protection research lead",
+          "access": "NOT_REOPENED_NOT_USED"
+        }
+      ],
+      "context": "În circuitul de alimentare al motorului, contactorul realizează manevra de pornire/oprire, iar releul termic detectează suprasarcina continuă și solicită oprirea contactorului. Siguranța fuzibilă este selectată pentru întreruperea curentului de scurtcircuit și coordonarea protecției cu echipamentul. Textul Schneider indexat menționează explicit că în scurtcircuit trebuie să acționeze siguranța sau întreruptorul înaintea releului de suprasarcină. De aceea B este candidatul intenționat. Un fuzibil poate funcționa și la supracurenți de alte naturi după caracteristică, însă funcția sa în combinația descrisă este scurtcircuitul.",
+      "options": {
+        "A": "În combinația contactor+releu termic, suprasarcina motorului este gestionată de releul termic, nu de funcția desemnată siguranței.",
+        "B": "Dovadă de coordonare fuzibil: protecție la scurtcircuit în ramura motorului.",
+        "C": "Supratensiunile cer alte dispozitive; siguranța nu limitează tensiunea ca descărcătorul ZnO."
+      },
+      "paired_checks": "A vs B suprasarcină persistentă vs defect curent mare; B vs C scurtcircuit vs supratensiune; A vs C funcții diferite de descriere.",
+      "reverse_counterexample": "Siguranțele au curbe timp-curent și pot întrerupe anumite suprasarcini, dar selectivitatea corectă cu releul termic fixează scopul primar cerut de enunț.",
+      "finding": "INTENDED_B_MOTOR_FUSE_SHORT_CIRCUIT_SPECIFIC_COMBINATION",
+      "source_limits": "Original manufacturer direct open cache miss; only indexed text. National RO installation norms/exam bibliography unverified.",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    },
+    {
+      "unit_id": "AU-2dac9d4544257335",
+      "representative_id": "G1-ELE-095",
+      "member_ids": "G1-ELE-095;G2-ELEC-238",
+      "qabc_sha256": "2dac9d454425733548916149132ea12b77d5090dd5ffac2bef3aa5e73f3b58f3",
+      "original_keys_by_id_JSON": "{\"G1-ELE-095\":\"B\",\"G2-ELEC-238\":\"B\"}",
+      "question_original": "În cazul în care rezultanta unui sistem de fazori (de tensiune sau de curent) este nulă:",
+      "A_original": "sistemul nu are componentă simetrică inversă (negativă)",
+      "B_original": "sistemul nu are componentă simetrică homopolară (zero)",
+      "C_original": "sistemul nu are are componentă simetrică directă (pozitivă)",
+      "source": [
+        {
+          "url": "https://archive.nptel.ac.in/content/storage2/courses/108104051/chapter_7/7_2.html",
+          "locator": "NPTEL Power System Analysis, Ch7 symmetrical components; 0-sequence three identical phasors",
+          "access": "SEARCH_EXCERPT_INDEXED; DIRECT_REOPEN_TIMEOUT"
+        },
+        {
+          "url": "https://physics.nist.gov/cuu/Units/register2.html",
+          "locator": "NIST units unrelated to sequence; NOT used",
+          "access": "NOT_USED"
+        }
+      ],
+      "context": "Un sistem de trei fazori trifazați se descompune în componente simetrice directă, inversă și homopolară. Componenta homopolară este media vectorială V0=(Va+Vb+Vc)/3 ori I0=(Ia+Ib+Ic)/3. Dacă rezultanta celor trei fazori este zero, componenta homopolară este zero indiferent dacă există componente directe și inverse. NPTEL prezintă cele trei secvențe și construcția lor; deschiderea integrală a paginii a eșuat, dar identitatea algebrică poate fi verificată independent din definiția transformării. B este un răspuns tehnic condiționat de interpretarea «sistem» ca trei fazori trifazați.",
+      "options": {
+        "A": "Fals: un set exclusiv cu secvență inversă are sumă zero și componentă inversă nenulă.",
+        "B": "Dovadă algebrică: V0=(Va+Vb+Vc)/3, astfel rezultanta nulă implică V0=0.",
+        "C": "Fals: un set exclusiv cu secvență directă are sumă zero și componentă directă nenulă."
+      },
+      "paired_checks": "A vs B: secvența inversă nu afectează suma; B vs C: secvența directă nu afectează suma; A vs C: ambele pot fi prezente simultan.",
+      "reverse_counterexample": "Fazorii nesimetrici cu Va+Vb+Vc=0 pot avea componente directă și inversă nenule; nu sunt neapărat trifazat echilibrați.",
+      "finding": "INTENDED_B_ZERO_SEQUENCE_AVERAGE_IDENTITY",
+      "source_limits": "NPTEL direct source timeout; no independent reviewer. Scope requires exactly three phase phasors.",
+      "independent_QA": "NOT_RUN",
+      "learning_approval": "NO"
+    }
+  ]
+}

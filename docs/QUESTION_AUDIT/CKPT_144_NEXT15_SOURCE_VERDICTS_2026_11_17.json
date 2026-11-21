@@ -1,0 +1,609 @@
+{
+  "checkpoint": "CKPT-144",
+  "date": "2026-11-17",
+  "phase": "NEXT_15_EXISTING_PENDING_UNITS_SOURCE_AND_SCOPE_VERDICTS",
+  "input_head": "18a70ba9492016b24d9d7e5526c1371e2f6eedea",
+  "rationale": "Advance existing queue without duplicating 568 baseline contextual cards or labeling a same-assistant review as independent. Each exact Q/A/B/C and key checked against preexisting triage and master.",
+  "counts": {
+    "unique_units": 15,
+    "grade_ids": 27,
+    "MATCH_TECHNICAL_MODEL": 5,
+    "CONDITIONAL_MATCH": 5,
+    "BLOCKED_OR_CONTRADICTED": 5,
+    "learning_approved": 0,
+    "actual_independent_reviewers": 0
+  },
+  "corrections": [
+    {
+      "id": "G2-ELEC-290",
+      "related": "G1-ELE-152",
+      "detail": "Same propagation constant terminology with erroneous adjective 'adimensională' on G2 only, source gamma units 1/length; keep both canonical stems unchanged."
+    }
+  ],
+  "safety": "No protection/switching step based solely on exam MCQ. No official ANRE workbook grading provenance established; no learner approval.",
+  "cards": [
+    {
+      "unit_id": "AU-ca89b1b43e098b0f",
+      "representative_id": "G1-ELE-222",
+      "member_ids": [
+        "G1-ELE-222",
+        "G2-ELEC-358"
+      ],
+      "qabc_sha256": "ca89b1b43e098b0ffaab1dc9a6b5c1c5531b718e9de96097b8dd7b5975474e4b",
+      "original_question": "Susceptanţa unui circuit de curent alternativ sinusoidal este inversul:",
+      "original_options": {
+        "A": "impedanţei",
+        "B": "rezistenţei",
+        "C": "reactanţei"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-222": "C",
+        "G2-ELEC-358": "C"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: 1/Z is admittance Y, not susceptance B; B: 1/R in simple case is conductance, not susceptance; C: B is not strictly 1/X for generic R≠0; for pure reactance R=0, B=-1/X with sign.",
+      "technical_model": "GENERAL_AC_R_PLUS_JX",
+      "technical_key_relation": "BLOCKED_OR_CONTRADICTED",
+      "source_scope_verdict": "Stored C is not universally the reciprocal of reactance; Y=1/(R+jX)=R/(R²+X²)-jX/(R²+X²), thus Bsus=-X/(R²+X²).",
+      "option_and_context_check": "Pure reactive R=0 still Bsus=-1/X using signed reactance. A is total admittance Y; B is conductance only for pure R.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electricity_and_Magnetism_%28Tatum%29/13%3A_Alternating_Current/13.06%3A_Admittance",
+          "section": "§13.6 Eq 13.6.4-13.6.8",
+          "access": "SEARCH_EXCERPT_EXACT_EQUATION; DIRECT_PAGE_OPEN_FAILED_CACHE_MISS"
+        }
+      ],
+      "unresolved_gate": "Do not auto-replace G1/G2 imported keys.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-dfe45fcde8091097",
+      "representative_id": "G1-ELE-229",
+      "member_ids": [
+        "G1-ELE-229",
+        "G2-ELEC-365"
+      ],
+      "qabc_sha256": "dfe45fcde80910972693c3d6976ff97c31420cfda45e88a1a3d8de7db61a1d8a",
+      "original_question": "Siguranţele electrice sunt aparate electrice care împiedica:",
+      "original_options": {
+        "A": "creşterea tensiunii peste o valoare limita",
+        "B": "creşterea curentului peste o valoare limita",
+        "C": "scăderea curentului sub o valoare limita"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-229": "B",
+        "G2-ELEC-365": "B"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: fuses do not limit voltage; B: fuses interrupt fault/overload currents according to time-current curve, and some types limit prospective peaks, not prevent instant current rise; C: do not act on undercurrent.",
+      "technical_model": "TIME_CURRENT_FUSE_OPERATION",
+      "technical_key_relation": "CONDITIONAL_MATCH",
+      "source_scope_verdict": "B is intended overcurrent-protection category, but a fuse interrupts an overcurrent after time/current-dependent melting and does not physically stop the initial rise above its threshold.",
+      "option_and_context_check": "A concerns overvoltage and C undercurrent, neither the fuse's general protective function. Manufacturer explains clearing time and time-current curves.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.eaton.com/us/en-us/products/electronic-components/topics/fuse-technology.html",
+          "section": "Selecting overcurrent protection; glossary clearing time and overcurrent",
+          "access": "HTML_OPENED_TEXT_EXAMINED"
+        }
+      ],
+      "unresolved_gate": "Protection vs instantaneous limiting semantics need independent review.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-62bf06e215a53d51",
+      "representative_id": "G1-ELE-231",
+      "member_ids": [
+        "G1-ELE-231",
+        "G2-ELEC-367"
+      ],
+      "qabc_sha256": "62bf06e215a53d515b113a3db53be336c076bcef6b76f8d2890c380152205b59",
+      "original_question": "Singurele mărimi fizice reale în curent alternativ sunt:",
+      "original_options": {
+        "A": "mărimile efective de curent sau de tensiune",
+        "B": "mărimile instantanee de curent sau de tensiune",
+        "C": "valorile medii de curent sau de tensiune"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-231": "B",
+        "G2-ELEC-367": "B"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: RMS measurements have real physical meaning and heating effects, though calculated from instantaneous signals; B: instantaneous v(t),i(t) are instantaneous physical waveforms; C: average values also measurable/physically meaningful over intervals.",
+      "technical_model": "INSTANTANEOUS_VS_RMS_PHYSICAL_QUANTITY",
+      "technical_key_relation": "BLOCKED_OR_CONTRADICTED",
+      "source_scope_verdict": "B names instantaneous physical signals, but the word 'singurele' is not supported: RMS has physically measurable heating-equivalent meaning and average is a valid defined derived quantity.",
+      "option_and_context_check": "A RMS quantities are not fictitious; B instantaneous is meaningful; C period-average can be meaningful depending averaging interval. Requires exact school definition of 'mărimi reale'.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.tek.com/en/documents/application-note/fundamentals-ac-power-measurements",
+          "section": "RMS and average values, derived from current or voltage waveform",
+          "access": "HTML_OPENED_TEXT_EXAMINED"
+        }
+      ],
+      "unresolved_gate": "Technically correct intent cannot rescue universal sole-physical statement.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-491d11b487748842",
+      "representative_id": "G1-ELE-236",
+      "member_ids": [
+        "G1-ELE-236",
+        "G2-ELEC-372"
+      ],
+      "qabc_sha256": "491d11b48774884283f1cc1106dedc843f4f189b0036f69ac5e3537480c6bae0",
+      "original_question": "Supratensiunile de trăsnet pot fi:",
+      "original_options": {
+        "A": "numai directe",
+        "B": "induse",
+        "C": "de rezonanta sau de ferorezonanţa"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-236": "B",
+        "G2-ELEC-372": "B"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: 'numai directe' falsely excludes induced indirect overvoltages; B: lightning overvoltages can be induced; C: ferroresonance is a different internal network phenomenon.",
+      "technical_model": "DIRECT_AND_INDUCED_LIGHTNING_SURGES",
+      "technical_key_relation": "MATCH_TECHNICAL_MODEL",
+      "source_scope_verdict": "B induced overvoltages is affirmed: lightning can directly strike a conductor or induce surges at nearby conductors.",
+      "option_and_context_check": "A 'numai directe' contradicted by induced surges; C resonance/ferroresonance different cause and not a lightning origin.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0378779624004127",
+          "section": "Lightning-induced voltages on low-voltage distribution lines, title and indexed description",
+          "access": "SEARCH_RESULT_INDEXED_PAPER; FULL_TEXT_NOT_OPENED"
+        },
+        {
+          "url": "https://studylib.net/doc/27831731/iec-60071-2-2023-en-",
+          "section": "IEC 60071-2:2023 5.3.4.1 lightning direct/induced wording (unofficial hosted copy)",
+          "access": "HTML_MIRROR_OPENED; OFFICIAL_IEC_EDITION_NOT_AUTHENTICATED"
+        }
+      ],
+      "unresolved_gate": "Does not imply independently signed IEC/ANRE answer.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-bd60af52c290f7af",
+      "representative_id": "G1-ELE-245",
+      "member_ids": [
+        "G1-ELE-245",
+        "G2-ELEC-381"
+      ],
+      "qabc_sha256": "bd60af52c290f7afbe4bc3d91e62c160cb81bb02c845279f6d1d9323f2e1310c",
+      "original_question": "Un circuit de curent alternativ, pentru care factorul de putere este egal cu 1, este un circuit:",
+      "original_options": {
+        "A": "pur rezistiv",
+        "B": "pur inductiv",
+        "C": "pur capacitiv"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-245": "A",
+        "G2-ELEC-381": "A"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: pure resistance has PF1 but balanced RLC at resonance has PF1 despite L/C components, so 'este pur rezistiv' not necessary; B/C pure reactive have zero real-power PF for ideal elements.",
+      "technical_model": "UNITY_POWER_FACTOR_NET_REACTIVE_CANCELLATION",
+      "technical_key_relation": "CONDITIONAL_MATCH",
+      "source_scope_verdict": "A 'pur rezistiv' is sufficient for PF=1, but not necessary; RLC with L,C both present is in phase at resonance, net impedance R.",
+      "option_and_context_check": "B pure ideal L and C pure ideal C have zero active power; A is intended best of presented alternatives but false as an iff physical statement.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit",
+          "section": "§15.5 at resonance phi=0, Z=R despite L and C",
+          "access": "HTML_OPENED_TEXT_EXAMINED"
+        }
+      ],
+      "unresolved_gate": "Counterexample preserved; no automatic key authorization.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-9959b0e0d8984c7d",
+      "representative_id": "G1-ELE-249",
+      "member_ids": [
+        "G1-ELE-249"
+      ],
+      "qabc_sha256": "9959b0e0d8984c7d52d5ae19a3c52d6ffb5b9fa5419a1e712fe56d41af948494",
+      "original_question": "Un întreruptor debroşabil asigură:",
+      "original_options": {
+        "A": "protecţia în caz de scurtcircuit;",
+        "B": "numai comutaţia în regim normal;",
+        "C": "protecţia la supratensiuni."
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-249": "A"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: drawout breaker may protect short circuit IF equipped/paired with appropriate release and installed rating; B: 'numai comutatia normala' wrong for protective breakers; C: surge protection requires specific SPD or function, not inherent.",
+      "technical_model": "DRAWOUT_BREAKER_PROTECTION_AND_TRIP_UNIT",
+      "technical_key_relation": "CONDITIONAL_MATCH",
+      "source_scope_verdict": "A is plausible for a withdrawable circuit breaker fitted with functioning short-circuit detection/trip; withdrawable mounting alone is not the protective function.",
+      "option_and_context_check": "B 'numai comutaţia' ignores fault interruption capability; C surge protection requires different equipment/function. Same device subject to rating, releases and relay coordination.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/switchgear/air-insulated/unigear/zs1",
+          "section": "Withdrawable circuit breaker / optional protection relays",
+          "access": "MANUFACTURER_HTML_OPENED; DEVICE_PROTECTION_PARTIAL_ONLY"
+        }
+      ],
+      "unresolved_gate": "No exact model protective-tripping evidence.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-23d536ba936f2f33",
+      "representative_id": "G1-ELE-257",
+      "member_ids": [
+        "G1-ELE-257",
+        "G2-ELEC-392"
+      ],
+      "qabc_sha256": "23d536ba936f2f33342df6a1df44bb5fba23310b51a09b64474d4d16efc04a47",
+      "original_question": "Unitatea de măsură a fluxului electric este:",
+      "original_options": {
+        "A": "V/m",
+        "B": "Coulombul",
+        "C": "Faradul"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-257": "B",
+        "G2-ELEC-392": "B"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: V/m is electric field strength unit, not flux; B: C is SI unit for ∮D·dS, not E-flux; C: F is capacitance unit not electric flux.",
+      "technical_model": "ELECTRIC_DISPLACEMENT_FLUX_PSI_D",
+      "technical_key_relation": "CONDITIONAL_MATCH",
+      "source_scope_verdict": "B Coulomb is valid for total electric displacement flux ∫D·dS, since D is C/m²; E electric-field flux ∫E·dS has a different SI unit.",
+      "option_and_context_check": "A V/m electric-field strength, not flux; C farad capacitance. The original wording omits D versus E, requiring the Romanian course's definition.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+          "section": "Table 4: electric displacement C/m² and electric charge C",
+          "access": "NIST_HTML_OPENED"
+        },
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law",
+          "section": "§6.2 E-flux=q/epsilon_0",
+          "access": "OPENSTAX_SEARCH_EXCERPT"
+        }
+      ],
+      "unresolved_gate": "Cross-check Romanian convention before signoff.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-fd7d308698e05c41",
+      "representative_id": "G2-ELEC-290",
+      "member_ids": [
+        "G2-ELEC-290"
+      ],
+      "qabc_sha256": "fd7d308698e05c41dc3a89c322bbd1e51748505c537a7bef5dab80986d518bca",
+      "original_question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "original_options": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-ELEC-290": "A"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A: propagation constant is correct term, but it is inverse length not dimensionless as stem states; B: attenuation constant α covers amplitude only, not phase; C: distortion constant not the standard α+jβ term.",
+      "technical_model": "COMPLEX_PROPAGATION_GAMMA_ALPHA_PLUS_JBETA",
+      "technical_key_relation": "BLOCKED_OR_CONTRADICTED",
+      "source_scope_verdict": "Imported A names the intended parameter but calling gamma dimensionless is false: gamma=alpha+j beta is reciprocal length. gamma*l is dimensionless.",
+      "option_and_context_check": "B alpha only amplitude, lacks phase beta. C is not standard joint amplitude-phase propagation parameter. G1-ELE-152 separately has same concept without the erroneous 'adimensională' qualifier.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://eng.libretexts.org/Courses/Fontys_University_of_Applied_Sciences/Telecommunications/02%3A_Transmission_Lines/2.02%3A_Transmission_Line_Characteristics",
+          "section": "Dimensions of gamma: inverse meters",
+          "access": "SEARCH_EXCERPT_EXACT_DIMENSIONS; DIRECT_OPEN_CACHE_MISS"
+        }
+      ],
+      "unresolved_gate": "Versioned contrast with G1-ELE-152 is evidence of wording defect, not proof of altered official key.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-96fe8d1814d6733a",
+      "representative_id": "G1-ELE-005",
+      "member_ids": [
+        "G1-ELE-005",
+        "G2-ELEC-158"
+      ],
+      "qabc_sha256": "96fe8d1814d6733a15800a1e82b9c2a180adcab007dde370e6d0b52e9a825b3c",
+      "original_question": "A doua teoremă a lui Kirchhoff, pentru o reţea electrică cu N noduri şi L laturi (L diferit de N), ne furnizează, pentru analiza unui circuit electric:",
+      "original_options": {
+        "A": "L+N-1 ecuaţii distincte",
+        "B": "L-N +1 ecuaţii distincte",
+        "C": "N-L+1 ecuaţii distincte"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-005": "B",
+        "G2-ELEC-158": "B"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A overcounts with L+N−1; B gives exact connected-graph cycle rank; C has opposite sign and no graph interpretation.",
+      "technical_model": "CONNECTED_NETWORK_CYCLE_RANK",
+      "technical_key_relation": "MATCH_TECHNICAL_MODEL",
+      "source_scope_verdict": "B L-N+1 independent second-Kirchhoff loop equations for a connected network with L branches and N nodes.",
+      "option_and_context_check": "A overcounts; C reversed subtraction. For c disconnected components graph rank L-N+c. A single network is normally presumed connected, but original does not state this.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.researchgate.net/publication/3184434_Proof_of_the_number_of_independent_Kirchhoff_equations_in_an_electrical_circuit",
+          "section": "Feldmann & Rohrer 1991 IEEE abstract independent KVL=b-n+1 connected circuit",
+          "access": "INDEXED_ARTICLE_ABSTRACT_DIRECT_OPEN_CACHE_MISS"
+        }
+      ],
+      "unresolved_gate": "Mathematical technical proof checked; official exam bibliography not signed.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-52d2a5904e98e754",
+      "representative_id": "G1-ELE-010",
+      "member_ids": [
+        "G1-ELE-010",
+        "G2-ELEC-162"
+      ],
+      "qabc_sha256": "52d2a5904e98e754af4c3d19b0d3f25451f9b0ac35d4add6551b18fa960db7a7",
+      "original_question": "Cele mai des utilizate pentru serviciile interne ale centralelor electrice sunt:",
+      "original_options": {
+        "A": "motoarele de curent continuu",
+        "B": "motoarele sincrone",
+        "C": "motoarele asincrone"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-010": "C",
+        "G2-ELEC-162": "C"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A DC motors are not typical majority, B synchronous motors have niche duties, C induction motors broadly used for auxiliary drives but no exact comparative source opened.",
+      "technical_model": "POWER_STATION_AUXILIARY_MOTORS",
+      "technical_key_relation": "MATCH_TECHNICAL_MODEL",
+      "source_scope_verdict": "C asynchronous/induction motors have broad and historically dominant use for power plant auxiliary drives, unlike niche DC/synchronous designs.",
+      "option_and_context_check": "A DC special use, B synchronous applications possible; 'most common' historically needs dated fleet context and modern precise plant class.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.mdpi.com/1996-1073/17/5/1066",
+          "section": "Power Compatibility of Induction Motors in Industrial Grids Containing Synchronous Generators, power plant auxiliaries",
+          "access": "INDEXED_RESEARCH_RESULT; FULL_HTML_429"
+        }
+      ],
+      "unresolved_gate": "Cannot prove exact fleet majority solely from cited open abstract; caution despite model alignment.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-0566accaf792658a",
+      "representative_id": "G1-ELE-015",
+      "member_ids": [
+        "G1-ELE-015",
+        "G2-ELEC-167"
+      ],
+      "qabc_sha256": "0566accaf792658abc8763b0519ca12f1b61cc40f11d6a29e894ae0a733f6ca9",
+      "original_question": "Bobinele montate pe plecari radiale limiteaza curentii de scurtcircuit",
+      "original_options": {
+        "A": "atat inainte, cat si dupa punctele lor de racordare la barele statiei;",
+        "B": "inainte de punctele lor de racordare la barele statiei;",
+        "C": "dupa punctele lor de racordare la barele statiei."
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-015": "C",
+        "G2-ELEC-167": "C"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A a series reactor cannot limit faults on both sides identically; B fault upstream of reactor does not flow through it; C downstream fault includes series reactance and smaller short-circuit current.",
+      "technical_model": "RADIAL_OUTGOING_FEEDER_SERIES_REACTOR",
+      "technical_key_relation": "MATCH_TECHNICAL_MODEL",
+      "source_scope_verdict": "C fault-current-limiting inductor inserted on an outgoing radial feeder increases the path reactance between source and faults beyond it, reducing downstream short-circuit current.",
+      "option_and_context_check": "A reactor downstream of busbars cannot reduce every upstream fault through which its impedance is bypassed; B upstream fault excludes reactor. Assumes one directional source and reactor physically in series.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.mdpi.com/1996-1073/16/2/811",
+          "section": "Study of Short Circuit and Inrush Current Impact... Fig 2(c) series connection with outgoing feeder",
+          "access": "INDEXED_RESEARCH_RESULT; DIRECT_HTML_429"
+        }
+      ],
+      "unresolved_gate": "Exact station diagram not available; classification conditional on topology.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-4dde5fbb638cf178",
+      "representative_id": "G1-ELE-030",
+      "member_ids": [
+        "G1-ELE-030",
+        "G2-ELEC-179"
+      ],
+      "qabc_sha256": "4dde5fbb638cf17897cf53fcc19686a4840bc1ed1198655d72962c2ba07eca4f",
+      "original_question": "Scheme cu un sistem de bare colectoare şi un întreruptor pe circuit sunt folosite",
+      "original_options": {
+        "A": "numai pentru staţii de conexiuni de 6 kV",
+        "B": "pentru toate treptele de tensiune din reţelele de distribuţie",
+        "C": "numai pentru staţii de conexiuni de medie tensiune până la 6o kV"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-030": "B",
+        "G2-ELEC-179": "B"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A only 6kV unduly narrow; B schemes exist at various distribution voltages but 'toate treptele' not proven; C only MV up to60kV likewise restricts without evidence.",
+      "technical_model": "SINGLE_BUSBAR_ONE_BREAKER_TOPOLOGY",
+      "technical_key_relation": "BLOCKED_OR_CONTRADICTED",
+      "source_scope_verdict": "B 'toate treptele' not established as universal rule. A and C restrictive 'numai' also unsupported. No exact Romanian distribution-voltage-range design source.",
+      "option_and_context_check": "ABB lists single/double-busbar up to 24 kV, but this cannot prove all network distribution voltage levels. Evidence must match topology, voltage and utility practice.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/switchgear/air-insulated/unigear/zs1",
+          "section": "Single and double busbar scope up to 24 kV",
+          "access": "MANUFACTURER_HTML_OPENED; SOURCE_SCOPE_MISMATCH_FOR_ALL_LEVELS"
+        }
+      ],
+      "unresolved_gate": "Do not reinterpret all levels from one catalog.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-1a3686e6131c6fe4",
+      "representative_id": "G1-ELE-053",
+      "member_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "qabc_sha256": "1a3686e6131c6fe4b413d125f3e9b91d6539467de2b30a2bebe6547e572d2db9",
+      "original_question": "Funcţionarea în doua faze a unui transformator trifazat are ca efect:",
+      "original_options": {
+        "A": "supraîncălzirea acestuia",
+        "B": "suprasarcina",
+        "C": "reducerea puterii tranzitate"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-053": "A",
+        "G2-ELEC-199": "A"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A may overheat with unbalanced currents; B overload can also arise by operating regime; C transferable power also can decrease. Alternatives may overlap.",
+      "technical_model": "OPEN_PHASE_THREE_PHASE_TRANSFORMER",
+      "technical_key_relation": "BLOCKED_OR_CONTRADICTED",
+      "source_scope_verdict": "A overheating is possible for unbalanced load after loss of one phase but B overload of remaining paths and C reduced transmitted power may both occur; no uniquely proven effect.",
+      "option_and_context_check": "Connection, source side, load and protection behavior unspecified. Source research retrieved motor single-phasing, which is not transformer-specific and cannot decide.",
+      "sources_reopened_or_discovered_this_session": [],
+      "unresolved_gate": "Exact transformer-open-phase example still missing, no auto candidate.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-fa6db0b093d55219",
+      "representative_id": "G1-ELE-089",
+      "member_ids": [
+        "G1-ELE-089"
+      ],
+      "qabc_sha256": "fa6db0b093d552198b6cca24b3de5cf0bc4f4529cf7023db389b3d3f182ca9fd",
+      "original_question": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+      "original_options": {
+        "A": "numai limitarea posibilităţilor de producere a unui defect în instalaţie;",
+        "B": "localizarea unor eventuale scăpări de gaz, precum şi a unor defecte interne,",
+        "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-089": "B"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A «numai» excludes gas-loss localization; B localizing leak and internal fault supported by monitoring; C greater gas handling per one compartment not demonstrated.",
+      "technical_model": "GIS_GAS_COMPARTMENT_FAULT_LOCALIZATION",
+      "technical_key_relation": "CONDITIONAL_MATCH",
+      "source_scope_verdict": "B is technically plausible: partitioning the GIS can allow gas compartment leakage and internal arc localization. Hitachi confirms detection of leak and location of affected compartment when using sensors.",
+      "option_and_context_check": "A 'numai' excludes localization; C increased gas quantity per compartment is unsupported. But manufacturer describes monitoring features, not proof partition alone guarantees automatic localization.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://www.hitachienergy.com/uk-ie/en/products-and-solutions/high-voltage-switchgear-and-breakers/monitoring-and-controlled-switching/modular-switchgear-monitoring-msm",
+          "section": "Gas monitoring applications, internal arc localization; lines 276-277,331-341",
+          "access": "MANUFACTURER_HTML_OPENED_EXACT_COMPARTMENT_MONITORING; PARTIAL_FOR_PARTITION_ALONE"
+        }
+      ],
+      "unresolved_gate": "Scope mismatch retained for final signoff.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-662dd53ce4f56142",
+      "representative_id": "G1-ELE-090",
+      "member_ids": [
+        "G1-ELE-090",
+        "G2-ELEC-234"
+      ],
+      "qabc_sha256": "662dd53ce4f5614252d26120d144956048ea8a3a36ed5dc1370b5ae11cc355de",
+      "original_question": "În cazul apariţiei fenomenului de rezonanţă într-un circuit de curent alternativ, alimentat de la o sursă, aceasta furnizează circuitului:",
+      "original_options": {
+        "A": "numai energie activă",
+        "B": "energie activă şi reactivă",
+        "C": "numai energie reactivă"
+      },
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-090": "A",
+        "G2-ELEC-234": "A"
+      },
+      "prior_source_card_reused": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11",
+      "previous_ABC_rationales_UNCHANGED": "A supplying active energy is consistent for dissipative RLC at resonance; B net reactive supply cancels at resonance; C purely reactive net input contradicts resistive resonance.",
+      "technical_model": "STEADY_SERIES_RLC_AT_RESONANCE",
+      "technical_key_relation": "MATCH_TECHNICAL_MODEL",
+      "source_scope_verdict": "A: at sinusoidal steady-state resonance XL=XC so net reactive power from source vanishes; with dissipative R>0 source supplies active energy.",
+      "option_and_context_check": "B net reactive can cancel although internal L↔C reactive circulation is high; C impossible for dissipative R>0. If R=0 idealized lossless case, active input can vanish and 'numai' becomes overbroad.",
+      "sources_reopened_or_discovered_this_session": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit",
+          "section": "§15.5 RLC resonance Z=R, phi=0",
+          "access": "OPENSTAX_HTML_OPENED"
+        }
+      ],
+      "unresolved_gate": "Exam wording lacks R>0 and steady AC conditions.",
+      "exam_2024_question_key_provenance": "NOT_VERIFIED",
+      "independent_technical_reviewer": "NOT_RUN",
+      "independent_source_reviewer": "NOT_RUN",
+      "independent_linguistic_reviewer": "NOT_RUN",
+      "learning_approval": "NO",
+      "canonical_modified": false
+    }
+  ]
+}

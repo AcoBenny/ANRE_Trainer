@@ -1,0 +1,45 @@
+{
+  "checkpoint": "CKPT-179",
+  "date": "2026-11-17",
+  "reason": "Source-specific correction discovered after source reopening; do not discard older finding",
+  "key_preserved": true,
+  "qabc_preserved": true,
+  "approved_for_learning": "NO",
+  "independent_QA": "NOT_RUN",
+  "representative_id": "G1-NOR-066",
+  "unit_id": "AU-7d2fe260e4064d75",
+  "original_QABC_sha256": "7d2fe260e4064d7588e5a2622fd4c14a0f28dcec322d627f0c3fecd6a20d1b99",
+  "original_question": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+  "answers_UNCHANGED": {
+    "A": "este interzisă",
+    "B": "este admisă",
+    "C": "este admisă numai pentru conductoare de cupru"
+  },
+  "imported_key_UNCHANGED": "B",
+  "supersedes": {
+    "checkpoint": "CKPT-175",
+    "path": "docs/QUESTION_AUDIT/CKPT_175_NEXT15_I7_CRITICAL_WRONG_KEYS_2026_11_17.json",
+    "old_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+    "old_claim": "technical possibility of tube placement inferred without reopening exact provision",
+    "failure": "general practice substituted for source-specific prohibition"
+  },
+  "evidence": {
+    "source": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "official_source": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1ABR8ZN6WOJK42NVXCD4FBDXDF",
+    "locator": "I7/2011 §5.2.12.1.4",
+    "text": "Se interzice instalarea conductoarelor electrice în tuburi sau țevi pozate în pământ.",
+    "surrounding": {
+      "before": "§5.2.12.1.3: în tuburi/țevi pot fi numai conductoare izolate și/sau cabluri",
+      "after": "§5.2.12.1.5: conductoarele aceluiași circuit, inclusiv PE, se instalează în același element de protecție"
+    },
+    "source_scope": "original item asks conductoare electrice in tubes buried in earth, exact same object and action",
+    "evidence_access": "HTML_EXACT_SOURCE_REOPENED_WITH_NEIGHBOR"
+  },
+  "verdict": {
+    "status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+    "norm_provisional_candidate": "A",
+    "barem_imported": "B",
+    "why": "Original B contradicts explicit I7 §5.2.12.1.4; A directly matches. Distinguish electrical conductors from engineered buried cable assemblies and current applicable edition. No automatic key edit."
+  },
+  "action": "New checkpoint and queue pointer; original CKPT-175 preserved, independent source check still required before user key approval"
+}

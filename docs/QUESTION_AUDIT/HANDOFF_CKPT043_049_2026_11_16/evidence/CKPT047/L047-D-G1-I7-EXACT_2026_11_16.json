@@ -1,0 +1,579 @@
+{
+  "schema": "ANRE_CKPT047_SOURCE_GATED_QABC_RESEARCH_V1",
+  "batch_id": "L047-D-G1-I7-EXACT",
+  "date": "2026-11-16",
+  "read_only_original_library_csv_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+  "cards": [
+    {
+      "unit_ref": "G1-NOR-001",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-001",
+        "question": "În amplasamente cu risc de incendiu datorita prafului şi /sau fibrelor, temperatura la suprafaţa corpurilor de iluminat, în caz de defect, trebuie să fie limitată la:",
+        "A": "200º C",
+        "B": "115º C",
+        "C": "80º C",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "EXACT_I7_FAULT_TEMPERATURE_115C",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A=200°C depășește plafonul de defect pentru mediul BE2 cu praf/fibre.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B=115°C este exact temperatura de suprafață maximă în caz de defect.",
+      "B_research": "C=80°C este mai mică decât plafonul, dar nu reprezintă limita normativă de defect.",
+      "C_research": "La **I7 §4.2.3.2.14**, corpurile de iluminat în mediu cu praf/fibre BE2 au limita **90°C în funcționare normală** și **115°C în caz de defect**. Întrebarea cere expres cazul de defect, deci **B** este pragul normativ. A depășește limita, iar C este o valoare inferioară, nu plafonul cerut. Diferența dintre regimul normal și cel de defect este capcana relevantă.",
+      "context_romanian": "I7 §4.2.3.2.14",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-002",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-002",
+        "question": "Rezistenţa de izolaţie a unui circuit (de joasă tensiune) cu tensiune nominală > 500 V se măsoară în c.c. şi trebuie să aibă o valoare:",
+        "A": "mai mică de 0,5 MΩ",
+        "B": "mai mare sau egala cu 1 MΩ",
+        "C": "mai mare sau egala cu 2 MΩ",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "EXACT_I7_TABLE_8_1",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A <0,5 MΩ nu respectă pragul pentru tensiune >500V.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B ≥1 MΩ este limita minimă din tabelul 8.1 pentru circuit peste 500V.",
+      "B_research": "C ≥2 MΩ ar fi o rezistență bună, dar nu este pragul minim normativ solicitat.",
+      "C_research": "Conform **I7 §8.1.1.3.3, tabelul 8.1**, pentru circuitele cu tensiune nominală **peste 500 V** se verifică la **1.000 V c.c.**, iar rezistența de izolație admisă este **≥1 MΩ**. Astfel **B** reproduce limita minimă. A este sub prag, iar C impune un prag superior celui indicat. O valoare de 2 MΩ poate fi conformă în practică, dar nu este cifra normativă cerută de această grilă.",
+      "context_romanian": "I7 §8.1.1.3.3, tabelul 8.1",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-003",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-003",
+        "question": "Se admit doze comune pentru circuitele de iluminat normal, de prize, de comandă şi de semnalizare:",
+        "A": "dacă acestea funcţionează la aceeaşi tensiune",
+        "B": "întotdeauna",
+        "C": "dacă puterea instalată pe fiecare circuit nu depăşeşte 2 kW",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A",
+      "finding": "EXACT_COMMON_JUNCTION_BOX_SAME_VOLTAGE",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A condiționează dozele comune de aceeași tensiune și reproduce I7.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B «întotdeauna» elimină condiția de tensiune din I7.",
+      "B_research": "C limita de putere 2 kW se referă la alte articole, nu la criteriul dozelor comune.",
+      "C_research": "În **I7 §5.4.2** se admit doze comune pentru **iluminat normal, prize, comandă și semnalizare** dacă circuitele sunt la **aceeași tensiune**. Prin urmare **A** conține condiția exactă. B omite restricția și este prea largă. C amestecă un prag de putere pentru circuite de prize cu obiectul distinct al **dozelor comune**.",
+      "context_romanian": "I7 §5.4.2",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-005",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-005",
+        "question": "Pentru verificarea rezistenţei de izolaţie a pardoselii trebuie efectuate cel puţin trei măsurări în acelaşi amplasament; una din aceste măsurări se efectuează la o distanţă de orice conductor extern accesibil din amplasament de:",
+        "A": "cca. 0,5 m",
+        "B": "cca. 1 m",
+        "C": "cca. 2 m",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "EXACT_FLOOR_INSULATION_ONE_METER",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A aprox.0,5m diferă de distanța normativă pentru prima măsurare.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B aprox.1m coincide cu articolul pentru una dintre cele trei măsurări.",
+      "B_research": "C aprox.2m poate fi o distanță mai mare pentru altă măsurare, nu cea specifică.",
+      "C_research": "Pentru **rezistența izolației pardoselii**, **I7 §8.1.1.3.5** cere cel puțin **trei măsurări** în același amplasament. Una se face la **aproximativ 1 m** de un conductor extern accesibil, iar celelalte la distanțe mai mari. **B** indică măsurarea specială solicitată. A nu respectă distanța, iar C poate descrie una dintre celelalte poziții, dar nu valoarea impusă acestei măsurări.",
+      "context_romanian": "I7 §8.1.1.3.5",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-008",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-008",
+        "question": "Corpurile de iluminat  care se instalează în depozite cu materiale combustibile, categoria  BE 2, trebuie să fie  întotdeauna:",
+        "A": "echipate cu lămpi fluorescente",
+        "B": "prevăzute cu grătar protector",
+        "C": "prevăzute cu glob, respectiv cu difuzor",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_BE2_DIFFUSER_GRILLE_ONLY_EXTRA_MECHANICAL_RISK",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A «numai lămpi fluorescente» nu este condiția de protecție BE2.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B grătarul protector este necesar doar dacă există și pericol de șoc mecanic.",
+      "B_research": "C globul/difuzorul este cerința generală pentru corpurile de iluminat din depozite combustibile BE2.",
+      "C_research": "În **I7 §5.4.19**, corpurile de iluminat instalate în depozite de materiale combustibile **BE2** trebuie prevăzute cu **glob sau difuzor**. Numai dacă există **pericol de șocuri mecanice** se cere suplimentar **grătar protector**. De aceea **C** reflectă condiția de bază fără detalii speciale. B ar presupune o condiție suplimentară, iar A confundă protecția cu tipul sursei de iluminat.",
+      "context_romanian": "I7 §5.4.19",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-009",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-009",
+        "question": "În încăperi de locuit şi similare se recomandă ca traseele tuburilor orizontale pe pereţi să fie distanţate faţă de plafon la:",
+        "A": "1 m",
+        "B": "0,5 m",
+        "C": "circa 0,3 m",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_0_3M_RECOMMENDED_TUBING_DISTANCE",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A 1m nu este distanța recomandată de I7 pentru tuburile orizontale.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B 0,5m diferă de valoarea recomandată.",
+      "B_research": "C circa 0,3m este distanța recomandată față de plafon.",
+      "C_research": "Pentru camere de locuit și similare, **I7 §5.2.12.2.4** recomandă traseele orizontale ale tuburilor la **circa 0,3 m sub plafon**. C reproduce valoarea și caracterul ei **recomandat**, nu obligatoriu absolut. A și B oferă alte distanțe. Cuvântul „recomandă” din enunț se potrivește exact cu gradul de obligativitate din articol.",
+      "context_romanian": "I7 §5.2.12.2.4",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-013",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-013",
+        "question": "Legăturile barelor se execută:",
+        "A": "numai prin sudare",
+        "B": "numai cu ajutorul şuruburilor",
+        "C": "cu ajutorul şuruburilor, clemelor sau prin sudare",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_BUS_BARS_CONNECT_METHODS",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A «numai sudare» exclude prinderi cu șurub și cleme permise.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B «numai șuruburi» exclude clemele și sudarea permise.",
+      "B_research": "C enumeră integral șuruburi, cleme sau sudare.",
+      "C_research": "La **I7 §5.2.6.10**, legăturile **barelor** se realizează cu **șuruburi, cleme sau prin sudare**. Variantele A și B sunt false deoarece reduc nejustificat această listă la un singur procedeu. C reproduce cele **trei metode permise**. Distincția dintre „numai” și „sau” face eliminarea robustă, confirmată de normativ.",
+      "context_romanian": "I7 §5.2.6.10",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-014",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-014",
+        "question": "Legăturile conductoarelor de protecţie trebuie executate:",
+        "A": "numai prin sudare",
+        "B": "numai prin înşurubări, cu contrapiuliţe şi şaibă elastică",
+        "C": "prin sudare sau prin înşurubări cu contrapiuliţe şi inele de siguranţă (şaibă elastică)",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_PE_CONDUCTOR_JOINING_WITH_SECURE_SCREWS",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A exclusiv sudare contrazice posibilitatea înșurubării asigurate.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B exclusiv înșurubări contrazice posibilitatea sudării.",
+      "B_research": "C include sudarea ori înșurubări securizate împotriva desfacerii.",
+      "C_research": "La **I7 §5.2.6.12**, legăturile **conductoarelor de protecție** se execută prin **sudare sau înșurubare**, cu măsuri pentru a nu se desface în exploatare, inclusiv contrapiuliță sau șaibă elastică. C redă ambele modalități și securizarea mecanică. A și B sunt prea restrictive prin **„numai”**. Cerința de continuitate a protecției justifică măsurile anti-desfacere.",
+      "context_romanian": "I7 §5.2.6.12",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-015",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-015",
+        "question": "Legăturile conductoarelor izolate se acoperă cu material electroizolant (de ex. tub varniş, bandă izolantă, capsule izolante etc):",
+        "A": "numai dacă sunt accesibile",
+        "B": "opţional",
+        "C": "întotdeauna",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_INSULATING_CONNECTIONS",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A «numai dacă accesibile» nu este restricția cerută pentru conexiuni izolate.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B «opțional» contrazice prevederea de acoperire cu material electroizolant.",
+      "B_research": "C generalizează cerința de acoperire în domeniul conexiunilor conductoarelor izolate.",
+      "C_research": "**I7 §5.2.6.7** cere ca legăturile dintre **conductoarele izolate** să fie **acoperite cu material electroizolant**, inclusiv bandă sau capsulă adecvată. Nu condiționează această măsură doar de accesibilitate și nu o lasă la alegere. A și B se elimină astfel în contextul conexiunilor cerute, iar **C** reproduce regula generală. Trebuie păstrată condiția de domeniu: vorbim de aceste legături, nu de toate tipurile de borne realizate în echipamente prefabricate.",
+      "context_romanian": "I7 §5.2.6.7",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-016",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-016",
+        "question": "Legăturile electrice între conductoare izolate pentru îmbinări sau derivaţii se fac:",
+        "A": "în interiorul tuburilor sau ţevilor de protecţie",
+        "B": "în interiorul golurilor din elementele de construcţie",
+        "C": "numai în doze sau cutii de legătură",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_CONDUCTOR_SPLICE_IN_ACCESSORIES",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A tuburile sau țevile de protecție nu sunt loc de îmbinare permis.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B golurile elementelor de construcție sunt excluse.",
+      "B_research": "C dozele și cutiile special prevăzute reprezintă domeniul permis.",
+      "C_research": "Potrivit **I7 §5.2.6.4–5**, îmbinările și derivațiile între **conductoare izolate** se execută numai în **accesorii speciale precum doze și cutii de legătură**, nu în interiorul tuburilor ori golurilor construcției. Variantele A și B indică locuri interzise explicit. **C** reproduce obiectul normativ al conexiunilor. Aici eliminarea este suficient de fermă fiindcă fiecare alternativă are propria contradicție textuală.",
+      "context_romanian": "I7 §5.2.6.4–5",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-018",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-018",
+        "question": "Montarea pe materiale combustibile a echipamentelor electrice cu grad de protecţie inferior IP54:",
+        "A": "este strict interzisă",
+        "B": "este admisă fără restricţii",
+        "C": "se face interpunând materiale incombustibile între acestea şi materialul combustibil sau elementele de distanţare",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_COMBUSTIBLE_INTERPOSE_NONCOMBUSTIBLE",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A interdicția totală este prea largă, norma prevede metode de montaj.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B permiterea fără restricții contrazice măsurile de protecție cerute.",
+      "B_research": "C interpunerea materialului incombustibil sau distanțarea este exact soluția normativă.",
+      "C_research": "**I7 §3.0.3.8** tratează montarea echipamentelor cu protecție **inferioară IP54** pe materiale combustibile. Montajul se face **interpunând materiale incombustibile** sau prin **elemente de distanțare** adecvate. A interzice nejustificat montajul, B îl permite fără măsuri, iar **C** corespunde condiției tehnice exacte. Este o altă aplicație a eliminării celor două extreme false.",
+      "context_romanian": "I7 §3.0.3.7–8",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-019",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-019",
+        "question": "Montarea tuburilor de protecţie a conductoarelor electrice de j.t. pe pardoseala combustibilă a podurilor:",
+        "A": "este strict interzisă",
+        "B": "este admisă fără restricţii",
+        "C": "trebuie evitată; se poate face excepţie pentru tuburi metalice",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_ATTIC_COMBUSTIBLE_FLOOR_METALLIC_TUBE_EXCEPTION",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A interdicția absolută ignoră excepția pentru tuburile metalice.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B admiterea fără restricții contrazice obligația de evitare și materialul cerut.",
+      "B_research": "C precizează atât recomandarea de evitare, cât și soluția cu tuburi metalice.",
+      "C_research": "În **I7 §5.2.12.2.5** trebuie **evitată montarea tuburilor** pe pardoseala combustibilă din pod. Dacă totuși se montează, tuburile trebuie să fie **metalice**. A și B sunt eronate fiindcă neagă fie excepția, fie condiția de securitate. **C** reține corect ambele părți ale normei, nu doar propoziția generală.",
+      "context_romanian": "I7 §5.2.12.2.5",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-022",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-022",
+        "question": "Puterea instalată pe un circuit monofazat de prize din clădirile de locuit şi social - culturale este de:",
+        "A": "1 kW",
+        "B": "1,5 kW",
+        "C": "2 kW",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_HOUSEHOLD_2KW_PER_SINGLE_PHASE_SOCKET_CIRCUIT",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A 1 kW nu este puterea instalată nominală definită de articol.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B 1,5 kW nu este valoarea nominală din I7 pentru circuitul de prize.",
+      "B_research": "C 2 kW reproduce valoarea instalată pe un circuit monofazat de prize locuințe/social-cultural.",
+      "C_research": "**I7 §5.4.7** indică **2 kW** ca putere instalată pe un **circuit monofazat de prize** din clădiri de locuit și social-culturale. **C** este valoarea normativă cerută de grilă. A și B sunt valori mai mici dar nu indică referința stipulată. Pentru receptoarele locuinței peste 2 kW, același articol cere **circuite separate**, fără a schimba valoarea de răspuns a acestei întrebări.",
+      "context_romanian": "I7 §5.4.7",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-038",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-038",
+        "question": "Conform I 7, parte activă a unei instalaţii este:",
+        "A": "conductorul PEN",
+        "B": "conductorul neutru (N)",
+        "C": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "EXACT_ACTIVE_PART_N_BUT_NOT_PEN",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A PEN este exclus din definiția «parte activă» prin convenție.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B conductorul neutru N este explicit inclus în definiția părții active.",
+      "B_research": "C este definiția părții conductoare accesibile, normal nealimentate.",
+      "C_research": "În definițiile **I7**, **parte activă** desemnează elementul destinat să fie sub tensiune în funcționare normală și **include neutrul N**. Normativul **exclude prin convenție PEN, PEM și PEL** din această definiție. De aceea **B** este varianta exactă. A confundă PEN cu neutrul simplu, iar C descrie o **parte conductoare accesibilă** care poate deveni periculoasă doar la defect.",
+      "context_romanian": "I7 §2 «Termeni și definiții», «parte activă»",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-039",
+      "batch": "L047-D-G1-I7-EXACT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-039",
+        "question": "Conform I 7, parte activă a unei instalaţii este:",
+        "A": "conductor sau parte conductoare destinată să fie pusă sub tensiune în funcţionare normală",
+        "B": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune",
+        "C": "conductorul PEN",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A",
+      "finding": "EXACT_ACTIVE_PART_GENERAL_DEFINITION",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A reproduce definiția normativă a părții active.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B descrie o parte conductoare accesibilă în caz de defect, adică alt concept.",
+      "B_research": "C PEN este exclus expres prin convenție.",
+      "C_research": "În **I7**, **parte activă** este un conductor sau o parte conductoare destinată să fie pusă sub tensiune în **funcționare normală**. Definiția include neutrul N, dar exclude **PEN, PEM și PEL** prin convenție. **A** reproduce definiția, B descrie partea conductoare accesibilă, iar C este exclusă explicit. Această distincție între **regimul normal** și **defect** este aceeași regulă semantică aplicată și la întrebările despre masă și atingere indirectă.",
+      "context_romanian": "I7 §2 «Termeni și definiții», «parte activă»",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    }
+  ],
+  "claim": "Preliminary research, NOT independent QA, grade2026 official edition NOT fully verified, no learner approvals"
+}

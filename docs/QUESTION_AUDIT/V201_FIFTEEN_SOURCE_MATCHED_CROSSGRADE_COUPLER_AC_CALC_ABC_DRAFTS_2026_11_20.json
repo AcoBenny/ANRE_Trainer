@@ -1,0 +1,585 @@
+{
+  "schema": "v201_15_original_source_matched_ABC_coupler_switching_and_crossgrade_conflicts",
+  "date": "2026-11-20",
+  "prior_commit": "e200ccc1055b150662d4342d0b4c4de30f2fc7e7",
+  "provenance": {
+    "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "v200_blob": "e2baec7b06a27f4bde5e31badcaae72b070cd745",
+    "v80_blob": "76cc322e83f511c24edf323b79d24175f37c93b1",
+    "v81_blob": "0e7ade26da660a968c9f880111f1ff6416c9331e"
+  },
+  "counts": {
+    "new_unique_qabc": 15,
+    "new_grade_routes": 26,
+    "ABC_rationales": 45,
+    "reformulations": 15,
+    "strict_crossgrade_key_disputes_revisited": 2,
+    "explicit_semantic_hold_units": 9,
+    "approved_for_learning": 0
+  },
+  "technical_context": "NTE 009/10/00 2010 original art29/34/38 historical comparisons are source-reference candidates, not an authenticated 2026 ANRE edition; this card series is not field-switching authorization. Original grade-specific differing keys for QABC-0017 and QABC-0094 preserved exactly. No independent qualified technical/linguistic reviewer or scored exam-key verification.",
+  "held_unit_ids": [
+    "QABC-0017",
+    "QABC-0094",
+    "QABC-0115",
+    "QABC-0116",
+    "QABC-0117",
+    "QABC-0130",
+    "QABC-0131",
+    "QABC-0156",
+    "QABC-0167"
+  ],
+  "cards": [
+    {
+      "unit_id": "QABC-0017",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "25",
+        "stem": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C",
+        "imported_keys_UNCHANGED": "G1-ELE-018=A | G2-ELEC-170=C"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-018:V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv | G2-ELEC-170:V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv",
+        "history_tag": "V80 cross-grade source disagreement",
+        "prior_key_conflict": true
+      },
+      "editorial_draft": {
+        "A": "În modelul trifazat simetric cu trei capacități mutuale C între faze și fără influența pământului, sarcina pe faza a este q_a=C(2Va−Vb−Vc)=3C Va; rezultă Cs=3C ca echivalent față de neutru. Aceasta susține numai cheia importată G1=A, condiționat de definiția lui Cs.",
+        "B": "Cs=C/3 ar inversa transformarea triunghi-stea și nu rezultă din rețeaua mutuală simetrică definită.",
+        "C": "Cs=C este cheia importată G2=C, incompatibilă cu definiția de capacitate de fază echivalentă 3C în modelul demonstrat; definirea alternativă exactă a termenului «de serviciu» nu este încă autentificată.",
+        "model_scope_or_trap": "**CONFLICT STRICT ÎNTRE GRADE:** G1-ELE-018=A, G2-ELEC-170=C pentru același enunț/ABC. Derivarea Cs=3C depinde de conexiunea echivalentă stea și de sumă fazorială simetrică Va+Vb+Vc=0. Nu corecta baremele înainte de sursa definitorie a lui Cs.",
+        "reformulated_question": "Trei capacități între faze egale cu 2 µF sunt echivalate la o stea simetrică fără pământ. Cât are fiecare braț de stea?",
+        "reformulated_solution": "6 µF, pentru echivalentul triunghi-stea capacitiv simetric.",
+        "editorial_disposition": "HOLD_STRICT_CROSSGRADE_A_VS_C_CAPACITANCE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "109",
+        "stem": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă.",
+        "imported_keys_UNCHANGED": "G1-ELE-102=A | G2-ELEC-245=C"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-102:V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv | G2-ELEC-245:V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv",
+        "history_tag": "V80 cross-grade + NTE009/10/00 definitions",
+        "prior_key_conflict": true
+      },
+      "editorial_draft": {
+        "A": "Rezerva rece a uneia dintre bare este o configurație posibilă, dar fără politica de exploatare nu este demonstrată ca preferabilă pentru orice stație.",
+        "B": "Ambele bare energizate și cupla în funcțiune pot fi tehnic exploatate în anumite scheme; coordonarea protecțiilor și nivelul de scurtcircuit diferă.",
+        "C": "Ambele bare energizate cu cupla în rezervă caldă poate permite disponibilitate și exploatare distinctă; este cheia G2=C, nu o regulă universală.",
+        "model_scope_or_trap": "**CONFLICT STRICT ÎNTRE GRADE:** același QABC are G1-ELE-102=A și G2-ELEC-245=C. «De preferat» cere politica de operare, schema și configurația cuplei, inclusiv definițiile rece/cald. Reținem ambele fără rezolvare automată.",
+        "reformulated_question": "Există o singură poziție a cuplei transversale care să fie universal optimă pentru orice schemă cu două bare?",
+        "reformulated_solution": "Nu. Depinde de configurație, protecții, continuitatea dorită și regimul de exploatare.",
+        "editorial_disposition": "HOLD_STRICT_CROSSGRADE_A_VS_C_BUS_OPERATING_POLICY",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0115",
+      "grade_ids": [
+        "G1-ELE-124",
+        "G2-ELEC-266"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "131",
+        "stem": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
+        "A": "se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+        "B": "nu se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+        "C": "se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune.",
+        "imported_keys_UNCHANGED": "G1-ELE-124=A | G2-ELEC-266=A"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-124:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv | G2-ELEC-266:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv",
+        "history_tag": "V81 art34/38 historic source review",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "«Numai pentru cuplarea în paralel» ignoră utilizări ale cuplei la probe și energizarea controlată a unei bare, unde schema și procedurile permit.",
+        "B": "Imposibilitatea ocolirii unui întreruptor de linie nu se poate decide fără bare de transfer și conexiuni; anumite topologii pot permite sau nu acest rol.",
+        "C": "Utilizarea cuplei în proceduri de verificare/energizare a unei bare anterior scoase de sub tensiune este posibilă în condițiile tehnice ale schemei, deși testul propriu-zis nu se deduce din cuplare.",
+        "model_scope_or_trap": "V81 identifică A ca «numai» nejustificat și C drept candidat. NTE009/10/00 are reguli privind punerea sub tensiune și verificarea barelor, dar versiunea aplicabilă exactă și rolul cuplei trebuie controlate.",
+        "reformulated_question": "Poate exista o utilizare a cuplei pentru verificarea condițiilor unei bare, pe lângă simpla cuplare permanentă a două bare?",
+        "reformulated_solution": "Da, în anumite scheme și proceduri, deci «numai» este un cuantificator suspect.",
+        "editorial_disposition": "HOLD_COUPLER_ONLY_AND_C_PLAUSIBLE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0116",
+      "grade_ids": [
+        "G1-ELE-125"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "132",
+        "stem": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
+        "A": "nu se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+        "B": "se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+        "C": "se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune.",
+        "imported_keys_UNCHANGED": "G1-ELE-125=B"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-125:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv",
+        "history_tag": "V81 topology dependencies",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Nu este adevărat că două bare sub tensiune nu pot fi cuplate în paralel printr-o cuplă proiectată corespunzător, dacă toate condițiile de sincronism și exploatare sunt îndeplinite.",
+        "B": "Ocolirea temporară a unui întreruptor de linie poate fi admisă doar în scheme care prevăd circuit de ocolire/bare adecvate; barele duble singure nu o garantează.",
+        "C": "«Numai verificarea stării izolației» exclude alte funcții evidente ale cuplei, deci nu este definiție universală.",
+        "model_scope_or_trap": "B este cheia importată, dar nu este susținută universal pentru o stație generică «cu două sisteme de bare»; este nevoie de desenul schemei exacte. Nu descrie manevra ca instrucțiune de executat.",
+        "reformulated_question": "Poate o cuplă transversală standard, fără niciun circuit de ocolire, să înlocuiască automat orice întreruptor de linie?",
+        "reformulated_solution": "Nu. Funcția depinde de bare, separatoare și conexiunile reale.",
+        "editorial_disposition": "HOLD_COUPLER_BYPASS_TOPOLOGY_UNSTATED",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0117",
+      "grade_ids": [
+        "G1-ELE-126"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "133",
+        "stem": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
+        "A": "se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+        "B": "nu se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+        "C": "nu se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune.",
+        "imported_keys_UNCHANGED": "G1-ELE-126=A"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-126:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv",
+        "history_tag": "V81 variants group",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Cupla transversală poate permite cuplarea în paralel a două bare sub tensiune, dar numai după îndeplinirea condițiilor de exploatare și de protecție.",
+        "B": "«Nu se poate utiliza pentru ocolire» nu este universal în toate schemele, unde există funcții și conexiuni de transfer adecvate.",
+        "C": "«Nu se poate utiliza pentru verificarea izolației» este tot o interdicție universală discutabilă dacă proba se face prin alimentarea controlată a barelor.",
+        "model_scope_or_trap": "Cheia A este compatibilă cu funcția generală de cuplare, fără a implica faptul că B și C sunt imposibilități fizice în toate proiectele.",
+        "reformulated_question": "Într-o stație cu două bare, se pot cupla oricând două sisteme cu diferențe arbitrare de tensiune/fază?",
+        "reformulated_solution": "Nu. Condițiile și interblocările schemei trebuie verificate conform procedurii autorizate.",
+        "editorial_disposition": "HOLD_COUPLER_EXCLUSIVE_NEGATIONS",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0120",
+      "grade_ids": [
+        "G1-ELE-129",
+        "G2-ELEC-269"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "136",
+        "stem": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+        "A": "separatorul de linie, separatorul de bare, întreruptorul;",
+        "B": "separatorul de bare, întreruptorul, separatorul de linie;",
+        "C": "separatorul de bare, separatorul de linie, întreruptorul .",
+        "imported_keys_UNCHANGED": "G1-ELE-129=C | G2-ELEC-269=C"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-129:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv | G2-ELEC-269:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv",
+        "history_tag": "V81 art29(2-4)",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Separatorul de linie înaintea separatorului de bare nu este ordinea didactică de referință din NTE 009/10/00 art.29 pentru manevra normală invocată; numai echipamentele deconectate de curent pot fi manevrate astfel.",
+        "B": "Introducerea întreruptorului înaintea separatorului de linie poate solicita separatorul să stabilească curent sub sarcină, ceea ce nu este permis unui separator simplu.",
+        "C": "Cheia C corespunde ordinii generale descrise în registrul V81 pentru cazul standard, cu întreruptorul ultima etapă.",
+        "model_scope_or_trap": "Acest text este exclusiv o explicație de examen, nu ordin operațional. Art.29(4) și procedurile aprobate pot include excepții. Ediția exactă valabilă în 2026 rămâne un gate.",
+        "reformulated_question": "De ce un separator obișnuit nu trebuie tratat ca întreruptor capabil să comute orice sarcină?",
+        "reformulated_solution": "Pentru că funcțiile și capacitatea de întrerupere sunt diferite și depind de proiect și normă.",
+        "editorial_disposition": "QUALIFIED_HISTORIC_NTE_ART29_NOT_OPERATIVE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0122",
+      "grade_ids": [
+        "G1-ELE-131",
+        "G2-ELEC-271"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "138",
+        "stem": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+        "A": "separatorul de linie, întreruptorul, separatorul de bare;",
+        "B": "separatorul de bare, întreruptorul, separatorul de linie;",
+        "C": "întreruptorul, separatorul de  linie, separatorul de bare.",
+        "imported_keys_UNCHANGED": "G1-ELE-131=C | G2-ELEC-271=C"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-131:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv | G2-ELEC-271:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv",
+        "history_tag": "V81 art29(2-4)",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Deschiderea separatorului de linie înaintea întreruptorului nu este regula pentru circuitul de linie sub sarcină, deoarece separatorul simplu nu întrerupe în mod obișnuit curentul de sarcină.",
+        "B": "Deconectarea separatorului de bare înaintea întreruptorului are aceeași problemă a lipsei de întrerupere a curentului, plus distincția poziției aparatelor.",
+        "C": "Varianta C descrie ordinea de referință a manevrei normale din materialul istoric V81, cu întreruptorul primul.",
+        "model_scope_or_trap": "Este informație didactică, nu procedură de comutare. Excepțiile și identificarea exactă a aparatelor/articolului aplicabil sunt obligatorii înainte de orice operație reală.",
+        "reformulated_question": "Ce dispozitiv întrerupe în mod normal curentul de sarcină într-un circuit de înaltă tensiune: întreruptorul sau separatorul simplu?",
+        "reformulated_solution": "Întreruptorul, în condițiile tehnice nominale; separatorul asigură izolarea.",
+        "editorial_disposition": "QUALIFIED_HISTORIC_NTE_ART29_NOT_OPERATIVE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0128",
+      "grade_ids": [
+        "G1-ELE-137"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "144",
+        "stem": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+        "A": "separatorul de bare, întreruptorul, separatorul de linie;",
+        "B": "separatorul de bare, separatorul de linie, întreruptorul;",
+        "C": "întreruptorul, separatorul de linie, separatorul de bare.",
+        "imported_keys_UNCHANGED": "G1-ELE-137=B"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-137:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv",
+        "history_tag": "V81 art29(2-4), link option-reorder",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Închiderea întreruptorului înainte de finalizarea izolării/selectării prin separatoare nu corespunde modelului de manevră standard.",
+        "B": "Varianta B corespunde ordinii de referință pentru modelul simplu de circuit în V81, cu separatorul de bare și cel de linie înaintea întreruptorului.",
+        "C": "Varianta C pornește de la întreruptor și inversarea aparatului de comutație față de separatoare nu este modelul general din referință.",
+        "model_scope_or_trap": "Răspuns C? Nu: cheia importată este B, deoarece această întrebare repoziționează exact aceeași succesiune în litere diferite față de G1-ELE-129. Nu transforma cardul în instrucțiune operativă.",
+        "reformulated_question": "De ce nu poți învăța o ordine de manevră doar după litera răspunsului dintr-un alt chestionar?",
+        "reformulated_solution": "Pentru că opțiunile sunt permutate; trebuie comparată semnificația exactă și procedura în context.",
+        "editorial_disposition": "QUALIFIED_REORDERED_OPTIONS_HISTORIC_NTE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0129",
+      "grade_ids": [
+        "G1-ELE-138"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "145",
+        "stem": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+        "A": "separatorul de linie, întreruptorul, separatorul de bare;",
+        "B": "întreruptorul, separatorul de linie, separatorul de bare;",
+        "C": "întreruptorul, separatorul de bare, separatorul de linie.",
+        "imported_keys_UNCHANGED": "G1-ELE-138=B"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v171",
+        "analysis_file_per_grade": "G1-ELE-138:V81_TEN_SWITCHING_SEQUENCE_AND_BUS_COUPLER_PRIMARY_SOURCE_CHECKS.csv",
+        "history_tag": "V81 art29(2-4), option-position check",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Separatorul de linie nu este în general întreruptorul de sarcină; varianta A îl plasează înaintea dispozitivului care întrerupe curentul.",
+        "B": "Cheia B reprezintă aceeași ordine didactică din G1-ELE-131, dar poziționată ca altă literă de răspuns.",
+        "C": "Varianta C inversează poziția celor două separatoare față de regimul general V81; în anumite instalații se pot justifica excepții aprobate.",
+        "model_scope_or_trap": "Nu există instrucțiune universală de operare independentă de schemă și de aprobările de manevră; se păstrează condițiile și excepțiile NTE.",
+        "reformulated_question": "În două itemuri cu variante permutate, trebuie urmărită litera sau sensul aparatelor?",
+        "reformulated_solution": "Sensul aparatelor în condiția tehnică specifică, nu litera.",
+        "editorial_disposition": "QUALIFIED_REORDERED_OPTIONS_HISTORIC_NTE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0130",
+      "grade_ids": [
+        "G1-ELE-139",
+        "G2-ELEC-277"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "146",
+        "stem": "La un transformator cu grupa de conexiuni Y0 d-5 alimentat cu un sistem simetric de tensiuni, între neutru si pământ, în regim normal si simetric de funcţionare avem:",
+        "A": "tensiunea de linie",
+        "B": "tensiunea de faza",
+        "C": "tensiunea zero",
+        "imported_keys_UNCHANGED": "G1-ELE-139=C | G2-ELEC-277=C"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v164",
+        "analysis_file_per_grade": "G1-ELE-139:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-277:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "history_tag": "CKPT250 G1-ELE-139 scope",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "În regim de funcționare simetric, tensiunea de linie nu reprezintă tensiunea dintre neutru și pământ în modelul echilibrat adecvat.",
+        "B": "Tensiunea de fază este între o fază și neutru, nu automat între neutru și pământ în modelul simetric.",
+        "C": "Pentru o rețea echilibrată cu neutru fixat la potențialul pământului, tensiunea neutru-pământ este zero.",
+        "model_scope_or_trap": "Neutrul și pământul nu sunt identice în orice configurație: dacă neutrul plutește și există dezechilibre, poate apărea tensiune. Mențiunea Y0 d-5 nu autentifică singură conectarea fizică la pământ.",
+        "reformulated_question": "Poate un neutru neîmpământat cu dezechilibru avea tensiune față de pământ?",
+        "reformulated_solution": "Da; zero rezultă în modelul simetric și cu referință de potențial potrivită.",
+        "editorial_disposition": "HOLD_NEUTRAL_EARTH_REFERENCE_ASSUMPTION",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0131",
+      "grade_ids": [
+        "G1-ELE-140",
+        "G2-ELEC-278"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "147",
+        "stem": "La funcţionarea în gol a unei linii electrice tensiunea la capăt:",
+        "A": "creşte faţă de tensiunea la sursă proporţional cu pătratul lungimii liniei",
+        "B": "scade faţă de tensiunea la sursă proporţional cu lungimea liniei",
+        "C": "nu se modifică",
+        "imported_keys_UNCHANGED": "G1-ELE-140=A | G2-ELEC-278=A"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v170",
+        "analysis_file_per_grade": "G1-ELE-140:CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md | G2-ELEC-278:CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md",
+        "history_tag": "CKPT236 exact scope",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Creșterea tensiunii la capătul receptor al unei linii CA în gol este efectul Ferranti; aproximarea dependenței de lungime la pătrat este valabilă în regim distribuit simplificat, pentru βl mic.",
+        "B": "Scăderea liniară a tensiunii cu lungimea nu descrie efectul Ferranti în modelul de linie AC slab încărcată.",
+        "C": "«Nu se modifică» ignoră curentul de încărcare capacitivă al liniei, deși este aproximație pentru linii suficient de scurte.",
+        "model_scope_or_trap": "Legea exactă pentru linia idealizată este legată de funcții trigonometrice ale βl, nu o creștere exact proporțională cu l² pentru orice lungime.",
+        "reformulated_question": "Pentru o linie AC lungă, în gol, poate tensiunea receptorului depăși tensiunea sursei?",
+        "reformulated_solution": "Da, din efectul Ferranti; mărimea depinde de parametrii liniei.",
+        "editorial_disposition": "HOLD_FERRANTI_QUADRATIC_ONLY_APPROXIMATE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0133",
+      "grade_ids": [
+        "G1-ELE-142",
+        "G2-ELEC-280"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "149",
+        "stem": "Teoremele lui Kirchhoff se aplică:",
+        "A": "numai circuitelor liniare",
+        "B": "numai circuitelor cu elemente neliniare",
+        "C": "circuitelor liniare şi circuitelor neliniare",
+        "imported_keys_UNCHANGED": "G1-ELE-142=C | G2-ELEC-280=C"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v170",
+        "analysis_file_per_grade": "G1-ELE-142:CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md | G2-ELEC-280:CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md",
+        "history_tag": "CKPT236 source",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "«Numai liniare» este fals: conservarea sarcinii și legile de circuit se aplică și elementelor neliniare în regim de circuit concentrat.",
+        "B": "«Numai neliniare» este la fel de fals: și circuitele liniare respectă legile Kirchhoff.",
+        "C": "În condiții de circuit concentrat/quasistatic, legile Kirchhoff se aplică atât circuitelor liniare, cât și neliniare.",
+        "model_scope_or_trap": "Nu extinde teorema KVL simplă la câmpuri electromagnetice variabile care induc tensiuni distribuite fără termenii necesari.",
+        "reformulated_question": "Se poate aplica legea nodurilor unui circuit cu diodă neliniară conectată la rezistențe?",
+        "reformulated_solution": "Da, conservarea sarcinii nu cere rezistențe liniare.",
+        "editorial_disposition": "QUALIFIED_LUMPED_NONLINEAR",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0134",
+      "grade_ids": [
+        "G1-ELE-143",
+        "G2-ELEC-281"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "150",
+        "stem": "La o instalaţie cu mai multe condensatoare conectate în serie, căderea de tensiune pe fiecare condensator este:",
+        "A": "direct proporţionala cu capacitatea",
+        "B": "invers proporţionala cu capacitatea",
+        "C": "nu depinde de capacitate",
+        "imported_keys_UNCHANGED": "G1-ELE-143=B | G2-ELEC-281=B"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v170",
+        "analysis_file_per_grade": "G1-ELE-143:CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md | G2-ELEC-281:CKPT_236_GFR_3_QABC_SOURCE_SCOPE_2026_11_18.md",
+        "history_tag": "CKPT236 source",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "La condensatoare ideale în serie încărcarea Q este comună, iar U_i=Q/C_i; deci tensiunea nu este direct proporțională cu C_i.",
+        "B": "Varianta B corespunde relației U_i invers proporțional cu C_i pentru condensatoare ideale în serie cu aceeași sarcină.",
+        "C": "U_i depinde de capacitatea fiecărui condensator, deci varianta C este falsă în modelul standard.",
+        "model_scope_or_trap": "Curentul de scurgere, încărcările inițiale și redistribuirea în tranzitoriu pot schimba împărțirea reală a tensiunilor.",
+        "reformulated_question": "Două condensatoare ideale de 2 μF și 4 μF în serie, la aceeași sarcină, care suportă tensiune mai mare?",
+        "reformulated_solution": "Condensatorul de 2 μF suportă tensiune dublă față de cel de 4 μF.",
+        "editorial_disposition": "QUALIFIED_IDEAL_CAPACITOR_SERIES",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0156",
+      "grade_ids": [
+        "G1-ELE-165",
+        "G2-ELEC-303"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "172",
+        "stem": "O protecţie este selectivă atunci când:",
+        "A": "deconectează numai consumatorul defect",
+        "B": "deconectează toţi consumatorii",
+        "C": "deconectează o jumătate dintre consumatori",
+        "imported_keys_UNCHANGED": "G1-ELE-165=A | G2-ELEC-303=A"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v169",
+        "analysis_file_per_grade": "G1-ELE-165:CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md | G2-ELEC-303:CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "history_tag": "CKPT216 / CKPT226 historical",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Selectivitatea urmărește izolarea elementului defectat cât mai aproape de locul defectului, fără scoaterea inutilă a restului rețelei. A este intenția baremului, dar uneori protecția deconectează un întreg tronson cu mai mulți consumatori.",
+        "B": "Deconectarea tuturor consumatorilor nu descrie selectivitatea de bază.",
+        "C": "Deconectarea arbitrară a jumătății dintre consumatori nu este criteriu de selectivitate.",
+        "model_scope_or_trap": "Termenul «numai consumatorul defect» este simplificare de examen, nu garanție că un defect de rețea izolează exact un consumator. Cerem criterii de zonă, protecții și coordonare.",
+        "reformulated_question": "Dacă un defect se află într-un feeder comun a 10 utilizatori, selectivitatea garantează că se întrerupe exact un singur utilizator?",
+        "reformulated_solution": "Nu. Se izolează zona defectată cât mai restrâns posibil potrivit topologiei și protecțiilor.",
+        "editorial_disposition": "HOLD_SELECTIVITY_ONLY_ONE_CONSUMER_ABSOLUTE",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0167",
+      "grade_ids": [
+        "G1-ELE-178",
+        "G2-ELEC-314"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "185",
+        "stem": "Puterea electrică reactivă:",
+        "A": "permite definirea limitelor de utilizare ale unui aparat electric",
+        "B": "produce transformarea energiei electrice în energie mecanică",
+        "C": "este variaţia în timp a energiei magnetice şi electrice",
+        "imported_keys_UNCHANGED": "G1-ELE-178=C | G2-ELEC-314=C"
+      },
+      "source_status": "ANRE_2024_ORIGINAL_NORMALIZED_MATCH_NOT_AUTHENTICATED_ANSWER_KEY",
+      "historic": {
+        "prior_bodies": "v164",
+        "analysis_file_per_grade": "G1-ELE-178:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-314:V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+        "history_tag": "V87 / CKPT250",
+        "prior_key_conflict": false
+      },
+      "editorial_draft": {
+        "A": "Puterea aparentă și curentul limitează utilizarea aparatului; puterea reactivă poate conta la dimensionare, dar A nu este o definiție a lui Q.",
+        "B": "Lucrul mecanic util în medie este asociat conversiei de energie activă, nu unei identificări directe cu Q.",
+        "C": "Puterea reactivă este legată de schimbul reversibil de energie între câmpuri, dar Q=U I sinφ este o mărime medie convențională în regim sinusoidal și NU coincide general cu derivata instantanee dW/dt a energiei de câmp.",
+        "model_scope_or_trap": "Cheia C reflectă descrierea calitativă a schimbului de energie, nu o identitate exactă pentru orice circuit. Există riscul ca A să fie și ea relevantă la limitele termice prin S; păstrează conflictul de definiție.",
+        "reformulated_question": "În regim sinusoidal, Q=U I sinφ este egală în fiecare moment cu dW/dt într-un inductor?",
+        "reformulated_solution": "Nu. Puterea instantanee variază în timp; Q este o mărime convențională pentru regimul sinusoidal.",
+        "editorial_disposition": "HOLD_REACTIVE_Q_NOT_INSTANT_DWDT",
+        "source_currentness": "NTE_009_2010_historic_when_applicable_NO_2026_VERSION_SIGNOFF",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "authentic_official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    }
+  ]
+}

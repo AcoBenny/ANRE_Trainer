@@ -1,0 +1,124 @@
+{
+  "checkpoint": "CKPT-110",
+  "date": "2026-11-17",
+  "input_head": "96964b6ca703100cbd6c73ae1579729beca1c93e",
+  "protocol": "MICRO5; one lot, 3 unique units / 6 grade IDs",
+  "contract": "Only documentary cards and central progress ledger on audit branch; original MASTER/QABC/keys/HTML/APK untouched; no merge/release.",
+  "team": {
+    "technical_sources": "actual child agent, ELE001 technical/source audit",
+    "source_auditor": "actual child agent, ELE002 source/technical audit",
+    "linguistic_technical": "actual child agent, ELE006 technical/language/source audit",
+    "independent_qa": "distinct actual child agent, independent source reopening and A/B/C technical/linguistic review of all three",
+    "coordinator": "canonical alignment, source readback, reconciliation, regression and publication"
+  },
+  "status": "CONTEXTUAL_DOCUMENTED_PRELIMINARY_WITH_INDEPENDENT_AI_REVIEW; not expert certification",
+  "gates": {
+    "exam_bibliography_2026": "UNVERIFIED",
+    "official_question_provenance_2023": "UNVERIFIED_IN_THIS_LEDGER",
+    "official_answer_key": "UNVERIFIED",
+    "approved_for_learning": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-593d396a103347b9",
+      "representative_id": "G1-ELE-001",
+      "member_ids": "G1-ELE-001;G2-ELEC-154",
+      "qabc_sha256": "593d396a103347b9a7f3e649cd49038c67d868fe6a3bf561458601406ee1c998",
+      "original_keys_by_id_JSON": "{\"G1-ELE-001\":\"C\",\"G2-ELEC-154\":\"C\"}",
+      "question_original": "Atunci când se compensează energia electrica reactiva prin baterii de condensatoare, tensiunea în reţeaua electrica:",
+      "A_original": "scade",
+      "B_original": "nu se modifica",
+      "C_original": "creste",
+      "source": "Schneider Electric Electrical Installation Guide, Reactive power of capacitors §final; Why improve the power factor? §Reduction of voltage drop; web revisions 29589/29677, 05.08.2026",
+      "urls": [
+        "https://www.electrical-installation.org/enwiki/Reactive_power_of_capacitors",
+        "https://www.electrical-installation.org/enwiki/Why_improve_the_power_factor%3F"
+      ],
+      "context": "Condensatoarele furnizează local **putere reactivă capacitivă**, reducând necesarul inductiv transportat din amonte. În rețeaua cu impedanță nenulă se reduce componenta reactivă a căderii de tensiune. Cu tensiunea sursei și celelalte condiții păstrate, tensiunea la consumator **crește**, susținând C. Schneider descrie acest efect și avertizează separat asupra supracompensării. Enunțul nu precizează nodul ori reglajele, astfel încât C nu poate fi extins la orice punct și regim.",
+      "options": {
+        "A": "Nu descrie efectul uzual al compensării capacitive, celelalte condiții păstrate.",
+        "B": "Posibilă într-un model de bară ideal rigidă; nu efectul uzual intenționat.",
+        "C": "Susținut ca efect uzual, cu limită explicită de domeniu."
+      },
+      "pairs": "A↔C: direcții opuse; B↔C: dependență de nod/model; A↔B: scădere versus invariabilitate, niciuna nu descrie efectul normal din sursă.",
+      "reverse": "Reducerea căderii la aceeași tensiune amonte ridică tensiunea aval. Contraexemplu dedus, nu citat: bara unei surse ideale impune aceeași tensiune înainte și după compensare.",
+      "qa": "INDEPENDENT_QA_CONDITIONAL_C_UNQUALIFIED_SCOPE_WARNING",
+      "scope": "Compensare inductivă prin condensatoare în rețea reală; nu creștere obligatorie la bara ideal rigidă. Sursă didactică, nu dovadă de barem oficial.",
+      "lesson": "Efectul uzual nu este performanță universal garantată. Nu schimbăm automat cheia când un model limită califică domeniul.",
+      "negative": "Respingem: C dovedește creșterea obligatorie a tensiunii la orice nod inclusiv sursa ideală."
+    },
+    {
+      "unit_id": "AU-da4039895b7fb870",
+      "representative_id": "G1-ELE-002",
+      "member_ids": "G1-ELE-002;G2-ELEC-155",
+      "qabc_sha256": "da4039895b7fb87044011d3c3fa4f41b58d65575f7d448ec8b2bc11b6f6d3d43",
+      "original_keys_by_id_JSON": "{\"G1-ELE-002\":\"C\",\"G2-ELEC-155\":\"C\"}",
+      "question_original": "Bobinele de stingere din staţiile electrice de transformare sunt echipamente pentru:",
+      "A_original": "compensarea factorului de putere",
+      "B_original": "dotări PSI",
+      "C_original": "compensarea curenţilor capacitivi",
+      "source": "Trench Conventional Fluid Arc Suppression Coils, Arc suppression coils + Application areas + Reliable Power Supply, lines 240–261; reviewer: Eco Fluid counterpart 239–265; formal page edition unidentified",
+      "urls": [
+        "https://trench-group.com/conventional-fluid-coils/conventional-fluid-arc-suppression-coils/",
+        "https://trench-group.com/eco-fluid-coils/eco-fluid-arc-suppression-coils/"
+      ],
+      "context": "Bobina de stingere Petersen compensează **curenții capacitivi de defect la pământ**. Producătorul descrie conexiunea între neutrul rețelei și pământ. Reglarea urmărește acordarea cu rețeaua și reducerea curentului rezidual. Funcția susține C, nu corectarea factorului de putere al sarcinii din A. «Stingere» privește arcul de defect, nu dotările PSI din B.",
+      "options": {
+        "A": "Confundă funcția specifică a bobinei Petersen cu corectarea cos φ al sarcinii.",
+        "B": "Capcană lexicală: stingerea arcului nu înseamnă echipament PSI.",
+        "C": "Dovadă afirmativă directă pentru curentul capacitiv de defect la pământ."
+      },
+      "pairs": "A↔C: scop/curent diferit; A↔B: funcție electrică versus PSI; B↔C: incendiu versus arc de defect.",
+      "reverse": "Curentul rezidual nenul nu infirmă compensarea: termenul nu promite anularea tuturor componentelor. O sarcină inductivă nu face bobina Petersen corectorul ei de cos φ.",
+      "qa": "INDEPENDENT_TECH_SOURCE_LING_SUPPORT_C_SCOPE_EARTH_FAULT",
+      "scope": "Rețea cu neutru compensat și defect la pământ, nu compensare generică. Producător primar; apartenență bibliografie ANRE neprobată.",
+      "lesson": "Sensul termenului se verifică prin obiectul fizic și conexiune, nu prin sensul cotidian.",
+      "negative": "Respingem: bobina de stingere este dotare PSI doar deoarece numele conține «stingere»."
+    },
+    {
+      "unit_id": "AU-d511701e7d49fb58",
+      "representative_id": "G1-ELE-006",
+      "member_ids": "G1-ELE-006;G2-ELEC-159",
+      "qabc_sha256": "d511701e7d49fb587aa6b7cb6c62dba3cad9e22e7d789976b8800242d9dc7a76",
+      "original_keys_by_id_JSON": "{\"G1-ELE-006\":\"B\",\"G2-ELEC-159\":\"B\"}",
+      "question_original": "AAR se utilizează în scopul:",
+      "A_original": "limitării curenţilor de scurtcircuit;",
+      "B_original": "creşterii continuităţii în alimentare;",
+      "C_original": "reducerii pierderilor de energie pe linii.",
+      "source": "ANRE NTE 011/12/00, Norma 14.11.2012, Ordin 41/2012; vol.I art.7 definition, vol.III X.2 art.178–183 and neighboring 184–186; domain stations >1kV",
+      "urls": [
+        "https://legislatie.just.ro/Public/FormaPrintabila/00000G19MZ2Q47A4ORG02P9S9F9U0YWJ"
+      ],
+      "context": "AAR înseamnă **anclanșarea automată a rezervei**. Norma leagă automatizarea de continuitatea și restabilirea alimentării printr-o cale de rezervă. B exprimă scopul, în timp ce A și C descriu alte funcții. Articolul 180 exclude transferul către un defect neeliminat, iar articolul 183 cere separarea căii normale înaintea conectării rezervei. **Continuitate crescută** nu înseamnă absența oricărei pauze.",
+      "options": {
+        "A": "Limitarea amplitudinii curentului de scurtcircuit nu este scopul automatizării de transfer.",
+        "B": "Susținut afirmativ de art.178–179.",
+        "C": "Reducerea pierderilor nu este condiție necesară a restabilirii alimentării."
+      },
+      "pairs": "A↔B: limitare versus transfer; A↔C: curent de defect versus pierderi; B↔C: disponibilitate versus eficiență.",
+      "reverse": "O rezervă cu pierderi mai mari poate restabili alimentarea: B rămâne scopul. Defectul pe bară poate bloca AAR fără a contrazice scopul său.",
+      "qa": "INDEPENDENT_TECH_SOURCE_LING_SUPPORT_B",
+      "scope": "Regula citată aparține stațiilor >1kV; folosită pentru scop/definiție, nu impusă automat oricărei instalații JT. Ediția aplicabilă examenului 2026 necertificată.",
+      "lesson": "Separăm scopul, mecanismul și condițiile de blocare; AAR nu este RAR și nici UPS fără pauză.",
+      "negative": "Respingem: B garantează transfer fără pauză sau alimentarea unui defect neeliminat."
+    }
+  ],
+  "qa_evidence": {
+    "canonical_alignment": "3/3 unit IDs, hashes, member IDs and imported key maps equal MASTER and ledger; each initially NO",
+    "source_readback": "Coordinator reopened Schneider both sections + Trench Conventional + official NTE printable definition/art178–186. Reviewer independently reopened Schneider, Trench Eco, NTE printable.",
+    "access_reconciliation": "ELE006 primary agent had 502 on official portal variants; retained as access failure. Independent QA and coordinator successfully reopened the printable URL later. Primary agent independently read Lovato ATL600/610 I414ROGB11_14 pp2,3,10 incl p10 screenshot; not mistaken for ANRE bibliography.",
+    "regression": "Executed bundled source_scope_gate.py selftest: 6/6 PASS. Supplemental synthetic NOR028 exception, NOR090 environment, ELE001 fixed-node conditions: 3/3 correctly BLOCKED_SOURCE_SCOPE. Synthetic tests are not source truth.",
+    "field_alignment": "Original QABC/key fields separated from source/locator, context, A/B/C rationales, paired checks, counterexample and limitations. No key proposal applied.",
+    "independent_artifact_review": "independent_qa reread final local JSON: PASS exact QABC and C/C/B task keys, proper field alignment, source scope limits and no approval leakage. Reviewer did not independently rerun coordinator hashes/tests."
+  },
+  "training": "Reusable lessons and negative cases are documented per card; no claim of model weight training or plugin code change.",
+  "progress_after_ledger_reconciliation": {
+    "units_documented": 400,
+    "total_units": 568,
+    "grade_ids_documented": 486,
+    "total_grade_ids": 822,
+    "units_remaining": 168,
+    "approved_for_learning": 0
+  },
+  "next": "Resume ledger contextual_card_present=NO (next representative G1-ELE-007), preserve ELE001 scope warning for final adjudication; do not repeat these cards."
+}

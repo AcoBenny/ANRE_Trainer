@@ -1,0 +1,508 @@
+{
+  "checkpoint": "CKPT-168",
+  "date": "2026-11-17",
+  "branch_base_head": "582f44ea365e2e83edf91c225d40a25cdae1c049",
+  "units": 15,
+  "grade_ids": 15,
+  "source_note": "2026 tariff official 82/2025 source indexed, ANRE currently advertises 82/2025 under legal acts; 2026 full official page fetch 502. Exact 2023 ANRE bibliography visually checked. Administrative facts supported in model/terms, no independent review.",
+  "method": "Current primary sources checked versus exact prior research and canonical QABC, 15 new non-overlapping units",
+  "no_learner_approvals": true,
+  "passed_stage": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+  "cards": [
+    {
+      "unit_id": "AU-e95951c55b615828",
+      "representative_id": "G2-LEG-070",
+      "member_ids": [
+        "G2-LEG-070"
+      ],
+      "qabc_sha256": "e95951c55b6158288f099a0beac297ea6d7858a9a3cd7093e9565185b8122046",
+      "question_original_UNCHANGED": "Cum poate fi dovedită experiența profesională, acolo unde este cazul, conform informațiilor ANRE?",
+      "ABC_original_UNCHANGED": {
+        "A": "Prin carnet de muncă sau adeverințe și, după caz, raport/extras din Registrul de evidență a salariaților",
+        "B": "Numai prin declarație verbală",
+        "C": "Numai prin factura de energie electrică"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-070": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: dovada experienței se face cu carnet/adeverințe/extras registru, când este cazul. B/C nu probează experiența profesională.",
+      "source_rule": "Reg.66/2023 art.17(1)(e); ANRE A1.I lit.e",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+      "source_access": "PRIMARY_HTML_ARTICLE_17_REOPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE Reg66/2023 art.17(1)(e)",
+        "reasoning_A": "A work book/attestations and employment register extract where appropriate",
+        "reasoning_B": "B oral-only not acceptable proof",
+        "reasoning_C": "C electricity bill cannot prove professional experience"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-07b288aa04a87371",
+      "representative_id": "G2-LEG-071",
+      "member_ids": [
+        "G2-LEG-071"
+      ],
+      "qabc_sha256": "07b288aa04a87371b6cc2a04e804a5e1f5f5289e33877f608e9db8903f3cdfd3",
+      "question_original_UNCHANGED": "Declarația de consimțământ privind colectarea și prelucrarea datelor personale este enumerată de ANRE în documentele pentru autorizare?",
+      "ABC_original_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru verificatori"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-071": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: declarația consimțământ pentru date personale este listată expres; B neagă lista, C o limitează eronat la verificatori.",
+      "source_rule": "Reg.66/2023 art.17(1)(f); ANRE A1.I lit.f",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+      "source_access": "PRIMARY_HTML_ARTICLE_17_REOPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "Reg66/2023 art17(1)(f)",
+        "reasoning_A": "A yes consent statement is listed",
+        "reasoning_B": "B no contradicts express item f",
+        "reasoning_C": "C only for verifiers false, also electrician applicant"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-9bd1329cb1a2c240",
+      "representative_id": "G2-LEG-072",
+      "member_ids": [
+        "G2-LEG-072"
+      ],
+      "qabc_sha256": "9bd1329cb1a2c240a41825d0cb8bdf2f20ee60afdfe48506a74d00a91c8f575f",
+      "question_original_UNCHANGED": "Ce dovadă financiară este enumerată în dosarul de autorizare?",
+      "ABC_original_UNCHANGED": {
+        "A": "Copia chitanței de achitare a tarifului pentru autorizare",
+        "B": "Extrasul de cont al angajatorului",
+        "C": "Factura de energie electrică a locuinței"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-072": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: copia chitanței achitării tarifului este enumerată; ordinul de plată este posibil prin canalul de achitare, dar B/C nu sunt documente de dovadă a taxei de autorizare.",
+      "source_rule": "Reg.66/2023 art.17(1)(g); ANRE A1.I lit.g",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+      "source_access": "PRIMARY_HTML_ARTICLE_17_REOPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "Reg66/2023 art17(1)(g)",
+        "reasoning_A": "A authorization fee receipt copy explicitly listed",
+        "reasoning_B": "B employer bank extract is not the listed fee proof",
+        "reasoning_C": "C household electric invoice is not the authorization fee receipt"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-11a4e32b38e7bdf4",
+      "representative_id": "G2-LEG-073",
+      "member_ids": [
+        "G2-LEG-073"
+      ],
+      "qabc_sha256": "11a4e32b38e7bdf4c0678564db341423e2aa4e768dcb5ae3dcec7e144a4c57d1",
+      "question_original_UNCHANGED": "Pentru acceptarea dosarului de autorizare, cererea trebuie să fie însoțită de toate documentele cerute de regulament?",
+      "ABC_original_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar de actul de identitate"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-073": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: dosarul trebuie să conțină toate documentele prevăzute pentru solicitantul în cauză. B și C sunt insuficiente; nu presupune că orice document condițional se aplică tuturor candidaților.",
+      "source_rule": "ANRE A1.II lit.b; Reg.66/2023 art.17 și condiții acceptare dosar",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "Reg66/2023 art29(b)",
+        "reasoning_A": "A yes all required documents accompany application",
+        "reasoning_B": "B no contradicts cumulative eligibility requirement",
+        "reasoning_C": "C only ID fails completeness requirement"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-c79d169c7b05e8f7",
+      "representative_id": "G2-LEG-074",
+      "member_ids": [
+        "G2-LEG-074"
+      ],
+      "qabc_sha256": "c79d169c7b05e8f71be5111a4200e85b799762af82066eadca875d3c3439a3a8",
+      "question_original_UNCHANGED": "Acceptarea dosarului de autorizare presupune și demonstrarea experienței profesionale minime, în conformitate cu cerințele regulamentului?",
+      "ABC_original_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Numai pentru Gradul I"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-074": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: pentru acceptare se demonstrează experiența minimă în măsura cerută de calificarea/gradul aplicabil. B neagă condiția, C o limitează fals exclusiv la Grad I.",
+      "source_rule": "ANRE A1.II lit.c; Reg.66/2023 art.16 calificare + experiență",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED; QUALIFICATION_CONDITIONS_NOT_UNIVERSAL",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "Reg66/2023 art29(c), art16",
+        "reasoning_A": "A applicant needs minimum experience consistent with qualification when required",
+        "reasoning_B": "B no contradicts art29(c) subject to regulatory category",
+        "reasoning_C": "C grade I only is unsupported, rule is tied to qualification/degree"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-56ec07544ee0efa8",
+      "representative_id": "G2-LEG-075",
+      "member_ids": [
+        "G2-LEG-075"
+      ],
+      "qabc_sha256": "56ec07544ee0efa8e0291d57b81aa303dc37a37802ea2ecce7571e05a02d22ee",
+      "question_original_UNCHANGED": "Examenele de autorizare a electricienilor se organizează, de regulă, de câte ori pe an?",
+      "ABC_original_UNCHANGED": {
+        "A": "De două ori pe an",
+        "B": "O singură dată la cinci ani",
+        "C": "În fiecare lună, obligatoriu"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-075": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: ANRE anunță de regulă două sesiuni de examen anual; B confundă cu 5 ani de vizare, C lunar obligatoriu nu apare.",
+      "source_rule": "ANRE A1.III, organizarea examenului",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE current web information A1 III",
+        "reasoning_A": "A normally two exam sessions annually",
+        "reasoning_B": "B once every five years conflates exam schedule with visa",
+        "reasoning_C": "C mandatory monthly contradicts normally twice yearly"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-5120aae8c0971046",
+      "representative_id": "G2-LEG-076",
+      "member_ids": [
+        "G2-LEG-076"
+      ],
+      "qabc_sha256": "5120aae8c09710464d6c0c59cc1d701328f2ff83cb00a34b4d67b59ab527e251",
+      "question_original_UNCHANGED": "La ce interval este prevăzută vizarea periodică a autorizației de electrician?",
+      "ABC_original_UNCHANGED": {
+        "A": "O dată la cinci ani",
+        "B": "Lunar",
+        "C": "O dată la zece ani"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-076": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: vizarea periodică este o dată la 5 ani. B lunar, C la 10 ani sunt neconforme.",
+      "source_rule": "ANRE A2, vizare periodică; Reg.66/2023 art.30",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "Reg66/2023 art30(1)",
+        "reasoning_A": "A visa within five years from issuance or last visa",
+        "reasoning_B": "B monthly is false",
+        "reasoning_C": "C ten years is false"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-7080838763fcc55c",
+      "representative_id": "G2-LEG-077",
+      "member_ids": [
+        "G2-LEG-077"
+      ],
+      "qabc_sha256": "7080838763fcc55c9bb8be5fff1d9d978ef5de1dc7a92910f7f2b66d3140ab9e",
+      "question_original_UNCHANGED": "Pentru vizarea periodică a autorizației de electrician, ANRE enumeră dovada absolvirii în ultimele 12 luni a unui curs de pregătire teoretică de minimum: ",
+      "ABC_original_UNCHANGED": {
+        "A": "20 de ore",
+        "B": "2 ore",
+        "C": "100 de ore"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-077": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: minimul reglementat este 20 ore în ultimele 12 luni; 2 ore insuficient, 100 ore nu este MINIMUL stabilit, deși un curs mai lung nu e interzis.",
+      "source_rule": "ANRE A2 lit.c, curs pentru vizarea periodică",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE current info - periodic visa; 20h training previous12mo",
+        "reasoning_A": "A exact regulatory minimum 20 hours",
+        "reasoning_B": "B 2h below minimum",
+        "reasoning_C": "C 100h could exceed minimum but is not exact specified minimum"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-911cf371783c9628",
+      "representative_id": "G2-LEG-078",
+      "member_ids": [
+        "G2-LEG-078"
+      ],
+      "qabc_sha256": "911cf371783c9628c1bf89d2e68d9a4a4046bacf8efc27628d3e9d97c5ca9013",
+      "question_original_UNCHANGED": "Ce se întâmplă dacă autorizația de electrician nu este vizată până la termenul de vizare?",
+      "ABC_original_UNCHANGED": {
+        "A": "Titularul nu are dreptul să desfășoare activități de proiectare, executare și verificare până la vizare",
+        "B": "Autorizația se transformă automat în Gradul I",
+        "C": "Nu există nicio consecință"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-078": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: dacă nu e vizată în termen, autorizația nu conferă drept de proiectare/executare/verificare până la vizare; B/C contrazic restricția.",
+      "source_rule": "ANRE A2, regulă vizare periodică",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "Reg66/2023 art30(3) + ANRE current info A2",
+        "reasoning_A": "A activities in electrical installations prohibited until visa; ANRE lists design execution verification",
+        "reasoning_B": "B no automatic grade conversion",
+        "reasoning_C": "C consequences exist; may not act before visa"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-6f67293be795236f",
+      "representative_id": "G2-LEG-079",
+      "member_ids": [
+        "G2-LEG-079"
+      ],
+      "qabc_sha256": "6f67293be795236f03cd6a6349f37d7a74bdc46d9912c982218c167504eea5d6",
+      "question_original_UNCHANGED": "Autorizația de electrician este valabilă numai în concordanță cu ce evidență a autorității competente?",
+      "ABC_original_UNCHANGED": {
+        "A": "Registrul electronic de evidență",
+        "B": "Registrul auto",
+        "C": "Registrul comerțului al angajatorului, exclusiv"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-079": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: valabilitatea presupune concordanță cu Registrul electronic și act de identitate. Registrele auto ori exclusiv cel al angajatorului sunt irelevante.",
+      "source_rule": "ANRE A2, Registrul electronic de evidență",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE current info A2 - validity and electronic registry",
+        "reasoning_A": "A electronic authority register explicitly governs validity",
+        "reasoning_B": "B vehicle register unrelated",
+        "reasoning_C": "C employer trade register only unrelated"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-eeca1a252d40f916",
+      "representative_id": "G2-LEG-080",
+      "member_ids": [
+        "G2-LEG-080"
+      ],
+      "qabc_sha256": "eeca1a252d40f91695e897a93fa008e62f56fad7a0ea6cb27df8d78da7268020",
+      "question_original_UNCHANGED": "Prin ce mijloace poate solicita solicitantul înregistrarea la ANRE a documentelor prevăzute în regulament?",
+      "ABC_original_UNCHANGED": {
+        "A": "Prin portalul autorității competente sau prin încărcare în platforma PCUe",
+        "B": "Numai prin telefon",
+        "C": "Numai prin mesaj SMS"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-080": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: ANRE enumeră portalul autorității și PCUe ca mijloace de înregistrare. B/C, numai telefon/SMS, nu sunt canale de transmitere a documentelor.",
+      "source_rule": "ANRE, Înregistrarea cererilor autorizare/vizare, secțiune după C2",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE current info - registration means portal or PCUe",
+        "reasoning_A": "A enumerates official registration means",
+        "reasoning_B": "B telephone-only not an accepted filing method",
+        "reasoning_C": "C SMS-only not an accepted filing method"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-bd2691e93b5d1acc",
+      "representative_id": "G2-LEG-081",
+      "member_ids": [
+        "G2-LEG-081"
+      ],
+      "qabc_sha256": "bd2691e93b5d1acc07b2ac97d062cb62e14bf83fc942be40059316f0c0455c92",
+      "question_original_UNCHANGED": "Conform tarifelor publicate de ANRE, care este tariful pentru autorizarea Gradului II de tip A sau de tip B?",
+      "ABC_original_UNCHANGED": {
+        "A": "250 lei",
+        "B": "125 lei",
+        "C": "500 lei"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-081": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: autorizarea Grad II tip A SAU tip B costă 250 lei; 125 lei este vizare, 500 lei este pentru A+B. Verificare document 82/2025 pentru anul 2026, nu doar ANRE tabel vechi 118/2023.",
+      "source_rule": "Ordin ANRE 82/2025 tarife pentru 2026, anexa 3 tabel nr.1 poziția 2",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "source_access": "OFFICIAL_2026_ORDER_INDEXED; FULL_PAGE_DIRECT_OPEN_502; ANRE_2026_LEGISLATION_INDEX_CROSS_CHECK",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE Ordin82/2025 for 2026 Annex3 Table1 row2",
+        "reasoning_A": "A 250lei single type A or type B in 2026",
+        "reasoning_B": "B 125lei is periodic single-type visa, not initial authorization",
+        "reasoning_C": "C 500lei is joint A+B, not single type"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-2beb2cf09ad73f7b",
+      "representative_id": "G2-LEG-082",
+      "member_ids": [
+        "G2-LEG-082"
+      ],
+      "qabc_sha256": "2beb2cf09ad73f7b0e747446b39b1f344db3494676e3ec773409e1cdff31d957",
+      "question_original_UNCHANGED": "Conform tarifelor publicate de ANRE, care este tariful pentru autorizarea Gradului II de tip A+B?",
+      "ABC_original_UNCHANGED": {
+        "A": "500 lei",
+        "B": "250 lei",
+        "C": "125 lei"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-082": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: autorizarea combinată Grad II A+B costă 500 lei; B 250 lei pentru un tip separat; C 125 lei este vizare de un tip.",
+      "source_rule": "Ordin ANRE 82/2025 tarife 2026, anexa 3 tabel nr.1 poziția 4",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "source_access": "OFFICIAL_2026_ORDER_INDEXED; FULL_PAGE_DIRECT_OPEN_502; SECONDARY_CURRENT_TABLE_CROSS_CHECK",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE Ordin82/2025 for 2026 Annex3 Table1 row4",
+        "reasoning_A": "A 500lei for grade II combined A+B",
+        "reasoning_B": "B 250lei is single type A or B authorization, not both",
+        "reasoning_C": "C 125lei single-type visa, not A+B initial authorization"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-bdede3f2fefe080e",
+      "representative_id": "G2-LEG-083",
+      "member_ids": [
+        "G2-LEG-083"
+      ],
+      "qabc_sha256": "bdede3f2fefe080eb2eb73adb86ee188b9834850866ae806f3701782166330bb",
+      "question_original_UNCHANGED": "Unde este publicat, de regulă, anunțul privind desfășurarea unei sesiuni de autorizare?",
+      "ABC_original_UNCHANGED": {
+        "A": "Pe pagina de internet a Autorității competente",
+        "B": "Doar la sediul angajatorului",
+        "C": "Doar în presa locală"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-083": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: ANRE publică anunțurile sesiunilor pe site-ul său; B/C impun canale exclusive neprevăzute.",
+      "source_rule": "ANRE A1.III, anunț sesiuni",
+      "source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "source_access": "PRIMARY_ANRE_WEB_PAGE_OPENED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE current info - session notice on authority website",
+        "reasoning_A": "A listed official announcement location",
+        "reasoning_B": "B employer-only excludes authority publication",
+        "reasoning_C": "C local-press-only excludes authority publication"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-7b4230950705795f",
+      "representative_id": "G2-LEG-100",
+      "member_ids": [
+        "G2-LEG-100"
+      ],
+      "qabc_sha256": "7b4230950705795f6f79309ad61b873411d104325841ecaad8c77507b6973646",
+      "question_original_UNCHANGED": "Care este documentul indicat de ANRE la punctul 2 pentru tematica Gradului II?",
+      "ABC_original_UNCHANGED": {
+        "A": "Legea nr. 123/2012",
+        "B": "Legea nr. 50/1991",
+        "C": "Legea nr. 10/1995"
+      },
+      "imported_keys_UNCHANGED": {
+        "G2-LEG-100": "A"
+      },
+      "classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_and_linguistic_analysis": "A: documentul de la poziția 2 din bibliografia oficială este Legea 123/2012. B Legea 50/1991 și C Legea 10/1995 nu sunt documentul de la punctul 2.",
+      "source_rule": "ANRE bibliografie 05.2023 pagina 1 (P0), rând 2 Legea 123/2012, Grad II DA",
+      "source_url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+      "source_access": "PRIMARY_ANRE_PDF_OPENED_AND_PAGE0_SCREENSHOT_VISUALLY_VERIFIED",
+      "prior_research": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "locator": "ANRE official 05.2023 exam bibliography PDF page1 line2 domain Legislație",
+        "reasoning_A": "A bibliography item2 = Legea energiei electrice și gazelor naturale, Legea123/2012",
+        "reasoning_B": "B Legea50/1991 is not listed at item2",
+        "reasoning_C": "C Legea10/1995 is not listed at item2"
+      },
+      "approved_for_learning": "NO",
+      "genuine_independent_QA": "NOT_RUN",
+      "official_ANRE_answer_key_verified": "NO",
+      "canonical_mutation": false
+    }
+  ]
+}

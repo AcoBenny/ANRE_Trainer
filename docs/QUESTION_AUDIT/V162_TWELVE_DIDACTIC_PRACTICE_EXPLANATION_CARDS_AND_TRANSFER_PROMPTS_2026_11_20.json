@@ -1,0 +1,399 @@
+{
+  "schema": "v162_12_didactic_explanation_cards_with_transfer_questions",
+  "created_date": "2026-11-20",
+  "baseline_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "prior_didactic_ckpt249_blob": "b58291f25ddea9bf74d5a63eb1dd9dc71a643a95",
+  "question_count": 12,
+  "grade_ids": 12,
+  "all_12_official": false,
+  "all_imported_keys": "A_UNCHANGED",
+  "position_bias_correction_not_applied": true,
+  "added_reformulation_prompts": 12,
+  "learner_approved_count": 0,
+  "cards": [
+    {
+      "unit_id": "QABC-0539",
+      "card_id": "EXPL_QABC-0539",
+      "grade_id": "G2-ELEC-065",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Simbolul uzual pentru inductanță este:",
+      "options": {
+        "A": "L",
+        "B": "R",
+        "C": "G"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A L este simbolul standard al inductanței; B R rezistența electrică, C G conductanța. Nu se confundă simbolul de mărime cu unitatea henry.",
+        "previous_research_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Ce reprezintă litera H în raport cu inductanța L?",
+          "answer": "H este unitatea henry, nu simbolul mărimii inductanță."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0540",
+      "card_id": "EXPL_QABC-0540",
+      "grade_id": "G2-ELEC-066",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Simbolul uzual pentru capacitate este:",
+      "options": {
+        "A": "C",
+        "B": "L",
+        "C": "I"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A C simbolul uzual al capacității electrice; B L inductanță, C I curent electric. Unități distincte F, H și A.",
+        "previous_research_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Capacitatea este notată C. Care este unitatea SI?",
+          "answer": "Farad, cu simbol F."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0558",
+      "card_id": "EXPL_QABC-0558",
+      "grade_id": "G2-ELEC-067",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Într-un circuit rezistiv pur alimentat în curent alternativ sinusoidal, factorul de putere este: ",
+      "options": {
+        "A": "1",
+        "B": "0",
+        "C": "-1 în orice situație"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A sarcină pur rezistivă sinusoidală are φ=0 și PF=cosφ=1; B=0 caracterizează element pur reactiv, C=-1 nu descrie consumator pasiv în convenția uzuală. Nu deduceți implicația inversă PF=1 ⇒ toate componentele rezistive.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Poate un circuit RLC serie avea factor de putere 1 chiar dacă include L și C?",
+          "answer": "Da, la rezonanță, când reactanțele se compensează."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0559",
+      "card_id": "EXPL_QABC-0559",
+      "grade_id": "G2-ELEC-068",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Într-un circuit inductiv pur, curentul este defazat față de tensiune astfel încât: ",
+      "options": {
+        "A": "curentul rămâne în urmă față de tensiune cu 90°",
+        "B": "curentul este în fază cu tensiunea",
+        "C": "curentul este înainte cu 180°"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A pentru element L ideal curentul întârzie exact 90° față de U; B φ=0 pentru R ideal, C 180° nu este defazajul inductiv sinusoidal. Calificativul «pur» este esențial.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Ce se schimbă în defazaj dacă bobina are și o rezistență R nenulă?",
+          "answer": "Unghiul este sub 90° în modelul RL serie cu X_L>0."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0560",
+      "card_id": "EXPL_QABC-0560",
+      "grade_id": "G2-ELEC-069",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Într-un circuit capacitiv pur, curentul este: ",
+      "options": {
+        "A": "înaintea tensiunii cu 90°",
+        "B": "în urmă cu 90°",
+        "C": "în fază cu tensiunea"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A curentul prin C ideal conduce tensiunea cu 90°; B este sensul invers de fazare, C zero este cazul rezistiv. Regim sinusoidal, fără rezistența parazită.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Dacă circuitul capacitiv include și rezistență R, curentul mai conduce cu exact 90°?",
+          "answer": "Nu; unghiul este sub 90° în modul, în model RC."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0561",
+      "card_id": "EXPL_QABC-0561",
+      "grade_id": "G2-ELEC-070",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Într-un circuit serie R-L-C, rezonanța apare când: ",
+      "options": {
+        "A": "reactanța inductivă și cea capacitivă se compensează",
+        "B": "rezistența devine infinită",
+        "C": "curentul devine obligatoriu zero"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A rezonanța RLC serie apare când XL=XC astfel reactanțele se compensează; B R nu devine infinit, C curentul nu este zero obligatoriu; la sursă cu U dat poate fi maxim la rezonanță.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "La rezonanță RLC serie cu X_L=X_C, cum este reactanța netă?",
+          "answer": "Este zero: X_L−X_C=0."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0562",
+      "card_id": "EXPL_QABC-0562",
+      "grade_id": "G2-ELEC-071",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Într-un circuit serie R-L-C la rezonanță ideală, impedanța este determinată de: ",
+      "options": {
+        "A": "rezistența R",
+        "B": "numai reactanța capacitivă",
+        "C": "suma XL + XC"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A impedanța RLC serie la rezonanță este Z=R în model ideal, deoarece XL−XC=0. B doar XC fals, C XL+XC nu se însumează ca mărimi pozitive în impedanța serie deoarece au semne opuse.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "La rezonanța serie RLC, ce impedență vede sursa dacă R=12 Ω?",
+          "answer": "În model ideal, Z=12 Ω, pur rezistiv la intrare."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0563",
+      "card_id": "EXPL_QABC-0563",
+      "grade_id": "G2-ELEC-072",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Legea lui Ohm pentru o porțiune de circuit poate fi exprimată ca: ",
+      "options": {
+        "A": "U = R·I",
+        "B": "U = R/I",
+        "C": "U = I/R"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A U=R·I la rezistor ohmic (și condiții termice constante). B R/I și C I/R nu au dimensiunile tensiunii. Materiale neohmice necesită relație U-I specifică.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Pentru R=4 Ω și I=3 A, care este tensiunea în model ohmic?",
+          "answer": "U=R·I=12 V."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0564",
+      "card_id": "EXPL_QABC-0564",
+      "grade_id": "G2-ELEC-073",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Într-un circuit cu rezistențe în serie, curentul este: ",
+      "options": {
+        "A": "același prin toate rezistențele",
+        "B": "zero prin prima rezistență",
+        "C": "diferit în mod obligatoriu prin fiecare rezistență"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A curentul este identic prin rezistoare în serie fără ramificații; B zero doar dacă întrerupere/alte condiții, C «diferit în mod obligatoriu» contrazice continuitatea sarcinii în model concentrat.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Trei rezistoare în serie au rezistențe diferite. Cum se compară intensitățile prin ele?",
+          "answer": "Sunt egale în același traseu, fără ramificații."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0565",
+      "card_id": "EXPL_QABC-0565",
+      "grade_id": "G2-ELEC-074",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Într-o conexiune paralelă ideală, tensiunea pe ramuri este: ",
+      "options": {
+        "A": "aceeași",
+        "B": "întotdeauna zero",
+        "C": "diferită în mod obligatoriu"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A două ramuri conectate la aceleași două noduri au aceeași tensiune; B «întotdeauna zero» fals dacă există alimentare, C «obligatoriu diferită» falsă. Ignorăm inductanțele parazite la regim rapid.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Două ramuri ideale în paralel primesc tensiuni diferite dacă sunt conectate la aceleași două noduri?",
+          "answer": "Nu. Au aceeași diferență de potențial între noduri."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0566",
+      "card_id": "EXPL_QABC-0566",
+      "grade_id": "G2-ELEC-075",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Puterea activă într-un circuit monofazat sinusoidal poate fi exprimată prin: ",
+      "options": {
+        "A": "P = U·I·cosφ",
+        "B": "P = U/I",
+        "C": "P = U·I·sinφ în orice circuit"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A P=U_rms I_rms cosφ în monofazat sinusoidal. B U/I are unități de rezistență; C U I sinφ este Q (valoarea reactivei în convenții), nu P universal. Nu se generalizează direct la forme deformate.",
+        "previous_research_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Cum se schimbă formula dacă întrebi despre puterea reactivă în locul puterii active, în c.a. sinusoidal?",
+          "answer": "Q=U_rms I_rms sinφ, în convenția uzuală."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0567",
+      "card_id": "EXPL_QABC-0567",
+      "grade_id": "G2-ELEC-076",
+      "learning_track": "SUPPLEMENTAL_PRACTICE",
+      "original_official_ANRE_example": false,
+      "original_stem_and_choice_match_v149": true,
+      "imported_key_UNCHANGED": "A",
+      "original_stem": "Unitatea de măsură SI pentru rezistența electrică este: ",
+      "options": {
+        "A": "ohmul (Ω)",
+        "B": "faradul (F)",
+        "C": "henry-ul (H)"
+      },
+      "research_draft": {
+        "original_semantics_and_A_B_C_model": "A ohmul Ω unitate pentru rezistență electrică. B faradul F pentru capacitate și C henry H pentru inductanță; OHM nu trebuie confundată cu simbolul R al mărimii.",
+        "previous_research_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "source_exact_paragraph_reopened_this_turn": false,
+        "offline_anchor": null,
+        "reformulation_exercise_unofficial": {
+          "prompt": "Ce reprezintă R și ce reprezintă Ω?",
+          "answer": "R este simbolul rezistenței ca mărime, Ω este unitatea ohm."
+        },
+        "original_question_answer_position_bias": "A_STORED_FOR_ALL_TRAINER_AUTHORED_ITEMS_NEEDS_SHUFFLE_AFTER_APPROVAL",
+        "status": "UNVERIFIED_TEACHING_DRAFT"
+      },
+      "qa": {
+        "qualified_independent": "NOT_RUN",
+        "official_scored_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    }
+  ]
+}

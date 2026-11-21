@@ -1,0 +1,110 @@
+{
+  "checkpoint": "CKPT-117",
+  "date": "2026-11-17",
+  "input_head": "cf661db910f035614935a53fff3899ffb4b8f3f0",
+  "protocol": "MICRO5 batch 2 of 2: 3 unique QABC units / 6 grade IDs",
+  "review": "Single assistant applied technical/source/linguistic checklists; independent child agent not available",
+  "permission": "Audit branch documentation/ledger only, no original questions, keys, master, HTML, APK edits, merge or release",
+  "gates": {
+    "exam_edition": "UNVERIFIED",
+    "independent_review": "NOT_RUN",
+    "learning_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-8f8ab4fe551ac4b3",
+      "representative_id": "G1-ELE-059",
+      "member_ids": "G1-ELE-059;G2-ELEC-204",
+      "qabc_sha256": "8f8ab4fe551ac4b35fe33f9b1ac41e44664182210f979da5198c5acd8c7d21c5",
+      "original_keys_by_id_JSON": "{\"G1-ELE-059\":\"C\",\"G2-ELEC-204\":\"C\"}",
+      "question_original": "În cazul conexiunii în stea la transformator:",
+      "A_original": "tensiunea de linie este egala cu tensiunea de faza",
+      "B_original": "curentul de linie este egal cu ~1,73 x curentul de faza",
+      "C_original": "tensiunea de linie este egala cu ~1,73 x tensiunea de faza",
+      "source": [
+        {
+          "url": "https://eepower.com/technical-articles/determining-phase-and-line-voltages-and-currents-in-wye-connected-generators/",
+          "locator": "EE Power, Amna Ahmad 2022, 'Line Currents and Voltages' and vector derivation",
+          "scope": "Star winding phase and line quantities in balanced 3-phase system"
+        }
+      ],
+      "context": "În conexiunea stea (Y), fiecare fază are un capăt comun și celălalt conectat direct la o linie. Curentul de linie este exact curentul de fază, I_L=I_f. În regim trifazat simetric, vectorii tensiunilor de fază sunt defazați cu 120°, iar diferența lor este tensiunea de linie: U_L=√3·U_f≈1,73U_f. EE Power dă ambele relații și demonstrația fazorială, deci C are dovadă afirmativă. A descrie relația tensiunilor în triunghi, iar B confundă curentul în stea cu cel din triunghi.",
+      "options": {
+        "A": "Nu, la stea tensiunile de linie și fază au raport √3 în sistem simetric.",
+        "B": "Nu, curentul de linie coincide cu curentul de fază, nu este de 1,73 ori mai mare.",
+        "C": "Da, U_linie=√3U_fază în stea trifazată simetrică."
+      },
+      "pairwise": "A-C sunt relații de conexiuni diferite; B-C pune factorul √3 la mărimi diferite; A-B sunt distrageri ce nu satisfac geometria stelei.",
+      "reverse_counterexample": "La triunghi U_linie=U_fază, iar I_linie=√3·I_fază. Pentru tensiuni nesimetrice nu se aplică universal factorul unic √3.",
+      "finding": "INTENDED_C_SUPPORTED_STAR_SINUSOIDAL_BALANCE",
+      "caveat": "Sursa explică generator în Y, aceeași topologie fază/linie se aplică înfășurării de transformator; ediția bibliografiei de examen necertificată.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-6727c53487b6bdbf",
+      "representative_id": "G1-ELE-060",
+      "member_ids": "G1-ELE-060;G2-ELEC-205",
+      "qabc_sha256": "6727c53487b6bdbfbf8f2096bfd196bc29a09620302df94387f7c7b63306c10c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-060\":\"A\",\"G2-ELEC-205\":\"A\"}",
+      "question_original": "Efectul pelicular al curentului alternativ este utilizat în:",
+      "A_original": "încălzirea materialelor prin inducţie",
+      "B_original": "eliminarea dezechilibrelor din reţeaua electrică",
+      "C_original": "eliminarea distorsiunilor undelor de curent",
+      "source": [
+        {
+          "url": "https://2024.help.altair.com/2024.1/flux/Flux/Help/english/UserGuide/English/topics/LeChauffageParInductionNotionsPrincipales.htm",
+          "locator": "Altair Flux 2024.1, Induction heating: fundamentals, 'Principle' + 'Main parameters'",
+          "scope": "Induced eddy currents and surface skin-depth distribution in conducting workpiece"
+        }
+      ],
+      "context": "Încălzirea prin inducție generează printr-un câmp magnetic variabil curenți turbionari în piesa conductoare. Curentul indus disipă căldură Joule, iar frecvența controlează adâncimea de pătrundere: curenții se concentrează spre suprafață când adâncimea este mică. Altair numește explicit fenomenul «skin effect» și rolul lui în încălzirea prin inducție. Efectul pelicular nu echilibrează sarcinile dintre fazele rețelei și nu elimină armonicile de curent. A are suport afirmativ cu această delimitare.",
+      "options": {
+        "A": "Da, efectul pelicular este exploatat la încălzirea electrică prin inducție.",
+        "B": "Nu, nu este metoda de eliminare a dezechilibrelor de fază.",
+        "C": "Nu, distribuția în secțiune nu este anularea distorsiunii formei de undă."
+      },
+      "pairwise": "A-B încălzire vs echilibrare; A-C efect termic vs formă de undă; B-C sunt două obiective nelegate de funcția fizică a efectului pelicular.",
+      "reverse_counterexample": "La frecvențe joase adâncimea crește și există încălzire de volum; nu limităm fenomenul la încălzire exclusiv superficială.",
+      "finding": "INTENDED_A_SUPPORTED_INDUCTION_SKIN_EFFECT",
+      "caveat": "Curentul indus produce căldura prin Joule, nu «pielea» ca mecanism independent; în materiale feromagnetice pot exista și pierderi de histerezis.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-0a63250b325369f2",
+      "representative_id": "G1-ELE-065",
+      "member_ids": "G1-ELE-065;G2-ELEC-210",
+      "qabc_sha256": "0a63250b325369f244947c453b3e03891a164b72b00ca3e1df521dc87cacde9e",
+      "original_keys_by_id_JSON": "{\"G1-ELE-065\":\"C\",\"G2-ELEC-210\":\"C\"}",
+      "question_original": "În cazul producerii unui scurtcircuit într-o instalaţie, are loc următorul fenomen:",
+      "A_original": "creste tensiunea de alimentare a instalaţiei",
+      "B_original": "creste impedanţa echivalenta a instalaţiei",
+      "C_original": "creste curentul de alimentare a instalaţiei",
+      "source": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Short-circuit_current_at_the_secondary_terminals_of_a_MV/LV_distribution_transformer",
+          "locator": "Schneider Electrical Installation Guide, one-transformer example Isc=In×100/Usc and numerical 13.7kA",
+          "scope": "Low impedance bolted short circuit with finite transformer/source impedance"
+        },
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Calculation_of_minimum_levels_of_short-circuit_current",
+          "locator": "Schneider, minimum short circuit loop calculation: 0.8U=Isc Zd",
+          "scope": "Loop impedance relation in standard low-voltage fault protection"
+        }
+      ],
+      "context": "Scurtcircuitul formează o cale de impedanță redusă între conductoare sau față de pământ și apare curent mare de defect, limitat de sursă și de impedanța buclei. În modelul obișnuit, I_sc≈U/Z și Schneider ilustrează calculul unui curent de 13,7 kA la bornele transformatorului. Prin urmare crește curentul din circuitul alimentat, ceea ce susține C; tensiunea la defect poate cădea, nu trebuie să crească, iar impedanța relevantă nu devine mai mare în virtutea unui scurtcircuit. Factorii tranzitorii și alimentările electronice sunt condiții distincte.",
+      "options": {
+        "A": "Fals ca efect general: tensiunea la punctul de defect poate scădea.",
+        "B": "Fals: o punte de impedanță mică nu mărește impedanța echivalentă a căii de defect.",
+        "C": "Dovadă afirmativă: creștere curent prospectiv în bucla scurtcircuitului."
+      },
+      "pairwise": "A-C confundă tensiune și curent; B-C relația inversă I~1/Z; A-B nu descriu efectul tipic.",
+      "reverse_counterexample": "Fără sursă conectată sau cu limitare la invertor, un defect nu garantează curent arbitrar de mare; formularea presupune instalație energizată obișnuită.",
+      "finding": "INTENDED_C_SUPPORTED_SHORT_CIRCUIT_FAULT",
+      "caveat": "Mărimea exactă și temporizarea depind de impedanțe și dispozitivele de protecție.",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}

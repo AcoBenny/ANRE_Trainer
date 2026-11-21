@@ -1,0 +1,666 @@
+{
+  "checkpoint": "CKPT-149",
+  "date": "2026-11-17",
+  "baseline_head": "1993ad9ed90cae1103fd291d3551da9636d3878f",
+  "units": 15,
+  "grade_ids": 30,
+  "status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 11,
+    "CONDITIONAL_MODEL_OR_SOURCE": 4
+  },
+  "description": "Exact canonical QABC/key preserved, prior source and A/B/C review reused, no redundant source mapping; annotated technical model and counterexamples.",
+  "caution": "Independent review and official ANRE grade/key provenance not executed; source links tagged with access; no unit approved for study.",
+  "cards": [
+    {
+      "unit_id": "AU-faed8ff35fdb8d79",
+      "representative_id": "G1-ELE-071",
+      "member_ids": [
+        "G1-ELE-071",
+        "G2-ELEC-216"
+      ],
+      "qabc_sha256": "faed8ff35fdb8d7903dc04421bf0e077469d65169f2e4e73a1e41418b54335f2",
+      "question_original_UNCHANGED": "Extinderea domeniului de măsurare la voltmetre se realizează cu:",
+      "options_original_UNCHANGED": {
+        "A": "shunturi",
+        "B": "rezistente adiţionale",
+        "C": "condensatoare montate în paralel"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-071": "B",
+        "G2-ELEC-216": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Analog voltmeter range is enlarged by a series multiplier resistor; shunt would be ammeter scaling.",
+      "prior_ABC": {
+        "A": "A shunt suitable ammeter, would load voltage source",
+        "B": "B high-value series resistor limits current and extends voltmeter range",
+        "C": "C capacitors in parallel do not form DC voltmeter range extension",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+        "access": "WEB_HTML_DIRECT_READ_CURRENT_SESSION"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-d40bfa2c99a13401",
+      "representative_id": "G1-ELE-072",
+      "member_ids": [
+        "G1-ELE-072",
+        "G2-ELEC-217"
+      ],
+      "qabc_sha256": "d40bfa2c99a134018488239f8a121e5e047e57b1a89e2e882ed37f024f22e8d7",
+      "question_original_UNCHANGED": "Factorul de atenuare al unui circuit format dintr-un rezistor de rezistenţă R înseriat cu o bobină de inductanţă L, alimentate de o tensiune electromotoare constantă este egal cu:",
+      "options_original_UNCHANGED": {
+        "A": "R/L",
+        "B": "L/R",
+        "C": "1"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-072": "A",
+        "G2-ELEC-217": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "For an RL step transient e^(-Rt/L), attenuation coefficient is R/L while time constant is L/R.",
+      "prior_ABC": {
+        "A": "A R/L is exponential damping coefficient s^-1",
+        "B": "B L/R is time constant in s, not coefficient",
+        "C": "C 1 dimensionless cannot equal attenuation coefficient generally",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-5392bfc5b34cdb66",
+      "representative_id": "G1-ELE-074",
+      "member_ids": [
+        "G1-ELE-074",
+        "G2-ELEC-219"
+      ],
+      "qabc_sha256": "5392bfc5b34cdb664c0a2497cce42dff5569428c43cbf119ea24151fc5a19c4f",
+      "question_original_UNCHANGED": "Folosirea conductoarelor jumelate în construcţia LEA are ca scop principal:",
+      "options_original_UNCHANGED": {
+        "A": "reducerea pierderilor Corona",
+        "B": "reducerea solicitărilor mecanice ale stâlpilor",
+        "C": "reducerea curenţilor de scurtcircuit"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-074": "A",
+        "G2-ELEC-219": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Bundle conductors increase equivalent radius/surface gradient, reducing corona losses, but voltage and geometry are significant.",
+      "prior_ABC": {
+        "A": "A bundled phase conductors increase equivalent radius/decrease surface field, reducing corona losses",
+        "B": "B mechanical tower loads can increase with more subconductors, not main aim",
+        "C": "C short-circuit current controlled by source/line impedance, not bundling",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": null,
+        "locator": "PHYSICAL_DERIVATION_DIRECT_SOURCE_PENDING",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-fa5e005721b46549",
+      "representative_id": "G1-ELE-075",
+      "member_ids": [
+        "G1-ELE-075",
+        "G2-ELEC-220"
+      ],
+      "qabc_sha256": "fa5e005721b4654920ebb50cfc431d425d4a623fb55b82c5d6a50331ee501aac",
+      "question_original_UNCHANGED": "Formula de calcul a frecventei produsa în sistemul electroenergetic de un generator cu n [rot/min] si p perechi de poli este:",
+      "options_original_UNCHANGED": {
+        "A": "f =n p / 60",
+        "B": "f = 60 n / p",
+        "C": "f = 60 p / n"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-075": "A",
+        "G2-ELEC-220": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Synchronous generator f=np/60 with n rpm and p pole pairs; alternative ratios dimensionally fail.",
+      "prior_ABC": {
+        "A": "A f=n p/60 for p pole pairs and n rpm",
+        "B": "B 60n/p has inverted dimensions for rpm input",
+        "C": "C 60p/n inverts physical proportionality",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-6-electric-generators-and-back-emf",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-6-electric-generators-and-back-emf",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-ae2f68fc7c532592",
+      "representative_id": "G1-ELE-076",
+      "member_ids": [
+        "G1-ELE-076",
+        "G2-ELEC-221"
+      ],
+      "qabc_sha256": "ae2f68fc7c532592e11f71af755c41e94ad1dcc3ee62b28e61b70dc477a21108",
+      "question_original_UNCHANGED": "Formula e = B l v, unde e este tensiune electromotoare, B este inducţia magnetică, l este lungimea unui conductor, v este viteza de deplasare a acestuia, reprezintă o forma particulară a:",
+      "options_original_UNCHANGED": {
+        "A": "teoremelor Biot-Savart",
+        "B": "legii inducţiei electromagnetice",
+        "C": "legii circuitului magnetic"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-076": "B",
+        "G2-ELEC-221": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Motional induced emf e=Blv is a Faraday electromagnetic induction case.",
+      "prior_ABC": {
+        "A": "A Biot-Savart calculates magnetic field from current, not e=Blv",
+        "B": "B Faraday induction, motional special case |e|=Blv",
+        "C": "C magnetic circuit laws relate flux and reluctance not moving conductor EMF",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-key-equations",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-997ca119cd90035f",
+      "representative_id": "G1-ELE-078",
+      "member_ids": [
+        "G1-ELE-078",
+        "G2-ELEC-223"
+      ],
+      "qabc_sha256": "997ca119cd90035f9dad5cc2d6bea82fc3f246e04bfa8f5fb2d3ba77fa4b1e89",
+      "question_original_UNCHANGED": "Forţa care se exercită între două conductoare străbătute de curenţi electrici se numeşte:",
+      "options_original_UNCHANGED": {
+        "A": "forţă electrocinetică",
+        "B": "forţă electrodinamică",
+        "C": "forţă magnetomotoare"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-078": "B",
+        "G2-ELEC-223": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Two current-carrying conductors interact through magnetic electrodynamic force; exact Romanian category contrasted with Laplace name needs consistent glossary.",
+      "prior_ABC": {
+        "A": "A 'electrocinetică' not standard named interaction for two current-carrying wires",
+        "B": "B force interaction is electrodynamic, due to their magnetic fields",
+        "C": "C magnetomotive force is NI in A-turns, not mechanical force",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-ce8d3f759b552260",
+      "representative_id": "G1-ELE-079",
+      "member_ids": [
+        "G1-ELE-079",
+        "G2-ELEC-224"
+      ],
+      "qabc_sha256": "ce8d3f759b552260639c220555e70331bc16668b8e78f13ddf26d38d9d298081",
+      "question_original_UNCHANGED": "Tensiunea electromotoare indusă într-un circuit închis, prin variaţia fluxului magnetic, este:",
+      "options_original_UNCHANGED": {
+        "A": "direct proporţională cu variaţia în timp a fluxului magnetic",
+        "B": "invers proporţională cu variaţia în timp a fluxului magnetic",
+        "C": "dependentă de modul în care este produs fluxul magnetic"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-079": "A",
+        "G2-ELEC-224": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Faraday law e=-dPhi/dt, magnitude proportional to flux time derivative, with sign from Lenz.",
+      "prior_ABC": {
+        "A": "A e=−dΦ/dt means EMF proportional to flux RATE of variation",
+        "B": "B inverse proportionality to derivative is wrong",
+        "C": "C induced EMF arises from flux change irrespective of physical mechanism (under usual conditions)",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-a408acb2b4d82a9d",
+      "representative_id": "G1-ELE-080",
+      "member_ids": [
+        "G1-ELE-080",
+        "G2-ELEC-225"
+      ],
+      "qabc_sha256": "a408acb2b4d82a9d2ca85ebbf7a049d5b04eb66ac8a00a26695c049dce55887e",
+      "question_original_UNCHANGED": "Forţa electrodinamică exercitată între două conductoare filiforme, paralele, lungi, aflate la distanţa r, străbătute de câte un curent:",
+      "options_original_UNCHANGED": {
+        "A": "este direct proporţională cu distanţa r dintre conductoare",
+        "B": "este invers proporţională cu distanţa r dintre conductoare",
+        "C": "nu depinde de distanţa r dintre conductoare"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-080": "B",
+        "G2-ELEC-225": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Force/length between long parallel currents mu0 I1 I2/(2pi r): inverse to separation r.",
+      "prior_ABC": {
+        "A": "A F per length not proportional to r",
+        "B": "B F/l = μ0 I1 I2/(2πr) -> inverse distance",
+        "C": "C no distance dependence is false",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-aca4c87a31330958",
+      "representative_id": "G1-ELE-081",
+      "member_ids": [
+        "G1-ELE-081",
+        "G2-ELEC-226"
+      ],
+      "qabc_sha256": "aca4c87a31330958e85f9cfd7c0307262e008287329dffaf6239ac378d6cbe20",
+      "question_original_UNCHANGED": "Forţa F care se exercită asupra unei sarcini electrice q aflată într-un câmp electric de intensitate E are expresia:",
+      "options_original_UNCHANGED": {
+        "A": "F=E/q",
+        "B": "F=qE",
+        "C": "F=q/E"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-081": "B",
+        "G2-ELEC-226": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Electric field E=F/q; force on test charge F=qE, not E/q or q/E.",
+      "prior_ABC": {
+        "A": "A E/q has wrong dimensions",
+        "B": "B F=qE vector law of electric field",
+        "C": "C q/E has inverse field wrong",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-44f6dcb05cac5edf",
+      "representative_id": "G1-ELE-082",
+      "member_ids": [
+        "G1-ELE-082",
+        "G2-ELEC-227"
+      ],
+      "qabc_sha256": "44f6dcb05cac5edf01b71b2c85ec5de3be2e30c020c8fd2392505c932644f2df",
+      "question_original_UNCHANGED": "Frecvenţa unei mărimi periodice este inversul:",
+      "options_original_UNCHANGED": {
+        "A": "amplitudinii",
+        "B": "perioadei",
+        "C": "fazei"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-082": "B",
+        "G2-ELEC-227": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Frequency f=1/T of periodic quantity, not inverse amplitude or phase.",
+      "prior_ABC": {
+        "A": "A f not inverse of amplitude",
+        "B": "B f=1/T reciprocal of period",
+        "C": "C phase is angle/time origin not period",
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_06_ALL_20_FORMULA_PRE_QA_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-1-ac-sources",
+        "locator": "EDUCATIONAL_REFERENCE_AND_EXPLICIT_PHYSICAL_DERIVATION",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-1-ac-sources",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-f47bb328406b52ef",
+      "representative_id": "G1-ELE-083",
+      "member_ids": [
+        "G1-ELE-083",
+        "G2-ELEC-228"
+      ],
+      "qabc_sha256": "f47bb328406b52efb6d26a910010161c7f30c312a34065e63b50bd9c64bde74c",
+      "question_original_UNCHANGED": "Funcţionarea contoarelor de inducţie are la baza:",
+      "options_original_UNCHANGED": {
+        "A": "curenţii turbionari",
+        "B": "efectul termic al curentului electric",
+        "C": "forţa electrostatica"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-083": "A",
+        "G2-ELEC-228": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Induction meter disk torque arises from eddy currents under alternating magnetic flux; manufacturer/source for induction-meter mechanism not directly reopened.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.eit.edu.au/resources/fundamentals-of-smart-metering-kwh-and-kvarh-meters/",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-a8aa4f8d99e42382",
+      "representative_id": "G1-ELE-084",
+      "member_ids": [
+        "G1-ELE-084",
+        "G2-ELEC-229"
+      ],
+      "qabc_sha256": "a8aa4f8d99e42382fc078a59c826bcf8885f0ea6b390c194da922f62ca57e17c",
+      "question_original_UNCHANGED": "În instalaţiile de joasa tensiune, legarea la pământ este justificatã:",
+      "options_original_UNCHANGED": {
+        "A": "din motive economice",
+        "B": "pentru diminuarea suprasolicitărilor echipamentelor electrice",
+        "C": "pentru securitatea muncii"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-084": "C",
+        "G2-ELEC-229": "C"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Protective earthing in LV is a core personnel electric shock protection measure; financial/overstressing alternatives do not express its essential safety role.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Residential_electrical_installation_-_Protection_of_people",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Protection_against_electric_shock",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-6f8481cd5092811f",
+      "representative_id": "G1-ELE-085",
+      "member_ids": [
+        "G1-ELE-085",
+        "G2-ELEC-230"
+      ],
+      "qabc_sha256": "6f8481cd5092811f9b24fa0acab7bc3dd10be16a8fd98dd27c3372e64b180652",
+      "question_original_UNCHANGED": "Funcţionarea în suprasarcinã a unui transformator reprezintă:",
+      "options_original_UNCHANGED": {
+        "A": "un regim de avarie",
+        "B": "un regim temporar admisibil",
+        "C": "un regim inadmisibil"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-085": "B",
+        "G2-ELEC-230": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Transformer overload may be allowable temporarily within thermal and loading limits; categorical allowable requires duty cycle and manufacturer limits.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.se.com/sa/en/faqs/FA335959/",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": null,
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-1af9cea16ad64670",
+      "representative_id": "G1-ELE-086",
+      "member_ids": [
+        "G1-ELE-086",
+        "G2-ELEC-231"
+      ],
+      "qabc_sha256": "1af9cea16ad64670a9611a01ec70ca324ac8da51063669a3fd61724f9ebb5e9a",
+      "question_original_UNCHANGED": "Funcţionarea transformatoarelor electrice are la bazã:",
+      "options_original_UNCHANGED": {
+        "A": "fenomenul inducţiei electromagnetice",
+        "B": "efectul termic al curentului electric",
+        "C": "curenţii turbionari"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-086": "A",
+        "G2-ELEC-231": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Transformer fundamentally works by alternating flux/electromagnetic induction, not heating or eddy loss.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+        "access": "WEB_HTML_DIRECT_READ_CURRENT_SESSION"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    },
+    {
+      "unit_id": "AU-3ae4f7dcfcda3f36",
+      "representative_id": "G1-ELE-087",
+      "member_ids": [
+        "G1-ELE-087",
+        "G2-ELEC-232"
+      ],
+      "qabc_sha256": "3ae4f7dcfcda3f36093a7cbd84e2b42c8756b361f900fe4b8c7fee28688301f7",
+      "question_original_UNCHANGED": "Henry este unitatea de măsură pentru:",
+      "options_original_UNCHANGED": {
+        "A": "fluxul magnetic",
+        "B": "inductanţă",
+        "C": "inducţia magnetică"
+      },
+      "keys_imported_UNCHANGED": {
+        "G1-ELE-087": "B",
+        "G2-ELEC-232": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Henry H is inductance; weber magnetic flux, tesla flux density.",
+      "prior_ABC": {
+        "A": null,
+        "B": null,
+        "C": null,
+        "combined": null
+      },
+      "prior_source_ledger": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_07_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+      "prior_source": {
+        "url": "https://www.bipm.org/en/publications/si-brochure",
+        "locator": "",
+        "status": "PRIOR_INDEXED_EVIDENCE_NOT_ALL_REOPENED"
+      },
+      "supplemental_web_source": {
+        "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "access": "PUBLIC_SOURCE_INDEXED_OR_PREEXISTING_NOT_DIRECTLY_REOPENED"
+      },
+      "exam_grade_source_edition_verified": "NO",
+      "official_grading_key": "NOT_VERIFIED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO",
+      "key_mutation": false
+    }
+  ]
+}

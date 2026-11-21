@@ -1,0 +1,110 @@
+{
+  "checkpoint": "CKPT-111",
+  "date": "2026-11-17",
+  "input_head": "2d4160910c05415f5aaf52325766deea216d749b",
+  "protocol": "MICRO5 - 1 lot of 3 QABC units, 6 grade IDs",
+  "team_actual": "One assistant applying electrical-domain, normative-source, Romanian-linguistic and data-QA checklists sequentially; NO independent child-agent runtime available in this conversation",
+  "training": "Preserved counterexamples, linguistic cautions and bidirectional option inference. Role lessons, not model-weight training.",
+  "status": "CONTEXTUAL_DOCUMENTED_PRELIMINARY_SINGLE_ASSISTANT; NOT_APPROVED",
+  "gates": {
+    "original_qabc_and_keys": "MUST_MATCH_EXISTING_LEDGER; NEVER_CHANGED",
+    "exam_bibliography_2026": "UNVERIFIED",
+    "official_answer_key": "UNVERIFIED",
+    "independent_qa": "NOT_RUN",
+    "source_visual_screenshot": "G1-ELE-007 PDF screenshot cache miss; text accessible",
+    "learning_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-7e7d5305cca562a8",
+      "representative_id": "G1-ELE-007",
+      "member_ids": "G1-ELE-007;G2-ELEC-160",
+      "qabc_sha256": "7e7d5305cca562a8430268e4cc52759bb182bec6053a4257e2a8de12a7a031c7",
+      "keys": {
+        "G1-ELE-007": "A",
+        "G2-ELEC-160": "A"
+      },
+      "question_original": "Alunecarea s a unui motor asincron are valori:",
+      "A_original": "cuprinse între 1 si 0",
+      "B_original": "cuprinse între -1 si 0",
+      "C_original": "de regulă, mai mari decât 1",
+      "candidate_not_approved": "A, numai în regim normal de motor",
+      "source_urls": [
+        "https://energy.ece.illinois.edu/files/2016/10/9-16-16-induction-motor-seminar-handout.pdf",
+        "https://dtmc0945.github.io/L-MCI-BSc-Drive-Technology/InductionMachineEquivalentCircuit.html"
+      ],
+      "exact_locator": "University of Illinois seminar 2016, printed p37 (web extracted lines 905-922); text fetched, PDF screenshot cache miss",
+      "context": "s=(n_s-n)/n_s. La pornire n=0 si s=1. La functionare motor obisnuita 0<s<1; limita la viteza sincrona este s=0. Regimurile de generare (s<0) si franare prin contra-curent/plugging (s>1) sunt fizic posibile. Enuntul nu spune explicit «in regim normal de motor», deci A este cheia intentionata in domeniul standard, nu caracterizare universala.",
+      "option_analysis": {
+        "A": "Corect in domeniul motoring cu capete limita.",
+        "B": "Descrie regimul generator, nu mersul normal ca motor; aparatul asincron poate fizic atinge regimul.",
+        "C": "Plugging/franare poate da s>1, dar «de regula» este fals pentru motoring."
+      },
+      "pairwise": "A vs B: mod motor vs generator; A vs C: mod motor vs plugging; B vs C: generator vs plugging.",
+      "reverse_counterexample": "Rotor fortat peste viteza sincrona -> s<0, deci enunt necalificat nu descrie toate starile. Schimbarea sensului campului cand rotorul se roteste inca in vechiul sens -> s>1.",
+      "finding": "SCOPE_LIMITED_INTENDED_KEY_A; FLAG_UNQUALIFIED_ALL_REGIMES",
+      "qa_status": "SINGLE_ASSISTANT_TECH_LING_SOURCE_PASS_ONLY; INDEPENDENT_NOT_RUN"
+    },
+    {
+      "unit_id": "AU-f536d45b5c983c0a",
+      "representative_id": "G1-ELE-009",
+      "member_ids": "G1-ELE-009;G2-ELEC-161",
+      "qabc_sha256": "f536d45b5c983c0ae743516830e289fb2fb163d789cb282060ce6668b4985989",
+      "keys": {
+        "G1-ELE-009": "C",
+        "G2-ELEC-161": "C"
+      },
+      "question_original": "Care element nu se foloseşte la reglarea tensiunii în reţelele electrice:",
+      "A_original": "bobina de compensare",
+      "B_original": "transformatorul",
+      "C_original": "rezistorul",
+      "candidate_not_approved": "C in sensul dispozitivelor tipice pentru reglarea economica a tensiunii in retele AC",
+      "source_urls": [
+        "https://www.siemens-energy.com/global/en/home/products-services/product/reactors.html",
+        "https://www.hitachienergy.com/products-and-solutions/insulation-and-components/transformer-insulation-components/tap-changers/vacuum-on-load-tap-changers/on-load-tap-changers-type-vrltc"
+      ],
+      "exact_locator": "Siemens Energy, Shunt reactors in modern power systems + Series reactors portfolio; Hitachi Energy, VRLTC product scope",
+      "context": "Reactorul de compensare paralel absoarbe puterea reactiva si sustine reglarea tensiunii. Transformatoarele dotate cu prize pot schimba raportul si tensiunea; sursele fabricantilor descriu explicit ambele categorii. Rezistorul produce cadere de tensiune disipativa dar nu este dispozitivul uzual pentru reglare eficienta in reteaua electrica de transport/distributie. Formularea absoluta «nu se foloseste» nu este probata de absenta din cataloage; nu demonstram ca niciun ansamblu rezistiv nu are vreodata un rol de control. C este raspunsul intentionat, cu rezerva lingvistica.",
+      "option_analysis": {
+        "A": "Fals ca «nu se foloseste»: reactorul shunt participa explicit la reglare.",
+        "B": "Fals ca «nu se foloseste»: prizele transformatorului/OLTC regleaza tensiunea.",
+        "C": "Probabil raspunsul de examen: rezistorul nu este echipamentul uzual; negativ universal nedemonstrat."
+      },
+      "pairwise": "A/B sunt dispozitive afirmativ documentate. C se separa prin functia disipativa; din A si B corecte NU rezulta demonstratie universala pentru negatia lui C.",
+      "reverse_counterexample": "Un rezistor serie reduce tensiunea pe sarcina, dar introduce pierderi; acest fapt nu il transforma automat in echipament uzual de reglare a tensiunii retelei.",
+      "finding": "C_INTENDED_WITH_ABSOLUTE_WORDING_WARNING; NEGATIVE_UNIVERSAL_NOT_PROVEN",
+      "qa_status": "SINGLE_ASSISTANT_TECH_LING_SOURCE_PASS_ONLY; INDEPENDENT_NOT_RUN"
+    },
+    {
+      "unit_id": "AU-7b6602f5bea62535",
+      "representative_id": "G1-ELE-011",
+      "member_ids": "G1-ELE-011;G2-ELEC-163",
+      "qabc_sha256": "7b6602f5bea625356f7dd351c2ce123e8cb144c58fc56c12adf869829446dfc2",
+      "keys": {
+        "G1-ELE-011": "B",
+        "G2-ELEC-163": "B"
+      },
+      "question_original": "Bobinele pentru limitarea curenţilor de scurtcircuit au:",
+      "A_original": "rezistenta mare",
+      "B_original": "inductanţa mare",
+      "C_original": "inductanţa mica",
+      "candidate_not_approved": "B",
+      "source_urls": [
+        "https://www.siemens-energy.com/global/en/home/products-services/product/reactors.html",
+        "https://www.fdueg.com/en/current-limiting-reactors/"
+      ],
+      "exact_locator": "Siemens Energy, Series reactors portfolio + comparison; FDUEG, Current limiting reactors paragraphs on series reactance and insufficient inductance",
+      "context": "Bobinele serie de limitare adauga reactanta inductiva in calea defectului; la frecventa data X_L=2*pi*f*L. Pentru acelasi sistem, L mai mare produce X_L mai mare, reducand curentul prospectiv de scurtcircuit. Producatorul avertizeaza ca inductanta insuficienta nu limiteaza destul curentul. Rezistenta mare ar genera pierderi Joule nejustificate in regim normal. «Mare» este relativ la impedanta sistemului si la dimensionarea necesara; nu indica bobina cu L arbitrar de mare.",
+      "option_analysis": {
+        "A": "Rezistenta mare este indezirabila prin pierderi; o bobina reala are totusi rezistenta nenula.",
+        "B": "Inductanta suficient de mare pentru reactanta de limitare sustine tehnic scopul.",
+        "C": "Inductanta mica nu limiteaza eficient curentul de scurtcircuit, in conditiile aceleiasi frecvente si sistem."
+      },
+      "pairwise": "A vs B: rezistiv disipativ vs reactanta inductiva; B vs C: marime a impedantei de limitare; A vs C: ambele nefavorabile obiectivului.",
+      "reverse_counterexample": "Daca L devine aproape zero si reteaua e neschimbata, reactanta adaugata tinde spre zero si curentul de defect nu mai este redus prin bobina.",
+      "finding": "B_SUPPORTED_BY_PHYSICS_AND_MANUFACTURER; RATING_AND_CONTEXT_NOT_CERTIFIED",
+      "qa_status": "SINGLE_ASSISTANT_TECH_LING_SOURCE_PASS_ONLY; INDEPENDENT_NOT_RUN"
+    }
+  ],
+  "forward": "Fetch source + card readback then mark exactly these 3 worklist rows YES_PRELIMINARY; leave all independent QA columns NOT_RUN."
+}

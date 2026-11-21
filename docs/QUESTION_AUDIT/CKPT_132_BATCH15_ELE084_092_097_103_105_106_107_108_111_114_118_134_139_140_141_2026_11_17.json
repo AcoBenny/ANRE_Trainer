@@ -1,0 +1,476 @@
+{
+  "checkpoint": "CKPT-132",
+  "date": "2026-11-17",
+  "baseline_head": "486627aeda4ed4f54f714ec54bc9110b1bbe31fc",
+  "protocol": "BATCH15 risk-aware 1 of 2, 15 QABC units, 30 grade IDs",
+  "review": "Single assistant technical, source, semantic and data QA checklists, no real independently spawned agents",
+  "scope": "Source exact-object gaps remain explicit; canonical 2026 ANRE bibliography and question provenance NOT verified",
+  "permission": "Audit branch documentary only; original questions, options, stored keys, MASTER, HTML/APK unchanged; PR #7 Draft, no merge/release",
+  "cards": [
+    {
+      "unit_id": "AU-eea3e50085532d4d",
+      "representative_id": "G1-ELE-103",
+      "member_ids": "G1-ELE-103;G2-ELEC-246",
+      "qabc_sha256": "eea3e50085532d4dbff43b545d1b41c96728197ee27987dbd354b1166f609e46",
+      "original_keys_by_id_JSON": "{\"G1-ELE-103\":\"A\",\"G2-ELEC-246\":\"A\"}",
+      "question_original": "În cazul unei staţii cu un sistem de bare colectoare secţionat longitudinal şi prevăzut cu o cuplă longitudinală cu întreruptor şi AAR, cupla se menţine:",
+      "A_original": "în rezervă caldă;",
+      "B_original": "în rezervă rece;",
+      "C_original": "În funcţiune",
+      "stored_key_UNCHANGED": "A",
+      "positive_context": "For a sectionalizing bus coupler with breaker and automatic transfer, hot standby means associated isolators closed with the breaker open, so the automatic transfer can close it promptly.",
+      "ABC_rationales": {
+        "A": "Cupla deschisă dar separatoare închise este disponibilă pentru AAR, rezervă caldă.",
+        "B": "Rezerva rece necesită separatoare deschise, incompatibilă cu AAR imediat fără manevre suplimentare.",
+        "C": "Cupla permanent închisă nu ar fi gata de anclanșare automată a rezervei după pierderea unei secții."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "Official Romanian 2010 switching regulation provides the exact hot-standby definition for bus couplers; specific AAR logic and applicability to 2026 must still be confirmed.",
+      "scope_gate": "OFFICIAL_ROMANIAN_HOT_STANDBY_MATCH_2010_EDITION_OPEN",
+      "source": {
+        "url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G2MRX62B36YPCD3CBPN45G4UY8G",
+        "locator": "Regulament general manevre 26.08.2010, definiția «rezervă caldă» cuplă",
+        "access": "OFFICIAL_HTML_VERIFIED_2026_11_17"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-2b1be51d65318af7",
+      "representative_id": "G1-ELE-105",
+      "member_ids": "G1-ELE-105;G2-ELEC-248",
+      "qabc_sha256": "2b1be51d65318af7a7705a0948f5a972f9c5cfa55711951979584a2612a7863a",
+      "original_keys_by_id_JSON": "{\"G1-ELE-105\":\"C\",\"G2-ELEC-248\":\"C\"}",
+      "question_original": "Într-o schemă cu 1,5 întreruptoare pe circuit:",
+      "A_original": "este necesară o cuplă de ocolire;",
+      "B_original": "este necesară o cuplă transversală;",
+      "C_original": "nu sunt necesare circuite de cuplă transversală şi de ocolire",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "A breaker-and-a-half yard consists of two main buses and three circuit breakers for two circuits; this topology does not require a dedicated transverse or bypass coupling circuit.",
+      "ABC_rationales": {
+        "A": "Schema 1,5 întreruptoare oferă redundanță; cupla de ocolire distinctă nu este necesară prin definiție.",
+        "B": "Cupla transversală distinctă nu este cerută în topologia breaker-and-a-half.",
+        "C": "Circuitele comune sunt conectate la două bare prin trei întreruptoare pentru două circuite, fără cuple separate."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "USACE EM1110-2-3006 2024 Section 4-5 f describes actual 3-breaker/2-circuit topology; visual PDF screenshot unavailable, so no diagram-certified signoff.",
+      "scope_gate": "BHA_TOPOLOGY_TWO_BUSES_THREE_BREAKERS_NO_DEDICATED_TIE",
+      "source": {
+        "url": "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerManuals/EM%201110-2-3006_2024Apr22.pdf",
+        "locator": "CBIP manual ch12, 1.5-breaker arrangement versus ring and double bus",
+        "access": "USACE_PDF_TEXT_SECTION_4_5_F_SCREENSHOT_CACHE_MISS"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-51c5a0415804aa1e",
+      "representative_id": "G1-ELE-106",
+      "member_ids": "G1-ELE-106;G2-ELEC-249",
+      "qabc_sha256": "51c5a0415804aa1e555abec0bba42243fe844d88b8eaf365fd4aade71515ffbe",
+      "original_keys_by_id_JSON": "{\"G1-ELE-106\":\"C\",\"G2-ELEC-249\":\"C\"}",
+      "question_original": "Într-o schemă de conexiuni bara şi cupla de ocolire servesc la:",
+      "A_original": "scoaterea în revizie a unui întreruptor, cu două scurte întreruperi;",
+      "B_original": "scoaterea în revizie a unei bare colectoare;",
+      "C_original": "scoaterea în revizie a unui întreruptor, fără întreruperea alimentării pe circuitul respectiv.",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "A main/transfer bus and bypass breaker can carry circuit current during its own breaker maintenance, avoiding interruption when protections and switchgear permit.",
+      "ABC_rationales": {
+        "A": "«Două scurte întreruperi» nu reprezintă scopul soluției de ocolire cu preluare prin cuplă.",
+        "B": "Revizia barei colectoare este altă operație decât revizia întreruptorului.",
+        "C": "Bara și cupla de ocolire permit scoaterea întreruptorului din circuit păstrând alimentarea prin calea auxiliară."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "USACE EM1110-2-3006 Sec4-5c expressly says continuity while a breaker is isolated. The exact scheme/procedure in ANRE is unverified, and this is not operating guidance.",
+      "scope_gate": "MAIN_TRANSFER_BUS_COUPlER_SCHEME_CONDITIONS",
+      "source": {
+        "url": "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerManuals/EM%201110-2-3006_2024Apr22.pdf",
+        "locator": "CBIP manual ch12, main/transfer bus topology",
+        "access": "USACE_PDF_TEXT_SEC_4_5_C_SCREENSHOT_CACHE_MISS"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-d4e07df6ab5afb3e",
+      "representative_id": "G1-ELE-107",
+      "member_ids": "G1-ELE-107;G2-ELEC-250",
+      "qabc_sha256": "d4e07df6ab5afb3e4329eaeb9bb3e66bfa655455338d705c86fda1b1e87af347",
+      "original_keys_by_id_JSON": "{\"G1-ELE-107\":\"A\",\"G2-ELEC-250\":\"A\"}",
+      "question_original": "În posturi de transformare se folosesc transformatoare uscate atunci când:",
+      "A_original": "amplasarea postului se face în zone aglomerate;",
+      "B_original": "nu sunt restricţii de teren;",
+      "C_original": "nu este posibilă asigurarea unei răciri corespunzătoare a bobinajelor.",
+      "stored_key_UNCHANGED": "A",
+      "positive_context": "In densely populated/occupied locations fire protection often favours dry-type distribution transformer designs over combustible liquid-filled units.",
+      "ABC_rationales": {
+        "A": "Zonele aglomerate și restricțiile de incendiu favorizează transformatoare uscate.",
+        "B": "Absența restricțiilor de teren nu motivează preferința specială pentru uscat.",
+        "C": "Lipsa răcirii adecvate contraindică, nu justifică, utilizarea transformatorului."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "Schneider EIG explicitly states country-specific dry-type mandates for certain buildings and fire hazard. «Zones aglomerate» not defined in the cited 2026 Romanian exam bibliography.",
+      "scope_gate": "DRY_TYPE_OCCUPIED_AREA_NO_EXACT_RO_CLAUSE",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer",
+        "locator": "Schneider, dry type transformer nonflammable and fire risk",
+        "access": "SCHNEIDER_HTML_OPENED"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-58a8ac1ed6564893",
+      "representative_id": "G1-ELE-108",
+      "member_ids": "G1-ELE-108;G2-ELEC-251",
+      "qabc_sha256": "58a8ac1ed65648933bcccffd0added4e78f5dec8a61e89c81d6f46d9a6572e9f",
+      "original_keys_by_id_JSON": "{\"G1-ELE-108\":\"C\",\"G2-ELEC-251\":\"C\"}",
+      "question_original": "Într-o schemă poligon cu patru laturi:",
+      "A_original": "este necesară o cuplă de ocolire;",
+      "B_original": "este necesară o cuplă transversală;",
+      "C_original": "nu este necesară o cuplă transversală.",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "A quadrilateral/ring bus uses a loop of breakers to interconnect circuits; a separate transverse bus coupler is not inherent to ring topology.",
+      "ABC_rationales": {
+        "A": "Poligonul cu patru întreruptoare asigură căi alternative fără ocolire distinctă.",
+        "B": "Cupla transversală ar modifica topologia inelului; nu este cerută.",
+        "C": "Schema ring bus nu are cele două sisteme distincte de bare care să necesite cuplă transversală."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "USACE EM1110-2-3006 §4-5g states ring bus and breaker maintenance, but visual diagram screenshot failed, so topology contextual only.",
+      "scope_gate": "FOUR_SIDE_RING_BUS_NO_TRANSVERSE_TIE",
+      "source": {
+        "url": "https://www.publications.usace.army.mil/Portals/76/Publications/EngineerManuals/EM%201110-2-3006_2024Apr22.pdf",
+        "locator": "CBIP manual ch12, ring bus/four-breaker mesh",
+        "access": "USACE_PDF_TEXT_SEC_4_5_G_SCREENSHOT_CACHE_MISS"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-79d3c0fe4aef4fe9",
+      "representative_id": "G1-ELE-111",
+      "member_ids": "G1-ELE-111;G2-ELEC-253",
+      "qabc_sha256": "79d3c0fe4aef4fe9d55d4b923d513bc112ddba0f98256c040e6ed876d7989b32",
+      "original_keys_by_id_JSON": "{\"G1-ELE-111\":\"C\",\"G2-ELEC-253\":\"C\"}",
+      "question_original": "Scopul supraînaltarii echipamentelor electrice din instalatii electrice exterioare este asigurarea",
+      "A_original": "accesului mai comod în instalatie",
+      "B_original": "esteticii si claritatii instalatiei",
+      "C_original": "securitatii personalului de exploatare",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "Raising live equipment above accessible areas creates required safety clearances and reduces accidental contact risk.",
+      "ABC_rationales": {
+        "A": "Accesul comod nu este scopul distanțelor de gabarit și izolării la înălțime.",
+        "B": "Estetica nu este baza de proiectare a supraînălțării echipamentului.",
+        "C": "Distanța față de zona accesibilă persoanelor reduce riscul de atingere accidentală."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "Protective clearance and exclusion are purpose; exact aerial switchyard height/clearance rule is not established by a general LV electric-shock guide.",
+      "scope_gate": "HV_OUTDOOR_EQUIPMENT_ELEVATION_EXACT_NORMATIVE_MISSING",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/General_principle_of_protection_against_electrical_shocks_in_electrical_installations",
+        "locator": "Schneider, guarding from live parts and protection of persons",
+        "access": "GENERIC_LV_PROTECTION_SOURCE_SCOPE_MISMATCH"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-03afe0bcd691e339",
+      "representative_id": "G1-ELE-114",
+      "member_ids": "G1-ELE-114;G2-ELEC-256",
+      "qabc_sha256": "03afe0bcd691e339ecc427c5b2ee62115d3fdf939a75893780f611cbdcea4714",
+      "original_keys_by_id_JSON": "{\"G1-ELE-114\":\"A\",\"G2-ELEC-256\":\"A\"}",
+      "question_original": "Inductanţa de serviciu ( lineică) a unei linii electrice lungi este definită prin:",
+      "A_original": "inductanţa uniform răspândită l, definită prin puterea reactivă absorbită într-un element de linie infinit mic",
+      "B_original": "inductanţa uniform răspândită l, definită prin  puterea reactivă produsă de un element de linie infinit mic",
+      "C_original": "pierderile Joule disipate într-un element de linie infinit mic",
+      "stored_key_UNCHANGED": "A",
+      "positive_context": "A distributed series inductance stores magnetic energy and absorbs positive inductive reactive power Q_L=ωL I² for sinusoidal current; not capacitive production or resistive Joule loss.",
+      "ABC_rationales": {
+        "A": "O inductanță lineică absoarbe putere reactivă inductivă la curent alternativ.",
+        "B": "O inductanță nu este element capacitiv care generează reactiv inductiv.",
+        "C": "Pierderile Joule sunt datorate rezistenței lineice, nu inductanței."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "A is physically consistent for distributed series L, but exact historic term «inductanță de serviciu» requires original textbook locator.",
+      "scope_gate": "SPECIFIC_LINEIC_INDUCTANCE_MANUAL_DEFINITION_MISSING",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "Q_L=ωLI² pentru element liniar, extindere la element diferențial",
+        "access": "GENERIC_REACTIVE_POWER_IDEA_NOT_EXACT_LINE_SOURCE"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-14b41fc69f12dcc4",
+      "representative_id": "G1-ELE-118",
+      "member_ids": "G1-ELE-118;G2-ELEC-260",
+      "qabc_sha256": "14b41fc69f12dcc47f8aa6e74dc6ac4341fdac96978410c0fa587ea911912668",
+      "original_keys_by_id_JSON": "{\"G1-ELE-118\":\"B\",\"G2-ELEC-260\":\"B\"}",
+      "question_original": "Într-o reţea cu neutrul legat la pământ, valoarea cea mai mare a intensităţii curentului de scurtcircuit, pentru acelaşi punct de defect, corespunde, de regulã, defectului:",
+      "A_original": "monofazat",
+      "B_original": "trifazat",
+      "C_original": "bifazat",
+      "stored_key_UNCHANGED": "B",
+      "positive_context": "The three-phase bolted fault generally yields the largest prospective current in many grounded systems; one-phase earth faults can exceed it if Z0 is sufficiently low.",
+      "ABC_rationales": {
+        "A": "Monofazatul poate depăși trifazatul în cazuri cu impedanță homopolară mică.",
+        "B": "Trifazatul este, de regulă, valoarea standard maximă considerată în calculul de dimensionare.",
+        "C": "Bifazatul nu este de regulă maximul în rețele similare."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "PhaseToPhase Ch10 directly states three-phase almost always largest and explains zero-sequence exceptions. Wording «de regulă» aligns; not universal.",
+      "scope_gate": "THREE_PHASE_USUAL_MAX_WITH_Z0_EXCEPTION",
+      "source": {
+        "url": "https://www.phasetophase.nl/book/book_2_10.html",
+        "locator": "Calculul curenților de scurtcircuit trifazat; contextul Z0/Z1",
+        "access": "TECHNICAL_HTML_READ_THIS_SESSION"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-8186957ef22f3514",
+      "representative_id": "G1-ELE-134",
+      "member_ids": "G1-ELE-134;G2-ELEC-274",
+      "qabc_sha256": "8186957ef22f3514b40c6e30508ddb94ccdf62dcd0d97446502d9949c09f73a7",
+      "original_keys_by_id_JSON": "{\"G1-ELE-134\":\"A\",\"G2-ELEC-274\":\"A\"}",
+      "question_original": "Intr-un tor (solenoid de formă circulară bobinat), energia magnetică produsă de un curent care străbate bobinajul torului este localizată:",
+      "A_original": "integral în câmpul magnetic din volumul torului",
+      "B_original": "integral în câmpul magnetic din afara torului",
+      "C_original": "1/2 din energie este înmagazinată în volumul torului, iar 1/2 în afara torului",
+      "stored_key_UNCHANGED": "A",
+      "positive_context": "For a perfectly wound toroidal coil, magnetic field outside is zero, so ∫B²/(2μ)dV outside is zero and all idealized stored energy is within toroidal interior.",
+      "ABC_rationales": {
+        "A": "Câmpul exterior unui toroid ideal este zero, dar în tor real apar scăpări.",
+        "B": "Nu rezultă că întreaga energie se află în exteriorul torului.",
+        "C": "Nu există împărțire universală 50/50."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "LibreTexts explicitly qualifies result as «ideal» and explains flux leakage in practical coils. «integral» not strictly true for real tor.",
+      "scope_gate": "IDEAL_TOROID_REQUIRED_FOR_ABSOLUTE_INTEGRAL",
+      "source": {
+        "url": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electromagnetics_I_%28Ellingson%29/07%3A_Magnetostatics/7.07%3A_Magnetic_Field_of_a_Toroidal_Coil",
+        "locator": "Ellingson, magnetic field outside ideal toroid zero; real toroid flux leakage",
+        "access": "UNIVERSITY_OPEN_TEXT_VERIFIED"
+      },
+      "evaluation": "CONDITIONAL_CANDIDATE_OR_FORMAT_CONFLICT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-a6f3db7d9f3b0ea1",
+      "representative_id": "G1-ELE-139",
+      "member_ids": "G1-ELE-139;G2-ELEC-277",
+      "qabc_sha256": "a6f3db7d9f3b0ea1ffdf866cb23a3e1d589c377a69e479f7d214e5366b590f9c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-139\":\"C\",\"G2-ELEC-277\":\"C\"}",
+      "question_original": "La un transformator cu grupa de conexiuni Y0 d-5 alimentat cu un sistem simetric de tensiuni, între neutru si pământ, în regim normal si simetric de funcţionare avem:",
+      "A_original": "tensiunea de linie",
+      "B_original": "tensiunea de faza",
+      "C_original": "tensiunea zero",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "In a symmetrical system whose star-point neutral is referenced to earth, neutral-to-earth voltage is zero in the ideal steady-state system.",
+      "ABC_rationales": {
+        "A": "Un neutru referit la pământ simetric nu se află la tensiunea de linie.",
+        "B": "Un neutru referit la pământ simetric nu se află la tensiunea de fază.",
+        "C": "Tensiunea neutru-pământ este zero în idealizarea cu neutru legat la referință și sistem simetric."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "Group Y0 d-5 is a winding vector group, but the prompt does not explicitly establish neutral grounding or earth reference. Zero neutral/earth requires additional topology.",
+      "scope_gate": "NEUTRAL_STAR_POINT_EARTH_CONNECTION_NOT_EXPLICIT",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Characteristics_of_TT%2C_TN_and_IT_systems",
+        "locator": "Referința de pământ a neutrului și regimuri de legare",
+        "access": "EARTHING_GENERIC_SOURCE_NOT_VECTOR_GROUP_EVIDENCE"
+      },
+      "evaluation": "CONDITIONAL_CANDIDATE_OR_FORMAT_CONFLICT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-d969f3f1c509046e",
+      "representative_id": "G1-ELE-140",
+      "member_ids": "G1-ELE-140;G2-ELEC-278",
+      "qabc_sha256": "d969f3f1c509046eddd30094e9a237a2e2a7b6d0aeaf40b3ceb71942cf1102d5",
+      "original_keys_by_id_JSON": "{\"G1-ELE-140\":\"A\",\"G2-ELEC-278\":\"A\"}",
+      "question_original": "La funcţionarea în gol a unei linii electrice tensiunea la capăt:",
+      "A_original": "creşte faţă de tensiunea la sursă proporţional cu pătratul lungimii liniei",
+      "B_original": "scade faţă de tensiunea la sursă proporţional cu lungimea liniei",
+      "C_original": "nu se modifică",
+      "stored_key_UNCHANGED": "A",
+      "positive_context": "A long transmission line with no load exhibits Ferranti receiving-end voltage rise. For standard low-loss approximation, rise is proportional to length squared.",
+      "ABC_rationales": {
+        "A": "În gol pe linie lungă, efectul Ferranti poate ridica tensiunea la receptor; modelul π indică o creștere aproximativ ∝l².",
+        "B": "Scăderea liniară nu caracterizează efectul Ferranti în condițiile date.",
+        "C": "Capacitățile distribuite fac tensiunea să difere de cea de la sursă."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "Lund University thesis §2.1.1 explicitly says length has quadratic effect, while exact dependence includes distributed parameters and compensation.",
+      "scope_gate": "FERRANTI_QUADRATIC_APPROXIMATION_SCOPE",
+      "source": {
+        "url": "https://www2.iea.lth.se/publications/MS-Theses/Full%20document/5330_full_document.pdf",
+        "locator": "Virtual Labs Ferranti Effect, no-load receiving voltage rise ∝ length² in approximation",
+        "access": "LUND_UNIVERSITY_PDF_TEXT_AVAILABLE_SCRSHOT_NOT_CHECKED"
+      },
+      "evaluation": "CONDITIONAL_CANDIDATE_OR_FORMAT_CONFLICT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-7f920d09fda666bc",
+      "representative_id": "G1-ELE-141",
+      "member_ids": "G1-ELE-141;G2-ELEC-279",
+      "qabc_sha256": "7f920d09fda666bc9970583b31f677dd4a4c7b84d5df03c79004d20000da5395",
+      "original_keys_by_id_JSON": "{\"G1-ELE-141\":\"C\",\"G2-ELEC-279\":\"C\"}",
+      "question_original": "Legea lui Ohm pentru o porţiune de circuit este valabila:",
+      "A_original": "doar în curent continuu",
+      "B_original": "doar în curent alternativ",
+      "C_original": "indiferent de natura circuitului",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "Ohm-law direct proportionality U=R I for constant R is not universal across all devices; it applies to ohmic elements in either AC or DC regimes when interpreted correctly.",
+      "ABC_rationales": {
+        "A": "«doar în curent continuu» greșit: impedanța complexă permite o relație de tip Ohm în AC liniar.",
+        "B": "«doar în curent alternativ» greșit: legea se aplică și rezistoarelor ohmice în CC.",
+        "C": "«indiferent de natura circuitului» este absolut fals pentru elemente neliniare/non-ohmice; candidatul C este doar intenția din alegerea CC vs AC."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "OpenStax §9.4 explicitly rejects universal Ohm law for diode/nonohmic component, so literal C «indiferent de natura circuitului» is false. Under exam-intended AC/DC reading C may be intended, but has no unconditional affirmative proof.",
+      "scope_gate": "LITERAL_ALL_CIRCUIT_CANDIDATE_CONTRADICTED_BY_SOURCE",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+        "locator": "OpenStax 9.4: V=IR numai materiale ohmice, exemplu diodă nonohmică; pagină HTML redeschisă",
+        "access": "OPENSTAX_HTML_DIRECTLY_CONTRADICTS_UNQUALIFIED_C"
+      },
+      "evaluation": "CONDITIONAL_CANDIDATE_OR_FORMAT_CONFLICT",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-a8aa4f8d99e42382",
+      "representative_id": "G1-ELE-084",
+      "member_ids": "G1-ELE-084;G2-ELEC-229",
+      "qabc_sha256": "a8aa4f8d99e42382fc078a59c826bcf8885f0ea6b390c194da922f62ca57e17c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-084\":\"C\",\"G2-ELEC-229\":\"C\"}",
+      "question_original": "În instalaţiile de joasa tensiune, legarea la pământ este justificatã:",
+      "A_original": "din motive economice",
+      "B_original": "pentru diminuarea suprasolicitărilor echipamentelor electrice",
+      "C_original": "pentru securitatea muncii",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "The item asks grounding in LV installations. Protective earthing of exposed conductive parts establishes a fault-current/reference path for electric shock protection. Functional earthing and overvoltage protection have other purposes.",
+      "ABC_rationales": {
+        "A": "Costul poate conta în proiectare, dar nu este justificarea de protecție cerută.",
+        "B": "Reducerea solicitărilor echipamentului nu este obiectivul unic, poate fi un efect de funcție diferită a legării la pământ.",
+        "C": "Protecția persoanelor contra șocului electric este scopul explicit al legării de protecție."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "Protective PE earthing for persons is supported, but unqualified «legarea la pământ» also has operational/functional roles; no claim that B can never apply.",
+      "scope_gate": "SCOPED_PE_VS_FUNCTIONAL_EARTHING",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Residential_electrical_installation_-_Protection_of_people",
+        "locator": "Schneider, protection of people / protective earth",
+        "access": "EIG_TOPICAL_HTML"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-5f29e93355b2dfbf",
+      "representative_id": "G1-ELE-092",
+      "member_ids": "G1-ELE-092;G2-ELEC-236",
+      "qabc_sha256": "5f29e93355b2dfbfb83e43b4cf7f222e00f54b1a57c394aa54ceb9a2ff49d0f7",
+      "original_keys_by_id_JSON": "{\"G1-ELE-092\":\"C\",\"G2-ELEC-236\":\"C\"}",
+      "question_original": "În posturi de transformare se folosesc transformatoare răcite cu lichide neinflamabile atunci când:",
+      "A_original": "sunt restricţii de poluare a mediului;",
+      "B_original": "sunt restricţii de toxicitate pentru personalul de exploatare;",
+      "C_original": "amplasarea postului se face în zone aglomerate.",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "Non-flammable or high-fire-point insulating liquids are a mitigation for transformer fire hazard, relevant when installations are near densely occupied buildings.",
+      "ABC_rationales": {
+        "A": "Restricțiile ecologice pot favoriza alt lichid dar nu determină singure exact tipul neinflamabil.",
+        "B": "Cerințele de toxicitate pot influența selecția; nu dovedesc unicitatea C.",
+        "C": "Densitatea populației și constrângerile de incendiu motivează lichide cu risc redus de foc."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "Environmental and occupational toxicity restrictions can be independently relevant for selecting a fluid, so C is an intended exam distinction, not proof that A/B never matter.",
+      "scope_gate": "AREA_CROWDED_FIRE_FUEL_TYPE_NEEDS_EXACT_RULE",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer",
+        "locator": "Schneider, liquid-filled versus dry transformers and alternative liquids",
+        "access": "SCHNEIDER_HTML_OPENED_SOURCE_TOPICAL_NOT_RO_NORMATIVE"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-c306917128be7575",
+      "representative_id": "G1-ELE-097",
+      "member_ids": "G1-ELE-097;G2-ELEC-240",
+      "qabc_sha256": "c306917128be75758eab0a27760124941dc03d0e456f1865833d49aab3d173e3",
+      "original_keys_by_id_JSON": "{\"G1-ELE-097\":\"C\",\"G2-ELEC-240\":\"C\"}",
+      "question_original": "În posturi de transformare se preferă folosirea transformatoarelor răcite cu aer atunci când:",
+      "A_original": "sunt restricţii de teren;",
+      "B_original": "sunt restricţii privitoare la zgomot;",
+      "C_original": "amplasarea postului se face în zone aglomerate.",
+      "stored_key_UNCHANGED": "C",
+      "positive_context": "Dry or air-cooled transformers lower risk associated with combustible transformer fluids, an advantage in occupied/high fire-risk areas.",
+      "ABC_rationales": {
+        "A": "Lipsa terenului nu dovedește preferința pentru transformator răcit cu aer.",
+        "B": "Zgomotul ventilatoarelor poate fi un dezavantaj; nu justifică generic varianta.",
+        "C": "Transformatoarele uscate/răcite cu aer reduc riscul legat de lichide în zone ocupate."
+      },
+      "pairwise": "Checked A versus B, B versus C, and A versus C via separate rationale and affirmative premise; no elimination-only signoff",
+      "counterexample_and_source_limit": "«Răcit cu aer» need not always equal dry-type, and local building regulations/technical feasibility can dominate selection. C plausible in standard fire-risk context.",
+      "scope_gate": "AIR_COOLED_VS_DRY_TYPE_TERMINOLOGY",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Choice_of_MV/LV_transformer",
+        "locator": "Schneider, dry-type transformer, nonflammability/fire risk",
+        "access": "SCHNEIDER_HTML_OPENED_EXACT_APPLICATION_UNVERIFIED"
+      },
+      "evaluation": "MATCHES_IMPORTED_INTENTION_BUT_NOT_INDEPENDENTLY_VALIDATED",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    }
+  ]
+}

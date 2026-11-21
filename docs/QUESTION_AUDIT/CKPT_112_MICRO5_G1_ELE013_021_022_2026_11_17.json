@@ -1,0 +1,114 @@
+{
+  "checkpoint": "CKPT-112",
+  "date": "2026-11-17",
+  "source_branch": "audit/anre-v8-priority-17-20261109",
+  "input_head": "b69f9aed8f3871a9b5de29abd02b7f97c6cf99c7",
+  "protocol": "MICRO5, batch 1 of 2 maximum, 3 canonical units / 6 grade IDs",
+  "scope": "Documentary cards only, immutable canonical QABC/key/HTML/APK, no merge",
+  "execution": "One model performed technical, source, linguistics checks; independent child-agent runtime NOT available; no model training",
+  "gates": {
+    "canonical": "Exact source research QABC/key snapshot retained; ledger reconciliation required",
+    "bibliography_2026": "UNVERIFIED",
+    "official_key": "UNVERIFIED",
+    "independent_review": "NOT_RUN",
+    "PDF_visual": "Cambridge PDF screenshot failed cache miss; text extraction opened",
+    "learner_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-e22d96ebe2f2bccc",
+      "representative_id": "G1-ELE-013",
+      "member_ids": "G1-ELE-013;G2-ELEC-165",
+      "qabc_sha256": "e22d96ebe2f2bcccda757f9eac8d49c12f31d0284370e0953eacc19eece7f1db",
+      "original_keys_by_id_JSON": "{\"G1-ELE-013\":\"C\",\"G2-ELEC-165\":\"C\"}",
+      "question_original": "Comparativ cu cele uscate, transformatoarele imersate prezintă :",
+      "A_original": "o bună rezistenţă la foc;",
+      "B_original": "risc crescut de poluare acustică a mediului ambiant;",
+      "C_original": "necesitatea unor amenajări speciale la instalare",
+      "candidate_not_approved": "C_CONDITIONAL",
+      "source": [
+        {
+          "url": "https://www.maddox.com/resources/articles/guide-to-liquid-filled-and-dry-type-transformers",
+          "locator": "Maddox, Guide to Liquid-Filled and Dry-Type Transformers, Environment and Location, Noise Level; accessed 2026-11-17",
+          "evidence": "Liquid-filled transformers indoors need additional fire infrastructure; dry types often simpler. Maddox notes conventional liquid-filled can be quieter."
+        }
+      ],
+      "context": "Comparația trebuie făcută pentru tipul de lichid (ulei mineral ori fluid cu punct de aprindere ridicat), putere și amplasament. Transformatorul imersat poate necesita amenajări suplimentare la instalare, mai ales în interior, pentru incendiu și retenția lichidului. Transformatorul uscat nu conține lichid izolant și elimină acea categorie de risc, dar nu devine complet ignifug. Nivelul sonor nu este universal mai mare la imersate: fabricantul consultat descrie adesea chiar nivel mai mic. C este candidatul intenționat, nu o obligație absolută pentru orice loc sau lichid.",
+      "options": {
+        "A": "Nu, rezistența la foc nu este avantaj generic al unui echipament cu ulei mineral combustibil; există fluide cu proprietăți diferite.",
+        "B": "Nu este un atribut universal; sursa identifică adesea nivel sonor mai mic la imersate, iar zgomotul depinde de construcție.",
+        "C": "Susținere afirmativă pentru amenajări speciale în anumite instalări, în special interioare, pentru retenție și protecție la incendiu."
+      },
+      "pairwise": "A vs C: focul impune măsuri, nu rezistență inerentă; B vs C: sunet versus amenajări; A vs B: proprietăți diferite, niciuna nu este comparativă universală.",
+      "reverse_counterexample": "Montarea exterioară a unui echipament cu fluid mai puțin inflamabil poate diminua unele amenajări: nu certificăm «toate imersatele» sau un cod românesc precis.",
+      "finding": "INTENDED_KEY_C_WITH_INSTALLATION_SCOPE; FIRE_FLUID_AND_2026_ROMANIAN_CODE_NOT_VALIDATED",
+      "qa": "SELF_REVIEW_ONLY_NOT_INDEPENDENT",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-8f2ab3317eee872d",
+      "representative_id": "G1-ELE-021",
+      "member_ids": "G1-ELE-021;G2-ELEC-173",
+      "qabc_sha256": "8f2ab3317eee872dfba59b459d2e4083b024aedeb66ff6089175c11a2f823d92",
+      "original_keys_by_id_JSON": "{\"G1-ELE-021\":\"B\",\"G2-ELEC-173\":\"B\"}",
+      "question_original": "Care dintre materialele electrotehnice admit o densitate de curent mai mare:",
+      "A_original": "aluminiu",
+      "B_original": "cupru",
+      "C_original": "ambele admit aceeaşi densitate de curent",
+      "candidate_not_approved": "B_CONDITIONAL",
+      "source": [
+        {
+          "url": "https://help.leonardo-energy.org/hc/en-us/articles/205394842-Why-use-copper-rather-than-aluminium-as-the-conductor-in-power-cables",
+          "locator": "European Copper Institute / Leonardo Energy, Hans De Keulenaer, Why use copper rather than aluminium, paragraph on resistivity and same current-carrying capability",
+          "evidence": "Copper electrical resistivity lower; aluminium needs greater cross-sectional area for comparable current-carrying capability."
+        },
+        {
+          "url": "https://help.leonardo-energy.org/hc/en-us/articles/203085132-Installation-and-repair-of-power-cables-Copper-vs-aluminium",
+          "locator": "Leonardo Energy comparison table, Copper higher conductivity (A/mm²)",
+          "evidence": "Direct same-unit comparison in conductor application."
+        }
+      ],
+      "context": "Densitatea de curent este J=I/S, în A/mm². Pentru secțiuni comparabile, izolație, temperatură și metodă de instalare echivalente, cuprul are rezistivitate mai mică decât aluminiul și permite în mod obișnuit capacitate de curent mai mare. Raportul nu este doar o proprietate abstractă a metalului, deoarece temperatura, răcirea, izolarea și circuitul influențează curentul admisibil. Sursele compară explicit cele două materiale în cabluri electrice. B este candidatul de examen, condiționat de aceleași condiții de utilizare.",
+      "options": {
+        "A": "Nu în comparația de secțiuni și condiții egale: aluminiul are rezistivitate mai mare.",
+        "B": "Susținut direct: curent admisibil și densitate de curent mai mari uzual în cupru, cu instalație echivalentă.",
+        "C": "Egalitatea nu ține în general pentru conductoare cu aceeași secțiune și condiții comparabile."
+      },
+      "pairwise": "A vs B: materialul mai conductiv reduce pierderile Joule; B vs C: capacitate diferită sub aceleași constrângeri termice; A vs C: ambele neconforme comparației documentate.",
+      "reverse_counterexample": "Conductoare cu secțiuni sau metode de pozare diferite pot avea densități diferite care inversează aparent clasificarea; întrebarea nu specifică geometria/izolația, de aceea niciun maxim universal nu este certificat.",
+      "finding": "INTENDED_KEY_B_COMPARABLE_CONDITIONS; INSTALLATION_UNQUALIFIED",
+      "qa": "SELF_REVIEW_ONLY_NOT_INDEPENDENT",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-26424e4766cae74d",
+      "representative_id": "G1-ELE-022",
+      "member_ids": "G1-ELE-022;G2-ELEC-174",
+      "qabc_sha256": "26424e4766cae74d49bcaf28d0bc12769f530d5503585dfffbe7942f8f1210aa",
+      "original_keys_by_id_JSON": "{\"G1-ELE-022\":\"A\",\"G2-ELEC-174\":\"A\"}",
+      "question_original": "Care dintre relaţiile următoare este adevărată:",
+      "A_original": "inducţia electrică = permitivitatea x intensitatea câmpului electric",
+      "B_original": "inducţia electrică = intensitatea câmpului electric/ permitivitate",
+      "C_original": "inducţia electrică=sarcina x intensitatea câmpului electric",
+      "candidate_not_approved": "A_CONDITIONAL",
+      "source": [
+        {
+          "url": "https://www.tcm.phy.cam.ac.uk/~bm418/documents/teaching/ia-materials/lecture-notes.pdf",
+          "locator": "University of Cambridge, Bartomeu Monserrat, Materials for Devices (Michaelmas 2024), printed p7, §1.1.2, eqs 1.4–1.6; text fetched, screenshot failed cache miss",
+          "evidence": "D=epsilon_0 E+P universally in macroscopic formulation; D=epsilon E in linear, homogeneous, isotropic medium with instantaneous response."
+        }
+      ],
+      "context": "Inducția electrică D este deplasarea electrică, cu unități C/m². În dielectric liniar, omogen și izotrop cu răspuns instantaneu, relația constitutivă este D=εE, unde ε este permitivitatea absolută (F/m). Formula mai generală este D=ε₀E+P; în medii neliniare sau anizotrope permitivitatea poate varia sau este tensorială. De aceea varianta A reprezintă modelul uzual intenționat, dar enunțul nu delimitează mediul. B și C nu exprimă mărimea corectă și sunt falsificate dimensional.",
+      "options": {
+        "A": "Corect în modelul liniar, izotrop: D=εE, cu ε absolută și nu doar permitivitatea relativă.",
+        "B": "Greșit dimensional: E/ε nu are unitatea C/m² pentru inducția electrică.",
+        "C": "Q×E are dimensiunile unei forțe (F=QE pentru o sarcină de test), nu ale inducției electrice."
+      },
+      "pairwise": "A vs B: raport invers cu dimensiuni incorecte; A vs C: răspuns constitutiv versus forță; B vs C: niciuna nu dă unitățile D.",
+      "reverse_counterexample": "În materiale piezoelectrice/anisotrope relația D=εE scalar simplu nu mai este generală; nu reinterpretăm A ca lege universală. PDF Cambridge a fost citit text, screenshot eșuat, fără validare vizuală.",
+      "finding": "INTENDED_KEY_A_LINEAR_ISOTROPIC_MEDIUM; GENERALITY_WARNING; PDF_SCREENSHOT_FAILED",
+      "qa": "SELF_REVIEW_ONLY_NOT_INDEPENDENT",
+      "approved_for_learning": "NO"
+    }
+  ]
+}

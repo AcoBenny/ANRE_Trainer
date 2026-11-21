@@ -1,0 +1,43 @@
+{
+  "schema": "ANRE_NOR027_NOR029_TRANSFER_SCAN_V1",
+  "date": "2026-11-13",
+  "scan_input": "MASTER_UNIT_CARDS_568.csv, exact 568 QABC; GRADE_RELEASE_LEDGER_822.csv, exact 822 ID; normalized diacritic keyword filter, NOT semantic proof",
+  "checks": {
+    "units": 568,
+    "grade_ids": 822,
+    "unique_grade_ids": 822,
+    "linked_grade_ids": 822,
+    "structural_mismatches": 0,
+    "problem_first_flagged": 293,
+    "deferred_unflagged": 275,
+    "mapped_contextual_units": 13,
+    "mapped_grade_ids": 23,
+    "approved_grade_ids": 0
+  },
+  "scan": {
+    "dwelling_mention_units": 7,
+    "dwelling_ids": [
+      "G1-LEG-028",
+      "G1-LEG-032",
+      "G1-LEG-001",
+      "G1-LEG-031",
+      "G2-LEG-072",
+      "G1-NOR-029",
+      "G1-NOR-065"
+    ],
+    "dwelling_height_stem_units": [
+      "G1-NOR-029"
+    ],
+    "threaded_cap_fuse_stem_units": [
+      "G1-NOR-027"
+    ]
+  },
+  "disposition": {
+    "G1-NOR-029": "ALREADY_FLAGGED; exact dwelling+upper-bound exception; staged C_NOT_APPROVED",
+    "G1-NOR-027": "ALREADY_FLAGGED; exact screw contact question; staged A_CONDITIONAL",
+    "G1-NOR-065": "NEIGHBOR_IN_HOUSEHOLD_SCOPE_ONLY; >2kW separate socket circuit, separate rule, NO automatic candidate/key modification",
+    "other_dwelling_mention_cases": "DO_NOT_TRANSFER_2_5M_HEIGHT_LIMIT_TO_UNRELATED_HOUSING_LEGAL_OR_CIRCUIT_QUESTIONS"
+  },
+  "qa_limitations": "Mechanical readback and lexical scan executed in one tool environment, not independent expert or separate agent QA. Context mapping does not imply source edition validation or learner approval.",
+  "issues": []
+}

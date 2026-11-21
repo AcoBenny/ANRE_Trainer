@@ -1,0 +1,88 @@
+{
+  "schema": "v188_QABC0013_2024_original_wording_vs_linguistic_alternative_primary_Maxwell",
+  "date": "2026-11-20",
+  "base": {
+    "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+    "CKPT184_blob": "66f15a4f15ff28d58cc9a81bdfe2a51e324e252f",
+    "CKPT184_section_sha_not_computed": "Historical section extracted by exact heading, preserved in parent file"
+  },
+  "counts": {
+    "new_unique_editorial_card": 1,
+    "grade_routes": 2,
+    "official_question_source_variants_reopened": 1,
+    "independent_exam_key_approvals": 0
+  },
+  "original": {
+    "unit_id": "QABC-0013",
+    "grade_ids": [
+      "G1-ELE-014",
+      "G2-ELEC-166"
+    ],
+    "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+    "source_row": 21,
+    "stem": "Câmp fără surse este",
+    "A": "numai un câmp de curenţi de conducţie în regim staţionar",
+    "B": "câmpul electric",
+    "C": "câmpul de inducţie electromagnetică",
+    "imported_grade_keys_unchanged": "G1-ELE-014=C | G2-ELEC-166=C"
+  },
+  "comparison": {
+    "official_ANRE_2024_original": {
+      "url": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_source_ordinal_row": 21,
+      "C_exact": "câmpul de inducţie electromagnetică",
+      "extraction": "Live Firecrawl XLSX-to-markdown, HTTP 200, row source position matches V149 and V175; exact source workbook OOXML byte hash not independently archived"
+    },
+    "alternative_web_exam_edition_secondary": {
+      "url": "https://chestionare-anre.ro/electrotehnica-mediu-invatare/",
+      "reported_wording": "Câmp fără surse este câmpul de inducție magnetică",
+      "status": "SECONDARY_WEB_SEARCH_SNIPPET_ONLY_NOT_ANRE_HISTORICAL_OFFICIAL_EDITION",
+      "caution": "Do not rewrite official 2024 original as if the alternative is authoritative."
+    }
+  },
+  "physical_evidence": [
+    {
+      "url": "https://galileoandeinstein.phys.virginia.edu/Elec_Mag/2022_Lectures/EM_38_Maxwells_Equations.html",
+      "where": "Maxwell's Equations, lines with div B=0, div E=ρ/ε0, continuity div J=-∂ρ/∂t, E field from changing B",
+      "source_type": "UNIVERSITY_PHYSICS_PRIMARY_EDUCATIONAL_EXPLANATION"
+    },
+    {
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-1-maxwells-equations-and-electromagnetic-waves",
+      "where": "Maxwell's equations, Gauss magnetism and electric field",
+      "source_type": "UNIVERSITY_TEXTBOOK"
+    }
+  ],
+  "ABC_editorial_draft": {
+    "A": {
+      "rationale": "«Numai un câmp de curenți de conducție în regim staționar» exclude alte câmpuri fără surse; însă un curent staționar J poate satisface div J=0 prin ecuația de continuitate. Deci este un exemplu posibil, nu definiția exclusivă.",
+      "model_rejected": "A ar fi corect numai ca afirmație «un câmp de curenți staționari poate fi fără surse»; cu «numai» nu este caracterizare unică."
+    },
+    "B": {
+      "rationale": "În electrostatică, div E=ρ/ε0 și sarcinile pot fi surse ale câmpului electric; în regiuni fără sarcini, div E=0 local, deci generic B nu este categoric adevărat/fals fără domeniu.",
+      "model_rejected": "B nu poate fi o identitate globală fără condiția ρ=0."
+    },
+    "C": {
+      "rationale": "Câmpul de inducție MAGNETICĂ B are div B=0 (legea Gauss pentru magnetism), deci este fără surse de tip monopoli magnetici. Dar textul ANRE 2024 spune literal «câmpul de inducţie electromagnetică», care poate desemna fenomenul Faraday/câmp electric indus și nu este echivalat explicit cu B.",
+      "model_rejected": "C ar fi candidatul de manual dacă autorul a intenționat «inducție magnetică B», nu o validare univocă a variantei scrise."
+    }
+  },
+  "trap": "Source-free means divergence zero, not necessarily no physical currents or no curl. «Inducție magnetică B» versus «inducție electromagnetică» is a material lexical ambiguity in THIS officially served workbook.",
+  "rephrased_question": "Potrivit ecuațiilor lui Maxwell, care câmp satisface identitatea div B=0 în electrodinamica clasică?",
+  "rephrased_answer": "Inducția magnetică B; fluxul magnetic net prin orice suprafață închisă este zero, în absența monopolilor magnetici.",
+  "rephrased_status": "UNOFFICIAL_PEDAGOGICAL_VARIATION_NOT_ANRE_SCORING_KEY",
+  "review": {
+    "source_original_QABC_text_2024_official_verified": true,
+    "manual_model_explained": true,
+    "original_letter_C_imported_key_UNCHANGED": true,
+    "candidate_scoped": "C_ONLY_CONDITIONAL_ON_ELECTROMAGNETIC_INDUCTION_MEANING_MAGNETIC_B_NOT_PROVEN_FOR_OFFICIAL_WORDING",
+    "independent_technical_QA": "NOT_RUN",
+    "independent_linguistic_QA": "NOT_RUN",
+    "original_answer_uniqueness": "UNRESOLVED",
+    "correct_official_scored_key": "NOT_AUTHENTICATED",
+    "learner_approved": false,
+    "disposition": "STRICT_TERMINOLOGY_HOLD_PREEXISTING_REFURBISHED"
+  },
+  "next_gate": "Recover an authentic 2024 ANRE supporting course/definitions, or authoritative original answer correction, to show «inducție electromagnetică» unequivocally means B; otherwise keep as written with caution and do not release as unambiguous correct item. Source/snippet differences aren't grounds to change imported keys.",
+  "research_integrity_note": "One assistant performed technical and linguistic review; external academic literature is independent published evidence, not a second independent reviewer. No source-original answer-key change authorized."
+}

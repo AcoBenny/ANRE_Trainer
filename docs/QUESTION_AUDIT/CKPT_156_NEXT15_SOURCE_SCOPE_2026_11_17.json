@@ -1,0 +1,602 @@
+{
+  "checkpoint": "CKPT-156",
+  "date": "2026-11-17",
+  "baseline_head": "c00985f34d6c53e0ed8005502eda647cbe6e030e",
+  "units": 15,
+  "grade_ids": 30,
+  "counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 7,
+    "CONDITIONAL_MODEL_OR_SOURCE": 6,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 2
+  },
+  "phase": "SAME_ASSISTANT_SOURCE_SCOPE_NOT_INDEPENDENT_APPROVAL",
+  "method": "Compare original master QABC/hash and previously completed complete ABC evidence. Confirm formula or object/scope only; attach reasons for ambiguity and leave source access honest.",
+  "safety": "No official workbook answer key verified; no external independent reviewers; no changes to question, key, HTML, APK, main.",
+  "cards": [
+    {
+      "unit_id": "AU-cf5c0fd3eae30dab",
+      "representative_id": "G1-ELE-205",
+      "canonical_sha256": "cf5c0fd3eae30dab618edc8774025a3423e948a45c7ad7ddc431ea0b5240b4be",
+      "member_ids": [
+        "G1-ELE-205",
+        "G2-ELEC-341"
+      ],
+      "original_question_UNCHANGED": "Reglarea puterii active debitate de generatorul sincron se face variind:",
+      "original_ABC_UNCHANGED": {
+        "A": "tensiunea de excitaţie",
+        "B": "admisia agentului primar la turbina",
+        "C": "curentul statoric"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-205": "B",
+        "G2-ELEC-341": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "For grid-synchronized synchronous generator, turbine mechanical input/governor changes delivered active P; excitation primarily controls Q. Islanded-grid conditions and load control are separate.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "Excitația controlează în principal tensiunea și Q la generator conectat la rețea, nu puterea mecanică activă produsă.",
+        "B": "Admisia agentului primar ajustează cuplul mecanic și P livrată, la viteză/frecvență rețea fixată.",
+        "C": "Curentul statoric este o consecință a puterii și factorului de putere, nu comanda primară de P."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://ccaps.umn.edu/documents/CPE-Conferences/MIPSYCON-PowerPoints/2019/Done/MatchingGenerators.pdf",
+        "prior_scope_gap": "Propoziția este pentru generator sincron în paralel/rețea; în regim insular tensiune, frecvență și P depind de control/sarcină.",
+        "prior_access": "PDF_TEXT_OPENED_SCREENSHOT_CACHE_MISS",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-a251568507777d0e",
+      "representative_id": "G1-ELE-206",
+      "canonical_sha256": "a251568507777d0e3d03563de418386e299ed65fe2a402642dfa5a622a3beca0",
+      "member_ids": [
+        "G1-ELE-206",
+        "G2-ELEC-342"
+      ],
+      "original_question_UNCHANGED": "Reglarea puterii reactive debitate de generatorul sincron se face prin:",
+      "original_ABC_UNCHANGED": {
+        "A": "modificarea curentului de excitaţie",
+        "B": "deschiderea aparatului director al turbinei",
+        "C": "deconectarea rezistentei de stingere"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-206": "A",
+        "G2-ELEC-342": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "For synchronous generator synchronized to grid, increasing/decreasing field excitation regulates reactive injection Q, not the prime mover admission, which changes P.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "Excitația controlează Q/tensiunea la generatorul sincron în paralel în limita curbei de capabilitate.",
+        "B": "Deschiderea aparatului director al turbinei controlează P/cuplul, nu în primul rând Q.",
+        "C": "Rezistența de stingere este altă protecție/funcție, nu mijlocul obișnuit de reglare Q."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://ccaps.umn.edu/documents/CPE-Conferences/MIPSYCON-PowerPoints/2019/Done/MatchingGenerators.pdf",
+        "prior_scope_gap": "Interacțiunile mașinii și sarcinii în regim insular pot schimba Q; captura nu a putut fi verificată.",
+        "prior_access": "PDF_TEXT_OPENED_SCREENSHOT_CACHE_MISS",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-f4e6494793117210",
+      "representative_id": "G1-ELE-207",
+      "canonical_sha256": "f4e6494793117210e864f6bbac3523ae41442f54419a77fe2caaea2b306b2833",
+      "member_ids": [
+        "G1-ELE-207",
+        "G2-ELEC-343"
+      ],
+      "original_question_UNCHANGED": "Comparativ cu un transformator, autotransformatorul are tensiunea de scurtcircuit:",
+      "original_ABC_UNCHANGED": {
+        "A": "mai mare",
+        "B": "egală",
+        "C": "mai mică"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-207": "C",
+        "G2-ELEC-343": "C"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "A comparable autotransformer generally has lower short-circuit impedance than a 2-winding transformer due common winding and coupling, but 'comparativ' lacks identical ratings/design base.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "Autotransformatorul similar, cu înfășurare comună, are în general impedanța procentuală de scurtcircuit mai mică.",
+        "B": "Raportul nu este în mod universal egal cu acela al transformatorului cu două înfășurări.",
+        "C": "Legătura magnetică/electrică reduce impedanța de scurtcircuit și poate mări curentul de defect."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://eepower.com/technical-articles/constructing-and-operating-an-autotransformer/",
+        "prior_scope_gap": "Compară modele cu aceeași bază de tensiune/putere și proiectare echivalentă; «comparativ» altfel nu garantează întotdeauna uk mai mic.",
+        "prior_access": "HTML_OPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-1438096c869529cf",
+      "representative_id": "G1-ELE-208",
+      "canonical_sha256": "1438096c869529cf461e9eec6db15a2e28c778e0b1f8af0df3fdfe3c512e20d8",
+      "member_ids": [
+        "G1-ELE-208",
+        "G2-ELEC-344"
+      ],
+      "original_question_UNCHANGED": "Relaţia între curenţii de linie si de fazã în sisteme cu generatoare si receptoare conectate în triunghi este:",
+      "original_ABC_UNCHANGED": {
+        "A": "curentul de linie este mai mare de 1,73 ori decât curentul de fazã",
+        "B": "curentul de linie este egal cu curentul de fazã",
+        "C": "curentul de fazã este mai mare de de 1,73 ori decât curentul de linie"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-208": "A",
+        "G2-ELEC-344": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Balanced delta gives magnitude I_line=sqrt(3)*I_phase; source does not explicitly say balanced. Imported A 'mai mare de 1,73 ori' is numerically approximate and linguistically misleading, not unconditional.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "În conexiunea triunghi echilibrată IL=√3·If≈1,73205·If; A este singura direcție corectă. «mai mare de 1,73 ori» numeric/lingvistic imprecis.",
+        "B": "IL=If este caracteristica conexiunii stea echilibrate, nu triunghi.",
+        "C": "If>IL cu √3 este relația inversată, falsă în sistem triunghi echilibrat."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://eepower.com/technical-articles/determining-phase-and-line-voltages-and-currents-in-delta-connected-generators/",
+        "prior_scope_gap": "Stem nu specifică echilibru; în sistem dezechilibrat curentul de linie este diferența fazorială a doi curenți, nu mereu √3. «mai mare de 1,73 ori» și rotunjire trebuie QA lingvistic.",
+        "prior_access": "HTML_OPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-8e6be4e5686894c8",
+      "representative_id": "G1-ELE-209",
+      "canonical_sha256": "8e6be4e5686894c857b48006aca71f2900b05ecd64869a0680f4581ad84f1d5d",
+      "member_ids": [
+        "G1-ELE-209",
+        "G2-ELEC-345"
+      ],
+      "original_question_UNCHANGED": "Se considera ca un transformator funcţionează în gol atunci când:",
+      "original_ABC_UNCHANGED": {
+        "A": "sarcina transformatorului este foarte mica",
+        "B": "curentul primar si curentul secundar sunt foarte mici",
+        "C": "o înfăşurare este conectata la reţea, iar cealaltă este deschisa"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-209": "C",
+        "G2-ELEC-345": "C"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Transformer is at no-load with primary energized and secondary open-circuit; primary excitation current remains nonzero, so B 'both currents very small' is not definition.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "Sarcina foarte mică nu echivalează strict cu mersul în gol, dacă înfășurarea secundară nu este deschisă.",
+        "B": "Curentul primar de magnetizare nu este zero, iar expresia «ambii foarte mici» nu definește golul; curentul secundar este ideal zero.",
+        "C": "Secundarul deschis, primarul energizat definește mersul în gol convențional."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.se.com/ie/en/faqs/FA133146/",
+        "prior_scope_gap": "La transformatoare multifilare se folosește terminologia înfășurarea activă și restul deschise; enunțul presupune tip cu două înfășurări.",
+        "prior_access": "HTML_OPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-1a4e525d6932d877",
+      "representative_id": "G1-ELE-212",
+      "canonical_sha256": "1a4e525d6932d8775e4bccceecb25b4a397b7fe6a0a7ccab15356118e06b0576",
+      "member_ids": [
+        "G1-ELE-212",
+        "G2-ELEC-348"
+      ],
+      "original_question_UNCHANGED": "Rezistivitatea unui conductor electric depinde de:",
+      "original_ABC_UNCHANGED": {
+        "A": "natura materialului",
+        "B": "lungime, direct proporţional",
+        "C": "masa, direct proporţional"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-212": "A",
+        "G2-ELEC-348": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Resistivity rho material property at specified temperature; conductor length changes resistance R=rho*l/A, not rho itself; no mass proportionality.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "Rezistivitatea este o proprietate de material și depinde de compoziție/structură și temperatură; A oferă un factor real.",
+        "B": "Lungimea intră în rezistența R=ρL/A, nu în rezistivitatea materialului la mediu constant.",
+        "C": "Masa nu este argument direct al lui ρ; poate corela cu geometria prin volum și densitate."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "prior_scope_gap": "Cuvântul «depinde» permite multipli factori; temperatura, starea fizică, impurități neincluse în opțiuni. A nu este exhaustiv.",
+        "prior_access": "TOPICAL_REFERENCE_PREVIOUSLY_USED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-93574653f700962e",
+      "representative_id": "G1-ELE-213",
+      "canonical_sha256": "93574653f700962e95de2ef0ba4960da4c4c4255488ea69bc925293e953cd232",
+      "member_ids": [
+        "G1-ELE-213",
+        "G2-ELEC-349"
+      ],
+      "original_question_UNCHANGED": "Rezonanţa se obţine într-un circuit electric de curent alternativ dacă:",
+      "original_ABC_UNCHANGED": {
+        "A": "reactanţele inductivă şi capacitivă în valoare absolută sunt egale",
+        "B": "reactanţa inductivă este mai mare decât reactanţa capacitivă",
+        "C": "reactanţa capacitivă este mai mare decât reactanţa inductivă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-213": "A",
+        "G2-ELEC-349": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Ideal sinusoidal RLC resonance occurs when net X_L-X_C=0 in standard series model; alternatives unequal magnitudes correspond net inductive/capacitive.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "La rezonanță pentru circuit RLC rezonant XL=XC (în modul) și reactanța netă se anulează.",
+        "B": "XL>XC implică caracter inductiv, nu egalitatea necesară pentru rezonanța serie ideală.",
+        "C": "XC>XL implică caracter capacitiv, nu rezonanța ideală."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://openstax.org/books/university-physics-volume-2/pages/15-3-rlc-series-circuits-with-ac",
+        "prior_scope_gap": "Tipul circuitului nu este precizat; în rezonanța paralelă reală pot exista condiții și pierderi care schimbă definiția exactă.",
+        "prior_access": "TOPICAL_REFERENCE_PREVIOUSLY_USED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-9049cdd393354845",
+      "representative_id": "G1-ELE-215",
+      "canonical_sha256": "9049cdd39335484586bff306c114c8a5a0650e5624ec5ee6d886e08322135166",
+      "member_ids": [
+        "G1-ELE-215",
+        "G2-ELEC-351"
+      ],
+      "original_question_UNCHANGED": "Rolul dominant pentru reglarea nivelului de tensiune pe o linie electrica îl are:",
+      "original_ABC_UNCHANGED": {
+        "A": "circulaţia de putere activa",
+        "B": "circulaţia de putere reactiva",
+        "C": "nici una din cele doua"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-215": "B",
+        "G2-ELEC-351": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Grid voltage variation approximately ΔU≈(RP+XQ)/U; reactive Q dominates only for high X/R, while LV with significant R can be P sensitive.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "În rețele cu X/R mare, componenta R·P contribuie mai puțin la căderea de tensiune decât X·Q.",
+        "B": "Reglarea Q compensează tensiunea în rețele cu impedanță inductivă dominantă, tipic HV.",
+        "C": "«niciuna» contrazice ecuația ΔU≈(RP+XQ)/U în condiții date."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_11_ALL_20_SOURCE_SPECIFIC_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "prior_scope_gap": "La linii de JT cu R/X mare, P poate afecta tensiunea comparabil sau mai mult; «rol dominant» este dependent de sistem, nu absolut.",
+        "prior_access": "TOPICAL_DERIVATION_NOT_EXACT_SCOPE",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-883587c552ff3f75",
+      "representative_id": "G1-ELE-216",
+      "canonical_sha256": "883587c552ff3f757687e977d4cb95d988ae2d3682e2ae421d9c83085c23b89f",
+      "member_ids": [
+        "G1-ELE-216",
+        "G2-ELEC-352"
+      ],
+      "original_question_UNCHANGED": "În cazul transformatoarelor de tensiune, care dintre urmatoarele enunturi nu este adevarat:",
+      "original_ABC_UNCHANGED": {
+        "A": "alegerea transformatorului de tensiune presupune verificarea nivelului sau de izolatie;",
+        "B": "alegerea transformatorului de tensiune presupune verificarea sa la stabilitate electrodinamica in caz de scurtcircuit",
+        "C": "transformatorul de tensiune trebuie sa functioneze in domeniul de frecventa indicat de fabricant"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-216": "B",
+        "G2-ELEC-352": "B"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Instrument voltage transformer selection requires insulation and frequency; CT electrodynamic short circuit primary withstand checks don't transfer universally, but VT may have its own short-circuit withstand standard.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: La transformatorul de măsurare a tensiunii se verifică nivelul de izolație corespunzător tensiunii rețelei.",
+        "B": "B: Stabilitatea electrodinamică la curentul de scurtcircuit primar este o verificare specifică transformatorului de curent; pentru VT cerințele de scurtcircuit secundar pot fi diferite, nu afirmație universală.",
+        "C": "C: Domeniul de frecvență al VT este o cerință explicită de aplicație și performanță."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://webstore.iec.ch/en/publication/6051 | https://standards.iteh.ai/catalog/standards/iec/22825143-3f87-4234-a841-e778bd57dbe9/iec-61869-2-2012",
+        "prior_scope_gap": "Nu se exclude automat orice cerință mecanică/de scurtcircuit secundar pentru VT; text integral și ediția de examen neconfirmate.",
+        "prior_access": "OFFICIAL_IEC_HTML_OPENED;IEC2_PUBLIC_EXTRACT_SEARCH",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-08d309e3e5bd20dd",
+      "representative_id": "G1-ELE-218",
+      "canonical_sha256": "08d309e3e5bd20dd3dabc5718202d0116def6d3b39982f1de65bec43ff3f4839",
+      "member_ids": [
+        "G1-ELE-218",
+        "G2-ELEC-354"
+      ],
+      "original_question_UNCHANGED": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat, al unei reţele, izolat de pământ se compune din:",
+      "original_ABC_UNCHANGED": {
+        "A": "schemele de secvenţă directă (pozitivă) , inversă (negativă) şi homopolară (zero) conectate în serie",
+        "B": "schema de secvenţă directă (pozitivă)",
+        "C": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-218": "B",
+        "G2-ELEC-354": "B"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Ideal balanced three-phase short circuit has only positive sequence; grounding and zero sequence do not enter symmetric balanced fault.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Conexiunea serie directă/inversă/homopolară este asociată defectelor nesimetrice la pământ, nu scurtcircuitului trifazat simetric.",
+        "B": "B: La defect trifazat echilibrat contribuie doar rețeaua de secvență directă.",
+        "C": "C: Secvența inversă nu este excitată într-un defect trifazat perfect simetric."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://electrical-engineering-portal.com/resources/knowledge/fault-calculations",
+        "prior_scope_gap": "Rețea izolată de pământ nu schimbă concluzia pentru defect trifazat perfect simetric, dar regimul exact de arc poate modifica simetria.",
+        "prior_access": "TECHNICAL_HTML_OPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-6b39f97fe06ea4c3",
+      "representative_id": "G1-ELE-219",
+      "canonical_sha256": "6b39f97fe06ea4c30607534c5758343c1c32592adfe3cc8a1e1a1b9b0d70cbd1",
+      "member_ids": [
+        "G1-ELE-219",
+        "G2-ELEC-355"
+      ],
+      "original_question_UNCHANGED": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat şi la pământ, cu arc, se compune din:",
+      "original_ABC_UNCHANGED": {
+        "A": "schema de secvenţă directă (pozitivă) înseriată cu triplul impedanţei arcului",
+        "B": "schema de secvenţă directă (pozitivă)",
+        "C": "schema de secvenţă directă (pozitivă) înseriată cu schema de secvenţă inversă (negativă)."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-219": "A",
+        "G2-ELEC-355": "A"
+      },
+      "technical_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_reason": "Original A applies 3*Z_arc to a 3-phase fault, but 3Zf is characteristic of SLG fault sequence-series network; balanced 3-phase faults use positive sequence and per-phase Zf, unless unusual shared arc topology. Exact diagram absent.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Factorul 3× impedanța de defect apare clasic pentru curent homopolar la defect monofazat la pământ, NU rezultă automat pentru defect trifazat la pământ cu arcuri. Necesită definirea fiecărui arc și a nodului comun.",
+        "B": "B: Doar secvența directă este modelul de bază la scurtcircuit trifazat simetric fără impedanță de defect; dacă arcul are Zf nenul, B poate omite Zf.",
+        "C": "C: Secvența inversă nu intervine la defectul trifazat simetric cu aceleași impedanțe de arc."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://electrical-engineering-portal.com/resources/knowledge/fault-calculations | https://www.sciencedirect.com/topics/engineering/symmetrical-component",
+        "prior_scope_gap": "HIGH_PRIORITY_SOURCE_SCOPE_CONFLICT: Barem A nu are dovadă exactă; tipul defectului, 3 arcuri/rezistență comună și secvențierea trebuie reconstituite. NU modifica cheia, NU promova B.",
+        "prior_access": "TECHNICAL_HTML_OPENED;SCIENCEDIRECT_SEARCH_EXCERPT",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-57a62fd9868a2238",
+      "representative_id": "G1-ELE-221",
+      "canonical_sha256": "57a62fd9868a2238b76c57f334d694bf62a9dc4d84e0e8c76a601dc1ac1665b2",
+      "member_ids": [
+        "G1-ELE-221",
+        "G2-ELEC-357"
+      ],
+      "original_question_UNCHANGED": "Scopul normării distanţelor de izolare în aer minime admisibile pentru instalaţiile electrice este asigurarea:",
+      "original_ABC_UNCHANGED": {
+        "A": "protecţiei personalului de exploatare a instalaţiei;",
+        "B": "siguranţei în funcţionare a instalaţiei, prin reducerea numărului de defecte în instalaţie;",
+        "C": "realizării unei economii de teren."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-221": "A",
+        "G2-ELEC-357": "A"
+      },
+      "technical_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_reason": "The original A conflates air dielectric insulation clearance with personnel safety clearance. Exact insulating gap is intended to withstand electric stress and avoid flashover (B), while person protection is distinct; applicable PE/IEC clause needed.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Distanțele de securitate față de persoane contribuie la protecție, dar nu sunt identice prin definiție cu distanțele minime DIELECTRICE de izolare în aer.",
+        "B": "B: Distanțele minime de izolare între părți sub tensiune și pământ/faze previn străpungeri și conturnări, sporind fiabilitatea; B poate fi adevărată pentru obiectul exact.",
+        "C": "C: Economia de teren poate fi obiectiv secundar de proiectare, nu scopul minimelor admisibile dielectric."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://webstore.iec.ch/en/publication/6119 | https://studylib.net/doc/27990193/iec-61936-1",
+        "prior_scope_gap": "HIGH_PRIORITY_SCOPE: original A may confuse minimum AIR INSULATION with personnel clearance. Require exact applicable Romanian PE/I7/edition and diagram. Candidate B not approved.",
+        "prior_access": "OFFICIAL_IEC_SEARCH_AND_INDEX;UNOFFICIAL_TEXT_EXCERPT_SEARCH",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-4685bf42e604ea53",
+      "representative_id": "G1-ELE-223",
+      "canonical_sha256": "4685bf42e604ea53f183caa4e5e191d83ad45e68f461b5a383d07b63153295b4",
+      "member_ids": [
+        "G1-ELE-223",
+        "G2-ELEC-359"
+      ],
+      "original_question_UNCHANGED": "Transformatoarele de măsurare de curent:",
+      "original_ABC_UNCHANGED": {
+        "A": "pot fi racordate în circuitul primar cu înfăşurarea secundara deschisa",
+        "B": "pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
+        "C": "nu pot fi racordate in circuitul primar cu înfăşurarea secundara deschisa"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-223": "C",
+        "G2-ELEC-359": "C"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Energized current transformer with open secondary can induce hazardous high voltage; rule C is correct in the standard energized-primary operating context. Not a field procedure.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: CT cu primar energizat și secundar deschis poate genera tensiuni periculoase; nu se recomandă racordare în această stare.",
+        "B": "B: Lăsarea în exploatare cu secundar deschis poate deteriora izolația și răni operatori.",
+        "C": "C: În situația de racordare cu primarul ce poate transporta curent, secundarul CT trebuie conectat la sarcină sau scurtcircuitat."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.se.com/nz/en/faqs/FA125574/",
+        "prior_scope_gap": "SAFETY. Nu sunt instrucțiuni operative; CT cu primar definitiv dezenergizat poate avea secundar deschis fără pericol de inducție, deci «nu pot» necesită context energizare.",
+        "prior_access": "MANUFACTURER_HTML_OPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-aa97f571be06c844",
+      "representative_id": "G1-ELE-224",
+      "canonical_sha256": "aa97f571be06c844aacd31330b0e36de402b11df006e594bc507cf37198ba201",
+      "member_ids": [
+        "G1-ELE-224",
+        "G2-ELEC-360"
+      ],
+      "original_question_UNCHANGED": "Secţionarea barelor colectoare ale unei staţii electrice conduce",
+      "original_ABC_UNCHANGED": {
+        "A": "la mărirea continuităţii în alimentare a consumatorilor racordaţi la bare;",
+        "B": "limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face printr-un singur transformator;",
+        "C": "numai la limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face prin două transformatoare sau printr-un transformator cu înfăşurare divizată."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-224": "A",
+        "G2-ELEC-360": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Sectionalizing busbars can localize faults and improve continuity if bus sections have suitable independent supplies/coupler/protection. Generic A depends on topology.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Secționarea poate izola defectul și menține alimentarea secțiilor sănătoase dacă există alimentări/protecții corespunzătoare.",
+        "B": "B: Un transformator unic poate alimenta ambele secții; secționarea singură nu garantează reducerea curentului la defect când sursa este aceeași.",
+        "C": "C: «numai» pretinde exclusiv limitarea curentului și ignoră continuitatea; chiar cu două transformatoare depinde de cupla închisă/deschisă."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.electrical-installation.org/enwiki/Choice_of_a_distribution_architecture",
+        "prior_scope_gap": "Schema barelor/cuplei, sursele și selectivitatea nu sunt furnizate; nu se poate afirma avantaj universal.",
+        "prior_access": "TOPICAL_REFERENCE_NOT_DIRECTLY_OPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-1dd81277db60df82",
+      "representative_id": "G1-ELE-225",
+      "canonical_sha256": "1dd81277db60df8266f7891a7bbac6edd4e804f675716d496ea340418265cdae",
+      "member_ids": [
+        "G1-ELE-225",
+        "G2-ELEC-361"
+      ],
+      "original_question_UNCHANGED": "Secţionarea barelor colectoare în staţiile electrice are scopul:",
+      "original_ABC_UNCHANGED": {
+        "A": "de limitare a curenţilor de scurtcircuit",
+        "B": "de a reduce costul instalaţiei",
+        "C": "de a reduce pierderile de putere"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-225": "A",
+        "G2-ELEC-361": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "Sectionalizing fed busbars can limit fault contributions when sources are separated; single-source systems may show continuity benefit without reducing fault current.",
+      "stem_to_ABC_reasoning_reused": {
+        "A": "A: Limitarea scurtcircuitului este posibilă când secțiunile sunt alimentate separat și cupla nu cumulează sursele la punctul de defect.",
+        "B": "B: Secționarea poate adăuga aparate/costuri; reducerea costului nu este scop general.",
+        "C": "C: Reducerea pierderilor de putere nu este funcția de bază a separării barelor."
+      },
+      "source_provenance": {
+        "prior_research_path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_12_ALL_20_SCOPED_SOURCE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_uri": "https://www.electrical-installation.org/enwiki/Choice_of_a_distribution_architecture",
+        "prior_scope_gap": "Într-o stație cu o singură sursă, secționarea poate avea beneficiu de continuitate fără reducerea Isc; formularea A este condițională.",
+        "prior_access": "TOPICAL_REFERENCE_NOT_DIRECTLY_OPENED",
+        "current_reopen": "EXISTING_EVIDENCE_REUSED; EXTERNAL_WEB_RESEARCH_ON_ISSUES_NOT_EXACT_ALL_45"
+      },
+      "independent_reviewer_technical": "NOT_RUN",
+      "independent_reviewer_sources": "NOT_RUN",
+      "independent_reviewer_linguistic": "NOT_RUN",
+      "official_ANRE_grading_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    }
+  ]
+}

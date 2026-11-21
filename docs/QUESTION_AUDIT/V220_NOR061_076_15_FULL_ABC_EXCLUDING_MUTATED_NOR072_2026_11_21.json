@@ -1,0 +1,677 @@
+{
+  "schema": "v220_norm61_76_15_workbook_original_ABC_editorial_cards_held6",
+  "date": "2026-11-21",
+  "parent_commit": "c4ec1d28673bb768b445dd5f10205e32bb46705f",
+  "previous_manifest_blob": "3915c7d51dc079faeff649f52665d573b253a8aa",
+  "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "source_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "counts": {
+    "new_unique_qabc": 15,
+    "new_grade_routes": 15,
+    "separate_option_explanations": 45,
+    "reformulated_exercises": 15,
+    "new_explicit_semantic_holds": 6,
+    "learner_approvals": 0
+  },
+  "held_ids": [
+    "QABC-0375",
+    "QABC-0376",
+    "QABC-0379",
+    "QABC-0380",
+    "QABC-0381",
+    "QABC-0385"
+  ],
+  "explicit_excluded": {
+    "unit_id": "QABC-0386",
+    "grade_id": "G1-NOR-072",
+    "reason": "V175 found ANRE official sample B differs materially from trainer B: published source says deconectat ușor FĂRĂ sculă, trainer says deconectare NUMAI cu o sculă. Must reconcile versions separately, cannot count as original exact."
+  },
+  "normative_gate": "Prior CKPT226 exact source NOR061/062/066 conflicts preserved; CKPT221 and CKPT222 contextual anchors reused. Official I7 portal returned 502 on current pass, 2026 edition and scoring key unverified. Qualified independent QA absent.",
+  "cards": [
+    {
+      "unit_id": "QABC-0375",
+      "grade_ids": [
+        "G1-NOR-061"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "68",
+        "stem": "Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:",
+        "A": "admisă",
+        "B": "interzisă",
+        "C": "admisă doar pentru tuburi cu diametru mai mic de 16 mm",
+        "imported_keys_UNCHANGED": "G1-NOR-061=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-061:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "original_source_links": "G1-NOR-061:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.12.3.4; CKPT226 superseding",
+      "editorial_draft": {
+        "A": "A admiterea îmbinării tuburilor ÎN traversarea elementelor de construcție contrazice interdicția exactă.",
+        "B": "B interdicția privește exact îmbinarea tuburilor la trecerile prin perete/planșeu, nu orice îmbinare în afara traversării.",
+        "C": "C diametrul sub 16 mm nu constituie excepție normativă pentru trecere.",
+        "model_scope_or_trap": "HOLD: răspunsul importat A, dar norma specifică susține B; nu confunda îmbinarea tuburilor la trecere cu traseul continuu.",
+        "reformulated_question": "Se poate îmbina un tub de protecție chiar în grosimea peretelui traversat?",
+        "reformulated_solution": "Nu, clauza interzice îmbinările la trecerile prin construcție.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A admiterea îmbinării tuburilor ÎN traversarea elementelor de construcție contrazice interdicția exactă.",
+            "B": "B interdicția privește exact îmbinarea tuburilor la trecerile prin perete/planșeu, nu orice îmbinare în afara traversării.",
+            "C": "C diametrul sub 16 mm nu constituie excepție normativă pentru trecere."
+          },
+          "option_vs_option": {
+            "A-B": "Pending exact-scope independent comparison",
+            "A-C": "Pending exact-scope independent comparison",
+            "B-C": "Pending exact-scope independent comparison"
+          },
+          "reverse_check": "Imported key not accepted by elimination; direct source and counterexample remain mandatory",
+          "status": "PROVISIONAL_HOLD"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0376",
+      "grade_ids": [
+        "G1-NOR-062"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "69",
+        "stem": "În camerele de copii din creşe, grădiniţe, spitale de copii, prizele trebuie montate pe pereţi la următoarele înălţimi măsurate de la axul aparatului la nivelul pardoselii finite:",
+        "A": "peste 1m",
+        "B": "peste 1,5 m",
+        "C": "peste 2m",
+        "imported_keys_UNCHANGED": "G1-NOR-062=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-062:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "original_source_links": "G1-NOR-062:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.25; CKPT226 superseding",
+      "editorial_draft": {
+        "A": "A «peste 1 m» include valori insuficiente față de pragul >1,5 m recomandat.",
+        "B": "B «peste 1,5 m» indică pragul recomandat pentru prizele în spațiile copiilor menționate.",
+        "C": "C «peste 2 m» este mai restrictiv și nu exprimă pragul recomandat, deși poate satisface intervalul permis.",
+        "model_scope_or_trap": "HOLD: A importat versus pragul recomandat B; întrebarea afirmă «trebuie», dar sursa folosește «se recomandă».",
+        "reformulated_question": "Ce înălțime recomandă I7 pentru prizele din camerele copiilor specificate?",
+        "reformulated_solution": "Peste 1,5 m, ca recomandare în sursa indicată.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A «peste 1 m» include valori insuficiente față de pragul >1,5 m recomandat.",
+            "B": "B «peste 1,5 m» indică pragul recomandat pentru prizele în spațiile copiilor menționate.",
+            "C": "C «peste 2 m» este mai restrictiv și nu exprimă pragul recomandat, deși poate satisface intervalul permis."
+          },
+          "option_vs_option": {
+            "A-B": "Pending exact-scope independent comparison",
+            "A-C": "Pending exact-scope independent comparison",
+            "B-C": "Pending exact-scope independent comparison"
+          },
+          "reverse_check": "Imported key not accepted by elimination; direct source and counterexample remain mandatory",
+          "status": "PROVISIONAL_HOLD"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0377",
+      "grade_ids": [
+        "G1-NOR-063"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "70",
+        "stem": "Tablourile de distribuţie se vor executa",
+        "A": "numai în  construcţie deschisă",
+        "B": "numai în construcţie închisă (protejată)",
+        "C": "în construcţie deschisă sau închisă, în funcţie de condiţiile de influenţe externe şi grad de protecţie",
+        "imported_keys_UNCHANGED": "G1-NOR-063=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-063:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-063:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.3.3.5–6; CKPT221",
+      "editorial_draft": {
+        "A": "A tablourile numai deschise ignoră medii ce necesită protecție închisă.",
+        "B": "B tablourile numai închise ignoră cazurile admise în construcție deschisă, cu restricțiile de acces.",
+        "C": "C tipul deschis sau închis se alege în funcție de influențe externe și gradul de protecție.",
+        "model_scope_or_trap": "Nu confunda forma tabloului cu permisivitatea accesului la părți active.",
+        "reformulated_question": "Este obligatoriu ca fiecare tablou să fie construit exclusiv închis indiferent de amplasament?",
+        "reformulated_solution": "Nu, forma depinde de condițiile de mediu și protecție.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0378",
+      "grade_ids": [
+        "G1-NOR-064"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "71",
+        "stem": "În clădirile de locuit se prevăd în fiecare încăpere:",
+        "A": "cel mult două prize",
+        "B": "prize după necesităţi",
+        "C": "cel puţin trei prize",
+        "imported_keys_UNCHANGED": "G1-NOR-064=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-064:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-064:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.24; CKPT221",
+      "editorial_draft": {
+        "A": "A «cel mult două» inventează un plafon uniform pentru fiecare cameră.",
+        "B": "B numărul de prize se proiectează după necesitățile încăperii în limitele regulilor aplicabile.",
+        "C": "C «cel puțin trei» inventează un minimum unic pentru orice încăpere.",
+        "model_scope_or_trap": "Necesarul unei camere de zi poate diferi de al unei debarale.",
+        "reformulated_question": "Trebuie montate exact trei prize în fiecare încăpere a locuinței?",
+        "reformulated_solution": "Nu, se prevăd după necesități.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0379",
+      "grade_ids": [
+        "G1-NOR-065"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "72",
+        "stem": "În locuinţe se prevede câte un circuit de priză separat numai pentru receptoare cu puteri de peste:",
+        "A": "2 kW",
+        "B": "2,5 kW",
+        "C": "3 kW",
+        "imported_keys_UNCHANGED": "G1-NOR-065=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-065:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-065:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.7; CKPT221",
+      "editorial_draft": {
+        "A": "A pragul de peste 2 kW corespunde unei cerințe de circuit separat, nu unei interdicții de circuite dedicate sub prag.",
+        "B": "B 2,5 kW ar omite aparatele de 2,1–2,5 kW care depășesc deja pragul indicat.",
+        "C": "C 3 kW ar omite aparatele de 2,1–3 kW.",
+        "model_scope_or_trap": "HOLD: cuvântul «numai» din enunț induce greșit că circuitele separate sunt interzise sub 2 kW.",
+        "reformulated_question": "Un aparat de 2,3 kW depășește pragul I7 pentru circuit dedicat?",
+        "reformulated_solution": "Da; și sub prag se poate opta pentru circuite dedicate dacă proiectul cere.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A pragul de peste 2 kW corespunde unei cerințe de circuit separat, nu unei interdicții de circuite dedicate sub prag.",
+            "B": "B 2,5 kW ar omite aparatele de 2,1–2,5 kW care depășesc deja pragul indicat.",
+            "C": "C 3 kW ar omite aparatele de 2,1–3 kW."
+          },
+          "option_vs_option": {
+            "A-B": "Pending exact-scope independent comparison",
+            "A-C": "Pending exact-scope independent comparison",
+            "B-C": "Pending exact-scope independent comparison"
+          },
+          "reverse_check": "Imported key not accepted by elimination; direct source and counterexample remain mandatory",
+          "status": "PROVISIONAL_HOLD"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0380",
+      "grade_ids": [
+        "G1-NOR-066"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "73",
+        "stem": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+        "A": "este interzisă",
+        "B": "este admisă",
+        "C": "este admisă numai pentru conductoare de cupru",
+        "imported_keys_UNCHANGED": "G1-NOR-066=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-066:CKPT_181_NOR066_NOR094_HISTORY_PRESERVING_RECHECK_2026_11_17.md;CKPT_182_BLOCKED_I7_TEN_SOURCE_AND_SEMANTIC_GATES_2026_11_17.md;CKPT_226_GFR_OFFICIAL_I7_SUPERSEDING_8_OLD_P1_AND_NOR056_2026_11_18.md",
+        "original_source_links": "G1-NOR-066:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.12.1.4; CKPT226 superseding §5.2.12.1.3",
+      "editorial_draft": {
+        "A": "A interdicția punctuală vizează conductoarele electrice în tuburi/țevi POZATE ÎN PĂMÂNT.",
+        "B": "B permisiunea generică a tuburilor de protecție nu poate înlocui clauza specifică despre îngroparea lor în sol.",
+        "C": "C cuprul nu constituie o excepție la regula de instalare din articolul citat.",
+        "model_scope_or_trap": "HOLD: cheia importată B, dar articolul specific favorizează A; conductoare individuale în tub ≠ cablu conceput pentru îngropare.",
+        "reformulated_question": "Admiterea tuburilor în instalații permite automat conductoare individuale în tub pozat în pământ?",
+        "reformulated_solution": "Nu; regula specifică a amplasamentului trebuie respectată.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A interdicția punctuală vizează conductoarele electrice în tuburi/țevi POZATE ÎN PĂMÂNT.",
+            "B": "B permisiunea generică a tuburilor de protecție nu poate înlocui clauza specifică despre îngroparea lor în sol.",
+            "C": "C cuprul nu constituie o excepție la regula de instalare din articolul citat."
+          },
+          "option_vs_option": {
+            "A-B": "Pending exact-scope independent comparison",
+            "A-C": "Pending exact-scope independent comparison",
+            "B-C": "Pending exact-scope independent comparison"
+          },
+          "reverse_check": "Imported key not accepted by elimination; direct source and counterexample remain mandatory",
+          "status": "PROVISIONAL_HOLD"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0381",
+      "grade_ids": [
+        "G1-NOR-067"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "74",
+        "stem": "Sigutanţele fuzibile sunt dispozitive care protejează:",
+        "A": "numai la curenţi de suprasarcină",
+        "B": "numai la curenţi de scurtcircuit",
+        "C": "atât la curenţi de suprasarcină cât şi la curenţi de scurtcircuit",
+        "imported_keys_UNCHANGED": "G1-NOR-067=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-067:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-067:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §4.3; clasificare SR EN 60269; CKPT221",
+      "editorial_draft": {
+        "A": "A «numai suprasarcină» nu acoperă funcția de scurtcircuit a fuzibilului de gamă completă.",
+        "B": "B «numai scurtcircuit» omite suprasarcina la fuzibile generale gG, deși poate descrie utilizarea unor fuzibile aM.",
+        "C": "C ambele protecții sunt asigurate de fuzibile de gamă completă precum gG; nu de toate tipurile aM.",
+        "model_scope_or_trap": "HOLD: enunțul nu precizează tipul fuzibilului; fuzibil aM necesită protecție separată la suprasarcină.",
+        "reformulated_question": "Un fuzibil aM pentru motor înlocuiește singur releul de suprasarcină?",
+        "reformulated_solution": "Nu, destinația lui nu este protecția completă la suprasarcină.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A «numai suprasarcină» nu acoperă funcția de scurtcircuit a fuzibilului de gamă completă.",
+            "B": "B «numai scurtcircuit» omite suprasarcina la fuzibile generale gG, deși poate descrie utilizarea unor fuzibile aM.",
+            "C": "C ambele protecții sunt asigurate de fuzibile de gamă completă precum gG; nu de toate tipurile aM."
+          },
+          "option_vs_option": {
+            "A-B": "Pending exact-scope independent comparison",
+            "A-C": "Pending exact-scope independent comparison",
+            "B-C": "Pending exact-scope independent comparison"
+          },
+          "reverse_check": "Imported key not accepted by elimination; direct source and counterexample remain mandatory",
+          "status": "PROVISIONAL_HOLD"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0382",
+      "grade_ids": [
+        "G1-NOR-068"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "75",
+        "stem": "În încăperi în care se impun condiţii speciale de protecţie datorită utilizatorilor (copii, bolnavi mintal etc.), prizele trebuie să fie",
+        "A": "montate aparent",
+        "B": "prevăzute cu dispozitive de protecţie diferenţială ≤ 30 mA",
+        "C": "de tip îngropat",
+        "imported_keys_UNCHANGED": "G1-NOR-068=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-068:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-068:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.29; CKPT221; complement NOR069",
+      "editorial_draft": {
+        "A": "A montajul aparent este o metodă de pozare, nu o măsură de protecție diferențială.",
+        "B": "B RCD cu curent diferențial nominal ≤30 mA oferă măsura cerută, dar nu înlocuiește celelalte protecții.",
+        "C": "C priza îngropată nu înlocuiește dispozitivul diferențial.",
+        "model_scope_or_trap": "În încăperile cu utilizatori vulnerabili se pot cumula RCD și obturatori, nu se alege doar unul.",
+        "reformulated_question": "O priză de tip îngropat poate înlocui automat RCD-ul cerut?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0383",
+      "grade_ids": [
+        "G1-NOR-069"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "76",
+        "stem": "În încăperi în care se impun condiţii speciale de protecţie datorită utilizatorilor (copii, bolnavi mintal etc.), prizele trebuie să fie",
+        "A": "de tip special (de ex. cu obturatori)",
+        "B": "de tip îngropat",
+        "C": "montate aparent",
+        "imported_keys_UNCHANGED": "G1-NOR-069=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-069:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-069:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.29; CKPT221; complement NOR068",
+      "editorial_draft": {
+        "A": "A prizele speciale, de exemplu cu obturatori, reprezintă caracteristica de protecție indicată.",
+        "B": "B montajul îngropat nu garantează obturarea contactelor.",
+        "C": "C montajul aparent nu garantează protecția specială a prizei.",
+        "model_scope_or_trap": "Obturatorii și RCD-ul ≤30mA se pot cere concomitent, nu sunt alternative.",
+        "reformulated_question": "Dacă priza are obturatori, poate fi omis automat RCD-ul cerut pentru acea încăpere?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0384",
+      "grade_ids": [
+        "G1-NOR-070"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "77",
+        "stem": "Întrerupătoarele, comutatoarele, şi butoanele de lumină trebuie montate:",
+        "A": "numai pe conductoarele de fază",
+        "B": "numai pe conductorul de nul",
+        "C": "pe fază sau pe nul, nu are importanţă",
+        "imported_keys_UNCHANGED": "G1-NOR-070=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-070:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-070:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.22; CKPT221",
+      "editorial_draft": {
+        "A": "A întrerupătorul simplu al circuitului de iluminat se montează pe fază, nu pe neutru.",
+        "B": "B secționarea doar a neutru poate lăsa faza prezentă la receptor.",
+        "C": "C montarea arbitrară fază/neutru nu este echivalentă pentru protecție și comandă.",
+        "model_scope_or_trap": "Nu confunda întreruperea comenzii cu izolarea sigură pentru lucrări.",
+        "reformulated_question": "Dacă întrerupi doar N, mai poate rămâne prezentă faza la lampa stinsă?",
+        "reformulated_solution": "Da.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0385",
+      "grade_ids": [
+        "G1-NOR-071"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "78",
+        "stem": "Culoarea verde-galben pentru izolaţia conductoarelor si cablurilor se foloseşte pentru marcarea conductorului de:",
+        "A": "faza",
+        "B": "neutru de lucru",
+        "C": "de protecţie şi de neutru",
+        "imported_keys_UNCHANGED": "G1-NOR-071=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-071:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-071:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.1.4.3.1(a)–(c); CKPT221",
+      "editorial_draft": {
+        "A": "A faza nu se identifică verde-galben.",
+        "B": "B N separat este bleu, nu verde-galben.",
+        "C": "C este compatibilă cu un singur conductor combinat PEN: verde-galben pe lungime, suplimentar bleu la capete; nu cu doi conductori PE și N separați.",
+        "model_scope_or_trap": "HOLD: «de protecție și de neutru» poate însemna PEN combinat ori cei doi conductori distincți, ceea ce nu e aceeași normă.",
+        "reformulated_question": "Se marchează și PE și N separat ambele verde-galben?",
+        "reformulated_solution": "Nu. PE verde-galben; N bleu; PEN are regula lui specială.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_SCOPE_HOLD",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true,
+        "bidirectional_option_inference": {
+          "stem_vs_options": {
+            "A": "A faza nu se identifică verde-galben.",
+            "B": "B N separat este bleu, nu verde-galben.",
+            "C": "C este compatibilă cu un singur conductor combinat PEN: verde-galben pe lungime, suplimentar bleu la capete; nu cu doi conductori PE și N separați."
+          },
+          "option_vs_option": {
+            "A-B": "Pending exact-scope independent comparison",
+            "A-C": "Pending exact-scope independent comparison",
+            "B-C": "Pending exact-scope independent comparison"
+          },
+          "reverse_check": "Imported key not accepted by elimination; direct source and counterexample remain mandatory",
+          "status": "PROVISIONAL_HOLD"
+        }
+      }
+    },
+    {
+      "unit_id": "QABC-0387",
+      "grade_ids": [
+        "G1-NOR-073"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "80",
+        "stem": "Legăturile conductoarelor din aluminiu pentru îmbinări sau derivaţii trebuie să se facă:",
+        "A": "prin răsucire şi matisare",
+        "B": "prin cleme speciale, prin presare cu scule speciale sau prin sudare",
+        "C": "prin lipire cu cositor",
+        "imported_keys_UNCHANGED": "G1-NOR-073=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-073:CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md",
+        "original_source_links": "G1-NOR-073:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.6.8–9; CKPT221",
+      "editorial_draft": {
+        "A": "A răsucirea/matisarea simplă nu este procedeul prescris pentru îmbinarea aluminiului.",
+        "B": "B cleme speciale, presare cu scule specifice sau sudare descriu metode acceptate pentru aluminiu.",
+        "C": "C lipirea obișnuită cu cositor nu este echivalentă cu procedeele specializate normate.",
+        "model_scope_or_trap": "Conexiunea de Al cere procedeu și accesorii adaptate, nu improvizație.",
+        "reformulated_question": "Este răsucirea manuală simplă un procedeu general admis pentru îmbinarea Al?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0388",
+      "grade_ids": [
+        "G1-NOR-074"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "81",
+        "stem": "Marcarea conductorului neutru  care asigură simultan și funcţia de protecţie (PEN) se face",
+        "A": "cu  culoarea bleu                                 pe toată  lungimea",
+        "B": "prin culori verde/galben pe toată  lungimea",
+        "C": "prin culori verde/galben pe toată  lungimea şi suplimentar marcare cu\n     culoarea bleu la fiecare extremitate;",
+        "imported_keys_UNCHANGED": "G1-NOR-074=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-074:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-074:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.1.4.3.1(b); CKPT222",
+      "editorial_draft": {
+        "A": "A bleu pe lungime aparține neutrului N, nu descrie complet PEN.",
+        "B": "B verde-galben fără bleu la capete nu descrie complet PEN.",
+        "C": "C PEN se identifică verde-galben pe întreaga lungime și suplimentar bleu la ambele extremități.",
+        "model_scope_or_trap": "PEN combină funcțiile PE și N; nu este două fire de culori diferite.",
+        "reformulated_question": "Cum se identifică PEN față de PE simplu?",
+        "reformulated_solution": "Verde-galben pe lungime și bleu la capete.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0389",
+      "grade_ids": [
+        "G1-NOR-075"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "82",
+        "stem": "Marcarea conductorului neutru (N) se face:",
+        "A": "cu culoarea bleu                                   pe toată lungimea.",
+        "B": "prin culori verde/galben pe toată  lungimea",
+        "C": "cu culoarea bleu                           la fiecare extremitate;",
+        "imported_keys_UNCHANGED": "G1-NOR-075=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-075:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-075:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.1.4.3.1(c); CKPT222",
+      "editorial_draft": {
+        "A": "A N se identifică bleu pe toată lungimea.",
+        "B": "B verde-galben caracterizează PE și baza PEN, nu N simplu.",
+        "C": "C numai capetele bleu nu constituie regula pentru N izolat identificat pe lungime.",
+        "model_scope_or_trap": "Nu confunda regula N cu marcarea specială PEN.",
+        "reformulated_question": "Cum recunoști neutrul N izolat după culoare?",
+        "reformulated_solution": "Bleu pe toată lungimea.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0390",
+      "grade_ids": [
+        "G1-NOR-076"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_2026_SCORE_NOT_AUTHENTICATED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "83",
+        "stem": "Conform normativului I-7-2011, o coloană electrică  este un circuit electric care:",
+        "A": "alimentează un tablou de distribuţie.",
+        "B": "alimentează un receptor de putere",
+        "C": "alimentează mai multe surse de iluminat",
+        "imported_keys_UNCHANGED": "G1-NOR-076=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-076:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-076:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 capitolul 2 definiția «coloană electrică»; CKPT222",
+      "editorial_draft": {
+        "A": "A alimentarea unui tablou de distribuție este un exemplu inclus în definiția coloanei.",
+        "B": "B alimentarea unui receptor de putere direct este circuit terminal, nu coloană către tablouri.",
+        "C": "C alimentarea directă a mai multor corpuri de iluminat este un circuit terminal.",
+        "model_scope_or_trap": "Coloana poate alimenta unul SAU mai multe tablouri; A nu înseamnă «numai unul».",
+        "reformulated_question": "Poate o coloană electrică să alimenteze două tablouri?",
+        "reformulated_solution": "Da, definiția permite unul sau mai multe tablouri.",
+        "editorial_disposition": "PROVISIONAL_TEACHING_DRAFT",
+        "source_edition_check": "EXACT_2026_APPLICABILITY_UNCERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

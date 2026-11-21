@@ -1,0 +1,696 @@
+{
+  "checkpoint": "CKPT-138",
+  "date": "2026-11-17",
+  "phase": "FINAL_ADJUDICATION_STARTED_PROBLEM_FIRST",
+  "baseline_PR_head": "6b7bc0f2ff7c8a8d984080148945d7d4161572af",
+  "action": "Evidence-based follow-up review, NOT independent signoff or learning release",
+  "count": {
+    "unique_units": 15,
+    "grade_IDs": 28
+  },
+  "public_source_verification": "ANRE index, accessible Romanian course formula, OpenStax nonohmic/magnetism, EU Article13 official; PDF visual screenshot could not be fetched; source access varies per case",
+  "important_discovery": "ANRE linked XLSX file https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx inaccessible in current tools; third-party Scribd preview lists alternative A, not a verified official answer key; cannot use this display to choose keys",
+  "quality_policy": "Original QABC and answer keys immutable, source grade/edition confirmed separately, no field switching instructions, no merge/release, real independent reviewers NOT present",
+  "synthetic_math_checks": {
+    "phasorCapacitance": {
+      "V1": [
+        1,
+        0
+      ],
+      "V2": [
+        -0.5,
+        0.8660254037844386
+      ],
+      "V3": [
+        -0.5,
+        -0.8660254037844386
+      ],
+      "computed_q_over_C": [
+        3,
+        0
+      ],
+      "assert_Q1_3CV1": true
+    },
+    "passiveGyrator": {
+      "testCurrents": [
+        2,
+        3
+      ],
+      "R": 4,
+      "portVoltages": [
+        12,
+        -8
+      ],
+      "total_power": 0,
+      "passivity_does_not_prove_reciprocity": true
+    }
+  },
+  "cases": [
+    {
+      "unit_id": "AU-765361a56cb06047",
+      "representative_id": "G1-ELE-018",
+      "grade_member_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "qabc_sha256": "765361a56cb060474638e3e54a2a2af6ee14ab550ab03cf7634ebef6ab3364f5",
+      "original_keymap": {
+        "G1-ELE-018": "A",
+        "G2-ELEC-170": "C"
+      },
+      "question_original": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+      "options_original": {
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "technical_positive": "Power-line service capacitance in balanced three-phase positive sequence: Cs=3 C_ff + C_p; with C12=C23=C31=C and earth ignored C_p=0 therefore Cs=3C. Independent algebra: q1=C(V1−V2)+C(V1−V3)=3CV1 since V1+V2+V3=0.",
+      "abc_review": {
+        "A": "A=3C follows equation and exact stem under symmetric 3-phase regime.",
+        "B": "B=C/3 reverses transformation and fails energy/charge equivalence.",
+        "C": "C=C ignores two interphase capacitance contributions; not service capacitance."
+      },
+      "linguistic_counterexample": "Incorrect G2 imported C; compare source original ANRE XLSX directly when access available. 2024 online third-party workbook view merely lists answer OPTION A, NOT an official answer key.",
+      "classification": "TECHNIC_A_SUPPORTED__G2_C_CONTRADICTED__NO_OFFICIAL_KEY_SIGNOFF",
+      "source_evidence": [
+        {
+          "url": "https://www.consultform.ro/anre/wp-content/uploads/2016/09/Retele-electrice-note-de-curs.pdf",
+          "locator": "section 2.3; slide/page around 28, Cs=3Cff+Cp",
+          "access": "PDF_FULL_TEXT_INDEXED; screen cache miss"
+        },
+        {
+          "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+          "locator": "public workbook ELECTROTEHNICA-09.2024 link, cannot fetch XLSX within web session",
+          "access": "OFFICIAL_INDEX_ONLY"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-9e72d87e6cd28f4d",
+      "representative_id": "G1-ELE-102",
+      "grade_member_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "qabc_sha256": "9e72d87e6cd28f4d90321deeab452feda6c4888adc7fa19c7345f560fc6060eb",
+      "original_keymap": {
+        "G1-ELE-102": "A",
+        "G2-ELEC-245": "C"
+      },
+      "question_original": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+      "options_original": {
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
+      },
+      "technical_positive": "For double busbars with one breaker per circuit, operation of one bus energized/cold reserve and two energized with transverse coupler hot reserve are distinct valid station states; NTE defines operative states but not universal optimal preference for this exact topology.",
+      "abc_review": {
+        "A": "One bus energized and other cold standby may be preferred under specific reliability or protection strategy.",
+        "B": "Both energized with transverse coupler closed can have different fault isolation implications and is not universally best.",
+        "C": "Both energized with hot-reserve coupler is defined as an operating arrangement, but no exact all-stations preference is established."
+      },
+      "linguistic_counterexample": "The 2010 NTE definition of hot reserve describes breaker open / isolators closed, not a proof that C is preferred to A. G1 imported A versus G2 C is a real key conflict; keep both untouched.",
+      "classification": "TWO_IMPORTED_KEYS_A_C__NO_EXACT_PREFERENCE_SOURCE",
+      "source_evidence": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+          "locator": "NTE009/10/00 Art10 and Art11 reserve-caldă/rece states",
+          "access": "OFFICIAL_INDEX_HTTP502; third-party legislative text accessible"
+        },
+        {
+          "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+          "locator": "2024 workbook indexed, official answer key not demonstrated",
+          "access": "OFFICIAL_QUESTION_INDEX"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-da0512acac25df72",
+      "representative_id": "G1-ELE-026",
+      "grade_member_ids": [
+        "G1-ELE-026",
+        "G2-ELEC-175"
+      ],
+      "qabc_sha256": "da0512acac25df7260c2943413ebadcae76c6b5947c2aafb9a8ab7cc1995cc33",
+      "original_keymap": {
+        "G1-ELE-026": "C",
+        "G2-ELEC-175": "C"
+      },
+      "question_original": "Utilizarea unei cuple cu functiuni multiple se prefera atunci cand dorim",
+      "options_original": {
+        "A": "scurtarea duratei manevrelor",
+        "B": "cresterea continuitatii  in alimentare",
+        "C": "reducerea investitiei in echiparea statiei."
+      },
+      "technical_positive": "A multifunction coupler may replace dedicated equipment and reduce capex, but the actual single-line plan, functional equivalence and costs are not present.",
+      "abc_review": {
+        "A": "Shorter maneuver sequence is a possible benefit but not necessarily objective.",
+        "B": "Continuity improvement is possible under transfer arrangements.",
+        "C": "Reducing initial equipment cost is plausible if fewer separate devices suffice."
+      },
+      "linguistic_counterexample": "A multifunction bay may also increase capex; compare exact diagrams with ELE-246 not just linguistic similarity. The online 2024 table displaying A is a first alternative, NOT an official key.",
+      "classification": "BLOCKED_EXACT_BUS_COUPLER_CAPEX_DIAGRAM",
+      "source_evidence": [
+        {
+          "url": "https://library.e.abb.com/public/7dca4ffad2206d36c1257be30048d4be/DAHandbook_Section_3_Power_distribution_systems_757959_ENa.pdf",
+          "locator": "Distribution system arrangements, exact topology/capex drawing NOT visually verified",
+          "access": "PRIOR_PDF_LEAD"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-d73dc731a7bc3e89",
+      "representative_id": "G1-ELE-046",
+      "grade_member_ids": [
+        "G1-ELE-046",
+        "G2-ELEC-192"
+      ],
+      "qabc_sha256": "d73dc731a7bc3e89287b1883c48fa691fe87869a48be3feb69b3fd64bada3089",
+      "original_keymap": {
+        "G1-ELE-046": "C",
+        "G2-ELEC-192": "C"
+      },
+      "question_original": "Curentul produs într-un circuit care conţine elemente neliniare şi care este alimentat cu o tensiune sinusoidală este:",
+      "options_original": {
+        "A": "întotdeauna nesinusoidal",
+        "B": "întotdeauna sinusoidal",
+        "C": "nesinusoidal sau sinusoidal, depinde de natura elementelor neliniare"
+      },
+      "technical_positive": "Nonlinearity can generate harmonic distortion from sinusoidal voltage. Presence of a nonlinear element does not prove it conducts in the given operating regime.",
+      "abc_review": {
+        "A": "Always nonsinusoidal is invalid if nonlinear branch remains nonconducting and a linear parallel branch carries sine current.",
+        "B": "Always sinusoidal invalid for diode rectification or cubic nonlinear response.",
+        "C": "Device and operating point affect whether total circuit current is exactly sinusoidal."
+      },
+      "linguistic_counterexample": "For i(v)=av+bv^3 with b≠0 and v=Vsin(wt), sin³ yields third harmonic. For ideal blocked nonlinear branch parallel with resistor, net i(t)=V/R sin(wt).",
+      "classification": "CONDITIONAL_C_SUPERFICIALLY_SUPPORTED__EXACT_OPERATION_MODEL_NEEDED",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+          "locator": "Ohmic versus nonohmic characteristic §9.4",
+          "access": "OPENSTAX_HTML_REVIEWED"
+        },
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Risk_of_resonance_due_to_power-system_harmonics",
+          "locator": "harmonic production by nonlinear loads",
+          "access": "TOPICAL_SOURCE"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-21064933b66a7f13",
+      "representative_id": "G1-ELE-051",
+      "grade_member_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "qabc_sha256": "21064933b66a7f132dec38688307460deaf86c7f3aec7502c8efcb1899a13273",
+      "original_keymap": {
+        "G1-ELE-051": "B",
+        "G2-ELEC-197": "B"
+      },
+      "question_original": "Dacă o tensiune electromotoare E, montată în latura AB a unei reţele pasive, produce în latura CD a reţelei un curent I, montarea t.e.m. E în latura CD va produce în latura AB:",
+      "options_original": {
+        "A": "un curent - (minus) I",
+        "B": "un curent I",
+        "C": "un curent I/2"
+      },
+      "technical_positive": "Reciprocal transfer equality holds for appropriate bilateral linear reciprocal networks with consistent reference directions, not passive networks in general.",
+      "abc_review": {
+        "A": "Reverse sign −I depends on current reference and cannot be deduced.",
+        "B": "Equality I is not guaranteed unless reciprocity theorem assumptions are met.",
+        "C": "I/2 not guaranteed either."
+      },
+      "linguistic_counterexample": "A lossless passive gyrator is nonreciprocal. Under ideal two-port v1=R i2 and v2=−R i1, instantaneous power v1*i1+v2*i2=0 but cross-transfers have opposite signs. This disproves passive=>reciprocal.",
+      "classification": "BLOCKED_PASSIVE_DOES_NOT_IMPLY_RECIPROCAL",
+      "source_evidence": [
+        {
+          "url": "https://classes.engr.oregonstate.edu/eecs/fall2023/ece580/Lecture%20Notes/PrintableLectureNotes.pdf",
+          "locator": "Oregon State ECE580 network components gyrator: lossless but nonreciprocal",
+          "access": "UNIVERSITY_COURSE_PDF_INDEXED_NOT_VISUALLY_CHECKED"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-7f920d09fda666bc",
+      "representative_id": "G1-ELE-141",
+      "grade_member_ids": [
+        "G1-ELE-141",
+        "G2-ELEC-279"
+      ],
+      "qabc_sha256": "7f920d09fda666bc9970583b31f677dd4a4c7b84d5df03c79004d20000da5395",
+      "original_keymap": {
+        "G1-ELE-141": "C",
+        "G2-ELEC-279": "C"
+      },
+      "question_original": "Legea lui Ohm pentru o porţiune de circuit este valabila:",
+      "options_original": {
+        "A": "doar în curent continuu",
+        "B": "doar în curent alternativ",
+        "C": "indiferent de natura circuitului"
+      },
+      "technical_positive": "Ohm V=RI with constant R applies to ohmic conductors in DC and AC under the relevant linear model. 'Regardless of circuit nature' can include nonlinear/diode devices for which no constant R fits.",
+      "abc_review": {
+        "A": "DC-only wrong: ohmic AC circuits obey appropriate instantaneous V=RI.",
+        "B": "AC-only wrong: ohmic DC circuits obey V=RI.",
+        "C": "Exam-intended if nature means DC versus AC, literally false for nonohmic devices."
+      },
+      "linguistic_counterexample": "OpenStax §9.4 explicit diode I/V nonlinearity; current isn't proportional to voltage; cannot assert unconditional C.",
+      "classification": "BLOCKED_ALL_CIRCUITS_NONOHMIC_COUNTEREXAMPLE",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+          "locator": "Ohm's law §9.4 nonohmic diode counterexample",
+          "access": "DIRECT_HTML_VERIFIED"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-5cba109346b5399e",
+      "representative_id": "G1-ELE-172",
+      "grade_member_ids": [
+        "G1-ELE-172",
+        "G2-ELEC-309"
+      ],
+      "qabc_sha256": "5cba109346b5399eafa4933fe29da4311a0f0f4e643936a2d8a0d6bc8d826e68",
+      "original_keymap": {
+        "G1-ELE-172": "C",
+        "G2-ELEC-309": "C"
+      },
+      "question_original": "Pentru materialele magnetice, relaţia dintre inducţia magnetică şi intensitatea câmpului magnetic:",
+      "options_original": {
+        "A": "este liniară",
+        "B": "este o egalitate",
+        "C": "este neliniară"
+      },
+      "technical_positive": "Nonlinear hysteretic B-H curves hold for many ferromagnetic materials; paramagnetic/diamagnetic media are described with linear weak susceptibility approximations.",
+      "abc_review": {
+        "A": "Linear relation B=µH is valid in a wide range of dia-/paramagnetic models.",
+        "B": "B equals H numerically/dimensionally invalid (tesla versus A/m).",
+        "C": "Nonlinear relation is common in ferromagnets, not all magnetic materials."
+      },
+      "linguistic_counterexample": "OpenStax §12.7 uses B=(1+χ)B0 for paramagnetics, while ferromagnet µ depends on field history; original stem lacks ferromagnetic qualifier.",
+      "classification": "BLOCKED_GENERIC_MAGNETIC_MATERIAL_SCOPE",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter",
+          "locator": "OpenStax 12.7 magnetism in matter, paramagnetic χ linear; ferromagnetic domains and history",
+          "access": "DIRECT_HTML_VERIFIED"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-bfa0211e53d3d4a0",
+      "representative_id": "G1-ELE-246",
+      "grade_member_ids": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "qabc_sha256": "bfa0211e53d3d4a0058258d83ce3639d129a72f9a577a36025d8cd35a36640c0",
+      "original_keymap": {
+        "G1-ELE-246": "B",
+        "G2-ELEC-382": "B"
+      },
+      "question_original": "Utilizarea unei cuple longo-transversale se preferă atunci când dorim:",
+      "options_original": {
+        "A": "scurtarea manevrelor;",
+        "B": "o siguranţă în funcţionare mai mare;",
+        "C": "reducerea investiţiei în echiparea staţiei."
+      },
+      "technical_positive": "Longitudinal-transverse coupler can improve fault segregation/transfer flexibility in a designed dual-busbar substation, but exact drawing and technical objectives needed.",
+      "abc_review": {
+        "A": "Shorter switching maneuvers is possible but not proven dominant.",
+        "B": "Higher operational reliability plausible conditional on topology and protections.",
+        "C": "Lower capex possible only with equipment comparison, not guaranteed."
+      },
+      "linguistic_counterexample": "ELE-026 imports C for multifunction coupler while ELE-246 imports B for longitudinal-transverse; cannot interchange physical objects or reverse selected labels on wording alone.",
+      "classification": "BLOCKED_LONGITUDINAL_TRANSVERSE_COUPLER_AUTHENTIC_SCHEME",
+      "source_evidence": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+          "locator": "NTE009/10/00 §10 cupla types only, not cost-vs-reliability",
+          "access": "CATEGORY_DEFINITION_ONLY"
+        },
+        {
+          "url": "https://electrical-engineering-portal.com/fixed-withdrawable-medium-voltage-switchgear",
+          "locator": "Generic cubicles, source-object mismatch",
+          "access": "TOPIC_ADJACENT_NOT_PROOF"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-2835f4d5d0cd454f",
+      "representative_id": "G1-ELE-129",
+      "grade_member_ids": [
+        "G1-ELE-129",
+        "G2-ELEC-269"
+      ],
+      "qabc_sha256": "2835f4d5d0cd454f0e6ed2b1cfc4dddc4daeee5fda0065df9b085dd04a1049e1",
+      "original_keymap": {
+        "G1-ELE-129": "C",
+        "G2-ELEC-269": "C"
+      },
+      "question_original": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "options_original": {
+        "A": "separatorul de linie, separatorul de bare, întreruptorul;",
+        "B": "separatorul de bare, întreruptorul, separatorul de linie;",
+        "C": "separatorul de bare, separatorul de linie, întreruptorul ."
+      },
+      "technical_positive": "Imported option C sets isolators before circuit breaker, consistent in principle with off-load isolation but NOT a certified sequence for an actual HV line bay.",
+      "abc_review": {
+        "A": "May depend on exact station design and interlocks; not categorically eliminated.",
+        "B": "Closing breaker before final off-load isolator can violate normal switching restrictions.",
+        "C": "Intended MCQ answer conditional, not authorized switching instruction."
+      },
+      "linguistic_counterexample": "Load-break disconnectors and interlocks vary. Only the actual approved station maneuver program may specify permitted steps.",
+      "classification": "BLOCKED_OPERATING_PROCEDURE_SAFETY",
+      "source_evidence": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+          "locator": "Official maneuver regulation; exact local station switching program required",
+          "access": "REGULATION_INDEX; SITE_SPECIFIC_NOT_AVAILABLE"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-4e84ba50de6e8429",
+      "representative_id": "G1-ELE-131",
+      "grade_member_ids": [
+        "G1-ELE-131",
+        "G2-ELEC-271"
+      ],
+      "qabc_sha256": "4e84ba50de6e8429d7f3082c27525620b95770336f1869dd7bf0b1f8548443cc",
+      "original_keymap": {
+        "G1-ELE-131": "C",
+        "G2-ELEC-271": "C"
+      },
+      "question_original": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "options_original": {
+        "A": "separatorul de linie, întreruptorul, separatorul de bare;",
+        "B": "separatorul de bare, întreruptorul, separatorul de linie;",
+        "C": "întreruptorul, separatorul de  linie, separatorul de bare."
+      },
+      "technical_positive": "Breaker generally interrupts current before off-load isolators. Imported C is plausible test sequence, not an approved live switching procedure.",
+      "abc_review": {
+        "A": "Would use ordinary off-load isolator while load current may flow.",
+        "B": "Same issue as A for bus isolator.",
+        "C": "Trips current-breaking device first but subsequent disconnecting order must obey actual station diagram."
+      },
+      "linguistic_counterexample": "Different bay arrangements and protection states can change safe procedure; no site operational signoff.",
+      "classification": "BLOCKED_OPERATING_PROCEDURE_SAFETY",
+      "source_evidence": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+          "locator": "General maneuver regulation; local approved step list unavailable",
+          "access": "GENERIC_SAFE_PRINCIPLE_ONLY"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-6a5ef86fd79a798a",
+      "representative_id": "G1-ELE-247",
+      "grade_member_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "qabc_sha256": "6a5ef86fd79a798a8a8c9fedeaf7cb822fcf095378649b4253256858e1693033",
+      "original_keymap": {
+        "G1-ELE-247": "B",
+        "G2-ELEC-383": "B"
+      },
+      "question_original": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "options_original": {
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "technical_positive": "An external electric field redistributes charges in a neutral conductor: electrostatic induction/polarization.",
+      "abc_review": {
+        "A": "Conduction requires electrical contact/charge transfer, absent from stem.",
+        "B": "Induction is intended charge separation, but not necessarily a net charge acquired.",
+        "C": "Magnetization is magnetic phenomenon, not the electric separation asked."
+      },
+      "linguistic_counterexample": "Isolated neutral metal sphere in external field stays net zero even though surface charges redistribute; net charging via induction generally requires earthing or transfer.",
+      "classification": "INDUCTION_VS_NET_CHARGE_SEMANTIC_SCOPE",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction",
+          "locator": "Charge separation and charging by induction",
+          "access": "OPENSTAX_RESEARCH_LEAD"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-0f5eba70714b631a",
+      "representative_id": "G1-ELE-269",
+      "grade_member_ids": [
+        "G1-ELE-269",
+        "G2-ELEC-402"
+      ],
+      "qabc_sha256": "0f5eba70714b631a5ba146bfb9c80c6fb810611e4a2a9ac92949f61f250727f6",
+      "original_keymap": {
+        "G1-ELE-269": "C",
+        "G2-ELEC-402": "C"
+      },
+      "question_original": "Utilizarea SF6 ca mediu de izolare",
+      "options_original": {
+        "A": "conduce la realizarea unor celule cu pericol de incendiu",
+        "B": "conduce numai la realizarea unor celule cu întreţinere mult simplificată;",
+        "C": "conduce la realizarea unor celule compacte"
+      },
+      "technical_positive": "SF6 dielectric insulation allows compact switchgear due to high dielectric strength; historic property independent from the current legal right to commission a new SF6 cubicle.",
+      "abc_review": {
+        "A": "SF6 itself not typically combustible.",
+        "B": "'Only' reduced maintenance false because compactness is another advantage.",
+        "C": "Compact switchgear is a known insulation benefit."
+      },
+      "linguistic_counterexample": "Regulation EU 2024/573 Article13(9)(a) prohibits putting into operation new qualifying F-gas MV switchgear <=24kV from Jan1 2026, subject to derogations and prior-order exception; this does not negate physical advantage C.",
+      "classification": "TECHNICAL_C_PLAUSIBLE__2026_LEGAL_GATE",
+      "source_evidence": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R0573",
+          "locator": "Article 13(9)(a), paragraphs 10–16 exceptions",
+          "access": "EUR_LEX_OFFICIAL_HTML_REVIEWED"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-f00e93d3c3d33c77",
+      "representative_id": "G1-ELE-270",
+      "grade_member_ids": [
+        "G1-ELE-270",
+        "G2-ELEC-403"
+      ],
+      "qabc_sha256": "f00e93d3c3d33c77efdb43b3a4787b2dcb268a8ab691eb33c71814d2c97bb511",
+      "original_keymap": {
+        "G1-ELE-270": "B",
+        "G2-ELEC-403": "B"
+      },
+      "question_original": "Utilizarea SF6 ca mediu de stingere a arcului electric permite",
+      "options_original": {
+        "A": "doar realizarea unor întreruptoare fără pericol de incendiu;",
+        "B": "realizarea unor întreruptoare cu întreţinere mult simplificată;",
+        "C": "puţin silenţioase."
+      },
+      "technical_positive": "SF6 as arc-breaking medium historically allows reduced routine breaker maintenance relative to oil, but not zero service or unlimited future installation.",
+      "abc_review": {
+        "A": "'Only' no fire risk is false as other technical benefits exist.",
+        "B": "Less conventional maintenance is a plausible historical benefit for arc-quenching SF6 breaker.",
+        "C": "Noise adjective lacks precise comparative basis."
+      },
+      "linguistic_counterexample": "An SF6 insulated cubicle with vacuum interrupter is not evidence about SF6 arc breaking. EU Article13(9) covers F-gases in insulating OR breaking media; existing equipment not globally banned.",
+      "classification": "TECHNICAL_B_PLAUSIBLE__ARC_VS_INSULATION_AND_LAW",
+      "source_evidence": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R0573",
+          "locator": "Article13(9) scope, derogations 11–16",
+          "access": "EUR_LEX_OFFICIAL_HTML_REVIEWED"
+        },
+        {
+          "url": "https://eepower.com/technical-articles/substation-componentspart-3-circuit-breakers/",
+          "locator": "Historical arc-breaking technology context",
+          "access": "TECHNICAL_RESEARCH_LEAD"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-b8fe3982d5083999",
+      "representative_id": "G1-NOR-032",
+      "grade_member_ids": [
+        "G1-NOR-032"
+      ],
+      "qabc_sha256": "b8fe3982d5083999909226601688be581fcaeddaad23a83ad46bc29c33a718cb",
+      "original_keymap": {
+        "G1-NOR-032": "B"
+      },
+      "question_original": "Montarea dozelor de trecere este obligatorie în cazul în care lungimea coloanelor în linie dreapta, pe orizontală, depăşeşte:",
+      "options_original": {
+        "A": "10 m",
+        "B": "15 m",
+        "C": "20 m"
+      },
+      "technical_positive": "PE155/1992 §3.2.10 states service-branch COLUMN horizontal straight route needs passage box over 15m. General I7 tube pulling-box 25m is different physical/legal object.",
+      "abc_review": {
+        "A": "10m is not the historic PE155 horizontal column threshold.",
+        "B": "15m directly matches PE155 column condition.",
+        "C": "20m is not the specified threshold."
+      },
+      "linguistic_counterexample": "I7 §5.2.12.3.10 generic protection-conduit 25m is an invalid source substitution; exact ANRE 2026 Grade1 bibliographic applicability of PE155 remains unproven.",
+      "classification": "B_EXACT_HISTORICAL_OBJECT_MATCH__2026_GRADE_EDITION_OPEN",
+      "source_evidence": [
+        {
+          "url": "https://www.baluna.ro/wp-content/uploads/2018/02/pe_155_92.pdf",
+          "locator": "PE155/92 §§1.2.7, 3.2.10 exact horizontal service-column question; prior PDF text, screenshot unavailable",
+          "access": "SECONDARY_NORMATIVE_COPY_TEXT_ONLY"
+        },
+        {
+          "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+          "locator": "ANRE grade bibliography index 2023",
+          "access": "OFFICIAL_INDEX_NOT_EXACT_APPLICABILITY"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    },
+    {
+      "unit_id": "AU-24115e9d1eb4a28b",
+      "representative_id": "G1-NOR-027",
+      "grade_member_ids": [
+        "G1-NOR-027"
+      ],
+      "qabc_sha256": "24115e9d1eb4a28bacf1ce8cdf4358782defb71d1af4295a62c396589e435d8a",
+      "original_keymap": {
+        "G1-NOR-027": "B"
+      },
+      "question_original": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+      "options_original": {
+        "A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+        "B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+        "C": "conductoarele de alimentare să fie legate la duliile filetate"
+      },
+      "technical_positive": "Historic PE102/86 §4.6.3 can support incoming supply to central contact, while original options distinguish screws/contact vs thread sleeve. For Grade I ANRE2023 bibliography PE102 is marked NU, I7 is included, and direct equivalence of contact screw vs central terminal is not established.",
+      "abc_review": {
+        "A": "Could align historic PE102 feed contact arrangement only if exact terminal screw orientation identified.",
+        "B": "Imported key B outgoing feeder at contact screws, historically inconsistent with generic feed-on-base safety concept, but identity of terminal screw not established.",
+        "C": "Incoming to threaded metal sleeves is likely unsafe and inconsistent with bottom contact live feed arrangement."
+      },
+      "linguistic_counterexample": "Different historic product construction may label contact screws differently; do not change imported B based on near-match norm outside Grade I bibliography.",
+      "classification": "EXAM_GRADE_SOURCE_CONFLICT__HISTORIC_A_VS_IMPORTED_B",
+      "source_evidence": [
+        {
+          "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+          "locator": "ANRE grade-specific exam bibliography, 2023 index",
+          "access": "OFFICIAL_BIBLIOGRAPHY_INDEX"
+        },
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+          "locator": "I7 §5.3.4.3.1.2 central contact of fuse base",
+          "access": "OFFICIAL_INDEX_NO_EXACT_TERMINAL_DIAGRAM"
+        }
+      ],
+      "source_object_gate": "Exact original vs source object and definition evaluated; where exact edition missing, never PASS; all approvals remain blocked",
+      "independent_technical_review": "NOT_RUN",
+      "independent_source_review": "NOT_RUN",
+      "independent_linguistic_review": "NOT_RUN",
+      "official_2026_exam_key_verified": "NO",
+      "approved_for_learning": "NO",
+      "key_mutation": "NONE"
+    }
+  ]
+}
