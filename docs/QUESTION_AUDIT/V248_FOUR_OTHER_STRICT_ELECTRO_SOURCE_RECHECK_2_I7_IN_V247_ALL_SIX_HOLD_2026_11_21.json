@@ -103,7 +103,7 @@
       "source_row": 159,
       "source_file_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
       "source_original_stem_ABC": {
-        "stem": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
         "A": "constanta de propagare a liniei",
         "B": "constanta de atenuare a liniei",
         "C": "constanta de distorsiune a liniei"
@@ -136,7 +136,15 @@
       "source_scored_key_authenticated": false,
       "current_2026_exam_edition_authenticated": false,
       "qualified_independent_reviewer": false,
-      "learner_approved": false
+      "learner_approved": false,
+      "trainer_master_changed_stem_ABC": {
+        "stem": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "xlsx_original_matched_v246_normalized": true,
+      "original_source_vs_master_material_mutation": true
     },
     {
       "unit_id": "QABC-0236",
@@ -149,7 +157,7 @@
       "source_original_stem_ABC": {
         "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
         "A": "prin conducţie",
-        "B": "prin inducţie electrostatică",
+        "B": "prin inducţie electromagnetică",
         "C": "prin magnetizare"
       },
       "source_master_normalized_match": false,
@@ -180,7 +188,16 @@
       "source_scored_key_authenticated": false,
       "current_2026_exam_edition_authenticated": false,
       "qualified_independent_reviewer": false,
-      "learner_approved": false
+      "learner_approved": false,
+      "trainer_master_changed_stem_ABC": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "xlsx_original_matched_v246_normalized": true,
+      "original_source_vs_master_material_mutation": true
     }
-  ]
+  ],
+  "versioned_correction_2026_11_21": "QA corrected QABC-0143 and QABC-0236 original-source snapshot in V248 after detecting V246 mutation lookup .id versus mistaken .unit_id; authentic Excel original and altered Trainer variants are now preserved separately. The physics and original keys were never modified."
 }
