@@ -1,0 +1,939 @@
+{
+  "schema": "V278_19_key_discrepancy_remediation_qa_board",
+  "date": "2026-11-21",
+  "from_ledger": "V277 all 136 source-root research decided, 136 release blocked",
+  "parent_sha": "8c44c17c5b9b8e7fe3989cf0fd143cd6745e0d9b",
+  "counts": {
+    "original_QABC_bank": 568,
+    "grade_routes": 822,
+    "semantic_root_known_QABC": 136,
+    "source_vs_imported_letter_discrepancy_QABC": 19,
+    "discrepancy_grade_routes": 20,
+    "source_root_undecided": 0,
+    "learner_approved": 0
+  },
+  "meaning": "A preliminary comparison of source wording to original imported letter; NOT a certified correct-answer key or approval to change canonical answers.",
+  "independent_legal_electrical_human_reviewer": false,
+  "amendment_scope_note": "Evidence comes from I7 2023, legal consolidated HTML excerpts, historic PE102/PE155, IP71 technical document. Current 2026 legal and exam bibliography scope often open.",
+  "required_review_steps": [
+    "Verify same-edition source object/grade and original adjacent context",
+    "Resolve A vs B vs C and exact phrasing of unique correct alternative; do negative/counterexample tests",
+    "Independently authenticate scored key or obtain qualified technical/linguistic confirmation",
+    "Request user approval for canonical key remediation only after all gates",
+    "Recompute 822 mapping and offline card before/FOCUS/after, do app integration only after release QA"
+  ],
+  "conflicts": [
+    {
+      "unit_id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "original_stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+      "original_ABC": {
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-048=A",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "I7 2023 §5.4.13",
+      "source_root_code": "SONERIE_MULTI_SOURCE_NOT_ONLY_ONE",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 70,
+        "source_paragraph": "5.4.13",
+        "original_XLSX_stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+        "original_ABC": {
+          "A": "numai direct din tabloul de distribuţie",
+          "B": " numai dintr-un circuit de iluminat normal",
+          "C": "dintr-un circuit de prize"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-048=A",
+        "source_card": "C",
+        "source_semantic_explanation": "A/B claim ONLY a single feeder route, while I7 permits normal lighting, sockets, or distribution board.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "(13) 5.4.13. Alimentarea transformatorului de sonerie sau soneriei de 220 V se face dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuţie.",
+        "adjacent_before": "(12) 5.4.12. Trebuie evitată traversarea încăperilor din clasele de mediu AD2, AD3, AD4, AF2, AF3, AF4, AA5 şi din categoria BE2 cu circuite electrice care deservesc alte încăperi. Fac excepţie încăperile pentru bucătării şi băi din locuinţe, precum şi alte cazuri justificate de către proiectant, în care se admit astfel de traversări, cu luarea de măsuri de protecţie corespunzătoare influenţelor externe.",
+        "adjacent_after": "(14) 5.4.14. La instalarea conductoarelor unui circuit sau mai multor circuite în acelaşi element de protecţie (tuburi, jgheaburi etc.) trebuie se respectă şi prevederile din subcap. 5.2.12.",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "original_stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+      "original_ABC": {
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-072=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "I7 2023 §5.5.2.3",
+      "source_root_code": "EARTH_BAR_INDIVIDUAL_TOOL_DISCONNECT",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 72,
+        "source_paragraph": "5.5.2.3",
+        "original_XLSX_stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+        "original_ABC": {
+          "A": "nu este obligatoriu să poată fi deconectat individual",
+          "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+          "C": "trebuie să poată fi deconectat individual"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-072=B",
+        "source_card": "C",
+        "source_semantic_explanation": "I7 requires individual disconnection AND tool; original B says without a tool.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "(3) 5.5.2.3. Fiecare conductor conectat la bornă/bara principală de legare la pământ trebuie să poată fi deconectat individual. Această conectare trebuie să fie sigură şi deconectabilă numai prin intermediul unei scule.",
+        "adjacent_before": "(2) 5.5.2.2. Nu se conectează fiecare conductor de protecţie în parte direct la bornă/bara principală de legare la pământ dacă sunt conectate prin alte conductoare principale de protecţie.",
+        "adjacent_after": "(1) 5.5.3.1. Conductoarele de protecţie (PE) pot fi: - conductoare în cabluri multiconductoare;",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0356",
+      "grade_ids": [
+        "G1-NOR-042"
+      ],
+      "original_stem": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+      "original_ABC": {
+        "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-042=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "A",
+      "exact_source_locator": "I7 2023 §5.2.4.6.1",
+      "source_root_code": "MONO_2_WIRE_N_SAME_SECTION",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 55,
+        "source_paragraph": "5.2.4.6.1",
+        "original_XLSX_stem": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "original_ABC": {
+          "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+          "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+          "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-042=B",
+        "source_card": "A",
+        "source_semantic_explanation": "Mono 2 conductors N equals phase irrespective section; B's mono 3 and 25Cu/35Al is not the specified condition.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "a) în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor;",
+        "adjacent_before": "1. 5.2.4.6.1. Secţiunea conductorului neutru, dacă există, trebuie să fie egală cu secţiunea conductoarelor de fază în următoarele cazuri:",
+        "adjacent_after": "b) în circuitele polifazate ale căror conductoare de fază au o secţiune mai mică sau egală cu 16 mm 2 cupru sau 25 mm 2 aluminiu; c) în circuitele trifazate care ar putea fi parcurse de curenţi având armonici de rangul 3 şi multiplu de 3 cu nivelul cuprins între 15% şi 33%. (acest nivel de armonici se poate întâlni, de exemplu, în circuitele de alimentare pentru iluminat cu lămpi cu descărcări şi fluorescente); d) în funcţionare normală nu este asigurată echilibrarea între faze şi neutru (de exemplu tablourile de iluminat şi prize)",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0374",
+      "grade_ids": [
+        "G1-NOR-060"
+      ],
+      "original_stem": "Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:",
+      "original_ABC": {
+        "A": "este recomandată",
+        "B": "este permisă condiţionat",
+        "C": "nu este permisă"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-060=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "I7 2023 §5.5.3.2",
+      "source_root_code": "METAL_WATER_PIPES_NOT_PE_CONDUCTOR",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 72,
+        "source_paragraph": "5.5.3.2",
+        "original_XLSX_stem": "Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:",
+        "original_ABC": {
+          "A": "este recomandată",
+          "B": "este permisă condiţionat",
+          "C": "nu este permisă"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-060=B",
+        "source_card": "C",
+        "source_semantic_explanation": "Metal water pipes prohibited as PE conductors; equipotential bonding is a separate operation.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "- conducte pentru apă;",
+        "adjacent_before": "(2) 5.5.3.2. Nu este permisă utilizarea următoarelor părţi metalice drept conductoare de protecţie:",
+        "adjacent_after": "- conducte pentru gaze şi/sau lichide inflamabile; - părţi constructive supuse solicitărilor mecanice în funcţionare normală; - părţi metalice flexibile; - conducte metalice flexibile sau pliabile, numai dacă nu sunt destinate pentru acest scop; - suporturi pentru conducte; - tăvi de cabluri şi scări pentru cabluri, dacă nu se asigură continuitatea electrică a acestora.",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0375",
+      "grade_ids": [
+        "G1-NOR-061"
+      ],
+      "original_stem": "Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:",
+      "original_ABC": {
+        "A": "admisă",
+        "B": "interzisă",
+        "C": "admisă doar pentru tuburi cu diametru mai mic de 16 mm"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-061=A",
+      "source_supported_candidate_NOT_AUTHENTICATED": "B",
+      "exact_source_locator": "I7 2023 §5.2.12.3.4",
+      "source_root_code": "NO_TUBE_JOINT_IN_PENETRATION",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 61,
+        "source_paragraph": "5.2.12.3.4",
+        "original_XLSX_stem": "Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:",
+        "original_ABC": {
+          "A": "admisă",
+          "B": "interzisă",
+          "C": "admisă doar pentru tuburi cu diametru mai mic de 16 mm"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-061=A",
+        "source_card": "B",
+        "source_semantic_explanation": "Protective conduit tube joints at construction penetrations are explicitly prohibited.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "4. 5.2.12.3.4. Se interzice îmbinarea tuburilor la trecerile prin elementele de construcţii.",
+        "adjacent_before": "3. 5.2.12.3.3. Îmbinările între tuburi sau ţevi şi accesoriile de racordare la doze, la aparate, la echipamente, trebuie executate astfel încât să corespundă gradului de protecţie impus de clasele de influenţe externe din încăperea respectivă.",
+        "adjacent_after": "5. 5.2.12.3.5. Curbarea tuburilor se execută cu raza interioară egală cu minim de 5-6 ori diametrul exterior al tubului la montaj aparent şi egală cu minimum de 10 ori diametrul exterior al tubului la montaj îngropat (trebuie să se respecte şi prescripţiile producătorului).",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0403",
+      "grade_ids": [
+        "G1-NOR-089"
+      ],
+      "original_stem": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+      "original_ABC": {
+        "A": "este interzisă",
+        "B": "este permisă, cu marcarea corespunzătoare la cele două extremităţi",
+        "C": "este permisă dacă nu se folosește una dintre culorile verde sau galben"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-089=A",
+      "source_supported_candidate_NOT_AUTHENTICATED": "B",
+      "exact_source_locator": "I7 2023 §5.1.4.3.3",
+      "source_root_code": "SAME_PHASE_COLOR_ALLOWED_IF_BOTH_ENDS_MARKED",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 47,
+        "source_paragraph": "5.1.4.3.3",
+        "original_XLSX_stem": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+        "original_ABC": {
+          "A": "este interzisă",
+          "B": "este permisă, cu marcarea corespunzătoare la cele două extremităţi",
+          "C": "este permisă dacă nu se folosește una dintre culorile verde sau galben"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-089=A",
+        "source_card": "B",
+        "source_semantic_explanation": "One phase color is allowed with appropriate identification at both ends; original A says prohibited.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "Este permisă utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit, cu marcarea corespunzătoare la cele două extremităţi",
+        "adjacent_before": "Conductoarele se marchează pe toată lungimea lor prin culorile recomandate la art. 5.1.4.3.1. şi 5.1.4.3.2.",
+        "adjacent_after": "Cablurile cu un singur conductor cu manta şi conductoarele izolate conform standardelor lor şi care nu au nici o izolaţie bicoloră verde/galben sau bleu, de exemplu în cazul unei secţiuni mai mari de 16 mm 2 , ele pot fi utilizate pentru:",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0372",
+      "grade_ids": [
+        "G1-NOR-058"
+      ],
+      "original_stem": "Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:",
+      "original_ABC": {
+        "A": "se admite întotdeauna",
+        "B": "este total interzisă",
+        "C": "se admite condiţionat"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-058=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "I7 2023 §3.0.3.5",
+      "source_root_code": "IP33_EXCEPTION_CONDENSATION",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 13,
+        "source_paragraph": "3.0.3.5",
+        "original_XLSX_stem": "Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:",
+        "original_ABC": {
+          "A": "se admite întotdeauna",
+          "B": "este total interzisă",
+          "C": "se admite condiţionat"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-058=B",
+        "source_card": "C",
+        "source_semantic_explanation": "Under equipment with condensation, general prohibition has IP33+ enclosed resistant-material exception; B says totally prohibited.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "Fac excepţie instalaţiile electrice în execuţie închisă cu grad de protecţie minim IP 33, realizate din materiale rezistente la astfel de condiţii.",
+        "adjacent_before": "(5) 3.0.3.5. Nu se admite amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens.",
+        "adjacent_after": "(6) 3.0.3.6. Se interzice amplasarea instalaţiilor electrice în interiorul canalelor de ventilare (cu excepţia instalaţiilor aferente instalaţiilor de ventilaţie executate din materiale fără degajare de fum şi gaze toxice).",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0380",
+      "grade_ids": [
+        "G1-NOR-066"
+      ],
+      "original_stem": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+      "original_ABC": {
+        "A": "este interzisă",
+        "B": "este admisă",
+        "C": "este admisă numai pentru conductoare de cupru"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-066=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "A",
+      "exact_source_locator": "I7 2023 §5.2.12.1.4",
+      "source_root_code": "NO_SINGLE_CONDUCTORS_IN_BURIED_PIPES",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 59,
+        "source_paragraph": "5.2.12.1.4",
+        "original_XLSX_stem": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+        "original_ABC": {
+          "A": "este interzisă",
+          "B": "este admisă",
+          "C": "este admisă numai pentru conductoare de cupru"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-066=B",
+        "source_card": "A",
+        "source_semantic_explanation": "Individual electrical conductors inside tubes laid in the soil are explicitly forbidden; do not generalize to designed underground cables.",
+        "original_evidence_file": "V249",
+        "source_focus_excerpt": "4. 5.2.12.1.4. Se interzice instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ.",
+        "adjacent_before": "3. 5.2.12.1.3. În sisteme de tuburi, ţevi, sisteme de jgheaburi şi tuburi profilate SJ/STP, trebuie instalate numai conductoare izolate şi/sau cabluri.",
+        "adjacent_after": "5. 5.2.12.1.5. Conductoarele electrice care aparţin aceluiaşi circuit electric, inclusiv conductorul de protecţie, trebuie instalate în acelaşi element de protecţie (tub, ţeava SJ/STP, gol în elemente de construcţie). Se admite instalarea separată a conductorului de protecţie în cazurile şi în condiţiile prevăzute în subcapitolul 5.5.",
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0324",
+      "grade_ids": [
+        "G1-NOR-010"
+      ],
+      "original_stem": "În instalaţiile de joasă tensiune aferente clădirilor, rezistenţa electrică a izolaţiei trebuie măsurată:",
+      "original_ABC": {
+        "A": "numai între două conductoare active",
+        "B": "numai între conductoarele active luate 2 câte 2",
+        "C": "între conductoarele active şi conductorul de protecţie conectat la reţeaua de legare la pământ"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-010=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "I7 2023 §8.1.1.3.3",
+      "source_root_code": "MEASURE_INSULATION_ACTIVE_TO_PE",
+      "research_confidence": "strong_2023_same_clause",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_2023",
+      "source_excerpts_or_evidence": {
+        "source_type": "2023_USER_PROVIDED_I7_PDF",
+        "source_pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+        "source_pdf_page": 162,
+        "source_paragraph": "8.1.1.3.3",
+        "original_XLSX_stem": "În instalaţiile de joasă tensiune aferente clădirilor, rezistenţa electrică a izolaţiei trebuie măsurată:",
+        "original_ABC": {
+          "A": "numai între două conductoare active",
+          "B": "numai între conductoarele active luate 2 câte 2",
+          "C": "între conductoarele active şi conductorul de protecţie conectat la reţeaua de legare la pământ"
+        },
+        "original_imported_grade_keys_unchanged": "G1-NOR-010=B",
+        "source_card": "C",
+        "source_semantic_explanation": "Insulation resistance must be tested active conductors to protective conductor/earthing; B says only active two by two.",
+        "original_evidence_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+        "source_focus_excerpt": "Rezistenţa electrică a izolaţiei trebuie măsurată între conductoarele active şi conductorul de protecţie conectat la reţeaua de legare la pământ. În scopul acestei încercări conductoarele active pot fi conectate împreună.",
+        "adjacent_before": null,
+        "adjacent_after": null,
+        "source_edition_2026_certified": false,
+        "exam_scored_key_authenticated": false,
+        "qualified_independent_reviewer_certified": false,
+        "do_not_modify_keys": true
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0283",
+      "grade_ids": [
+        "G1-LEG-019"
+      ],
+      "original_stem": "Nerespectarea normelor tehnice emise de către ANRE constituie:",
+      "original_ABC": {
+        "A": "Infracţiune",
+        "B": "Contravenţie",
+        "C": "Abatere"
+      },
+      "original_imported_keys_UNCHANGED": "G1-LEG-019=C",
+      "source_supported_candidate_NOT_AUTHENTICATED": "B",
+      "exact_source_locator": "Legea 123/2012 art93(1)3",
+      "source_root_code": "ANRE_TECHNICAL_STANDARD_VIOLATION_CONTRAVENTION",
+      "research_confidence": "statutory_edition_2026_gate",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_LEGAL_CLAUSE_EDITION_OPEN",
+      "source_excerpts_or_evidence": {
+        "original_stem": "Nerespectarea normelor tehnice emise de către ANRE constituie:",
+        "original_ABC": {
+          "A": "Infracţiune",
+          "B": "Contravenţie",
+          "C": "Abatere"
+        },
+        "imported_grade_key_UNCHANGED": "C",
+        "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+        "source_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0CDOUQ5TXYOEU0X4Y9QAXWNAF7",
+        "source_article": "Art. 93 alin. (1) pct. 3",
+        "source_context_windows": {
+          "before": "2.proiectarea, executarea și verificarea instalațiilor electrice fără atestat și/sau autorizație;",
+          "focus": "3.nerespectarea normelor tehnice emise de către ANRE;",
+          "after": "4.nerespectarea condițiilor de valabilitate asociate atestatelor emise de ANRE;",
+          "heading": "Constituie contravenții următoarele fapte:"
+        },
+        "A_B_C_reasoning": {
+          "A": "Încălcarea normelor tehnice ANRE este încadrată explicit ca o contravenție de art. 93(1) pct. 3, nu ca infracțiune în sine.",
+          "B": "Opțiunea B «Contravenţie» coincide cu clasificarea expresă din articolul aplicabil.",
+          "C": "«Abatere» este o descriere generică, insuficientă ca încadrare juridică atunci când norma spune «contravenție»."
+        },
+        "source_provenance": "V250 prior Portal official HTML direct-read",
+        "second_AI_reviewer_id": "resp_55e78a13-82b7-4173-a3ab-977ac7c0cf9b",
+        "verified_2026_edition": false,
+        "original_scored_exam_key_authenticated": false,
+        "qualified_legal_reviewer": false,
+        "independent_linguistic_reviewer": false,
+        "approved_for_learning": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0290",
+      "grade_ids": [
+        "G1-LEG-026"
+      ],
+      "original_stem": "Executarea sau folosirea de instalaţii clandestine în scopul racordării directe la reţea constituie:",
+      "original_ABC": {
+        "A": "contravenţie",
+        "B": "infracţiune",
+        "C": "contravenţie sau infracţiune, după caz"
+      },
+      "original_imported_keys_UNCHANGED": "G1-LEG-026=C",
+      "source_supported_candidate_NOT_AUTHENTICATED": "B",
+      "exact_source_locator": "Legea 123/2012 art92(2)",
+      "source_root_code": "CLANDESTINE_DIRECT_CONNECTION_IS_CRIME",
+      "research_confidence": "statutory_edition_2026_gate",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_LEGAL_CLAUSE_EDITION_OPEN",
+      "source_excerpts_or_evidence": {
+        "original_stem": "Executarea sau folosirea de instalaţii clandestine în scopul racordării directe la reţea constituie:",
+        "original_ABC": {
+          "A": "contravenţie",
+          "B": "infracţiune",
+          "C": "contravenţie sau infracţiune, după caz"
+        },
+        "imported_grade_key_UNCHANGED": "C",
+        "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+        "source_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0CDOUQ5TXYOEU0X4Y9QAXWNAF7",
+        "source_article": "Art. 92 alin. (2)",
+        "source_context_windows": {
+          "before": "(1)Deteriorarea, modificarea fără drept sau blocarea funcționării echipamentului de măsurare a energiei electrice livrate ori modificarea fără drept a componentelor instalațiilor energetice constituie infracțiune și se pedepsește cu închisoare de la 3 luni la 2 ani sau cu amendă.",
+          "focus": "(2)Executarea sau folosirea de instalații clandestine în scopul racordării directe la rețea sau pentru ocolirea echipamentelor de măsurare constituie infracțiune și se pedepsește cu închisoare de la 6 luni la 3 ani sau cu amendă.",
+          "after": "(3)În cazul în care infracțiunile prevăzute la alin. (1) și (2) sunt săvârșite de un salariat al unui titular de licență, limitele speciale se majorează cu jumătate."
+        },
+        "A_B_C_reasoning": {
+          "A": "Art. 92 alin. (2) califică exact executarea ori folosirea instalațiilor clandestine pentru racordare directă drept infracțiune, nu simplă contravenție.",
+          "B": "B «infracţiune» este termenul expres folosit în art. 92 alin. (2).",
+          "C": "Formula mixtă «contravenţie sau infracţiune, după caz» nu apare ca încadrare alternativă pentru conduita exactă din enunț; alte fapte au alte încadrări."
+        },
+        "source_provenance": "V250 prior Portal official HTML direct-read",
+        "second_AI_reviewer_id": "resp_55e78a13-82b7-4173-a3ab-977ac7c0cf9b",
+        "verified_2026_edition": false,
+        "original_scored_exam_key_authenticated": false,
+        "qualified_legal_reviewer": false,
+        "independent_linguistic_reviewer": false,
+        "approved_for_learning": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0298",
+      "grade_ids": [
+        "G1-LEG-034"
+      ],
+      "original_stem": "Un electrician autorizat care execută lucrări de instalaţii electrice:",
+      "original_ABC": {
+        "A": "Are obligaţia de a respecta proiectul în baza căruia execută instalaţia electrică",
+        "B": "Are obligaţia de a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, chiar dacă nu i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare;",
+        "C": "Are dreptul de a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+      },
+      "original_imported_keys_UNCHANGED": "G1-LEG-034=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "A",
+      "exact_source_locator": "ANRE Ordin66/2023 art37 e/h/i",
+      "source_root_code": "ELECTRICIAN_OBLIGED_TO_RESPECT_PROJECT",
+      "research_confidence": "statutory_edition_2026_gate",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_LEGAL_CLAUSE_EDITION_OPEN",
+      "source_excerpts_or_evidence": {
+        "original_stem": "Un electrician autorizat care execută lucrări de instalaţii electrice:",
+        "original_ABC": {
+          "A": "Are obligaţia de a respecta proiectul în baza căruia execută instalaţia electrică",
+          "B": "Are obligaţia de a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, chiar dacă nu i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare;",
+          "C": "Are dreptul de a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+        },
+        "imported_grade_key_UNCHANGED": "B",
+        "source_supported_candidate_NOT_OFFICIAL_KEY": "A",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/288046",
+        "source_article": "Art. 37 lit. e), h), i), c)",
+        "source_context_windows": {
+          "before": "d)de a executa lucrări în instalații electrice numai pe bază de proiecte întocmite de electricieni autorizați sau operatori economici atestați;",
+          "focus": "e)de a respecta proiectul în baza căruia execută instalația electrică; în cazul constatării unor neconformități de orice natură, electricianul autorizat este obligat să sesizeze proiectantul;",
+          "after": "f)de a nu semna documentații de orice fel pentru lucrări pe care nu le proiectează, execută sau nu le supraveghează direct;",
+          "conditional_rule_before": "g)de a avea un comportament corect, etic și profesional cu persoanele fizice sau cu operatorii economici cu care vine în contact în relația profesională;",
+          "conditional_rule_focus": "h)de a participa la recepția și la punerea în funcțiune a instalației electrice de utilizare proiectate/executate, în cazul în care i se solicită acest lucru de către beneficiarul sau operatorul de rețea la care urmează a se racorda instalația electrică de utilizare;",
+          "conditional_rule_after": "i)de a solicita operatorului de rețea punerea sub tensiune a instalațiilor electrice executate, după recepționarea acestora și încheierea tuturor contractelor prevăzute de lege în vederea alimentării/furnizării energiei electrice;",
+          "legal_approvals": "c)de a executa lucrări în instalațiile electrice numai după obținerea acordurilor sau avizelor legale necesare;"
+        },
+        "A_B_C_reasoning": {
+          "A": "Art. 37 lit. e) impune explicit respectarea proiectului pe baza căruia este executată instalația; semnalarea neconformităților nu anulează obligația.",
+          "B": "Lit. h) cere participarea la recepție/punere în funcțiune numai dacă beneficiarul sau operatorul solicită, în contradicție cu expresia «chiar dacă nu i se solicită» din B.",
+          "C": "Lit. c) cere acorduri/avize legale înainte de executarea lucrării, iar lit. i) implică solicitarea punerii sub tensiune operatorului după recepție și contracte; nu admite racordare unilaterală cu acord ulterior."
+        },
+        "source_provenance": "V250 prior Portal official HTML direct-read",
+        "second_AI_reviewer_id": "resp_55e78a13-82b7-4173-a3ab-977ac7c0cf9b",
+        "verified_2026_edition": false,
+        "original_scored_exam_key_authenticated": false,
+        "qualified_legal_reviewer": false,
+        "independent_linguistic_reviewer": false,
+        "approved_for_learning": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0312",
+      "grade_ids": [
+        "G1-LEG-048"
+      ],
+      "original_stem": "Clienţii casnici de energie electrică:",
+      "original_ABC": {
+        "A": "pot impune furnizorului orice modalitate de plată, chiar dacă nu este pusă la dispoziţie de către acesta",
+        "B": "pot să opteze pentru orice modalitate de plată pe care furnizorul o pune la dispoziţie",
+        "C": "sunt obligaţi să achite facturile pentru energia electrică la una din casieriile furnizorului"
+      },
+      "original_imported_keys_UNCHANGED": "G1-LEG-048=A",
+      "source_supported_candidate_NOT_AUTHENTICATED": "B",
+      "exact_source_locator": "Legea 123/2012 art57(2)",
+      "source_root_code": "HOUSEHOLD_CHOOSES_SUPPLIER_AVAILABLE_PAYMENT_METHOD",
+      "research_confidence": "statutory_edition_2026_gate",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_LEGAL_CLAUSE_EDITION_OPEN",
+      "source_excerpts_or_evidence": {
+        "original_stem": "Clienţii casnici de energie electrică:",
+        "original_ABC": {
+          "A": "pot impune furnizorului orice modalitate de plată, chiar dacă nu este pusă la dispoziţie de către acesta",
+          "B": "pot să opteze pentru orice modalitate de plată pe care furnizorul o pune la dispoziţie",
+          "C": "sunt obligaţi să achite facturile pentru energia electrică la una din casieriile furnizorului"
+        },
+        "imported_grade_key_UNCHANGED": "A",
+        "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+        "source_url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0CDOUQ5TXYOEU0X4Y9QAXWNAF7",
+        "source_article": "Art. 57 alin. (2)",
+        "source_context_windows": {
+          "before": "(1^1)Furnizorul este obligat să înființeze puncte unice de contact, fizice sau virtuale, care să asigure clienților finali modalități adecvate de informare cu privire la drepturile acestora, la legislația în vigoare, la căile de soluționare a litigiilor în cazul unor cereri, plângeri, sesizări, reclamații sau contestații. Punctele unice de contact pot face parte din punctele de informare generală a clienților finali și oferă clienților finali informații în mod gratuit.",
+          "focus": "(2)Furnizorul trebuie să pună la dispoziția clienților casnici mai multe modalități de plată a energiei furnizate și să permită acestora să opteze pentru oricare dintre acestea.",
+          "after": "(2^1)Furnizorul trebuie să ofere clienților finali opțiunea de a primi/accesa electronic facturi și informații de facturare, precum și modalități flexibile de efectuare a plăților propriu-zise ale facturilor."
+        },
+        "A_B_C_reasoning": {
+          "A": "Clientul nu poate, numai în baza acestei dispoziții, impune furnizorului orice metodă pe care acesta nu o oferă.",
+          "B": "Art. 57 alin. (2) cere furnizorului să ofere mai multe metode și clientului să îi permită alegerea dintre acestea, exact B.",
+          "C": "Plata exclusiv la o casierie contrazice obligația furnizorului de a oferi mai multe modalități."
+        },
+        "source_provenance": "V250 prior Portal official HTML direct-read",
+        "second_AI_reviewer_id": "resp_55e78a13-82b7-4173-a3ab-977ac7c0cf9b",
+        "verified_2026_edition": false,
+        "original_scored_exam_key_authenticated": false,
+        "qualified_legal_reviewer": false,
+        "independent_linguistic_reviewer": false,
+        "approved_for_learning": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0279",
+      "grade_ids": [
+        "G1-LEG-015"
+      ],
+      "original_stem": "Constituie contravenţie:",
+      "original_ABC": {
+        "A": "refuzul clienţilor finali de a permite accesul la grupurile de măsurare",
+        "B": "modificarea fără drept a componentelor instalaţiilor energetice",
+        "C": "sustragerea de energie electrica"
+      },
+      "original_imported_keys_UNCHANGED": "G1-LEG-015=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "A",
+      "exact_source_locator": "Legea 123/2012 art93(1)28 vs art92(1)",
+      "source_root_code": "REFUSAL_OF_METER_ACCESS_CONTRAVENTION",
+      "research_confidence": "statutory_edition_2026_gate",
+      "previous_decision_state": "SOURCE_SEMANTIC_DECIDED_KEY_CONFLICT_LEGAL_CLAUSE_EDITION_OPEN",
+      "source_excerpts_or_evidence": {
+        "original_stem": "Constituie contravenţie:",
+        "original_ABC": {
+          "A": "refuzul clienţilor finali de a permite accesul la grupurile de măsurare",
+          "B": "modificarea fără drept a componentelor instalaţiilor energetice",
+          "C": "sustragerea de energie electrica"
+        },
+        "imported_grade_key_UNCHANGED": "B",
+        "source_supported_candidate_NOT_OFFICIAL_KEY": "A",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/311821",
+        "source_article": "Legea 123/2012 art.93(1)28 and art.92(1)",
+        "source_context_windows": {
+          "before": "Art.93(1): constituie contravenții următoarele fapte",
+          "focus": "28. refuzul clienților finali de a permite accesul la grupurile de măsurare, precum și la instalațiile aflate în gestiunea operatorului de distribuție",
+          "after": "Art.92(1): modificarea fără drept a componentelor instalațiilor energetice constituie infracțiune"
+        },
+        "A_B_C_reasoning": {
+          "A": "Refusal of meter access is contravention under art93(1)28",
+          "B": "Illegal installation modification is a crime under art92(1)",
+          "C": "Theft is not the stated contravention in this article"
+        },
+        "source_provenance": "V206 original workbook + separate AI challenge + secondary web LexApp art93(1)28; live Portal direct reopen error for this fifth case",
+        "second_AI_reviewer_id": "resp_55e78a13-82b7-4173-a3ab-977ac7c0cf9b",
+        "verified_2026_edition": false,
+        "original_scored_exam_key_authenticated": false,
+        "qualified_legal_reviewer": false,
+        "independent_linguistic_reviewer": false,
+        "approved_for_learning": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0288",
+      "grade_ids": [
+        "G1-LEG-024"
+      ],
+      "original_stem": "Obţinerea avizului tehnic de racordare de către un utilizator:",
+      "original_ABC": {
+        "A": "nu este obligatorie pentru o durata mai mică de 6 luni",
+        "B": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+        "C": "este obligatorie pentru orice loc de consum/producere nou"
+      },
+      "original_imported_keys_UNCHANGED": "G1-LEG-024=A",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "ANRE Ordin59/2013 art5, art11",
+      "source_root_code": "ATR_FOR_NEW_LOCATIONS_NO_GENERIC_6_MONTH_EXEMPTION",
+      "research_confidence": "scope_and_2026_consolidation_gate",
+      "previous_decision_state": "SOURCE_SCOPE_IDENTIFIED__STATUTE_VS_IMPORTED_KEY_CANDIDATE_DIFFERENT",
+      "source_excerpts_or_evidence": {
+        "source_origin_unit_id": "QABC-0288",
+        "original_source_stem": "Obţinerea avizului tehnic de racordare de către un utilizator:",
+        "original_A_B_C": {
+          "A": "nu este obligatorie pentru o durata mai mică de 6 luni",
+          "B": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+          "C": "este obligatorie pentru orice loc de consum/producere nou"
+        },
+        "original_grade_imported_keys_UNCHANGED": "G1-LEG-024=A",
+        "source_candidate_NOT_ANRE_AUTHENTICATED": "C",
+        "statutory_source_location": "ANRE Order 59/2013 connection regulation art.5, art.11 (all new sites regardless time/power; current amendment gate)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+        "exact_source_object_condition_reason": "New permanent or temporary place generally requires connection procedure independently of requested power/duration. Original A states no ATR when less than 6 months, a duration exemption absent in cited rules; original C best matches new consumption/production location.",
+        "cause_code": "ATR_NOT_EXEMPT_FOR_SHORT_DURATION_OR_LT_100KW",
+        "qualified_independent_jurist_linguist_review": false,
+        "authentic_ANRE_2026_scored_key": false,
+        "complete_2026_amendment_version_certified": false,
+        "actual_separate_AI_research_run": "resp_78e996b9-981f-444b-8cfc-d82150c925d3",
+        "rechecked_prior_legal_evidence": "CKPT-325 and CKPT-326; web confirmed Ordin74/2014 art2(3) and Annex3 item2.1; public current 2026 amendments not fully certified",
+        "note": "2023 workbook original and grade key unchanged, no automatic grading approval."
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0292",
+      "grade_ids": [
+        "G1-LEG-028"
+      ],
+      "original_stem": "În cazul unui ansamblu de blocuri de locuinţe, grupurile de măsurare individuale se poziţionează",
+      "original_ABC": {
+        "A": "pe tablourile din apartamente",
+        "B": "centralizat, la limita zonei de proprietate asupra terenului, in exteriorul construcţiei",
+        "C": "centralizat, la parter sau pe palier"
+      },
+      "original_imported_keys_UNCHANGED": "G1-LEG-028=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "ANRE Ordin59/2013 Annex3 item2.1",
+      "source_root_code": "APARTMENT_BUILDING_METERS_GROUND_FLOOR_LANDING",
+      "research_confidence": "scope_and_2026_consolidation_gate",
+      "previous_decision_state": "SOURCE_SCOPE_IDENTIFIED__STATUTE_VS_IMPORTED_KEY_CANDIDATE_DIFFERENT",
+      "source_excerpts_or_evidence": {
+        "source_origin_unit_id": "QABC-0292",
+        "original_source_stem": "În cazul unui ansamblu de blocuri de locuinţe, grupurile de măsurare individuale se poziţionează",
+        "original_A_B_C": {
+          "A": "pe tablourile din apartamente",
+          "B": "centralizat, la limita zonei de proprietate asupra terenului, in exteriorul construcţiei",
+          "C": "centralizat, la parter sau pe palier"
+        },
+        "original_grade_imported_keys_UNCHANGED": "G1-LEG-028=B",
+        "source_candidate_NOT_ANRE_AUTHENTICATED": "C",
+        "statutory_source_location": "ANRE Order 59/2013, Annex 3 item 2.1 exact apartment block complex category",
+        "source_url": "https://b.colegiul-geodezilor.ro/legislatie/articol.php?a=64_ORD-ANRE-59-2013_regulament-racordare&n=anexa3&q=gr%C4%83ni%C8%9Buire",
+        "exact_source_object_condition_reason": "Original apartment-block complex uses central meters at ground floor or common landing. Original imported B outside land boundary is associated with individual residences, not multistorey apartment blocks. Specific source categories must not be interchanged.",
+        "cause_code": "APARTMENT_BLOCK_COMPLEX_METERING_PARTEr_PALIER_VS_HOUSES_PROPERTY_EDGE",
+        "qualified_independent_jurist_linguist_review": false,
+        "authentic_ANRE_2026_scored_key": false,
+        "complete_2026_amendment_version_certified": false,
+        "actual_separate_AI_research_run": "resp_78e996b9-981f-444b-8cfc-d82150c925d3",
+        "rechecked_prior_legal_evidence": "CKPT-325 and CKPT-326; web confirmed Ordin74/2014 art2(3) and Annex3 item2.1; public current 2026 amendments not fully certified",
+        "note": "2023 workbook original and grade key unchanged, no automatic grading approval."
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0367",
+      "grade_ids": [
+        "G1-NOR-053"
+      ],
+      "original_stem": "Branşamentul electric este partea din instalaţia de distribuţie a energiei electrice cuprinsă între linia electrică şi:",
+      "original_ABC": {
+        "A": "firida de branşament",
+        "B": "coloana electrică",
+        "C": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-053=A",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "PE155/1992 §1.2.1–2",
+      "source_root_code": "BRANSAMENT_EXTENDS_BEYOND_FIRIDA_RACORD",
+      "research_confidence": "historic_source_reproduced_edition_and_caveat",
+      "previous_decision_state": "SOURCE_ORIGINAL_PE155_DEFINITION_BRANSAMENT_VS_RACORD_IMPORT_A_CONFLICT",
+      "source_excerpts_or_evidence": {
+        "original": {
+          "stem": "Branşamentul electric este partea din instalaţia de distribuţie a energiei electrice cuprinsă între linia electrică şi:",
+          "A": "firida de branşament",
+          "B": "coloana electrică",
+          "C": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului",
+          "imported_grade_keys_UNCHANGED": "G1-NOR-053=A"
+        },
+        "source_ref_original_1992_PDF": "https://www.baluna.ro/wp-content/uploads/2018/02/pe_155_92.pdf",
+        "source_ref_I7_local_2023_sha": null,
+        "source_exact_location": "PE155/92 §1.2.1 and §1.2.2",
+        "before": "1.2. Terminologia specifica",
+        "focus": "1.2.1. Bransamentul electric este partea din instalatia de distributie a energiei electrice cuprinsa intre linia electrica (aeriana sau subterana) si instalatia interioara (a abonatului). OBSERVATIE. Punctul de delimitare ... il constituie bornele de iesire din contorul de masurare a energiei electrice.",
+        "after": "1.2.2. Racordul electric este partea de bransament cuprinsa intre linia electrica (aeriana sau subterana) si firida de bransament.",
+        "candidate_NOT_SCORING_KEY": "C with meter OUTPUT terminal qualifier",
+        "interpretation": "Original imported A ends at firida which defines RACORD, not whole BRANSAMENT. C describes boundary at meter terminals and is nearest original answer, but omit detail 'bornele DE IESIRE' and full inside-installation text. Candidate C is NOT an authenticated ANRE score.",
+        "remaining_limit": "Exact 1992 reproduced source and output-terminal qualifier, 2026 edition not verified; original A in workbook preserved.",
+        "original_pe155_pdf_screen_visual_QA": "FAILED_CACHE_MISS",
+        "second_AI_research_for_PE155": "resp_c35668f6-0511-43af-a923-a0cb9678e340",
+        "independent_professional_review": false,
+        "authentic_ANRE_scored_key": false,
+        "source_applicable_2026_certified": false,
+        "learner_approved": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0341",
+      "grade_ids": [
+        "G1-NOR-027"
+      ],
+      "original_stem": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+      "original_ABC": {
+        "A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+        "B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+        "C": "conductoarele de alimentare să fie legate la duliile filetate"
+      },
+      "original_imported_keys_UNCHANGED": "G1-NOR-027=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "A",
+      "exact_source_locator": "PE102/1986 §4.6.3",
+      "source_root_code": "THREADED_FUSE_FEED_CONTACT_SCREW",
+      "research_confidence": "historic_grade_I_bibliography_exclusion_gate",
+      "previous_decision_state": "SOURCE_PE102_EXACT_FUSE_THREAD_CONTACT_IMPORT_B_VS_A",
+      "source_excerpts_or_evidence": {
+        "original_source_stem_and_ABC_pointer": "V149 original grade A/B/C, not changed",
+        "imported_grade_key_UNCHANGED": "B",
+        "source_candidate_NOT_SCORED_KEY": "A",
+        "source_locator": "PE102/1986 section 4.6.3",
+        "paragraph_before": "4.6.2 only properly calibrated fuses are used",
+        "paragraph_focus": "4.6.3 supply conductors connect to contact screws; consumer outgoing conductors connect to threaded sockets",
+        "paragraph_after": "4.6.4 never put fuses on protective neutral/earth conductors",
+        "scope_and_key_reason": "A exactly matches the feed contact screws in specific PE102 historical source. Original imported B reverses outgoing and incoming. I7 central-contact term does not replace original 'screws' text.",
+        "source_url_or_hash": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+        "separate_AI_research": "resp_fcff2e7e-d670-4431-be10-c88ec6ecb7ba",
+        "source_PDF_screenshot_if_external": "FAILED_OR_UNAVAILABLE",
+        "human_independent_review": false,
+        "verified_applicable_full_2026_editional_scope": false,
+        "authenticated_ANRE_exam_score_key": false,
+        "learner_approved": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    },
+    {
+      "unit_id": "QABC-0235",
+      "grade_ids": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "original_stem": "Utilizarea unei cuple longo-transversale se preferă atunci când dorim:",
+      "original_ABC": {
+        "A": "scurtarea manevrelor;",
+        "B": "o siguranţă în funcţionare mai mare;",
+        "C": "reducerea investiţiei în echiparea staţiei."
+      },
+      "original_imported_keys_UNCHANGED": "G1-ELE-246=B | G2-ELEC-382=B",
+      "source_supported_candidate_NOT_AUTHENTICATED": "C",
+      "exact_source_locator": "IP71/2015 §5.2.4.3–3.1",
+      "source_root_code": "LONGOTRANSVERSAL_COUPLER_SAVES_INVESTMENT",
+      "research_confidence": "technical_source_scope_2026_grade_gate",
+      "previous_decision_state": "SOURCE_ROOT_DIAGNOSED__COMBINED_LONGOTRANSVERSAL_COUPLER_CAPEX_NOT_UNIVERSAL_RELIABILITY",
+      "source_excerpts_or_evidence": {
+        "source_root_diagnosis": "The same exact combined longitudinal-transverse bus coupler is cited as used to SAVE CAPITAL EXPENDITURE by reducing coupler bays. Adjacent subsection lists increased construction complexity/avary risk and unavailability of second function if blocked. Therefore original C is source-supported as the intended rationale; imported B 'siguranta in functionare mai mare' is not the general aim in the cited norm and depends on unstated comparator.",
+        "source_locator": "IP71/2015 'Statii de conexiuni si transformare' §5.2.4.3, §5.2.4.3.1, source https://stoianconstantin.wordpress.com/wp-content/uploads/2024/11/1.e-ip-71-2015-statii-de-conexiuni-si-de-transformare.pdf; university guide https://gheorghe-grigoras.ieeia.tuiasi.ro/SCSAD/indrumarSCSAD.pdf §4.4.2 figure4.17",
+        "source_supported_candidate_NOT_APPROVED": "C source-supported in exact engineering IP71-2015 §5.2.4.3: reduce coupler bay count/investment, versus imported B",
+        "grade_imported_keys_UNCHANGED": "G1-ELE-246=B | G2-ELEC-382=B",
+        "source_grade_letter": "C",
+        "method": "Primary technical norm exact source paragraph and immediate following caveats read from web indexed text; screenshot API cache miss (NOT visually authenticated), separate AI adversarial research resp_5ee7abfc-6d2b-4851-aea4-b9e74b3a633a (not credentialed).",
+        "limitations": "IP71-2015 applicability to 2024 ANRE exam exact bibliography and November 2026 edition not fully certified; no original scored ANRE key; 'reliability always lower' is not proven for all comparators.",
+        "source_Figure_2024_XLSX_recovered": false,
+        "diagram_fidelity_verified": false,
+        "official_exam_scored_key_authenticated": false,
+        "qualified_independent_technical_review": false,
+        "qualified_independent_linguistic_review": false,
+        "learner_approved": false
+      },
+      "case_still_release_blocked": true,
+      "original_changed": false,
+      "qualified_independent_review": false,
+      "exact_2026_applied_edition_certified": false,
+      "original_ANRE_scored_answer_key_authenticated": false,
+      "must_not_auto_apply": true
+    }
+  ]
+}
