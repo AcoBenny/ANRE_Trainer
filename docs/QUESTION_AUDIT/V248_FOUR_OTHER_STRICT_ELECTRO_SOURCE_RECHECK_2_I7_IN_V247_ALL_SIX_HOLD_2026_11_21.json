@@ -1,0 +1,186 @@
+{
+  "schema": "v248_four_remaining_historic_strict_source_model_reviews_original_xlsx",
+  "date": "2026-11-21",
+  "link_v246": "V246_ALL_415_SOURCE_QUESTIONS_FULL_UPLOADED_XLSX_MATCH_FOUR_MUTATIONS_NO_KEYS_CHANGED_2026_11_21.json",
+  "link_v247": "V247_TEN_I7_2023_EXACT_CONTEXT_WINDOWS_BEFORE_BOLD_AFTER_CANDIDATE_KEY_HOLDS_2026_11_21.json",
+  "checks": {
+    "historical_strict_total": 6,
+    "historical_strict_source_norm_windows_in_v247": 2,
+    "historical_strict_other_technical_cases_in_this_file": 4,
+    "independently_final_approved": 0
+  },
+  "overall_status": "ALL_SIX_HISTORIC_STRICT_REOPENED_WITH_UPLOAD_SOURCE_AND_TARGETED_THEORY_OR_NORM_EVIDENCE_UNRESOLVED",
+  "limitations": [
+    "Technical textbooks are independent published reference sources, not a qualified independent reviewer of this specific answer key.",
+    "A physically plausible answer letter must not be substituted automatically for an original imported key.",
+    "Official 2026 exam-grade scoring key unavailable; no release approval.",
+    "No new actual before/after source excerpts for these external theory references; V247 is the only source-window implementation for original I7 cases."
+  ],
+  "cases": [
+    {
+      "unit_id": "QABC-0017",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "source_row": 25,
+      "source_file_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_original_stem_ABC": {
+        "stem": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "source_master_normalized_match": true,
+      "imported_grade_keys_unmodified": "G1-ELE-018=A | G2-ELEC-170=C",
+      "status": "CANDIDATE_A_ONLY_UNDER_BALANCED_STAR_EQUIVALENT_CS_DEFINITION",
+      "original_question_scope": "Line capacitances between each pair C12=C23=C31=C, earth effects neglected; phrase 'capacitate de serviciu Cs' does not explicitly define terminal/sequence equivalent.",
+      "math_proof": "For a balanced three-phase system Va+Vb+Vc=0: qa=C(Va−Vb)+C(Va−Vc)=C(2Va−Vb−Vc)=3C Va, so equivalent positive-sequence star phase capacitance is 3C. If sum zero is not true or Cs denotes a different quantity, equality needs extra modeling.",
+      "negative_test": "For Va=1, Vb=0.2, Vc=0.5 (not balanced), qa=C*(2−0.2−0.5)=1.3C, not 3C.",
+      "ABC": {
+        "A": "3C follows only for stated balanced phase-to-neutral equivalent; affirmative candidate, not a certified exam key.",
+        "B": "C/3 fails the balanced delta-to-star phase-equivalent charge relation.",
+        "C": "C is one mutual phase-to-phase partial capacitance, not the balanced equivalent phase-to-neutral service capacitance under that definition."
+      },
+      "references": [
+        {
+          "type": "derivation",
+          "url": "https://www.scientia.ro/tehnologie/96-internet/10558-test-oficial-anre-pentru-electricieni-275-de-intrebari-electrotehnica-masini-si-retele-electrice-cu-raspunsuri-si-explicatii.html",
+          "qualification": "Secondary didactic derivation published 2026, corroborates algebra but cannot authenticate ANRE original scoring."
+        }
+      ],
+      "source_context_before_focus_after": "NO_AUTHORITATIVE_EXACT_DEFINITION_OF_CS_RETRIEVED",
+      "next_gate": "Obtain original exact course definition of Cs and grade-specific ANRE key/revision evidence.",
+      "source_scored_key_authenticated": false,
+      "current_2026_exam_edition_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "source_row": 109,
+      "source_file_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_original_stem_ABC": {
+        "stem": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
+      },
+      "source_master_normalized_match": true,
+      "imported_grade_keys_unmodified": "G1-ELE-102=A | G2-ELEC-245=C",
+      "status": "NO_UNIVERSAL_PREFERENCE_FROM_OPERATING_MODE_DEFINITIONS",
+      "original_question_scope": "Two busbars, one breaker per circuit, asks 'este de preferat' in normal operation; supply topology, loads, reserve restoration philosophy and operating policy are unstated.",
+      "math_proof": "No scalar physical equation establishes 'preferable' among A/B/C. Two-busbar schemes can be run with one working bar and reserve bus or with both busbars energized; the coupler standby configuration differs by local system design.",
+      "negative_test": "Existence of at least two documented technically feasible normal schemes refutes inference of a universally uniquely preferable arrangement from topology alone.",
+      "ABC": {
+        "A": "One live bus and other cold reserve can be an operating regime, but no exact source establishes a universal preference.",
+        "B": "Two energized bars with coupler closed can be a normal operational mode; it is not necessarily obligatory.",
+        "C": "Two energized bars with coupler warm reserve can be a normal regime; but no confirmed blanket preference without station design."
+      },
+      "references": [
+        {
+          "type": "technical_scheme",
+          "url": "https://schema-electrica.blogspot.com/2015/03/scheme-de-conexiuni-pentru-statii-si.html",
+          "qualification": "Text describes two feasible operating regimes; non-official and not an exam key."
+        }
+      ],
+      "source_context_before_focus_after": "EXACT_DESIGN_REGULATION_FOR_PREFERABLE_MODE_NOT_RETRIEVED",
+      "next_gate": "Identify relevant substation design source paragraph and applicable scheme/automation conditions; authenticate conflicting Grade I A and Grade II C scored answers.",
+      "source_scored_key_authenticated": false,
+      "current_2026_exam_edition_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "source_row": 159,
+      "source_file_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_original_stem_ABC": {
+        "stem": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "source_master_normalized_match": false,
+      "imported_grade_keys_unmodified": "G1-ELE-152=A",
+      "status": "ORIGINAL_ADIMENSIONALA_CONTRADICTS_GAMMA_UNITS",
+      "original_question_scope": "Original says a 'mărime adimensională' for amplitude+phase evolution per 1 km, edited Trainer says 'mărimea caracteristică'.",
+      "math_proof": "Complex propagation constant gamma=alpha+j beta has units inverse length (m^-1 or km^-1), whereas gamma*L is dimensionless exponent in exp(-gamma L).",
+      "negative_test": "With gamma=(1+j2)/km and L=1 km, gamma itself is NOT dimensionless even though gamma L is.",
+      "ABC": {
+        "A": "Propagation constant describes both attenuation and phase; answers the intended phenomenon but not the original adjective 'adimensională'.",
+        "B": "Attenuation alpha describes magnitude change, not both magnitude and phase.",
+        "C": "'Distortion constant' is not the standard complex line parameter gamma used for magnitude and phase."
+      },
+      "references": [
+        {
+          "type": "textbook",
+          "url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_II_-_Transmission_Lines_%28Steer%29/02%253A_Transmission_Lines/2.02%253A_Transmission_Line_Theory",
+          "qualification": "The propagation constant definition and unit are directly stated; no ANRE scoring authority."
+        },
+        {
+          "type": "textbook",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-031-14186-7_7",
+          "qualification": "Propagation constant [1/m], attenuation and phase."
+        }
+      ],
+      "source_context_before_focus_after": "TEXTBOOK_PARAGRAPH_WINDOWS_NOT_YET_QUOTED_VERBATIM",
+      "next_gate": "Exact original course/bibliography definition; official source answer or erratum for original 'adimensională'. Link QABC-0568 same source row.",
+      "source_scored_key_authenticated": false,
+      "current_2026_exam_edition_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "source_row": 254,
+      "source_file_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_original_stem_ABC": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "source_master_normalized_match": false,
+      "imported_grade_keys_unmodified": "G1-ELE-247=B | G2-ELEC-383=B",
+      "status": "ORIGINAL_INDUCTIE_ELECTROMAGNETICA_NOT_ELECTROSTATICA_AND_CHARGE_AMBIGUOUS",
+      "original_question_scope": "Original B says 'inducţie electromagnetică', edited Trainer B 'inducţie electrostatică'; neutral conductor in E field redistributes surface charge but may remain net neutral.",
+      "math_proof": "For an isolated neutral conductor in an external static E field, total net charge Q_total remains 0 while surface free charge distribution polarizes. An induced net charge requires additional conditions such as contact with ground and subsequent separation.",
+      "negative_test": "Conductor insulated from ground in a uniform external electrostatic E: induced surface charges ± redistribute without changing net Q; so 'se încarcă' is ambiguous between separation and nonzero net charge.",
+      "ABC": {
+        "A": "'Prin conducţie' requires charge transfer/contact; not entailed merely by being placed in an external field.",
+        "B": "'Prin inducţie electromagnetică' does not name electrostatic induction and, even with a revised word, neutral polarization does not automatically mean net charging.",
+        "C": "'Prin magnetizare' is not the stipulated electrostatic mechanism."
+      },
+      "references": [
+        {
+          "type": "textbook",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium",
+          "qualification": "Conductor in external E redistributes surface charge."
+        },
+        {
+          "type": "textbook",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction",
+          "qualification": "Electrostatic polarization versus actual net charge by grounding/induction sequence."
+        }
+      ],
+      "source_context_before_focus_after": "TEXTBOOK_PARAGRAPH_WINDOWS_NOT_YET_QUOTED_VERBATIM",
+      "next_gate": "Authenticate exact Romanian textbook definition of 'se încarcă cu electricitate', induction type and true 2024 ANRE-original answer key.",
+      "source_scored_key_authenticated": false,
+      "current_2026_exam_edition_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    }
+  ]
+}
