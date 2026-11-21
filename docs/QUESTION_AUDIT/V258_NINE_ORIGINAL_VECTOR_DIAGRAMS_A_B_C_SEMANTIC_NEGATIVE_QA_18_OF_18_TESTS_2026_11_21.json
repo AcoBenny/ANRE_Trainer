@@ -1,0 +1,413 @@
+{
+  "schema": "V258 nine source-only original ANRE vector diagrams technical editorial QA A/B/C and source-negative tests",
+  "date": "2026-11-21",
+  "parent_pr_head": "78f6d523a7c560e8e4a39f5d7d842dbe163f352d",
+  "source_user_library": "ELECTROTEHNICA-09.2024-2.xlsx",
+  "source_original_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+  "source_original_reference": "V175 and V257; each original source row re-read from V175; no source workbook bytes modified",
+  "test_execution": {
+    "local_script": "/mnt/data/anre_vector_regression_ckpt346.py",
+    "structural_tests_passed": 18,
+    "structural_tests_total": 18,
+    "output_artifact": "ANRE_CKPT346_probe_vectoriale_si_regresie.zip",
+    "output_zip_sha256": "97e22cfec77d473e2422c7d92531369bce277d0129bc43aa4b1cf280f52b5ec0",
+    "graphics_plate": "ANRE_3_cuple_9_variante_grafice_din_XLSX_original_QA.png",
+    "plate_sha256": "480093a1a3ca84d6c17addd5f9e9aa5e4460ada0489fecf9db31783780222344",
+    "NOTE": "These tests are source-structure regression only, never proof of electrical correctness."
+  },
+  "real_separate_AI_models_run": [
+    {
+      "id": "resp_1544c842-ee2d-463d-9163-ecbef49ae22a",
+      "subject": "combined busbar functional couplers (EL30-32)",
+      "access_to_uploaded_diagram_image": false,
+      "qualified_reviewer": false
+    },
+    {
+      "id": "resp_4bb699a4-f75f-4b5d-baab-2b57ce9b75bf",
+      "subject": "MV cell, bypass busbar, motor/generator separations (EL15/43/44/117/176/181)",
+      "access_to_uploaded_diagram_image": false,
+      "qualified_reviewer": false
+    }
+  ],
+  "grounded_references": [
+    {
+      "type": "original_user_uploaded",
+      "ref": "ELECTROTEHNICA-09.2024-2.xlsx SHA256 matching V246/V257"
+    },
+    {
+      "type": "university_teaching_course_mirror_NOT_official_ANRE",
+      "url": "https://www.studocu.com/ro/document/universitatea-politehnica-din-timisoara/instalatii-electrice-1/curs-iec-instalatii-electrice-de-conexiuni/6623276",
+      "scope": "Generator stopped during breaker service and section busbar couplers",
+      "access": "WEB_HTML_READ"
+    },
+    {
+      "type": "manufacturer_product_spec_NOT_exam_answer",
+      "url": "https://www.distributie-energie.ro/wp-content/uploads/2019/11/ETN-ST-15-037-5-Celula-TI-1.pdf",
+      "scope": "Substation switchgear compartments",
+      "access": "SEARCH_RESULT_ONLY_PDF_NOT_PAGE_OPENED"
+    },
+    {
+      "type": "third_party_answer_article_UNVERIFIED",
+      "url": "https://scientia.ro/tehnologie/96-internet/10558-test-oficial-anre-pentru-electricieni-275-de-intrebari-electrotehnica-masini-si-retele-electrice-cu-raspunsuri-si-explicatii.html",
+      "scope": "Image candidate letters and explanations only",
+      "access": "RETRIEVED_2026_11_21_NO_OFFICIAL_KEY"
+    }
+  ],
+  "summary_counts": {
+    "source_rows": 9,
+    "graphic_only_choices": 3,
+    "source_exact_repeat_A": 3,
+    "source_exact_repeat_C": 2,
+    "source_integrity_negative_traps": 4,
+    "technical_candidate_source_conditional": 9,
+    "technical_or_semantic_final_signoffs": 0,
+    "official_scored_keys_authenticated": 0,
+    "integrated_into_822": 0,
+    "prior_semantic_holds_closed": 0,
+    "all_822_independent_learner_approvals": 0
+  },
+  "negatives": [
+    {
+      "id": "SOURCE_FINGERPRINT_A_REPEAT",
+      "description": "EL30.A, EL31.A, EL32.A all have exact normalized source vector hash",
+      "observed": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+      "conclusion": "A repeated diagram can be multifunctional, and exam uniqueness must not be concluded from an answer site's letter"
+    },
+    {
+      "id": "SOURCE_FINGERPRINT_C_REPEAT",
+      "description": "EL31.C = EL32.C exact normalized shape geometry",
+      "observed": "88deae6f61a535a2482c26e5c6d5e7a73d60cf64ba76c4062c4dfa9ec3ef8849",
+      "conclusion": "Check each physical crossing and function before treating C as unique"
+    },
+    {
+      "id": "RENDERER_LABEL_CA_NOT_C",
+      "description": "Original drawing file literal text CA despite stem mentioning C",
+      "observed": "xdr:sp/x:txBody/a:t = CA on rows 15,43,44",
+      "conclusion": "Question labelled C cannot be equated to CA without direct inspection"
+    },
+    {
+      "id": "ROW181_DUAL_LABEL_M_G_SAME_XY",
+      "description": "Source XLSX has M and G at same coordinates (3810000,115995450), additional G at y116709825, and S11",
+      "observed": "22 source anchors, 30 original nested xdr:sp",
+      "conclusion": "Do not infer one pristine picture from the composite renderer or from a third-party picture"
+    },
+    {
+      "id": "SECOND_MODEL_INCONSISTENCY_GENERATOR_S2",
+      "description": "Separate AI research claimed S2 was needed for isolation yet concluded that S2 was an extra component",
+      "observed": "Source usage incorrect: something required does not imply it is unnecessary",
+      "conclusion": "Reject unsupported AI final answer; use explicit source and maintenance assumptions"
+    },
+    {
+      "id": "ACADEMIC_GENERATOR_OFF_EXCEPTION",
+      "description": "Substation course says generator stopped during breaker maintenance can make a generator-side separator unnecessary",
+      "observed": "https://www.studocu.com/ro/document/universitatea-politehnica-din-timisoara/instalatii-electrice-1/curs-iec-instalatii-electrice-de-conexiuni/6623276",
+      "conclusion": "Contextual candidate B for EL181 under restrictive scenario, but not modern universal electrical-work safety advice"
+    }
+  ],
+  "cards": [
+    {
+      "source_excel_row": 15,
+      "original_ANRE_stem": "Aparatul notat cu C pe desenul de mai sus al unei celule prefabricate de medie tensiune de tip închis, reprezintă un:",
+      "original_variants": {
+        "A": "întreruptor;",
+        "B": "transformator de curent;",
+        "C": "transformator de tensiune"
+      },
+      "options_graphical_only": false,
+      "graphical_column_mapping": null,
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "398d46820b793f2c1c8e4e1a3572435f0effc8621ffcbddc28abe01b95cf310a",
+      "graphical_option_fingerprint_sha256": null,
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "B (transformator de curent), conditional figure identification",
+      "scope": "The diagram shows a small circle series-positioned along a cable-line path lower-left. But the exact original DrawingML element is text 'CA', while source question says apparatus marked 'C'. This is a source-content mismatch, not a rendering failure.",
+      "rationale_A_B_C": {
+        "A": "Switch/breaker appears at a different location, labelled near B, and the lower-left circle is not the switching apparatus.",
+        "B": "Series-positioned circular instrument symbol may be a current transformer (TC), but the original label is 'CA', not standalone 'C'; confirm symbol legend/official erratum.",
+        "C": "Potential/voltage transformer ordinarily measures line voltage in a different connection topology; not shown clearly by this isolated small circle."
+      },
+      "current_hold": "SOURCE_STEM_MARK_C_VS_ORIGINAL_GRAPHIC_LITERAL_CA_AND_TECHNICAL_SYMBOL_UNIQUENESS",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 30,
+      "original_ANRE_stem": "Care dintre schemele alăturate permite obţinerea a două circuite de cuplă diagonală  (cruce cu întreruptor ) ?",
+      "original_variants": {
+        "A": "",
+        "B": "",
+        "C": ""
+      },
+      "options_graphical_only": true,
+      "graphical_column_mapping": {
+        "A": "Excel B",
+        "B": "Excel C",
+        "C": "Excel D"
+      },
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "abba6b1a03337409a38a8548e834f651f0eeaabb062966994315b83640ddc53e",
+      "graphical_option_fingerprint_sha256": {
+        "A": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+        "B": "3a1c94d042a796d23e072abfef287cbb65e866928b81a03aa455ddca8cfb7ec5",
+        "C": "852de516cfbff010181195dad7a1bc326d3ee68aab10fd90b9f514cb95a58d17"
+      },
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "A plausible for two alternate diagonal connections; uniqueness not established",
+      "scope": "Original choices are graphical only. Choice A is one common breaker between two busbar sections, with each end selectable to either parallel bar. It is source-fingerprint identical to A in EL31/EL32. Cross-level (diagonal) selectable links plausible but a single shared breaker does not provide two independent simultaneous paths.",
+      "rationale_A_B_C": {
+        "A": "Under sequential selector switching, cross connections can be produced one at a time, supporting a provisional A.",
+        "B": "The differing source graphic includes another wiring path; cannot confidently eliminate without node-connection/protection review.",
+        "C": "The differing source graphic has another topology and symbol types; cannot confidently eliminate without circuit topology validation."
+      },
+      "current_hold": "DOUA_CIRCUITE_FUNCTIONAL_ALTERNATIVES_VS_INDEPENDENT_SIMULTANEOUS_CIRCUITS",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 31,
+      "original_ANRE_stem": "Care dintre schemele alăturate permite obţinerea a două circuite de cuplă  longitudinală ( cu întreruptor) ?",
+      "original_variants": {
+        "A": "",
+        "B": "",
+        "C": ""
+      },
+      "options_graphical_only": true,
+      "graphical_column_mapping": {
+        "A": "Excel B",
+        "B": "Excel C",
+        "C": "Excel D"
+      },
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "4b0f6695267b7f652659adfe097e16809773c8051587d387640e95856ed57111",
+      "graphical_option_fingerprint_sha256": {
+        "A": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+        "B": "1e386dd25ca220c76921413a7988b7620408196b9e2deac1a0998018258fb3a5",
+        "C": "88deae6f61a535a2482c26e5c6d5e7a73d60cf64ba76c4062c4dfa9ec3ef8849"
+      },
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "A provisional under sequential functional coupler interpretation; B not excluded by source",
+      "scope": "A fingerprint identical to EL30 option A; same-level bus section connections can be achieved by selecting contacts. The statement does not specify whether both longitudinal couplers operate simultaneously or are alternate breaker-selected modes.",
+      "rationale_A_B_C": {
+        "A": "A can connect upper-left to upper-right or lower-left to lower-right in turn, with the same breaker, if selectors and interlocks allow.",
+        "B": "B's separate paths and multiple break-switch symbols may support another longitudinal configuration, not yet electrically eliminated.",
+        "C": "C has shared and cross circuit topology; cannot be eliminated by visual resemblance alone. C is source-identical to EL32 choice C."
+      },
+      "current_hold": "OPTION_A_REUSED_FROM_DIAGONAL_CASE_AND_MULTIPLE_FUNCTIONAL_CHOICES",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 32,
+      "original_ANRE_stem": "Care dintre schemele alăturate permite obţinerea a două circuite de cuplă  transversală ( cu întreruptor) ?",
+      "original_variants": {
+        "A": "",
+        "B": "",
+        "C": ""
+      },
+      "options_graphical_only": true,
+      "graphical_column_mapping": {
+        "A": "Excel B",
+        "B": "Excel C",
+        "C": "Excel D"
+      },
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "0a4168679083b2abaee278c4a39b70dbb17271af9b6cadbab486b16dad817f43",
+      "graphical_option_fingerprint_sha256": {
+        "A": "1256c37b5a36ef1dbe59669e564fb2b35d76ab4bf3f529589e25c12b9bf25519",
+        "B": "feb487417a69af46256e12ffff62d7d80e4eda03c92b63ae6ab1e88ac2c6c39f",
+        "C": "88deae6f61a535a2482c26e5c6d5e7a73d60cf64ba76c4062c4dfa9ec3ef8849"
+      },
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "C is an unverified third-party suggestion; original vector topology must be fully traced",
+      "scope": "This case asks for two transverse couplers joining parallel busbar systems. Option A source-identical to EL30/31 A; C source-identical to EL31 C, while B differs. No exact circuit-graph connectivity test proves uniqueness.",
+      "rationale_A_B_C": {
+        "A": "A connects two longitudinal sections via common breaker; it is not a clearly independent pair of transverse couplers.",
+        "B": "B contains a more complex pair of paths and breaker positions; requires detailed open/closed source connectivity and section boundaries.",
+        "C": "The external article proposes C, but third-party asserted letters are not official and C picture is reused from EL31; technically not independently confirmed."
+      },
+      "current_hold": "TRANSVERSE_COUPLERS_EXACT_TOPOLOGY_AND_SOURCE_IMAGE_CHOICES_NOT_FULLY_GROUNDED",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 43,
+      "original_ANRE_stem": "Compartimentul notat cu 2 pe desenul de mai sus al unei celule prefabricate de medie tensiune de tip închis, reprezintă:",
+      "original_variants": {
+        "A": "compartimentul de legătură cu reţeaua electrică;",
+        "B": "compartimentul aparatajului de comutaţie;",
+        "C": "compartimentul circuitelor secundare."
+      },
+      "options_graphical_only": false,
+      "graphical_column_mapping": null,
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "9fb818bd4ec3491d6450bd6daf92715a5d513fda90dde6412c569975ef5352d1",
+      "graphical_option_fingerprint_sha256": null,
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "B (compartimentul aparatajului de comutație), provisional technical source supported",
+      "scope": "Source figure labels 2 lower-right area containing the switching breaker, while 3 is lower-left cable/line connection, 4 upper-right secondary, 1 upper-left bus.",
+      "rationale_A_B_C": {
+        "A": "Cable connection area is labelled 3, not 2.",
+        "B": "The label 2 points to the right-lower switching equipment area of the original vector figure.",
+        "C": "Secondary circuits are upper-right (label 4), not lower-right label 2."
+      },
+      "current_hold": "PENDING_QUALIFIED_TECHNICAL_QA_AND_OFFICIAL_EXAM_KEY",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 44,
+      "original_ANRE_stem": "Compartimentul notat cu 3 pe desenul de mai sus al unei celule prefabricate de medie tensiune de tip închis, reprezintă:",
+      "original_variants": {
+        "A": "compartimentul de legătură cu reţeaua electrică;",
+        "B": "compartimentul aparatajului de comutaţie;",
+        "C": "compartimentul circuitelor secundare."
+      },
+      "options_graphical_only": false,
+      "graphical_column_mapping": null,
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "2dc4e779d561123c8f0726c300cf73208163dbafdb67350f9079e22d0be9f3d7",
+      "graphical_option_fingerprint_sha256": null,
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "A (compartimentul de legătură cu rețeaua electrică), provisional technical source supported",
+      "scope": "Source figure labels 3 lower-left line/cable connection area; geometry is the same as rows 15 and 43, with 2 lower-right switching compartment.",
+      "rationale_A_B_C": {
+        "A": "Number 3 identifies the lower-left cable/network connection compartment.",
+        "B": "Switchgear compartment is numbered 2, not 3.",
+        "C": "Secondary apparatus compartment is numbered 4, not 3."
+      },
+      "current_hold": "PENDING_QUALIFIED_TECHNICAL_QA_AND_OFFICIAL_EXAM_KEY",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 117,
+      "original_ANRE_stem": "Circuitul din figură                                           reprezinta",
+      "original_variants": {
+        "A": "o cupla cu functiuni multiple intr-o statie cu doua sisteme de bare colectoare",
+        "B": "un circuit de linie dintr-o statie cu doua sisteme de bare colectoare",
+        "C": "un circuit de linie dintr-o statie cu un sistem de bare colectoare si bare de ocolire."
+      },
+      "options_graphical_only": false,
+      "graphical_column_mapping": null,
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "b492ae3631b6535f90ecee00d305dd9ec2b20179adfcd9fa6e4facd7bf37be18",
+      "graphical_option_fingerprint_sha256": null,
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "C (circuit de linie cu sistem de bare și bară de ocolire), provisional topology supported",
+      "scope": "Two horizontal busbars, ordinary breaker path between upper bus and outgoing conductor; lower bus has a direct bypass link to the outgoing line downstream of the breaker, characteristic of bypass bus functionality. Exact operational switching sequence unverified.",
+      "rationale_A_B_C": {
+        "A": "A multifunction coupler primarily connects bus systems, not an outgoing line with bypass branch around its breaker.",
+        "B": "An ordinary double-busbar line branch selects one supply bus upstream of breaker; here the lower bus appears tied downstream, as a bypass.",
+        "C": "Second bus appears to be bypass/transfer bus rather than an alternate working bus, because of the branch around breaker."
+      },
+      "current_hold": "PENDING_SOURCE_SUBSTATION_TOPOLOGY_VERIFICATION_AND_QUALIFIED_REVIEW",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 176,
+      "original_ANRE_stem": "Pe schema de mai sus sunt aparate în plus ?",
+      "original_variants": {
+        "A": "nu;",
+        "B": "da, separatorul S1;",
+        "C": "da, separatorul S2"
+      },
+      "options_graphical_only": false,
+      "graphical_column_mapping": null,
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "ac40782bf25e98a835aac5d540c63648a78d7e228cd49144bfdf332746db49d5",
+      "graphical_option_fingerprint_sha256": null,
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "C (separatorul S2) under simplified one-source motor circuit; A under more conservative both-sided-breaker-isolation regime",
+      "scope": "Bus → S1 → breaker → S2 → motor M. If motor is stopped and has no alternate feed/back-drive, S1 creates visible bus isolation, making S2 potentially redundant in simplified design. But maintenance/safety practice may call for both-sided disconnection or grounding, and no operating conditions are specified.",
+      "rationale_A_B_C": {
+        "A": "Both isolators may be justified by maintenance and prevention of unexpected energization; not categorically false.",
+        "B": "S1 separates bus voltage from circuit; removing it would lose visible source-side isolation, so B is unlikely.",
+        "C": "In simplified no-reenergization-from-motor-side model, motor-side S2 does not add a required second source separation; a provisional C is plausible."
+      },
+      "current_hold": "MOTOR_NO_BACKFEED_AND_MAINTENANCE_ISOLATION_SCOPE_NOT_SPECIFIED",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    },
+    {
+      "source_excel_row": 181,
+      "original_ANRE_stem": "Pe schema de mai sus sunt aparate în plus ?",
+      "original_variants": {
+        "A": "nu;",
+        "B": "da, separatorul S2;",
+        "C": "da, separatorul S1"
+      },
+      "options_graphical_only": false,
+      "graphical_column_mapping": null,
+      "source_workbook_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "original_vector_anchor_sha256": "9313eb8571dc3309bba53b1ac4efd56a88344cf43af8e4bb465f181afbbab504",
+      "graphical_option_fingerprint_sha256": null,
+      "source_figure_bytes_recovered": true,
+      "render_quality": "APPROXIMATE_DRAWINGML_GEOMETRY_NOT_NATIVE_EXCEL_PIXEL_PROOF",
+      "research_candidate_NOT_OFFICIAL_KEY": "B (separatorul S2) under cited generator-stopped teaching model; A if both-side isolation required; no unique candidate with original overlapping source artwork",
+      "scope": "Original row181 contains 22 shapes anchors with exact coincident M and G text at identical XY, a second lower G drawing, and text S11. This is in original OOXML, not a hallucinated picture. A teaching passage says generator stopped during breaker maintenance means generator-side separator may not be needed, but field procedures/possible backfeed can require isolation.",
+      "rationale_A_B_C": {
+        "A": "Both S1 and S2 may be justified for isolating both bus and live/restartable generator. The external third-party article proposes A, not an official key.",
+        "B": "Under generator securely stopped/deenergized assumption, didactic source may treat generator-side S2 as redundant; older reference supports this conditional inference, not an operational safety shortcut.",
+        "C": "S1 remains important for bus source isolation; removing bus-side isolation is not justified by cited source."
+      },
+      "current_hold": "NATIVE_XLSX_SOURCE_M_AND_G_OVERLAP_DUPE_S11_PLUS_STOPPED_GENERATOR_VS_BACKFEED",
+      "no_unambiguous_final_key": true,
+      "current_grade_822_membership": "NOT_PROVEN",
+      "source_only_not_in_canonical_822": true,
+      "official_key_authenticated": false,
+      "qualified_technical_reviewer_signed": false,
+      "independent_linguistic_reviewer_signed": false,
+      "learner_approved": false
+    }
+  ],
+  "critical_safety": "Educational comparison ONLY; live electrical isolation must follow applicable engineering standards, safety procedures and qualified personnel; do not use the candidate letter as an electrical work instruction."
+}
