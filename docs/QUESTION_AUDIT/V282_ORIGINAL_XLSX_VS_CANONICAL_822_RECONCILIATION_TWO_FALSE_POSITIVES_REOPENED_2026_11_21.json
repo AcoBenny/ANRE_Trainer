@@ -1,0 +1,365 @@
+{
+  "schema": "V282_SOURCE_NATIVE_XLSX_VS_APP_CANONICAL_RECONCILIATION_822_QA",
+  "date": "2026-11-21",
+  "supersedes_semantic_counting_only": [
+    "CKPT-366 false-positive claims for ORIGINAL workbook",
+    "V279 original-ABC authority claim for QABC-0362 and QABC-0386"
+  ],
+  "does_not_delete_history": true,
+  "predecessors": [
+    "V140 original source difference log",
+    "V141 568 group cross-grade canonical master",
+    "V73 original 822 answer master",
+    "V95 822 audit gate master",
+    "V279 17 canonically-rewritten candidate list",
+    "V281 original I7 PDF SHA256/technical source verification"
+  ],
+  "tests": {
+    "internal_master_568_QABC_groups": 568,
+    "internal_822_routes_from_568": 822,
+    "crossgrade_shared_QABC_groups": 254,
+    "V73_grade_routes": 822,
+    "V95_grade_routes": 822,
+    "internal_key_mismatches": 0,
+    "internal_QABC_text_mismatches": 0,
+    "duplicate_grade_ids": 0,
+    "independently_learner_approved": 0,
+    "structural_consistency_pass": true,
+    "original_workbook_fidelity_pass": false,
+    "original_source_delta_grade_routes": 7,
+    "material_edited_grade_routes": 5,
+    "numeric_type_only_grade_routes": 2,
+    "source_native_critical_false_positive_cases_restored": 2
+  },
+  "source_workbook_exact_hashes": {
+    "NORME_TEHNICE_G1": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+    "ELECTROTEHNICA": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+    "evidence": "Both historical 2026-09-26 and 2026-11-21 Library copies are identical 64-hex SHA256; independently reopened source original XLSX rows 55,79,159,254 using artifact_tool."
+  },
+  "separate_denominators": {
+    "canonical_rewritten_ABC_source_candidate_differences_in_V279": {
+      "QABC_groups": 17,
+      "grade_routes": 18
+    },
+    "original_uploaded_XLSX_ABC_source_candidate_discrepancies_including_two_restored": {
+      "QABC_groups": 19,
+      "grade_routes": 20
+    },
+    "imported_grade_letters_NOT_AUTHENTICATED": true,
+    "qualification": "The latter 19 are research-stage comparisons, not official scored-key proof, and one original C is only an incomplete necessary condition."
+  },
+  "source_native_cases_restored": [
+    {
+      "unit_id": "QABC-0362",
+      "grade_id": "G1-NOR-048",
+      "from_source_candidate": "C",
+      "source_locator": "I7 2023 §5.4.13",
+      "reason": "Original Excel A says ONLY direct panel, B says ONLY lighting, C says sockets without ONLY; source permits lighting, sockets or direct panel, so original C is a supported route. Canonical rewritten A lists all three but is not original.",
+      "source_selected_ABC": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "app_rewritten_ABC": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      }
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grade_id": "G1-NOR-072",
+      "from_source_candidate": "C",
+      "source_locator": "I7 2023 §5.5.2.3",
+      "reason": "Original Excel B states WITHOUT tool and contradicts exact normative requirement ONLY WITH tool. Original C states individually disconnectable; it is a true sub-condition though omits mandatory tool qualifier. Canonical rewritten B includes full norm text but is not original.",
+      "source_selected_ABC": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "app_rewritten_ABC": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      }
+    }
+  ],
+  "all_seven_source_fidelity_differences": [
+    {
+      "grade_id": "G1-ELE-152",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 159,
+      "source_original": {
+        "stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "app_current": {
+        "stem": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "current_imported_key": "A",
+      "difference_class": "MATERIAL_STEM_CHANGE",
+      "source_key_authentication": false,
+      "app_modified_only_do_not_apply_as_exam_original": true
+    },
+    {
+      "grade_id": "G1-ELE-154",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 161,
+      "source_original": {
+        "stem": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "app_current": {
+        "stem": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "current_imported_key": "B",
+      "difference_class": "NUMERIC_CELL_TYPE_ONLY",
+      "source_key_authentication": false,
+      "app_modified_only_do_not_apply_as_exam_original": true
+    },
+    {
+      "grade_id": "G1-ELE-247",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 254,
+      "source_original": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "app_current": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "current_imported_key": "B",
+      "difference_class": "MATERIAL_OPTION_B_CHANGE",
+      "source_key_authentication": false,
+      "app_modified_only_do_not_apply_as_exam_original": true
+    },
+    {
+      "grade_id": "G1-NOR-048",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+      "source_row": 55,
+      "source_original": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "app_current": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "current_imported_key": "A",
+      "difference_class": "MATERIAL_ALL_ABC_REWRITE",
+      "source_key_authentication": false,
+      "app_modified_only_do_not_apply_as_exam_original": true
+    },
+    {
+      "grade_id": "G1-NOR-072",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+      "source_row": 79,
+      "source_original": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "app_current": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "current_imported_key": "B",
+      "difference_class": "MATERIAL_OPTION_B_LOGICAL_NEGATION",
+      "source_key_authentication": false,
+      "app_modified_only_do_not_apply_as_exam_original": true
+    },
+    {
+      "grade_id": "G2-ELEC-292",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 161,
+      "source_original": {
+        "stem": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "app_current": {
+        "stem": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "current_imported_key": "B",
+      "difference_class": "NUMERIC_CELL_TYPE_ONLY",
+      "source_key_authentication": false,
+      "app_modified_only_do_not_apply_as_exam_original": true
+    },
+    {
+      "grade_id": "G2-ELEC-383",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 254,
+      "source_original": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "app_current": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "current_imported_key": "B",
+      "difference_class": "MATERIAL_OPTION_B_CHANGE",
+      "source_key_authentication": false,
+      "app_modified_only_do_not_apply_as_exam_original": true
+    }
+  ],
+  "material_source_mutations": [
+    {
+      "grade_id": "G1-ELE-152",
+      "difference_class": "MATERIAL_STEM_CHANGE",
+      "source_original": {
+        "stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "app_rewritten": {
+        "stem": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      }
+    },
+    {
+      "grade_id": "G1-ELE-247",
+      "difference_class": "MATERIAL_OPTION_B_CHANGE",
+      "source_original": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "app_rewritten": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      }
+    },
+    {
+      "grade_id": "G1-NOR-048",
+      "difference_class": "MATERIAL_ALL_ABC_REWRITE",
+      "source_original": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "app_rewritten": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      }
+    },
+    {
+      "grade_id": "G1-NOR-072",
+      "difference_class": "MATERIAL_OPTION_B_LOGICAL_NEGATION",
+      "source_original": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "app_rewritten": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      }
+    },
+    {
+      "grade_id": "G2-ELEC-383",
+      "difference_class": "MATERIAL_OPTION_B_CHANGE",
+      "source_original": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "app_rewritten": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      }
+    }
+  ],
+  "remaining_blockers": [
+    "No source-based QABC edits or answer-key remediations without separate user approval",
+    "Official exam scored answers absent from original 4-column workbooks",
+    "Qualified independent source- and option-specific reviewer still pending for 822 routes",
+    "2026 exam edition and technical bibliography applicability remain to certify",
+    "App 568 canonical vs user-original source mutation review must be a separate signed gate, especially material changes"
+  ],
+  "safe_state": {
+    "grade_keys_unchanged": true,
+    "source_questions_unchanged": true,
+    "app_HTML_APK_untouched": true,
+    "PR7_merge": false,
+    "learner_approved": 0
+  },
+  "file_blob_sha256_source_data": [
+    {
+      "file": "V140_7_SOURCE_XLSX_FIDELITY_DIFFERENCES_2026_11_19.csv",
+      "blob_sha": "9e30333a73b3ce5e217401b2066387884243ae01"
+    },
+    {
+      "file": "V141_568_QABC_MASTER_WITH_7_SOURCE_FIDELITY_DELTAS_2026_11_19.csv",
+      "blob_sha": "1b00624eecb5ea57507e0fb34ef5b30deecf5551"
+    },
+    {
+      "file": "V95_ALL_822_MASTER_AFTER_FOCUSED_RECHECKS_AND_SEPARATE_AI_QA.csv",
+      "blob_sha": "d8a778759c2a00aa43f93d18f0ac765ef5b978b5"
+    },
+    {
+      "file": "V73_ALL_822_EVIDENCE_AND_RELEASE_GATES_MASTER.csv",
+      "blob_sha": "c027d417a8e4e605c830b2016fb55b099b8d130b"
+    },
+    {
+      "file": "V279_ANRE_ORIGINAL_ABC_FIELD_ROTATION_FIX_17_KEY_CONFLICT_CANDIDATES_136_SOURCE_ROOTS_2026_11_21.json",
+      "blob_sha": "7e2e9b34ded8972eda0bea4392603f2e36a4a90d"
+    }
+  ]
+}
