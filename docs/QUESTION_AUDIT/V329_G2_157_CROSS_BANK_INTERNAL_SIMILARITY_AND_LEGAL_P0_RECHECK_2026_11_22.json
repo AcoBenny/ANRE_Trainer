@@ -1,0 +1,889 @@
+{
+  "schema": "V329_ANRE_G2_157_STRUCTURAL_SEMANTIC_LEADS_2026_11_22",
+  "date": "2026-11-22",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "inputs": [
+    {
+      "path": "docs/QUESTION_AUDIT/V298_G2_ORIGINAL_157_RECOVERY_CANDIDATES_QUARANTINE_2026_11_22.csv",
+      "github_blob_sha": "c4234a68a7781a5e9cf72e738038907b5b28c9a4"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V141_568_QABC_MASTER_WITH_7_SOURCE_FIDELITY_DELTAS_2026_11_19.csv",
+      "github_blob_sha": "1b00624eecb5ea57507e0fb34ef5b30deecf5551"
+    }
+  ],
+  "method": {
+    "description": "Unicode diacritic/case/punctuation normalization, a finite Romanian stopword set, token-set Jaccard on all stems; compare A/B/C normalized literal text independently, never auto-score.",
+    "cross_threshold": 0.55,
+    "within_threshold": 0.7,
+    "stopwords": [
+      "a",
+      "de",
+      "este",
+      "si",
+      "in",
+      "la",
+      "se",
+      "cu",
+      "care",
+      "un",
+      "o",
+      "ale",
+      "al",
+      "din",
+      "sau",
+      "pentru",
+      "pe",
+      "unei",
+      "unui",
+      "iar",
+      "prin"
+    ],
+    "disclaimer": "Lexical candidate generation, not a complete semantic equivalence proof; low similarity does not imply concept uniqueness."
+  },
+  "counts": {
+    "staged": 157,
+    "canonical": 568,
+    "cross_comparisons": 89176,
+    "within_stage_comparisons": 12246,
+    "cross_stage_records_with_candidate_jaccard_gte_055": 12,
+    "cross_stage_records_with_exact_normalized_stem": 8,
+    "within_pairs_jaccard_gte_070": 22,
+    "within_pairs_exact_normalized_stem": 14,
+    "within_pairs_only_near": 8
+  },
+  "new_targeted_leads": [
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0040",
+      "existing": "QABC-0338 / G1-NOR-024",
+      "finding": "Three ordered A/B/C alternatives match after trimming; 'comutație' vs 'conectare' stem difference. High-priority likely equivalence; technical source scope remains unverified."
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0069",
+      "existing": "QABC-0300,QABC-0301",
+      "finding": "Type A design vs installation execution roles: related legal duty, distinct licensing scopes."
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0194",
+      "existing": "QABC-0413",
+      "finding": "Definition of independent electrode vs general electrode: related topic, different regulated object."
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0109",
+      "existing": "QABC-0421",
+      "finding": "Official original source question on issuing authority vs authored didactic grade applicability question."
+    }
+  ],
+  "cross_bank_candidates": [
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0018",
+      "original_stem": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :",
+      "options_staged": [
+        "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+        "autorizat graduk 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW.",
+        "deține adeverință de electrician autorizat și desfăşoară activităţi de realizare de instalații electrice într-o formă care nu este prevăzută în regulamentul de autorizare"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0271",
+          "grade_ids": "G1-LEG-007",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+            "desfăşoară activităţi de realizare de instalații electrice, pe cont propriu, fără a deține adeverință de electrician autorizat",
+            "autorizat gradul 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW."
+          ],
+          "existing_stem": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :"
+        },
+        {
+          "existing_id": "QABC-0295",
+          "grade_ids": "G1-LEG-031",
+          "jaccard": 0.75,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "Desfăşurarea de activităţi fără contracte legale, în vigoare (contract de muncă individual  semnat cu un angajator sau contract de prestări servicii, în cazul în care este persoană fizică autorizată în condițiile legii)",
+            "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+            "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+          ],
+          "existing_stem": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:"
+        },
+        {
+          "existing_id": "QABC-0296",
+          "grade_ids": "G1-LEG-032",
+          "jaccard": 0.75,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "Comiterea unei fapte prevăzute în Regulamentul de autorizare ca fiind interzisă",
+            "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+            "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+          ],
+          "existing_stem": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0034",
+      "original_stem": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+      "options_staged": [
+        "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare ",
+        "racordare ilegală la reţeaua de distribuţie ",
+        "neplata facturilor "
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0266",
+          "grade_ids": "G1-LEG-002",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "neplata abonamentului radio-tv",
+            "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+            "depășirea cu 30 de zile a termenului scadent al unei facturi"
+          ],
+          "existing_stem": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice în caz de:"
+        },
+        {
+          "existing_id": "QABC-0281",
+          "grade_ids": "G1-LEG-017",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+            "racordare ilegală la reţeaua de distribuţie",
+            "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+          ],
+          "existing_stem": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:"
+        },
+        {
+          "existing_id": "QABC-0267",
+          "grade_ids": "G1-LEG-003",
+          "jaccard": 0.9167,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "consum de energie mai mare decât cel aferent puterii aprobate prin avizul tehnic de racordare",
+            "consumarea unei cantităţi de energie mai mare decât cea contractată",
+            "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă, neplata facturilor sau în alte situaţii prevăzute de legislaţia în vigoare."
+          ],
+          "existing_stem": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice numai în caz de:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0069",
+      "original_stem": "Una dintre obligaţiile electricianului care deţine autorizaţie de tip A este:",
+      "options_staged": [
+        "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte normele tehnice corespunzătoare tipurilor de instalaţii electrice proiectate",
+        "Să semneze documentaţii de proiectare chiar dacă nu sunt realizate de el, astfel încât proprietarul să poată demara cât mai repede execuţia instalaţiilor",
+        "Să execute sau să coordoneze execuţia instalaţiilor electrice de orice putere sau tensiune tehnic realizabilă"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0300",
+          "grade_ids": "G1-LEG-036",
+          "jaccard": 0.6,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+            "Să execute  instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte prevederile din proiect",
+            "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+          ],
+          "existing_stem": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:"
+        },
+        {
+          "existing_id": "QABC-0301",
+          "grade_ids": "G1-LEG-037",
+          "jaccard": 0.6,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "Să execute  instalaţii electrice numai în una dintre calităţile prevăzute în regulament pentru exercitarea activităţii",
+            "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+            "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+          ],
+          "existing_stem": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0082",
+      "original_stem": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum: ",
+      "options_staged": [
+        " 30 zile calendaristice în cazul racordării la joasă tensiune ",
+        "20 zile calendaristice în cazul racordării la joasă tensiune",
+        "10 zile calendaristice în cazul racordării la joasă tensiune"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0303",
+          "grade_ids": "G1-LEG-039",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "20 zile calendaristice în cazul racordării la joasă tensiune",
+            "30 zile calendaristice în cazul racordării la medie tensiune",
+            "10 zile calendaristice în cazul racordării la joasă tensiune"
+          ],
+          "existing_stem": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0093",
+      "original_stem": "Avizul tehnic de racordare constituie: ",
+      "options_staged": [
+        "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;  ",
+        "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii",
+        "aprobarea de către operatorul de reţea a racordării utiizatorului în anumite condiţii."
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0311",
+          "grade_ids": "G1-LEG-047",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;",
+            "oferta operatorului de reţea la cererea de racordare a solicitantului;",
+            "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii"
+          ],
+          "existing_stem": "Avizul tehnic de racordare constituie:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0109",
+      "original_stem": "Regulamentul pentru atestarea operatorilor economici  care proiectează, execută şi verifică  instalaţii electrice din sistemul electroenergetic este aprobat de către:",
+      "options_staged": [
+        "Guvernul României",
+        "Ministerul de resort",
+        "ANRE "
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0421",
+          "grade_ids": "G2-LEG-007",
+          "jaccard": 0.5625,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "Da",
+            "Nu",
+            "Doar pentru Gradul I"
+          ],
+          "existing_stem": "Regulamentul pentru atestarea operatorilor economici care proiectează, execută și verifică instalații electrice este aplicabil Gradului II?"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0040",
+      "original_stem": "Întreruperea conductorului de protecţie prin aparate de comutație",
+      "options_staged": [
+        " este permisă",
+        "nu este permisă",
+        " de regula nu este permisă, cu excepţia anumitor cazuri"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0338",
+          "grade_ids": "G1-NOR-024",
+          "jaccard": 0.6667,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": true,
+          "options_existing": [
+            "este permisă",
+            "nu este permisă",
+            "de regula nu este permisă, cu excepţia anumitor cazuri"
+          ],
+          "existing_stem": "Întreruperea conductorului de protecţie prin aparate de conectare:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0079",
+      "original_stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+      "options_staged": [
+        "numai direct din tabloul de distribuţie",
+        " numai dintr-un circuit de iluminat normal",
+        "dintr-un circuit de prize"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0362",
+          "grade_ids": "G1-NOR-048",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+            "numai dintr-un circuit de iluminat normal",
+            "numai dintr-un circuit de prize"
+          ],
+          "existing_stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  ."
+        },
+        {
+          "existing_id": "QABC-0363",
+          "grade_ids": "G1-NOR-049",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "numai direct din tabloul de distribuţie",
+            "dintr-un circuit de iluminat normal",
+            "numai dintr-un circuit de prize"
+          ],
+          "existing_stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  ."
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0116",
+      "original_stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+      "options_staged": [
+        "nu este obligatoriu să poată fi deconectat individual",
+        "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "trebuie să poată fi deconectat individual"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0386",
+          "grade_ids": "G1-NOR-072",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "nu este obligatoriu să poată fi deconectat individual",
+            "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+            "trebuie să poată fi deconectat individual"
+          ],
+          "existing_stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0119",
+      "original_stem": "Prevederile normativului  I 7 – 2011 se aplică la proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente:",
+      "options_staged": [
+        "clădirilor prefabricate;",
+        "minelor şi carierelor ",
+        "depozitelor de materiale pirotehnice şi explozive"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0369",
+          "grade_ids": "G1-NOR-055",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "clădirilor cu funcţiuni agroindustriale şi agrozootehnice",
+            "minelor şi carierelor",
+            "depozitelor de materiale pirotehnice şi explozive"
+          ],
+          "existing_stem": "Prevederile normativului  I 7 – 2011 se aplică la proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0127",
+      "original_stem": "În cazul instalațiilor electrice de joasă tensiune, izolaţia de bază reprezintă:  ",
+      "options_staged": [
+        "Izolaţia care asigură protecţia de bază.",
+        "Izolaţia care asigură protecţia de defect",
+        " izolaţia maselor"
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0392",
+          "grade_ids": "G1-NOR-078",
+          "jaccard": 1,
+          "stem_exact_normalized": true,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "Izolaţia care asigură protecţia de defect",
+            "izolaţia părţilor active periculoase",
+            "izolaţia maselor"
+          ],
+          "existing_stem": "În cazul instalațiilor electrice de joasă tensiune, izolaţia de bază reprezintă:"
+        }
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0194",
+      "original_stem": "Priza de pământ independentă este o priză de pământ ",
+      "options_staged": [
+        "care nu face parte dintr-o instalaţie de legare la pământ ",
+        "suficient de îndepărtată de alte prize de pământ pentru ca potenţialul său electric să nu fie sensibil afectat de curenţii electrici între pământ şi alte prize de pământ.",
+        "care nu face parte dintr-o reţea de prize de pământ  "
+      ],
+      "possible_matches": [
+        {
+          "existing_id": "QABC-0413",
+          "grade_ids": "G1-NOR-099",
+          "jaccard": 0.6667,
+          "stem_exact_normalized": false,
+          "ordered_ABC_equal": false,
+          "options_existing": [
+            "parte conductoare încorporată obligatoiu în pământ",
+            "parte conductoare care poate fi încorporată într-un mediu conductor specific, de exemplu beton sau cărbune, izolat față de pământ.",
+            "parte conductoare care poate fi încorporată în pământ sau într-un mediu conductor specific, de exemplu beton sau cărbune, în contact cu pământul."
+          ],
+          "existing_stem": "Priza de pământ este o"
+        }
+      ]
+    }
+  ],
+  "within_stage_candidates": [
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0033",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0080",
+      "jaccard": 0.8,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": "Standardul de performanţă pentru serviciul de distribuţie a energiei electrice stabileşte indicatori de performanţă privind:",
+      "stem_b": "Standardul de performanţă pentru serviciul de distribuţie a energiei electrice stabileşte indicatorii de performanţă privind:",
+      "ABC_a": [
+        "Evenimentele accidentale produse de terţi asupra reţelelor electrice din patrimoniul public",
+        "Debranşarea consumatorilor rău-platnici de la relele electrice de distribuţie",
+        "Întreruperile programate, pentru executarea lucrărilor de dezvoltare, retehnologizare şi mentenanţă "
+      ],
+      "ABC_b": [
+        "continuitatea alimentării cu energie electrică a utilizatorilor",
+        "Debranşarea consumatorilor rău-platnici de la relele electrice de distribuţie",
+        "Evenimentele accidentale produse de terţi asupra reţelelor electrice din patrimoniul public"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0053",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0100",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "stem_b": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "ABC_a": [
+        "utilizatorii perturbatori",
+        " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "locurile de consum care se racordează la reţele electrice de medie sau joasă tensiune, indiferent de puterea solicitată, dacă soluţia de racordare este unică şi/sau evidentă"
+      ],
+      "ABC_b": [
+        "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "locurile de consum şi/sau de producere care se racordează la reţele electrice având tensiunea nominală de 110 kV sau mai mare;",
+        " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0053",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0101",
+      "jaccard": 0.7143,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "stem_b": "Soluţia de racordare se stabileşte printr-un studiu de soluţie pentru:",
+      "ABC_a": [
+        "utilizatorii perturbatori",
+        " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "locurile de consum care se racordează la reţele electrice de medie sau joasă tensiune, indiferent de puterea solicitată, dacă soluţia de racordare este unică şi/sau evidentă"
+      ],
+      "ABC_b": [
+        "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "utilizatorii cu o putere de peste 25 kVA"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0061",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0062",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Este interzis electricianului autorizat:",
+      "stem_b": "Este interzis electricianului autorizat:",
+      "ABC_a": [
+        "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "Să proiecteze instalaţii electrice în cazul în care nu deţine o autorizaţie de tip A",
+        "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      ],
+      "ABC_b": [
+        "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "să execute lucrări, manevre sau intervenţii sub orice formă în instalaţiile operatorilor de reţea  ",
+        "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0061",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0063",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Este interzis electricianului autorizat:",
+      "stem_b": "Este interzis electricianului autorizat:",
+      "ABC_a": [
+        "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "Să proiecteze instalaţii electrice în cazul în care nu deţine o autorizaţie de tip A",
+        "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      ],
+      "ABC_b": [
+        "Să semneze documentaţii de orice fel pentru proiecte sau lucrări pe care nu le-a realizat sau supravegheat",
+        "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0062",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0063",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Este interzis electricianului autorizat:",
+      "stem_b": "Este interzis electricianului autorizat:",
+      "ABC_a": [
+        "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "să execute lucrări, manevre sau intervenţii sub orice formă în instalaţiile operatorilor de reţea  ",
+        "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      ],
+      "ABC_b": [
+        "Să semneze documentaţii de orice fel pentru proiecte sau lucrări pe care nu le-a realizat sau supravegheat",
+        "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0078",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0079",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Pe lângă alte condiţii pe care trebuie să le îndeplinească utilizatorii, pentru a beneficia de prevederile standardului de performanţă pentru serviciul de distribuţie, trebuie ca:   ",
+      "stem_b": "Pe lângă alte condiţii pe care trebuie să le îndeplinească utilizatorii, pentru a beneficia de prevederile standardului de performanţă pentru serviciul de distribuţie, trebuie ca:   ",
+      "ABC_a": [
+        "să contracteze serviciul de distribuţie direct cu operatorul de distribuţie",
+        "prin regimul lor de funcţionare să nu introducă perturbaţii inacceptabile, conform normativelor în vigoare, care să afecteze  funcţionarea RED sau alimentarea  altor utilizatori  RED din zonă",
+        "să aibă contracte de furnizarea a energiei electrice încheiate cu operatorul de distribuţie"
+      ],
+      "ABC_b": [
+        "să respecte condiţiile prevăzute în contractul de distribuţie/furnizare",
+        "să aibă contracte de furnizare a energiei electrice încheiate cu operatorul de distribuţie",
+        "să aibă instalaţii electrice care funcţionează la tensiunea nominală alternativă în gama 20 kV - 400 kV şi la frecvenţa de 50 Hz "
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0100",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0101",
+      "jaccard": 0.7143,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "stem_b": "Soluţia de racordare se stabileşte printr-un studiu de soluţie pentru:",
+      "ABC_a": [
+        "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "locurile de consum şi/sau de producere care se racordează la reţele electrice având tensiunea nominală de 110 kV sau mai mare;",
+        " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează"
+      ],
+      "ABC_b": [
+        "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "utilizatorii cu o putere de peste 25 kVA"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-LEG-XLSX-R0106",
+      "staged_b": "ANRE-G2-LEG-XLSX-R0107",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Furnizorul are dreptul să recalculeze consumul de energie electrică pentru o perioadă anterioară",
+      "stem_b": "Furnizorul are dreptul să recalculeze consumul de energie electrică pentru o perioadă anterioară",
+      "ABC_a": [
+        "numai în cazul în care contorul a fost defect",
+        "numai în cazul clienților noncasnici mari",
+        "atunci când se constată înregistrarea eronată a consumului de energie electrică"
+      ],
+      "ABC_b": [
+        "în cazul unei facturări eronate a consumului",
+        "numai în cazul clienților noncasnici mari",
+        "numai în cazul în care contorul a fost defect"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0056",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0057",
+      "jaccard": 0.8571,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": "Simbolul literal T utilizat pentru notarea schemei de legare la pământ de tip TN are următoarea semnificaţie:",
+      "stem_b": "Simbolul literal T  utilizat pentru notarea schemei de legare la pământ de tip IT are următoarea semnificaţie:",
+      "ABC_a": [
+        "izolarea tuturor părţilor active faţă de pământ, sau legarea la pământ a unui punct printr-o impedanţă de valoare foarte mare. ",
+        " legarea direct la pământ a maselor instalaţiei, independent de eventuala legare la pământ a unui punct al alimentării",
+        "legarea directă la pământ a unui punct activ – punctul neutru, în cazul în care acesta este accesibil sau a unui conductor de fază, în cazul în care punctul neutru nu este accesibil;"
+      ],
+      "ABC_b": [
+        "izolarea tuturor părţilor active faţă de pământ, sau legarea la pământ a unui punct printr-o impedanţă de valoare foarte mare. ",
+        " legarea directă  la pământ a maselor instalaţiei ",
+        "legarea directă la pământ a unui punct activ – neutrul, în cazul în care acesta este accesibil sau a unui conductor de fază, în cazul în care neutrul nu este accesibil;"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0058",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0059",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Schema de legare la pământ de tip TN-S, în care un conductor de protecţie distinct este folosit pentru întreaga schemă, se utilizează:",
+      "stem_b": "Schema de legare la pământ de tip TN-S, în care un conductor de protecţie distinct este folosit pentru întreaga schemă, se utilizează:",
+      "ABC_a": [
+        "reglementările nu fac precizări privind cazurile în care se utilizează acest tip de schemă",
+        "de la ultimul tablou spre consumator",
+        "numai în reţelele cu tensiune peste 500 V"
+      ],
+      "ABC_b": [
+        "când trebuie separate conductoarele PE şi N pentru asigurarea funcţionării protecţiei",
+        "numai în reţelele cu tensiune peste 500 V",
+        "reglementările nu fac precizări privind cazurile în care se utilizează acest tip de schemă"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0068",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0069",
+      "jaccard": 0.75,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": " Secţiunile conductoarelor de fază trebuie să fie corespunzătoare din punct de vedere al: ",
+      "stem_b": "La instalaţiile electrice de putere secţiunile conductoarelor de fază trebuie să fie corespunzătoare din punct de vedere al: ",
+      "ABC_a": [
+        "secţiunii conductorului de protecţie",
+        "tipului reţelei (LEA sau LES)",
+        "căderii de tensiune"
+      ],
+      "ABC_b": [
+        "tipului cicuitului de alimentare (aerian sau subteran)",
+        "secţiunii conductorului de protecţie",
+        "stabilităţii termice în regim de defect"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0074",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0075",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": " La instalaţiile electrice de putere de joasă tensiune, densitatea maximă de curent admisă  în regim de scurtă durată la pornire este de:",
+      "stem_b": " La instalaţiile electrice de putere de joasă tensiune, densitatea maximă de curent admisă  în regim de scurtă durată la pornire este de:",
+      "ABC_a": [
+        "50 A/mm2 pentru conductoare de cupru",
+        "35 A/mm2 pentru conductoare de aluminiu",
+        "20 A/mm2 pentru conductoare de aluminiu"
+      ],
+      "ABC_b": [
+        "35 A/mm2 pentru conductoare de aluminiu",
+        "35A/mm2 pentru conductoare de cupru",
+        "16 A/mm2 pentru conductoare de aluminiu"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0100",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0101",
+      "jaccard": 0.875,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": "În cazul consumatorilor racordaţi direct la reţeaua de joasa tensiune a distribuitorului, pornirea directa a motoarelor monofazate se admite pentru o putere de până la:",
+      "stem_b": "În cazul consumatorilor racordaţi direct la reţeaua de joasă tensiune a distribuitorului, pornirea directă a motoarelor trifazate se admite pentru o putere de până la:",
+      "ABC_a": [
+        " 3 kW",
+        " 4 kW",
+        "5,5 kW"
+      ],
+      "ABC_b": [
+        "4 kW",
+        "5,5 kW",
+        " 7,5 kW"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0106",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0107",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Pe circuitele secundare ale transformatoarelor de curent:",
+      "stem_b": "Pe circuitele secundare ale transformatoarelor de curent:",
+      "ABC_a": [
+        "este obligatoriu să se prevadă protecţia la suprasarcină",
+        "este obligatoriu să se prevadă protecţia la scurcircuit",
+        "se permite renunţarea la protecţia la scurtcircuit"
+      ],
+      "ABC_b": [
+        "este obligatoriu să se prevadă protecţia la suprasarcină",
+        "se recomandă să nu se prevadă protecţia la suprasarcina",
+        "este obligatoriu să se prevadă protecţia la scurcircuit"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0123",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0124",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "stem_b": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "ABC_a": [
+        "protecţia împotriva şocurilor electrice în absenţa defectului",
+        " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        "protecţia împotriva şocurilor electrice în caz de defect"
+      ],
+      "ABC_b": [
+        " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        " protecţia care corespunde protecţiei împotriva atingerilor directe.",
+        "protecţia împotriva şocurilor electrice în caz de defect"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0123",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0130",
+      "jaccard": 0.7,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "stem_b": "Conform normativului I-7-2011, protecţia în caz de defect  reprezintă:  ",
+      "ABC_a": [
+        "protecţia împotriva şocurilor electrice în absenţa defectului",
+        " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        "protecţia împotriva şocurilor electrice în caz de defect"
+      ],
+      "ABC_b": [
+        "o protecţie împotriva şocurilor electrice în condiţii de defect simplu.",
+        "o protecţie împotriva şocurilor electrice în condiţii de scurtcircuit",
+        " protecţia care corespunde protecţiei împotriva atingerilor directe."
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0124",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0130",
+      "jaccard": 0.7,
+      "stem_exact_normalized": false,
+      "ordered_ABC_equal": false,
+      "stem_a": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "stem_b": "Conform normativului I-7-2011, protecţia în caz de defect  reprezintă:  ",
+      "ABC_a": [
+        " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        " protecţia care corespunde protecţiei împotriva atingerilor directe.",
+        "protecţia împotriva şocurilor electrice în caz de defect"
+      ],
+      "ABC_b": [
+        "o protecţie împotriva şocurilor electrice în condiţii de defect simplu.",
+        "o protecţie împotriva şocurilor electrice în condiţii de scurtcircuit",
+        " protecţia care corespunde protecţiei împotriva atingerilor directe."
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0134",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0135",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "În funcţie de dispunerea conductorului neutru şi a conductorului de protecţie reţelele de tip TN  se pot realiza în: ",
+      "stem_b": "În funcţie de dispunerea conductorului neutru şi a conductorului de protecţie reţelele de tip TN  se pot realiza în: ",
+      "ABC_a": [
+        "   Schema TN-S",
+        "Schema TN-C-S-C",
+        "Schema TN-S-C"
+      ],
+      "ABC_b": [
+        "Schema TN-C-S-C",
+        "  Schema TN-C",
+        "Schema TN-S-C"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0146",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0147",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "                                                                   Dacă de la orice punct al unei instalaţii funcţiile de conductor neutru (N) şi de conductor de protecţie (PE) sunt asigurate prin conductoare separate, \n",
+      "stem_b": "                                                                   Dacă de la orice punct al unei instalaţii funcţiile de conductor neutru (N) şi de conductor de protecţie (PE) sunt asigurate prin conductoare separate, \n",
+      "ABC_a": [
+        "este permis să se conecteze conductorul neutru la orice altă parte a instalaţiei legată la pământ",
+        "este permis să se conecteze conductorul neutru la orice altă parte a instalaţiei legată la pământ, în anumite situații",
+        "nu este permis să se conecteze conductorul neutru la orice altă parte a instalaţiei legată la pământ"
+      ],
+      "ABC_b": [
+        " Se prevede bornă sau bară comune pentru conductoarele de neutru şi respectiv conductoarele de protecţie.",
+        " Se prevăd borne sau bare separate pentru conductoarele de neutru şi respectiv conductoarele de protecţie.",
+        " Se prevăd borne sau bare separate pentru conductoarele de neutru şi respectiv conductoarele de protecţie, în anumite situații"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0157",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0158",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": "Separarea de protecţie – este o separare între două circuite electrice prin intermediul:\n",
+      "stem_b": "Separarea de protecţie – este o separare între două circuite electrice prin intermediul:\n",
+      "ABC_a": [
+        "unei izolaţii de bază",
+        "unei protecţii electrice printr-un ecran, ",
+        " unei izolaţii duble"
+      ],
+      "ABC_b": [
+        "unei izolaţii întărite",
+        "unei protecţii electrice printr-un ecran, ",
+        "unei izolaţii de bază"
+      ]
+    },
+    {
+      "staged_a": "ANRE-G2-NOR-XLSX-R0168",
+      "staged_b": "ANRE-G2-NOR-XLSX-R0169",
+      "jaccard": 1,
+      "stem_exact_normalized": true,
+      "ordered_ABC_equal": false,
+      "stem_a": " Pe circuitele de alimentare ale dispozitivelor de stingere a incendiilor.",
+      "stem_b": " Pe circuitele de alimentare ale dispozitivelor de stingere a incendiilor.",
+      "ABC_a": [
+        "se recomandă să se prevadă protecţia la suprasarcina ",
+        "se recomandă să nu se prevadă protecţia la suprasarcina ",
+        "este obligatoriu să se prevadă protecţia la suprasarcina "
+      ],
+      "ABC_b": [
+        "se permite renunţarea la protecţia la scurtcircuit ",
+        "este obligatoriu să se prevadă protecţia la scurtcircuit ",
+        "în norme nu sunt prevederi speciale pentru protecția la scurtcircuit a circuitelor de acest tip  "
+      ]
+    }
+  ],
+  "legal_source_recheck": {
+    "route": "G1-LEG-017",
+    "qabc": "QABC-0281",
+    "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+    "retrieved": "2026-11-22",
+    "http_status": 200,
+    "source_title": "Regulament ANRE 03.02.2023 / Portal Legislativ",
+    "article_18_3_a": "Contract termination explicitly covers court-confirmed theft, corresponding to original A",
+    "article_18_3_c": "Other situations provided by law remain a possibility; B illegal connection cannot be dismissed without exact-source additional law",
+    "article_26_2_b": "Refusal of requested financial guarantee gives interruption mechanism, not itself a proved contract termination basis",
+    "imported_key_unchanged": "B",
+    "official_scoring_key_verified": false,
+    "current_exam_bibliography_2026_version_verified": false,
+    "qualified_legal_independent_review": "PENDING",
+    "independent_linguist": "PENDING"
+  },
+  "review_gate": {
+    "staged_independent_approvals": 0,
+    "canonical_independent_approvals": 0,
+    "all_staged_157_remain_quarantined": true,
+    "master_keys_unchanged": true,
+    "no_app_HTML_APK_changes": true,
+    "not_release_approved": true
+  }
+}
