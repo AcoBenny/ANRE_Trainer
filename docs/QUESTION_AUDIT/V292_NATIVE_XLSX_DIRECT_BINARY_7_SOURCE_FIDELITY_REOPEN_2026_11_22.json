@@ -1,0 +1,149 @@
+{
+  "schema": "V292_PHYSICAL_XLSX_SOURCE_BINARY_REOPEN_AND_7_FIDELITY_DELTA_REPLAY",
+  "date": "2026-11-22",
+  "predecessor": "V140,V141,V282,CKPT-379,CKPT-380",
+  "method": "Reopened user's original Library XLSX binary, SHA256 whole-file check, artifact_tool worksheet range read, independent raw ZIP SpreadsheetML XML cell t/v/style decode",
+  "original_files": [
+    {
+      "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "actual_library_copy": "ELECTROTEHNICA-09.2024-2(1)(3).xlsx",
+      "sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "cells_examined": [
+        "A159:D159",
+        "A161:D161",
+        "A254:D254"
+      ]
+    },
+    {
+      "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "actual_library_copy": "NORME-TEHNICE-Gr.-1-05.2023(1)(3).xlsx",
+      "sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+      "cells_examined": [
+        "A55:D55",
+        "A56:D56",
+        "A79:D79"
+      ]
+    }
+  ],
+  "grade_routes": [
+    {
+      "id": "G1-ELE-152",
+      "qabc": "QABC-0143",
+      "row": 159,
+      "source": "ELECTROTEHNICA",
+      "difference": "MATERIAL_STEM_CHANGE",
+      "new_binary_verified": true,
+      "evidence": "Original A159 starts Mărimea adimensională; canonical starts Mărimea caracteristică",
+      "impact": "Exam-specific semantic wording changed; do not transfer canonical barem as original certification"
+    },
+    {
+      "id": "G1-ELE-154",
+      "qabc": "QABC-0145",
+      "row": 161,
+      "source": "ELECTROTEHNICA",
+      "difference": "NUMERIC_CELL_TYPE_ONLY",
+      "new_binary_verified": true,
+      "evidence": "A161 text; B161 native number 1; C161 native number 0; D161 string 1,5; displayed ABC match canonical",
+      "impact": "P1 original cell fidelity confirmed; UI runtime/official answer/qualified reviewer remain open"
+    },
+    {
+      "id": "G1-ELE-247",
+      "qabc": "QABC-0236",
+      "row": 254,
+      "source": "ELECTROTEHNICA",
+      "difference": "MATERIAL_OPTION_B_CHANGE",
+      "new_binary_verified": true,
+      "evidence": "Original C254 prin inducţie electromagnetică; rewritten option B is prin inducţie electrostatică",
+      "impact": "Original magnetic versus electric induction differs; source-native scored item not uniquely supported by current research"
+    },
+    {
+      "id": "G1-NOR-048",
+      "qabc": "QABC-0362",
+      "row": 55,
+      "source": "NORME_G1",
+      "difference": "MATERIAL_ALL_ABC_REWRITE",
+      "new_binary_verified": true,
+      "evidence": "Source B55 only direct panel; C55 only normal lighting; D55 sockets unrestricted; canonical ABC differs all",
+      "impact": "Keep original candidate C research separate from app key A"
+    },
+    {
+      "id": "G1-NOR-072",
+      "qabc": "QABC-0386",
+      "row": 79,
+      "source": "NORME_G1",
+      "difference": "MATERIAL_OPTION_B_LOGICAL_NEGATION",
+      "new_binary_verified": true,
+      "evidence": "Source C79 states deconectat uşor fără utilizarea unei scule; rewritten B says numai prin intermediul unei scule",
+      "impact": "Original source candidate C is only partial necessary condition; no official source key authenticated"
+    },
+    {
+      "id": "G2-ELEC-292",
+      "qabc": "QABC-0145",
+      "row": 161,
+      "source": "ELECTROTEHNICA",
+      "difference": "NUMERIC_CELL_TYPE_ONLY",
+      "new_binary_verified": true,
+      "evidence": "Same native source row 161 and numeric typing as G1-ELE-154",
+      "impact": "P1 original cell fidelity confirmed, UI/approval still open"
+    },
+    {
+      "id": "G2-ELEC-383",
+      "qabc": "QABC-0236",
+      "row": 254,
+      "source": "ELECTROTEHNICA",
+      "difference": "MATERIAL_OPTION_B_CHANGE",
+      "new_binary_verified": true,
+      "evidence": "Same original electromagnetic versus canonical electrostatic wording",
+      "impact": "Do not release or overwrite"
+    }
+  ],
+  "additional_checks": [
+    {
+      "source": "NORME_G1",
+      "rows": [
+        55,
+        56
+      ],
+      "result": "Exact same original stem, alternatives differ in placement of word numai; source-native C at row55 and B at row56 nonexclusive choices. Do not dedupe by stem alone.",
+      "qabc": [
+        "QABC-0362",
+        "QABC-0363"
+      ]
+    },
+    {
+      "source": "ELECTROTEHNICA",
+      "row": 159,
+      "result": "G1-ELE-152 rewritten as QABC-0143, G2-ELEC-290 source-original text as QABC-0568. A single original source row can correspond to multiple canonical QABC IDs due to rewriting, so do not infer cross-grade identity from either QABC or row alone."
+    },
+    {
+      "source": "ELECTROTEHNICA",
+      "row": 161,
+      "result": "All three physical copies matched historical SHA256; two numeric source option cells verified. No visual HTML/APK rendering test in this audit."
+    },
+    {
+      "source": "BOTH",
+      "result": "All three answer option cells in the examined rows have identical style indexes within a row; no color/style-based original scored key has been authenticated."
+    }
+  ],
+  "invariants": {
+    "previously_reported_total_grade_routes": 822,
+    "previously_reported_source_fidelity_delta_grade_routes": 7,
+    "material_text_changes": 5,
+    "numeric_type_only_routes": 2,
+    "currently_qualified_approved": 0,
+    "source_original_binary_reopened_for_seven": true,
+    "p1_original_binary_fidelity_gate_closed_for_two": true,
+    "p1_ui_render_gate_open": true,
+    "p0_official_keys_not_authenticated": true,
+    "p2_professional_review_pending": 793,
+    "no_original_or_canonical_or_key_or_app_changes": true
+  },
+  "technical_source_precautions": [
+    "OpenStax University Physics 2 §5.2: placing a neutral conductor in an external electric field first polarizes charges without necessarily adding net charge; net charging by induction also requires separating conductors or grounding sequence",
+    "OpenStax Physics §20.3: electromagnetic induction refers to EMF from changing magnetic flux. Do not equate this with electrostatic charging-by-induction."
+  ],
+  "references": [
+    "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction",
+    "https://openstax.org/books/physics/pages/20-3-electromagnetic-induction"
+  ]
+}
