@@ -1,0 +1,92 @@
+{
+  "schema": "V335_ANRE_2023_OFFICIAL_BIBLIO_GRADE_SCOPE_PE102_PE155_I7_2026_11_22",
+  "date": "2026-11-22",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "retrieval": {
+    "primary_source_url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+    "source_host": "ANRE official site anre.ro",
+    "found_via": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "method": "Live official PDF read as parsed text/table by Firecrawl 2026-11-22",
+    "edition_title": "Tematica şi bibliografie pentru examenul de autorizare electricieni, actualizată în 05.2023",
+    "pdf_page_image_checked": false,
+    "screenshot_attempt": "web PDF page visual retrieval not available in this session; no visual original page authentication",
+    "confidence": "SOURCE_PDF_TEXT_TABLE_RETRIEVED_OFFICIAL_URL__VISUAL_QA_NOT_RUN"
+  },
+  "grade_applicability": {
+    "I7_2011": {
+      "original_row_no": 14,
+      "grade_I": "DA",
+      "grade_II": "DA",
+      "grade_IIIA_IVA": "DA",
+      "grade_IIIB_IVB": "DA"
+    },
+    "PE102_1986": {
+      "original_row_no": 22,
+      "grade_I": "NU",
+      "grade_II": "DA",
+      "grade_IIIA_IVA": "DA",
+      "grade_IIIB_IVB": "DA"
+    },
+    "PE155_1992": {
+      "original_row_no": 29,
+      "grade_I": "DA",
+      "grade_II": "DA",
+      "grade_IIIA_IVA": "DA",
+      "grade_IIIB_IVB": "DA"
+    }
+  },
+  "specific_cases": [
+    {
+      "route": "G1-NOR-027",
+      "qabc": "QABC-0341",
+      "p0_original_stem": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+      "original_A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+      "original_B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+      "original_C": "conductoarele de alimentare să fie legate la duliile filetate",
+      "imported_key_frozen": "B",
+      "historical_source_exact_text_reference": "PE 102/1986 §4.6.3",
+      "source_location": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+      "source_direct_text_result": "PE102 §4.6.3 directly matches original choice A feeder contact screws vs outgoing threaded holders; this norm is not Grade I bibliographic source in 2023 ANRE applicability table.",
+      "more_relevant_grade_I_source": "I7/2011 §5.3.4.3.1.2 requires phase conductor connected to central contact of threaded fuse socket.",
+      "exact_equivalence_left_to_prove": "'șuruburile de contact' vs 'contactul central al soclului' as physical terminal: check fuse mechanical construction/terminology; do NOT project an unrelated fuse-terminal definition as verified.",
+      "visual_PDF_source_check": "FAILED_CACHE_MISS_FOR_WEB_PDF_SCREENSHOT",
+      "candidate_original_option_NOT_OFFICIAL_SCORING": "A",
+      "status": "DIRECT_PE102_WORDING_MATCH_BUT_PE102_NOT_GRADE_I_2023_BIBLIO; I7_TERMINAL_EQUIVALENCE_OPEN",
+      "approved_for_learning": false
+    },
+    {
+      "route": "G1-NOR-053",
+      "qabc": "QABC-0367",
+      "p0_original_stem": "Branşamentul electric este partea din instalaţia de distribuţie a energiei electrice cuprinsă între linia electrică şi:",
+      "original_A": "firida de branşament",
+      "original_B": "coloana electrică",
+      "original_C": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului",
+      "imported_key_frozen": "A",
+      "source": "PE155/1992 §1.2.1 and §1.2.2",
+      "source_url": "https://www.baluna.ro/wp-content/uploads/2018/02/pe_155_92.pdf",
+      "source_direct_text_result": "§1.2.1 defines service branch from distribution line to customer's internal installation; observation sets demarcation at meter OUTPUT terminals. §1.2.2 defines electric RACORD only from line to branch box; original A is the segment endpoint for racord, NOT whole branșament.",
+      "source_scope_distinction": "C is closer to entire branch boundary, but omits 'bornele de ieșire' specification; omission does not automatically authenticate official ANRE answer C.",
+      "bibliography_grade_I_2023": "PE155/1992=DA",
+      "visual_PDF_source_check": "FAILED_CACHE_MISS_FOR_WEB_PDF_SCREENSHOT",
+      "candidate_original_option_NOT_OFFICIAL_SCORING": "C",
+      "approved_for_learning": false
+    }
+  ],
+  "source_standards_and_edition_gates": {
+    "historical_bibliography_2023_scope_verified_from_OFFICIAL_PDF_PARSED": true,
+    "anre_2026_exam_bibliography_official_confirmed_equal_2023": false,
+    "actual_primary_norm_pdf_images_independently_verified": false,
+    "qualified_specialist_independent_signoff": false,
+    "original_ANRE_scored_answer_key_proven": false,
+    "source_original_question_and_frozen_keys_untouched": true,
+    "app_html_apk_modified": false
+  },
+  "next_needed": [
+    "Visually recheck source-page/table in the official bibliography PDF if an authorized PDF renderer becomes available, and certify 2026 session bibliography.",
+    "For G1-NOR-027, establish actual fuse terminal physical correspondence under I7 §5.3.4.3.1.2 (PE102 remains historical comparison but not G1 source-listed in 2023).",
+    "For G1-NOR-053, verify edition and exact demarcation object against applicable contemporary connection norms without conflating racord with branșament.",
+    "Request genuinely independent qualified review and historical official exam-key authentication; no release now."
+  ]
+}
