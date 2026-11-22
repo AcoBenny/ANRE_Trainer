@@ -1,5 +1,20 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-22 | CKPT-400 | 46 NEW original Grade-II source rows researched, no repeat-loop
+
+**Current checkpoint:** [CKPT-400: 35 new cluster source rows + 11 new cross-bank original rows, one pre-researched R0040 not recounted](../QUESTION_AUDIT/CKPT_400_GFR_46_NEW_G2_SOURCE_ITEMS_47_TOTAL_110_REMAIN_ANTI_LOOP_2026_11_22.md)  
+**New cross-bank packet:** [V341: 12 staged ID comparisons, 18 canonical comparisons, 11 new source researches and 1 V333 reuse](../QUESTION_AUDIT/V341_G2_11_NEW_CROSS_BANK_SOURCE_REVIEWS_12_STAGE_LEADS_18_CANONICAL_CHECKS_2026_11_22.json)  
+**Mandatory batch gate:** [BATCH_PROGRESS/README](../QUESTION_AUDIT/BATCH_PROGRESS/README.md), 4 `PROGRESSED` structural before/after samples (JS runtime, not CI).  
+**Previous:** [CKPT-399](../QUESTION_AUDIT/CKPT_399_GFR_35_NEW_G2_SOURCE_RESEARCHED_16_CLUSTERS_ANTI_LOOP_PROGRESSED_2026_11_22.md)
+
+**Source research progress among 157 G2 staged:** 46 NEW this GFR turn + 1 pre-researched V333, **47/157 known focused source researches**, **110 require source research**. All **157 remain quarantined**; zero ANRE scored official keys / qualified independent review signoffs. Existing canonical 568 QABC / 822 grade routes, **0/822 final independent approvals**. No app changes, PR #7 Draft/unmerged, no merge or release.
+
+**Next nonrepeating queue:** 110 other original G2 staged IDs, by grade/normative source. Stable IDs and progress verdict at every GFR batch. The same historical 8 P0 are pending outside this active work queue.
+
+---
+
+## Prior checkpoint index
+
 ## 2026-11-22 | CKPT-399 | 35 NEW original Grade-II source items, 16 clusters complete, anti-loop PROGRESSED
 
 **Current checkpoint:** [CKPT-399: verified 9+8+18 new source-researched G2 IDs; 35/35 clustered, 105 original-option analyses](../QUESTION_AUDIT/CKPT_399_GFR_35_NEW_G2_SOURCE_RESEARCHED_16_CLUSTERS_ANTI_LOOP_PROGRESSED_2026_11_22.md)  
