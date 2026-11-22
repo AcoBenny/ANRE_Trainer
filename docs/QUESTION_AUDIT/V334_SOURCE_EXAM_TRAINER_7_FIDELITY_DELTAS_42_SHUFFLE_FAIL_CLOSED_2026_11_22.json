@@ -1,0 +1,689 @@
+{
+  "schema": "V334_EXAM_VS_TRAINER_SOURCE_FIDELITY_FAIL_CLOSED_SHUFFLE_GATES_2026_11_22",
+  "date": "2026-11-22",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "inputs": [
+    "V140_7_SOURCE_XLSX_FIDELITY_DIFFERENCES_2026_11_19.csv",
+    "V326_28_P0_GRADE_ROUTE_INDEPENDENT_REVIEW_PACK_UNAPPROVED_2026_11_22.json"
+  ],
+  "purpose": "Read-only preimplementation negative gate: stable option IDs alone cannot repair an original question's materially rewritten content; verify both original source version AND grade-specific imported keys before any scored import.",
+  "counts": {
+    "source_fidelity_route_count": 7,
+    "material_route_count": 5,
+    "numeric_type_only_route_count": 2,
+    "material_selected_key_option_changed_route_count": 4,
+    "material_stem_only_changed_route_count": 1,
+    "reference_permutation_assertions": 42,
+    "material_permutation_cases_blocked": 30,
+    "keyed_option_mismatch_permutation_cases": 24
+  },
+  "seven_source_deltas": [
+    {
+      "grade_route": "G1-ELE-152",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 159,
+      "source_question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "trainer_question": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "original_ABC": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "current_ABC": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "frozen_imported_key": "A",
+      "original_type_ABCD": "text|text|text|text",
+      "diff_class": "MATERIAL_STEM_CHANGE",
+      "changed_fields_after_whitespace_normalization": [
+        "stem"
+      ],
+      "keyed_option_text_materially_changed": false,
+      "allow_direct_identification_as_verbatim_source": false,
+      "exam_mode_safe_to_auto_reuse_imported_key": false,
+      "proposed_next_step": "Need separate exam-original and didactic-editorial version; source key remains unauthenticated"
+    },
+    {
+      "grade_route": "G1-ELE-154",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 161,
+      "source_question": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "trainer_question": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "original_ABC": {
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "current_ABC": {
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "frozen_imported_key": "B",
+      "original_type_ABCD": "text|number|number|text",
+      "diff_class": "NUMERIC_CELL_TYPE_ONLY",
+      "changed_fields_after_whitespace_normalization": [],
+      "keyed_option_text_materially_changed": false,
+      "allow_direct_identification_as_verbatim_source": true,
+      "exam_mode_safe_to_auto_reuse_imported_key": false,
+      "proposed_next_step": "Numeric type regression separately; original scoring key still unauthenticated"
+    },
+    {
+      "grade_route": "G1-ELE-247",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 254,
+      "source_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "trainer_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "original_ABC": {
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "current_ABC": {
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "frozen_imported_key": "B",
+      "original_type_ABCD": "text|text|text|text",
+      "diff_class": "MATERIAL_OPTION_B_CHANGE",
+      "changed_fields_after_whitespace_normalization": [
+        "B"
+      ],
+      "keyed_option_text_materially_changed": true,
+      "allow_direct_identification_as_verbatim_source": false,
+      "exam_mode_safe_to_auto_reuse_imported_key": false,
+      "proposed_next_step": "Need separate exam-original and didactic-editorial version; source key remains unauthenticated"
+    },
+    {
+      "grade_route": "G1-NOR-048",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+      "source_row": 55,
+      "source_question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+      "trainer_question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+      "original_ABC": {
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "current_ABC": {
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "frozen_imported_key": "A",
+      "original_type_ABCD": "text|text|text|text",
+      "diff_class": "MATERIAL_ALL_ABC_REWRITE",
+      "changed_fields_after_whitespace_normalization": [
+        "A",
+        "C"
+      ],
+      "keyed_option_text_materially_changed": true,
+      "allow_direct_identification_as_verbatim_source": false,
+      "exam_mode_safe_to_auto_reuse_imported_key": false,
+      "proposed_next_step": "Need separate exam-original and didactic-editorial version; source key remains unauthenticated"
+    },
+    {
+      "grade_route": "G1-NOR-072",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+      "source_row": 79,
+      "source_question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+      "trainer_question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+      "original_ABC": {
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "current_ABC": {
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "frozen_imported_key": "B",
+      "original_type_ABCD": "text|text|text|text",
+      "diff_class": "MATERIAL_OPTION_B_LOGICAL_NEGATION",
+      "changed_fields_after_whitespace_normalization": [
+        "B"
+      ],
+      "keyed_option_text_materially_changed": true,
+      "allow_direct_identification_as_verbatim_source": false,
+      "exam_mode_safe_to_auto_reuse_imported_key": false,
+      "proposed_next_step": "Need separate exam-original and didactic-editorial version; source key remains unauthenticated"
+    },
+    {
+      "grade_route": "G2-ELEC-292",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 161,
+      "source_question": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "trainer_question": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "original_ABC": {
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "current_ABC": {
+        "A": "1",
+        "B": "0",
+        "C": "1,5"
+      },
+      "frozen_imported_key": "B",
+      "original_type_ABCD": "text|number|number|text",
+      "diff_class": "NUMERIC_CELL_TYPE_ONLY",
+      "changed_fields_after_whitespace_normalization": [],
+      "keyed_option_text_materially_changed": false,
+      "allow_direct_identification_as_verbatim_source": true,
+      "exam_mode_safe_to_auto_reuse_imported_key": false,
+      "proposed_next_step": "Numeric type regression separately; original scoring key still unauthenticated"
+    },
+    {
+      "grade_route": "G2-ELEC-383",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "source_row": 254,
+      "source_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "trainer_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "original_ABC": {
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "current_ABC": {
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "frozen_imported_key": "B",
+      "original_type_ABCD": "text|text|text|text",
+      "diff_class": "MATERIAL_OPTION_B_CHANGE",
+      "changed_fields_after_whitespace_normalization": [
+        "B"
+      ],
+      "keyed_option_text_materially_changed": true,
+      "allow_direct_identification_as_verbatim_source": false,
+      "exam_mode_safe_to_auto_reuse_imported_key": false,
+      "proposed_next_step": "Need separate exam-original and didactic-editorial version; source key remains unauthenticated"
+    }
+  ],
+  "crossgrade_same_original_different_imported_key": [
+    {
+      "qabc_id": "QABC-0017",
+      "grade_specific_imported_keys": [
+        {
+          "grade_route": "G1-ELE-018",
+          "key_FROZEN_UNVERIFIED": "A"
+        },
+        {
+          "grade_route": "G2-ELEC-170",
+          "key_FROZEN_UNVERIFIED": "C"
+        }
+      ],
+      "same_question_and_ordered_ABC": true,
+      "requires_grade_route_scoped_score": true,
+      "score_cannot_assume_a_global_qabc_key": true,
+      "official_answer_proven": false
+    },
+    {
+      "qabc_id": "QABC-0094",
+      "grade_specific_imported_keys": [
+        {
+          "grade_route": "G1-ELE-102",
+          "key_FROZEN_UNVERIFIED": "A"
+        },
+        {
+          "grade_route": "G2-ELEC-245",
+          "key_FROZEN_UNVERIFIED": "C"
+        }
+      ],
+      "same_question_and_ordered_ABC": true,
+      "requires_grade_route_scoped_score": true,
+      "score_cannot_assume_a_global_qabc_key": true,
+      "official_answer_proven": false
+    }
+  ],
+  "reference_permutation_cases": [
+    {
+      "route": "G1-ELE-152",
+      "perm_index": 1,
+      "source_key": "A",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": false,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-152",
+      "perm_index": 2,
+      "source_key": "A",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": false,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-152",
+      "perm_index": 3,
+      "source_key": "A",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": false,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-152",
+      "perm_index": 4,
+      "source_key": "A",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": false,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-152",
+      "perm_index": 5,
+      "source_key": "A",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": false,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-152",
+      "perm_index": 6,
+      "source_key": "A",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": false,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-154",
+      "perm_index": 1,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G1-ELE-154",
+      "perm_index": 2,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G1-ELE-154",
+      "perm_index": 3,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G1-ELE-154",
+      "perm_index": 4,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G1-ELE-154",
+      "perm_index": 5,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G1-ELE-154",
+      "perm_index": 6,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G1-ELE-247",
+      "perm_index": 1,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-247",
+      "perm_index": 2,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-247",
+      "perm_index": 3,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-247",
+      "perm_index": 4,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-247",
+      "perm_index": 5,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-ELE-247",
+      "perm_index": 6,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-048",
+      "perm_index": 1,
+      "source_key": "A",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-048",
+      "perm_index": 2,
+      "source_key": "A",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-048",
+      "perm_index": 3,
+      "source_key": "A",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-048",
+      "perm_index": 4,
+      "source_key": "A",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-048",
+      "perm_index": 5,
+      "source_key": "A",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-048",
+      "perm_index": 6,
+      "source_key": "A",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-072",
+      "perm_index": 1,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-072",
+      "perm_index": 2,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-072",
+      "perm_index": 3,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-072",
+      "perm_index": 4,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-072",
+      "perm_index": 5,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G1-NOR-072",
+      "perm_index": 6,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G2-ELEC-292",
+      "perm_index": 1,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G2-ELEC-292",
+      "perm_index": 2,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G2-ELEC-292",
+      "perm_index": 3,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G2-ELEC-292",
+      "perm_index": 4,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G2-ELEC-292",
+      "perm_index": 5,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G2-ELEC-292",
+      "perm_index": 6,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": true,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": false
+    },
+    {
+      "route": "G2-ELEC-383",
+      "perm_index": 1,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G2-ELEC-383",
+      "perm_index": 2,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G2-ELEC-383",
+      "perm_index": 3,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G2-ELEC-383",
+      "perm_index": 4,
+      "source_key": "B",
+      "display_label": "A",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G2-ELEC-383",
+      "perm_index": 5,
+      "source_key": "B",
+      "display_label": "C",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    },
+    {
+      "route": "G2-ELEC-383",
+      "perm_index": 6,
+      "source_key": "B",
+      "display_label": "B",
+      "stable_identity_matches": true,
+      "source_keyed_text_equals_current_keyed_text": false,
+      "source_original_stem_equal_current_stem": true,
+      "block_direct_original_exam_mode": true
+    }
+  ],
+  "acceptance_requirements": [
+    "EXAM_ORIGINAL displays physical XLSX source stem and ordered A/B/C, with exact source row and edition; never claim didactic rewrite is original.",
+    "DIDACTIC_CORRECTED is an explicitly separate item/version and unscored until independent content review, with source trace, not the official ANRE exam option set.",
+    "Stored legacy key per grade route stays frozen until separately authenticated and explicitly approved.",
+    "Shuffle scoring maps to immutable version+grade-route+choice identity, never display position or global shared QABC answer letter.",
+    "5 material source changes block reuse of the existing score mapping; 2 numeric-cell-type differences require source numeric display fidelity checks, not semantic key changes.",
+    "All 157 staged original G2 candidates remain quarantined and without official scored key authentication.",
+    "No score or learner-readiness established by this reference-only permutation simulation."
+  ],
+  "release_gates": {
+    "independent_qualified_technical_legal_reviewer": "PENDING",
+    "independent_linguist": "PENDING",
+    "official_ANRE_exam_key_authenticated": false,
+    "approval_for_learning": false,
+    "app_and_original_source_changes": false
+  }
+}
