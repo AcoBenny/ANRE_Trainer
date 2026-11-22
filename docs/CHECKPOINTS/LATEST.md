@@ -1,5 +1,18 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-22 | CKPT-399 | 35 NEW original Grade-II source items, 16 clusters complete, anti-loop PROGRESSED
+
+**Current checkpoint:** [CKPT-399: verified 9+8+18 new source-researched G2 IDs; 35/35 clustered, 105 original-option analyses](../QUESTION_AUDIT/CKPT_399_GFR_35_NEW_G2_SOURCE_RESEARCHED_16_CLUSTERS_ANTI_LOOP_PROGRESSED_2026_11_22.md)  
+**Corrected source scope counts:** [V340: 28 direct, 7 conditional/semantic holds](../QUESTION_AUDIT/V340_G2_35_SOURCE_REVIEW_COUNTS_QA_CORRECTION_28_DIRECT_7_CONDITIONAL_2026_11_22.json)  
+**Anti-loop:** [before/after progress methodology](../QUESTION_AUDIT/BATCH_PROGRESS/README.md), 3 source-research batches marked `PROGRESSED` (same-logic JS structural checks only; committed Node CI not run)  
+**Previous:** [CKPT-398](../QUESTION_AUDIT/CKPT_398_GFR_END_OF_BATCH_ANTI_LOOP_GATE_AND_PROGRESS_VERDICTS_2026_11_22.md)
+
+**Finite next queue:** 12 original G2 cross-bank candidate rows not overlapping the researched 35, then 110 remaining originals. All 157 G2 source candidates stay quarantined; existing canonical 568 QABC / 822 grade routes unchanged, 0/822 final independent approvals. No official exam-key authentication or app changes. PR #7 Draft/unmerged.
+
+---
+
+## Older checkpoints (historical 'current' labels below are superseded)
+
 ## 2026-11-22 | CKPT-398 | End-of-batch anti-loop check enforced in GFR process
 
 **Current checkpoint:** [CKPT-398: end-of-batch progress gate, 15 test scenarios and verified positive/negative batch examples](../QUESTION_AUDIT/CKPT_398_GFR_END_OF_BATCH_ANTI_LOOP_GATE_AND_PROGRESS_VERDICTS_2026_11_22.md)  
