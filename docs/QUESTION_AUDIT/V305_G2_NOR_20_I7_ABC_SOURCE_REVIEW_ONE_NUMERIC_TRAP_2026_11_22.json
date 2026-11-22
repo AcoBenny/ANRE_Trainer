@@ -1,0 +1,632 @@
+{
+  "schema": "V305_G2_NOR_20_I7_SOURCE_SPECIFIC_ABC_SCOPE_REVIEW",
+  "date": "2026-11-22",
+  "basis": "Physical G2 Norme XLSX text in V298 and original user supplied I7 PDF, with paragraph neighborhood",
+  "count": 20,
+  "ambiguous_cases": [
+    "ANRE-G2-NOR-XLSX-R0183"
+  ],
+  "qualified_approved": 0,
+  "cases": [
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0145",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 145,
+      "verbatim_question": " Conform prevederilor I 7 - 2011, alegerea secţiunii conductoarelor şi barelor din interiorul unui tablou este responsabilitatea .",
+      "verbatim_options": {
+        "A": "proiectantului instalației electrice",
+        "B": "producătorului",
+        "C": "verificatorului de proiect"
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A designer supplies installation scheme and design constraints, not internal switchboard conductor bar sizing responsibility.",
+        "B": "B manufacturer owns the sizing of conductors/busbars inside the switchboard.",
+        "C": "C verifier reviews project, not manufacturer’s selection duty."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.3.16",
+        "pdf_pages": "65"
+      },
+      "immediate_context": "Before: earlier table construction clauses; after §5.3.3.17 discourages certain AC/DC grouping.",
+      "scope_exception_or_wording_trap": "The manufacturer must still use projected nominal current, mechanical loads and insulation characteristics.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0148",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 148,
+      "verbatim_question": "Izolaţia dublă este .",
+      "verbatim_options": {
+        "A": " izolaţie realizată prin utilizarea împreună a unei izolaţii de bază şi a unei izolaţii suplimentare",
+        "B": "izolaţia părţilor active periculoase care asigură un grad de protecţie împotriva şocurilor electrice, echivalent celui unei izolaţii duble",
+        "C": "izolaţia independentă prevăzută suplimentar faţă de izolaţia de bază, pentru protecţie în caz de defect."
+      },
+      "provisional_source_intent_answer": "A",
+      "option_rationales": {
+        "A": "A exactly combines basic + supplementary insulation.",
+        "B": "B defines reinforced insulation as equivalent in protection level, not necessarily a double-layer construction.",
+        "C": "C defines supplementary insulation alone, not double insulation."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'izolație dublă'",
+        "pdf_pages": "7"
+      },
+      "immediate_context": "Before basic insulation definition; after reinforced and supplementary definitions.",
+      "scope_exception_or_wording_trap": "Distinguish construction double-layer from a single reinforced layer with equivalent performance.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0149",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 149,
+      "verbatim_question": "Izolaţia întărită este  .",
+      "verbatim_options": {
+        "A": " izolaţie realizată prin utilizarea împreună a unei izolaţii de bază şi a unei izolaţii suplimentare",
+        "B": "izolaţia părţilor active periculoase care asigură un grad de protecţie împotriva şocurilor electrice, echivalent celui unei izolaţii duble",
+        "C": "izolaţia independentă prevăzută suplimentar faţă de izolaţia de bază, pentru protecţie în caz de defect."
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A explicitly describes double insulation construction, not reinforced.",
+        "B": "B precisely defines reinforced insulation that gives shock protection equal to double insulation.",
+        "C": "C supplementary insulation alone is not reinforced insulation."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'izolație întărită'",
+        "pdf_pages": "7"
+      },
+      "immediate_context": "Before definitions of basic and double insulation; after supplementary insulation.",
+      "scope_exception_or_wording_trap": "Functional equivalent to double insulation is not necessarily the same physical pair of separate layers.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0150",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 150,
+      "verbatim_question": "Utilizarea dispozitivelor de curent diferenţial rezidual DDR reprezintă:  ",
+      "verbatim_options": {
+        "A": "o măsură tehnică de protecţie pentru protecţia de bază ",
+        "B": "o măsură tehnică principală de protecţie pentru protecţia de defect ",
+        "C": "o măsură tehnică suplimentară "
+      },
+      "provisional_source_intent_answer": "C",
+      "option_rationales": {
+        "A": "A would make DDR the fundamental basic protection, but I7 calls it supplemental.",
+        "B": "B says DDR is primary fault protection in all cases, not the role asserted in this section.",
+        "C": "C supplemental measure with DDR <=30mA is explicitly stated."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.1.2.1(A)",
+        "pdf_pages": "22"
+      },
+      "immediate_context": "Before lists core basic protection such as insulation/barriers; after §4.1.2.1(B) discusses organizational protection.",
+      "scope_exception_or_wording_trap": "Do not use a residual-current device as sole replacement for basic insulation or protective earthing.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0165",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 165,
+      "verbatim_question": " Tipurile de reţele în funcţie de modul de legare la pământ pentru tensiune alternativă sunt: \n",
+      "verbatim_options": {
+        "A": "TI, TT şi IT.",
+        "B": "TN, TI şi IT.",
+        "C": "TN, TT şi IT."
+      },
+      "provisional_source_intent_answer": "C",
+      "option_rationales": {
+        "A": "A invents TI category and misses TN.",
+        "B": "B likewise invents TI and omits TT.",
+        "C": "C exactly matches TN, TT, IT."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.1.3, §3.3.2.1",
+        "pdf_pages": "15"
+      },
+      "immediate_context": "Before lists AC/DC conductors; after §3.3.2.1 defines T/I/N significance.",
+      "scope_exception_or_wording_trap": "No TI configuration is listed in this normative topology classification.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0166",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 166,
+      "verbatim_question": " Într-o reţea TN, punerea la masă a unei faze ",
+      "verbatim_options": {
+        "A": "nu conduce la apariția unui curent de defect",
+        "B": "conduce la apariția unui curent de defect",
+        "C": "conduce la apariția unui curent de defect trecător"
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A denies fault current, contrary to TN fault-loop phase-to-mass short circuit.",
+        "B": "B TN direct-source-earth and PE loop yields a phase-to-mass defect current.",
+        "C": "C says temporary/transient only; persistent fault current can continue until protection trips."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.3",
+        "pdf_pages": "16"
+      },
+      "immediate_context": "Before §3.3.2.1 symbolic topology; after §3.3.2.4 TN-S details.",
+      "scope_exception_or_wording_trap": "Magnitude and duration depend on protection; 'trecător' is not intrinsic to network fault.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0167",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 167,
+      "verbatim_question": " In toate reţelele TN, atunci când există un conductor PE sau PEN, acestea, când fac parte din componenţa tablourilor de distribuţie ",
+      "verbatim_options": {
+        "A": " trebuie legate la pământ numai dacă rezistența de dispersie a rețelei de legare la pământ este < 4Ω",
+        "B": "  pot fi sau nu legate la pământ ",
+        "C": "trebuie legate la pământ obligatoriu "
+      },
+      "provisional_source_intent_answer": "C",
+      "option_rationales": {
+        "A": "A adds conditional <4 ohm prerequisite not in the exact obligation.",
+        "B": "B optional earthing is contrary to mandatory switchboard bonding.",
+        "C": "C source explicitly requires PE/PEN earthing when part of switchboard."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.7",
+        "pdf_pages": "17"
+      },
+      "immediate_context": "Before §3.3.2.6 TN-C-S separation; after §3.3.2.8 TT earthing scheme.",
+      "scope_exception_or_wording_trap": "Repeated earth bonding should be as often as possible; switchboard condition is mandatory.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0168",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 168,
+      "verbatim_question": " Pe circuitele de alimentare ale dispozitivelor de stingere a incendiilor.",
+      "verbatim_options": {
+        "A": "se recomandă să se prevadă protecţia la suprasarcina ",
+        "B": "se recomandă să nu se prevadă protecţia la suprasarcina ",
+        "C": "este obligatoriu să se prevadă protecţia la suprasarcina "
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A recommends a trip with possible danger; source recommends avoiding overload tripping for fire-extinguishing supply.",
+        "B": "B source lists fire extinguishing device circuits among overload no-trip recommendations.",
+        "C": "C obligatory overload tripping is not the rule for this critical safety service."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.3.2.4.1",
+        "pdf_pages": "37-38"
+      },
+      "immediate_context": "Before gives other no-trip exceptions, including CT secondary; after §4.3.3 sets short-circuit requirements.",
+      "scope_exception_or_wording_trap": "Do not extend overload no-trip recommendation to blanket abandonment of short-circuit/earthing safeguards.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0170",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 170,
+      "verbatim_question": "Atunci când un dispozitiv de protecție  trebuie să deconecteze toate conductoarele active din circuitul corespondent, ",
+      "verbatim_options": {
+        "A": "conductorul neutru trebuie să fie deconectat înaintea conductoarelor de fază",
+        "B": "conductorul neutru trebuie să fie deconectat simultan cu conductoarele de fază",
+        "C": "conductorul neutru trebuie să nu fie deconectat înaintea conductoarelor de fază"
+      },
+      "provisional_source_intent_answer": "C",
+      "option_rationales": {
+        "A": "A says neutral disconnects first, expressly prohibited.",
+        "B": "B may be one safe implementation but is not universally required; source also permits neutral disconnect later.",
+        "C": "C literal must NOT disconnect N before phases; reconnect N at same time or earlier."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.3.4.3",
+        "pdf_pages": "39"
+      },
+      "immediate_context": "Prior §4.3.4.2 covers neutral conductor overcurrent protection; after §4.3.4.4 short-circuit parallel conductors.",
+      "scope_exception_or_wording_trap": "Different conditions for DISCONNECTION and RECONNECTION; separate them.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0174",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 174,
+      "verbatim_question": " La consumatorii alimentaţi din surse proprii de energie electrică, puterea motoarelor care pot fi pornite direct se determină pe bază de calcul,",
+      "verbatim_options": {
+        "A": " verificându-se satisfacerea condiţiei de cădere de tensiune admisă.",
+        "B": "dar nu se va depăşi 20% din puterea instalată a sursei ",
+        "C": "dar nu se va depăşi 10% din puterea instalată a sursei "
+      },
+      "provisional_source_intent_answer": "A",
+      "option_rationales": {
+        "A": "A own-generation direct-start motor sizing is calculation verifying allowable voltage drop.",
+        "B": "B 20% limit applies to an OWN TRANSFORMER, not independent generation systems.",
+        "C": "C 10% universally prescribed source cap is absent."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.5",
+        "pdf_pages": "62"
+      },
+      "immediate_context": "Before §5.3.1.4 own-transformer 20% power cap; after §5.3.1.6 motor shock protection.",
+      "scope_exception_or_wording_trap": "Different source type changes legal engineering object and numerical restriction.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0183",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 183,
+      "verbatim_question": "Protecţia motoarelor trifazate la suprasarcină se realizează cu un dispozitiv dependent de curent, cu temporizare, care monitorizează toate cele trei faze, reglat la .",
+      "verbatim_options": {
+        "A": "cel mult 0,8 din valoarea curentului nominal al motorului",
+        "B": "cel mult valoarea curentului nominal al motorului",
+        "C": "cel mult 0,9 din valoarea curentului nominal al motorului"
+      },
+      "provisional_source_intent_answer": "B_INTENDED_NONUNIQUE",
+      "option_rationales": {
+        "A": "A setting at 0.8 nominal ALSO satisfies 'at most nominal'; technically may be conservative or not permissible for actual motor loading.",
+        "B": "B 1.0 nominal is the maximum allowed setting; seems intended in exam.",
+        "C": "C 0.9 nominal ALSO satisfies the 'at most nominal' inequality; cannot reject solely on wording."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.7.2.1",
+        "pdf_pages": "63"
+      },
+      "immediate_context": "Before §5.3.1.7.2 requires protection from abnormal motor heating; after the paragraph gives 1.20/1.05 response thresholds.",
+      "scope_exception_or_wording_trap": "The prompt asks 'reglat la' with answers 'cel mult 0.8, 1.0, 0.9'; under pure upper-bound logic A/B/C are nested true constraints, not uniquely scoreable. Hold pending domain/linguistic review.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0184",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 184,
+      "verbatim_question": "Dispozitivul de protecție la suprasarcină a motoarelor trifazate  va acţiona în 2 ore sau mai puţin la o valoare  ",
+      "verbatim_options": {
+        "A": "egală cu a curentului reglat",
+        "B": "de 1,05 ori curentul reglat",
+        "C": "de 1,20 ori curentul reglat"
+      },
+      "provisional_source_intent_answer": "C",
+      "option_rationales": {
+        "A": "A relay must NOT trip within 2h at nominal/low-level under stated calibration.",
+        "B": "B at 1.05 set current is explicitly nontrip for 2h.",
+        "C": "C at 1.20 set current relay MUST trip within two hours."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.7.2.1",
+        "pdf_pages": "63"
+      },
+      "immediate_context": "Before same paragraph describes phase monitoring and settings; after 5.3.1.7.2.2 temperature sensors.",
+      "scope_exception_or_wording_trap": "The positive trip and negative non-trip test values should be read together, not reversed.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0185",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 185,
+      "verbatim_question": "Dispozitivul de protecție la suprasarcină a motoarelor trifazate  nu va acţiona într-un interval de 2 ore la o valoare ",
+      "verbatim_options": {
+        "A": "de 1,05 ori curentul reglat.",
+        "B": "de 1,25 ori curentul reglat",
+        "C": "de 1,20 ori curentul reglat"
+      },
+      "provisional_source_intent_answer": "A",
+      "option_rationales": {
+        "A": "A at 1.05 set current must NOT trip in 2h, exact source.",
+        "B": "B at 1.25 may trigger, certainly not guaranteed no-trip.",
+        "C": "C at 1.20 MUST trigger within 2h, contradicting a 2h no-trip assertion."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.7.2.1",
+        "pdf_pages": "63"
+      },
+      "immediate_context": "Before regulation sets relay <= motor rated; after clause addresses abnormal temperatures.",
+      "scope_exception_or_wording_trap": "Trap of negative particle 'nu' and trip threshold at 1.20 vs nontrip at 1.05.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0194",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 194,
+      "verbatim_question": "Priza de pământ independentă este o priză de pământ ",
+      "verbatim_options": {
+        "A": "care nu face parte dintr-o instalaţie de legare la pământ ",
+        "B": "suficient de îndepărtată de alte prize de pământ pentru ca potenţialul său electric să nu fie sensibil afectat de curenţii electrici între pământ şi alte prize de pământ.",
+        "C": "care nu face parte dintr-o reţea de prize de pământ  "
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A not part of ANY earth installation is not the technical definition and can be false.",
+        "B": "B sufficiently separated so potential is not noticeably influenced by other earth electrode currents.",
+        "C": "C not belonging to a network does not establish electrical independence against potential influence."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'priză de pământ independentă'",
+        "pdf_pages": "9"
+      },
+      "immediate_context": "Before definition of basic earth electrode; after foundation/protective earthing descriptions.",
+      "scope_exception_or_wording_trap": "Independence is an electrical influence criterion, not legal ownership or physical registration.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0197",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 197,
+      "verbatim_question": "Conform normativului I7 - 2011, prin                ,, Pământ de referinţă \" se înțelege \n",
+      "verbatim_options": {
+        "A": " o parte a Pământului în contact electric cu o priză de pământ independentă ",
+        "B": " o parte a Pământului în contact electric cu o instalaţie de legare la pământ ",
+        "C": "o  parte a Pământului considerată conductoare, al cărei potenţial electric prin convenţie este considerat egal cu zero, care este în afara zonei de influenţă a oricărei instalaţii de legare la pământ "
+      },
+      "provisional_source_intent_answer": "C",
+      "option_rationales": {
+        "A": "A simply in contact with independent electrode does not guarantee no influence and zero reference potential.",
+        "B": "B any earthing installation can be under transferred/earth rise potential.",
+        "C": "C conventionally zero potential, outside influence of any earthing installation."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'pământ de referință'",
+        "pdf_pages": "8"
+      },
+      "immediate_context": "Before definition of earth; after simultaneous accessibility and protective parts vocabulary.",
+      "scope_exception_or_wording_trap": "Reference earth is a convention and remote potential point, not arbitrary physical soil contact.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0198",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 198,
+      "verbatim_question": "Folosirea mijloacelor individuale de protecţie electroizolante certificate",
+      "verbatim_options": {
+        "A": "este o măsură tehnică pentru protecţia  de bază (la atingere directă) ",
+        "B": "este o măsură tehnică principală pentru protecţia  în caz de defect (protecţia la atingere indirectă) ",
+        "C": "este o măsură administrativă pentru protecţia  de bază (la atingere directă) "
+      },
+      "provisional_source_intent_answer": "A",
+      "option_rationales": {
+        "A": "A certified personal electrical insulation PPE appears under technical measures for BASIC protection.",
+        "B": "B incorrectly classifies PPE as main fault-protection measure here.",
+        "C": "C incorrectly classifies it as administrative rather than technical measure in I7."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.1.2.1(A)",
+        "pdf_pages": "22"
+      },
+      "immediate_context": "Before lists insulation/barriers/obstacles among technical basics; after §4.1.2.1(B) organizational controls.",
+      "scope_exception_or_wording_trap": "Do not treat PPE as a replacement for de-energizing a work zone or all required protective measures.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0199",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 199,
+      "verbatim_question": "Scoaterea de sub tensiune a instalaţiei la care se lucrează",
+      "verbatim_options": {
+        "A": "este o măsură tehnică pentru protecţia  de bază (la atingere directă) ",
+        "B": "este o măsură organizatorică pentru protecţia  de bază (la atingere directă) ",
+        "C": "este o măsură tehnică principală pentru protecţia  în caz de defect (protecţia la atingere indirectă) "
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A calls de-energizing a 'technical' listed basic measure, but exact section classifies it organizational.",
+        "B": "B exact organizational measure for basic protection while undertaking work.",
+        "C": "C is about fault protection rather than the source organizational baseline."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.1.2.1(B)",
+        "pdf_pages": "22"
+      },
+      "immediate_context": "Before §4.1.2.1(A) enumerates technical protections; after (B) qualified worker and work form requirements.",
+      "scope_exception_or_wording_trap": "Differentiate engineering action physically disconnecting from regulatory CLASSIFICATION of work-organizing protective measures.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0205",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 205,
+      "verbatim_question": "Abrevierea TN-C  înseamnă ",
+      "verbatim_options": {
+        "A": " reţea cu punctul neutru al transformatorului legat la pământ şi masele legate la prize de pământ independente.\n",
+        "B": " reţea cu punctul neutru al transformatorului legat la pământ şi conductor cu funcţii comune: de protecţie şi neutru;",
+        "C": " reţea cu punctul neutru al transformatorului legat la pământ şi conductoare distincte pentru funcţiile de protecţie şi neutru"
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A masses tied to independent electrodes is TT, not TN-C.",
+        "B": "B supply directly earthed, shared neutral+protective PEN is TN-C.",
+        "C": "C separate PE/N is TN-S."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.1, §3.3.2.3, §3.3.2.5",
+        "pdf_pages": "15-16"
+      },
+      "immediate_context": "Before symbolic C denotes combined PE and N; after §3.3.2.6 prohibits returning to TN-C after split.",
+      "scope_exception_or_wording_trap": "At final feeder special TN-S separation may be mandated even if upstream is TN-C.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0206",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 206,
+      "verbatim_question": "Abrevierea TN-S înseamnă ",
+      "verbatim_options": {
+        "A": " reţea cu punctul neutru al transformatorului legat la pământ şi conductor cu funcţii comune: de protecţie şi neutru;",
+        "B": " reţea cu punctul neutru al transformatorului legat la pământ şi masele legate la prize de pământ independente.",
+        "C": "reţea cu punctul neutru al transformatorului legat la pământ şi conductoare distincte pentru funcţiile de protecţie şi neutru;"
+      },
+      "provisional_source_intent_answer": "C",
+      "option_rationales": {
+        "A": "A combined PEN is TN-C, not TN-S.",
+        "B": "B masses on independent electrodes is TT.",
+        "C": "C directly earthed source plus separate PE and N is TN-S."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.1, §3.3.2.4",
+        "pdf_pages": "15-16"
+      },
+      "immediate_context": "Before §3.3.2.3 defines TN; afterward §3.3.2.5 TN-C comparison.",
+      "scope_exception_or_wording_trap": "The S refers to separate protective function, not 'source' or 'safety' as a loose mnemonic.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0207",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_workbook_row": 207,
+      "verbatim_question": "Abrevierea TT înseamnă ",
+      "verbatim_options": {
+        "A": " reţea cu punctul neutru al transformatorului legat la pământ şi conductor cu funcţii comune: de protecţie şi neutru;",
+        "B": "reţea cu punctul neutru al transformatorului legat la pământ şi masele legate la prize de pământ independente.",
+        "C": " reţea cu punctul neutru al transformatorului legat la pământ şi conductoare distincte pentru funcţiile de protecţie şi neutru"
+      },
+      "provisional_source_intent_answer": "B",
+      "option_rationales": {
+        "A": "A combined PEN describes TN-C.",
+        "B": "B direct earth at source with masses separately earthed describes TT.",
+        "C": "C separate PE/N connected to the same supply earth point describes TN-S."
+      },
+      "source": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.1, §3.3.2.8",
+        "pdf_pages": "15-17"
+      },
+      "immediate_context": "Before TN system variants and earth bonding; after TT and IT distinct fault-current conditions.",
+      "scope_exception_or_wording_trap": "TT mass electrode is independent of source electrode; do not confuse with TN's common PE return path.",
+      "official_scored_key": "UNAUTHENTICATED",
+      "qualified_technical_signoff": "NOT_RUN",
+      "qualified_linguistic_signoff": "NOT_RUN",
+      "current_2026_exact_edition": "NOT_CONFIRMED",
+      "released_for_learning": false
+    }
+  ]
+}
