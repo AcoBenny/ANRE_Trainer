@@ -1,0 +1,179 @@
+{
+  "schema": "V325_SOURCE_BANK_INTEGRATION_READINESS_PRE_FLIGHT_2026_11_22",
+  "date": "2026-11-22",
+  "purpose": "Deterministic prescreen before actual data migration into ANRE Trainer, no app modification or technical/linguistic certification",
+  "inputs": {
+    "source_stage": "V298",
+    "canonical_master": "V141",
+    "current_822_priority": "V283",
+    "source_display": "V321",
+    "G1_rewrites": "V322",
+    "native_numeric_OOXML": "V323",
+    "P0_priority_overlay": "V324"
+  },
+  "observed": {
+    "current_QABC_groups": 568,
+    "current_grade_routes": 822,
+    "current_grade_route_IDs_unique": 822,
+    "original_xlsx_QABC_groups": 415,
+    "original_xlsx_grade_routes": 669,
+    "didactic_QABC_groups": 153,
+    "didactic_answer_letter_counts": {
+      "A": 153,
+      "B": 0,
+      "C": 0
+    },
+    "source_original_G2_stage_candidates": 157,
+    "staged_ids_unique": 157,
+    "staged_nonblank_question_and_ABC": 157,
+    "staged_exact_question_and_ABC_duplicate_in_current_bank": 0,
+    "staged_same_stem_and_reordered_equivalent_choices_in_current_bank": 0,
+    "staged_same_stem_BUT_different_ABC": 8,
+    "staged_source_original_verified_live_ANRE": 157,
+    "percent_numerical_source_style_cells_verified": 5,
+    "canon_G1_option_rewrites_vs_ANRE_original": 2,
+    "existing_grade_routes_current_P0": 27,
+    "priority_overlay_escalated_from_P2_to_P0": 1,
+    "operational_P0_after_overlay": 28,
+    "operational_P1_still_pending_UI_test": 2,
+    "operational_P2_after_overlay": 792,
+    "professionally_approved_existing": 0,
+    "professionally_approved_staged": 0
+  },
+  "same_stem_but_distinct_choice_map": [
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0018",
+      "existing": [
+        "QABC-0271"
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0034",
+      "existing": [
+        "QABC-0266",
+        "QABC-0281"
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0082",
+      "existing": [
+        "QABC-0303"
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0093",
+      "existing": [
+        "QABC-0311"
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0079",
+      "existing": [
+        "QABC-0362",
+        "QABC-0363"
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0116",
+      "existing": [
+        "QABC-0386"
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0119",
+      "existing": [
+        "QABC-0369"
+      ]
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0127",
+      "existing": [
+        "QABC-0392"
+      ]
+    }
+  ],
+  "source_format_regression_cases": [
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0075",
+      "choice": "A",
+      "raw_numeric": 0.05,
+      "display": "5%",
+      "source_excel_cell": "B75"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0075",
+      "choice": "C",
+      "raw_numeric": 0.12,
+      "display": "12%",
+      "source_excel_cell": "D75"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0077",
+      "choice": "A",
+      "raw_numeric": 0.2,
+      "display": "20%",
+      "source_excel_cell": "B77"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0077",
+      "choice": "B",
+      "raw_numeric": 0.25,
+      "display": "25%",
+      "source_excel_cell": "C77"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0077",
+      "choice": "C",
+      "raw_numeric": 0.12,
+      "display": "12%",
+      "source_excel_cell": "D77"
+    }
+  ],
+  "high_priority_release_blockers": [
+    {
+      "id": "G1-LEG-017",
+      "type": "LEGAL_IMPORTED_KEY_CONFLICT",
+      "source": "V324"
+    },
+    {
+      "id": "G1-NOR-048",
+      "type": "REWRITTEN_ALL_ABC_CANNOT_PASS_AS_ORIGINAL",
+      "source": "V322"
+    },
+    {
+      "id": "G1-NOR-072",
+      "type": "REWRITTEN_B_LOGICAL_NEGATION_CANNOT_PASS_AS_ORIGINAL",
+      "source": "V322"
+    }
+  ],
+  "didactic_implementation_constraints": {
+    "label_unofficial_didactic": true,
+    "do_not_use_letter_A_bias_as_scoring_shortcut": true,
+    "shuffle_displayed_choices_only_if_score_tracks_stable_choice_ID": true,
+    "all_153_imported_A_is_training_bias_not_auto_wrong_key": true
+  },
+  "release_policy": {
+    "may_prepare_read_only_source_original_expansion_plan": true,
+    "may_merge_staged_157_into_live_application": false,
+    "may_auto_assign_scored_answers": false,
+    "requires_independent_professional_legal_or_electrical_plus_linguistic_review": true,
+    "requires_user_final_release_approval": true
+  },
+  "tests": {
+    "pass": [
+      "822 unique canonical grade routes",
+      "157 unique staged IDs and nonblank ABC",
+      "0 exact collisions with current 568 QABC",
+      "8 stem-same but non-permutation option variants identified",
+      "5 true numeric percent formats verified",
+      "153 authored didactic all A bias flagged"
+    ],
+    "not_run": [
+      "Full independent technical/law review",
+      "Independent language review",
+      "Actual HTML answer scoring/option randomization runtime test",
+      "Offline Android APK UI validation"
+    ]
+  },
+  "warning": "28 operational P0 reflects an additive newly discovered G1-LEG-017 risk overlay; original V283 immutable 27 P0+2 P1+793 P2 for historical reproducibility. Numeric styling closed at source level, not in shipped UI."
+}
