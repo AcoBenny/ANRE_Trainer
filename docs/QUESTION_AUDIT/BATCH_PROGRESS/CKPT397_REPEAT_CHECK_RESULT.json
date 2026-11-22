@@ -1,0 +1,41 @@
+{
+  "schema": "batch_progress_result_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT-397-real-world-repeat-check",
+  "task_id": "ANRE-P0-HISTORICAL-8",
+  "verdict": "NO_PROGRESS_REPEAT",
+  "action": "STOP_REPEAT_AND_PIVOT_OR_ESCALATE",
+  "counts": {
+    "before": {
+      "items": 8,
+      "open_gates": 24,
+      "approved": 0,
+      "review_ready": 0
+    },
+    "after": {
+      "items": 8,
+      "open_gates": 24,
+      "approved": 0,
+      "review_ready": 0
+    }
+  },
+  "delta": {
+    "distinct_items_advanced": 0,
+    "stage_transitions": [],
+    "closed_gates": [],
+    "new_processed_items": [],
+    "evidence_only_items": [
+      "QABC-0017",
+      "QABC-0094",
+      "QABC-0143",
+      "QABC-0236",
+      "QABC-0288",
+      "QABC-0341",
+      "QABC-0367",
+      "QABC-0386"
+    ],
+    "regression_reasons": [],
+    "invalid_progress_claims": []
+  },
+  "audit_notice": "Structural preflight only. Does not independently verify technical truth, official exam keys, reviewer identity or HTML/APK runtime."
+}
