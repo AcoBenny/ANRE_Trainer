@@ -1,0 +1,37 @@
+{
+  "schema": "V324_P0_ESCALATION_G1_LEG_017_SOURCE_ACTION_TERM_VS_INTERRUPTION",
+  "date": "2026-11-22",
+  "record": {
+    "event": "NEW_PRIORITY_TRIAGE_OVERLAY_NOT_REWRITE_OF_HISTORIC_V283",
+    "discovered_date": "2026-11-22",
+    "qabc_id": "QABC-0281",
+    "grade_route": "G1-LEG-017",
+    "source_original_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+    "source_row": 24,
+    "stem": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+    "options_original": {
+      "A": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+      "B": "racordare ilegală la reţeaua de distribuţie",
+      "C": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+    },
+    "imported_original_grade_key_UNCHANGED": "B",
+    "prior_priority_V283": "P2_STANDARD_INDEPENDENT_REVIEW",
+    "proposed_current_priority": "P0_INDEPENDENT_LEGAL_SOURCE_KEY_AND_LANGUAGE_CONFLICT",
+    "legal_article": "Art.18(3)(a)-(c), Art.18(4)-(5), Art.26(2)(a)-(b) of ANRE supply regulation (Ord.5/2023), amended and consolidated official Portal Legislativ",
+    "legal_source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+    "option_A": "Explicit *affirmative source-supported* termination because electricity theft was confirmed by final judgment; legal Art18(3)(a) directly matches original wording.",
+    "option_B": "Illegal grid connection alone is NOT enumerated verbatim in Art18(3)(a), and need not establish a judicial conviction. It might fall under Art18(3)(c) 'other situations provided by law', which must be proven with a specific other legal provision. Current imported B not authenticated by source in audit.",
+    "option_C": "Refusal of a requested financial guarantee permits electricity supply INTERRUPTION under Art26(2)(b); termination Art18 and physical interruption Art26 are distinct regulated legal actions. C is not demonstrated as a generic termination ground without an independently established legal provision.",
+    "inference": "A has direct affirmative same-action statutory support. B is not categorically proven false, but cannot be validated or uniquely scored from article 18 alone. Keep unresolved until competent legal and linguistic independent review plus official historical scoring provenance.",
+    "anti_confusion": "G1-LEG-002 QABC-0266 imported B is another source-original variant that correctly explicitly states court-confirmed theft in its B position; G1-LEG-017 source A has that same concept but imported B instead. Do not copy letters or auto-fix.",
+    "current_release_status": "BLOCKED",
+    "independent_technical_legal_review": "NOT_RUN",
+    "independent_linguistic_review": "NOT_RUN",
+    "ANRE_official_scored_key_authenticated": false,
+    "edition_applicable_to_2026_exam_verified": false,
+    "should_change_canonical_answer_key": false,
+    "should_change_html_apk": false
+  },
+  "policy": "Adds an additive priority overlay. V283 historical queue must stay intact for reproducibility. This document not considered an expert signoff or key correction.",
+  "source_consistency": "V141 and V283 were reopened in this turn, exact original question/ABC/key and existing priority verified."
+}
