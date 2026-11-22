@@ -1,0 +1,424 @@
+{
+  "schema": "V336_G2_9_ORIGINAL_SOURCE_ROWS_FIRST_3_CLUSTERS_SOURCE_CONTEXT_ALL_ABC_NO_RELEASE_2026_11_22",
+  "date": "2026-11-22",
+  "parent_checkpoints": [
+    "CKPT-398",
+    "V332",
+    "V298"
+  ],
+  "research_new_scope": "First three distinct staged G2 semantic clusters, not the same eight historic P0 items; original verbatim A/B/C from source-recovered quarantine.",
+  "sources": {
+    "RAC": {
+      "name": "Ordin ANRE 102/2015, Reg. soluții de racordare, amended via Ord 184/2019",
+      "url": "https://lexapp.ro/just/169663",
+      "secondary_verified": "https://legeaz.net/monitorul-oficial-519-2015/ordinul-anre-102-2015/anexa-regulament",
+      "official_order_listing": "https://www.distributie-energie.ro/legislatie-aplicabila/",
+      "applied_article_set": [
+        "Art.12 (a),(c),(g)",
+        "Art.15 (a),(b),(c),(g)"
+      ],
+      "scope": "Fișă vs studiu for consumer type, voltage, unique/obvious solution and network impact",
+      "source_observed": "Current public consolidated reproduction with 2019 amendment marker, and official network-operator legislative listing; original ANRE order PDF not visually authenticated"
+    },
+    "ELECT": {
+      "name": "ANRE Ordin 66/2023, autorizarea electricienilor",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/288046",
+      "applied_article_set": [
+        "Art.8(2) A=design,B=execution",
+        "Art.9 grades and competency",
+        "Art.37(b),(d),(f),(j)"
+      ],
+      "scope": "Electrician personal license vs operator network proprietary installations and contractual exceptions",
+      "source_observed": "Government Portalul Legislativ consolidated HTML accessed HTTP 200"
+    },
+    "I7": {
+      "name": "Normativ I7/2011, building wiring protections, consolidated 2023 user version not independently certified 2026",
+      "url": "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/",
+      "corroborating_ref": "https://www.sibotherm.com/wp-content/uploads/Normativ-I7-2011-Monitor-Electrice.pdf",
+      "applied_article_set": [
+        "I7 definitions/protecție de bază and protecție în caz de defect",
+        "I7 Chap. 4 safety through basic and fault protection"
+      ],
+      "scope": "Definition distinction between protection without defect and under a single fault",
+      "source_observed": "Public reproduced I7 full text and 2011 published Monitorul Oficial cross-reference, exact original 2023 user PDF hash previously recorded but not reopened in this batch"
+    }
+  },
+  "counts": {
+    "unique_newly_source_researched_ids": 9,
+    "clusters_newly_source_researched": 3,
+    "directly_supported_provisional_answers": 7,
+    "conditional_source_candidates": 2,
+    "original_ABC_rationales": 27,
+    "original_exam_keys_authenticated": 0,
+    "independent_final_approvals": 0,
+    "exact_missing_qualifier_flags": 1,
+    "wording_scope_review_flags": 1
+  },
+  "clusters": [
+    {
+      "cluster_id": "STAGE_CLUSTER_01",
+      "stage_ids": [
+        "ANRE-G2-LEG-XLSX-R0053",
+        "ANRE-G2-LEG-XLSX-R0100",
+        "ANRE-G2-LEG-XLSX-R0101"
+      ],
+      "semantic_group_reason": "Similar original stem/topic does not authorize merging distinct source alternatives",
+      "merge_delete_allowed": false
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_02",
+      "stage_ids": [
+        "ANRE-G2-LEG-XLSX-R0061",
+        "ANRE-G2-LEG-XLSX-R0062",
+        "ANRE-G2-LEG-XLSX-R0063"
+      ],
+      "semantic_group_reason": "Similar original stem/topic does not authorize merging distinct source alternatives",
+      "merge_delete_allowed": false
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_03",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0123",
+        "ANRE-G2-NOR-XLSX-R0124",
+        "ANRE-G2-NOR-XLSX-R0130"
+      ],
+      "semantic_group_reason": "Similar original stem/topic does not authorize merging distinct source alternatives",
+      "merge_delete_allowed": false
+    }
+  ],
+  "items": [
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0053",
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_excel_row": 53,
+      "source_stem_sha256": "ac713ceb20c38dcad167b82dcac366ff9fb19469f764e995f726b592b24b6d5d",
+      "original_question": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "original_options": {
+        "A": "utilizatorii perturbatori",
+        "B": " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "C": "locurile de consum care se racordează la reţele electrice de medie sau joasă tensiune, indiferent de puterea solicitată, dacă soluţia de racordare este unică şi/sau evidentă"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "C",
+      "status": "SOURCE_SCOPED_DIRECT",
+      "exact_object_scope": "Fișă vs studiu for consumer type, voltage, unique/obvious solution and network impact",
+      "source_id": "RAC",
+      "source_article": "Art.12(c), Art.15(b),(g)",
+      "source_context": {
+        "before_editorial_paraphrase": "Art.11 separates solution sheet from study based on actual connection class.",
+        "decisive_editorial_paraphrase": "Art.12(c) describes medium/low voltage demand sites with an unequivocal/obvious solution.",
+        "after_editorial_paraphrase": "Art.15(b),(g) routes distributors and impact-intensive cases to study; not equivalent to Art.12(c)."
+      },
+      "option_by_option_reasoning": {
+        "A": "Not automatically fișă for disruptive users; Art.15(g) impact analysis may call for study; specialized context, not blanket rule.",
+        "B": "Distributors are explicitly assigned study at Art.15(b), regardless of grid voltage.",
+        "C": "Direct positive match to Art.12(c): low/medium voltage, no power limit when the connection solution is single/obvious."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0100",
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_excel_row": 100,
+      "source_stem_sha256": "ac713ceb20c38dcad167b82dcac366ff9fb19469f764e995f726b592b24b6d5d",
+      "original_question": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "original_options": {
+        "A": "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "B": "locurile de consum şi/sau de producere care se racordează la reţele electrice având tensiunea nominală de 110 kV sau mai mare;",
+        "C": " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "A",
+      "status": "SOURCE_SCOPED_DIRECT",
+      "exact_object_scope": "Fișă vs studiu for consumer type, voltage, unique/obvious solution and network impact",
+      "source_id": "RAC",
+      "source_article": "Art.12(a); Art.15(a),(b)",
+      "source_context": {
+        "before_editorial_paraphrase": "Art.11 sets two different technical instruments: fișă and study.",
+        "decisive_editorial_paraphrase": "Art.12(a) specifically names individual household users with no fixed power cap.",
+        "after_editorial_paraphrase": "Art.15(a),(b) lists high-voltage and distributors in study class, not fișă."
+      },
+      "option_by_option_reasoning": {
+        "A": "Direct match at Art.12(a): individual household consumption locations regardless of power.",
+        "B": ">=110 kV is study, Art.15(a), not a fișă class.",
+        "C": "Distributors assigned study regardless of voltage, Art.15(b)."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0101",
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_excel_row": 101,
+      "source_stem_sha256": "7d9a28bb3cd37c46f6f1d3904c023e00effb54f53d9de4f5c3901553852454ce",
+      "original_question": "Soluţia de racordare se stabileşte printr-un studiu de soluţie pentru:",
+      "original_options": {
+        "A": "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "B": " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "C": "utilizatorii cu o putere de peste 25 kVA"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "B",
+      "status": "SOURCE_SCOPED_DIRECT",
+      "exact_object_scope": "Fișă vs studiu for consumer type, voltage, unique/obvious solution and network impact",
+      "source_id": "RAC",
+      "source_article": "Art.12(a),(b),(g), Art.15(b)",
+      "source_context": {
+        "before_editorial_paraphrase": "Art.12 lists fișă categories, including domestic sites and certain under30kVA cases.",
+        "decisive_editorial_paraphrase": "Art.15(b) identifies distributor-type users as study class for every voltage.",
+        "after_editorial_paraphrase": "Art.15(c) requires multiple conditions for other consumer cases, not simply exceeding 25kVA."
+      },
+      "option_by_option_reasoning": {
+        "A": "Individual household sites use fișă even for higher power under Art.12(a), not blanket study.",
+        "B": "Explicitly Art.15(b): distributors irrespective of the grid voltage.",
+        "C": "Arbitrary 25 kVA threshold is not blanket study trigger; Art.12(b) under30 kVA consumption sites fișă and other conditions apply."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0061",
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_excel_row": 61,
+      "source_stem_sha256": "058959e65d1bb38f14576ec2117a7ace20f0c14cc284d5a4b014f53260427eba",
+      "original_question": "Este interzis electricianului autorizat:",
+      "original_options": {
+        "A": "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "B": "Să proiecteze instalaţii electrice în cazul în care nu deţine o autorizaţie de tip A",
+        "C": "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "B",
+      "status": "SOURCE_SCOPED_DIRECT",
+      "exact_object_scope": "Electrician personal license vs operator network proprietary installations and contractual exceptions",
+      "source_id": "ELECT",
+      "source_article": "Art.8(2), Art.9(b)-(g), Art.37(b),(d)",
+      "source_context": {
+        "before_editorial_paraphrase": "Art.8 distinguishes A authorization for design and B for execution for II-IV.",
+        "decisive_editorial_paraphrase": "Art.37(b) restricts designing and executing to a valid type/grade authorization.",
+        "after_editorial_paraphrase": "Art.37(d) demands a project by qualified designer, not self-authorship by the executor."
+      },
+      "option_by_option_reasoning": {
+        "A": "Type A permits design within its grade and conditions; 'only A' is not itself a ban on design.",
+        "B": "Design without design authorization type A violates authorization competencies (Art.8(2), Art.37(b)).",
+        "C": "Executing from another authorized professional's project is compatible with Art.37(d), conditional on the executing person's own valid type B and scope."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0062",
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_excel_row": 62,
+      "source_stem_sha256": "058959e65d1bb38f14576ec2117a7ace20f0c14cc284d5a4b014f53260427eba",
+      "original_question": "Este interzis electricianului autorizat:",
+      "original_options": {
+        "A": "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "B": "să execute lucrări, manevre sau intervenţii sub orice formă în instalaţiile operatorilor de reţea  ",
+        "C": "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": null,
+      "status": "SCOPE_QUALIFIER_MISSING_NOT_UNIQUE",
+      "exact_object_scope": "Electrician personal license vs operator network proprietary installations and contractual exceptions",
+      "source_id": "ELECT",
+      "source_article": "Art.8(2), Art.37(b),(d),(j)",
+      "source_context": {
+        "before_editorial_paraphrase": "Art.37(c),(d) authorizes work after legal approvals and a suitable design.",
+        "decisive_editorial_paraphrase": "Art.37(j) qualifies intervention in operator network assets by existence of contracts with the network operator.",
+        "after_editorial_paraphrase": "Possession of authorization alone does not supply contractual rights for network components, but contract cases can change the ban."
+      },
+      "option_by_option_reasoning": {
+        "A": "Design using valid type A is not forbidden, within grade and scope.",
+        "B": "Art.37(j) disallows work/operations in network operator installations WITHOUT necessary agreements/contracts. Original answer omits 'fără contracte'; unconditional prohibition is not established.",
+        "C": "Execution based on projects authored by other licensed designers is allowed for a properly licensed executor; no blanket ban."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0063",
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_excel_row": 63,
+      "source_stem_sha256": "058959e65d1bb38f14576ec2117a7ace20f0c14cc284d5a4b014f53260427eba",
+      "original_question": "Este interzis electricianului autorizat:",
+      "original_options": {
+        "A": "Să semneze documentaţii de orice fel pentru proiecte sau lucrări pe care nu le-a realizat sau supravegheat",
+        "B": "Să proiecteze instalaţii electrice în cazul în care deţine doar autorizaţie de tip A",
+        "C": "Să realizeze lucrări de instalaţii electrice în baza unor documentaţii de proiectare realizate de alţi electricieni autorizaţi"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "A",
+      "status": "SOURCE_SUPPORTED_BUT_OBJECT_WORDING_REVIEW",
+      "exact_object_scope": "Electrician personal license vs operator network proprietary installations and contractual exceptions",
+      "source_id": "ELECT",
+      "source_article": "Art.37(f), Art.8(2), Art.37(d)",
+      "source_context": {
+        "before_editorial_paraphrase": "Art.37(d),(e) specifies documented and compliant execution duties.",
+        "decisive_editorial_paraphrase": "Art.37(f) prohibits signing documents for work without own design, execution or direct supervision.",
+        "after_editorial_paraphrase": "The option refers to 'proiecte sau lucrări' and uses 'realizat'; verify exact equivalence with 'proiectează/execută' before grading."
+      },
+      "option_by_option_reasoning": {
+        "A": "Art.37(f) bars signing work docs not designed, executed or directly supervised by signer; original 'nu le-a realizat sau supravegheat' must be mapped to those actions and exception.",
+        "B": "Type A design is permitted within grade; no general ban.",
+        "C": "Projects by a different qualified designer can be used in execution, provided correct B authorization; not a ban."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0123",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_excel_row": 123,
+      "source_stem_sha256": "72cca9e112af47f5f3a54c7e2dcb75bab69d4b27a7404a269dc36878dbeff182",
+      "original_question": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "original_options": {
+        "A": "protecţia împotriva şocurilor electrice în absenţa defectului",
+        "B": " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        "C": "protecţia împotriva şocurilor electrice în caz de defect"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "A",
+      "status": "SOURCE_SCOPED_DIRECT",
+      "exact_object_scope": "Definition distinction between protection without defect and under a single fault",
+      "source_id": "I7",
+      "source_article": "I7 Definitions: protecție de bază; protecție în caz de defect",
+      "source_context": {
+        "before_editorial_paraphrase": "Glossary distinguishes protective categories by presence or absence of a fault.",
+        "decisive_editorial_paraphrase": "Basic protection safeguards against electric shock in the normal/no-fault condition.",
+        "after_editorial_paraphrase": "Fault protection is defined for single-fault situations and maps to indirect-contact safety."
+      },
+      "option_by_option_reasoning": {
+        "A": "Exact base-protection defining condition: against electric shock in absence of a fault.",
+        "B": "Indirect contact corresponds to protection in case of fault, not basic protection.",
+        "C": "Shock during a defect corresponds to fault protection, not basic."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0124",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_excel_row": 124,
+      "source_stem_sha256": "72cca9e112af47f5f3a54c7e2dcb75bab69d4b27a7404a269dc36878dbeff182",
+      "original_question": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "original_options": {
+        "A": " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        "B": " protecţia care corespunde protecţiei împotriva atingerilor directe.",
+        "C": "protecţia împotriva şocurilor electrice în caz de defect"
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "B",
+      "status": "SOURCE_SCOPED_DIRECT",
+      "exact_object_scope": "Definition distinction between protection without defect and under a single fault",
+      "source_id": "I7",
+      "source_article": "I7 Definitions: protecție de bază; atingere directă",
+      "source_context": {
+        "before_editorial_paraphrase": "Basic protection concerns normal, non-fault conditions.",
+        "decisive_editorial_paraphrase": "Definition equates basic protection to protection against direct contact.",
+        "after_editorial_paraphrase": "Fault protection separately covers the simple-fault regime and indirect contact."
+      },
+      "option_by_option_reasoning": {
+        "A": "Indirect-contact protection belongs to fault protection.",
+        "B": "Definition directly equates basic protection with direct-contact protection.",
+        "C": "Protection in a fault condition is a different class."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0130",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_excel_row": 130,
+      "source_stem_sha256": "98b85ecc45682af457b6ac88ce5e9cacc060ea057e6fe3a9eab79cecffe9f2bb",
+      "original_question": "Conform normativului I-7-2011, protecţia în caz de defect  reprezintă:  ",
+      "original_options": {
+        "A": "o protecţie împotriva şocurilor electrice în condiţii de defect simplu.",
+        "B": "o protecţie împotriva şocurilor electrice în condiţii de scurtcircuit",
+        "C": " protecţia care corespunde protecţiei împotriva atingerilor directe."
+      },
+      "source_original_scored_key": "NOT_AUTHENTICATED",
+      "research_candidate_option_NOT_ANRE_KEY": "A",
+      "status": "SOURCE_SCOPED_DIRECT",
+      "exact_object_scope": "Definition distinction between protection without defect and under a single fault",
+      "source_id": "I7",
+      "source_article": "I7 Definitions: protecție în caz de defect; defect simplu",
+      "source_context": {
+        "before_editorial_paraphrase": "The glossary identifies basic protection for absence of faults.",
+        "decisive_editorial_paraphrase": "Protection in case of fault is defined for a single-fault condition.",
+        "after_editorial_paraphrase": "The same definition associates it with protection against indirect contact."
+      },
+      "option_by_option_reasoning": {
+        "A": "Exact defining case is electrical shock protection in a single fault condition.",
+        "B": "Short circuit is one possible fault form but is not the complete definition of protection under any single fault.",
+        "C": "Direct contact refers to basic protection, not fault protection."
+      },
+      "answer_permutation_identity": "NOT_SCORED; keys not authenticated",
+      "app_import_status": "QUARANTINED_NO_RELEASE",
+      "independent_technical_legal_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "edition_2026_exam_certification": "NOT_PROVEN",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED"
+    }
+  ],
+  "confidence_note": "Strong source-specific preliminary A/B/C findings for 7 source-direct, one semantic qualifier missing, one source-wording caveat. Only literature research, not authentic ANRE scored key, independently qualified QA, or official edition signoff. Lexapp reproductions used for 102 and I7, government Portal used for 66.",
+  "hard_gates": {
+    "all_157_staged_records_remain_quarantined": true,
+    "no_source_key_mutation": true,
+    "no_canonical_master_mutation": true,
+    "no_HTML_APK_mutation": true,
+    "no_independent_signoff": true,
+    "no_final_approvals": true
+  }
+}
