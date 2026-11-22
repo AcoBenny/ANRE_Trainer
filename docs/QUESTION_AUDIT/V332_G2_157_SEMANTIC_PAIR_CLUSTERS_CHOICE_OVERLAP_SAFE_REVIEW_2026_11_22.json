@@ -1,0 +1,600 @@
+{
+  "schema": "V332_G2_157_SOURCE_LEXICAL_REVIEW_ROUTING_GRAPH_SAFE_NO_MERGES_2026_11_22",
+  "date": "2026-11-22",
+  "parent": "V329",
+  "review_intent": "Make semantic reviewer review groups rather than accidentally merge same-stem genuine distinct option variants",
+  "derivation": "Normalize full choice strings and count shared A/B/C texts ignoring their position. Calculate connected components of 22 V329 same/near stems. No model adjudication and no technical/legal truth implied by lexical matching.",
+  "counts": {
+    "within_candidate_pairs": 22,
+    "within_unique_stage_nodes": 35,
+    "connected_components": 16,
+    "components_size_gt2": 3,
+    "cross_pairs": 18,
+    "cross_unique_staged": 12,
+    "cross_exact_stem_pairs": 10,
+    "cross_near_stem_full_ABC_match": 1,
+    "within_exact_stem_pairs": 14,
+    "within_identical_ABC_pairs": 0
+  },
+  "review_clusters": [
+    {
+      "cluster_id": "STAGE_CLUSTER_01",
+      "stage_ids": [
+        "ANRE-G2-LEG-XLSX-R0053",
+        "ANRE-G2-LEG-XLSX-R0100",
+        "ANRE-G2-LEG-XLSX-R0101"
+      ],
+      "edge_count": 3,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_02",
+      "stage_ids": [
+        "ANRE-G2-LEG-XLSX-R0061",
+        "ANRE-G2-LEG-XLSX-R0062",
+        "ANRE-G2-LEG-XLSX-R0063"
+      ],
+      "edge_count": 3,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_03",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0123",
+        "ANRE-G2-NOR-XLSX-R0124",
+        "ANRE-G2-NOR-XLSX-R0130"
+      ],
+      "edge_count": 3,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_04",
+      "stage_ids": [
+        "ANRE-G2-LEG-XLSX-R0033",
+        "ANRE-G2-LEG-XLSX-R0080"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_05",
+      "stage_ids": [
+        "ANRE-G2-LEG-XLSX-R0078",
+        "ANRE-G2-LEG-XLSX-R0079"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_06",
+      "stage_ids": [
+        "ANRE-G2-LEG-XLSX-R0106",
+        "ANRE-G2-LEG-XLSX-R0107"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_07",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0056",
+        "ANRE-G2-NOR-XLSX-R0057"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_08",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0058",
+        "ANRE-G2-NOR-XLSX-R0059"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_09",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0068",
+        "ANRE-G2-NOR-XLSX-R0069"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_10",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0074",
+        "ANRE-G2-NOR-XLSX-R0075"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_11",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0100",
+        "ANRE-G2-NOR-XLSX-R0101"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_12",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0106",
+        "ANRE-G2-NOR-XLSX-R0107"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_13",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0134",
+        "ANRE-G2-NOR-XLSX-R0135"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_14",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0146",
+        "ANRE-G2-NOR-XLSX-R0147"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_15",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0157",
+        "ANRE-G2-NOR-XLSX-R0158"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    },
+    {
+      "cluster_id": "STAGE_CLUSTER_16",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0168",
+        "ANRE-G2-NOR-XLSX-R0169"
+      ],
+      "edge_count": 1,
+      "required_review": "Compare every ORIGINAL question A/B/C and applicable source object/qualifiers; distinct original options are not semantic duplicates by default"
+    }
+  ],
+  "within_candidates_with_option_overlap": [
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0033",
+      "id_b": "ANRE-G2-LEG-XLSX-R0080",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.8,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_WITH_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0053",
+      "id_b": "ANRE-G2-LEG-XLSX-R0100",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 1,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_DISTINCT_ANSWER_SET",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0053",
+      "id_b": "ANRE-G2-LEG-XLSX-R0101",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.7143,
+      "shared_original_option_text_count": 1,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_DISTINCT_SCOPES_CHECK",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0061",
+      "id_b": "ANRE-G2-LEG-XLSX-R0062",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0061",
+      "id_b": "ANRE-G2-LEG-XLSX-R0063",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0062",
+      "id_b": "ANRE-G2-LEG-XLSX-R0063",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0078",
+      "id_b": "ANRE-G2-LEG-XLSX-R0079",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 0,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_DISTINCT_ANSWER_SET",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0100",
+      "id_b": "ANRE-G2-LEG-XLSX-R0101",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.7143,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_WITH_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-LEG-XLSX-R0106",
+      "id_b": "ANRE-G2-LEG-XLSX-R0107",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0056",
+      "id_b": "ANRE-G2-NOR-XLSX-R0057",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.8571,
+      "shared_original_option_text_count": 1,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_DISTINCT_SCOPES_CHECK",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0058",
+      "id_b": "ANRE-G2-NOR-XLSX-R0059",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0068",
+      "id_b": "ANRE-G2-NOR-XLSX-R0069",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.75,
+      "shared_original_option_text_count": 1,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_DISTINCT_SCOPES_CHECK",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0074",
+      "id_b": "ANRE-G2-NOR-XLSX-R0075",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 1,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_DISTINCT_ANSWER_SET",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0100",
+      "id_b": "ANRE-G2-NOR-XLSX-R0101",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.875,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_WITH_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0106",
+      "id_b": "ANRE-G2-NOR-XLSX-R0107",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0123",
+      "id_b": "ANRE-G2-NOR-XLSX-R0124",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0123",
+      "id_b": "ANRE-G2-NOR-XLSX-R0130",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.7,
+      "shared_original_option_text_count": 0,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_DISTINCT_SCOPES_CHECK",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0124",
+      "id_b": "ANRE-G2-NOR-XLSX-R0130",
+      "normalized_stem_equal": false,
+      "token_jaccard": 0.7,
+      "shared_original_option_text_count": 1,
+      "option_order_identical": false,
+      "classification": "NEAR_STEM_DISTINCT_SCOPES_CHECK",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0134",
+      "id_b": "ANRE-G2-NOR-XLSX-R0135",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0146",
+      "id_b": "ANRE-G2-NOR-XLSX-R0147",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 0,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_DISTINCT_ANSWER_SET",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0157",
+      "id_b": "ANRE-G2-NOR-XLSX-R0158",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 2,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_TWO_OR_MORE_SHARED_ALTERNATIVES",
+      "semantic_final_signoff": "UNDECIDED"
+    },
+    {
+      "id_a": "ANRE-G2-NOR-XLSX-R0168",
+      "id_b": "ANRE-G2-NOR-XLSX-R0169",
+      "normalized_stem_equal": true,
+      "token_jaccard": 1,
+      "shared_original_option_text_count": 0,
+      "option_order_identical": false,
+      "classification": "SAME_STEM_DISTINCT_ANSWER_SET",
+      "semantic_final_signoff": "UNDECIDED"
+    }
+  ],
+  "cross_stage_to_canonical_candidates_with_option_overlap": [
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0018",
+      "canonical_id": "QABC-0271",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 1,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_DIFFERENT_CHOICES",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0018",
+      "canonical_id": "QABC-0295",
+      "stem_jaccard": 0.75,
+      "stem_exact_normalized": false,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "RELATED_TOPIC_ONLY_PENDING_SCOPE",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0018",
+      "canonical_id": "QABC-0296",
+      "stem_jaccard": 0.75,
+      "stem_exact_normalized": false,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "RELATED_TOPIC_ONLY_PENDING_SCOPE",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0034",
+      "canonical_id": "QABC-0266",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_DIFFERENT_CHOICES",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0034",
+      "canonical_id": "QABC-0281",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 2,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_SHARED_CHOICE_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0034",
+      "canonical_id": "QABC-0267",
+      "stem_jaccard": 0.9167,
+      "stem_exact_normalized": false,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "RELATED_TOPIC_ONLY_PENDING_SCOPE",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0069",
+      "canonical_id": "QABC-0300",
+      "stem_jaccard": 0.6,
+      "stem_exact_normalized": false,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "RELATED_TOPIC_ONLY_PENDING_SCOPE",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0069",
+      "canonical_id": "QABC-0301",
+      "stem_jaccard": 0.6,
+      "stem_exact_normalized": false,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "RELATED_TOPIC_ONLY_PENDING_SCOPE",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0082",
+      "canonical_id": "QABC-0303",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 2,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_SHARED_CHOICE_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0093",
+      "canonical_id": "QABC-0311",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 2,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_SHARED_CHOICE_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-LEG-XLSX-R0109",
+      "canonical_id": "QABC-0421",
+      "stem_jaccard": 0.5625,
+      "stem_exact_normalized": false,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "RELATED_TOPIC_ONLY_PENDING_SCOPE",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0040",
+      "canonical_id": "QABC-0338",
+      "stem_jaccard": 0.6667,
+      "stem_exact_normalized": false,
+      "shared_options": 3,
+      "original_option_order_identical": true,
+      "classification": "NEAR_STEM_ALL_CHOICES_MATCHED_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0079",
+      "canonical_id": "QABC-0362",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 1,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_DIFFERENT_CHOICES",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0079",
+      "canonical_id": "QABC-0363",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 1,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_DIFFERENT_CHOICES",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0116",
+      "canonical_id": "QABC-0386",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 2,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_SHARED_CHOICE_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0119",
+      "canonical_id": "QABC-0369",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 2,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_SHARED_CHOICE_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0127",
+      "canonical_id": "QABC-0392",
+      "stem_jaccard": 1,
+      "stem_exact_normalized": true,
+      "shared_options": 2,
+      "original_option_order_identical": false,
+      "classification": "SAME_STEM_SHARED_CHOICE_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    },
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0194",
+      "canonical_id": "QABC-0413",
+      "stem_jaccard": 0.6667,
+      "stem_exact_normalized": false,
+      "shared_options": 0,
+      "original_option_order_identical": false,
+      "classification": "RELATED_TOPIC_ONLY_PENDING_SCOPE",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE"
+    }
+  ],
+  "explicit_high_review_priority": [
+    {
+      "staged_id": "ANRE-G2-NOR-XLSX-R0040",
+      "canonical_id": "QABC-0338",
+      "stem_jaccard": 0.6667,
+      "stem_exact_normalized": false,
+      "shared_options": 3,
+      "original_option_order_identical": true,
+      "classification": "NEAR_STEM_ALL_CHOICES_MATCHED_TEXT",
+      "decision_for_merge_or_delete": "HOLD_NO_AUTOMATED_MERGE",
+      "source_edition_and_physical_object_must_be_checked": true
+    }
+  ],
+  "hard_gates": {
+    "source_consensus_not_verified": true,
+    "official_scored_keys_authenticated": 0,
+    "independent_professional_signoffs": 0,
+    "no_deletion": true,
+    "no_key_mutations": true,
+    "all_157_quarantined": true,
+    "no_HTML_APK_changes": true
+  },
+  "tests": [
+    "22/22 V329 within pairs classified",
+    "12/12 V329 cross-bank staged candidates routed into 18 match records",
+    "8 V329 same-stem stage/master original cases retained",
+    "One near-stem same-A/B/C high-priority pair identified: ANRE-G2-NOR-XLSX-R0040 vs QABC-0338"
+  ]
+}
