@@ -1,5 +1,18 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-22 | CKPT-398 | End-of-batch anti-loop check enforced in GFR process
+
+**Current checkpoint:** [CKPT-398: end-of-batch progress gate, 15 test scenarios and verified positive/negative batch examples](../QUESTION_AUDIT/CKPT_398_GFR_END_OF_BATCH_ANTI_LOOP_GATE_AND_PROGRESS_VERDICTS_2026_11_22.md)  
+**Runbook:** [Before/after evidence check mandatory for every new GFR batch](../QUESTION_AUDIT/BATCH_PROGRESS/README.md)  
+**Executable validator:** [tools/qa_batch_progress.mjs](../../tools/qa_batch_progress.mjs)  
+**Previous work:** [CKPT-397](../QUESTION_AUDIT/CKPT_397_GFR_EIGHT_P0_BIBLIO_2023_GRADE_SCOPE_AND_42_VERSION_SCORING_NEGATIVE_TESTS_2026_11_22.md), [CKPT-396](../QUESTION_AUDIT/CKPT_396_GFR_P0_LEGAL_4_AND_G2_157_16_SEMANTIC_CLUSTERS_2026_11_22.md)
+
+**Actual state, not a claim of approval:** 568 canonical QABC / 822 grade routes; 0/822 independent final learner approvals. Historical 8 P0 groups source-researched but await external specialist/key/edition gates. 157 G2 original source candidates remain quarantined. PR #7 Draft, no merge. **Stop repeating the historical eight without decisive new evidence; proceed with V332's 16 G2 review clusters.** Run structural progress check after each batch: advance unique IDs, close evidence-backed gates, otherwise pivot/escalate.
+
+---
+
+## Historical checkpoint index (archived; older 'Current checkpoint' labels below are superseded)
+
 ## 2026-11-20 | CKPT-257 | Academy six negative-fixture structural preflight
 
 **Current checkpoint:** [CKPT-257: 10/10 deterministic structural preflight checks, 6 scenarios](../QUESTION_AUDIT/CKPT_257_GFR_ACADEMY_SIX_FIXTURE_STRUCTURAL_PREFLIGHT_2026_11_20.md)  
