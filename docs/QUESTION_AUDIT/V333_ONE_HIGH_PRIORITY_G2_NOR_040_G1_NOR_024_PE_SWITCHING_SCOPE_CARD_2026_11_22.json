@@ -1,0 +1,42 @@
+{
+  "schema": "V333_G2_NOR_R0040_G1_NOR_024_PE_SWITCHING_EXACT_CHOICE_IDENTITY_2026_11_22",
+  "date": "2026-11-22",
+  "new_stage_id": "ANRE-G2-NOR-XLSX-R0040",
+  "existing_qabc": "QABC-0338",
+  "existing_grade_route": "G1-NOR-024",
+  "new_stage_source": "V298 G2 Norme original source row 40",
+  "old_grade_source": "V141 canonical original G1 Norme row original",
+  "source_original_staged_stem": "Întreruperea conductorului de protecţie prin aparate de comutație",
+  "source_original_existing_stem": "Întreruperea conductorului de protecţie prin aparate de conectare:",
+  "original_ordered_options_A_B_C": [
+    " este permisă",
+    "nu este permisă",
+    " de regula nu este permisă, cu excepţia anumitor cazuri"
+  ],
+  "ordered_options_exact_normalized": true,
+  "stem_difference": "G2 'aparate de comutație' versus G1 'aparate de conectare'; related physical action of interrupting protective conductor but terminology scope not assumed identical by algorithm.",
+  "existing_imported_G1_key": "B",
+  "staged_official_G2_scored_key": "NOT_AUTHENTICATED",
+  "source_route": {
+    "existing_corroborated_prior_file": "docs/QUESTION_AUDIT/CKPT_068_P0_LOT_T_NOR010_024_026_089_090_I7_2023_DIRECT_2026_11_16.md",
+    "exact_user_supplied_I7_locator_from_prior_file": "I7 2011, consolidated 2023-09-22 §5.3.4.5.1.2 PDF page 68",
+    "additional_public_reference": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+    "scope": "TN-C: no interruption of PEN; TN-S: no interruption of PE. Do not conflate switching of neutral N with switching of protective PE.",
+    "source_authority_status": "PRIOR USER SOURCE AUDIT + SECONDARY RESEARCH CROSS_REFERENCE, NOT NEW REOPENED ORIGINAL PDF OR INDEPENDENT 2026 EDITION PROOF"
+  },
+  "original_option_reasoning": {
+    "A": "General statement that PE interruption by switching devices is permitted is inconsistent with the explicit TN-S PE continuity rule; no verified permissive exception from exact same source.",
+    "B": "Supported by exact TN-S PE continuity rule against series interruption, pending terminological mapping for 'comutație' vs 'conectare'.",
+    "C": "Claims generic exceptions without naming a lawful PE interruption regime. Must not use the fact that neutral N can be disconnected as an exception for protective PE."
+  },
+  "qualifier_gates": [
+    "I7 §5.3.4.5.1.2 is explicitly phrased for TN-C and TN-S; review other systems and exact 'protective conductor' scope before universal conclusion",
+    "No verified current official G2 correct answer letter; do not copy G1 key B into staged row",
+    "Potential concept duplicate, not proven literal original question duplicate; preserve two source items pending specialist decision",
+    "Professional technical and linguistic independent reviews remain unperformed"
+  ],
+  "proposed_current_status": "HIGH_PRIORITY_EXACT_OPTION_NEAR_STEM_SOURCE_REVIEW_ONLY",
+  "approved_for_learning": false,
+  "no_source_or_key_modifications": true,
+  "no_HTML_APK_changes": true
+}
