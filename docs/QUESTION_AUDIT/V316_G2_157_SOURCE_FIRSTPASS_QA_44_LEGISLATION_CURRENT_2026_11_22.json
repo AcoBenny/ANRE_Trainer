@@ -1,0 +1,95 @@
+{
+  "schema": "V316_G2_ORIGINAL_157_ALL_FIRSTPASS_QA_2026_11_22",
+  "date": "2026-11-22",
+  "sources_and_dependencies": {
+    "staged": "V298_G2_ORIGINAL_157_RECOVERY_CANDIDATES_QUARANTINE_2026_11_22.csv",
+    "previous_verified": "V311_G2_113_OF_157_SOURCE_REVIEW_44_LEGISLATION_PENDING_QA_2026_11_22.json",
+    "new_legislation_batches": [
+      {
+        "path": "V312_9_G2_LEG_2026_LAW123_SOURCE_ABC_RESEARCH_2026_11_22.json",
+        "rows": 9
+      },
+      {
+        "path": "V313_G2_LEG_14_ATR_CURRENT_2026_ABC_EXCEPTIONS_2026_11_22.json",
+        "rows": 14
+      },
+      {
+        "path": "V314_7_G2_LEG_FURNIZARE_2026_CONTRACT_ABC_REVIEW_2026_11_22.json",
+        "rows": 7
+      },
+      {
+        "path": "V315_LAST_14_G2_LEGISLATION_ORIGINAL_2026_REGULATION_ABC_TRIAGE_2026_11_22.json",
+        "rows": 14
+      }
+    ]
+  },
+  "results": {
+    "source_rows_stage": 157,
+    "source_firstpass_research_or_explicitscope_block": 157,
+    "old_g2_norms_done": 104,
+    "old_g2_leg_done": 9,
+    "new_legislation_done": 44,
+    "total_legislation_done": 53,
+    "now_untriaged": 0,
+    "new_leg_rows": [
+      9,
+      10,
+      12,
+      18,
+      24,
+      28,
+      31,
+      32,
+      33,
+      34,
+      38,
+      39,
+      40,
+      41,
+      43,
+      47,
+      53,
+      64,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      82,
+      83,
+      84,
+      92,
+      93,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      105,
+      106,
+      107,
+      109,
+      110
+    ],
+    "no_duplicate_new_reviews": true,
+    "new_44_source_stems_and_A_B_C_match_exactly": true,
+    "staging_kept_non_learnable": true,
+    "new_44_all_have_explicit_portal_legal_locator": true
+  },
+  "professional_gates": {
+    "technically_independently_validated": 0,
+    "linguistically_independently_validated": 0,
+    "official_scored_answer_keys_authenticated_for_new_staged": 0,
+    "source_era_and_exception_blockers_open": true,
+    "app_release_safety_gate": "CLOSED",
+    "new_157_stage_learning_approvals": 0,
+    "existing_822_grade_learning_approvals": 0
+  },
+  "anti_gaming": "A first-pass review can explicitly block unanswered cases and cannot be called 157 validated. Source scopes with conditional or superseded law remain held. No keys, app data, APK, HTML or PR merge changed."
+}
