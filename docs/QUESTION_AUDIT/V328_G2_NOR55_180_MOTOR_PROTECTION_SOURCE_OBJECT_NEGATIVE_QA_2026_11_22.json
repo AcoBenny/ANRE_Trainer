@@ -1,0 +1,74 @@
+{
+  "schema": "V328_G2_NORME_55_AND_180_CONTEXTUAL_SEMANTIC_BLOCKS",
+  "date": "2026-11-22",
+  "source": {
+    "document": "User-supplied I7/2011 forma sintetica 2023-09-22",
+    "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+    "physical_pdf_page_content_reviewed": "p62-63",
+    "reading_tool": "Local pdftotext of physical user PDF, chapters 5.3.1.1, 5.3.1.7.2 and 5.3.1.7.2.1"
+  },
+  "cases": [
+    {
+      "original": {
+        "id": "ANRE-G2-NOR-XLSX-R0055",
+        "file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+        "sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+        "row": 55,
+        "question": "Dacă protecţia motoarelor contra suprasarcinilor este realizată cu întrerupere, dispozitivul de comutaţie trebuie să întrerupă obligatoriu: ",
+        "ABC": {
+          "A": " toate conductoarele active",
+          "B": "conductorul neutru ",
+          "C": " toate conductoarele de fază"
+        }
+      },
+      "exact_scope": "Motor overload protection *if* the protective action disconnects, decide which conductors must be interrupted",
+      "source_clause": "I7 §5.3.1.7.2.1 p63",
+      "before": "§5.3.1.7.2 first demands protection from excessive heating for motors >0.5kW with special exception for fire pumps and other must-run services.",
+      "central": "When disconnecting for overload, source states interrupt all active conductors, then immediately qualifies that interrupting the neutral is NOT compulsory.",
+      "after": "§5.3.1.7.2.2 distinguishes thermal protection for abnormal winding temperature, including faults cooling or rotor blocking.",
+      "option_gate": {
+        "A": "Literally resembles first source sentence 'all active'; if active includes N, the following neutral exception means A is too strong as a universal obligation.",
+        "B": "Neutral alone is not mandatory and not adequate to drop all phases.",
+        "C": "Interrupting all phase conductors is the minimum obligation supported when neutral may remain connected; likely intended answer under the exception."
+      },
+      "preferred_current_research": "C_CONDITIONAL_NOT_OFFICIAL",
+      "semantic_status": "HOLD_FOR_CONTEXTUAL_LINGUISTIC_AND_TECHNICAL_REVIEW",
+      "reason_for_not_official": "Original A copies a partial source sentence, while following sentence limits its literal universally mandatory implication; ambiguity depends on term 'active conductors' including N."
+    },
+    {
+      "original": {
+        "id": "ANRE-G2-NOR-XLSX-R0180",
+        "file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+        "sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+        "row": 180,
+        "question": "Pe un circuit   care alimentează mai multe receptoare electrice de putere de aceeaşi natură şi destinaţie ",
+        "ABC": {
+          "A": "nu se prevede protecție comună la scurtcircuit ",
+          "B": "nu se prevede protecție comună la suprasarcină",
+          "C": "se prevede protecție la suprasarcină dacă puterea totală instalată a acestor receptoare  depăşeşte 16 kW"
+        }
+      },
+      "exact_scope": "Same-purpose/same-nature multiple power receivers on one feeder; distinguish shared short-circuit protection from per-motor overload protection",
+      "source_clause": "I7 §5.3.1.1 p62 cross-check §5.3.1.7.2 p62-63",
+      "before": "§5.2.13 electrical cable positioning precedes power-installation §5.3.",
+      "central": "§5.3.1.1 starts separate circuit per power receiver, with a narrow exception: shared short-circuit protection of several receivers of same nature and purpose where TOTAL installed power does not exceed 15kW.",
+      "after": "§5.3.1.2 accounts for simultaneous normal/starting loads; §5.3.1.7.2 requires individual motor overheating protection for motors >0.5kW, with special uninterrupted safety loads exception.",
+      "option_gate": {
+        "A": "Saying no common short-circuit protection conflicts with explicit permission for <=15kW in the appropriate regime.",
+        "B": "No common OVERLOAD protection is not the assertion in §5.3.1.1. Motor overheating protection per motor does not automatically prove a categorical prohibition of common overload protection.",
+        "C": "16kW threshold and mandatory overload action are NOT derived from the explicit 15kW SHARED SHORT-CIRCUIT clause. Different value and protection object."
+      },
+      "preferred_current_research": "NONE_SAFE",
+      "semantic_status": "BLOCKED_SOURCE_ACTION_AND_NUMERIC_THRESHOLD",
+      "reason_for_not_official": "No source matched A/B/C uniquely under the exact legal engineering action. A short-circuit permission <=15kW cannot prove mandatory overload for >16kW."
+    }
+  ],
+  "all_approval_fields": {
+    "technical_independent": false,
+    "linguist_independent": false,
+    "source_2026_edition_verified": false,
+    "ANRE_official_scored_key_verified": false,
+    "learning_releasable": false
+  },
+  "policy": "Preserve source original question and all alternatives, document conditional scope in didactic explanation, do NOT replace historical key or force new key."
+}
