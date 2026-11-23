@@ -1,0 +1,71 @@
+{
+  "schema": "batch_progress_input_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT401-NORM2",
+  "task_id": "ANRE-G2-110-NONREPEAT-FIVE-BATCHES",
+  "before": {
+    "items": [
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0035",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V342_G2_110_NONREPEATING_SOURCE_RESEARCH_BASELINE_2026_11_23.json#ANRE-G2-NOR-XLSX-R0035"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0096",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V342_G2_110_NONREPEATING_SOURCE_RESEARCH_BASELINE_2026_11_23.json#ANRE-G2-NOR-XLSX-R0096"
+        ]
+      }
+    ]
+  },
+  "after": {
+    "items": [
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0035",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V342_G2_110_NONREPEATING_SOURCE_RESEARCH_BASELINE_2026_11_23.json#ANRE-G2-NOR-XLSX-R0035",
+          "V347_LAST_TWO_G2_NOR_HISTORICAL_SOURCE_MATCH_PE102_I7_2002_ERA_HOLDS_2026_11_23.json#ANRE-G2-NOR-XLSX-R0035"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0096",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V342_G2_110_NONREPEATING_SOURCE_RESEARCH_BASELINE_2026_11_23.json#ANRE-G2-NOR-XLSX-R0096",
+          "V347_LAST_TWO_G2_NOR_HISTORICAL_SOURCE_MATCH_PE102_I7_2002_ERA_HOLDS_2026_11_23.json#ANRE-G2-NOR-XLSX-R0096"
+        ]
+      }
+    ]
+  },
+  "note": "Source-researched with contextual A/B/C evidence; key, edition, independent QA and semantic equivalence remain OPEN. Historical R0096 evidence is obsolete source only."
+}
