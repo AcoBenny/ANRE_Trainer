@@ -1,0 +1,105 @@
+{
+  "schema": "ONEPASS_V2_PILOT_ACTUAL_DATA_CHECKS_AND_SYNTHETIC_NEGATIVES",
+  "date": "2026-11-23",
+  "real_data_checks": {
+    "total": 24,
+    "passed": 24,
+    "checks": {
+      "568_distinct_QABC": true,
+      "568_distinct_legacy_AU": true,
+      "822_distinct_grade_ids": true,
+      "568_grade_keys_present": true,
+      "pilot_12_unique": true,
+      "seven_canonical": true,
+      "four_staged_G2_not_promoted": true,
+      "original_vector_orphan_3_graphical_options": true,
+      "shared_G1_G2_0017_answers_differ": true,
+      "original_source_adimensionala_modified_in_trainer": true,
+      "PE102_not_GradeI_2023_bibliography": true,
+      "PE155_specific_15m_not_I7_generic": true,
+      "didactic_explicitly_not_official_source": true,
+      "153_didactic_A_import_position_bias": true,
+      "construction_A_and_B_held": true,
+      "motor_A_and_C_held": true,
+      "NOR0037_exact_scope_era_held": true,
+      "NOR0122_numai_modal_held": true,
+      "all_twelve_approved_false": true,
+      "all_twelve_scored_ANRE_key_not_authenticated": true,
+      "all_twelve_no_independent_professional_signoff": true,
+      "no_full_original_adjacent_context_claim": true,
+      "no_long_offline_verbatim_rights_claim": true,
+      "11_synthetic_failclosed_tests_pass": true
+    }
+  },
+  "synthetic_tests": {
+    "total": 11,
+    "passed": 11,
+    "tests": [
+      {
+        "name": "positive_all_synthetic_true",
+        "expected": true,
+        "actual": true
+      },
+      {
+        "name": "negative_missing_original_ABC",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_exact_source_object",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_grade_2026_edition",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_unique_answer",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_precise_locator",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_full_context_rights",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_independent_signoff",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_graphical_source_authentic",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_stable_option_identity",
+        "expected": false,
+        "actual": false
+      },
+      {
+        "name": "negative_missing_no_original_modification",
+        "expected": false,
+        "actual": false
+      }
+    ],
+    "warning": "Synthetic gates are artificial boolean fixtures, not authentic ANRE technical sources or independent engineering reviews."
+  },
+  "test_correction": "Earlier current-turn negative checker incorrectly expected exact substring 'PE155_15M_NOT...', while evidence uses 'PE155_15M_IS_NOT...'. Fixed the test predicate only; V361 case source data unmodified.",
+  "verdict": "PILOT_INTEGRITY_AND_FAIL_CLOSED_PASS_ONLY_NOT_SOURCE_FINAL_APPROVAL",
+  "not_executed": [
+    "Original workbook bytes and exact graphical pixels",
+    "Full source before/focus/after character verification and rights",
+    "2026 source edition and professional signoff",
+    "HTML/APK real device test"
+  ],
+  "PR7_should_remain_Draft": true
+}
