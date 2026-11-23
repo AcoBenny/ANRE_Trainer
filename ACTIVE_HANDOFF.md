@@ -1,19 +1,20 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-424 confirmed: 208/822 grade-specific educational-content validated; 107/568 distinct QABC groups.** Date 2026-11-24. Repository https://github.com/AcoBenny/ANRE_Trainer | branch `audit/anre-v8-priority-17-20261109`, [PR #7](https://github.com/AcoBenny/ANRE_Trainer/pull/7) Draft / unmerged.
+**CKPT-425 SAVED: 250/822 grade routes validated for EDUCATIONAL CONTENT; 128/568 original QABC groups.** 2026-11-24 | branch `audit/anre-v8-priority-17-20261109` | [PR #7](https://github.com/AcoBenny/ANRE_Trainer/pull/7) Draft / unmerged.
 
-## READ THESE first, reuse master ledgers
-1. `docs/QUESTION_AUDIT/CKPT_424_GFR_208_OF_822_EDUCATIONAL_VALIDATIONS_2026_11_24.md`: latest checkpoint, scope notes, excluded RL terminology case.
-2. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_424_4_GROUPS_8_ROUTES_EVIDENCE_2026_11_24.json`: 4 NEW source/ABC-reviewed original QABC groups, 8 new G1/G2 routes and actual separate AI challenger session.
-3. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_424_568_QABC_MASTER_2026_11_24.json`: **107 validated / 136 historical hold / 325 pending** groups.
-4. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_424_822_GRADES_MASTER_2026_11_24.json`: **208 validated / 200 historical hold / 414 unflagged pending** routes.
-5. `docs/QUESTION_AUDIT/CLOSURE_PILOT/LEARNING_CONTENT_ACCEPTANCE_POLICY_V2_2026_11_23.json`: educational approval requires exact source/ABC/context, NOT mandatory human specialist signature or nominal 2026 bibliography listing.
-6. Prior `CKPT_423_25_GROUPS_50_ROUTES_EVIDENCE_2026_11_24.json` and CKPT-423 ledgers remain unchanged as history.
+## READ FIRST; NEVER REBUILD PRIOR INVENTORY
+1. `docs/QUESTION_AUDIT/CKPT_425_GFR_250_OF_822_EDUCATIONAL_VALIDATIONS_2026_11_24.md`: checkpoint report, accepted group IDs, exclusions, limits.
+2. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_425_21_GROUPS_42_ROUTES_EVIDENCE_2026_11_24.json`: exactly 21 new QABC / 42 grade routes; original exact ABC, grade keys, per-option evidence, source URLs, technical scope, independent reviewer IDs.
+3. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_425_568_QABC_MASTER_2026_11_24.json`: 128 validated, 136 historical held, 304 pending groups (568).
+4. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_425_822_GRADES_MASTER_2026_11_24.json`: 250 validated, 200 historical held, 372 pending routes (822).
+5. `docs/QUESTION_AUDIT/CLOSURE_PILOT/LEARNING_CONTENT_ACCEPTANCE_POLICY_V2_2026_11_23.json`: content validation is not official ANRE exam certification.
 
-## Anti-loop / constraints
-Do NOT reopen any of the 107 approved groups without materially new evidence. Do NOT auto-approve any case merely because it lacks a historical flag. Pending QABC-0064: RL attenuation-factor terminology still missing an explicit native definition; do not force. Old historical 200 held routes are separate. Avoid copied full copyrighted original source paragraphs without rights; didactic contextual card in original-before/highlight/after design is still product-stage work.
+## Preserve gates, avoid loops
+- Approved 128 QABC must not be re-reviewed absent NEW material contradiction. 200 historical-held grade routes remain separate. Other pending cases not auto-promoted because URL/card exists.
+- QABC-0045 A/B reversal in first challenger was independently corrected with exact source and original imported A preserved. QABC-0184 and others listed in CKPT-425 report remain pending after doubts.
+- QABC-0258 SF6 educational historical property is **not** authorization to install new F-gas switchgear; EU 2024/573 Art 13 has relevant 2026 restrictions.
+- Context triplets in evidence are original **editorial paraphrases**, not verbatim external source text or offline source popup. Rights, original before/after clause, offline links and real Android/HTML QA remain outstanding.
+- Never change barem, canonical QABC/ABC, HTML, APK, main or merge/release without owner approval.
 
-## Next action
-Continue **only** new unapproved original QABC, one group → exact G1/G2 routes, check original ABC/grade keys, exact source scope, preceding/following context, real counterexamples, separate challenger and QA counters. Target **250/822** (42 more route validations), stop if source/semantic conditions unresolved. PR remains Draft/unmerged. HTML/APK and key untouched. Later source-rights/offline source popup and actual UI QA before release.
-
-No recurring worker is active; this is a saved snapshot only.
+## Next GFR
+Continue only new eligible original QABC from 372 pending grade routes toward **300/822**, preserving exact source, A/B/C and independent challenger proof. Historical 200 hold routes remain in a separate queue. After all 822 adjudicated, integrate and QA contextual cards and app; owner approves any release.
