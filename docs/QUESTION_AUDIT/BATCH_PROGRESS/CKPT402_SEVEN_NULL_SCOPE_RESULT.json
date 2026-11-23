@@ -1,0 +1,52 @@
+{
+  "schema": "batch_progress_result_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT-402-SEVEN-NULL-SOURCE-QUALIFICATION",
+  "task_id": "ANRE-G2-7-NULL-SOURCE-ADJUDICATION",
+  "verdict": "PROGRESSED",
+  "action": "SWITCH_FROM_2_CLOSED_SCOPE_CASES_TO_DIFFERENT_OPEN_INDEPENDENT_GATES",
+  "counts": {
+    "before": {
+      "items": 7,
+      "open_gates": 28,
+      "approved": 0,
+      "review_ready": 0
+    },
+    "after": {
+      "items": 7,
+      "open_gates": 26,
+      "approved": 0,
+      "review_ready": 0
+    }
+  },
+  "delta": {
+    "distinct_items_advanced": 2,
+    "stage_transitions": [],
+    "closed_gates": [
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0084",
+        "gates": [
+          "SEMANTIC_EQUIVALENCE"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0024",
+        "gates": [
+          "SEMANTIC_EQUIVALENCE"
+        ]
+      }
+    ],
+    "new_processed_items": [],
+    "evidence_only_items": [
+      "ANRE-G2-NOR-XLSX-R0055",
+      "ANRE-G2-LEG-XLSX-R0039",
+      "ANRE-G2-LEG-XLSX-R0095",
+      "ANRE-G2-LEG-XLSX-R0098",
+      "ANRE-G2-NOR-XLSX-R0096"
+    ],
+    "regression_reasons": [],
+    "invalid_progress_claims": []
+  },
+  "qualification": "Scoring candidates are NOT certified; even these two have three remaining release gates. 2013/2016 ANRE annex is superseded; 25mm² neutral only with exact load conditions. No original 822 bank approval.",
+  "qa_method": "Readback new source artifact plus direct structural equivalence to repository gate criteria; committed Node CLI/CI not observed executing."
+}
