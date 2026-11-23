@@ -1,5 +1,15 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-405 | Six hard G2 source cases + 17 new independent AI option reviews, 3 source-locator corrections
+
+**Current checkpoint:** [CKPT-405 full handoff](../QUESTION_AUDIT/CKPT_405_GFR_SIX_HARD_SOURCE_CASES_SEVENTEEN_NEW_G2_AI_REVIEWS_THREE_CITATION_FIXES_2026_11_23.md)  
+**Evidence:** [V355 six hard cases](../QUESTION_AUDIT/V355_CKPT405_SIX_HARD_G2_SOURCE_SCOPE_EXTERNAL_CHALLENGE_2026_11_23.json), [V356 eight new reviews](../QUESTION_AUDIT/V356_CKPT405_8_DISTINCT_G2_LEG_EXTERNAL_AI_ABC_REVIEWS_SOURCE_LOCATOR_CORRECTION_2026_11_23.json), [V357 nine new reviews](../QUESTION_AUDIT/V357_CKPT405_9_MORE_G2_LEG_AI_OPTION_REVIEW_2_SOURCE_LOCATOR_CORRECTIONS_2026_11_23.json).  
+**Anti-loop:** [101 deterministic tests actually executed, 23 unique exact original QABC and source row checks + 9 negative guards](../QUESTION_AUDIT/BATCH_PROGRESS/CKPT405_GFR_23_UNIQUE_A_B_C_SOURCE_HOLD_NEGATIVE_TESTS_2026_11_23.json).  
+**State:** 2 additional **conditional SOURCE-ONLY** candidates (LEG-R0039 C, NOR-R0096 A); four held source-uniqueness issues include NOR-R0055, LEG-R0095, LEG-R0098, NOR-R0180. New 17 other Grade-II legislation items reviewed by separate AI researchers; no qualified human signoff, no official ANRE scored key. Locator corrections for LEG-R0102, R0099, R0105; original questions/keys immutable. Original 157 G2 staged cases remain quarantined. **0/822 final approvals. PR#7 Draft/unmerged.**  
+**Next:** exact Cod RED PDF/source visual and separate Grade-II LEG-R0032/R0076 AI option challenge; then other never-reviewed G2 items. Independent professional/official key gate remains outstanding.
+
+---
+
 ## 2026-11-23 | CKPT-404 | 35 new distinct G2 source-scope rechecks; all 41 caution records revisited, 0 final approvals
 
 **Current checkpoint:** [CKPT-404 | 35 real distinct source-scope rereads, original A/B/C hash checks, independent AI negative challenge](../QUESTION_AUDIT/CKPT_404_GFR_35_NEW_G2_CAUTION_SOURCE_SCOPE_RECHECKS_41_41_NO_FINAL_KEYS_2026_11_23.md)  
