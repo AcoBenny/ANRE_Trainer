@@ -1,0 +1,165 @@
+{
+  "schema": "CKPT406_GFR_ALL_19_NONCAUTION_ORIGINAL_G2_LEG_EXTERNAL_AI_SOURCE_REVIEW_ANTI_LOOP",
+  "date": "2026-11-23",
+  "parent": "CKPT405",
+  "counts": {
+    "noncaution_original_legislative_unique": 19,
+    "external_AI_case_review_unique": 19,
+    "question_exact": 19,
+    "ABC_exact": 19,
+    "source_row_exact": 19,
+    "release_fail_closed": 19,
+    "PDF_visual_failed_reported": 2,
+    "qualified_final_approvals": 0
+  },
+  "checks": [
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0009",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0010",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0059",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0060",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0065",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0084",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0096",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0102",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0008",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0028",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0031",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0040",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0041",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0047",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0073",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0099",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0105",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0032",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0076",
+      "original_stem_matches": true,
+      "ABC_order_and_text": true,
+      "source_row_matches": true,
+      "fail_closed": true
+    }
+  ],
+  "anti_loop": {
+    "new_actual_source_reviewed_in_CKPT406": 2,
+    "previous_reviewed_in_CKPT405": 17,
+    "unique_total": 19,
+    "untouched_in_this_EXACT_nonflag_legislation_subset": 0,
+    "source_only_grade_review_not_approval": true
+  },
+  "external_AI_execution": "8 + 9 + 2 distinct cases actually challenged by independent external research responses; no credentialed reviewer. All original QABC/row matches. Two PDF visual page failures correctly recorded.",
+  "safety": {
+    "official_keys_not_authenticated": true,
+    "PR7_Draft": true,
+    "all_157_staged_original_G2_quarantined": true,
+    "HTML_APK_not_modified": true
+  },
+  "caution": "Subset is 19 noncaution original G2 LEG questions, not all 157 G2 or all 822 grade routes."
+}
