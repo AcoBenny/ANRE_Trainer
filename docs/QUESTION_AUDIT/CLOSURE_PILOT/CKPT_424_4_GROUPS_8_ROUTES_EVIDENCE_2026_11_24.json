@@ -1,0 +1,200 @@
+{
+  "schema": "ANRE_EDUCATIONAL_VALIDATION_BATCH_V1",
+  "date": "2026-11-24",
+  "checkpoint": "CKPT-424",
+  "parent": "CKPT-423",
+  "counts": {
+    "new_QABC": 4,
+    "new_grade_routes": 8,
+    "prior_validated": 200,
+    "cumulative_validated": 208,
+    "held_grade_routes_unchanged": 200
+  },
+  "independent_AI_reviewer_session": "resp_03f7776b-7a1e-406b-828b-67fcb7006176",
+  "source_limits": "4 reopened technical/manufacturer web sources for 4 original groups (3 unique URLs). Before/core/after CONTEXT IS PARAPHRASED, not an authorized verbatim paragraph reproduction. Exact full original paragraphs, bold presentation and offline rights still require implementation review. No human official ANRE key authentication.",
+  "excluded_not_counted": [
+    {
+      "id": "QABC-0064",
+      "reason": "External AI challenger PASS_WITH_INFERENCE; Romanian term «factor de atenuare» could mean R/L rate, but sourced text only defines tau=L/R; not promoted without terminology-specific source"
+    }
+  ],
+  "records": [
+    {
+      "qabc_id": "QABC-0030",
+      "original_stem": "Compartimentarea unei celule electrice se utilizează",
+      "original_ABC": {
+        "A": "în scopul evitării extinderii avariilor;",
+        "B": "numai  în scopul protejării personalului de exploatare;",
+        "C": "protecţiei la supratensiuni"
+      },
+      "grade_ids": [
+        "G1-ELE-035",
+        "G2-ELEC-183"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-035": "A",
+        "G2-ELEC-183": "A"
+      },
+      "canonical_card_file": "V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "canonical_card_blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "source_access": "Live primary technical / manufacturer source re-opened in this audit; OpenStax is an instructional textbook, ZPUE is manufacturer product data",
+      "source_context": {
+        "url": "https://zpue.com/low-voltage-switchgears/98-oferta/medium-voltage-switchgears",
+        "section": "RELF > Design / Cubicle compartments",
+        "preceding_context_paraphrase": "Fabricantul descrie celulele de medie tensiune ca ansambluri separate prin partiții verticale/orizontale și elemente pentru controlul efectelor arcului intern.",
+        "central_rule_highlighted_paraphrase": "**Pereții și plăcile de compartimentare împiedică propagarea avariei către celulele alăturate, în condițiile constructive specificate.**",
+        "following_context_paraphrase": "Documentația identifică apoi separarea circuitelor și obturatoare pentru izolarea contactelor active; limitarea propagării nu garantează absența defectelor."
+      },
+      "physical_scope": "Compartimentare/partiții între compartimente și celule MV într-un echipament de stație; sursă producător, nu normativ generic.",
+      "reason_ABC": {
+        "A": "Funcția de limitare a efectelor arcului și propagării avariilor este menționată pentru barierele dintre celule.",
+        "B": "«Numai» protecția personalului exclude nejustificat protecția echipamentelor și continuitatea exploatării; nu este scop unic.",
+        "C": "Supratensiunile se limitează prin măsuri dedicate, nu prin simpla compartimentare."
+      },
+      "limitations": "Eficacitatea depinde de proiectare și clasele echipamentului, nu reprezintă prevenție absolută a avariilor.",
+      "independent_AI_challenger": {
+        "service": "Parallel web_research",
+        "session_id": "resp_03f7776b-7a1e-406b-828b-67fcb7006176",
+        "verdict": "PASS",
+        "review_scope": "independent technical and linguistic adversarial assessment with real source page opens",
+        "not_human_professional_review": true
+      },
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0034",
+      "original_stem": "Delimitările prin pereţi între celulele unei staţii electrice de interior se utilizează în principal în scopul:",
+      "original_ABC": {
+        "A": "asigurării unui acces mai comod la aparataj;",
+        "B": "limitării zgomotului în corpul de conexiuni;",
+        "C": "evitării extinderii avariilor."
+      },
+      "grade_ids": [
+        "G1-ELE-041",
+        "G2-ELEC-187"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-041": "C",
+        "G2-ELEC-187": "C"
+      },
+      "canonical_card_file": "V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "canonical_card_blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "source_access": "Live primary technical / manufacturer source re-opened in this audit; OpenStax is an instructional textbook, ZPUE is manufacturer product data",
+      "source_context": {
+        "url": "https://zpue.com/low-voltage-switchgears/98-oferta/medium-voltage-switchgears",
+        "section": "RELF > Cubicle compartments, inter-bay plates",
+        "preceding_context_paraphrase": "Pagina descrie celulele metalice și pereții laterali dintre compartimente și bay-uri adiacente.",
+        "central_rule_highlighted_paraphrase": "**Plăcile laterale separatoare limitează extinderea pagubelor spre celulele vecine la apariția unui arc intern.**",
+        "following_context_paraphrase": "Sunt descrise bucșele, barierele către compartimentele de cabluri și aparatul principal și obturatoarele care separă contacte posibil sub tensiune."
+      },
+      "physical_scope": "Pereți între celule din stație electrică de interior, exemplificat de celule MT metalice închise.",
+      "reason_ABC": {
+        "A": "Accesul comod poate exista ca beneficiu secundar, dar nu este scopul principal descris pentru pereții între celule.",
+        "B": "Reducerea zgomotului nu este justificarea principală a acestor bariere electrice.",
+        "C": "Limitarea propagării unui defect către celula vecină este explicit descrisă."
+      },
+      "limitations": "Sursa este fișă de producător pentru celule MT; nu certifică orice construcție de stație sau performanța efectivă a unei incinte neomologate.",
+      "independent_AI_challenger": {
+        "service": "Parallel web_research",
+        "session_id": "resp_03f7776b-7a1e-406b-828b-67fcb7006176",
+        "verdict": "PASS",
+        "review_scope": "independent technical and linguistic adversarial assessment with real source page opens",
+        "not_human_professional_review": true
+      },
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0061",
+      "original_stem": "Expresia matematica a legii lui Ohm pentru o porţiune de circuit este:",
+      "original_ABC": {
+        "A": "I = U / R",
+        "B": "I = UxR",
+        "C": "I = U - R"
+      },
+      "grade_ids": [
+        "G1-ELE-069",
+        "G2-ELEC-214"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-069": "A",
+        "G2-ELEC-214": "A"
+      },
+      "canonical_card_file": "V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "canonical_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "source_access": "Live primary technical / manufacturer source re-opened in this audit; OpenStax is an instructional textbook, ZPUE is manufacturer product data",
+      "source_context": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+        "section": "9.4 Ohm's Law > Description / Ohm's experiment (Eq. 9.11)",
+        "preceding_context_paraphrase": "Secțiunea distinge elementele ohmice, cu dependență liniară între curent și tensiune, de cele neohmice.",
+        "central_rule_highlighted_paraphrase": "**U = I·R, deci I = U/R, pentru R nenul în condițiile modelului ohmic.**",
+        "following_context_paraphrase": "Explicația precizează unitățile volt, amper și ohm și exemplifică temperatura dependentă a rezistenței; diodele nu urmează relația liniară în toate regimurile."
+      },
+      "physical_scope": "Legea lui Ohm pentru o porțiune de circuit ohmic, fără extindere abuzivă la toate dispozitivele neliniare.",
+      "reason_ABC": {
+        "A": "Rearanjarea ecuației U=IR dă I=U/R.",
+        "B": "U×R are dimensiunea V·Ω, nu A; nu rezultă din legea lui Ohm.",
+        "C": "U−R scade mărimi cu unități incompatibile (V și Ω)."
+      },
+      "limitations": "Condiție didactică: model rezistiv ohmic, R nenul; formularea nu garantează comportare liniară a oricărui semiconductor.",
+      "independent_AI_challenger": {
+        "service": "Parallel web_research",
+        "session_id": "resp_03f7776b-7a1e-406b-828b-67fcb7006176",
+        "verdict": "PASS",
+        "review_scope": "independent technical and linguistic adversarial assessment with real source page opens",
+        "not_human_professional_review": true
+      },
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0107",
+      "original_stem": "Intensitatea câmpului electric într-un anumit punct se măsoară",
+      "original_ABC": {
+        "A": "prin raportul dintre forţa exercitata asupra unei sarcini electrice în acel punct si mărimea sarcinii",
+        "B": "numai prin derivata în raport cu spaţiul cu semn schimbat a potenţialului în acel punct",
+        "C": "raportul dintre tensiunea aplicata unui conductor si rezistenta acestuia"
+      },
+      "grade_ids": [
+        "G1-ELE-116",
+        "G2-ELEC-258"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-116": "A",
+        "G2-ELEC-258": "A"
+      },
+      "canonical_card_file": "V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+      "canonical_card_blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+      "source_access": "Live primary technical / manufacturer source re-opened in this audit; OpenStax is an instructional textbook, ZPUE is manufacturer product data",
+      "source_context": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+        "section": "5.4 Electric Field > Defining a Field (Eq. 5.3)",
+        "preceding_context_paraphrase": "Se discută forța rezultantă asupra unei sarcini de probă datorată unei distribuții de sarcini sursă.",
+        "central_rule_highlighted_paraphrase": "**F = q·E, deci E = F/q pentru sarcina de probă nenulă (cu limitarea perturbării surselor).**",
+        "following_context_paraphrase": "Câmpul este descris independent de alegerea sarcinii de probă, iar calculul este prezentat ca sumă vectorială a contribuțiilor surselor."
+      },
+      "physical_scope": "Definiția locală vectorială a câmpului electric prin forță/sarcină, fără a-l reduce numai la gradientul potențialului electrostatic.",
+      "reason_ABC": {
+        "A": "Definiția electrică folosește raportul forță electrică / sarcină de probă, F/q.",
+        "B": "«Numai» este excesiv: gradientul potențialului scalar descrie partea electrostatică, nu este unica definiție a câmpului.",
+        "C": "U/R are unitatea amperului, nu N/C sau V/m; este intensitatea unui curent în model rezistiv."
+      },
+      "limitations": "Forța trebuie să fie componenta electrică, nu forța magnetică/gravitațională; sarcina de probă nu trebuie să perturbe câmpul.",
+      "independent_AI_challenger": {
+        "service": "Parallel web_research",
+        "session_id": "resp_03f7776b-7a1e-406b-828b-67fcb7006176",
+        "verdict": "PASS",
+        "review_scope": "independent technical and linguistic adversarial assessment with real source page opens",
+        "not_human_professional_review": true
+      },
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    }
+  ],
+  "change_control": "Only evidence/master ledger/handoff; no question/ABC/key/HTML/APK/main/release modifications."
+}
