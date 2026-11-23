@@ -1,0 +1,313 @@
+{
+  "schema": "V349_SEVEN_G2_PREVIOUSLY_NULL_TARGETED_NEW_LITERATURE_NOT_OFFICIAL_SCORING_2026_11_23",
+  "date": "2026-11-23",
+  "parent": "CKPT-401 + V348",
+  "purpose": "One new targeted semantic/edition adjudication of seven known source-original ambiguous Grade II items, not repeating previous 110 source-research stage. Real new evidence in source original manual and I7 Annex 5.32 and adverse norm findings.",
+  "counts": {
+    "historical_source_or_conditional_absolute_minimum_semantic_matched": 2,
+    "still_without_unique_source_supported_option": 5,
+    "source_only_provisional_candidates": 2,
+    "independently_verified_ANRE_scored_keys": 0,
+    "independent_signoffs": 0,
+    "release_approved": 0
+  },
+  "items": [
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0055",
+      "original_question": "Dacă protecţia motoarelor contra suprasarcinilor este realizată cu întrerupere, dispozitivul de comutaţie trebuie să întrerupă obligatoriu: ",
+      "original_ABC": {
+        "A": " toate conductoarele active",
+        "B": "conductorul neutru ",
+        "C": " toate conductoarele de fază"
+      },
+      "original_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_row": 55,
+      "original_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_stem_sha256": "2914e854e5852949a7acdba57b6a61790509fdc588da4fed7b947338d1e601b8",
+      "prior_status": "SOURCE_RESEARCHED_WITH_UNASSIGNED_SOURCE_CANDIDATE",
+      "prior_semantic_equivalence_gate": "OPEN",
+      "after_semantic_equivalence_gate": "OPEN",
+      "classification": "CONFLICT_BETWEEN_LITERAL_GENERAL_WORDING_AND_NEUTRAL_EXCEPTION",
+      "source_not_grade_key": null,
+      "source_edition_2026_certified": false,
+      "original_ANRE_scored_key_authenticated": false,
+      "independent_qualified_QA_signed": false,
+      "learner_release": false,
+      "evidence_urls": [
+        "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/"
+      ],
+      "article_locators": [
+        "I7 §5.3.1.7.2.1, three consecutive clauses on active conductors, phase and optional neutral interruption"
+      ],
+      "context_before_editorial": "Overload protection normally covers active conductors, explicitly exempting the neutral from mandatory overload detection.",
+      "decisive_source_point_editorial": "The source commands disconnection of all active conductors when interruption is used but immediately states neutral interruption is not mandatory.",
+      "context_after_editorial": "Three-phase overload protection monitors all three phase conductors; object of the exam option 'all active' includes neutral in other definitions.",
+      "original_options_analysis": {
+        "A": "Literal copy of broad all-active disconnection wording, but seemingly clashes with immediately following N exception.",
+        "B": "Neutral-only is insufficient for mandatory motor three-phase interruption.",
+        "C": "Phase-only is consistent with neutral-exemption operational purpose but not the exact broad 'all active' wording."
+      },
+      "source_limit": "No unique source-scored letter without expert interpretation of whether 'active' in this clause is narrowed by the special N exception. Preserve two readings; source wording is potentially internally inconsistent.",
+      "next_specific_external_gate": "Qualified technical+linguistic reviewer to annotate exact relation of the general instruction to its same-paragraph exception."
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0084",
+      "original_question": "Pentru un circuit trifazat cu patru conductoare de aluminiu cu secţiunea conductoarelor de fază de 35 mm2,  conductorul neutru  are secţiunea minimă de:  ",
+      "original_ABC": {
+        "A": "16 mm2",
+        "B": "25 mm2",
+        "C": "35 mm2"
+      },
+      "original_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_row": 84,
+      "original_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_stem_sha256": "4b73523ab64330860ffed993498289a94ecba6ba0d307d886c902d39a51f2d68",
+      "prior_status": "SOURCE_RESEARCHED_WITH_UNASSIGNED_SOURCE_CANDIDATE",
+      "prior_semantic_equivalence_gate": "OPEN",
+      "after_semantic_equivalence_gate": "CLOSED_FOR_EXPLICIT_HISTORICAL_OR_MINIMUM_ALLOWED_SOURCE_SCOPE_ONLY",
+      "classification": "CONDITIONED_ABSOLUTE_MINIMUM_ANCHOR_FOUND",
+      "source_not_grade_key": "B",
+      "source_edition_2026_certified": false,
+      "original_ANRE_scored_key_authenticated": false,
+      "independent_qualified_QA_signed": false,
+      "learner_release": false,
+      "evidence_urls": [
+        "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/"
+      ],
+      "article_locators": [
+        "I7 §5.2.4.6.1(a)-(d)",
+        "I7 §5.2.4.6.2",
+        "I7 §5.2.4.6.3(a)-(b)",
+        "I7 Annex 5.32, Table row neutral N, Al phase 35 mm²"
+      ],
+      "context_before_editorial": "For phase Al up to 25 mm², neutral generally equals phase; at higher phase sections a reduction is potentially allowed only under the applicable phase-balance/harmonics and neutral overcurrent criteria.",
+      "decisive_source_point_editorial": "Annex5.32 lists aluminium phase 35 mm² with minimum aluminium neutral 25 mm² when 3rd harmonics and multiples remain below 15%; reduced-neutral conditions must also hold.",
+      "context_after_editorial": "When neutral unbalance or triplen harmonics occur, the design may require neutral 35 mm² or even larger; Annex5.29 and the protection scheme must be checked.",
+      "original_options_analysis": {
+        "A": "16 mm² Al is not the table minimum for Al phase 35 mm², so cannot be accepted as the Annex5.32 answer.",
+        "B": "25 mm² Al is the lowest permissible listed neutral under the table's explicitly favorable load/harmonic assumptions, hence B is a source-backed minimum-POSSIBLE candidate.",
+        "C": "35 mm² Al may be needed for unbalanced or harmonic-rich circuit; it is not the lowest permitted section across permissible configurations."
+      },
+      "source_limit": "Original question omits balancing/harmonics/protection regime. B is a source-conditional lower bound, NOT unconditional safe sizing for every 35mm² circuit. Do not promote to ANRE graded key without official scoring evidence.",
+      "next_specific_external_gate": "For didactic teaching display a balanced low-triplen and an unbalanced/high-triplen counterexample; obtain independent specialist + edition and original score key before release."
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0024",
+      "original_question": "În vederea înscrierii la examenul de autorizare, electricianul trebuie să prezinte  în documentaţia anexată cererii de autorizare ,,Detalii privind lucrările realizate\"; acest document este:",
+      "original_ABC": {
+        "A": "Opţional (solicitantul decide dacă îl transmite sau nu)",
+        "B": "Nerelevant",
+        "C": "Un document obligatoriu, care trebuie întocmit corelat cu documenteie ,,Experienţă profesională\" și ,,Pagina de informaţii anexate cererii de autorizare\""
+      },
+      "original_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "original_row": 24,
+      "original_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_stem_sha256": "794a4e3e069d16c12f27bdfc59c968ecc93191c25fa54bc045e5aa54849a8ece",
+      "prior_status": "SOURCE_RESEARCHED_WITH_UNASSIGNED_SOURCE_CANDIDATE",
+      "prior_semantic_equivalence_gate": "OPEN",
+      "after_semantic_equivalence_gate": "CLOSED_FOR_EXPLICIT_HISTORICAL_OR_MINIMUM_ALLOWED_SOURCE_SCOPE_ONLY",
+      "classification": "HISTORICAL_OPTION_MAPPED_NEW_EVIDENCE_2026_UNFIT",
+      "source_not_grade_key": "C",
+      "source_edition_2026_certified": false,
+      "original_ANRE_scored_key_authenticated": false,
+      "independent_qualified_QA_signed": false,
+      "learner_release": false,
+      "evidence_urls": [
+        "https://arhiva.anre.ro/download.php?f=g6p%2FhA%3D%3D&t=vdeyut7dlcecrLbbvbY%3D",
+        "https://edirect.e-guvernare.ro/Admin/Proceduri/ProceduraVizualizare_old.aspx?IdInregistrare=25506",
+        "https://lexapp.ro/legislatie/ordinul-99-2021-anre/",
+        "https://legislatie.just.ro/Public/DetaliiDocument/288046"
+      ],
+      "article_locators": [
+        "ANRE Ordin 11/2013 Annex1 C, D as amended Ord116/2016",
+        "Government eDirect archived old authorization procedure document table",
+        "ANRE Ord99/2021 Art2 effective 2022-01-01 repeals Ord11/2013",
+        "ANRE Ord66/2023 Art17 effective 2023-05-16"
+      ],
+      "context_before_editorial": "In archived official ANRE Annex1, professional experience is recorded on form B and documentary evidence is supplemented by document C; the checklist verifies dossier completeness.",
+      "decisive_source_point_editorial": "Archived Annex1 document C is named Detalii privind lucrările realizate and the dossier instructions require the applicant to complete and sign it.",
+      "context_after_editorial": "Old official eDirect procedure specifically lists form C as part of the authorization application; it still references Ord11/2013 and is a stale procedure, not a present-day requirement.",
+      "original_options_analysis": {
+        "A": "Not optional under historical Ord11/2013 Annex1 mandatory documents, contrary to the A qualifier.",
+        "B": "Not irrelevant in the historical annex; it records work and backs up professional experience.",
+        "C": "Direct historical original-document support. The 2023 Excel wording matches the former Annex1 form and checklist."
+      },
+      "source_limit": "Source is OBSOLETE for May 2023 too: Ord11/2013 was superseded effective 2022-01-01 by Ord99/2021; Ord66/2023 applies from 2023-05-16. Must NOT use this archived C as 2026 exam scored answer.",
+      "next_specific_external_gate": "Check whether exact form survived in Ord99/2021 or official historic ANRE scored key; if not, preserve as stale/teaching historical item only."
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0039",
+      "original_question": "Actualizarea avizului tehnic de racordare atunci când se produce schimbarea titularului locului de producere sau de consum ",
+      "original_ABC": {
+        "A": "este obligatorie numai dacă se modifică puterea aprobată anterior prin avizul tehnic de racordare;",
+        "B": "nu este obligatorie",
+        "C": "este obligatorie "
+      },
+      "original_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "original_row": 39,
+      "original_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_stem_sha256": "cc5c5439ec3900ff61ef3f0e85e979a4dcfef1f07c167ae097fdb3a063433be3",
+      "prior_status": "SOURCE_RESEARCHED_WITH_UNASSIGNED_SOURCE_CANDIDATE",
+      "prior_semantic_equivalence_gate": "OPEN",
+      "after_semantic_equivalence_gate": "OPEN",
+      "classification": "ATR_VS_POST_CONNECTION_CERTIFICATE_CONDITION_MATERIAL",
+      "source_not_grade_key": "C",
+      "source_edition_2026_certified": false,
+      "original_ANRE_scored_key_authenticated": false,
+      "independent_qualified_QA_signed": false,
+      "learner_release": false,
+      "evidence_urls": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/310640"
+      ],
+      "article_locators": [
+        "Ord59/2013 §6(3)(b), final qualification sentence after (c)",
+        "§11(1) and §11(3)",
+        "§25 and §32"
+      ],
+      "context_before_editorial": "Source §6(3) treats holder replacement as an administrative modification if power and technical installation unchanged.",
+      "decisive_source_point_editorial": "The norm expressly exempts the connection certificate of an ALREADY CONNECTED site from updating on a holder-only change; this does not say a still active ATR is exempt.",
+      "context_after_editorial": "ATR is the offer at an earlier connection process phase and is valid only until a connection certificate; original does not state precise site stage.",
+      "original_options_analysis": {
+        "A": "Holder change has regulatory significance even absent power change; A only-if-power rule too restrictive.",
+        "B": "Can be true for an already connected CERTIFICATE, but the original explicitly asks ATR. Not a blanket ATR rule.",
+        "C": "Plausible for active ATR change-of-holder case, but cannot certify universal obligation for all post-connection site conditions from original missing regime."
+      },
+      "source_limit": "Original stem asks ATR not certificate; C is source-favored in active-ATR regime only, but no official scored key or binding explicit unconditional mandate established.",
+      "next_specific_external_gate": "Independent legal reviewer must pin holder-change request obligation at the original 2023 edition and site stage, then confirm grade-specific ANRE key."
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0095",
+      "original_question": "Avizul tehnic de racordare este un aviz scris valabil:",
+      "original_ABC": {
+        "A": "pentru orice  titular al locului de producere/consum respectiv",
+        "B": "numai pentru un anumit titular al locului de producere/consum",
+        "C": "pe o perioadă de timp nelimitată"
+      },
+      "original_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "original_row": 95,
+      "original_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_stem_sha256": "72ca3b9f56bd17499a2bc6d9004eeae9d0415703120a2400a6a86559299ce3e6",
+      "prior_status": "SOURCE_RESEARCHED_WITH_UNASSIGNED_SOURCE_CANDIDATE",
+      "prior_semantic_equivalence_gate": "OPEN",
+      "after_semantic_equivalence_gate": "OPEN",
+      "classification": "EXACT_NORM_OBJECT_MISMATCH_AMPLASAMENT_VS_TITULAR",
+      "source_not_grade_key": null,
+      "source_edition_2026_certified": false,
+      "original_ANRE_scored_key_authenticated": false,
+      "independent_qualified_QA_signed": false,
+      "learner_release": false,
+      "evidence_urls": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/310640"
+      ],
+      "article_locators": [
+        "Ord59/2013 Annex1 definition of 'aviz tehnic de racordare'",
+        "§6(3)(b)-(c) holder-change admin",
+        "§32-33 expiry conditions"
+      ],
+      "context_before_editorial": "Normative term is defined as an offer/notice issued by network operator at request for a specific site and technical/economic conditions.",
+      "decisive_source_point_editorial": "The Annex1 actual exclusive qualifier is a specific AMPLASAMENT, not a uniquely specified TITULAR.",
+      "context_after_editorial": "Holder may change under administrative update; ATR does not last indefinitely, and post-connection certificate has separate status.",
+      "original_options_analysis": {
+        "A": "'Any holder' ignores request-identity and administrative changes; does not reproduce the legal term.",
+        "B": "'Only a certain holder' is not the literal exclusive statutory qualifier; Annex1 names the site, not the holder. B may reflect historic intended key, but lacks exact-current-source equivalence.",
+        "C": "'Unlimited time' contradicts validity limits in §§32-33."
+      },
+      "source_limit": "Exact legal object mismatch, stronger negative evidence than last run. Do not silently replace 'amplasament' by 'titular' or set B officially.",
+      "next_specific_external_gate": "Seek ANRE original graded key/version or independent legal/linguistic adjudication. Preserve literal source-contradiction card."
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0098",
+      "original_question": "Dacă se solicită avizul tehnic de racordare pentru o organizare de de şantier, documentaţia anexată cererii va cuprinde în mod obligatoriu şi:",
+      "original_ABC": {
+        "A": "certificatul de urbanism al obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;",
+        "B": "autorizaţia de construire a obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;\n",
+        "C": "contractul încheiat cu un furnizor de energie electrică\n"
+      },
+      "original_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "original_row": 98,
+      "original_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_stem_sha256": "ead4d671b6f00daab61cf60ce6099c7f7956774e9813e015cada0030d349547e",
+      "prior_status": "SOURCE_RESEARCHED_WITH_UNASSIGNED_SOURCE_CANDIDATE",
+      "prior_semantic_equivalence_gate": "OPEN",
+      "after_semantic_equivalence_gate": "OPEN",
+      "classification": "MULTIPLE_A_AND_B_VALID_IN_NEW_BUILDING_CONTEXT",
+      "source_not_grade_key": null,
+      "source_edition_2026_certified": false,
+      "original_ANRE_scored_key_authenticated": false,
+      "independent_qualified_QA_signed": false,
+      "learner_release": false,
+      "evidence_urls": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/310640"
+      ],
+      "article_locators": [
+        "Ord59/2013 §14(1)(c), §14(1)(h)",
+        "§14(1)(c) later amendments"
+      ],
+      "context_before_editorial": "For a new/altered construction, the urbanism certificate belongs to initial application documentation.",
+      "decisive_source_point_editorial": "The same article separately requires a construction permit when applying for temporary electricity supply of a construction organization.",
+      "context_after_editorial": "Retail supply contract is not listed as compulsory for the initial network connection request.",
+      "original_options_analysis": {
+        "A": "May be mandatory for new or changed construction under §14(1)(c).",
+        "B": "Explicitly mandatory for construction-site organization under §14(1)(h).",
+        "C": "Supplier contract is not mandatory application attachment in §14(1)."
+      },
+      "source_limit": "The question specifies site organization but not whether a new/modified structure is involved. In common new-building case A+B can both be required. No safe single answer without the intended examination qualification.",
+      "next_specific_external_gate": "Get original source edition and verified scored key; alternatively classify as genuine multiple-correct source stem and teach condition on both."
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0096",
+      "original_question": "Este obligatorie protecţia la suprasarcini pentru:",
+      "original_ABC": {
+        "A": "instalaţii din încăperi din categoriile celor cu risc de incendiu sau de explozie",
+        "B": "instalaţii de comandă ",
+        "C": "instalaţii de semnalizare"
+      },
+      "original_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_row": 96,
+      "original_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_stem_sha256": "24bc01e96cc3b5302942d75917cfcce53ea4c0ef8b4a61d3bce4130777efb2f0",
+      "prior_status": "SOURCE_RESEARCHED_WITH_UNASSIGNED_SOURCE_CANDIDATE",
+      "prior_semantic_equivalence_gate": "OPEN",
+      "after_semantic_equivalence_gate": "OPEN",
+      "classification": "SUPERSEDED_HISTORICAL_NORM_NO_CURRENT_ERA_SOURCE",
+      "source_not_grade_key": null,
+      "source_edition_2026_certified": false,
+      "original_ANRE_scored_key_authenticated": false,
+      "independent_qualified_QA_signed": false,
+      "learner_release": false,
+      "evidence_urls": [
+        "https://www.rasfoiesc.com/inginerie/electronica/NORMATIV-PENTRU-PROIECTAREA-SI29.php",
+        "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/"
+      ],
+      "article_locators": [
+        "I7/2002 §4.2.9 (historic original)",
+        "I7/2011 §4.3.2.4 and fire-safety protective design exceptions"
+      ],
+      "context_before_editorial": "Old I7/2002 §4.2.9 lists overload protection as compulsory for specific fire/explosion risk room categories.",
+      "decisive_source_point_editorial": "Original option A aligns to old I7/2002 categories whereas old §4.2.9 also separately mentions control and signaling as exceptions.",
+      "context_after_editorial": "I7/2011 later replaced the 2002 norm; exact 2002 rule cannot certify 2026 exam scope without an applicable 2011/2023 equivalent.",
+      "original_options_analysis": {
+        "A": "Historical intended choice is likely A for specifically classified risk environments; modern norm applicability is NOT proven.",
+        "B": "Old norm includes control installation among contextual overload protection omissions.",
+        "C": "Old norm includes signaling installation among contextual overload protection omissions."
+      },
+      "source_limit": "Source-year mismatch is confirmed. A remains historical teaching hint, not a 2026 ANRE scored answer.",
+      "next_specific_external_gate": "Review 2026 grade bibliography for exact updated normative fire-risk provision and original key, do not rewrite question or score automatically."
+    }
+  ],
+  "hard_boundary": "SEMANTIC_EQUIVALENCE closed means exact source-to-original 2013/2016 historical wording for LEG-R0024, or minimum permissible under balanced low-harmonics source text for NOR-R0084. It does NOT mean 2023/2026 grade source edition approved, answer letter official, original unqualified electrical sizing safe, or independence of reviewer.",
+  "safety": {
+    "no_original_A_B_C_changes": true,
+    "no_barem_changes": true,
+    "no_master_html_apk_changes": true,
+    "all_157_G2_source_candidates_still_quarantined": true,
+    "no_merge_or_release": true,
+    "PR7_Draft": true
+  },
+  "source_verification_limits": [
+    "ANRE 2016 official archived PDF parsed and ANRE e-government HTML independently corroborated. Web PDF visual screenshot retrieval failed, so not visually authenticated.",
+    "2026 ANRE bibliography and official scored answer key not established.",
+    "I7 Annex5.32 online text is public reproduction, reviewed with adjacent §5.2.4.6.1-3, not a digitally signed ANRE grade-specific edition.",
+    "Secondary question bank internet reproductions are NOT used as official score authentication."
+  ]
+}
