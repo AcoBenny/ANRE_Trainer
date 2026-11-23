@@ -1,5 +1,15 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-407 | All 43 distinct G2 noncaution NOR original source-option AI challenges done, two qualified holds
+
+**Current checkpoint:** [CKPT-407 | 43 original G2 NOR source options, 41 provisional + 2 conditional holds](../QUESTION_AUDIT/CKPT_407_GFR_43_G2_NOR_SOURCE_AI_CHECKS_41_PROVISIONAL_2_OPEN_GATES_2026_11_23.md)  
+**Source research and original A/B/C:** [V359 43 IDs, independent AI source research provenance, exact scope/edition correction for NOR-R0037 and 'numai Cu' qualification NOR-R0122](../QUESTION_AUDIT/V359_CKPT407_43_G2_NOR_INDEPENDENT_AI_SOURCE_REVIEW_2_SCOPE_GATES_2026_11_23.json).  
+**Anti-loop QA:** [43/43 original QABC/row/hash alignment, 731/731 structural fields, 12/12 negative guards, fail-closed release](../QUESTION_AUDIT/BATCH_PROGRESS/CKPT407_GFR_43_G2_NOR_SOURCE_AI_QABC_SCOPE_REGRESSION_2026_11_23.json); **68/110** distinct latest cohort external preliminary AI source-challenged, **42/110** next untouched by *this* review type.  
+**Important correction:** NOR-R0037 was linked to an I7 paragraph governing *apparatus*; PE102/1986 §4.4.7 directly governs *circuits*, but PDF page screenshot failed and applicability to 2026 exam is not certified. R0122 option 'numai cupru' is a supported but linguistic-strengthened paraphrase.  
+**Safety / hard gate:** 157 original G2 quarantined; **0/822 independent qualified learning approvals**, no authenticated ANRE scored keys, no canonical, HTML or APK changes; PR #7 remains Draft/unmerged. Next: 42 distinct source-cautioned G2 items (29 NOR / 13 LEG), then reconcile remaining older 47 G2 originals, plus qualified scoring gate. Do NOT rerun these 43 without material new source.
+
+---
+
 ## 2026-11-23 | CKPT-406 | All 19 G2 noncaution original legislation AI source options reviewed, no certified answer keys
 
 **Current checkpoint:** [CKPT-406: 19/19 distinct noncaution G2 LEG original source-option preliminary AI reviews](../QUESTION_AUDIT/CKPT_406_GFR_COMPLETE_19_NONCAUTION_G2_LEGISLATION_AI_SOURCE_REVIEW_2026_11_23.md)  
