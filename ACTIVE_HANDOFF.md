@@ -1,19 +1,19 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-422 DONE | 150/822 grade-specific routes validated for educational content, 78/568 QABC groups.** 2026-11-23. Repo https://github.com/AcoBenny/ANRE_Trainer | branch `audit/anre-v8-priority-17-20261109` | PR #7 remains Draft, unmerged.
+**CKPT-423 confirmed: 200/822 grade-specific educational-content validated; 103/568 distinct QABC groups.** Date 2026-11-24. Repo https://github.com/AcoBenny/ANRE_Trainer | branch `audit/anre-v8-priority-17-20261109`, [PR #7](https://github.com/AcoBenny/ANRE_Trainer/pull/7) Draft / unmerged.
 
-## Authoritative evidence, no repeated inventory
-1. `docs/QUESTION_AUDIT/CKPT_422_GFR_150_OF_822_EDUCATIONAL_VALIDATIONS_2026_11_23.md`: checkpoint +50, exclusions, QA.
-2. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_422_25_QABC_50_GRADES_EDUCATIONAL_PROOFS_2026_11_23.json`: 25 freshly accepted QABC covering 50 unique grade routes, original A/B/C, evidence URLs, historical card SHAs and two external independent AI review IDs.
-3. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_422_568_GROUPS_MASTER_2026_11_23.json`: canonical 568 QABC status ledger. 78 educational content approved, 136 historical hold, 354 remaining without historical hold.
-4. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_422_822_GRADES_MASTER_2026_11_23.json`: canonical 822 grade ID ledger. 150 educational content approved, 200 historical hold, 472 unflagged pending. **Counts must supersede CKPT-421/420 for further runs.**
-5. `docs/QUESTION_AUDIT/CLOSURE_PILOT/LEARNING_CONTENT_ACCEPTANCE_POLICY_V2_2026_11_23.json`: teaching-only policy (source + A/B/C + card). No mandatory specialist signature or exam-year bibliography checkbox; correctness and alternatives still essential.
+## READ THESE first; never rebuild inventory
+1. `docs/QUESTION_AUDIT/CKPT_423_GFR_200_OF_822_EDUCATIONAL_VALIDATIONS_2026_11_24.md`: latest checkpoint with exclusions and limitations.
+2. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_423_25_GROUPS_50_ROUTES_EVIDENCE_2026_11_24.json`: 25 NEW original groups, 50 new grade routes, unchanged imported G1/G2 keys, original A/B/C, source URLs, prior card SHA and model-specific justifications, five independent AI reviewer sessions.
+3. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_423_568_QABC_MASTER_2026_11_24.json`: authoritative all-568-group ledger: **103 content approved, 136 historical source/semantic hold, 329 no known hold pending**.
+4. `docs/QUESTION_AUDIT/CLOSURE_PILOT/CKPT_423_822_GRADES_MASTER_2026_11_24.json`: authoritative 822-grade ledger: **200 approved, 200 historical hold, 422 unflagged pending**. Use this counter, not CKPT-422.
+5. `docs/QUESTION_AUDIT/CLOSURE_PILOT/LEARNING_CONTENT_ACCEPTANCE_POLICY_V2_2026_11_23.json`: education purpose means no required human specialist signature or annual bibliography formality; source-supported ABC and caveats remain mandatory.
 
-## Negative controls
-Do not inflate progress using QABC-0176 inverse square voltage loss (long line shunt issue), QABC-0179 connected-node count, QABC-0197 balanced delta, QABC-0145 alternating waveform definition, QABC-0107 electric-field potential gradient, and earlier conditional cases. Reopen completed 78 only with new concrete contrary evidence or source edition change that affects material correctness.
+## Avoid loops and false certification
+Do not re-review approved 103 QABC without NEW material contrary evidence, changed applicable source edition, or question/key mismatch. Unresolved conditional issues remain unapproved. CKPT-423 negative examples and their reasons in proof. Historic QABC-0252 link to EPO was irrelevant; corrected evidence citation is EIA power glossary. Source pages not all individually reopened in this batch; reviewer is an independent AI pass, not a qualified human signed review. Do not call these 200 officially ANRE certified or app tested.
 
 ## Next action
-Continue GFR on only never-approved QABC, including marked unofficial didactic units as separate category if appropriate; no repeated V371 inventory. For each new item use existing original/candidate A/B/C card, primary law/credible technical source, explicit model limitations and skeptical review, then update both masters atomically, verify PR. Held 200 routes tracked separately. Later app integration needs before/central highlighted/after source paragraphs, rights and real HTML/APK offline testing; no premature release.
+Only new unapproved QABC for future GFR, using detailed existing technical source + ABC and an adversarial challenge. Keep 200 historical hold routes separate. Eventually integrate source excerpts before/bold/after, offline rights and actual HTML/APK tests; no release until owner approval.
 
 ## Safety
-No modifications to source XLSX, original keys, question text/ABC, HTML, APK, main, merge or release; only audit documentation. 415 source original and 153 unofficial didactic QABC; 157 G2 candidate additions and 11 Electro orphan rows outside 822.
+No barem/original question/HTML/APK/main changed. Only audit documentation on PR #7 Draft. The 157 quarantined G2 candidates and 11 orphan Electro rows are NOT part of the 822 bank.
