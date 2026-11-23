@@ -1,0 +1,1039 @@
+{
+  "schema": "V348_FULL_G2_110_UNIQUE_ORIGINAL_SOURCE_RESEARCH_RECONCILIATION_2026_11_23",
+  "date": "2026-11-23",
+  "baseline": "V342 110 distinct original G2 stage rows",
+  "source_batch_artifacts": [
+    "V343_G2_NOR_NEW_I7_SOURCE_RESEARCH_AND_ABC_2026_11_23.json",
+    "V344_G2_NOR_31_SOURCE_RESEARCH_ITEMS_2_PENDING_2026_11_23.json",
+    "V345_G2_24_NEW_LEGISLATION_SOURCE_RESEARCH_72_ABC_2026_11_23.json",
+    "V346_G2_11_FINAL_LEGISLATION_SOURCE_RESEARCH_33_ABC_2026_11_23.json",
+    "V347_LAST_TWO_G2_NOR_HISTORICAL_SOURCE_MATCH_PE102_I7_2002_ERA_HOLDS_2026_11_23.json"
+  ],
+  "counts": {
+    "baseline_source_original_rows": 110,
+    "distinct_grade_II_rows_with_source_research": 110,
+    "grade_II_legislation_researched": 35,
+    "grade_II_norme_researched": 75,
+    "option_A_B_C_reasons_recorded": 330,
+    "candidate_original_answer_NULL_due_to_source_qualifier": 7,
+    "source_edition_or_semantic_qualifier_flags": 48,
+    "missing_baseline_rows": 0,
+    "unexpected_nonbaseline_rows": 0,
+    "duplicate_stage_IDs": 0,
+    "previous_prior_source_researched_not_recopied": 47,
+    "entire_G2_source_researched_total": 157,
+    "learner_released_original_G2_rows": 0,
+    "independently_approved_CANONICAL_grade_routes": 0
+  },
+  "source_research_coverage": [
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0008",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SAFE_RESTART_AND_SHORT_INTERVAL_CONDITION",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0012",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "CORRIDOR_WIDTH_OVER_3M_EXCEPTION",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0015",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0017",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0032",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0033",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0044",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0047",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0055",
+      "category": "Norme tehnice",
+      "key": null,
+      "flag": "SOURCE_INTERNAL_NEUTRAL_ALL_ACTIVE_TENSION",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0076",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0077",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "MANUFACTURER_SPECIFIED_LIMIT_HAS_PRIORITY",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0114",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "TRANSFORMER_THERMAL_ELECTRODYNAMIC_CHECK_REQUIRED",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0129",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0132",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0139",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0140",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0141",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "TN_AND_TT_SAME_RULE;IT_SEPARATE",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0142",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "TWO_CONCURRENT_EXCEPTIONS_MAY_OMIT_NEUTRAL_PROTECTION",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0143",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_TN_TT_IT_CONTEXT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0148",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0149",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0150",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "DDR_DEPENDS_ON_PRIMARY_PROTECTION",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0165",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0166",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0170",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SIMULTANEOUS_AS_SUBSET_NOT_UNIQUE_IF_WORDING",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0174",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0183",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0184",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0185",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0190",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0193",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0197",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0198",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0199",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0200",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "MUST_ALSO_LACK_EARTHED_CONDUCTIVE_PARTS",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0201",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0202",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0203",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0204",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0205",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0206",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0207",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SOURCE_SCOPED_DIRECT",
+      "source": "V343_ANRE_G2_NOR_FIRST_I7_EXACT_SOURCE_BATCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0031",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "MOTOR_FIRE_PUMP_TRIP_EXCEPTION",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0037",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0053",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "FIBRE_2023_EXCEPTION",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0060",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "IT_MONITORING_FIRST_FAULT",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0084",
+      "category": "Norme tehnice",
+      "key": null,
+      "flag": "UNSPECIFIED_HARMONICS_BALANCE_AND_ANNEX",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0085",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0086",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "CRITICAL_SAFETY_RECEIVER",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0091",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "P118_2_DEPENDENCY",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0095",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0108",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "CORRECT_RATING_COORDINATION",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0115",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0118",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "DISCONNECTION_TIME",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0122",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0136",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "SHARED_NOT_INDIVIDUAL_EARTH",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0137",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0138",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0144",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "RCD_DISTANCE",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0145",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0151",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "IF_SHORTER_USE_SHARED_1OHM",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0152",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "UNDER20m",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0161",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "SOURCE_2011_2023_ERA",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0167",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0171",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0178",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "UNDER20m",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0179",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "FIRE_SAFETY_CHAPTER_CONTEXT",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0180",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "COMMON_OVERLOAD_SCOPE_EXTRA_REVIEW",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0181",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "FEASIBILITY",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0182",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": "LOCAL_10_VS_TOTAL_4",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0186",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0187",
+      "category": "Norme tehnice",
+      "key": "C",
+      "flag": null,
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0188",
+      "category": "Norme tehnice",
+      "key": "B",
+      "flag": "SHORT_CIRCUIT_SETTING_IS_5X",
+      "source": "V344_G2_NOR_31_SOURCE_CLAUSE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0008",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0009",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0010",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0012",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "COFINANCING_ALLOWED",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0024",
+      "category": "Legislatie",
+      "key": null,
+      "flag": "HISTORICAL_FORM_ABSENT_CURRENT_RULE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0028",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0031",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0032",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0038",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "COMPLAINT_WITHIN_30_DAYS",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0039",
+      "category": "Legislatie",
+      "key": null,
+      "flag": "ATR_VS_CERTIFICATE_ISSUANCE_STATE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0040",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0041",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0043",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "OBJECT_INSTALLATION_NOT_OWNERSHIP",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0047",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0058",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "NO_EXAM_EXCEPTIONS_REQUIRE_SEMANTIC_REVIEW",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0059",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0060",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0064",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "CUMULATIVE_ELIGIBILITY_NOT_ADDITIVE_YEARS",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0065",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0073",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0074",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "2008_CODE_2026_ERA_CHECK",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0075",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "DATE_AND_PERCENTILE_CRITICAL",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0076",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0077",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "FORCE_MAJEURE_MUST_BE_PROVEN",
+      "source": "V345_G2_24_LEGISLATION_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0083",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "OD_CONCESSIONAIRE_ALSO_ELIGIBLE",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0084",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0092",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "PRENOTICE_AND_CONTRACT",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0095",
+      "category": "Legislatie",
+      "key": null,
+      "flag": "ATR_PERSON_VS_SITE_STATUS_AND_TRANSFER_GAP",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0096",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "NONE",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0097",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "EMAIL_AND_POST_ALSO_PERMITTED",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0098",
+      "category": "Legislatie",
+      "key": null,
+      "flag": "TWO_POTENTIALLY_CORRECT_A_AND_B_REQUIRE_QUALIFIER",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0099",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "NONE",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0102",
+      "category": "Legislatie",
+      "key": "A",
+      "flag": "NONE",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0105",
+      "category": "Legislatie",
+      "key": "C",
+      "flag": "NONE",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0110",
+      "category": "Legislatie",
+      "key": "B",
+      "flag": "SUSPENSION_DISCRETIONARY_AND_OBLIGATION_ANNEX_SCOPE",
+      "source": "V346_G2_11_REMAINING_LEG_ORIGINAL_SOURCE_RESEARCH_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0035",
+      "category": "Norme tehnice",
+      "key": "A",
+      "flag": "PE102_SOURCE_EXACT_PE107_EXCEPTIONS_NOT_RETRIEVED",
+      "source": "V347_LAST_2_NOR_ORIGINAL_SOURCE_HISTORY_PE102_AND_I7_2002_2026_11_23"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0096",
+      "category": "Norme tehnice",
+      "key": null,
+      "flag": "OBSOLETE_I7_2002_EXACT_SOURCE_MATCH_2026_EDITION_NOT_PROVEN",
+      "source": "V347_LAST_2_NOR_ORIGINAL_SOURCE_HISTORY_PE102_AND_I7_2002_2026_11_23"
+    }
+  ],
+  "provisional_key_NULL_records": [
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0055",
+      "reason": "SOURCE_INTERNAL_NEUTRAL_ALL_ACTIVE_TENSION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0084",
+      "reason": "UNSPECIFIED_HARMONICS_BALANCE_AND_ANNEX"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0024",
+      "reason": "HISTORICAL_FORM_ABSENT_CURRENT_RULE"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0039",
+      "reason": "ATR_VS_CERTIFICATE_ISSUANCE_STATE"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0095",
+      "reason": "ATR_PERSON_VS_SITE_STATUS_AND_TRANSFER_GAP"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0098",
+      "reason": "TWO_POTENTIALLY_CORRECT_A_AND_B_REQUIRE_QUALIFIER"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0096",
+      "reason": "OBSOLETE_I7_2002_EXACT_SOURCE_MATCH_2026_EDITION_NOT_PROVEN"
+    }
+  ],
+  "scope_or_era_flags": [
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0008",
+      "flag": "SAFE_RESTART_AND_SHORT_INTERVAL_CONDITION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0012",
+      "flag": "CORRIDOR_WIDTH_OVER_3M_EXCEPTION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0055",
+      "flag": "SOURCE_INTERNAL_NEUTRAL_ALL_ACTIVE_TENSION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0077",
+      "flag": "MANUFACTURER_SPECIFIED_LIMIT_HAS_PRIORITY"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0114",
+      "flag": "TRANSFORMER_THERMAL_ELECTRODYNAMIC_CHECK_REQUIRED"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0141",
+      "flag": "TN_AND_TT_SAME_RULE;IT_SEPARATE"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0142",
+      "flag": "TWO_CONCURRENT_EXCEPTIONS_MAY_OMIT_NEUTRAL_PROTECTION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0143",
+      "flag": "SOURCE_TN_TT_IT_CONTEXT"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0150",
+      "flag": "DDR_DEPENDS_ON_PRIMARY_PROTECTION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0170",
+      "flag": "SIMULTANEOUS_AS_SUBSET_NOT_UNIQUE_IF_WORDING"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0200",
+      "flag": "MUST_ALSO_LACK_EARTHED_CONDUCTIVE_PARTS"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0031",
+      "flag": "MOTOR_FIRE_PUMP_TRIP_EXCEPTION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0053",
+      "flag": "FIBRE_2023_EXCEPTION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0060",
+      "flag": "IT_MONITORING_FIRST_FAULT"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0084",
+      "flag": "UNSPECIFIED_HARMONICS_BALANCE_AND_ANNEX"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0086",
+      "flag": "CRITICAL_SAFETY_RECEIVER"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0091",
+      "flag": "P118_2_DEPENDENCY"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0108",
+      "flag": "CORRECT_RATING_COORDINATION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0118",
+      "flag": "DISCONNECTION_TIME"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0136",
+      "flag": "SHARED_NOT_INDIVIDUAL_EARTH"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0144",
+      "flag": "RCD_DISTANCE"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0151",
+      "flag": "IF_SHORTER_USE_SHARED_1OHM"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0152",
+      "flag": "UNDER20m"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0161",
+      "flag": "SOURCE_2011_2023_ERA"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0178",
+      "flag": "UNDER20m"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0179",
+      "flag": "FIRE_SAFETY_CHAPTER_CONTEXT"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0180",
+      "flag": "COMMON_OVERLOAD_SCOPE_EXTRA_REVIEW"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0181",
+      "flag": "FEASIBILITY"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0182",
+      "flag": "LOCAL_10_VS_TOTAL_4"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0188",
+      "flag": "SHORT_CIRCUIT_SETTING_IS_5X"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0012",
+      "flag": "COFINANCING_ALLOWED"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0024",
+      "flag": "HISTORICAL_FORM_ABSENT_CURRENT_RULE"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0038",
+      "flag": "COMPLAINT_WITHIN_30_DAYS"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0039",
+      "flag": "ATR_VS_CERTIFICATE_ISSUANCE_STATE"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0043",
+      "flag": "OBJECT_INSTALLATION_NOT_OWNERSHIP"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0058",
+      "flag": "NO_EXAM_EXCEPTIONS_REQUIRE_SEMANTIC_REVIEW"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0064",
+      "flag": "CUMULATIVE_ELIGIBILITY_NOT_ADDITIVE_YEARS"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0074",
+      "flag": "2008_CODE_2026_ERA_CHECK"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0075",
+      "flag": "DATE_AND_PERCENTILE_CRITICAL"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0077",
+      "flag": "FORCE_MAJEURE_MUST_BE_PROVEN"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0083",
+      "flag": "OD_CONCESSIONAIRE_ALSO_ELIGIBLE"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0092",
+      "flag": "PRENOTICE_AND_CONTRACT"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0095",
+      "flag": "ATR_PERSON_VS_SITE_STATUS_AND_TRANSFER_GAP"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0097",
+      "flag": "EMAIL_AND_POST_ALSO_PERMITTED"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0098",
+      "flag": "TWO_POTENTIALLY_CORRECT_A_AND_B_REQUIRE_QUALIFIER"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0110",
+      "flag": "SUSPENSION_DISCRETIONARY_AND_OBLIGATION_ANNEX_SCOPE"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0035",
+      "flag": "PE102_SOURCE_EXACT_PE107_EXCEPTIONS_NOT_RETRIEVED"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0096",
+      "flag": "OBSOLETE_I7_2002_EXACT_SOURCE_MATCH_2026_EDITION_NOT_PROVEN"
+    }
+  ],
+  "critical_scope_limitations": [
+    "All 157 original G2 source rows have source-research artifacts (47 before this session, 110 this session) but NO official Grade-II scored answer-key proof, no independent qualified technical/linguistic reviewer signoff and no 2026 applicable source corpus approval.",
+    "Last 2 Norme roots: R0035 old PE102/1986 §2.7 with unexamined PE107 exceptions and PDF image unverified; R0096 source of exact wording obsolete I7/2002 §4.2.9, no direct confirmation in I7/2011/2023. Both still carry release blocking edition checks.",
+    "Norme source I7/2011 exact source section found in public amended HTML for 73 other rows, but exam-specific book version unverified.",
+    "Two legal original questions (R0098 ATR construction-site documents and R0039 ATR holder update) cannot be assigned a unique safe correct answer from the available text; R0098 may have BOTH A and B due to Art14(1)(c)/(h).",
+    "R0024 historical application form absent current Ord66/2023 application list, R0095 holder-specific ATR validity rule has scope uncertainty.",
+    "This reconciliation proves source-RESEARCH completeness, NOT source-VERIFIED independent legality, NOT scored keys, NOT learning readiness."
+  ],
+  "next_stage": "INDEPENDENT_REVIEW_GATE_NOT_APPROVED",
+  "safe": {
+    "no_source_questions_or_keys_changed": true,
+    "no_HTML_APK_modifications": true,
+    "all_157_staged_quarantined": true,
+    "PR7_draft_until_approval": true
+  }
+}
