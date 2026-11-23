@@ -1,0 +1,358 @@
+{
+  "schema": "V371_5_HISTORICAL_EVIDENCE_RECOVERY_V1",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-414",
+  "parent": "CKPT-413",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "prior_commit": "b3488a323413f504abfe69893ac800416b4b50fb",
+  "selection": "Five smallest unprocessed semantic-hold QABC from V370A after excluding first 15",
+  "prior_processed_unique_qabc": [
+    "QABC-0143",
+    "QABC-0236",
+    "QABC-0362",
+    "QABC-0386",
+    "QABC-0017",
+    "QABC-0094",
+    "QABC-0013",
+    "QABC-0019",
+    "QABC-0024",
+    "QABC-0025",
+    "QABC-0036",
+    "QABC-0044",
+    "QABC-0046",
+    "QABC-0050",
+    "QABC-0065"
+  ],
+  "current_five_qabc": [
+    "QABC-0069",
+    "QABC-0080",
+    "QABC-0082",
+    "QABC-0091",
+    "QABC-0092"
+  ],
+  "all_processed_unique_qabc": [
+    "QABC-0143",
+    "QABC-0236",
+    "QABC-0362",
+    "QABC-0386",
+    "QABC-0017",
+    "QABC-0094",
+    "QABC-0013",
+    "QABC-0019",
+    "QABC-0024",
+    "QABC-0025",
+    "QABC-0036",
+    "QABC-0044",
+    "QABC-0046",
+    "QABC-0050",
+    "QABC-0065",
+    "QABC-0069",
+    "QABC-0080",
+    "QABC-0082",
+    "QABC-0091",
+    "QABC-0092"
+  ],
+  "stats": {
+    "this_increment_unique_groups": 5,
+    "this_increment_grade_routes": 10,
+    "unique_prior_reports_reopened": 4,
+    "unique_prior_editorial_files_reopened": 2,
+    "v371_unique_groups_before": 15,
+    "v371_unique_groups_after": 20,
+    "v371_grade_routes_before": 27,
+    "v371_grade_routes_after": 37,
+    "new_source_technical_or_semantic_gates_verified": 0,
+    "new_qualified_independent_reviews": 0,
+    "new_source_2026_excerpts_authenticated": 0,
+    "new_learner_approvals": 0,
+    "global_learner_approvals": 0
+  },
+  "records": [
+    {
+      "order": 1,
+      "qabc_id": "QABC-0069",
+      "grade_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 84,
+      "kind": "ORIGINAL",
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-077": "A",
+        "G2-ELEC-222": "A"
+      },
+      "question_options_from_existing_audit_draft_NOT_original_workbook_reopened": {
+        "question": "Forţa care se exercită asupra unui conductor rectiliniu, parcurs de curentul i, aflat în câmpul de inducţie magnetică B se numeşte:",
+        "A": "forţă electromagnetică (Laplace)",
+        "B": "forţă electrodinamică",
+        "C": "forţă magnetomotoare"
+      },
+      "source_prior_analysis_paths": [
+        {
+          "path": "docs/QUESTION_AUDIT/V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+          "blob_sha_reopened_in_this_increment": "d045d7f2d49c5f6cf25a532e12fb6a3406ed526d"
+        },
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+          "blob_sha_reopened_in_this_increment": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd"
+        }
+      ],
+      "editorial_prior_card": {
+        "path": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+        "blob_sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf"
+      },
+      "legacy_source_url_pattern_only": [
+        "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+        "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor"
+      ],
+      "source_pointer_class": "DIRECT_URL_UNREOPENED",
+      "historical_hold": true,
+      "hold_type": "TERM_SCOPE_LAPLACE_VS_ELECTRODYNAMIC",
+      "prior_analysis_findings_not_new_certification": "A forță electromagnetică (Laplace) este termenul intenționat, dar B forță electrodinamică poate avea sens parțial suprapus; formula F=I(l×B) nu stabilește singură nomenclatura unică în română.",
+      "ABC_explanations_present_in_editorial_draft": true,
+      "previous_state": "HISTORICAL_SEMANTIC_HOLD_WITH_V370_PRIOR_REPORT_POINTER",
+      "new_state": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_ABC_REOPENED_PENDING_EXACT_SOURCE_AND_QA",
+      "new_gate_verified": false,
+      "original_workbook_bytes_reopened": false,
+      "new_primary_source_reopened": false,
+      "app_edited": false,
+      "official_key_authentication": "NOT_VERIFIED",
+      "edition_grade_2026": "NOT_VERIFIED",
+      "source_context_and_rights": "NOT_VERIFIED",
+      "independent_expert_qa": "NOT_RUN",
+      "learner_approved": false,
+      "next_specific_gate": "Redeschide un glosar/manual românesc din bibliografia aplicabilă și confruntă definițiile Laplace/electrodinamică + A/B/C, ediție, QA independent.",
+      "last_processed_checkpoint": "CKPT-414"
+    },
+    {
+      "order": 2,
+      "qabc_id": "QABC-0080",
+      "grade_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 95,
+      "kind": "ORIGINAL",
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-088": "A",
+        "G2-ELEC-233": "A"
+      },
+      "question_options_from_existing_audit_draft_NOT_original_workbook_reopened": {
+        "question": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+        "A": "limitarea posibilităţilor de producere a unui defect în instalaţie;",
+        "B": "mărirea riscului de producere a unor scăpări de gaz;",
+        "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment."
+      },
+      "source_prior_analysis_paths": [
+        {
+          "path": "docs/QUESTION_AUDIT/V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+          "blob_sha_reopened_in_this_increment": "d045d7f2d49c5f6cf25a532e12fb6a3406ed526d"
+        },
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+          "blob_sha_reopened_in_this_increment": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd"
+        }
+      ],
+      "editorial_prior_card": {
+        "path": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+        "blob_sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf"
+      },
+      "legacy_source_url_pattern_only": [
+        "https://www.hitachienergy.com/content/dam/web/products-services/products-systems/high-voltage-switchgear/documents/msm/2ghv045871-msm-user-manual-rev-r.pdf",
+        "https://switchgearcontent.com/2019/05/23/494/requirements-for-enclosure-partitioning-in-gis-design-according-to-iec-standard/"
+      ],
+      "source_pointer_class": "DIRECT_URL_UNREOPENED",
+      "historical_hold": true,
+      "hold_type": "GIS_OCCURRENCE_VS_CONTAINMENT",
+      "prior_analysis_findings_not_new_certification": "Compartimentarea unei instalații GIS poate limita extinderea unui defect, nu demonstrează că reduce însăși inițierea defectelor. Efectele asupra riscului de scurgeri de gaz sunt condiționale.",
+      "ABC_explanations_present_in_editorial_draft": true,
+      "previous_state": "HISTORICAL_SEMANTIC_HOLD_WITH_V370_PRIOR_REPORT_POINTER",
+      "new_state": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_ABC_REOPENED_PENDING_EXACT_SOURCE_AND_QA",
+      "new_gate_verified": false,
+      "original_workbook_bytes_reopened": false,
+      "new_primary_source_reopened": false,
+      "app_edited": false,
+      "official_key_authentication": "NOT_VERIFIED",
+      "edition_grade_2026": "NOT_VERIFIED",
+      "source_context_and_rights": "NOT_VERIFIED",
+      "independent_expert_qa": "NOT_RUN",
+      "learner_approved": false,
+      "next_specific_gate": "Caută text exact de proiectare GIS despre compartimentare, propagare, frecvența defectelor, scurgeri și masele de gaz, cu context și QA A/B/C.",
+      "last_processed_checkpoint": "CKPT-414"
+    },
+    {
+      "order": 3,
+      "qabc_id": "QABC-0082",
+      "grade_ids": [
+        "G1-ELE-090",
+        "G2-ELEC-234"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 97,
+      "kind": "ORIGINAL",
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-090": "A",
+        "G2-ELEC-234": "A"
+      },
+      "question_options_from_existing_audit_draft_NOT_original_workbook_reopened": {
+        "question": "În cazul apariţiei fenomenului de rezonanţă într-un circuit de curent alternativ, alimentat de la o sursă, aceasta furnizează circuitului:",
+        "A": "numai energie activă",
+        "B": "energie activă şi reactivă",
+        "C": "numai energie reactivă"
+      },
+      "source_prior_analysis_paths": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+          "blob_sha_reopened_in_this_increment": "6ed8123e78d82a049da5ab5844e47ca1d1c99d87"
+        }
+      ],
+      "editorial_prior_card": {
+        "path": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+        "blob_sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf"
+      },
+      "legacy_source_url_pattern_only": [],
+      "source_pointer_class": "REPORT_POINTER_ONLY",
+      "historical_hold": true,
+      "hold_type": "RESONANCE_NET_Q_VS_ENERGY_EXCHANGE",
+      "prior_analysis_findings_not_new_certification": "În RLC ideal la rezonanță sursa livrează putere activă netă și Q net zero, dar L și C continuă să schimbe energie reactivă; «numai» este condițional.",
+      "ABC_explanations_present_in_editorial_draft": true,
+      "previous_state": "HISTORICAL_SEMANTIC_HOLD_WITH_V370_PRIOR_REPORT_POINTER",
+      "new_state": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_ABC_REOPENED_PENDING_EXACT_SOURCE_AND_QA",
+      "new_gate_verified": false,
+      "original_workbook_bytes_reopened": false,
+      "new_primary_source_reopened": false,
+      "app_edited": false,
+      "official_key_authentication": "NOT_VERIFIED",
+      "edition_grade_2026": "NOT_VERIFIED",
+      "source_context_and_rights": "NOT_VERIFIED",
+      "independent_expert_qa": "NOT_RUN",
+      "learner_approved": false,
+      "next_specific_gate": "Verifică în sursa relevantă definiția energiei furnizate vs bilanțul puterii reactive nete, modelul și eventualele excepții. QA independent.",
+      "last_processed_checkpoint": "CKPT-414"
+    },
+    {
+      "order": 4,
+      "qabc_id": "QABC-0091",
+      "grade_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 106,
+      "kind": "ORIGINAL",
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-099": "A",
+        "G2-ELEC-242": "A"
+      },
+      "question_options_from_existing_audit_draft_NOT_original_workbook_reopened": {
+        "question": "În cazul scăderii sau întreruperii tensiunii de alimentare, motoarele asincrone se pot opri, iar la restabilirea tensiunii:",
+        "A": "ele autopornesc, indiferent de tipul constructiv al rotorului în scurtcircuit",
+        "B": "pentru a reporni necesită dispozitiv de pornire",
+        "C": "ele autopornesc numai dacă au rotor în dublă colivie"
+      },
+      "source_prior_analysis_paths": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+          "blob_sha_reopened_in_this_increment": "0ca43dc2e5d22153b778d800905dc033245f4d80"
+        },
+        {
+          "path": "docs/QUESTION_AUDIT/V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+          "blob_sha_reopened_in_this_increment": "d045d7f2d49c5f6cf25a532e12fb6a3406ed526d"
+        }
+      ],
+      "editorial_prior_card": {
+        "path": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+        "blob_sha": "ec247d596737c3763032694469bf5c220f125346"
+      },
+      "legacy_source_url_pattern_only": [
+        "https://productinfo.se.com/tesys_tera_master/tesys-tera-motor-management-system-user-guide/EN/TeSys-Tera-User%20Guide-DOCA0257EN-02.xml/$/W2_TeSys_Tera_UG_Automatic_Restart_0001016455"
+      ],
+      "source_pointer_class": "DIRECT_URL_UNREOPENED",
+      "historical_hold": true,
+      "hold_type": "MOTOR_AUTORESTART_CONTROL_NOT_ROTOR",
+      "prior_analysis_findings_not_new_certification": "Repornirea după revenirea tensiunii depinde de circuitul de comandă, protecții și sarcină, nu universal de tipul rotorului; autopornirea poate fi periculoasă.",
+      "ABC_explanations_present_in_editorial_draft": true,
+      "previous_state": "HISTORICAL_SEMANTIC_HOLD_WITH_V370_PRIOR_REPORT_POINTER",
+      "new_state": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_ABC_REOPENED_PENDING_EXACT_SOURCE_AND_QA",
+      "new_gate_verified": false,
+      "original_workbook_bytes_reopened": false,
+      "new_primary_source_reopened": false,
+      "app_edited": false,
+      "official_key_authentication": "NOT_VERIFIED",
+      "edition_grade_2026": "NOT_VERIFIED",
+      "source_context_and_rights": "NOT_VERIFIED",
+      "independent_expert_qa": "NOT_RUN",
+      "learner_approved": false,
+      "next_specific_gate": "Verifică schema exactă de comandă/protecție, ediția, condițiile de auto-restart, nu recomanda operare; validează A/B/C independent.",
+      "last_processed_checkpoint": "CKPT-414"
+    },
+    {
+      "order": 5,
+      "qabc_id": "QABC-0092",
+      "grade_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 107,
+      "kind": "ORIGINAL",
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-100": "A",
+        "G2-ELEC-243": "A"
+      },
+      "question_options_from_existing_audit_draft_NOT_original_workbook_reopened": {
+        "question": "În cazul schemelor cu două sisteme de bare colectoare şi un întreruptor pe circuit, funcţionarea cu ambele sisteme de bare sub tensiune este avantajoasă deoarece permite:",
+        "A": "scurtarea duratei manevrelor în caz de ocolire a unui întreruptor;",
+        "B": "micşorarea daunelor de nealimentare a consumatorilor în caz de scurtcircuit pe unul dintre sistemele de bare;",
+        "C": "scurtarea duratei manevrelor în caz de revizie a unuia dintre sistemele de bare colectoare."
+      },
+      "source_prior_analysis_paths": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_233_GFR_15_P2_G1_ELE_092_108_SUBSTATION_MOTOR_TOPOLOGY_2026_11_18.md",
+          "blob_sha_reopened_in_this_increment": "0ca43dc2e5d22153b778d800905dc033245f4d80"
+        }
+      ],
+      "editorial_prior_card": {
+        "path": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+        "blob_sha": "ec247d596737c3763032694469bf5c220f125346"
+      },
+      "legacy_source_url_pattern_only": [],
+      "source_pointer_class": "REPORT_POINTER_ONLY",
+      "historical_hold": true,
+      "hold_type": "TWO_BUSBAR_TOPOLOGY_UNDERSPECIFIED",
+      "prior_analysis_findings_not_new_certification": "Avantajul celor două bare colectoare energizate nu dovedește posibilitatea ocolirii întreruptorului fără schema unifilară, cupla, circuitul de ocolire și politica de exploatare.",
+      "ABC_explanations_present_in_editorial_draft": true,
+      "previous_state": "HISTORICAL_SEMANTIC_HOLD_WITH_V370_PRIOR_REPORT_POINTER",
+      "new_state": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_ABC_REOPENED_PENDING_EXACT_SOURCE_AND_QA",
+      "new_gate_verified": false,
+      "original_workbook_bytes_reopened": false,
+      "new_primary_source_reopened": false,
+      "app_edited": false,
+      "official_key_authentication": "NOT_VERIFIED",
+      "edition_grade_2026": "NOT_VERIFIED",
+      "source_context_and_rights": "NOT_VERIFIED",
+      "independent_expert_qa": "NOT_RUN",
+      "learner_approved": false,
+      "next_specific_gate": "Obține schema unifilară aplicabilă, stările cuplei și traseele de ocolire; validează separat A/B/C și grad/ediție.",
+      "last_processed_checkpoint": "CKPT-414"
+    }
+  ],
+  "next_five_preview_ONLY_NOT_PROCESSED": [
+    "QABC-0096",
+    "QABC-0105",
+    "QABC-0113",
+    "QABC-0115",
+    "QABC-0116"
+  ],
+  "guardrails": {
+    "unchanged_822_key_text_html_apk": true,
+    "PR7_draft": true,
+    "no_release": true,
+    "source_urls_not_reopened": true,
+    "original_xlsx_not_reopened": true,
+    "same_assistant_integrity_checks_only": true,
+    "quarantined_g2_157_electro_orphans_11_outside_scope": true
+  }
+}
