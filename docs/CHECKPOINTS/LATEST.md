@@ -1,5 +1,16 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-403 | 6 distinct G2 legal caution source reopens, 35 others pending first recheck
+
+**Current checkpoint:** [CKPT-403: 6 distinct source reopens, 12 structural consistency and release-gate checks passed](../QUESTION_AUDIT/CKPT_403_GFR_SIX_DISTINCT_G2_LEGAL_REOPENS_35_UNREOPENED_NO_RELEASE_2026_11_23.md)  
+**Item source-review pack:** [V351: original question A/B/C, clauses, exceptions, version holds](../QUESTION_AUDIT/V351_G2_SIX_DISTINCT_LEGAL_CAUTION_SOURCE_REOPENS_2026_11_23.json)  
+**Progress/anti-loop:** 6/41 distinct previously flagged Grade-II original legislation items reopened with additional legal text/context; no repeat of the 7 CKPT-402 source-NULL cases. 35/41 not yet rechecked in this phase. All 41 still require edition and qualified independent QA gates. 12 deterministic structural/release-guard checks passed, **not** independent expert QA.  
+**Critical finding:** LEG-R0058 requires the Ordin 66/2023 Art12(b)/Art13 without-exam exception to qualify the ordinary exam rule. LEG-R0075 remains held for exact effect of 2025 amendment to Ordin 46/2021.  
+**Safety:** 157/157 G2 staged questions still quarantined; 0 official ANRE scored-key authentications, 0/822 independently approved learner routes. Canonical 568 QABC / 822 grade placements untouched, no original key/HTML/APK changes, PR #7 Draft/unmerged, no release.  
+**Next:** Only research the 35 distinct unopened caution items using new clause/edition evidence, then obtain independent technical/linguistic signoff; do not count source re-reads as approvals.
+
+---
+
 ## 2026-11-23 | CKPT-402 | Seven known Grade-II source-NULL cases source adjudicated, 2 scoped gates closed, 5 held
 
 **Current checkpoint:** [CKPT-402: historical ANRE form + I7 aluminium neutral min source, five remaining semantic cases](../QUESTION_AUDIT/CKPT_402_GFR_SEVEN_G2_NULL_TWO_SCOPED_SOURCE_RESOLUTIONS_FIVE_HELD_2026_11_23.md)  
