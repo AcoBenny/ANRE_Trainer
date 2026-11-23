@@ -1,22 +1,24 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**Active checkpoint:** CKPT-410 | **Phase:** V371.1 DONE (schema/scaffold only) | **Next:** GFR 371.2, MAX FIVE distinct QABC. **Date:** 2026-11-23.
+**Current checkpoint: CKPT-411. GFR V371.2 COMPLETE. Next: GFR 371.3, EXACTLY five additional QABC.** Date 2026-11-23.
 
-Repo: https://github.com/AcoBenny/ANRE_Trainer  
+Repository: https://github.com/AcoBenny/ANRE_Trainer  
 Branch: `audit/anre-v8-priority-17-20261109`  
-PR #7: https://github.com/AcoBenny/ANRE_Trainer/pull/7 (Draft, never merge without user approval)
+PR #7: https://github.com/AcoBenny/ANRE_Trainer/pull/7 (Draft, never merge or release without explicit user approval)
 
-## Resume from these exact files (read in order)
-1. `docs/QUESTION_AUDIT/CKPT_410_V371_1_QUEUE_SCHEMA_AND_ANTI_LOOP_RULES_2026_11_23.md`
-2. `docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V371_SOURCE_READINESS_QUEUE_SCHEMA_2026_11_23.json`
-3. `docs/QUESTION_AUDIT/CKPT_409_GFR_ONEPASS_V2_RECONCILED_568_822_157_11_AND_822_SOURCE_POINTERS_2026_11_23.md`
-4. `docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V370A_COMPACT_568_QABC_EVIDENCE_GAP_AND_CARD_POINTERS_2026_11_23.json` and `docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V370_ONEPASS_V2_ALL_822_PRIOR_RESEARCH_POINTERS_456_URL_GROUPS_112_REPORT_ONLY_2026_11_23.json`
+## Mandatory resume links/paths
+1. `docs/QUESTION_AUDIT/CKPT_411_V371_2_FIRST5_PRIORITY_QABC_PROVENANCE_2026_11_23.md` (the current checkpoint).
+2. `docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V371_2_FIRST5_P0_TRACE_RECOVERY_2026_11_23.json` (five verified historical source/report pointers, original-vs-Trainer A/B/C versioned questions, named unresolved gates).
+3. `docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V371_SOURCE_READINESS_QUEUE_SCHEMA_2026_11_23.json` (immutable CKPT-410 queue contract).
+4. `docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V370A_COMPACT_568_QABC_EVIDENCE_GAP_AND_CARD_POINTERS_2026_11_23.json`, `docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V370_ONEPASS_V2_ALL_822_PRIOR_RESEARCH_POINTERS_456_URL_GROUPS_112_REPORT_ONLY_2026_11_23.json` and CKPT-409 for global baseline. Consult full V369 only for exact applicable content with accessible size/bytes; never claim original XLSX reauthenticated without reopening them.
 
-## Exactly what next chat should do
-**371.2 only:** select **five QABC** by V371 priority policy using existing 568/822 pointer inventories. Recover existing report/source clues before new search; produce per-QABC old->new status and truly verified new gates; no double count; checkpoint + this handoff updated and GitHub readback. Stop after the five.
+## Actual done, no relabeling
+First 5 QABC (7 grade routes) in V371 queue: **QABC-0143, QABC-0236, QABC-0362, QABC-0386, QABC-0017**. Each has existing historical report content reopened and pointer/variant conflicts recorded. Four have original XLSX-vs-Trainer semantic differences. QABC-0017 has conflicting G1=A vs G2=C imported keys. All five remain strict historical holds. **NEW official source verification, expert QA, final learner approvals: 0.** Historical conflicts not closed.
 
-## Never confuse progress with approval
-**822 grade routes / 568 distinct QABC** already reconciled. 136 historic semantic/source holds include 6 strict holds; four original-source vs Trainer variants overlap those holds. 456 groups have URL-like candidate leads; 112 report-only groups still have prior research. 415 source-native + 153 UNOFFICIAL didactic units. **0/822 final learner approvals.** G2 157 quarantined candidate rows + 11 Electro orphans OUTSIDE 822, separately gated. Scaffold V371.1 has **zero audited QABC** and no newly resolved technical gates.
+## Next increment strictly bounded
+**371.3**: start with remaining strict **QABC-0094**, then next FOUR unique QABC historic semantic/source holds by ascending numeric QABC ID, excluding the five processed above. For all: V370A identity → V370 prior report path → actual historical report text → source/Trainer variants → explicit option/scope/edition gates and independent QA status. Stop at five groups, write CKPT-412 and update this handoff in one docs-only GitHub commit, read back and report old/new metrics.
 
-## Nonnegotiable safeguards
-No canonical key/stem/ABC changes; no HTML, APK, main, PR merge or release. Real source clauses, original adjacent context, edition and grade, official-vs-didactic separation, independent QA, explicit rights checks and actual offline UI tests are needed for later learner approval. A same-assistant checklist is not independent signoff. Keep micro-increments <=5 QABC, save and read back every increment; if no verified gate changes, count zero progress. Ask user only for evidenced unresolved judgement or a proposed bank/key change.
+**Anti-loop:** preserve `processed_qabc_ids` = [QABC-0143, QABC-0236, QABC-0362, QABC-0386, QABC-0017]. Already processed trace records do not earn new credit; only source or QA gates with novel evidence change progress. At every increment: repo commit SHA, verified file readback, status delta, exact next five queue selector. **No autonomous background workers.**
+
+## Global boundaries
+Original 568 distinct QABC / 822 grade routes. 415 original source-native + 153 marked UNOFFICIAL didactic. 136 historical semantic/source holds with six strict holds; source/Trainer material variants four (overlap). 456 groups have candidate URL strings, 112 report-only but still prior research; neither = source certification. 157 G2 candidate rows + 11 Electro orphan records remain outside 822. **Final learner approvals remain 0/822.** Do not edit original QABC/keys, HTML, APK, main or merge/release PR #7. Escalate to user only unresolved source-backed decision, not routine audit.
