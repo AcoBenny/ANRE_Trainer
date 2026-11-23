@@ -1,0 +1,343 @@
+{
+  "schema": "V371_MICRO_BATCH_TRACE_AND_GATE_STATUS_V1",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-413",
+  "increment": "371.4",
+  "parent": "CKPT-412",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "prior_branch_head": "44953b98f3cd2adfa7b1f988e726a5b9c18a5bff",
+  "selection_policy": "First five numeric historical semantic holds excluding previous 10, no duplicates",
+  "processed_previous_qabc": [
+    "QABC-0143",
+    "QABC-0236",
+    "QABC-0362",
+    "QABC-0386",
+    "QABC-0017",
+    "QABC-0094",
+    "QABC-0013",
+    "QABC-0019",
+    "QABC-0024",
+    "QABC-0025"
+  ],
+  "processed_this_increment": [
+    "QABC-0036",
+    "QABC-0044",
+    "QABC-0046",
+    "QABC-0050",
+    "QABC-0065"
+  ],
+  "processed_total_distinct_qabc": [
+    "QABC-0143",
+    "QABC-0236",
+    "QABC-0362",
+    "QABC-0386",
+    "QABC-0017",
+    "QABC-0094",
+    "QABC-0013",
+    "QABC-0019",
+    "QABC-0024",
+    "QABC-0025",
+    "QABC-0036",
+    "QABC-0044",
+    "QABC-0046",
+    "QABC-0050",
+    "QABC-0065"
+  ],
+  "counts": {
+    "distinct_qabc_this_increment": 5,
+    "grade_routes_this_increment": 10,
+    "reopened_unique_historical_reports": 6,
+    "reopened_unique_editorial_drafts": 2,
+    "v371_distinct_qabc_before": 10,
+    "v371_distinct_qabc_after": 15,
+    "v371_grade_routes_before": 17,
+    "v371_grade_routes_after": 27,
+    "new_source_clause_2026_verified": 0,
+    "new_source_technical_gates_resolved": 0,
+    "new_independent_review": 0,
+    "new_learner_approvals": 0,
+    "global_learner_approvals": 0
+  },
+  "records": [
+    {
+      "order": 1,
+      "id": "QABC-0036",
+      "qabc_id": "QABC-0036",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "imported_keys_preserved": {
+        "G1-ELE-043": "A",
+        "G2-ELEC-189": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 50,
+      "original_qabc_from_prior_editorial_NOT_ORIGINAL_XLSX_REOPEN": {
+        "question": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
+        "A": "cu tensiunea între faze",
+        "B": "numai cu puterile active generate",
+        "C": "cu puterile reactive generate"
+      },
+      "source_pointer_class": "DIRECT_URL_UNREOPENED",
+      "historical_analyses_reopened": [
+        {
+          "path": "docs/QUESTION_AUDIT/V82_NINE_ELECTRICAL_P0_SOURCE_FORMULA_CONDITION_CHECKS.csv",
+          "blob_sha_read_in_current_increment": "2c389490b3cc9dbee729d3cb9c6ddad805567d80"
+        }
+      ],
+      "editorial_card_reopened": {
+        "path": "docs/QUESTION_AUDIT/V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+        "sha": "1991a79fa69116a9b5735cd8cf3dd074aaa074d7"
+      },
+      "old_source_locator": "Power triangle S²=P²+Q² lines 51–68; three-phase S=√3 U I lines 74–92",
+      "old_source_url_pattern_unverified": [
+        "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power"
+      ],
+      "historical_semantic_hold": true,
+      "strict_hold": false,
+      "issue_from_prior_evidence": "Curent statoric direct proporțional: fără precizarea U/S/P/Q și regimul generatorului, niciuna dintre afirmațiile A/B/C nu este demonstrată universal.",
+      "exact_object_scope_caveat": "Circuit statoric al generatorului trifazat; I=|S|/(sqrt(3)*U) în model echilibrat, cu S constant. Extrapolarea la direct proporțional cu U cere ipoteze suplimentare.",
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_AND_EXISTING_SEMANTIC_HOLD",
+      "new_state": "PREEXISTING_HOLD_WITH_ABC_REPORTS_REOPENED_AWAITING_EXACT_SOURCE",
+      "new_traceability_record": true,
+      "newly_resolved_technical_source_gate": false,
+      "qualified_independent_qa": "NOT_RUN",
+      "original_excel_reopened": false,
+      "primary_source_reopened": false,
+      "source_edition_2026_authenticated": false,
+      "official_key_authenticated": false,
+      "learner_approved": false,
+      "next_specific_gate": "Sursă primară de model generator, regim de funcționare și verificare condițională a fiecărei A/B/C, apoi QA independent.",
+      "checkpoint": "CKPT-413"
+    },
+    {
+      "order": 2,
+      "id": "QABC-0044",
+      "qabc_id": "QABC-0044",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "imported_keys_preserved": {
+        "G1-ELE-051": "B",
+        "G2-ELEC-197": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 58,
+      "original_qabc_from_prior_editorial_NOT_ORIGINAL_XLSX_REOPEN": {
+        "question": "Dacă o tensiune electromotoare E, montată în latura AB a unei reţele pasive, produce în latura CD a reţelei un curent I, montarea t.e.m. E în latura CD va produce în latura AB:",
+        "A": "un curent - (minus) I",
+        "B": "un curent I",
+        "C": "un curent I/2"
+      },
+      "source_pointer_class": "REPORT_POINTER_ONLY",
+      "historical_analyses_reopened": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_189_NEXT5_BLOCKED_RECIPROCITY_OHM_MAGNETISM_MANEUVERS_2026_11_17.md",
+          "blob_sha_read_in_current_increment": "6a4ade36e4b1b3b56a042893b6e8689edfe52db9"
+        }
+      ],
+      "editorial_card_reopened": {
+        "path": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+        "sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf"
+      },
+      "old_source_locator": null,
+      "old_source_url_pattern_unverified": [],
+      "historical_semantic_hold": true,
+      "strict_hold": false,
+      "issue_from_prior_evidence": "Pasivitate nu implică reciprocitate: teorema necesită ipoteze despre liniaritate, bilateralitate și orientarea curenților.",
+      "exact_object_scope_caveat": "Rețea pasivă AB-CD; contraexemplu posibil girator pasiv nereciproc. Semnul și transferul depind de orientarea de referință.",
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_AND_EXISTING_SEMANTIC_HOLD",
+      "new_state": "PREEXISTING_HOLD_WITH_ABC_REPORTS_REOPENED_AWAITING_EXACT_SOURCE",
+      "new_traceability_record": true,
+      "newly_resolved_technical_source_gate": false,
+      "qualified_independent_qa": "NOT_RUN",
+      "original_excel_reopened": false,
+      "primary_source_reopened": false,
+      "source_edition_2026_authenticated": false,
+      "official_key_authenticated": false,
+      "learner_approved": false,
+      "next_specific_gate": "Verificarea exactă a definițiilor de rețea pasivă/reciprocă în bibliografia potrivită, a sensurilor AB-CD și A/B/C, plus QA independent.",
+      "checkpoint": "CKPT-413"
+    },
+    {
+      "order": 3,
+      "id": "QABC-0046",
+      "qabc_id": "QABC-0046",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "imported_keys_preserved": {
+        "G1-ELE-053": "A",
+        "G2-ELEC-199": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 60,
+      "original_qabc_from_prior_editorial_NOT_ORIGINAL_XLSX_REOPEN": {
+        "question": "Funcţionarea în doua faze a unui transformator trifazat are ca efect:",
+        "A": "supraîncălzirea acestuia",
+        "B": "suprasarcina",
+        "C": "reducerea puterii tranzitate"
+      },
+      "source_pointer_class": "REPORT_POINTER_ONLY",
+      "historical_analyses_reopened": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_217_GFR_7_P1_GRADEII_TECHNICAL_QABC_FAULTS_REACTOR_GIS_2026_11_18.md",
+          "blob_sha_read_in_current_increment": "331bcb3e60ecffde7a3f1cea18b0dafbf1eff793"
+        }
+      ],
+      "editorial_card_reopened": {
+        "path": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+        "sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf"
+      },
+      "old_source_locator": null,
+      "old_source_url_pattern_unverified": [],
+      "historical_semantic_hold": true,
+      "strict_hold": false,
+      "issue_from_prior_evidence": "Funcționarea în două faze a unui transformator trifazat: supraîncălzirea, suprasarcina și scăderea puterii se pot suprapune, în funcție de conexiune și sarcină.",
+      "exact_object_scope_caveat": "Transformator trifazat cu pierdere fază; trebuie precizate schema conexiunilor, sarcina, protecția și starea alimentării.",
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_AND_EXISTING_SEMANTIC_HOLD",
+      "new_state": "PREEXISTING_HOLD_WITH_ABC_REPORTS_REOPENED_AWAITING_EXACT_SOURCE",
+      "new_traceability_record": true,
+      "newly_resolved_technical_source_gate": false,
+      "qualified_independent_qa": "NOT_RUN",
+      "original_excel_reopened": false,
+      "primary_source_reopened": false,
+      "source_edition_2026_authenticated": false,
+      "official_key_authenticated": false,
+      "learner_approved": false,
+      "next_specific_gate": "Manual tehnic pe exact tipul transformatorului/conexiune și comparație A/B/C cu condiții; QA de specialitate.",
+      "checkpoint": "CKPT-413"
+    },
+    {
+      "order": 4,
+      "id": "QABC-0050",
+      "qabc_id": "QABC-0050",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-057",
+        "G2-ELEC-203"
+      ],
+      "imported_keys_preserved": {
+        "G1-ELE-057": "A",
+        "G2-ELEC-203": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 64,
+      "original_qabc_from_prior_editorial_NOT_ORIGINAL_XLSX_REOPEN": {
+        "question": "Două funcţii periodice sinusoidale sunt armonice între ele dacă:",
+        "A": "raportul perioadelor lor este un număr întreg oarecare",
+        "B": "au aceeaşi perioadă",
+        "C": "raportul perioadelor lor este egal cu 1/2"
+      },
+      "source_pointer_class": "DIRECT_URL_UNREOPENED",
+      "historical_analyses_reopened": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_184_BLOCKED_ELECTROTECHNICS_7_TERMS_MATH_CONTEXT_2026_11_17.md",
+          "blob_sha_read_in_current_increment": "66f15a4f15ff28d58cc9a81bdfe2a51e324e252f"
+        },
+        {
+          "path": "docs/QUESTION_AUDIT/V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+          "blob_sha_read_in_current_increment": "d045d7f2d49c5f6cf25a532e12fb6a3406ed526d"
+        }
+      ],
+      "editorial_card_reopened": {
+        "path": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+        "sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf"
+      },
+      "old_source_locator": null,
+      "old_source_url_pattern_unverified": [
+        "https://www.fluke.com/en/learn/blog/power-quality/how-to-find-harmonics-in-electrical-systems"
+      ],
+      "historical_semantic_hold": true,
+      "strict_hold": false,
+      "issue_from_prior_evidence": "Două sinusoidale sunt armonice: raportul întreg poate include 1, iar 1/2 poate deveni 2 prin inversarea ordinii. Alternativele nu sunt mutual exclusive.",
+      "exact_object_scope_caveat": "Relația armonică dintre perioade/frecvențe, fundamentală aleasă, ordinul 1 și orientarea raportului.",
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_AND_EXISTING_SEMANTIC_HOLD",
+      "new_state": "PREEXISTING_HOLD_WITH_ABC_REPORTS_REOPENED_AWAITING_EXACT_SOURCE",
+      "new_traceability_record": true,
+      "newly_resolved_technical_source_gate": false,
+      "qualified_independent_qa": "NOT_RUN",
+      "original_excel_reopened": false,
+      "primary_source_reopened": false,
+      "source_edition_2026_authenticated": false,
+      "official_key_authenticated": false,
+      "learner_approved": false,
+      "next_specific_gate": "Definiția exactă a armonicelor în materialele ANRE 2024/ediția aplicabilă, cu test logic A↔B↔C și reviewer independent.",
+      "checkpoint": "CKPT-413"
+    },
+    {
+      "order": 5,
+      "id": "QABC-0065",
+      "qabc_id": "QABC-0065",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "imported_keys_preserved": {
+        "G1-ELE-073": "B",
+        "G2-ELEC-218": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 80,
+      "original_qabc_from_prior_editorial_NOT_ORIGINAL_XLSX_REOPEN": {
+        "question": "Fluxul electric total, produs de o sarcină electrică de valoare q printr-o suprafaţă închisă care o înconjoară, este egal cu:",
+        "A": "valoarea numerică 2q",
+        "B": "valoarea numerică q",
+        "C": "valoarea numerică q/2"
+      },
+      "source_pointer_class": "DIRECT_URL_UNREOPENED",
+      "historical_analyses_reopened": [
+        {
+          "path": "docs/QUESTION_AUDIT/V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+          "blob_sha_read_in_current_increment": "9c0214c1457f29a485696651bbe969bda2661dcd"
+        }
+      ],
+      "editorial_card_reopened": {
+        "path": "docs/QUESTION_AUDIT/V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+        "sha": "1991a79fa69116a9b5735cd8cf3dd074aaa074d7"
+      },
+      "old_source_locator": "pp. 7–8 (printed), §1.3 Legea fluxului electric, general integral form; definition of Ψ=∫D·dA",
+      "old_source_url_pattern_unverified": [
+        "https://openstax.org/books/university-physics-volume-2/pages/6-2-explaining-gausss-law"
+      ],
+      "historical_semantic_hold": true,
+      "strict_hold": false,
+      "issue_from_prior_evidence": "Flux electric total: B=q este compatibil cu fluxul inducției/deplasării electrice D, dar fluxul câmpului E în vid este q/epsilon0.",
+      "exact_object_scope_caveat": "Sarcină q închisă de suprafață; se cere să fie specificat dacă fluxul este al lui E sau D, mediul și unitățile.",
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_AND_EXISTING_SEMANTIC_HOLD",
+      "new_state": "PREEXISTING_HOLD_WITH_ABC_REPORTS_REOPENED_AWAITING_EXACT_SOURCE",
+      "new_traceability_record": true,
+      "newly_resolved_technical_source_gate": false,
+      "qualified_independent_qa": "NOT_RUN",
+      "original_excel_reopened": false,
+      "primary_source_reopened": false,
+      "source_edition_2026_authenticated": false,
+      "official_key_authenticated": false,
+      "learner_approved": false,
+      "next_specific_gate": "Deschide sursa originală a definiției de «flux electric», cu paragrafele vecine, verifică unitățile și A/B/C, apoi QA independent.",
+      "checkpoint": "CKPT-413"
+    }
+  ],
+  "next_selection_preview_ONLY_NOT_STARTED": [
+    "QABC-0069",
+    "QABC-0080",
+    "QABC-0082",
+    "QABC-0091",
+    "QABC-0092"
+  ],
+  "integrity": {
+    "all_imported_keys_preserved": true,
+    "all_id_membership_same_as_V370A": true,
+    "all_previous_id_set_disjoint": true,
+    "all_old_report_paths_attested_in_V370": true,
+    "same_assistant_readback_not_independent_QA": true
+  },
+  "prohibited": "No original workbook, canonical question/ABC/key, HTML, APK, main, merge, release; 157+11 outside 822."
+}
