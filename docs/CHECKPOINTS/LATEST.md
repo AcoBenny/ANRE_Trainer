@@ -1,5 +1,15 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-406 | All 19 G2 noncaution original legislation AI source options reviewed, no certified answer keys
+
+**Current checkpoint:** [CKPT-406: 19/19 distinct noncaution G2 LEG original source-option preliminary AI reviews](../QUESTION_AUDIT/CKPT_406_GFR_COMPLETE_19_NONCAUTION_G2_LEGISLATION_AI_SOURCE_REVIEW_2026_11_23.md)  
+**New Cod RED two:** [V358: LEG-R0032 source C (qualified Romania scope) and LEG-R0076 source B, PDF page 1/2 screenshot cache miss recorded](../QUESTION_AUDIT/V358_CKPT406_2_COD_RED_G2_ORIGINAL_AI_REVIEW_PDF_VISUAL_LIMIT_2026_11_23.json)  
+**Anti-loop:** [V358 adds 2 new distinct IDs after CKPT405 17; 19/19 same-subset exact original question / A/B/C / row and release fail-closed QA passed](../QUESTION_AUDIT/BATCH_PROGRESS/CKPT406_19_NONCAUTION_G2_LEG_EXTERNAL_AI_EXACT_QABC_QA_2026_11_23.json). No new initial source research falsely claimed, no PDF page visual claim.  
+**State:** all 157 original G2 staged still quarantined; 0 authenticated official ANRE scored keys, 0/822 qualified independent learner approvals. PR #7 Draft/unmerged; no canonical/HTML/APK changes.  
+**Next distinct:** independently AI review untouched noncaution G2 NOR original items and external qualified/legal/linguistic scoring gates; do not repeat source research of 41 flags or 19 G2 LEG without new evidence.
+
+---
+
 ## 2026-11-23 | CKPT-405 | Six hard G2 source cases + 17 new independent AI option reviews, 3 source-locator corrections
 
 **Current checkpoint:** [CKPT-405 full handoff](../QUESTION_AUDIT/CKPT_405_GFR_SIX_HARD_SOURCE_CASES_SEVENTEEN_NEW_G2_AI_REVIEWS_THREE_CITATION_FIXES_2026_11_23.md)  
