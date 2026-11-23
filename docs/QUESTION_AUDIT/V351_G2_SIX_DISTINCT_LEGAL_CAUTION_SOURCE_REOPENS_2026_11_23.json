@@ -1,0 +1,176 @@
+{
+  "schema": "V351_SIX_DISTINCT_G2_LEGAL_SOURCE_REOPENS_NOT_INDEPENDENT_QA_2026_11_23",
+  "parent": "CKPT402/V350",
+  "date": "2026-11-23",
+  "review_counts": {
+    "previous_caution_queue": 41,
+    "source_evidence_reopened_with_new_direct_context": 6,
+    "other_items_not_touched": 35,
+    "source_cautions_still_not_approved": 41,
+    "g2_original_quarantined": 157,
+    "qualified_independent_review_approved": 0,
+    "official_keys_authenticated": 0,
+    "learner_approved": 0
+  },
+  "source_and_scope_limits": "Single-assistant research reopening. Not an independent technical/legal reviewer. Original QABC from V345/V346, original uploaded workbooks not reopened. Primary portal accessible for Ord66 Article12/13/23; other sources are text mirrors, official index, or legislative listings. Didactic card before/focus/after original unaltered text still missing.",
+  "items": [
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0038",
+      "source_row": 38,
+      "prior_scope_flag": "COMPLAINT_WITHIN_30_DAYS",
+      "stem_sha256": "bff1cbd8e99f652d3b08416f66288618c98dc58f670f5676bba9830df56083bc",
+      "original_question": "Furnizorul este obligat să analizeze plângerea clientului referitoare la factura emisă, comunicată furnizorului în termen de 30 de zile de la data emiterii facturii,",
+      "original_ABC": {
+        "A": "numai dacă factura a fost achitată",
+        "B": " numai dacă factura nu a fost achitată ",
+        "C": " indiferent dacă factura a fost sau nu achitată, "
+      },
+      "review_context": {
+        "before_editorial": "Section of supplier billing complaints, after billing obligations",
+        "focus_evidence": "Ord5/2023 Art28(1) explicitly requires analysis of the timely (within 30 days from invoice issue) bill complaint irrespective of payment; Art28(3) discusses distinct subsequent refund remedy. Option C fits, A/B each wrongly condition processing on payment status.",
+        "after_editorial": "Other clauses address supplier response and correction/refund after a founded complaint"
+      },
+      "source_url": "https://sintact.ro/legislatie/monitorul-oficial/regulament-din-2023-de-furnizare-a-energiei-electrice-la-clientii-17015583/art-28",
+      "new_gate": "CURRENT_CONSOLIDATED_PRIMARY_VERSION_NOT_ATTESTED",
+      "original_workbook_bytes_reopened": false,
+      "full_literal_source_paragraphs_captured": false,
+      "independent_qualified_review": false,
+      "official_exam_key_verified": false,
+      "edition_2026_certified": false,
+      "learner_approved": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0058",
+      "source_row": 58,
+      "prior_scope_flag": "NO_EXAM_EXCEPTIONS_REQUIRE_SEMANTIC_REVIEW",
+      "stem_sha256": "b75d4ce092750623fae22654f084f1d506ef68a4aaad361fbea7d875f678c056",
+      "original_question": "Autorizarea unui electrician se realizează în urma:",
+      "original_ABC": {
+        "A": "promovării unui examen de autorizare",
+        "B": "promovării unui concurs de autorizare, cu număr limitat de locuri",
+        "C": "unui interviu în faţa unei comisii ANRE"
+      },
+      "review_context": {
+        "before_editorial": "Chapter III ordinary entry pathways",
+        "focus_evidence": "Official Ord66/2023 Article 12(a) authorizes via an exam but Article12(b) also permits without exam for specified Article13 cases. Option A is ordinary route only; the original stem lacks 'normally', so 'all authorization requires exam' is false. B competition and C interview do not describe standard electrician authorization.",
+        "after_editorial": "Article13 spells exceptional without-exam qualified categories"
+      },
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/288046",
+      "new_gate": "SEMANTIC_UNIVERSALITY_AMBIGUITY_OPEN",
+      "original_workbook_bytes_reopened": false,
+      "full_literal_source_paragraphs_captured": false,
+      "independent_qualified_review": false,
+      "official_exam_key_verified": false,
+      "edition_2026_certified": false,
+      "learner_approved": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0064",
+      "source_row": 64,
+      "prior_scope_flag": "CUMULATIVE_ELIGIBILITY_NOT_ADDITIVE_YEARS",
+      "stem_sha256": "8b0f51a6d8860b0e83c1581d5a98bb59b758f8d999724d72ddae8f3cd21c48bf",
+      "original_question": "În vederea autorizării pentru ambele tipuri de autorizare (A şi B), electricienii:",
+      "original_ABC": {
+        "A": "Trebuie să îndeplinească condiţiile de calificare şi experienţă profesionale, cumulate, pentru fiecare tip de autorizare şi susţin examene separate pentru fiecare dintre aceste tipuri",
+        "B": "Trebuie să îndeplinească condiţiile de calificare si experienţă profesionale, cumulate, pentru fiecare tip şi susţin un singur examen",
+        "C": "Trebuie sa fi fost autorizaţi în prealabil în baza Ordinului MIC nr34 din 1999"
+      },
+      "review_context": {
+        "before_editorial": "Article22 governs later upgrade/other type",
+        "focus_evidence": "Official Ord66/2023 Article 23: applicant who meets both A/B qualification and experience sets may sit ONE exam for both, with experience equal to the MAXIMUM of the required years rather than their sum; Art22 governs later authorization changes. Option B fits conditional joint application, A separate exams wrong, C old MIC condition unsupported.",
+        "after_editorial": "Article24 handles a separate new exam for another grade/type"
+      },
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/288046",
+      "new_gate": "SOURCE_ART23_DIRECT_REOPENED_NOT_GRADED_KEY",
+      "original_workbook_bytes_reopened": false,
+      "full_literal_source_paragraphs_captured": false,
+      "independent_qualified_review": false,
+      "official_exam_key_verified": false,
+      "edition_2026_certified": false,
+      "learner_approved": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0074",
+      "source_row": 74,
+      "prior_scope_flag": "2008_CODE_2026_ERA_CHECK",
+      "stem_sha256": "5043625b32dcd23666ce85dd7875ac24975b4f011d97be778872bd0797e236f9",
+      "original_question": "Codul tehnic al reţelelor electrice de distribuţie (Codul RED) este administrat de:",
+      "original_ABC": {
+        "A": "SC ELECTRICA SA, în calitate de elaborator",
+        "B": "ANRE - Autoritatea Naţională de Reglementare în domeniul Energiei",
+        "C": "CN TRANSELECTRICA SA"
+      },
+      "review_context": {
+        "before_editorial": "ANRE's Code RED entry and legal publisher's 2008 base text",
+        "focus_evidence": "ANRE current online legislation lists Cod RED Rev I Ordin128/2008; distribution operator current legislation lists it and names modifications by Ordin72/2017 and Ordin214/2018. This weakens the suspected superseded-2008 assumption but does not authenticate current consolidated §1.5.1 or specific option B.",
+        "after_editorial": "Later 2017/2018 amendments could change clauses; verify exact amended consolidated text"
+      },
+      "source_url": "https://www.distributie-energie.ro/legislatie-aplicabila/",
+      "new_gate": "CURRENT_CLAUSE_AND_GRADE_SCOPE_NOT_AUTHENTICATED",
+      "original_workbook_bytes_reopened": false,
+      "full_literal_source_paragraphs_captured": false,
+      "independent_qualified_review": false,
+      "official_exam_key_verified": false,
+      "edition_2026_certified": false,
+      "learner_approved": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0075",
+      "source_row": 75,
+      "prior_scope_flag": "DATE_AND_PERCENTILE_CRITICAL",
+      "stem_sha256": "223dd31035f487a95a33c75c3c24b1a27ec5d4361f197c694f7e4bf9b4ea9601",
+      "original_question": "Începând cu data de 1.01.2022, în PD, la JT, în condiții normale de exploatare, excluzând întreruperile, pe durata oricărui interval de timp de o săptămână, 95% din valorile efective, mediate pe o durată de 10 minute, ale tensiunii de alimentare, nu trebuie să aibă o abatere față de tensiunea nominală mai mare de ",
+      "original_ABC": {
+        "A": "0.05",
+        "B": "+5% / -10%",
+        "C": "0.12"
+      },
+      "review_context": {
+        "before_editorial": "Art25(1) defines pre-2022 10% two-sided regime",
+        "focus_evidence": "Ord46/2021 Standard Art25(2) previously specifies from 2022 95% of 10-minute values over a week within +5%/-10% nominal for low voltage normal conditions, supporting B in the original. An Ordin20/2025 ALSO modifies the Standard; no exact source evidence that Art25 remained unmodified, so 2026 status is explicitly held.",
+        "after_editorial": "Current amendment provenance and art25 exact 2026 version need primary confirmation"
+      },
+      "source_url": "https://legis.medleg.ro/legislatie/2021-standard-performanta-3",
+      "new_gate": "2025_AMENDMENT_IMPACT_ON_ART25_NOT_CHECKED",
+      "original_workbook_bytes_reopened": false,
+      "full_literal_source_paragraphs_captured": false,
+      "independent_qualified_review": false,
+      "official_exam_key_verified": false,
+      "edition_2026_certified": false,
+      "learner_approved": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0097",
+      "source_row": 97,
+      "prior_scope_flag": "EMAIL_AND_POST_ALSO_PERMITTED",
+      "stem_sha256": "275ce9bd5c140cad7bee8b3d1dd62a02f6bd517116869366af1a0d6a0bdb8aef",
+      "original_question": "Cererea pentru racordare la reţea şi documentaţia anexată acesteia: \n",
+      "original_ABC": {
+        "A": "se pot depune direct la centrele teritoriale de relaţii cu clienţii organizate de operatorul de reţea;\n",
+        "B": "se trimit obligatoriu prin poştă\n",
+        "C": "se depun numai la registratura operatorului de reţea. "
+      },
+      "review_context": {
+        "before_editorial": "Art12 application submission modalities",
+        "focus_evidence": "Ord59/2013 Article12(2) allows direct or post lodging at territorial relations centres, so permissive original A is compatible; B wrongly mandates mail, C wrongly restricts central registry. Newer electronic channels may also be allowed and do not negate original A's possibility.",
+        "after_editorial": "Art14 completeness follow-up, additional channels in later consolidated versions"
+      },
+      "source_url": "https://legislatie.juridice.ro/act/5be50817b9ec",
+      "new_gate": "EXACT_2026_CONSOLIDATED_ART12_PENDING",
+      "original_workbook_bytes_reopened": false,
+      "full_literal_source_paragraphs_captured": false,
+      "independent_qualified_review": false,
+      "official_exam_key_verified": false,
+      "edition_2026_certified": false,
+      "learner_approved": false
+    }
+  ],
+  "anti_loop": "6 distinct former caution IDs source-reopened; zero claimed independent approval, answer-key signoff or release; 35 other distinct caution IDs not rechecked",
+  "immutable_guards": [
+    "no QABC changes",
+    "no imported or official keys changed",
+    "no HTML/APK changes",
+    "no merge",
+    "PR#7 Draft"
+  ]
+}
