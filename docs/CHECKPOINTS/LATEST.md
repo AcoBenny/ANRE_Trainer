@@ -9,7 +9,7 @@
 
 **State and safety:** Among 7 originally source-NULL G2 records, **2 qualified source-only historical/conditional candidates** (LEG-R0024 historical C from superseded 2013/2016 form; NOR-R0084 conditional B = 25 mm² aluminium neutral with phase 35 mm²) and **5 still without unique source option** (NOR-R0055, LEG-R0039, LEG-R0095, LEG-R0098, NOR-R0096). No official keys authenticated or approvals. All **157** original G2 staged records remain quarantined, **0/822** independently approved current grade routes. Existing canonical 568 groups / 822 routes unchanged, PR #7 Draft/unmerged, no HTML/APK/answer-key changes.
 
-**Next genuinely different work:** move to distinct remaining **48** source/edition caution items with an overlap check excluding these already reviewed, then independent technical and linguistic QA. Never repeat same seven only to add evidence with unchanged gate status.
+**Next genuinely different work:** [V350: exactly **41** distinct previously source-researched caution items not overlapping the 7 investigated in CKPT-402](../QUESTION_AUDIT/V350_NEXT_41_NONOVERLAPPING_G2_SCOPE_CAUTION_REVIEW_QUEUE_2026_11_23.json) (**29 NOR, 12 LEG**). This is an INVENTORY, not a source gate closure or review approval. Only genuine external source evidence, independent reviewer results or exact normative-version correction can move future gates; otherwise anti-loop verdict must be NO_PROGRESS_REPEAT.
 
 ---
 
