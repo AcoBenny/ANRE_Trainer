@@ -1,5 +1,14 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-408 | ONE PASS v2 pilot 12 heterogenous cases; 568 AU/QABC and 822 grade routes exact joined, no final key promotion
+
+**Current checkpoint:** [CKPT-408: 12-case content-evidence pilot, 568/822 verified identity and anti-loop gates](../QUESTION_AUDIT/CKPT_408_ONEPASS_V2_12_CASE_PILOT_568_822_TRACEABILITY_AND_GATES_2026_11_23.md)  
+**Executable artifacts:** [V360 568 AU↔QABC / 822 grade route original question+key crosswalk](../QUESTION_AUDIT/ONEPASS_V2_PILOT/V360_ONEPASS_V2_568_AU_QABC_822_GRADE_ROUTE_EXACT_CROSSWALK_2026_11_23.json), [V361 12 evidence dossiers and blockers](../QUESTION_AUDIT/ONEPASS_V2_PILOT/V361_ONEPASS_V2_12_CASE_PILOT_SOURCE_CARD_BLOCKERS_2026_11_23.json), [V362 24/24 actual structural/semantic gate assertions, 11/11 synthetic fail-closed fixtures](../QUESTION_AUDIT/ONEPASS_V2_PILOT/V362_ONEPASS_V2_PILOT_24_DATA_ASSERTIONS_11_SYNTHETIC_GUARDS_2026_11_23.json).  
+**Pilot scope:** 7 QABC original canonical with existing A/B/C drafts, 4 Grade-II original source rows still quarantined, 1 Electrotechnics three-vector-choice orphan. **11/12 text QABC traceable** from cached workbook source records, 1 graphic exact pixel identity blocked; **0/12** legally complete original before/focus/after context certified, **0/12** qualified final source/key signoff. **0/822 final learning approvals.**   
+**Next, not another AI rereview of existing source batches:** produce entire read-only evidence coverage matrix (568 QABC/822 routes + 157 quarantined G2 + 11 Electrotechnics source orphans); then prove one legal real positive original-source-to-card path before mass validation. Do not change original keys, HTML/APK, release, PR7 Draft.
+
+---
+
 ## 2026-11-23 | CKPT-407 | All 43 distinct G2 noncaution NOR original source-option AI challenges done, two qualified holds
 
 **Current checkpoint:** [CKPT-407 | 43 original G2 NOR source options, 41 provisional + 2 conditional holds](../QUESTION_AUDIT/CKPT_407_GFR_43_G2_NOR_SOURCE_AI_CHECKS_41_PROVISIONAL_2_OPEN_GATES_2026_11_23.md)  
