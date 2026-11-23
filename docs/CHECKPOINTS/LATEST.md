@@ -1,5 +1,20 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-401 | All remaining 110 G2 original-source candidates researched, zero graded keys validated
+
+**Current checkpoint:** [CKPT-401: 110 original Grade-II source studies completed, 330 A/B/C analyses, 7 explicit null answer candidates, 48 documented scope/era cautions](../QUESTION_AUDIT/CKPT_401_GFR_FULL_110_G2_SOURCE_RESEARCH_330_ABC_7_NULL_48_FLAGS_2026_11_23.md)  
+**Full reconciliation:** [V348: 110/110 unique original source candidate IDs, no duplicate, 75 NOR + 35 LEG](../QUESTION_AUDIT/V348_G2_FULL_110_SOURCE_RESEARCH_110_UNIQUE_7_NULL_ORIGINAL_KEY_HOLDS_2026_11_23.json)  
+**Anti-loop:** [all-110 before/after result, PROGRESSED](../QUESTION_AUDIT/BATCH_PROGRESS/CKPT401_G2_110_ALL_SOURCE_RESEARCH_RESULT.json), five nonoverlapping batches 42+31+24+11+2 with actual per-item source-research evidence; JS structural checks, GitHub Actions CI still not run  
+**Previous:** [CKPT-400](../QUESTION_AUDIT/CKPT_400_GFR_46_NEW_G2_SOURCE_ITEMS_47_TOTAL_110_REMAIN_ANTI_LOOP_2026_11_22.md)
+
+**Actual project state:** All **157 original G2 staged** source rows now have source-research packets (47 prior, 110 new), **0/157 learner-approved**, **0 official score-key authenticated**, **157 still quarantined**. Existing 568 canonical QABC / 822 grade routes untouched, **0/822 final independent approvals**. The seven answer-NULL issues and 48 other source cautions remain distinct *review and edition gates*, not repeat source-research queues. Especially one original statement is sourced from obsolete I7/2002, NOT certified as applicable I7/2011/2023/2026.
+
+**Next finite phase:** Independent source-edition and scoring adjudication of seven null answer cases + scoped review of the 48 flagged cases, then independent technical/linguistic QA for all 157; require genuine qualified signoff. Do not repeat this 110-ID source-research job. PR #7 Draft, no original keys, HTML/APK or stable merge changes.
+
+---
+
+## Older checkpoints (historical 'current' titles below are superseded)
+
 ## 2026-11-22 | CKPT-400 | 46 NEW original Grade-II source rows researched, no repeat-loop
 
 **Current checkpoint:** [CKPT-400: 35 new cluster source rows + 11 new cross-bank original rows, one pre-researched R0040 not recounted](../QUESTION_AUDIT/CKPT_400_GFR_46_NEW_G2_SOURCE_ITEMS_47_TOTAL_110_REMAIN_ANTI_LOOP_2026_11_22.md)  
