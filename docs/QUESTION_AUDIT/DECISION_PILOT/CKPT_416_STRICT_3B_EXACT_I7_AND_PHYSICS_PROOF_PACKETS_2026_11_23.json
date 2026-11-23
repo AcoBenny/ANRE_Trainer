@@ -1,0 +1,189 @@
+{
+  "schema": "ANRE_PILOT_REAL_ADJUDICATION_B2",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-416",
+  "parent_ckpt": "CKPT-415",
+  "mode": "GFR_2X3_STRICT_BLOCKER_DECISION_PACKET_PILOT",
+  "lot": "B",
+  "reopened_source_objects": 2,
+  "groups": 3,
+  "grade_routes": 4,
+  "source_clauses_physically_reopened_in_session": 3,
+  "source_original_vs_trainer_outcomes_mapped": 3,
+  "official_norm_clauses_directly_read": 2,
+  "strict_conflicts_closed": 0,
+  "new_original_scored_key_verified": 0,
+  "qualified_independent_review_completed": 0,
+  "approved_for_learning": 0,
+  "user_decision_packets_ready": 3,
+  "records": [
+    {
+      "id": "QABC-0236",
+      "members": [
+        {
+          "grade": "G1-ELE-247",
+          "key": "B"
+        },
+        {
+          "grade": "G2-ELEC-383",
+          "key": "B"
+        }
+      ],
+      "original": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "trainer": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "technical_object": "Conductor in a static external electric field: induced spatial charge redistribution vs net acquired charge; electromagnetic induction and electrostatic polarization are not synonyms.",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction",
+        "title": "OpenStax University Physics Vol 2 §5.2, Figs 5.10–5.13",
+        "method": "OpenStax university text HTML reopened in pilot 2026-11-23, not an ANRE scoring key, licensing requires separate check before offline redistribution",
+        "preceding_context": "Figure 5.10: a neutral conductor polarizes under an external electric field, remaining electrically neutral overall.",
+        "central_paraphrase": "Figs 5.12–5.13: induction creates separated net charges only with a further separation of conductors or grounding/disconnection sequence; simply putting isolated conductor in external field changes distribution.",
+        "following_context": "Figure 5.13 illustrates grounding and subsequent removal of connection and inducing rod; distinguishes redistribution from net charging",
+        "scope_limit": "Electrostatic source does not validate original electromagnetic-induction wording and does not make unspecified net charging unconditional."
+      },
+      "ABC": {
+        "ORIGINAL_A": "Conduction typically presupposes contact/transfer, not merely presence in E",
+        "ORIGINAL_B": "Wrong physical term for static electric-field-induced polarization; NOT certifiable from this source",
+        "ORIGINAL_C": "Magnetization concerns magnetic response, not static electrostatic charge redistribution",
+        "TRAINER_A": "Conduction/contact not mechanism specified by field-only stem",
+        "TRAINER_B": "Electrostatic induction describes charge separation; net charge acquired NOT implied without additional step",
+        "TRAINER_C": "Magnetization not electrostatic polarization"
+      },
+      "adjudication": "ORIGINAL_B_INVALID_TERMINOLOGY_NO_UNIQUE_SCORABLE_ANSWER;TRAINER_B_CONDITIONAL_POLARIZATION",
+      "source_corrected_option": "B in Trainer ONLY with polarization definition, NOT source original",
+      "newly_discovered_scientific_fact": false,
+      "now_direct_evidence_reopened": true,
+      "strict_conflict_closed": false,
+      "needs_owner": "Decide if the original ANRE-style wording stays flagged as technically unanswerable while corrected unofficial Trainer variant is taught with net-charge caveat. Never change imported B silently.",
+      "earlier_evidence": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+        "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V368_QABC0236_SOURCE_VS_TRAINER_CANONICAL_CARD_EDITORIAL_OVERLAY_2026_11_23.json"
+      ]
+    },
+    {
+      "id": "QABC-0362",
+      "members": [
+        {
+          "grade": "G1-NOR-048",
+          "key": "A"
+        }
+      ],
+      "original": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "trainer": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "technical_object": "Exact I7 bell transformer/bell 220V power source allowance: lighting circuit OR socket circuit OR panel, not exclusive to one path.",
+      "source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "title": "Portalul Legislativ official I7/2011 technical regulation, consolidated document, point 5.4.13",
+        "method": "Official government portal document HTML reopened 2026-11-23 using web scrape; version/bibliographic scope for ANRE 2026 exam not independently signed",
+        "preceding_context": "§5.4.12 concerns avoiding routing unrelated circuits across specified environmental-class rooms and exceptions for kitchens/bathrooms with protective measures",
+        "exact_central_clause": "5.4.13 Alimentarea transformatorului de sonerie sau soneriei de 220 V se face dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție.",
+        "following_context": "§5.4.14 concerns multiple circuits in a common tube or gutter and cross-references §5.2.12",
+        "scope_limit": "Exact bell power feed matches stem except 220→230 nominal notation; official-scored ANRE original answer key is NOT authenticated."
+      },
+      "ABC": {
+        "ORIGINAL_A": "FALSE_EXCLUSIVITY: only from panel excludes lighting/socket allowed by I7",
+        "ORIGINAL_B": "FALSE_EXCLUSIVITY: only from lighting excludes panel/socket allowed by I7",
+        "ORIGINAL_C": "TRUE: feeding from socket circuit is one of permitted routes, even though not exhaustive",
+        "TRAINER_A": "TRUE: lists all three I7 routes in the norm",
+        "TRAINER_B": "FALSE_EXCLUSIVITY: says only lighting",
+        "TRAINER_C": "FALSE_EXCLUSIVITY: says only sockets"
+      },
+      "adjudication": "ORIGINAL_C_SUPPORTED_BY_I7_AND_IMPORTED_A_CONTRADICTS_ORIGINAL;TRAINER_A_SUPPORTED_BY_I7",
+      "source_corrected_option": "ORIGINAL C versus TRAINER A; same imported A is NOT equally defensible for both text variants",
+      "newly_discovered_scientific_fact": false,
+      "now_direct_evidence_reopened": true,
+      "strict_conflict_closed": false,
+      "needs_owner": "Choose canonical source fidelity policy: do not silently relabel original import A; mark original as key-conflicted and authorize separate didactic Trainer version A if desired. Resolve 2026 official scoring provenance separately.",
+      "earlier_evidence": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+        "docs/QUESTION_AUDIT/CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md"
+      ]
+    },
+    {
+      "id": "QABC-0386",
+      "members": [
+        {
+          "grade": "G1-NOR-072",
+          "key": "B"
+        }
+      ],
+      "original": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "trainer": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "technical_object": "Earth main terminal/bar at general board: individual disconnectability and tool-only disconnection, not accessible toolless removal.",
+      "source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "title": "Portalul Legislativ official I7/2011 technical regulation, section 5.5.2.3",
+        "method": "Official government HTML reopened in current pilot 2026-11-23; exact legal page returned; 2026 official grade-specific exam scoring key/bibliography unverified",
+        "preceding_context": "§5.5.2.1 lists conductors for main earth bar (PEN, PE, N under relevant supply systems, equipotential and earth connections); §5.5.2.2 clarifies conductors connected indirectly through a main protection conductor",
+        "exact_central_clause": "5.5.2.3 Fiecare conductor conectat la bornă /bara principală de legare la pământ trebuie să poată fi deconectat individual. Această conectare trebuie să fie sigură și deconectabilă numai prin intermediul unei scule.",
+        "following_context": "§5.5.3.1 lists possible forms of protective conductor PE, including insulated/uninsulated, cable and metal equipment parts with conditions",
+        "scope_limit": "Statement covers conductors actually connected at main earth bar; Trainer option C remains true but incomplete subset of B."
+      },
+      "ABC": {
+        "ORIGINAL_A": "FALSE: claims individual disconnection is optional",
+        "ORIGINAL_B": "FALSE: explicit no-tool condition contradicts normative only-with-tool",
+        "ORIGINAL_C": "TRUE: individual disconnectability required but omits tool condition",
+        "TRAINER_A": "FALSE: individual disconnection is mandatory",
+        "TRAINER_B": "TRUE_AND_COMPLETE: individual, secure, tool-only",
+        "TRAINER_C": "TRUE_BUT_INCOMPLETE: subset of B; if single-correct format without most complete criterion, B/C are overlapping"
+      },
+      "adjudication": "ORIGINAL_C_SUPPORTED_ORIGINAL_B_CONTRADICTS_I7;TRAINER_B_MORE_COMPLETE_BUT_TRAINER_C_LOGICALLY_TRUE",
+      "source_corrected_option": "ORIGINAL C; TRAINER B most complete with C also true and should be explicitly flagged as overlapping",
+      "newly_discovered_scientific_fact": false,
+      "now_direct_evidence_reopened": true,
+      "strict_conflict_closed": false,
+      "needs_owner": "Approve annotation of original B imported as conflicting with I7 and Trainer B as preferred complete alternative while explicitly warning C also true; only alter bank after explicit consent and independent QA.",
+      "earlier_evidence": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+        "docs/QUESTION_AUDIT/CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md"
+      ]
+    }
+  ],
+  "overall_pilot": {
+    "six_strict_groups_examined": [
+      "QABC-0017",
+      "QABC-0094",
+      "QABC-0143",
+      "QABC-0236",
+      "QABC-0362",
+      "QABC-0386"
+    ],
+    "case_decision_packets_created": 6,
+    "source_bodies_reopened": 6,
+    "technical_disagreements_dispositioned_but_not_closed": 6,
+    "final_correct_exam_keys_proved": 0,
+    "independent_signoff": 0,
+    "structural_reinventory_new_QABC": 0
+  },
+  "safety": "No XLSX keys, source or Trainer stems/options edited, no HTML/APK or PR merge. Do not count as newly validated questions. Existing evidence was known; final decision approvals pending."
+}
