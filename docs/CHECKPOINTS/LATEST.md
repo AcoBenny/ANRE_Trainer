@@ -1,5 +1,16 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-404 | 35 new distinct G2 source-scope rechecks; all 41 caution records revisited, 0 final approvals
+
+**Current checkpoint:** [CKPT-404 | 35 real distinct source-scope rereads, original A/B/C hash checks, independent AI negative challenge](../QUESTION_AUDIT/CKPT_404_GFR_35_NEW_G2_CAUTION_SOURCE_SCOPE_RECHECKS_41_41_NO_FINAL_KEYS_2026_11_23.md)  
+**Technical scope:** [V352, 28 distinct I7 clause checks against 959/2023](../QUESTION_AUDIT/V352_G2_28_I7_SOURCE_REOPENED_AMENDMENT_959_CONTRAST_2026_11_23.json)  
+**Legal and historical scope:** [V353, six legal source checks plus PE102 exception hold](../QUESTION_AUDIT/V353_G2_SIX_LEGAL_ONE_PE102_SOURCE_SCOPE_REOPEN_2026_11_23.json)  
+**Independent AI challenge/correction:** [V354, NOR-R0180 no proved B and Ord15/2026 ArtIV(8) is Ord53/2024 methodology, NOT Ord59/2013 Regulation Art8(2)](../QUESTION_AUDIT/V354_GFR_INDEPENDENT_AI_NEGATIVE_CHALLENGE_AND_ORD15_SOURCE_SCOPE_CORRECTION_2026_11_23.json)  
+**Anti-loop:** [CKPT404 35 new distinct, total 41/41 source scope rechecks, 164 structural source/original/approval checks PASSED](../QUESTION_AUDIT/BATCH_PROGRESS/CKPT404_35_UNIQUE_CAUTION_IDS_COMPLETE_SOURCE_REOPEN_NOT_GRADE_APPROVAL_2026_11_23.json). Does NOT imply all 41 are approved, 2026 grade bibliography verified or current ANRE scored keys found. All 157 staged G2 remain quarantined; 0/822 final learning approvals.  
+**Safety:** no original keys/QABC/HTML/APK edits; PR #7 Draft/unmerged. Next work requires independent qualified content/legal+linguistic review, exact scored provenance, not repeating source rereads.
+
+---
+
 ## 2026-11-23 | CKPT-403 | 6 distinct G2 legal caution source reopens, 35 others pending first recheck
 
 **Current checkpoint:** [CKPT-403: 6 distinct source reopens, 12 structural consistency and release-gate checks passed](../QUESTION_AUDIT/CKPT_403_GFR_SIX_DISTINCT_G2_LEGAL_REOPENS_35_UNREOPENED_NO_RELEASE_2026_11_23.md)  
