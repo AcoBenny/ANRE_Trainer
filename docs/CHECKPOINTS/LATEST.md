@@ -1,5 +1,20 @@
 # ANRE Trainer | Latest checkpoint index
 
+## 2026-11-23 | CKPT-402 | Seven known Grade-II source-NULL cases source adjudicated, 2 scoped gates closed, 5 held
+
+**Current checkpoint:** [CKPT-402: historical ANRE form + I7 aluminium neutral min source, five remaining semantic cases](../QUESTION_AUDIT/CKPT_402_GFR_SEVEN_G2_NULL_TWO_SCOPED_SOURCE_RESOLUTIONS_FIVE_HELD_2026_11_23.md)  
+**Item-by-item source pack:** [V349: seven original G2 questions, exact A/B/C, source before/focus/after, era limitations](../QUESTION_AUDIT/V349_SEVEN_G2_NULL_SOURCE_ADJUDICATION_2_SCOPED_GATES_5_HOLDS_2026_11_23.json)  
+**Anti-loop:** [2 real source-semantic gates closed, 5 evidence-only, PROGRESSED](../QUESTION_AUDIT/BATCH_PROGRESS/CKPT402_SEVEN_NULL_SCOPE_RESULT.json), structural JS criteria; NOT observed official source key/Node CI human review  
+**Prior:** [CKPT-401, source research of 110 completed](../QUESTION_AUDIT/CKPT_401_GFR_FULL_110_G2_SOURCE_RESEARCH_330_ABC_7_NULL_48_FLAGS_2026_11_23.md)
+
+**State and safety:** Among 7 originally source-NULL G2 records, **2 qualified source-only historical/conditional candidates** (LEG-R0024 historical C from superseded 2013/2016 form; NOR-R0084 conditional B = 25 mm² aluminium neutral with phase 35 mm²) and **5 still without unique source option** (NOR-R0055, LEG-R0039, LEG-R0095, LEG-R0098, NOR-R0096). No official keys authenticated or approvals. All **157** original G2 staged records remain quarantined, **0/822** independently approved current grade routes. Existing canonical 568 groups / 822 routes unchanged, PR #7 Draft/unmerged, no HTML/APK/answer-key changes.
+
+**Next genuinely different work:** move to distinct remaining **48** source/edition caution items with an overlap check excluding these already reviewed, then independent technical and linguistic QA. Never repeat same seven only to add evidence with unchanged gate status.
+
+---
+
+## Older checkpoint entries (historical labels superseded)
+
 ## 2026-11-23 | CKPT-401 | All remaining 110 G2 original-source candidates researched, zero graded keys validated
 
 **Current checkpoint:** [CKPT-401: 110 original Grade-II source studies completed, 330 A/B/C analyses, 7 explicit null answer candidates, 48 documented scope/era cautions](../QUESTION_AUDIT/CKPT_401_GFR_FULL_110_G2_SOURCE_RESEARCH_330_ABC_7_NULL_48_FLAGS_2026_11_23.md)  
