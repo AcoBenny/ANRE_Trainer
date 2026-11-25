@@ -1,0 +1,58 @@
+name: ANRE Academy P0 targeted free-tier role recovery
+
+on:
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - '.github/workflows/academy-p0-targeted-retest.yml'
+      - 'docs/CKPT_275_P0_LINGUISTIC_RECOVERY_2026_11_20.md'
+      - 'docs/CKPT_276_P0_MISSING_ROLES_RECOVERY_2026_11_20.md'
+      - 'docs/CKPT_277_P0_FINAL_LINGUISTIC_RETEST_2026_11_20.md'
+  pull_request:
+    paths:
+      - '.github/workflows/academy-p0-targeted-retest.yml'
+      - 'scripts/academy_p0_priority_training.py'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anre-p0-one-role-retest
+  cancel-in-progress: false
+
+jobs:
+  source-preserving-one-role:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Offline focused regression tests (zero provider calls)
+        run: |
+          python3 -m unittest discover -s tests -p 'test_academy_p0_priority_training.py' -v
+          python3 -m unittest discover -s tests -p 'test_academy_agent_orchestrator.py' -v
+      - name: Confirm immutable original twelve-question P0 queue
+        run: |
+          test "$(git hash-object docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json)" = "db189edd918f5f780bb0ea75192b391deb165723"
+      - name: Retest only QABC-0050 linguistic role with low Groq reasoning
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[p0-last]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          python3 scripts/academy_p0_priority_training.py \
+            --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
+            --mode live-free --confirm FREE_ONLY \
+            --only-unit QABC-0050 --only-role linguistic_scope \
+            --out _academy_p0_final_linguistic
+
+      - name: Preserve exact last role evidence without release
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-last]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-p0-qabc-0050-linguistic-last
+          path: _academy_p0_final_linguistic/
+          retention-days: 7
+          if-no-files-found: warn

@@ -1,0 +1,99 @@
+name: ANRE Academy P0 training + source-gated priority audit
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_p0_priority_training.py'
+      - 'tests/test_academy_p0_priority_training.py'
+      - 'docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json'
+      - '.github/workflows/academy-p0-priority-training.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_p0_priority_training.py'
+      - 'tests/test_academy_p0_priority_training.py'
+      - 'docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json'
+      - 'docs/CKPT_269_ACADEMY_P0_AGENT_TRAINING_2026_11_20.md'
+      - '.github/workflows/academy-p0-priority-training.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: academy-p0-v149-source-gated
+  cancel-in-progress: false
+
+jobs:
+  academy-priority-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Read-only checkout with no persisted Git credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Offline P0 source-fidelity and agent-training negative tests
+        run: python3 -m unittest discover -s tests -p 'test_academy_p0_priority_training.py' -v
+
+      - name: Original Avengers agent and router regressions (no API)
+        run: |
+          python3 -m unittest discover -s tests -p 'test_academy_agent_orchestrator.py' -v
+          python3 -m unittest discover -s tests -p 'test_academy_requesty_probe.py' -v
+
+      - name: Pinned V149 original workbook-copy registry and 12 case queue
+        shell: bash
+        run: |
+          test "$(git hash-object docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json)" = "db189edd918f5f780bb0ea75192b391deb165723" || {
+            echo "P0 original options or queue flags changed: STOP"
+            exit 1
+          }
+          git fetch --no-tags --depth=1 origin refs/heads/audit/anre-v8-priority-17-20261109
+          test "$(git rev-parse FETCH_HEAD:docs/QUESTION_AUDIT/V149_568_QABC_FINAL_GATE_PROVENANCE_BIAS_AND_CHALLENGE_2026_11_20.csv)" = "ee2ac5536c78eb06a0461243be34c117e257188f" || {
+            echo "V149 original ledger changed: STOP and re-evaluate provenance"
+            exit 1
+          }
+
+      - name: Dry-run all P0 question units without model network
+        run: |
+          for batch in 0 4 8; do
+            python3 scripts/academy_p0_priority_training.py \
+              --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
+              --mode dry-run --start "$batch" --out "_academy_p0_preflight_$batch"
+          done
+
+      - name: Two remaining P0 cohorts, separate artifacts, free AI only
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[academy-p0]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          set +e
+          python3 scripts/academy_p0_priority_training.py \
+            --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
+            --mode live-free --confirm FREE_ONLY --start 4 \
+            --out _academy_p0_batch4
+          status4=$?
+          python3 scripts/academy_p0_priority_training.py \
+            --queue docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json \
+            --mode live-free --confirm FREE_ONLY --start 8 \
+            --out _academy_p0_batch8
+          status8=$?
+          if test "$status4" -ne 0 || test "$status8" -ne 0; then
+            echo "P0 model QA warnings; preserve both partial artifacts, no approval."
+            exit 1
+          fi
+
+      - name: Archive unapproved P0 cohorts even on fail-closed warnings
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[academy-p0]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-p0-remaining-eight-source-gated
+          path: |
+            _academy_p0_batch4/
+            _academy_p0_batch8/
+          if-no-files-found: warn
+          retention-days: 7

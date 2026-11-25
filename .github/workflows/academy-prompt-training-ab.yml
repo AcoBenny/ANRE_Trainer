@@ -1,0 +1,77 @@
+name: ANRE Avengers Academy prompt-training A/B source pilot
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_prompt_training_ab.py'
+      - 'tests/test_academy_prompt_training_ab.py'
+      - '.github/workflows/academy-prompt-training-ab.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_prompt_training_ab.py'
+      - 'tests/test_academy_prompt_training_ab.py'
+      - 'docs/CKPT_269_ACADEMY_P0_AGENT_TRAINING_2026_11_20.md'
+      - '.github/workflows/academy-prompt-training-ab.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: academy-ab-source-pinned-pilot
+  cancel-in-progress: false
+
+jobs:
+  compare-baseline-and-trained:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout without persisted tokens
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Offline regression tests and previously pinned 2023 I7 excerpt
+        run: python3 -m unittest discover -s tests -p 'test_academy_prompt_training_ab.py' -v
+
+      - name: Verify exact I7 user PDF paragraph pack and six P0 source-fidelity rows
+        shell: bash
+        run: |
+          test "$(git hash-object docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json)" = "3bbb905c5fc2b4456b1a6cb5b64e3e4e5d1e5cdd" || {
+            echo "I7 excerpt pack altered: STOP"
+            exit 1
+          }
+          git fetch --no-tags --depth=1 origin refs/heads/audit/anre-v8-priority-17-20261109
+          git show FETCH_HEAD:docs/QUESTION_AUDIT/V144_SIX_RELEASE_BLOCKERS_SOURCE_VERSUS_CANONICAL_ADJUDICATION_2026_11_20.csv > v144_source_6.csv
+          test "$(git hash-object v144_source_6.csv)" = "0fae5c2e3653c4cea2ced456ca768ddb01db733e" || {
+            echo "V144 original-vs-trainer source changed: STOP"
+            exit 1
+          }
+
+      - name: Offline eight A/B slots, no provider requests
+        run: |
+          python3 scripts/academy_prompt_training_ab.py \
+            --ledger v144_source_6.csv \
+            --context docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json \
+            --out _academy_training_ab_preflight --mode dry-run
+
+      - name: Eight free-tier calls same Groq and Gemini models, baseline vs trained
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[academy-train]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 scripts/academy_prompt_training_ab.py \
+            --ledger v144_source_6.csv \
+            --context docs/ACADEMY_NORMATIVE_CONTEXT_I7_2023_TWO_CLAUSES.json \
+            --out _academy_training_ab_live --mode live-free --confirm FREE_ONLY
+
+      - name: Preserve unapproved baseline and trained model output for blind source-led scoring
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[academy-train]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-baseline-vs-trained-i7-two-cases
+          path: _academy_training_ab_live/
+          if-no-files-found: warn
+          retention-days: 7

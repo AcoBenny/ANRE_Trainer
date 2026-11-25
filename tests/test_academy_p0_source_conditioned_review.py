@@ -1,0 +1,252 @@
+import json
+import pathlib
+import tempfile
+import unittest
+from unittest import mock
+
+from scripts import academy_p0_source_conditioned_review as review
+
+EVIDENCE = pathlib.Path("docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json")
+QUEUE = pathlib.Path("docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json")
+
+GOOD_TEXT = (
+    "A: First option needs physical evidence and model assumptions.\n"
+    "B: Second option can be appropriate only with a named convention.\n"
+    "C: Third option is analyzed with an explicit counterexample.\n"
+    "ASSUMPTIONS: All unit and condition constraints must be respected.\n"
+    "COUNTEREXAMPLE: We must keep source conditions unchanged in any test.\n"
+    "SOURCE_SCOPE: The source is engineering context only, not examiner scoring.\n"
+    "VERDICT: NOT_APPROVED."
+)
+
+
+class P0SourcedEvidenceTests(unittest.TestCase):
+    def test_three_evidence_cases_originals_are_identical_to_source_queue(self):
+        cases = review.load_cases(EVIDENCE)
+        original = {x["unit_id"]: x for x in json.loads(QUEUE.read_text())["cases"]}
+        self.assertEqual(tuple(x["unit_id"] for x in cases), review.EXPECTED_IDS)
+        for case in cases:
+            actual = original[case["unit_id"]]
+            self.assertEqual(case["question_original"], actual["question_original"])
+            self.assertEqual(case["options_original"],
+                             {k: actual[k + "_original"] for k in "ABC"})
+
+    def test_physics_categories_never_equate_distinct_flux_fields(self):
+        cases = {x["unit_id"]: x for x in review.load_cases(EVIDENCE)}
+        e = cases["QABC-0065"]
+        equations = " ".join(e["equations"]).lower()
+        self.assertIn("epsilon_0", equations)
+        self.assertIn("oint(d dot da)=q_free", equations)
+        self.assertIn("unit system", e["assumptions_to_check"])
+        self.assertFalse(e.get("learner_approved", False))
+
+    def test_period_direction_and_generator_condition_not_silently_filled(self):
+        cases = {x["unit_id"]: x for x in review.load_cases(EVIDENCE)}
+        self.assertIn("T_n=T_1/n", cases["QABC-0050"]["equations"])
+        self.assertIn("which period is numerator", cases["QABC-0050"]["assumptions_to_check"])
+        self.assertIn("which variables held constant", cases["QABC-0036"]["assumptions_to_check"])
+
+    def test_fails_closed_if_sources_or_release_gates_change(self):
+        with tempfile.TemporaryDirectory() as td:
+            dst = pathlib.Path(td) / "bad.json"
+            data = json.loads(EVIDENCE.read_text())
+            data["official_ANRE_key_authenticated"] = True
+            dst.write_text(json.dumps(data))
+            with self.assertRaises(ValueError):
+                review.load_cases(dst)
+            data["official_ANRE_key_authenticated"] = False
+            data["cases"][0]["sources"] = []
+            dst.write_text(json.dumps(data))
+            with self.assertRaises(ValueError):
+                review.load_cases(dst)
+
+    def test_prompt_does_not_leak_expected_letter_or_prior_review(self):
+        x = review.load_cases(EVIDENCE)[0]
+        x["imported_answer_key"] = "SECRET_A"
+        x["previous_reviewer_letter"] = "SECRET_C"
+        p = review.compiled_prompt(x)
+        self.assertNotIn("SECRET_A", p)
+        self.assertNotIn("SECRET_C", p)
+        self.assertIn("paraphrased_evidence", p)
+        self.assertIn("NO_AUTHENTICATED_ORIGINAL_SCORING_KEY", p)
+        self.assertNotIn("key_uncertainty", p)
+
+    def test_markdown_headers_accepted_but_verbatim_options_not_reasoning(self):
+        x = review.load_cases(EVIDENCE)[0]
+        output = "**A:** " + x["options_original"]["A"] + "\n" + GOOD_TEXT.replace(
+            "A: First option needs physical evidence and model assumptions.\n", "")
+        qa = review.structural_qa(output, x)
+        self.assertTrue(qa["all_fields_present"])
+        self.assertIn("A", qa["verbatim_only_options"])
+        self.assertFalse(qa["format_ok"])
+
+    def test_dry_run_never_calls_any_provider(self):
+        with tempfile.TemporaryDirectory() as td:
+            with mock.patch.object(review, "route_agent") as agent:
+                res = review.run(["--evidence", str(EVIDENCE), "--out", td])
+                agent.assert_not_called()
+            self.assertEqual(res, 0)
+            report = json.loads((pathlib.Path(td) / "results.json").read_text())
+            self.assertEqual(len(report["records"]), 3)
+            self.assertEqual(report["actual_api_attempts"], 0)
+            self.assertFalse(report["approved_for_learning"])
+
+    def test_two_blind_models_with_source_are_still_not_approved(self):
+        models = iter(["openai/gpt-oss-120b", "gemini-3.5-flash-lite"] * 3)
+        messages = []
+        def fake_agent(system, message, candidates, state):
+            messages.append(message)
+            state["attempts"] += 1
+            state["returned"] += 1
+            return {"ok": True, "model": next(models), "provider": candidates[0],
+                    "text": GOOD_TEXT, "usage": {"total_tokens": 250}}
+        with tempfile.TemporaryDirectory() as td:
+            with mock.patch.object(review, "route_agent", side_effect=fake_agent):
+                code = review.run(["--evidence", str(EVIDENCE), "--out", td,
+                                   "--mode", "live-free", "--confirm", "FREE_ONLY"])
+            self.assertEqual(code, 0)
+            self.assertEqual(len(messages), 6)
+            self.assertEqual(messages[0], messages[1])
+            report = json.loads((pathlib.Path(td) / "results.json").read_text())
+            self.assertEqual(report["successful_role_outputs"], 6)
+            self.assertTrue(all(x["model_independence"] for x in report["records"]))
+            self.assertTrue(all(not x["approved_for_learning"] for x in report["records"]))
+
+    def test_same_actual_model_and_missing_format_block(self):
+        with tempfile.TemporaryDirectory() as td:
+            def fake_agent(system, message, candidates, state):
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {"ok": True, "model": "google/gemma-4-31b-it:free",
+                        "provider": candidates[0], "text": GOOD_TEXT}
+            with mock.patch.object(review, "route_agent", side_effect=fake_agent):
+                status = review.run(["--evidence", str(EVIDENCE), "--out", td,
+                                     "--mode", "live-free", "--unit", "QABC-0050",
+                                     "--confirm", "FREE_ONLY"])
+            self.assertEqual(status, 1)
+            report = json.loads((pathlib.Path(td) / "results.json").read_text())
+            self.assertFalse(report["records"][0]["model_independence"])
+            self.assertFalse(report["approved_for_learning"])
+
+    def test_source_trained_prompt_respects_sufficient_vs_necessary(self):
+        self.assertIn("NECESSARY from SUFFICIENT", review.RULES)
+        self.assertIn("third harmonics", review.RULES)
+        self.assertIn("D-flux", review.RULES)
+        self.assertIn("E-flux", review.RULES)
+        self.assertIn("held constant", review.RULES)
+
+    def test_one_role_retest_preserves_qa_status_without_independence(self):
+        with tempfile.TemporaryDirectory() as td:
+            outputs = []
+            def single_agent(system, message, candidates, state):
+                outputs.append((system, message))
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {"ok": True, "provider": candidates[0],
+                        "model": "openai/gpt-oss-120b", "text": GOOD_TEXT}
+            with mock.patch.object(review, "route_agent", side_effect=single_agent):
+                code = review.run(["--evidence", str(EVIDENCE), "--unit", "QABC-0036",
+                                   "--only-role", "technical_electrical", "--mode", "live-free",
+                                   "--confirm", "FREE_ONLY", "--out", td])
+            self.assertEqual(code, 0)
+            self.assertEqual(len(outputs), 1)
+            report = json.loads((pathlib.Path(td)/"results.json").read_text())
+            self.assertEqual(report["only_unit"], "QABC-0036")
+            self.assertEqual(report["only_role"], "technical_electrical")
+            self.assertFalse(report["records"][0]["model_independence"])
+            self.assertTrue(report["records"][0]["requires_previous_artifact_reconciliation"])
+            self.assertEqual(report["records"][0]["status"], "ONE_ROLE_RETEST_PRESENT_NOT_RECONCILED")
+            self.assertFalse(report["approved_for_learning"])
+
+    def test_retest_missing_role_fails_and_does_not_invent_approval(self):
+        with tempfile.TemporaryDirectory() as td:
+            with mock.patch.object(review, "route_agent", return_value={
+                "ok": False, "errors": [{"provider": "gemini", "error": "HTTP_503"}],
+            }) as agent:
+                code = review.run(["--evidence", str(EVIDENCE), "--unit", "QABC-0065",
+                                   "--only-role", "independent_skeptic", "--mode", "live-free",
+                                   "--confirm", "FREE_ONLY", "--out", td])
+            self.assertEqual(code, 1)
+            self.assertEqual(agent.call_count, 1)
+            report = json.loads((pathlib.Path(td)/"results.json").read_text())
+            self.assertEqual(report["successful_role_outputs"], 0)
+            self.assertFalse(report["approved_for_learning"])
+
+    def test_only_role_requires_specific_question(self):
+        with self.assertRaises(SystemExit):
+            review.run(["--evidence", str(EVIDENCE), "--only-role", "technical_electrical"])
+
+    def test_independent_generator_current_arithmetic_and_units(self):
+        m = review.independent_math_reference("QABC-0036")
+        self.assertAlmostEqual(m["p10_q8_u400_volts_current_A"], 18.484, places=3)
+        self.assertAlmostEqual(m["p10_q8_u500_volts_current_A"], 14.787, places=3)
+        self.assertAlmostEqual(m["p10_q30_u400_volts_current_A"], 45.644, places=3)
+        self.assertTrue(m["not_an_ANRE_scored_key"])
+
+    def test_source_specific_real_world_negative_flag_examples(self):
+        bad_current = "A: P=10kW, Q=8kVAR, U=400V gives I=12.8 kA. Incorrect units."
+        bad_period = "B: Same period is necesară, dar nu suficientă for harmonics."
+        bad_flux = ("A: Gauss E = q/epsilon0. B: D flux gives q_free. "
+                    "SOURCE_SCOPE: Niciuna dintre surse nu susține q.")
+        self.assertIn("MATH_UNITS_KW_KV_AMPS_NOT_KAMPS",
+                      review.observed_negative_flags("QABC-0036", bad_current))
+        self.assertIn("NECESSITY_SUFFICIENCY_INVERSION_SAME_PERIOD",
+                      review.observed_negative_flags("QABC-0050", bad_period))
+        self.assertIn("D_FLUX_Q_SOURCE_SELF_CONTRADICTION",
+                      review.observed_negative_flags("QABC-0065", bad_flux))
+        self.assertEqual(review.observed_negative_flags(
+            "QABC-0036", "A: example P=10 kW gives I=18.5 A at 400 V"), [])
+
+    def test_bad_numeric_review_cannot_pass_even_with_all_required_labels(self):
+        bad_text = GOOD_TEXT + (
+            "\nA: At 400 volts with 10 kW and 8 kvar, I is 12.8 kA."
+        )
+        with tempfile.TemporaryDirectory() as td:
+            def wrong_role(system, message, candidates, state):
+                state["attempts"] += 1
+                state["returned"] += 1
+                return {"ok": True, "model": "openai/gpt-oss-120b",
+                        "provider": candidates[0], "text": bad_text}
+            with mock.patch.object(review, "route_agent", side_effect=wrong_role):
+                code = review.run(["--evidence", str(EVIDENCE), "--unit", "QABC-0036",
+                                   "--only-role", "technical_electrical", "--mode", "live-free",
+                                   "--confirm", "FREE_ONLY", "--out", td])
+            self.assertEqual(code, 1)
+            item = json.loads((pathlib.Path(td)/"results.json").read_text())["records"][0]
+            self.assertEqual(item["status"], "SOURCE_OR_MODEL_STRUCTURAL_QA_BLOCKED")
+            self.assertTrue(item["role_qa"]["technical_electrical"]["format_ok"])
+            self.assertTrue(item["role_qa"]["technical_electrical"]["observed_negative_flags"])
+            self.assertFalse(item["approved_for_learning"])
+
+    def test_gauss_numeric_1c_reference_is_not_coulomb_constant(self):
+        m = review.independent_math_reference("QABC-0065")
+        self.assertAlmostEqual(m["q1C_E_vacuum_flux_V_m"], 1.1294090666e11,
+                               delta=1e3)
+        self.assertAlmostEqual(m["q1C_coulomb_constant_not_E_flux"], 8.987551786e9,
+                               delta=1e3)
+        self.assertAlmostEqual(m["q1C_E_vacuum_flux_V_m"] /
+                               m["q1C_coulomb_constant_not_E_flux"],
+                               4 * 3.141592653589793, places=7)
+        self.assertTrue(m["not_an_ANRE_scored_key"])
+
+    def test_observed_wrong_gauss_e_flux_number_fail_closed(self):
+        wrong = ("COUNTEREXAMPLE: Pentru q = 1 C si flux E, "
+                 "∮E·dA = q/epsilon0 ≈ 8.99 × 10⁹ V·m.")
+        correct = ("COUNTEREXAMPLE: Pentru q = 1 C si flux E, "
+                   "∮E·dA = q/epsilon0 ≈ 1.1294 × 10¹¹ V·m.")
+        unrelated = ("COUNTEREXAMPLE: Pentru q = 1 C, "
+                     "constanta Coulomb este 8.99 × 10⁹ N·m²/C².")
+        self.assertIn("GAUSS_E_FLUX_CONFUSED_WITH_COULOMB_CONSTANT",
+                      review.observed_negative_flags("QABC-0065", wrong))
+        self.assertNotIn("GAUSS_E_FLUX_CONFUSED_WITH_COULOMB_CONSTANT",
+                         review.observed_negative_flags("QABC-0065", correct))
+        self.assertNotIn("GAUSS_E_FLUX_CONFUSED_WITH_COULOMB_CONSTANT",
+                         review.observed_negative_flags("QABC-0065", unrelated))
+
+    def test_live_requires_explicit_budget_confirmation(self):
+        with self.assertRaises(SystemExit):
+            review.run(["--evidence", str(EVIDENCE), "--mode", "live-free"])
+
+
+if __name__ == "__main__":
+    unittest.main()

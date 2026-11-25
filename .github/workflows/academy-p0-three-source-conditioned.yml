@@ -1,0 +1,105 @@
+name: ANRE Avengers Academy P0 three source-conditioned blind reviewers
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/academy_p0_source_conditioned_review.py'
+      - 'tests/test_academy_p0_source_conditioned_review.py'
+      - 'docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json'
+      - '.github/workflows/academy-p0-three-source-conditioned.yml'
+  push:
+    branches:
+      - 'academy/free-api-router-gfr-20261120'
+    paths:
+      - 'scripts/academy_p0_source_conditioned_review.py'
+      - 'tests/test_academy_p0_source_conditioned_review.py'
+      - 'docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json'
+      - 'docs/CKPT_279_P0_THREE_SOURCED_BLIND_AGENT_QA_2026_11_20.md'
+      - 'docs/CKPT_280_P0_SOURCE_QA_ROLE_RECOVERY_2026_11_20.md'
+      - '.github/workflows/academy-p0-three-source-conditioned.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: anre-three-sourced-p0-blind-qa
+  cancel-in-progress: false
+
+jobs:
+  blind-p0-source-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - name: Check out source without persisting credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Offline evidence and agent-source safety tests; zero API calls
+        run: python3 -m unittest discover -s tests -p 'test_academy_p0_source_conditioned_review.py' -v
+
+      - name: Fail closed if exact reviewed external evidence pack or original queue changes
+        shell: bash
+        run: |
+          test "$(git hash-object docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json)" = "66a3fe0f35694fda732a177214b55f328da5849d" || exit 1
+          test "$(git hash-object docs/ACADEMY_P0_NEXT_12_EXACT_QABC_2026_11_20.json)" = "db189edd918f5f780bb0ea75192b391deb165723" || exit 1
+
+      - name: Dry-run three exactly sourced P0 QABC without network
+        run: |
+          python3 scripts/academy_p0_source_conditioned_review.py \
+            --evidence docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json \
+            --mode dry-run --out _p0_source_dryrun
+
+      - name: Two blind specialist API reviewers per question; sources are not exam keys
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[p0-source]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          python3 scripts/academy_p0_source_conditioned_review.py \
+            --evidence docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json \
+            --mode live-free --confirm FREE_ONLY --out _p0_source_live
+
+      - name: Retry only three missing sourced-QABC model roles, never whole cases
+        if: github.event_name == 'push' && github.ref == 'refs/heads/academy/free-api-router-gfr-20261120' && contains(github.event.head_commit.message, '[p0-source-retry]')
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          REQUESTY_API_KEY: ${{ secrets.REQUESTY_API_KEY }}
+        run: |
+          set +e
+          failures=0
+          for pair in \
+            "QABC-0036 technical_electrical" \
+            "QABC-0050 technical_electrical" \
+            "QABC-0065 independent_skeptic"; do
+            set -- $pair
+            unit="$1"
+            role="$2"
+            python3 scripts/academy_p0_source_conditioned_review.py \
+              --evidence docs/ACADEMY_P0_THREE_SOURCED_PHYSICS_CASES_2026_11_20.json \
+              --mode live-free --confirm FREE_ONLY \
+              --unit "$unit" --only-role "$role" \
+              --out "_p0_source_retry_${unit}_${role}" || failures=$((failures + 1))
+          done
+          echo "Unresolved model-role retrials: $failures"
+          test "$failures" -eq 0
+
+      - name: Archive only missing model-role traces and API usage
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-source-retry]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-p0-three-source-role-only-retries
+          path: _p0_source_retry_*/
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: Preserve model disagreements and usage for source-led adjudication
+        if: always() && github.event_name == 'push' && contains(github.event.head_commit.message, '[p0-source]')
+        uses: actions/upload-artifact@v4
+        with:
+          name: academy-p0-three-sourced-original-qabc
+          path: _p0_source_live/
+          if-no-files-found: warn
+          retention-days: 7
