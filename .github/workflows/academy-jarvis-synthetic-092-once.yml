@@ -1,0 +1,37 @@
+name: Academy shared JARVIS synthetic QA 092
+on:
+  push:
+    branches: ['academy/free-api-router-gfr-20261120']
+    paths: ['.github/workflows/academy-jarvis-synthetic-092-once.yml']
+permissions:
+  contents: read
+concurrency:
+  group: academy-jarvis-synthetic-092
+  cancel-in-progress: false
+jobs:
+  synthetic:
+    if: >-
+      github.repository == 'AcoBenny/ANRE_Trainer' &&
+      github.event.before == '1700debd8e4968e1d65311c80c3734acbc717b5e' &&
+      github.run_attempt == 1
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: No-secret offline admission test
+        run: |
+          env -u OPENROUTER_API_KEY python3 -B scripts/academy_jarvis_qa_probe.py /tmp/no-key.json
+          python3 -c "import json; d=json.load(open('/tmp/no-key.json')); assert d['attempts']==0 and d['status']=='BLOCKED_NO_KEY_IN_ACADEMY'"
+      - name: Synthetic fixture only, maximum two zero-price calls
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python3 -B scripts/academy_jarvis_qa_probe.py _jarvis_qa/report.json
+      - name: Publish read-only synthetic evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: Academy-JARVIS-092-synthetic-QA
+          path: _jarvis_qa/report.json
+          retention-days: 3
+          if-no-files-found: error

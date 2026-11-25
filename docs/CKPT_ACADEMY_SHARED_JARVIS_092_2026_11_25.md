@@ -1,0 +1,3 @@
+# Shared Academy JARVIS QA 092
+
+One-shot synthetic-only bridge. Reuses exact local academy_free_router.py blob 255e184e361d96716e894bdd99cb68c4f8c55028. No ANRE question, key, source, private JARVIS code or credentials transferred to another repository. OpenRouter only, maximum two requests, zero price constraints, reject nonzero/unattested cost or non-free served model. No model tools, no paid fallback, no training or approval. Result read by orchestrator from Actions evidence. Does not change ANRE audit branch, PR #7, original bank, app, or merge/release. Prior JARVIS probe blocked by missing repository secret. Current run pending; no claim of live outputs.
