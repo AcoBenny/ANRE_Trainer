@@ -1,0 +1,2071 @@
+{
+  "schema": "ANRE_DIDACTIC_LEARNING_CONTENT_REVIEW_V2",
+  "date": "2026-11-25",
+  "checkpoint": "CKPT-426",
+  "parent": "CKPT-425",
+  "classification": "TRAINER_AUTHORED_UNOFFICIAL_EDUCATIONAL_QUESTIONS_NOT_ANRE_ORIGINAL",
+  "counts": {
+    "new_didactic_qabc": 50,
+    "new_grade_routes": 50
+  },
+  "source_qualifications": "Independent AI reviewer assessed original card ABC with textbook/technical external evidence. QABC-0510 specifically excluded on strict ambiguity and replaced with QABC-0530; no altered imported keys. Paraphrased teaching explanations are not authenticated verbatim source paragraphs, offline rights/implementation later.",
+  "excluded_not_counted": [
+    {
+      "id": "QABC-0510",
+      "grade": "G2-ELEC-036",
+      "reason": "Independent technical reviewer HOLD for imprecise fault current and reactive power wording; no new credit"
+    }
+  ],
+  "records": [
+    {
+      "qabc_id": "QABC-0480",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-006"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-006": "A"
+      },
+      "original_stem": "Energia electrică consumată într-un interval de timp se poate exprima prin:",
+      "original_ABC": {
+        "A": "E = P·t",
+        "B": "E = P/t",
+        "C": "E = U/R"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "source_locator": "G2-ELEC-006:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "ABC_reasoning": {
+        "A": "A: energia E=P·t, dacă P este constantă sau media pe interval.",
+        "B": "B: P/t are unități W/s, nu energie.",
+        "C": "C: U/R produce un curent în amperi, nu energia."
+      },
+      "scope_and_caveats": "Pentru putere variabilă E este integrala lui P(t), nu simplu P instantaneu înmulțit cu t.",
+      "source_context_editorial": {
+        "before": "Context educațional: Energia electrică consumată într-un interval de timp se poate exprima prin:",
+        "central_highlighted_paraphrase": "**A: energia E=P·t, dacă P este constantă sau media pe interval.**",
+        "after": "Alternative: B: P/t are unități W/s, nu energie. C: U/R produce un curent în amperi, nu energia."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0481",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-007"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-007": "A"
+      },
+      "original_stem": "Pentru două rezistențe în serie, rezistența echivalentă este:",
+      "original_ABC": {
+        "A": "R1 + R2",
+        "B": "R1·R2",
+        "C": "R1/R2"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "source_locator": "G2-ELEC-007:https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "ABC_reasoning": {
+        "A": "A: R echivalentă a două rezistențe serie este suma, prin aceeași intensitate și adunarea căderilor de tensiune.",
+        "B": "B: produsul R1R2 are dimensiunea Ω², nu Ω.",
+        "C": "C: raportul R1/R2 este adimensional, nu rezistență."
+      },
+      "scope_and_caveats": "Condiție: două elemente rezistive ohmice în serie fără ramificație.",
+      "source_context_editorial": {
+        "before": "Context educațional: Pentru două rezistențe în serie, rezistența echivalentă este:",
+        "central_highlighted_paraphrase": "**A: R echivalentă a două rezistențe serie este suma, prin aceeași intensitate și adunarea căderilor de tensiune.**",
+        "after": "Alternative: B: produsul R1R2 are dimensiunea Ω², nu Ω. C: raportul R1/R2 este adimensional, nu rezistență."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0482",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-008"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-008": "A"
+      },
+      "original_stem": "Pentru două rezistențe în paralel, rezistența echivalentă este:",
+      "original_ABC": {
+        "A": "R1·R2/(R1+R2)",
+        "B": "R1+R2",
+        "C": "R1-R2"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "source_locator": "G2-ELEC-008:https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "ABC_reasoning": {
+        "A": "A: pentru două rezistențe paralele pozitive, 1/Req=1/R1+1/R2, deci Req=R1R2/(R1+R2).",
+        "B": "B: R1+R2 este regula conexiunii serie.",
+        "C": "C: R1−R2 nu reprezintă adunarea conductanțelor în paralel."
+      },
+      "scope_and_caveats": "Rezistența paralelă este mai mică decât fiecare ramură pozitivă separată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Pentru două rezistențe în paralel, rezistența echivalentă este:",
+        "central_highlighted_paraphrase": "**A: pentru două rezistențe paralele pozitive, 1/Req=1/R1+1/R2, deci Req=R1R2/(R1+R2).**",
+        "after": "Alternative: B: R1+R2 este regula conexiunii serie. C: R1−R2 nu reprezintă adunarea conductanțelor în paralel."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0483",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-009"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-009": "A"
+      },
+      "original_stem": "Într-un circuit serie, curentul prin elementele conectate în serie este:",
+      "original_ABC": {
+        "A": "același",
+        "B": "zero în toate elementele",
+        "C": "diferit obligatoriu în fiecare element"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "source_locator": "G2-ELEC-009:https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "ABC_reasoning": {
+        "A": "A: același curent trece prin elementele unei căi serie nebranșate în model concentrat.",
+        "B": "B: valoarea zero nu este obligatorie într-un circuit serie alimentat și închis.",
+        "C": "C: curent diferit obligatoriu contrazice conservarea sarcinii într-o cale simplă."
+      },
+      "scope_and_caveats": "Regula nu fixează valoarea curentului, doar egalitatea lui în fiecare element.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un circuit serie, curentul prin elementele conectate în serie este:",
+        "central_highlighted_paraphrase": "**A: același curent trece prin elementele unei căi serie nebranșate în model concentrat.**",
+        "after": "Alternative: B: valoarea zero nu este obligatorie într-un circuit serie alimentat și închis. C: curent diferit obligatoriu contrazice conservarea sarcinii într-o cale simplă."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0484",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-010"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-010": "A"
+      },
+      "original_stem": "Într-un circuit paralel, tensiunea pe ramurile conectate în paralel este:",
+      "original_ABC": {
+        "A": "aceeași",
+        "B": "zero",
+        "C": "întotdeauna diferită"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "source_locator": "G2-ELEC-010:https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "ABC_reasoning": {
+        "A": "A: ramurile în paralel au aceeași diferență de potențial între cele două noduri comune.",
+        "B": "B: tensiunea zero poate apărea accidental, dar nu e proprietate necesară a paralelului.",
+        "C": "C: «întotdeauna diferită» contrazice conectarea la aceleași două noduri."
+      },
+      "scope_and_caveats": "Condiție: model de noduri ideale, fără căderi parazite pe conexiuni.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un circuit paralel, tensiunea pe ramurile conectate în paralel este:",
+        "central_highlighted_paraphrase": "**A: ramurile în paralel au aceeași diferență de potențial între cele două noduri comune.**",
+        "after": "Alternative: B: tensiunea zero poate apărea accidental, dar nu e proprietate necesară a paralelului. C: «întotdeauna diferită» contrazice conectarea la aceleași două noduri."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0485",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-011"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-011": "A"
+      },
+      "original_stem": "Frecvența unei mărimi sinusoidale este măsurată în:",
+      "original_ABC": {
+        "A": "hertzi (Hz)",
+        "B": "ohmi (Ω)",
+        "C": "farazi (F)"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "source_locator": "G2-ELEC-011:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "ABC_reasoning": {
+        "A": "A: frecvența se măsoară în Hz=s⁻¹, cicluri pe secundă.",
+        "B": "B: ohmul Ω este unitatea rezistenței, nu frecvenței.",
+        "C": "C: faradul F este unitatea capacității, nu frecvenței."
+      },
+      "scope_and_caveats": "Nu confunda frecvența f cu pulsația ω=2πf măsurată în rad/s.",
+      "source_context_editorial": {
+        "before": "Context educațional: Frecvența unei mărimi sinusoidale este măsurată în:",
+        "central_highlighted_paraphrase": "**A: frecvența se măsoară în Hz=s⁻¹, cicluri pe secundă.**",
+        "after": "Alternative: B: ohmul Ω este unitatea rezistenței, nu frecvenței. C: faradul F este unitatea capacității, nu frecvenței."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0486",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-012"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-012": "A"
+      },
+      "original_stem": "Perioada T și frecvența f sunt legate prin:",
+      "original_ABC": {
+        "A": "T = 1/f",
+        "B": "T = f",
+        "C": "T = f²"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "G2-ELEC-012:https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "ABC_reasoning": {
+        "A": "A: perioada T este inversul frecvenței nenule: T=1/f.",
+        "B": "B: T=f ar identifica secunde cu s⁻¹, dimensiuni incompatibile.",
+        "C": "C: f² are dimensiunea s⁻², nu perioadă."
+      },
+      "scope_and_caveats": "Valabil pentru semnale periodice cu f>0.",
+      "source_context_editorial": {
+        "before": "Context educațional: Perioada T și frecvența f sunt legate prin:",
+        "central_highlighted_paraphrase": "**A: perioada T este inversul frecvenței nenule: T=1/f.**",
+        "after": "Alternative: B: T=f ar identifica secunde cu s⁻¹, dimensiuni incompatibile. C: f² are dimensiunea s⁻², nu perioadă."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0487",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-013"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-013": "A"
+      },
+      "original_stem": "Valoarea efectivă a unei tensiuni sinusoidale este folosită pentru:",
+      "original_ABC": {
+        "A": "evaluarea efectului echivalent în regim energetic/termic",
+        "B": "determinarea directă a frecvenței",
+        "C": "înlocuirea rezistenței"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "G2-ELEC-013:https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "ABC_reasoning": {
+        "A": "A: valoarea RMS determină efectul termic echivalent al unei valori continue într-o rezistență dată.",
+        "B": "B: RMS singură nu determină frecvența, fiind necesară evoluția în timp.",
+        "C": "C: o valoare eficace de tensiune nu poate înlocui rezistența electrică."
+      },
+      "scope_and_caveats": "Pentru sinusoidă fără DC, Uef=Umax/√2; altă formă de undă are alt raport.",
+      "source_context_editorial": {
+        "before": "Context educațional: Valoarea efectivă a unei tensiuni sinusoidale este folosită pentru:",
+        "central_highlighted_paraphrase": "**A: valoarea RMS determină efectul termic echivalent al unei valori continue într-o rezistență dată.**",
+        "after": "Alternative: B: RMS singură nu determină frecvența, fiind necesară evoluția în timp. C: o valoare eficace de tensiune nu poate înlocui rezistența electrică."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0488",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-014"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-014": "A"
+      },
+      "original_stem": "Într-un circuit pur rezistiv de c.a., defazajul dintre tensiune și curent este:",
+      "original_ABC": {
+        "A": "0°",
+        "B": "90°",
+        "C": "180°"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "G2-ELEC-014:https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "ABC_reasoning": {
+        "A": "A: într-un rezistor pur sinusoidal curentul și tensiunea sunt în fază, φ=0°.",
+        "B": "B: 90° corespunde unei componente pur reactive ideale.",
+        "C": "C: 180° nu corespunde convenției pasive pentru rezistența ideală."
+      },
+      "scope_and_caveats": "Condiție: rezistență pură, fără capacitate ori inductanță.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un circuit pur rezistiv de c.a., defazajul dintre tensiune și curent este:",
+        "central_highlighted_paraphrase": "**A: într-un rezistor pur sinusoidal curentul și tensiunea sunt în fază, φ=0°.**",
+        "after": "Alternative: B: 90° corespunde unei componente pur reactive ideale. C: 180° nu corespunde convenției pasive pentru rezistența ideală."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0489",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-015"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-015": "A"
+      },
+      "original_stem": "Într-o bobină ideală, curentul este în urmă față de tensiune cu:",
+      "original_ABC": {
+        "A": "90°",
+        "B": "0°",
+        "C": "180°"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "G2-ELEC-015:https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "ABC_reasoning": {
+        "A": "A: la inductanța ideală sinusoidală curentul întârzie tensiunea cu 90°.",
+        "B": "B: 0° este condiția rezistivă, nu inductivă pură.",
+        "C": "C: 180° nu urmează din ecuația v=L·di/dt."
+      },
+      "scope_and_caveats": "Bobina reală cu R nu are obligatoriu 90°, întrebarea spune ideală.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-o bobină ideală, curentul este în urmă față de tensiune cu:",
+        "central_highlighted_paraphrase": "**A: la inductanța ideală sinusoidală curentul întârzie tensiunea cu 90°.**",
+        "after": "Alternative: B: 0° este condiția rezistivă, nu inductivă pură. C: 180° nu urmează din ecuația v=L·di/dt."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_644b29fc-d4d3-4234-9f40-6647f82f8420"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0490",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-016"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-016": "A"
+      },
+      "original_stem": "Într-un condensator ideal, curentul este înaintea tensiunii cu:",
+      "original_ABC": {
+        "A": "90°",
+        "B": "0°",
+        "C": "180°"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "G2-ELEC-016:https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "ABC_reasoning": {
+        "A": "A: la condensator ideal sinusoidal i=C·du/dt, curentul precedă tensiunea cu 90°.",
+        "B": "B: 0° aparține sarcinii pur rezistive.",
+        "C": "C: 180° nu este defazajul ideal capacitiv."
+      },
+      "scope_and_caveats": "Pentru tranzitoriu neperiodic nu se poate atribui automat fazor de 90°.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un condensator ideal, curentul este înaintea tensiunii cu:",
+        "central_highlighted_paraphrase": "**A: la condensator ideal sinusoidal i=C·du/dt, curentul precedă tensiunea cu 90°.**",
+        "after": "Alternative: B: 0° aparține sarcinii pur rezistive. C: 180° nu este defazajul ideal capacitiv."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0491",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-017"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-017": "A"
+      },
+      "original_stem": "Reactanța inductivă a unei bobine ideale este:",
+      "original_ABC": {
+        "A": "XL = 2πfL",
+        "B": "XL = 1/(2πfL)",
+        "C": "XL = R/I"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "G2-ELEC-017:https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "ABC_reasoning": {
+        "A": "A: reactanța inductivă este XL=ωL=2πfL, unitatea Ω.",
+        "B": "B: inversa 1/(2πfL) nu este formula inductanței și are dimensiune greșită.",
+        "C": "C: R/I are Ω/A, nu Ω, deci nu reprezintă reactanță."
+      },
+      "scope_and_caveats": "Pentru inductor ideal la DC staționar, f=0 ⇒ XL=0.",
+      "source_context_editorial": {
+        "before": "Context educațional: Reactanța inductivă a unei bobine ideale este:",
+        "central_highlighted_paraphrase": "**A: reactanța inductivă este XL=ωL=2πfL, unitatea Ω.**",
+        "after": "Alternative: B: inversa 1/(2πfL) nu este formula inductanței și are dimensiune greșită. C: R/I are Ω/A, nu Ω, deci nu reprezintă reactanță."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0492",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-018"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-018": "A"
+      },
+      "original_stem": "Reactanța capacitivă este:",
+      "original_ABC": {
+        "A": "XC = 1/(2πfC)",
+        "B": "XC = 2πfC",
+        "C": "XC = R·C"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "G2-ELEC-018:https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "ABC_reasoning": {
+        "A": "A: modulul reactanței capacitive este XC=1/(2πfC) la f>0.",
+        "B": "B: 2πfC este susceptanță capacitivă în siemens, nu Ω.",
+        "C": "C: produsul RC este constantă de timp în secunde."
+      },
+      "scope_and_caveats": "Impedanța complexă este Zc=−jXC, distinctă de modulul pozitiv XC.",
+      "source_context_editorial": {
+        "before": "Context educațional: Reactanța capacitivă este:",
+        "central_highlighted_paraphrase": "**A: modulul reactanței capacitive este XC=1/(2πfC) la f>0.**",
+        "after": "Alternative: B: 2πfC este susceptanță capacitivă în siemens, nu Ω. C: produsul RC este constantă de timp în secunde."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0493",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-019"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-019": "A"
+      },
+      "original_stem": "Puterea aparentă într-un circuit monofazat este:",
+      "original_ABC": {
+        "A": "S = U·I",
+        "B": "S = U/I",
+        "C": "S = R·I"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/college-physics-2e/pages/23-section-summary",
+      "source_locator": "G2-ELEC-019:https://openstax.org/books/college-physics-2e/pages/23-section-summary",
+      "ABC_reasoning": {
+        "A": "A: puterea aparentă monofazată este S=U_RMS·I_RMS, în VA.",
+        "B": "B: U/I are dimensiune de impedanță (Ω), nu putere.",
+        "C": "C: RI are dimensiune de tensiune (V), nu VA."
+      },
+      "scope_and_caveats": "Folosim valori efective; puterea activă P=S cosφ numai în sinusoidal.",
+      "source_context_editorial": {
+        "before": "Context educațional: Puterea aparentă într-un circuit monofazat este:",
+        "central_highlighted_paraphrase": "**A: puterea aparentă monofazată este S=U_RMS·I_RMS, în VA.**",
+        "after": "Alternative: B: U/I are dimensiune de impedanță (Ω), nu putere. C: RI are dimensiune de tensiune (V), nu VA."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0494",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-020"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-020": "A"
+      },
+      "original_stem": "Unitatea puterii aparente este:",
+      "original_ABC": {
+        "A": "VA",
+        "B": "W",
+        "C": "var"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "source_locator": "G2-ELEC-020:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "ABC_reasoning": {
+        "A": "A: volt-amperul VA denumește puterea aparentă S.",
+        "B": "B: wattul W denumește puterea activă P, nu convențional aparenta.",
+        "C": "C: var este unitatea puterii reactive Q, nu S."
+      },
+      "scope_and_caveats": "Mărimile au dimensiuni fizice de putere, dar VA/W/var previn confuzia de semnificație.",
+      "source_context_editorial": {
+        "before": "Context educațional: Unitatea puterii aparente este:",
+        "central_highlighted_paraphrase": "**A: volt-amperul VA denumește puterea aparentă S.**",
+        "after": "Alternative: B: wattul W denumește puterea activă P, nu convențional aparenta. C: var este unitatea puterii reactive Q, nu S."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0495",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-021"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-021": "A"
+      },
+      "original_stem": "Puterea reactivă se exprimă în:",
+      "original_ABC": {
+        "A": "var",
+        "B": "W",
+        "C": "VAh"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "source_locator": "G2-ELEC-021:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "ABC_reasoning": {
+        "A": "A: var este volt-amperul reactiv, unitatea Q.",
+        "B": "B: W este unitatea puterii active P, nu reactive.",
+        "C": "C: VAh include timpul și se folosește pentru energie aparentă, nu putere reactivă."
+      },
+      "scope_and_caveats": "Energia reactivă se exprimă în varh, iar puterea reactivă în var.",
+      "source_context_editorial": {
+        "before": "Context educațional: Puterea reactivă se exprimă în:",
+        "central_highlighted_paraphrase": "**A: var este volt-amperul reactiv, unitatea Q.**",
+        "after": "Alternative: B: W este unitatea puterii active P, nu reactive. C: VAh include timpul și se folosește pentru energie aparentă, nu putere reactivă."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0496",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-022"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-022": "A"
+      },
+      "original_stem": "Factorul de putere în regim sinusoidal este:",
+      "original_ABC": {
+        "A": "cos φ",
+        "B": "sin φ",
+        "C": "tan φ"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/college-physics-2e/pages/23-section-summary",
+      "source_locator": "G2-ELEC-022:https://openstax.org/books/college-physics-2e/pages/23-section-summary",
+      "ABC_reasoning": {
+        "A": "A: în sinusoidal cosφ este P/S și reprezintă factorul de putere.",
+        "B": "B: sinφ indică Q/S în convenția sinusoidală, nu P/S.",
+        "C": "C: tanφ=Q/P, altă relație decât factorul de putere."
+      },
+      "scope_and_caveats": "Pentru tensiune/curent distorsionate, P/S global poate diferi de cosφ fundamental.",
+      "source_context_editorial": {
+        "before": "Context educațional: Factorul de putere în regim sinusoidal este:",
+        "central_highlighted_paraphrase": "**A: în sinusoidal cosφ este P/S și reprezintă factorul de putere.**",
+        "after": "Alternative: B: sinφ indică Q/S în convenția sinusoidală, nu P/S. C: tanφ=Q/P, altă relație decât factorul de putere."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0497",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-023"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-023": "A"
+      },
+      "original_stem": "Pentru o sarcină pur rezistivă, factorul de putere este:",
+      "original_ABC": {
+        "A": "1",
+        "B": "0",
+        "C": "-1"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/college-physics-2e/pages/23-section-summary",
+      "source_locator": "G2-ELEC-023:https://openstax.org/books/college-physics-2e/pages/23-section-summary",
+      "ABC_reasoning": {
+        "A": "A: pentru rezistență pură sinusoidală φ=0°, deci cosφ=1.",
+        "B": "B: factorul 0 aparține regimului reactiv ideal, nu rezistenței pure.",
+        "C": "C: −1 nu descrie sarcina rezistivă pasivă în convenția de consum."
+      },
+      "scope_and_caveats": "PF=1 nu implică invers o sarcină formată exclusiv din rezistențe, poate fi compensată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Pentru o sarcină pur rezistivă, factorul de putere este:",
+        "central_highlighted_paraphrase": "**A: pentru rezistență pură sinusoidală φ=0°, deci cosφ=1.**",
+        "after": "Alternative: B: factorul 0 aparține regimului reactiv ideal, nu rezistenței pure. C: −1 nu descrie sarcina rezistivă pasivă în convenția de consum."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0498",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-024"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-024": "A"
+      },
+      "original_stem": "Într-un sistem trifazat echilibrat, suma vectorială a curenților de fază este:",
+      "original_ABC": {
+        "A": "zero",
+        "B": "egală cu curentul de linie",
+        "C": "întotdeauna 3 A"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "source_locator": "G2-ELEC-024:https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "ABC_reasoning": {
+        "A": "A: trei fazori de curent egali ca modul și separați cu 120° se însumează la zero.",
+        "B": "B: un curent de linie nu este suma fasorială a celor trei curenți echilibrați.",
+        "C": "C: 3 A este o valoare arbitrară, nu rezultă din echilibrul sistemului."
+      },
+      "scope_and_caveats": "Condiție: sistem simetric echilibrat. La dezechilibru suma nu trebuie să fie nulă.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un sistem trifazat echilibrat, suma vectorială a curenților de fază este:",
+        "central_highlighted_paraphrase": "**A: trei fazori de curent egali ca modul și separați cu 120° se însumează la zero.**",
+        "after": "Alternative: B: un curent de linie nu este suma fasorială a celor trei curenți echilibrați. C: 3 A este o valoare arbitrară, nu rezultă din echilibrul sistemului."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0499",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-025"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-025": "A"
+      },
+      "original_stem": "Pentru un sistem trifazat echilibrat, puterea activă se poate calcula cu:",
+      "original_ABC": {
+        "A": "P = √3·UL·IL·cosφ",
+        "B": "P = UL/IL",
+        "C": "P = 3·UL·IL"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "source_locator": "G2-ELEC-025:https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "ABC_reasoning": {
+        "A": "A: P=√3·UL·IL·cosφ pentru sistem trifazat sinusoidal echilibrat.",
+        "B": "B: UL/IL este un raport de impedanță, nu o putere în W.",
+        "C": "C: 3ULIL omite cosφ și folosește coeficient greșit pentru mărimi de linie."
+      },
+      "scope_and_caveats": "Cu mărimi de fază, P=3Uf·If·cosφ. Nu confunda fază și linie.",
+      "source_context_editorial": {
+        "before": "Context educațional: Pentru un sistem trifazat echilibrat, puterea activă se poate calcula cu:",
+        "central_highlighted_paraphrase": "**A: P=√3·UL·IL·cosφ pentru sistem trifazat sinusoidal echilibrat.**",
+        "after": "Alternative: B: UL/IL este un raport de impedanță, nu o putere în W. C: 3ULIL omite cosφ și folosește coeficient greșit pentru mărimi de linie."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_4629cfab-20bf-44e5-9830-24b0754587ac"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0500",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-026"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-026": "A"
+      },
+      "original_stem": "În conexiunea stea, tensiunea de linie este:",
+      "original_ABC": {
+        "A": "√3 ori tensiunea de fază",
+        "B": "egală cu zero",
+        "C": "jumătate din tensiunea de fază"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "source_locator": "G2-ELEC-026:https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "ABC_reasoning": {
+        "A": "A: la stea simetrică UL=√3·Uf prin diferența fazorială între tensiuni decalate la 120°.",
+        "B": "B: zero nu corespunde tensiunii de linie într-un sistem normal alimentat.",
+        "C": "C: jumătate din Uf nu rezultă din geometria a trei fazori simetrici."
+      },
+      "scope_and_caveats": "Condiție: sistem de tensiuni sinusoidale simetrice, nu orice dezechilibru.",
+      "source_context_editorial": {
+        "before": "Context educațional: În conexiunea stea, tensiunea de linie este:",
+        "central_highlighted_paraphrase": "**A: la stea simetrică UL=√3·Uf prin diferența fazorială între tensiuni decalate la 120°.**",
+        "after": "Alternative: B: zero nu corespunde tensiunii de linie într-un sistem normal alimentat. C: jumătate din Uf nu rezultă din geometria a trei fazori simetrici."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0501",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-027"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-027": "A"
+      },
+      "original_stem": "În conexiunea triunghi, tensiunea de linie este:",
+      "original_ABC": {
+        "A": "egală cu tensiunea de fază",
+        "B": "√3 ori tensiunea de fază",
+        "C": "jumătate din tensiunea de fază"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "source_locator": "G2-ELEC-027:https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "ABC_reasoning": {
+        "A": "A: în triunghi fiecare fază este între două linii, astfel UL=Uf.",
+        "B": "B: √3 între UL și Uf apare în stea, nu triunghi.",
+        "C": "C: 1/2 este factor fără justificare pentru conexiunea triunghi."
+      },
+      "scope_and_caveats": "Nu confunda tensiunile cu relația curenților la triunghi echilibrat: IL=√3 If.",
+      "source_context_editorial": {
+        "before": "Context educațional: În conexiunea triunghi, tensiunea de linie este:",
+        "central_highlighted_paraphrase": "**A: în triunghi fiecare fază este între două linii, astfel UL=Uf.**",
+        "after": "Alternative: B: √3 între UL și Uf apare în stea, nu triunghi. C: 1/2 este factor fără justificare pentru conexiunea triunghi."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0502",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-028"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-028": "A"
+      },
+      "original_stem": "Transformatorul electric funcționează pe baza:",
+      "original_ABC": {
+        "A": "inducției electromagnetice",
+        "B": "efectului fotoelectric",
+        "C": "efectului Hall exclusiv"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+      "source_locator": "G2-ELEC-028:https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+      "ABC_reasoning": {
+        "A": "A: transformatorul electromagnetic utilizează inducția din flux magnetic variabil pentru a genera tensiune secundară.",
+        "B": "B: efectul fotoelectric presupune radiație și emisie de electroni, alt fenomen.",
+        "C": "C: efectul Hall produce tensiune transversală în conductor, nu mecanismul transformatorului clasic."
+      },
+      "scope_and_caveats": "Fluxul constant din regim DC staționar nu produce tensiune secundară susținută.",
+      "source_context_editorial": {
+        "before": "Context educațional: Transformatorul electric funcționează pe baza:",
+        "central_highlighted_paraphrase": "**A: transformatorul electromagnetic utilizează inducția din flux magnetic variabil pentru a genera tensiune secundară.**",
+        "after": "Alternative: B: efectul fotoelectric presupune radiație și emisie de electroni, alt fenomen. C: efectul Hall produce tensiune transversală în conductor, nu mecanismul transformatorului clasic."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0503",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-029"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-029": "A"
+      },
+      "original_stem": "Într-un transformator ideal, raportul tensiunilor este egal cu raportul:",
+      "original_ABC": {
+        "A": "numărului de spire",
+        "B": "rezistențelor de sarcină",
+        "C": "frecvențelor"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+      "source_locator": "G2-ELEC-029:https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+      "ABC_reasoning": {
+        "A": "A: la transformator ideal U2/U1=N2/N1, cu același flux magnetic prin înfășurări.",
+        "B": "B: raportul rezistențelor de sarcină nu stabilește raportul de transformare ideal.",
+        "C": "C: frecvența primară și secundară e aceeași, deci raportul frecvențelor nu determină tensiunile."
+      },
+      "scope_and_caveats": "În transformatorul real căderile de tensiune și pierderile pot modifica valorile.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un transformator ideal, raportul tensiunilor este egal cu raportul:",
+        "central_highlighted_paraphrase": "**A: la transformator ideal U2/U1=N2/N1, cu același flux magnetic prin înfășurări.**",
+        "after": "Alternative: B: raportul rezistențelor de sarcină nu stabilește raportul de transformare ideal. C: frecvența primară și secundară e aceeași, deci raportul frecvențelor nu determină tensiunile."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0504",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-030"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-030": "A"
+      },
+      "original_stem": "Un transformator ideal nu poate funcționa în regim normal alimentat exclusiv cu:",
+      "original_ABC": {
+        "A": "curent continuu constant",
+        "B": "curent alternativ",
+        "C": "tensiune alternativă"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V232_G2_ELEC006_030_25_TECHNICAL_FOUNDATIONS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "b2f7350a5d6279ea4f6e90e09fdaba3d75e81311",
+      "source_url": "https://openstax.org/books/college-physics/pages/23-7-transformers",
+      "source_locator": "G2-ELEC-030:Source scientific/technical references in CKPT216",
+      "ABC_reasoning": {
+        "A": "A: alimentarea doar cu curent continuu constant nu produce dΦ/dt în staționar, deci nu există transformare normală.",
+        "B": "B: curentul alternativ poate produce flux variabil și permite inducția.",
+        "C": "C: tensiunea alternativă permite funcționarea obișnuită a transformatorului."
+      },
+      "scope_and_caveats": "La conectarea DC poate apărea un tranzitoriu scurt; nu este funcționare normală continuă.",
+      "source_context_editorial": {
+        "before": "Context educațional: Un transformator ideal nu poate funcționa în regim normal alimentat exclusiv cu:",
+        "central_highlighted_paraphrase": "**A: alimentarea doar cu curent continuu constant nu produce dΦ/dt în staționar, deci nu există transformare normală.**",
+        "after": "Alternative: B: curentul alternativ poate produce flux variabil și permite inducția. C: tensiunea alternativă permite funcționarea obișnuită a transformatorului."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0505",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-031"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-031": "A"
+      },
+      "original_stem": "Motorul electric transformă în principal:",
+      "original_ABC": {
+        "A": "energia electrică în energie mecanică",
+        "B": "energia mecanică în energie electrică exclusiv",
+        "C": "energia termică în energie electrică"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/physics/pages/20-2-motors-generators-and-transformers",
+      "source_locator": "G2-ELEC-031:https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law",
+      "ABC_reasoning": {
+        "A": "Varianta A «energia electrică în energie mecanică»: motorul convertește în principal energie electrică în lucru mecanic la arbore.",
+        "B": "Varianta B «energia mecanică în energie electrică exclusiv»: reprezintă direcția generică a unui generator și are «exclusiv» fals pentru motor,",
+        "C": "Varianta C «energia termică în energie electrică»: nu este conversia principală. Mașinile electrice reversibile pot funcționa în regim de frânare/generator, deci «în principal» contează."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Motorul electric transformă în principal:",
+        "central_highlighted_paraphrase": "**Varianta A «energia electrică în energie mecanică»: motorul convertește în principal energie electrică în lucru mecanic la arbore.**",
+        "after": "Alternative: Varianta B «energia mecanică în energie electrică exclusiv»: reprezintă direcția generică a unui generator și are «exclusiv» fals pentru motor, Varianta C «energia termică în energie electrică»: nu este conversia principală. Mașinile electrice reversibile pot funcționa în regim de frânare/generator, deci «în principal» contează."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0506",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-032"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-032": "A"
+      },
+      "original_stem": "Generatorul electric transformă în principal:",
+      "original_ABC": {
+        "A": "energia mecanică în energie electrică",
+        "B": "energia electrică în căldură",
+        "C": "energia chimică în lumină"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/physics/pages/20-2-motors-generators-and-transformers",
+      "source_locator": "G2-ELEC-032:https://openstax.org/books/university-physics-volume-2/pages/13-1-faradays-law",
+      "ABC_reasoning": {
+        "A": "Varianta A «energia mecanică în energie electrică»: generatorul convertește predominant energie mecanică în energie electrică prin inducție;",
+        "B": "Varianta B «energia electrică în căldură»: transformarea în căldură este o pierdere,",
+        "C": "Varianta C «energia chimică în lumină»: conversia chimică-lumină nu descrie mașina. «În principal» permite pierderile și regimurile reversibile."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Generatorul electric transformă în principal:",
+        "central_highlighted_paraphrase": "**Varianta A «energia mecanică în energie electrică»: generatorul convertește predominant energie mecanică în energie electrică prin inducție;**",
+        "after": "Alternative: Varianta B «energia electrică în căldură»: transformarea în căldură este o pierdere, Varianta C «energia chimică în lumină»: conversia chimică-lumină nu descrie mașina. «În principal» permite pierderile și regimurile reversibile."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0507",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-033"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-033": "A"
+      },
+      "original_stem": "Un multimetru setat pentru măsurarea tensiunii se conectează în mod normal:",
+      "original_ABC": {
+        "A": "în paralel cu elementul măsurat",
+        "B": "în serie cu elementul",
+        "C": "doar la pământ"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "source_locator": "G2-ELEC-033:https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "ABC_reasoning": {
+        "A": "Varianta A «în paralel cu elementul măsurat»: voltmetrul/multimetrul pe tensiune se conectează în paralel la bornele elementului;",
+        "B": "Varianta B «în serie cu elementul»: în serie este conexiunea tipică pentru curent și poate modifica circuitul;",
+        "C": "Varianta C «doar la pământ»: doar la pământ nu măsoară diferența între borne. Aparatul și domeniul de măsură trebuie alese după categorie și tensiune."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Un multimetru setat pentru măsurarea tensiunii se conectează în mod normal:",
+        "central_highlighted_paraphrase": "**Varianta A «în paralel cu elementul măsurat»: voltmetrul/multimetrul pe tensiune se conectează în paralel la bornele elementului;**",
+        "after": "Alternative: Varianta B «în serie cu elementul»: în serie este conexiunea tipică pentru curent și poate modifica circuitul; Varianta C «doar la pământ»: doar la pământ nu măsoară diferența între borne. Aparatul și domeniul de măsură trebuie alese după categorie și tensiune."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0508",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-034"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-034": "A"
+      },
+      "original_stem": "Un ampermetru se conectează în mod normal:",
+      "original_ABC": {
+        "A": "în serie cu circuitul",
+        "B": "în paralel pe sursă",
+        "C": "doar între fază și PE"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "source_locator": "G2-ELEC-034:https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "ABC_reasoning": {
+        "A": "Varianta A «în serie cu circuitul»: ampermetrul convențional se introduce în serie în ramura măsurată;",
+        "B": "Varianta B «în paralel pe sursă»: legarea directă în paralel peste sursă poate produce scurtcircuit periculos;",
+        "C": "Varianta C «doar între fază și PE»: legarea între fază și PE nu este procedura de măsurare a curentului. Excepție: cleștele ampermetric neintruziv măsoară fără întreruperea conductoarelor, nu este montajul convențional cerut."
+      },
+      "scope_and_caveats": "Ampermetrul convențional se leagă în serie, însă cleștele ampermetric este o metodă neintruzivă. Conectarea în paralel la sursă este periculoasă.",
+      "source_context_editorial": {
+        "before": "Context educațional: Un ampermetru se conectează în mod normal:",
+        "central_highlighted_paraphrase": "**Varianta A «în serie cu circuitul»: ampermetrul convențional se introduce în serie în ramura măsurată;**",
+        "after": "Alternative: Varianta B «în paralel pe sursă»: legarea directă în paralel peste sursă poate produce scurtcircuit periculos; Varianta C «doar între fază și PE»: legarea între fază și PE nu este procedura de măsurare a curentului. Excepție: cleștele ampermetric neintruziv măsoară fără întreruperea conductoarelor, nu este montajul convențional cerut."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0509",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-035"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-035": "A"
+      },
+      "original_stem": "Un ohmmetru se folosește corect pentru măsurarea unei rezistențe atunci când circuitul este:",
+      "original_ABC": {
+        "A": "deconectat de la alimentare",
+        "B": "alimentat la tensiunea nominală",
+        "C": "scurtcircuitat"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-resistance",
+      "source_locator": "G2-ELEC-035:https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-measure-resistance",
+      "ABC_reasoning": {
+        "A": "Varianta A «deconectat de la alimentare»: ohmmetrul pe circuit deconectat și verificat fără tensiune;",
+        "B": "Varianta B «alimentat la tensiunea nominală»: sub tensiune nu este permis deoarece afectează rezultatul și poate avaria instrumentul;",
+        "C": "Varianta C «scurtcircuitat»: scurtcircuitarea poate masca rezistența reală. Pentru măsurări precise elementele se pot izola de căile paralele."
+      },
+      "scope_and_caveats": "Nu presupune că simpla deconectare întrerupe toate sursele; se verifică lipsa tensiunii și se descarcă eventualele condensatoare.",
+      "source_context_editorial": {
+        "before": "Context educațional: Un ohmmetru se folosește corect pentru măsurarea unei rezistențe atunci când circuitul este:",
+        "central_highlighted_paraphrase": "**Varianta A «deconectat de la alimentare»: ohmmetrul pe circuit deconectat și verificat fără tensiune;**",
+        "after": "Alternative: Varianta B «alimentat la tensiunea nominală»: sub tensiune nu este permis deoarece afectează rezultatul și poate avaria instrumentul; Varianta C «scurtcircuitat»: scurtcircuitarea poate masca rezistența reală. Pentru măsurări precise elementele se pot izola de căile paralele."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_cd7794db-8050-4605-b052-a7c861668b82"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0511",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-037"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-037": "A"
+      },
+      "original_stem": "Legea lui Kirchhoff a curenților se aplică unui nod și exprimă că:",
+      "original_ABC": {
+        "A": "suma algebrică a curenților din nod este zero",
+        "B": "toate tensiunile sunt zero",
+        "C": "puterea activă este întotdeauna zero"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "source_locator": "G2-ELEC-037:https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "ABC_reasoning": {
+        "A": "Varianta A «suma algebrică a curenților din nod este zero»: KCL afirmă suma algebrică a curenților într-un nod =0 (conservarea sarcinii în model concentrat);",
+        "B": "Varianta B «toate tensiunile sunt zero»: nu impune tensiuni zero,",
+        "C": "Varianta C «puterea activă este întotdeauna zero»: nici putere activă zero. Pentru condiții electromagnetice distribuite se ține cont de curentul de deplasare."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Legea lui Kirchhoff a curenților se aplică unui nod și exprimă că:",
+        "central_highlighted_paraphrase": "**Varianta A «suma algebrică a curenților din nod este zero»: KCL afirmă suma algebrică a curenților într-un nod =0 (conservarea sarcinii în model concentrat);**",
+        "after": "Alternative: Varianta B «toate tensiunile sunt zero»: nu impune tensiuni zero, Varianta C «puterea activă este întotdeauna zero»: nici putere activă zero. Pentru condiții electromagnetice distribuite se ține cont de curentul de deplasare."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0512",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-038"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-038": "A"
+      },
+      "original_stem": "Legea lui Kirchhoff a tensiunilor exprimă, pe un contur închis, că:",
+      "original_ABC": {
+        "A": "suma algebrică a tensiunilor este zero",
+        "B": "suma curenților este întotdeauna zero",
+        "C": "toate rezistențele sunt egale"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "source_locator": "G2-ELEC-038:https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "ABC_reasoning": {
+        "A": "Varianta A «suma algebrică a tensiunilor este zero»: KVL în aproximația circuitului concentrat: suma algebrică a tensiunilor pe un contur închis este zero;",
+        "B": "Varianta B «suma curenților este întotdeauna zero»: suma curenților nu este KVL,",
+        "C": "Varianta C «toate rezistențele sunt egale»: egalitatea rezistențelor nu rezultă. Dacă există flux magnetic variabil ce străbate conturul, formularea simplă necesită includerea fem induse și poate fi incompletă."
+      },
+      "scope_and_caveats": "KVL în forma elementară cere model cu parametri concentrați ori includerea tensiunii induse la flux magnetic variabil.",
+      "source_context_editorial": {
+        "before": "Context educațional: Legea lui Kirchhoff a tensiunilor exprimă, pe un contur închis, că:",
+        "central_highlighted_paraphrase": "**Varianta A «suma algebrică a tensiunilor este zero»: KVL în aproximația circuitului concentrat: suma algebrică a tensiunilor pe un contur închis este zero;**",
+        "after": "Alternative: Varianta B «suma curenților este întotdeauna zero»: suma curenților nu este KVL, Varianta C «toate rezistențele sunt egale»: egalitatea rezistențelor nu rezultă. Dacă există flux magnetic variabil ce străbate conturul, formularea simplă necesită includerea fem induse și poate fi incompletă."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0513",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-039"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-039": "A"
+      },
+      "original_stem": "Conductanța electrică este inversul:",
+      "original_ABC": {
+        "A": "rezistenței",
+        "B": "tensiunii",
+        "C": "puterii"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "source_locator": "G2-ELEC-039:https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "ABC_reasoning": {
+        "A": "Varianta A «rezistenței»: conductanța G a unui rezistor ohmic =1/R în siemens;",
+        "B": "Varianta B «tensiunii»: inversul tensiunii nu este conductanță,",
+        "C": "Varianta C «puterii»: inversul puterii nici atât. Pentru componente AC complexe inversul impedanței este admitanța Y=1/Z, nu conductanța pură."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Conductanța electrică este inversul:",
+        "central_highlighted_paraphrase": "**Varianta A «rezistenței»: conductanța G a unui rezistor ohmic =1/R în siemens;**",
+        "after": "Alternative: Varianta B «tensiunii»: inversul tensiunii nu este conductanță, Varianta C «puterii»: inversul puterii nici atât. Pentru componente AC complexe inversul impedanței este admitanța Y=1/Z, nu conductanța pură."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0514",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-040"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-040": "A"
+      },
+      "original_stem": "Unitatea conductanței este:",
+      "original_ABC": {
+        "A": "siemens (S)",
+        "B": "tesla (T)",
+        "C": "henry (H)"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "source_locator": "G2-ELEC-040:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "ABC_reasoning": {
+        "A": "Varianta A «siemens (S)»: siemens (S) unitate de conductanță;",
+        "B": "Varianta B «tesla (T)»: tesla (T) este unitatea inducției magnetice,",
+        "C": "Varianta C «henry (H)»: henry (H) inductanței. 1 S=1/Ω."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Unitatea conductanței este:",
+        "central_highlighted_paraphrase": "**Varianta A «siemens (S)»: siemens (S) unitate de conductanță;**",
+        "after": "Alternative: Varianta B «tesla (T)»: tesla (T) este unitatea inducției magnetice, Varianta C «henry (H)»: henry (H) inductanței. 1 S=1/Ω."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0515",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-041"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-041": "A"
+      },
+      "original_stem": "Capacitatea electrică se măsoară în:",
+      "original_ABC": {
+        "A": "farazi (F)",
+        "B": "henry (H)",
+        "C": "tesla (T)"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "source_locator": "G2-ELEC-041:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "ABC_reasoning": {
+        "A": "Varianta A «farazi (F)»: capacitatea se măsoară în farazi F=C/V;",
+        "B": "Varianta B «henry (H)»: henry este inductanță,",
+        "C": "Varianta C «tesla (T)»: tesla inducție magnetică. Faradul nu este coulombul (unitate de sarcină)."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Capacitatea electrică se măsoară în:",
+        "central_highlighted_paraphrase": "**Varianta A «farazi (F)»: capacitatea se măsoară în farazi F=C/V;**",
+        "after": "Alternative: Varianta B «henry (H)»: henry este inductanță, Varianta C «tesla (T)»: tesla inducție magnetică. Faradul nu este coulombul (unitate de sarcină)."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0516",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-042"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-042": "A"
+      },
+      "original_stem": "Inductanța se măsoară în:",
+      "original_ABC": {
+        "A": "henry (H)",
+        "B": "farad (F)",
+        "C": "siemens (S)"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "source_locator": "G2-ELEC-042:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "ABC_reasoning": {
+        "A": "Varianta A «henry (H)»: inductanța se măsoară în henry H=V·s/A;",
+        "B": "Varianta B «farad (F)»: farad măsoară capacitatea,",
+        "C": "Varianta C «siemens (S)»: siemens conductanța. Formula U=L di/dt în convenție pasivă."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Inductanța se măsoară în:",
+        "central_highlighted_paraphrase": "**Varianta A «henry (H)»: inductanța se măsoară în henry H=V·s/A;**",
+        "after": "Alternative: Varianta B «farad (F)»: farad măsoară capacitatea, Varianta C «siemens (S)»: siemens conductanța. Formula U=L di/dt în convenție pasivă."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0517",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-043"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-043": "A"
+      },
+      "original_stem": "Densitatea de curent este raportul dintre:",
+      "original_ABC": {
+        "A": "curent și aria secțiunii",
+        "B": "tensiune și lungime",
+        "C": "putere și timp"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "source_locator": "G2-ELEC-043:https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "ABC_reasoning": {
+        "A": "Varianta A «curent și aria secțiunii»: densitatea medie a curentului J=I/A prin suprafața transversală în conductor uniform;",
+        "B": "Varianta B «tensiune și lungime»: U/l exprimă intensitate de câmp E în V/m,",
+        "C": "Varianta C «putere și timp»: putere/timp nu este densitate. Pentru distribuții neuniforme, J este locală și I=∫J·dA, nu doar simplul raport uniform."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Densitatea de curent este raportul dintre:",
+        "central_highlighted_paraphrase": "**Varianta A «curent și aria secțiunii»: densitatea medie a curentului J=I/A prin suprafața transversală în conductor uniform;**",
+        "after": "Alternative: Varianta B «tensiune și lungime»: U/l exprimă intensitate de câmp E în V/m, Varianta C «putere și timp»: putere/timp nu este densitate. Pentru distribuții neuniforme, J este locală și I=∫J·dA, nu doar simplul raport uniform."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0518",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-044"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-044": "A"
+      },
+      "original_stem": "Rezistența unui conductor omogen este proporțională cu:",
+      "original_ABC": {
+        "A": "lungimea și rezistivitatea",
+        "B": "doar curentul",
+        "C": "doar tensiunea"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "source_locator": "G2-ELEC-044:https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "ABC_reasoning": {
+        "A": "Varianta A «lungimea și rezistivitatea»: R=ρl/A pentru conductor omogen la temperatură constantă: direct proporțională cu lungimea l și rezistivitatea ρ;",
+        "B": "Varianta B «doar curentul»: numai curentul și",
+        "C": "Varianta C «doar tensiunea»: numai tensiunea nu determină R în model ohmic. Secțiunea A și temperatura contează și ele, iar «proporțională» ține ceilalți parametri constanți."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Rezistența unui conductor omogen este proporțională cu:",
+        "central_highlighted_paraphrase": "**Varianta A «lungimea și rezistivitatea»: R=ρl/A pentru conductor omogen la temperatură constantă: direct proporțională cu lungimea l și rezistivitatea ρ;**",
+        "after": "Alternative: Varianta B «doar curentul»: numai curentul și Varianta C «doar tensiunea»: numai tensiunea nu determină R în model ohmic. Secțiunea A și temperatura contează și ele, iar «proporțională» ține ceilalți parametri constanți."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0519",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-045"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-045": "A"
+      },
+      "original_stem": "Rezistența unui conductor omogen este invers proporțională cu:",
+      "original_ABC": {
+        "A": "aria secțiunii transversale",
+        "B": "lungimea",
+        "C": "rezistivitatea"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "source_locator": "G2-ELEC-045:https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "ABC_reasoning": {
+        "A": "Varianta A «aria secțiunii transversale»: din R=ρl/A rezultă dependența inversă de aria secțiunii A, la l,ρ fixate.",
+        "B": "Varianta B «lungimea»: lungimea produce proporționalitate directă,",
+        "C": "Varianta C «rezistivitatea»: rezistivitatea tot directă. Unitățile trebuie să fie compatibile."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Rezistența unui conductor omogen este invers proporțională cu:",
+        "central_highlighted_paraphrase": "**Varianta A «aria secțiunii transversale»: din R=ρl/A rezultă dependența inversă de aria secțiunii A, la l,ρ fixate.**",
+        "after": "Alternative: Varianta B «lungimea»: lungimea produce proporționalitate directă, Varianta C «rezistivitatea»: rezistivitatea tot directă. Unitățile trebuie să fie compatibile."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_1e7538c0-6ec9-4631-80d7-e1bd1162c054"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0520",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-046"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-046": "A"
+      },
+      "original_stem": "Pentru un conductor metalic, în intervale uzuale, creșterea temperaturii determină de regulă:",
+      "original_ABC": {
+        "A": "creșterea rezistenței",
+        "B": "scăderea rezistenței la zero",
+        "C": "inversarea polarității"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "source_locator": "G2-ELEC-046:https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "ABC_reasoning": {
+        "A": "Varianta A «creșterea rezistenței»: pentru majoritatea metalelor obișnuite în intervalul normal, ρ(T)≈ρ0(1+αΔT) cu α>0, deci rezistența crește (la geometrie aproximativ fixă).",
+        "B": "Varianta B «scăderea rezistenței la zero»: scade la zero este fals în intervalul dat și",
+        "C": "Varianta C «inversarea polarității»: inversarea polarității nu rezultă din temperatură. Materiale speciale și superconductivitatea nu sunt în domeniu."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Pentru un conductor metalic, în intervale uzuale, creșterea temperaturii determină de regulă:",
+        "central_highlighted_paraphrase": "**Varianta A «creșterea rezistenței»: pentru majoritatea metalelor obișnuite în intervalul normal, ρ(T)≈ρ0(1+αΔT) cu α>0, deci rezistența crește (la geometrie aproximativ fixă).**",
+        "after": "Alternative: Varianta B «scăderea rezistenței la zero»: scade la zero este fals în intervalul dat și Varianta C «inversarea polarității»: inversarea polarității nu rezultă din temperatură. Materiale speciale și superconductivitatea nu sunt în domeniu."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0521",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-047"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-047": "A"
+      },
+      "original_stem": "Scopul principal al unei protecții la supracurent este:",
+      "original_ABC": {
+        "A": "limitarea efectelor curenților excesivi",
+        "B": "creșterea tensiunii de alimentare",
+        "C": "mărirea rezistenței sarcinii"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.se.com/sg/en/product-subcategory/4670-overcurrent-protection/",
+      "source_locator": "G2-ELEC-047:https://www.se.com/sg/en/product-subcategory/4670-overcurrent-protection/",
+      "ABC_reasoning": {
+        "A": "Varianta A «limitarea efectelor curenților excesivi»: limitează efectele supracurenților prin declanșarea/întreruperea alimentării potrivit curbei și coordonării protecțiilor.",
+        "B": "Varianta B «creșterea tensiunii de alimentare»: creșterea tensiunii nu este funcția dispozitivului,",
+        "C": "Varianta C «mărirea rezistenței sarcinii»: schimbarea rezistenței sarcinii nu constituie scopul. Limitarea curentului instantaneu nu este garantată de orice protecție."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Scopul principal al unei protecții la supracurent este:",
+        "central_highlighted_paraphrase": "**Varianta A «limitarea efectelor curenților excesivi»: limitează efectele supracurenților prin declanșarea/întreruperea alimentării potrivit curbei și coordonării protecțiilor.**",
+        "after": "Alternative: Varianta B «creșterea tensiunii de alimentare»: creșterea tensiunii nu este funcția dispozitivului, Varianta C «mărirea rezistenței sarcinii»: schimbarea rezistenței sarcinii nu constituie scopul. Limitarea curentului instantaneu nu este garantată de orice protecție."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0522",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-048"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-048": "A"
+      },
+      "original_stem": "Un întreruptor automat poate asigura protecția la:",
+      "original_ABC": {
+        "A": "suprasarcină și scurtcircuit, în funcție de caracteristicile aparatului",
+        "B": "doar iluminat natural",
+        "C": "doar lipsa fazei în orice situație"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.electrical-installation.org/enwiki/Fundamental_characteristics_of_a_circuit-breaker",
+      "source_locator": "G2-ELEC-048:https://www.electrical-installation.org/enwiki/Fundamental_characteristics_of_a_circuit-breaker",
+      "ABC_reasoning": {
+        "A": "Varianta A «suprasarcină și scurtcircuit, în funcție de caracteristicile aparatului»: întreruptorul automat adecvat poate proteja la suprasarcină și scurtcircuit în funcție de declanșatoare și setări.",
+        "B": "Varianta B «doar iluminat natural»: iluminatul natural este irelevant,",
+        "C": "Varianta C «doar lipsa fazei în orice situație»: lipsa de fază nu e detectată universal de orice întreruptor. Nu se implică automat protecție diferențială."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Un întreruptor automat poate asigura protecția la:",
+        "central_highlighted_paraphrase": "**Varianta A «suprasarcină și scurtcircuit, în funcție de caracteristicile aparatului»: întreruptorul automat adecvat poate proteja la suprasarcină și scurtcircuit în funcție de declanșatoare și setări.**",
+        "after": "Alternative: Varianta B «doar iluminat natural»: iluminatul natural este irelevant, Varianta C «doar lipsa fazei în orice situație»: lipsa de fază nu e detectată universal de orice întreruptor. Nu se implică automat protecție diferențială."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0523",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-049"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-049": "A"
+      },
+      "original_stem": "Un dispozitiv diferențial detectează în principal:",
+      "original_ABC": {
+        "A": "un dezechilibru al curenților care indică un curent rezidual",
+        "B": "doar supratensiunea",
+        "C": "doar frecvența rețelei"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.eaton.com/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/xeffect-rccb/eaton-rcd-application-guide-br019003en-en-us.pdf",
+      "source_locator": "G2-ELEC-049:https://www.se.com/nz/en/faqs/FAQ000210095/",
+      "ABC_reasoning": {
+        "A": "Varianta A «un dezechilibru al curenților care indică un curent rezidual»: RCD compară vectorial curenții prin conductoarele active și detectează curent rezidual.",
+        "B": "Varianta B «doar supratensiunea»: supratensiunea și",
+        "C": "Varianta C «doar frecvența rețelei»: frecvența nu sunt funcțiile primare. Nu se confundă RCCB cu RCBO; RCCB de regulă nu oferă protecție de supracurent."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Un dispozitiv diferențial detectează în principal:",
+        "central_highlighted_paraphrase": "**Varianta A «un dezechilibru al curenților care indică un curent rezidual»: RCD compară vectorial curenții prin conductoarele active și detectează curent rezidual.**",
+        "after": "Alternative: Varianta B «doar supratensiunea»: supratensiunea și Varianta C «doar frecvența rețelei»: frecvența nu sunt funcțiile primare. Nu se confundă RCCB cu RCBO; RCCB de regulă nu oferă protecție de supracurent."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0524",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-050"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-050": "A"
+      },
+      "original_stem": "Împământarea de protecție are ca scop principal:",
+      "original_ABC": {
+        "A": "reducerea riscului de electrocutare prin asigurarea unei căi de defect și a condițiilor de declanșare a protecției",
+        "B": "creșterea consumului",
+        "C": "eliminarea completă a tuturor defectelor"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://www.eaton.com/content/dam/eaton/markets/buildings/how-we-drive-building-efficiency-and-safety/eaton-guide-fundamentals-of-electrical-safety-in-lv-installations-buildings-en-us.pdf",
+      "source_locator": "G2-ELEC-050:https://www.eaton.com/content/dam/eaton/markets/buildings/how-we-drive-building-efficiency-and-safety/eaton-guide-fundamentals-of-electrical-safety-in-lv-installations-buildings-en-us.pdf",
+      "ABC_reasoning": {
+        "A": "Varianta A «reducerea riscului de electrocutare prin asigurarea unei căi de defect și a condițiilor de declanșare a protecției»: împământarea de protecție și legarea la PE contribuie la reducerea tensiunilor de atingere și la funcționarea deconectării automate în sistemul potrivit.",
+        "B": "Varianta B «creșterea consumului»: creșterea consumului nu este scop;",
+        "C": "Varianta C «eliminarea completă a tuturor defectelor»: nu elimină orice defect. Funcționarea exactă diferă între TN, TT și IT; nu e suficient doar electrodul."
+      },
+      "scope_and_caveats": "Împământarea și conductoarele de protecție acționează împreună cu măsurile de deconectare specifice TN, TT sau IT.",
+      "source_context_editorial": {
+        "before": "Context educațional: Împământarea de protecție are ca scop principal:",
+        "central_highlighted_paraphrase": "**Varianta A «reducerea riscului de electrocutare prin asigurarea unei căi de defect și a condițiilor de declanșare a protecției»: împământarea de protecție și legarea la PE contribuie la reducerea tensiunilor de atingere și la funcționarea deconectării automate în sistemul potrivit.**",
+        "after": "Alternative: Varianta B «creșterea consumului»: creșterea consumului nu este scop; Varianta C «eliminarea completă a tuturor defectelor»: nu elimină orice defect. Funcționarea exactă diferă între TN, TT și IT; nu e suficient doar electrodul."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0525",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-051"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-051": "A"
+      },
+      "original_stem": "Tensiunea nominală a unei instalații reprezintă:",
+      "original_ABC": {
+        "A": "valoarea de referință pentru care instalația și echipamentele sunt destinate să funcționeze",
+        "B": "curentul maxim permanent",
+        "C": "rezistența conductorului PE"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://webstore.iec.ch/publication/153",
+      "source_locator": "G2-ELEC-051:Source scientific/technical references in CKPT216",
+      "ABC_reasoning": {
+        "A": "Varianta A «valoarea de referință pentru care instalația și echipamentele sunt destinate să funcționeze»: is voltage equipment/design reference;",
+        "B": "Varianta B «curentul maxim permanent»: has unit amperes (current),",
+        "C": "Varianta C «rezistența conductorului PE»: ohms (PE resistance), dimensional distractor checks. 'Rated/nominal voltage' may have standard-specific Uo/U definitions, but generic formulation fits A."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Tensiunea nominală a unei instalații reprezintă:",
+        "central_highlighted_paraphrase": "**Varianta A «valoarea de referință pentru care instalația și echipamentele sunt destinate să funcționeze»: is voltage equipment/design reference;**",
+        "after": "Alternative: Varianta B «curentul maxim permanent»: has unit amperes (current), Varianta C «rezistența conductorului PE»: ohms (PE resistance), dimensional distractor checks. 'Rated/nominal voltage' may have standard-specific Uo/U definitions, but generic formulation fits A."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0526",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-052"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-052": "A"
+      },
+      "original_stem": "Un circuit electric închis este necesar pentru:",
+      "original_ABC": {
+        "A": "circulația continuă a curentului într-un circuit alimentat",
+        "B": "măsurarea exclusivă a rezistenței",
+        "C": "anularea tensiunii sursei"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "source_locator": "G2-ELEC-052:Source scientific/technical references in CKPT216",
+      "ABC_reasoning": {
+        "A": "Varianta A «circulația continuă a curentului într-un circuit alimentat»: a closed conducting path normally needed for sustained current from a supply;",
+        "B": "Varianta B «măsurarea exclusivă a rezistenței»: measuring resistance exclusively isn't what 'closed circuit' means;",
+        "C": "Varianta C «anularea tensiunii sursei»: short-circuiting or closing does not cancel source EMF. Distinguish displacement current/dielectric circuits from pedagogical conduction example."
+      },
+      "scope_and_caveats": "În circuite cu condensatoare există tranzitorii și curent de deplasare; enunțul este despre conducție susținută în circuit simplu.",
+      "source_context_editorial": {
+        "before": "Context educațional: Un circuit electric închis este necesar pentru:",
+        "central_highlighted_paraphrase": "**Varianta A «circulația continuă a curentului într-un circuit alimentat»: a closed conducting path normally needed for sustained current from a supply;**",
+        "after": "Alternative: Varianta B «măsurarea exclusivă a rezistenței»: measuring resistance exclusively isn't what 'closed circuit' means; Varianta C «anularea tensiunii sursei»: short-circuiting or closing does not cancel source EMF. Distinguish displacement current/dielectric circuits from pedagogical conduction example."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0527",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-053"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-053": "A"
+      },
+      "original_stem": "Puterea activă într-un circuit rezistiv este transformată în principal în:",
+      "original_ABC": {
+        "A": "energie termică",
+        "B": "energie magnetică stocată permanent",
+        "C": "energie chimică în orice rezistor"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "source_locator": "G2-ELEC-053:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "ABC_reasoning": {
+        "A": "Varianta A «energie termică»: în rezistor, puterea activă P=I²R este disipată preponderent termic;",
+        "B": "Varianta B «energie magnetică stocată permanent»: stocarea magnetică permanentă și",
+        "C": "Varianta C «energie chimică în orice rezistor»: transformarea chimică în orice rezistor sunt false. Nu toate componentele rezistive sunt încălzitoare utile, dar căldura este conversia principală."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Puterea activă într-un circuit rezistiv este transformată în principal în:",
+        "central_highlighted_paraphrase": "**Varianta A «energie termică»: în rezistor, puterea activă P=I²R este disipată preponderent termic;**",
+        "after": "Alternative: Varianta B «energie magnetică stocată permanent»: stocarea magnetică permanentă și Varianta C «energie chimică în orice rezistor»: transformarea chimică în orice rezistor sunt false. Nu toate componentele rezistive sunt încălzitoare utile, dar căldura este conversia principală."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0528",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-054"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-054": "A"
+      },
+      "original_stem": "Într-un circuit ideal pur inductiv, puterea activă medie este:",
+      "original_ABC": {
+        "A": "zero",
+        "B": "egală cu puterea aparentă",
+        "C": "întotdeauna maximă"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+      "source_locator": "G2-ELEC-054:https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+      "ABC_reasoning": {
+        "A": "Varianta A «zero»: pentru inductor pur ideal curentul întârzie cu 90°, cosφ=0 și puterea activă medie P=UIcosφ=0.",
+        "B": "Varianta B «egală cu puterea aparentă»: S este pozitivă la valori nenule,",
+        "C": "Varianta C «întotdeauna maximă»: puterea activă nu este maximă. Energie alternantă stocată și returnată, nu consum activ net."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un circuit ideal pur inductiv, puterea activă medie este:",
+        "central_highlighted_paraphrase": "**Varianta A «zero»: pentru inductor pur ideal curentul întârzie cu 90°, cosφ=0 și puterea activă medie P=UIcosφ=0.**",
+        "after": "Alternative: Varianta B «egală cu puterea aparentă»: S este pozitivă la valori nenule, Varianta C «întotdeauna maximă»: puterea activă nu este maximă. Energie alternantă stocată și returnată, nu consum activ net."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0529",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-055"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-055": "A"
+      },
+      "original_stem": "Într-un circuit ideal pur capacitiv, puterea activă medie este:",
+      "original_ABC": {
+        "A": "zero",
+        "B": "egală cu puterea aparentă",
+        "C": "egală cu energia stocată"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V234_G2ELEC031_055_25_SAFETY_AND_CIRCUITS_UNOFFICIAL_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "adab0b87a7e778eac76816dc49ab62faa20ee2d9",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+      "source_locator": "G2-ELEC-055:https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+      "ABC_reasoning": {
+        "A": "Varianta A «zero»: pentru condensator pur ideal curentul precedă tensiunea cu 90°, deci P medie=0.",
+        "B": "Varianta B «egală cu puterea aparentă»: S este diferită de zero pentru curent/tensiune nenule și",
+        "C": "Varianta C «egală cu energia stocată»: are unități de energie, nu putere. Dielectric real cu pierderi poate avea P>0."
+      },
+      "scope_and_caveats": "Interpretarea depinde de definiția exactă, de dimensiunile fizice ale mărimilor și de condițiile precizate în cercetarea tehnică citată.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un circuit ideal pur capacitiv, puterea activă medie este:",
+        "central_highlighted_paraphrase": "**Varianta A «zero»: pentru condensator pur ideal curentul precedă tensiunea cu 90°, deci P medie=0.**",
+        "after": "Alternative: Varianta B «egală cu puterea aparentă»: S este diferită de zero pentru curent/tensiune nenule și Varianta C «egală cu energia stocată»: are unități de energie, nu putere. Dielectric real cu pierderi poate avea P>0."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_60ac40ab-f2c5-4959-8dad-d30c9ef3d4c8"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0530",
+      "kind": "DIDACTIC",
+      "grade_ids": [
+        "G2-ELEC-056"
+      ],
+      "trainer_authored_not_original_ANRE": true,
+      "trainer_question_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "original_imported_key": {
+        "G2-ELEC-056": "A"
+      },
+      "original_stem": "Într-un sistem trifazat echilibrat, conductorul de nul poate avea curent:",
+      "original_ABC": {
+        "A": "nul, pentru sarcină perfect echilibrată și condițiile corespunzătoare",
+        "B": "întotdeauna egal cu curentul de fază",
+        "C": "întotdeauna dublu față de curentul de fază"
+      },
+      "original_workbook_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_blob_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_url": "https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "source_locator": "G2-ELEC-056:https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "ABC_reasoning": {
+        "A": "A curentul neutru poate fi zero când trei curenți sinusoidali egali la 120° se compensează fazorial.",
+        "B": "B «întotdeauna egal» este fals, de pildă în echilibru ideal cu I_N=0.",
+        "C": "C «întotdeauna dublu» este fals și nesusținut de sumarea curenților de fază."
+      },
+      "scope_and_caveats": "Ideal sinusoidal balanced fundamental currents may yield zero neutral current; triplen harmonics may add in neutral in nonlinear loads.",
+      "source_context_editorial": {
+        "before": "Context educațional: Într-un sistem trifazat echilibrat, conductorul de nul poate avea curent:",
+        "central_highlighted_paraphrase": "**A curentul neutru poate fi zero când trei curenți sinusoidali egali la 120° se compensează fazorial.**",
+        "after": "Alternative: B «întotdeauna egal» este fals, de pildă în echilibru ideal cu I_N=0. C «întotdeauna dublu» este fals și nesusținut de sumarea curenților de fază."
+      },
+      "source_context_original_verbatim_verified": false,
+      "independent_AI_reviewer_sessions": [
+        "resp_78b84628-3c06-445e-9a86-ec23f61ebbb6"
+      ],
+      "learning_content_accepted": true,
+      "official_ANRE_exam_question": false,
+      "app_integrated": false
+    }
+  ]
+}
