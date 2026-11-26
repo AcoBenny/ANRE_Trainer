@@ -16,8 +16,8 @@
       "REFERENCE_ONLY": 66,
       "HISTORICAL_RATIONALE_REUSED": 71,
       "REFERENCE_MISSING": 1,
-      "SOURCE_LOCATED_NO_HIGHLIGHT": 87,
-      "SOURCE_CONTEXT_LITERAL_MATCH": 80
+      "SOURCE_LOCATED_NO_HIGHLIGHT": 86,
+      "SOURCE_CONTEXT_LITERAL_MATCH": 81
     },
     "legacy_opened": 140,
     "legacy_reused": 49,
@@ -26,7 +26,8 @@
     "any_editorial_rationale": 144,
     "source_anchor_count": 167,
     "any_source_or_rationale": 238,
-    "reference_missing": 1
+    "reference_missing": 1,
+    "literal_context_with_both_neighbors": 24
   },
   "records": [
     {
@@ -7444,7 +7445,7 @@
         "document": "I7/2011 owner HTML snapshot",
         "sha256": "99389c372d898dea067b80a93e1998f93a1b03302812e478de327ff2013d90b7",
         "anchor": "id_pctA1359",
-        "status": "ARTICLE_OR_DEFINITION_LOCATED",
+        "status": "LITERAL_ANSWER_TEXT_FOUND",
         "technical_confirmation": "NOT_RECHECKED"
       },
       "legacy_card": null,
@@ -7485,7 +7486,7 @@
         "record": "ANRE-G2-NOR-XLSX-R0143",
         "notice": "HISTORICAL DRAFT; not verbatim regulation; accepted-answer-text matches"
       },
-      "card_status": "SOURCE_LOCATED_NO_HIGHLIGHT"
+      "card_status": "SOURCE_CONTEXT_LITERAL_MATCH"
     },
     {
       "id": "CF-NORME_TEHNICE-137",
@@ -10247,5 +10248,7 @@
       "editorial_provenance": null,
       "card_status": "SOURCE_CONTEXT_LITERAL_MATCH"
     }
-  ]
+  ],
+  "local_payload_sha256": "c4440610ab6425ac85bd1eb569ff0c47e696b69e9f3bf04a588bae58f4ed5391",
+  "local_payload_note": "Local file contains all original workbook rows and 167 source excerpts, normalized whitespace, collapsed HTML display placeholders omitted. Join historical rationales and provenance from this index by stable id. Only 24 literal-match excerpts have both adjacent paragraphs available; do not invent missing neighboring paragraphs."
 }
