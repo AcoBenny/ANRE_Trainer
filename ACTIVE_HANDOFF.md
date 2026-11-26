@@ -1,5 +1,15 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
+**CKPT-428 | CONSULTFORM Direct Integration | 2026-11-26**
+
+Current authority: [Mission Control](https://github.com/AcoBenny/ANRE_Trainer/issues?q=label%3Amission-control) and [versioned board](docs/MISSION_CONTROL.md). Owner supersedes the old 450/822 validation target. No historical files deleted.
+
+NEXT: ANRE-MC-001 / #14: match CONSULTFORM 305 reported Legislation/Norms questions to existing G1/G2 groups. Full normalized stem + A/B/C set; G1-only -> G1, G2-only -> G2, both -> both, no reliable match -> BOTH. Take solved workbook keys as accepted Trainer answers, compare option text if reordered. Preserve old keys/IDs and evidence as history; no repeat technical answer audits. MC-002 reuse compatible cards and references; MC-003 blocked by Electrotechnics workbook; MC-004 candidate integration; MC-005 functional QA and owner acceptance. See board for DONE conditions. No raw private workbooks or books published; no merge/release. No bank, app or build changes in this checkpoint.
+
+## Historical CKPT-427 (superseded operational plan, preserved for provenance)
+
+# ANRE Trainer | ACTIVE_HANDOFF
+
 **CKPT-427: 400/822 G1/G2 grade routes VALIDATED FOR EDUCATIONAL CONTENT; 236/568 distinct QABC groups.** 2026-11-25 | [PR #7](https://github.com/AcoBenny/ANRE_Trainer/pull/7) Draft, unmerged | `audit/anre-v8-priority-17-20261109`.
 
 ## Resume here; avoid loop/repeated validation
