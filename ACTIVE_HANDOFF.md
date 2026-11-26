@@ -1,12 +1,14 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-430 | MC-001 DONE (owner grade correction) | 2026-11-27**
+**CKPT-431 | MC-002 DONE (card preparation and explicit source-gap flags) | 2026-11-27**
 
-Current authority: [Mission Control](docs/MISSION_CONTROL.md). Owner-approved CONSULTFORM answers replace technical key audits; historical evidence preserved. [MC-001 report](docs/CONSULTFORM/CKPT_429_MC001_REPORT.md) and [active crosswalk 305](docs/CONSULTFORM/CKPT_430_CROSSWALK_305.json); CKPT-429 report is historical.
+Current authority: [Mission Control](docs/MISSION_CONTROL.md). Owner-approved CONSULTFORM answers replace technical key audits. Preserve historical evidence and original files. [MC-001 active crosswalk](docs/CONSULTFORM/CKPT_430_CROSSWALK_305.json) | [MC-002 report](docs/CONSULTFORM/CKPT_431_MC002_REPORT.md) | [card index](docs/CONSULTFORM/CKPT_431_CARD_INDEX_305.json).
 
-305 unique questions: LEG 104, NOR 201; 140 exact normalized QABC matches (legacy G1), 165 unmatched legacy; grade markers now authoritative per owner: GR I exclusively G1, blank exclusively G2. G1 151, G2 154, 305 memberships. No legacy match/grade audit repeated. 24 historical key differences, keep CONSULTFORM keys. 304 references present, CF-LEGISLATIE-056 missing. No duplicate rows. Source XLSX and full extracted staging JSON remain in conversation attachments; repo crosswalk contains metadata, not full source questions.
+305 unique questions and study cards: LEG 104, NOR 201; G1 151, G2 154. 140 legacy matches inspected, 49 historical selected-answer rationales reused; further G2 research matched 104 unique questions and reused 95 rationales. Combined 144 distinct questions have historical explanations. 167 original I7 anchors located: 81 literal answer-text matches, 86 located without highlight; only 24 literal matches have both adjacent paragraphs. Do not fabricate missing source text. 71 additional cards have historical rationale without original anchor; 66 reference only, 1 reference missing (CF-LEGISLATIE-056). 238/305 have original source anchor or historical rationale, 67 have no such material. No key/grade reassessment; no change to Q/A/B/C, key or reference. No runtime QA, no app build, no paid Actions.
 
-NEXT: ANRE-MC-002 / #15. Reuse compatible legacy card locators on 140 matches and map remaining 165 to provided references/library, preserve before-bold-after exact source where available/permitted; otherwise mark paraphrase/missing. Do not redo MC-001 or reopen technical key validation. MC-003 blocked until Electrotechnics workbook. MC-004 candidate app integration, MC-005 functional QA. No merge/release without owner approval.
+Full local payload: `ANRE_CKPT431_study_cards_305.json` (conversation artifact, SHA-256 c4440610ab6425ac85bd1eb569ff0c47e696b69e9f3bf04a588bae58f4ed5391). Join by stable id with repository card index to add historical editorial rationales and provenance; preserve source-gap flags. Owner workbooks and original I7 HTML remain in conversation attachments/library, not redistributed in repository.
+
+NEXT: MC-004 / #17 candidate HTML/APK integration for 305; MC-003 / #16 remains BLOCKED until Electrotechnics workbook. No repeated MC-001/002 or technical key audits. Full bank after MC-003; MC-005 functional QA and owner acceptance before merge/release. PR #7 Draft, audit branch only.
 
 ## Historical CKPT-427 (superseded operational plan, preserved for provenance)
 
