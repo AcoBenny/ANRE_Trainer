@@ -1,12 +1,12 @@
-# ANRE Mission Control | CKPT-428
+# ANRE Mission Control | CKPT-429
 2026-11-26 | Owner strategy supersedes CKPT-427 validation queue. [Mission issues](https://github.com/AcoBenny/ANRE_Trainer/issues?q=label%3Amission-control) | Draft PR #7.
 
 ## Current board
 | ID | Mission | Status | Evidence/dependency |
 |---|---|---|---|
 | ANRE-MC-000 | Strategy and board | DONE | Owner decision and this checkpoint; no bank change |
-| ANRE-MC-001 | [Match Legislation + Technical Norms](https://github.com/AcoBenny/ANRE_Trainer/issues/14) | TODO | NEXT; 305 intake rows reported, not yet matched |
-| ANRE-MC-002 | [Reuse cards and references](https://github.com/AcoBenny/ANRE_Trainer/issues/15) | TODO | MC-001 |
+| ANRE-MC-001 | [Match Legislation + Technical Norms](https://github.com/AcoBenny/ANRE_Trainer/issues/14) | DONE | CKPT-429: 305 unique, 140 matched, 165 default both; [crosswalk](CONSULTFORM/CKPT_429_CROSSWALK_305.json) |
+| ANRE-MC-002 | [Reuse cards and references](https://github.com/AcoBenny/ANRE_Trainer/issues/15) | TODO | NEXT; MC-001 complete, 305 cards |
 | ANRE-MC-003 | [Electrotechnics](https://github.com/AcoBenny/ANRE_Trainer/issues/16) | BLOCKED | Await owner workbook |
 | ANRE-MC-004 | [HTML/APK integration](https://github.com/AcoBenny/ANRE_Trainer/issues/17) | TODO | MC-001/002; full bank after MC-003 |
 | ANRE-MC-005 | [Functional QA and owner acceptance](https://github.com/AcoBenny/ANRE_Trainer/issues/18) | TODO | MC-004 |
