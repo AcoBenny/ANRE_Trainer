@@ -1,10 +1,12 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-428 | CONSULTFORM Direct Integration | 2026-11-26**
+**CKPT-429 | MC-001 DONE | 2026-11-27**
 
-Current authority: [Mission Control](https://github.com/AcoBenny/ANRE_Trainer/issues?q=label%3Amission-control) and [versioned board](docs/MISSION_CONTROL.md). Owner supersedes the old 450/822 validation target. No historical files deleted.
+Current authority: [Mission Control](docs/MISSION_CONTROL.md). Owner-approved CONSULTFORM answers replace technical key audits; historical evidence preserved. [MC-001 report](docs/CONSULTFORM/CKPT_429_MC001_REPORT.md) and [crosswalk 305](docs/CONSULTFORM/CKPT_429_CROSSWALK_305.json).
 
-NEXT: ANRE-MC-001 / #14: match CONSULTFORM 305 reported Legislation/Norms questions to existing G1/G2 groups. Full normalized stem + A/B/C set; G1-only -> G1, G2-only -> G2, both -> both, no reliable match -> BOTH. Take solved workbook keys as accepted Trainer answers, compare option text if reordered. Preserve old keys/IDs and evidence as history; no repeat technical answer audits. MC-002 reuse compatible cards and references; MC-003 blocked by Electrotechnics workbook; MC-004 candidate integration; MC-005 functional QA and owner acceptance. See board for DONE conditions. No raw private workbooks or books published; no merge/release. No bank, app or build changes in this checkpoint.
+305 unique questions: LEG 104, NOR 201; 140 exact normalized QABC matches (G1 only), 165 unmatched -> BOTH by owner policy; G1 305, G2 165, 470 memberships. 24 historical key differences, keep CONSULTFORM keys. 304 references present, CF-LEGISLATIE-056 missing. No duplicate rows. Source XLSX and full extracted staging JSON remain in conversation attachments; repo crosswalk contains metadata, not full source questions.
+
+NEXT: ANRE-MC-002 / #15. Reuse compatible legacy card locators on 140 matches and map remaining 165 to provided references/library, preserve before-bold-after exact source where available/permitted; otherwise mark paraphrase/missing. Do not redo MC-001 or reopen technical key validation. MC-003 blocked until Electrotechnics workbook. MC-004 candidate app integration, MC-005 functional QA. No merge/release without owner approval.
 
 ## Historical CKPT-427 (superseded operational plan, preserved for provenance)
 
