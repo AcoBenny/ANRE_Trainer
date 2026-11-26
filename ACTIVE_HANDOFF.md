@@ -1,14 +1,12 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-431 | MC-002 DONE (card preparation and explicit source-gap flags) | 2026-11-27**
+**CKPT-432 | MC-004 IN_PROGRESS | 2026-11-27**
 
-Current authority: [Mission Control](docs/MISSION_CONTROL.md). Owner-approved CONSULTFORM answers replace technical key audits. Preserve historical evidence and original files. [MC-001 active crosswalk](docs/CONSULTFORM/CKPT_430_CROSSWALK_305.json) | [MC-002 report](docs/CONSULTFORM/CKPT_431_MC002_REPORT.md) | [card index](docs/CONSULTFORM/CKPT_431_CARD_INDEX_305.json).
+Current authority: [Mission Control](docs/MISSION_CONTROL.md). [CKPT-432 report](docs/CONSULTFORM/CKPT_432_MC004_CANDIDATE_REPORT.md). [CKPT-430 crosswalk](docs/CONSULTFORM/CKPT_430_CROSSWALK_305.json) | [CKPT-431 card index](docs/CONSULTFORM/CKPT_431_CARD_INDEX_305.json).
 
-305 unique questions and study cards: LEG 104, NOR 201; G1 151, G2 154. 140 legacy matches inspected, 49 historical selected-answer rationales reused; further G2 research matched 104 unique questions and reused 95 rationales. Combined 144 distinct questions have historical explanations. 167 original I7 anchors located: 81 literal answer-text matches, 86 located without highlight; only 24 literal matches have both adjacent paragraphs. Do not fabricate missing source text. 71 additional cards have historical rationale without original anchor; 66 reference only, 1 reference missing (CF-LEGISLATIE-056). 238/305 have original source anchor or historical rationale, 67 have no such material. No key/grade reassessment; no change to Q/A/B/C, key or reference. No runtime QA, no app build, no paid Actions.
+Delivered local HTML candidate with 305/305 CONSULTFORM questions, G1 151 / G2 154, 167 I7 contexts, 144 historical explanations, 81 precise highlighted answer spans, 67 reference-only/missing. All 1830 rendered option permutation tests PASS in Chromium offline set_content, mock storage reopen PASS, no JS/network errors. No technical answer revalidation. Android project build kit staged; actual APK NOT_BUILT (SDK/Gradle absent). Physical Android and actual localStorage QA NOT_RUN. Public GitHub code-only integration under tools/consultform, no private source data or generated bank posted. Local HTML SHA256 597fdbbced57a587b8a03868e977d4499b77d90c2e857dedf7f271e059d646fe. See report for ZIP hash, rebuild and caveats.
 
-Full local payload: `ANRE_CKPT431_study_cards_305.json` (conversation artifact, SHA-256 c4440610ab6425ac85bd1eb569ff0c47e696b69e9f3bf04a588bae58f4ed5391). Join by stable id with repository card index to add historical editorial rationales and provenance; preserve source-gap flags. Owner workbooks and original I7 HTML remain in conversation attachments/library, not redistributed in repository.
-
-NEXT: MC-004 / #17 candidate HTML/APK integration for 305; MC-003 / #16 remains BLOCKED until Electrotechnics workbook. No repeated MC-001/002 or technical key audits. Full bank after MC-003; MC-005 functional QA and owner acceptance before merge/release. PR #7 Draft, audit branch only.
+NEXT: complete actual APK build with appropriate SDK/Gradle or local Android Studio; MC-003 awaits Electrotechnics workbook and then append with same import/card mechanism. Full integrated bank follows, MC-005 functional/device QA and owner acceptance. Preserve previous app and progress via separate candidate applicationId and storage key. Do not redo MC-001/002. No main changes, no merge/release. Draft PR #7 only.
 
 ## Historical CKPT-427 (superseded operational plan, preserved for provenance)
 
