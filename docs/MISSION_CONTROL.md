@@ -1,4 +1,4 @@
-# ANRE Mission Control | CKPT-431
+# ANRE Mission Control | CKPT-432
 2026-11-27 | Owner strategy supersedes CKPT-427 validation queue. [Mission issues](https://github.com/AcoBenny/ANRE_Trainer/issues?q=label%3Amission-control) | Draft PR #7.
 
 ## Current board
@@ -8,7 +8,7 @@
 | ANRE-MC-001 | [Match Legislation + Technical Norms](https://github.com/AcoBenny/ANRE_Trainer/issues/14) | DONE | CKPT-430: 305 unique, G1 151 / G2 154; 140 legacy matches for cards only; [crosswalk](CONSULTFORM/CKPT_430_CROSSWALK_305.json) |
 | ANRE-MC-002 | [Reuse cards and references](https://github.com/AcoBenny/ANRE_Trainer/issues/15) | DONE | CKPT-431: 305 cards; 167 original source anchors, 144 historical rationales (overlap); 67 reference-only/missing; [report](CONSULTFORM/CKPT_431_MC002_REPORT.md) |
 | ANRE-MC-003 | [Electrotechnics](https://github.com/AcoBenny/ANRE_Trainer/issues/16) | BLOCKED | Await owner workbook |
-| ANRE-MC-004 | [HTML/APK integration](https://github.com/AcoBenny/ANRE_Trainer/issues/17) | TODO | NEXT: candidate integration of 305; full bank after MC-003 |
+| ANRE-MC-004 | [HTML/APK integration](https://github.com/AcoBenny/ANRE_Trainer/issues/17) | IN_PROGRESS | HTML candidate 305 PASS; APK build kit staged, actual APK blocked (SDK/Gradle absent); [CKPT-432](CONSULTFORM/CKPT_432_MC004_CANDIDATE_REPORT.md) |
 | ANRE-MC-005 | [Functional QA and owner acceptance](https://github.com/AcoBenny/ANRE_Trainer/issues/18) | TODO | MC-004 |
 
 ## Binding owner decisions
