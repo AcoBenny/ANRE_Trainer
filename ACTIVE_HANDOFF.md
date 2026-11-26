@@ -1,10 +1,10 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-429 | MC-001 DONE | 2026-11-27**
+**CKPT-430 | MC-001 DONE (owner grade correction) | 2026-11-27**
 
-Current authority: [Mission Control](docs/MISSION_CONTROL.md). Owner-approved CONSULTFORM answers replace technical key audits; historical evidence preserved. [MC-001 report](docs/CONSULTFORM/CKPT_429_MC001_REPORT.md) and [crosswalk 305](docs/CONSULTFORM/CKPT_429_CROSSWALK_305.json).
+Current authority: [Mission Control](docs/MISSION_CONTROL.md). Owner-approved CONSULTFORM answers replace technical key audits; historical evidence preserved. [MC-001 report](docs/CONSULTFORM/CKPT_429_MC001_REPORT.md) and [active crosswalk 305](docs/CONSULTFORM/CKPT_430_CROSSWALK_305.json); CKPT-429 report is historical.
 
-305 unique questions: LEG 104, NOR 201; 140 exact normalized QABC matches (G1 only), 165 unmatched -> BOTH by owner policy; G1 305, G2 165, 470 memberships. 24 historical key differences, keep CONSULTFORM keys. 304 references present, CF-LEGISLATIE-056 missing. No duplicate rows. Source XLSX and full extracted staging JSON remain in conversation attachments; repo crosswalk contains metadata, not full source questions.
+305 unique questions: LEG 104, NOR 201; 140 exact normalized QABC matches (legacy G1), 165 unmatched legacy; grade markers now authoritative per owner: GR I exclusively G1, blank exclusively G2. G1 151, G2 154, 305 memberships. No legacy match/grade audit repeated. 24 historical key differences, keep CONSULTFORM keys. 304 references present, CF-LEGISLATIE-056 missing. No duplicate rows. Source XLSX and full extracted staging JSON remain in conversation attachments; repo crosswalk contains metadata, not full source questions.
 
 NEXT: ANRE-MC-002 / #15. Reuse compatible legacy card locators on 140 matches and map remaining 165 to provided references/library, preserve before-bold-after exact source where available/permitted; otherwise mark paraphrase/missing. Do not redo MC-001 or reopen technical key validation. MC-003 blocked until Electrotechnics workbook. MC-004 candidate app integration, MC-005 functional QA. No merge/release without owner approval.
 
