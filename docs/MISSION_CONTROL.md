@@ -1,4 +1,4 @@
-# ANRE Mission Control | CKPT-434
+# ANRE Mission Control | CKPT-435
 2026-11-28 | Owner strategy supersedes CKPT-427 validation queue. [Mission issues](https://github.com/AcoBenny/ANRE_Trainer/issues?q=label%3Amission-control) | Draft PR #7.
 
 ## Current board
@@ -8,8 +8,9 @@
 | ANRE-MC-001 | [Match Legislation + Technical Norms](https://github.com/AcoBenny/ANRE_Trainer/issues/14) | DONE | CKPT-430: 305 unique, G1 151 / G2 154; 140 legacy matches for cards only; [crosswalk](CONSULTFORM/CKPT_430_CROSSWALK_305.json) |
 | ANRE-MC-002 | [Reuse cards and references](https://github.com/AcoBenny/ANRE_Trainer/issues/15) | DONE | CKPT-431: 305 cards; 167 original source anchors, 144 historical rationales (overlap); 67 reference-only/missing; [report](CONSULTFORM/CKPT_431_MC002_REPORT.md) |
 | ANRE-MC-003 | [Electrotechnics](https://github.com/AcoBenny/ANRE_Trainer/issues/16) | DONE | CKPT-434: 275 Electro + 2 PDF imported; 185 historical explanations reused, 11 observations, 79 explicit gaps; [report](CONSULTFORM/CKPT_434_ELECTRO_CARD_REUSE_REPORT.md) |
-| ANRE-MC-004 | [HTML/APK integration](https://github.com/AcoBenny/ANRE_Trainer/issues/17) | IN_PROGRESS | NEXT: CKPT-434 HTML 582 updated, 3492 permutations PASS; updated Android kit staged, actual APK compilation pending; [report](CONSULTFORM/CKPT_434_ELECTRO_CARD_REUSE_REPORT.md) |
-| ANRE-MC-005 | [Functional QA and owner acceptance](https://github.com/AcoBenny/ANRE_Trainer/issues/18) | TODO | MC-004 |
+| ANRE-MC-004 | [HTML/APK integration](https://github.com/AcoBenny/ANRE_Trainer/issues/17) | IN_PROGRESS | CKPT-434 HTML 582 updated, 3492 permutations PASS; updated Android kit staged, actual APK compilation pending; [report](CONSULTFORM/CKPT_434_ELECTRO_CARD_REUSE_REPORT.md) |
+| ANRE-MC-005 | [Functional QA and owner acceptance](https://github.com/AcoBenny/ANRE_Trainer/issues/18) | TODO | MC-004 and MC-006 or explicit owner waiver |
+| ANRE-MC-006 | [Complete educational explanations and source excerpts](https://github.com/AcoBenny/ANRE_Trainer/issues/19) | TODO | NEXT content mission; 582 base, 434 enriched, 148 answer/reference-only; full checklist count unknown |
 
 ## Binding owner decisions
 - CONSULTFORM solved worksheets define the new Trainer question text, options, correct answer and reference. Accept provided keys without technical/legislative re-adjudication. Not a claim of official ANRE certification. Compare the correct option text rather than letter when options are reordered.
@@ -17,6 +18,8 @@
 - Reuse existing compatible source cards; use original before/selected bold/after passage where available and allowed, otherwise explicit paraphrase/locator or missing-source flag. Do not invent source text. No new cycles of technical answer validation. Maintain import/scoring and functional QA.
 - Preserve all CKPT-427 audit artifacts (400 educational routes, 200 holds, 222 pending were historical figures, not current release gates). Stop previous 450/822 target; new total from actual imports. Old audit remains available, not erased or retroactively reclassified.
 - Keep original files and main intact; new versioned Trainer dataset and candidate builds only; no merge/release without explicit owner approval. No raw copyrighted workbooks/PDFs uploaded to GitHub without rights/authorization.
+
+- CKPT-435: full card target is explanation + real supporting excerpt, source locator/edition and preceding/following context where available/permitted. Historical paraphrases and mere references are not complete quotations. Track distinct missing fields by stable ID; no new answer adjudication, no invented citations, no forced support if source disagrees. MC-006 remains separate from completed bounded reuse tasks.
 
 ## Anti-loop operating procedure
 1. Read this board, current mission issue, ACTIVE_HANDOFF, and existing evidence at start of each GFR/ARA session. Select first eligible TODO; check for duplicate work by stable mission ID, existing manifests and checkpoints.
