@@ -1,12 +1,14 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-432 | MC-004 IN_PROGRESS | 2026-11-27**
+**CKPT-433 | Full-bank candidate HTML ready | 2026-11-28**
 
-Current authority: [Mission Control](docs/MISSION_CONTROL.md). [CKPT-432 report](docs/CONSULTFORM/CKPT_432_MC004_CANDIDATE_REPORT.md). [CKPT-430 crosswalk](docs/CONSULTFORM/CKPT_430_CROSSWALK_305.json) | [CKPT-431 card index](docs/CONSULTFORM/CKPT_431_CARD_INDEX_305.json).
+Current authority: [Mission Control](docs/MISSION_CONTROL.md). [CKPT-433 report](docs/CONSULTFORM/CKPT_433_FULL_BANK_REPORT.md), [grade crosswalk](docs/CONSULTFORM/CKPT_433_GRADE_MATCH_305.json), [Electro/PDF metadata](docs/CONSULTFORM/CKPT_433_ELECTRO_PDF_IMPORT_METADATA.json).
 
-Delivered local HTML candidate with 305/305 CONSULTFORM questions, G1 151 / G2 154, 167 I7 contexts, 144 historical explanations, 81 precise highlighted answer spans, 67 reference-only/missing. All 1830 rendered option permutation tests PASS in Chromium offline set_content, mock storage reopen PASS, no JS/network errors. No technical answer revalidation. Android project build kit staged; actual APK NOT_BUILT (SDK/Gradle absent). Physical Android and actual localStorage QA NOT_RUN. Public GitHub code-only integration under tools/consultform, no private source data or generated bank posted. Local HTML SHA256 597fdbbced57a587b8a03868e977d4499b77d90c2e857dedf7f271e059d646fe. See report for ZIP hash, rebuild and caveats.
+582 unique CONSULTFORM questions: 580 Excel + V3 Q8/Q25 material variants only, no separate PDF tests. G1 431, G2 581, 430 common. 291/305 LEG/NOR exact cached ANRE source matches; 14 unmatched -> both; all 275 Electro common. Direct live XLSX retrieval blocked. 275/275 Electro keys match yellow highlights; no technical answer revalidation. Original source markers retained for history. 18 media elements across 12 questions, including 11 OOXML diagrams converted to SVG (full visual fidelity pending). 305 prior cards preserved, 11 Electro original observations, 264 Electro + 2 PDF answer-only cards. Do not redo grade mapping or import. Remaining card work: reuse compatible historical Electro explanations where possible, explicitly mark gaps. No forced approval.
 
-NEXT: complete actual APK build with appropriate SDK/Gradle or local Android Studio; MC-003 awaits Electrotechnics workbook and then append with same import/card mechanism. Full integrated bank follows, MC-005 functional/device QA and owner acceptance. Preserve previous app and progress via separate candidate applicationId and storage key. Do not redo MC-001/002. No main changes, no merge/release. Draft PR #7 only.
+Local HTML candidate `ANRE_CKPT433_Candidate_582.html` SHA256 b6ead39829afecb91f3a577462f59054f9fd52c3a135dd6805ea7d80cba751ef; local JSON bank `ANRE_CKPT433_bank_582.json` SHA256 8b48cc5038a01f23b98995ee04f3f122cb47882df534c61bbb7b81b9a87736ed; local Android build kit `ANRE_CKPT433_HTML_Android_Build_Kit.zip` SHA256 d22869712874d446d10435b5913dc50c6dc563dd9706322aa4812c9489ac5423. Chromium offline 3492/3492 option permutations PASS, 18/18 media loaded, filters and wrong/remember/repeat PASS, no JS errors or external network. Actual APK not built, Android SDK/Gradle unavailable. Physical device/persistence/diagram visual acceptance pending. Public repo metadata only; generated full bank remains local. No paid Actions, no merge/release.
+
+NEXT: MC-003 finish compatible historical Electro cards without reopening keys, MC-004 actual APK compilation, MC-005 physical/functional QA and acceptance. Preserve previous versions and all audit evidence. No separate V1–V5 test feature.
 
 ## Historical CKPT-427 (superseded operational plan, preserved for provenance)
 
