@@ -1,6 +1,6 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-434 | MC-003 DONE (bounded reuse and explicit gaps) | 2026-11-28**
+**CKPT-435 | Card completion scope clarified | 2026-11-28**
 
 Current authority: [Mission Control](docs/MISSION_CONTROL.md). [CKPT-434 report](docs/CONSULTFORM/CKPT_434_ELECTRO_CARD_REUSE_REPORT.md) | [final Electro card index](docs/CONSULTFORM/CKPT_434_ELECTRO_FINAL_CARD_INDEX.json) | [CKPT-433 classification/import](docs/CONSULTFORM/CKPT_433_FULL_BANK_REPORT.md).
 
@@ -8,7 +8,7 @@ Current authority: [Mission Control](docs/MISSION_CONTROL.md). [CKPT-434 report]
 
 Local candidate `ANRE_CKPT434_Candidate_582.html` SHA256 ca7fb6dbfca45f78eba3aff3a33fd0e842a0a0c87f17fa956dfad3bb7bdde8c5; `ANRE_CKPT434_bank_582.json` SHA256 83bec3cdb4a47add17f7482c9edc55d900ade42b8ace13af44b6e6de5cd78fb8; `ANRE_CKPT434_HTML_Android_Build_Kit.zip` SHA256 694bb652664c6645f8f7eddf682a9cd3edbe871e0077253a7c2344ee2244abfe. QA: Chromium offline 3492/3492 permutation tests, 18/18 media, all 185 historical explanation/11 observation/79 gap renders, no JS/network errors. Same candidate storage namespace. Actual APK not built (SDK/Gradle unavailable). Physical Android, real file persistence, diagram visual acceptance not run. No paid Actions, no public raw question bank. Keep artifacts private.
 
-NEXT: MC-004 / #17 actual APK compilation (local kit or authorized private build route); MC-005 / #18 device/functional QA and owner acceptance. Do not reopen MC-001/002/003 or adjudicate keys without new material/explicit scope. No merge/release; Draft PR #7.
+NEXT content mission: MC-006 / #19 complete educational explanations and genuine source excerpts for 582 active questions. Baseline: 582 base cards, 434 enriched, 148 answer/reference-only, 329 historical rationales, 167 I7 source anchors, 81 literal answer-text matches, 24 with both adjacent paragraphs. These overlap; count satisfying all requirements is unknown. First inventory missing fields by stable ID, prioritize 148 unexpanded cards, then enrich missing primary excerpt/locator/context. Keep CONSULTFORM keys and grade assignments locked; if source unavailable/conflicts, record exact gap rather than invent support. MC-004 / #17 actual APK compilation remains pending (local kit or authorized private route); MC-005 / #18 device QA and final acceptance after MC-004 and MC-006 or explicit owner waiver. No new card enrichment or build executed in CKPT-435. Do not reopen MC-001/002/003 or adjudicate keys without new material/explicit scope. No merge/release; Draft PR #7.
 
 ## Historical CKPT-427 (superseded operational plan, preserved for provenance)
 
