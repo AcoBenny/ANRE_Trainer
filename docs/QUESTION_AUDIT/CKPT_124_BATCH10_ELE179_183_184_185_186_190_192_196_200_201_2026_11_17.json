@@ -1,0 +1,317 @@
+{
+  "checkpoint": "CKPT-124",
+  "date": "2026-11-17",
+  "input_head": "1e4d49aa725537d4e563c92825b42e016fac608d",
+  "protocol": "BATCH10 pilot 2/2; ten unique units and 20 grade IDs",
+  "actual_agents": "Single assistant sequential technical/source/linguistic and QA checklists; no real independent child agent executed",
+  "rules": "Only documentary cards/ledger on audit branch PR #7; canonical QABC, key, HTML/APK, MASTER unchanged; no merge/release",
+  "gates": {
+    "canonical_original": "READBACK_PENDING",
+    "exam_2026_edition": "NOT_VERIFIED",
+    "official_keys": "NOT_VERIFIED",
+    "independent_QA": "NOT_RUN",
+    "learner_approval": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-ca4b2268c626382c",
+      "representative_id": "G1-ELE-179",
+      "member_ids": "G1-ELE-179;G2-ELEC-315",
+      "qabc_sha256": "ca4b2268c626382c8631d0d4864530685bbdfa0bcdc03d03539ba339c666d64d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-179\":\"C\",\"G2-ELEC-315\":\"C\"}",
+      "question_original": "Puterea nominala a unui motor electric se defineşte astfel:",
+      "A_original": "puterea activã absorbitã de motor de la reţea când este alimentat la Un si absoarbe In",
+      "B_original": "puterea activã transmisã prin întrefierul motorului când este alimentat la Un si absoarbe In",
+      "C_original": "puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In",
+      "original_key_unchanged": "C",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Induction_motor",
+        "locator": "Rated motor mechanical output vs absorbed electrical input, locator exact necesar",
+        "access": "RESEARCH_LEAD_MANUFACTURER_VERIFICATION_PENDING"
+      },
+      "context_positive": "Puterea nominală înscrisă pe plăcuța motorului este puterea mecanică utilă la arbore în condiții nominale. Puterea electrică absorbită este mai mare din cauza pierderilor și a randamentului η<1; puterea transmisă prin întrefier exclude o parte din pierderi dar nu este rezultatul final la arbore.",
+      "abc_analysis": {
+        "A": "A este intrarea electrică P_in, nu puterea mecanică nominală la arbore.",
+        "B": "B puterea din întrefier precedă pierderile rotorice și mecanice.",
+        "C": "C este puterea mecanică utilă la arbore și se exprimă în kW."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "Motorul cu randament 90% poate absorbi 10 kW electric și furniza 9 kW mecanic, deci A nu este puterea nominală de ieșire.",
+      "scope_and_linguistic_gate": "Motor funcționând la sarcină nominală și parametri nominali; nu confundăm puterea nominală cu absorbția efectivă la orice sarcină.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-094bc9b42d1f90c2",
+      "representative_id": "G1-ELE-183",
+      "member_ids": "G1-ELE-183;G2-ELEC-319",
+      "qabc_sha256": "094bc9b42d1f90c2ec723daafd3a3d513105008331401462dccd7bf642ace28d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-183\":\"A\",\"G2-ELEC-319\":\"A\"}",
+      "question_original": "Pentru o putere aparenta data puterea activa are valoarea maxima:",
+      "A_original": "când factorul de putere =1",
+      "B_original": "când factorul de putere = 0",
+      "C_original": "când U = U max",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "locator": "Schneider P/S ratio, power factor; existent din loturile anterioare",
+        "access": "RESEARCH_LEAD_PRETRIAGE"
+      },
+      "context_positive": "La putere aparentă S dată, puterea activă P=S·cosφ. Maximul pentru consumator în convenția uzuală are cosφ=1, când întreaga putere aparentă este activă și Q=0 în model sinusoidal.",
+      "abc_analysis": {
+        "A": "A corespunde P=S, valoare maximă posibilă pentru S fix.",
+        "B": "B cu factor 0, puterea activă devine zero.",
+        "C": "C o tensiune U_max fără sarcină și curent specificate nu determină maximul P la S fix."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "La cosφ=0 și S=10kVA, P=0, nu maximă.",
+      "scope_and_linguistic_gate": "S și P definite consistent într-un regim de c.a.; pentru generare semnul P poate fi negativ, dar optimizarea se raportează la modulul util.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-140102d9fb309cbd",
+      "representative_id": "G1-ELE-184",
+      "member_ids": "G1-ELE-184;G2-ELEC-320",
+      "qabc_sha256": "140102d9fb309cbd90deb169b536b160ebc437c8f8cf32c811aac476d85f684d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-184\":\"A\",\"G2-ELEC-320\":\"A\"}",
+      "question_original": "Permeabilitatea este o mărime:",
+      "A_original": "magnetică",
+      "B_original": "electrică",
+      "C_original": "mecanică",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-8-magnetism-in-matter",
+        "locator": "Permeability magnetic, electric permittivity distinction; source indicated",
+        "access": "RESEARCH_LEAD_OPENSTAX_INDEX_NOT_REOPENED"
+      },
+      "context_positive": "Permeabilitatea magnetică μ leagă inducția magnetică B de intensitatea H în medii liniare izotrope prin B=μH și exprimă răspunsul unui mediu la câmp magnetic. Este o proprietate magnetică, nu electrică sau mecanică.",
+      "abc_analysis": {
+        "A": "A «magnetică» este categoria fizică explicită a permeabilității.",
+        "B": "B permitivitatea, nu permeabilitatea, caracterizează răspunsul dielectric electric.",
+        "C": "C rezistența mecanică/elasticitatea nu este permeabilitate magnetică."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "μ0 este permeabilitatea vidului, iar ε0 este permitivitatea electrică: nu se confundă cele două constante.",
+      "scope_and_linguistic_gate": "În materiale neliniare sau anizotrope μ poate fi tensorială, diferențială, dependentă de câmp; categoria rămâne magnetică.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-ffb7ae6db29c4b53",
+      "representative_id": "G1-ELE-185",
+      "member_ids": "G1-ELE-185;G2-ELEC-321",
+      "qabc_sha256": "ffb7ae6db29c4b531b2b390165a46a602544a98b9a335d226c9f8a0ae79933fe",
+      "original_keys_by_id_JSON": "{\"G1-ELE-185\":\"A\",\"G2-ELEC-321\":\"A\"}",
+      "question_original": "Permitivitatea este o mărime:",
+      "A_original": "electrică",
+      "B_original": "magnetică",
+      "C_original": "chimică",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/8-4-capacitor-with-a-dielectric",
+        "locator": "Dielectric permittivity vs capacitance; source indicated",
+        "access": "RESEARCH_LEAD_OPENSTAX_INDEX_NOT_REOPENED"
+      },
+      "context_positive": "Permitivitatea electrică ε cuantifică răspunsul dielectric al materialului la câmpul electric. În model izotrop liniar, D=εE; apare în capacitatea condensatoarelor și în legea Coulomb în mediu.",
+      "abc_analysis": {
+        "A": "A este proprietatea electrică a mediului dielectric.",
+        "B": "B permeabilitatea μ este mărimea magnetică comparabilă terminologic.",
+        "C": "C «chimică» nu clasifică mărimea electromagnetică cerută."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "Materialul poate avea compoziție chimică, dar ε nu devine prin asta o «mărime chimică».",
+      "scope_and_linguistic_gate": "Permitivitatea poate depinde de frecvență, temperatură și anizotropie, dar clasificarea electrică rămâne.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-a81a9f23f130f960",
+      "representative_id": "G1-ELE-186",
+      "member_ids": "G1-ELE-186;G2-ELEC-322",
+      "qabc_sha256": "a81a9f23f130f9605a1454cf07a49ad61d5349a5d9359a156c7c091df4b009df",
+      "original_keys_by_id_JSON": "{\"G1-ELE-186\":\"C\",\"G2-ELEC-322\":\"C\"}",
+      "question_original": "Regulatorul automat de tensiune (RAT) asigurã:",
+      "A_original": "deconectarea automatã a liniilor la suprasarcinã",
+      "B_original": "conectarea automatã a unui transformator de rezervã",
+      "C_original": "modificarea curentului (tensiunii) de excitaţie la generatoarele sincrone",
+      "original_key_unchanged": "C",
+      "source": {
+        "url": "https://www.basler.com/solutions/voltage-regulation/",
+        "locator": "Automatic voltage regulator generator excitation; supplier thematic lead",
+        "access": "MANUFACTURER_RESEARCH_LEAD_BASLER"
+      },
+      "context_positive": "Regulatorul automat de tensiune al generatorului sincron măsoară tensiunea la borne și comandă excitația, ajustând curentul/tensiunea de excitație pentru a controla tensiunea sau fluxul de putere reactivă după configurație. Protecția la suprasarcină și anclanșarea unui transformator de rezervă sunt funcții ale altor sisteme.",
+      "abc_analysis": {
+        "A": "A reprezintă protecție la supracurent/declanșare de linie, nu funcția RAT a generatorului.",
+        "B": "B reprezintă automatizare de rezervă (AAR), nu excitația generatorului.",
+        "C": "C descrie comandarea curentului de excitație al generatorului sincron."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "Un regulator de prize al transformatorului schimbă raportul, dar nu este descris în C; echivocul acronimului trebuie separat de obiect.",
+      "scope_and_linguistic_gate": "RAT generic poate desemna și regulator la transformator; aici opțiunea C fixează subiectul generator sincron.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-f81f859ff8464e00",
+      "representative_id": "G1-ELE-190",
+      "member_ids": "G1-ELE-190;G2-ELEC-326",
+      "qabc_sha256": "f81f859ff8464e0036a7af04294c01c439964c7cf44451a6d94cea96b603fc5d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-190\":\"A\",\"G2-ELEC-326\":\"A\"}",
+      "question_original": "Prima teoremă a lui Kirchhoff, pentru o reţea electrică buclată cu N noduri, ne dă, pentru curenţii care circulă prin reţea:",
+      "A_original": "N-1 relaţii distincte",
+      "B_original": "N relaţii distincte",
+      "C_original": "N+1 relaţii distincte",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "locator": "OpenStax 10.3 junction conservation; count N−1 derived from sum equations",
+        "access": "WEB_HTML_OPENED_OPENSTAX_KIRCHHOFF"
+      },
+      "context_positive": "Pentru o rețea electrică conexă cu N noduri, ecuațiile KCL ale nodurilor au o dependență: suma tuturor N ecuațiilor dă identitatea 0=0, pentru că fiecare curent de ramură intră în unul și iese din altul. Astfel există exact N−1 relații nodale independente.",
+      "abc_analysis": {
+        "A": "A reprezintă numărul de relații independente în rețea conexă.",
+        "B": "B include ecuația redundantă obținută prin suma celorlalte.",
+        "C": "C introduce încă două relații independente inexistente."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "Pentru N=3 noduri conexe se pot scrie 3 ecuații, dar numai 2 sunt independente.",
+      "scope_and_linguistic_gate": "Rețea conexă; pentru k componente conexe separate numărul independent este N−k. «Relații distincte» interpretat ca independente.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-f618f29b82626850",
+      "representative_id": "G1-ELE-192",
+      "member_ids": "G1-ELE-192;G2-ELEC-328",
+      "qabc_sha256": "f618f29b82626850f3a31fa8e2c90ae170b2d8477c6f59765f7f6737c6d3c18d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-192\":\"A\",\"G2-ELEC-328\":\"A\"}",
+      "question_original": "Principalele elemente feromagnetice sunt:",
+      "A_original": "Fierul, nichelul şi cobaltul",
+      "B_original": "Fierul, cuprul, zincul",
+      "C_original": "Fierul, aluminiul, cuprul",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-8-magnetism-in-matter",
+        "locator": "OpenStax 12.8, materiale feromagnetice iron nickel cobalt; locator tematic",
+        "access": "RESEARCH_LEAD_OPENSTAX_INDEX_NOT_REOPENED"
+      },
+      "context_positive": "Elementele clasice feromagnetice sunt fierul, nichelul și cobaltul în condițiile și temperaturile în care prezintă ordine feromagnetică. Cuprul, zincul și aluminiul nu sunt feromagnetice în condiții uzuale.",
+      "abc_analysis": {
+        "A": "A conține triada clasică Fe–Ni–Co.",
+        "B": "B cuprul și zincul nu sunt feromagnetice uzual.",
+        "C": "C aluminiul și cuprul nu sunt feromagnetice uzual."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "Peste temperatura Curie, fierul își pierde ordinea feromagnetică; asta nu schimbă triada elementelor tipice cerută.",
+      "scope_and_linguistic_gate": "Feromagnetismul depinde de temperatura Curie și de structura materialului; în context didactic este la temperatura normală.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-dfdebb74edc19585",
+      "representative_id": "G1-ELE-196",
+      "member_ids": "G1-ELE-196;G2-ELEC-332",
+      "qabc_sha256": "dfdebb74edc19585940e07fe6e2d81c9b7ffc7357f8ab6493927d8635944af68",
+      "original_keys_by_id_JSON": "{\"G1-ELE-196\":\"B\",\"G2-ELEC-332\":\"B\"}",
+      "question_original": "Rezistenţa echivalentă a două rezistenţe cu valori diferite montate în paralel este:",
+      "A_original": "mai mare decât rezistenţa mai mare",
+      "B_original": "mai mică decât rezistenţa mai mică",
+      "C_original": "egală cu suma rezistenţelor",
+      "original_key_unchanged": "B",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "OpenStax 10.2, rezistențe în paralel",
+        "access": "WEB_HTML_OPENED_OPENSTAX_RESISTORS"
+      },
+      "context_positive": "Pentru două rezistențe pozitive R1 și R2 în paralel, Req=R1R2/(R1+R2), care este strict mai mică decât fiecare dintre R1 și R2. Motiv: fiecare ramură adaugă conductanță.",
+      "abc_analysis": {
+        "A": "A fals: paralelul nu depășește rezistența maximă.",
+        "B": "B confirmat prin formula: Req < min(R1,R2), pentru ambele pozitive finite.",
+        "C": "C suma R1+R2 este formula pentru serie."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "R1=2Ω, R2=6Ω -> Req=1,5Ω, sub 2Ω.",
+      "scope_and_linguistic_gate": "Rezistoare pasive cu valori pozitive finite și conectare paralelă ideală.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-572b6c0bb32498d2",
+      "representative_id": "G1-ELE-200",
+      "member_ids": "G1-ELE-200;G2-ELEC-336",
+      "qabc_sha256": "572b6c0bb32498d28681f37a62ce4d78528fc2600c0a92424ff65a9465a76fbc",
+      "original_keys_by_id_JSON": "{\"G1-ELE-200\":\"C\",\"G2-ELEC-336\":\"C\"}",
+      "question_original": "Releul termic se foloseşte pentru:",
+      "A_original": "protejarea motoarelor electrice la scurtcircuit",
+      "B_original": "protejarea generatoarelor si motoarelor electrice împotriva punerii la pământ",
+      "C_original": "protejarea motoarelor electrice împotriva suprasarcinilor",
+      "original_key_unchanged": "C",
+      "source": {
+        "url": "https://www.voltimum.co.uk/news/abb/q-day-how-do-i-set-dol-starter-motor",
+        "locator": "ABB answer 2011, DOL thermal overload setting vs motor rated current, direct search opening pending",
+        "access": "MANUFACTURER_REFERENCE_ONLY_PRIOR_RESEARCH"
+      },
+      "context_positive": "Releul termic din pornitorul de motor este calibrat pentru curentul nominal și declanșează contactorul la o suprasarcină suficient de lungă, pe model de încălzire. Scurtcircuitul este în general eliminat de siguranțe/intreruptor, iar defectele de pământ de protecții dedicate.",
+      "abc_analysis": {
+        "A": "A scurtcircuitul cere protecție rapidă de scurtcircuit, nu doar releu termic lent.",
+        "B": "B protecția la punere la pământ nu este funcția definitorie a releului termic convențional.",
+        "C": "C suprasarcina motorului este funcția de protecție directă."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "La curent de scurtcircuit de ordin mare, siguranța/intreruptorul trebuie să acționeze și să asigure ruperea, nu releul termic singur.",
+      "scope_and_linguistic_gate": "Releu termic clasic, nu protecție electronică multifuncțională cu funcții suplimentare.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    },
+    {
+      "unit_id": "AU-257eef55899c10f9",
+      "representative_id": "G1-ELE-201",
+      "member_ids": "G1-ELE-201;G2-ELEC-337",
+      "qabc_sha256": "257eef55899c10f979d6176010bc64eea37bcf821952c41f6a5c4a1ae6275c0c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-201\":\"C\",\"G2-ELEC-337\":\"C\"}",
+      "question_original": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 2 ohm, montate în serie este:",
+      "A_original": "5 ohm",
+      "B_original": "0,66 ohm",
+      "C_original": "6 ohm",
+      "original_key_unchanged": "C",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "locator": "OpenStax 10.2 serie, R_eq=ΣR",
+        "access": "WEB_HTML_OPENED_OPENSTAX_RESISTORS"
+      },
+      "context_positive": "La montarea în serie a trei rezistoare de 2Ω fiecare, aceeași intensitate trece prin fiecare, iar rezistențele se adună: Req=2+2+2=6Ω.",
+      "abc_analysis": {
+        "A": "A 5Ω nu este suma celor trei valori de 2Ω.",
+        "B": "B 0,66Ω amintește un paralel de trei elemente egale, nu seria.",
+        "C": "C 6Ω este suma corectă în serie."
+      },
+      "pairwise_comparison": "A-B; A-C; B-C: contrariile sunt analizate prin raționamentele individuale; varianta susținută are și demonstrație afirmativă.",
+      "reverse_counterexample": "Dacă rezistoarele de 2Ω erau în paralel, Req=2/3≈0,667Ω și ar corespunde B; enunțul spune serie.",
+      "scope_and_linguistic_gate": "Rezistoare ohmice ideale; valori nominale exacte, fire fără rezistență semnificativă.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approval": "NO"
+    }
+  ]
+}

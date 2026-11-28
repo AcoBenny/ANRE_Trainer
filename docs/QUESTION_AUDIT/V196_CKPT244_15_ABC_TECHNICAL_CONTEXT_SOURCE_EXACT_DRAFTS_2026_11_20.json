@@ -1,0 +1,633 @@
+{
+  "schema": "v196_ckpt244_fifteen_original_matched_ABC_and_countermodel_drafts",
+  "date": "2026-11-20",
+  "source_head": "681354e9484f3e5e14384b3ae9f494d69948f87a",
+  "prior_manifest_sha": "5d09ffa8413800356a628253dd7384a14b2bbc4a",
+  "prior_source_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+  "counts": {
+    "new_unique_qabc": 15,
+    "new_grade_routes": 30,
+    "option_rationales": 45,
+    "reformulations": 15,
+    "semantic_hold_candidates": 7,
+    "learner_approved": 0
+  },
+  "holds": [
+    {
+      "unit_id": "QABC-0105",
+      "reason": "HOLD_INDUCTANCE_DEFINITION_MODEL"
+    },
+    {
+      "unit_id": "QABC-0141",
+      "reason": "HOLD_PETERSEN_NORMAL_UNBALANCED"
+    },
+    {
+      "unit_id": "QABC-0161",
+      "reason": "HOLD_SEPARATION_NOT_ONLY_NOMINAL"
+    },
+    {
+      "unit_id": "QABC-0196",
+      "reason": "HOLD_COMPARATIVE_BASIS_UNSPECIFIED"
+    },
+    {
+      "unit_id": "QABC-0211",
+      "reason": "HOLD_SUSCEPTANCE_SIGN_AND_R"
+    },
+    {
+      "unit_id": "QABC-0221",
+      "reason": "HOLD_MATHEMATICAL_VS_PHYSICAL"
+    },
+    {
+      "unit_id": "QABC-0222",
+      "reason": "HOLD_NETWORK_IMPEDANCE_ASSUMPTION"
+    }
+  ],
+  "integrity_note": "All 15 source-original matches inherited from V175/V195 normalized source audit, original key preserved; source historical retrieval includes search-only results. Not a new independent review of the cited sources, not officially scored keys, not permission to learn from unresolved material. No questions/bareme/HTML/APK changed.",
+  "cards": [
+    {
+      "unit_id": "QABC-0101",
+      "grade_ids": [
+        "G1-ELE-109",
+        "G2-ELEC-252"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "116",
+        "stem": "În sens general, actualizarea unui fond reprezintă:",
+        "A": "calculul valorii acestui fond la un anumit an ales ca referinţă;",
+        "B": "calculul valorii acestui fond la N ani înainte de PIF;",
+        "C": "calculul valorii acestui fond la N ani după PIF.",
+        "imported_keys_UNCHANGED": "G1-ELE-109=A | G2-ELEC-252=A"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.treasury.act.gov.au/capital-framework/prove/detailed-technical-guidance/economic-appraisal/appraisal-methodology",
+        "locator": "Appraisal methodology > base year and discounting future cashflows",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "A descrie actualizarea financiară la un an de referință ales, nu obligatoriu exact N ani înainte sau după PIF. B și C impun momente particulare și nu definesc sensul general. Sursa tratează fluxuri financiare, nu explică independent terminologia «fond» din item; calificare de vocabular rămasă."
+      },
+      "editorial_draft": {
+        "A": "Actualizarea este transformarea valorii fondului la un an de referință ales, prin acumulare/actualizare financiară.",
+        "B": "«N ani înainte de PIF» este un reper posibil, nu sensul general al actualizării.",
+        "C": "«N ani după PIF» este tot un reper particular, nu definiția generală.",
+        "model_scope_or_trap": "«Fond» și PIF apar în terminologie economico-tehnică; nu echivala anul de referință cu o dată fixă de punere în funcțiune.",
+        "reformulated_question": "O valoare viitoare poate fi raportată la anul curent prin actualizare?",
+        "reformulated_solution": "Da, cu o rată și un an de referință explicit.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_FINANCIAL_TERMS",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0105",
+      "grade_ids": [
+        "G1-ELE-114",
+        "G2-ELEC-256"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "121",
+        "stem": "Inductanţa de serviciu ( lineică) a unei linii electrice lungi este definită prin:",
+        "A": "inductanţa uniform răspândită l, definită prin puterea reactivă absorbită într-un element de linie infinit mic",
+        "B": "inductanţa uniform răspândită l, definită prin  puterea reactivă produsă de un element de linie infinit mic",
+        "C": "pierderile Joule disipate într-un element de linie infinit mic",
+        "imported_keys_UNCHANGED": "G1-ELE-114=A | G2-ELEC-256=A"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.electronicsguide.net/systems-and-technologies/power-electronics/power-system-analysis/transmission-and-distribution-lines/",
+        "locator": "Per unit length series inductance reactive consumption and shunt capacitance reactive production",
+        "source_access_prior": "SEARCH_INDEX_ONLY; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "În modelul liniei CA, inductanța linică L′ este un parametru serie, care absoarbe Q_L≈ωL′·dx·I²: interpretarea A. B «produce» este atribuibilă capacității linice în convenția uzuală; C definește disiparea rezistivă. Însă L′ nu se definește riguros numai prin putere reactivă fără I, frecvența și elementul dx; marcaj MODEL_CONDITIONAL."
+      },
+      "editorial_draft": {
+        "A": "Parametrul serie L' al liniei lungi absoarbe în model sinusoidal Q_L≈ωL'·dx·I² pentru un element scurt.",
+        "B": "Puterea reactivă produsă este asociată capacității transversale în convenția uzuală, nu inductanței serie.",
+        "C": "Pierderile Joule sunt determinate de rezistența serie R' și puterea activă I²R'·dx.",
+        "model_scope_or_trap": "Puterea reactivă singură nu definește dimensional L' fără curent, frecvență și lungime; A exprimă sensul fizic, nu definiție dimensională completă.",
+        "reformulated_question": "Care parametru distribuit al unei linii consumă putere reactivă inductivă?",
+        "reformulated_solution": "Inductanța serie L' la curent alternativ.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "HOLD_INDUCTANCE_DEFINITION_MODEL",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0141",
+      "grade_ids": [
+        "G1-ELE-150",
+        "G2-ELEC-288"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "157",
+        "stem": "O reţea electricã trifazatã de medie tensiune are neutrul transformatoarelor tratat prin bobina. Pentru regimul normal de funcţionare sa se precizeze efectul bobinei:",
+        "A": "deplasarea neutrului",
+        "B": "creşterea curenţilor de scurtcircuit",
+        "C": "nici un efect",
+        "imported_keys_UNCHANGED": "G1-ELE-150=C | G2-ELEC-288=C"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.a-eberle.de/en/info-letter/info-brief-nr-3/",
+        "locator": "Neutral-Point Treatment and E-Coil Settings; passages §105-120",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "C «nici un efect» este intenția pentru rețea trifazată sănătoasă/simetrică: bobina Petersen intervine decisiv la defect monofazat la pământ. A deplasarea neutrului poate totuși apărea în funcționare normală din dezechilibre de capacități, mai ales aproape de rezonanță; B «creșterea curenților de scurtcircuit» contrazice scopul compensării. Deci C nu este universal în condiții reale dezechilibrate."
+      },
+      "editorial_draft": {
+        "A": "Bobina Petersen poate influența potențialul neutrului într-o rețea capacitiv dezechilibrată, chiar fără defect.",
+        "B": "Rolul bobinei la defect monofazat este compensarea componentei capacitive a curentului, nu creșterea curenților de scurtcircuit.",
+        "C": "«Niciun efect» este adevărat doar în modelul ideal trifazat simetric sănătos, nu absolut în orice regim normal.",
+        "model_scope_or_trap": "Un dezechilibru capacitiv preexistent poate induce deplasare de neutru, deci cheia C necesită simetrie explicită.",
+        "reformulated_question": "O rețea MT sănătoasă dar capacitiv dezechilibrată poate avea deplasare de neutru?",
+        "reformulated_solution": "Da, în special în vecinătatea reglajului de compensare.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "HOLD_PETERSEN_NORMAL_UNBALANCED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0151",
+      "grade_ids": [
+        "G1-ELE-160",
+        "G2-ELEC-298"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "167",
+        "stem": "Motoarele sincrone se utilizează rar pentru antrenarea mecanismelor de servicii proprii din centralele electrice",
+        "A": "deoarece nu permit variaţia turaţiei în limite largi",
+        "B": "numai deoarece excitatoarea cu colector din circuitul acestora este un element puţin fiabil",
+        "C": "deoarece au randament mai mic decât al celorlalte tipuri de motoare",
+        "imported_keys_UNCHANGED": "G1-ELE-160=A | G2-ELEC-298=A"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.festo.com/gb/en/e/blog/in-practice/synchronous-motors-types-benefits-applications-id_3727625",
+        "locator": "Classic Synchronous Motor and Constant Speed Under Load",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "A explică de ce mașina sincronă tradițională alimentată la frecvență fixă nu oferă variație largă de turație fără convertizor. B «numai excitatoarea» e o exclusivitate falsă și nu acoperă mașini fără perii; C randamentul mai mic nu este general adevărat. Cu VFD există variație largă, astfel descriere istorică/condiționată."
+      },
+      "editorial_draft": {
+        "A": "La frecvență de alimentare fixă turația sincronă este legată de f și numărul de poli, nu ajustabilă liber.",
+        "B": "«Numai din cauza excitatoarei cu colector» este fals; există excitații fără perii și alte criterii.",
+        "C": "Randamentul motoarelor sincrone nu este în general inferior celorlalte tipuri, deci motivarea nu ține.",
+        "model_scope_or_trap": "Valabil pentru instalații istorice la rețea fixă; convertizoarele moderne permit variația frecvenței și turației.",
+        "reformulated_question": "Cu un convertizor de frecvență, poate un motor sincron regla turația?",
+        "reformulated_solution": "Da, turația sincronă urmează frecvența comenzii în limitele sistemului.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_HISTORICAL_FIXED_FREQUENCY",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0152",
+      "grade_ids": [
+        "G1-ELE-161",
+        "G2-ELEC-299"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "168",
+        "stem": "Nivelul de tensiune în sistem se reglează",
+        "A": "încărcarea generatoarelor cu putere activa",
+        "B": "numai prin încărcarea generatoarelor cu putere reactiva",
+        "C": "prin utilizare de compensatoare",
+        "imported_keys_UNCHANGED": "G1-ELE-161=C | G2-ELEC-299=C"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.iteh.fr/catalog/standards/iec/17415040-a9d5-4255-8b4d-90a612c4702a/iec-tr-63575-2025",
+        "locator": "Reactive power shunt compensators and voltage control",
+        "source_access_prior": "SEARCH_INDEX_ONLY; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "C compensatoarele (capacitive/inductive, SVC/STATCOM) pot modifica schimbul Q și susține tensiunea. A încărcarea activă afectează și căderi de tensiune în rețele rezistive, dar nu este metoda principală în rețele de transport. B «numai» prin încărcarea Q a generatoarelor exclude alte dispozitive. Sursa IEC este doar indexată, nu se certifică ediția ANRE."
+      },
+      "editorial_draft": {
+        "A": "Puterea activă influențează căderea de tensiune, mai ales în rețele rezistive, dar nu este soluția generală de reglare a tensiunii.",
+        "B": "«Numai» reglaj Q prin generatoare ignoră compensatoarele și alte dispozitive de control.",
+        "C": "Compensatoarele reactive, inclusiv tehnologii cu comandă rapidă, pot susține și modifica nivelul tensiunii.",
+        "model_scope_or_trap": "C indică o metodă, nu singura. Controlul tensiunii depinde de R/X și structura rețelei.",
+        "reformulated_question": "Ce dispozitiv static de compensare poate regla puterea reactivă și ajuta tensiunea?",
+        "reformulated_solution": "Un SVC sau STATCOM în condiții adecvate.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED_SYSTEM_MODEL",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0161",
+      "grade_ids": [
+        "G1-ELE-171",
+        "G2-ELEC-308"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "178",
+        "stem": "Pentru limitarea curenţilor de scurtcircuit, puterea totalã instalatã într-o staţie trebuie:",
+        "A": "mărită",
+        "B": "micşorată",
+        "C": "divizatã în mai multe unităţi",
+        "imported_keys_UNCHANGED": "G1-ELE-171=C | G2-ELEC-308=C"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.sciencedirect.com/topics/engineering/bus-section-circuit-breaker",
+        "locator": "Splitting transformer-fed busbars and open sectionalizing breaker limits fault level",
+        "source_access_prior": "SEARCH_INDEX_ONLY; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "C împărțirea aportului de putere pe secții/transformatoare poate limita curentul de scurtcircuit dacă și conexiunile electrice sunt separate/operate cu cuple deschise. A mărirea puterii conectate crește în general contribuțiile, B micșorarea puterii totale ar putea reduce curentul dar este o altă măsură ce face formularea «trebuie divizată» discutabilă. Divizarea nominală fără separare fizică nu reduce Isc."
+      },
+      "editorial_draft": {
+        "A": "Puterea totală instalată mai mare poate crește curentul de scurtcircuit dacă toate sursele rămân cuplate.",
+        "B": "Reducerea efectivă a surselor poate scădea contribuția la scurtcircuit; nu este imposibilă tehnic, doar nu soluția preferată a întrebării.",
+        "C": "Divizarea în secții și exploatarea cu cuple separate poate limita aporturile simultane fără reducerea capacității instalate totale.",
+        "model_scope_or_trap": "«Trebuie» e condițional: împărțirea nominală fără separare electrică nu reduce curentul; B ar putea și ea limita Isc, dar cu alt compromis.",
+        "reformulated_question": "Dacă două transformatoare rămân conectate pe aceeași bară, simpla lor etichetare ca «unități» reduce Isc?",
+        "reformulated_solution": "Nu; separarea electrică/operativă contează.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "HOLD_SEPARATION_NOT_ONLY_NOMINAL",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0196",
+      "grade_ids": [
+        "G1-ELE-207",
+        "G2-ELEC-343"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "214",
+        "stem": "Comparativ cu un transformator, autotransformatorul are tensiunea de scurtcircuit:",
+        "A": "mai mare",
+        "B": "egală",
+        "C": "mai mică",
+        "imported_keys_UNCHANGED": "G1-ELE-207=C | G2-ELEC-343=C"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://eepower.com/technical-articles/constructing-and-operating-an-autotransformer/",
+        "locator": "Low Impedance section, formula Z_A=Z×(Vp−Vs)/Vp",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "C un autotransformator comparabil are de regulă impedanță/tensiune de scurtcircuit mai mică decât un transformator cu două înfășurări pentru raport, bază și proiect echivalente. A și B nu sunt caracteristice modelului comparat. Tensiunea procentuală de scurtcircuit depinde de bază și de proiect, deci nu este comparație absolută între dispozitive arbitrare."
+      },
+      "editorial_draft": {
+        "A": "În proiectări comparabile, impedanța procentuală a autotransformatorului este adesea mai mică, nu mai mare.",
+        "B": "Egalitatea nu este caracteristica generică de comparație între modele similare.",
+        "C": "În condiții comparabile de raport și bază, autotransformatorul are de regulă tensiunea de scurtcircuit mai mică.",
+        "model_scope_or_trap": "Fără aceleași baze de putere, raport și proiect, comparația absolută nu este validă.",
+        "reformulated_question": "Poți compara direct două tensiuni de scurtcircuit procentuale pe baze diferite?",
+        "reformulated_solution": "Nu; conversia la aceeași bază precede comparația.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "HOLD_COMPARATIVE_BASIS_UNSPECIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0203",
+      "grade_ids": [
+        "G1-ELE-214",
+        "G2-ELEC-350"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "221",
+        "stem": "Rolul conservatorului de ulei la transformatoarele de forţa este:",
+        "A": "de a asigura o suprafaţa de contact a uleiului cu aerul mai mica",
+        "B": "numai  de a asigura spaţiul necesar dilatării si contractării uleiului",
+        "C": "de a face posibila umplerea cu ulei a transformatorului",
+        "imported_keys_UNCHANGED": "G1-ELE-214=A | G2-ELEC-350=A"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.cnrockwill.com/technical/oil-immersed-transformer-installation-operation-manual",
+        "locator": "Conservator section §381-392: reduced oil-air contact, expansion, moisture breather",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "A reducerea suprafeței de contact ulei/aer este un rol real al conservatorului. B «numai» dilatare/contractare este fals exclusiv, conservatorul are și rol de protecție; C umplerea inițială nu este scopul său definitoriu. Expansiunea există totuși, de aceea explicația nu trebuie să nege această funcție."
+      },
+      "editorial_draft": {
+        "A": "Conservatorul limitează suprafața directă de contact ulei/aer în unele construcții, reducând degradarea uleiului.",
+        "B": "Spațiul de dilatare este un rol real, dar «numai» exclude efectele de protecție și conservare.",
+        "C": "Conservatorul nu este definit prin simpla posibilitate de a umple transformatorul cu ulei.",
+        "model_scope_or_trap": "Nu nega funcția de compensare a dilatării doar pentru a elimina B; cuvântul «numai» o face necompletă.",
+        "reformulated_question": "Conservatorul are și rol de compensare a variației volumului uleiului?",
+        "reformulated_solution": "Da, dar nu exclusiv acest rol.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_MULTIFUNCTION",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0211",
+      "grade_ids": [
+        "G1-ELE-222",
+        "G2-ELEC-358"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "229",
+        "stem": "Susceptanţa unui circuit de curent alternativ sinusoidal este inversul:",
+        "A": "impedanţei",
+        "B": "rezistenţei",
+        "C": "reactanţei",
+        "imported_keys_UNCHANGED": "G1-ELE-222=C | G2-ELEC-358=C"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electricity_and_Magnetism_%28Tatum%29/13%253A_Alternating_Current/13.06%253A_Admittance",
+        "locator": "Admittance Y=1/(R+jX)=G+jB; B=-X/(R²+X²)",
+        "source_access_prior": "SEARCH_INDEX_ONLY; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "C «inversul reactanței» poate fi menționat informal ca susceptanță a unui element pur reactiv, dar în general B=-X/(R²+X²), nu 1/X; pentru R=0 este -1/X, deci lipsește și convenția de semn. A inversul impedanței este admitanța complexă, B inversul rezistenței (pur rezistive) conductanța. Se marchează SOURCE_CONCEPT_CONFLICT; nu se aprobă cheia C universal."
+      },
+      "editorial_draft": {
+        "A": "1/Z este admitanța complexă Y=G+jB, nu susceptanța separată.",
+        "B": "1/R reprezintă conductanța ideală când se consideră numai rezistența.",
+        "C": "Susceptanța este B=Im(1/(R+jX))=−X/(R²+X²); doar într-un element pur reactiv devine −1/X în convenția Z=R+jX.",
+        "model_scope_or_trap": "«Inversul reactanței» ignoră rezistența și semnul; nu afirma că C e lege universală.",
+        "reformulated_question": "Un circuit R=X=1 Ω are B=−X/(R²+X²). Ce B rezultă?",
+        "reformulated_solution": "−0,5 S, nu +1 S și nu inversul simplu al lui X.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "HOLD_SUSCEPTANCE_SIGN_AND_R",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0221",
+      "grade_ids": [
+        "G1-ELE-232",
+        "G2-ELEC-368"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "239",
+        "stem": "Sistemele simetrice de fazori în care se descompun sistemele de tensiuni sau de curenţi dezechilibraţi:",
+        "A": "corespund unor realităţi fizice",
+        "B": "reprezintă artificii de calcul",
+        "C": "numai sistemul direct corespunde unei realităţi fizice",
+        "imported_keys_UNCHANGED": "G1-ELE-232=B | G2-ELEC-368=B"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.dacpol.eu/en/knowledge-base/post/symmetrical-components-method-positive-negative-and-zero-sequence.html",
+        "locator": "Positive/negative/zero-sequence mathematical decomposition of three phase phasors",
+        "source_access_prior": "SEARCH_INDEX_ONLY; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "B componentele simetrice sunt o transformare matematică utilă pentru reprezentarea sistemului dezechilibrat, nu trei sisteme de conductoare separate. A «realități fizice» poate fi înțeles ca moduri fizic măsurabile/de observat prin efectele negative-sequence, deci termenii sunt filosofic ambigui; C «numai sistemul direct» este prea exclusiv. Candidat B, nu semnătură finală."
+      },
+      "editorial_draft": {
+        "A": "Componentele de secvență pot corespunde unor efecte fizice observabile, deși sunt o descompunere, nu trei rețele independente.",
+        "B": "Sistemele direct/invers/homopolar sunt componente matematice ale unei transformări a fazorilor dezechilibrați.",
+        "C": "«Numai direct» este prea restrictiv, deoarece secvențele negativă și zero pot avea efecte reale.",
+        "model_scope_or_trap": "«Realitate fizică» este termen conceptual ambiguu: existență separată a surselor vs componente măsurabile cu efect.",
+        "reformulated_question": "Curentul de secvență negativă poate încălzi un rotor?",
+        "reformulated_solution": "Da; folosirea descompunerii matematice nu face efectele ei ireale.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_MATHEMATICAL_VS_PHYSICAL",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0222",
+      "grade_ids": [
+        "G1-ELE-233",
+        "G2-ELEC-369"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "240",
+        "stem": "Sistemul de tensiuni al unei reţele racordate la un generator electric care produce tensiuni electromotoare simetrice:",
+        "A": "este întotdeauna simetric",
+        "B": "este simetric chiar dacă fazele sunt neegal încărcate",
+        "C": "este simetric dacă fazele sunt egal încărcate",
+        "imported_keys_UNCHANGED": "G1-ELE-233=C | G2-ELEC-369=C"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.sandroronca.it/SistemiTrifase/ThreePhaseSystems.html",
+        "locator": "Symmetrical three-phase generation and balanced loads; phase voltage drops",
+        "source_access_prior": "SEARCH_INDEX_ONLY; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "C faze egal încărcate susțin tensiuni simetrice în modelul generatorului și impedanțelor interne/rețelei simetrice. A «întotdeauna» fals, B «chiar dacă fazele sunt neegal încărcate» poate deveni fals prin căderi inegale; C nu este suficient dacă însăși rețeaua/impedanțele de fază sunt asimetrice. Condiție model nonexplicită."
+      },
+      "editorial_draft": {
+        "A": "«Întotdeauna» nu este valabil: tensiunile la borne se pot dezechilibra din impedanțe și sarcini.",
+        "B": "O încărcare neegală poate produce căderi de tensiune inegale și dezechilibru.",
+        "C": "În modelul cu impedanțe de fază și sursă simetrice, sarcini egale păstrează tensiunile simetrice.",
+        "model_scope_or_trap": "Egalitatea sarcinilor singură nu garantează simetria dacă restul rețelei are impedanțe inegale.",
+        "reformulated_question": "Dacă impedanțele liniilor sunt diferite, încărcarea egală garantează tensiuni de fază egale?",
+        "reformulated_solution": "Nu, căderile de tensiune pot diferi.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "HOLD_NETWORK_IMPEDANCE_ASSUMPTION",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0223",
+      "grade_ids": [
+        "G1-ELE-234",
+        "G2-ELEC-370"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "241",
+        "stem": "Transformatoarele de măsurare de tensiune se construiesc pentru tensiuni în secundar de:",
+        "A": "10 V",
+        "B": "50 V",
+        "C": "100 V",
+        "imported_keys_UNCHANGED": "G1-ELE-234=C | G2-ELEC-370=C"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.bticino.com/products/ime-measurement-solutions/transformers/features-and-benefits",
+        "locator": "Voltage transformers: secondary standard 100V; other values on request",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "C 100 V este standard industrial întâlnit la transformatoare de tensiune; A 10V și B 50V nu sunt opțiunile standard din setul dat. Nu este singura valoare admisă: 110 V sau 100/√3 V apar în alte configurări, deci formularea nu are exclusivitate generală."
+      },
+      "editorial_draft": {
+        "A": "10 V nu este valoarea secundară nominală uzuală reprezentată în această listă pentru TT convenționale.",
+        "B": "50 V nu este valoarea uzuală cerută de lista de opțiuni prezentată.",
+        "C": "100 V este o valoare secundară nominală folosită frecvent la transformatoare de măsurare de tensiune.",
+        "model_scope_or_trap": "Nu exclude configurații cu 100/√3 V sau 110 V în sisteme/standarde diferite; C este exemplu, nu exclusivitate mondială.",
+        "reformulated_question": "Un TT poate avea raport cu tensiune secundară 100/√3 V în loc de 100 V?",
+        "reformulated_solution": "Da, există configurații de fază și conexiune diferite.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED_NOMINAL_VARIANTS",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0225",
+      "grade_ids": [
+        "G1-ELE-236",
+        "G2-ELEC-372"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "243",
+        "stem": "Supratensiunile de trăsnet pot fi:",
+        "A": "numai directe",
+        "B": "induse",
+        "C": "de rezonanta sau de ferorezonanţa",
+        "imported_keys_UNCHANGED": "G1-ELE-236=B | G2-ELEC-372=B"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-gtd.2014.1129",
+        "locator": "Lightning overvoltages are due to direct and indirect nearby strokes; induced surges",
+        "source_access_prior": "SEARCH_INDEX_ONLY; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "B supratensiuni induse sunt posibile prin descărcări atmosferice din apropiere. A «numai directe» este fals, C rezonanță/ferorezonanță nu constituie clasificarea trăsnetului. Există și trăsnet direct, deci nu se deduce că B este singura formă posibilă."
+      },
+      "editorial_draft": {
+        "A": "«Numai directe» e fals: fulgerul apropiat poate induce supratensiuni fără lovirea directă a liniei.",
+        "B": "Descărcările atmosferice pot induce supratensiuni în circuitele apropiate prin câmpurile variabile.",
+        "C": "Rezonanța și ferorezonanța sunt mecanisme distincte de supratensiuni, nu clasificări ale loviturii de trăsnet.",
+        "model_scope_or_trap": "B este o categorie posibilă, nu singura categorie: există supratensiuni de trăsnet directe și induse.",
+        "reformulated_question": "Poate un fulger căzut lângă o linie să inducă supratensiune fără impact direct?",
+        "reformulated_solution": "Da.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED_DIRECT_AND_INDUCED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0229",
+      "grade_ids": [
+        "G1-ELE-240",
+        "G2-ELEC-376"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "247",
+        "stem": "Transformatoarele cu ulei prevăzute cu conservator prezintă următoarele caracteristici:",
+        "A": "dilatarea lichidului este compensată prin deformarea elastică a pereţilor cuvei;",
+        "B": "împiedică, dar nu elimină, pătrunderea umidităţii în interiorul rezervorului de expansiune;",
+        "C": "asigură facilităţi în modul de dispunere a bornelor şi deci de racordare la reţea.",
+        "imported_keys_UNCHANGED": "G1-ELE-240=B | G2-ELEC-376=B"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.cnrockwill.com/technical/oil-immersed-transformer-installation-operation-manual",
+        "locator": "Conservator breathes via dehydrating breather; reduces air moisture ingress",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "B sistemul de conservator cu respirator/silica-gel reduce umezeala care intră odată cu aerul, dar nu garantează absență absolută. A deformarea pereților cuvei ar caracteriza un design etanș flexibil, nu conservatorul obișnuit; C nu este rolul său principal. Variantele cu membrană schimbă contactul direct aer/ulei și impun precizarea tipului."
+      },
+      "editorial_draft": {
+        "A": "Dilatarea compensată prin deformarea cuvei este mai specifică unor sisteme etanșe/flexibile decât conservatorului clasic.",
+        "B": "Un conservator cu respirație/desicant poate reduce pătrunderea umezelii fără a o elimina absolut.",
+        "C": "Dispunerea bornelor de racordare nu este funcția caracteristică a conservatorului de ulei.",
+        "model_scope_or_trap": "Tipul respiratorului, membrana și etanșarea schimbă interacțiunea ulei/aer; formularea cere limitare constructivă.",
+        "reformulated_question": "Un desicant într-un conservator clasic poate elimina garantat orice umiditate?",
+        "reformulated_solution": "Nu, reduce intrarea de umezeală în limitele proiectului și întreținerii.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED_CONSERVATOR_TYPE",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0230",
+      "grade_ids": [
+        "G1-ELE-241",
+        "G2-ELEC-377"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "248",
+        "stem": "Transformatoarele de măsurare a curenţilor se construiesc pentru curenţi secundari de:",
+        "A": "1 sau 5 A",
+        "B": "5 sau 10 A",
+        "C": "1 sau 10 A",
+        "imported_keys_UNCHANGED": "G1-ELE-241=A | G2-ELEC-377=A"
+      },
+      "historic": {
+        "checkpoint": "CKPT_244_GFR_15_P2_TECHNICAL_CONTEXT_AND_EXCEPTIONS_2026_11_19.md",
+        "blob_sha": "69c554ed06dffe85fe997f02661054381343d08f",
+        "reported_source": "https://www.bticino.com/products/ime-measurement-solutions/transformers/features-and-benefits",
+        "locator": "Current transformers CT: 5 A or 1 A rated secondary per IEC 61869",
+        "source_access_prior": "HTML_OPENED; nu constituie cheie ANRE2026 certificată sau QA independent.",
+        "previous_rationale": "A 1 A sau 5 A sunt valori secundare uzuale standard pentru transformatoare de curent. B 5/10 și C 1/10 implică 10A care nu este valoare standard comună la produsele analizate. Alte standarde speciale pot include alte valori; afirmația nu este universal exhaustivă."
+      },
+      "editorial_draft": {
+        "A": "1 A și 5 A sunt valori nominale uzuale pentru secundarul transformatoarelor de curent convenționale.",
+        "B": "5 și 10 A nu reprezintă perechea uzuală standard prezentată.",
+        "C": "1 și 10 A include 10 A, care nu este una dintre cele două valori secundare uzuale cerute.",
+        "model_scope_or_trap": "Nu transforma «se construiesc pentru» în afirmație că niciun TC special nu poate avea alt nominal.",
+        "reformulated_question": "Pentru un TC de măsurare obișnuit, care sunt două curente secundare nominale uzuale?",
+        "reformulated_solution": "1 A și 5 A.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_COMMON_RATINGS",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "exact_ANRE_2026_exam_scored_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

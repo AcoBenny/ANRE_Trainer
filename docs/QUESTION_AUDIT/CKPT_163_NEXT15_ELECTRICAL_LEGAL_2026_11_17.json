@@ -1,0 +1,606 @@
+{
+  "checkpoint": "CKPT-163",
+  "date": "2026-11-17",
+  "input_head": "c74e620fd55b9cc735191584aacd9992a1aa37fd",
+  "unique_units": 15,
+  "grade_ids": 15,
+  "technical_status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 13,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 2
+  },
+  "method": "Existing full original Q/A/B/C/keys and ABC reasoning reused; exact 2026 legal articles checked only for two targeted legal cases; technical models verified against cached background and public technical definitions; direct primary source access labeled.",
+  "no_independent_agent_available": true,
+  "learning_approvals": 0,
+  "cards": [
+    {
+      "unit_id": "AU-abef5924a0220011",
+      "representative_id": "G2-ELEC-064",
+      "member_ids": [
+        "G2-ELEC-064"
+      ],
+      "qabc_sha256": "abef5924a02200115277dee955567d805465afffed097f9917a27c8cbdbef0b4",
+      "question_original_UNCHANGED": "Simbolul electric pentru rezistență este în mod uzual:",
+      "original_options_UNCHANGED": {
+        "A": "R",
+        "B": "C",
+        "C": "L"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-064": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Conventional symbol R denotes resistance, not C capacitance or L inductance.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "prior_source_locator": null,
+        "old_model_conditions": "Notația R aparține modelului electric de circuit.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "R este simbol convențional al rezistenței.",
+        "B": "C indică de regulă capacitate, nu rezistență.",
+        "C": "L indică inductanță, nu rezistență."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-181fe37e2a54f2a3",
+      "representative_id": "G2-ELEC-065",
+      "member_ids": [
+        "G2-ELEC-065"
+      ],
+      "qabc_sha256": "181fe37e2a54f2a33f8cb80eabaeb06994f2a28f5fc5c24425032dd466a7dafc",
+      "question_original_UNCHANGED": "Simbolul uzual pentru inductanță este:",
+      "original_options_UNCHANGED": {
+        "A": "L",
+        "B": "R",
+        "C": "G"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-065": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Conventional symbol L denotes inductance, not R or conductance G.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "prior_source_locator": null,
+        "old_model_conditions": "Simbolurile fizice se disting de unitățile SI (H pentru inductanță).",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "L desemnează inductanța.",
+        "B": "R desemnează rezistența.",
+        "C": "G desemnează conductanța, nu inductanța."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-56c0052ee30cdbc7",
+      "representative_id": "G2-ELEC-066",
+      "member_ids": [
+        "G2-ELEC-066"
+      ],
+      "qabc_sha256": "56c0052ee30cdbc75bd11376b6de9321ad3f72d74b0c2601f9a7865f7e7a4e3f",
+      "question_original_UNCHANGED": "Simbolul uzual pentru capacitate este:",
+      "original_options_UNCHANGED": {
+        "A": "C",
+        "B": "L",
+        "C": "I"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-066": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Conventional symbol C denotes capacitance, not L inductance or I current.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.bipm.org/en/publications/si-brochure",
+        "prior_source_locator": null,
+        "old_model_conditions": "A nu se confunda simbolul mărimii C cu unitatea sarcinii coulomb C.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "C desemnează capacitatea electrică.",
+        "B": "L desemnează inductanța.",
+        "C": "I desemnează intensitatea curentului."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-28a594aabec05bbc",
+      "representative_id": "G2-ELEC-067",
+      "member_ids": [
+        "G2-ELEC-067"
+      ],
+      "qabc_sha256": "28a594aabec05bbcbe0b3ee50b07e1fd60ab58cfb1ba916780899e495d3d18a7",
+      "question_original_UNCHANGED": "Într-un circuit rezistiv pur alimentat în curent alternativ sinusoidal, factorul de putere este: ",
+      "original_options_UNCHANGED": {
+        "A": "1",
+        "B": "0",
+        "C": "-1 în orice situație"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-067": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Pure passive resistive sinusoidal AC load has PF cos0=1.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "prior_source_locator": null,
+        "old_model_conditions": "Sarcină rezistivă pasivă și sinusoidală, fără surse active interne.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Element rezistiv pur are U/I în fază și cos0°=1.",
+        "B": "cosφ=0 corespunde situației ideal reactive.",
+        "C": "−1 poate descrie convenție de putere livrată, dar nu factorul de putere al rezistorului pasiv din stem."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-8cf044ffdaedd743",
+      "representative_id": "G2-ELEC-068",
+      "member_ids": [
+        "G2-ELEC-068"
+      ],
+      "qabc_sha256": "8cf044ffdaedd743971b947fea9f97edc0cac047e294bc88c53e985714e873d0",
+      "question_original_UNCHANGED": "Într-un circuit inductiv pur, curentul este defazat față de tensiune astfel încât: ",
+      "original_options_UNCHANGED": {
+        "A": "curentul rămâne în urmă față de tensiune cu 90°",
+        "B": "curentul este în fază cu tensiunea",
+        "C": "curentul este înainte cu 180°"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-068": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ideal purely inductive AC current lags voltage by 90°, not in phase or 180° lead.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "prior_source_locator": null,
+        "old_model_conditions": "Model L fără rezistență și sinusoidă în regim permanent.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Inductanța ideală face curentul să rămână 90° în urma tensiunii.",
+        "B": "În fază este regimul rezistiv, nu inductiv pur.",
+        "C": "Un avans de 180° nu rezultă pentru bobină ideală."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-21d05c743b0a3481",
+      "representative_id": "G2-ELEC-069",
+      "member_ids": [
+        "G2-ELEC-069"
+      ],
+      "qabc_sha256": "21d05c743b0a3481fa9054893c184d6d34ada68731050e72b26012f6d18cba09",
+      "question_original_UNCHANGED": "Într-un circuit capacitiv pur, curentul este: ",
+      "original_options_UNCHANGED": {
+        "A": "înaintea tensiunii cu 90°",
+        "B": "în urmă cu 90°",
+        "C": "în fază cu tensiunea"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-069": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ideal purely capacitive AC current leads voltage by 90°, not lag or in phase.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "prior_source_locator": null,
+        "old_model_conditions": "Model C fără pierderi și sinusoidă în regim permanent.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Capacitatea ideală face curentul să fie înaintea tensiunii cu 90°.",
+        "B": "Întârzierea de 90° descrie bobina ideală.",
+        "C": "Fază egală apare în rezistor, nu în condensator ideal."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-6a50976c52ab6e28",
+      "representative_id": "G2-ELEC-070",
+      "member_ids": [
+        "G2-ELEC-070"
+      ],
+      "qabc_sha256": "6a50976c52ab6e28d78cd8957ecfebc4bf20930e82e2e26980e64b65c0f0f484",
+      "question_original_UNCHANGED": "Într-un circuit serie R-L-C, rezonanța apare când: ",
+      "original_options_UNCHANGED": {
+        "A": "reactanța inductivă și cea capacitivă se compensează",
+        "B": "rezistența devine infinită",
+        "C": "curentul devine obligatoriu zero"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-070": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Series RLC resonance when X_L=X_C, cancels net reactive impedance, not infinite R or zero current.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-3-rlc-series-circuits-with-ac",
+        "prior_source_locator": null,
+        "old_model_conditions": "Valabil pentru RLC serie cu elemente liniare, f0=1/(2π√LC).",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Rezonanța serie ideală când XL=XC și partea reactivă netă este nulă.",
+        "B": "Rezistența serie R nu devine obligatoriu infinită la rezonanță.",
+        "C": "Curentul serie nu devine obligatoriu zero; poate fi maxim pentru U și R date."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-542a095f086827b1",
+      "representative_id": "G2-ELEC-071",
+      "member_ids": [
+        "G2-ELEC-071"
+      ],
+      "qabc_sha256": "542a095f086827b131ae58570b3e9e1a8bac705e4bb1f3f312f0a4dab550105f",
+      "question_original_UNCHANGED": "Într-un circuit serie R-L-C la rezonanță ideală, impedanța este determinată de: ",
+      "original_options_UNCHANGED": {
+        "A": "rezistența R",
+        "B": "numai reactanța capacitivă",
+        "C": "suma XL + XC"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-071": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "At ideal series RLC resonance, net reactance zero, |Z|=R, not X_C or X_L+X_C.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-3-rlc-series-circuits-with-ac",
+        "prior_source_locator": null,
+        "old_model_conditions": "Componente pasive ideale și R constant, fără pierderi parazite.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "La rezonanță serie XL−XC=0, astfel modulul impedanței este R.",
+        "B": "XC necompensată nu determină Z când XL=XC.",
+        "C": "Suma scalară XL+XC nu este reactanța netă, care este diferența."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-25904764f6d9f3ad",
+      "representative_id": "G2-ELEC-072",
+      "member_ids": [
+        "G2-ELEC-072"
+      ],
+      "qabc_sha256": "25904764f6d9f3ad16b632297e63e9b57802543bfdcfdcb5129363806f3d53c5",
+      "question_original_UNCHANGED": "Legea lui Ohm pentru o porțiune de circuit poate fi exprimată ca: ",
+      "original_options_UNCHANGED": {
+        "A": "U = R·I",
+        "B": "U = R/I",
+        "C": "U = I/R"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-072": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ohm law for resistor U=R I, neither R/I nor I/R.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+        "prior_source_locator": null,
+        "old_model_conditions": "Un rezistor ohmic liniar în condiții termice fixe.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Legea lui Ohm a rezistorului U=RI.",
+        "B": "R/I are unitate Ω/A, nu V.",
+        "C": "I/R are unitate A/Ω, nu V."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-fcfc9c7a54a49ad4",
+      "representative_id": "G2-ELEC-073",
+      "member_ids": [
+        "G2-ELEC-073"
+      ],
+      "qabc_sha256": "fcfc9c7a54a49ad41fdaea0440a96e693fe735efcd1e023c6c8537a13f911abb",
+      "question_original_UNCHANGED": "Într-un circuit cu rezistențe în serie, curentul este: ",
+      "original_options_UNCHANGED": {
+        "A": "același prin toate rezistențele",
+        "B": "zero prin prima rezistență",
+        "C": "diferit în mod obligatoriu prin fiecare rezistență"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-073": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ideal unbranched series resistors share same current by KCL, not different or zero.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "prior_source_locator": null,
+        "old_model_conditions": "Conexiune serie ideală, KCL în nodurile intermediare.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Curentul prin toate rezistențele serie este același, fără ramificații.",
+        "B": "Curentul nu este automat zero la prima rezistență într-un circuit închis alimentat.",
+        "C": "Curentul nu este obligatoriu diferit între rezistențe serie."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-40fbe06c583b55a8",
+      "representative_id": "G2-ELEC-074",
+      "member_ids": [
+        "G2-ELEC-074"
+      ],
+      "qabc_sha256": "40fbe06c583b55a8c9dab82896b99cf18d88626bea17905ad14b5bf7ec1a5f12",
+      "question_original_UNCHANGED": "Într-o conexiune paralelă ideală, tensiunea pe ramuri este: ",
+      "original_options_UNCHANGED": {
+        "A": "aceeași",
+        "B": "întotdeauna zero",
+        "C": "diferită în mod obligatoriu"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-074": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Ideal parallel branches share same pair of nodes, so same voltage.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "prior_source_locator": null,
+        "old_model_conditions": "Conexiune paralelă ideală fără căderi pe cablajul comun.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Două ramuri între aceleași noduri au aceeași diferență de potențial.",
+        "B": "Tensiunea comună nu este întotdeauna zero.",
+        "C": "Tensiunile ramurilor nu pot fi obligatoriu diferite dacă nodurile sunt aceleași."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-2186c1a0e2ee0429",
+      "representative_id": "G2-ELEC-075",
+      "member_ids": [
+        "G2-ELEC-075"
+      ],
+      "qabc_sha256": "2186c1a0e2ee0429b5128ee08ed2c75758cd0ad5b441d7ff060781334cfb1c5e",
+      "question_original_UNCHANGED": "Puterea activă într-un circuit monofazat sinusoidal poate fi exprimată prin: ",
+      "original_options_UNCHANGED": {
+        "A": "P = U·I·cosφ",
+        "B": "P = U/I",
+        "C": "P = U·I·sinφ în orice circuit"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-075": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "Sinusoidal single phase active power P=U_rms I_rms cosφ, not U/I impedance or U I sinφ reactive.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_17_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+        "prior_source_locator": null,
+        "old_model_conditions": "Tensiune și curent RMS, factor cosφ al fundamentalei.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Pentru sinusoidal monofazat P=U_ef I_ef cosφ.",
+        "B": "U/I este impedanță, nu putere.",
+        "C": "UI sinφ definește Q în model sinusoidal, nu P în orice circuit."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-3ba59ca2941381a1",
+      "representative_id": "G2-ELEC-076",
+      "member_ids": [
+        "G2-ELEC-076"
+      ],
+      "qabc_sha256": "3ba59ca2941381a1266662dd177e97e0bf9f40920710b4344d4fe67a523bbada",
+      "question_original_UNCHANGED": "Unitatea de măsură SI pentru rezistența electrică este: ",
+      "original_options_UNCHANGED": {
+        "A": "ohmul (Ω)",
+        "B": "faradul (F)",
+        "C": "henry-ul (H)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-076": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_verdict": "SI resistance unit ohm Ω, not farad nor henry.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_18_ALL_1_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_source_url": "https://www.bipm.org/en/publications/si-brochure",
+        "prior_source_locator": null,
+        "old_model_conditions": "Rezistență în regim ohmic; unitate SI Ω = V/A.",
+        "primary_2026_discovery": null
+      },
+      "abc_reasoning_preliminary": {
+        "A": "Ohmul Ω este unitatea SI derivată pentru rezistența electrică R=V/I.",
+        "B": "Farad (F) măsoară capacitatea.",
+        "C": "Henry (H) măsoară inductanța."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-02ceaf178f459982",
+      "representative_id": "G1-LEG-015",
+      "member_ids": [
+        "G1-LEG-015"
+      ],
+      "qabc_sha256": "02ceaf178f45998282b68de947fbbb5da87c25d5f460f3620bc679f9e76ad6e4",
+      "question_original_UNCHANGED": "Constituie contravenţie:",
+      "original_options_UNCHANGED": {
+        "A": "refuzul clienţilor finali de a permite accesul la grupurile de măsurare",
+        "B": "modificarea fără drept a componentelor instalaţiilor energetice",
+        "C": "sustragerea de energie electrica"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-015": "B"
+      },
+      "technical_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_verdict": "Primary Romanian Law 123/2012 Art.93(1) p.28 treats refusal to allow meter access (A) as contravention, Art.92(1) explicitly criminalizes unauthorized changes to energy installations (imported B); theft (C) also crime. Imported B conflicts with primary law. Candidate A requires edition-specific final proof.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_source_url": "https://legislatie.just.ro/Public/DetaliiDocument/300063 ; https://legislatie.just.ro/Public/DetaliiDocument/234612",
+        "prior_source_locator": "Legea 123/2012 art92(1),93(1) puncte relevante",
+        "old_model_conditions": "Stored B suspect: art92(1) defineste expres infractiunea. A necesita exact punct art93 si domeniu client final.",
+        "primary_2026_discovery": {
+          "primary": [
+            "https://legislatie.just.ro/Public/FormaPrintabila/00000G00TJR9TU2K0OE0MM37MY6PIW12",
+            "https://legislatie.just.ro/Public/DetaliiDocument/202403"
+          ],
+          "articles": [
+            "Art.93 alin.(1) pct.28",
+            "Art.92 alin.(1)"
+          ],
+          "source_access": "PRIMARY_LEGISLATION_WEB_SEARCH_EXACT_QUOTED_SNIPPETS_NOT_FULL_CONSOLIDATED_COPY"
+        }
+      },
+      "abc_reasoning_preliminary": {
+        "A": "A: refuzul accesului la contor poate constitui contraventie daca este prevazut explicit pentru destinatar si situatie; B: modificarea fara drept a componentelor instalatiilor energetice este infractiune art92(1), nu simpla contraventie; C: sustragerea energiei poate constitui infractiune, nu o contraventie generica.",
+        "B": "A: refuzul accesului la contor poate constitui contraventie daca este prevazut explicit pentru destinatar si situatie; B: modificarea fara drept a componentelor instalatiilor energetice este infractiune art92(1), nu simpla contraventie; C: sustragerea energiei poate constitui infractiune, nu o contraventie generica.",
+        "C": "A: refuzul accesului la contor poate constitui contraventie daca este prevazut explicit pentru destinatar si situatie; B: modificarea fara drept a componentelor instalatiilor energetice este infractiune art92(1), nu simpla contraventie; C: sustragerea energiei poate constitui infractiune, nu o contraventie generica."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    },
+    {
+      "unit_id": "AU-4b365bd0966b300d",
+      "representative_id": "G1-LEG-017",
+      "member_ids": [
+        "G1-LEG-017"
+      ],
+      "qabc_sha256": "4b365bd0966b300dae3c29d7f13e0374bb346425e99cc7bfbbd047855d820e70",
+      "question_original_UNCHANGED": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+      "original_options_UNCHANGED": {
+        "A": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+        "B": "racordare ilegală la reţeaua de distribuţie",
+        "C": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-017": "B"
+      },
+      "technical_status": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "technical_verdict": "Termination of energy supply contract may involve illegal connection, judicial theft finding, security deposit refusal depending source and edition; imported B cannot be singled out without exact applicable 2026 Ordinul 5/2023 and full Art.58, no unjustified key replacement.",
+      "provenance": {
+        "previous_research_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "prior_source_url": "https://legislatie.just.ro/Public/DetaliiDocument/300063 ; https://www.ppcenergy.ro/wp-content/uploads/ord-5-2023.pdf",
+        "prior_source_locator": "Legea123 art58(4)-(6); Regulament furnizare2023 art18(3) si art26(2)",
+        "old_model_conditions": "Art58(4)(c) are si «alte situatii prevazute de legislatie», deci A nu este dovedita unica.",
+        "primary_2026_discovery": {
+          "primary": [
+            "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+            "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046"
+          ],
+          "articles": [
+            "Legea 123/2012 Art.58 and contract supply conditions",
+            "Ordin 5/2023 conditions"
+          ],
+          "source_access": "SOURCE_RESEARCH_INDEXED; DIRECT_PRIMARY_HTML_MOSTLY_502"
+        }
+      },
+      "abc_reasoning_preliminary": {
+        "A": "A: furt stabilit prin hotarare definitiva este motiv de reziliere expres; B: racordarea ilegala nu este dovedita ca motiv distinct de reziliere doar prin art58(4); C: refuzul garantiei poate provoca deconectare, nu automat reziliere.",
+        "B": "A: furt stabilit prin hotarare definitiva este motiv de reziliere expres; B: racordarea ilegala nu este dovedita ca motiv distinct de reziliere doar prin art58(4); C: refuzul garantiei poate provoca deconectare, nu automat reziliere.",
+        "C": "A: furt stabilit prin hotarare definitiva este motiv de reziliere expres; B: racordarea ilegala nu este dovedita ca motiv distinct de reziliere doar prin art58(4); C: refuzul garantiei poate provoca deconectare, nu automat reziliere."
+      },
+      "evidence_qa": "SAME_ASSISTANT_NOT_INDEPENDENT_REVIEW",
+      "ANRE_edition_and_official_key": "NOT_VERIFIED",
+      "learner_approval": "NO",
+      "independent_technical": "NOT_RUN",
+      "independent_source": "NOT_RUN",
+      "independent_linguistic": "NOT_RUN",
+      "question_or_key_mutated": false
+    }
+  ]
+}

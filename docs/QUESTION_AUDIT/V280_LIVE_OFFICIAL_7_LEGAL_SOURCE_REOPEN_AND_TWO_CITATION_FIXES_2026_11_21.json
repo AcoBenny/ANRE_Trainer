@@ -1,0 +1,222 @@
+{
+  "schema": "V280_REOPENED_OFFICIAL_7_LEGAL_SOURCE_PASSAGES_WITH_ORIGINAL_ABC_QA",
+  "date": "2026-11-21",
+  "source_snapshot": "V279 after CKPT-366; V278 and all original XLSX/question/grade keys remain untouched",
+  "limits": "Seven primary source passage reopenings are document-based research by one assistant; not separate qualified legal/electrical/linguistic independent review, not actual ANRE scored-key authentication, not full 2026 consolidated-edition verification.",
+  "metrics": {
+    "source_semantic_root_diagnosed": 136,
+    "release_blocked_semantic_groups": 136,
+    "original_question_groups": 568,
+    "grade_routes": 822,
+    "initial_key_discrepancies_in_superseded_V278": 19,
+    "false_positives_corrected_in_V279": 2,
+    "remaining_source_key_candidates": 17,
+    "remaining_candidate_grade_routes": 18,
+    "official_source_passages_reopened_this_turn": 7,
+    "original_ABC_nested_evidence_compared": 14,
+    "cases_with_alternative_provenance_shape": 3,
+    "learner_approved": 0
+  },
+  "qa_preflight": {
+    "status": "PASS_STRUCTURAL_NOT_ANSWER_APPROVAL",
+    "checks": [
+      "17 unique candidates; 18 grade route records; exactly A/B/C",
+      "14 nested-original ABC match letter-for-letter",
+      "3 original source evidence shapes do not provide nested ABC in expected field; preserved as provenance gap not misreported as mismatch",
+      "2 previously false positive candidates excluded",
+      "No grade route imported key equals claimed source candidate",
+      "All 17 remain blocked and none authenticated for scored key or qualified reviewer"
+    ]
+  },
+  "corrected_source_references": [
+    {
+      "unit_id": "QABC-0288",
+      "wrong_url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+      "wrong_url_act": "Legea 123/2012",
+      "correct_regulation_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/160289",
+      "correct_act": "Regulamentul Ordinului ANRE 59/2013"
+    },
+    {
+      "unit_id": "QABC-0292",
+      "old_locator": "Anexa nr.3 pct.2.1",
+      "new_exact_locator": "Anexa nr.3 pct.2.3",
+      "official_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/160289"
+    }
+  ],
+  "reopened_statutory_cases": [
+    {
+      "unit_id": "QABC-0283",
+      "grade_ids": [
+        "G1-LEG-019"
+      ],
+      "imported_key": "G1-LEG-019=C",
+      "source_candidate_preliminary": "B",
+      "verified_ABC_order": {
+        "A": "Infracţiune",
+        "B": "Contravenţie",
+        "C": "Abatere"
+      },
+      "candidate": "B",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+      "locator": "Legea 123/2012 art.93 alin.(1) pct.3",
+      "reason": "Violation of ANRE technical standards is listed among contraventions.",
+      "source_text_match": "PRIMARY_ARTICLE_PASSAGE_REOPENED",
+      "edition_as_of_2026_11_21_fully_certified": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0290",
+      "grade_ids": [
+        "G1-LEG-026"
+      ],
+      "imported_key": "G1-LEG-026=C",
+      "source_candidate_preliminary": "B",
+      "verified_ABC_order": {
+        "A": "contravenţie",
+        "B": "infracţiune",
+        "C": "contravenţie sau infracţiune, după caz"
+      },
+      "candidate": "B",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+      "locator": "Legea 123/2012 art.92 alin.(2)",
+      "reason": "Using clandestine installations to connect directly/bypass meters is an offence, not a contravention.",
+      "source_text_match": "PRIMARY_ARTICLE_PASSAGE_REOPENED",
+      "edition_as_of_2026_11_21_fully_certified": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0298",
+      "grade_ids": [
+        "G1-LEG-034"
+      ],
+      "imported_key": "G1-LEG-034=B",
+      "source_candidate_preliminary": "A",
+      "verified_ABC_order": {
+        "A": "Are obligaţia de a respecta proiectul în baza căruia execută instalaţia electrică",
+        "B": "Are obligaţia de a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, chiar dacă nu i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare;",
+        "C": "Are dreptul de a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+      },
+      "candidate": "A",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/288046",
+      "locator": "Ordin ANRE 66/2023 Regulament art.37 lit.e,h,i",
+      "reason": "Project adherence is mandatory; reception attendance is conditional on request; connection requires operator/contract process.",
+      "source_text_match": "PRIMARY_ARTICLE_PASSAGE_REOPENED",
+      "edition_as_of_2026_11_21_fully_certified": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0312",
+      "grade_ids": [
+        "G1-LEG-048"
+      ],
+      "imported_key": "G1-LEG-048=A",
+      "source_candidate_preliminary": "B",
+      "verified_ABC_order": {
+        "A": "pot impune furnizorului orice modalitate de plată, chiar dacă nu este pusă la dispoziţie de către acesta",
+        "B": "pot să opteze pentru orice modalitate de plată pe care furnizorul o pune la dispoziţie",
+        "C": "sunt obligaţi să achite facturile pentru energia electrică la una din casieriile furnizorului"
+      },
+      "candidate": "B",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+      "locator": "Legea 123/2012 art.57 alin.(2)",
+      "reason": "Households choose among methods offered by the supplier, not unlimited imposed methods.",
+      "source_text_match": "PRIMARY_ARTICLE_PASSAGE_REOPENED",
+      "edition_as_of_2026_11_21_fully_certified": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0279",
+      "grade_ids": [
+        "G1-LEG-015"
+      ],
+      "imported_key": "G1-LEG-015=B",
+      "source_candidate_preliminary": "A",
+      "verified_ABC_order": {
+        "A": "refuzul clienţilor finali de a permite accesul la grupurile de măsurare",
+        "B": "modificarea fără drept a componentelor instalaţiilor energetice",
+        "C": "sustragerea de energie electrica"
+      },
+      "candidate": "A",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+      "locator": "Legea 123/2012 art.93 alin.(1) pct.28 contrasted art.92 alin.(1)",
+      "reason": "Refusal of access to metering is a contravention; unauthorised component modification is a criminal offence.",
+      "source_text_match": "PRIMARY_ARTICLE_PASSAGE_REOPENED",
+      "edition_as_of_2026_11_21_fully_certified": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0288",
+      "grade_ids": [
+        "G1-LEG-024"
+      ],
+      "imported_key": "G1-LEG-024=A",
+      "source_candidate_preliminary": "C",
+      "verified_ABC_order": {
+        "A": "nu este obligatorie pentru o durata mai mică de 6 luni",
+        "B": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+        "C": "este obligatorie pentru orice loc de consum/producere nou"
+      },
+      "candidate": "C",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/160289",
+      "locator": "Ordin ANRE 59/2013 Regulament art.5 alin.(1), art.11 alin.(1)-(2)",
+      "reason": "Connection request for new temporary/permanent consumption/production site is required regardless duration/power; blanket ATR wording requires edition and exception review.",
+      "source_url_in_V279_wrong": "https://legislatie.just.ro/Public/DetaliiDocument/294442",
+      "source_link_defect": "Old cited URL resolves to Legea 123/2012, not Ordin 59/2013.",
+      "source_text_match": "PRIMARY_ARTICLE_PASSAGE_REOPENED",
+      "edition_as_of_2026_11_21_fully_certified": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0292",
+      "grade_ids": [
+        "G1-LEG-028"
+      ],
+      "imported_key": "G1-LEG-028=B",
+      "source_candidate_preliminary": "C",
+      "verified_ABC_order": {
+        "A": "pe tablourile din apartamente",
+        "B": "centralizat, la limita zonei de proprietate asupra terenului, in exteriorul construcţiei",
+        "C": "centralizat, la parter sau pe palier"
+      },
+      "candidate": "C",
+      "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/160289",
+      "locator": "Ordin ANRE 59/2013 Regulament Anexa nr.3 pct.2.3",
+      "reason": "For an apartment block complex, individual meters are centralised on the ground floor or common landing.",
+      "locator_in_V279_wrong": "Anexa nr.3 pct.2.1",
+      "source_locator_defect": "Exact applicable passage is point 2.3, not point 2.1.",
+      "source_text_match": "PRIMARY_ARTICLE_PASSAGE_REOPENED",
+      "edition_as_of_2026_11_21_fully_certified": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "qualified_independent_reviewer": false,
+      "learner_approved": false
+    }
+  ],
+  "other_ten_research_candidates_remain_blocked": [
+    "QABC-0356",
+    "QABC-0374",
+    "QABC-0375",
+    "QABC-0403",
+    "QABC-0372",
+    "QABC-0380",
+    "QABC-0324",
+    "QABC-0367",
+    "QABC-0341",
+    "QABC-0235"
+  ],
+  "original_keys_changed": false,
+  "canonical_questions_changed": false,
+  "HTML_APK_changed": false,
+  "PR7_draft_unchanged": true
+}

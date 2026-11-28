@@ -1,0 +1,1127 @@
+{
+  "schema": "ANRE_EDUCATIONAL_VALIDATION_BATCH_V2",
+  "checkpoint": "CKPT-426",
+  "date": "2026-11-25",
+  "parent": "CKPT-425",
+  "classification": "EXACT_ORIGINAL_ANRE_WORDING_TWO_GRADE_ROUTES",
+  "counts": {
+    "new_original_qabc": 25,
+    "new_grade_routes": 50
+  },
+  "source_limits": "Independent AI research of sources, not human certified reviewer. Original source surrounding paragraphs are not reproduced verbatim; contextual teaching paraphrases must be verified in offline integration. Original imported answer keys unchanged.",
+  "regulatory_caveat": "QABC-0259 describes historical physical use of SF6; EU Regulation 2024/573 Art 13 restricts commissioning new F-gas switchgear in certain classes from 2026; no present-day installation recommendation.",
+  "records": [
+    {
+      "qabc_id": "QABC-0005",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-005",
+        "G2-ELEC-158"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-005": "B",
+        "G2-ELEC-158": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 12,
+      "immutable_source_unit": "AU-96fe8d1814d6733a",
+      "original_stem": "A doua teoremă a lui Kirchhoff, pentru o reţea electrică cu N noduri şi L laturi (L diferit de N), ne furnizează, pentru analiza unui circuit electric:",
+      "original_ABC": {
+        "A": "L+N-1 ecuaţii distincte",
+        "B": "L-N +1 ecuaţii distincte",
+        "C": "N-L+1 ecuaţii distincte"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "prior_editorial_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "source_url": "http://www.elth.pub.ro/~nemo/Bazele_Electrotehnicii_1/Note%20de%20curs/Circuite%20in%20regim%20tranzitoriu.pdf",
+      "source_section_or_object": "Kirchhoff, equations for a connected network",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "L+N−1 nu rezultă din numărul de cicluri fundamentale ale unui graf electric.",
+        "B": "Pentru rețea conexă, numărul de bucle fundamentale independente este L−N+1.",
+        "C": "N−L+1 inversează relația pentru graf conex cu L și N date."
+      },
+      "scope_and_exceptions": "enunțul nu menționează expres conexitatea; în general este L−N+k",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: enunțul nu menționează expres conexitatea; în general este L−N+k",
+        "central_highlighted_paraphrase": "**Pentru rețea conexă, numărul de bucle fundamentale independente este L−N+1.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_43a2a429-2994-43bd-be76-82c59589158f",
+        "resp_4f1ffcf7-26eb-48a1-9f0b-ac7efd49b1b8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0007",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-007",
+        "G2-ELEC-160"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-007": "A",
+        "G2-ELEC-160": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 14,
+      "immutable_source_unit": "AU-7e7d5305cca562a8",
+      "original_stem": "Alunecarea s a unui motor asincron are valori:",
+      "original_ABC": {
+        "A": "cuprinse între 1 si 0",
+        "B": "cuprinse între -1 si 0",
+        "C": "de regulă, mai mari decât 1"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "prior_editorial_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "source_url": "http://kcl.digimat.in/nptel/courses/video/108105131/lec39.pdf",
+      "source_section_or_object": "Induction machine slip, motor operating range",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "În regim normal de motor, 0<s<1; la pornire s=1 și la sincronism ideal s=0.",
+        "B": "Valorile negative ale alunecării descriu de regulă funcționarea în regim de generator, nu motoring normal.",
+        "C": "s>1 poate apărea în frânare prin contracurent, nu este regimul uzual al motorului în sarcină."
+      },
+      "scope_and_exceptions": "regim de motor normal versus generare/frânare",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: regim de motor normal versus generare/frânare",
+        "central_highlighted_paraphrase": "**În regim normal de motor, 0<s<1; la pornire s=1 și la sincronism ideal s=0.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_43a2a429-2994-43bd-be76-82c59589158f",
+        "resp_4f1ffcf7-26eb-48a1-9f0b-ac7efd49b1b8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0009",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-010",
+        "G2-ELEC-162"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-010": "C",
+        "G2-ELEC-162": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 17,
+      "immutable_source_unit": "AU-52d2a5904e98e754",
+      "original_stem": "Cele mai des utilizate pentru serviciile interne ale centralelor electrice sunt:",
+      "original_ABC": {
+        "A": "motoarele de curent continuu",
+        "B": "motoarele sincrone",
+        "C": "motoarele asincrone"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "prior_editorial_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "source_url": "https://phix.zcu.cz/moodle/pluginfile.php/500800/mod_resource/content/0/Power_Plants_Electric_Systems-3.pdf",
+      "source_section_or_object": "Power plant auxiliary induction motors",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Motoarele de curent continuu sunt utilizate în situații particulare, nu sunt alegerea obișnuită pentru majoritatea serviciilor de auxiliare.",
+        "B": "Motoarele sincrone sunt potrivite pentru anumite puteri și aplicații speciale, nu în mod generic cele mai frecvente auxiliare.",
+        "C": "Motoarele asincrone sunt folosite pe scară largă la pompe și ventilatoare din serviciile interne; «cele mai des» cere însă date de domeniu/epocă."
+      },
+      "scope_and_exceptions": "statistică de utilizare neconfirmată universal de un singur exemplu",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: statistică de utilizare neconfirmată universal de un singur exemplu",
+        "central_highlighted_paraphrase": "**Motoarele asincrone sunt folosite pe scară largă la pompe și ventilatoare din serviciile interne; «cele mai des» cere însă date de domeniu/epocă.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_43a2a429-2994-43bd-be76-82c59589158f"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0015",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-016",
+        "G2-ELEC-168"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-016": "B",
+        "G2-ELEC-168": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 23,
+      "immutable_source_unit": "AU-78f1b11743f3810c",
+      "original_stem": "Cantitatea de căldura produsã la trecerea curentului electric printr-un conductor este:",
+      "original_ABC": {
+        "A": "direct proporţională cu secţiunea conductorului",
+        "B": "direct proporţionala cu pătratul intensităţii curentului",
+        "C": "invers proporţionala cu rezistenta conductorului"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "prior_editorial_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "source_url": "https://www.tme.eu/en/news/library-articles/page/56024/joules-law-i-e-why-do-cables-heat-up",
+      "source_section_or_object": "Joule's law I²Rt",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "La lungime și material fixe, o secțiune mai mare tinde să reducă R, deci nu există proporționalitate directă a căldurii cu secțiunea la I fix.",
+        "B": "Legea Joule pentru curent și rezistență fixe în timpul t este Q=I²Rt; dependența este pătratică de I.",
+        "C": "La curent impus Q crește cu R, însă la tensiune impusă Q=V²t/R; regimul neprecizat face propoziția dependentă de condiții."
+      },
+      "scope_and_exceptions": "I fix versus U fix și schimbarea lui R odată cu temperatura",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: I fix versus U fix și schimbarea lui R odată cu temperatura",
+        "central_highlighted_paraphrase": "**Legea Joule pentru curent și rezistență fixe în timpul t este Q=I²Rt; dependența este pătratică de I.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_43a2a429-2994-43bd-be76-82c59589158f",
+        "resp_4f1ffcf7-26eb-48a1-9f0b-ac7efd49b1b8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0021",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-022",
+        "G2-ELEC-174"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-022": "A",
+        "G2-ELEC-174": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 29,
+      "immutable_source_unit": "AU-26424e4766cae74d",
+      "original_stem": "Care dintre relaţiile următoare este adevărată:",
+      "original_ABC": {
+        "A": "inducţia electrică = permitivitatea x intensitatea câmpului electric",
+        "B": "inducţia electrică = intensitatea câmpului electric/ permitivitate",
+        "C": "inducţia electrică=sarcina x intensitatea câmpului electric"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "prior_editorial_blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "source_url": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electromagnetics_II_(Ellingson)/03%3A_Wave_Propagation_in_General_Media/3.04%3A_Complex_Permittivity",
+      "source_section_or_object": "Constitutive relation D=epsilon E",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "În dielectric liniar omogen izotrop, D=εE, deci A este relația de manual.",
+        "B": "D=E/ε nu respectă nici modelul și nici dimensiunile fizice.",
+        "C": "qE este forța electrică asupra sarcinii, nu inducția electrică D."
+      },
+      "scope_and_exceptions": "În general D=ε₀E+P; formula scalară are ipoteze de material.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: În general D=ε₀E+P; formula scalară are ipoteze de material.",
+        "central_highlighted_paraphrase": "**În dielectric liniar omogen izotrop, D=εE, deci A este relația de manual.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_96978ae5-59b2-4ce2-84f0-d79390712ec8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0039",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-046",
+        "G2-ELEC-192"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-046": "C",
+        "G2-ELEC-192": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 53,
+      "immutable_source_unit": "AU-d73dc731a7bc3e89",
+      "original_stem": "Curentul produs într-un circuit care conţine elemente neliniare şi care este alimentat cu o tensiune sinusoidală este:",
+      "original_ABC": {
+        "A": "întotdeauna nesinusoidal",
+        "B": "întotdeauna sinusoidal",
+        "C": "nesinusoidal sau sinusoidal, depinde de natura elementelor neliniare"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+      "prior_editorial_blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+      "source_url": "https://naos-be.zcu.cz/server/api/core/bitstreams/0cbc5c15-f1b6-462c-890f-b978b485636f/content",
+      "source_section_or_object": "Sinusoidal and non-sinusoidal response in nonlinear electric elements",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "«Întotdeauna nesinusoidal» este prea absolut; neliniaritatea poate fi inactivă sau anulată în regimul observat.",
+        "B": "«Întotdeauna sinusoidal» este fals în prezența saturației sau redresării care generează armonici.",
+        "C": "Forma curentului depinde de caracteristica și punctul de funcționare al elementului neliniar."
+      },
+      "scope_and_exceptions": "Nu presupune că simpla prezență a unui element neliniar garantează distorsiune pentru orice regim.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Nu presupune că simpla prezență a unui element neliniar garantează distorsiune pentru orice regim.",
+        "central_highlighted_paraphrase": "**Forma curentului depinde de caracteristica și punctul de funcționare al elementului neliniar.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_96978ae5-59b2-4ce2-84f0-d79390712ec8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0048",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-055",
+        "G2-ELEC-201"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-055": "B",
+        "G2-ELEC-201": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 62,
+      "immutable_source_unit": "AU-ee276a1f7131316c",
+      "original_stem": "Descărcătoarele cu oxizi de zinc sunt echipamente destinate:",
+      "original_ABC": {
+        "A": "protecţiei personalului de exploatare împotriva electrocutării",
+        "B": "protecţiei împotriva supratensiunilor",
+        "C": "protecţiei împotriva supracurenţilor"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+      "prior_editorial_blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+      "source_url": "https://library.e.abb.com/public/a3d2cc265b43fe36c1256ddd003470f7/43-47%20M616.pdf",
+      "source_section_or_object": "ABB Review ZnO surge arresters",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "ZnO nu înlocuiește măsurile de protecție contra electrocutării.",
+        "B": "Descărcătorul ZnO protejează echipamente împotriva supratensiunilor.",
+        "C": "Supracurentul susținut se întrerupe prin dispozitive de protecție la curent, nu prin descărcător ca scop principal."
+      },
+      "scope_and_exceptions": "Aceeași funcție ca întrebarea 054, dar opțiunile sunt reordonate; nu transfera litera.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Aceeași funcție ca întrebarea 054, dar opțiunile sunt reordonate; nu transfera litera.",
+        "central_highlighted_paraphrase": "**Descărcătorul ZnO protejează echipamente împotriva supratensiunilor.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_96978ae5-59b2-4ce2-84f0-d79390712ec8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0083",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-091",
+        "G2-ELEC-235"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-091": "A",
+        "G2-ELEC-235": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 98,
+      "immutable_source_unit": "AU-7dd796665e360ff1",
+      "original_stem": "În cazul circuitelor de curent alternativ, teoremele lui Kirchhoff sunt întotdeauna satisfăcute pentru:",
+      "original_ABC": {
+        "A": "valorile instantanee ale tensiunilor şi curenţilor",
+        "B": "valorile efective ale tensiunilor şi curenţilor",
+        "C": "modulele fazorilor asociaţi tensiunilor şi curenţilor"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf",
+      "source_url": "https://ocw.uc3m.es/pluginfile.php/3904/mod_page/content/22/FIE_Module_3_notes.pdf",
+      "source_section_or_object": "Kirchhoff instantaneous vs complex phasor equations",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Pentru modele de circuit concentrate, KCL și KVL se formulează cu semne și sensuri pentru valorile instantanee ale curenților și tensiunilor.",
+        "B": "Valorile RMS sunt mărimi pozitive și nu se pot suma algebric indiferent de fazele relative; pierd informația de semn/fază.",
+        "C": "Modulele fazorilor sunt numai magnitudini; se pot suma fazorii COMPLECȘI cu faze, dar nu modulele în general."
+      },
+      "scope_and_exceptions": "«Întotdeauna» are domeniul de aplicare al circuitelor concentrate/quasi-staționare, nu câmpurilor distribuite arbitrarii. Formula pentru fazori COMPLECȘI este încă validă în regim sinusoidal stabil.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: «Întotdeauna» are domeniul de aplicare al circuitelor concentrate/quasi-staționare, nu câmpurilor distribuite arbitrarii. Formula pentru fazori COMPLECȘI este încă validă în regim sinusoidal stabil.",
+        "central_highlighted_paraphrase": "**Pentru modele de circuit concentrate, KCL și KVL se formulează cu semne și sensuri pentru valorile instantanee ale curenților și tensiunilor.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_c75c96d5-eae1-479c-a512-8256b7aab6f8",
+        "resp_4f1ffcf7-26eb-48a1-9f0b-ac7efd49b1b8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0085",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-093",
+        "G2-ELEC-237"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-093": "B",
+        "G2-ELEC-237": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 100,
+      "immutable_source_unit": "AU-5ace91020dd39be6",
+      "original_stem": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
+      "original_ABC": {
+        "A": "siguranţa fuzibilă realizează protecţia la suprasarcină;",
+        "B": "siguranţa fuzibilă realizează protecţia la scurtcircuit;",
+        "C": "siguranţa fuzibilă realizează protecţia la supratensiuni;"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "source_url": "https://library.e.abb.com/public/8489ed224735e6cac1256faf0028b970/2CDC106014C0201.pdf",
+      "source_section_or_object": "ABB thermal overload relays and fuse coordination",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Releul termic tratează uzual suprasarcina în ansamblul dat.",
+        "B": "Siguranța fuzibilă realizează protecția la scurtcircuit în schema precizată.",
+        "C": "Supratensiunea nu este obiectul specific al siguranței."
+      },
+      "scope_and_exceptions": "Nu extrapola la orice configurație de siguranțe.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Nu extrapola la orice configurație de siguranțe.",
+        "central_highlighted_paraphrase": "**Siguranța fuzibilă realizează protecția la scurtcircuit în schema precizată.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_c75c96d5-eae1-479c-a512-8256b7aab6f8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0087",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-095",
+        "G2-ELEC-238"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-095": "B",
+        "G2-ELEC-238": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 102,
+      "immutable_source_unit": "AU-2dac9d4544257335",
+      "original_stem": "În cazul în care rezultanta unui sistem de fazori (de tensiune sau de curent) este nulă:",
+      "original_ABC": {
+        "A": "sistemul nu are componentă simetrică inversă (negativă)",
+        "B": "sistemul nu are componentă simetrică homopolară (zero)",
+        "C": "sistemul nu are are componentă simetrică directă (pozitivă)"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "source_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_%28Kirtley%29/04%3A_Introduction_to_symmetrical_components/4.02%3A_The_Symmetrical_Component_Transformation",
+      "source_section_or_object": "Zero sequence component of three phasors",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Sumă nulă nu exclude secvența inversă.",
+        "B": "Secvența zero X0 este o treime din suma fazorilor, deci nulă.",
+        "C": "Secvența directă poate exista chiar dacă suma fazorilor este zero."
+      },
+      "scope_and_exceptions": "Nu confunda lipsa secvenței zero cu echilibrarea completă.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Nu confunda lipsa secvenței zero cu echilibrarea completă.",
+        "central_highlighted_paraphrase": "**Secvența zero X0 este o treime din suma fazorilor, deci nulă.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_c75c96d5-eae1-479c-a512-8256b7aab6f8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0088",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-096",
+        "G2-ELEC-239"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-096": "A",
+        "G2-ELEC-239": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 103,
+      "immutable_source_unit": "AU-9319fbf1cac680b8",
+      "original_stem": "În cazul pornirii stea triunghi a motoarelor asincrone, curentul de pornire la conexiunea stea este:",
+      "original_ABC": {
+        "A": "1/3 din curentul de pornire la conexiunea triunghi",
+        "B": "de 3 ori curentul de pornire la conexiunea triunghi",
+        "C": "de 2 ori curentul de pornire la conexiunea triunghi"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "source_url": "http://www.ie.ucv.ro/eLEE/RO/realisations/MachinesElectriques/Induction/CommandeClasique/Porniri/porniri.pdf",
+      "source_section_or_object": "Starting line current star-delta ratio",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Pornirea stea necesită aproximativ o treime din curentul de linie la pornirea direct triunghi.",
+        "B": "Curentul stea nu este de trei ori cel în triunghi.",
+        "C": "Curentul stea nu este de două ori cel în triunghi."
+      },
+      "scope_and_exceptions": "Motor compatibil cu stea-triunghi; compară curenți de linie.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Motor compatibil cu stea-triunghi; compară curenți de linie.",
+        "central_highlighted_paraphrase": "**Pornirea stea necesită aproximativ o treime din curentul de linie la pornirea direct triunghi.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_c75c96d5-eae1-479c-a512-8256b7aab6f8"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0095",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-103",
+        "G2-ELEC-246"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-103": "A",
+        "G2-ELEC-246": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 110,
+      "immutable_source_unit": "AU-eea3e50085532d4d",
+      "original_stem": "În cazul unei staţii cu un sistem de bare colectoare secţionat longitudinal şi prevăzut cu o cuplă longitudinală cu întreruptor şi AAR, cupla se menţine:",
+      "original_ABC": {
+        "A": "în rezervă caldă;",
+        "B": "în rezervă rece;",
+        "C": "În funcţiune"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "source_url": "https://www.upet.ro/annals/electrical/doc/2025/22%20CRUCERU.pdf",
+      "source_section_or_object": "Sectionalized bus with automatic longitudinal coupler in warm standby",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Cu AAR, cupla normal deschisă, pregătită, este compatibilă cu rezervă caldă.",
+        "B": "Rezerva rece presupune altă disponibilitate de cuplare.",
+        "C": "Cuplarea permanentă ar putea invalida separarea normală între secții."
+      },
+      "scope_and_exceptions": "Regim exact de rezervă și interblocări de protecție necesită schemă.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Regim exact de rezervă și interblocări de protecție necesită schemă.",
+        "central_highlighted_paraphrase": "**Cu AAR, cupla normal deschisă, pregătită, este compatibilă cu rezervă caldă.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_caf37251-0543-4417-92f0-f940376f0a6d"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0097",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-105",
+        "G2-ELEC-248"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-105": "C",
+        "G2-ELEC-248": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 112,
+      "immutable_source_unit": "AU-2b1be51d65318af7",
+      "original_stem": "Într-o schemă cu 1,5 întreruptoare pe circuit:",
+      "original_ABC": {
+        "A": "este necesară o cuplă de ocolire;",
+        "B": "este necesară o cuplă transversală;",
+        "C": "nu sunt necesare circuite de cuplă transversală şi de ocolire"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "source_url": "https://electrical-engineering-portal.com/bus-configurations-substations-345-kv",
+      "source_section_or_object": "Breaker-and-a-half bus configuration",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Schema cu 1,5 întreruptoare nu cere inerent cuplă separată de ocolire.",
+        "B": "Nici cupla transversală separată nu este o necesitate intrinsecă în configurația clasică.",
+        "C": "Trei întreruptoare partajate la două circuite între două bare permit funcționarea fără acele cuple dedicate."
+      },
+      "scope_and_exceptions": "Necesită evaluarea protecțiilor, nu instrucțiuni de comutare.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Necesită evaluarea protecțiilor, nu instrucțiuni de comutare.",
+        "central_highlighted_paraphrase": "**Trei întreruptoare partajate la două circuite între două bare permit funcționarea fără acele cuple dedicate.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_caf37251-0543-4417-92f0-f940376f0a6d"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0099",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-107",
+        "G2-ELEC-250"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-107": "A",
+        "G2-ELEC-250": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 114,
+      "immutable_source_unit": "AU-d4e07df6ab5afb3e",
+      "original_stem": "În posturi de transformare se folosesc transformatoare uscate atunci când:",
+      "original_ABC": {
+        "A": "amplasarea postului se face în zone aglomerate;",
+        "B": "nu sunt restricţii de teren;",
+        "C": "nu este posibilă asigurarea unei răciri corespunzătoare a bobinajelor."
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "source_url": "https://library.e.abb.com/public/4252c34d661764a185257a9300723ff2/ABB-456-WPO_urban-substations_FINAL.pdf",
+      "source_section_or_object": "Dry-type transformers in populated/occupied spaces",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Varianta uscată poate reduce riscurile specifice uleiului în zone aglomerate.",
+        "B": "Lipsa restricțiilor de teren nu justifică în sine transformatorul uscat.",
+        "C": "Lipsa răcirii corespunzătoare nu justifică niciun transformator în funcțiune."
+      },
+      "scope_and_exceptions": "Și varianta uscată necesită ventilație și limite termice.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Și varianta uscată necesită ventilație și limite termice.",
+        "central_highlighted_paraphrase": "**Varianta uscată poate reduce riscurile specifice uleiului în zone aglomerate.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_caf37251-0543-4417-92f0-f940376f0a6d"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0100",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-108",
+        "G2-ELEC-251"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-108": "C",
+        "G2-ELEC-251": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 115,
+      "immutable_source_unit": "AU-58a8ac1ed6564893",
+      "original_stem": "Într-o schemă poligon cu patru laturi:",
+      "original_ABC": {
+        "A": "este necesară o cuplă de ocolire;",
+        "B": "este necesară o cuplă transversală;",
+        "C": "nu este necesară o cuplă transversală."
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "source_url": "https://law.resource.org/pub/in/bis/S05/is.1885.71.1993.pdf",
+      "source_section_or_object": "Ring/mesh four-breaker polygon standard topology",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Schema inelară nu cere inerent o cuplă de ocolire.",
+        "B": "Cupla transversală separată nu este inerent necesară în poligon.",
+        "C": "Legăturile sunt asigurate de întreruptoarele inelului; cupla transversală separată nu este obligatorie."
+      },
+      "scope_and_exceptions": "Un defect sau o revizie poate deschide inelul și reduce redundanța.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Un defect sau o revizie poate deschide inelul și reduce redundanța.",
+        "central_highlighted_paraphrase": "**Legăturile sunt asigurate de întreruptoarele inelului; cupla transversală separată nu este obligatorie.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_caf37251-0543-4417-92f0-f940376f0a6d"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0102",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-111",
+        "G2-ELEC-253"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-111": "C",
+        "G2-ELEC-253": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 118,
+      "immutable_source_unit": "AU-79d3c0fe4aef4fe9",
+      "original_stem": "Scopul supraînaltarii echipamentelor electrice din instalatii electrice exterioare este asigurarea",
+      "original_ABC": {
+        "A": "accesului mai comod în instalatie",
+        "B": "esteticii si claritatii instalatiei",
+        "C": "securitatii personalului de exploatare"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+      "prior_editorial_blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+      "source_url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1926/1926.966",
+      "source_section_or_object": "Substations, elevated live equipment clearance and personnel protection",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Comoditatea accesului nu este scopul primordial al supraînălțării aparatajului sub tensiune.",
+        "B": "Estetica și claritatea nu justifică izolarea prin înălțime.",
+        "C": "Ridicarea aparatelor poate asigura distanțe de securitate pentru personal."
+      },
+      "scope_and_exceptions": "Nu oferă automat siguranță: distanțele depind de tensiune și geometrie.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Nu oferă automat siguranță: distanțele depind de tensiune și geometrie.",
+        "central_highlighted_paraphrase": "**Ridicarea aparatelor poate asigura distanțe de securitate pentru personal.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_caf37251-0543-4417-92f0-f940376f0a6d"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0135",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-144",
+        "G2-ELEC-282"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-144": "B",
+        "G2-ELEC-282": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 151,
+      "immutable_source_unit": "AU-53349c59d5e86d0b",
+      "original_stem": "La o maşina electrica asincrona turaţia variază:",
+      "original_ABC": {
+        "A": "cu curentul de excitaţie",
+        "B": "cu frecventa",
+        "C": "numai cu sarcina"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+      "prior_editorial_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+      "source_url": "https://repository.sustech.edu/bitstream/handle/123456789/26191/Speed%20Control%20of%20Three%20Phase%20Induction%20Motor%20usingVariable%20Frequency%20Drive.pdf?isAllowed=y&sequence=1",
+      "source_section_or_object": "Induction motor speed and supply frequency relation",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Curentul de excitație nu este parametrul universal al turației mașinii asincrone.",
+        "B": "n=(60f/p)·(1−s): frecvența de alimentare influențează direct turația sincronă.",
+        "C": "«Numai cu sarcina» exclude influența frecvenței și numărului de poli; este fals."
+      },
+      "scope_and_exceptions": "Alunecarea s variază și cu sarcina, deci nu afirma că frecvența este singurul factor.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Alunecarea s variază și cu sarcina, deci nu afirma că frecvența este singurul factor.",
+        "central_highlighted_paraphrase": "**n=(60f/p)·(1−s): frecvența de alimentare influențează direct turația sincronă.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_f4541a60-0e4d-4aac-b4fe-c5246edb4172"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0146",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-155",
+        "G2-ELEC-293"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-155": "C",
+        "G2-ELEC-293": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 162,
+      "immutable_source_unit": "AU-3240d047f6d1f9fd",
+      "original_stem": "Mărirea cuplului de pornire şi micşorarea curentului de pornire la motoarele asincrone cu rotorul în scurtcircuit se face:",
+      "original_ABC": {
+        "A": "prin deconectarea şi reconectarea lor la reţeaua de alimentare",
+        "B": "numai prin utilizarea motoarelor cu rotorul în dublă colivie",
+        "C": "prin utilizarea motoarelor cu rotorul în colivie cu bare înalte"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "0e2b62ad8f0d367a21c2b8e55b52cae5c539daf4",
+      "source_url": "https://www.mircea-gogu.ro/pdf/Curs%20Masini%20electrice/capitolul_V.pdf",
+      "source_section_or_object": "Motor induction deep bars and double cage rotor §5.9.4",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Deconectarea și reconectarea nu conferă rotorului caracteristica constructivă necesară.",
+        "B": "«Numai» dubla colivie este fals: barele înalte reprezintă altă soluție.",
+        "C": "Barele înalte folosesc efectul pelicular pentru modificarea rezistenței efective la pornire și pot îmbunătăți cuplul/curentul."
+      },
+      "scope_and_exceptions": "Nu transforma efectul de bare înalte în garanție universală; depinde de construcție și sarcină.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Nu transforma efectul de bare înalte în garanție universală; depinde de construcție și sarcină.",
+        "central_highlighted_paraphrase": "**Barele înalte folosesc efectul pelicular pentru modificarea rezistenței efective la pornire și pot îmbunătăți cuplul/curentul.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_0a84ee1c-db37-4fdc-8746-2268db7d3593"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0164",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-175",
+        "G2-ELEC-311"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-175": "B",
+        "G2-ELEC-311": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 182,
+      "immutable_source_unit": "AU-db241766c21e1079",
+      "original_stem": "Care dintre urmatoarele enunturi nu este adevarat:",
+      "original_ABC": {
+        "A": "energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;",
+        "B": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de functionare",
+        "C": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de utilizare al puterii maxime."
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "0e2b62ad8f0d367a21c2b8e55b52cae5c539daf4",
+      "source_url": "https://phys.libretexts.org/Bookshelves/University_Physics/Physics_(Boundless)/19%3A_Electric_Current_and_Resistance/19.4%3A_Electric_Power_and_Energy",
+      "source_section_or_object": "Energy as mean power times duration and maximum-power equivalent hours",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Identitate: E=P_medie×T pentru media pe intervalul T.",
+        "B": "E=P_max×T_total este falsă în general dacă sarcina variază; adevărată doar pentru putere maximă continuă.",
+        "C": "E=P_max×T_utilizare este definiția timpului echivalent T_utilizare=E/P_max."
+      },
+      "scope_and_exceptions": "Se cere enunțul fals, iar «timp de utilizare» nu este «durată totală».",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Se cere enunțul fals, iar «timp de utilizare» nu este «durată totală».",
+        "central_highlighted_paraphrase": "**E=P_max×T_total este falsă în general dacă sarcina variază; adevărată doar pentru putere maximă continuă.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_f4541a60-0e4d-4aac-b4fe-c5246edb4172"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0170",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-181",
+        "G2-ELEC-317"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-181": "A",
+        "G2-ELEC-317": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 188,
+      "immutable_source_unit": "AU-f4b8ff0c03cd3eb8",
+      "original_stem": "Pentru o linie electrică lungă care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei, puterea activă la extremitatea receptoare:",
+      "original_ABC": {
+        "A": "se numeşte putere caracteristică sau putere naturală",
+        "B": "depinde de lungimea liniei",
+        "C": "este independentă de tensiunea liniei"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "b92b50e9bdd7bee8737544614d657e84ffeb33af",
+      "source_url": "https://archive.nptel.ac.in/content/storage2/courses/108104051/chapter_2/2_8.html",
+      "source_section_or_object": "Lossless matched long line natural/surge impedance loading",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "La Z_L=Zc pentru linie ideală, puterea transmisă este numită naturală sau caracteristică.",
+        "B": "În modele cu pierderi, lungimea poate influența puterea recepționată; nu schimbă definiția SIL.",
+        "C": "P_natural≈U_linie²/Zc, deci depinde de tensiunea liniei."
+      },
+      "scope_and_exceptions": "Interpretarea simplă SIL este pentru linie adaptată, adesea cu pierderi neglijabile.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Interpretarea simplă SIL este pentru linie adaptată, adesea cu pierderi neglijabile.",
+        "central_highlighted_paraphrase": "**La Z_L=Zc pentru linie ideală, puterea transmisă este numită naturală sau caracteristică.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_0a84ee1c-db37-4fdc-8746-2268db7d3593"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0171",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-182",
+        "G2-ELEC-318"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-182": "A",
+        "G2-ELEC-318": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 189,
+      "immutable_source_unit": "AU-b917c698c5766939",
+      "original_stem": "Pentru o linie electrică care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei:",
+      "original_ABC": {
+        "A": "energiile reactive, inductivă şi capacitivă, se compensează",
+        "B": "energia reactivă inductivă este mai mare decât cea capacitivă",
+        "C": "energia reactivă capacitivă este mai mare decât cea inductivă"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "prior_editorial_blob_sha": "b92b50e9bdd7bee8737544614d657e84ffeb33af",
+      "source_url": "https://phix.zcu.cz/moodle/pluginfile.php/569583/mod_resource/content/1/LecturePDS-Power_lines%20ESF.pdf",
+      "source_section_or_object": "Natural-load transmission reactive inductive/capacitive balance",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "În model ideal adaptat la Zc, puterea reactivă capacitivă produsă compensează absorbția inductivă.",
+        "B": "Absorbția inductivă dominantă se manifestă pentru alte încărcări decât SIL ideal.",
+        "C": "Producția capacitivă dominantă corespunde altui regim decât încărcarea naturală ideală."
+      },
+      "scope_and_exceptions": "Bilanțul exact se formulează pentru linie fără pierderi, în regim potrivit.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Bilanțul exact se formulează pentru linie fără pierderi, în regim potrivit.",
+        "central_highlighted_paraphrase": "**În model ideal adaptat la Zc, puterea reactivă capacitivă produsă compensează absorbția inductivă.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_0a84ee1c-db37-4fdc-8746-2268db7d3593"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0186",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-197",
+        "G2-ELEC-333"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-197": "B",
+        "G2-ELEC-333": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 204,
+      "immutable_source_unit": "AU-4398a0cf77f51bce",
+      "original_stem": "Reducerea nivelului de izolație din instalațiile capsulate cu SF6 poate fi provocată",
+      "original_ABC": {
+        "A": "numai de produse de descompunere ale SF6 şi compuşii lor cu materiale izolante sau metale, sub influenţa umidităţii;",
+        "B": "de impurităţi ca urmare a unui montaj necorespunzător (dacă montajul se face cu mâini murdare, transpirate, urme de grăsime, praf de diferite feluri şi mai ales pilituri metalice);",
+        "C": "umiditatea reziduală scăzută a gazului izolant"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "prior_editorial_blob_sha": "ca2f940921bf14f0bbae61898e1bbb34d5c0f04d",
+      "source_url": "https://www.solvay.com/sites/g/files/srpend616/files/2018-08/SF6-Sulphur-Hexafluoride_0.pdf",
+      "source_section_or_object": "GIS SF6 contamination, dust and metal particles dielectric breakdown",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "«Numai produse de descompunere» este fals prin exclusivitate: particule metalice și alte impurități pot reduce rezistența dielectrică.",
+        "B": "Impuritățile din montaj, inclusiv pilituri și contaminanți, pot genera intensificări locale ale câmpului și scăderea izolației.",
+        "C": "Umiditatea reziduală scăzută este în general de dorit, nu un factor tipic de degradare dielectrică; umiditatea ridicată este problematică."
+      },
+      "scope_and_exceptions": "Într-un GIS cu SF6, proprietățile dielectricului, contaminarea, presiunea și umiditatea sunt factori separați. Beneficiul istoric nu permite instalarea fără verificarea restricțiilor F-gaz aplicabile.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Într-un GIS cu SF6, proprietățile dielectricului, contaminarea, presiunea și umiditatea sunt factori separați. Beneficiul istoric nu permite instalarea fără verificarea restricțiilor F-gaz aplicabile.",
+        "central_highlighted_paraphrase": "**Impuritățile din montaj, inclusiv pilituri și contaminanți, pot genera intensificări locale ale câmpului și scăderea izolației.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_f1dc5cf6-9afd-4ad7-858f-adcbb8541fa4"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0227",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-238",
+        "G2-ELEC-374"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-238": "A",
+        "G2-ELEC-374": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 245,
+      "immutable_source_unit": "AU-63c783e5b6853938",
+      "original_stem": "Teoremele (formulele) Biot Savart Laplace se referă la:",
+      "original_ABC": {
+        "A": "intensitatea câmpului magnetic produs de un curent care circulă printr-un conductor",
+        "B": "forţa electromagnetică",
+        "C": "forţa exercitată între două conductoare paralele parcurse de curenţi"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+      "prior_editorial_blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/12-1-the-biot-savart-law",
+      "source_section_or_object": "Biot-Savart law magnetic field produced by current",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "Biot–Savart–Laplace determină câmpul magnetic produs de elementele de curent.",
+        "B": "Formula forței pe conductor este distinctă de legea Biot–Savart, chiar dacă folosește câmpul B.",
+        "C": "Interacțiunea a două fire se poate deriva folosind B, dar nu este enunțul direct al formulei Biot–Savart."
+      },
+      "scope_and_exceptions": "Nu confunda calculul câmpului cu calculul forței asupra unui conductor.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Nu confunda calculul câmpului cu calculul forței asupra unui conductor.",
+        "central_highlighted_paraphrase": "**Biot–Savart–Laplace determină câmpul magnetic produs de elementele de curent.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_0a84ee1c-db37-4fdc-8746-2268db7d3593"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0233",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-244",
+        "G2-ELEC-380"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-244": "B",
+        "G2-ELEC-380": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 251,
+      "immutable_source_unit": "AU-9b94e9faac5f495b",
+      "original_stem": "Transformatoarele de măsurare de tensiune:",
+      "original_ABC": {
+        "A": "nu pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
+        "B": "nu pot fi lăsate în exploatare cu înfăşurarea secundara în scurtcircuit",
+        "C": "pot fi puse sub tensiune cu înfăşurarea secundara in scurtcircuit"
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+      "prior_editorial_blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+      "source_url": "https://www.alce-elektrik.com/wp-content/uploads/2024/07/ALCE_Voltage_Transformers_GIS_14R01.pdf",
+      "source_section_or_object": "ALCE manufacturer operation and safety manual, INFORMATION ABOUT THE SAFE OPERATION OF VOLTAGE TRANSFORMERS; secondary open permitted, secondary short-circuit prohibited",
+      "source_access_evidence": "Exact voltage-transformer manufacturer safety source located and independently crosschecked against original QABC: secondary short-circuit is prohibited",
+      "ABC_reasoning": {
+        "A": "Pentru TT de tensiune, secundarul deschis poate fi un regim admis, deci A nu este regulă.",
+        "B": "Scurtcircuitarea secundarului unui transformator de tensiune poate produce supracurent și defect; nu este permisă.",
+        "C": "Punerea sub tensiune cu secundar în scurtcircuit este periculoasă, deci C este falsă."
+      },
+      "scope_and_exceptions": "Nu inversa regulile TC/TT: TC secundar deschis periculos; TT secundar scurtcircuitat periculos.",
+      "source_context_editorial": {
+        "before": "Source manufacturer discusses the voltage-transformer measurement winding and circumstances where an unused secondary is left open with the appropriate earthing arrangement.",
+        "central_highlighted_paraphrase": "**Scurtcircuitarea secundarului unui transformator de tensiune poate produce supracurent și defect; nu este permisă.**",
+        "after": "Warning is for voltage transformer (TT), not current transformer (TC), whose open secondary presents a distinct hazard; follow manufacturer safety procedure only."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_f1dc5cf6-9afd-4ad7-858f-adcbb8541fa4"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    },
+    {
+      "qabc_id": "QABC-0259",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-270",
+        "G2-ELEC-403"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-270": "B",
+        "G2-ELEC-403": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 277,
+      "immutable_source_unit": "AU-f00e93d3c3d33c77",
+      "original_stem": "Utilizarea SF6 ca mediu de stingere a arcului electric permite",
+      "original_ABC": {
+        "A": "doar realizarea unor întreruptoare fără pericol de incendiu;",
+        "B": "realizarea unor întreruptoare cu întreţinere mult simplificată;",
+        "C": "puţin silenţioase."
+      },
+      "prior_editorial_file": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "prior_editorial_blob_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "source_url": "https://www.solvay.com/sites/g/files/srpend616/files/2018-08/SF6-Sulphur-Hexafluoride_0.pdf",
+      "source_section_or_object": "Historical SF6 arc-quenching benefits / simplified maintenance; EU 2024/573 separate commissioning restriction",
+      "source_access_evidence": "Independent AI source research reported source excerpt or page opening, not uniformly full original paragraph authenticated",
+      "ABC_reasoning": {
+        "A": "«Doar» absența incendiului ignoră alte caracteristici și nu certifică risc total zero.",
+        "B": "Întreruptoarele SF6 etanșe au avut în mod tipic întreținere simplificată comparativ cu anumite tehnologii anterioare; tot necesită verificări adecvate.",
+        "C": "«Puțin silențioase» nu descrie avantajul invocat; zgomotul depinde de mecanism și condiții."
+      },
+      "scope_and_exceptions": "Nu interpreta «întreținere simplificată» drept lipsă totală de verificări. Legislația UE 2024/573 privind gaze fluorurate modifică posibilitatea de punere în funcțiune a echipamentelor noi.",
+      "source_context_editorial": {
+        "before": "Domeniul și condițiile: Nu interpreta «întreținere simplificată» drept lipsă totală de verificări. Legislația UE 2024/573 privind gaze fluorurate modifică posibilitatea de punere în funcțiune a echipamentelor noi.",
+        "central_highlighted_paraphrase": "**Întreruptoarele SF6 etanșe au avut în mod tipic întreținere simplificată comparativ cu anumite tehnologii anterioare; tot necesită verificări adecvate.**",
+        "after": "Alternativele A/B/C se judecă în acest regim; explicațiile sunt parafraze didactice, nu citate normative originale."
+      },
+      "independent_ai_reviewer_sessions": [
+        "resp_f1dc5cf6-9afd-4ad7-858f-adcbb8541fa4"
+      ],
+      "learning_content_accepted": true,
+      "official_anre_scored_key_verified": false,
+      "source_exact_verbatim_before_after_verified": false,
+      "app_tested": false
+    }
+  ],
+  "source_corrections": [
+    {
+      "qabc_id": "QABC-0233",
+      "old_unrelated_source": "https://www.se.com/us/en/faqs/FA125574/",
+      "correct_exact_source": "https://www.alce-elektrik.com/wp-content/uploads/2024/07/ALCE_Voltage_Transformers_GIS_14R01.pdf",
+      "reason": "The old source addressed current transformers; manufacturer ALCE manual exactly addresses potential/voltage transformer secondary short-circuit hazard."
+    }
+  ]
+}

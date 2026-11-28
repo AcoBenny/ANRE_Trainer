@@ -1,0 +1,123 @@
+{
+  "schema": "V322_G1_OFFICIAL_ANRE_XLSX_10_SOURCE_MATCH_2_REWRITES_2026_11_22",
+  "date": "2026-11-22",
+  "source_urls": {
+    "G1_Legislatie": "https://anre.ro/wp-content/uploads/2023/05/LEGISLATIE-GR.-1-05.2023.xlsx",
+    "G1_Norme": "https://anre.ro/wp-content/uploads/2023/05/NORME-TEHNICE-Gr.-1-05.2023.xlsx"
+  },
+  "comparison_source": "V319 crossgrade original 8 G2 and 10 G1 canonical route variants; official ANRE XLSX rendered as markdown via live scrape. Unicode/space normalization, exact stem+ordered choices.",
+  "checked": 10,
+  "source_exact": 8,
+  "source_rewritten": 2,
+  "critical_rewrites": [
+    "QABC-0362 G1-NOR-048",
+    "QABC-0386 G1-NOR-072"
+  ],
+  "other_key_conflict": "QABC-0281 G1-LEG-017 imported B requires qualified legal proof vs exact Art18(3)(a) current option A",
+  "cases": [
+    {
+      "grade": "G1",
+      "id": "QABC-0271",
+      "route": "G1-LEG-007",
+      "G2_id": "ANRE-G2-LEG-XLSX-R0018",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "B",
+      "status": "EXACT_ABC",
+      "detail": "Original G1 B is unauthorized independent work without electrician authorization; G2 C concerns work in an unauthorized business form; two distinct offense formulations."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0266",
+      "route": "G1-LEG-002",
+      "G2_id": "ANRE-G2-LEG-XLSX-R0034",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "B",
+      "status": "EXACT_ABC",
+      "detail": "Original G1 B is court-confirmed electricity theft, express supplier termination basis under Ord5/2023 Art18(3)(a)."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0281",
+      "route": "G1-LEG-017",
+      "G2_id": "ANRE-G2-LEG-XLSX-R0034",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "B",
+      "status": "EXACT_ABC_BUT_P0_LEGAL_KEY_CONFLICT",
+      "detail": "Official ANRE G1 2023 XLSX A=theft of electricity by final judgment; B=illegal connection; C=refusal to provide guarantee. Current 2023 supplier regulation Art18(3)(a) establishes termination for A with final judgment; B merely illegal connection without proven theft is not enough to import this exception. Key B requires independent specialist review; do not modify."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0303",
+      "route": "G1-LEG-039",
+      "G2_id": "ANRE-G2-LEG-XLSX-R0082",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "B",
+      "status": "EXACT_ABC",
+      "detail": "Original G1 B 30 calendar days medium voltage, G2 A 30 calendar days low voltage. Same governing rule is not an answer-letter agreement."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0311",
+      "route": "G1-LEG-047",
+      "G2_id": "ANRE-G2-LEG-XLSX-R0093",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "B",
+      "status": "EXACT_ABC",
+      "detail": "G1 B 'oferta operatorului' matches updated Reg59 Art24 while G2 C legacy 'aprobare racordare' does not exactly quote modern act."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0362",
+      "route": "G1-NOR-048",
+      "G2_id": "ANRE-G2-NOR-XLSX-R0079",
+      "official_2023_source_match": false,
+      "canonical_imported_key": "A",
+      "status": "CANONICAL_ABC_REWRITE_NOT_VERBATIM_ANRE",
+      "detail": "Official ANRE G1 Norme has two bell transformer rows, neither matches canonical A 'din circuit de iluminat normal, din circuit de prize sau direct din tablou'. That composite A is a didactically correct I7 §5.4.13 rewrite, but it must not be presented as an original scored G1 alternative. In official ANRE source, corresponding row has A 'numai direct din tabloul de distribuţie', B 'numai dintr-un circuit de iluminat normal', C 'dintr-un circuit de prize', exactly matching staged G2 row79 source."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0363",
+      "route": "G1-NOR-049",
+      "G2_id": "ANRE-G2-NOR-XLSX-R0079",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "B",
+      "status": "EXACT_ABC",
+      "detail": "The second original G1 bell source question is exact in current bank; G2 source corresponds to the first G1 bell row, not this question."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0386",
+      "route": "G1-NOR-072",
+      "G2_id": "ANRE-G2-NOR-XLSX-R0116",
+      "official_2023_source_match": false,
+      "canonical_imported_key": "B",
+      "status": "CANONICAL_ANSWER_CHOICE_REWRITE_NOT_VERBATIM_ANRE",
+      "detail": "Official ANRE G1 original B says 'trebuie să poată fi deconectat uşor, fără utilizarea unei scule'; canonical B is rewritten 'trebuie să poată fi deconectat individual, iar conectarea să fie sigură şi deconectabilă numai prin intermediul unei scule'. Original B contradicts tool-only source I7 §5.5.2.3; canonical B states full rule, while original C 'trebuie să poată fi deconectat individual' is closer to original source intended answer. Very high exam-vs-didactic fidelity gate: do not quietly keep canonical B labelled original G1."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0369",
+      "route": "G1-NOR-055",
+      "G2_id": "ANRE-G2-NOR-XLSX-R0119",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "A",
+      "status": "EXACT_ABC",
+      "detail": "G1 A agroindustrial building, G2 A prefabricated building, both possible I7 contexts but different literal objects."
+    },
+    {
+      "grade": "G1",
+      "id": "QABC-0392",
+      "route": "G1-NOR-078",
+      "G2_id": "ANRE-G2-NOR-XLSX-R0127",
+      "official_2023_source_match": true,
+      "canonical_imported_key": "B",
+      "status": "EXACT_ABC",
+      "detail": "G1 B insulation of hazardous live parts, G2 A insulation ensuring basic protection; related definitions but differing literal options."
+    }
+  ],
+  "independent_professional_approvals": 0,
+  "official_scored_answer_keys_authenticated": 0,
+  "no_app_or_key_changes": true,
+  "critical_implementation": "Separate exact ANRE exam original question and its A/B/C from separate didactic repaired rewrites; if grade-specific source original is intended for exam, preserve original letter mapping and an explanation card explaining nuance, not a silently rewritten scoring alternative."
+}

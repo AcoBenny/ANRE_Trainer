@@ -1,0 +1,69 @@
+{
+  "schema": "ONEPASS_V2_REAL_PRIMARY_LEGAL_SOURCE_CARD_QABC0265",
+  "date": "2026-11-23",
+  "status": "SOURCE_CONTEXT_AND_EDITORIAL_ABC_COMPLETE_EXPERT_REVIEW_PENDING",
+  "unit_id": "QABC-0265",
+  "grade_id": "G1-LEG-001",
+  "source_original_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+  "source_workbook_row": 8,
+  "original_editorial_blob_sha": "e9e6bacad94c45da8b43dfe97ef115c4fde79c10",
+  "question_exact": "Clientul casnic este clientul care:",
+  "original_options": {
+    "A": "Utilizează energie electrică în exclusivitate pentru iluminatul artificial din propria locuinţă şi din afara acesteia, fiind racordat la o reţea electrică monofazată de joasă tensiune",
+    "B": "Utilizează energie electrică pentru funcţionarea receptoarelor electrocasnice din propria locuinţa, precum si pentru realizarea de activităţi comerciale sau prestarea de servicii",
+    "C": "cumpără energie electrică pentru propriul consum casnic, excluzând consumul pentru activităţi comerciale sau profesionale"
+  },
+  "imported_key_unchanged": "C",
+  "source_supported_preliminary_candidate_NOT_ANRE_KEY": "C",
+  "document_source": {
+    "name": "Legea nr.123/2012 a energiei electrice și a gazelor naturale",
+    "locator": "Articolul 3 punctele 21, 22, 23",
+    "office": "Portalul Legislativ al Ministerului Justiției",
+    "primary_source_url": "https://legislatie.just.ro/Public/DetaliiDocument/311821",
+    "mirrored_2026_source_url": "https://lexapp.ro/legislatie/legea-123-2012/",
+    "retrieved_on": "2026-11-23",
+    "official_original_context": {
+      "before": "21. client noncasnic - orice persoană fizică sau juridică ce cumpără energie electrică ce nu este pentru propriul consum casnic; această categorie include și producători de energie electrică, clienții industriali, întreprinderile mici și mijlocii, operatori economici și clienții angro;",
+      "focus": "22. client casnic - clientul care cumpără energie electrică pentru propriul consum casnic, excluzând consumul pentru activități comerciale sau profesionale;",
+      "after": "23. consumator vulnerabil - persoană singură/familie, client final aparținând unei categorii de clienți casnici care, din motive de sănătate, handicap, vârstă, venituri insuficiente sau izolare față de sursele de energie, se află în risc de marginalizare socială și care, pentru prevenirea acestui risc, beneficiază de măsuri de protecție socială, inclusiv de natură financiară, și servicii suplimentare pentru a-și asigura cel puțin nevoile energetice minimale. Măsurile de protecție socială, precum și criteriile de eligibilitate pentru acestea se stabilesc prin acte normative;"
+    },
+    "focus_to_bold": "clientul care cumpără energie electrică pentru propriul consum casnic, excluzând consumul pentru activități comerciale sau profesionale",
+    "source_rights_basis": "Romanian Law 8/1996 art. 9(b): official legislative texts are excluded from copyright.",
+    "source_rights_official_legal_reference": "https://www.cdep.ro/ords/pls/legis/legis_pck.htp_act_text?idt=10396",
+    "source_rights_applies_only_to_official_statutory_text": true,
+    "ANRE_source_workbook_redistribution_rights": "NOT_CERTIFIED",
+    "ANRE_2026_exam_edition_bibliography": "NOT_CERTIFIED"
+  },
+  "editorial": {
+    "option_A_explanation": "A limitează consumul la iluminat și impune monofazat joasă tensiune, condiții care nu definesc în mod legal clientul casnic.",
+    "option_B_explanation": "B include folosirea energiei în activități comerciale ori profesionale; pentru acele activități consumul nu este casnic în sensul definiției.",
+    "option_C_explanation": "C reproduce criteriul consumului propriu casnic și exclude activitățile comerciale/profesionale.",
+    "option_A_state": "REJECT_NO_LIGHTING_ONLY_OR_SINGLE_PHASE_REQUIREMENT",
+    "option_B_state": "REJECT_TRADE_PROFESSIONAL_CONSUMPTION_EXCLUDED_WITH_MIXED_USE_CAVEAT",
+    "option_C_state": "AFFIRM_EXACT_STATUTORY_DEFINITION",
+    "prior_unofficial_rephrased_question": "O persoană cumpără energie doar pentru utilizarea obișnuită a locuinței, fără activitate profesională. În ce categorie intră?",
+    "prior_unofficial_rephrased_answer": "Client casnic pentru acel consum, conform definiției de referință."
+  },
+  "external_AI_reviewer": {
+    "research_response_id": "resp_f53ec2a1-4f14-478d-b338-5d6ef16fdedf",
+    "scope": "EXTERNAL_AI_SOURCE_ABC_CHALLENGE_NOT_QUALIFIED_HUMAN_SIGNOFF",
+    "finding": "C uniquely supported subject to mixed-use caveat"
+  },
+  "checks": {
+    "source_original_stem_and_three_ABC": true,
+    "verified_official_legal_definition_and_neighbors": true,
+    "cross_check_official_and_2026_mirror_matches": true,
+    "original_ABC_distinct_reasons": true,
+    "source_rights_legal_text_Art9_b_exempt": true,
+    "source_expert_independent_signoff": false,
+    "ANRE_2026_scored_key_authenticated": false,
+    "exam_grade_2026_bibliography_certified": false,
+    "ANRE_original_question_distribution_license_confirmed": false
+  },
+  "technical_content_QA_provisional_only": true,
+  "qualified_legal_or_electrical_professional_review": "NOT_RUN",
+  "qualified_linguistic_review": "NOT_RUN",
+  "official_ANRE_scored_key_authenticated": false,
+  "approved_for_learning": false,
+  "real_HTML_APK_offline_context_test": "NOT_RUN"
+}

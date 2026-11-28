@@ -1,0 +1,44 @@
+# CKPT-295 | GFR pre-final stage: 568 explanation-card mappings, 822 Grade-ID routes, 68 deduplicated historical research drafts | 2026-11-20
+
+## Exact user direction
+- Continue ANRE audit up to, but not pretending to have completed, **independent final answer validation**.
+- During each question's technical/source audit, **prepare the explanatory after-answer card in the same pass**, including exact option-specific A/B/C reasoning, source paragraph context, traps, counterexamples, and “what changes if the question is rephrased?” so the learner understands the subject instead of memorizing letter positions.
+- Unofficial questions and outside academic sources **may remain useful supplemental teaching exercises**; never misrepresent them as authenticated ANRE official exam items or signed scoring keys.
+- Preserve canonical questions/answer choices/keys/HTML/APK/main; no merge or release without separate authorization.
+
+## Actually delivered to GitHub in this turn
+1. [CKPT-294 card-plus-audit data contract](CKPT_294_EXPLANATION_CARD_AUDIT_CONVERGENCE_SPEC_2026_11_20.md): one sourced evidence review creates both a technical A/B/C adjudication record and a pedagogical explanation/mental model/reformulation draft. The final app after-answer UI can show supporting source context, but no source page/anchor should be manufactured.
+2. [V156 reusable card manifest](V156_568_REUSABLE_EXPLANATION_CARD_SCAFFOLDS_2026_11_20.json): **568 QABC identities** in **four inspectable 142-card shards**:
+   - [Part 1](V156_PART_1_OF_4_EXPLANATION_CARD_SCAFFOLDS_2026_11_20.json), [Part 2](V156_PART_2_OF_4_EXPLANATION_CARD_SCAFFOLDS_2026_11_20.json), [Part 3](V156_PART_3_OF_4_EXPLANATION_CARD_SCAFFOLDS_2026_11_20.json), [Part 4](V156_PART_4_OF_4_EXPLANATION_CARD_SCAFFOLDS_2026_11_20.json).
+   - A monolithic original export exceeded GitHub connector's large-blob content read limit. **It was replaced with a manifest** of 4 smaller files (monolithic version remains in git history). Each shard was subsequently read back successfully; no QABC content/answers were changed.
+   - Card identity, known source workbook/row, 822 relevant grade-placement refs, imported answer letter **unverified and unchanged**, official-versus-practice category, old research files, exact source clause/edition/neighbor anchor (null until corroborated), option rationale slots, transfer exercise slot and content/learner/QA gates.
+   - Six V150 strict original-source-versus-canonical version/key cases tagged with `SOURCE_VS_TRAINER_TEXT_OR_OPTION_VERSION_DISPUTE_NOT_VERBATIM_OFFICIAL_SOURCE`, not mislabeled as exact source copies.
+3. [V157 all 822 grade-ID card routes](V157_822_GRADE_ID_EXPLANATION_CARD_ROUTES_2026_11_20.json): **822 unique IDs** -> exact **568 card keys**. Grade-specific imported key stays independently attached; even two grade placements mapped to the same QABC are **not** presumed to have identical keys. 153 didactic-origin grade IDs remain separated as supplemental practice; no automatic shuffling of actual imported exams, no learner answer reveal before responses.
+4. [V158 eight fully structured pedagogical research drafts](V158_EIGHT_EXPLANATION_CARDS_WITH_A_B_C_AND_REFORMULATION_DRAFTS_2026_11_20.json): **8 QABC /16 grade placements** reused from previously examined V152 research; individual A/B/C explanation, limited technical principle, countermodel and explicit authored reformulation practice. Examples: RL mixed 45° versus ideal pure-L 90°, `B=-X/(R²+X²)` versus `1/X`, unit checks, RLC resonance PF=1 despite L/C components. **These do not constitute final approvals**, and their external URLs were not independently reopened this turn.
+5. [V159 40 prior I7 snapshot anchor hints](V159_I7_40_PREEXISTING_SNAPSHOT_ANCHOR_CANDIDATES_FOR_EXPLANATION_CARDS_2026_11_20.json): **40 grade IDs /40 QABC**, from the existing V31 original snapshot crosswalk, **23 distinct anchor strings**. Snapshot hit provenance retained, but **none** is promoted to an authenticated current source paragraph or `offline_ready` status without per-question exact clause, edition, neighboring context and rights QA.
+6. Additional original-evidence reuse:
+   - [V160](V160_V87_19_SOURCE_ALIGNED_OPTION_EXPLANATION_DRAFTS_2026_11_20.json): **19** V87 cases, **19/19 exact stem/A/B/C/key** against V149; per-option source research preserved.
+   - [V161](V161_CKPT227_15_EXACT_ALIGNED_TECHNICAL_CARD_DRAFTS_2026_11_20.json): **15** legacy P2 cases, **15/15 exact** original stem/A/B/C/key; combined model/counterexamples preserved.
+   - [V162](V162_TWELVE_DIDACTIC_PRACTICE_EXPLANATION_CARDS_AND_TRANSFER_PROMPTS_2026_11_20.json): **12 unofficial didactic questions**, **12/12 source/provenance/key exact**, with authored concept-transfer prompts and all-A-answer-position-bias warning. Preserve original A choices unchanged, only shuffle approved practice questions in future app version.
+   - [V163](V163_CKPT250_23_EXACT_MATCHED_TECHNICAL_CARD_DRAFTS_2026_11_20.json): **23** CKPT-250 QABC groups, **23/23 exact** source text A/B/C/key, contexts and counterexamples preserved.
+7. [V164 card draft coverage + overlaps](V164_ALL_568_EXPLANATION_CARD_DRAFT_COVERAGE_AND_OVERLAP_INDEX_2026_11_20.json): **77 historical draft appearances, 68 unique QABC with content drafts, 8 QABC with overlapping evidence sources (9 extra appearances)**. Do NOT auto-merge or choose a preferred draft by date alone. **500 remaining QABC have ready schemas/old evidence-file pointers, but their detailed explanatory content has not yet been migrated**; this is *not* a statement that those 500 have never been researched. Of 153 supplemental didactic questions, 12 draft-card contents were migrated; 141 remain for source review + parallel explanation drafting.
+
+## QA actually executed
+- Earlier in this session, **18/18 exact-data structural checks** passed on V149 + V156 chunks + V157 routing + V158-163 overlays + V159 anchors.
+- After the six V150 original-vs-trainer statuses were corrected, **11/11 additional GitHub-readback assertions PASS** (actual fetched files, no synthetic output):
+  - 568 unique card IDs in 4 × 142 intact readable chunks;
+  - 822 unique grade routes matching immutable imported keys and per-unit IDs;
+  - exactly 153 didactic practice cards and routes;
+  - six actual strict source-vs-trainer version cases explicitly blocked from official source-copy wording;
+  - no source article/anchor invented and **zero app/learner approvals**;
+  - 68 distinct draft units, 8 duplicate-source overlap units, 500 non-migrated draft bodies;
+  - V149 blob pinned at `ee2ac5536c78eb06a0461243be34c117e257188f`.
+- The old app `app/src/main/assets/audit_patch.js` was read-only inspected. It does detect some negation/exclusivity marks and applies some display text normalization, but it does **not** already supply the comprehensive A/B/C + changed-assumption card model; existing app is untouched and no actual HTML/APK UI runtime was tested.
+- No new model-provider API requests, no separate independent subject specialist executed, no previously invalid key silently corrected, no merge/release. User approval for final content changes not assumed.
+
+## Remaining gates to true final answer validation
+1. **Complete source-specific content QA, not bulk filler generation:** progressively process the V151 queue of **568 QABC** using exact official/normative paragraph, necessary surrounding context, A/B/C+pairwise challenge, mathematical negative case, and grade-era qualifier. In the *same* pass fill each V156 explanation card's principle, A/B/C, misconception and reformulation, avoiding a second sweep. Unresolved 6 strict cases (V150), 11 original-Electrotehnica source-row omissions (V153), and 18 same-stem choice-different groups (V155) remain explicit.
+2. **Source and key authenticity:** source workbook itself, historical examination bibliography and correct current legal text; trained answer letters and external worked examples are not authenticated ANRE scoring keys. 153 unofficial didactic cards may be separately approved as *practice* once technically vetted, with answer-position randomness, never as published originals.
+3. **Distinct independent technical, source-version and linguistic QA + explicit final authorization** are still required for actual student-use approval. The current V149/V154 QA fields remain `NOT_RUN`/ `NO`, and that is honest; do not mark the 68 research cards as approved or allow provisional cards to leak misleading correctness before answer. Only after content approval begin HTML/APK functionality and offline I7 source-link QA.
+
+**Final state of this turn:** 568/568 card skeletons mapped, 822/822 grade routes preserved, 68 distinct historical explanatory draft contents reused, 40 snapshot-anchoring hints preserved conditionally, 0/822 qualified content approvals, 0 application changes. Safe to resume with content+card single-pass review from V151/V164; stop before release.

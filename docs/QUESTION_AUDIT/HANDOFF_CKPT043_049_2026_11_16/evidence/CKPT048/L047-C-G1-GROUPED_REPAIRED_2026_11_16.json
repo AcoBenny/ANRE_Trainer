@@ -1,0 +1,434 @@
+{
+  "schema": "ANRE_CKPT047_SOURCE_GATED_QABC_RESEARCH_V1",
+  "batch_id": "L047-C-G1-GROUPED",
+  "date": "2026-11-16",
+  "read_only_original_library_csv_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+  "cards": [
+    {
+      "unit_ref": "G1-NOR-007",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-007",
+        "question": "Este admisă racordarea prin prize la circuitul de alimentare al receptoarelor electrice cu putere nominală până la:",
+        "A": "0,5 kW",
+        "B": "1 kW",
+        "C": "2 kW",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_2KW_GENERAL_PLUG_LIMIT",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 §5.3.2.3",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A 0,5 kW nu este pragul formulat în I7 §5.3.2.3.",
+      "B_research": "B 1 kW nu este pragul de aplicare din §5.3.2.3.",
+      "C_research": "C 2 kW este pragul nominal până la care norma admite racordarea generală prin prize.",
+      "context_romanian": "Potrivit **I7 §5.3.2.3**, receptoarele cu putere nominală **până la 2 kW** se pot racorda prin prize în regimul general. Pentru receptoarele **peste 2 kW**, norma prevede prize dedicate sau racorduri fixe, cu cerințe privind acționarea. De aceea C este valoarea pragului exact, iar A și B indică limite mai mici decât cea cerută.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-065",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-065",
+        "question": "În locuinţe se prevede câte un circuit de priză separat numai pentru receptoare cu puteri de peste:",
+        "A": "2 kW",
+        "B": "2,5 kW",
+        "C": "3 kW",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A",
+      "finding": "EXACT_HOUSEHOLD_SEPARATE_SOCKET_ABOVE_2KW",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 §5.4.7",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A 2kW este exact limita pentru circuitul de priză separat din locuințe.",
+      "B_research": "B 2,5kW ar lăsa fără circuit dedicat un receptor între 2-2,5kW, contrar §5.4.7.",
+      "C_research": "C 3kW ar lăsa fără circuit dedicat un receptor între 2-3kW, contrar §5.4.7.",
+      "context_romanian": "I7 **§5.4.7** prevede că în **locuințe**, receptoarele cu puteri **peste 2 kW** necesită **circuite de priză separate**. A reproduce exact pragul. B și C oferă praguri mai mari și ar exclude în mod eronat receptoare care au nevoie de circuit dedicat. Aici enunțul precizează **locuințe** și **circuit de priză**, deci nu este necesar să presupunem o categorie de echipament.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-035",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-035",
+        "question": "Masă (a unui echipament sau element de construcţie)reprezintă:",
+        "A": "elemente conductoare din instalaţie aflate sub tensiune",
+        "B": "elemente izolante din instalaţie aflate în legătură cu pământul",
+        "C": "parte conductoare accesibilă a unui echipament, care poate fi atinsă şi care în mod normal nu se află sub tensiune, dar care poate fi pusă sub tensiune în urma unui defect a zolaţiei de bază.",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "EXACT_I7_DEFINITION_MASS",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 secțiunea «Termeni și definiții» / «masă»",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A descrie părți active, nu masă.",
+      "B_research": "B descrie un element izolant și legătura cu pământul, nu definiția masei.",
+      "C_research": "C redă definiția părții conductoare accesibile fără tensiune în regim normal, devenită periculoasă la defect.",
+      "context_romanian": "În definițiile din **I7**, **masa** este o parte conductoare **accesibilă**, normal fără tensiune, care poate fi pusă sub tensiune la un **defect de izolație**. Prin urmare C este definiția terminologică. A confundă masa cu un element activ, iar B cu un element izolant. Regula de verificare este **identitatea definiției**, nu asemănarea topicului cu împământarea.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-037",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-037",
+        "question": "Se consideră atingere indirectă:",
+        "A": "contactul nemijlocit sau prin intermediul unui element conductor al persoanelor sau animalelor domestice sau de crescătorie cu părţi active ale unei instalaţii electrice",
+        "B": "contactul persoanelor sau animalelor domestice sau de crescătorie cu părţi ale unei instalaţii electrice",
+        "C": "contact electric al persoanelor sau al animalelor cu părţile conductoare accesibile\npuse sub tensiune ca urmare a unui defect.",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "INDIRECT_TOUCH_FAULT_ACCESSIBLE_CONDUCTIVE_PART",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 §4.1.1 și §4.1.3.2 / «parte conductoare accesibilă»",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A definește atingerea directă de părți active.",
+      "B_research": "B este prea vagă și omite defectul și punerea accidentală sub tensiune.",
+      "C_research": "C include atingerea părților conductoare accesibile care au ajuns sub tensiune din cauza unui defect.",
+      "context_romanian": "Protecția în caz de defect, numită anterior și **protecție la atingere indirectă**, privește **părțile conductoare accesibile** ajunse accidental sub tensiune. C descrie această situație. A corespunde atingerii directe a părților active, iar B omite circumstanța definitorie a defectului. Identitatea **obiectului atins** permite eliminarea, fără a confunda două tipuri de protecție.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-040",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-040",
+        "question": "Conform I 7, parte conductoare accesibilă este:",
+        "A": "partea izolantă accesibilă a unui element de construcţie care poate fi atinsă,  şi care poate ajunge sub tensiune în caz de defect",
+        "B": "parte conductoare a unui echipament, care poate fi atinsă, şi care nu este în mod normal sub tensiune, dar care poate ajunge sub tensiune în cazul unui defect al izolaţiei de bază.",
+        "C": "elemente conductoare din instalaţie aflate sub tensiune",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "EXACT_I7_ACCESSIBLE_CONDUCTIVE_PART",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 secțiunea «Termeni și definiții» / «parte conductoare accesibilă»",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A atribuie conducția unui obiect izolant și nu reproduce definiția.",
+      "B_research": "B corespunde exact părții conductoare accesibile, fără tensiune normal, cu defect posibil.",
+      "C_research": "C descrie părți active permanent sub tensiune, nu un element accesibil în caz de defect.",
+      "context_romanian": "I7 definește **partea conductoare accesibilă** drept parte a echipamentului care **poate fi atinsă**, nu se află în mod normal sub tensiune, dar poate ajunge sub tensiune la un **defect al izolației**. B reproduce această structură. A vorbește de partea izolantă, iar C de părți active. Variantele se disting prin proprietățile **conductoare / active / izolante**, nu prin cuvântul comun «accesibil».",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-043",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-043",
+        "question": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "tipul receptorului alimentat",
+        "B": "lungimea circuitului",
+        "C": "secţiunea conductorului",
+        "key_UNCHANGED": "C"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "I7_CURRENT_CARRYING_FACTOR_CONSISTENCY",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 §5.2.3.0, anexele 5.5–5.30",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A depinde de consumator, nu de conductor",
+      "B_research": "B lungimea afectează căderea de tensiune, nu capacitatea termică tabulară a conductorului",
+      "C_research": "C secțiunea afectează rezistența și disiparea termică",
+      "context_romanian": "La alegerea curentului admisibil în regim permanent, **I7 subcap. 5.2.3** folosește **secțiunea conductorului** și condițiile de exploatare/pozare. Lungimea circuitului influențează căderea de tensiune, în timp ce tipul receptorului influențează sarcina, nu direct limita termică tabulară a conductorului. Dintre variante, **C** identifică un factor determinant pentru curentul admisibil. Condițiile de temperatură și grupare trebuie și ele respectate.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-044",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-044",
+        "question": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "lungimea circuitului",
+        "B": "materialul conductorului",
+        "C": "tipul receptorului alimentat",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "I7_CURRENT_CARRYING_FACTOR_CONSISTENCY",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 §5.2.3.0, anexele 5.5–5.30",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A lungimea afectează căderea de tensiune",
+      "B_research": "B materialul (Cu/Al) intră în datele de curent maxim admisibil",
+      "C_research": "C tipul receptorului nu schimbă direct curentul admisibil al unui conductor dat",
+      "context_romanian": "La alegerea curentului admisibil în regim permanent, **I7 subcap. 5.2.3** folosește **materialul conductorului** și condițiile de exploatare/pozare. Lungimea circuitului influențează căderea de tensiune, în timp ce tipul receptorului influențează sarcina, nu direct limita termică tabulară a conductorului. Dintre variante, **B** identifică un factor determinant pentru curentul admisibil. Condițiile de temperatură și grupare trebuie și ele respectate.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-045",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-045",
+        "question": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "lungimea circuitului",
+        "B": "natura izolaţiei conductorului",
+        "C": "tipul receptorului alimentat",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "I7_CURRENT_CARRYING_FACTOR_CONSISTENCY",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 §5.2.3.0, anexele 5.5–5.30",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A lungimea afectează căderea de tensiune",
+      "B_research": "B PVC/XLPE limitează temperatura permisă a conductorului și curentul său",
+      "C_research": "C tipul receptorului nu definește materialul termoizolant al conductorului",
+      "context_romanian": "La alegerea curentului admisibil în regim permanent, **I7 subcap. 5.2.3** folosește **natura izolației** și condițiile de exploatare/pozare. Lungimea circuitului influențează căderea de tensiune, în timp ce tipul receptorului influențează sarcina, nu direct limita termică tabulară a conductorului. Dintre variante, **B** identifică un factor determinant pentru curentul admisibil. Condițiile de temperatură și grupare trebuie și ele respectate.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    },
+    {
+      "unit_ref": "G1-NOR-046",
+      "batch": "L047-C-G1-GROUPED",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-046",
+        "question": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+        "A": "modul de montare",
+        "B": "tipul receptorului alimentat",
+        "C": "lungimea circuitului",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A",
+      "finding": "I7_INSTALLATION_METHOD_AFFECTS_AMPACITY",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "I7 §5.2.3.0 și anexa 5.5",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "A modul de montare/pozare stabilește schimbul de căldură și curentul admisibil.",
+      "B_research": "B tipul receptorului influențează curentul cerut, nu direct curentul maxim admisibil al unui conductor ales.",
+      "C_research": "C lungimea circuitului afectează în principal căderea de tensiune și pierderile, nu valoarea de tabel ca limită termică.",
+      "context_romanian": "În **I7 subcap. 5.2.3 și anexa 5.5**, **modul de pozare** determină curentul maxim admisibil prin condițiile de răcire. A indică factorul corect. B confundă sarcina consumată cu limita termică a conductorului. C confundă calculul **căderii de tensiune pe lungime** cu coeficienții de curent admisibil. Distincția este utilă și pentru întrebările 043–045.",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "CKPT048_recovery": {
+        "transformation": "REVERSE_5_FIELD_ROTATION_FROM_CKPT047_ARCHIVE",
+        "base_checkpoint": "CKPT_047",
+        "evidence": "five-field option label and locator pattern",
+        "no_technical_signoff": true,
+        "original_question_ABC_key_unchanged": true,
+        "revision_reason": "schema-level explanation columns shifted; preserve historical ZIP unchanged"
+      }
+    }
+  ],
+  "claim": "Preliminary research, NOT independent QA, grade2026 official edition NOT fully verified, no learner approvals",
+  "CKPT048_superseding_repair": {
+    "original_unchanged": true,
+    "corrected_documentation_only": true,
+    "original_zip_sha256": "05ef3c7c3ce5975d159229ddca98559c3f49cb98913a3a71a53f8b1c3d3ebe26",
+    "canonical_bank_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+    "separate_source_QA": "NOT_RUN",
+    "separate_technical_QA": "NOT_RUN",
+    "separate_linguistic_QA": "NOT_RUN",
+    "approved_for_learning": false,
+    "revision_date": "2026-11-16"
+  }
+}

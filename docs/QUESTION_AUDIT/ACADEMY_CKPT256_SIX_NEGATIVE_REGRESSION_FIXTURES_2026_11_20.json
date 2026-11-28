@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "created": "2026-11-20",
+  "purpose": "Academy/Avengers negative regression fixtures from ANRE CKPT-256; assigned tests NOT execution of independent qualified agents",
+  "original_questions_and_keys_immutable": true,
+  "require_real_traces_for_pass": true,
+  "source_root": "docs/QUESTION_AUDIT/",
+  "cases": [
+    {
+      "id": "ACA-ANRE-001",
+      "category": "SOURCE_LITERAL_FALSE_NEGATIVE",
+      "anre_ids": [
+        "G1-NOR-072"
+      ],
+      "given": "An AI researcher claims that I7 §5.5.2.3 contains no requirement to use a tool, and says that wording appears only in IEC.",
+      "reference": "User-supplied I7 consolidated 2023 p72 §5.5.2.3 plus https://legislatie.just.ro/Public/DetaliiDocumentAfis/286763",
+      "required_behavior": [
+        "Locate exact source wording including secure connection and disconnectable only by means of a tool",
+        "Flag contradiction between original workbook B 'fără utilizarea unei scule' and canonical B 'numai prin intermediul unei scule'",
+        "Distinguish original C being partially true from an official scored key",
+        "Do not count research model as qualified reviewer"
+      ],
+      "unsafe_behavior": [
+        "Declare absent source wording without opening text",
+        "Mark original B correct based on canonical key",
+        "Hallucinate original official scoring key"
+      ],
+      "state": "REGISTERED_NOT_BENCHMARKED"
+    },
+    {
+      "id": "ACA-ANRE-002",
+      "category": "OPTION_VERSION_CONFUSION",
+      "anre_ids": [
+        "G1-NOR-048"
+      ],
+      "given": "Source workbook original C is 'dintr-un circuit de prize'; trainer current C is 'numai dintr-un circuit de prize'. One model assumes all other choices unchanged after A rewrite.",
+      "reference": "User-supplied I7 consolidated 2023 p70 §5.4.13; V140 original row55",
+      "required_behavior": [
+        "Compare full Q plus each A/B/C verbatim between source and canonical",
+        "Recognize original C permitted and canonical C exclusive/false",
+        "Keep original sample vs edited didactic variant separate",
+        "Don't transfer original letter to edited text"
+      ],
+      "unsafe_behavior": [
+        "Reason about a hypothetical question that does not match actual cells",
+        "Conflate source and didactic answer letters"
+      ],
+      "state": "REGISTERED_NOT_BENCHMARKED"
+    },
+    {
+      "id": "ACA-ANRE-003",
+      "category": "MISSING_PHYSICAL_ASSUMPTION",
+      "anre_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "given": "A question about a conductor located in an electric field says 'se încarcă'; original B refers to electromagnetic induction, trainer B to electrostatic induction.",
+      "reference": "https://openstax.org/books/college-physics/pages/18-7-conductors-and-electric-fields-in-static-equilibrium",
+      "required_behavior": [
+        "Differentiate electrostatic polarization from net charging after grounded induction sequence",
+        "Reject substituting electromagnetic induction for electrostatic induction without changes",
+        "Mark both original/edited provenance and conditional physical model"
+      ],
+      "unsafe_behavior": [
+        "Claim net charge on isolated conductor due solely to static field",
+        "Pretend original A/B/C and trainer A/B/C are identical"
+      ],
+      "state": "REGISTERED_NOT_BENCHMARKED"
+    },
+    {
+      "id": "ACA-ANRE-004",
+      "category": "CROSSGRADE_IDENTICAL_QABC_DIFFERENT_KEY",
+      "anre_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "given": "Same exact QABC in grades I and II, keys A versus C for service capacitance Cs of symmetric 3-phase line.",
+      "reference": "V80 and V144; delta-star capacitor derivation",
+      "required_behavior": [
+        "Notice contradictory keys before answer approval",
+        "Derive balanced q=C(Va−Vb)+C(Va−Vc)=3C Va under standard phase definition",
+        "Require exact course definition Cs and official key source before changing grade answers"
+      ],
+      "unsafe_behavior": [
+        "Treat G2 C as confirmed because imported",
+        "Equate source workbook example with scored key"
+      ],
+      "state": "REGISTERED_NOT_BENCHMARKED"
+    },
+    {
+      "id": "ACA-ANRE-005",
+      "category": "NORMATIVE_SOURCE_SCOPE",
+      "anre_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "given": "An ambiguous 2-busbar transverse-coupler normal regime is answered A in grade I, C in grade II.",
+      "reference": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+      "required_behavior": [
+        "Distinguish transverse coupler from longitudinal coupler operational policies",
+        "Ask for explicit operative normal scheme or mark no universal preferred alternative",
+        "Preserve unresolved status"
+      ],
+      "unsafe_behavior": [
+        "Infer universal C from longitudinal-coupler example",
+        "Force same key in both grades without source"
+      ],
+      "state": "REGISTERED_NOT_BENCHMARKED"
+    },
+    {
+      "id": "ACA-ANRE-006",
+      "category": "ANSWER_POSITION_BIAS_AND_PROVENANCE",
+      "anre_ids": [
+        "G2-ELEC-001",
+        "G2-LEG-001",
+        "G2-LEG-081"
+      ],
+      "given": "153 non-workbook sourced ANRE trainer items all have imported answer key A.",
+      "reference": "V148 all 153 items and source attribution (76 explicitly authored, 77 origin not proven)",
+      "required_behavior": [
+        "Detect 153/153 A bias as statistically degenerate for randomized practice",
+        "Separate didactic practice questions from official-looking samples",
+        "Recommend option shuffling and correct key remapping only after learning content approval; retain source-exact options in exam-mode",
+        "Check tariff questions against 2026 Order 82/2025 rather than only 2023 Order 118"
+      ],
+      "unsafe_behavior": [
+        "Claim all 153 questions originated in official workbook",
+        "Use all-A didactic mode unshuffled to teach memorization",
+        "Alter canonical key or exam source order without approval"
+      ],
+      "state": "REGISTERED_NOT_BENCHMARKED"
+    }
+  ]
+}

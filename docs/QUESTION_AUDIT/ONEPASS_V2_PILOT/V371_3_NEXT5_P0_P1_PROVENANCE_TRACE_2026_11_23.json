@@ -1,0 +1,259 @@
+{
+  "schema": "V371_3_MICRO_BATCH_SOURCE_READINESS_PROVENANCE_V1",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-412",
+  "parent": "CKPT-411",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "baseline_commit": "68e0ce021300f17cf99b58251aa982b3758f7d5b",
+  "selection_rule": "P0 remaining strict QABC-0094, then four smallest unprocessed historical semantic holds by QABC numeric",
+  "prior_processed_qabc": [
+    "QABC-0143",
+    "QABC-0236",
+    "QABC-0362",
+    "QABC-0386",
+    "QABC-0017"
+  ],
+  "this_increment_ids": [
+    "QABC-0094",
+    "QABC-0013",
+    "QABC-0019",
+    "QABC-0024",
+    "QABC-0025"
+  ],
+  "all_v371_processed_qabc": [
+    "QABC-0143",
+    "QABC-0236",
+    "QABC-0362",
+    "QABC-0386",
+    "QABC-0017",
+    "QABC-0094",
+    "QABC-0013",
+    "QABC-0019",
+    "QABC-0024",
+    "QABC-0025"
+  ],
+  "counts": {
+    "this_increment_unique_qabc": 5,
+    "this_increment_grade_routes": 10,
+    "this_increment_distinct_historical_reports_reopened": 7,
+    "this_increment_distinct_editorial_drafts_reopened": 4,
+    "v371_prior_unique_qabc": 5,
+    "v371_total_unique_qabc": 10,
+    "v371_total_grade_routes": 17,
+    "new_authenticated_2026_original_source_clauses": 0,
+    "new_source_or_technical_gates_resolved": 0,
+    "new_independent_qa": 0,
+    "new_learner_approvals": 0,
+    "global_learner_approvals": 0
+  },
+  "records": [
+    {
+      "qabc_id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-102": "A",
+        "G2-ELEC-245": "C"
+      },
+      "original_ABC_from_prior_audit_REPORT_NOT_XLSX_REAUTHENTICATED": {
+        "question": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
+      },
+      "issue_preexisting": "Conflict strict G1=A vs G2=C pentru aceeași întrebare. Preferința depinde de schema și politica de exploatare a cuplei.",
+      "next_unverified_gate": "Definiția exactă și aplicabilă a stărilor barelor și a cuplei, context operațional, bibliografie 2026 și QA independent.",
+      "existing_source_report_paths_and_blob_shas": [
+        {
+          "path": "docs/QUESTION_AUDIT/V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv",
+          "blob_sha": "76cc322e83f511c24edf323b79d24175f37c93b1",
+          "read_in_current_increment": true
+        }
+      ],
+      "existing_editorial_draft": {
+        "path": "docs/QUESTION_AUDIT/V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+        "blob_sha": "a85dba6472591e9a09dfb550f1e450d448871895",
+        "read_in_current_increment": true
+      },
+      "before": "HISTORICAL_SEMANTIC_HOLD_RESEARCH_FILE_INDEXED",
+      "after": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_EXACT_ABC_RECOVERED_PENDING_SOURCE_REOPEN",
+      "new_verified_technical_gates": 0,
+      "official_source_full_context_2026_verified": false,
+      "independent_technical_linguistic_review": "NOT_RUN",
+      "official_scored_key_authentication": "NOT_VERIFIED",
+      "approved_for_learning": false
+    },
+    {
+      "qabc_id": "QABC-0013",
+      "grade_ids": [
+        "G1-ELE-014",
+        "G2-ELEC-166"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-014": "C",
+        "G2-ELEC-166": "C"
+      },
+      "original_ABC_from_prior_audit_REPORT_NOT_XLSX_REAUTHENTICATED": {
+        "question": "Câmp fără surse este",
+        "A": "numai un câmp de curenţi de conducţie în regim staţionar",
+        "B": "câmpul electric",
+        "C": "câmpul de inducţie electromagnetică"
+      },
+      "issue_preexisting": "Terminologia «câmp fără surse» și «inducţie electromagnetică» nu identifică neechivoc B magnetic sau E indus.",
+      "next_unverified_gate": "Sursa didactică originală în română cu definiția și sensul «sursă», ecuațiile aferente și QA independent.",
+      "existing_source_report_paths_and_blob_shas": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_184_BLOCKED_ELECTROTECHNICS_7_TERMS_MATH_CONTEXT_2026_11_17.md",
+          "blob_sha": "66f15a4f15ff28d58cc9a81bdfe2a51e324e252f",
+          "read_in_current_increment": true
+        },
+        {
+          "path": "docs/QUESTION_AUDIT/V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+          "blob_sha": "d045d7f2d49c5f6cf25a532e12fb6a3406ed526d",
+          "read_in_current_increment": true
+        }
+      ],
+      "existing_editorial_draft": {
+        "path": "docs/QUESTION_AUDIT/V188_QABC0013_SOURCE_FREE_FIELD_EXACT_ANRE_TERM_COUNTEREXAMPLES_2026_11_20.json",
+        "blob_sha": "dde2ebaa89a4af8937600e5e8eb4b32e7134a0e5",
+        "read_in_current_increment": true
+      },
+      "before": "HISTORICAL_SEMANTIC_HOLD_RESEARCH_FILE_INDEXED",
+      "after": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_EXACT_ABC_RECOVERED_PENDING_SOURCE_REOPEN",
+      "new_verified_technical_gates": 0,
+      "official_source_full_context_2026_verified": false,
+      "independent_technical_linguistic_review": "NOT_RUN",
+      "official_scored_key_authentication": "NOT_VERIFIED",
+      "approved_for_learning": false
+    },
+    {
+      "qabc_id": "QABC-0019",
+      "grade_ids": [
+        "G1-ELE-020",
+        "G2-ELEC-172"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-020": "A",
+        "G2-ELEC-172": "A"
+      },
+      "original_ABC_from_prior_audit_REPORT_NOT_XLSX_REAUTHENTICATED": {
+        "question": "Capsularea monopolară conduce la :",
+        "A": "eliminarea totală a posibilităţii apariţiei unui scurtcircuit între faze;",
+        "B": "micşorarea riscului unor pierderi de gaz izolant;",
+        "C": "reducerea cheltuielilor de realizare a instalaţiilor."
+      },
+      "issue_preexisting": "«Eliminarea totală» este condițională pentru volumul interior capsulat, nu este dovedită pentru conexiunile externe.",
+      "next_unverified_gate": "Identificarea exactă a limitelor fizice ale incintei, context fabricant și validarea universalității lui A.",
+      "existing_source_report_paths_and_blob_shas": [
+        {
+          "path": "docs/QUESTION_AUDIT/CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+          "blob_sha": "6ed8123e78d82a049da5ab5844e47ca1d1c99d87",
+          "read_in_current_increment": true
+        },
+        {
+          "path": "docs/QUESTION_AUDIT/V92_ELEC_THREE_P0_GIS_ECONOMICS_SYNCHRONOUS_SOURCE_RECHECK.csv",
+          "blob_sha": "a13e407da92e1049fd3167638365c76490a1243c",
+          "read_in_current_increment": true
+        }
+      ],
+      "existing_editorial_draft": {
+        "path": "docs/QUESTION_AUDIT/V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+        "blob_sha": "d5f178e39af5c0630dd63bbcb7c9d4e4612872cf",
+        "read_in_current_increment": true
+      },
+      "before": "HISTORICAL_SEMANTIC_HOLD_RESEARCH_FILE_INDEXED",
+      "after": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_EXACT_ABC_RECOVERED_PENDING_SOURCE_REOPEN",
+      "new_verified_technical_gates": 0,
+      "official_source_full_context_2026_verified": false,
+      "independent_technical_linguistic_review": "NOT_RUN",
+      "official_scored_key_authentication": "NOT_VERIFIED",
+      "approved_for_learning": false
+    },
+    {
+      "qabc_id": "QABC-0024",
+      "grade_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-028": "B",
+        "G2-ELEC-177": "B"
+      },
+      "original_ABC_from_prior_audit_REPORT_NOT_XLSX_REAUTHENTICATED": {
+        "question": "Ce posibilităţi de limitare a curenţilor de scurtcirciut sunt de preferat pentru schema de mai sus ?",
+        "A": "reducerea t.e.m., acţionând asupra circuitului de excitaţie al generatorului;",
+        "B": "mărirea reactanţei schemei de alimentare între sursă şi locul de defect;",
+        "C": "creşterea capacităţii de rupere a întreruptoarelor."
+      },
+      "issue_preexisting": "Lipsește figura autentică indicată prin «schema de mai sus»; B este ipoteză pentru un model abstract, nu verdict în schema reală.",
+      "next_unverified_gate": "Recuperarea imaginii originale și verificarea topologiei înainte de adjudecarea opțiunilor.",
+      "existing_source_report_paths_and_blob_shas": [
+        {
+          "path": "docs/QUESTION_AUDIT/V88_TWO_MISSING_DIAGRAMS_SOURCE_RECHECK.csv",
+          "blob_sha": "e8197b6c0061c4c9f2cc805f74dd9ff985124514",
+          "read_in_current_increment": true
+        }
+      ],
+      "existing_editorial_draft": {
+        "path": "docs/QUESTION_AUDIT/V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+        "blob_sha": "1991a79fa69116a9b5735cd8cf3dd074aaa074d7",
+        "read_in_current_increment": true
+      },
+      "before": "HISTORICAL_SEMANTIC_HOLD_RESEARCH_FILE_INDEXED",
+      "after": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_EXACT_ABC_RECOVERED_PENDING_SOURCE_REOPEN",
+      "new_verified_technical_gates": 0,
+      "official_source_full_context_2026_verified": false,
+      "independent_technical_linguistic_review": "NOT_RUN",
+      "official_scored_key_authentication": "NOT_VERIFIED",
+      "approved_for_learning": false
+    },
+    {
+      "qabc_id": "QABC-0025",
+      "grade_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-029": "C",
+        "G2-ELEC-178": "C"
+      },
+      "original_ABC_from_prior_audit_REPORT_NOT_XLSX_REAUTHENTICATED": {
+        "question": "Curentul electric alternativ poate fi produs numai prin fenomene:",
+        "A": "termice",
+        "B": "chimice",
+        "C": "de inducţie electromagnetică"
+      },
+      "issue_preexisting": "«numai» este problematic: conversia electronică DC-AC prin invertoare nu necesită în această accepțiune producerea prin inducție electromagnetică.",
+      "next_unverified_gate": "Verificarea contextului tehnic și istoric, sursă originală și distincția producere/generare/conversie.",
+      "existing_source_report_paths_and_blob_shas": [
+        {
+          "path": "docs/QUESTION_AUDIT/V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+          "blob_sha": "9c0214c1457f29a485696651bbe969bda2661dcd",
+          "read_in_current_increment": true
+        }
+      ],
+      "existing_editorial_draft": {
+        "path": "docs/QUESTION_AUDIT/V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+        "blob_sha": "1991a79fa69116a9b5735cd8cf3dd074aaa074d7",
+        "read_in_current_increment": true
+      },
+      "before": "HISTORICAL_SEMANTIC_HOLD_RESEARCH_FILE_INDEXED",
+      "after": "HISTORICAL_SEMANTIC_HOLD_REPORT_AND_EXACT_ABC_RECOVERED_PENDING_SOURCE_REOPEN",
+      "new_verified_technical_gates": 0,
+      "official_source_full_context_2026_verified": false,
+      "independent_technical_linguistic_review": "NOT_RUN",
+      "official_scored_key_authentication": "NOT_VERIFIED",
+      "approved_for_learning": false
+    }
+  ],
+  "next_5_preview_NOT_PROCESSED": [
+    "QABC-0036",
+    "QABC-0044",
+    "QABC-0046",
+    "QABC-0050",
+    "QABC-0065"
+  ],
+  "safety": "Historical report reads, not original XLSX, full official source context, rights validation or independent content signoff. No bank, key, HTML, APK, main, merge or release edits. 157 G2 candidates and 11 Electro source orphans remain outside 822."
+}

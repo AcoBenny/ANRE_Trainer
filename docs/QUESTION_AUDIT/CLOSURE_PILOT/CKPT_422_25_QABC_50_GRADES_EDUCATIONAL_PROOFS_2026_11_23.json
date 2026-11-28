@@ -1,0 +1,896 @@
+{
+  "schema": "ANRE_25_SOURCE_BACKED_LEARNING_V1",
+  "checkpoint": "CKPT-422",
+  "date": "2026-11-23",
+  "previous_checkpoint": "CKPT-421",
+  "review_runs": [
+    "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+    "resp_cb9e56d8-46f7-4150-a089-b5860b733208"
+  ],
+  "selection": "25 distinct source-original QABC all have G1/G2 aligned keys, 50 unique grade IDs, no historical holds, source link and prior A/B/C card",
+  "counts": {
+    "previous_validated": 100,
+    "new_validated_routes": 50,
+    "new_validated_groups": 25,
+    "now_validated_routes": 150,
+    "now_validated_groups": 78,
+    "held_routes": 200,
+    "pending_without_historical_hold": 472
+  },
+  "not_counted": [
+    {
+      "id": "QABC-0176",
+      "why": "long-line shunt terms challenge claimed universal inverse-voltage-square"
+    },
+    {
+      "id": "QABC-0179",
+      "why": "N-1 KCL relations presumes one connected network; avoid unstated connectivity"
+    },
+    {
+      "id": "QABC-0197",
+      "why": "delta relation √3 presumes balanced phases"
+    },
+    {
+      "id": "QABC-0145",
+      "why": "periodic alternating may mean sign-changing with DC offset; avoid silent scope assumption"
+    },
+    {
+      "id": "QABC-0107",
+      "why": "previously flagged electrostatic gradient interpretation ambiguous"
+    }
+  ],
+  "scope": "Prior researched source URLs and individual A/B/C content reused with independent adversarial AI PASS for all selected, no new full-site opening asserted, no professional certification or app integration claimed",
+  "no_keys_changed": true,
+  "records": [
+    {
+      "id": "QABC-0173",
+      "grade_ids": [
+        "G1-ELE-184",
+        "G2-ELEC-320"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-184": "A",
+        "G2-ELEC-320": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 191,
+        "original_stem": "Permeabilitatea este o mărime:",
+        "original_options": {
+          "A": "magnetică",
+          "B": "electrică",
+          "C": "mecanică"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter"
+      },
+      "per_option_reason": {
+        "A": "Permeabilitatea μ caracterizează răspunsul magnetic al mediului; în regim liniar B=μH.",
+        "B": "Permitivitatea ε este mărimea asociată câmpului electric, nu permeabilitatea magnetică.",
+        "C": "Proprietățile mecanice, precum rigiditatea, nu sunt permeabilitatea μ."
+      },
+      "model_assumption": "Permeabilitate μ este mărime magnetică: B=μH în model liniar.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0174",
+      "grade_ids": [
+        "G1-ELE-185",
+        "G2-ELEC-321"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-185": "A",
+        "G2-ELEC-321": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 192,
+        "original_stem": "Permitivitatea este o mărime:",
+        "original_options": {
+          "A": "electrică",
+          "B": "magnetică",
+          "C": "chimică"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/8-1-capacitors-and-capacitance"
+      },
+      "per_option_reason": {
+        "A": "Permitivitatea ε descrie răspunsul dielectric/electric; apare în D=εE pentru mediu liniar.",
+        "B": "Permeabilitatea μ, nu ε, este mărimea magnetică.",
+        "C": "Chiar dacă depinde de compoziția chimică, ε este o proprietate electromagnetică, nu o categorie «chimică» în acest enunț."
+      },
+      "model_assumption": "Permitivitatea ε este mărime electrică, nu magnetică ori chimică.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0175",
+      "grade_ids": [
+        "G1-ELE-186",
+        "G2-ELEC-322"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-186": "C",
+        "G2-ELEC-322": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 193,
+        "original_stem": "Regulatorul automat de tensiune (RAT) asigurã:",
+        "original_options": {
+          "A": "deconectarea automatã a liniilor la suprasarcinã",
+          "B": "conectarea automatã a unui transformator de rezervã",
+          "C": "modificarea curentului (tensiunii) de excitaţie la generatoarele sincrone"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://automationsolutionfinder.andritz.com/solutions/15006/power-systems/hydro-power-oil-gas-thermal-power/excitation-systems"
+      },
+      "per_option_reason": {
+        "A": "Protecția la suprasarcină a liniilor este funcția sistemelor de protecție, nu a regulatorului de tensiune.",
+        "B": "Conectarea automată a rezervei ține de sisteme AAR, nu de RAT pentru generator.",
+        "C": "RAT/AVR reglează tensiunea generatorului sincron modificând excitația și curentul în înfășurarea de câmp."
+      },
+      "model_assumption": "Regulatorul automat de tensiune modifică excitația generatorului sincron.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0181",
+      "grade_ids": [
+        "G1-ELE-192",
+        "G2-ELEC-328"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-192": "A",
+        "G2-ELEC-328": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 199,
+        "original_stem": "Principalele elemente feromagnetice sunt:",
+        "original_options": {
+          "A": "Fierul, nichelul şi cobaltul",
+          "B": "Fierul, cuprul, zincul",
+          "C": "Fierul, aluminiul, cuprul"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter"
+      },
+      "per_option_reason": {
+        "A": "Fierul, nichelul și cobaltul sunt exemplele clasice de elemente feromagnetice.",
+        "B": "Cuprul și zincul nu sunt feromagnetice în condiții uzuale; B le include greșit.",
+        "C": "Aluminiul și cuprul nu devin feromagnetice doar fiind metale; C este fals."
+      },
+      "model_assumption": "Elemente feromagnetice uzuale: fier, nichel și cobalt.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0185",
+      "grade_ids": [
+        "G1-ELE-196",
+        "G2-ELEC-332"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-196": "B",
+        "G2-ELEC-332": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 203,
+        "original_stem": "Rezistenţa echivalentă a două rezistenţe cu valori diferite montate în paralel este:",
+        "original_options": {
+          "A": "mai mare decât rezistenţa mai mare",
+          "B": "mai mică decât rezistenţa mai mică",
+          "C": "egală cu suma rezistenţelor"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+      },
+      "per_option_reason": {
+        "A": "Pentru rezistențe pozitive, Req în paralel este mai mică decât fiecare rezistență componentă.",
+        "B": "Din 1/Req=1/R1+1/R2, Req<min(R1,R2) pentru două rezistențe strict pozitive.",
+        "C": "Suma R1+R2 este pentru montaj în serie, nu paralel."
+      },
+      "model_assumption": "La paralel, rezistența echivalentă este sub cea mai mică rezistență de ramură.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0189",
+      "grade_ids": [
+        "G1-ELE-200",
+        "G2-ELEC-336"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-200": "C",
+        "G2-ELEC-336": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 207,
+        "original_stem": "Releul termic se foloseşte pentru:",
+        "original_options": {
+          "A": "protejarea motoarelor electrice la scurtcircuit",
+          "B": "protejarea generatoarelor si motoarelor electrice împotriva punerii la pământ",
+          "C": "protejarea motoarelor electrice împotriva suprasarcinilor"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://eshop.se.com/in/shop-by-category/low-voltage-products/overload-relay.html"
+      },
+      "per_option_reason": {
+        "A": "Un releu termic nu este, în general, protecția adecvată la scurtcircuit rapid.",
+        "B": "Defectul la pământ se tratează prin protecții dedicate, nu prin funcția definitorie a releului termic.",
+        "C": "Releul termic este destinat protecției motoarelor la suprasarcină prelungită, după reglaje."
+      },
+      "model_assumption": "Releul termic protejează motorul contra suprasarcinilor; nu înlocuiește protecția de scurtcircuit.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0190",
+      "grade_ids": [
+        "G1-ELE-201",
+        "G2-ELEC-337"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-201": "C",
+        "G2-ELEC-337": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 208,
+        "original_stem": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 2 ohm, montate în serie este:",
+        "original_options": {
+          "A": "5 ohm",
+          "B": "0,66 ohm",
+          "C": "6 ohm"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+      },
+      "per_option_reason": {
+        "A": "5 Ω nu este suma celor trei rezistențe de 2 Ω.",
+        "B": "0,66 Ω corespunde aproximativ celor trei de 2 Ω în paralel.",
+        "C": "În serie rezistențele se adună: 2+2+2=6 Ω."
+      },
+      "model_assumption": "Trei rezistoare de 2Ω în serie: 6Ω.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0194",
+      "grade_ids": [
+        "G1-ELE-205",
+        "G2-ELEC-341"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-205": "B",
+        "G2-ELEC-341": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 212,
+        "original_stem": "Reglarea puterii active debitate de generatorul sincron se face variind:",
+        "original_options": {
+          "A": "tensiunea de excitaţie",
+          "B": "admisia agentului primar la turbina",
+          "C": "curentul statoric"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://handbook.ashrae.org/Handbooks/S24/SI/S24_Ch07/S24_Ch07_si.aspx"
+      },
+      "per_option_reason": {
+        "A": "Excitația schimbă în principal tensiunea și schimbul reactiv în funcționarea conectată la rețea, nu direct puterea mecanică la arbore.",
+        "B": "Admisia agentului primar la turbină modifică puterea mecanică și, la sincronism cu rețeaua, puterea activă generată.",
+        "C": "Curentul statoric este rezultatul regimului electric și nu actuatorul de bază pentru reglarea puterii active."
+      },
+      "model_assumption": "Puterea activă la generator sincron se controlează prin puterea mecanică a turbinei.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0195",
+      "grade_ids": [
+        "G1-ELE-206",
+        "G2-ELEC-342"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-206": "A",
+        "G2-ELEC-342": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 213,
+        "original_stem": "Reglarea puterii reactive debitate de generatorul sincron se face prin:",
+        "original_options": {
+          "A": "modificarea curentului de excitaţie",
+          "B": "deschiderea aparatului director al turbinei",
+          "C": "deconectarea rezistentei de stingere"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://automationsolutionfinder.andritz.com/solutions/15006/power-systems/hydro-power-oil-gas-thermal-power/excitation-systems"
+      },
+      "per_option_reason": {
+        "A": "Curentul de excitație variază fluxul și permite reglarea Q/tensiunii generatorului sincron.",
+        "B": "Deschiderea aparatului director al turbinei reglează predominant puterea activă.",
+        "C": "Rezistența de stingere nu este mecanismul de reglaj al puterii reactive a generatorului."
+      },
+      "model_assumption": "Puterea reactivă a generatorului sincron este influențată de curentul de excitație.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0198",
+      "grade_ids": [
+        "G1-ELE-209",
+        "G2-ELEC-345"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-209": "C",
+        "G2-ELEC-345": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 216,
+        "original_stem": "Se considera ca un transformator funcţionează în gol atunci când:",
+        "original_options": {
+          "A": "sarcina transformatorului este foarte mica",
+          "B": "curentul primar si curentul secundar sunt foarte mici",
+          "C": "o înfăşurare este conectata la reţea, iar cealaltă este deschisa"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+        "legacy_card_blob_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+        "technical_source": "https://eepower.com/technical-articles/open-circuit-and-short-circuit-tests-in-transformers/"
+      },
+      "per_option_reason": {
+        "A": "O sarcină foarte mică nu este identică cu circuitul secundar deschis în mers în gol.",
+        "B": "Faptul că ambii curenți sunt mici nu definește starea de circuit deschis; primarul absoarbe curent magnetizant.",
+        "C": "Un transformator este în gol când o înfășurare este alimentată, iar cealaltă este deschisă și nu furnizează sarcină."
+      },
+      "model_assumption": "Transformator în gol: primarul alimentat, secundarul în circuit deschis.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0124",
+      "grade_ids": [
+        "G1-ELE-133",
+        "G2-ELEC-273"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-133": "C",
+        "G2-ELEC-273": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 140,
+        "original_stem": "La generatorul sincron viteza de rotaţie a câmpului magnetic al statorului fata de viteza de rotaţie a rotorului maşinii este:",
+        "original_options": {
+          "A": "mai mare",
+          "B": "mai mica",
+          "C": "egala"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+        "legacy_card_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+        "technical_source": "https://www.ece.lsu.edu/mendrela/EE3410Electricgenerators.pdf"
+      },
+      "per_option_reason": {
+        "A": "La generatorul sincron în regim stabil câmpul rotitor nu poate avea viteză mai mare persistentă decât rotorul sincronizat.",
+        "B": "Nici o viteză relativă permanent mai mică nu este compatibilă cu regimul sincron.",
+        "C": "Viteza mecanică a rotorului și viteza mecanică a câmpului magnetic statoric coincid în regim sincron."
+      },
+      "model_assumption": "Regim sincron staționar: viteza câmpului statoric egală cu viteza rotorului.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0127",
+      "grade_ids": [
+        "G1-ELE-136",
+        "G2-ELEC-276"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-136": "C",
+        "G2-ELEC-276": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 143,
+        "original_stem": "La maşina sincrona turaţia variază în funcţie de sarcina astfel:",
+        "original_options": {
+          "A": "creste când sarcina creste",
+          "B": "scade când sarcina scade",
+          "C": "rămâne constanta la variaţia sarcinii"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+        "legacy_card_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+        "technical_source": "https://electrical-engineering-portal.com/res/res5/Synchrounous-Generators-and-Motors.pdf"
+      },
+      "per_option_reason": {
+        "A": "La frecvență fixă nu rezultă creștere continuă de viteză prin mărirea sarcinii.",
+        "B": "O scădere a sarcinii nu obligă la scăderea turației generatorului sincron conectat la rețea.",
+        "C": "În sincronism n=60f/p perechi de poli, turația este fixată de frecvență și poli."
+      },
+      "model_assumption": "Turația mașinii sincrone legate la o sursă cu frecvență stabilă rămâne sincronă la variația sarcinii în limita stabilității.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0138",
+      "grade_ids": [
+        "G1-ELE-147",
+        "G2-ELEC-285"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-147": "C",
+        "G2-ELEC-285": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 154,
+        "original_stem": "Materialele feromagnetice au permeabilitatea relativa:",
+        "original_options": {
+          "A": "mai mica decât 1",
+          "B": "puţin mai mare decât 1",
+          "C": "mult mai mare decât 1"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+        "legacy_card_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+        "technical_source": "https://www.sciencedirect.com/topics/engineering/material-loss"
+      },
+      "per_option_reason": {
+        "A": "μr<1 este tipic comportamentului diamagnetic, nu feromagnetic clasic.",
+        "B": "«Puțin peste 1» nu descrie permeabilitatea relativă mare a unui feromagnet nesaturat uzual.",
+        "C": "În regim nesaturat, feromagneții au de regulă μr mult peste 1."
+      },
+      "model_assumption": "Feromagneticele au permeabilitate relativă mult peste 1 în domeniul tipic.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0139",
+      "grade_ids": [
+        "G1-ELE-148",
+        "G2-ELEC-286"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-148": "B",
+        "G2-ELEC-286": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 155,
+        "original_stem": "Ecuația constitutivă a bobinei ideale are forma:",
+        "original_options": {
+          "A": "u = R i",
+          "B": "u= L di/dt",
+          "C": "du = i/C dt"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+        "legacy_card_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits"
+      },
+      "per_option_reason": {
+        "A": "u=Ri este legea elementului rezistiv ideal, nu a bobinei.",
+        "B": "Pentru inductor ideal L constant, convenție pasivă: u=L·di/dt.",
+        "C": "Varianta C este o exprimare asemănătoare unei relații capacitive, dar notația diferențială nu descrie inductanța."
+      },
+      "model_assumption": "Bobina ideală liniară: u=L di/dt; celelalte relații sunt pentru R și C.",
+      "independent_adversarial_review": "resp_c8314ae4-52d2-4a77-a03c-c01703551b04",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0140",
+      "grade_ids": [
+        "G1-ELE-149",
+        "G2-ELEC-287"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-149": "A",
+        "G2-ELEC-287": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 156,
+        "original_stem": "Legea lui Coulomb exprimã:",
+        "original_options": {
+          "A": "forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice",
+          "B": "fluxul electric printr-o suprafaţa sferica",
+          "C": "diferenţa de potenţial între doua puncte"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+        "legacy_card_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law"
+      },
+      "per_option_reason": {
+        "A": "Legea Coulomb descrie forța electrostatică între sarcini punctiforme, cu |F|=k|q1q2|/r².",
+        "B": "Fluxul electric prin suprafețe este tratat de legea Gauss, nu direct de legea Coulomb.",
+        "C": "Diferența de potențial se calculează din câmp electric, dar nu este enunțul forței Coulomb."
+      },
+      "model_assumption": "Legea lui Coulomb descrie forța între sarcini electrice punctiforme.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0144",
+      "grade_ids": [
+        "G1-ELE-153",
+        "G2-ELEC-291"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-153": "B",
+        "G2-ELEC-291": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 160,
+        "original_stem": "Mărimea caracteristică circuitelor magnetice şi care este analoagă cu rezistenţa circuitelor electrice se numeşte:",
+        "original_options": {
+          "A": "impedanţă",
+          "B": "reluctanţă",
+          "C": "permeanţă"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+        "legacy_card_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+        "technical_source": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Electromagnetic_Field_Theory%3A_A_Problem_Solving_Approach_%28Zahn%29/06%3A_Electromagnetic_Induction/6.02%3A_Faraday%27s_Law_for_Moving_Media"
+      },
+      "per_option_reason": {
+        "A": "Impedanța este noțiune de circuit electric, nu analogul R pentru circuit magnetic.",
+        "B": "Reluctanța ℜ=ℓ/(μA) este analogul rezistenței electrice, pentru flux și forță magnetomotoare.",
+        "C": "Permeanța este inversul reluctanței, analog cu conductanța."
+      },
+      "model_assumption": "Reluctanța, nu permeanta, corespunde rezistenței magnetice.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0149",
+      "grade_ids": [
+        "G1-ELE-158",
+        "G2-ELEC-296"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-158": "A",
+        "G2-ELEC-296": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 165,
+        "original_stem": "Miezul magnetic al rotorului unei maşini electrice asincrone se realizează din tole pentru:",
+        "original_options": {
+          "A": "reducerea curenţilor turbionari",
+          "B": "reducerea tensiunii electromotoare induse",
+          "C": "numai din motive constructive"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+        "legacy_card_blob_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+        "technical_source": "https://coefs.charlotte.edu/mnoras/files/2013/03/Transformer-and-Inductor-Design-Handbook_Chapter_3.pdf"
+      },
+      "per_option_reason": {
+        "A": "Miezurile din tole izolate reduc curenții turbionari și pierderile prin limitarea buclelor de curent.",
+        "B": "Reducerea FEM utile induse în rotor nu este ținta principală a laminării.",
+        "C": "«Numai constructiv» exclude rolul electromagnetic și este fals."
+      },
+      "model_assumption": "Tolele rotorice reduc curenții turbionari și pierderile asociate.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0148",
+      "grade_ids": [
+        "G1-ELE-157",
+        "G2-ELEC-295"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-157": "B",
+        "G2-ELEC-295": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 164,
+        "original_stem": "Metoda transfigurării reţelelor electrice este folosita pentru a:",
+        "original_options": {
+          "A": "reduce pierderile de putere activa în reţea",
+          "B": "simplifica structura reţelelor echivalente pentru a reduce volumul de calcule",
+          "C": "diminua consumul specific de material conductor"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+        "legacy_card_blob_sha": "b92b50e9bdd7bee8737544614d657e84ffeb33af",
+        "technical_source": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/AC_Electrical_Circuit_Analysis%3A_A_Practical_Approach_%28Fiore%29/05%3A_Analysis_Theorems_and_Techniques/5.4%3A_Thevenin%27s_and_Norton%27s_Theorems"
+      },
+      "per_option_reason": {
+        "A": "Echivalarea rețelelor pe hârtie nu reduce automat pierderile fizice ale instalației.",
+        "B": "Transfigurarea simplifică un model echivalent pentru calcule la borne.",
+        "C": "Nu reduce automat cantitatea reală de metal conductor din instalație."
+      },
+      "model_assumption": "Transfigurarea simplifică rețeaua echivalentă de calcul, nu modifică fizic pierderile.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0153",
+      "grade_ids": [
+        "G1-ELE-162",
+        "G2-ELEC-300"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-162": "A",
+        "G2-ELEC-300": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 169,
+        "original_stem": "O linie electrică foarte lungă se comportă ca o linie adaptată:",
+        "original_options": {
+          "A": "dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică",
+          "B": "dacă funcţionează  în scurtcircuit",
+          "C": "dacă funcţionează în gol"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+        "legacy_card_blob_sha": "b92b50e9bdd7bee8737544614d657e84ffeb33af",
+        "technical_source": "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models"
+      },
+      "per_option_reason": {
+        "A": "Sarcina Z_L=Zc înseamnă terminare adaptată la impedanța caracteristică.",
+        "B": "Un scurtcircuit (Z_L≈0) nu este o sarcină adaptată la Zc finită.",
+        "C": "Un circuit deschis (Z_L→∞) nu este o sarcină adaptată la Zc finită."
+      },
+      "model_assumption": "Linie adaptată dacă impedanța receptorului este egală cu impedanța caracteristică.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0172",
+      "grade_ids": [
+        "G1-ELE-183",
+        "G2-ELEC-319"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-183": "A",
+        "G2-ELEC-319": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 190,
+        "original_stem": "Pentru o putere aparenta data puterea activa are valoarea maxima:",
+        "original_options": {
+          "A": "când factorul de putere =1",
+          "B": "când factorul de putere = 0",
+          "C": "când U = U max"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+        "legacy_card_blob_sha": "b92b50e9bdd7bee8737544614d657e84ffeb33af",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit"
+      },
+      "per_option_reason": {
+        "A": "La S fix, P=S×PF este maximă când PF=1.",
+        "B": "PF=0 produce P=0, nu maximum.",
+        "C": "U maxim nu garantează P maxim când S este specificată fixă."
+      },
+      "model_assumption": "La S fix, P=S·cosφ atinge maximul la cosφ=1.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0219",
+      "grade_ids": [
+        "G1-ELE-230",
+        "G2-ELEC-366"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-230": "B",
+        "G2-ELEC-366": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 237,
+        "original_stem": "Siguranţele fuzibile sunt aparate utilizate pentru protecţie la:",
+        "original_options": {
+          "A": "supratensiuni",
+          "B": "supracurenţi",
+          "C": "defect de izolaţie"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "legacy_card_blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "technical_source": "https://www.eaton.com/us/en-us/products/electronic-components/topics/fuse-technology.html"
+      },
+      "per_option_reason": {
+        "A": "O siguranță fuzibilă nu este dispozitiv obișnuit de limitare a supratensiunii.",
+        "B": "Siguranța este destinată întreruperii supracurenților peste caracteristica sa, incluzând scurtcircuite și unele suprasarcini.",
+        "C": "Un defect de izolație fără supracurent nu reprezintă obligatoriu condiția de acționare a siguranței."
+      },
+      "model_assumption": "Siguranța fuzibilă protejează la supracurenți prin topirea elementului.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0226",
+      "grade_ids": [
+        "G1-ELE-237",
+        "G2-ELEC-373"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-237": "C",
+        "G2-ELEC-373": "C"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 244,
+        "original_stem": "Un conductor în care circulaţia curentului electric nu se supune legii lui Ohm se numeşte:",
+        "original_options": {
+          "A": "liniar",
+          "B": "neomogen",
+          "C": "neliniar"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "legacy_card_blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "technical_source": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+      },
+      "per_option_reason": {
+        "A": "«Liniar» implică proporționalitate U-I într-un domeniu și contrazice caracteristica explicit neohmică.",
+        "B": "Neomogenitatea spațială a materialului nu este echivalentă logic cu caracteristica neliniară U-I.",
+        "C": "Elementul cu relație U-I neproporțională este numit neliniar."
+      },
+      "model_assumption": "Conductorul cu caracteristică tensiune-curent neohmică este neliniar.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0216",
+      "grade_ids": [
+        "G1-ELE-227",
+        "G2-ELEC-363"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-227": "B",
+        "G2-ELEC-363": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 234,
+        "original_stem": "Separatorul, ca echipament în cadrul unei staţii electrice, are rolul:",
+        "original_options": {
+          "A": "de a proteja circuitul la supracurenţi",
+          "B": "de a separa vizibil un circuit",
+          "C": "de a măsură nivelul de izolaţie"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "legacy_card_blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "technical_source": "https://www.abb.com/global/en/areas/electrification/medium-voltage/grid-components/switch-disconnectors"
+      },
+      "per_option_reason": {
+        "A": "Supracurentul este gestionat de aparate și protecții dedicate, nu de separatorul obișnuit.",
+        "B": "Separatorul asigură izolarea unui circuit, cu distanță de separare identificabilă/verificabilă.",
+        "C": "Măsurarea rezistenței/gradului de izolație necesită alte instrumente și metode."
+      },
+      "model_assumption": "Separatorul asigură separare/izolare vizibilă, nu întrerupere generică de curent de sarcină.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0103",
+      "grade_ids": [
+        "G1-ELE-112",
+        "G2-ELEC-254"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-112": "B",
+        "G2-ELEC-254": "B"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 119,
+        "original_stem": "În tubul de porţelan al unei siguranţe de înalta tensiune, nisipul :",
+        "original_options": {
+          "A": "are numai rolul de a consolida elementele fuzibile",
+          "B": "are rolul de a mari puterea de rupere a siguranţei",
+          "C": "de a menţine temperatura constanta a siguranţei"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "legacy_card_blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "technical_source": "https://www.eplan.etigroup.eu/media-center/eti-blog/high-voltage-hv-fuses-in-particular-applications?lang=en-GB"
+      },
+      "per_option_reason": {
+        "A": "Nisipul de cuarț nu are «numai» rol mecanic; participă la stingerea arcului.",
+        "B": "Nisipul ajută stingerea arcului și mărește capacitatea de rupere a siguranței.",
+        "C": "Nu este un regulator care menține temperatura absolut constantă."
+      },
+      "model_assumption": "Nisipul cuarțos răcește/stinge arcul în siguranța de înaltă tensiune, mărind capacitatea de rupere.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    },
+    {
+      "id": "QABC-0123",
+      "grade_ids": [
+        "G1-ELE-132",
+        "G2-ELEC-272"
+      ],
+      "grade_keys_original": {
+        "G1-ELE-132": "A",
+        "G2-ELEC-272": "A"
+      },
+      "source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": 139,
+        "original_stem": "Într-un circuit serie format dintr-un rezistor de rezistenţă R, o bobină de inductanţă L şi un condensator de capacitate C, curentul din circuit este defazat în urma tensiunii la borne dacă:",
+        "original_options": {
+          "A": "reactanţa totală a circuitului X este > 0",
+          "B": "reactanţa totală a circuitului            X este <0",
+          "C": "reactanţa totală a circuitului este =0"
+        },
+        "legacy_card_path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "legacy_card_blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "technical_source": "https://openstax.org/books/college-physics-2e/pages/23-12-rlc-series-ac-circuits"
+      },
+      "per_option_reason": {
+        "A": "Pentru X=X_L−X_C>0 circuitul este inductiv, iar curentul rămâne în urma tensiunii.",
+        "B": "X<0 înseamnă regim capacitiv; curentul precedă tensiunea.",
+        "C": "La X=0, curentul și tensiunea sunt în fază în modelul RLC serie."
+      },
+      "model_assumption": "În circuit RLC serie, X=XL−XC>0 implică defazaj inductiv, curent în urmă.",
+      "independent_adversarial_review": "resp_cb9e56d8-46f7-4150-a089-b5860b733208",
+      "educational_content_state": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_exam_key_certified": false,
+      "app_card_offline_qa_complete": false
+    }
+  ]
+}

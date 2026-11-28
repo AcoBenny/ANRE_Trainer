@@ -1,0 +1,940 @@
+{
+  "schema": "ANRE_G2_PRIOR_RESEARCH_REUSE_V1",
+  "inventory": [
+    {
+      "name": "V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "n": 20,
+      "fields": [
+        "staging_id",
+        "source_file",
+        "source_sha256",
+        "original_workbook_row",
+        "verbatim_question",
+        "verbatim_options",
+        "provisional_source_intent_answer",
+        "option_rationales",
+        "source",
+        "immediate_context",
+        "scope_exception_or_wording_trap",
+        "official_scored_key",
+        "qualified_technical_signoff",
+        "qualified_linguistic_signoff",
+        "current_2026_exact_edition",
+        "released_for_learning"
+      ]
+    },
+    {
+      "name": "V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "n": 21,
+      "fields": [
+        "staging_id",
+        "source_excel",
+        "raw_stem",
+        "raw_choices",
+        "provisional_source_intended_answer",
+        "option_rationale",
+        "normative_context",
+        "scope_ambiguity_or_exception",
+        "official_exam_key",
+        "independent_electrical_and_linguistic_QA",
+        "current_2026_normative_edition",
+        "learner_approved"
+      ]
+    },
+    {
+      "name": "V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "n": 9,
+      "fields": [
+        "staging_id",
+        "original_source_row",
+        "original_stem",
+        "original_ABC",
+        "source_sha256",
+        "provisional_textbook_candidate_NOT_OFFICIAL",
+        "technical_reasons",
+        "legal_source",
+        "context_before_and_after",
+        "scope_limit_or_exception",
+        "semantic_grade_variants",
+        "source_variant_kind",
+        "official_scored_key_authenticated",
+        "qualified_independent_review",
+        "current_2026_edition_verified",
+        "learner_approved"
+      ]
+    },
+    {
+      "name": "V301_G2_LEGISLATION_5_ORIGINAL_ABC_ORD66_2023_65_2024_FIRSTPASS_2026_11_22.json",
+      "n": 5,
+      "fields": [
+        "staging_id",
+        "source_row",
+        "original_question",
+        "original_options",
+        "source_sha256",
+        "provisional_intended_answer_NOT_OFFICIAL",
+        "source_ref",
+        "why",
+        "scope_exception",
+        "source_edition_limit",
+        "official_scored_key",
+        "qualified_review",
+        "approved_for_learning"
+      ]
+    },
+    {
+      "name": "V302_G2_5_NORME_I7_SCOPE_ADDENDUM_ONE_AMBIGUITY_2026_11_22.json",
+      "n": 5,
+      "fields": [
+        "row",
+        "letter",
+        "ref",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "V304_G2_NOR_11_I7_SOURCE_RECHECK_CT_EXCEPTION_HELD_2026_11_22.json",
+      "n": 11,
+      "fields": [
+        "staging_id",
+        "source_excel_row",
+        "source_workbook",
+        "source_hash",
+        "verbatim_question",
+        "verbatim_A_B_C",
+        "research_candidate_not_official",
+        "reasoning_A_B_C",
+        "normative_source",
+        "critical_scope_qualifier",
+        "legal_version_2026_authentication",
+        "official_scored_key",
+        "independent_specialist_signoff",
+        "learning_gate"
+      ]
+    }
+  ],
+  "records": [
+    {
+      "id": "CF-NORME_TEHNICE-138",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0145",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.3.16",
+        "pdf_pages": "65"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B manufacturer owns the sizing of conductors/busbars inside the switchboard.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-141",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0148",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'izolație dublă'",
+        "pdf_pages": "7"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A exactly combines basic + supplementary insulation.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-142",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0149",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'izolație întărită'",
+        "pdf_pages": "7"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B precisely defines reinforced insulation that gives shock protection equal to double insulation.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-143",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0150",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.1.2.1(A)",
+        "pdf_pages": "22"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C supplemental measure with DDR <=30mA is explicitly stated.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-158",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0165",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.1.3, §3.3.2.1",
+        "pdf_pages": "15"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C exactly matches TN, TT, IT.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-159",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0166",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.3",
+        "pdf_pages": "16"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B TN direct-source-earth and PE loop yields a phase-to-mass defect current.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-160",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0167",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.7",
+        "pdf_pages": "17"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C source explicitly requires PE/PEN earthing when part of switchboard.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-161",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0168",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.3.2.4.1",
+        "pdf_pages": "37-38"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B source lists fire extinguishing device circuits among overload no-trip recommendations.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-163",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0170",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.3.4.3",
+        "pdf_pages": "39"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C literal must NOT disconnect N before phases; reconnect N at same time or earlier.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-167",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0174",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.5",
+        "pdf_pages": "62"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A own-generation direct-start motor sizing is calculation verifying allowable voltage drop.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-176",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0183",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.7.2.1",
+        "pdf_pages": "63"
+      },
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-177",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0184",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.7.2.1",
+        "pdf_pages": "63"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C at 1.20 set current relay MUST trip within two hours.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-178",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0185",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§5.3.1.7.2.1",
+        "pdf_pages": "63"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A at 1.05 set current must NOT trip in 2h, exact source.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-187",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0194",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'priză de pământ independentă'",
+        "pdf_pages": "9"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B sufficiently separated so potential is not noticeably influenced by other earth electrode currents.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-190",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0197",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "Ch.2 definition 'pământ de referință'",
+        "pdf_pages": "8"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C conventionally zero potential, outside influence of any earthing installation.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-191",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0198",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.1.2.1(A)",
+        "pdf_pages": "22"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A certified personal electrical insulation PPE appears under technical measures for BASIC protection.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-192",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0199",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§4.1.2.1(B)",
+        "pdf_pages": "22"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B exact organizational measure for basic protection while undertaking work.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-198",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0205",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.1, §3.3.2.3, §3.3.2.5",
+        "pdf_pages": "15-16"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B supply directly earthed, shared neutral+protective PEN is TN-C.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-199",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0206",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.1, §3.3.2.4",
+        "pdf_pages": "15-16"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C directly earthed source plus separate PE and N is TN-S.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-200",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0207",
+      "path": "docs/QUESTION_AUDIT/V305_G2_NOR_20_I7_ABC_SOURCE_REVIEW_ONE_NUMERIC_TRAP_2026_11_22.json",
+      "blob": "e6026fb01d173a71c86339ad8c4e901b516995ef",
+      "locator": {
+        "work": "User I7 2011 consolidated 2023-09-22",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "paragraphs": "§3.3.2.1, §3.3.2.8",
+        "pdf_pages": "15-17"
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B direct earth at source with masses separately earthed describes TT.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-134",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0141",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§4.3.4.2.1(a)",
+        "pages": "38",
+        "preceding_and_following": "Prior §4.3.4.1 protects phases; after §4.3.4.2.1(b) treats neutral thinner than phases."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A correct TT/TN if neutral capacity >= phase; no separate neutral overload protection needed.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-135",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0142",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§4.3.4.2.1(b)",
+        "pages": "38",
+        "preceding_and_following": "Prior §4.3.4.2.1(a) full neutral size exempt; after the quoted provision contains two simultaneous permitted exceptions."
+      },
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-136",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0143",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§4.3.4.2.1(b)",
+        "pages": "38",
+        "preceding_and_following": "Before narrower neutral requires overcurrent protection; after its special circumstances and IT network discussion."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A active phase and neutral conductors disconnected by neutral overload protection as stated, with the active category including neutral.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-137",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0144",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§5.4.28",
+        "pages": "71",
+        "preceding_and_following": "Before §5.4.27 requires socket type identification for distinct voltages; after related receptacle installation requirements."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C sockets are allowed in combustible BE2 storage when protected by DDR and other prescribed conditions.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-139",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0146",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§5.5.4.4",
+        "pages": "74",
+        "preceding_and_following": "Before §5.5.4.3 prohibits metal raceways as PEN; after §5.5.4.5 forbids using foreign conductive parts as PEN."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C exact: after separation N may not be connected to any other earthed installation part.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-140",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0147",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§5.5.4.4",
+        "pages": "74",
+        "preceding_and_following": "Before clause bars post-split N re-earthing; after says PEN incoming tied at PE bar and prohibits foreign PEN conductors."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B exact source separate bars/terminals for neutral and protective conductors.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-150",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0157",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "Chapter 2: definition 'separare de protecţie'",
+        "pages": "9",
+        "preceding_and_following": "Before nearby vocabulary describes protective separation; following term describes simple separation using basic alone."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C double insulation is one explicitly valid protective-separation method.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-151",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0158",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "Chapter 2: definition 'separare de protecţie'",
+        "pages": "9",
+        "preceding_and_following": "Before same definition allows double insulation/basic+screen; after defines simple separation."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A reinforced insulation is one valid protective-separation method.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-162",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0169",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§4.3.3.1.3.1, §4.3.2.4.1",
+        "pages": "37-38",
+        "preceding_and_following": "Prior §4.3.2.4.1 lists fire-suppression circuits under overload-trip avoidance; following §4.3.3.1.3.1 allows fault interruption omission for circuits whose disconnection creates danger."
+      },
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-174",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0181",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§7.4.31",
+        "pages": "123",
+        "preceding_and_following": "Before §7.4.30 covers site protective network equipment; after §7.4.32 covers use of existing conductive earthing elements."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A exact: general site PE bonding network is looped wherever feasible.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-175",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0182",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§7.4.35",
+        "pages": "123",
+        "preceding_and_following": "Before §7.4.34 defines overall 4Ω and trip conditions; after §7.4.36 permits distributed electrodes in space-limited sites."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C each line end/branch point fixed electrode at 10Ω, combined network <=4Ω.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-179",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0186",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§7.21.1",
+        "pages": "150",
+        "preceding_and_following": "Before power factor correction topic; following §7.21.2 discusses central/local/mixed shunt capacitor placement."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A source uses shunt capacitors fixed or step-controlled for local reactive power compensation.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-180",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0187",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§7.21.8",
+        "pages": "150",
+        "preceding_and_following": "Before §7.21.7 addresses centralized auto-compensation constraints; after §7.21.9 gives compensation <=90% of no-load reactive power for large machines."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C both large continuous inductive loads AND numerous small units match the paragraph.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-181",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0188",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§7.21.11",
+        "pages": "150-151",
+        "preceding_and_following": "Previous §7.21.10 dimensions circuit hardware at 1.5 In; following §7.21.12 concerns discharge and residual voltage."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B overload protection trip set to 1.5 times battery nominal current.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-183",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0190",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§4.1.2.1(A,B)",
+        "pages": "22",
+        "preceding_and_following": "Before §4.1.1 defines base and fault shock protection; next §4.1.2.2 gives basic live-part insulation."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "B technical plus organizational protections both required as categories.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-186",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0193",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§5.5.4.5",
+        "pages": "74",
+        "preceding_and_following": "Before §5.5.4.4 covers PE/N split and separate bars; after §5.5.4.6 discusses PEL return in DC technology equipment."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C literal: foreign conductive parts must not be used as PEN in alternating current.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-193",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0200",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "Ch2: definition 'mediu neconductor'; §4.1.5.5",
+        "pages": "8,31",
+        "preceding_and_following": "Before other protection-environment definitions; after 500V threshold higher minimum 100 kΩ."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C 50 kΩ minimum electrical resistance in non-conducting environment for specified <=500V category.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-194",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0201",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§4.1.2.1(A)",
+        "pages": "22",
+        "preceding_and_following": "Before measures such as insulation/barriers; after §4.1.2.1(B) lists separate organizational actions."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A low/safety extra-low voltage limit is listed among technical BASIC protection measures.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-195",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0202",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "§4.1.4.2.1.1",
+        "pages": "26",
+        "preceding_and_following": "Before §4.1.4.1 gives automatic disconnection protections; after §4.1.4.2.1.1 defines double insulation by base+supplemental or reinforced."
+      },
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-196",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0203",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "Ch2 definition 'separare simplă'",
+        "pages": "9",
+        "preceding_and_following": "Before definition of protective separation; after switchgear disconnector terminology."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "C exact simple separation between circuits or circuit/earth using basic insulation.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-197",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0204",
+      "path": "docs/QUESTION_AUDIT/V306_G2_NOR_21_ORIGINAL_ABC_I7_SCOPE_TRAPS_2026_11_22.json",
+      "blob": "1fe16562e82c632b95b224ab5d0b7f8eee5b3201",
+      "locator": {
+        "document": "I7 2011 in user 2023-09-22 consolidated PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "Ch2 definition 'tensiune de defect'",
+        "pages": "10",
+        "preceding_and_following": "Before contact voltage terms; after very-low voltage and step/touch definitions."
+      },
+      "source_url": null,
+      "answer_text_matches": true,
+      "selected_rationale": "A exact: voltage between a fault point and reference earth due to insulation failure.",
+      "status": "HISTORICAL_G2_RATIONALE_REUSED"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-001",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0008",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-005",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0012",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-008",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0015",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-010",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0017",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-024",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0031",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-026",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0033",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-112",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0119",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-NORME_TEHNICE-120",
+      "legacy_candidate_id": "ANRE-G2-NOR-XLSX-R0127",
+      "path": "docs/QUESTION_AUDIT/V299_G2_9_NORME_ORIGINAL_I7_PRELIMINARY_ABC_REVIEW_2026_11_22.json",
+      "blob": "077f6a02ceb5397b85f9b0ab11b88f311d310a2e",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-LEGISLATIE-002",
+      "legacy_candidate_id": "ANRE-G2-LEG-XLSX-R0008",
+      "path": "docs/QUESTION_AUDIT/V301_G2_LEGISLATION_5_ORIGINAL_ABC_ORD66_2023_65_2024_FIRSTPASS_2026_11_22.json",
+      "blob": "a24721e7743979f32ca85f07574fb5472ce09f7f",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-LEGISLATIE-052",
+      "legacy_candidate_id": "ANRE-G2-LEG-XLSX-R0058",
+      "path": "docs/QUESTION_AUDIT/V301_G2_LEGISLATION_5_ORIGINAL_ABC_ORD66_2023_65_2024_FIRSTPASS_2026_11_22.json",
+      "blob": "a24721e7743979f32ca85f07574fb5472ce09f7f",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-LEGISLATIE-053",
+      "legacy_candidate_id": "ANRE-G2-LEG-XLSX-R0059",
+      "path": "docs/QUESTION_AUDIT/V301_G2_LEGISLATION_5_ORIGINAL_ABC_ORD66_2023_65_2024_FIRSTPASS_2026_11_22.json",
+      "blob": "a24721e7743979f32ca85f07574fb5472ce09f7f",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-LEGISLATIE-054",
+      "legacy_candidate_id": "ANRE-G2-LEG-XLSX-R0060",
+      "path": "docs/QUESTION_AUDIT/V301_G2_LEGISLATION_5_ORIGINAL_ABC_ORD66_2023_65_2024_FIRSTPASS_2026_11_22.json",
+      "blob": "a24721e7743979f32ca85f07574fb5472ce09f7f",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    },
+    {
+      "id": "CF-LEGISLATIE-059",
+      "legacy_candidate_id": "ANRE-G2-LEG-XLSX-R0065",
+      "path": "docs/QUESTION_AUDIT/V301_G2_LEGISLATION_5_ORIGINAL_ABC_ORD66_2023_65_2024_FIRSTPASS_2026_11_22.json",
+      "blob": "a24721e7743979f32ca85f07574fb5472ce09f7f",
+      "locator": null,
+      "source_url": null,
+      "answer_text_matches": false,
+      "selected_rationale": null,
+      "status": "HISTORICAL_G2_REFERENCE_ONLY"
+    }
+  ]
+}

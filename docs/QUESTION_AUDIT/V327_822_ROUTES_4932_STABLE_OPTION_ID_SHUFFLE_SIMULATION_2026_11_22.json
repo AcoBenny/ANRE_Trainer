@@ -1,0 +1,36 @@
+{
+  "schema": "V327_PROPOSED_STABLE_OPTION_ID_SHUFFLE_SCORING_SIMULATION_2026_11_22",
+  "date": "2026-11-22",
+  "scope": "Pure in-memory algorithmic safety preflight for FUTURE import/render specification. NOT a test of current HTML or APK.",
+  "test_input": "V141 canonical QABC original ordered 3 options and exact imported 822 grade-route keys; cross checked V283 keys",
+  "algorithm": "For each grade route, preserve source option identity 0=A,1=B,2=C and qualified-scored option index; for all six permutations of displayed option indices, choose the visible option whose stored original option id equals intended correct id. Correct grade ID and option identity remain stable across permutation. Must not use displayed button letter directly as original answer key.",
+  "results": {
+    "canonical_grade_routes": 822,
+    "generated_full_permutation_cases": 4932,
+    "failures": 0,
+    "didactic_QABC_with_all_source_correct_A": 153,
+    "didactic_displayed_correct_letter_distribution_across_all_permutations": {
+      "A": 306,
+      "B": 306,
+      "C": 306
+    },
+    "other_grade_routes": 669,
+    "actual_html_runtime_tests": 0,
+    "android_apk_runtime_tests": 0,
+    "qualified_original_keys_authenticated": 0
+  },
+  "control_scenarios": [
+    "permutation identity",
+    "ABC rotation",
+    "BCA rotation",
+    "CAB rotation",
+    "reverse CBA",
+    "source percent option raw/display identity remains separate from score identity"
+  ],
+  "release_gate": {
+    "unit_test_type": "PURE_PROPOSED_SCORER_SIMULATION_NOT_REAL_APP",
+    "do_not_import_unapproved_data": true,
+    "pass_requires_actual_html_and_apk_regression_after_approval": true
+  },
+  "summary": "Reference algorithm preserves selected original option identity, avoids A-position study bias in principle; existing app and native Android WebView were not executed."
+}

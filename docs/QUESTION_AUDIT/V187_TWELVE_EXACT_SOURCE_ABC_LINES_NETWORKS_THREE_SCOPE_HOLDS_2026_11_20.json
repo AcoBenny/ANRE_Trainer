@@ -1,0 +1,469 @@
+{
+  "schema": "v187_twelve_exact_anre_original_A_B_C_with_three_semantic_holds",
+  "date": "2026-11-20",
+  "basis_sha": {
+    "CKPT238": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+    "V149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "V175": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_qabc": 12,
+    "grade_routes": 24,
+    "ABC_comments": 36,
+    "practice_rephrasings": 12,
+    "semantic_holds": 3,
+    "approved": 0
+  },
+  "qa": {
+    "QABC": 12,
+    "grade_ids": 24,
+    "ABC_reason_entries": 36,
+    "rephrased": true,
+    "all_source_original_matched": true,
+    "extra_holds": [
+      "QABC-0162",
+      "QABC-0163",
+      "QABC-0169"
+    ],
+    "math": {
+      "J_12V_6ohm": true,
+      "SIL_300kV_300ohm": true,
+      "P_10k_08": true
+    }
+  },
+  "live_context_sources": [
+    {
+      "unit_id": "QABC-0153",
+      "url": "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models",
+      "use": "Lossless matched line Zc and reactive balance"
+    },
+    {
+      "unit_id": "QABC-0163",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "use": "I²R is component of transformer loss, not all no-load losses"
+    }
+  ],
+  "disclaimer": "Source wording verified against actual ANRE hosted sample text through V175 and canonical V149; technical references and answers are model-limited editorial research, not independently certified or official scored key. Three semantic holds remain separate from historical six strict source/key conflicts. No original key/application edits.",
+  "cards": [
+    {
+      "unit_id": "QABC-0145",
+      "grade_ids": [
+        "G1-ELE-154",
+        "G2-ELEC-292"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "161",
+        "stem": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+        "options": {
+          "A": "1",
+          "B": "0",
+          "C": "1,5"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-154=B | G2-ELEC-292=B"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://openstax.org/books/college-physics-2e/pages/20-5-alternating-current-versus-direct-current",
+        "prior_ABC": "The algebraic mean of an alternating AC quantity without a DC component over a period is zero; alternatives A and C are arbitrary numbers. A general sign-changing periodic wave with DC offset is a scope exception."
+      },
+      "editorial": {
+        "A": "1 nu este media algebrică a unei mărimi alternative ideale fără offset.",
+        "B": "0 este media pe o perioadă a unui curent sinusoidal sau alternativ fără componentă DC.",
+        "C": "1,5 nu este media periodică ce rezultă din definiția didactică.",
+        "scope_or_countermodel": "Un semnal ce schimbă semnul poate avea un offset DC: se cere o definiție exactă a «alternativ».",
+        "unofficial_rephrase": "Care este media lui sin(ωt) pe o perioadă întreagă?",
+        "rephrase_answer": "Zero.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0148",
+      "grade_ids": [
+        "G1-ELE-157",
+        "G2-ELEC-295"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "164",
+        "stem": "Metoda transfigurării reţelelor electrice este folosita pentru a:",
+        "options": {
+          "A": "reduce pierderile de putere activa în reţea",
+          "B": "simplifica structura reţelelor echivalente pentru a reduce volumul de calcule",
+          "C": "diminua consumul specific de material conductor"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-157=B | G2-ELEC-295=B"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/AC_Electrical_Circuit_Analysis%3A_A_Practical_Approach_%28Fiore%29/05%3A_Analysis_Theorems_and_Techniques/5.4%3A_Thevenin%27s_and_Norton%27s_Theorems",
+        "prior_ABC": "Mathematical network transformation simplifies equivalent circuit computation B; neither A physical loss reduction nor C metal material saving is entailed by an equivalent network transformation."
+      },
+      "editorial": {
+        "A": "Echivalarea rețelelor pe hârtie nu reduce automat pierderile fizice ale instalației.",
+        "B": "Transfigurarea simplifică un model echivalent pentru calcule la borne.",
+        "C": "Nu reduce automat cantitatea reală de metal conductor din instalație.",
+        "scope_or_countermodel": "Echivalarea păstrează proprietățile externe ale modelului, nu schimbă fizic aparatele.",
+        "unofficial_rephrase": "De ce transformi o rețea în echivalent Thévenin/Norton?",
+        "rephrase_answer": "Pentru simplificarea circuitului analizat.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0153",
+      "grade_ids": [
+        "G1-ELE-162",
+        "G2-ELEC-300"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "169",
+        "stem": "O linie electrică foarte lungă se comportă ca o linie adaptată:",
+        "options": {
+          "A": "dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică",
+          "B": "dacă funcţionează  în scurtcircuit",
+          "C": "dacă funcţionează în gol"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-162=A | G2-ELEC-300=A"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models",
+        "prior_ABC": "A long line is matched when receiver impedance equals line characteristic impedance A; B short circuit and C open circuit are mismatches for finite Zc."
+      },
+      "editorial": {
+        "A": "Sarcina Z_L=Zc înseamnă terminare adaptată la impedanța caracteristică.",
+        "B": "Un scurtcircuit (Z_L≈0) nu este o sarcină adaptată la Zc finită.",
+        "C": "Un circuit deschis (Z_L→∞) nu este o sarcină adaptată la Zc finită.",
+        "scope_or_countermodel": "Zc poate depinde de frecvență și parametrii distribuiți ai liniei.",
+        "unofficial_rephrase": "O linie cu Zc=300 Ω și sarcină 300 Ω în regim ideal este cum terminată?",
+        "rephrase_answer": "Adaptată.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0154",
+      "grade_ids": [
+        "G1-ELE-163",
+        "G2-ELEC-301"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "170",
+        "stem": "O linie electrică lungă funcţionând în gol:",
+        "options": {
+          "A": "produce putere reactivă",
+          "B": "absoarbe putere reactivă",
+          "C": "nu produce şi nu absoarbe putere reactivă"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-163=A | G2-ELEC-301=A"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://www2.iea.lth.se/publications/MS-Theses/Full%20document/5330_full_document.pdf",
+        "prior_ABC": "At no load an ordinary high voltage AC line has charging capacitance and produces capacitive reactive power A; B and C neglect line capacitance or reverse the dominant regime. Sign convention and AC assumption apply."
+      },
+      "editorial": {
+        "A": "La mers în gol, capacitatea liniei AC lungi injectează reactiv capacitiv.",
+        "B": "Linia în gol nu este tipic o sarcină inductivă netă în modelul uzual.",
+        "C": "Capacitatea distribuită nu poate fi ignorată în modelul liniei lungi în gol.",
+        "scope_or_countermodel": "Regim AC, convenție de semn și condiții de pierderi necesită precizare.",
+        "unofficial_rephrase": "Ce efect reactiv apare într-o linie lungă AC alimentată și fără receptor?",
+        "rephrase_answer": "Predomină generarea reactivă capacitivă.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0155",
+      "grade_ids": [
+        "G1-ELE-164",
+        "G2-ELEC-302"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "171",
+        "stem": "O linie electrică lungă funcţionând în scurtcircuit:",
+        "options": {
+          "A": "absoarbe putere reactivă",
+          "B": "produce putere reactivă",
+          "C": "nu produce şi nu absoarbe putere reactivă"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-164=A | G2-ELEC-302=A"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models",
+        "prior_ABC": "In standard non-resonant short-circuited AC line approximations inductive series impedance absorbs reactive power A; capacitive shunt and resonant long-line cases prevent universal extrapolation. B and C are not the intended standard circuit model."
+      },
+      "editorial": {
+        "A": "Impedanța serie inductivă a unei linii AC în scurtcircuit absoarbe reactivă în modelul ne-rezonant.",
+        "B": "Regimul capacitiv dominant poate apărea în alte condiții, dar nu este descrierea standard a scurtului inductiv.",
+        "C": "Scurtcircuitul nu garantează că schimbul reactiv devine nul.",
+        "scope_or_countermodel": "La linii foarte lungi poate conta capacitatea distribuită și rezonanța; A nu este universal.",
+        "unofficial_rephrase": "Într-o inductanță ideală de reactanță X_L, ce tip de putere reactivă are Q=I²X_L?",
+        "rephrase_answer": "Absorbită inductivă.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0160",
+      "grade_ids": [
+        "G1-ELE-170",
+        "G2-ELEC-307"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "177",
+        "stem": "Între două noduri oarecare A şi B ale unei reţele electrice active, o sursă de tensiune de tensiune electromotoare E şi  fără impedanţă interioară, dar legată în serie cu o impedanţă Z, poate fi înlocuită cu o sursă de curent, de intensitate J şi fără admitanţă interioară, şuntată cu admitanţa Y, fără ca parametrii electrici la bornele A şi B  - tensiunea la borne şi curentul debitat prin aceste borne- să se schimbe,  dacă sunt îndeplinite condiţiile:",
+        "options": {
+          "A": "Z Y = 1                                        J=YE",
+          "B": "J=YE                                         Z=Y",
+          "C": "Z Y = 1                                       Z=Y"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-170=A | G2-ELEC-307=A"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://www.sciencedirect.com/topics/engineering/norton-equivalent-circuit",
+        "prior_ABC": "Voltage source E with series Z converts to current source J=E/Z with shunt Y=1/Z, so ZY=1 and J=YE A. B and C equate quantities with different dimensions."
+      },
+      "editorial": {
+        "A": "Pentru E în serie cu Z, Norton are Y=1/Z și J=YE.",
+        "B": "Z=Y compară impedanță cu admitanță, cu unități diferite.",
+        "C": "C păstrează ZY=1 dar mai impune fals Z=Y.",
+        "scope_or_countermodel": "Condițiile cer Z nenulă și referință de curent/polaritate consecventă.",
+        "unofficial_rephrase": "Din E=12 V și Z=6 Ω, ce echivalent Norton obții?",
+        "rephrase_answer": "J=2 A, Y=1/6 S.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0162",
+      "grade_ids": [
+        "G1-ELE-172",
+        "G2-ELEC-309"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "179",
+        "stem": "Pentru materialele magnetice, relaţia dintre inducţia magnetică şi intensitatea câmpului magnetic:",
+        "options": {
+          "A": "este liniară",
+          "B": "este o egalitate",
+          "C": "este neliniară"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-172=C | G2-ELEC-309=C"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://link.springer.com/chapter/10.1007/978-981-95-8090-3_2",
+        "prior_ABC": "Ferromagnetic B-H dependence exhibits saturation and hysteresis C; A only local approximation and B equality is dimensionally invalid."
+      },
+      "editorial": {
+        "A": "Pentru feromagneți reali, linia B-H poate fi aproximată local liniar, nu pe întreg domeniul.",
+        "B": "B și H au unități distincte; literal B=H este invalid.",
+        "C": "Caracteristica B-H a feromagneților cu saturare/histerezis este neliniară.",
+        "scope_or_countermodel": "HOLD: materialele magnetice includ și dia-/paramagneți liniari în intervale uzuale; nu toți sunt neliniari.",
+        "unofficial_rephrase": "Un material diamagnetic slab cu μ constant are neapărat B-H neliniară?",
+        "rephrase_answer": "Nu, modelul poate fi liniar.",
+        "status": "SEMANTIC_HOLD",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0163",
+      "grade_ids": [
+        "G1-ELE-173",
+        "G2-ELEC-310"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "180",
+        "stem": "Pierderea de putere activa într-un element de reţea (transformator, LEA, LEC) , la aceeaşi putere aparentã vehiculatã, este direct proportionalã cu:",
+        "options": {
+          "A": "pătratul frecventei",
+          "B": "pătratul tensiunii reţelei",
+          "C": "pătratul curentului"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-173=C | G2-ELEC-310=C"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "prior_ABC": "For fixed equivalent resistance copper/Joule load loss is proportional to current squared C; not directly frequency squared A or voltage squared B at fixed apparent power. Total transformer loss includes core no-load components and is NOT universally I squared."
+      },
+      "editorial": {
+        "A": "La R și I date, pierderea Joule nu crește generic proporțional cu f².",
+        "B": "Pierderile Joule la S constantă și U mai mare nu sunt direct proporționale cu U².",
+        "C": "Componenta rezistivă de pierdere este P_cu=I²R.",
+        "scope_or_countermodel": "HOLD: pierderea totală a transformatorului include și pierderi în gol, deci nu este strict I²R.",
+        "unofficial_rephrase": "La P_total=P0+kI², dacă I se dublează, se multiplică toate pierderile cu 4?",
+        "rephrase_answer": "Nu, doar componenta kI², nu și P0.",
+        "status": "SEMANTIC_HOLD",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0169",
+      "grade_ids": [
+        "G1-ELE-180",
+        "G2-ELEC-316"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "187",
+        "stem": "Pentru micşorarea pierderilor de putere prin curenţi turbionari în piesele metalice mari parcurse de fluxuri magnetice variabile:",
+        "options": {
+          "A": "se limitează dimensiunile pieselor",
+          "B": "se execută piesele metalice din tole de oţel  cu adaus de siliciu pentru mărirea rezistivităţii, subţiri și izolate între ele",
+          "C": "se evită plasarea pieselor metalice masive în câmpuri magnetice variabile"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-180=B | G2-ELEC-316=B"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://www.allaboutcircuits.com/technical-articles/eddy-current-loss-what-it-is-and-how-to-reduce-it-with-laminated-cores/",
+        "prior_ABC": "Thin mutually insulated silicon-steel laminations reduce eddy currents and losses B. A cutting piece size and C avoiding large metal parts are not the general construction solution; the older grade-II row already contains evidence so do not count it as new."
+      },
+      "editorial": {
+        "A": "Reducerea dimensiunilor unei piese poate limita în anumite configurații buclele turbionare, deci A poate fi utilă.",
+        "B": "Toli subțiri izolate, de oțel silicios, reduc în mod standard pierderile turbionare ale miezurilor.",
+        "C": "Evitarea introducerii metalelor masive în câmpuri variabile poate reduce pierderile, dar nu este întotdeauna realizabilă.",
+        "scope_or_countermodel": "HOLD: A și C pot fi metode valide alături de B; «pentru micșorare» nu cere exclusiv soluția cu tole.",
+        "unofficial_rephrase": "Ce avantaj au tolele subțiri izolate în miezul unui transformator?",
+        "rephrase_answer": "Reduc curenții turbionari și pierderile asociate.",
+        "status": "SEMANTIC_HOLD",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0170",
+      "grade_ids": [
+        "G1-ELE-181",
+        "G2-ELEC-317"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "188",
+        "stem": "Pentru o linie electrică lungă care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei, puterea activă la extremitatea receptoare:",
+        "options": {
+          "A": "se numeşte putere caracteristică sau putere naturală",
+          "B": "depinde de lungimea liniei",
+          "C": "este independentă de tensiunea liniei"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-181=A | G2-ELEC-317=A"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://www.hsmuniversity.org/us/course/ele-380-power-systems-analysis/lesson-4-transmission-line-models",
+        "prior_ABC": "At load equal Zc the received power in ideal line is natural/characteristic power A; depends on voltage squared and Zc, so C is wrong. B may depend on lossy-line model but not definition of natural power."
+      },
+      "editorial": {
+        "A": "La Z_L=Zc pentru linie ideală, puterea transmisă este numită naturală sau caracteristică.",
+        "B": "În modele cu pierderi, lungimea poate influența puterea recepționată; nu schimbă definiția SIL.",
+        "C": "P_natural≈U_linie²/Zc, deci depinde de tensiunea liniei.",
+        "scope_or_countermodel": "Interpretarea simplă SIL este pentru linie adaptată, adesea cu pierderi neglijabile.",
+        "unofficial_rephrase": "La U_linie=300 kV și Zc=300 Ω, ce SIL ideal ai?",
+        "rephrase_answer": "300 MW.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0171",
+      "grade_ids": [
+        "G1-ELE-182",
+        "G2-ELEC-318"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "189",
+        "stem": "Pentru o linie electrică care alimentează un receptor ce are impedanţa egală cu impedanţa caracteristică a liniei:",
+        "options": {
+          "A": "energiile reactive, inductivă şi capacitivă, se compensează",
+          "B": "energia reactivă inductivă este mai mare decât cea capacitivă",
+          "C": "energia reactivă capacitivă este mai mare decât cea inductivă"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-182=A | G2-ELEC-318=A"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://eepowerschool.com/tools/transmission-line-parameters/",
+        "prior_ABC": "At surge impedance loading with lossless line its capacitive reactive production balances inductive absorption A; B and C incorrectly assert imbalance. Real line losses require qualification."
+      },
+      "editorial": {
+        "A": "În model ideal adaptat la Zc, puterea reactivă capacitivă produsă compensează absorbția inductivă.",
+        "B": "Absorbția inductivă dominantă se manifestă pentru alte încărcări decât SIL ideal.",
+        "C": "Producția capacitivă dominantă corespunde altui regim decât încărcarea naturală ideală.",
+        "scope_or_countermodel": "Bilanțul exact se formulează pentru linie fără pierderi, în regim potrivit.",
+        "unofficial_rephrase": "La încărcarea naturală a unei linii ideale, ce putere reactivă netă rezultă?",
+        "rephrase_answer": "Zero, din compensarea internă.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0172",
+      "grade_ids": [
+        "G1-ELE-183",
+        "G2-ELEC-319"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "190",
+        "stem": "Pentru o putere aparenta data puterea activa are valoarea maxima:",
+        "options": {
+          "A": "când factorul de putere =1",
+          "B": "când factorul de putere = 0",
+          "C": "când U = U max"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-183=A | G2-ELEC-319=A"
+      },
+      "prior_evidence": {
+        "ckpt238_blob": "3dbdee5026355e190ba3984a343b5cd150bcce75",
+        "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-4-power-in-an-ac-circuit",
+        "prior_ABC": "At fixed S power P=S*PF is maximized at PF=1 A; B PF=0 gives zero active power and C alone is insufficient. Standard passive steady-state meaning."
+      },
+      "editorial": {
+        "A": "La S fix, P=S×PF este maximă când PF=1.",
+        "B": "PF=0 produce P=0, nu maximum.",
+        "C": "U maxim nu garantează P maxim când S este specificată fixă.",
+        "scope_or_countermodel": "Factorul de putere se citește în definiția fizică standard a regimului.",
+        "unofficial_rephrase": "Pentru S=10 kVA și PF=0,8, ce P se obține?",
+        "rephrase_answer": "8 kW.",
+        "status": "PRELIMINARY_MODEL_DRAFT",
+        "independent_reviewer": "NOT_RUN",
+        "official_exam_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    }
+  ]
+}

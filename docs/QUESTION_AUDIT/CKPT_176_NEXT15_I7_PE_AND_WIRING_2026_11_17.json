@@ -1,0 +1,527 @@
+{
+  "checkpoint": "CKPT-176",
+  "date": "2026-11-17",
+  "head_before": "51f2ab275c3400f0f287a56ea9b70e0153e829d7",
+  "units": 15,
+  "grade_ids": 15,
+  "counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 12,
+    "CONDITIONAL_MODEL_OR_SOURCE": 1,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 2
+  },
+  "regression_note": "Earlier attempt halted on triage field-name mismatch `original_question` vs `question_original` before creating commits; fixed by using schema-specific fallback, canonical SHA/ABC remain exact.",
+  "learner_approval": 0,
+  "independent_QA": "NOT_RUN",
+  "cards": [
+    {
+      "unit_id": "AU-1ed32a4d6da88d8b",
+      "representative_id": "G1-NOR-068",
+      "grade_ids": [
+        "G1-NOR-068"
+      ],
+      "qabc_sha256": "1ed32a4d6da88d8bdc36be23b74bd5333c84bbeecd9aecadc625f19942474bc0",
+      "question_UNCHANGED": "În încăperi în care se impun condiţii speciale de protecţie datorită utilizatorilor (copii, bolnavi mintal etc.), prizele trebuie să fie",
+      "ABC_UNCHANGED": {
+        "A": "montate aparent",
+        "B": "prevăzute cu dispozitive de protecţie diferenţială ≤ 30 mA",
+        "C": "de tip îngropat"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-068": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §5.4.29 priză protejată prin DDR ≤30mA în încăperi vulnerabili; B, A/C doar mod de montare.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: surface mounting alone not protective condition",
+          "B": "B: source explicitly requires ≤30 mA residual protection",
+          "C": "C: flush construction alone not mandated instead of special cover"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-db903bb907f9c824",
+      "representative_id": "G1-NOR-069",
+      "grade_ids": [
+        "G1-NOR-069"
+      ],
+      "qabc_sha256": "db903bb907f9c824b252b35863f26dc93c6395bfb7dfa822f5108564020dcc55",
+      "question_UNCHANGED": "În încăperi în care se impun condiţii speciale de protecţie datorită utilizatorilor (copii, bolnavi mintal etc.), prizele trebuie să fie",
+      "ABC_UNCHANGED": {
+        "A": "de tip special (de ex. cu obturatori)",
+        "B": "de tip îngropat",
+        "C": "montate aparent"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-069": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §5.4.29 prize speciale cu obturatori și DDR; A, B/C nu garantează protecția.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: special socket e.g. shutters expressly mandated for vulnerable users",
+          "B": "B: flush mounting not substitute for special socket and RCD",
+          "C": "C: surface mounting not substitute for special socket and RCD"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-7a4075c1c70911a8",
+      "representative_id": "G1-NOR-070",
+      "grade_ids": [
+        "G1-NOR-070"
+      ],
+      "qabc_sha256": "7a4075c1c70911a8adf765ce64892051dc0c559af2f6b152692d6bd3f13e077e",
+      "question_UNCHANGED": "Întrerupătoarele, comutatoarele, şi butoanele de lumină trebuie montate:",
+      "ABC_UNCHANGED": {
+        "A": "numai pe conductoarele de fază",
+        "B": "numai pe conductorul de nul",
+        "C": "pe fază sau pe nul, nu are importanţă"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-070": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §5.4.22 întreruptoare și butoane iluminat numai pe fază; A.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: phase-only matching explicit lighting switch/button rule",
+          "B": "B: neutral-only leaves phases energized and violates condition",
+          "C": "C: arbitrary neutral/phase contradicts exact switch requirement"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-5781e4075fe69014",
+      "representative_id": "G1-NOR-071",
+      "grade_ids": [
+        "G1-NOR-071"
+      ],
+      "qabc_sha256": "5781e4075fe6901417ad796758da5e8c92c6c90551be6f28c1421271f04e877f",
+      "question_UNCHANGED": "Culoarea verde-galben pentru izolaţia conductoarelor si cablurilor se foloseşte pentru marcarea conductorului de:",
+      "ABC_UNCHANGED": {
+        "A": "faza",
+        "B": "neutru de lucru",
+        "C": "de protecţie şi de neutru"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-071": "C"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "evidence_conclusion": "I7 §5.1.4.3.1 verde-galben PE/PEN, plus bleu la capete pentru PEN; N separat este bleu. Varianta C «de protecție și de neutru» cere precizat explicit PEN.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: phase identification uses other colors, not green/yellow",
+          "B": "B: pure working neutral uses blue; green-yellow forbidden for ordinary N",
+          "C": "C: plausible only if 'protecție și neutru' means combined PEN, whose green/yellow length additionally requires blue marking at each end"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-45ff90f25df4d352",
+      "representative_id": "G1-NOR-072",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "qabc_sha256": "45ff90f25df4d3529478f4e7a7224f49785a95875558cdc5f72eda4719a911e6",
+      "question_UNCHANGED": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+      "ABC_UNCHANGED": {
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-072": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §5.5.2.3 fiecare conductor conectat la bara PE poate fi deconectat individual, numai cu sculă; B exact.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: source requires individual disconnection possibility",
+          "B": "B: combines individual disconnect, secure connection and only using a tool",
+          "C": "C: incomplete: misses 'secure/disconnect only with tool' from normative requirement"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-ecc5794682948a72",
+      "representative_id": "G1-NOR-073",
+      "grade_ids": [
+        "G1-NOR-073"
+      ],
+      "qabc_sha256": "ecc5794682948a727ca189cfb6509a257680a1f7a617e2e0d99007c873cb8f75",
+      "question_UNCHANGED": "Legăturile conductoarelor din aluminiu pentru îmbinări sau derivaţii trebuie să se facă:",
+      "ABC_UNCHANGED": {
+        "A": "prin răsucire şi matisare",
+        "B": "prin cleme speciale, prin presare cu scule speciale sau prin sudare",
+        "C": "prin lipire cu cositor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-073": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §5.2.6.8 cleme speciale, presare adecvată, sudare pentru Al; B, nu răsucire ori cositor simplu.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: twist splice not allowed by specific aluminum joint clause",
+          "B": "B: special clamp, pressing tools and welding listed",
+          "C": "C: simple solder with tin not approved as standalone alternative"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-678361f18abee8f7",
+      "representative_id": "G1-NOR-074",
+      "grade_ids": [
+        "G1-NOR-074"
+      ],
+      "qabc_sha256": "678361f18abee8f7ee3b89d9614b6eeb2da72c1447d2c0d4765e88d3de16eab5",
+      "question_UNCHANGED": "Marcarea conductorului neutru  care asigură simultan și funcţia de protecţie (PEN) se face",
+      "ABC_UNCHANGED": {
+        "A": "cu  culoarea bleu                                 pe toată  lungimea",
+        "B": "prin culori verde/galben pe toată  lungimea",
+        "C": "prin culori verde/galben pe toată  lungimea şi suplimentar marcare cu\n     culoarea bleu la fiecare extremitate;"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-074": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §5.1.4.3.1(b) PEN verde-galben toată lungimea și bleu extremități; C.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: blue throughout is plain N, insufficient for PEN marking",
+          "B": "B: green-yellow length alone misses mandatory blue extremity identification",
+          "C": "C: both green/yellow continuous and additional blue at ends matches PEN"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-8ee11788d3e82c7c",
+      "representative_id": "G1-NOR-075",
+      "grade_ids": [
+        "G1-NOR-075"
+      ],
+      "qabc_sha256": "8ee11788d3e82c7c886e0be9012fee67577f8508f7f779b83e0e5c8c91401f47",
+      "question_UNCHANGED": "Marcarea conductorului neutru (N) se face:",
+      "ABC_UNCHANGED": {
+        "A": "cu culoarea bleu                                   pe toată lungimea.",
+        "B": "prin culori verde/galben pe toată  lungimea",
+        "C": "cu culoarea bleu                           la fiecare extremitate;"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-075": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §5.1.4.3.1(c) N bleu toată lungimea; A cu excepțiile pentru anumite cabluri.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_04_ALL_20_SOURCE_SCOPE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "ABC": {
+          "A": "A: blue throughout is specified for N",
+          "B": "B: green/yellow throughout is PE not N",
+          "C": "C: blue only at ends insufficient as general N rule, special conductor exception requires qualification"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-adc41d99ade62168",
+      "representative_id": "G1-NOR-076",
+      "grade_ids": [
+        "G1-NOR-076"
+      ],
+      "qabc_sha256": "adc41d99ade6216863261e7f35d37cabc15ba2b206f83fa1aa5390ce5f57fa1b",
+      "question_UNCHANGED": "Conform normativului I-7-2011, o coloană electrică  este un circuit electric care:",
+      "ABC_UNCHANGED": {
+        "A": "alimentează un tablou de distribuţie.",
+        "B": "alimentează un receptor de putere",
+        "C": "alimentează mai multe surse de iluminat"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-076": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 cap2 coloană electrică alimentează unul SAU mai multe tablouri; A un tablou valid.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "ABC": {
+          "A": "A: electric supply circuit feeding one distribution board fits one or more boards definition",
+          "B": "B: a power receiving device is supplied by terminal circuit, not a distribution column",
+          "C": "C: several luminaires directly are a lighting terminal circuit, not a board-feeding column"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-918e84d88b129fbb",
+      "representative_id": "G1-NOR-077",
+      "grade_ids": [
+        "G1-NOR-077"
+      ],
+      "qabc_sha256": "918e84d88b129fbbf4ba4c6dc465be31c8562020887f24154ddd044613860431",
+      "question_UNCHANGED": "Conform normativului I-7-2011, o coloană electrică  este un circuit electric care:",
+      "ABC_UNCHANGED": {
+        "A": "alimentează mai multe surse de iluminat",
+        "B": "alimentează un receptor de putere",
+        "C": "alimentează mai multe tablouri de distribuţie."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-077": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 cap2 coloană electrică alimentează unul sau mai multe tablouri; C mai multe valid, A/B circuite terminale.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "ABC": {
+          "A": "A: a circuit directly feeding several luminaires is not defined as board-feeding column",
+          "B": "B: supply direct load is terminal rather than board supply",
+          "C": "C: feeding several distribution boards fits one-or-more board definition"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-f9f7a8a180bdbf81",
+      "representative_id": "G1-NOR-078",
+      "grade_ids": [
+        "G1-NOR-078"
+      ],
+      "qabc_sha256": "f9f7a8a180bdbf8104b345acef64806f6e722dd419648fc34b94d110ee6be837",
+      "question_UNCHANGED": "În cazul instalațiilor electrice de joasă tensiune, izolaţia de bază reprezintă:",
+      "ABC_UNCHANGED": {
+        "A": "Izolaţia care asigură protecţia de defect",
+        "B": "izolaţia părţilor active periculoase",
+        "C": "izolaţia maselor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-078": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §4.1.2 izolație de bază părți active periculoase, B.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "ABC": {
+          "A": "A: fault-protection insulation is supplementary/reinforced protection, not basic insulation alone",
+          "B": "B: base insulation is insulation of hazardous active parts providing basic protection",
+          "C": "C: insulation of exposed conductive masses is not term basic insulation"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-ed599de9822d8d6a",
+      "representative_id": "G1-NOR-079",
+      "grade_ids": [
+        "G1-NOR-079"
+      ],
+      "qabc_sha256": "ed599de9822d8d6a9eb1ae1d08729f1f3a789b6673c5f5dcddd9bb528ad066cf",
+      "question_UNCHANGED": ". Atunci când un echipament nu conţine, prin construcţie, caracteristici corespunzătoare influenţelor externe ale locului  (sau amplasamentului):",
+      "ABC_UNCHANGED": {
+        "A": "el nu poate fi utilizat în instalația electrică",
+        "B": "el poate fi totuşi utilizat cu condiţia ca instalația să fie montată în tub",
+        "C": "el poate fi totuşi utilizat cu condiţia să fie prevăzut cu o protecţie suplimentară corespunzătoare la realizarea instalaţiei"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-079": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §3.0.2.4-5 echipament poate fi folosit cu protecție suplimentară pentru influențe externe, C; A/C prea înguste.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "ABC": {
+          "A": "A: blanket prohibition ignores provision for suitable supplementary protection",
+          "B": "B: just adding a conduit is not necessarily adequate protection against all influences",
+          "C": "C: context-specific supplementary protection is conditional path to conformity"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-166b3e667838dc93",
+      "representative_id": "G1-NOR-080",
+      "grade_ids": [
+        "G1-NOR-080"
+      ],
+      "qabc_sha256": "166b3e667838dc93d74c12596ebc8bc02624cbcf663f2adfc547fa531ff8aef4",
+      "question_UNCHANGED": "Pentru instalaţiile electrice de iluminat şi putere (forţă):",
+      "ABC_UNCHANGED": {
+        "A": "se prevede întotdeauna tablou electric de distribuţie comun",
+        "B": "se prevăd întotdeauna tablouri electrice  de distribuţie diferite",
+        "C": "se prevede tablou electric de distribuţie comun, cu unele excepţii:"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-080": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "evidence_conclusion": "I7 §3.1.5.5 tablou comun iluminat/forță cu excepții; C, nu întotdeauna comun sau separat.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "ABC": {
+          "A": "A: 'always common' overgeneralizes across use/security circuits",
+          "B": "B: 'always separate' overgeneralizes, common boards can be allowed",
+          "C": "C: conditional common light/force board is intended"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-a605ad5abab07022",
+      "representative_id": "G1-NOR-081",
+      "grade_ids": [
+        "G1-NOR-081"
+      ],
+      "qabc_sha256": "a605ad5abab07022969b067c8b0dc1502c376b970ab460303af160da2fbb5b9a",
+      "question_UNCHANGED": "Montarea în contact direct cu materiale combustibile se admite",
+      "ABC_UNCHANGED": {
+        "A": "pentru cabluri cu izolație din PVC",
+        "B": "pentru toate tuburile şi plintele din materiale plastice",
+        "C": "pentru cabluri cu întârziere la propagarea flăcării"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-081": "C"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "evidence_conclusion": "I7 §3.0.3.7 spune cabluri rezistente la foc ȘI cu întârziere la propagarea flăcării. C descrie numai o proprietate; B toate tuburile false, A PVC nu garantează. Necesită analiză cumulativă/exemplificativă a conjuncției.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "ABC": {
+          "A": "A: PVC insulation alone does not demonstrate compliant fire classification",
+          "B": "B: all plastic pipes/ducts is too broad; must be approved for combustible surfaces",
+          "C": "C: flame-retardant cable is intended distractor-resistant option but source §3.0.3.7 requires BOTH fire-resistance and flame retardance; only one feature is listed"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    },
+    {
+      "unit_id": "AU-36a182d5fe982c52",
+      "representative_id": "G1-NOR-082",
+      "grade_ids": [
+        "G1-NOR-082"
+      ],
+      "qabc_sha256": "36a182d5fe982c521f643aa20fedc352735d018d5bcfb58c4a109f6d2a8a15b2",
+      "question_UNCHANGED": "Montarea în contact direct cu materiale combustibile se admite",
+      "ABC_UNCHANGED": {
+        "A": "pentru toate tuburile şi plintele din materiale plastice",
+        "B": "pentru cabluri rezistente la foc",
+        "C": "pentru cabluri cu izolație din PVC"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-NOR-082": "B"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "evidence_conclusion": "I7 §3.0.3.7 spune rezistente la foc ȘI întârziere la propagarea flăcării. B descrie numai prima proprietate, A toate tuburile și C PVC fals. Necesită stabilită cerință dublă vs tipuri de cabluri.",
+      "source_url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+      "source_access": "DIRECT_HTML_REOPENED_EXACT_RULE_WHERE_DESCRIBED; NOT_INDEPENDENT",
+      "prior_source": {
+        "path": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_NOR_05_ALL_20_SOURCE_ABC_TRIAGE_2026_11_12.csv",
+        "source_uri": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "ABC": {
+          "A": "A: not all plastic conduits are approved for combustible contact",
+          "B": "B: fire-resistant cable is intended but source §3.0.3.7 also requires delayed flame propagation",
+          "C": "C: PVC insulation alone insufficient to guarantee fire resistance/classification"
+        }
+      },
+      "independent_QA": "NOT_RUN",
+      "official_exam_key": "NOT_VERIFIED",
+      "approved_for_learning": "NO",
+      "canonical_mutation": false
+    }
+  ]
+}

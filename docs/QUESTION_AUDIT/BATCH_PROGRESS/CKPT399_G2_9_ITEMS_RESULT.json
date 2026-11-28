@@ -1,0 +1,133 @@
+{
+  "schema": "batch_progress_result_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT-399-G2-CLUSTER-01-03",
+  "task_id": "ANRE-G2-157-NEW-ORIGINAL-SOURCE-TRIAGE",
+  "verdict": "PROGRESSED",
+  "action": "CONTINUE_NEXT_UNFINISHED_BATCH",
+  "counts": {
+    "before": {
+      "items": 9,
+      "open_gates": 45,
+      "approved": 0,
+      "review_ready": 0
+    },
+    "after": {
+      "items": 9,
+      "open_gates": 36,
+      "approved": 0,
+      "review_ready": 0
+    }
+  },
+  "delta": {
+    "distinct_items_advanced": 9,
+    "stage_transitions": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0053",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0100",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0101",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0061",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0062",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0063",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0123",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0124",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0130",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      }
+    ],
+    "closed_gates": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0053",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0100",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0101",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0061",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0062",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0063",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0123",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0124",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0130",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      }
+    ],
+    "new_processed_items": [],
+    "evidence_only_items": [],
+    "regression_reasons": [],
+    "invalid_progress_claims": []
+  },
+  "audit_notice": "This session recomputed the repository gate's before-after criteria in a JS runtime; committed Node CLI and GitHub CI were not run. The evidence text and original source options were checked in V336, but official keys/independent review remain unproven."
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "V358_CKPT406_2_COD_RED_DISTINCT_G2_LEG_EXTERNAL_AI_REVIEW_TEXT_ONLY",
+  "date": "2026-11-23",
+  "parent": "CKPT405",
+  "counts": {
+    "new_distinct_GradeII_legal_items_external_AI_researched": 2,
+    "prior_non_caution_legislative_AI_items": 17,
+    "now_non_caution_legislative_AI_items": 19,
+    "official_ANRE_keys_verified": 0,
+    "qualified_human_QA_signed": 0,
+    "learner_releases": 0
+  },
+  "methods": "External independently researched source citations; two web PDF mirrors were opened; one screenshot p0 successful (cover only), actual clause pages p1/p2 screenshot cache miss and cannot be called visual authenticated. Extracted text of §§1.2.3 and 1.3 is present in two different mirror PDFs and consistent with contemporary ANRE / OD listing. Do NOT claim PDF full page visual verification.",
+  "notes": [
+    "Mirror 2019 edition is not guaranteed the fully applicable 2026 consolidated grade source",
+    "Current ANRE site indexes Cod RED Rev I Ord128/2008; official actual exam scored answers unverified."
+  ],
+  "items": [
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0032",
+      "original_question": "Codul tehnic al reţelelor electrice de distribuţie reglementează activitatea operatorilor de distribuţie:",
+      "original_ABC": {
+        "A": "la care acţionar principal este statul român",
+        "B": "la care acţionar majoritar nu este statul român",
+        "C": "tuturor operatorilor de distribuţie, indiferent de acţionarul majoritar"
+      },
+      "original_source_row": 32,
+      "original_stem_sha256": "128325611022c24fcaf4fe252349e63042fec97092a219ad2cadb98b43bdfac3",
+      "original_source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "prior_provisional_answer_NOT_official": "C",
+      "new_external_AI_candidate_NOT_official": "C",
+      "source_text_locator": "Cod RED Ord128/2008 Rev I §§1.3.1–1.3.2",
+      "source_scope_positive": "Code applies non-discriminatorily to operators of distribution networks in Romania, regardless of majority shareholder. 'All' is scoped to Romania, not global operators.",
+      "option_A_analysis": "State majority is not scope condition",
+      "option_B_analysis": "Non-state majority is not scope condition",
+      "option_C_analysis": "All Romanian distribution operators and users are in scope, not shareholding-based",
+      "source_url": "https://eds.ro/wp-content/uploads/2023/01/Ordinul-ANRE-128-2008-Cod-din-2008.pdf",
+      "external_AI_research_id": "resp_53b41048-cb47-464b-a2a6-133b4ee03073",
+      "web_pdf_text_checked": true,
+      "PDF_page_0_screenshot_rendered": true,
+      "PDF_page_1_and_2_screenshots_failed_cache_miss": true,
+      "qualified_reviewer_signed": false,
+      "official_exam_score_key_authenticated": false,
+      "full_2026_bibliography_certified": false,
+      "learner_released": false,
+      "scope_limit": "'Indiferent de acționar' is inferred from nondiscrimination, not direct literal wording."
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0076",
+      "original_question": "Printre obiectivele Codului tehnic al reţelelor electrice de distribuţie (Codul RED) se regăsesc:",
+      "original_ABC": {
+        "A": "Stabilirea unui set de reguli şi norme în vederea asigurării iluminatului public",
+        "B": "Stabilirea responsabilităţilor şi obligaţiilor operatorilor de distribuţie şi ale tuturor utilizatorilor reţelelor electrice de distribuţie ",
+        "C": "Stabilirea unui set de reguli şi norme în vederea asigurării accesului utilizatorilor la reţelele electrice de transport"
+      },
+      "original_source_row": 76,
+      "original_stem_sha256": "e9550c5acc92c57dc5f0ce9c8260146313d8030a15d75937de758ce501b0d8b9",
+      "original_source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "prior_provisional_answer_NOT_official": "B",
+      "new_external_AI_candidate_NOT_official": "B",
+      "source_text_locator": "Cod RED Ord128/2008 Rev I §1.2.3(b)",
+      "source_scope_positive": "A code objective explicitly sets responsibilities and obligations of distribution operators and all RED users.",
+      "option_A_analysis": "Public lighting objective is not listed in §1.2.3(a)",
+      "option_B_analysis": "Directly matches §1.2.3(b)",
+      "option_C_analysis": "Access objective §1.2.3(a) refers to RED distribution, not RET transmission",
+      "source_url": "https://eds.ro/wp-content/uploads/2023/01/Ordinul-ANRE-128-2008-Cod-din-2008.pdf",
+      "external_AI_research_id": "resp_53b41048-cb47-464b-a2a6-133b4ee03073",
+      "web_pdf_text_checked": true,
+      "PDF_page_0_screenshot_rendered": true,
+      "PDF_page_1_and_2_screenshots_failed_cache_miss": true,
+      "qualified_reviewer_signed": false,
+      "official_exam_score_key_authenticated": false,
+      "full_2026_bibliography_certified": false,
+      "learner_released": false,
+      "scope_limit": "Source mirror dated 2019; current applicability shown by ANRE listing but full 2026 edition not authenticated."
+    }
+  ],
+  "safety": [
+    "No QABC/keys/app changes",
+    "0 independent qualified final approvals"
+  ]
+}

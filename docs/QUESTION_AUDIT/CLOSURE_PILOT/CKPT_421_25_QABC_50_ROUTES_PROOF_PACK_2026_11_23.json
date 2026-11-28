@@ -1,0 +1,951 @@
+{
+  "schema": "ANRE_EDUCATIONAL_CLOSE_25_GROUPS_V1",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-421",
+  "parent": "CKPT-420",
+  "source_G_blob": "02950464fe624325f0bdfc2936fbd7c8d30a7309",
+  "source_R_blob": "db9d28deee65864f407da0f94e20cda86b3f6588",
+  "independent_AI_review_sessions": [
+    "resp_1762244d-f787-41bc-868b-0576b059b681",
+    "resp_0599a40f-eb9e-4097-a5b8-8da60a251669"
+  ],
+  "selection": "25 nonoverlapping previously unapproved original source groups with matching G1/G2 keys and exact ABC from existing drafts; not 25 random or duplicated grade routes",
+  "results": {
+    "prior_approved_grade_routes": 50,
+    "new_grade_routes": 50,
+    "new_distinct_groups": 25,
+    "after_validated_grade_routes": 100,
+    "after_distinct_groups": 53,
+    "historical_hold_routes_unchanged": 200,
+    "remaining_unflagged_routes": 522
+  },
+  "excluded_from_approval": [
+    {
+      "id": "QABC-0064",
+      "review_status": "CONDITIONAL",
+      "reason": "«factor de atenuare» could mean exponential coefficient vs time constant; not included"
+    },
+    {
+      "id": "QABC-0107",
+      "review_status": "CONDITIONAL",
+      "reason": "potential gradient distractor may be true in electrostatic model; not included"
+    },
+    {
+      "id": "QABC-0106",
+      "reason": "flux vs flux linkage precision kept out of this batch"
+    },
+    {
+      "id": "QABC-0053",
+      "reason": "historical multiple possible physical explanations of skin effect; kept out"
+    },
+    {
+      "id": "QABC-0054",
+      "reason": "reactive energy wording broad and potentially oversimplified; kept out"
+    }
+  ],
+  "evidence_scope": "Historical complete source and ABC editorial records reused; two real independent AI research sessions challenged 30 candidates and supported selected 25 in intended teaching models. All cited sources are historical source URLs, not individually fresh fetched at this checkpoint. Training app HTML/APK paragraphs and redistribution licenses were not verified here.",
+  "originals_keys_changed": false,
+  "certification_not_claimed": true,
+  "records": [
+    {
+      "qabc_id": "QABC-0029",
+      "grade_ids": [
+        "G1-ELE-034",
+        "G2-ELEC-182"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-034": "C",
+        "G2-ELEC-182": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 41,
+      "original": {
+        "stem": "Daca la un circuit al unei staţii de 6 sau 20 kV care funcţionează cu neutrul izolat apare o punere monofazatã netã la pământ, tensiunea fata de pământ a celorlalte doua faze:",
+        "A": "scade de 1,41 ori",
+        "B": "rămâne constanta",
+        "C": "creste de 1,73 ori"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+        "blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+        "per_option_explanation": {
+          "A": "În modelul cu neutru izolat, tensiunea față de pământ a fazelor sănătoase nu scade de 1,41 ori.",
+          "B": "La punere monofazată netă la pământ, tensiunea față de pământ a celorlalte faze nu rămâne neschimbată.",
+          "C": "Fazele sănătoase ajung ideal la tensiunea de linie, adică aproximativ √3 ori tensiunea inițială fază-pământ."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+      "prior_report": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+      "source_scope_assumption": "Neutral izolat, defect monofazat net și rețea ideală echilibrată: tensiunea fază-pământ sănătoasă crește cu √3.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0035",
+      "grade_ids": [
+        "G1-ELE-042",
+        "G2-ELEC-188"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-042": "B",
+        "G2-ELEC-188": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 49,
+      "original": {
+        "stem": "Curentul care circula printr-un circuit de curent alternativ, având rezistenta r=3 Ω, reactanţa x= 4 Ω si la bornele căruia se aplica o tensiune de 220 V este:",
+        "A": "31,5 A",
+        "B": "44 A",
+        "C": "53,4 A"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+        "blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+        "per_option_explanation": {
+          "A": "31,5 A nu rezultă din impedanța de modul 5 Ω.",
+          "B": "|Z|=√(3²+4²)=5 Ω, iar I=220/5=44 A.",
+          "C": "53,4 A nu corespunde parametrilor de impedanță și tensiune."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/college-physics/pages/23-section-summary",
+      "prior_report": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+      "source_scope_assumption": "AC serie R=3Ω X=4Ω: |Z|=5Ω și 220V/5Ω=44A (tensiune eficace).",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0037",
+      "grade_ids": [
+        "G1-ELE-044",
+        "G2-ELEC-190"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-044": "C",
+        "G2-ELEC-190": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 51,
+      "original": {
+        "stem": "Durata de viata a lămpilor cu incandescenta:",
+        "A": "creste odată cu creşterea frecventei",
+        "B": "scade odată cu scăderea tensiunii",
+        "C": "scade odată cu creşterea tensiunii"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+        "blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+        "per_option_explanation": {
+          "A": "Frecvența rețelei nu definește direct, de una singură, scurtarea vieții unui filament incandescent.",
+          "B": "Reducerea tensiunii scade de obicei temperatura filamentului și tinde să prelungească viața.",
+          "C": "Supratensiunea crește temperatura și evaporarea filamentului, reducând viața becului."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://www.mdpi.com/1996-1073/17/22/5590",
+      "prior_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "source_scope_assumption": "Lampa incandescentă cu filament de wolfram: creșterea tensiunii nominale de funcționare micșorează durata de viață.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0049",
+      "grade_ids": [
+        "G1-ELE-056",
+        "G2-ELEC-202"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-056": "A",
+        "G2-ELEC-202": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 63,
+      "original": {
+        "stem": "Diferenţa de potenţial la bornele a n baterii de condensatoare montate în serie este egală cu:",
+        "A": "suma diferenţelor de potenţial la bornele fiecărui condensator",
+        "B": "diferenţa de potenţial la bornele fiecărui condensator în parte",
+        "C": "diferenţa de potenţial a unui condensator împărţită la n"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+        "blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+        "per_option_explanation": {
+          "A": "La condensatoare în serie, tensiunea totală este suma algebrică a căderilor individuale conform legii lui Kirchhoff.",
+          "B": "Tensiunea pe un singur condensator este egală cu totalul doar în cazuri degenerate, nu pentru n elemente uzuale.",
+          "C": "Împărțirea tensiunii unui element la n nu reprezintă tensiunea totală."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+      "prior_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "source_scope_assumption": "Suma algebrică a tensiunilor pe condensatoare în serie dă tensiunea la bornele lanțului.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0051",
+      "grade_ids": [
+        "G1-ELE-059",
+        "G2-ELEC-204"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-059": "C",
+        "G2-ELEC-204": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 66,
+      "original": {
+        "stem": "În cazul conexiunii în stea la transformator:",
+        "A": "tensiunea de linie este egala cu tensiunea de faza",
+        "B": "curentul de linie este egal cu ~1,73 x curentul de faza",
+        "C": "tensiunea de linie este egala cu ~1,73 x tensiunea de faza"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+        "blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+        "per_option_explanation": {
+          "A": "În stea echilibrată, tensiunea dintre faze nu este egală cu cea între fază și neutru.",
+          "B": "Curentul de linie în stea este egal cu curentul de fază, nu √3 ori acesta.",
+          "C": "Tensiunea de linie are modul √3·U_fază în sistemul stea simetric."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_%28Kirtley%29/03%3A_Polyphase_Networks/3.03%3A_Line-Line_Voltages",
+      "prior_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "source_scope_assumption": "În stea simetrică Ulinie=√3 Ufază, dar Ilinie=Ifază.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0052",
+      "grade_ids": [
+        "G1-ELE-060",
+        "G2-ELEC-205"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-060": "A",
+        "G2-ELEC-205": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 67,
+      "original": {
+        "stem": "Efectul pelicular al curentului alternativ este utilizat în:",
+        "A": "încălzirea materialelor prin inducţie",
+        "B": "eliminarea dezechilibrelor din reţeaua electrică",
+        "C": "eliminarea distorsiunilor undelor de curent"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+        "blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+        "per_option_explanation": {
+          "A": "Încălzirea prin inducție folosește curenți turbionari în piesă și poate exploata concentrarea lor la suprafață (efect pelicular).",
+          "B": "Efectul pelicular nu elimină dezechilibrul rețelei electrice.",
+          "C": "Nu este o metodă generală de eliminare a distorsiunilor armonice."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://technav.ieee.org/topic/skin-effect/",
+      "prior_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "source_scope_assumption": "Efectul pelicular și curenții turbionari sunt exploatați la încălzirea prin inducție, dependentă de frecvență.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0057",
+      "grade_ids": [
+        "G1-ELE-065",
+        "G2-ELEC-210"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-065": "C",
+        "G2-ELEC-210": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 72,
+      "original": {
+        "stem": "În cazul producerii unui scurtcircuit într-o instalaţie, are loc următorul fenomen:",
+        "A": "creste tensiunea de alimentare a instalaţiei",
+        "B": "creste impedanţa echivalenta a instalaţiei",
+        "C": "creste curentul de alimentare a instalaţiei"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+        "blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+        "per_option_explanation": {
+          "A": "Într-un scurtcircuit uzual tensiunea la locul defectului poate scădea, nu crește.",
+          "B": "Un traseu cu defect de impedanță mică nu crește de regulă impedanța echivalentă către sursă.",
+          "C": "Curentul de defect crește brusc înainte de intervenția protecțiilor, limitat de sursa reală și impedanța buclei."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://www.mdpi.com/1996-1073/16/2/811",
+      "prior_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "source_scope_assumption": "La debutul defectului și înaintea declanșării, scurtcircuitul micșorează impedanța și ridică curentul de defect.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0058",
+      "grade_ids": [
+        "G1-ELE-066",
+        "G2-ELEC-211"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-066": "A",
+        "G2-ELEC-211": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 73,
+      "original": {
+        "stem": "Enunţul \"sarcinile electrice nu pot fi create și nici distruse, ci doar mutate\" reprezintă o consecință pentru:",
+        "A": "legea conservării sarcinii electrice",
+        "B": "legea lui Coulomb",
+        "C": "legea lui Laplace"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+        "blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+        "per_option_explanation": {
+          "A": "Enunțul exprimă conservarea sarcinii electrice totale.",
+          "B": "Legea Coulomb descrie forța electrostatică, nu conservarea sarcinii.",
+          "C": "Legea Laplace descrie o forță magnetică, nu conservarea sarcinii."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "prior_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "source_scope_assumption": "Conservarea sarcinii nete electrice, chiar dacă perechi opuse se pot produce fizic.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0060",
+      "grade_ids": [
+        "G1-ELE-068",
+        "G2-ELEC-213"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-068": "A",
+        "G2-ELEC-213": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 75,
+      "original": {
+        "stem": "Expresia B x i x l , unde i este intensitatea curentului care străbate un conductor de lungime l, situat perpendicular pe câmpul de inducţie magnetică de mărime B, reprezintă:",
+        "A": "o forţă",
+        "B": "o tensiune",
+        "C": "o rezistenţă"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+        "blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+        "per_option_explanation": {
+          "A": "Pentru conductor perpendicular pe B, modulul forței magnetice este F=B·i·l, în N.",
+          "B": "Formula nu are unitatea unui volt.",
+          "C": "Formula nu are unitatea unui ohm."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+      "prior_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "source_scope_assumption": "B*i*l este modulul forței pe conductor perpendicular pe B, în câmp aproximativ uniform.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0066",
+      "grade_ids": [
+        "G1-ELE-074",
+        "G2-ELEC-219"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-074": "A",
+        "G2-ELEC-219": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 81,
+      "original": {
+        "stem": "Folosirea conductoarelor jumelate în construcţia LEA are ca scop principal:",
+        "A": "reducerea pierderilor Corona",
+        "B": "reducerea solicitărilor mecanice ale stâlpilor",
+        "C": "reducerea curenţilor de scurtcircuit"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+        "blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+        "per_option_explanation": {
+          "A": "Conductoarele jumelate reduc gradientul electric local la suprafață și ajută la reducerea fenomenului Corona.",
+          "B": "Mai mulți subconductori nu garantează reducerea solicitărilor mecanice ale stâlpilor.",
+          "C": "Nu sunt un dispozitiv de limitare a curentului de scurtcircuit."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://ctcglobal.com/wp-content/uploads/2023/05/Engineering_Transmission_Lines_with_ACCC_Conductor.pdf",
+      "prior_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "source_scope_assumption": "Conductoare jumelate la LEA reduc gradientul câmpului la suprafață și pierderile corona.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0071",
+      "grade_ids": [
+        "G1-ELE-079",
+        "G2-ELEC-224"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-079": "A",
+        "G2-ELEC-224": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 86,
+      "original": {
+        "stem": "Tensiunea electromotoare indusă într-un circuit închis, prin variaţia fluxului magnetic, este:",
+        "A": "direct proporţională cu variaţia în timp a fluxului magnetic",
+        "B": "invers proporţională cu variaţia în timp a fluxului magnetic",
+        "C": "dependentă de modul în care este produs fluxul magnetic"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+        "blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+        "per_option_explanation": {
+          "A": "Legea Faraday afirmă că modulul FEM depinde de viteza variației fluxului magnetic; A este intenția didactică.",
+          "B": "Dependența nu este invers proporțională cu variația în timp a fluxului.",
+          "C": "Pentru același dΦ/dt, FEM nu depinde de metoda concretă de producere a fluxului; semnul depinde de convenția de orientare."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/13-3-motional-emf",
+      "prior_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "source_scope_assumption": "Legea Faraday: mărimea FEM induse e proporțională cu derivata temporală a fluxului; Lenz stabilește semnul.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0108",
+      "grade_ids": [
+        "G1-ELE-117",
+        "G2-ELEC-259"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-117": "A",
+        "G2-ELEC-259": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 124,
+      "original": {
+        "stem": "Intensitatea câmpului magnetic într-un punct exterior unui conductor rectiliniu străbătut de curentul continuu de intensitate i, aflat la distanţă r de conductor este:",
+        "A": "invers proporţională cu r",
+        "B": "direct proporţională cu pătratul lui r",
+        "C": "direct proporţională cu r"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "per_option_explanation": {
+          "A": "La conductor rectiliniu suficient de lung H=I/(2πr), deci depinde invers de r.",
+          "B": "Creșterea cu r² contrazice formula pentru fir lung.",
+          "C": "Creșterea liniară cu r contrazice formula pentru fir lung."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/12-2-magnetic-field-due-to-a-thin-straight-wire",
+      "prior_report": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+      "source_scope_assumption": "Pentru conductor drept lung H=i/(2πr), deci proporțional cu 1/r.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_1762244d-f787-41bc-868b-0576b059b681",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0110",
+      "grade_ids": [
+        "G1-ELE-119",
+        "G2-ELEC-261"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-119": "C",
+        "G2-ELEC-261": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 126,
+      "original": {
+        "stem": "Într-un circuit format dintr-un rezistor de rezistenta R în serie cu o bobina de inductanţa L, în momentul alimentarii de la o sursa de curent continuu cu tensiune U:",
+        "A": "curentul creste instantaneu la valoarea U/R",
+        "B": "curentul nu circula prin acest circuit",
+        "C": "curentul ajunge la valoarea U/R după un timp"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "per_option_explanation": {
+          "A": "La conectarea sursei DC, curentul bobinei nu sare instantaneu de la zero la U/R.",
+          "B": "Un curent tranzitoriu începe să circule și crește gradual; B este fals.",
+          "C": "Curentul tinde spre U/R pentru t≫L/R, nu atinge exact această limită într-un timp finit în modelul ideal."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/14-4-rl-circuits",
+      "prior_report": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+      "source_scope_assumption": "La pornirea RL în c.c. curentul crește către U/R asimptotic, după câteva constante de timp.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0111",
+      "grade_ids": [
+        "G1-ELE-120",
+        "G2-ELEC-262"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-120": "C",
+        "G2-ELEC-262": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 127,
+      "original": {
+        "stem": "Într-un circuit R-L serie de curent alternativ, tensiunea la bornele rezistorului este de 100 V, iar tensiunea la bornele bobinei este de 70 V. Tensiunea la bornele circuitului R-L este:",
+        "A": "170V",
+        "B": "30 V",
+        "C": "122 V"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "per_option_explanation": {
+          "A": "170 V ar fi suma scalară, dar U_R și U_L sunt ortogonale în modelul de R și L ideale.",
+          "B": "30 V este diferența scalară, nejustificată pentru fazori perpendiculari.",
+          "C": "U=√(100²+70²)≈122 V, rezultatul vectorial."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive",
+      "prior_report": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+      "source_scope_assumption": "RL serie ideal sinusoidal: U=√(100²+70²)≈122V, nu suma aritmetică.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0118",
+      "grade_ids": [
+        "G1-ELE-127",
+        "G2-ELEC-267"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-127": "A",
+        "G2-ELEC-267": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 134,
+      "original": {
+        "stem": "Într-un circuit de curent alternativ în care puterea activa absorbita este 4 kW iar puterea reactiva este de 3 kVAr, factorul de putere este:",
+        "A": "0,8",
+        "B": "0,75",
+        "C": "4/3"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "per_option_explanation": {
+          "A": "P=4 kW și Q=3 kvar dau S=5 kVA și factorul de putere P/S=0,8.",
+          "B": "0,75 nu corespunde triunghiului de puteri 3–4–5.",
+          "C": "4/3 depășește 1, deci este imposibil pentru acest factor de putere."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/college-physics-2e/pages/23-13-power-in-an-ac-circuit",
+      "prior_report": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+      "source_scope_assumption": "Puterea aparentă √(4²+3²)=5kVA, factor de putere P/S=0,8.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0121",
+      "grade_ids": [
+        "G1-ELE-130",
+        "G2-ELEC-270"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-130": "A",
+        "G2-ELEC-270": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 137,
+      "original": {
+        "stem": "Într-un circuit rezistiv, având rezistenta R=5 ohm si la bornele căruia se aplica o tensiune de 100 V, curentul este de:",
+        "A": "20 A",
+        "B": "500 A",
+        "C": "95 A"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "per_option_explanation": {
+          "A": "I=U/R=100/5=20 A.",
+          "B": "500 A rezultă din multiplicare eronată U·R.",
+          "C": "95 A rezultă din scăderea unor mărimi cu unități diferite."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+      "prior_report": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+      "source_scope_assumption": "Circuit rezistiv ideal: I=100V/5Ω=20A.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0126",
+      "grade_ids": [
+        "G1-ELE-135",
+        "G2-ELEC-275"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-135": "B",
+        "G2-ELEC-275": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 142,
+      "original": {
+        "stem": "Inversa rezistenţei echivalente a n rezistoare legate în paralel este egală cu:",
+        "A": "suma rezistenţelor celor n rezistoare",
+        "B": "suma inverselor rezistenţelor celor n rezistoare",
+        "C": "suma pătratelor rezistenţelor celor n rezistoare"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+        "blob_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+        "per_option_explanation": {
+          "A": "Suma rezistențelor este expresia pentru conectarea lor în serie.",
+          "B": "Pentru paralel: 1/R_eq=Σ(1/R_i), suma conductanțelor.",
+          "C": "Suma pătratelor nu are dimensiunea potrivită pentru inversul rezistenței."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "prior_report": "CKPT_234_GFR_15_P2_G1_ELE_111_135_ELECTRIC_LAWS_FORMULA_2026_11_18.md",
+      "source_scope_assumption": "Rezistențe în paralel: 1/Req=Σ1/Rk.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0200",
+      "grade_ids": [
+        "G1-ELE-211",
+        "G2-ELEC-347"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-211": "B",
+        "G2-ELEC-347": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 218,
+      "original": {
+        "stem": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 3 ohm, montate în paralel, este:",
+        "A": "3 ohm",
+        "B": "1 ohm",
+        "C": "9 ohm"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "per_option_explanation": {
+          "A": "3 Ω este valoarea unei singure rezistențe, nu a celor trei legate în paralel.",
+          "B": "Prin 1/Req=1/3+1/3+1/3, rezistența echivalentă este 1 Ω.",
+          "C": "9 Ω reprezintă suma pentru trei rezistențe de 3 Ω montate în serie."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+      "prior_report": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+      "source_scope_assumption": "Trei rezistențe egale 3Ω în paralel: Req=1Ω.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0201",
+      "grade_ids": [
+        "G1-ELE-212",
+        "G2-ELEC-348"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-212": "A",
+        "G2-ELEC-348": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 219,
+      "original": {
+        "stem": "Rezistivitatea unui conductor electric depinde de:",
+        "A": "natura materialului",
+        "B": "lungime, direct proporţional",
+        "C": "masa, direct proporţional"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "per_option_explanation": {
+          "A": "Rezistivitatea ρ este caracteristica materialului și depinde și de temperatură.",
+          "B": "Lungimea modifică rezistența R=ρL/A, nu rezistivitatea materialului în condiții uniforme.",
+          "C": "Masa nu stabilește direct rezistivitatea materialului; poate corela geometria dar nu proprietatea intrinsecă."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "prior_report": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+      "source_scope_assumption": "Rezistivitatea este proprietate de material și temperatură, nu lungime sau masă conductor.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0224",
+      "grade_ids": [
+        "G1-ELE-235",
+        "G2-ELEC-371"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-235": "B",
+        "G2-ELEC-371": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 242,
+      "original": {
+        "stem": "Suma tensiunilor electromotoare ale unui sistem trifazat simetric este:",
+        "A": "egală cu 1",
+        "B": "nulă",
+        "C": "egală cu 1/2"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "per_option_explanation": {
+          "A": "O sumă de FEM exprimată ca «1» ignoră că tensiunile sunt fazori cu unități.",
+          "B": "Trei tensiuni electromotoare egale și decalate cu 120° au suma fazorială nulă.",
+          "C": "«1/2» nu este suma fazorială a trei FEM simetrice."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://www.phasetophase.nl/book/book_2_7.html",
+      "prior_report": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+      "source_scope_assumption": "Tensiunile electromotoare ale unui sistem trifazat simetric au sumă fazorială nulă.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0228",
+      "grade_ids": [
+        "G1-ELE-239",
+        "G2-ELEC-375"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-239": "A",
+        "G2-ELEC-375": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 246,
+      "original": {
+        "stem": "Tesla este unitatea de măsură a:",
+        "A": "inducţiei magnetice",
+        "B": "fluxului magnetic",
+        "C": "intensităţii câmpului magnetic"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "per_option_explanation": {
+          "A": "Tesla este unitatea SI a inducției magnetice B, adică densitatea fluxului magnetic.",
+          "B": "Fluxul magnetic Φ are unitatea weber (Wb), nu tesla.",
+          "C": "Intensitatea câmpului magnetic H are unitatea A/m, nu tesla."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://goldbook.iupac.org/terms/view/T06283",
+      "prior_report": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+      "source_scope_assumption": "Tesla (T) este unitatea inducției magnetice B; fluxul este în Wb, H în A/m.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0231",
+      "grade_ids": [
+        "G1-ELE-242",
+        "G2-ELEC-378"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-242": "C",
+        "G2-ELEC-378": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 249,
+      "original": {
+        "stem": "Un motor electric trifazat legat în stea este în funcţiune si alimentat la 0,4 kV. Tensiunea între neutrul stelei si una dintre faze este:",
+        "A": "0,4 kV",
+        "B": "0 V",
+        "C": "230 V"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "per_option_explanation": {
+          "A": "0,4 kV este tensiunea între faze a rețelei nominale, nu tensiunea unei înfășurări în stea.",
+          "B": "Neutrul stelei nu are 0 V față de fază în funcționare normală la tensiune nominală.",
+          "C": "În stea simetrică, U_fază=400/√3≈230,9 V."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://www.electrical-installation.org/enwiki/Definition_of_voltage_ranges",
+      "prior_report": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+      "source_scope_assumption": "Stea echilibrată la 400V între linii: tensiunea pe fază este 400/√3≈230V.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0040",
+      "grade_ids": [
+        "G1-ELE-047",
+        "G2-ELEC-193"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-047": "A",
+        "G2-ELEC-193": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 54,
+      "original": {
+        "stem": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unei bobine este:",
+        "A": "mai puţin deformat decât tensiunea care i-a dat naştere",
+        "B": "mult mai deformat decât tensiunea care i-a dat naştere",
+        "C": "sinusoidal"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+        "blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+        "per_option_explanation": {
+          "A": "Bobina ideală liniară opune reactanță nωL armonicii de ordin n, deci armonicile în curent sunt relativ atenuate.",
+          "B": "Un curent mai deformat decât tensiunea este caracteristic altei ponderări, nu bobinei ideale în acest model.",
+          "C": "O tensiune cu armonici nenule produce și curent armonic, deci nu automat sinusoidal."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive",
+      "prior_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "source_scope_assumption": "Pentru bobină ideală liniară, armonicile de rang mai înalt ale curentului sunt diminuate față de tensiune.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0041",
+      "grade_ids": [
+        "G1-ELE-048",
+        "G2-ELEC-194"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-048": "A",
+        "G2-ELEC-194": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 55,
+      "original": {
+        "stem": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unui condensator este:",
+        "A": "mult mai deformat decât tensiunea care i-a dat naştere",
+        "B": "sinusoidal",
+        "C": "mai puţin deformat decât tensiune care i-a dat naştere"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+        "blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+        "per_option_explanation": {
+          "A": "Pentru condensator ideal, I_n=nωCU_n: armonicile superioare sunt amplificate în curent relativ la fundamentală.",
+          "B": "O tensiune nesinusoidală pe un C ideal nu dă în general curent sinusoidal.",
+          "C": "«Mai puțin deformat» descrie modelul bobinei ideale, nu derivarea temporală în condensator."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive",
+      "prior_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "source_scope_assumption": "Condensatorul ideal amplifică relativ armonicile curentului față de armonicile tensiunii nesinusoidale.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0202",
+      "grade_ids": [
+        "G1-ELE-213",
+        "G2-ELEC-349"
+      ],
+      "imported_keys_UNCHANGED": {
+        "G1-ELE-213": "A",
+        "G2-ELEC-349": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 220,
+      "original": {
+        "stem": "Rezonanţa se obţine într-un circuit electric de curent alternativ dacă:",
+        "A": "reactanţele inductivă şi capacitivă în valoare absolută sunt egale",
+        "B": "reactanţa inductivă este mai mare decât reactanţa capacitivă",
+        "C": "reactanţa capacitivă este mai mare decât reactanţa inductivă"
+      },
+      "existing_card": {
+        "path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+        "blob_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+        "per_option_explanation": {
+          "A": "În modelul RLC serie, rezonanța se produce când |X_L|=|X_C| astfel încât reactanțele se compensează.",
+          "B": "Dacă X_L>X_C, circuitul rămâne net inductiv și nu este la rezonanța serie.",
+          "C": "Dacă X_C>X_L, circuitul este net capacitiv și nu este la rezonanța serie."
+        }
+      },
+      "prior_primary_or_textbook_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-5-resonance-in-an-ac-circuit",
+      "prior_report": "CKPT_240_GFR_15_FOUNDATION_ELECTROTEHNICA_2026_11_19.md",
+      "source_scope_assumption": "Rezonanța de serie în model RLC simplu când |XL|=|XC|, reactanța netă nulă.",
+      "independent_reviewer_result": "PASS_TEACHING_MODEL_WITH_STATED_CAVEATS",
+      "review_id": "resp_0599a40f-eb9e-4097-a5b8-8da60a251669",
+      "technical_content_gate": "VALIDATED_FOR_LEARNING_CONTENT",
+      "official_ANRE_exam_scoring_certified": false,
+      "app_HTML_APK_integrated": false
+    }
+  ]
+}

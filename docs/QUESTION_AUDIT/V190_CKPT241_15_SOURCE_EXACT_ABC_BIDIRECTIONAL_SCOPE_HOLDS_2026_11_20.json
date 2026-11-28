@@ -1,0 +1,659 @@
+{
+  "schema": "v190_ckpt241_15_full_A_B_C_editorial_source_exact_provisional",
+  "date": "2026-11-20",
+  "prior_head": "06084aa2a398ac6742599a1cf03a378b5918b6fe",
+  "source_checkpoint_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+  "v189_blob_sha": "3bf42baca866616cc66d3b5f5e1ff986459d5275",
+  "counts": {
+    "new_unique_qabc": 15,
+    "grade_routes": 30,
+    "A_B_C_explanations": 45,
+    "reformulations": 15,
+    "semantic_hold_candidates": 6,
+    "learner_approved": 0
+  },
+  "semantic_hold_candidates": [
+    {
+      "unit_id": "QABC-0119",
+      "reason": "HOLD_INFERRED_PURE_L"
+    },
+    {
+      "unit_id": "QABC-0125",
+      "reason": "HOLD_ABSOLUTE_IDEAL_TOROID"
+    },
+    {
+      "unit_id": "QABC-0137",
+      "reason": "HOLD_OLTC_POSITION_DESIGN"
+    },
+    {
+      "unit_id": "QABC-0142",
+      "reason": "HOLD_UNDEFINED_RELIABILITY"
+    },
+    {
+      "unit_id": "QABC-0183",
+      "reason": "HOLD_STARTER_TERMINOLOGY"
+    },
+    {
+      "unit_id": "QABC-0192",
+      "reason": "HOLD_GENERIC_MOTOR_REACTANCE"
+    }
+  ],
+  "review_caveat": "Only editorial and same-assistant source checks, not independent qualified technical or linguistic QA. Historic sources vary from opened HTML to search-only; source_original equality inherited from V189/V175; no final ANRE exam scoring key authenticated. No key, question, app or barem changes.",
+  "cards": [
+    {
+      "unit_id": "QABC-0119",
+      "grade_ids": [
+        "G1-ELE-128",
+        "G2-ELEC-268"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "135",
+        "stem": "Într-un circuit electric monofazat cu caracter inductiv tensiunea este defazata fata de curent:",
+        "A": "înainte cu 90 de grade",
+        "B": "cu zero grade (sunt în faza)",
+        "C": "cu 90 de grade în urma",
+        "imported_keys_UNCHANGED": "G1-ELE-128=A | G2-ELEC-268=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "source_locator": "Inductor: current lags voltage by pi/2 for pure ideal L",
+        "historical_rationale": "A presupune bobină pur inductivă L ideală și atunci U este înaintea I cu 90°. Pentru circuit cu R>0 și X_L>0 unghiul este φ=atan(X_L/R) în intervalul (0°;90°), astfel răspunsul A nu este universal pentru orice circuit cu «caracter inductiv». B este adevărat numai pentru φ=0 (rezistiv), C indică defazaj capacitiv. Necesită marcaj AMBIGUOUS_MODEL.",
+        "source_access_2026_11_20": "LIVE_OPENSTAX"
+      },
+      "editorial_draft": {
+        "A": "90° este adevărat doar pentru o inductanță ideală cu R=0; enunțul cere un circuit «cu caracter inductiv», care poate conține rezistență.",
+        "B": "0° este cazul pur rezistiv, nu inductiv net.",
+        "C": "U în urmă cu 90° caracterizează cazul pur capacitiv, nu inductiv.",
+        "model_scope_or_trap": "φ=arctan(XL/R) este între 0° și 90° pentru RL cu R>0; 90° este idealizare.",
+        "reformulated_question": "Dacă R=XL într-un RL serie, cât este avansul de fază al tensiunii?",
+        "reformulated_solution": "45°, nu 90°.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "HOLD_INFERRED_PURE_L",
+        "option_pairwise_comparison": "A/B: 90° ideal inductiv față de 0° rezistiv; A/C: sensuri opuse; B/C: niciuna pentru RL inductiv general",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0125",
+      "grade_ids": [
+        "G1-ELE-134",
+        "G2-ELEC-274"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "141",
+        "stem": "Intr-un tor (solenoid de formă circulară bobinat), energia magnetică produsă de un curent care străbate bobinajul torului este localizată:",
+        "A": "integral în câmpul magnetic din volumul torului",
+        "B": "integral în câmpul magnetic din afara torului",
+        "C": "1/2 din energie este înmagazinată în volumul torului, iar 1/2 în afara torului",
+        "imported_keys_UNCHANGED": "G1-ELE-134=A | G2-ELEC-274=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/12-6-solenoids-and-toroids",
+        "source_locator": "Toroids paragraphs 113-145; outside ideal toroid B=0; finite winding leakage",
+        "historical_rationale": "A corespunde toroidului ideal uniform bobinat: câmpul și energia sa sunt localizate în interior. B pretinde exclusiv exterior, fals în model. C împărțire 50/50 nejustificată. Sursa confirmă un câmp de scăpări mic la spire reale, deci «integral» nu este absolut pentru toroid fizic; condiție de model.",
+        "source_access_2026_11_20": "LIVE_OPENSTAX"
+      },
+      "editorial_draft": {
+        "A": "În toroidul ideal și simetric energia este localizată în câmpul din interior.",
+        "B": "Exclusiv exterior contrazice câmpul interior din modelul toroidal.",
+        "C": "Împărțirea arbitrară 50/50 nu este dedusă din legea lui Ampère.",
+        "model_scope_or_trap": "Cuvântul «integral» ignoră câmpul de scăpări al bobinajului real.",
+        "reformulated_question": "Un toroid real cu spire înfășurate elicoidal produce exact zero câmp în exterior?",
+        "reformulated_solution": "Nu, poate produce un câmp exterior mic.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "HOLD_ABSOLUTE_IDEAL_TOROID",
+        "option_pairwise_comparison": "A/B: interior vs exterior exclusiv; A/C: integral vs jumătate; B/C: integral exterior vs jumătate",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0137",
+      "grade_ids": [
+        "G1-ELE-146",
+        "G2-ELEC-284"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "153",
+        "stem": "La transformatoarele la care comutarea ploturilor se face cu transformatorul în sarcina, comutatorul de ploturi se montează:",
+        "A": "pe înfăşurarea de tensiune mai mica, deoarece tensiunea este mai mica",
+        "B": "pe înfăşurarea de tensiune mai mare, deoarece curentul este mai mic",
+        "C": "pe oricare dintre înfăşurări",
+        "imported_keys_UNCHANGED": "G1-ELE-146=B | G2-ELEC-284=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://www.reinhausen.com/newsroom/mr-knowledge-base/tap-changer-basics",
+        "source_locator": "OLTC position high-voltage or low-voltage winding depends on transformer design and client requirements",
+        "historical_rationale": "B descrie amplasarea uzuală pe înfășurarea cu tensiune mai mare și curent mai mic pentru aceeași putere; A are argumentul tensiunii mici dar nu acoperă practica tipică. C «oricare» poate fi tehnic posibil în proiectări speciale, iar Reinhausen afirmă explicit că poziționarea este condiționată de design. Nu declara B universal.",
+        "source_access_2026_11_20": "LIVE_REINHAUSEN"
+      },
+      "editorial_draft": {
+        "A": "Pe partea de tensiune joasă curentul este uzual mai mare la aceeași putere, deci motivarea nu este cea tipică.",
+        "B": "Montarea pe înfășurarea cu tensiune mai mare reduce uzual curentul comutat, în multe proiecte.",
+        "C": "Poate fi tehnic posibilă amplasarea pe oricare parte, în funcție de proiect; nu este alegere necondiționată.",
+        "model_scope_or_trap": "Reinhausen spune că poziția HV/LV depinde de proiectare și specificațiile clientului; B este uzuală, nu universală.",
+        "reformulated_question": "Un OLTC poate fi amplasat constructiv pe înfășurarea de joasă tensiune?",
+        "reformulated_solution": "Da, anumite proiecte permit această amplasare.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_OLTC_POSITION_DESIGN",
+        "option_pairwise_comparison": "A/B: curentul scade la tensiune mare; A/C: A nu exclude construcția LV; B/C: tipic vs posibil, suprapunere",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0142",
+      "grade_ids": [
+        "G1-ELE-151",
+        "G2-ELEC-289"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "158",
+        "stem": "O siguranţa mai mare în alimentarea consumatorilor de energie electrica se realizează prin:",
+        "A": "reţele radiale",
+        "B": "reţele buclate cu funcţionare radialã",
+        "C": "reţele buclate",
+        "imported_keys_UNCHANGED": "G1-ELE-151=C | G2-ELEC-289=C"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://ieeexplore.ieee.org/document/9162500/",
+        "source_locator": "IEEE urban mesh-constructed radial-operated outage transfer adjacent feeders; full paper not available",
+        "historical_rationale": "C rețele buclate exploatate efectiv în buclă pot furniza redundanță și căi alternative; A radial simplu poate pierde alimentarea pentru un defect pe trunchi. B buclat cu exploatare radială permite restabilire prin manevre, poate oferi fiabilitate ridicată. Comparația B vs C nu este universală: protecția, exploatarea și continuitatea serviciului fac verdictul dependent de condiții. MARCAT AMBIGUU; sursa este numai rezumatul de căutare.",
+        "source_access_2026_11_20": "HISTORICAL_SEARCH_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Rețeaua radială simplă poate rămâne fără alimentare aval după defect.",
+        "B": "Buclată dar exploatată radial permite restabilirea prin transfer, cu manevre adecvate.",
+        "C": "O rețea exploatată buclat poate asigura căi redundante, dacă protecțiile și capacitatea permit.",
+        "model_scope_or_trap": "B și C nu se ordonează universal fără criteriu de continuitate, protecții și scenariu de defect.",
+        "reformulated_question": "Poate fi realimentată prin manevră o porțiune a unei rețele buclate exploatate radial?",
+        "reformulated_solution": "Da, dacă există legături, separare și capacitate pentru transfer.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "HOLD_UNDEFINED_RELIABILITY",
+        "option_pairwise_comparison": "A/B: B are trasee de rezervă; A/C: C poate oferi redundanță; B/C: ambele pot fi fiabile, criteriu insuficient",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0146",
+      "grade_ids": [
+        "G1-ELE-155",
+        "G2-ELEC-293"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "162",
+        "stem": "Mărirea cuplului de pornire şi micşorarea curentului de pornire la motoarele asincrone cu rotorul în scurtcircuit se face:",
+        "A": "prin deconectarea şi reconectarea lor la reţeaua de alimentare",
+        "B": "numai prin utilizarea motoarelor cu rotorul în dublă colivie",
+        "C": "prin utilizarea motoarelor cu rotorul în colivie cu bare înalte",
+        "imported_keys_UNCHANGED": "G1-ELE-155=C | G2-ELEC-293=C"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://yourelectricalguide.com/2023/04/influence-of-rotor-parameters-on-torque-speed-curves.html",
+        "source_locator": "Deep Bar Rotors section: high-starting torque with lower current; double cage alternative",
+        "historical_rationale": "C barele înalte prin efect pelicular cresc rezistența efectivă la pornire, cresc cuplul relativ și pot reduce curentul de pornire. A reconectarea simplă nu produce tehnica solicitată. B «numai» cu dublă colivie este exclus de varianta cu bare înalte. Ambele construcții pot fi utile; C singura opțiune fără exclusivitate falsă.",
+        "source_access_2026_11_20": "HISTORICAL_OPENED_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Deconectarea și reconectarea nu conferă rotorului caracteristica constructivă necesară.",
+        "B": "«Numai» dubla colivie este fals: barele înalte reprezintă altă soluție.",
+        "C": "Barele înalte folosesc efectul pelicular pentru modificarea rezistenței efective la pornire și pot îmbunătăți cuplul/curentul.",
+        "model_scope_or_trap": "Nu transforma efectul de bare înalte în garanție universală; depinde de construcție și sarcină.",
+        "reformulated_question": "De ce crește rezistența efectivă a barei înalte la pornire?",
+        "reformulated_solution": "Din distribuția neuniformă a curentului la frecvența rotorului mare.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED",
+        "option_pairwise_comparison": "A/B: ambele nu identifică răspunsul general; A/C: C schimbă construcția rotorului; B/C: «numai» contrazis de bare înalte",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0164",
+      "grade_ids": [
+        "G1-ELE-175",
+        "G2-ELEC-311"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "182",
+        "stem": "Care dintre urmatoarele enunturi nu este adevarat:",
+        "A": "energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;",
+        "B": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de functionare",
+        "C": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de utilizare al puterii maxime.",
+        "imported_keys_UNCHANGED": "G1-ELE-175=B | G2-ELEC-311=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://www.eia.gov/tools/glossary/index.php?id=load",
+        "source_locator": "Glossary load factor average and peak load; mathematical relation E=P_avg*T=P_max*T_equiv derived",
+        "historical_rationale": "A E=Pmediu·T este definiția puterii medii pe interval; C E=Pmax·T_utilizare este definiția timpului echivalent de utilizare a puterii maxime. B E=Pmax·T_total nu este adevărat în general decât încărcare constantă la maxim, de aceea este enunțul fals cerut. Sursa EIA verifică termenii mediu/vârf dar definiția specifică T_utilizare trebuie confirmată în materialul ANRE.",
+        "source_access_2026_11_20": "LIVE_EIA_PARTIAL_SCOPE"
+      },
+      "editorial_draft": {
+        "A": "Identitate: E=P_medie×T pentru media pe intervalul T.",
+        "B": "E=P_max×T_total este falsă în general dacă sarcina variază; adevărată doar pentru putere maximă continuă.",
+        "C": "E=P_max×T_utilizare este definiția timpului echivalent T_utilizare=E/P_max.",
+        "model_scope_or_trap": "Se cere enunțul fals, iar «timp de utilizare» nu este «durată totală».",
+        "reformulated_question": "10 kW timp de 2 ore și zero timp de 2 ore. Cât este E și T_utilizare?",
+        "reformulated_solution": "20 kWh și 2 ore, deși durata totală este 4 ore.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED",
+        "option_pairwise_comparison": "A/B: coincid doar la sarcină constantă maximă; A/C: ambele dau energia corectă; B/C: durate diferite",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0165",
+      "grade_ids": [
+        "G1-ELE-176",
+        "G2-ELEC-312"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "183",
+        "stem": "Pentru calculul curenţilor de scurtcircuit într-o reţea prin metoda componentelor simetrice, reţeaua inversă (negativă) se compune din:",
+        "A": "impedanţe identice cu ale reţelei directe (pozitive) pentru elemente statice și impedanţe diferite de ale reţelei directe (pozitive) pentru maşini rotative",
+        "B": "impedanţe identice cu ale reţelei directe (pozitive) atât pentru elemente statice cât și pentru maşini rotative",
+        "C": "impedanţe diferite de ale reţelei directe (pozitive) pentru elemente statice",
+        "imported_keys_UNCHANGED": "G1-ELE-176=A | G2-ELEC-312=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://studylib.net/doc/28003419/30023-2018",
+        "source_locator": "IEEE 3002.3-2018 section 6.7.2: static sequence impedances same positive/negative; rotating differ",
+        "historical_rationale": "A corespunde analizei uzuale: elementele statice liniare și simetrice au Z2≈Z1, iar mașinile rotative au impedanțe de secvență diferite. B impune Z2=Z1 inclusiv pentru mașini rotative, fals în general. C susține că Z2 static diferă, în general fals. Necesită exacta ediție oficială și condițiile mașinii; oglindă a unui standard restricționat nu este sursă certificată.",
+        "source_access_2026_11_20": "HISTORICAL_SECONDARY_MIRROR"
+      },
+      "editorial_draft": {
+        "A": "Pentru elemente statice trifazate simetrice și liniare Z2≈Z1; la mașini rotative Z2 poate diferi.",
+        "B": "Egalitatea secvențelor inclusiv pentru mașini rotative este greșită în general.",
+        "C": "Diferența obligatorie pentru componentele statice este falsă în modelul simetric.",
+        "model_scope_or_trap": "Depinde de modelul de secvență; oglinda unui standard nu autentifică ediția examenului.",
+        "reformulated_question": "Cum se compară Z1 și Z2 pentru o linie pasivă trifazată simetrică?",
+        "reformulated_solution": "De regulă sunt egale în modelul idealizat, spre deosebire de multe mașini rotative.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_NEEDS_STANDARD",
+        "option_pairwise_comparison": "A/B: diferă la mașini; A/C: staticile sunt tratate invers; B/C: niciuna nu păstrează distincția",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0166",
+      "grade_ids": [
+        "G1-ELE-177",
+        "G2-ELEC-313"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "184",
+        "stem": "Pentru limitarea curenţilor de scurtcircuit se utilizează bobine:",
+        "A": "înseriate pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+        "B": "racordate în derivaţie pe circuit, monofazate, fără miez de fier, răcite cu aer (uscate), de tip interior;",
+        "C": "înseriate pe circuit, monofazate, cu miez de fier, răcite cu ulei, de tip interior;",
+        "imported_keys_UNCHANGED": "G1-ELE-177=A | G2-ELEC-313=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://trench-group.com/air-core-coils/air-core-series-reactors/",
+        "source_locator": "Current Limiting Reactors: series air-core line/bus-tie reactors",
+        "historical_rationale": "A descrie o configurație tipică pentru limitarea curentului de defect: reactor în serie fără miez feromagnetic pentru a evita saturarea. B în derivație nu crește reactanța serie a traseului de scurtcircuit; C cu fier și ulei poate exista în alte aplicații dar nu este tipul uzual menționat. Specificațiile «monofazat de interior și uscat» nu sunt demonstrate ca obligatorii pentru orice caz.",
+        "source_access_2026_11_20": "LIVE_TRENCH"
+      },
+      "editorial_draft": {
+        "A": "Reactorul inseriat adaugă reactanță pe calea defectului; un miez de aer evită saturația feromagnetică puternică.",
+        "B": "Un reactor în derivație nu introduce direct reactanță în serie în calea scurtcircuitului.",
+        "C": "Un miez de fier cu răcire în ulei poate servi altor aplicații, dar nu este tipul serie cu miez de aer cerut.",
+        "model_scope_or_trap": "Sursa confirmă seria/miezul de aer, nu necesitatea universală a detaliilor «uscat, monofazat, interior».",
+        "reformulated_question": "Ce modificare aduce reactorul serie în impedanța văzută la scurtcircuit?",
+        "reformulated_solution": "Crește reactanța serie și reduce curentul calculat de defect.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_DESIGN_VARIANTS",
+        "option_pairwise_comparison": "A/B: serie vs derivație; A/C: ambele serie, dar tip constructiv diferit; B/C: B nu limitează direct prin reactanță serie",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0168",
+      "grade_ids": [
+        "G1-ELE-179",
+        "G2-ELEC-315"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "186",
+        "stem": "Puterea nominala a unui motor electric se defineşte astfel:",
+        "A": "puterea activã absorbitã de motor de la reţea când este alimentat la Un si absoarbe In",
+        "B": "puterea activã transmisã prin întrefierul motorului când este alimentat la Un si absoarbe In",
+        "C": "puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In",
+        "imported_keys_UNCHANGED": "G1-ELE-179=C | G2-ELEC-315=C"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://www.abb.com/global/en/news/132261/how-to-read-a-nema-motor-nameplate",
+        "source_locator": "ABB search excerpt: horsepower is mechanical motor output rating",
+        "historical_rationale": "C definește puterea mecanică nominală la arbore. A este puterea electrică absorbită înainte de pierderi; B puterea electromagnetică de întrefier, înainte de pierderile rotor/mecanice. Barem C este compatibil cu definițiile uzuale, dar pagina ABB a fost returnată incomplet la deschidere; locatorul exact nu este certificat.",
+        "source_access_2026_11_20": "LIVE_ABB_PAGE_MINIMAL"
+      },
+      "editorial_draft": {
+        "A": "Puterea activă absorbită este puterea de intrare, înainte de pierderile motorului.",
+        "B": "Puterea din întrefier este intermediară, înainte de pierderile în rotor și mecanice.",
+        "C": "Puterea nominală a motorului se referă uzual la ieșirea mecanică disponibilă la arbore.",
+        "model_scope_or_trap": "Motorul nu trebuie confundat cu generatorul; sursa ABB accesibilă numai ca titlu de pagină.",
+        "reformulated_question": "Motorul absoarbe 11 kW la η=90%. Cât livrează mecanic la arbore?",
+        "reformulated_solution": "9,9 kW.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED",
+        "option_pairwise_comparison": "A/B: intrare electrică vs putere în întrefier; A/C: intrare vs ieșire; B/C: înainte vs după pierderi",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0178",
+      "grade_ids": [
+        "G1-ELE-189",
+        "G2-ELEC-325"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "196",
+        "stem": "Potenţialul electrostatic în punctul M este  :",
+        "A": "lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M.",
+        "B": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă de la infinit până în punctul M",
+        "C": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă din punctul M până la infinit",
+        "imported_keys_UNCHANGED": "G1-ELE-189=A | G2-ELEC-325=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+        "source_locator": "Potential is work/charge or potential energy per unit test charge; infinity reference",
+        "historical_rationale": "A munca externă per sarcină pozitivă unitară din infinit la M definește potențialul electrostatic față de referința 0 la infinit. B și C vorbesc de forță și au unități N, nu J/C. Semnul depinde de distincția muncă externă versus muncă realizată de câmp; A «trebuie produs» presupune agent extern.",
+        "source_access_2026_11_20": "HISTORICAL_OPENSTAX"
+      },
+      "editorial_draft": {
+        "A": "Lucrul mecanic extern pentru a aduce sarcina pozitivă unitară de la infinit definește potențialul față de V(infinit)=0.",
+        "B": "Forța este măsurată în N, nu în V=J/C; nu definește potențialul.",
+        "C": "Schimbarea sensului transportului nu repară confuzia dintre forță și lucru mecanic per sarcină.",
+        "model_scope_or_trap": "Semnul necesită precizarea agentului extern versus lucrul câmpului.",
+        "reformulated_question": "Dacă ΔU=4 J pentru q=2 C, care este diferența de potențial?",
+        "reformulated_solution": "2 V.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED",
+        "option_pairwise_comparison": "A/B: lucrul/sarcină vs forță; A/C: aceeași confuzie de unități; B/C: două forțe nu descriu potențialul",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0182",
+      "grade_ids": [
+        "G1-ELE-193",
+        "G2-ELEC-329"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "200",
+        "stem": "Carcasa  unei celule electrice",
+        "A": "asigură numai protecţia persoanelor împotriva atingerii accidentale a pieselor aflate sub tensiune în funcţionare normală sau a pieselor în mişcare din interiorul învelişului;",
+        "B": "asigură protecţia echipamentului electric împotriva pătrunderii corpurilor străine şi a umezelii;",
+        "C": "asigură protecţia echipamentului electric împotriva supratensiunilor.",
+        "imported_keys_UNCHANGED": "G1-ELE-193=B | G2-ELEC-329=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://electrical-engineering-portal.com/installation-guidelines-mv-metal-enclosed-switchgear-controlgear-iec-62271-200",
+        "source_locator": "IEC 62271-200 enclosure IP protection against contact and ingress",
+        "historical_rationale": "B protejarea echipamentului împotriva pătrunderii corpurilor străine și umezelii corespunde funcției învelișului și gradului IP. A conține «numai», însă carcasa protejează și echipamentul; C nu asigură în sine protecție la supratensiuni. Verifică tipul celulei/grad IP, nu toate carcasele oferă aceeași etanșeitate.",
+        "source_access_2026_11_20": "LIVE_EEP"
+      },
+      "editorial_draft": {
+        "A": "«Numai» protecția persoanelor exclude incorect protecția echipamentului.",
+        "B": "Învelișul contribuie la blocarea pătrunderii corpurilor și umezelii conform gradului IP.",
+        "C": "Carcasa nu asigură singură protecția față de supratensiuni, pentru care se folosesc soluții dedicate.",
+        "model_scope_or_trap": "Protecția contra apei nu este identică pentru toate gradele IP.",
+        "reformulated_question": "Două carcase cu grade IP diferite oferă aceeași protecție la apă?",
+        "reformulated_solution": "Nu; trebuie citit gradul IP specific.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED_BY_IP",
+        "option_pairwise_comparison": "A/B: exclusivitatea A este falsă; A/C: protecție la contact vs supratensiune; B/C: pătrundere vs supratensiune",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0183",
+      "grade_ids": [
+        "G1-ELE-194",
+        "G2-ELEC-330"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "201",
+        "stem": "Principalul avantaj al motoarelor asincrone cu rotorul în scurtcircuit cu simplă colivie îl constituie:",
+        "A": "curentul mic de pornire",
+        "B": "pornirea fără dispozitiv de pornire",
+        "C": "cuplul de pornire foarte bun",
+        "imported_keys_UNCHANGED": "G1-ELE-194=B | G2-ELEC-330=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://easa.com/resources/resource-library/squirrel-cage-induction-motor-starting-methods",
+        "source_locator": "Across-the-line starting applies full voltage; reduced voltage starters alternatives",
+        "historical_rationale": "B sugerează că motorul simplă colivie poate porni direct la rețea fără dispozitiv special de pornire, avantaj uzual față de rotor bobinat. A «curent mic» este fals la pornirea directă; C «cuplu foarte bun» nu se aplică universal simplei colivii. B este condiționată de mărime/rețea/sarcină și tot este necesar aparat de manevră.",
+        "source_access_2026_11_20": "LIVE_EASA_PARTIAL"
+      },
+      "editorial_draft": {
+        "A": "La pornire directă curentul inițial al simplei colivii poate fi ridicat, nu mic.",
+        "B": "Pornirea directă este posibilă fără dispozitiv special de pornire pentru rotor, în condiții de rețea și protecție corespunzătoare.",
+        "C": "Cuplul de pornire foarte bun nu caracterizează în general colivia simplă pentru orice sarcină.",
+        "model_scope_or_trap": "«Fără dispozitiv de pornire» nu înseamnă lipsa contactorului, protecției sau condițiilor DOL; formularea poate induce eroare.",
+        "reformulated_question": "Poate porni direct la rețea un motor mic cu rotor în simplă colivie?",
+        "reformulated_solution": "Da, dacă instalația și motorul permit pornirea directă protejată.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_STARTER_TERMINOLOGY",
+        "option_pairwise_comparison": "A/B: DOL nu înseamnă curent redus; A/C: ambele generalizări; B/C: pornirea directă nu garantează cuplu foarte bun",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0184",
+      "grade_ids": [
+        "G1-ELE-195",
+        "G2-ELEC-331"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "202",
+        "stem": "Principalul avantaj al motoarelor de curent continuu îl constituie faptul că:",
+        "A": "permit reglarea în limite largi a turaţiei",
+        "B": "nu necesită întreţinere permanentă",
+        "C": "prezintă o construcţie simplă şi robustă",
+        "imported_keys_UNCHANGED": "G1-ELE-195=A | G2-ELEC-331=A"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://technav.ieee.org/topic/dc-motors/",
+        "source_locator": "IEEE topic summary wide-range speed control; page fetch cache miss",
+        "historical_rationale": "A turație reglabilă în limite largi prin tensiunea armăturii sau excitare descrie avantaj istoric al motoarelor DC. B lipsa întreținerii este fals pentru modelele cu colector; C construcția simplă robustă nu caracterizează tipic DC cu perii. Azi VFD pentru AC poate oferi beneficii comparabile; context istoric al baremului trebuie păstrat.",
+        "source_access_2026_11_20": "HISTORICAL_IEEE_SEARCH_ONLY"
+      },
+      "editorial_draft": {
+        "A": "Viteza motoarelor CC clasice poate fi variată într-o plajă largă prin tensiunea armăturii și flux.",
+        "B": "Modelele cu perii și colector necesită întreținere, deci «nu necesită» e fals în general.",
+        "C": "CC cu perii nu are automat cea mai simplă și robustă construcție.",
+        "model_scope_or_trap": "Este avantaj comparativ tradițional, nu exclusiv față de acționările AC moderne cu VFD.",
+        "reformulated_question": "Cum se poate regla turația unui motor CC cu excitație separată?",
+        "reformulated_solution": "Variind tensiunea armăturii și/sau fluxul în limite admise.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_HISTORIC_COMPARISON",
+        "option_pairwise_comparison": "A/B: turația reglabilă nu implică lipsă mentenanță; A/C: controlul nu implică simplitate; B/C: ambele ignoră perii/colector",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0192",
+      "grade_ids": [
+        "G1-ELE-203",
+        "G2-ELEC-339"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "210",
+        "stem": "Reactanţa supratranzitorie a unui motor este:",
+        "A": "direct proporţionala cu curentul de pornire",
+        "B": "invers proporţionala cu curentul de pornire",
+        "C": "invers proporţionala cu pătratul tensiunii de alimentare",
+        "imported_keys_UNCHANGED": "G1-ELE-203=B | G2-ELEC-339=B"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://help.easypower.com/ezp/25.0/Content/13_Database_Technical_Ref/Motor/Short_Circuit_Tab.htm",
+        "source_locator": "X double prime or locked-rotor reactance estimated as 100/LRM percent; starting current multiplier",
+        "historical_rationale": "B: la aceeași tensiune și bază de putere, reactanța/impedanța supratranzitorie echivalentă estimată este invers proporțională cu curentul de rotor blocat pornire. A inversează dependența; C indică pătratul tensiunii, nejustificat pentru reactanța intrinsecă. Precizare esențială: sursa tratează Xʺ sau Xlr aproximativ prin impedanță, neglijând explicit R și variații de saturație. Nu universal pentru orice motor.",
+        "source_access_2026_11_20": "LIVE_EASYPOWER"
+      },
+      "editorial_draft": {
+        "A": "La aceeași tensiune și bază, reactanța echivalentă mai mare duce la curent de pornire mai mic, nu direct proporțional.",
+        "B": "În aproximația rotorului blocat, impedanța relativă ~1/I_pornire; poate fi folosită estimarea X''[%]≈100/LRM.",
+        "C": "Reactanța nu este o proprietate invers proporțională general cu pătratul tensiunii de alimentare.",
+        "model_scope_or_trap": "Relația depinde de motor, raport X/R, saturație și baza per-unit; «motor» este nedefinit suficient.",
+        "reformulated_question": "Dacă LRM crește de la 5 la 10, cum variază 100/LRM?",
+        "reformulated_solution": "De la 20% la 10%, la model și bază fixate.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_GENERIC_MOTOR_REACTANCE",
+        "option_pairwise_comparison": "A/B: direcții opuse ale dependenței; A/C: ambele universalizări greșite; B/C: inverse-current aproximativ, nu inverse-U²",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0193",
+      "grade_ids": [
+        "G1-ELE-204",
+        "G2-ELEC-340"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "211",
+        "stem": "Un regim energetic  este deformant",
+        "A": "dacă undele de curent şi tensiune nu sunt periodice",
+        "B": "numai dacă undele de curent şi de tensiune sunt ambele periodice şi nesinusoidale",
+        "C": "undele de curent şi tensiune sunt periodice iar cel puțin una este nesinusoidală",
+        "imported_keys_UNCHANGED": "G1-ELE-204=C | G2-ELEC-340=C"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_241_GFR_15_P2_MODEL_AMBIGUITY_2026_11_19.md",
+        "source_blob_sha": "46b75aa0c334936cee3c52dc022d75acb259cdb0",
+        "reported_source": "https://www.electrical-installation.org/enwiki/Definition_of_harmonics",
+        "source_locator": "Harmonic currents and/or voltages deviate from sinusoidal waveforms under periodic operation",
+        "historical_rationale": "C: regim periodic în care cel puțin unul dintre curent/tensiune este nesinusoidal constituie regim deformant. A nu cere periodicitate, nu descrie modelul armonic staționar; B «numai ambele» fals pentru sarcină neliniară alimentată de tensiune sinusoidală cu curent distorsionat. Condițiile periodicității și frecvenței fundamentale sunt relevante.",
+        "source_access_2026_11_20": "LIVE_SCHNEIDER"
+      },
+      "editorial_draft": {
+        "A": "Nonperiodicitatea singură nu definește regimul periodic cu armonici.",
+        "B": "«Numai dacă ambele» este prea restrictiv: curentul poate fi deformat când tensiunea rămâne sinusoidală.",
+        "C": "Pentru regim periodic, cel puțin una dintre formele de undă nesinusoidală indică deformarea.",
+        "model_scope_or_trap": "Distingem regim permanent periodic de tranzitoriu neperiodic și cuantificatorul «cel puțin una».",
+        "reformulated_question": "Tensiunea este sinusoidală, curentul conține armonica a treia. Este regim deformant?",
+        "reformulated_solution": "Da; curentul periodic este nesinusoidal.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED_PERIODIC",
+        "option_pairwise_comparison": "A/B: neperiodic vs periodic; A/C: definiții diferite; B/C: B cere inutil ambele distorsionate",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "exact_2026_exam_key": "NOT_AUTHENTICATED",
+        "edition_specific_normative_review": "NOT_RUN",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

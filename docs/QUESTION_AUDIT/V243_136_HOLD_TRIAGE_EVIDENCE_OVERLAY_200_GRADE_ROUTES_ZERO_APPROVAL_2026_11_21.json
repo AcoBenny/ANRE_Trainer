@@ -1,0 +1,3603 @@
+{
+  "schema": "v243_gfr_semantic_triage_evidence_overlay_not_answer_approval",
+  "date": "2026-11-21",
+  "parent_head": "03ba526d3982939bbb751abad954012105a1f06c",
+  "previous_priority_queue": "V242_136_UNIQUE_SEMANTIC_HOLD_PRIORITY_QUEUE_AFTER_CKPT319_2026_11_21.json",
+  "source_manifest": "V241_568_QABC_ALL_FULL_ABC_822_GRADE_ROUTES_4_VERSION_HOLDS_2026_11_21.json",
+  "counts": {
+    "total_units": 568,
+    "total_grade_routes": 822,
+    "total_held_units": 136,
+    "total_held_grade_routes": 200,
+    "strict_historic_units_within_136": 6,
+    "nonstrict_held_units_triaged": 130,
+    "other_units_pending_final_QA": 432,
+    "other_grade_routes_pending_final_QA": 622,
+    "supplemental_held_units": 13,
+    "learning_approvals": 0
+  },
+  "notes": [
+    "All 136 research triage means initial case reading and targeted candidate-source checks; NOT completed source reauthentication, independent review, exact-version validation, or safe-for-learning approval.",
+    "The same original source row can appear in separate historical QABC grade routes (e.g. QABC-0143 and QABC-0568); do not auto-delete or merge them.",
+    "Future app source excerpts before/focus-bold/after must contain actual same-source adjacent text; nothing here certifies populated excerpts.",
+    "Candidate P0 tags prioritize investigation, not prove scored-key errors.",
+    "No original question/option/imported scoring key changed, no HTML/APK modification, no PR merge."
+  ],
+  "linked_semantic_clusters": [
+    {
+      "label": "Propagation constant dimensional error cross-grade",
+      "ids": [
+        "QABC-0143",
+        "QABC-0568"
+      ]
+    },
+    {
+      "label": "Neutral N section monophase two vs three conductors",
+      "ids": [
+        "QABC-0355",
+        "QABC-0356"
+      ]
+    },
+    {
+      "label": "Combustible materials cable dual fire requirements",
+      "ids": [
+        "QABC-0395",
+        "QABC-0396"
+      ]
+    },
+    {
+      "label": "2026 authorization tariff single vs combined",
+      "ids": [
+        "QABC-0555",
+        "QABC-0556"
+      ]
+    },
+    {
+      "label": "Electric flux E versus D",
+      "ids": [
+        "QABC-0065",
+        "QABC-0246"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "priority_index": 1,
+      "unit_id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "55",
+      "imported_key_changed": false,
+      "historical_strict_hold": true,
+      "candidate_risk_tags": [
+        "V150_STRICT_SOURCE_OR_KEY_VERSION",
+        "SAME_STEM_CHANGED_ABC",
+        "EXCLUSIVE_QUANTIFIER_REVIEW",
+        "MATERIALLY_ALTERED_TRAINER_VS_ANRE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_319_SIX_STRICT_SOURCE_CONTEXT_RECHECK_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 2,
+      "unit_id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "79",
+      "imported_key_changed": false,
+      "historical_strict_hold": true,
+      "candidate_risk_tags": [
+        "V150_STRICT_SOURCE_OR_KEY_VERSION",
+        "EXCLUSIVE_QUANTIFIER_REVIEW",
+        "MATERIALLY_ALTERED_TRAINER_VS_ANRE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_319_SIX_STRICT_SOURCE_CONTEXT_RECHECK_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 3,
+      "unit_id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "159",
+      "imported_key_changed": false,
+      "historical_strict_hold": true,
+      "candidate_risk_tags": [
+        "V150_STRICT_SOURCE_OR_KEY_VERSION",
+        "MATERIALLY_ALTERED_TRAINER_VS_ANRE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_319_SIX_STRICT_SOURCE_CONTEXT_RECHECK_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 4,
+      "unit_id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "254",
+      "imported_key_changed": false,
+      "historical_strict_hold": true,
+      "candidate_risk_tags": [
+        "V150_STRICT_SOURCE_OR_KEY_VERSION",
+        "MATERIALLY_ALTERED_TRAINER_VS_ANRE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_319_SIX_STRICT_SOURCE_CONTEXT_RECHECK_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 5,
+      "unit_id": "QABC-0017",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "25",
+      "imported_key_changed": false,
+      "historical_strict_hold": true,
+      "candidate_risk_tags": [
+        "V150_STRICT_SOURCE_OR_KEY_VERSION",
+        "CROSSGRADE_IMPORTED_KEY_DISAGREEMENT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_319_SIX_STRICT_SOURCE_CONTEXT_RECHECK_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 6,
+      "unit_id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "109",
+      "imported_key_changed": false,
+      "historical_strict_hold": true,
+      "candidate_risk_tags": [
+        "V150_STRICT_SOURCE_OR_KEY_VERSION",
+        "CROSSGRADE_IMPORTED_KEY_DISAGREEMENT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_319_SIX_STRICT_SOURCE_CONTEXT_RECHECK_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 7,
+      "unit_id": "QABC-0013",
+      "grade_ids": [
+        "G1-ELE-014",
+        "G2-ELEC-166"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V188_QABC0013_SOURCE_FREE_FIELD_EXACT_ANRE_TERM_COUNTEREXAMPLES_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "21",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 8,
+      "unit_id": "QABC-0019",
+      "grade_ids": [
+        "G1-ELE-020",
+        "G2-ELEC-172"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "27",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 9,
+      "unit_id": "QABC-0024",
+      "grade_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "35",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "TEXT_REFERS_TO_FIGURE_VERIFY_ORIGINAL_OOXML",
+        "AUTHENTIC_FIGURE_OR_TOPOLOGY_REQUIRED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 10,
+      "unit_id": "QABC-0025",
+      "grade_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "36",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 11,
+      "unit_id": "QABC-0036",
+      "grade_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "50",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 12,
+      "unit_id": "QABC-0044",
+      "grade_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "58",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 13,
+      "unit_id": "QABC-0046",
+      "grade_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "60",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 14,
+      "unit_id": "QABC-0050",
+      "grade_ids": [
+        "G1-ELE-057",
+        "G2-ELEC-203"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "64",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 15,
+      "unit_id": "QABC-0065",
+      "grade_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V198_CKPT254_FOUR_HIGH_RISK_EXACT_ABC_FIGURE_INVERTER_STATOR_FLUX_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "80",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 16,
+      "unit_id": "QABC-0069",
+      "grade_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "84",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 17,
+      "unit_id": "QABC-0080",
+      "grade_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "95",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 18,
+      "unit_id": "QABC-0082",
+      "grade_ids": [
+        "G1-ELE-090",
+        "G2-ELEC-234"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "97",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 19,
+      "unit_id": "QABC-0091",
+      "grade_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "106",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 20,
+      "unit_id": "QABC-0092",
+      "grade_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "107",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 21,
+      "unit_id": "QABC-0096",
+      "grade_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "111",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW",
+        "P0_CANDIDATE_TECHNICAL_FORMULATION_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_321_COMPLETE_FIRST_15_SEMANTIC_TRIAGE_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [
+        "CKPT_320_FIRST_SEMANTIC_SOURCE_REOPEN_5_OF_130_NO_APPROVAL_2026_11_21.md"
+      ],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 22,
+      "unit_id": "QABC-0105",
+      "grade_ids": [
+        "G1-ELE-114",
+        "G2-ELEC-256"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "121",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 23,
+      "unit_id": "QABC-0113",
+      "grade_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V199_11_MORE_SOURCE_MATCHED_ABC_P1P0_PROVISIONAL_CARDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "129",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 24,
+      "unit_id": "QABC-0115",
+      "grade_ids": [
+        "G1-ELE-124",
+        "G2-ELEC-266"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "131",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 25,
+      "unit_id": "QABC-0116",
+      "grade_ids": [
+        "G1-ELE-125"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "132",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 26,
+      "unit_id": "QABC-0117",
+      "grade_ids": [
+        "G1-ELE-126"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "133",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 27,
+      "unit_id": "QABC-0119",
+      "grade_ids": [
+        "G1-ELE-128",
+        "G2-ELEC-268"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "135",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 28,
+      "unit_id": "QABC-0125",
+      "grade_ids": [
+        "G1-ELE-134",
+        "G2-ELEC-274"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "141",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 29,
+      "unit_id": "QABC-0130",
+      "grade_ids": [
+        "G1-ELE-139",
+        "G2-ELEC-277"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "146",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 30,
+      "unit_id": "QABC-0131",
+      "grade_ids": [
+        "G1-ELE-140",
+        "G2-ELEC-278"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "147",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 31,
+      "unit_id": "QABC-0132",
+      "grade_ids": [
+        "G1-ELE-141",
+        "G2-ELEC-279"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "148",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 32,
+      "unit_id": "QABC-0137",
+      "grade_ids": [
+        "G1-ELE-146",
+        "G2-ELEC-284"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "153",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 33,
+      "unit_id": "QABC-0141",
+      "grade_ids": [
+        "G1-ELE-150",
+        "G2-ELEC-288"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "157",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 34,
+      "unit_id": "QABC-0142",
+      "grade_ids": [
+        "G1-ELE-151",
+        "G2-ELEC-289"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "158",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 35,
+      "unit_id": "QABC-0147",
+      "grade_ids": [
+        "G1-ELE-156",
+        "G2-ELEC-294"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "163",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 36,
+      "unit_id": "QABC-0156",
+      "grade_ids": [
+        "G1-ELE-165",
+        "G2-ELEC-303"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "172",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_322_SECOND_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 37,
+      "unit_id": "QABC-0157",
+      "grade_ids": [
+        "G1-ELE-166",
+        "G2-ELEC-304"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "173",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 38,
+      "unit_id": "QABC-0158",
+      "grade_ids": [
+        "G1-ELE-167",
+        "G2-ELEC-305"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "174",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "AUTHENTIC_FIGURE_OR_TOPOLOGY_REQUIRED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 39,
+      "unit_id": "QABC-0159",
+      "grade_ids": [
+        "G1-ELE-168",
+        "G2-ELEC-306"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "175",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "AUTHENTIC_FIGURE_OR_TOPOLOGY_REQUIRED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 40,
+      "unit_id": "QABC-0161",
+      "grade_ids": [
+        "G1-ELE-171",
+        "G2-ELEC-308"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "178",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 41,
+      "unit_id": "QABC-0162",
+      "grade_ids": [
+        "G1-ELE-172",
+        "G2-ELEC-309"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "179",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 42,
+      "unit_id": "QABC-0163",
+      "grade_ids": [
+        "G1-ELE-173",
+        "G2-ELEC-310"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "180",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 43,
+      "unit_id": "QABC-0167",
+      "grade_ids": [
+        "G1-ELE-178",
+        "G2-ELEC-314"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "185",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 44,
+      "unit_id": "QABC-0169",
+      "grade_ids": [
+        "G1-ELE-180",
+        "G2-ELEC-316"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "187",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 45,
+      "unit_id": "QABC-0183",
+      "grade_ids": [
+        "G1-ELE-194",
+        "G2-ELEC-330"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "201",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 46,
+      "unit_id": "QABC-0187",
+      "grade_ids": [
+        "G1-ELE-198",
+        "G2-ELEC-334"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "205",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 47,
+      "unit_id": "QABC-0188",
+      "grade_ids": [
+        "G1-ELE-199",
+        "G2-ELEC-335"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "206",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 48,
+      "unit_id": "QABC-0192",
+      "grade_ids": [
+        "G1-ELE-203",
+        "G2-ELEC-339"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "210",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 49,
+      "unit_id": "QABC-0196",
+      "grade_ids": [
+        "G1-ELE-207",
+        "G2-ELEC-343"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "214",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 50,
+      "unit_id": "QABC-0199",
+      "grade_ids": [
+        "G1-ELE-210",
+        "G2-ELEC-346"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "217",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 51,
+      "unit_id": "QABC-0205",
+      "grade_ids": [
+        "G1-ELE-216",
+        "G2-ELEC-352"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "223",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_323_THIRD_15_SEMANTIC_TRIAGE_EXACT_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 52,
+      "unit_id": "QABC-0208",
+      "grade_ids": [
+        "G1-ELE-219",
+        "G2-ELEC-355"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "226",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "TEXT_REFERS_TO_FIGURE_VERIFY_ORIGINAL_OOXML",
+        "P0_CANDIDATE_TECHNICAL_FORMULATION_CONFLICT",
+        "AUTHENTIC_FIGURE_OR_TOPOLOGY_REQUIRED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 53,
+      "unit_id": "QABC-0210",
+      "grade_ids": [
+        "G1-ELE-221",
+        "G2-ELEC-357"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "228",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_TECHNICAL_FORMULATION_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 54,
+      "unit_id": "QABC-0211",
+      "grade_ids": [
+        "G1-ELE-222",
+        "G2-ELEC-358"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "229",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 55,
+      "unit_id": "QABC-0213",
+      "grade_ids": [
+        "G1-ELE-224",
+        "G2-ELEC-360"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "231",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 56,
+      "unit_id": "QABC-0214",
+      "grade_ids": [
+        "G1-ELE-225",
+        "G2-ELEC-361"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "232",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 57,
+      "unit_id": "QABC-0215",
+      "grade_ids": [
+        "G1-ELE-226",
+        "G2-ELEC-362"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "233",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 58,
+      "unit_id": "QABC-0217",
+      "grade_ids": [
+        "G1-ELE-228",
+        "G2-ELEC-364"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "235",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 59,
+      "unit_id": "QABC-0218",
+      "grade_ids": [
+        "G1-ELE-229",
+        "G2-ELEC-365"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "236",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 60,
+      "unit_id": "QABC-0220",
+      "grade_ids": [
+        "G1-ELE-231",
+        "G2-ELEC-367"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "238",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 61,
+      "unit_id": "QABC-0221",
+      "grade_ids": [
+        "G1-ELE-232",
+        "G2-ELEC-368"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "239",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 62,
+      "unit_id": "QABC-0222",
+      "grade_ids": [
+        "G1-ELE-233",
+        "G2-ELEC-369"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "240",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 63,
+      "unit_id": "QABC-0234",
+      "grade_ids": [
+        "G1-ELE-245",
+        "G2-ELEC-381"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "252",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 64,
+      "unit_id": "QABC-0235",
+      "grade_ids": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "253",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "AUTHENTIC_FIGURE_OR_TOPOLOGY_REQUIRED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 65,
+      "unit_id": "QABC-0243",
+      "grade_ids": [
+        "G1-ELE-254",
+        "G2-ELEC-389"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "261",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 66,
+      "unit_id": "QABC-0246",
+      "grade_ids": [
+        "G1-ELE-257",
+        "G2-ELEC-392"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "264",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_324_FOURTH_15_SEMANTIC_TRIAGE_TECH_SOURCE_SCOPE_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 67,
+      "unit_id": "QABC-0250",
+      "grade_ids": [
+        "G1-ELE-261",
+        "G2-ELEC-396"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "268",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 68,
+      "unit_id": "QABC-0253",
+      "grade_ids": [
+        "G1-ELE-264",
+        "G2-ELEC-399"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "271",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 69,
+      "unit_id": "QABC-0254",
+      "grade_ids": [
+        "G1-ELE-265",
+        "G2-ELEC-400"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "272",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 70,
+      "unit_id": "QABC-0256",
+      "grade_ids": [
+        "G1-ELE-267"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V205_7_REMAINING_ELEC_ORIGINAL_ABC_BUSBAR_POWER_DRAWOUT_2026_11_20.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "274",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 71,
+      "unit_id": "QABC-0266",
+      "grade_ids": [
+        "G1-LEG-002"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "9",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 72,
+      "unit_id": "QABC-0271",
+      "grade_ids": [
+        "G1-LEG-007"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "14",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 73,
+      "unit_id": "QABC-0275",
+      "grade_ids": [
+        "G1-LEG-011"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "18",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 74,
+      "unit_id": "QABC-0279",
+      "grade_ids": [
+        "G1-LEG-015"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "22",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 75,
+      "unit_id": "QABC-0281",
+      "grade_ids": [
+        "G1-LEG-017"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "24",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC",
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 76,
+      "unit_id": "QABC-0283",
+      "grade_ids": [
+        "G1-LEG-019"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "26",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 77,
+      "unit_id": "QABC-0284",
+      "grade_ids": [
+        "G1-LEG-020"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "27",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 78,
+      "unit_id": "QABC-0288",
+      "grade_ids": [
+        "G1-LEG-024"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "31",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 79,
+      "unit_id": "QABC-0290",
+      "grade_ids": [
+        "G1-LEG-026"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "33",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 80,
+      "unit_id": "QABC-0292",
+      "grade_ids": [
+        "G1-LEG-028"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "35",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 81,
+      "unit_id": "QABC-0293",
+      "grade_ids": [
+        "G1-LEG-029"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "36",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_325_FIFTH_15_SEMANTIC_LEGAL_TECH_TRIAGE_CONFLICTS_NO_APPROVAL_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 82,
+      "unit_id": "QABC-0295",
+      "grade_ids": [
+        "G1-LEG-031"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "38",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 83,
+      "unit_id": "QABC-0296",
+      "grade_ids": [
+        "G1-LEG-032"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "39",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC",
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 84,
+      "unit_id": "QABC-0298",
+      "grade_ids": [
+        "G1-LEG-034"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "41",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 85,
+      "unit_id": "QABC-0304",
+      "grade_ids": [
+        "G1-LEG-040"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "47",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 86,
+      "unit_id": "QABC-0307",
+      "grade_ids": [
+        "G1-LEG-043"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "50",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 87,
+      "unit_id": "QABC-0312",
+      "grade_ids": [
+        "G1-LEG-048"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "55",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_LEGAL_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 88,
+      "unit_id": "QABC-0316",
+      "grade_ids": [
+        "G1-NOR-002"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "9",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 89,
+      "unit_id": "QABC-0321",
+      "grade_ids": [
+        "G1-NOR-007"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "14",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 90,
+      "unit_id": "QABC-0322",
+      "grade_ids": [
+        "G1-NOR-008"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "15",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 91,
+      "unit_id": "QABC-0324",
+      "grade_ids": [
+        "G1-NOR-010"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "17",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW",
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 92,
+      "unit_id": "QABC-0326",
+      "grade_ids": [
+        "G1-NOR-012"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "19",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 93,
+      "unit_id": "QABC-0335",
+      "grade_ids": [
+        "G1-NOR-021"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "28",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 94,
+      "unit_id": "QABC-0336",
+      "grade_ids": [
+        "G1-NOR-022"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "29",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 95,
+      "unit_id": "QABC-0337",
+      "grade_ids": [
+        "G1-NOR-023"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "30",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 96,
+      "unit_id": "QABC-0339",
+      "grade_ids": [
+        "G1-NOR-025"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "32",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_326_SIXTH_15_SEMANTIC_LEG_NOR_SOURCE_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 97,
+      "unit_id": "QABC-0341",
+      "grade_ids": [
+        "G1-NOR-027"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "34",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 98,
+      "unit_id": "QABC-0342",
+      "grade_ids": [
+        "G1-NOR-028"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "35",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 99,
+      "unit_id": "QABC-0343",
+      "grade_ids": [
+        "G1-NOR-029"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "36",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 100,
+      "unit_id": "QABC-0344",
+      "grade_ids": [
+        "G1-NOR-030"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "37",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXACT_PRIMARY_SOURCE_NOT_RECOVERED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 101,
+      "unit_id": "QABC-0347",
+      "grade_ids": [
+        "G1-NOR-033"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "40",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 102,
+      "unit_id": "QABC-0349",
+      "grade_ids": [
+        "G1-NOR-035"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "42",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 103,
+      "unit_id": "QABC-0355",
+      "grade_ids": [
+        "G1-NOR-041"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "48",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 104,
+      "unit_id": "QABC-0356",
+      "grade_ids": [
+        "G1-NOR-042"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "49",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC",
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 105,
+      "unit_id": "QABC-0365",
+      "grade_ids": [
+        "G1-NOR-051"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "58",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 106,
+      "unit_id": "QABC-0367",
+      "grade_ids": [
+        "G1-NOR-053"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "60",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT",
+        "EXACT_PRIMARY_SOURCE_NOT_RECOVERED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 107,
+      "unit_id": "QABC-0368",
+      "grade_ids": [
+        "G1-NOR-054"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "61",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 108,
+      "unit_id": "QABC-0372",
+      "grade_ids": [
+        "G1-NOR-058"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "65",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 109,
+      "unit_id": "QABC-0374",
+      "grade_ids": [
+        "G1-NOR-060"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "67",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 110,
+      "unit_id": "QABC-0375",
+      "grade_ids": [
+        "G1-NOR-061"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "68",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW",
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 111,
+      "unit_id": "QABC-0376",
+      "grade_ids": [
+        "G1-NOR-062"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "69",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_327_SEVENTH_15_I7_PE155_CONTEXT_GATES_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 112,
+      "unit_id": "QABC-0379",
+      "grade_ids": [
+        "G1-NOR-065"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "72",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 113,
+      "unit_id": "QABC-0380",
+      "grade_ids": [
+        "G1-NOR-066"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "73",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW",
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 114,
+      "unit_id": "QABC-0381",
+      "grade_ids": [
+        "G1-NOR-067"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "74",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 115,
+      "unit_id": "QABC-0385",
+      "grade_ids": [
+        "G1-NOR-071"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "78",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 116,
+      "unit_id": "QABC-0394",
+      "grade_ids": [
+        "G1-NOR-080"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "87",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXACT_PRIMARY_SOURCE_NOT_RECOVERED"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 117,
+      "unit_id": "QABC-0395",
+      "grade_ids": [
+        "G1-NOR-081"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "88",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 118,
+      "unit_id": "QABC-0396",
+      "grade_ids": [
+        "G1-NOR-082"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "89",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "SAME_STEM_CHANGED_ABC"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 119,
+      "unit_id": "QABC-0403",
+      "grade_ids": [
+        "G1-NOR-089"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "96",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "P0_CANDIDATE_NORMATIVE_SCORING_CONFLICT"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 120,
+      "unit_id": "QABC-0404",
+      "grade_ids": [
+        "G1-NOR-090"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "97",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 121,
+      "unit_id": "QABC-0408",
+      "grade_ids": [
+        "G1-NOR-094"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "101",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 122,
+      "unit_id": "QABC-0414",
+      "grade_ids": [
+        "G1-NOR-100"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": "107",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    },
+    {
+      "priority_index": 123,
+      "unit_id": "QABC-0421",
+      "grade_ids": [
+        "G2-LEG-007"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V226_G2_2023_BIBLIO_15_UNOFFICIAL_DIDACTIC_ABC_CARDS_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "92",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 124,
+      "unit_id": "QABC-0423",
+      "grade_ids": [
+        "G2-LEG-009"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V226_G2_2023_BIBLIO_15_UNOFFICIAL_DIDACTIC_ABC_CARDS_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "110",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 125,
+      "unit_id": "QABC-0424",
+      "grade_ids": [
+        "G2-NORM-001"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V226_G2_2023_BIBLIO_15_UNOFFICIAL_DIDACTIC_ABC_CARDS_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "120",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 126,
+      "unit_id": "QABC-0426",
+      "grade_ids": [
+        "G2-NORM-003"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V226_G2_2023_BIBLIO_15_UNOFFICIAL_DIDACTIC_ABC_CARDS_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "211",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE",
+        "EXCLUSIVE_QUANTIFIER_REVIEW"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_328_EIGHTH_15_NOR_AND_UNOFFICIAL_DIDACTIC_TRIAGE_NO_KEYS_CHANGED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 127,
+      "unit_id": "QABC-0428",
+      "grade_ids": [
+        "G2-LEG-101"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V226_G2_2023_BIBLIO_15_UNOFFICIAL_DIDACTIC_ABC_CARDS_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "2",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 128,
+      "unit_id": "QABC-0447",
+      "grade_ids": [
+        "G2-LEG-120"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V228_G2LEG103_127_25_UNOFFICIAL_BIBLIO_2023_ABC_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "10",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 129,
+      "unit_id": "QABC-0448",
+      "grade_ids": [
+        "G2-LEG-121"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V228_G2LEG103_127_25_UNOFFICIAL_BIBLIO_2023_ABC_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "10",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 130,
+      "unit_id": "QABC-0464",
+      "grade_ids": [
+        "G2-NOR-137"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "14",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 131,
+      "unit_id": "QABC-0468",
+      "grade_ids": [
+        "G2-NOR-141"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "22",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 132,
+      "unit_id": "QABC-0472",
+      "grade_ids": [
+        "G2-NOR-145"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "29",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 133,
+      "unit_id": "QABC-0537",
+      "grade_ids": [
+        "G2-ELEC-063"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "source_row": "1",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 134,
+      "unit_id": "QABC-0555",
+      "grade_ids": [
+        "G2-LEG-081"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V238_FINAL_13_UNOFFICIAL_G2_TARIFF_AND_ELEC_ABC_2026_11_21.json",
+      "source_workbook": "Ordinul ANRE nr. 118/2023 privind tarifele, informații oficiale ANRE",
+      "source_row": "220",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 135,
+      "unit_id": "QABC-0556",
+      "grade_ids": [
+        "G2-LEG-082"
+      ],
+      "source_kind": "SUPPLEMENTAL_PRACTICE",
+      "editorial_file": "V238_FINAL_13_UNOFFICIAL_G2_TARIFF_AND_ELEC_ABC_2026_11_21.json",
+      "source_workbook": "Ordinul ANRE nr. 118/2023 privind tarifele, informații oficiale ANRE",
+      "source_row": "222",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [
+        "NONWORKBOOK_DIDACTIC_NOT_OFFICIAL_EXAMPLE"
+      ],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_EDUCATIONAL_SOURCE_AND_MARK_UNOFFICIAL"
+    },
+    {
+      "priority_index": 136,
+      "unit_id": "QABC-0568",
+      "grade_ids": [
+        "G2-ELEC-290"
+      ],
+      "source_kind": "PUBLISHED_SAMPLE_CANDIDATE",
+      "editorial_file": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "159",
+      "imported_key_changed": false,
+      "historical_strict_hold": false,
+      "candidate_risk_tags": [],
+      "research_stage": "PRELIMINARY_SCOPE_AND_OPTION_TRIAGE_RECORDED",
+      "triage_checkpoint": "CKPT_329_NINTH_FINAL_10_SEMANTIC_TRIAGE_ALL_136_RESEARCHED_NOT_APPROVED_2026_11_21.md",
+      "additional_triage_checkpoints": [],
+      "actual_primary_source_before_focus_after": "NOT_POPULATED",
+      "same_edition_primary_source_authenticated": false,
+      "qualified_independent_technical_or_legal_reviewer": false,
+      "qualified_independent_linguistic_reviewer": false,
+      "official_grade_specific_scoring_key_authenticated": false,
+      "learner_approved": false,
+      "next_gate": "AUTHENTICATE_PRIMARY_EXACT_EDITION_AND_ORIGINAL_ABC_THEN_INDEPENDENT_QA"
+    }
+  ]
+}

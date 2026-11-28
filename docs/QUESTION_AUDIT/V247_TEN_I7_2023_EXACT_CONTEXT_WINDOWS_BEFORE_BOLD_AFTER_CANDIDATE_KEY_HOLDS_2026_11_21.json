@@ -1,0 +1,410 @@
+{
+  "schema": "v247_ten_exact_i7_2023_user_document_before_focus_after_candidate_key_review",
+  "date": "2026-11-21",
+  "source_version_hash": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+  "source_provenance": "User-provided I7/2011 consolidated PDF to 2023-09-22 from Library; no final 2026 current-edition certification.",
+  "source_rules": [
+    "Original questions/ABC reproduced using V149 master except two mutated where uploaded XLSX original reconciled in V246.",
+    "Before/focus/after are extracted verbatim with whitespace normalized from same page/nearby immediate context; never a newly composed norm.",
+    "Focus emphasis is only directly supporting passage, editorial reasoning separate.",
+    "Candidate answer differs from imported key for these ten, but this establishes an audit discrepancy, NOT an official scored-key error or release-ready question.",
+    "All original answer keys, HTML/APK and draft PR remain unchanged. 0 of 822 independently learner-approved."
+  ],
+  "metrics": {
+    "new_exact_context_windows": 10,
+    "nonempty_before_focus_after": 10,
+    "candidate_source_key_disagreements": 10,
+    "qualified_independent_signoffs": 0,
+    "learner_approvals": 0
+  },
+  "cases": [
+    {
+      "unit_id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 55,
+      "source_original_stem_ABC": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-048=A",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 70,
+        "clause": "5.4.13",
+        "original_pdf_line_start": 5061,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "(12) 5.4.12. Trebuie evitată traversarea încăperilor din clasele de mediu AD2, AD3, AD4, AF2, AF3, AF4, AA5 şi din categoria BE2 cu circuite electrice care deservesc alte încăperi. Fac excepţie încăperile pentru bucătării şi băi din locuinţe, precum şi alte cazuri justificate de către proiectant, în care se admit astfel de traversări, cu luarea de măsuri de protecţie corespunzătoare influenţelor externe.",
+        "focus_bold_only": "(13) 5.4.13. Alimentarea transformatorului de sonerie sau soneriei de 220 V se face dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuţie.",
+        "context_after": "(14) 5.4.14. La instalarea conductoarelor unui circuit sau mai multor circuite în acelaşi element de protecţie (tuburi, jgheaburi etc.) trebuie se respectă şi prevederile din subcap. 5.2.12.",
+        "rendering_example": "(12) 5.4.12. Trebuie evitată traversarea încăperilor din clasele de mediu AD2, AD3, AD4, AF2, AF3, AF4, AA5 şi din categoria BE2 cu circuite electrice care deservesc alte încăperi. Fac excepţie încăperile pentru bucătării şi băi din locuinţe, precum şi alte cazuri justificate de către proiectant, în care se admit astfel de traversări, cu luarea de măsuri de protecţie corespunzătoare influenţelor externe.\n\n**(13) 5.4.13. Alimentarea transformatorului de sonerie sau soneriei de 220 V se face dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuţie.**\n\n(14) 5.4.14. La instalarea conductoarelor unui circuit sau mai multor circuite în acelaşi element de protecţie (tuburi, jgheaburi etc.) trebuie se respectă şi prevederile din subcap. 5.2.12."
+      },
+      "evidence_based_candidate_letter": "C",
+      "source_grounded_ABC_contrast": "A și B folosesc «numai», deși norma permite trei rute; C spune un traseu permis fără exclusivitate.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED",
+      "trainer_master_changed_stem_ABC": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "xlsx_original_matched_v246_normalized": true,
+      "original_source_vs_master_material_mutation": true
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 79,
+      "source_original_stem_ABC": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-072=B",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 72,
+        "clause": "5.5.2.3",
+        "original_pdf_line_start": 5177,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "(2) 5.5.2.2. Nu se conectează fiecare conductor de protecţie în parte direct la bornă/bara principală de legare la pământ dacă sunt conectate prin alte conductoare principale de protecţie.",
+        "focus_bold_only": "(3) 5.5.2.3. Fiecare conductor conectat la bornă/bara principală de legare la pământ trebuie să poată fi deconectat individual. Această conectare trebuie să fie sigură şi deconectabilă numai prin intermediul unei scule.",
+        "context_after": "(1) 5.5.3.1. Conductoarele de protecţie (PE) pot fi: - conductoare în cabluri multiconductoare;",
+        "rendering_example": "(2) 5.5.2.2. Nu se conectează fiecare conductor de protecţie în parte direct la bornă/bara principală de legare la pământ dacă sunt conectate prin alte conductoare principale de protecţie.\n\n**(3) 5.5.2.3. Fiecare conductor conectat la bornă/bara principală de legare la pământ trebuie să poată fi deconectat individual. Această conectare trebuie să fie sigură şi deconectabilă numai prin intermediul unei scule.**\n\n(1) 5.5.3.1. Conductoarele de protecţie (PE) pot fi: - conductoare în cabluri multiconductoare;"
+      },
+      "evidence_based_candidate_letter": "C",
+      "source_grounded_ABC_contrast": "B cere fără sculă, invers față de normă. A neagă deconectarea individuală. C descrie cerința expresă, fără detaliul suplimentar al sculei.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED",
+      "trainer_master_changed_stem_ABC": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "xlsx_original_matched_v246_normalized": true,
+      "original_source_vs_master_material_mutation": true
+    },
+    {
+      "unit_id": "QABC-0343",
+      "grade_ids": [
+        "G1-NOR-029"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 36,
+      "source_original_stem_ABC": {
+        "stem": "Tablourile de distribuţie din locuinţe se pot instala astfel încât înălţimea laturii de sus a tablourilor faţă de pardoseala finită să nu depăşească:",
+        "A": "2 m",
+        "B": "2,3 m",
+        "C": "2,5 m"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-029=B",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 65,
+        "clause": "5.3.3.21",
+        "original_pdf_line_start": 4703,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "(21) 5.3.3.21. Tablourile de distribuţie se instalează astfel încât înălţimea laturii de sus a tablourilor faţă de pardoseala finită să nu depăşească 2,3 m.",
+        "focus_bold_only": "Fac excepţie tablourile din locuinţe pentru care se admite o înălţime de cel mult 2,5 m.",
+        "context_after": "(22) 5.3.3.22. La tablourile capsulate, înălţimea laturii de jos a tabloului faţă de pardoseala finită se stabileşte avându- se în vedere posibilitatea de realizare a razei de curbură admisă pentru cablul cu cel mai mare diametru care se racordează la tablou.",
+        "rendering_example": "(21) 5.3.3.21. Tablourile de distribuţie se instalează astfel încât înălţimea laturii de sus a tablourilor faţă de pardoseala finită să nu depăşească 2,3 m.\n\n**Fac excepţie tablourile din locuinţe pentru care se admite o înălţime de cel mult 2,5 m.**\n\n(22) 5.3.3.22. La tablourile capsulate, înălţimea laturii de jos a tabloului faţă de pardoseala finită se stabileşte avându- se în vedere posibilitatea de realizare a razei de curbură admisă pentru cablul cu cel mai mare diametru care se racordează la tablou."
+      },
+      "evidence_based_candidate_letter": "C",
+      "source_grounded_ABC_contrast": "2,3 m este regula generală, 2,5 m este excepția din locuințe. A și B pot fi înălțimi admise, dar nu plafonul maxim al locuințelor.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    },
+    {
+      "unit_id": "QABC-0356",
+      "grade_ids": [
+        "G1-NOR-042"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 49,
+      "source_original_stem_ABC": {
+        "stem": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-042=B",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 55,
+        "clause": "5.2.4.6.1",
+        "original_pdf_line_start": 3868,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "1. 5.2.4.6.1. Secţiunea conductorului neutru, dacă există, trebuie să fie egală cu secţiunea conductoarelor de fază în următoarele cazuri:",
+        "focus_bold_only": "a) în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor;",
+        "context_after": "b) în circuitele polifazate ale căror conductoare de fază au o secţiune mai mică sau egală cu 16 mm 2 cupru sau 25 mm 2 aluminiu; c) în circuitele trifazate care ar putea fi parcurse de curenţi având armonici de rangul 3 şi multiplu de 3 cu nivelul cuprins între 15% şi 33%. (acest nivel de armonici se poate întâlni, de exemplu, în circuitele de alimentare pentru iluminat cu lămpi cu descărcări şi fluorescente); d) în funcţionare normală nu este asigurată echilibrarea între faze şi neutru (de exemplu tablourile de iluminat şi prize)",
+        "rendering_example": "1. 5.2.4.6.1. Secţiunea conductorului neutru, dacă există, trebuie să fie egală cu secţiunea conductoarelor de fază în următoarele cazuri:\n\n**a) în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor;**\n\nb) în circuitele polifazate ale căror conductoare de fază au o secţiune mai mică sau egală cu 16 mm 2 cupru sau 25 mm 2 aluminiu; c) în circuitele trifazate care ar putea fi parcurse de curenţi având armonici de rangul 3 şi multiplu de 3 cu nivelul cuprins între 15% şi 33%. (acest nivel de armonici se poate întâlni, de exemplu, în circuitele de alimentare pentru iluminat cu lămpi cu descărcări şi fluorescente); d) în funcţionare normală nu este asigurată echilibrarea între faze şi neutru (de exemplu tablourile de iluminat şi prize)"
+      },
+      "evidence_based_candidate_letter": "A",
+      "source_grounded_ABC_contrast": "A redă monofazat cu DOUĂ conductoare, indiferent de secțiune; B/C spun TREI și în B valorile 25 Cu / 35 Al nu sunt pragurile din clauză.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    },
+    {
+      "unit_id": "QABC-0374",
+      "grade_ids": [
+        "G1-NOR-060"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 67,
+      "source_original_stem_ABC": {
+        "stem": "Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:",
+        "A": "este recomandată",
+        "B": "este permisă condiţionat",
+        "C": "nu este permisă"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-060=B",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 72,
+        "clause": "5.5.3.2",
+        "original_pdf_line_start": 5194,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "(2) 5.5.3.2. Nu este permisă utilizarea următoarelor părţi metalice drept conductoare de protecţie:",
+        "focus_bold_only": "- conducte pentru apă;",
+        "context_after": "- conducte pentru gaze şi/sau lichide inflamabile; - părţi constructive supuse solicitărilor mecanice în funcţionare normală; - părţi metalice flexibile; - conducte metalice flexibile sau pliabile, numai dacă nu sunt destinate pentru acest scop; - suporturi pentru conducte; - tăvi de cabluri şi scări pentru cabluri, dacă nu se asigură continuitatea electrică a acestora.",
+        "rendering_example": "(2) 5.5.3.2. Nu este permisă utilizarea următoarelor părţi metalice drept conductoare de protecţie:\n\n**- conducte pentru apă;**\n\n- conducte pentru gaze şi/sau lichide inflamabile; - părţi constructive supuse solicitărilor mecanice în funcţionare normală; - părţi metalice flexibile; - conducte metalice flexibile sau pliabile, numai dacă nu sunt destinate pentru acest scop; - suporturi pentru conducte; - tăvi de cabluri şi scări pentru cabluri, dacă nu se asigură continuitatea electrică a acestora."
+      },
+      "evidence_based_candidate_letter": "C",
+      "source_grounded_ABC_contrast": "Țeava de apă poate necesita legare echipotențială, dar nu poate înlocui conductorul PE; A/B confundă obiectele.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    },
+    {
+      "unit_id": "QABC-0375",
+      "grade_ids": [
+        "G1-NOR-061"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 68,
+      "source_original_stem_ABC": {
+        "stem": "Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:",
+        "A": "admisă",
+        "B": "interzisă",
+        "C": "admisă doar pentru tuburi cu diametru mai mic de 16 mm"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-061=A",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 61,
+        "clause": "5.2.12.3.4",
+        "original_pdf_line_start": 4396,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "3. 5.2.12.3.3. Îmbinările între tuburi sau ţevi şi accesoriile de racordare la doze, la aparate, la echipamente, trebuie executate astfel încât să corespundă gradului de protecţie impus de clasele de influenţe externe din încăperea respectivă.",
+        "focus_bold_only": "4. 5.2.12.3.4. Se interzice îmbinarea tuburilor la trecerile prin elementele de construcţii.",
+        "context_after": "5. 5.2.12.3.5. Curbarea tuburilor se execută cu raza interioară egală cu minim de 5-6 ori diametrul exterior al tubului la montaj aparent şi egală cu minimum de 10 ori diametrul exterior al tubului la montaj îngropat (trebuie să se respecte şi prescripţiile producătorului).",
+        "rendering_example": "3. 5.2.12.3.3. Îmbinările între tuburi sau ţevi şi accesoriile de racordare la doze, la aparate, la echipamente, trebuie executate astfel încât să corespundă gradului de protecţie impus de clasele de influenţe externe din încăperea respectivă.\n\n**4. 5.2.12.3.4. Se interzice îmbinarea tuburilor la trecerile prin elementele de construcţii.**\n\n5. 5.2.12.3.5. Curbarea tuburilor se execută cu raza interioară egală cu minim de 5-6 ori diametrul exterior al tubului la montaj aparent şi egală cu minimum de 10 ori diametrul exterior al tubului la montaj îngropat (trebuie să se respecte şi prescripţiile producătorului)."
+      },
+      "evidence_based_candidate_letter": "B",
+      "source_grounded_ABC_contrast": "A este contrariul interdicției la traversare; C inventează excepție de diametru sub 16 mm.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    },
+    {
+      "unit_id": "QABC-0376",
+      "grade_ids": [
+        "G1-NOR-062"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 69,
+      "source_original_stem_ABC": {
+        "stem": "În camerele de copii din creşe, grădiniţe, spitale de copii, prizele trebuie montate pe pereţi la următoarele înălţimi măsurate de la axul aparatului la nivelul pardoselii finite:",
+        "A": "peste 1m",
+        "B": "peste 1,5 m",
+        "C": "peste 2m"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-062=A",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 71,
+        "clause": "5.4.25",
+        "original_pdf_line_start": 5100,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "(25) 5.4.25. Se recomandă ca prizele să fie montate pe pereţi la următoarele înălţimi măsurate de la axul aparatului până la nivelul pardoselii finite: - peste 2,0 m, la şcoli, în clase;",
+        "focus_bold_only": "- peste 1,5 m în camerele de copii din creşe, grădiniţe, cămine, spitale de copii şi alte clădiri similare;",
+        "context_after": "- peste 0,1 m în alte încăperi decât grupuri sanitare, duşuri, băi, spălătorii şi bucătării, indiferent de natura pardoselii",
+        "rendering_example": "(25) 5.4.25. Se recomandă ca prizele să fie montate pe pereţi la următoarele înălţimi măsurate de la axul aparatului până la nivelul pardoselii finite: - peste 2,0 m, la şcoli, în clase;\n\n**- peste 1,5 m în camerele de copii din creşe, grădiniţe, cămine, spitale de copii şi alte clădiri similare;**\n\n- peste 0,1 m în alte încăperi decât grupuri sanitare, duşuri, băi, spălătorii şi bucătării, indiferent de natura pardoselii"
+      },
+      "evidence_based_candidate_letter": "B",
+      "source_grounded_ABC_contrast": "Pragul sursei este recomandat >1,5 m; întrebarea spune «trebuie». A >1 m nu asigură pragul; C >2 m este suficient, dar nu exprimă minimul recomandat.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    },
+    {
+      "unit_id": "QABC-0403",
+      "grade_ids": [
+        "G1-NOR-089"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 96,
+      "source_original_stem_ABC": {
+        "stem": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+        "A": "este interzisă",
+        "B": "este permisă, cu marcarea corespunzătoare la cele două extremităţi",
+        "C": "este permisă dacă nu se folosește una dintre culorile verde sau galben"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-089=A",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 47,
+        "clause": "5.1.4.3.3",
+        "original_pdf_line_start": 3266,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "Conductoarele se marchează pe toată lungimea lor prin culorile recomandate la art. 5.1.4.3.1. şi 5.1.4.3.2.",
+        "focus_bold_only": "Este permisă utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit, cu marcarea corespunzătoare la cele două extremităţi",
+        "context_after": "Cablurile cu un singur conductor cu manta şi conductoarele izolate conform standardelor lor şi care nu au nici o izolaţie bicoloră verde/galben sau bleu, de exemplu în cazul unei secţiuni mai mari de 16 mm 2 , ele pot fi utilizate pentru:",
+        "rendering_example": "Conductoarele se marchează pe toată lungimea lor prin culorile recomandate la art. 5.1.4.3.1. şi 5.1.4.3.2.\n\n**Este permisă utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit, cu marcarea corespunzătoare la cele două extremităţi**\n\nCablurile cu un singur conductor cu manta şi conductoarele izolate conform standardelor lor şi care nu au nici o izolaţie bicoloră verde/galben sau bleu, de exemplu în cazul unei secţiuni mai mari de 16 mm 2 , ele pot fi utilizate pentru:"
+      },
+      "evidence_based_candidate_letter": "B",
+      "source_grounded_ABC_contrast": "B redă condiția marcării corespunzătoare la ambele extremități; A neagă permisiunea; C nu redă cerința marcării.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    },
+    {
+      "unit_id": "QABC-0372",
+      "grade_ids": [
+        "G1-NOR-058"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 65,
+      "source_original_stem_ABC": {
+        "stem": "Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:",
+        "A": "se admite întotdeauna",
+        "B": "este total interzisă",
+        "C": "se admite condiţionat"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-058=B",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 13,
+        "clause": "3.0.3.5",
+        "original_pdf_line_start": 963,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "(5) 3.0.3.5. Nu se admite amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens.",
+        "focus_bold_only": "Fac excepţie instalaţiile electrice în execuţie închisă cu grad de protecţie minim IP 33, realizate din materiale rezistente la astfel de condiţii.",
+        "context_after": "(6) 3.0.3.6. Se interzice amplasarea instalaţiilor electrice în interiorul canalelor de ventilare (cu excepţia instalaţiilor aferente instalaţiilor de ventilaţie executate din materiale fără degajare de fum şi gaze toxice).",
+        "rendering_example": "(5) 3.0.3.5. Nu se admite amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens.\n\n**Fac excepţie instalaţiile electrice în execuţie închisă cu grad de protecţie minim IP 33, realizate din materiale rezistente la astfel de condiţii.**\n\n(6) 3.0.3.6. Se interzice amplasarea instalaţiilor electrice în interiorul canalelor de ventilare (cu excepţia instalaţiilor aferente instalaţiilor de ventilaţie executate din materiale fără degajare de fum şi gaze toxice)."
+      },
+      "evidence_based_candidate_letter": "C",
+      "source_grounded_ABC_contrast": "A «întotdeauna» ignoră condițiile; B «total interzisă» ignoră explicit excepția IP33; C admite condiționat.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    },
+    {
+      "unit_id": "QABC-0380",
+      "grade_ids": [
+        "G1-NOR-066"
+      ],
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 73,
+      "source_original_stem_ABC": {
+        "stem": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+        "A": "este interzisă",
+        "B": "este admisă",
+        "C": "este admisă numai pentru conductoare de cupru"
+      },
+      "imported_grade_keys_unmodified": "G1-NOR-066=B",
+      "source_scope": "I7/2011 building electrical installations",
+      "source_evidence": {
+        "file": "803493174-I7-2011-completat2023.pdf",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "edition_as_of": "2023-09-22",
+        "page": 59,
+        "clause": "5.2.12.1.4",
+        "original_pdf_line_start": 4193,
+        "excerpt_normalization": "only Unicode whitespace collapsed; source Romanian orthography and punctuation retained",
+        "context_before": "3. 5.2.12.1.3. În sisteme de tuburi, ţevi, sisteme de jgheaburi şi tuburi profilate SJ/STP, trebuie instalate numai conductoare izolate şi/sau cabluri.",
+        "focus_bold_only": "4. 5.2.12.1.4. Se interzice instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ.",
+        "context_after": "5. 5.2.12.1.5. Conductoarele electrice care aparţin aceluiaşi circuit electric, inclusiv conductorul de protecţie, trebuie instalate în acelaşi element de protecţie (tub, ţeava SJ/STP, gol în elemente de construcţie). Se admite instalarea separată a conductorului de protecţie în cazurile şi în condiţiile prevăzute în subcapitolul 5.5.",
+        "rendering_example": "3. 5.2.12.1.3. În sisteme de tuburi, ţevi, sisteme de jgheaburi şi tuburi profilate SJ/STP, trebuie instalate numai conductoare izolate şi/sau cabluri.\n\n**4. 5.2.12.1.4. Se interzice instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ.**\n\n5. 5.2.12.1.5. Conductoarele electrice care aparţin aceluiaşi circuit electric, inclusiv conductorul de protecţie, trebuie instalate în acelaşi element de protecţie (tub, ţeava SJ/STP, gol în elemente de construcţie). Se admite instalarea separată a conductorului de protecţie în cazurile şi în condiţiile prevăzute în subcapitolul 5.5."
+      },
+      "evidence_based_candidate_letter": "A",
+      "source_grounded_ABC_contrast": "Interdicția vizează conductoarele în tuburi/țevi pozate în pământ; nu se generalizează la toate cablurile proiectate pentru îngropare.",
+      "candidate_not_authenticated_official_key": true,
+      "exact_2026_norm_edition_authenticated": false,
+      "independent_technical_legal_QA": false,
+      "independent_linguistic_QA": false,
+      "approved_for_learning": false,
+      "status": "SOURCE_2023_EXACT_CONTEXT_REOPENED_EXAM_KEY_NOT_AUTHENTICATED"
+    }
+  ],
+  "clarification_2026_11_21": "V247 source-window highlight QA: for QABC-0386 remove following section heading from focus; focus now contains only §5.5.2.3; adjacent after paragraph starts §5.5.3.1. Historical wording and all keys intact.",
+  "versioned_correction_2026_11_21": "QA fixed the original-version provenance lookup in V247 for QABC-0362 and QABC-0386: v246.mutations identifies records with .id, not .unit_id. Replaced mistaken Trainer-original alias with the authentic uploaded Excel A/B/C; preserved Trainer-mutated set separately. No physical normative excerpts or answer keys changed."
+}

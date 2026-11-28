@@ -1,0 +1,629 @@
+{
+  "schema": "V303_G2_17_NOR_I7_ABC_AFFIRMATIVE_SCOPE_PRELIMINARY",
+  "date": "2026-11-22",
+  "parent": "CKPT-389",
+  "source_hash": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+  "method": "User I7 PDF direct paragraph and preceding/following context reopened with offline text extraction and page rendering. Exact original XLSX A/B/C preserved from V298",
+  "count": 17,
+  "preliminary_only": true,
+  "independent_professional_approvals": 0,
+  "possible_current_edition_issue": true,
+  "cases": [
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0058",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 58,
+      "question_verbatim": "Schema de legare la pământ de tip TN-S, în care un conductor de protecţie distinct este folosit pentru întreaga schemă, se utilizează:",
+      "options_verbatim": {
+        "A": "reglementările nu fac precizări privind cazurile în care se utilizează acest tip de schemă",
+        "B": "de la ultimul tablou spre consumator",
+        "C": "numai în reţelele cu tensiune peste 500 V"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "I7 gives TN-S deployment cases; A incorrectly claims no prescription.",
+        "B": "From the last earthed switchboard toward the receiver is explicitly a TN-S example.",
+        "C": "C falsely limits TN-S to supplies above 500 V."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§3.3.2.4",
+        "pdf_pages": [
+          16
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Immediately before §3.3.2.3 defines TN and variants; following §3.3.2.5 compares TN-C and the transition toward receivers.",
+      "scope_warning": "Do not infer the whole upstream supply must be TN-S just because the final feeder is TN-S.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0059",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 59,
+      "question_verbatim": "Schema de legare la pământ de tip TN-S, în care un conductor de protecţie distinct este folosit pentru întreaga schemă, se utilizează:",
+      "options_verbatim": {
+        "A": "când trebuie separate conductoarele PE şi N pentru asigurarea funcţionării protecţiei",
+        "B": "numai în reţelele cu tensiune peste 500 V",
+        "C": "reglementările nu fac precizări privind cazurile în care se utilizează acest tip de schemă"
+      },
+      "provisional_candidate_letter": "A",
+      "explanations": {
+        "A": "Separating PE and N where protection operation needs them separated is explicitly a TN-S use case.",
+        "B": "C is false: I7 specifies actual TN-S use cases; B invents a 500-V threshold.",
+        "C": "Regulatory examples are given, so C is factually contradicted."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§3.3.2.4",
+        "pdf_pages": [
+          16
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Prior §3.3.2.3 describes TN; after §3.3.2.5 the TN-C variant clarifies what it means for PE and N to be combined.",
+      "scope_warning": "Option B's 'numai' is unsupported; no 500-V cut-off applies to the stated topology.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0076",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 76,
+      "question_verbatim": " În cazul în care alimentarea consumatorului se face din cofretul de branşament de joasă tensiune, valorile căderilor de tensiune, în regim normal de funcţionare faţă de tensiunea nominală a reţelei, trebuie să fie de cel mult:",
+      "options_verbatim": {
+        "A": "3% pentru receptoarele din instalaţiile electrice de lumină şi 5% pentru restul receptoarelor (forţă etc.) ",
+        "B": "10% pentru toate tipurile de receptoare ",
+        "C": "5% pentru receptoarele din instalaţiile electrice de lumină şi 12% pentru restul receptoarelor (forţă etc.) "
+      },
+      "provisional_candidate_letter": "A",
+      "explanations": {
+        "A": "3% for lighting, 5% for other loads are exactly the LV service-box normal-operation values.",
+        "B": "10% for all receivers exceeds both source limits.",
+        "C": "5% for lighting and 12% power are not permitted values for the stated source."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§5.2.5.1",
+        "pdf_pages": [
+          55
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Before §5.2.4.6.4 covers neutral sharing; after §5.2.5.2 specifies distinct 6%/8% limits for transformer/private supply.",
+      "scope_warning": "Exactly cofret low-voltage service feed, not supply from own transformer. Maximum absorbed power and worst/longest feeder require checking.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0077",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 77,
+      "question_verbatim": " În cazul instalaţiilor electrice de alimentare a motoarelor electrice, pierderea de tensiune la pornire, faţă de tensiunea nominală (dacă nu se dispune de alte date specificate de producătorul motorului etc.), trebuie să fie cel mult egală cu: ",
+      "options_verbatim": {
+        "A": "0.2",
+        "B": "0.25",
+        "C": "0.12"
+      },
+      "provisional_candidate_letter": "C",
+      "explanations": {
+        "A": "A=20% exceeds stated fallback maximum.",
+        "B": "B=25% exceeds stated fallback maximum.",
+        "C": "C=0.12 equals 12% fallback when no manufacturer values are specified."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§5.2.5.3",
+        "pdf_pages": [
+          55
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Before §§5.2.5.1–2 give voltage drop limits in normal operation; after §5.2.6 concerns connector continuity.",
+      "scope_warning": "Motor and starting controller manufacturer values take precedence where provided; 12% is not universal across all motors.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0085",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 85,
+      "question_verbatim": " Protecţia unui motor trifazat împotriva suprasarcinilor trebuie să fie prevăzută:\n",
+      "options_verbatim": {
+        "A": "pe toate conductoarele de fază şi pe conductorul neutru",
+        "B": "pe două conductoare de fază ",
+        "C": "pe toate conductoarele de fază"
+      },
+      "provisional_candidate_letter": "C",
+      "explanations": {
+        "A": "A wrongly mandates overload protection on neutral N; the source excepts neutral.",
+        "B": "B limits monitoring to only two phases, whereas the source says to monitor all three for three-phase motors.",
+        "C": "C states protection on all phase conductors, consistent with protection of active conductors except N and monitoring all three phases."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§5.3.1.7.2.1",
+        "pdf_pages": [
+          63
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Previous §5.3.1.7.2 concerns motor overheating; following §5.3.1.7.2.2 covers independent high-temperature sensing and special protections.",
+      "scope_warning": "Distinguish neutral N from phase conductors; motor three-phase overload device time/current calibration has further conditions.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0100",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 100,
+      "question_verbatim": "În cazul consumatorilor racordaţi direct la reţeaua de joasa tensiune a distribuitorului, pornirea directa a motoarelor monofazate se admite pentru o putere de până la:",
+      "options_verbatim": {
+        "A": " 3 kW",
+        "B": " 4 kW",
+        "C": "5,5 kW"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "A 3 kW is under the permitted maximum but is not the question's requested 'până la' threshold.",
+        "B": "B 4 kW is the source upper bound for direct-start single-phase 230-V motor on directly connected LV distribution.",
+        "C": "C 5.5 kW is the three-phase motor upper bound, not single-phase."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§5.3.1.3(a)",
+        "pdf_pages": [
+          62
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Before §5.3.1.2 covers conductor/protection sizing under starting loads; after §5.3.1.4 discusses own-transformer supplies.",
+      "scope_warning": "Question asks the maximum, not whether any smaller load may start. Applicable to directly connected 230-V single-phase motors only.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0101",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 101,
+      "question_verbatim": "În cazul consumatorilor racordaţi direct la reţeaua de joasă tensiune a distribuitorului, pornirea directă a motoarelor trifazate se admite pentru o putere de până la:",
+      "options_verbatim": {
+        "A": "4 kW",
+        "B": "5,5 kW",
+        "C": " 7,5 kW"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "A 4 kW is the single-phase bound and a smaller valid power, not the stated three-phase maximum.",
+        "B": "B 5.5 kW is the three-phase 400-V maximum for direct starting on supplier LV supply.",
+        "C": "C 7.5 kW is above the allowed direct-start threshold in this clause."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§5.3.1.3(a)",
+        "pdf_pages": [
+          62
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Before §5.3.1.2 addresses load simultaneity; after §5.3.1.4 gives a separate own-transformer calculation rule.",
+      "scope_warning": "Do not apply 5.5 kW if the source is an own transformer: §5.3.1.4 has a separate 20% and engineering verification rule.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0108",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 108,
+      "question_verbatim": "Protecţia la suprasarcini şi protecţia la scurtcircuit",
+      "options_verbatim": {
+        "A": "trebuie asigurate prin dispozitive de protecţie separate",
+        "B": "pot fi asigurate printr-un singur dispozitiv de protecţie",
+        "C": "trebuie asigurate printr-un singur dispozitiv de protecţie"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "A says devices must be separate, but one eligible combined device is expressly permitted.",
+        "B": "B accurately says one adequately rated device *may* protect against both overload and short circuit.",
+        "C": "C says it *must* be one device; source explicitly permits separate coordinated devices too."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§4.3.1.2; §4.3.6.1–2",
+        "pdf_pages": [
+          37,
+          39
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Prior §4.3.1.1 defines overload and short-circuit protection; afterward §4.3.6.2 discusses coordination of separate devices.",
+      "scope_warning": "Combined device is only sufficient if overload, short-circuit and interrupting-capacity requirements all hold.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0114",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 114,
+      "question_verbatim": "La consumatorii alimentaţi din posturi de transformare proprii, puterea celui mai mare motor alimentat pe j.t., care porneşte direct, nu va depăşi:",
+      "options_verbatim": {
+        "A": "10 % din puterea transformatorului din care este alimentat",
+        "B": " 20 % din puterea transformatorului din care este alimentat",
+        "C": "30 % din puterea transformatorului din care este alimentat"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "A 10% may be a conservative result but is not the regulatory 20% upper limit.",
+        "B": "B 20% is the clause upper bound for directly starting largest motor fed from own transformer.",
+        "C": "C 30% exceeds the stated cap."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§5.3.1.4",
+        "pdf_pages": [
+          62
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Before §5.3.1.3 gives supplier LV direct-start limits; after §5.3.1.5 deals with own electricity generation.",
+      "scope_warning": "20% is a ceiling; still requires calculation of transformer thermal and electrodynamic stability and connection to main board.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0123",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 123,
+      "question_verbatim": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "options_verbatim": {
+        "A": "protecţia împotriva şocurilor electrice în absenţa defectului",
+        "B": " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        "C": "protecţia împotriva şocurilor electrice în caz de defect"
+      },
+      "provisional_candidate_letter": "A",
+      "explanations": {
+        "A": "A states protection against electric shock *in the absence of a fault*: direct match.",
+        "B": "B describes indirect touch/fault protection, not basic protection.",
+        "C": "C protection 'în caz de defect' is a different definition."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "Chapter 2: definition 'protecţie de bază'; §4.1.1",
+        "pdf_pages": [
+          9,
+          21
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Definitions of protective earthing and basic/fault protection precede and follow on page 9; §4.1.1 describes basic protection for normally hazardous live parts.",
+      "scope_warning": "A and G2 Norme row124 are same intended definition but not same A/B/C set; preserve both original variants.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0124",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 124,
+      "question_verbatim": "Conform normativului I-7-2011, protecţia de bază  reprezintă:",
+      "options_verbatim": {
+        "A": " protecţia care corespunde protecţiei împotriva atingerilor indirecte.",
+        "B": " protecţia care corespunde protecţiei împotriva atingerilor directe.",
+        "C": "protecţia împotriva şocurilor electrice în caz de defect"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "A indirect contact refers to fault protection.",
+        "B": "B direct-contact protection is the equivalent named in the basic-protection definition.",
+        "C": "C shock protection under fault is not basic protection."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "Chapter 2: definition 'protecţie de bază'; §4.1.1",
+        "pdf_pages": [
+          9,
+          21
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "The same page defines both basic and single-fault protection; §4.1.1 further distinguishes normal accessible hazards.",
+      "scope_warning": "Avoid confusing indirect touch protection with simple direct-touch barriers; alternative set differs from row123.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0129",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 129,
+      "question_verbatim": "Curentul de defect este definit în I-7-2011 ca fiind:",
+      "options_verbatim": {
+        "A": " un curent electric care circulă ca urmare a unei suprasarcini",
+        "B": " un curent electric care circulă ca urmare a unui defect de izolaţie.",
+        "C": " un curent electric care circulă ca urmare a unui scurtcircuit trifazat"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "A is an overload current, not necessarily an insulation failure.",
+        "B": "B is exactly a current arising from an insulation fault.",
+        "C": "C three-phase short circuit is only a particular regime and not the general original definition."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "Chapter 2: definition 'curent de defect'",
+        "pdf_pages": [
+          6
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Adjacent terminology distinguishes short-circuit, residual-differential and leakage currents; do not use a specific fault type as full definition.",
+      "scope_warning": "The source clause is a terminology definition, not a prediction of short-circuit magnitude.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0130",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 130,
+      "question_verbatim": "Conform normativului I-7-2011, protecţia în caz de defect  reprezintă:  ",
+      "options_verbatim": {
+        "A": "o protecţie împotriva şocurilor electrice în condiţii de defect simplu.",
+        "B": "o protecţie împotriva şocurilor electrice în condiţii de scurtcircuit",
+        "C": " protecţia care corespunde protecţiei împotriva atingerilor directe."
+      },
+      "provisional_candidate_letter": "A",
+      "explanations": {
+        "A": "A simple-fault protection from electrical shock exactly matches the definition.",
+        "B": "B short circuit is a narrower possible electrical fault event and not an exhaustive definition of protection against electric shock under fault.",
+        "C": "C direct-touch protection is basic protection, not fault protection."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "Chapter 2: definition 'protecţie în caz de defect'; §4.1.1",
+        "pdf_pages": [
+          9,
+          21
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "The nearby base-protection definition covers no-fault conditions, with following definition for protection in one-fault situations.",
+      "scope_warning": "Fault protection corresponds historically to protection against indirect contact.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0134",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 134,
+      "question_verbatim": "În funcţie de dispunerea conductorului neutru şi a conductorului de protecţie reţelele de tip TN  se pot realiza în: ",
+      "options_verbatim": {
+        "A": "   Schema TN-S",
+        "B": "Schema TN-C-S-C",
+        "C": "Schema TN-S-C"
+      },
+      "provisional_candidate_letter": "A",
+      "explanations": {
+        "A": "A TN-S is explicitly one of three TN system variants.",
+        "B": "B TN-C-S-C implies recombination to PEN after PE/N separation, explicitly forbidden by §3.3.2.6.",
+        "C": "C TN-S-C likewise implies recombination after separation; not an allowed structure."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§3.3.2.3–3.3.2.6",
+        "pdf_pages": [
+          16
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Prior §3.3.2.3 enumerates TN forms; after §3.3.2.6 says TN-C must precede TN-S, never reverse.",
+      "scope_warning": "Do not treat a hyphenated sequence as mere naming preference: it represents physical PEN split/recombination.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0135",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 135,
+      "question_verbatim": "În funcţie de dispunerea conductorului neutru şi a conductorului de protecţie reţelele de tip TN  se pot realiza în: ",
+      "options_verbatim": {
+        "A": "Schema TN-C-S-C",
+        "B": "  Schema TN-C",
+        "C": "Schema TN-S-C"
+      },
+      "provisional_candidate_letter": "B",
+      "explanations": {
+        "A": "A TN-C-S-C would unlawfully reunite PE and N after split.",
+        "B": "B TN-C is a valid defined type for combined PEN (with last-feeder restrictions).",
+        "C": "C TN-S-C would unlawfully reunite after separation."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§3.3.2.3–3.3.2.6",
+        "pdf_pages": [
+          16
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Previous §3.3.2.4 details TN-S, following §3.3.2.6 restricts transition direction.",
+      "scope_warning": "For building consumer final sections PE and N may have to be separated; naming TN-C alone does not permit PEN at all points.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0139",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 139,
+      "question_verbatim": " În  rețelele  în care funcțiunile de conductor de protecție și de conductor neutru  sunt îndeplinite de un singur conductor (PEN) ",
+      "options_verbatim": {
+        "A": " porțiunea comună trebuie să nu se găsească în aval de un dispozitiv de protecție la curent diferențial rezidual",
+        "B": "porțiunea comună se poate găsi în aval de un dispozitiv de protecție la curent diferențial rezidual, dacă rețeaua este de tip TN",
+        "C": " porțiunea comună se poate găsi în aval de un dispozitiv de protecție la curent diferențial rezidual, dacă rețeaua este de tip TT"
+      },
+      "provisional_candidate_letter": "A",
+      "explanations": {
+        "A": "A explicitly says shared PEN part must not be downstream from residual-current device.",
+        "B": "B makes an exception merely for TN networks, contrary to the condition.",
+        "C": "C wrongly allows PEN in TT networks despite source saying PEN exists only in TN-C."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§3.3.2.11.1",
+        "pdf_pages": [
+          18
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Before §3.3.2.10 covers IT fault currents; after §3.3.2.11.2 lists conductor PE size conditions.",
+      "scope_warning": "Check fixed TN configuration and conductor cross-section as accompanying requirements; not a universal PEN permission.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0140",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "excel_row": 140,
+      "question_verbatim": "Secțiunea  conductorului PEN trebuie să fie cel puțin egală cu ",
+      "options_verbatim": {
+        "A": " 10 mm2 Cu sau  Al ",
+        "B": " 6 mm2 Cu sau 10 mm2 Al ",
+        "C": " 10 mm2 Cu sau 16 mm2 Al "
+      },
+      "provisional_candidate_letter": "C",
+      "explanations": {
+        "A": "A conflates copper and aluminum minimum: aluminum requires 16mm², not 10mm².",
+        "B": "B undercuts minimum at 6mm² Cu/10mm² Al.",
+        "C": "C exactly gives at least 10mm² Cu or 16mm² Al for fixed TN PEN."
+      },
+      "affirmative_source": {
+        "document": "I7-2011, user's consolidated 2023-09-22 PDF",
+        "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "location": "§3.3.2.11.1",
+        "pdf_pages": [
+          18
+        ],
+        "scope_locus": "I7 original object and condition in question matched as noted in scope_warning"
+      },
+      "paragraph_context_neighbors": "Earlier §§3.3.2.3–6 define eligible TN topology; next §3.3.2.11.2 handles the distinct PE conductor.",
+      "scope_warning": "PEN must be in correct TN architecture and upstream of any applicable RCD; dimension alone is insufficient.",
+      "comparative_option_gate": "A/B, A/C, B/C contrasted in three individual rationales; specific qualifier captured",
+      "original_2023_exam_answer_key_authenticated": false,
+      "current_2026_edition_authenticated": false,
+      "independent_technical_reviewer": false,
+      "independent_linguistic_reviewer": false,
+      "learner_approved": false,
+      "app_unchanged": true
+    }
+  ]
+}

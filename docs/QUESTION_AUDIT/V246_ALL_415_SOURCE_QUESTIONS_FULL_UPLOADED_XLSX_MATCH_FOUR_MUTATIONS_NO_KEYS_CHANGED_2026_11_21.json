@@ -1,0 +1,5804 @@
+{
+  "schema": "v246_all_415_source_original_v149_master_vs_three_user_uploaded_workbooks",
+  "date": "2026-11-21",
+  "source_of_master": "GitHub blob ee2ac5536c78eb06a0461243be34c117e257188f (V149 full original master CSV)",
+  "source_of_uploaded_evidence": "ANRE_original_workbook_source_evidence.json uploaded/generated in conversation, derived by artifact_tool from the three exact user-provided xlsx original bytes",
+  "sha256_by_file": {
+    "EL": {
+      "filename": "ELECTROTEHNICA-09.2024-2(1).xlsx",
+      "sha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+      "rows": 275
+    },
+    "LE": {
+      "filename": "LEGISLATIE-GR.-1-05.2023(1).xlsx",
+      "sha256": "b683200db51a20b625d00ed9680e4f9b6fd354535fa3cd6c277b632312d17f29",
+      "rows": 51
+    },
+    "NO": {
+      "filename": "NORME-TEHNICE-Gr.-1-05.2023(1).xlsx",
+      "sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092",
+      "rows": 100
+    }
+  },
+  "comparison": "A original stem, B,C,D as answer choices A/B/C, Unicode NFKC + whitespace-collapse + trim + FNV1a32 and DJB2 32 concatenated, all 4 fields must agree.",
+  "scope_limits": [
+    "These original Excel workbooks do not provide authenticated answer keys.",
+    "Textual comparison does not validate source norm applicability or technical answer correctness.",
+    "Two QABC entries may map the same source row across different grade IDs; leave as two entries.",
+    "The upload hash does not prove identity to the live ANRE-hosted workbook as of 2026-11-21.",
+    "No grade-specific original or Trainer-imported keys changed, no HTML/APK changed, and no human or independent reviewer approved any record."
+  ],
+  "stats": {
+    "total_published_qabc": 415,
+    "identical": 411,
+    "mutated": 4,
+    "missing": 0,
+    "total_grade_routes": 669,
+    "unique_grade_routes": 669,
+    "mutated_qabc": [
+      "QABC-0143",
+      "QABC-0236",
+      "QABC-0362",
+      "QABC-0386"
+    ],
+    "independent_learner_approvals": 0
+  },
+  "mutations": [
+    {
+      "id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "source_tag": "EL",
+      "source_row": 159,
+      "source_hash": "7b8817b9418a26c1",
+      "trainer_master_hash": "6e447ad6bb1060ae",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false,
+      "original_source": {
+        "stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "master_changed": {
+        "stem": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "imported_keys_readonly": "G1-ELE-152=A"
+    },
+    {
+      "id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "source_tag": "EL",
+      "source_row": 254,
+      "source_hash": "49d30a4714ecbdc9",
+      "trainer_master_hash": "190b7d5bd7e04629",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false,
+      "original_source": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "master_changed": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "imported_keys_readonly": "G1-ELE-247=B | G2-ELEC-383=B"
+    },
+    {
+      "id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "source_tag": "NO",
+      "source_row": 55,
+      "source_hash": "c7b17f0c3ee88b50",
+      "trainer_master_hash": "39083e03ccc6434d",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false,
+      "original_source": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "master_changed": {
+        "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "imported_keys_readonly": "G1-NOR-048=A"
+    },
+    {
+      "id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "source_tag": "NO",
+      "source_row": 79,
+      "source_hash": "9bae4e44f21802ac",
+      "trainer_master_hash": "72a1e1f1376c0c87",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false,
+      "original_source": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "master_changed": {
+        "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "imported_keys_readonly": "G1-NOR-072=B"
+    }
+  ],
+  "records": [
+    {
+      "id": "QABC-0001",
+      "grade_ids": [
+        "G1-ELE-001",
+        "G2-ELEC-154"
+      ],
+      "source_tag": "EL",
+      "source_row": 8,
+      "source_hash": "a5f467dc4cf43338",
+      "trainer_master_hash": "a5f467dc4cf43338",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0002",
+      "grade_ids": [
+        "G1-ELE-002",
+        "G2-ELEC-155"
+      ],
+      "source_tag": "EL",
+      "source_row": 9,
+      "source_hash": "f4fb4b3b691c0e83",
+      "trainer_master_hash": "f4fb4b3b691c0e83",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0003",
+      "grade_ids": [
+        "G1-ELE-003",
+        "G2-ELEC-156"
+      ],
+      "source_tag": "EL",
+      "source_row": 10,
+      "source_hash": "beea40c2369c1d10",
+      "trainer_master_hash": "beea40c2369c1d10",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0004",
+      "grade_ids": [
+        "G1-ELE-004",
+        "G2-ELEC-157"
+      ],
+      "source_tag": "EL",
+      "source_row": 11,
+      "source_hash": "49e46c5d6d07a30f",
+      "trainer_master_hash": "49e46c5d6d07a30f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0005",
+      "grade_ids": [
+        "G1-ELE-005",
+        "G2-ELEC-158"
+      ],
+      "source_tag": "EL",
+      "source_row": 12,
+      "source_hash": "173bc88ace8f22f2",
+      "trainer_master_hash": "173bc88ace8f22f2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0006",
+      "grade_ids": [
+        "G1-ELE-006",
+        "G2-ELEC-159"
+      ],
+      "source_tag": "EL",
+      "source_row": 13,
+      "source_hash": "00e682251c2839e3",
+      "trainer_master_hash": "00e682251c2839e3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0007",
+      "grade_ids": [
+        "G1-ELE-007",
+        "G2-ELEC-160"
+      ],
+      "source_tag": "EL",
+      "source_row": 14,
+      "source_hash": "8f0cead2bb238726",
+      "trainer_master_hash": "8f0cead2bb238726",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0008",
+      "grade_ids": [
+        "G1-ELE-009",
+        "G2-ELEC-161"
+      ],
+      "source_tag": "EL",
+      "source_row": 16,
+      "source_hash": "c574be187e1e3f68",
+      "trainer_master_hash": "c574be187e1e3f68",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0009",
+      "grade_ids": [
+        "G1-ELE-010",
+        "G2-ELEC-162"
+      ],
+      "source_tag": "EL",
+      "source_row": 17,
+      "source_hash": "234441b62f08fd56",
+      "trainer_master_hash": "234441b62f08fd56",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0010",
+      "grade_ids": [
+        "G1-ELE-011",
+        "G2-ELEC-163"
+      ],
+      "source_tag": "EL",
+      "source_row": 18,
+      "source_hash": "60af832eb406354c",
+      "trainer_master_hash": "60af832eb406354c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0011",
+      "grade_ids": [
+        "G1-ELE-012",
+        "G2-ELEC-164"
+      ],
+      "source_tag": "EL",
+      "source_row": 19,
+      "source_hash": "0a06cce701eb13ad",
+      "trainer_master_hash": "0a06cce701eb13ad",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0012",
+      "grade_ids": [
+        "G1-ELE-013",
+        "G2-ELEC-165"
+      ],
+      "source_tag": "EL",
+      "source_row": 20,
+      "source_hash": "e4afb3c1ed4c0111",
+      "trainer_master_hash": "e4afb3c1ed4c0111",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0013",
+      "grade_ids": [
+        "G1-ELE-014",
+        "G2-ELEC-166"
+      ],
+      "source_tag": "EL",
+      "source_row": 21,
+      "source_hash": "249b8f7995eebeb7",
+      "trainer_master_hash": "249b8f7995eebeb7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0014",
+      "grade_ids": [
+        "G1-ELE-015",
+        "G2-ELEC-167"
+      ],
+      "source_tag": "EL",
+      "source_row": 22,
+      "source_hash": "4e29a58e9800d268",
+      "trainer_master_hash": "4e29a58e9800d268",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0015",
+      "grade_ids": [
+        "G1-ELE-016",
+        "G2-ELEC-168"
+      ],
+      "source_tag": "EL",
+      "source_row": 23,
+      "source_hash": "56ac777dce1f6de5",
+      "trainer_master_hash": "56ac777dce1f6de5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0016",
+      "grade_ids": [
+        "G1-ELE-017",
+        "G2-ELEC-169"
+      ],
+      "source_tag": "EL",
+      "source_row": 24,
+      "source_hash": "9f7b14ccf6feb148",
+      "trainer_master_hash": "9f7b14ccf6feb148",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0017",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "source_tag": "EL",
+      "source_row": 25,
+      "source_hash": "2c7e9aa8aa8b40f2",
+      "trainer_master_hash": "2c7e9aa8aa8b40f2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0018",
+      "grade_ids": [
+        "G1-ELE-019",
+        "G2-ELEC-171"
+      ],
+      "source_tag": "EL",
+      "source_row": 26,
+      "source_hash": "6df3a97d875d6b5d",
+      "trainer_master_hash": "6df3a97d875d6b5d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0019",
+      "grade_ids": [
+        "G1-ELE-020",
+        "G2-ELEC-172"
+      ],
+      "source_tag": "EL",
+      "source_row": 27,
+      "source_hash": "72edf484f0a5c88a",
+      "trainer_master_hash": "72edf484f0a5c88a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0020",
+      "grade_ids": [
+        "G1-ELE-021",
+        "G2-ELEC-173"
+      ],
+      "source_tag": "EL",
+      "source_row": 28,
+      "source_hash": "44c1687514b6e51f",
+      "trainer_master_hash": "44c1687514b6e51f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0021",
+      "grade_ids": [
+        "G1-ELE-022",
+        "G2-ELEC-174"
+      ],
+      "source_tag": "EL",
+      "source_row": 29,
+      "source_hash": "5eafed8e6b498786",
+      "trainer_master_hash": "5eafed8e6b498786",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0022",
+      "grade_ids": [
+        "G1-ELE-026",
+        "G2-ELEC-175"
+      ],
+      "source_tag": "EL",
+      "source_row": 33,
+      "source_hash": "1bfddbe239cbea16",
+      "trainer_master_hash": "1bfddbe239cbea16",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0023",
+      "grade_ids": [
+        "G1-ELE-027",
+        "G2-ELEC-176"
+      ],
+      "source_tag": "EL",
+      "source_row": 34,
+      "source_hash": "7a7698ce3fc182bc",
+      "trainer_master_hash": "7a7698ce3fc182bc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0024",
+      "grade_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "source_tag": "EL",
+      "source_row": 35,
+      "source_hash": "7554e5d237cb14c2",
+      "trainer_master_hash": "7554e5d237cb14c2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0025",
+      "grade_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "source_tag": "EL",
+      "source_row": 36,
+      "source_hash": "bdd436af11862059",
+      "trainer_master_hash": "bdd436af11862059",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0026",
+      "grade_ids": [
+        "G1-ELE-030",
+        "G2-ELEC-179"
+      ],
+      "source_tag": "EL",
+      "source_row": 37,
+      "source_hash": "1dfffe2ce36617be",
+      "trainer_master_hash": "1dfffe2ce36617be",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0027",
+      "grade_ids": [
+        "G1-ELE-031",
+        "G2-ELEC-180"
+      ],
+      "source_tag": "EL",
+      "source_row": 38,
+      "source_hash": "a69ab9fcdc893e92",
+      "trainer_master_hash": "a69ab9fcdc893e92",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0028",
+      "grade_ids": [
+        "G1-ELE-033",
+        "G2-ELEC-181"
+      ],
+      "source_tag": "EL",
+      "source_row": 40,
+      "source_hash": "5066cd75e3511efb",
+      "trainer_master_hash": "5066cd75e3511efb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0029",
+      "grade_ids": [
+        "G1-ELE-034",
+        "G2-ELEC-182"
+      ],
+      "source_tag": "EL",
+      "source_row": 41,
+      "source_hash": "32aae688f8b22a9e",
+      "trainer_master_hash": "32aae688f8b22a9e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0030",
+      "grade_ids": [
+        "G1-ELE-035",
+        "G2-ELEC-183"
+      ],
+      "source_tag": "EL",
+      "source_row": 42,
+      "source_hash": "3e9e07ee3fca5240",
+      "trainer_master_hash": "3e9e07ee3fca5240",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0031",
+      "grade_ids": [
+        "G1-ELE-038",
+        "G2-ELEC-184"
+      ],
+      "source_tag": "EL",
+      "source_row": 45,
+      "source_hash": "1a5cc1533211f6af",
+      "trainer_master_hash": "1a5cc1533211f6af",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0032",
+      "grade_ids": [
+        "G1-ELE-039",
+        "G2-ELEC-185"
+      ],
+      "source_tag": "EL",
+      "source_row": 46,
+      "source_hash": "370f10c7782ae24b",
+      "trainer_master_hash": "370f10c7782ae24b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0033",
+      "grade_ids": [
+        "G1-ELE-040",
+        "G2-ELEC-186"
+      ],
+      "source_tag": "EL",
+      "source_row": 47,
+      "source_hash": "5575ca10c2c01766",
+      "trainer_master_hash": "5575ca10c2c01766",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0034",
+      "grade_ids": [
+        "G1-ELE-041",
+        "G2-ELEC-187"
+      ],
+      "source_tag": "EL",
+      "source_row": 48,
+      "source_hash": "a7f71dc57c30c4d3",
+      "trainer_master_hash": "a7f71dc57c30c4d3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0035",
+      "grade_ids": [
+        "G1-ELE-042",
+        "G2-ELEC-188"
+      ],
+      "source_tag": "EL",
+      "source_row": 49,
+      "source_hash": "4a756c32301af7ec",
+      "trainer_master_hash": "4a756c32301af7ec",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0036",
+      "grade_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "source_tag": "EL",
+      "source_row": 50,
+      "source_hash": "c546e6ea3fb0526e",
+      "trainer_master_hash": "c546e6ea3fb0526e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0037",
+      "grade_ids": [
+        "G1-ELE-044",
+        "G2-ELEC-190"
+      ],
+      "source_tag": "EL",
+      "source_row": 51,
+      "source_hash": "be01abe62b160ede",
+      "trainer_master_hash": "be01abe62b160ede",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0038",
+      "grade_ids": [
+        "G1-ELE-045",
+        "G2-ELEC-191"
+      ],
+      "source_tag": "EL",
+      "source_row": 52,
+      "source_hash": "1fb164cd323e8c11",
+      "trainer_master_hash": "1fb164cd323e8c11",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0039",
+      "grade_ids": [
+        "G1-ELE-046",
+        "G2-ELEC-192"
+      ],
+      "source_tag": "EL",
+      "source_row": 53,
+      "source_hash": "cba0e1f93ab94c2d",
+      "trainer_master_hash": "cba0e1f93ab94c2d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0040",
+      "grade_ids": [
+        "G1-ELE-047",
+        "G2-ELEC-193"
+      ],
+      "source_tag": "EL",
+      "source_row": 54,
+      "source_hash": "a86177640cc262f8",
+      "trainer_master_hash": "a86177640cc262f8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0041",
+      "grade_ids": [
+        "G1-ELE-048",
+        "G2-ELEC-194"
+      ],
+      "source_tag": "EL",
+      "source_row": 55,
+      "source_hash": "9124161a2a7a4cd8",
+      "trainer_master_hash": "9124161a2a7a4cd8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0042",
+      "grade_ids": [
+        "G1-ELE-049",
+        "G2-ELEC-195"
+      ],
+      "source_tag": "EL",
+      "source_row": 56,
+      "source_hash": "09277b85b3120cd7",
+      "trainer_master_hash": "09277b85b3120cd7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0043",
+      "grade_ids": [
+        "G1-ELE-050",
+        "G2-ELEC-196"
+      ],
+      "source_tag": "EL",
+      "source_row": 57,
+      "source_hash": "c715166a1fec88b8",
+      "trainer_master_hash": "c715166a1fec88b8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0044",
+      "grade_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "source_tag": "EL",
+      "source_row": 58,
+      "source_hash": "7332eccf5cd4c517",
+      "trainer_master_hash": "7332eccf5cd4c517",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0045",
+      "grade_ids": [
+        "G1-ELE-052",
+        "G2-ELEC-198"
+      ],
+      "source_tag": "EL",
+      "source_row": 59,
+      "source_hash": "ed6757d16a143383",
+      "trainer_master_hash": "ed6757d16a143383",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0046",
+      "grade_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "source_tag": "EL",
+      "source_row": 60,
+      "source_hash": "718d4f248e9210d8",
+      "trainer_master_hash": "718d4f248e9210d8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0047",
+      "grade_ids": [
+        "G1-ELE-054",
+        "G2-ELEC-200"
+      ],
+      "source_tag": "EL",
+      "source_row": 61,
+      "source_hash": "c8479abc58e558e0",
+      "trainer_master_hash": "c8479abc58e558e0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0048",
+      "grade_ids": [
+        "G1-ELE-055",
+        "G2-ELEC-201"
+      ],
+      "source_tag": "EL",
+      "source_row": 62,
+      "source_hash": "b7b558af73792d77",
+      "trainer_master_hash": "b7b558af73792d77",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0049",
+      "grade_ids": [
+        "G1-ELE-056",
+        "G2-ELEC-202"
+      ],
+      "source_tag": "EL",
+      "source_row": 63,
+      "source_hash": "d9025e94462cecde",
+      "trainer_master_hash": "d9025e94462cecde",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0050",
+      "grade_ids": [
+        "G1-ELE-057",
+        "G2-ELEC-203"
+      ],
+      "source_tag": "EL",
+      "source_row": 64,
+      "source_hash": "510b2d35c7b858a5",
+      "trainer_master_hash": "510b2d35c7b858a5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0051",
+      "grade_ids": [
+        "G1-ELE-059",
+        "G2-ELEC-204"
+      ],
+      "source_tag": "EL",
+      "source_row": 66,
+      "source_hash": "36a0793bb4e98cdf",
+      "trainer_master_hash": "36a0793bb4e98cdf",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0052",
+      "grade_ids": [
+        "G1-ELE-060",
+        "G2-ELEC-205"
+      ],
+      "source_tag": "EL",
+      "source_row": 67,
+      "source_hash": "d97838810aec56a7",
+      "trainer_master_hash": "d97838810aec56a7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0053",
+      "grade_ids": [
+        "G1-ELE-061",
+        "G2-ELEC-206"
+      ],
+      "source_tag": "EL",
+      "source_row": 68,
+      "source_hash": "c75f8a4dc1973f5b",
+      "trainer_master_hash": "c75f8a4dc1973f5b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0054",
+      "grade_ids": [
+        "G1-ELE-062",
+        "G2-ELEC-207"
+      ],
+      "source_tag": "EL",
+      "source_row": 69,
+      "source_hash": "062535b5d55a5a01",
+      "trainer_master_hash": "062535b5d55a5a01",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0055",
+      "grade_ids": [
+        "G1-ELE-063",
+        "G2-ELEC-208"
+      ],
+      "source_tag": "EL",
+      "source_row": 70,
+      "source_hash": "4a76f2ce4998f1a6",
+      "trainer_master_hash": "4a76f2ce4998f1a6",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0056",
+      "grade_ids": [
+        "G1-ELE-064",
+        "G2-ELEC-209"
+      ],
+      "source_tag": "EL",
+      "source_row": 71,
+      "source_hash": "fa698d115b099a1d",
+      "trainer_master_hash": "fa698d115b099a1d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0057",
+      "grade_ids": [
+        "G1-ELE-065",
+        "G2-ELEC-210"
+      ],
+      "source_tag": "EL",
+      "source_row": 72,
+      "source_hash": "694cb2d9808cbaa5",
+      "trainer_master_hash": "694cb2d9808cbaa5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0058",
+      "grade_ids": [
+        "G1-ELE-066",
+        "G2-ELEC-211"
+      ],
+      "source_tag": "EL",
+      "source_row": 73,
+      "source_hash": "452a83126fa64400",
+      "trainer_master_hash": "452a83126fa64400",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0059",
+      "grade_ids": [
+        "G1-ELE-067",
+        "G2-ELEC-212"
+      ],
+      "source_tag": "EL",
+      "source_row": 74,
+      "source_hash": "b437d8f1d73f4131",
+      "trainer_master_hash": "b437d8f1d73f4131",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0060",
+      "grade_ids": [
+        "G1-ELE-068",
+        "G2-ELEC-213"
+      ],
+      "source_tag": "EL",
+      "source_row": 75,
+      "source_hash": "b7edbea751528b39",
+      "trainer_master_hash": "b7edbea751528b39",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0061",
+      "grade_ids": [
+        "G1-ELE-069",
+        "G2-ELEC-214"
+      ],
+      "source_tag": "EL",
+      "source_row": 76,
+      "source_hash": "2392d966a3ec67e6",
+      "trainer_master_hash": "2392d966a3ec67e6",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0062",
+      "grade_ids": [
+        "G1-ELE-070",
+        "G2-ELEC-215"
+      ],
+      "source_tag": "EL",
+      "source_row": 77,
+      "source_hash": "d02071e413347ad4",
+      "trainer_master_hash": "d02071e413347ad4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0063",
+      "grade_ids": [
+        "G1-ELE-071",
+        "G2-ELEC-216"
+      ],
+      "source_tag": "EL",
+      "source_row": 78,
+      "source_hash": "9b4af0739820d287",
+      "trainer_master_hash": "9b4af0739820d287",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0064",
+      "grade_ids": [
+        "G1-ELE-072",
+        "G2-ELEC-217"
+      ],
+      "source_tag": "EL",
+      "source_row": 79,
+      "source_hash": "c0f117490290c207",
+      "trainer_master_hash": "c0f117490290c207",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0065",
+      "grade_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "source_tag": "EL",
+      "source_row": 80,
+      "source_hash": "9a0fc79c87b53d66",
+      "trainer_master_hash": "9a0fc79c87b53d66",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0066",
+      "grade_ids": [
+        "G1-ELE-074",
+        "G2-ELEC-219"
+      ],
+      "source_tag": "EL",
+      "source_row": 81,
+      "source_hash": "194f4540a839b4d4",
+      "trainer_master_hash": "194f4540a839b4d4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0067",
+      "grade_ids": [
+        "G1-ELE-075",
+        "G2-ELEC-220"
+      ],
+      "source_tag": "EL",
+      "source_row": 82,
+      "source_hash": "922ee316fbef38c4",
+      "trainer_master_hash": "922ee316fbef38c4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0068",
+      "grade_ids": [
+        "G1-ELE-076",
+        "G2-ELEC-221"
+      ],
+      "source_tag": "EL",
+      "source_row": 83,
+      "source_hash": "2bd5daac64a04dee",
+      "trainer_master_hash": "2bd5daac64a04dee",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0069",
+      "grade_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "source_tag": "EL",
+      "source_row": 84,
+      "source_hash": "351fd6747694b514",
+      "trainer_master_hash": "351fd6747694b514",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0070",
+      "grade_ids": [
+        "G1-ELE-078",
+        "G2-ELEC-223"
+      ],
+      "source_tag": "EL",
+      "source_row": 85,
+      "source_hash": "7414b145a79d3e87",
+      "trainer_master_hash": "7414b145a79d3e87",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0071",
+      "grade_ids": [
+        "G1-ELE-079",
+        "G2-ELEC-224"
+      ],
+      "source_tag": "EL",
+      "source_row": 86,
+      "source_hash": "a9892fdebd20fe86",
+      "trainer_master_hash": "a9892fdebd20fe86",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0072",
+      "grade_ids": [
+        "G1-ELE-080",
+        "G2-ELEC-225"
+      ],
+      "source_tag": "EL",
+      "source_row": 87,
+      "source_hash": "99512f4ebaa4a966",
+      "trainer_master_hash": "99512f4ebaa4a966",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0073",
+      "grade_ids": [
+        "G1-ELE-081",
+        "G2-ELEC-226"
+      ],
+      "source_tag": "EL",
+      "source_row": 88,
+      "source_hash": "3367b15ab03f8a80",
+      "trainer_master_hash": "3367b15ab03f8a80",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0074",
+      "grade_ids": [
+        "G1-ELE-082",
+        "G2-ELEC-227"
+      ],
+      "source_tag": "EL",
+      "source_row": 89,
+      "source_hash": "2312fa3cc5bdaee2",
+      "trainer_master_hash": "2312fa3cc5bdaee2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0075",
+      "grade_ids": [
+        "G1-ELE-083",
+        "G2-ELEC-228"
+      ],
+      "source_tag": "EL",
+      "source_row": 90,
+      "source_hash": "70b0dca5926bbc89",
+      "trainer_master_hash": "70b0dca5926bbc89",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0076",
+      "grade_ids": [
+        "G1-ELE-084",
+        "G2-ELEC-229"
+      ],
+      "source_tag": "EL",
+      "source_row": 91,
+      "source_hash": "3f39a57ab8d59bcc",
+      "trainer_master_hash": "3f39a57ab8d59bcc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0077",
+      "grade_ids": [
+        "G1-ELE-085",
+        "G2-ELEC-230"
+      ],
+      "source_tag": "EL",
+      "source_row": 92,
+      "source_hash": "dbbc4a7592055891",
+      "trainer_master_hash": "dbbc4a7592055891",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0078",
+      "grade_ids": [
+        "G1-ELE-086",
+        "G2-ELEC-231"
+      ],
+      "source_tag": "EL",
+      "source_row": 93,
+      "source_hash": "fb637f26074e291a",
+      "trainer_master_hash": "fb637f26074e291a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0079",
+      "grade_ids": [
+        "G1-ELE-087",
+        "G2-ELEC-232"
+      ],
+      "source_tag": "EL",
+      "source_row": 94,
+      "source_hash": "b05b85696b069ab1",
+      "trainer_master_hash": "b05b85696b069ab1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0080",
+      "grade_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "source_tag": "EL",
+      "source_row": 95,
+      "source_hash": "8b3f08c3ceefb73d",
+      "trainer_master_hash": "8b3f08c3ceefb73d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0081",
+      "grade_ids": [
+        "G1-ELE-089"
+      ],
+      "source_tag": "EL",
+      "source_row": 96,
+      "source_hash": "cd3ab20ab198da0e",
+      "trainer_master_hash": "cd3ab20ab198da0e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0082",
+      "grade_ids": [
+        "G1-ELE-090",
+        "G2-ELEC-234"
+      ],
+      "source_tag": "EL",
+      "source_row": 97,
+      "source_hash": "7ffc5c1450e3ea6a",
+      "trainer_master_hash": "7ffc5c1450e3ea6a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0083",
+      "grade_ids": [
+        "G1-ELE-091",
+        "G2-ELEC-235"
+      ],
+      "source_tag": "EL",
+      "source_row": 98,
+      "source_hash": "fafd05b3dfa3ad61",
+      "trainer_master_hash": "fafd05b3dfa3ad61",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0084",
+      "grade_ids": [
+        "G1-ELE-092",
+        "G2-ELEC-236"
+      ],
+      "source_tag": "EL",
+      "source_row": 99,
+      "source_hash": "732ef1ff4a8118bd",
+      "trainer_master_hash": "732ef1ff4a8118bd",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0085",
+      "grade_ids": [
+        "G1-ELE-093",
+        "G2-ELEC-237"
+      ],
+      "source_tag": "EL",
+      "source_row": 100,
+      "source_hash": "ee7ff6f3fa46f60d",
+      "trainer_master_hash": "ee7ff6f3fa46f60d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0086",
+      "grade_ids": [
+        "G1-ELE-094"
+      ],
+      "source_tag": "EL",
+      "source_row": 101,
+      "source_hash": "5d1e1693d8934083",
+      "trainer_master_hash": "5d1e1693d8934083",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0087",
+      "grade_ids": [
+        "G1-ELE-095",
+        "G2-ELEC-238"
+      ],
+      "source_tag": "EL",
+      "source_row": 102,
+      "source_hash": "001c06736e17aa4b",
+      "trainer_master_hash": "001c06736e17aa4b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0088",
+      "grade_ids": [
+        "G1-ELE-096",
+        "G2-ELEC-239"
+      ],
+      "source_tag": "EL",
+      "source_row": 103,
+      "source_hash": "4d61aeca41702a5a",
+      "trainer_master_hash": "4d61aeca41702a5a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0089",
+      "grade_ids": [
+        "G1-ELE-097",
+        "G2-ELEC-240"
+      ],
+      "source_tag": "EL",
+      "source_row": 104,
+      "source_hash": "e224c99dea4bede7",
+      "trainer_master_hash": "e224c99dea4bede7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0090",
+      "grade_ids": [
+        "G1-ELE-098",
+        "G2-ELEC-241"
+      ],
+      "source_tag": "EL",
+      "source_row": 105,
+      "source_hash": "fbce5fbba966b6f1",
+      "trainer_master_hash": "fbce5fbba966b6f1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0091",
+      "grade_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "source_tag": "EL",
+      "source_row": 106,
+      "source_hash": "c9d3feddb6b6845d",
+      "trainer_master_hash": "c9d3feddb6b6845d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0092",
+      "grade_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "source_tag": "EL",
+      "source_row": 107,
+      "source_hash": "51c4ce442151663c",
+      "trainer_master_hash": "51c4ce442151663c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0093",
+      "grade_ids": [
+        "G1-ELE-101",
+        "G2-ELEC-244"
+      ],
+      "source_tag": "EL",
+      "source_row": 108,
+      "source_hash": "8840de1526726343",
+      "trainer_master_hash": "8840de1526726343",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "source_tag": "EL",
+      "source_row": 109,
+      "source_hash": "f7dfb6a7eec6feed",
+      "trainer_master_hash": "f7dfb6a7eec6feed",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0095",
+      "grade_ids": [
+        "G1-ELE-103",
+        "G2-ELEC-246"
+      ],
+      "source_tag": "EL",
+      "source_row": 110,
+      "source_hash": "58a180b7f9214253",
+      "trainer_master_hash": "58a180b7f9214253",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0096",
+      "grade_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "source_tag": "EL",
+      "source_row": 111,
+      "source_hash": "e031fd7603a9f64a",
+      "trainer_master_hash": "e031fd7603a9f64a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0097",
+      "grade_ids": [
+        "G1-ELE-105",
+        "G2-ELEC-248"
+      ],
+      "source_tag": "EL",
+      "source_row": 112,
+      "source_hash": "2ea58cbdeba37653",
+      "trainer_master_hash": "2ea58cbdeba37653",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0098",
+      "grade_ids": [
+        "G1-ELE-106",
+        "G2-ELEC-249"
+      ],
+      "source_tag": "EL",
+      "source_row": 113,
+      "source_hash": "977357dac70f657e",
+      "trainer_master_hash": "977357dac70f657e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0099",
+      "grade_ids": [
+        "G1-ELE-107",
+        "G2-ELEC-250"
+      ],
+      "source_tag": "EL",
+      "source_row": 114,
+      "source_hash": "ae15285b6c1034e7",
+      "trainer_master_hash": "ae15285b6c1034e7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0100",
+      "grade_ids": [
+        "G1-ELE-108",
+        "G2-ELEC-251"
+      ],
+      "source_tag": "EL",
+      "source_row": 115,
+      "source_hash": "a14bbd7aab4f5a98",
+      "trainer_master_hash": "a14bbd7aab4f5a98",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0101",
+      "grade_ids": [
+        "G1-ELE-109",
+        "G2-ELEC-252"
+      ],
+      "source_tag": "EL",
+      "source_row": 116,
+      "source_hash": "332215821dce88b0",
+      "trainer_master_hash": "332215821dce88b0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0102",
+      "grade_ids": [
+        "G1-ELE-111",
+        "G2-ELEC-253"
+      ],
+      "source_tag": "EL",
+      "source_row": 118,
+      "source_hash": "03bb259325387463",
+      "trainer_master_hash": "03bb259325387463",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0103",
+      "grade_ids": [
+        "G1-ELE-112",
+        "G2-ELEC-254"
+      ],
+      "source_tag": "EL",
+      "source_row": 119,
+      "source_hash": "202ccb7b92290b81",
+      "trainer_master_hash": "202ccb7b92290b81",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0104",
+      "grade_ids": [
+        "G1-ELE-113",
+        "G2-ELEC-255"
+      ],
+      "source_tag": "EL",
+      "source_row": 120,
+      "source_hash": "4cf8aa139efd2923",
+      "trainer_master_hash": "4cf8aa139efd2923",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0105",
+      "grade_ids": [
+        "G1-ELE-114",
+        "G2-ELEC-256"
+      ],
+      "source_tag": "EL",
+      "source_row": 121,
+      "source_hash": "7bd1dc3f941e7929",
+      "trainer_master_hash": "7bd1dc3f941e7929",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0106",
+      "grade_ids": [
+        "G1-ELE-115",
+        "G2-ELEC-257"
+      ],
+      "source_tag": "EL",
+      "source_row": 122,
+      "source_hash": "6acc2c3c28c8fc60",
+      "trainer_master_hash": "6acc2c3c28c8fc60",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0107",
+      "grade_ids": [
+        "G1-ELE-116",
+        "G2-ELEC-258"
+      ],
+      "source_tag": "EL",
+      "source_row": 123,
+      "source_hash": "17ea6a890e37b64b",
+      "trainer_master_hash": "17ea6a890e37b64b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0108",
+      "grade_ids": [
+        "G1-ELE-117",
+        "G2-ELEC-259"
+      ],
+      "source_tag": "EL",
+      "source_row": 124,
+      "source_hash": "16395af2830ce38a",
+      "trainer_master_hash": "16395af2830ce38a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0109",
+      "grade_ids": [
+        "G1-ELE-118",
+        "G2-ELEC-260"
+      ],
+      "source_tag": "EL",
+      "source_row": 125,
+      "source_hash": "cb6caadfeb96e0ab",
+      "trainer_master_hash": "cb6caadfeb96e0ab",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0110",
+      "grade_ids": [
+        "G1-ELE-119",
+        "G2-ELEC-261"
+      ],
+      "source_tag": "EL",
+      "source_row": 126,
+      "source_hash": "9991279d0d837d7f",
+      "trainer_master_hash": "9991279d0d837d7f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0111",
+      "grade_ids": [
+        "G1-ELE-120",
+        "G2-ELEC-262"
+      ],
+      "source_tag": "EL",
+      "source_row": 127,
+      "source_hash": "3eafd6571f483d6b",
+      "trainer_master_hash": "3eafd6571f483d6b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0112",
+      "grade_ids": [
+        "G1-ELE-121",
+        "G2-ELEC-263"
+      ],
+      "source_tag": "EL",
+      "source_row": 128,
+      "source_hash": "95de0a287a0b4e0a",
+      "trainer_master_hash": "95de0a287a0b4e0a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0113",
+      "grade_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "source_tag": "EL",
+      "source_row": 129,
+      "source_hash": "d64789418005b24f",
+      "trainer_master_hash": "d64789418005b24f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0114",
+      "grade_ids": [
+        "G1-ELE-123",
+        "G2-ELEC-265"
+      ],
+      "source_tag": "EL",
+      "source_row": 130,
+      "source_hash": "a8ae40791d551fbb",
+      "trainer_master_hash": "a8ae40791d551fbb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0115",
+      "grade_ids": [
+        "G1-ELE-124",
+        "G2-ELEC-266"
+      ],
+      "source_tag": "EL",
+      "source_row": 131,
+      "source_hash": "943b4763d33ea523",
+      "trainer_master_hash": "943b4763d33ea523",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0116",
+      "grade_ids": [
+        "G1-ELE-125"
+      ],
+      "source_tag": "EL",
+      "source_row": 132,
+      "source_hash": "43298bdf969763e3",
+      "trainer_master_hash": "43298bdf969763e3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0117",
+      "grade_ids": [
+        "G1-ELE-126"
+      ],
+      "source_tag": "EL",
+      "source_row": 133,
+      "source_hash": "ed31184e56f390cc",
+      "trainer_master_hash": "ed31184e56f390cc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0118",
+      "grade_ids": [
+        "G1-ELE-127",
+        "G2-ELEC-267"
+      ],
+      "source_tag": "EL",
+      "source_row": 134,
+      "source_hash": "2a17e4bfa8760267",
+      "trainer_master_hash": "2a17e4bfa8760267",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0119",
+      "grade_ids": [
+        "G1-ELE-128",
+        "G2-ELEC-268"
+      ],
+      "source_tag": "EL",
+      "source_row": 135,
+      "source_hash": "ad33429366ddd21d",
+      "trainer_master_hash": "ad33429366ddd21d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0120",
+      "grade_ids": [
+        "G1-ELE-129",
+        "G2-ELEC-269"
+      ],
+      "source_tag": "EL",
+      "source_row": 136,
+      "source_hash": "8fc8c1df033a9f8b",
+      "trainer_master_hash": "8fc8c1df033a9f8b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0121",
+      "grade_ids": [
+        "G1-ELE-130",
+        "G2-ELEC-270"
+      ],
+      "source_tag": "EL",
+      "source_row": 137,
+      "source_hash": "3cd8805aee9957dc",
+      "trainer_master_hash": "3cd8805aee9957dc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0122",
+      "grade_ids": [
+        "G1-ELE-131",
+        "G2-ELEC-271"
+      ],
+      "source_tag": "EL",
+      "source_row": 138,
+      "source_hash": "98217b886cb33774",
+      "trainer_master_hash": "98217b886cb33774",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0123",
+      "grade_ids": [
+        "G1-ELE-132",
+        "G2-ELEC-272"
+      ],
+      "source_tag": "EL",
+      "source_row": 139,
+      "source_hash": "b62dc8eca92b52da",
+      "trainer_master_hash": "b62dc8eca92b52da",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0124",
+      "grade_ids": [
+        "G1-ELE-133",
+        "G2-ELEC-273"
+      ],
+      "source_tag": "EL",
+      "source_row": 140,
+      "source_hash": "9c20fd5bb8088f4f",
+      "trainer_master_hash": "9c20fd5bb8088f4f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0125",
+      "grade_ids": [
+        "G1-ELE-134",
+        "G2-ELEC-274"
+      ],
+      "source_tag": "EL",
+      "source_row": 141,
+      "source_hash": "0cd78bbe82d51b2e",
+      "trainer_master_hash": "0cd78bbe82d51b2e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0126",
+      "grade_ids": [
+        "G1-ELE-135",
+        "G2-ELEC-275"
+      ],
+      "source_tag": "EL",
+      "source_row": 142,
+      "source_hash": "ac17383fe48c0b73",
+      "trainer_master_hash": "ac17383fe48c0b73",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0127",
+      "grade_ids": [
+        "G1-ELE-136",
+        "G2-ELEC-276"
+      ],
+      "source_tag": "EL",
+      "source_row": 143,
+      "source_hash": "5b762e7b7cd5e8e3",
+      "trainer_master_hash": "5b762e7b7cd5e8e3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0128",
+      "grade_ids": [
+        "G1-ELE-137"
+      ],
+      "source_tag": "EL",
+      "source_row": 144,
+      "source_hash": "6e2b6b83680038eb",
+      "trainer_master_hash": "6e2b6b83680038eb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0129",
+      "grade_ids": [
+        "G1-ELE-138"
+      ],
+      "source_tag": "EL",
+      "source_row": 145,
+      "source_hash": "1e94cc669fac9194",
+      "trainer_master_hash": "1e94cc669fac9194",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0130",
+      "grade_ids": [
+        "G1-ELE-139",
+        "G2-ELEC-277"
+      ],
+      "source_tag": "EL",
+      "source_row": 146,
+      "source_hash": "75aec8afc64e7725",
+      "trainer_master_hash": "75aec8afc64e7725",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0131",
+      "grade_ids": [
+        "G1-ELE-140",
+        "G2-ELEC-278"
+      ],
+      "source_tag": "EL",
+      "source_row": 147,
+      "source_hash": "e99f1f2eca1d9bac",
+      "trainer_master_hash": "e99f1f2eca1d9bac",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0132",
+      "grade_ids": [
+        "G1-ELE-141",
+        "G2-ELEC-279"
+      ],
+      "source_tag": "EL",
+      "source_row": 148,
+      "source_hash": "ba481bf4d926f646",
+      "trainer_master_hash": "ba481bf4d926f646",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0133",
+      "grade_ids": [
+        "G1-ELE-142",
+        "G2-ELEC-280"
+      ],
+      "source_tag": "EL",
+      "source_row": 149,
+      "source_hash": "69c6907f8b5eda0d",
+      "trainer_master_hash": "69c6907f8b5eda0d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0134",
+      "grade_ids": [
+        "G1-ELE-143",
+        "G2-ELEC-281"
+      ],
+      "source_tag": "EL",
+      "source_row": 150,
+      "source_hash": "17e6b523dc66e41f",
+      "trainer_master_hash": "17e6b523dc66e41f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0135",
+      "grade_ids": [
+        "G1-ELE-144",
+        "G2-ELEC-282"
+      ],
+      "source_tag": "EL",
+      "source_row": 151,
+      "source_hash": "569aac6114026beb",
+      "trainer_master_hash": "569aac6114026beb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0136",
+      "grade_ids": [
+        "G1-ELE-145",
+        "G2-ELEC-283"
+      ],
+      "source_tag": "EL",
+      "source_row": 152,
+      "source_hash": "b8d3c27ee4a560fc",
+      "trainer_master_hash": "b8d3c27ee4a560fc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0137",
+      "grade_ids": [
+        "G1-ELE-146",
+        "G2-ELEC-284"
+      ],
+      "source_tag": "EL",
+      "source_row": 153,
+      "source_hash": "31a8e1c91fd290bb",
+      "trainer_master_hash": "31a8e1c91fd290bb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0138",
+      "grade_ids": [
+        "G1-ELE-147",
+        "G2-ELEC-285"
+      ],
+      "source_tag": "EL",
+      "source_row": 154,
+      "source_hash": "693c62e2a65b6fd4",
+      "trainer_master_hash": "693c62e2a65b6fd4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0139",
+      "grade_ids": [
+        "G1-ELE-148",
+        "G2-ELEC-286"
+      ],
+      "source_tag": "EL",
+      "source_row": 155,
+      "source_hash": "e3d34fc6f1c9eb40",
+      "trainer_master_hash": "e3d34fc6f1c9eb40",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0140",
+      "grade_ids": [
+        "G1-ELE-149",
+        "G2-ELEC-287"
+      ],
+      "source_tag": "EL",
+      "source_row": 156,
+      "source_hash": "8152f665f9d83639",
+      "trainer_master_hash": "8152f665f9d83639",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0141",
+      "grade_ids": [
+        "G1-ELE-150",
+        "G2-ELEC-288"
+      ],
+      "source_tag": "EL",
+      "source_row": 157,
+      "source_hash": "63006037fe27ddef",
+      "trainer_master_hash": "63006037fe27ddef",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0142",
+      "grade_ids": [
+        "G1-ELE-151",
+        "G2-ELEC-289"
+      ],
+      "source_tag": "EL",
+      "source_row": 158,
+      "source_hash": "f661b53015a34fea",
+      "trainer_master_hash": "f661b53015a34fea",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "source_tag": "EL",
+      "source_row": 159,
+      "source_hash": "7b8817b9418a26c1",
+      "trainer_master_hash": "6e447ad6bb1060ae",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0144",
+      "grade_ids": [
+        "G1-ELE-153",
+        "G2-ELEC-291"
+      ],
+      "source_tag": "EL",
+      "source_row": 160,
+      "source_hash": "7678aed0c1ad87da",
+      "trainer_master_hash": "7678aed0c1ad87da",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0145",
+      "grade_ids": [
+        "G1-ELE-154",
+        "G2-ELEC-292"
+      ],
+      "source_tag": "EL",
+      "source_row": 161,
+      "source_hash": "5b02cabe44f24c50",
+      "trainer_master_hash": "5b02cabe44f24c50",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0146",
+      "grade_ids": [
+        "G1-ELE-155",
+        "G2-ELEC-293"
+      ],
+      "source_tag": "EL",
+      "source_row": 162,
+      "source_hash": "a31f3a232e1b73b1",
+      "trainer_master_hash": "a31f3a232e1b73b1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0147",
+      "grade_ids": [
+        "G1-ELE-156",
+        "G2-ELEC-294"
+      ],
+      "source_tag": "EL",
+      "source_row": 163,
+      "source_hash": "d352b19eeba1b700",
+      "trainer_master_hash": "d352b19eeba1b700",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0148",
+      "grade_ids": [
+        "G1-ELE-157",
+        "G2-ELEC-295"
+      ],
+      "source_tag": "EL",
+      "source_row": 164,
+      "source_hash": "1e94509d8a193efb",
+      "trainer_master_hash": "1e94509d8a193efb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0149",
+      "grade_ids": [
+        "G1-ELE-158",
+        "G2-ELEC-296"
+      ],
+      "source_tag": "EL",
+      "source_row": 165,
+      "source_hash": "414c2a3d489b5687",
+      "trainer_master_hash": "414c2a3d489b5687",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0150",
+      "grade_ids": [
+        "G1-ELE-159",
+        "G2-ELEC-297"
+      ],
+      "source_tag": "EL",
+      "source_row": 166,
+      "source_hash": "8b0c1a594e7e2669",
+      "trainer_master_hash": "8b0c1a594e7e2669",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0151",
+      "grade_ids": [
+        "G1-ELE-160",
+        "G2-ELEC-298"
+      ],
+      "source_tag": "EL",
+      "source_row": 167,
+      "source_hash": "737448d0d4f8f200",
+      "trainer_master_hash": "737448d0d4f8f200",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0152",
+      "grade_ids": [
+        "G1-ELE-161",
+        "G2-ELEC-299"
+      ],
+      "source_tag": "EL",
+      "source_row": 168,
+      "source_hash": "0f8e5cd7b1b3c45f",
+      "trainer_master_hash": "0f8e5cd7b1b3c45f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0153",
+      "grade_ids": [
+        "G1-ELE-162",
+        "G2-ELEC-300"
+      ],
+      "source_tag": "EL",
+      "source_row": 169,
+      "source_hash": "daa200545c79ff36",
+      "trainer_master_hash": "daa200545c79ff36",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0154",
+      "grade_ids": [
+        "G1-ELE-163",
+        "G2-ELEC-301"
+      ],
+      "source_tag": "EL",
+      "source_row": 170,
+      "source_hash": "99654da0a9f64bac",
+      "trainer_master_hash": "99654da0a9f64bac",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0155",
+      "grade_ids": [
+        "G1-ELE-164",
+        "G2-ELEC-302"
+      ],
+      "source_tag": "EL",
+      "source_row": 171,
+      "source_hash": "5fc484b402cc738e",
+      "trainer_master_hash": "5fc484b402cc738e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0156",
+      "grade_ids": [
+        "G1-ELE-165",
+        "G2-ELEC-303"
+      ],
+      "source_tag": "EL",
+      "source_row": 172,
+      "source_hash": "ffb21764b24ce552",
+      "trainer_master_hash": "ffb21764b24ce552",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0157",
+      "grade_ids": [
+        "G1-ELE-166",
+        "G2-ELEC-304"
+      ],
+      "source_tag": "EL",
+      "source_row": 173,
+      "source_hash": "73859563df00bf4f",
+      "trainer_master_hash": "73859563df00bf4f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0158",
+      "grade_ids": [
+        "G1-ELE-167",
+        "G2-ELEC-305"
+      ],
+      "source_tag": "EL",
+      "source_row": 174,
+      "source_hash": "2094425e9b2b5c6e",
+      "trainer_master_hash": "2094425e9b2b5c6e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0159",
+      "grade_ids": [
+        "G1-ELE-168",
+        "G2-ELEC-306"
+      ],
+      "source_tag": "EL",
+      "source_row": 175,
+      "source_hash": "2b24c56adf2e23ee",
+      "trainer_master_hash": "2b24c56adf2e23ee",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0160",
+      "grade_ids": [
+        "G1-ELE-170",
+        "G2-ELEC-307"
+      ],
+      "source_tag": "EL",
+      "source_row": 177,
+      "source_hash": "5131001858cd2306",
+      "trainer_master_hash": "5131001858cd2306",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0161",
+      "grade_ids": [
+        "G1-ELE-171",
+        "G2-ELEC-308"
+      ],
+      "source_tag": "EL",
+      "source_row": 178,
+      "source_hash": "2728f34c56701322",
+      "trainer_master_hash": "2728f34c56701322",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0162",
+      "grade_ids": [
+        "G1-ELE-172",
+        "G2-ELEC-309"
+      ],
+      "source_tag": "EL",
+      "source_row": 179,
+      "source_hash": "e2511eb5aed1c51d",
+      "trainer_master_hash": "e2511eb5aed1c51d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0163",
+      "grade_ids": [
+        "G1-ELE-173",
+        "G2-ELEC-310"
+      ],
+      "source_tag": "EL",
+      "source_row": 180,
+      "source_hash": "5b7fec83c0284159",
+      "trainer_master_hash": "5b7fec83c0284159",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0164",
+      "grade_ids": [
+        "G1-ELE-175",
+        "G2-ELEC-311"
+      ],
+      "source_tag": "EL",
+      "source_row": 182,
+      "source_hash": "9458fcc618e02f82",
+      "trainer_master_hash": "9458fcc618e02f82",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0165",
+      "grade_ids": [
+        "G1-ELE-176",
+        "G2-ELEC-312"
+      ],
+      "source_tag": "EL",
+      "source_row": 183,
+      "source_hash": "083e62b1ed9a26b1",
+      "trainer_master_hash": "083e62b1ed9a26b1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0166",
+      "grade_ids": [
+        "G1-ELE-177",
+        "G2-ELEC-313"
+      ],
+      "source_tag": "EL",
+      "source_row": 184,
+      "source_hash": "4ca2a1ed6cedd4eb",
+      "trainer_master_hash": "4ca2a1ed6cedd4eb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0167",
+      "grade_ids": [
+        "G1-ELE-178",
+        "G2-ELEC-314"
+      ],
+      "source_tag": "EL",
+      "source_row": 185,
+      "source_hash": "a5ced682debfc15a",
+      "trainer_master_hash": "a5ced682debfc15a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0168",
+      "grade_ids": [
+        "G1-ELE-179",
+        "G2-ELEC-315"
+      ],
+      "source_tag": "EL",
+      "source_row": 186,
+      "source_hash": "b0a9250b3d29ed33",
+      "trainer_master_hash": "b0a9250b3d29ed33",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0169",
+      "grade_ids": [
+        "G1-ELE-180",
+        "G2-ELEC-316"
+      ],
+      "source_tag": "EL",
+      "source_row": 187,
+      "source_hash": "1b99966a40cec244",
+      "trainer_master_hash": "1b99966a40cec244",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0170",
+      "grade_ids": [
+        "G1-ELE-181",
+        "G2-ELEC-317"
+      ],
+      "source_tag": "EL",
+      "source_row": 188,
+      "source_hash": "2bde132e7e992a1c",
+      "trainer_master_hash": "2bde132e7e992a1c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0171",
+      "grade_ids": [
+        "G1-ELE-182",
+        "G2-ELEC-318"
+      ],
+      "source_tag": "EL",
+      "source_row": 189,
+      "source_hash": "2b3741458f09caed",
+      "trainer_master_hash": "2b3741458f09caed",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0172",
+      "grade_ids": [
+        "G1-ELE-183",
+        "G2-ELEC-319"
+      ],
+      "source_tag": "EL",
+      "source_row": 190,
+      "source_hash": "3154562d225b1d7b",
+      "trainer_master_hash": "3154562d225b1d7b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0173",
+      "grade_ids": [
+        "G1-ELE-184",
+        "G2-ELEC-320"
+      ],
+      "source_tag": "EL",
+      "source_row": 191,
+      "source_hash": "454e7de4ee7a3b0e",
+      "trainer_master_hash": "454e7de4ee7a3b0e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0174",
+      "grade_ids": [
+        "G1-ELE-185",
+        "G2-ELEC-321"
+      ],
+      "source_tag": "EL",
+      "source_row": 192,
+      "source_hash": "b87dc06aad79606a",
+      "trainer_master_hash": "b87dc06aad79606a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0175",
+      "grade_ids": [
+        "G1-ELE-186",
+        "G2-ELEC-322"
+      ],
+      "source_tag": "EL",
+      "source_row": 193,
+      "source_hash": "75503a5fa8c55583",
+      "trainer_master_hash": "75503a5fa8c55583",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0176",
+      "grade_ids": [
+        "G1-ELE-187",
+        "G2-ELEC-323"
+      ],
+      "source_tag": "EL",
+      "source_row": 194,
+      "source_hash": "dde6d2a76c503a99",
+      "trainer_master_hash": "dde6d2a76c503a99",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0177",
+      "grade_ids": [
+        "G1-ELE-188",
+        "G2-ELEC-324"
+      ],
+      "source_tag": "EL",
+      "source_row": 195,
+      "source_hash": "1cd67b20a0a4f5f0",
+      "trainer_master_hash": "1cd67b20a0a4f5f0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0178",
+      "grade_ids": [
+        "G1-ELE-189",
+        "G2-ELEC-325"
+      ],
+      "source_tag": "EL",
+      "source_row": 196,
+      "source_hash": "ee439838685c3c3a",
+      "trainer_master_hash": "ee439838685c3c3a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0179",
+      "grade_ids": [
+        "G1-ELE-190",
+        "G2-ELEC-326"
+      ],
+      "source_tag": "EL",
+      "source_row": 197,
+      "source_hash": "c8231eee931c75fe",
+      "trainer_master_hash": "c8231eee931c75fe",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0180",
+      "grade_ids": [
+        "G1-ELE-191",
+        "G2-ELEC-327"
+      ],
+      "source_tag": "EL",
+      "source_row": 198,
+      "source_hash": "0d5b17cf060627bf",
+      "trainer_master_hash": "0d5b17cf060627bf",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0181",
+      "grade_ids": [
+        "G1-ELE-192",
+        "G2-ELEC-328"
+      ],
+      "source_tag": "EL",
+      "source_row": 199,
+      "source_hash": "67069bba3391e144",
+      "trainer_master_hash": "67069bba3391e144",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0182",
+      "grade_ids": [
+        "G1-ELE-193",
+        "G2-ELEC-329"
+      ],
+      "source_tag": "EL",
+      "source_row": 200,
+      "source_hash": "1c038b8cb5a094b0",
+      "trainer_master_hash": "1c038b8cb5a094b0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0183",
+      "grade_ids": [
+        "G1-ELE-194",
+        "G2-ELEC-330"
+      ],
+      "source_tag": "EL",
+      "source_row": 201,
+      "source_hash": "5f96b3e565704fe3",
+      "trainer_master_hash": "5f96b3e565704fe3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0184",
+      "grade_ids": [
+        "G1-ELE-195",
+        "G2-ELEC-331"
+      ],
+      "source_tag": "EL",
+      "source_row": 202,
+      "source_hash": "29f1860eeeffff3e",
+      "trainer_master_hash": "29f1860eeeffff3e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0185",
+      "grade_ids": [
+        "G1-ELE-196",
+        "G2-ELEC-332"
+      ],
+      "source_tag": "EL",
+      "source_row": 203,
+      "source_hash": "2466393ed84b42fe",
+      "trainer_master_hash": "2466393ed84b42fe",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0186",
+      "grade_ids": [
+        "G1-ELE-197",
+        "G2-ELEC-333"
+      ],
+      "source_tag": "EL",
+      "source_row": 204,
+      "source_hash": "a5b535eb016d82bf",
+      "trainer_master_hash": "a5b535eb016d82bf",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0187",
+      "grade_ids": [
+        "G1-ELE-198",
+        "G2-ELEC-334"
+      ],
+      "source_tag": "EL",
+      "source_row": 205,
+      "source_hash": "4b83ea502834d95c",
+      "trainer_master_hash": "4b83ea502834d95c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0188",
+      "grade_ids": [
+        "G1-ELE-199",
+        "G2-ELEC-335"
+      ],
+      "source_tag": "EL",
+      "source_row": 206,
+      "source_hash": "36d101981670337a",
+      "trainer_master_hash": "36d101981670337a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0189",
+      "grade_ids": [
+        "G1-ELE-200",
+        "G2-ELEC-336"
+      ],
+      "source_tag": "EL",
+      "source_row": 207,
+      "source_hash": "6485098bae62a877",
+      "trainer_master_hash": "6485098bae62a877",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0190",
+      "grade_ids": [
+        "G1-ELE-201",
+        "G2-ELEC-337"
+      ],
+      "source_tag": "EL",
+      "source_row": 208,
+      "source_hash": "f2ebbafe9255569c",
+      "trainer_master_hash": "f2ebbafe9255569c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0191",
+      "grade_ids": [
+        "G1-ELE-202",
+        "G2-ELEC-338"
+      ],
+      "source_tag": "EL",
+      "source_row": 209,
+      "source_hash": "30089246dc7524e6",
+      "trainer_master_hash": "30089246dc7524e6",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0192",
+      "grade_ids": [
+        "G1-ELE-203",
+        "G2-ELEC-339"
+      ],
+      "source_tag": "EL",
+      "source_row": 210,
+      "source_hash": "ced6750207201baa",
+      "trainer_master_hash": "ced6750207201baa",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0193",
+      "grade_ids": [
+        "G1-ELE-204",
+        "G2-ELEC-340"
+      ],
+      "source_tag": "EL",
+      "source_row": 211,
+      "source_hash": "5fe40c7c04d915c2",
+      "trainer_master_hash": "5fe40c7c04d915c2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0194",
+      "grade_ids": [
+        "G1-ELE-205",
+        "G2-ELEC-341"
+      ],
+      "source_tag": "EL",
+      "source_row": 212,
+      "source_hash": "8cbe1f246d333b32",
+      "trainer_master_hash": "8cbe1f246d333b32",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0195",
+      "grade_ids": [
+        "G1-ELE-206",
+        "G2-ELEC-342"
+      ],
+      "source_tag": "EL",
+      "source_row": 213,
+      "source_hash": "4f943f59e2812ed1",
+      "trainer_master_hash": "4f943f59e2812ed1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0196",
+      "grade_ids": [
+        "G1-ELE-207",
+        "G2-ELEC-343"
+      ],
+      "source_tag": "EL",
+      "source_row": 214,
+      "source_hash": "8cda00397e7d59f3",
+      "trainer_master_hash": "8cda00397e7d59f3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0197",
+      "grade_ids": [
+        "G1-ELE-208",
+        "G2-ELEC-344"
+      ],
+      "source_tag": "EL",
+      "source_row": 215,
+      "source_hash": "093eb5c3a923f5f5",
+      "trainer_master_hash": "093eb5c3a923f5f5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0198",
+      "grade_ids": [
+        "G1-ELE-209",
+        "G2-ELEC-345"
+      ],
+      "source_tag": "EL",
+      "source_row": 216,
+      "source_hash": "9e608d6d8e8c7bf9",
+      "trainer_master_hash": "9e608d6d8e8c7bf9",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0199",
+      "grade_ids": [
+        "G1-ELE-210",
+        "G2-ELEC-346"
+      ],
+      "source_tag": "EL",
+      "source_row": 217,
+      "source_hash": "80d35b8ed3d8e702",
+      "trainer_master_hash": "80d35b8ed3d8e702",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0200",
+      "grade_ids": [
+        "G1-ELE-211",
+        "G2-ELEC-347"
+      ],
+      "source_tag": "EL",
+      "source_row": 218,
+      "source_hash": "41472ba230939c1c",
+      "trainer_master_hash": "41472ba230939c1c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0201",
+      "grade_ids": [
+        "G1-ELE-212",
+        "G2-ELEC-348"
+      ],
+      "source_tag": "EL",
+      "source_row": 219,
+      "source_hash": "a9e6ee2d858c6bbd",
+      "trainer_master_hash": "a9e6ee2d858c6bbd",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0202",
+      "grade_ids": [
+        "G1-ELE-213",
+        "G2-ELEC-349"
+      ],
+      "source_tag": "EL",
+      "source_row": 220,
+      "source_hash": "c5a5f036002da244",
+      "trainer_master_hash": "c5a5f036002da244",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0203",
+      "grade_ids": [
+        "G1-ELE-214",
+        "G2-ELEC-350"
+      ],
+      "source_tag": "EL",
+      "source_row": 221,
+      "source_hash": "2aa1b44f10f7b799",
+      "trainer_master_hash": "2aa1b44f10f7b799",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0204",
+      "grade_ids": [
+        "G1-ELE-215",
+        "G2-ELEC-351"
+      ],
+      "source_tag": "EL",
+      "source_row": 222,
+      "source_hash": "abb89c2e41a69370",
+      "trainer_master_hash": "abb89c2e41a69370",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0205",
+      "grade_ids": [
+        "G1-ELE-216",
+        "G2-ELEC-352"
+      ],
+      "source_tag": "EL",
+      "source_row": 223,
+      "source_hash": "4c162d01c0c551e1",
+      "trainer_master_hash": "4c162d01c0c551e1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0206",
+      "grade_ids": [
+        "G1-ELE-217",
+        "G2-ELEC-353"
+      ],
+      "source_tag": "EL",
+      "source_row": 224,
+      "source_hash": "db6d83156c5020db",
+      "trainer_master_hash": "db6d83156c5020db",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0207",
+      "grade_ids": [
+        "G1-ELE-218",
+        "G2-ELEC-354"
+      ],
+      "source_tag": "EL",
+      "source_row": 225,
+      "source_hash": "f845c6a477cffffc",
+      "trainer_master_hash": "f845c6a477cffffc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0208",
+      "grade_ids": [
+        "G1-ELE-219",
+        "G2-ELEC-355"
+      ],
+      "source_tag": "EL",
+      "source_row": 226,
+      "source_hash": "f69497351e604331",
+      "trainer_master_hash": "f69497351e604331",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0209",
+      "grade_ids": [
+        "G1-ELE-220",
+        "G2-ELEC-356"
+      ],
+      "source_tag": "EL",
+      "source_row": 227,
+      "source_hash": "73fcebfe6117f22a",
+      "trainer_master_hash": "73fcebfe6117f22a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0210",
+      "grade_ids": [
+        "G1-ELE-221",
+        "G2-ELEC-357"
+      ],
+      "source_tag": "EL",
+      "source_row": 228,
+      "source_hash": "3f5cd214b0c8a2d8",
+      "trainer_master_hash": "3f5cd214b0c8a2d8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0211",
+      "grade_ids": [
+        "G1-ELE-222",
+        "G2-ELEC-358"
+      ],
+      "source_tag": "EL",
+      "source_row": 229,
+      "source_hash": "6e10cf29ff8073a5",
+      "trainer_master_hash": "6e10cf29ff8073a5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0212",
+      "grade_ids": [
+        "G1-ELE-223",
+        "G2-ELEC-359"
+      ],
+      "source_tag": "EL",
+      "source_row": 230,
+      "source_hash": "b0123a934d9715fd",
+      "trainer_master_hash": "b0123a934d9715fd",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0213",
+      "grade_ids": [
+        "G1-ELE-224",
+        "G2-ELEC-360"
+      ],
+      "source_tag": "EL",
+      "source_row": 231,
+      "source_hash": "8f4d5e63a64144bf",
+      "trainer_master_hash": "8f4d5e63a64144bf",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0214",
+      "grade_ids": [
+        "G1-ELE-225",
+        "G2-ELEC-361"
+      ],
+      "source_tag": "EL",
+      "source_row": 232,
+      "source_hash": "624e4f7410563974",
+      "trainer_master_hash": "624e4f7410563974",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0215",
+      "grade_ids": [
+        "G1-ELE-226",
+        "G2-ELEC-362"
+      ],
+      "source_tag": "EL",
+      "source_row": 233,
+      "source_hash": "c8c1d699faf249dd",
+      "trainer_master_hash": "c8c1d699faf249dd",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0216",
+      "grade_ids": [
+        "G1-ELE-227",
+        "G2-ELEC-363"
+      ],
+      "source_tag": "EL",
+      "source_row": 234,
+      "source_hash": "b8c3acf30b7888fb",
+      "trainer_master_hash": "b8c3acf30b7888fb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0217",
+      "grade_ids": [
+        "G1-ELE-228",
+        "G2-ELEC-364"
+      ],
+      "source_tag": "EL",
+      "source_row": 235,
+      "source_hash": "f33f16fcc6eb7948",
+      "trainer_master_hash": "f33f16fcc6eb7948",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0218",
+      "grade_ids": [
+        "G1-ELE-229",
+        "G2-ELEC-365"
+      ],
+      "source_tag": "EL",
+      "source_row": 236,
+      "source_hash": "643357f815556af8",
+      "trainer_master_hash": "643357f815556af8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0219",
+      "grade_ids": [
+        "G1-ELE-230",
+        "G2-ELEC-366"
+      ],
+      "source_tag": "EL",
+      "source_row": 237,
+      "source_hash": "a2d97fca5fa60e26",
+      "trainer_master_hash": "a2d97fca5fa60e26",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0220",
+      "grade_ids": [
+        "G1-ELE-231",
+        "G2-ELEC-367"
+      ],
+      "source_tag": "EL",
+      "source_row": 238,
+      "source_hash": "dc2f6809b9f31313",
+      "trainer_master_hash": "dc2f6809b9f31313",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0221",
+      "grade_ids": [
+        "G1-ELE-232",
+        "G2-ELEC-368"
+      ],
+      "source_tag": "EL",
+      "source_row": 239,
+      "source_hash": "25aba9214e8bd9a3",
+      "trainer_master_hash": "25aba9214e8bd9a3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0222",
+      "grade_ids": [
+        "G1-ELE-233",
+        "G2-ELEC-369"
+      ],
+      "source_tag": "EL",
+      "source_row": 240,
+      "source_hash": "0275a18b3eb20a4f",
+      "trainer_master_hash": "0275a18b3eb20a4f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0223",
+      "grade_ids": [
+        "G1-ELE-234",
+        "G2-ELEC-370"
+      ],
+      "source_tag": "EL",
+      "source_row": 241,
+      "source_hash": "d5f400644803f24e",
+      "trainer_master_hash": "d5f400644803f24e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0224",
+      "grade_ids": [
+        "G1-ELE-235",
+        "G2-ELEC-371"
+      ],
+      "source_tag": "EL",
+      "source_row": 242,
+      "source_hash": "349913128739010e",
+      "trainer_master_hash": "349913128739010e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0225",
+      "grade_ids": [
+        "G1-ELE-236",
+        "G2-ELEC-372"
+      ],
+      "source_tag": "EL",
+      "source_row": 243,
+      "source_hash": "15a93233b2b99cf1",
+      "trainer_master_hash": "15a93233b2b99cf1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0226",
+      "grade_ids": [
+        "G1-ELE-237",
+        "G2-ELEC-373"
+      ],
+      "source_tag": "EL",
+      "source_row": 244,
+      "source_hash": "441552c13510c613",
+      "trainer_master_hash": "441552c13510c613",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0227",
+      "grade_ids": [
+        "G1-ELE-238",
+        "G2-ELEC-374"
+      ],
+      "source_tag": "EL",
+      "source_row": 245,
+      "source_hash": "e557f54cb5cd7b74",
+      "trainer_master_hash": "e557f54cb5cd7b74",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0228",
+      "grade_ids": [
+        "G1-ELE-239",
+        "G2-ELEC-375"
+      ],
+      "source_tag": "EL",
+      "source_row": 246,
+      "source_hash": "2273984bc2b0bea7",
+      "trainer_master_hash": "2273984bc2b0bea7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0229",
+      "grade_ids": [
+        "G1-ELE-240",
+        "G2-ELEC-376"
+      ],
+      "source_tag": "EL",
+      "source_row": 247,
+      "source_hash": "96d13e922c33e654",
+      "trainer_master_hash": "96d13e922c33e654",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0230",
+      "grade_ids": [
+        "G1-ELE-241",
+        "G2-ELEC-377"
+      ],
+      "source_tag": "EL",
+      "source_row": 248,
+      "source_hash": "2b5edd3ddf0df00b",
+      "trainer_master_hash": "2b5edd3ddf0df00b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0231",
+      "grade_ids": [
+        "G1-ELE-242",
+        "G2-ELEC-378"
+      ],
+      "source_tag": "EL",
+      "source_row": 249,
+      "source_hash": "f0a33f79354b4451",
+      "trainer_master_hash": "f0a33f79354b4451",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0232",
+      "grade_ids": [
+        "G1-ELE-243",
+        "G2-ELEC-379"
+      ],
+      "source_tag": "EL",
+      "source_row": 250,
+      "source_hash": "a36b8882c6876cf8",
+      "trainer_master_hash": "a36b8882c6876cf8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0233",
+      "grade_ids": [
+        "G1-ELE-244",
+        "G2-ELEC-380"
+      ],
+      "source_tag": "EL",
+      "source_row": 251,
+      "source_hash": "83bfcefd4bd2ab91",
+      "trainer_master_hash": "83bfcefd4bd2ab91",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0234",
+      "grade_ids": [
+        "G1-ELE-245",
+        "G2-ELEC-381"
+      ],
+      "source_tag": "EL",
+      "source_row": 252,
+      "source_hash": "bf71b7142448f1ee",
+      "trainer_master_hash": "bf71b7142448f1ee",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0235",
+      "grade_ids": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "source_tag": "EL",
+      "source_row": 253,
+      "source_hash": "601b0a31cc66de23",
+      "trainer_master_hash": "601b0a31cc66de23",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "source_tag": "EL",
+      "source_row": 254,
+      "source_hash": "49d30a4714ecbdc9",
+      "trainer_master_hash": "190b7d5bd7e04629",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0237",
+      "grade_ids": [
+        "G1-ELE-248",
+        "G2-ELEC-384"
+      ],
+      "source_tag": "EL",
+      "source_row": 255,
+      "source_hash": "fc98ab05838ff08b",
+      "trainer_master_hash": "fc98ab05838ff08b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0238",
+      "grade_ids": [
+        "G1-ELE-249"
+      ],
+      "source_tag": "EL",
+      "source_row": 256,
+      "source_hash": "9d43b540b596d4b2",
+      "trainer_master_hash": "9d43b540b596d4b2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0239",
+      "grade_ids": [
+        "G1-ELE-250",
+        "G2-ELEC-385"
+      ],
+      "source_tag": "EL",
+      "source_row": 257,
+      "source_hash": "c62f079fa905bcab",
+      "trainer_master_hash": "c62f079fa905bcab",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0240",
+      "grade_ids": [
+        "G1-ELE-251",
+        "G2-ELEC-386"
+      ],
+      "source_tag": "EL",
+      "source_row": 258,
+      "source_hash": "0234d91376c86a0b",
+      "trainer_master_hash": "0234d91376c86a0b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0241",
+      "grade_ids": [
+        "G1-ELE-252",
+        "G2-ELEC-387"
+      ],
+      "source_tag": "EL",
+      "source_row": 259,
+      "source_hash": "6a225176b9223396",
+      "trainer_master_hash": "6a225176b9223396",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0242",
+      "grade_ids": [
+        "G1-ELE-253",
+        "G2-ELEC-388"
+      ],
+      "source_tag": "EL",
+      "source_row": 260,
+      "source_hash": "752cfe4592ce327d",
+      "trainer_master_hash": "752cfe4592ce327d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0243",
+      "grade_ids": [
+        "G1-ELE-254",
+        "G2-ELEC-389"
+      ],
+      "source_tag": "EL",
+      "source_row": 261,
+      "source_hash": "5f47646ee41e5c64",
+      "trainer_master_hash": "5f47646ee41e5c64",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0244",
+      "grade_ids": [
+        "G1-ELE-255",
+        "G2-ELEC-390"
+      ],
+      "source_tag": "EL",
+      "source_row": 262,
+      "source_hash": "c1fb8274173e86a8",
+      "trainer_master_hash": "c1fb8274173e86a8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0245",
+      "grade_ids": [
+        "G1-ELE-256",
+        "G2-ELEC-391"
+      ],
+      "source_tag": "EL",
+      "source_row": 263,
+      "source_hash": "1dbcbd08578e19ac",
+      "trainer_master_hash": "1dbcbd08578e19ac",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0246",
+      "grade_ids": [
+        "G1-ELE-257",
+        "G2-ELEC-392"
+      ],
+      "source_tag": "EL",
+      "source_row": 264,
+      "source_hash": "fe19844f9cf2604b",
+      "trainer_master_hash": "fe19844f9cf2604b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0247",
+      "grade_ids": [
+        "G1-ELE-258",
+        "G2-ELEC-393"
+      ],
+      "source_tag": "EL",
+      "source_row": 265,
+      "source_hash": "c67c98d1ab493111",
+      "trainer_master_hash": "c67c98d1ab493111",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0248",
+      "grade_ids": [
+        "G1-ELE-259",
+        "G2-ELEC-394"
+      ],
+      "source_tag": "EL",
+      "source_row": 266,
+      "source_hash": "3478442167599157",
+      "trainer_master_hash": "3478442167599157",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0249",
+      "grade_ids": [
+        "G1-ELE-260",
+        "G2-ELEC-395"
+      ],
+      "source_tag": "EL",
+      "source_row": 267,
+      "source_hash": "0d1080a23671d482",
+      "trainer_master_hash": "0d1080a23671d482",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0250",
+      "grade_ids": [
+        "G1-ELE-261",
+        "G2-ELEC-396"
+      ],
+      "source_tag": "EL",
+      "source_row": 268,
+      "source_hash": "61124a338c5ec85f",
+      "trainer_master_hash": "61124a338c5ec85f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0251",
+      "grade_ids": [
+        "G1-ELE-262",
+        "G2-ELEC-397"
+      ],
+      "source_tag": "EL",
+      "source_row": 269,
+      "source_hash": "b896bd062e943f02",
+      "trainer_master_hash": "b896bd062e943f02",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0252",
+      "grade_ids": [
+        "G1-ELE-263",
+        "G2-ELEC-398"
+      ],
+      "source_tag": "EL",
+      "source_row": 270,
+      "source_hash": "3662f261785f3c59",
+      "trainer_master_hash": "3662f261785f3c59",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0253",
+      "grade_ids": [
+        "G1-ELE-264",
+        "G2-ELEC-399"
+      ],
+      "source_tag": "EL",
+      "source_row": 271,
+      "source_hash": "f8cbe326c594cea4",
+      "trainer_master_hash": "f8cbe326c594cea4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0254",
+      "grade_ids": [
+        "G1-ELE-265",
+        "G2-ELEC-400"
+      ],
+      "source_tag": "EL",
+      "source_row": 272,
+      "source_hash": "9d15cb9042d47d80",
+      "trainer_master_hash": "9d15cb9042d47d80",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0255",
+      "grade_ids": [
+        "G1-ELE-266"
+      ],
+      "source_tag": "EL",
+      "source_row": 273,
+      "source_hash": "e5b0b7e51083f72d",
+      "trainer_master_hash": "e5b0b7e51083f72d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0256",
+      "grade_ids": [
+        "G1-ELE-267"
+      ],
+      "source_tag": "EL",
+      "source_row": 274,
+      "source_hash": "b4bf53a839a804c4",
+      "trainer_master_hash": "b4bf53a839a804c4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0257",
+      "grade_ids": [
+        "G1-ELE-268",
+        "G2-ELEC-401"
+      ],
+      "source_tag": "EL",
+      "source_row": 275,
+      "source_hash": "4e5cba62d429d652",
+      "trainer_master_hash": "4e5cba62d429d652",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0258",
+      "grade_ids": [
+        "G1-ELE-269",
+        "G2-ELEC-402"
+      ],
+      "source_tag": "EL",
+      "source_row": 276,
+      "source_hash": "1e6c8858cad29b94",
+      "trainer_master_hash": "1e6c8858cad29b94",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0259",
+      "grade_ids": [
+        "G1-ELE-270",
+        "G2-ELEC-403"
+      ],
+      "source_tag": "EL",
+      "source_row": 277,
+      "source_hash": "bc32cddfa86b91c9",
+      "trainer_master_hash": "bc32cddfa86b91c9",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0260",
+      "grade_ids": [
+        "G1-ELE-271",
+        "G2-ELEC-404"
+      ],
+      "source_tag": "EL",
+      "source_row": 278,
+      "source_hash": "a1a3b7b1c75a18e7",
+      "trainer_master_hash": "a1a3b7b1c75a18e7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0261",
+      "grade_ids": [
+        "G1-ELE-272",
+        "G2-ELEC-405"
+      ],
+      "source_tag": "EL",
+      "source_row": 279,
+      "source_hash": "9230d4932086d743",
+      "trainer_master_hash": "9230d4932086d743",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0262",
+      "grade_ids": [
+        "G1-ELE-273",
+        "G2-ELEC-406"
+      ],
+      "source_tag": "EL",
+      "source_row": 280,
+      "source_hash": "5e1839df35206373",
+      "trainer_master_hash": "5e1839df35206373",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0263",
+      "grade_ids": [
+        "G1-ELE-274",
+        "G2-ELEC-407"
+      ],
+      "source_tag": "EL",
+      "source_row": 281,
+      "source_hash": "c3a26a452c923c07",
+      "trainer_master_hash": "c3a26a452c923c07",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0264",
+      "grade_ids": [
+        "G1-ELE-275",
+        "G2-ELEC-408"
+      ],
+      "source_tag": "EL",
+      "source_row": 282,
+      "source_hash": "14aa2e1361b4b1d7",
+      "trainer_master_hash": "14aa2e1361b4b1d7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0265",
+      "grade_ids": [
+        "G1-LEG-001"
+      ],
+      "source_tag": "LE",
+      "source_row": 8,
+      "source_hash": "74ad4467d050138d",
+      "trainer_master_hash": "74ad4467d050138d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0266",
+      "grade_ids": [
+        "G1-LEG-002"
+      ],
+      "source_tag": "LE",
+      "source_row": 9,
+      "source_hash": "8c7c2e1f38397273",
+      "trainer_master_hash": "8c7c2e1f38397273",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0267",
+      "grade_ids": [
+        "G1-LEG-003"
+      ],
+      "source_tag": "LE",
+      "source_row": 10,
+      "source_hash": "24211d54444a1cf4",
+      "trainer_master_hash": "24211d54444a1cf4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0268",
+      "grade_ids": [
+        "G1-LEG-004"
+      ],
+      "source_tag": "LE",
+      "source_row": 11,
+      "source_hash": "fc41f00f4ee6014d",
+      "trainer_master_hash": "fc41f00f4ee6014d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0269",
+      "grade_ids": [
+        "G1-LEG-005"
+      ],
+      "source_tag": "LE",
+      "source_row": 12,
+      "source_hash": "5a00977f4c7e8dff",
+      "trainer_master_hash": "5a00977f4c7e8dff",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0270",
+      "grade_ids": [
+        "G1-LEG-006"
+      ],
+      "source_tag": "LE",
+      "source_row": 13,
+      "source_hash": "1f966d26be6687ba",
+      "trainer_master_hash": "1f966d26be6687ba",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0271",
+      "grade_ids": [
+        "G1-LEG-007"
+      ],
+      "source_tag": "LE",
+      "source_row": 14,
+      "source_hash": "cb11f3074d93304f",
+      "trainer_master_hash": "cb11f3074d93304f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0272",
+      "grade_ids": [
+        "G1-LEG-008"
+      ],
+      "source_tag": "LE",
+      "source_row": 15,
+      "source_hash": "ec1af0917b8d3391",
+      "trainer_master_hash": "ec1af0917b8d3391",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0273",
+      "grade_ids": [
+        "G1-LEG-009"
+      ],
+      "source_tag": "LE",
+      "source_row": 16,
+      "source_hash": "2b43addfe0b8f101",
+      "trainer_master_hash": "2b43addfe0b8f101",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0274",
+      "grade_ids": [
+        "G1-LEG-010"
+      ],
+      "source_tag": "LE",
+      "source_row": 17,
+      "source_hash": "10c21c4172968a97",
+      "trainer_master_hash": "10c21c4172968a97",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0275",
+      "grade_ids": [
+        "G1-LEG-011"
+      ],
+      "source_tag": "LE",
+      "source_row": 18,
+      "source_hash": "4c8d9e0548818183",
+      "trainer_master_hash": "4c8d9e0548818183",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0276",
+      "grade_ids": [
+        "G1-LEG-012"
+      ],
+      "source_tag": "LE",
+      "source_row": 19,
+      "source_hash": "40da3656e2dac496",
+      "trainer_master_hash": "40da3656e2dac496",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0277",
+      "grade_ids": [
+        "G1-LEG-013"
+      ],
+      "source_tag": "LE",
+      "source_row": 20,
+      "source_hash": "b9b82c665dcad97e",
+      "trainer_master_hash": "b9b82c665dcad97e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0278",
+      "grade_ids": [
+        "G1-LEG-014"
+      ],
+      "source_tag": "LE",
+      "source_row": 21,
+      "source_hash": "dbedd3ef45485cdd",
+      "trainer_master_hash": "dbedd3ef45485cdd",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0279",
+      "grade_ids": [
+        "G1-LEG-015"
+      ],
+      "source_tag": "LE",
+      "source_row": 22,
+      "source_hash": "337a081b503ba699",
+      "trainer_master_hash": "337a081b503ba699",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0280",
+      "grade_ids": [
+        "G1-LEG-016"
+      ],
+      "source_tag": "LE",
+      "source_row": 23,
+      "source_hash": "575dd3b95771b31b",
+      "trainer_master_hash": "575dd3b95771b31b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0281",
+      "grade_ids": [
+        "G1-LEG-017"
+      ],
+      "source_tag": "LE",
+      "source_row": 24,
+      "source_hash": "01d66b74eb649812",
+      "trainer_master_hash": "01d66b74eb649812",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0282",
+      "grade_ids": [
+        "G1-LEG-018"
+      ],
+      "source_tag": "LE",
+      "source_row": 25,
+      "source_hash": "bd66d837c5ae0527",
+      "trainer_master_hash": "bd66d837c5ae0527",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0283",
+      "grade_ids": [
+        "G1-LEG-019"
+      ],
+      "source_tag": "LE",
+      "source_row": 26,
+      "source_hash": "e68cfc76a5f44e62",
+      "trainer_master_hash": "e68cfc76a5f44e62",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0284",
+      "grade_ids": [
+        "G1-LEG-020"
+      ],
+      "source_tag": "LE",
+      "source_row": 27,
+      "source_hash": "817631add632a7f5",
+      "trainer_master_hash": "817631add632a7f5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0285",
+      "grade_ids": [
+        "G1-LEG-021"
+      ],
+      "source_tag": "LE",
+      "source_row": 28,
+      "source_hash": "92dc78389ced8b60",
+      "trainer_master_hash": "92dc78389ced8b60",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0286",
+      "grade_ids": [
+        "G1-LEG-022"
+      ],
+      "source_tag": "LE",
+      "source_row": 29,
+      "source_hash": "9944eab64f541fe8",
+      "trainer_master_hash": "9944eab64f541fe8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0287",
+      "grade_ids": [
+        "G1-LEG-023"
+      ],
+      "source_tag": "LE",
+      "source_row": 30,
+      "source_hash": "8275ed4f253f113f",
+      "trainer_master_hash": "8275ed4f253f113f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0288",
+      "grade_ids": [
+        "G1-LEG-024"
+      ],
+      "source_tag": "LE",
+      "source_row": 31,
+      "source_hash": "3d3b88e198f2b885",
+      "trainer_master_hash": "3d3b88e198f2b885",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0289",
+      "grade_ids": [
+        "G1-LEG-025"
+      ],
+      "source_tag": "LE",
+      "source_row": 32,
+      "source_hash": "ec841e5e966ca588",
+      "trainer_master_hash": "ec841e5e966ca588",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0290",
+      "grade_ids": [
+        "G1-LEG-026"
+      ],
+      "source_tag": "LE",
+      "source_row": 33,
+      "source_hash": "b8a9ef5b9abf5dbb",
+      "trainer_master_hash": "b8a9ef5b9abf5dbb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0291",
+      "grade_ids": [
+        "G1-LEG-027"
+      ],
+      "source_tag": "LE",
+      "source_row": 34,
+      "source_hash": "1d69369973fb41b1",
+      "trainer_master_hash": "1d69369973fb41b1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0292",
+      "grade_ids": [
+        "G1-LEG-028"
+      ],
+      "source_tag": "LE",
+      "source_row": 35,
+      "source_hash": "bf1ae82c04361148",
+      "trainer_master_hash": "bf1ae82c04361148",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0293",
+      "grade_ids": [
+        "G1-LEG-029"
+      ],
+      "source_tag": "LE",
+      "source_row": 36,
+      "source_hash": "a486337e758438fe",
+      "trainer_master_hash": "a486337e758438fe",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0294",
+      "grade_ids": [
+        "G1-LEG-030"
+      ],
+      "source_tag": "LE",
+      "source_row": 37,
+      "source_hash": "0fea0c8731881879",
+      "trainer_master_hash": "0fea0c8731881879",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0295",
+      "grade_ids": [
+        "G1-LEG-031"
+      ],
+      "source_tag": "LE",
+      "source_row": 38,
+      "source_hash": "193acd812e4f4f51",
+      "trainer_master_hash": "193acd812e4f4f51",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0296",
+      "grade_ids": [
+        "G1-LEG-032"
+      ],
+      "source_tag": "LE",
+      "source_row": 39,
+      "source_hash": "3e216dec47af7788",
+      "trainer_master_hash": "3e216dec47af7788",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0297",
+      "grade_ids": [
+        "G1-LEG-033"
+      ],
+      "source_tag": "LE",
+      "source_row": 40,
+      "source_hash": "a5559e82eb67e18c",
+      "trainer_master_hash": "a5559e82eb67e18c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0298",
+      "grade_ids": [
+        "G1-LEG-034"
+      ],
+      "source_tag": "LE",
+      "source_row": 41,
+      "source_hash": "d812dbdf90f681d1",
+      "trainer_master_hash": "d812dbdf90f681d1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0299",
+      "grade_ids": [
+        "G1-LEG-035"
+      ],
+      "source_tag": "LE",
+      "source_row": 42,
+      "source_hash": "b443f1bae5457db2",
+      "trainer_master_hash": "b443f1bae5457db2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0300",
+      "grade_ids": [
+        "G1-LEG-036"
+      ],
+      "source_tag": "LE",
+      "source_row": 43,
+      "source_hash": "9443175bdef19193",
+      "trainer_master_hash": "9443175bdef19193",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0301",
+      "grade_ids": [
+        "G1-LEG-037"
+      ],
+      "source_tag": "LE",
+      "source_row": 44,
+      "source_hash": "c9734b2ed4277da0",
+      "trainer_master_hash": "c9734b2ed4277da0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0302",
+      "grade_ids": [
+        "G1-LEG-038"
+      ],
+      "source_tag": "LE",
+      "source_row": 45,
+      "source_hash": "fb499e602ff5b1cc",
+      "trainer_master_hash": "fb499e602ff5b1cc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0303",
+      "grade_ids": [
+        "G1-LEG-039"
+      ],
+      "source_tag": "LE",
+      "source_row": 46,
+      "source_hash": "01349f79dff17159",
+      "trainer_master_hash": "01349f79dff17159",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0304",
+      "grade_ids": [
+        "G1-LEG-040"
+      ],
+      "source_tag": "LE",
+      "source_row": 47,
+      "source_hash": "faa20749bb69d2eb",
+      "trainer_master_hash": "faa20749bb69d2eb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0305",
+      "grade_ids": [
+        "G1-LEG-041"
+      ],
+      "source_tag": "LE",
+      "source_row": 48,
+      "source_hash": "88063cd735a0302f",
+      "trainer_master_hash": "88063cd735a0302f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0306",
+      "grade_ids": [
+        "G1-LEG-042"
+      ],
+      "source_tag": "LE",
+      "source_row": 49,
+      "source_hash": "54e5f1357e20619f",
+      "trainer_master_hash": "54e5f1357e20619f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0307",
+      "grade_ids": [
+        "G1-LEG-043"
+      ],
+      "source_tag": "LE",
+      "source_row": 50,
+      "source_hash": "6580356e7c6b080e",
+      "trainer_master_hash": "6580356e7c6b080e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0308",
+      "grade_ids": [
+        "G1-LEG-044"
+      ],
+      "source_tag": "LE",
+      "source_row": 51,
+      "source_hash": "9cd6fa55f2e311c7",
+      "trainer_master_hash": "9cd6fa55f2e311c7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0309",
+      "grade_ids": [
+        "G1-LEG-045"
+      ],
+      "source_tag": "LE",
+      "source_row": 52,
+      "source_hash": "e058333b599acf73",
+      "trainer_master_hash": "e058333b599acf73",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0310",
+      "grade_ids": [
+        "G1-LEG-046"
+      ],
+      "source_tag": "LE",
+      "source_row": 53,
+      "source_hash": "eb14a574fd3f3974",
+      "trainer_master_hash": "eb14a574fd3f3974",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0311",
+      "grade_ids": [
+        "G1-LEG-047"
+      ],
+      "source_tag": "LE",
+      "source_row": 54,
+      "source_hash": "99145966af03792a",
+      "trainer_master_hash": "99145966af03792a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0312",
+      "grade_ids": [
+        "G1-LEG-048"
+      ],
+      "source_tag": "LE",
+      "source_row": 55,
+      "source_hash": "36dab39a965c4790",
+      "trainer_master_hash": "36dab39a965c4790",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0313",
+      "grade_ids": [
+        "G1-LEG-049"
+      ],
+      "source_tag": "LE",
+      "source_row": 56,
+      "source_hash": "85746205f34cca29",
+      "trainer_master_hash": "85746205f34cca29",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0314",
+      "grade_ids": [
+        "G1-LEG-050"
+      ],
+      "source_tag": "LE",
+      "source_row": 57,
+      "source_hash": "cc16a38b4bafc977",
+      "trainer_master_hash": "cc16a38b4bafc977",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0315",
+      "grade_ids": [
+        "G1-NOR-001"
+      ],
+      "source_tag": "NO",
+      "source_row": 8,
+      "source_hash": "1cd95c176d4f8f47",
+      "trainer_master_hash": "1cd95c176d4f8f47",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0316",
+      "grade_ids": [
+        "G1-NOR-002"
+      ],
+      "source_tag": "NO",
+      "source_row": 9,
+      "source_hash": "7aede3ac958e9028",
+      "trainer_master_hash": "7aede3ac958e9028",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0317",
+      "grade_ids": [
+        "G1-NOR-003"
+      ],
+      "source_tag": "NO",
+      "source_row": 10,
+      "source_hash": "32dd73dc05d3a0a0",
+      "trainer_master_hash": "32dd73dc05d3a0a0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0318",
+      "grade_ids": [
+        "G1-NOR-004"
+      ],
+      "source_tag": "NO",
+      "source_row": 11,
+      "source_hash": "6afc0e49456ca45d",
+      "trainer_master_hash": "6afc0e49456ca45d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0319",
+      "grade_ids": [
+        "G1-NOR-005"
+      ],
+      "source_tag": "NO",
+      "source_row": 12,
+      "source_hash": "b99c54495f4099cd",
+      "trainer_master_hash": "b99c54495f4099cd",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0320",
+      "grade_ids": [
+        "G1-NOR-006"
+      ],
+      "source_tag": "NO",
+      "source_row": 13,
+      "source_hash": "4abd54adfa791ed5",
+      "trainer_master_hash": "4abd54adfa791ed5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0321",
+      "grade_ids": [
+        "G1-NOR-007"
+      ],
+      "source_tag": "NO",
+      "source_row": 14,
+      "source_hash": "ee47d6b7156f1b5d",
+      "trainer_master_hash": "ee47d6b7156f1b5d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0322",
+      "grade_ids": [
+        "G1-NOR-008"
+      ],
+      "source_tag": "NO",
+      "source_row": 15,
+      "source_hash": "635f35d59997f1ab",
+      "trainer_master_hash": "635f35d59997f1ab",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0323",
+      "grade_ids": [
+        "G1-NOR-009"
+      ],
+      "source_tag": "NO",
+      "source_row": 16,
+      "source_hash": "729b19a3b52b2b81",
+      "trainer_master_hash": "729b19a3b52b2b81",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0324",
+      "grade_ids": [
+        "G1-NOR-010"
+      ],
+      "source_tag": "NO",
+      "source_row": 17,
+      "source_hash": "cc4cefe0033e5568",
+      "trainer_master_hash": "cc4cefe0033e5568",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0325",
+      "grade_ids": [
+        "G1-NOR-011"
+      ],
+      "source_tag": "NO",
+      "source_row": 18,
+      "source_hash": "d01c6f19190061df",
+      "trainer_master_hash": "d01c6f19190061df",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0326",
+      "grade_ids": [
+        "G1-NOR-012"
+      ],
+      "source_tag": "NO",
+      "source_row": 19,
+      "source_hash": "0302dbb0addd7be0",
+      "trainer_master_hash": "0302dbb0addd7be0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0327",
+      "grade_ids": [
+        "G1-NOR-013"
+      ],
+      "source_tag": "NO",
+      "source_row": 20,
+      "source_hash": "61885bd04b6e9fc2",
+      "trainer_master_hash": "61885bd04b6e9fc2",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0328",
+      "grade_ids": [
+        "G1-NOR-014"
+      ],
+      "source_tag": "NO",
+      "source_row": 21,
+      "source_hash": "c438b80221a27448",
+      "trainer_master_hash": "c438b80221a27448",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0329",
+      "grade_ids": [
+        "G1-NOR-015"
+      ],
+      "source_tag": "NO",
+      "source_row": 22,
+      "source_hash": "8d9465f89573d10e",
+      "trainer_master_hash": "8d9465f89573d10e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0330",
+      "grade_ids": [
+        "G1-NOR-016"
+      ],
+      "source_tag": "NO",
+      "source_row": 23,
+      "source_hash": "337a2e9bf89eed91",
+      "trainer_master_hash": "337a2e9bf89eed91",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0331",
+      "grade_ids": [
+        "G1-NOR-017"
+      ],
+      "source_tag": "NO",
+      "source_row": 24,
+      "source_hash": "f7886a62a6a90d10",
+      "trainer_master_hash": "f7886a62a6a90d10",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0332",
+      "grade_ids": [
+        "G1-NOR-018"
+      ],
+      "source_tag": "NO",
+      "source_row": 25,
+      "source_hash": "478fe0edc5f560f1",
+      "trainer_master_hash": "478fe0edc5f560f1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0333",
+      "grade_ids": [
+        "G1-NOR-019"
+      ],
+      "source_tag": "NO",
+      "source_row": 26,
+      "source_hash": "f59fa01436cf2be0",
+      "trainer_master_hash": "f59fa01436cf2be0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0334",
+      "grade_ids": [
+        "G1-NOR-020"
+      ],
+      "source_tag": "NO",
+      "source_row": 27,
+      "source_hash": "89755b7a9bf034fc",
+      "trainer_master_hash": "89755b7a9bf034fc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0335",
+      "grade_ids": [
+        "G1-NOR-021"
+      ],
+      "source_tag": "NO",
+      "source_row": 28,
+      "source_hash": "996c622336dc14e5",
+      "trainer_master_hash": "996c622336dc14e5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0336",
+      "grade_ids": [
+        "G1-NOR-022"
+      ],
+      "source_tag": "NO",
+      "source_row": 29,
+      "source_hash": "e740329d3d831d77",
+      "trainer_master_hash": "e740329d3d831d77",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0337",
+      "grade_ids": [
+        "G1-NOR-023"
+      ],
+      "source_tag": "NO",
+      "source_row": 30,
+      "source_hash": "b869d9f44ee2c240",
+      "trainer_master_hash": "b869d9f44ee2c240",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0338",
+      "grade_ids": [
+        "G1-NOR-024"
+      ],
+      "source_tag": "NO",
+      "source_row": 31,
+      "source_hash": "f7673c762cfe04e0",
+      "trainer_master_hash": "f7673c762cfe04e0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0339",
+      "grade_ids": [
+        "G1-NOR-025"
+      ],
+      "source_tag": "NO",
+      "source_row": 32,
+      "source_hash": "eeab98f5215e8c37",
+      "trainer_master_hash": "eeab98f5215e8c37",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0340",
+      "grade_ids": [
+        "G1-NOR-026"
+      ],
+      "source_tag": "NO",
+      "source_row": 33,
+      "source_hash": "8cd3eb179e613369",
+      "trainer_master_hash": "8cd3eb179e613369",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0341",
+      "grade_ids": [
+        "G1-NOR-027"
+      ],
+      "source_tag": "NO",
+      "source_row": 34,
+      "source_hash": "dcebdd2e7abb7f1a",
+      "trainer_master_hash": "dcebdd2e7abb7f1a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0342",
+      "grade_ids": [
+        "G1-NOR-028"
+      ],
+      "source_tag": "NO",
+      "source_row": 35,
+      "source_hash": "a8fb1354110e04e0",
+      "trainer_master_hash": "a8fb1354110e04e0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0343",
+      "grade_ids": [
+        "G1-NOR-029"
+      ],
+      "source_tag": "NO",
+      "source_row": 36,
+      "source_hash": "55ec2a0c22963f7e",
+      "trainer_master_hash": "55ec2a0c22963f7e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0344",
+      "grade_ids": [
+        "G1-NOR-030"
+      ],
+      "source_tag": "NO",
+      "source_row": 37,
+      "source_hash": "38fa510d89ecc683",
+      "trainer_master_hash": "38fa510d89ecc683",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0345",
+      "grade_ids": [
+        "G1-NOR-031"
+      ],
+      "source_tag": "NO",
+      "source_row": 38,
+      "source_hash": "57ae86a10543a1fb",
+      "trainer_master_hash": "57ae86a10543a1fb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0346",
+      "grade_ids": [
+        "G1-NOR-032"
+      ],
+      "source_tag": "NO",
+      "source_row": 39,
+      "source_hash": "3e86e53d5c923141",
+      "trainer_master_hash": "3e86e53d5c923141",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0347",
+      "grade_ids": [
+        "G1-NOR-033"
+      ],
+      "source_tag": "NO",
+      "source_row": 40,
+      "source_hash": "c5b7fbd2cb90dc5c",
+      "trainer_master_hash": "c5b7fbd2cb90dc5c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0348",
+      "grade_ids": [
+        "G1-NOR-034"
+      ],
+      "source_tag": "NO",
+      "source_row": 41,
+      "source_hash": "ed2e7bbe51e88a10",
+      "trainer_master_hash": "ed2e7bbe51e88a10",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0349",
+      "grade_ids": [
+        "G1-NOR-035"
+      ],
+      "source_tag": "NO",
+      "source_row": 42,
+      "source_hash": "14e6ee68796eca30",
+      "trainer_master_hash": "14e6ee68796eca30",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0350",
+      "grade_ids": [
+        "G1-NOR-036"
+      ],
+      "source_tag": "NO",
+      "source_row": 43,
+      "source_hash": "c8b35c2b5b7e22d1",
+      "trainer_master_hash": "c8b35c2b5b7e22d1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0351",
+      "grade_ids": [
+        "G1-NOR-037"
+      ],
+      "source_tag": "NO",
+      "source_row": 44,
+      "source_hash": "fcef3d2b8ee12d0f",
+      "trainer_master_hash": "fcef3d2b8ee12d0f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0352",
+      "grade_ids": [
+        "G1-NOR-038"
+      ],
+      "source_tag": "NO",
+      "source_row": 45,
+      "source_hash": "d09bc00d2215a5d1",
+      "trainer_master_hash": "d09bc00d2215a5d1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0353",
+      "grade_ids": [
+        "G1-NOR-039"
+      ],
+      "source_tag": "NO",
+      "source_row": 46,
+      "source_hash": "87132df84d3d13f8",
+      "trainer_master_hash": "87132df84d3d13f8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0354",
+      "grade_ids": [
+        "G1-NOR-040"
+      ],
+      "source_tag": "NO",
+      "source_row": 47,
+      "source_hash": "8225565d82246691",
+      "trainer_master_hash": "8225565d82246691",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0355",
+      "grade_ids": [
+        "G1-NOR-041"
+      ],
+      "source_tag": "NO",
+      "source_row": 48,
+      "source_hash": "53ba6345fe45d5cf",
+      "trainer_master_hash": "53ba6345fe45d5cf",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0356",
+      "grade_ids": [
+        "G1-NOR-042"
+      ],
+      "source_tag": "NO",
+      "source_row": 49,
+      "source_hash": "c452dd3ac3dd1d22",
+      "trainer_master_hash": "c452dd3ac3dd1d22",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0357",
+      "grade_ids": [
+        "G1-NOR-043"
+      ],
+      "source_tag": "NO",
+      "source_row": 50,
+      "source_hash": "db6d546ef2592168",
+      "trainer_master_hash": "db6d546ef2592168",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0358",
+      "grade_ids": [
+        "G1-NOR-044"
+      ],
+      "source_tag": "NO",
+      "source_row": 51,
+      "source_hash": "f9649daebd060988",
+      "trainer_master_hash": "f9649daebd060988",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0359",
+      "grade_ids": [
+        "G1-NOR-045"
+      ],
+      "source_tag": "NO",
+      "source_row": 52,
+      "source_hash": "ba9421f4cfcc115c",
+      "trainer_master_hash": "ba9421f4cfcc115c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0360",
+      "grade_ids": [
+        "G1-NOR-046"
+      ],
+      "source_tag": "NO",
+      "source_row": 53,
+      "source_hash": "17ad87a87e56f2c8",
+      "trainer_master_hash": "17ad87a87e56f2c8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0361",
+      "grade_ids": [
+        "G1-NOR-047"
+      ],
+      "source_tag": "NO",
+      "source_row": 54,
+      "source_hash": "a1027dd9a2466007",
+      "trainer_master_hash": "a1027dd9a2466007",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0362",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "source_tag": "NO",
+      "source_row": 55,
+      "source_hash": "c7b17f0c3ee88b50",
+      "trainer_master_hash": "39083e03ccc6434d",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0363",
+      "grade_ids": [
+        "G1-NOR-049"
+      ],
+      "source_tag": "NO",
+      "source_row": 56,
+      "source_hash": "d7972ba022092850",
+      "trainer_master_hash": "d7972ba022092850",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0364",
+      "grade_ids": [
+        "G1-NOR-050"
+      ],
+      "source_tag": "NO",
+      "source_row": 57,
+      "source_hash": "1c1252d0a9e8c08c",
+      "trainer_master_hash": "1c1252d0a9e8c08c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0365",
+      "grade_ids": [
+        "G1-NOR-051"
+      ],
+      "source_tag": "NO",
+      "source_row": 58,
+      "source_hash": "92782e4049fa4850",
+      "trainer_master_hash": "92782e4049fa4850",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0366",
+      "grade_ids": [
+        "G1-NOR-052"
+      ],
+      "source_tag": "NO",
+      "source_row": 59,
+      "source_hash": "27f9e39cebb742a8",
+      "trainer_master_hash": "27f9e39cebb742a8",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0367",
+      "grade_ids": [
+        "G1-NOR-053"
+      ],
+      "source_tag": "NO",
+      "source_row": 60,
+      "source_hash": "74c17ebf9c2b595b",
+      "trainer_master_hash": "74c17ebf9c2b595b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0368",
+      "grade_ids": [
+        "G1-NOR-054"
+      ],
+      "source_tag": "NO",
+      "source_row": 61,
+      "source_hash": "68735ac7606df037",
+      "trainer_master_hash": "68735ac7606df037",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0369",
+      "grade_ids": [
+        "G1-NOR-055"
+      ],
+      "source_tag": "NO",
+      "source_row": 62,
+      "source_hash": "5c724ecbd14753a7",
+      "trainer_master_hash": "5c724ecbd14753a7",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0370",
+      "grade_ids": [
+        "G1-NOR-056"
+      ],
+      "source_tag": "NO",
+      "source_row": 63,
+      "source_hash": "0adc9b57ca646d6b",
+      "trainer_master_hash": "0adc9b57ca646d6b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0371",
+      "grade_ids": [
+        "G1-NOR-057"
+      ],
+      "source_tag": "NO",
+      "source_row": 64,
+      "source_hash": "e7486c2f2824b4bb",
+      "trainer_master_hash": "e7486c2f2824b4bb",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0372",
+      "grade_ids": [
+        "G1-NOR-058"
+      ],
+      "source_tag": "NO",
+      "source_row": 65,
+      "source_hash": "75d707ab5fc9fc2b",
+      "trainer_master_hash": "75d707ab5fc9fc2b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0373",
+      "grade_ids": [
+        "G1-NOR-059"
+      ],
+      "source_tag": "NO",
+      "source_row": 66,
+      "source_hash": "95c07e41689edbd5",
+      "trainer_master_hash": "95c07e41689edbd5",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0374",
+      "grade_ids": [
+        "G1-NOR-060"
+      ],
+      "source_tag": "NO",
+      "source_row": 67,
+      "source_hash": "4265b48916cc7e73",
+      "trainer_master_hash": "4265b48916cc7e73",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0375",
+      "grade_ids": [
+        "G1-NOR-061"
+      ],
+      "source_tag": "NO",
+      "source_row": 68,
+      "source_hash": "9ee3cdf2546acb46",
+      "trainer_master_hash": "9ee3cdf2546acb46",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0376",
+      "grade_ids": [
+        "G1-NOR-062"
+      ],
+      "source_tag": "NO",
+      "source_row": 69,
+      "source_hash": "2ea88b121215f4f6",
+      "trainer_master_hash": "2ea88b121215f4f6",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0377",
+      "grade_ids": [
+        "G1-NOR-063"
+      ],
+      "source_tag": "NO",
+      "source_row": 70,
+      "source_hash": "bf628342b2be24ca",
+      "trainer_master_hash": "bf628342b2be24ca",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0378",
+      "grade_ids": [
+        "G1-NOR-064"
+      ],
+      "source_tag": "NO",
+      "source_row": 71,
+      "source_hash": "b17fe9d9779dcb5d",
+      "trainer_master_hash": "b17fe9d9779dcb5d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0379",
+      "grade_ids": [
+        "G1-NOR-065"
+      ],
+      "source_tag": "NO",
+      "source_row": 72,
+      "source_hash": "803b71ddde97201d",
+      "trainer_master_hash": "803b71ddde97201d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0380",
+      "grade_ids": [
+        "G1-NOR-066"
+      ],
+      "source_tag": "NO",
+      "source_row": 73,
+      "source_hash": "7a98fce955e4f725",
+      "trainer_master_hash": "7a98fce955e4f725",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0381",
+      "grade_ids": [
+        "G1-NOR-067"
+      ],
+      "source_tag": "NO",
+      "source_row": 74,
+      "source_hash": "9c65a574e3bef5a0",
+      "trainer_master_hash": "9c65a574e3bef5a0",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0382",
+      "grade_ids": [
+        "G1-NOR-068"
+      ],
+      "source_tag": "NO",
+      "source_row": 75,
+      "source_hash": "d75a0fd5c478c83b",
+      "trainer_master_hash": "d75a0fd5c478c83b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0383",
+      "grade_ids": [
+        "G1-NOR-069"
+      ],
+      "source_tag": "NO",
+      "source_row": 76,
+      "source_hash": "6c9b864193ee5e6b",
+      "trainer_master_hash": "6c9b864193ee5e6b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0384",
+      "grade_ids": [
+        "G1-NOR-070"
+      ],
+      "source_tag": "NO",
+      "source_row": 77,
+      "source_hash": "ac8f6744fb4e2510",
+      "trainer_master_hash": "ac8f6744fb4e2510",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0385",
+      "grade_ids": [
+        "G1-NOR-071"
+      ],
+      "source_tag": "NO",
+      "source_row": 78,
+      "source_hash": "cb457d5650166dec",
+      "trainer_master_hash": "cb457d5650166dec",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0386",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "source_tag": "NO",
+      "source_row": 79,
+      "source_hash": "9bae4e44f21802ac",
+      "trainer_master_hash": "72a1e1f1376c0c87",
+      "source_original_fidelity": "MATERIAL_STEM_OR_ABC_MUTATION",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0387",
+      "grade_ids": [
+        "G1-NOR-073"
+      ],
+      "source_tag": "NO",
+      "source_row": 80,
+      "source_hash": "f136adf9732e9b0f",
+      "trainer_master_hash": "f136adf9732e9b0f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0388",
+      "grade_ids": [
+        "G1-NOR-074"
+      ],
+      "source_tag": "NO",
+      "source_row": 81,
+      "source_hash": "584fec86d9e5ff06",
+      "trainer_master_hash": "584fec86d9e5ff06",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0389",
+      "grade_ids": [
+        "G1-NOR-075"
+      ],
+      "source_tag": "NO",
+      "source_row": 82,
+      "source_hash": "40bb2de7ea732953",
+      "trainer_master_hash": "40bb2de7ea732953",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0390",
+      "grade_ids": [
+        "G1-NOR-076"
+      ],
+      "source_tag": "NO",
+      "source_row": 83,
+      "source_hash": "bad1a574c26c2492",
+      "trainer_master_hash": "bad1a574c26c2492",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0391",
+      "grade_ids": [
+        "G1-NOR-077"
+      ],
+      "source_tag": "NO",
+      "source_row": 84,
+      "source_hash": "cc50f8b8e66ca508",
+      "trainer_master_hash": "cc50f8b8e66ca508",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0392",
+      "grade_ids": [
+        "G1-NOR-078"
+      ],
+      "source_tag": "NO",
+      "source_row": 85,
+      "source_hash": "8204034800446b5c",
+      "trainer_master_hash": "8204034800446b5c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0393",
+      "grade_ids": [
+        "G1-NOR-079"
+      ],
+      "source_tag": "NO",
+      "source_row": 86,
+      "source_hash": "ec1968164b66bebe",
+      "trainer_master_hash": "ec1968164b66bebe",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0394",
+      "grade_ids": [
+        "G1-NOR-080"
+      ],
+      "source_tag": "NO",
+      "source_row": 87,
+      "source_hash": "9811533c534ab84e",
+      "trainer_master_hash": "9811533c534ab84e",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0395",
+      "grade_ids": [
+        "G1-NOR-081"
+      ],
+      "source_tag": "NO",
+      "source_row": 88,
+      "source_hash": "a45904dbe54c04b3",
+      "trainer_master_hash": "a45904dbe54c04b3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0396",
+      "grade_ids": [
+        "G1-NOR-082"
+      ],
+      "source_tag": "NO",
+      "source_row": 89,
+      "source_hash": "23321d56f4e8e2bc",
+      "trainer_master_hash": "23321d56f4e8e2bc",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0397",
+      "grade_ids": [
+        "G1-NOR-083"
+      ],
+      "source_tag": "NO",
+      "source_row": 90,
+      "source_hash": "af5d546537edf651",
+      "trainer_master_hash": "af5d546537edf651",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0398",
+      "grade_ids": [
+        "G1-NOR-084"
+      ],
+      "source_tag": "NO",
+      "source_row": 91,
+      "source_hash": "1301fe471e00aa8b",
+      "trainer_master_hash": "1301fe471e00aa8b",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0399",
+      "grade_ids": [
+        "G1-NOR-085"
+      ],
+      "source_tag": "NO",
+      "source_row": 92,
+      "source_hash": "2c37e1ea10f0739a",
+      "trainer_master_hash": "2c37e1ea10f0739a",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0400",
+      "grade_ids": [
+        "G1-NOR-086"
+      ],
+      "source_tag": "NO",
+      "source_row": 93,
+      "source_hash": "41f7ca25940ddb5f",
+      "trainer_master_hash": "41f7ca25940ddb5f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0401",
+      "grade_ids": [
+        "G1-NOR-087"
+      ],
+      "source_tag": "NO",
+      "source_row": 94,
+      "source_hash": "b992c6fce21ead0c",
+      "trainer_master_hash": "b992c6fce21ead0c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0402",
+      "grade_ids": [
+        "G1-NOR-088"
+      ],
+      "source_tag": "NO",
+      "source_row": 95,
+      "source_hash": "70482dc5bed2283d",
+      "trainer_master_hash": "70482dc5bed2283d",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0403",
+      "grade_ids": [
+        "G1-NOR-089"
+      ],
+      "source_tag": "NO",
+      "source_row": 96,
+      "source_hash": "893b7b0069bf554c",
+      "trainer_master_hash": "893b7b0069bf554c",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0404",
+      "grade_ids": [
+        "G1-NOR-090"
+      ],
+      "source_tag": "NO",
+      "source_row": 97,
+      "source_hash": "d9ab2baa82910e62",
+      "trainer_master_hash": "d9ab2baa82910e62",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0405",
+      "grade_ids": [
+        "G1-NOR-091"
+      ],
+      "source_tag": "NO",
+      "source_row": 98,
+      "source_hash": "d2343d3766a5ecb3",
+      "trainer_master_hash": "d2343d3766a5ecb3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0406",
+      "grade_ids": [
+        "G1-NOR-092"
+      ],
+      "source_tag": "NO",
+      "source_row": 99,
+      "source_hash": "2156c109639a46b3",
+      "trainer_master_hash": "2156c109639a46b3",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0407",
+      "grade_ids": [
+        "G1-NOR-093"
+      ],
+      "source_tag": "NO",
+      "source_row": 100,
+      "source_hash": "c5214ce557a91c6f",
+      "trainer_master_hash": "c5214ce557a91c6f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0408",
+      "grade_ids": [
+        "G1-NOR-094"
+      ],
+      "source_tag": "NO",
+      "source_row": 101,
+      "source_hash": "08ad0e928f2387ce",
+      "trainer_master_hash": "08ad0e928f2387ce",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0409",
+      "grade_ids": [
+        "G1-NOR-095"
+      ],
+      "source_tag": "NO",
+      "source_row": 102,
+      "source_hash": "519af6b9f5adeb01",
+      "trainer_master_hash": "519af6b9f5adeb01",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0410",
+      "grade_ids": [
+        "G1-NOR-096"
+      ],
+      "source_tag": "NO",
+      "source_row": 103,
+      "source_hash": "42b2bf275f1a6573",
+      "trainer_master_hash": "42b2bf275f1a6573",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0411",
+      "grade_ids": [
+        "G1-NOR-097"
+      ],
+      "source_tag": "NO",
+      "source_row": 104,
+      "source_hash": "d0f3c1a5bde674ed",
+      "trainer_master_hash": "d0f3c1a5bde674ed",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0412",
+      "grade_ids": [
+        "G1-NOR-098"
+      ],
+      "source_tag": "NO",
+      "source_row": 105,
+      "source_hash": "f5811ff4fb01b054",
+      "trainer_master_hash": "f5811ff4fb01b054",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0413",
+      "grade_ids": [
+        "G1-NOR-099"
+      ],
+      "source_tag": "NO",
+      "source_row": 106,
+      "source_hash": "6e5e3d09b3dbe88f",
+      "trainer_master_hash": "6e5e3d09b3dbe88f",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0414",
+      "grade_ids": [
+        "G1-NOR-100"
+      ],
+      "source_tag": "NO",
+      "source_row": 107,
+      "source_hash": "73e17eba63e84cf4",
+      "trainer_master_hash": "73e17eba63e84cf4",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    },
+    {
+      "id": "QABC-0568",
+      "grade_ids": [
+        "G2-ELEC-290"
+      ],
+      "source_tag": "EL",
+      "source_row": 159,
+      "source_hash": "7b8817b9418a26c1",
+      "trainer_master_hash": "7b8817b9418a26c1",
+      "source_original_fidelity": "NORMALIZED_TEXT_A_B_C_MATCH",
+      "scoring_key_authenticated": false,
+      "qualified_independent_qa": false
+    }
+  ]
+}

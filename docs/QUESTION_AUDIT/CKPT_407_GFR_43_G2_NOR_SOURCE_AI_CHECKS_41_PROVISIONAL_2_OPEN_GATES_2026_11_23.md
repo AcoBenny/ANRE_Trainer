@@ -1,0 +1,28 @@
+# CKPT-407 | GFR: 43 distinct Grade-II NOR original questions externally source-challenged
+
+**Date:** 2026-11-23. Parent CKPT-406, branch `audit/anre-v8-priority-17-20261109`, PR #7 Draft/unmerged. No canonical question, A/B/C, imported answer key, HTML or APK changes.
+
+## Real progress, not repeated source research
+
+- **43/43** noncaution original technical NOR Grade-II questions from original research V343/V344 had separate external AI source/option challenges (9 actual initial runs plus 4 actual follow-up/rebuttal runs). These questions had NOT previously received the distinct external AI scrutiny: previous CKPT-406 covered 25/110, now **68/110 distinct G2** in the latest 110-row G2 source-researched set are externally AI-challenged; **42/110** lack that separate kind of review.
+- [V359 full 43 original A/B/C and preliminary source evidence](./V359_CKPT407_43_G2_NOR_INDEPENDENT_AI_SOURCE_REVIEW_2_SCOPE_GATES_2026_11_23.json). **41** cases have preliminary normative source-supported option with no newly diagnosed source-object issue, **1** has an exact-source/edition hold (NOR-R0037), **1** an unusually strong lexical qualifier hold (NOR-R0122). This is a **source-research assessment**, not 41 qualified approvals or ANRE scored-answer keys.
+- **NOR-R0037 source-object repair:** original low-voltage mixed **CIRCUITS** on the same panel/cabinet match **PE 102/1986 §4.4.7** more exactly than I7/2011 **§5.3.3.17**, which addresses mixed electrical **APPARATUS** in one board. The first sentence in PE102 advises against mixed grouping; neighboring sentence permits installation by separate mounting/marking when unavoidable and exempts equipment needing different current types/voltages. **C is an intended/provisional answer, not a 2026 grade-certified key.** Text extraction of historical PE102 17-page PDF locates §4.4.7 on **0-based page 9**; a web PDF screenshot of page 9 was attempted but failed **CACHE MISS**. The specific edition/current grade bibliography requires independent authentication. PE102 PDF https://www.consultform.ro/anre/wp-content/uploads/2016/09/PE-102-NORMATIV-PENTRU-PROIECTAREA-SI-EXECUTAREA-INSTALATIILOR-DE-CONEXIUNI-SI-DISTRIBUTIE-CU-TENSIUNI-PANA-LA-1KV.pdf .
+- **NOR-R0122 modal wording:** I7 §5.1.7.2(e) specifically mandates copper conductors for command, automation, measuring and signaling circuits. The offered B says **'numai Cu'**, which is stronger than the source's literal **'În mod special se prevăd conductoare din cupru'**. Source-speciality over general aluminium permission supports preliminary B, but the exclusivity linguistic check is recorded and **not** deemed official-key authentication.
+- **NOR-R0171 edition fix:** I7 §5.1.7.1 was explicitly amended by **Ord MDLPA 959/2023 Art I item 23**, adding hybrid cables and keeping **bare rigid steel conductors (bars)** distinct from insulated Cu/Al conductors. Caution against quoting an unamended 2011 source for the 2026 context.
+- Other meaningful contrast checks: **R0033 = 15 kW** shared same-kind consumers with common SHORT-CIRCUIT protection, not overload threshold; **R0076 = 3% lighting/5% other loads** for a LV service-cabinet connection; **R0140 = 10 mm² Cu /16 mm² Al** minimum fixed PEN; **R0183/R0184/R0185** all phases, 1.20× trip within two hours, 1.05× no trip within two hours. These statements remain provisional source interpretations, not release approvals.
+
+## Actually executed anti-loop / QA
+
+- [CKPT407 executed regression evidence](./BATCH_PROGRESS/CKPT407_GFR_43_G2_NOR_SOURCE_AI_QABC_SCOPE_REGRESSION_2026_11_23.json): **43/43 exact original question texts, A/B/C order, source rows and original-workbook/stem hashes, 43/43 independent external AI evidence references, and strict no-release flags**; **731/731 deterministic structural field checks** plus **12/12 negative/scope guards** executed and passed. The NOR032 special/general scope preflight examples in this QA are **synthetic routing tests only**, not validation of actual official NOR032 paragraph.
+- Original source file binary was not reopened in this session. Original A/B/C/sha were matched to existing V343/V344 readback, not to freshly parsed 2023 XLSX. Full raw licensed paragraph before/focus/after with exact highlighting is not yet captured and **cards are not ready for learning**.
+- The initial QA scripts had a parser typo then a too-strict phrase-matching guard; the **final run** passed after fixing the test, without modifying V359's underlying source data. No fake QA pass was recorded for the failed runs.
+- No independent QUALIFIED electrician/linguist signature and no official ANRE scored keys, no certified grade 2026 bibliography, no real Android/HTML runtime tests.
+
+## Stage movement and next nonrepeating queue
+
+**Before CKPT-407:** 25/110 external preliminary AI source-challenged; **43 noncaution NOR originals untouched by this pass**.  
+**After CKPT-407:** **68/110** external preliminary AI source-challenged, **42/110** not yet independently AI challenged (29 NOR + 13 LEG, including the two old source-NULL cases / one historical PE102). No 43 re-reads should be counted again unless materially new source arrives.
+
+The **47 other G2 originals outside this 110-row cohort** must be reconciled with earlier research/checkpoints separately, not automatically declared unverified. The real final gate remains all **822 canonical placements**, source/answer/grade/edition and qualified separate approval. **0/822 final learning approvals**. Original **157 G2 staged** still quarantined.
+
+**Safety:** PR #7 remains Draft/unmerged; no official answer-key or QABC/HTML/APK changes; no release/merge.

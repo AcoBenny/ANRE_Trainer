@@ -1,0 +1,666 @@
+{
+  "schema": "v178_third_source_matched_pedagogical_cards_with_context_holds",
+  "date": "2026-11-20",
+  "parent": "CKPT-297 V177",
+  "sha": {
+    "v149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "v175": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+    "ckpt230": "21f4bdef9dfec330aab0a42686899e12b95e760d"
+  },
+  "counts": {
+    "new_unique_qabc": 15,
+    "grade_instances": 30,
+    "new_option_rationale_entries": 45,
+    "new_exercises": 15,
+    "final_approved": 0
+  },
+  "live_reopened_supporting_sources": [
+    {
+      "relevant_units": [
+        "QABC-0040",
+        "QABC-0041",
+        "QABC-0045"
+      ],
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "context": "Ideal linear L/C AC reactance, harmonic frequency weighting and the 90-degree voltage lag in a capacitor; textbooks support models only."
+    },
+    {
+      "relevant_units": [
+        "QABC-0043"
+      ],
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
+      "context": "Poynting vector E × H and energy flux direction; note vacuum OpenStax uses E × B/μ0."
+    },
+    {
+      "relevant_units": [
+        "QABC-0042"
+      ],
+      "url": "https://www.mdpi.com/1996-1073/17/12/2828",
+      "context": "Same-direction parallel-conductor AC proximity requires geometry and frequency, not applicable as a universal DC claim."
+    }
+  ],
+  "review_note": "Careful: QABC with AC proximity and massive-conductor skin and reactive-energy are not unconditionally validated. User-study release stays closed. Supporting sources and old URLs do not establish official ANRE grading key.",
+  "qa": {
+    "new_unique_qabc": 15,
+    "grade_routes": 30,
+    "all_45_option_explanations": true,
+    "all_15_rephrased": true,
+    "same_assistant_only": true,
+    "qa_risk_ids": [
+      "QABC-0039",
+      "QABC-0042",
+      "QABC-0053"
+    ],
+    "arithmetic": {
+      "ideal_inductor_fifth": true,
+      "ideal_capacitor_fifth": true,
+      "star_230V": true,
+      "series_cap_V": true
+    },
+    "source_urls_to_matching_QABC_ids": true,
+    "all_live_source_links_are_relevant_id": true
+  },
+  "cards": [
+    {
+      "unit_id": "QABC-0037",
+      "grade_ids": [
+        "G1-ELE-044",
+        "G2-ELEC-190"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "51",
+        "question": "Durata de viata a lămpilor cu incandescenta:",
+        "options": {
+          "A": "creste odată cu creşterea frecventei",
+          "B": "scade odată cu scăderea tensiunii",
+          "C": "scade odată cu creşterea tensiunii"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-044=C | G2-ELEC-190=C"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Incandescent filament temperature and evaporation rise with increased supply voltage, life decreases (C). A mains frequency increase not the determining relation; B reduced voltage generally increases life, not decreases it. Source uses ~voltage to -12..-16 exponent for specified lamp families, not universal constants for LEDs.",
+        "reported_source_url": "https://www.mdpi.com/1996-1073/17/22/5590",
+        "scope_tag": "DIRECT_INCANDESCENT_VOLTAGE_LIFESPAN"
+      },
+      "editable_explanation": {
+        "A": "Frecvența rețelei nu definește direct, de una singură, scurtarea vieții unui filament incandescent.",
+        "B": "Reducerea tensiunii scade de obicei temperatura filamentului și tinde să prelungească viața.",
+        "C": "Supratensiunea crește temperatura și evaporarea filamentului, reducând viața becului.",
+        "wording_or_countermodel": "Aplicabil becurilor incandescente și condițiilor comparabile, nu LED-urilor.",
+        "unofficial_rephrased_question": "Ce tendință are durata de viață a filamentului dacă tensiunea de alimentare crește?",
+        "unofficial_rephrased_solution": "Tinde să scadă din cauza temperaturii mai mari.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0038",
+      "grade_ids": [
+        "G1-ELE-045",
+        "G2-ELEC-191"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "52",
+        "question": "Curentul electric generat prin deplasarea cu viteza v a unui corp încărcat cu o sarcină electrică se numeşte:",
+        "options": {
+          "A": "curent electric de conducţie",
+          "B": "curent electric de convecţie",
+          "C": "curent electric de deplasare (Maxwell)"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-045=B | G2-ELEC-191=B"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Movement of physically charged macroscopic body at velocity v transports charge and is convection current B. A conduction refers drift due to electric field in conducting material; C Maxwell displacement current ∂D/∂t is not charge-body transport, even though both participate in Ampère-Maxwell equation. Wording 'corp încărcat' material transport matters.",
+        "reported_source_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Electromagnetics_I_%28Ellingson%29/06%3A_Steady_Current_and_Conductivity/6.01%3A_Convection_and_Conduction_Currents",
+        "scope_tag": "DIRECT_CONVECTION_CURRENT_OBJECT"
+      },
+      "editable_explanation": {
+        "A": "Curentul de conducție descrie deplasarea purtătorilor în mediu conducător, nu transportul corpului încărcat ca ansamblu.",
+        "B": "Curentul de convecție apare prin deplasarea în spațiu a corpurilor sau particulelor încărcate.",
+        "C": "Curentul de deplasare Maxwell este legat de variația câmpului electric D, nu de transferul material al corpului.",
+        "wording_or_countermodel": "«Corp încărcat în mișcare» indică transport de sarcină prin convecție.",
+        "unofficial_rephrased_question": "Cum numești curentul asociat deplasării unui nor de particule încărcate prin vid?",
+        "unofficial_rephrased_solution": "Curent de convecție.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0039",
+      "grade_ids": [
+        "G1-ELE-046",
+        "G2-ELEC-192"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "53",
+        "question": "Curentul produs într-un circuit care conţine elemente neliniare şi care este alimentat cu o tensiune sinusoidală este:",
+        "options": {
+          "A": "întotdeauna nesinusoidal",
+          "B": "întotdeauna sinusoidal",
+          "C": "nesinusoidal sau sinusoidal, depinde de natura elementelor neliniare"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-046=C | G2-ELEC-192=C"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "A 'întotdeauna nesinusoidal' false: nonlinear element can operate in a small locally linear regime, or the nonlinear component may be inactive. B 'întotdeauna sinusoidal' false: rectifiers and magnetic saturation produce harmonics. C either sine/non-sine depending actual nonlinear law and operating region. Real source confirms typical nonlinear loads distort but does not by itself prove all allowed cancellation/pathological cases.",
+        "reported_source_url": "https://www.allaboutcircuits.com/industry-articles/harmonic-current-in-power-supplies-and-iec-61000-3-2/",
+        "scope_tag": "CONDITIONAL_NONLINEAR_ELEMENT_MODE"
+      },
+      "editable_explanation": {
+        "A": "«Întotdeauna nesinusoidal» este prea absolut; neliniaritatea poate fi inactivă sau anulată în regimul observat.",
+        "B": "«Întotdeauna sinusoidal» este fals în prezența saturației sau redresării care generează armonici.",
+        "C": "Forma curentului depinde de caracteristica și punctul de funcționare al elementului neliniar.",
+        "wording_or_countermodel": "Nu presupune că simpla prezență a unui element neliniar garantează distorsiune pentru orice regim.",
+        "unofficial_rephrased_question": "Un redresor neliniar alimentează o sarcină: poate introduce armonici în curent?",
+        "unofficial_rephrased_solution": "Da; forma depinde de schemă și regim, nu este o regulă pentru orice element neliniar.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0040",
+      "grade_ids": [
+        "G1-ELE-047",
+        "G2-ELEC-193"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "54",
+        "question": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unei bobine este:",
+        "options": {
+          "A": "mai puţin deformat decât tensiunea care i-a dat naştere",
+          "B": "mult mai deformat decât tensiunea care i-a dat naştere",
+          "C": "sinusoidal"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-047=A | G2-ELEC-193=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "For an ideal L, each nth voltage harmonic U_n leads to I_n=U_n/(nωL); high-frequency harmonics suppressed versus fundamental, so A current usually less distorted than applied voltage. B more distorted describes an ideal C under same assumptions; C purely sinusoidal unsupported when applied waveform has nonzero harmonics. Assumes ideal linear L and steady periodic source with fundamental.",
+        "reported_source_url": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive",
+        "scope_tag": "DIRECT_PURE_INDUCTOR_HARMONIC_FILTER"
+      },
+      "editable_explanation": {
+        "A": "Bobina ideală liniară opune reactanță nωL armonicii de ordin n, deci armonicile în curent sunt relativ atenuate.",
+        "B": "Un curent mai deformat decât tensiunea este caracteristic altei ponderări, nu bobinei ideale în acest model.",
+        "C": "O tensiune cu armonici nenule produce și curent armonic, deci nu automat sinusoidal.",
+        "wording_or_countermodel": "Se presupun L ideal, regim periodic staționar și comparație relativă la fundamentală.",
+        "unofficial_rephrased_question": "La bobină ideală, dacă tensiunea are armonica a cincea cu amplitudine U5, cum variază raportul I5/I1?",
+        "unofficial_rephrased_solution": "I5/I1=(U5/U1)/5.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0041",
+      "grade_ids": [
+        "G1-ELE-048",
+        "G2-ELEC-194"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "55",
+        "question": "Curentul rezultat prin aplicarea unei tensiuni nesinusoidale la bornele unui condensator este:",
+        "options": {
+          "A": "mult mai deformat decât tensiunea care i-a dat naştere",
+          "B": "sinusoidal",
+          "C": "mai puţin deformat decât tensiune care i-a dat naştere"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-048=A | G2-ELEC-194=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "For ideal C, i=C dv/dt, nth harmonic amplitude I_n=nω C U_n, hence higher n harmonics enhanced relative to fundamental, intended A. B purely sinusoidal cannot hold generally for non-sinusoidal v, C less distorted matches ideal inductor not capacitor. Assumes ideal capacitance and comparable harmonic spectrum; nonlinear dielectric/ESR modify.",
+        "reported_source_url": "https://openstax.org/books/college-physics-2e/pages/23-11-reactance-inductive-and-capacitive",
+        "scope_tag": "DIRECT_PURE_CAPACITOR_HARMONIC_WEIGHT"
+      },
+      "editable_explanation": {
+        "A": "Pentru condensator ideal, I_n=nωCU_n: armonicile superioare sunt amplificate în curent relativ la fundamentală.",
+        "B": "O tensiune nesinusoidală pe un C ideal nu dă în general curent sinusoidal.",
+        "C": "«Mai puțin deformat» descrie modelul bobinei ideale, nu derivarea temporală în condensator.",
+        "wording_or_countermodel": "Condensatorul ideal diferențiază semnalul; pierderile și neliniaritățile reale modifică rezultatul.",
+        "unofficial_rephrased_question": "La C ideal, ce raport între I5/I1 și U5/U1 rezultă pentru armonica de ordin 5?",
+        "unofficial_rephrased_solution": "I5/I1=5×(U5/U1).",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0042",
+      "grade_ids": [
+        "G1-ELE-049",
+        "G2-ELEC-195"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "56",
+        "question": "Dacă două conductoare parcurse de curenţi în acelaşi sens sunt aşezate paralel, unul lângă altul:",
+        "options": {
+          "A": "densitatea de curent crește în părţile apropiate ale conductoarelor",
+          "B": "densitatea de curent creşte în părţile mai depărtate ale conductoarelor",
+          "C": "densitatea de curent este uniformă pe ambele părţi ale conductoarelor"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-049=B | G2-ELEC-195=B"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "For two nearby parallel conductors with **AC currents of same direction**, proximity effect shifts current density toward the outer, farther edges, B. A near sides typical of opposite directions. C uniform can be approximately true for ideal steady DC with homogeneous geometry, so **original stem does not specify AC/frequency** and B cannot be certified universally. Manufacturer/primary paper supports AC regime only.",
+        "reported_source_url": "https://www.mdpi.com/1996-1073/16/17/6341",
+        "scope_tag": "CONDITIONAL_AC_PROXIMITY_MISSING"
+      },
+      "editable_explanation": {
+        "A": "La curenți AC paraleli în același sens, densitatea nu se concentrează generic pe fețele apropiate; direcția relativă contează.",
+        "B": "Pentru AC și configurația standard cu doi conductori vecini, efectul de proximitate poate concentra curentul pe fețele mai depărtate.",
+        "C": "Un regim DC staționar în conductor uniform poate aproxima distribuție uniformă; această posibilitate rămâne deoarece enunțul nu precizează AC.",
+        "wording_or_countermodel": "**B condiționat de AC**; enunțul nu precizează frecvența, geometria sau natura regimului, deci nu se aprobă ca universal.",
+        "unofficial_rephrased_question": "În două bare paralele cu curenți AC egali și în același sens, pe ce fețe se aglomerează curentul din efectul de proximitate?",
+        "unofficial_rephrased_solution": "Pe fețele mai depărtate; nu extrapola la DC.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0043",
+      "grade_ids": [
+        "G1-ELE-050",
+        "G2-ELEC-196"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "57",
+        "question": "Energia transmisă de undele electromagnetice cu intensitatea câmpului electric E şi intensitatea câmpului magnetic H se propagă după un vector:",
+        "options": {
+          "A": "S=E+H",
+          "B": "S=HxE",
+          "C": "S=ExH"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-050=C | G2-ELEC-196=C"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Electromagnetic energy flux vector is S=E×H in SI (W/m²), direction propagation for plane wave, C. B H×E reverses vector sign, A adds incompatible E and H vectors with different units.",
+        "reported_source_url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
+        "scope_tag": "DIRECT_POYNTING_VECTOR_ORIENTATION"
+      },
+      "editable_explanation": {
+        "A": "Adunarea E+H nu dă un flux energetic: E și H au unități și roluri diferite.",
+        "B": "H×E are sens opus față de E×H.",
+        "C": "Vectorul Poynting în unități SI este S=E×H, în W/m².",
+        "wording_or_countermodel": "Ordinea produsului vectorial schimbă sensul; în vid H=B/µ0.",
+        "unofficial_rephrased_question": "Dacă E este spre est și H spre nord, unde indică S=E×H?",
+        "unofficial_rephrased_solution": "În direcția verticală în sus într-o orientare dreptace.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0045",
+      "grade_ids": [
+        "G1-ELE-052",
+        "G2-ELEC-198"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "59",
+        "question": "Dacă printr-un condensator circulă un curent alternativ sinusoidal, la bornele sale se produce o cădere de tensiune:",
+        "options": {
+          "A": "defazată cu 90 de grade în urma curentului",
+          "B": "defazată cu 90 de grade înaintea curentului",
+          "C": "în fază cu curentul"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-052=A | G2-ELEC-198=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "In ideal capacitor under sinusoidal AC, current leads voltage by 90° hence voltage lags current 90°, A. B reverse direction, C in-phase for resistor. ESR/leakage not ideal 90°, but prompt assumes condensator pure model.",
+        "reported_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "scope_tag": "DIRECT_CAPACITOR_PHASE_90"
+      },
+      "editable_explanation": {
+        "A": "La condensator ideal, tensiunea rămâne în urma curentului cu 90°.",
+        "B": "A spune că tensiunea precedă curentul inversează relația tipică a inductanței.",
+        "C": "În fază este caracteristic rezistorului ideal, nu condensatorului.",
+        "wording_or_countermodel": "Defazajul de 90° cere condensator ideal și regim sinusoidal.",
+        "unofficial_rephrased_question": "Dacă I(t)=I0·sin(ωt), cum se scrie tensiunea de pe C ideal, la constante compatibile?",
+        "unofficial_rephrased_solution": "U(t)=U0·sin(ωt−π/2), fără componentă continuă.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0047",
+      "grade_ids": [
+        "G1-ELE-054",
+        "G2-ELEC-200"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "61",
+        "question": "Descărcătoarele cu oxid de zinc protejează echipamentele din reţele împotriva:",
+        "options": {
+          "A": "supratensiunilor",
+          "B": "supracurenţilor",
+          "C": "solicitărilor mecanice"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-054=A | G2-ELEC-200=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "ZnO surge arrester clamps transient overvoltage (A); B overcurrent protective fuse/CB different; C mechanical loads outside arrester function. Long-duration overvoltage can overheat arrester, no blanket guarantee.",
+        "reported_source_url": "https://productinfo.se.com/0100db2301_elecdistfunddesignguide/0100db2301-electrical-distribution-fundamentals-design-guide/English/0100DB2301%20Electrical%20Distribution%20Fundamentals%20Design%20Guide%20%28bookmap%29_DD00648155.xml/%24/SystemProtection-A4A695C5",
+        "scope_tag": "DIRECT_ZNO_OVERVOLTAGE"
+      },
+      "editable_explanation": {
+        "A": "Descărcătorul cu oxid de zinc limitează supratensiuni tranzitorii prin comportament neliniar al varistorului.",
+        "B": "Protecția contra supracurenților susținuți aparține siguranțelor/întreruptoarelor și altor protecții.",
+        "C": "Solicitările mecanice nu sunt obiectul primar al descărcătorului ZnO.",
+        "wording_or_countermodel": "Limitarea supratensiunilor nu echivalează cu protecție absolută la orice defect.",
+        "unofficial_rephrased_question": "Ce fel de mărime limitează un descărcător ZnO montat la bornele unui echipament?",
+        "unofficial_rephrased_solution": "Vârful supratensiunii tranzitorii peste nivelul de protecție, în limitele sale de funcționare.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0048",
+      "grade_ids": [
+        "G1-ELE-055",
+        "G2-ELEC-201"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "62",
+        "question": "Descărcătoarele cu oxizi de zinc sunt echipamente destinate:",
+        "options": {
+          "A": "protecţiei personalului de exploatare împotriva electrocutării",
+          "B": "protecţiei împotriva supratensiunilor",
+          "C": "protecţiei împotriva supracurenţilor"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-055=B | G2-ELEC-201=B"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Same protected object as 054 but A/B/C permuted: B overvoltage is ZnO arrester purpose; A no universal shock protection by itself and C excessive current requires other protective device. Manufacturer identifies ZnO MOV as surge clamping element.",
+        "reported_source_url": "https://www.se.com/us/en/faqs/FA301291/",
+        "scope_tag": "DIRECT_ZNO_OVERVOLTAGE"
+      },
+      "editable_explanation": {
+        "A": "ZnO nu înlocuiește măsurile de protecție contra electrocutării.",
+        "B": "Descărcătorul ZnO protejează echipamente împotriva supratensiunilor.",
+        "C": "Supracurentul susținut se întrerupe prin dispozitive de protecție la curent, nu prin descărcător ca scop principal.",
+        "wording_or_countermodel": "Aceeași funcție ca întrebarea 054, dar opțiunile sunt reordonate; nu transfera litera.",
+        "unofficial_rephrased_question": "Când A/B/C sunt permutate între două întrebări despre ZnO, ce trebuie reținut?",
+        "unofficial_rephrased_solution": "Funcția de protecție contra supratensiunilor, nu poziția răspunsului.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0049",
+      "grade_ids": [
+        "G1-ELE-056",
+        "G2-ELEC-202"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "63",
+        "question": "Diferenţa de potenţial la bornele a n baterii de condensatoare montate în serie este egală cu:",
+        "options": {
+          "A": "suma diferenţelor de potenţial la bornele fiecărui condensator",
+          "B": "diferenţa de potenţial la bornele fiecărui condensator în parte",
+          "C": "diferenţa de potenţial a unui condensator împărţită la n"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-056=A | G2-ELEC-202=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Total terminal voltage across n series capacitors is the algebraic sum of individual capacitor voltages, A, by Kirchhoff voltage law. B one element voltage only if n=1 or other voltages zero; C V_element/n false for equal nonzero elements, true total is n·V_element for equal identical elements.",
+        "reported_source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "scope_tag": "DIRECT_SERIES_CAPACITOR_KVL"
+      },
+      "editable_explanation": {
+        "A": "La condensatoare în serie, tensiunea totală este suma algebrică a căderilor individuale conform legii lui Kirchhoff.",
+        "B": "Tensiunea pe un singur condensator este egală cu totalul doar în cazuri degenerate, nu pentru n elemente uzuale.",
+        "C": "Împărțirea tensiunii unui element la n nu reprezintă tensiunea totală.",
+        "wording_or_countermodel": "Tensiunile elementelor pot diferi dacă C diferă, deși sarcina serie ideală este comună.",
+        "unofficial_rephrased_question": "Două condensatoare în serie au căderi de 3 V și 5 V. Ce tensiune există pe întreg lanțul?",
+        "unofficial_rephrased_solution": "8 V, cu polarități compatibile.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0051",
+      "grade_ids": [
+        "G1-ELE-059",
+        "G2-ELEC-204"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "66",
+        "question": "În cazul conexiunii în stea la transformator:",
+        "options": {
+          "A": "tensiunea de linie este egala cu tensiunea de faza",
+          "B": "curentul de linie este egal cu ~1,73 x curentul de faza",
+          "C": "tensiunea de linie este egala cu ~1,73 x tensiunea de faza"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-059=C | G2-ELEC-204=C"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "In balanced Y/star system line voltage magnitude sqrt(3) times phase (line-neutral) voltage, C. A equality is delta voltage relation, B sqrt3 line current to phase current is delta, not Y. If unbalanced, individual line voltages not a single sqrt3 of arbitrary phase magnitude; standard balanced regime implied.",
+        "reported_source_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_%28Kirtley%29/03%3A_Polyphase_Networks/3.03%3A_Line-Line_Voltages",
+        "scope_tag": "DIRECT_THREE_PHASE_WYE_BALANCED"
+      },
+      "editable_explanation": {
+        "A": "În stea echilibrată, tensiunea dintre faze nu este egală cu cea între fază și neutru.",
+        "B": "Curentul de linie în stea este egal cu curentul de fază, nu √3 ori acesta.",
+        "C": "Tensiunea de linie are modul √3·U_fază în sistemul stea simetric.",
+        "wording_or_countermodel": "În triunghi sunt alte relații; trebuie precizată conexiunea și echilibrarea fazorilor.",
+        "unofficial_rephrased_question": "La un sistem stea echilibrat cu U_fază=230 V, cât este U_linie?",
+        "unofficial_rephrased_solution": "Aproximativ 398 V, de regulă rotunjit la 400 V.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0052",
+      "grade_ids": [
+        "G1-ELE-060",
+        "G2-ELEC-205"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "67",
+        "question": "Efectul pelicular al curentului alternativ este utilizat în:",
+        "options": {
+          "A": "încălzirea materialelor prin inducţie",
+          "B": "eliminarea dezechilibrelor din reţeaua electrică",
+          "C": "eliminarea distorsiunilor undelor de curent"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-060=A | G2-ELEC-205=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Skin effect concentrates AC/induced eddy current near surface, supporting localized induction heating A. B grid imbalance removal and C harmonic distortion elimination unrelated. Skin depth depends on frequency, permeability and conductivity; effect alone isn't the induction heating power supply.",
+        "reported_source_url": "https://technav.ieee.org/topic/skin-effect/",
+        "scope_tag": "DIRECT_INDUCTION_HEATING_SKIN"
+      },
+      "editable_explanation": {
+        "A": "Încălzirea prin inducție folosește curenți turbionari în piesă și poate exploata concentrarea lor la suprafață (efect pelicular).",
+        "B": "Efectul pelicular nu elimină dezechilibrul rețelei electrice.",
+        "C": "Nu este o metodă generală de eliminare a distorsiunilor armonice.",
+        "wording_or_countermodel": "Adâncimea de pătrundere depinde de frecvență, conductivitate și permeabilitate.",
+        "unofficial_rephrased_question": "Cum afectează în general creșterea frecvenței adâncimea de pătrundere la încălzirea prin inducție?",
+        "unofficial_rephrased_solution": "O reduce, pentru material și regim comparabile.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0053",
+      "grade_ids": [
+        "G1-ELE-061",
+        "G2-ELEC-206"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "68",
+        "question": "Efectul pelicular al unui curent alternativ care străbate un conductor masiv se datorează:",
+        "options": {
+          "A": "unor curenţi paraziţi induşi în conductor, simetrici faţă de axa acestuia",
+          "B": "numai unor forţe electromotoare induse datorită variaţiei curentului",
+          "C": "capacităţii conductorului faţă de pământ"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-061=A | G2-ELEC-206=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Skin effect occurs from time-varying magnetic fields and induced counter EMF/eddy current redistribution; for axially symmetric solid conductor current distribution changes with radius, matches intended A. B 'numai FEM induse' refers to cause but omits induced current effects and is not cleanly false; C capacitance to ground unrelated. Original 'simetrici faţă de axa' assumes homogeneous cylindrical geometry, not arbitrary massive conductor cross section.",
+        "reported_source_url": "https://technav.ieee.org/topic/skin-effect/",
+        "scope_tag": "CONDITIONAL_SKIN_INDUCED_EDDIES"
+      },
+      "editable_explanation": {
+        "A": "Curenții induși și redistribuția lor sub câmp variabil explică efectul pelicular în geometria standard a conductorului masiv.",
+        "B": "«Numai FEM induse» identifică o parte din mecanism, astfel că varianta B nu poate fi exclusă simplist; cere calificare semantică, nu aprobarea automată A.",
+        "C": "Capacitatea față de pământ nu este cauza redistribuției radiale tipice a curentului AC.",
+        "wording_or_countermodel": "Răspunsul A este istoric intenționat dar A/B prezintă o competiție de explicații; geometria simetrică nu este dată.",
+        "unofficial_rephrased_question": "De ce crește rezistența aparentă AC a conductorului masiv la frecvențe mari?",
+        "unofficial_rephrased_solution": "Curenții se concentrează spre suprafață din cauza câmpurilor variabile și efectelor induse.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0054",
+      "grade_ids": [
+        "G1-ELE-062",
+        "G2-ELEC-207"
+      ],
+      "original": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "69",
+        "question": "Energia electrica reactiva:",
+        "options": {
+          "A": "este o energie electrica complementara, care serveşte la magnetizarea bobinajelor",
+          "B": "se poate transforma în energie mecanica",
+          "C": "se poate transforma în energie luminoasa"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-062=A | G2-ELEC-207=A"
+      },
+      "historical_research": {
+        "source": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+        "blob": "21f4bdef9dfec330aab0a42686899e12b95e760d",
+        "prior_ABC_scope": "Reactive power/current required to magnetize inductive windings and establish fields; A matches common textbook description. B/C mechanical and light output represent net active power conversions, not oscillatory reactive exchange. But 'energie electrică reactivă' is metered exchange term not separately consumable work, and capacitive elements exchange electric field energy too, so A describes common role, not full definition.",
+        "reported_source_url": "https://technav.ieee.org/topic/reactive-power/",
+        "scope_tag": "DIRECT_REACTIVE_EXCHANGE_WITH_WORDING_QUALIFICATION"
+      },
+      "editable_explanation": {
+        "A": "Magnetizarea bobinajelor consumă/returnează periodic energie în câmpul magnetic; A exprimă o utilizare didactică obișnuită a energiei reactive.",
+        "B": "Conversia netă în energie mecanică utilă aparține componentei active, nu schimbului reactiv în sine.",
+        "C": "Conversia netă în lumină aparține energiei active, nu schimbului reactiv.",
+        "wording_or_countermodel": "Energia reactivă include și schimb electric în condensatoare; nu este doar «pentru bobinaje».",
+        "unofficial_rephrased_question": "Ce mărime asociată puterii reactive este Q în regim sinusoidal, și în ce unități?",
+        "unofficial_rephrased_solution": "Q=Uef·Ief·sinφ, exprimată în var; nu este rata netă de lucru mecanic.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      }
+    }
+  ],
+  "editorial_erratum": "Corrected live-source relevance IDs: QABC-0043 is Poynting (not QABC-0045); QABC-0042 is AC proximity (not QABC-0044). No original question/choice or imported key changes."
+}

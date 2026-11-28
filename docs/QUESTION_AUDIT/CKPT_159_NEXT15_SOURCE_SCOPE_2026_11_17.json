@@ -1,0 +1,528 @@
+{
+  "checkpoint": "CKPT-159",
+  "date": "2026-11-17",
+  "previous_head": "1ff0e8bbb2d385860aacbc9b173e422ace99ace6",
+  "units": 15,
+  "grade_ids": 16,
+  "technical_status_counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 14,
+    "CONDITIONAL_MODEL_OR_SOURCE": 1
+  },
+  "source_access_scope": "Source URLs are pointers to prior research; not every source reopened in this session.",
+  "learner_approvals": 0,
+  "independent_reviews_executed": 0,
+  "cards": [
+    {
+      "unit_id": "AU-db01efb3f7d53777",
+      "representative_id": "G1-ELE-275",
+      "member_ids": [
+        "G1-ELE-275",
+        "G2-ELEC-408"
+      ],
+      "qabc_sha256": "db01efb3f7d53777b89cf89807ce35ad1440acca1cb916dde53ff7a53c6c4674",
+      "original_question_UNCHANGED": "Valoarea medie pătratică a unei mărimi periodice se mai numeşte şi:",
+      "original_ABC_UNCHANGED": {
+        "A": "amplitudine",
+        "B": "modul",
+        "C": "valoare efectivă sau valoarea eficace"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-275": "C",
+        "G2-ELEC-408": "C"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "RMS/effective value is sqrt(mean(square(signal))) by definition for periodic waveform, answer C; amplitude and modulus not synonyms.",
+      "prior_ABC_rationale": {
+        "A": "A: Amplitudinea este valoarea maximă, nu media pătratică.",
+        "B": "B: Modulul unui fazor nu este universal valoarea efectivă fără o convenție de normalizare.",
+        "C": "C: RMS=sqrt((1/T)∫x(t)²dt), numită valoarea efectivă/eficace."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://www.bipm.org/en/publications/si-brochure",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-6e549c3e32860a60",
+      "representative_id": "G2-ELEC-001",
+      "member_ids": [
+        "G2-ELEC-001"
+      ],
+      "qabc_sha256": "6e549c3e32860a604286b7cf24471ef769ad1f64fe259d24d514873fbc54be7e",
+      "original_question_UNCHANGED": "Ce relație exprimă legea lui Ohm pentru un rezistor?",
+      "original_ABC_UNCHANGED": {
+        "A": "U = R·I",
+        "B": "P = U·I",
+        "C": "Q = U/R"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-001": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Ohm law U=R I for ohmic resistor; P=UI is power and Q=U/R not Ohm voltage relation.",
+      "prior_ABC_rationale": {
+        "A": "A: Pentru rezistor ohmic U=RI.",
+        "B": "B: P=UI este putere, nu relația definitorie U-I.",
+        "C": "C: Q=U/R nu reprezintă legea lui Ohm."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-3e057608a86fe63a",
+      "representative_id": "G2-ELEC-002",
+      "member_ids": [
+        "G2-ELEC-002"
+      ],
+      "qabc_sha256": "3e057608a86fe63afef2366e0057fb17d5ae16dabbb1481f4e5c195aaa0fea7e",
+      "original_question_UNCHANGED": "Unitatea SI pentru rezistența electrică este:",
+      "original_ABC_UNCHANGED": {
+        "A": "ohmul (Ω)",
+        "B": "voltul (V)",
+        "C": "wattul (W)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-002": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "SI resistance unit ohm Ω=V/A, not V voltage or W power.",
+      "prior_ABC_rationale": {
+        "A": "A: Rezistența electrică se măsoară în ohmi (Ω).",
+        "B": "B: Voltul (V) măsoară tensiunea, nu rezistența.",
+        "C": "C: Wattul (W) măsoară puterea, nu rezistența."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://www.bipm.org/en/publications/si-brochure",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-ab6cf5348ea5b55d",
+      "representative_id": "G2-ELEC-003",
+      "member_ids": [
+        "G2-ELEC-003"
+      ],
+      "qabc_sha256": "ab6cf5348ea5b55de6a8bf6a1adf004dc9958cbc60f7e8e4e0d649a25fc8275e",
+      "original_question_UNCHANGED": "Unitatea SI pentru intensitatea curentului electric este:",
+      "original_ABC_UNCHANGED": {
+        "A": "amperul (A)",
+        "B": "ohmul (Ω)",
+        "C": "joule (J)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-003": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "SI current intensity base unit ampere A, rather than ohm resistance or joule energy.",
+      "prior_ABC_rationale": {
+        "A": "A: Amperul (A) este unitatea de bază SI a curentului electric.",
+        "B": "B: Ω este rezistența electrică.",
+        "C": "C: Joule (J) este energia."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://www.bipm.org/en/publications/si-brochure",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-c58c835c10f5c03e",
+      "representative_id": "G2-ELEC-004",
+      "member_ids": [
+        "G2-ELEC-004"
+      ],
+      "qabc_sha256": "c58c835c10f5c03e3c0c8c6a4ab86b48780af5cb3d391194f2bdf8837c89ee1e",
+      "original_question_UNCHANGED": "Unitatea SI pentru tensiunea electrică este:",
+      "original_ABC_UNCHANGED": {
+        "A": "voltul (V)",
+        "B": "amperul (A)",
+        "C": "wattul (W)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-004": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "SI voltage unit volt V, rather than A current or W power.",
+      "prior_ABC_rationale": {
+        "A": "A: Voltul (V) este diferența de potențial/tensiunea electrică.",
+        "B": "B: Amperul măsoară intensitatea curentului.",
+        "C": "C: Wattul măsoară puterea."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://www.bipm.org/en/publications/si-brochure",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-215e4da01c478f98",
+      "representative_id": "G2-ELEC-005",
+      "member_ids": [
+        "G2-ELEC-005"
+      ],
+      "qabc_sha256": "215e4da01c478f98a2d6965b63a38a98b7d33e832b3783eedf0a148f5db3dd85",
+      "original_question_UNCHANGED": "Puterea electrică activă într-un circuit de curent continuu se poate calcula cu:",
+      "original_ABC_UNCHANGED": {
+        "A": "P = U·I",
+        "B": "P = U/I",
+        "C": "P = R/I"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-005": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "For DC constant voltage and current, active electric power P=UI; U/I resistance and R/I other dimensional ratio.",
+      "prior_ABC_rationale": {
+        "A": "A: În curent continuu în regim staționar P=UI pentru putere absorbită/convenție pasivă.",
+        "B": "B: U/I are unitate Ω, nu watt.",
+        "C": "C: R/I nu are unitate de putere."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-dcee0c03bde67c8d",
+      "representative_id": "G2-ELEC-006",
+      "member_ids": [
+        "G2-ELEC-006"
+      ],
+      "qabc_sha256": "dcee0c03bde67c8d7790b9ad4e1f8a50aceba2fa1742ce4b60e95a6df5a9a236",
+      "original_question_UNCHANGED": "Energia electrică consumată într-un interval de timp se poate exprima prin:",
+      "original_ABC_UNCHANGED": {
+        "A": "E = P·t",
+        "B": "E = P/t",
+        "C": "E = U/R"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-006": "A"
+      },
+      "technical_status": "CONDITIONAL_MODEL_OR_SOURCE",
+      "technical_reason": "E=Pt only if P is constant or P denotes mean over interval; arbitrary time varying load E=∫P(t)dt.",
+      "prior_ABC_rationale": {
+        "A": "A: Energia E=Pt dacă P e constantă sau P desemnează puterea medie pe interval.",
+        "B": "B: P/t nu are unitate energie, ci putere per timp.",
+        "C": "C: U/R dă curent, nu energie."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-d8ae9b5edd2f9dab",
+      "representative_id": "G2-ELEC-007",
+      "member_ids": [
+        "G2-ELEC-007"
+      ],
+      "qabc_sha256": "d8ae9b5edd2f9dab3d4852788a0e6e4fb262beee82c9e8a73b0251f8f2a90c2d",
+      "original_question_UNCHANGED": "Pentru două rezistențe în serie, rezistența echivalentă este:",
+      "original_ABC_UNCHANGED": {
+        "A": "R1 + R2",
+        "B": "R1·R2",
+        "C": "R1/R2"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-007": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Ideal series resistances add R_eq=R1+R2, unlike product R1R2 or ratio R1/R2.",
+      "prior_ABC_rationale": {
+        "A": "A: În serie Req=R1+R2.",
+        "B": "B: Produsul R1R2 are unitate Ω² și nu este rezistență echivalentă.",
+        "C": "C: R1/R2 este adimensional, nu Ω."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-0dda954f7f10678d",
+      "representative_id": "G2-ELEC-008",
+      "member_ids": [
+        "G2-ELEC-008"
+      ],
+      "qabc_sha256": "0dda954f7f10678d67a909668a42d02d1062cce0d0abffd9f566fb6370c3f437",
+      "original_question_UNCHANGED": "Pentru două rezistențe în paralel, rezistența echivalentă este:",
+      "original_ABC_UNCHANGED": {
+        "A": "R1·R2/(R1+R2)",
+        "B": "R1+R2",
+        "C": "R1-R2"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-008": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Two passive resistors parallel Req=R1R2/(R1+R2) from reciprocal rule, unlike series sum or difference.",
+      "prior_ABC_rationale": {
+        "A": "A: Pentru două rezistențe pozitive paralele Req=(R1R2)/(R1+R2).",
+        "B": "B: Suma este pentru serie.",
+        "C": "C: Diferența R1−R2 nu reprezintă formula paralelului."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-009c53dbc7d5c251",
+      "representative_id": "G2-ELEC-009",
+      "member_ids": [
+        "G2-ELEC-009"
+      ],
+      "qabc_sha256": "009c53dbc7d5c25115cdd0c888037c407884b7ffc2a90b1770982eaae91b4be8",
+      "original_question_UNCHANGED": "Într-un circuit serie, curentul prin elementele conectate în serie este:",
+      "original_ABC_UNCHANGED": {
+        "A": "același",
+        "B": "zero în toate elementele",
+        "C": "diferit obligatoriu în fiecare element"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-009": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "In single ideal series path all component currents same instantaneously by charge conservation; not necessarily zero.",
+      "prior_ABC_rationale": {
+        "A": "A: Într-un circuit de serie fără derivații, curentul care străbate toate elementele este același.",
+        "B": "B: Curent zero nu este universal pentru circuit activ.",
+        "C": "C: Nu este obligatoriu diferit în fiecare element; KCL impune egalitate."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-b9c2b1d96a07a2ea",
+      "representative_id": "G2-ELEC-010",
+      "member_ids": [
+        "G2-ELEC-010"
+      ],
+      "qabc_sha256": "b9c2b1d96a07a2ea287571bc9d43a0898c1380d8daf8dae73094a3d2f7115737",
+      "original_question_UNCHANGED": "Într-un circuit paralel, tensiunea pe ramurile conectate în paralel este:",
+      "original_ABC_UNCHANGED": {
+        "A": "aceeași",
+        "B": "zero",
+        "C": "întotdeauna diferită"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-010": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Ideal parallel branches join same node pair, hence same terminal voltage, not zero or different.",
+      "prior_ABC_rationale": {
+        "A": "A: Ramurile conectate în paralel între aceleași două noduri au aceeași diferență de potențial.",
+        "B": "B: Tensiunea nu este obligatoriu zero decât noduri echipotențiale.",
+        "C": "C: Nu poate fi întotdeauna diferită dacă nodurile sunt comune."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-d35a7138326755d3",
+      "representative_id": "G2-ELEC-011",
+      "member_ids": [
+        "G2-ELEC-011"
+      ],
+      "qabc_sha256": "d35a7138326755d38e25ab052c5f60b7eca10269100719a22d6efba99b99cb8f",
+      "original_question_UNCHANGED": "Frecvența unei mărimi sinusoidale este măsurată în:",
+      "original_ABC_UNCHANGED": {
+        "A": "hertzi (Hz)",
+        "B": "ohmi (Ω)",
+        "C": "farazi (F)"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-011": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Sinusoidal frequency measured in hertz Hz=s^-1, not Ω resistance or farad capacitance.",
+      "prior_ABC_rationale": {
+        "A": "A: Hertz (Hz) este unitatea SI de frecvență.",
+        "B": "B: Ohm este unitate de rezistență.",
+        "C": "C: Farad este unitate de capacitate."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_14_ALL_20_SOURCE_AWARE_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://www.bipm.org/en/publications/si-brochure",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-a5ee067dbb030ef7",
+      "representative_id": "G2-ELEC-012",
+      "member_ids": [
+        "G2-ELEC-012"
+      ],
+      "qabc_sha256": "a5ee067dbb030ef7b82ce91ece68b108ea6b5fcb81fb717f443065222aefb45d",
+      "original_question_UNCHANGED": "Perioada T și frecvența f sunt legate prin:",
+      "original_ABC_UNCHANGED": {
+        "A": "T = 1/f",
+        "B": "T = f",
+        "C": "T = f²"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-012": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Period T and frequency f reciprocal for nonzero periodic oscillation, T=1/f; f and f² dimensionally mismatch.",
+      "prior_ABC_rationale": {
+        "A": "T=1/f pentru orice fenomen periodic cu f nenul.",
+        "B": "T=f inversează impropriu perioadă și frecvență; unități s versus Hz.",
+        "C": "T=f² dă unități Hz², nu secunde."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_15_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-436f2b6e1f77709d",
+      "representative_id": "G2-ELEC-013",
+      "member_ids": [
+        "G2-ELEC-013"
+      ],
+      "qabc_sha256": "436f2b6e1f77709de242c69e1800f4f288cdd8618435ca9043076d44a66a47b6",
+      "original_question_UNCHANGED": "Valoarea efectivă a unei tensiuni sinusoidale este folosită pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "evaluarea efectului echivalent în regim energetic/termic",
+        "B": "determinarea directă a frecvenței",
+        "C": "înlocuirea rezistenței"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-013": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "RMS voltage represents the DC voltage with equivalent dissipation in same resistance; frequency and resistance not derived by RMS alone.",
+      "prior_ABC_rationale": {
+        "A": "RMS indică tensiunea CC ce produce același efect Joule într-o rezistență.",
+        "B": "Frecvența ține de perioada temporală, nu se deduce dintr-un singur RMS.",
+        "C": "Valoarea RMS nu înlocuiește rezistența ohmică a unui receptor."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_15_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    },
+    {
+      "unit_id": "AU-aa722f26d4d9202e",
+      "representative_id": "G2-ELEC-014",
+      "member_ids": [
+        "G2-ELEC-014"
+      ],
+      "qabc_sha256": "aa722f26d4d9202ee2cb726058226449f81e80d43df60358a4534d9f34a91502",
+      "original_question_UNCHANGED": "Într-un circuit pur rezistiv de c.a., defazajul dintre tensiune și curent este:",
+      "original_ABC_UNCHANGED": {
+        "A": "0°",
+        "B": "90°",
+        "C": "180°"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-ELEC-014": "A"
+      },
+      "technical_status": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "technical_reason": "Pure resistor AC voltage and current in phase φ=0°, not 90° or 180° (passive convention).",
+      "prior_ABC_rationale": {
+        "A": "La rezistor pur, U și I variază în fază, deci 0°.",
+        "B": "90° corespunde unui element reactiv ideal, nu rezistorului.",
+        "C": "180° ar însemna opoziție de fază, absentă sub convenția pasivă."
+      },
+      "source": {
+        "prior_file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_15_ALL_20_TECHNICAL_ABC_TRIAGE_2026_11_13.csv",
+        "prior_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+        "access": "PREVIOUSLY_INDEXED_SOURCE_ABC_REUSED; EXAM_EDITION_NOT_VERIFIED"
+      },
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_changed": false
+    }
+  ]
+}

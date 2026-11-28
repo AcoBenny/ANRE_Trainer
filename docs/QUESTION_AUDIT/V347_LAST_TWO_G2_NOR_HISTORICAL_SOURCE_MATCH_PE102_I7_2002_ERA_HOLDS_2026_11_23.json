@@ -1,0 +1,78 @@
+{
+  "schema": "V347_LAST_2_NOR_ORIGINAL_SOURCE_HISTORY_PE102_AND_I7_2002_2026_11_23",
+  "date": "2026-11-23",
+  "baseline": "V342",
+  "counts": {
+    "new_G2_source_origin_IDs_researched": 2,
+    "original_A_B_C_rationales": 6,
+    "remaining_without_any_identified_historical_original_source": 0,
+    "modern_2026_exam_edition_certified": 0
+  },
+  "items": [
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0035",
+      "original_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_row": 35,
+      "stem_sha256": "309f5e5b7a52e46a81d623976d3fc6aec12c01df07586381308e392aa3f355fb",
+      "original_question": "Amplasarea instalaţiilor electrice de conexiuni şi distribuţie în interiorul încăperilor de cabluri: ",
+      "original_options": {
+        "A": "este interzisă, cu unele excepţii",
+        "B": "este permisă întotdeauna",
+        "C": "nu există în prescripţiile energetice o prevedere în acest sens"
+      },
+      "source_url": "https://www.consultform.ro/anre/wp-content/uploads/2016/09/PE-102-NORMATIV-PENTRU-PROIECTAREA-SI-EXECUTAREA-INSTALATIILOR-DE-CONEXIUNI-SI-DISTRIBUTIE-CU-TENSIUNI-PANA-LA-1KV.pdf",
+      "source_locator": "PE102/1986 §2.7 and adjacent §§2.6,2.8; PE107 special exceptions",
+      "provisional_source_candidate_NOT_official_key": "A",
+      "historical_only_answer_hint": null,
+      "original_option_reasoning": {
+        "A": "Placement is prohibited with explicit PE107 exceptions, matching original A.",
+        "B": "It is not always allowed, contra B.",
+        "C": "The prohibition is expressly present, contra C."
+      },
+      "scope_gate": "PE102_SOURCE_EXACT_PE107_EXCEPTIONS_NOT_RETRIEVED",
+      "edition_qualification": "PE102 included in published ANRE 2023 Grade II bibliography (V335), but 2026 exact applicable edition and PE107 exceptions need review.",
+      "source_research_stage_before": "TRIAGED",
+      "source_research_stage_after": "SOURCE_RESEARCHED",
+      "exam_2026_edition_verified": false,
+      "qualified_independent_QA": false,
+      "learner_release": false
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0096",
+      "original_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "original_row": 96,
+      "stem_sha256": "24bc01e96cc3b5302942d75917cfcce53ea4c0ef8b4a61d3bce4130777efb2f0",
+      "original_question": "Este obligatorie protecţia la suprasarcini pentru:",
+      "original_options": {
+        "A": "instalaţii din încăperi din categoriile celor cu risc de incendiu sau de explozie",
+        "B": "instalaţii de comandă ",
+        "C": "instalaţii de semnalizare"
+      },
+      "source_url": "https://www.rasfoiesc.com/inginerie/electronica/NORMATIV-PENTRU-PROIECTAREA-SI29.php",
+      "source_locator": "I7/2002 §4.2.9-10, OBSOLETE; 2011/2023 edition not equivalent",
+      "provisional_source_candidate_NOT_official_key": null,
+      "historical_only_answer_hint": "A",
+      "original_option_reasoning": {
+        "A": "Historical §4.2.9 requires overload protection for explosive/fire-risk indoor categories, A is a historical hint only.",
+        "B": "Historical paragraph exempts control installations from separate overload protection in given conditions.",
+        "C": "Historical paragraph also exempts signalling installations from separate overload protection in given conditions."
+      },
+      "scope_gate": "OBSOLETE_I7_2002_EXACT_SOURCE_MATCH_2026_EDITION_NOT_PROVEN",
+      "edition_qualification": "I7/2002 superseded by I7/2011. No equivalent current paragraph yet authenticated; do not infer 2026 answer key A.",
+      "source_research_stage_before": "TRIAGED",
+      "source_research_stage_after": "SOURCE_RESEARCHED",
+      "exam_2026_edition_verified": false,
+      "qualified_independent_QA": false,
+      "learner_release": false
+    }
+  ],
+  "method": "Original stem ABC matched to actual norm historical clauses, with adjacent context and exceptions; edition applicability remains separate open gate. Not a certified official key or grade 2026 normative signoff.",
+  "limitations": [
+    "PE102 PDF page textual clause validated; web screenshot returned cache miss, so no page-image authentication.",
+    "R0035 PE107 exception conditions not yet read. Do not assume all layouts prohibited.",
+    "R0096 exact I7/2002 historical match is obsolete and not adequate for 2026 source edition; current scored key NULL.",
+    "All 157 staged original G2 remain unapproved and quarantined; no imported keys/master/HTML/APK changed."
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "schema": "V304_G2_NOR_11_MORE_SOURCE_SPECIFIC_I7_ABC_SCOPE_RECHECK",
+  "date": "2026-11-22",
+  "source": "user-provided I7 PDF and physical workbook text; source-specific paragraphs and neighboring text",
+  "count": 11,
+  "one_explicit_ambiguity_still_unresolved": "ANRE-G2-NOR-XLSX-R0106",
+  "all_source_answer_keys_unofficial": true,
+  "release_approvals": 0,
+  "cases": [
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0047",
+      "source_excel_row": 47,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Tuburile şi ţevile metalice sau din material plastic din instalaţiile electrice de j.t. se instalează:",
+      "verbatim_A_B_C": {
+        "A": "numai aparent",
+        "B": "numai îngropat",
+        "C": "aparent sau îngropat, în anumite condiţii"
+      },
+      "research_candidate_not_official": "C",
+      "reasoning_A_B_C": {
+        "A": "Numai aparent excludes explicitly permitted embedded/underground installation.",
+        "B": "Numai îngropat excludes exposed/visible installation explicitly permitted.",
+        "C": "Both apparent and embedded modes are permitted, subject to building, conduit and fire/environmental conditions."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §5.2.12.2.1",
+        "pages": [
+          60
+        ],
+        "context_before_and_after": "Before §5.2.12.1 general conduit/tube requirements; after §5.2.12.2.2 limits structural resistance installations."
+      },
+      "critical_scope_qualifier": "Allowable mode varies by material and location; not all tubes are allowed under every local condition.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0053",
+      "source_excel_row": 53,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": " Amplasarea instalaţiilor electrice de joasă tensiune pe trasee comune cu acelea ale altor instalaţii sau utilaje care ar putea să le pericliteze în funcţionare normală sau în caz de avarie: ",
+      "verbatim_A_B_C": {
+        "A": "este interzisă",
+        "B": "trebuie evitată",
+        "C": "este opţiunea proiectantului"
+      },
+      "research_candidate_not_official": "B",
+      "reasoning_A_B_C": {
+        "A": "Unqualified prohibition stronger than the actual 'must avoid' rule; a separately specified dielectric-fibre exception exists.",
+        "B": "The norm literally requires avoidance where other installation may endanger the electric route in normal or fault operation.",
+        "C": "This is a normative obligation, not a designer's unrestricted discretion."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §3.0.3.4",
+        "pages": [
+          13
+        ],
+        "context_before_and_after": "Prior §3.0.3.2 gives arrangement of parallel services; following §3.0.3.5 prohibits certain routes under condensing equipment except protected execution."
+      },
+      "critical_scope_qualifier": "2023 amendment explicitly excludes fully dielectric optical communication cables from blanket avoidance, so 'interzisă' is wrong.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0095",
+      "source_excel_row": 95,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Dispozitivele pentru suspendarea corpurilor de iluminat (cârlige, bolţuri, dibluri, etc) se aleg astfel încât să suporte fără deformări:",
+      "verbatim_A_B_C": {
+        "A": "peste 5 kg",
+        "B": "de 5 ori greutatea corpului de iluminat, dar nu mai puţin de 10 kg",
+        "C": "de 3 ori greutatea corpului de iluminat utilizat"
+      },
+      "research_candidate_not_official": "B",
+      "reasoning_A_B_C": {
+        "A": "Over 5 kg is not enough for heavier fixtures and omits 5x factor.",
+        "B": "Supports 5 times fixture mass with absolute floor of 10 kg without deformation.",
+        "C": "3 times weight is below the prescribed factor."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §5.4.21",
+        "pages": [
+          70
+        ],
+        "context_before_and_after": "Prior §5.4.20 describes power-factor correction in discharge lamps; after §5.4.22 regulates phase-wire placement for lighting switches."
+      },
+      "critical_scope_qualifier": "This is minimum suspension SUPPORT CAPACITY, not weight or placement height of fixture.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0096",
+      "source_excel_row": 96,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Este obligatorie protecţia la suprasarcini pentru:",
+      "verbatim_A_B_C": {
+        "A": "instalaţii din încăperi din categoriile celor cu risc de incendiu sau de explozie",
+        "B": "instalaţii de comandă ",
+        "C": "instalaţii de semnalizare"
+      },
+      "research_candidate_not_official": "A",
+      "reasoning_A_B_C": {
+        "A": "Normal exceptions to overload protection do NOT apply to locations at risk of fire or explosion; thus these require appropriate overload protection under exact scope.",
+        "B": "Control circuits may fall under the source exemption from overload devices; not categorically required under this choice.",
+        "C": "Signalling circuits likewise may fall under exception, not universally obligatory."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §4.3.2.2.1",
+        "pages": [
+          37
+        ],
+        "context_before_and_after": "Earlier §4.3.2.1 addresses where devices are placed; following §4.3.2.3 imposes special IT network constraints and §4.3.2.4 allows no-trip in certain dangerous operation situations."
+      },
+      "critical_scope_qualifier": "Do not apply exemption for control/signalling in risk-of-explosion rooms; exact installation hazard overrides generic circuit-class examples.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0106",
+      "source_excel_row": 106,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Pe circuitele secundare ale transformatoarelor de curent:",
+      "verbatim_A_B_C": {
+        "A": "este obligatoriu să se prevadă protecţia la suprasarcină",
+        "B": "este obligatoriu să se prevadă protecţia la scurcircuit",
+        "C": "se permite renunţarea la protecţia la scurtcircuit"
+      },
+      "research_candidate_not_official": "UNRESOLVED_SCOPE",
+      "reasoning_A_B_C": {
+        "A": "Section 4.3.2.4.1 recommends NO overload protection on current-transformer secondary circuits if unexpected disconnection risks safety; A universally mandatory is false.",
+        "B": "Norm gives explicit exceptions to normal overcurrent devices for some sensitive measurement circuits; B universally mandatory is overbroad.",
+        "C": "Section 4.3.3.1.3.1 permits omission of short-circuit protection on CERTAIN measurement circuits only if short-circuit risk is minimized and routing avoids combustibles. A CT secondary can be such a circuit, but the exact CT secondary object is not explicitly named in that short-circuit exception: the broad original C needs a grade-specific scope confirmation."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §§4.3.2.4.1, 4.3.3.1.3.1",
+        "pages": [
+          37,
+          38
+        ],
+        "context_before_and_after": "Section 4.3.2.4.1 before short-circuit chapter lists CT secondaries as overload no-trip examples; following §4.3.3.1.3.1 covers conditional short-circuit no-trip on some measuring circuits."
+      },
+      "critical_scope_qualifier": "Explicit CT-secondary exemption applies to overload interruption, not blanket all short circuits. No automatic scored C.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0107",
+      "source_excel_row": 107,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Pe circuitele secundare ale transformatoarelor de curent:",
+      "verbatim_A_B_C": {
+        "A": "este obligatoriu să se prevadă protecţia la suprasarcină",
+        "B": "se recomandă să nu se prevadă protecţia la suprasarcina",
+        "C": "este obligatoriu să se prevadă protecţia la scurcircuit"
+      },
+      "research_candidate_not_official": "B",
+      "reasoning_A_B_C": {
+        "A": "The cited rule recommends avoiding unexpected overload trips on CT secondary measurement circuits, not obligatory overload protection.",
+        "B": "Directly matches recommended lack of overload tripping where interruption can cause danger; CT secondary is in listed examples.",
+        "C": "A universal obligation for short-circuit protection is contradicted by narrowly permitted exception for measurement circuits, with conditions."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §4.3.2.4.1",
+        "pages": [
+          37,
+          38
+        ],
+        "context_before_and_after": "Before §4.3.2.2 lists overload exemptions in special circuits; §4.3.3.1.3.1 afterward gives different short-circuit conditions."
+      },
+      "critical_scope_qualifier": "Do not confuse permission not to trip overload with general right to omit all short-circuit protections.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0115",
+      "source_excel_row": 115,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Legarea conductoarelor din cupru la aparate, maşini, elemente metalice fixe, se face    (de regulă) prin strângere mecanică cu şuruburi în cazul conductoarelor cu secţiuni mai mici sau egale cu:",
+      "verbatim_A_B_C": {
+        "A": "16 mmp",
+        "B": " 10 mmp",
+        "C": "6 mmp"
+      },
+      "research_candidate_not_official": "B",
+      "reasoning_A_B_C": {
+        "A": "16mm² is where direct/special terminal attachment, not the upper limit of 'de regulă' screw tightening.",
+        "B": "Mechanical screw tightening generally prescribed at ≤10mm² copper, direct/special terminals for ≥16mm².",
+        "C": "6mm² is below the maximum 10mm² and misses intended threshold."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §5.2.6.11",
+        "pages": [
+          56
+        ],
+        "context_before_and_after": "§5.2.6.9–10 before discuss Cu-Al special joints and busbar connections; §5.2.6.12 afterward sets robust PE joints."
+      },
+      "critical_scope_qualifier": "Text says 'de regulă', and has an intermediate 10–16 mm² choice unspecified here; don't overgeneralize installation workmanship.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0118",
+      "source_excel_row": 118,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "În instalaţiile electrice pentru şantiere de construcţii şi de demolare, rezistenţa de dispersie a prizei de pământ şi rezistenţa conductoarelor de protecţie până la\nreceptor trebuie să fie de",
+      "verbatim_A_B_C": {
+        "A": "maximum 1Ω",
+        "B": "minimum 4Ω",
+        "C": " maximum 4 Ω "
+      },
+      "research_candidate_not_official": "C",
+      "reasoning_A_B_C": {
+        "A": "A maximum of 1Ω is more restrictive but not the specified question's maximum (4Ω).",
+        "B": "Source requires resistance no more than 4Ω, not at least 4Ω.",
+        "C": "4Ω maximum directly matches the site earthing and PE-to-receiver resistance rule."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §7.4.34",
+        "pages": [
+          123
+        ],
+        "context_before_and_after": "Prior §7.4.33 connects local and general site PE networks; following §7.4.35 further requires local grounding electrodes and network maximum 4Ω."
+      },
+      "critical_scope_qualifier": "Specific construction/demolition sites only; must also meet automatic-disconnection conditions of §4.1.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0132",
+      "source_excel_row": 132,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Conform normativului I-7-2011, alimentarea de securitate la un consumator este o alimentare prevăzută pentru menţinerea în funcţiune a echipamentelor şi instalaţiilor electrice importante pentru:    ",
+      "verbatim_A_B_C": {
+        "A": "sănătatea şi securitatea persoanelor şi animalelor domestice",
+        "B": " continuarea activității productive a principalelor instalații tehnologice ale consumatorului respectiv ",
+        "C": " continuarea activității productive a instalațiilor tehnologice ale consumatorului respectiv "
+      },
+      "research_candidate_not_official": "A",
+      "reasoning_A_B_C": {
+        "A": "Health and safety of people and domestic animals is explicitly in definition.",
+        "B": "Ordinary production continuity is a stand-by/back-up supply goal, not the defining safety service.",
+        "C": "Likewise ordinary technological production is not by itself the safety-service scope."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 Chapter 2, definition 'alimentare de securitate'",
+        "pages": [
+          5,
+          6
+        ],
+        "context_before_and_after": "Immediately preceding definition describes standby supply for continuity of non-safety functions; following description adds avoidance of serious environmental/equipment consequences beyond human/animal safety."
+      },
+      "critical_scope_qualifier": "The I7 safety definition also permits other specified purposes; A is one true purpose without a 'numai' exclusive claim.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0137",
+      "source_excel_row": 137,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "La bateriile de condensatoare de joasă tensiune fracționabile cu trepte comutabile se prevăd dispozitive de descărcare: ",
+      "verbatim_A_B_C": {
+        "A": "manuală",
+        "B": "automată",
+        "C": "manuală sau automată"
+      },
+      "research_candidate_not_official": "B",
+      "reasoning_A_B_C": {
+        "A": "Only manual discharge fails specific switched-step low voltage capacitor bank provision.",
+        "B": "Automatically activated discharge devices expressly required for step-switchable fractional banks.",
+        "C": "General bank devices may be manual OR automatic, but switchable stepped banks are a stricter exception requiring automatic."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §7.21.12",
+        "pages": [
+          151
+        ],
+        "context_before_and_after": "Prior §7.21.11 addresses capacitor bank short-circuit design; following §7.21.13 addresses capacitor bank rooms/physical surroundings."
+      },
+      "critical_scope_qualifier": "Difference between generic capacitor-bank discharge and step-switched capacitor banks, time ≤1min and residual voltage <42V.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    },
+    {
+      "staging_id": "ANRE-G2-NOR-XLSX-R0138",
+      "source_excel_row": 138,
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "verbatim_question": "Condensatoarele legate direct la bornele receptoarelor de joasă tensiune: ",
+      "verbatim_A_B_C": {
+        "A": "nu se prevăd cu dispozitive speciale de descărcare",
+        "B": "se prevăd cu dispozitive speciale de descărcare",
+        "C": "se prevăd cu dispozitive speciale de descărcare în anumite situații"
+      },
+      "research_candidate_not_official": "A",
+      "reasoning_A_B_C": {
+        "A": "Exact explicit exception: capacitors directly connected to receiver terminals need no special discharge devices.",
+        "B": "Would impose devices expressly excluded by the direct-connected-receiver exception.",
+        "C": "The original rule's explicit exception is unqualified for the named case; this vague conditional claim is not the source rule."
+      },
+      "normative_source": {
+        "name": "User I7 2011 consolidated to 2023-09-22",
+        "pdf_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+        "clause": "I7 §7.21.12",
+        "pages": [
+          151
+        ],
+        "context_before_and_after": "Prior same paragraph discusses generic automatic/manual discharge and stricter switchable banks; subsequent §7.21.13 concerns installation locations."
+      },
+      "critical_scope_qualifier": "Distinguish capacitors directly on receiver terminals from separate automatic step-switching compensation banks.",
+      "legal_version_2026_authentication": "NOT_DONE",
+      "official_scored_key": "UNKNOWN",
+      "independent_specialist_signoff": "NOT_RUN",
+      "learning_gate": "NO"
+    }
+  ]
+}

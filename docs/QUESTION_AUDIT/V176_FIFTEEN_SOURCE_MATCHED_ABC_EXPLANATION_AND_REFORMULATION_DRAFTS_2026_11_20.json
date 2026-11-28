@@ -1,0 +1,666 @@
+{
+  "schema": "v176_fifteen_ABC_after_answer_editable_explanation_drafts_and_reformulations",
+  "date": "2026-11-20",
+  "parent": "CKPT-296 + V175 original ANRE source text crosscheck",
+  "source_blobs": {
+    "v149": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "ckpt227": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+    "v175": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "source_exact_text_matched": 15,
+    "new_editorial_card_compositions": 15,
+    "distinct_grade_placements": 30,
+    "deterministic_math_spot_checks": 5,
+    "approved_for_learning": 0
+  },
+  "reconciling_rule": "Re-use CKPT-227 prior research, match original question and ABC/key to V149 and source 2024 ANRE. Add only editorial explanation and variation questions; no new official-key authenticity, independent reviewer, or certified current source edition claim. All 15 same-assistant drafts remain NOT_APPROVED.",
+  "qa": {
+    "unique_units": true,
+    "matched_original_master_V149": true,
+    "matched_original_ANRE_public_sample_text": true,
+    "no_source_key_or_APP_changes": true,
+    "per_option_text_filled": true,
+    "rephrased_exercises_filled": true,
+    "independent_signoffs": 0
+  },
+  "arithmetic": {
+    "cap_parallel_100_50_100": [
+      250,
+      250
+    ],
+    "kirchhoff_disconnected_L5_N4_k2": [
+      3,
+      3
+    ],
+    "slip_1500_1440": [
+      0.04,
+      0.04
+    ],
+    "joule_double_I_squared": [
+      4,
+      4
+    ],
+    "Cparallel_rephrase": [
+      60,
+      60
+    ]
+  },
+  "cards": [
+    {
+      "unit_id": "QABC-0001",
+      "grade_ids": [
+        "G1-ELE-001",
+        "G2-ELEC-154"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "8",
+      "immutable_original": {
+        "stem": "Atunci când se compensează energia electrica reactiva prin baterii de condensatoare, tensiunea în reţeaua electrica:",
+        "A": "scade",
+        "B": "nu se modifica",
+        "C": "creste",
+        "imported_keys": "G1-ELE-001=C | G2-ELEC-154=C"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "CONDITIONAL_GRID_OPERATION",
+        "research_source_url_reported": "https://electrical-engineering-portal.com/voltage-regulators",
+        "verbatim_model_and_counterexamples": "Compensating inductive reactive load with local shunt capacitors typically lowers reactive line current and hence voltage drop, so the receiving-end voltage increases (C) with upstream voltage/regulator/load held constant. A decrease is not the normal fixed-network result. B unchanged can happen if an upstream voltage regulator actively maintains a setpoint; 'crește' not universal for all networks."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Nu este tendința modelului de sarcină inductivă compensată în rețea neschimbată; poate exista alt regim de control.",
+        "option_B_reason": "Un regulator de tensiune poate menține tensiunea aproximativ constantă, deci «nu se modifică» nu este universal fals.",
+        "option_C_reason": "Compensarea locală reduce curentul reactiv și căderea de tensiune, ceea ce poate ridica tensiunea de recepție.",
+        "assumption_or_trap": "reglarea tensiunii din amonte poate schimba rezultatul",
+        "unofficial_reformulation_question": "La același consum și aceeași tensiune în amonte, ce efect are de regulă compensarea locală a puterii reactive inductive?",
+        "unofficial_reformulation_answer": "Reduce căderea de tensiune și poate crește tensiunea la consumator; nu este garanție universală.",
+        "source_specific_technical_status": "CONDITIONAL_GRID_OPERATION",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0002",
+      "grade_ids": [
+        "G1-ELE-002",
+        "G2-ELEC-155"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "9",
+      "immutable_original": {
+        "stem": "Bobinele de stingere din staţiile electrice de transformare sunt echipamente pentru:",
+        "A": "compensarea factorului de putere",
+        "B": "dotări PSI",
+        "C": "compensarea curenţilor capacitivi",
+        "imported_keys": "G1-ELE-002=C | G2-ELEC-155=C"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_PHYSICAL_OBJECT_MATCH",
+        "research_source_url_reported": "https://www.mdpi.com/2673-4826/4/2/7",
+        "verbatim_model_and_counterexamples": "C arc suppression/Petersen coil compensates capacitive earth-fault currents via inductive neutral current. A power-factor correction as a general load objective is a different capacitor/reactor context. B PSI fire brigade equipment is unrelated; coil can help quench fault arc but is not firefighting inventory."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Corecția factorului de putere pentru sarcini este un alt obiect față de stingerea arcului de punere la pământ.",
+        "option_B_reason": "Dotările PSI nu reprezintă funcția electrică a bobinei Petersen.",
+        "option_C_reason": "Bobina de stingere furnizează curent inductiv care compensează componenta capacitivă de punere la pământ.",
+        "assumption_or_trap": "compensarea curentului capacitiv de defect versus compensarea factorului de putere",
+        "unofficial_reformulation_question": "Ce curent compensează bobina Petersen în rețele cu neutrul tratat prin bobină de stingere?",
+        "unofficial_reformulation_answer": "Componenta capacitivă a curentului de defect monofazat la pământ.",
+        "source_specific_technical_status": "DIRECT_PHYSICAL_OBJECT_MATCH",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0003",
+      "grade_ids": [
+        "G1-ELE-003",
+        "G2-ELEC-156"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "10",
+      "immutable_original": {
+        "stem": "Câmpul magnetic poate fi produs:",
+        "A": "numai de magneţi permanenţi",
+        "B": "numai de electromagneţi",
+        "C": "de magneţi permanenţi si de electromagneţi",
+        "imported_keys": "G1-ELE-003=C | G2-ELEC-156=C"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_DISTRACTOR_ELIMINATION",
+        "research_source_url_reported": "https://openstax.org/books/college-physics-ap-courses/pages/22-2-ferromagnets-and-electromagnets",
+        "verbatim_model_and_counterexamples": "A 'numai' permanent magnets excludes electromagnets and moving charges. B 'numai' electromagnets excludes permanent magnets. C both permanent magnets and electromagnets generate B field; option does not exhaust all possible sources, but stem asks 'poate fi produs', not only by these two."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "«Numai» magneți permanenți exclude electromagneții, care produc și ei câmp magnetic.",
+        "option_B_reason": "«Numai» electromagneți exclude magneții permanenți.",
+        "option_C_reason": "Ambele tipuri enumerate produc câmp magnetic; lista nu pretinde să fie exhaustivă pentru toate sursele magnetice.",
+        "assumption_or_trap": "numai versus poate fi produs",
+        "unofficial_reformulation_question": "Poate un conductor parcurs de curent să creeze câmp magnetic în absența unui magnet permanent?",
+        "unofficial_reformulation_answer": "Da, curenții electrici generează câmp magnetic.",
+        "source_specific_technical_status": "DIRECT_DISTRACTOR_ELIMINATION",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0004",
+      "grade_ids": [
+        "G1-ELE-004",
+        "G2-ELEC-157"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "11",
+      "immutable_original": {
+        "stem": "3 condensatoare având capacitatea C1=100 μF, C2=50 μF, C3=100 μF legate în paralel, au capacitatea echivalentă.",
+        "A": "25 μF",
+        "B": "250 μF",
+        "C": "50 μF",
+        "imported_keys": "G1-ELE-004=B | G2-ELEC-157=B"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DETERMINISTIC_PARALLEL_CAPACITANCE",
+        "research_source_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "verbatim_model_and_counterexamples": "Three capacitors in parallel have same U and equivalent CΣ=C1+C2+C3=100+50+100=250 µF, B. A 25 and C 50 fail direct arithmetic; confirmed in independent arithmetic check."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "25 µF nu este suma celor trei capacități în paralel.",
+        "option_B_reason": "Ceq=100+50+100=250 µF, deoarece toate condensatoarele au aceeași tensiune.",
+        "option_C_reason": "50 µF reprezintă doar valoarea unuia dintre condensatoare, nu a grupului.",
+        "assumption_or_trap": "paralel = suma capacităților, spre deosebire de rezistențe în paralel",
+        "unofficial_reformulation_question": "Cât este capacitatea echivalentă a trei condensatoare de 10, 20 și 30 µF conectați în paralel?",
+        "unofficial_reformulation_answer": "60 µF.",
+        "source_specific_technical_status": "DETERMINISTIC_PARALLEL_CAPACITANCE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0005",
+      "grade_ids": [
+        "G1-ELE-005",
+        "G2-ELEC-158"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "12",
+      "immutable_original": {
+        "stem": "A doua teoremă a lui Kirchhoff, pentru o reţea electrică cu N noduri şi L laturi (L diferit de N), ne furnizează, pentru analiza unui circuit electric:",
+        "A": "L+N-1 ecuaţii distincte",
+        "B": "L-N +1 ecuaţii distincte",
+        "C": "N-L+1 ecuaţii distincte",
+        "imported_keys": "G1-ELE-005=B | G2-ELEC-158=B"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "CONDITIONAL_CONNECTED_GRAPH_MISSING",
+        "research_source_url_reported": "https://graphcalc.readthedocs.io/en/latest/api/graphs/invariants/cycle_invariants.html",
+        "verbatim_model_and_counterexamples": "If the network is CONNECTED, a spanning tree has N−1 edges and the L−(N−1)=L−N+1 independent fundamental loops give B. A L+N−1 overcounts; C N−L+1 wrong sign generally. Stem only gives L ≠ N, not connectedness. For k connected components, number of independent loops is L−N+k, so e.g. L=4,N=4,k=2 gives 2 versus B=1 (here L=N, use e.g. L=5,N=4,k=2 gives 3 vs B=2; the counterexample must respect L ≠ N). The source model thus remains incomplete, not unconditional approval."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "L+N−1 nu rezultă din numărul de cicluri fundamentale ale unui graf electric.",
+        "option_B_reason": "Pentru rețea conexă, numărul de bucle fundamentale independente este L−N+1.",
+        "option_C_reason": "N−L+1 inversează relația pentru graf conex cu L și N date.",
+        "assumption_or_trap": "enunțul nu menționează expres conexitatea; în general este L−N+k",
+        "unofficial_reformulation_question": "O rețea cu L=5 ramuri și N=4 noduri are k=2 componente conexe. Câte cicluri independente are?",
+        "unofficial_reformulation_answer": "L−N+k=5−4+2=3; nu 2, cum ar rezulta din formula pentru o singură componentă.",
+        "source_specific_technical_status": "CONDITIONAL_CONNECTED_GRAPH_MISSING",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0006",
+      "grade_ids": [
+        "G1-ELE-006",
+        "G2-ELEC-159"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "13",
+      "immutable_original": {
+        "stem": "AAR se utilizează în scopul:",
+        "A": "limitării curenţilor de scurtcircuit;",
+        "B": "creşterii continuităţii în alimentare;",
+        "C": "reducerii pierderilor de energie pe linii.",
+        "imported_keys": "G1-ELE-006=B | G2-ELEC-159=B"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_OPERATIONAL_PURPOSE",
+        "research_source_url_reported": "https://legislatie.just.ro/Public/FormaPrintabila/00000G1XVHI158QR1MF2P9E8O4I5NEHX",
+        "verbatim_model_and_counterexamples": "Romanian AAR (anclanșare automată a rezervei) switches supply to available reserve to improve continuity of electric supply B. A short-circuit limiting is done by protection/reactance devices, C line losses optimized by different measures. Source refers to continuity to station internal customers."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Limitarea directă a curentului de scurtcircuit este sarcina altor echipamente și protecții.",
+        "option_B_reason": "AAR transferă automat alimentarea către o sursă rezervă disponibilă, susținând continuitatea.",
+        "option_C_reason": "Reducerea pierderilor pe linii nu este obiectivul de bază al anclanșării automate a rezervei.",
+        "assumption_or_trap": "AAR nu trebuie confundat cu protecția care elimină defectul",
+        "unofficial_reformulation_question": "Ce avantaj urmărește AAR după indisponibilitatea sursei principale, dacă rezerva este disponibilă și condițiile de comutare sunt îndeplinite?",
+        "unofficial_reformulation_answer": "Restabilirea/menținerea alimentării prin sursa de rezervă, pentru continuitate.",
+        "source_specific_technical_status": "DIRECT_OPERATIONAL_PURPOSE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0007",
+      "grade_ids": [
+        "G1-ELE-007",
+        "G2-ELEC-160"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "14",
+      "immutable_original": {
+        "stem": "Alunecarea s a unui motor asincron are valori:",
+        "A": "cuprinse între 1 si 0",
+        "B": "cuprinse între -1 si 0",
+        "C": "de regulă, mai mari decât 1",
+        "imported_keys": "G1-ELE-007=A | G2-ELEC-160=A"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "CONDITIONAL_INDUCTION_MOTOR_MODE",
+        "research_source_url_reported": "https://dtmc0945.github.io/L-MCI-BSc-Drive-Technology/InductionMachineEquivalentCircuit.html",
+        "verbatim_model_and_counterexamples": "For normally motor-driven asynchronous machine n in [0,n_sync], slip s=(n_sync−n)/n_sync is 1 at standstill and approaches 0 near synchronous, so A intended. B negative s occurs when machine acts as induction GENERATOR, not motoring; C s>1 occurs in plugging/contra-current braking. Stem says motor, but does not explicitly restrict operation to normal motoring, so treat as didactic intended A not all operating states."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "În regim normal de motor, 0<s<1; la pornire s=1 și la sincronism ideal s=0.",
+        "option_B_reason": "Valorile negative ale alunecării descriu de regulă funcționarea în regim de generator, nu motoring normal.",
+        "option_C_reason": "s>1 poate apărea în frânare prin contracurent, nu este regimul uzual al motorului în sarcină.",
+        "assumption_or_trap": "regim de motor normal versus generare/frânare",
+        "unofficial_reformulation_question": "Un motor asincron cu turație sincronă de 1500 rpm are rotorul la 1440 rpm. Ce alunecare are?",
+        "unofficial_reformulation_answer": "s=(1500−1440)/1500=0,04=4%.",
+        "source_specific_technical_status": "CONDITIONAL_INDUCTION_MOTOR_MODE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0008",
+      "grade_ids": [
+        "G1-ELE-009",
+        "G2-ELEC-161"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "16",
+      "immutable_original": {
+        "stem": "Care element nu se foloseşte la reglarea tensiunii în reţelele electrice:",
+        "A": "bobina de compensare",
+        "B": "transformatorul",
+        "C": "rezistorul",
+        "imported_keys": "G1-ELE-009=C | G2-ELEC-161=C"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "CONDITIONAL_GRID_CONTROL_SCOPE",
+        "research_source_url_reported": "https://electrical-engineering-portal.com/voltage-regulators",
+        "verbatim_model_and_counterexamples": "Typical feeder regulation uses transformer tap positions or shunt reactors/capacitors to modify voltage and reactive-flow, not a standalone resistor for economical network-wide voltage regulation, intended C. A reactor can affect reactive voltage drop, B transformer tap changes voltage. Counterexample: series resistance changes U=IR and may be used as a dropper in low-power equipment; 'nu se folosește' is too absolute without specifying utility distribution voltage-control hardware."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Bobinele de compensare/reactoarele influențează fluxurile reactive și profilul de tensiune.",
+        "option_B_reason": "Transformatoarele cu reglaj în prize modifică tensiunea transmisă în rețea.",
+        "option_C_reason": "Un rezistor poate crea o cădere de tensiune, dar nu este echipamentul obișnuit de reglaj eficient al tensiunii în rețelele electrice.",
+        "assumption_or_trap": "«nu se folosește» este categoric; rezistoarele pot fi folosite în alte aplicații de limitare sau divizare",
+        "unofficial_reformulation_question": "Prin ce două clase de aparate se reglează uzual nivelul tensiunii în rețele, fără a folosi rezistență disipativă?",
+        "unofficial_reformulation_answer": "Reglaj de prize la transformator și echipamente de compensare reactivă, în funcție de schemă.",
+        "source_specific_technical_status": "CONDITIONAL_GRID_CONTROL_SCOPE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0009",
+      "grade_ids": [
+        "G1-ELE-010",
+        "G2-ELEC-162"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "17",
+      "immutable_original": {
+        "stem": "Cele mai des utilizate pentru serviciile interne ale centralelor electrice sunt:",
+        "A": "motoarele de curent continuu",
+        "B": "motoarele sincrone",
+        "C": "motoarele asincrone",
+        "imported_keys": "G1-ELE-010=C | G2-ELEC-162=C"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "SOURCE_COMPATIBLE_NOT_STATISTICAL_CERTIFICATION",
+        "research_source_url_reported": "https://www.mdpi.com/1996-1073/17/5/1066",
+        "verbatim_model_and_counterexamples": "For conventional station internal-service fans/pumps/drives the prevalent technology is induction/asynchronous motor C. A DC reserved for particular services, B synchronous for selected duties. Source documents multiple power-plant auxiliary induction motor applications; it does NOT independently establish a numerical frequency comparison for all stations/eras, so 'cele mai des' remains broad."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Motoarele de curent continuu sunt utilizate în situații particulare, nu sunt alegerea obișnuită pentru majoritatea serviciilor de auxiliare.",
+        "option_B_reason": "Motoarele sincrone sunt potrivite pentru anumite puteri și aplicații speciale, nu în mod generic cele mai frecvente auxiliare.",
+        "option_C_reason": "Motoarele asincrone sunt folosite pe scară largă la pompe și ventilatoare din serviciile interne; «cele mai des» cere însă date de domeniu/epocă.",
+        "assumption_or_trap": "statistică de utilizare neconfirmată universal de un singur exemplu",
+        "unofficial_reformulation_question": "De ce se întâlnesc frecvent motoare asincrone la pompe și ventilatoare din servicii interne?",
+        "unofficial_reformulation_answer": "Sunt robuste, relativ simple și potrivite pentru acționări industriale uzuale; nu afirmăm un clasament statistic universal.",
+        "source_specific_technical_status": "SOURCE_COMPATIBLE_NOT_STATISTICAL_CERTIFICATION",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0010",
+      "grade_ids": [
+        "G1-ELE-011",
+        "G2-ELEC-163"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "18",
+      "immutable_original": {
+        "stem": "Bobinele pentru limitarea curenţilor de scurtcircuit au:",
+        "A": "rezistenta mare",
+        "B": "inductanţa mare",
+        "C": "inductanţa mica",
+        "imported_keys": "G1-ELE-011=B | G2-ELEC-163=B"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_REACTOR_IMPEDANCE_MODEL",
+        "research_source_url_reported": "https://www.mdpi.com/1996-1073/16/2/811",
+        "verbatim_model_and_counterexamples": "A current-limiting reactor is an in-series high-inductive-reactance element (X_L=2πfL) to increase fault-loop impedance, reducing short-circuit current: B large L. A large resistance is not the normal low-loss reactor design, C small L yields inadequate fault current reduction. Reactor design may specify limiting X and transient recovery effects, not merely 'L mare' in isolation."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Rezistență mare în serie ar produce pierderi ohmice ridicate; reactoarele de limitare sunt în principal inductive.",
+        "option_B_reason": "Inductanța mare produce reactanță X_L=2πfL mai mare și poate limita curentul prospectiv de scurtcircuit.",
+        "option_C_reason": "Inductanța mică lasă reactanță mică și nu este mecanismul dorit de limitare.",
+        "assumption_or_trap": "inductanța se interpretează împreună cu frecvența, tensiunea și impedanța totală",
+        "unofficial_reformulation_question": "La aceeași frecvență, cum se schimbă reactanța unei bobine ideale când inductanța se dublează?",
+        "unofficial_reformulation_answer": "X_L se dublează, deoarece X_L=2πfL.",
+        "source_specific_technical_status": "DIRECT_REACTOR_IMPEDANCE_MODEL",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0011",
+      "grade_ids": [
+        "G1-ELE-012",
+        "G2-ELEC-164"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "19",
+      "immutable_original": {
+        "stem": "Câmpul electrostatic este descris",
+        "A": "prin: intensitatea câmpului electric",
+        "B": "numai prin inducţia electrică",
+        "C": "inducţia magnetică",
+        "imported_keys": "G1-ELE-012=A | G2-ELEC-164=A"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_ELECTROSTATIC_DEFINITION_WITH_SCOPING",
+        "research_source_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+        "verbatim_model_and_counterexamples": "E (electric-field strength/intensity) describes the electrostatic field; A holds. B 'numai D electric displacement' false exclusivity because E and potential also describe it, C magnetic induction is a different B-field quantity. D=εE is material dependent (linear dielectric, specified conditions), so never assert D=εE as universal scalar relation."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Intensitatea E descrie câmpul electrostatic și determină forța pe o sarcină de probă.",
+        "option_B_reason": "«Numai prin inducția electrică D» este restrictiv; D și E pot descrie aspecte diferite, iar relația dintre ele depinde de material.",
+        "option_C_reason": "Inducția magnetică B descrie câmpul magnetic, nu caracterizează direct câmpul electrostatic.",
+        "assumption_or_trap": "intensitate de câmp E, inducție electrică D și inducție magnetică B nu sunt aceeași mărime",
+        "unofficial_reformulation_question": "Ce mărime apare în expresia F=qE pentru forța asupra unei sarcini de probă?",
+        "unofficial_reformulation_answer": "Intensitatea câmpului electric E.",
+        "source_specific_technical_status": "DIRECT_ELECTROSTATIC_DEFINITION_WITH_SCOPING",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0012",
+      "grade_ids": [
+        "G1-ELE-013",
+        "G2-ELEC-165"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "20",
+      "immutable_original": {
+        "stem": "Comparativ cu cele uscate, transformatoarele imersate prezintă :",
+        "A": "o bună rezistenţă la foc;",
+        "B": "risc crescut de poluare acustică a mediului ambiant;",
+        "C": "necesitatea unor amenajări speciale la instalare",
+        "imported_keys": "G1-ELE-013=C | G2-ELEC-165=C"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "CONDITIONAL_OIL_FILLED_INSTALLATION",
+        "research_source_url_reported": "https://www.se.com/us/en/faqs/FA275901/",
+        "verbatim_model_and_counterexamples": "C oil-immersed transformer can require bund/oil spill/fire provisions at installation that dry type lacks. A superior fire resistance is not generally the point of conventional mineral-oil transformer. B increased noise is model/design dependent, not the defining distinction. Ester-filled vs mineral-oil and exterior installations can change exact provisions, so 'necesitatea' is conditional, not a universal rule for every liquid-filled transformer."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Un transformator convențional imersat în ulei mineral nu oferă prin simpla imersare o superioritate de rezistență la foc față de tipul uscat.",
+        "option_B_reason": "Nivelul acustic diferă după construcție, putere și amplasare; nu definește universal tipul imersat.",
+        "option_C_reason": "Uleiul izolant poate impune măsuri de retenție, protecție la incendiu și amplasare, conform tipului și regulilor de proiectare.",
+        "assumption_or_trap": "tipul lichidului izolant și locul de montare modifică cerințele",
+        "unofficial_reformulation_question": "Ce risc suplimentar trebuie analizat la un transformator cu ulei față de unul uscat?",
+        "unofficial_reformulation_answer": "Scurgerea lichidului izolant și măsurile aferente de retenție/incendiu, potrivit instalației.",
+        "source_specific_technical_status": "CONDITIONAL_OIL_FILLED_INSTALLATION",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0014",
+      "grade_ids": [
+        "G1-ELE-015",
+        "G2-ELEC-167"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "22",
+      "immutable_original": {
+        "stem": "Bobinele montate pe plecari radiale limiteaza curentii de scurtcircuit",
+        "A": "atat inainte, cat si dupa punctele lor de racordare la barele statiei;",
+        "B": "inainte de punctele lor de racordare la barele statiei;",
+        "C": "dupa punctele lor de racordare la barele statiei.",
+        "imported_keys": "G1-ELE-015=C | G2-ELEC-167=C"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_SERIES_REACTOR_DOWNSTREAM_SCOPE",
+        "research_source_url_reported": "https://www.phasetophase.nl/book/book_1_4.html",
+        "verbatim_model_and_counterexamples": "A short-circuit on bus or on upstream side of outgoing feeder reactor does NOT pass through its impedance, so A both sides and B upstream are false. Downstream/outgoing radial fault current passes through series inductance and is reduced, C. Current-limiter location must be between source and fault to work."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "O bobină serie montată pe plecare nu se află în calea curentului pentru toate defectele din amonte și aval.",
+        "option_B_reason": "Un defect pe barele stației, anterior bobinei, nu este limitat de impedanța acelei bobine pe plecare.",
+        "option_C_reason": "Defectul din aval pe plecarea radială include bobina în bucla de curent și poate avea curentul prospectiv redus.",
+        "assumption_or_trap": "poziția defectului în raport cu reactorul din schema radială",
+        "unofficial_reformulation_question": "Un reactor este instalat în serie pe o plecare. Ce defect vede impedanța reactorului: unul pe bare înainte de reactor sau unul pe plecare după reactor?",
+        "unofficial_reformulation_answer": "Defectul din aval de reactor, deoarece curentul trece prin bobina serie.",
+        "source_specific_technical_status": "DIRECT_SERIES_REACTOR_DOWNSTREAM_SCOPE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0015",
+      "grade_ids": [
+        "G1-ELE-016",
+        "G2-ELEC-168"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "23",
+      "immutable_original": {
+        "stem": "Cantitatea de căldura produsã la trecerea curentului electric printr-un conductor este:",
+        "A": "direct proporţională cu secţiunea conductorului",
+        "B": "direct proporţionala cu pătratul intensităţii curentului",
+        "C": "invers proporţionala cu rezistenta conductorului",
+        "imported_keys": "G1-ELE-016=B | G2-ELEC-168=B"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_JOULE_HEAT_FIXED_R_TIME",
+        "research_source_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+        "verbatim_model_and_counterexamples": "Joule heat for resistance R and time t: Q=I² R t, so B dependence on square of current. A direct proportion to conductor section is false if material/length fixed (larger S decreases R and Q for constant I), C inverse proportional to R is false for fixed I but true for fixed V, which the stem does not state. Thus B requires current-controlled assumption or holding R,t constant; flag source current regime."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "La lungime și material fixe, o secțiune mai mare tinde să reducă R, deci nu există proporționalitate directă a căldurii cu secțiunea la I fix.",
+        "option_B_reason": "Legea Joule pentru curent și rezistență fixe în timpul t este Q=I²Rt; dependența este pătratică de I.",
+        "option_C_reason": "La curent impus Q crește cu R, însă la tensiune impusă Q=V²t/R; regimul neprecizat face propoziția dependentă de condiții.",
+        "assumption_or_trap": "I fix versus U fix și schimbarea lui R odată cu temperatura",
+        "unofficial_reformulation_question": "Dacă intensitatea curentului se dublează, cu rezistența și timpul constante, de câte ori crește căldura produsă?",
+        "unofficial_reformulation_answer": "De patru ori.",
+        "source_specific_technical_status": "DIRECT_JOULE_HEAT_FIXED_R_TIME",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0016",
+      "grade_ids": [
+        "G1-ELE-017",
+        "G2-ELEC-169"
+      ],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_original_row": "24",
+      "immutable_original": {
+        "stem": "Cantitatea de electricitate cu care se încarcă o baterie de n condensatoare montate în serie, fiecare de capacitate C, este:",
+        "A": "aceeaşi cu care se încarcă fiecare element component",
+        "B": "suma cantităţilor cu care se înarcă fiecare element în parte",
+        "C": "egală cu de două ori cantitatea de electricitate cu care se încarcă fiecare condensator",
+        "imported_keys": "G1-ELE-017=A | G2-ELEC-169=A"
+      },
+      "previous_research": {
+        "file": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+        "sha": "947b2632a8eb844e508508a8bbc5bb9972d06d29",
+        "model_tag": "DIRECT_SERIES_CAPACITOR_CHARGE",
+        "research_source_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+        "verbatim_model_and_counterexamples": "For n ideal capacitors in a series chain under two-terminal excitation, each internal element carries identical charge magnitude Q; total equivalent capacitor terminal charge equals one element's charge, A. B sum nQ double counts separate plate charges, C 2Q only special artifact. Assumes initially uncharged ideal series capacitors with no free trapped intermediate-node charge."
+      },
+      "editorial_after_response": {
+        "option_A_reason": "Într-un lanț de condensatoare ideale în serie, toate elementele au aceeași sarcină ca modul; sarcina echivalentă la borne coincide cu aceasta.",
+        "option_B_reason": "Suma nQ a sarcinilor de pe elemente nu este sarcina unui singur condensator echivalent de la borne.",
+        "option_C_reason": "Dublarea sarcinii nu reprezintă o regulă generală pentru două sau mai multe condensatoare în serie.",
+        "assumption_or_trap": "egalitatea sarcinii presupune lipsa sarcinii inițiale captive în nodurile intermediare",
+        "unofficial_reformulation_question": "Trei condensatoare ideale sunt conectate în serie la o sursă, inițial descărcate. Cum compari modulele sarcinilor de pe ele?",
+        "unofficial_reformulation_answer": "Sunt egale între ele, chiar dacă tensiunile pe fiecare pot diferi.",
+        "source_specific_technical_status": "DIRECT_SERIES_CAPACITOR_CHARGE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "QA": {
+        "original_ABC_and_key_preserved": true,
+        "distinct_reviewer": "NOT_RUN",
+        "exact_current_exam_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    }
+  ]
+}

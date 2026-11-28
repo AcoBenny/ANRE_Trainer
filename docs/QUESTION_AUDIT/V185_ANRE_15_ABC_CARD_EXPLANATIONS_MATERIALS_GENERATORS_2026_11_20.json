@@ -1,0 +1,567 @@
+{
+  "schema": "v185_fifteen_source_matched_abc_editorial_cards_and_rephrasings",
+  "date": "2026-11-20",
+  "basis": {
+    "history_blob": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+    "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "official_original_text_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_distinct_qabc": 15,
+    "new_grade_routes": 30,
+    "option_reasonings": 45,
+    "original_rephrased_practice": 15,
+    "independent_signoff": 0
+  },
+  "qa": {
+    "cards": 15,
+    "grade_routes": 30,
+    "option_explanations": 45,
+    "all_original_matched": true,
+    "all_rephrased": true,
+    "math": true
+  },
+  "editorial_caveat": "Every original A/B/C and grade import was matched with canonical V149 and ANRE-hosted V175 text. Historical source URLs not all independently reopened this batch; no ANRE scored official key, edition 2026 or human specialist validation. Generator AVR/P/Q statements are operating-point dependent; transformer nominal ratio uses terminology that must be checked against exact bibliography.",
+  "cards": [
+    {
+      "unit_id": "QABC-0173",
+      "grade_ids": [
+        "G1-ELE-184",
+        "G2-ELEC-320"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "191",
+        "stem": "Permeabilitatea este o mărime:",
+        "options": {
+          "A": "magnetică",
+          "B": "electrică",
+          "C": "mecanică"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-184=A | G2-ELEC-320=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "A este magnetică: μ leagă B de H; B electrică confundă cu ε; C mecanică nu este această proprietate.",
+        "prior_candidate_source": "https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter"
+      },
+      "explanation_card": {
+        "A": "Permeabilitatea μ caracterizează răspunsul magnetic al mediului; în regim liniar B=μH.",
+        "B": "Permitivitatea ε este mărimea asociată câmpului electric, nu permeabilitatea magnetică.",
+        "C": "Proprietățile mecanice, precum rigiditatea, nu sunt permeabilitatea μ.",
+        "exception_or_assumption": "Materialele neliniare pot necesita permeabilitate diferențială; clasificarea «magnetică» rămâne corectă.",
+        "unofficial_reformulation_question": "Ce parametru material leagă B de H într-un mediu magnetic liniar?",
+        "unofficial_reformulation_answer": "Permeabilitatea μ.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0174",
+      "grade_ids": [
+        "G1-ELE-185",
+        "G2-ELEC-321"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "192",
+        "stem": "Permitivitatea este o mărime:",
+        "options": {
+          "A": "electrică",
+          "B": "magnetică",
+          "C": "chimică"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-185=A | G2-ELEC-321=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "A electrică: ε apare la E=σ/ε și C=εA/d. B magnetică confundă cu μ; C chimică greșit.",
+        "prior_candidate_source": "https://openstax.org/books/university-physics-volume-2/pages/8-1-capacitors-and-capacitance"
+      },
+      "explanation_card": {
+        "A": "Permitivitatea ε descrie răspunsul dielectric/electric; apare în D=εE pentru mediu liniar.",
+        "B": "Permeabilitatea μ, nu ε, este mărimea magnetică.",
+        "C": "Chiar dacă depinde de compoziția chimică, ε este o proprietate electromagnetică, nu o categorie «chimică» în acest enunț.",
+        "exception_or_assumption": "În medii neliniare relația scalară D=εE nu este universală.",
+        "unofficial_reformulation_question": "Ce proprietate de material intră în capacitatea C=εA/d a unui condensator plan ideal?",
+        "unofficial_reformulation_answer": "Permitivitatea ε.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0175",
+      "grade_ids": [
+        "G1-ELE-186",
+        "G2-ELEC-322"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "193",
+        "stem": "Regulatorul automat de tensiune (RAT) asigurã:",
+        "options": {
+          "A": "deconectarea automatã a liniilor la suprasarcinã",
+          "B": "conectarea automatã a unui transformator de rezervã",
+          "C": "modificarea curentului (tensiunii) de excitaţie la generatoarele sincrone"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-186=C | G2-ELEC-322=C"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "C: regulatorul automat de tensiune variază excitația. A: suprasarcina liniei ține de protecții; B: transferul de rezervă nu este RAT.",
+        "prior_candidate_source": "https://automationsolutionfinder.andritz.com/solutions/15006/power-systems/hydro-power-oil-gas-thermal-power/excitation-systems"
+      },
+      "explanation_card": {
+        "A": "Protecția la suprasarcină a liniilor este funcția sistemelor de protecție, nu a regulatorului de tensiune.",
+        "B": "Conectarea automată a rezervei ține de sisteme AAR, nu de RAT pentru generator.",
+        "C": "RAT/AVR reglează tensiunea generatorului sincron modificând excitația și curentul în înfășurarea de câmp.",
+        "exception_or_assumption": "În exploatare cuplat la o rețea rigidă, excitația influențează și Q, nu doar U.",
+        "unofficial_reformulation_question": "Ce actuator variază uzual RAT-ul generatorului sincron?",
+        "unofficial_reformulation_answer": "Excitația rotorului, pentru reglarea tensiunii/puterii reactive potrivit regimului.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0176",
+      "grade_ids": [
+        "G1-ELE-187",
+        "G2-ELEC-323"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "194",
+        "stem": "Pierderile de putere activã si reactivã pe o linie electricã, la aceeaşi putere aparentã vehiculatã, sunt invers proporţionale cu:",
+        "options": {
+          "A": "pătratul curentului",
+          "B": "pătratul tensiunii",
+          "C": "pătratul puterii active"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-187=B | G2-ELEC-323=B"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "Pentru S și impedanțele R/X fixate, I=S/(sqrt3 U), pierderile 3I²R și aproximativ 3I²X au dependență inversă de U²: B. A și C nu dau relația corectă. Atenție la modificările concomitente de topologie și parametri.",
+        "prior_candidate_source": "https://eepower.com/technical-articles/transmission-line-losses-and-efficiency-optimizationpart-1/"
+      },
+      "explanation_card": {
+        "A": "Pierderile ∆P=3I²R nu sunt invers proporționale cu I², ci direct proporționale cu I² la R fix.",
+        "B": "Pentru S transmis și parametri R/X fixați, I=S/(√3U), deci pierderile rezistive și reactive aproximative ∝1/U².",
+        "C": "P² nu este termenul invers care caracterizează pierderile la S și impedanțe constante.",
+        "exception_or_assumption": "Necesită aceeași putere aparentă, impedanță și aceeași schemă; relația completă pentru Q-loss poate depinde de model.",
+        "unofficial_reformulation_question": "Dacă tensiunea se dublează la aceeași putere aparentă și aceeași rezistență, cum variază pierderile I²R?",
+        "unofficial_reformulation_answer": "Scad la un sfert în modelul cu parametrii fixați.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0177",
+      "grade_ids": [
+        "G1-ELE-188",
+        "G2-ELEC-324"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "195",
+        "stem": "Pierderile de putere într-o linie electrică prin care se transportă o putere activă P la un factor de putere = 0,9, faţă de cazul când se transportă aceeaşi putere la un factor de putere = 0,8 sunt:",
+        "options": {
+          "A": "mai mici",
+          "B": "egale",
+          "C": "mai mari"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-188=A | G2-ELEC-324=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "La P,U,R fixe, I=P/(sqrt3 U cosφ). Raport pierderi (cosφ=0.9 față de 0.8)=(0.8/0.9)²≈0.7901; A mai mici. B și C neconcordante; condiția parametrilor constanți este necesară.",
+        "prior_candidate_source": "https://eepower.com/technical-articles/transmission-line-losses-and-efficiency-optimizationpart-1/"
+      },
+      "explanation_card": {
+        "A": "La P,U,R fixe, creșterea cosφ de la 0,8 la 0,9 reduce curentul și pierderile I²R.",
+        "B": "Pierderile nu sunt egale: curenții diferă pentru același P și aceeași tensiune.",
+        "C": "La cosφ=0,9 curentul este mai mic, nu mai mare, decât la 0,8.",
+        "exception_or_assumption": "La parametrii constanți, raportul pierderilor este (0,8/0,9)²≈0,79, nu zero.",
+        "unofficial_reformulation_question": "Cât din pierderea inițială rămâne la creșterea factorului de putere de la 0,8 la 0,9?",
+        "unofficial_reformulation_answer": "Aproximativ 79%, reducere de 21%.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0179",
+      "grade_ids": [
+        "G1-ELE-190",
+        "G2-ELEC-326"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "197",
+        "stem": "Prima teoremă a lui Kirchhoff, pentru o reţea electrică buclată cu N noduri, ne dă, pentru curenţii care circulă prin reţea:",
+        "options": {
+          "A": "N-1 relaţii distincte",
+          "B": "N relaţii distincte",
+          "C": "N+1 relaţii distincte"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-190=A | G2-ELEC-326=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "Pentru o rețea conectată cu N noduri există N−1 ecuații KCL independente A. B include una redundantă și C excede. Dacă sunt k componente neconectate, rang N−k, deci formularea presupune conectivitate.",
+        "prior_candidate_source": "https://zrojec.fe.uni-lj.si/cao/circuit-topology-constitutive-relations-and-nodal-analysis/"
+      },
+      "explanation_card": {
+        "A": "Pentru o rețea conexă cu N noduri, matricea de incidență are rang N−1, deci N−1 ecuații KCL independente.",
+        "B": "Una dintre cele N ecuații nodale este redundantă: suma tuturor ecuațiilor KCL este zero.",
+        "C": "N+1 relații independente nu pot rezulta din N noduri ale unei rețele conexe.",
+        "exception_or_assumption": "Dacă rețeaua are k componente conexe, numărul general este N−k; aici presupunem una.",
+        "unofficial_reformulation_question": "Într-o rețea conexă cu 8 noduri, câte ecuații KCL independente există?",
+        "unofficial_reformulation_answer": "7.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0181",
+      "grade_ids": [
+        "G1-ELE-192",
+        "G2-ELEC-328"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "199",
+        "stem": "Principalele elemente feromagnetice sunt:",
+        "options": {
+          "A": "Fierul, nichelul şi cobaltul",
+          "B": "Fierul, cuprul, zincul",
+          "C": "Fierul, aluminiul, cuprul"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-192=A | G2-ELEC-328=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "A Fe/Ni/Co sunt trei feromagnetice clasice. B Cu/Zn și C Al/Cu includ metale neferomagnetice în condiții uzuale. Nu înseamnă că doar aceste trei elemente pot fi feromagnetice.",
+        "prior_candidate_source": "https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter"
+      },
+      "explanation_card": {
+        "A": "Fierul, nichelul și cobaltul sunt exemplele clasice de elemente feromagnetice.",
+        "B": "Cuprul și zincul nu sunt feromagnetice în condiții uzuale; B le include greșit.",
+        "C": "Aluminiul și cuprul nu devin feromagnetice doar fiind metale; C este fals.",
+        "exception_or_assumption": "«Principalele» nu afirmă că nu există alte materiale feromagnetice.",
+        "unofficial_reformulation_question": "Care trei metale sunt date uzual ca exemple de feromagnetism?",
+        "unofficial_reformulation_answer": "Fe, Ni și Co.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0185",
+      "grade_ids": [
+        "G1-ELE-196",
+        "G2-ELEC-332"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "203",
+        "stem": "Rezistenţa echivalentă a două rezistenţe cu valori diferite montate în paralel este:",
+        "options": {
+          "A": "mai mare decât rezistenţa mai mare",
+          "B": "mai mică decât rezistenţa mai mică",
+          "C": "egală cu suma rezistenţelor"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-196=B | G2-ELEC-332=B"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "Pentru R1,R2 pozitive, 1/Req=1/R1+1/R2, deci Req<min(R1,R2): B. A fals; C este suma corespunzătoare seriei.",
+        "prior_candidate_source": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+      },
+      "explanation_card": {
+        "A": "Pentru rezistențe pozitive, Req în paralel este mai mică decât fiecare rezistență componentă.",
+        "B": "Din 1/Req=1/R1+1/R2, Req<min(R1,R2) pentru două rezistențe strict pozitive.",
+        "C": "Suma R1+R2 este pentru montaj în serie, nu paralel.",
+        "exception_or_assumption": "Pentru R=0 în paralel se aplică cazul-limită de scurtcircuit, nu formule cu invers 1/0.",
+        "unofficial_reformulation_question": "Pentru 3 Ω și 6 Ω în paralel, cât este Req?",
+        "unofficial_reformulation_answer": "Req=18/9=2 Ω, sub 3 Ω.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0189",
+      "grade_ids": [
+        "G1-ELE-200",
+        "G2-ELEC-336"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "207",
+        "stem": "Releul termic se foloseşte pentru:",
+        "options": {
+          "A": "protejarea motoarelor electrice la scurtcircuit",
+          "B": "protejarea generatoarelor si motoarelor electrice împotriva punerii la pământ",
+          "C": "protejarea motoarelor electrice împotriva suprasarcinilor"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-200=C | G2-ELEC-336=C"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "C: releul termic protejează motorul la suprasarcină. A scurtcircuit necesită declanșare rapidă dedicată; B defect la pământ are altă protecție.",
+        "prior_candidate_source": "https://eshop.se.com/in/shop-by-category/low-voltage-products/overload-relay.html"
+      },
+      "explanation_card": {
+        "A": "Un releu termic nu este, în general, protecția adecvată la scurtcircuit rapid.",
+        "B": "Defectul la pământ se tratează prin protecții dedicate, nu prin funcția definitorie a releului termic.",
+        "C": "Releul termic este destinat protecției motoarelor la suprasarcină prelungită, după reglaje.",
+        "exception_or_assumption": "Protecția poate fi bimetalică sau electronică, cu funcții diferite; nu înlocuiește protecția de scurtcircuit.",
+        "unofficial_reformulation_question": "Într-un starter cu fuzibil și releu termic, ce dispozitiv se ocupă de suprasarcina motorului?",
+        "unofficial_reformulation_answer": "Releul termic.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0190",
+      "grade_ids": [
+        "G1-ELE-201",
+        "G2-ELEC-337"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "208",
+        "stem": "Rezistenta echivalenta a trei rezistoare, având fiecare rezistenta de 2 ohm, montate în serie este:",
+        "options": {
+          "A": "5 ohm",
+          "B": "0,66 ohm",
+          "C": "6 ohm"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-201=C | G2-ELEC-337=C"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "Trei rezistoare de 2 Ω în serie: 2+2+2=6 Ω, C. A 5 Ω greșit; B 0,66 Ω corespunde aproximativ conexiunii în paralel.",
+        "prior_candidate_source": "https://openstax.org/books/university-physics-volume-2/pages/10-2-resistors-in-series-and-parallel"
+      },
+      "explanation_card": {
+        "A": "5 Ω nu este suma celor trei rezistențe de 2 Ω.",
+        "B": "0,66 Ω corespunde aproximativ celor trei de 2 Ω în paralel.",
+        "C": "În serie rezistențele se adună: 2+2+2=6 Ω.",
+        "exception_or_assumption": "Nu aplica regula paralelului pentru un circuit serie.",
+        "unofficial_reformulation_question": "Cinci rezistoare de 4 Ω în serie au ce Req?",
+        "unofficial_reformulation_answer": "20 Ω.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0191",
+      "grade_ids": [
+        "G1-ELE-202",
+        "G2-ELEC-338"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "209",
+        "stem": "Raportul nominal de transformare al unui transformator de putere este:",
+        "options": {
+          "A": "raportul dintre tensiunea primara si secundara de mers în gol",
+          "B": "raportul dintre curentul primar si secundar la sarcina nominala",
+          "C": "raportul dintre tensiunea primara si secundara la sarcina nominala"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-202=A | G2-ELEC-338=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "A raportul tensiunilor la mers în gol corespunde modelului ideal al raportului de spire. B este raport de curenți, diferit; C sub sarcină include căderi de tensiune. Definiția exactă a lui «nominal» trebuie confirmată în bibliografia ANRE.",
+        "prior_candidate_source": "https://www.megger.com/en-us/et-online/september-2016/turns-ratio-testing-hand-crank-versus-automatic"
+      },
+      "explanation_card": {
+        "A": "La transformator ideal, raportul de transformare nominal al tensiunilor este apropiat de raportul tensiunilor în gol și de spire, în condițiile definiției adoptate.",
+        "B": "Raportul curenților primar/secundar este invers față de raportul tensiunilor într-un transformator ideal, deci nu aceeași definiție.",
+        "C": "La sarcina nominală, căderile pe impedanțele înfășurărilor fac tensiunile terminale dependente de regim.",
+        "exception_or_assumption": "Caz de definiție tehnică: «primară și secundară de mers în gol» necesită clarificare dacă ambele sunt condiții de tensiune nominală.",
+        "unofficial_reformulation_question": "De ce raportul tensiunilor la sarcină poate diferi de raportul de spire al transformatorului?",
+        "unofficial_reformulation_answer": "Căderile de tensiune pe impedanțele interne modifică tensiunile terminale.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0194",
+      "grade_ids": [
+        "G1-ELE-205",
+        "G2-ELEC-341"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "212",
+        "stem": "Reglarea puterii active debitate de generatorul sincron se face variind:",
+        "options": {
+          "A": "tensiunea de excitaţie",
+          "B": "admisia agentului primar la turbina",
+          "C": "curentul statoric"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-205=B | G2-ELEC-341=B"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "B: admisia fluidului la turbină schimbă puterea mecanică și activă livrată în funcționare sincronizată. A excitația țintește predominant Q și tensiune; C curentul statoric rezultă din punctul de funcționare.",
+        "prior_candidate_source": "https://handbook.ashrae.org/Handbooks/S24/SI/S24_Ch07/S24_Ch07_si.aspx"
+      },
+      "explanation_card": {
+        "A": "Excitația schimbă în principal tensiunea și schimbul reactiv în funcționarea conectată la rețea, nu direct puterea mecanică la arbore.",
+        "B": "Admisia agentului primar la turbină modifică puterea mecanică și, la sincronism cu rețeaua, puterea activă generată.",
+        "C": "Curentul statoric este rezultatul regimului electric și nu actuatorul de bază pentru reglarea puterii active.",
+        "exception_or_assumption": "Necesită regim sincronizat și sistem de reglare; la funcționare insulară intervin frecvența și sarcina.",
+        "unofficial_reformulation_question": "Ce parametru de turbină reglezi pentru a crește puterea activă a generatorului sincron conectat la rețea?",
+        "unofficial_reformulation_answer": "Puterea mecanică prin admisia agentului primar.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0195",
+      "grade_ids": [
+        "G1-ELE-206",
+        "G2-ELEC-342"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "213",
+        "stem": "Reglarea puterii reactive debitate de generatorul sincron se face prin:",
+        "options": {
+          "A": "modificarea curentului de excitaţie",
+          "B": "deschiderea aparatului director al turbinei",
+          "C": "deconectarea rezistentei de stingere"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-206=A | G2-ELEC-342=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "A: excitația generatorului sincron reglează predominant Q și U. B admisia turbinei acționează mai ales asupra puterii active; C deconectarea rezistenței de stingere nu este regulator Q.",
+        "prior_candidate_source": "https://automationsolutionfinder.andritz.com/solutions/15006/power-systems/hydro-power-oil-gas-thermal-power/excitation-systems"
+      },
+      "explanation_card": {
+        "A": "Curentul de excitație variază fluxul și permite reglarea Q/tensiunii generatorului sincron.",
+        "B": "Deschiderea aparatului director al turbinei reglează predominant puterea activă.",
+        "C": "Rezistența de stingere nu este mecanismul de reglaj al puterii reactive a generatorului.",
+        "exception_or_assumption": "Legătura dintre excitație, U și Q depinde de tăria rețelei și limitele mașinii.",
+        "unofficial_reformulation_question": "Ce modifici la generatorul sincron pentru a varia schimbul de putere reactivă cu rețeaua?",
+        "unofficial_reformulation_answer": "Curentul de excitație, în limitele caracteristicii generatorului.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0197",
+      "grade_ids": [
+        "G1-ELE-208",
+        "G2-ELEC-344"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "215",
+        "stem": "Relaţia între curenţii de linie si de fazã în sisteme cu generatoare si receptoare conectate în triunghi este:",
+        "options": {
+          "A": "curentul de linie este mai mare de 1,73 ori decât curentul de fazã",
+          "B": "curentul de linie este egal cu curentul de fazã",
+          "C": "curentul de fazã este mai mare de de 1,73 ori decât curentul de linie"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-208=A | G2-ELEC-344=A"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "A pentru triunghi echilibrat: I_linie=√3·I_fază≈1,73 ori. B relația stea; C inversează raportul. Condiția de echilibru este esențială.",
+        "prior_candidate_source": "https://www.professorglasmachers.de/en/ema_drehstrom-in-stern-und-dreiecksschaltung/"
+      },
+      "explanation_card": {
+        "A": "Pentru triunghi echilibrat, curentul de linie are modul √3·I_fază.",
+        "B": "Egalitatea I_linie=I_fază este relația tipică pentru stea, nu pentru triunghi echilibrat.",
+        "C": "Curentul de fază nu depășește curentul de linie cu √3 în conexiune triunghi echilibrată.",
+        "exception_or_assumption": "Dacă sarcinile din triunghi sunt dezechilibrate, factorul unic √3 nu se aplică automat fiecărei faze.",
+        "unofficial_reformulation_question": "Pentru I_fază=10 A în triunghi echilibrat, care este curentul de linie?",
+        "unofficial_reformulation_answer": "Aproximativ 17,32 A.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0198",
+      "grade_ids": [
+        "G1-ELE-209",
+        "G2-ELEC-345"
+      ],
+      "original": {
+        "source": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "216",
+        "stem": "Se considera ca un transformator funcţionează în gol atunci când:",
+        "options": {
+          "A": "sarcina transformatorului este foarte mica",
+          "B": "curentul primar si curentul secundar sunt foarte mici",
+          "C": "o înfăşurare este conectata la reţea, iar cealaltă este deschisa"
+        },
+        "imported_keys_UNCHANGED": "G1-ELE-209=C | G2-ELEC-345=C"
+      },
+      "research_history": {
+        "CKPT239_sha": "25f25d7726e878d00f80df82553f06bf1ab2a2e4",
+        "prior_A_B_C_countermodel": "C: o înfășurare alimentată iar cealaltă deschisă definește mersul în gol. A sarcină mică nu înseamnă gol; B ambii curenți mici nu definesc conexiunea. Primarul absoarbe curent de magnetizare.",
+        "prior_candidate_source": "https://eepower.com/technical-articles/open-circuit-and-short-circuit-tests-in-transformers/"
+      },
+      "explanation_card": {
+        "A": "O sarcină foarte mică nu este identică cu circuitul secundar deschis în mers în gol.",
+        "B": "Faptul că ambii curenți sunt mici nu definește starea de circuit deschis; primarul absoarbe curent magnetizant.",
+        "C": "Un transformator este în gol când o înfășurare este alimentată, iar cealaltă este deschisă și nu furnizează sarcină.",
+        "exception_or_assumption": "La testul de mers în gol există pierderi în miez și curent magnetizant, nu curent primar strict zero.",
+        "unofficial_reformulation_question": "Ce curent absoarbe primarul unui transformator alimentat cu secundarul deschis?",
+        "unofficial_reformulation_answer": "Un curent de mers în gol, predominant de magnetizare și pentru pierderi.",
+        "status": "PRELIMINARY_EDITORIAL_NOT_APPROVED",
+        "independent_technical_review": "NOT_RUN",
+        "independent_linguistic_review": "NOT_RUN",
+        "official_grade_answer_scoring": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      }
+    }
+  ]
+}

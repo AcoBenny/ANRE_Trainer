@@ -1,0 +1,117 @@
+{
+  "schema": "ANRE_V371_SOURCE_READINESS_QUEUE_CONTRACT_V1",
+  "checkpoint": "CKPT-410",
+  "increment": "371.1",
+  "date": "2026-11-23",
+  "mode": "SCAFFOLD_ONLY_NO_BATCH_AUDIT",
+  "canonical_inputs": {
+    "repository": "AcoBenny/ANRE_Trainer",
+    "branch": "audit/anre-v8-priority-17-20261109",
+    "baseline_commit": "88760546d656633a6ab68c96a9451fa6e9035918",
+    "checkpoint": "docs/QUESTION_AUDIT/CKPT_409_GFR_ONEPASS_V2_RECONCILED_568_822_157_11_AND_822_SOURCE_POINTERS_2026_11_23.md",
+    "evidence_master": "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V369_ONEPASS_V2_RECONCILED_568_822_157_11_EVIDENCE_MASTER_2026_11_23.json",
+    "prior_research_pointers": "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V370_ONEPASS_V2_ALL_822_PRIOR_RESEARCH_POINTERS_456_URL_GROUPS_112_REPORT_ONLY_2026_11_23.json",
+    "compact_568": "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V370A_COMPACT_568_QABC_EVIDENCE_GAP_AND_CARD_POINTERS_2026_11_23.json",
+    "compact_822": "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V370B_COMPACT_822_GRADE_ROUTE_KEYS_FINAL_GATE_2026_11_23.json"
+  },
+  "scope": {
+    "unique_qabc": 568,
+    "grade_routes": 822,
+    "g1_routes": 414,
+    "g2_routes": 408,
+    "historical_hold_qabc": 136,
+    "strict_hold_qabc": 6,
+    "source_original_vs_trainer_variant_qabc": [
+      "QABC-0143",
+      "QABC-0236",
+      "QABC-0362",
+      "QABC-0386"
+    ],
+    "legacy_direct_url_candidate_qabc": 456,
+    "legacy_report_only_qabc": 112,
+    "specific_source_packet_qabc_from_v364_v367": 38,
+    "final_approved_grade_routes": 0,
+    "quarantined_g2_candidate_rows_outside_scope": 157,
+    "electro_orphan_source_rows_outside_scope": 11
+  },
+  "dimensions": {
+    "evidence_pointer_class": [
+      "DIRECT_URL_UNREOPENED",
+      "REPORT_POINTER_ONLY"
+    ],
+    "source_packet_tag": [
+      "SPECIFIC_SOURCE_PACKET_PRESENT",
+      "NO_SPECIFIC_PACKET_INDEXED"
+    ],
+    "review_state": [
+      "PENDING_SOURCE_REOPEN",
+      "SOURCE_PACKET_PARTIAL",
+      "BLOCKED_SCOPE_OR_EDITION",
+      "READY_FOR_QUALIFIED_REVIEW",
+      "APPROVED_FOR_LEARNING"
+    ],
+    "gate_state": [
+      "NOT_STARTED",
+      "BLOCKED",
+      "EVIDENCE_FOUND_NOT_REVIEWED",
+      "VERIFIED_WITH_PROVENANCE",
+      "NOT_APPLICABLE_WITH_REASON"
+    ],
+    "progress_kind": [
+      "NO_NEW_GATE",
+      "NEW_EVIDENCE_UNVERIFIED",
+      "GATE_VERIFIED",
+      "CORRECTION_SUPERSEDES_PREVIOUS"
+    ]
+  },
+  "item_contract": {
+    "qabc_id": "unique QABC-####; primary key, never clone by grade",
+    "grade_ids": "array of original grade routes, exact V369/V370 join",
+    "kind": "ORIGINAL | DIDACTIC (DIDACTIC remains unofficial)",
+    "canonical_text_option_key_sha": "immutable provenance pointer(s) to source, Trainer and effective editorial; preserve source-vs-Trainer differences",
+    "imported_keys_by_grade": "immutable imported answer key; no silent edits",
+    "historical_hold_flags": "semantic/source and strict flags, include exact issue",
+    "material_variant": "true for the four known source-vs-Trainer option variants",
+    "official_2026_grade_or_legal_scope": "flag + bibliographic edition/authority/grade conditions",
+    "pointer_class": "one of evidence_pointer_class, based on V370 groups",
+    "prior_analysis_paths": "existing exact per-grade V370 report file paths; open before any new search",
+    "source_packet_tag": "orthogonal to pointer_class; 38 previously indexed specific packets, not automatic approval",
+    "source_object_action_conditions": "exact physical or legal object/action/regime/grade and edition; reject generic substitutes",
+    "source_locator_and_rights": "official source authority, stable original locator, version, rights, offline eligibility",
+    "original_context": "one paragraph before + focused original paragraph + one after, or documented unavailable; no invented text",
+    "option_review": "A/B/C positive evidence, counterexamples, exceptions and linguistic traps, plus grade-specific key status",
+    "review_evidence": "reviewer identity/type, dated source reopening, distinct QA vs same-assistant checks",
+    "gates": "source_authenticity, exact_scope, edition_2026, grade_bibliography, surrounding_context, rights, all_options_uniqueness, trainer_source_fidelity, independent_QA, official_key, learner_signoff",
+    "state": "review_state, with per-gate status and reason",
+    "last_processed_checkpoint": "checkpoint and delta reference; repeated unchanged work earns zero progress"
+  },
+  "priority_policy": {
+    "order": [
+      "P0_SOURCE_TRAINER_MATERIAL_VARIANT",
+      "P0_STRICT_KEY_OR_SOURCE_HOLD",
+      "P1_HISTORICAL_SEMANTIC_SOURCE_HOLD",
+      "P1_2026_LEGAL_GRADE_SPECIFIC",
+      "P2_NORMAL_DIRECT_URL_CANDIDATE",
+      "P3_NORMAL_REPORT_POINTER_ONLY"
+    ],
+    "logic": "Each QABC appears once at earliest matching priority; material variants overlap six strict holds and 136 historical holds; no double counting. Legal-grade cases not inferred from URL presence. Tie-break stable QABC numeric ascending.",
+    "pointer_rule": "V370 research report paths first. DIRECT_URL_UNREOPENED is a candidate only. REPORT_POINTER_ONLY means no URL-like string, not no prior research. SPECIFIC_SOURCE_PACKET_PRESENT is an additional tag, not an approval.",
+    "official_vs_didactic": "415 source-native units and 153 clearly UNOFFICIAL trainer didactic units: audit separately, never claim didactic as official ANRE keys."
+  },
+  "micro_batch_policy": {
+    "max_qabc_per_increment": 5,
+    "increment_371_2": "Produce the first five unique highest-priority QABC ledger records using original V369/V370A/V370, then real source work only within bounded next increment.",
+    "checkpoint_rule": "One commit and readback per increment; update ACTIVE_HANDOFF.md with completed identifiers and next explicit action; never begin next batch in same increment unless separately requested.",
+    "anti_loop_rule": "Before/after gates by QABC, immutable QABC seen set, exact source locator and hash; repeat with no newly resolved gate = ZERO newly advanced; reopen same case only for changed evidence, corrected interpretation or explicit blocker resolution.",
+    "approval_rule": "No change to canonical stems/options/keys, HTML, APK, main, PR merge or release. User asked only on source-backed irreducible decisions or canonical bank changes.",
+    "preservation_rule": "Retain 157 G2 candidates and 11 original Electro orphans quarantined outside the 822 until separately adjudicated."
+  },
+  "current_progress": {
+    "rows_materialized": 0,
+    "qabc_processed_this_increment": 0,
+    "grade_routes_approved_this_increment": 0,
+    "approved_total": 0,
+    "files_are_scaffold_not_source_validation": true
+  },
+  "records": []
+}

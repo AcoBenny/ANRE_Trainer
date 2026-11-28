@@ -1,0 +1,64 @@
+{
+  "schema": "V320_PE102_NOR35_AND_HISTORICAL_ANRE116_LEG24_SCOPE_GATES_2026_11_22",
+  "date": "2026-11-22",
+  "cases": [
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0035",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_hash": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 35,
+      "original_stem": "Amplasarea instalaţiilor electrice de conexiuni şi distribuţie în interiorul încăperilor de cabluri: ",
+      "original_ABC": {
+        "A": "este interzisă, cu unele excepţii",
+        "B": "este permisă întotdeauna",
+        "C": "nu există în prescripţiile energetice o prevedere în acest sens"
+      },
+      "candidate_for_historical_exam_NOT_OFFICIAL": "A_HISTORICALLY_SOURCE_SUPPORTED",
+      "answer_scope_status": "EXACT_OBJECT_NORM_IDENTIFIED_PE102_BUT_EDITION_UNVERIFIED",
+      "technical_name": "PE 102/1986 (republicat 1993), Normativ pentru proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a. în unitățile energetice",
+      "technical_source": "https://www.consultform.ro/anre/wp-content/uploads/2016/09/PE-102-NORMATIV-PENTRU-PROIECTAREA-SI-EXECUTAREA-INSTALATIILOR-DE-CONEXIUNI-SI-DISTRIBUTIE-CU-TENSIUNI-PANA-LA-1KV.pdf",
+      "source_locator": "§2.7 with §1.1.1 and surrounding §2.6, §2.8",
+      "option_rationale": {
+        "A": "Explicit prohibition on electric connection/distribution equipment WITH exceptions found in PE107; matches wording 'este interzisă, cu unele excepţii'.",
+        "B": "Permitted always contradicted by explicit prohibition in PE102 §2.7.",
+        "C": "No prescription false: PE102 §2.7 expressly addresses the same object."
+      },
+      "paragraph_before_and_after": "§2.6 allows various voltages in one electrical room under operating-organization condition. §2.7 specifically prohibits connection/distribution gear in cable room except PE107 exceptions. §2.8 requires unobstructed passage. Do not substitute I7 ordinary building conduit rule.",
+      "era_and_reliability": "1986 source historical. Current 2026 applicable exam bibliography and PE107 exceptions detail not verified.",
+      "current_2026_source_authenticated": false,
+      "independent_qualified_review": false,
+      "scoring_key_authenticated": false,
+      "learning_approved": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0024",
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "source_row": 24,
+      "original_stem": "În vederea înscrierii la examenul de autorizare, electricianul trebuie să prezinte  în documentaţia anexată cererii de autorizare ,,Detalii privind lucrările realizate\"; acest document este:",
+      "original_ABC": {
+        "A": "Opţional (solicitantul decide dacă îl transmite sau nu)",
+        "B": "Nerelevant",
+        "C": "Un document obligatoriu, care trebuie întocmit corelat cu documenteie ,,Experienţă profesională\" și ,,Pagina de informaţii anexate cererii de autorizare\""
+      },
+      "candidate_for_historical_exam_NOT_OFFICIAL": "C_HISTORICAL_FORM_ONLY",
+      "answer_scope_status": "LEGACY_COMPULSORY_2016_CURRENT_FORM_SCOPE_UNVERIFIED",
+      "technical_name": "Regulamentul de autorizare, Ordin ANRE 116/2016, former required document; current Ord.66/2023 Art17 changed registration",
+      "technical_source": "https://arhiva.anre.ro/download.php?f=g6p%2FhA%3D%3D&t=vdeyut7dlcecrLbbvbY%3D",
+      "source_locator": "Ordin 116/2016 Art.14(a), Anexa 1 Form C and D; contrast 2023 Ord66 Art17",
+      "option_rationale": {
+        "A": "In 2016 file it is not applicant discretionary: explicit mandatory document to file for admission.",
+        "B": "It was relevant: work history evidence; labels C and D in old ANRE form.",
+        "C": "The former standardized documentation explicitly names Detalii privind lucrările realizate alongside Informații profesionale and Pagina de informații, matching legacy correct intent."
+      },
+      "paragraph_before_and_after": "2016 Art14(a) requires request together with Information, Details, Annex page; Form D links work experience to Form C. Current 2023 Art17 lists application and evidence online and no identically titled standalone mandatory attachment; do not teach 2016 requirement as 2026 rule.",
+      "era_and_reliability": "ANRE 2016 model historic, now no longer current if 2023 regulation supersedes; current ANRE portal enrollment docs need recheck.",
+      "current_2026_source_authenticated": false,
+      "independent_qualified_review": false,
+      "scoring_key_authenticated": false,
+      "learning_approved": false
+    }
+  ],
+  "provenance_caveat": "Pe102 source is an accessible archival PDF from a third-party course site; legacy ANRE116/2016 sourced from ANRE archive but 2023 act uses a new list. Both have historical source matches; no professional validation and 2026 school/exam applicability still pending.",
+  "no_app_or_key_mutation": true
+}

@@ -1,0 +1,105 @@
+{
+  "schema": "V261 original EL181 source vector z-order forensic paired geometric evidence no inferred overwrite",
+  "date": "2026-11-21",
+  "parentHead": "17acbf76279fdaf3e35941744a11c632d3fa15ba",
+  "originalWorkbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+  "originalUserWorkbookSha256": "2175d2c30ac8e2f149b28edd9ac00c233789bc0a3987ba779d6efed7afad920c",
+  "originalSourceRow": 181,
+  "originalSourceColumn": "A contains full drawing; answer choices are textual",
+  "originalSourcePictureElements": {
+    "twoCellAnchors": 22,
+    "nestedShapes": 30,
+    "layer1": {
+      "anchorIndicesInclusive": [
+        1,
+        10
+      ],
+      "shapeCount": 10,
+      "symbolText": "M",
+      "sourceElementDescription": "motor M one-line switching figure"
+    },
+    "layer2": {
+      "anchorIndicesInclusive": [
+        11,
+        20
+      ],
+      "shapeCount": 10,
+      "symbolText": "G",
+      "sourceElementDescription": "same exact cell anchors and shape-property XML except M vs G text"
+    },
+    "layer3": {
+      "anchorIndicesInclusive": [
+        21,
+        21
+      ],
+      "shapeCount": 1,
+      "symbolText": null,
+      "sourceElementDescription": "standalone extra line shape"
+    },
+    "layer4": {
+      "anchorIndicesInclusive": [
+        22,
+        22
+      ],
+      "shapeCount": 9,
+      "symbolText": "G",
+      "sourceElementDescription": "extra grouped source-original generator switching illustration"
+    }
+  },
+  "exactSourceGeometryVerification": {
+    "pairedAnchorsFirstTenVsSecondTen": 10,
+    "sameAnchorCellCoordinates": 10,
+    "sameShapePropertiesXML": 10,
+    "differentObjectText_M_G": true,
+    "sourceOriginalGroupedGAlsoPresent": true,
+    "literalSegmentationOfS11FromThreeRuns": [
+      "S",
+      "1",
+      "1"
+    ]
+  },
+  "previewGeneration": {
+    "generatedSeparateOriginalShapeLayers": [
+      "first_10_motor_M.png",
+      "second_10_generator_G.png",
+      "additional_line_anchor_21.png",
+      "last_group_9_shapes.png",
+      "full_source_all_22_anchors.png"
+    ],
+    "previewPlate": "ANRE_EL181_original_layers_separated_QA.png",
+    "limitations": "SVG renderer approximate; native Excel object's visibility, grouping, rotation and final user-facing layer display are not certified"
+  },
+  "runEvidence": {
+    "executedChecks": 29,
+    "passedChecks": 29,
+    "scripts": [
+      "/mnt/data/anre_ckpt349_181_layers.py",
+      "/mnt/data/anre_ckpt349_source_overlap_checks.py"
+    ],
+    "structuredOutputs": [
+      "/mnt/data/ANRE_CKPT349_source_overlap_regression.json",
+      "/mnt/data/anre_ckpt349_layers/EL181_layer_manifest.json"
+    ],
+    "userArtifactZip": "ANRE_CKPT348_349_full_option_models_and_EL181_layers.zip",
+    "zipSHA256": "861d465208f00e7b6a16be2bdf2f4766c0ebac82599751d613ac5847522ace38"
+  },
+  "findings": [
+    "This is an actual OOXML double-layer duplication of original geometrical items, not an SVG/OCR hallucination.",
+    "Motor copy and generator copy exact cell anchor points and x:spPr shape-properties match 10/10 (source local).",
+    "The later source-visible group also depicts a generator, offering a candidate source-layer reconstruction but not independent proof of intended final image.",
+    "Do not blindly delete motor source object or apply unverified data correction. Explicit author erratum or native Excel rendering can resolve intended rendering.",
+    "Original stem 'Pe schema de mai sus sunt aparate în plus?' and A/B/C remain unchanged. Existing technical A vs B hypotheses concerning S2 on generator side must consider stopped generator vs potential backfeed and proper isolation."
+  ],
+  "sourceCorrectionsToPriorReports": "Supersedes ambiguous CKPT-345-347 claim that row181 preview duplicates were merely renderer output; actual duplicates have native workbook XML source exact geometry evidence. Does NOT prove which drawn layer is intended.",
+  "sourceRowOptionCandidates": {
+    "A": "nu",
+    "B": "da, separatorul S2",
+    "C": "da, separatorul S1"
+  },
+  "definitiveExamAnswer": "HOLD_SOURCE_ORIGINAL_M_G_DUPLICATE_LAYER_AND_OPERATING_SCOPE",
+  "actualExamKeyAuthenticated": false,
+  "independentEngineerApproved": false,
+  "learningReady": false,
+  "canonical822BankAltered": false,
+  "excelSourceAltered": false
+}

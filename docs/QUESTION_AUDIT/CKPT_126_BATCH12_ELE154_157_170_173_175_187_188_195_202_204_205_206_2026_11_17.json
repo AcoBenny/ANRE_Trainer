@@ -1,0 +1,446 @@
+{
+  "checkpoint": "CKPT-126",
+  "date": "2026-11-17",
+  "baseline_head": "4af946eb5fb50c5209ad8f092b4aaf364f924884",
+  "protocol": "BATCH12 adaptive pilot batch 1/2 (12 canonical QABC, 24 grade IDs)",
+  "roles": "Avengers workflow via one assistant and technical, source, linguistic, data QA checklists; no independent child agents",
+  "scope": "Preliminary contextual research only, not answer-key/bibliography/edition independent validation",
+  "permission": "No changes to original QABC, answer keys, MASTER, HTML, APK; PR #7 Draft, no merge or release",
+  "cards": [
+    {
+      "unit_id": "AU-91f26539b55c8086",
+      "representative_id": "G1-ELE-154",
+      "member_ids": "G1-ELE-154;G2-ELEC-292",
+      "qabc_sha256": "91f26539b55c8086163e9abe12c8199e6cd739ad6a204d788cc282d397671411",
+      "original_keys_by_id_JSON": "{\"G1-ELE-154\":\"B\",\"G2-ELEC-292\":\"B\"}",
+      "question_original": "Mărimea periodică alternativă este o mărime a cărei valoare medie în decursul unei perioade este egală cu:",
+      "A_original": "1",
+      "B_original": "0",
+      "C_original": "1,5",
+      "candidate_imported": "B",
+      "technical_context": "În convenția de manual pentru mărime alternativă fără componentă continuă, media pe o perioadă completă este 0. O simplă alternanță de semn nu impune matematic media 0 pentru forme asimetrice.",
+      "ABC_reasoning": {
+        "A": "Media unei mărimi alternative nu este 1 în unități absolute.",
+        "B": "Definiția clasică: mărime alternativă cu valoare medie nulă pe o perioadă completă.",
+        "C": "Media unei mărimi alternative nu este 1,5 în unități absolute."
+      },
+      "pairwise_exclusion": "A/C sunt numere pozitive arbitrare; B este proprietatea modelului sinusoidal/alternativ pur din manual.",
+      "reverse_counterexample": "Un semnal periodic +2 V pentru 75% din timp și −1 V pentru 25% alternează semn, dar media este 1,25 V. Necesită definiția strictă a termenului «alternativ».",
+      "scope_and_linguistic_gate": "SEMANTIC_ALTERNATING_VS_ZERO_AVERAGE; source exact terminology still missing",
+      "sources": [
+        {
+          "url": "https://openstax.org/books/college-physics-2e/pages/23-2-ac-sources",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-790154215e939246",
+      "representative_id": "G1-ELE-157",
+      "member_ids": "G1-ELE-157;G2-ELEC-295",
+      "qabc_sha256": "790154215e9392467ca88dadad4cee3e269043b875ab889ed98f31ddb6ca37e7",
+      "original_keys_by_id_JSON": "{\"G1-ELE-157\":\"B\",\"G2-ELEC-295\":\"B\"}",
+      "question_original": "Metoda transfigurării reţelelor electrice este folosita pentru a:",
+      "A_original": "reduce pierderile de putere activa în reţea",
+      "B_original": "simplifica structura reţelelor echivalente pentru a reduce volumul de calcule",
+      "C_original": "diminua consumul specific de material conductor",
+      "candidate_imported": "B",
+      "technical_context": "Transfigurarea înlocuiește topologii de rețele cu modele echivalente care păstrează comportamentul la borne și simplifică ecuațiile/nodurile; nu schimbă infrastructura materială reală.",
+      "ABC_reasoning": {
+        "A": "Schimbarea reprezentării echivalente nu reduce direct pierderile fizice.",
+        "B": "Transfigurarea echivalentelor simplifică topologia/numărul de noduri pentru calcul.",
+        "C": "Nu reduce fizic cantitatea de material conductor instalat."
+      },
+      "pairwise_exclusion": "B simplifică analiza, A/C pretind schimbări fizice de pierdere/material pe care o transfigurare matematică nu le produce.",
+      "reverse_counterexample": "Transformarea stea-triunghi a trei rezistențe într-o reprezentare echivalentă reduce calculele, dar nu economisește fizic conductor.",
+      "scope_and_linguistic_gate": "TRANSFIGURATION_EQUIVALENT_NETWORK_NOT_PHYSICAL_CONSTRUCTION",
+      "sources": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Star-mesh_transform",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-8d4929c5fe919e7c",
+      "representative_id": "G1-ELE-170",
+      "member_ids": "G1-ELE-170;G2-ELEC-307",
+      "qabc_sha256": "8d4929c5fe919e7c1395805851e1e1fe18420a760069c0e57108804f985b1ff7",
+      "original_keys_by_id_JSON": "{\"G1-ELE-170\":\"A\",\"G2-ELEC-307\":\"A\"}",
+      "question_original": "Între două noduri oarecare A şi B ale unei reţele electrice active, o sursă de tensiune de tensiune electromotoare E şi  fără impedanţă interioară, dar legată în serie cu o impedanţă Z, poate fi înlocuită cu o sursă de curent, de intensitate J şi fără admitanţă interioară, şuntată cu admitanţa Y, fără ca parametrii electrici la bornele A şi B  - tensiunea la borne şi curentul debitat prin aceste borne- să se schimbe,  dacă sunt îndeplinite condiţiile:",
+      "A_original": "Z Y = 1                                        J=YE",
+      "B_original": "J=YE                                         Z=Y",
+      "C_original": "Z Y = 1                                       Z=Y",
+      "candidate_imported": "A",
+      "technical_context": "Transformarea Thévenin/Norton: un generator de tensiune E cu impedanță serie Z nenulă este echivalent la borne cu generator de curent J=E/Z și admitanță paralelă Y=1/Z.",
+      "ABC_reasoning": {
+        "A": "Transformarea Thévenin-Norton: Y=1/Z și J=E/Z=YE, astfel ZY=1.",
+        "B": "Z=Y este dimensional invalid: ohmi vs siemens.",
+        "C": "Doar ZY=1 și Z=Y nu determină curentul sursei J."
+      },
+      "pairwise_exclusion": "A conține concomitent ZY=1 și J=YE; B/C impun Z=Y, egalitate dimensională imposibilă (Ω vs S) și C nici nu fixează J.",
+      "reverse_counterexample": "Exemplu E=12 V, Z=6Ω: Y=1/6 S, J=2 A. B/C nu stabilesc același circuit echivalent.",
+      "scope_and_linguistic_gate": "LINEAR_EQUIVALENT_SOURCE_Z_NONZERO_COMPLEX_AC_SUPPORTED",
+      "sources": [
+        {
+          "url": "https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/",
+          "locator": "Thévenin/Norton voltage source with series Z -> current source E/Z in parallel Z; generalizare AC impedanță",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        },
+        {
+          "url": "https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/nortons-theorem/",
+          "locator": "Supporting public technical source",
+          "source_status": "Opened public search result this session"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-8a01a3c937be20b1",
+      "representative_id": "G1-ELE-173",
+      "member_ids": "G1-ELE-173;G2-ELEC-310",
+      "qabc_sha256": "8a01a3c937be20b1b9bc02204552ce237b936d90cda493837a64d38f8e290470",
+      "original_keys_by_id_JSON": "{\"G1-ELE-173\":\"C\",\"G2-ELEC-310\":\"C\"}",
+      "question_original": "Pierderea de putere activa într-un element de reţea (transformator, LEA, LEC) , la aceeaşi putere aparentã vehiculatã, este direct proportionalã cu:",
+      "A_original": "pătratul frecventei",
+      "B_original": "pătratul tensiunii reţelei",
+      "C_original": "pătratul curentului",
+      "candidate_imported": "C_WITH_FIXED_R",
+      "technical_context": "Pentru pierderi active rezistive în linie/înfășurări, ΔP=3 I² R la R fix. Totalul pierderilor într-un transformator mai conține pierderi în fier ce pot depinde de tensiune și frecvență.",
+      "ABC_reasoning": {
+        "A": "Pierderile rezistive nu au în mod simplu legea f² pentru întregul element.",
+        "B": "La S fix, creșterea U reduce I, astfel nu crește pierderea ca U².",
+        "C": "ΔP≈3I²R (trifazat); pierderile active rezistive cresc cu pătratul curentului la R constant."
+      },
+      "pairwise_exclusion": "C caracterizează direct componenta Joule, A implică f² nejustificat pentru toate pierderile, B U² incorect la S constant.",
+      "reverse_counterexample": "La transformator fără sarcină I_load≈0 dar există pierderi în fier, deci C nu descrie pierderea totală în toate regimurile.",
+      "scope_and_linguistic_gate": "QUESTION_TOTAL_LOSS_VS_COPPER_LOSS_SCOPE_MISMATCH",
+      "sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+          "locator": "R and I²R network model, source broad; exact losses derivation requested",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-db241766c21e1079",
+      "representative_id": "G1-ELE-175",
+      "member_ids": "G1-ELE-175;G2-ELEC-311",
+      "qabc_sha256": "db241766c21e10791b5ffe85a671fca3ec59ddb1faa10dcfa7b3723e01bd327d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-175\":\"B\",\"G2-ELEC-311\":\"B\"}",
+      "question_original": "Care dintre urmatoarele enunturi nu este adevarat:",
+      "A_original": "energia electrica tranzitata            printr-un circuit este produsul dintre puterea medie si timpul de functionare;",
+      "B_original": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de functionare",
+      "C_original": "energia electrica tranzitata printr-un circuit este produsul dintre puterea maxima si timpul de utilizare al puterii maxime.",
+      "candidate_imported": "B",
+      "technical_context": "E=∫P(t)dt=P_med T. Pentru putere maximă Pmax, energia poate fi și Pmax·T_util, unde T_util=E/Pmax, nu în general Pmax·T_funcționare.",
+      "ABC_reasoning": {
+        "A": "E=P_med·T, identitate pentru P_med definită pe interval T.",
+        "B": "E≠P_max·T pentru sarcină variabilă, cu excepția funcționării continue la maxim.",
+        "C": "E=P_max·T_utilizare_max unde T_utilizare_max=E/P_max, identitate exactă."
+      },
+      "pairwise_exclusion": "B este enunțul «nu este adevărat» pentru sarcini variabile; A este definiția puterii medii; C definiția duratei de utilizare a maximului.",
+      "reverse_counterexample": "Consum 1 kW jumătate din zi, 0 kW cealaltă: E=12kWh, Pmax·24h=24kWh, dar Pmax·T_util=12kWh.",
+      "scope_and_linguistic_gate": "DEFINITION_DURATION_OF_MAXIMUM_LOAD_MUST_MATCH_EXAM_TERMINOLOGY",
+      "sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+          "locator": "Power vs energy relation; termenul «durata de utilizare a puterii maxime» cere sursă română",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-a9ad0c0b03459da8",
+      "representative_id": "G1-ELE-187",
+      "member_ids": "G1-ELE-187;G2-ELEC-323",
+      "qabc_sha256": "a9ad0c0b03459da878b9299f1ff5099ce763615118f86746ce11189d24b08550",
+      "original_keys_by_id_JSON": "{\"G1-ELE-187\":\"B\",\"G2-ELEC-323\":\"B\"}",
+      "question_original": "Pierderile de putere activã si reactivã pe o linie electricã, la aceeaşi putere aparentã vehiculatã, sunt invers proporţionale cu:",
+      "A_original": "pătratul curentului",
+      "B_original": "pătratul tensiunii",
+      "C_original": "pătratul puterii active",
+      "candidate_imported": "B_FIXED_IMPEDANCE_S",
+      "technical_context": "Cu S transportată fixă și tensiune U în trifazat echilibrat, I=S/(√3U); pierderile serie rezistive ΔP≈3I²R și inductive ΔQ≈3I²X sunt invers proporționale cu U².",
+      "ABC_reasoning": {
+        "A": "Pierderile I²R/I²X nu sunt invers proporționale cu I².",
+        "B": "Pentru S constant, I=S/(√3U); ΔP și ΔQ≈3I²(R,X) ∝1/U², dacă linia și modelul sunt constante.",
+        "C": "La aceeași S, varierea ponderii P nu determină singură pierderile; C nu este relația căutată."
+      },
+      "pairwise_exclusion": "B este afirmativ în model serie cu R/X constante, A contrazice dependența de I², C depinde de cosφ fără relație generică inversă.",
+      "reverse_counterexample": "La linie foarte lungă, Q transversal capacitiv poate domina, astfel «pierderile reactive» totale nu urmează simplu 1/U².",
+      "scope_and_linguistic_gate": "SERIES_MODEL_ONLY_SHUNT_REACTIVE_EXCEPTION",
+      "sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Calculation_of_short-circuit_currents",
+          "locator": "Electrical model I= S/(√3U), copper losses I²R, reactive I²X derived",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-8ee6bfde6a7016da",
+      "representative_id": "G1-ELE-188",
+      "member_ids": "G1-ELE-188;G2-ELEC-324",
+      "qabc_sha256": "8ee6bfde6a7016dab52bc58da1ea731abece777cfab793d6e5470e66a80f68be",
+      "original_keys_by_id_JSON": "{\"G1-ELE-188\":\"A\",\"G2-ELEC-324\":\"A\"}",
+      "question_original": "Pierderile de putere într-o linie electrică prin care se transportă o putere activă P la un factor de putere = 0,9, faţă de cazul când se transportă aceeaşi putere la un factor de putere = 0,8 sunt:",
+      "A_original": "mai mici",
+      "B_original": "egale",
+      "C_original": "mai mari",
+      "candidate_imported": "A",
+      "technical_context": "Pentru P, U și R fixe, I=P/(√3 U PF), iar ΔP∝I². Raportul pierderilor la PF 0,9 față de 0,8 este (0,8/0,9)²≈0,7901.",
+      "ABC_reasoning": {
+        "A": "La P și U constante, I=P/(√3Ucosφ); creșterea cosφ 0.8→0.9 micșorează I²R, raport (0.8/0.9)²≈0.790.",
+        "B": "Pierderea nu este egală dacă se schimbă curentul transportat.",
+        "C": "Nu poate crește din simpla ameliorare cosφ dacă parametrii și tensiunea sunt identici."
+      },
+      "pairwise_exclusion": "A confirmă pierderi mai mici, B egal contrazice intensități diferite, C mai mari inversează relația.",
+      "reverse_counterexample": "Dacă simultan crește R sau scade U, pierderile pot crește; comparația presupune aceleași condiții în afara PF.",
+      "scope_and_linguistic_gate": "R_VOLTAGE_AND_LOAD_FIXED",
+      "sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Power_factor_and_Reactive_power",
+          "locator": "PF vs apparent current and active transmission loss, calcul propriu 0.790",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-f77fc81368a71f8b",
+      "representative_id": "G1-ELE-195",
+      "member_ids": "G1-ELE-195;G2-ELEC-331",
+      "qabc_sha256": "f77fc81368a71f8b288e46f6522cd5ad33bc0d4547c7c71a7bef3fa0e9178114",
+      "original_keys_by_id_JSON": "{\"G1-ELE-195\":\"A\",\"G2-ELEC-331\":\"A\"}",
+      "question_original": "Principalul avantaj al motoarelor de curent continuu îl constituie faptul că:",
+      "A_original": "permit reglarea în limite largi a turaţiei",
+      "B_original": "nu necesită întreţinere permanentă",
+      "C_original": "prezintă o construcţie simplă şi robustă",
+      "candidate_imported": "A_CLASSIC_MOTOR",
+      "technical_context": "Motorul CC cu perii poate regla larg turația prin tensiunea armăturii și/sau fluxul de excitație; avantaj tradițional față de motorul asincron necontrolat.",
+      "ABC_reasoning": {
+        "A": "Motoarele CC clasice permit reglarea tensiunii/fluxului pentru interval mare de turații.",
+        "B": "Întreținerea comutatorului/periilor poate fi semnificativă, deci B nu este avantaj universal.",
+        "C": "Construcția clasică cu comutator nu este mai simplă/robustă decât motorul asincron."
+      },
+      "pairwise_exclusion": "A tehnic afirmativ; B neagă întreținerea periilor/colectorului; C nu este în mod uzual mai simplu/robust decât motorul asincron cu colivie.",
+      "reverse_counterexample": "Motorul BLDC modern poate avea mentenanță redusă, dar nu justifică «fără întreținere permanentă» pentru motorul CC clasic din enunț.",
+      "scope_and_linguistic_gate": "CLASSIC_BRUSHED_DC_MOTOR_SCOPE",
+      "sources": [
+        {
+          "url": "https://www.electrical4u.com/speed-control-of-dc-motor/",
+          "locator": "Metode de control ale vitezei motorului de curent continuu; subiect educațional",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-18aff4b6c41b6bf4",
+      "representative_id": "G1-ELE-202",
+      "member_ids": "G1-ELE-202;G2-ELEC-338",
+      "qabc_sha256": "18aff4b6c41b6bf4b5905d48d3237d635d8a585d810aaabc838d47007fac733d",
+      "original_keys_by_id_JSON": "{\"G1-ELE-202\":\"A\",\"G2-ELEC-338\":\"A\"}",
+      "question_original": "Raportul nominal de transformare al unui transformator de putere este:",
+      "A_original": "raportul dintre tensiunea primara si secundara de mers în gol",
+      "B_original": "raportul dintre curentul primar si secundar la sarcina nominala",
+      "C_original": "raportul dintre tensiunea primara si secundara la sarcina nominala",
+      "candidate_imported": "A_WITH_NOMINAL_CONVENTION",
+      "technical_context": "Raportul nominal al tensiunilor înfășurărilor este raportul tensiunii primare impuse la secundara indusă în gol, pentru poziția nominală a prizei; sub sarcină căderile interne modifică tensiunea.",
+      "ABC_reasoning": {
+        "A": "Definițiile tensiunilor nominale ale înfășurărilor folosesc tensiunea impusă și tensiunea indusă la mersul în gol în regim nominal.",
+        "B": "Raportul curenților depinde și de sarcină și nu este definiția nominală a raportului tensiunilor.",
+        "C": "Tensiunile secundare sub sarcină variază cu căderea de tensiune, deci raportul lor nu definește raportul nominal."
+      },
+      "pairwise_exclusion": "A se leagă de raportul nominal de înfășurări, B confundă raportul cu curentul sub sarcină, C folosește tensiuni dependente de sarcină.",
+      "reverse_counterexample": "La transformator cu sarcină semnificativă U2 scade prin impedanță, deci U1/U2 la sarcină diferă de raportul în gol.",
+      "scope_and_linguistic_gate": "IEC60076_NOMINAL_TAP_AND_OPEN_CIRCUIT_VERIFICATION_PENDING",
+      "sources": [
+        {
+          "url": "https://standards.iteh.ai/catalog/standards/clc/33be2880-e28a-46be-b8e0-a8c356f95892/en-60076-1-2011",
+          "locator": "EN/IEC 60076-1:2011 §3.4.3 nominal winding voltage at no load; §3.4.4 rated voltage ratio",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-e7333964a01d3ff7",
+      "representative_id": "G1-ELE-204",
+      "member_ids": "G1-ELE-204;G2-ELEC-340",
+      "qabc_sha256": "e7333964a01d3ff786d8de0b24b1adcff907aa6b29912bd90ee391a45621cc94",
+      "original_keys_by_id_JSON": "{\"G1-ELE-204\":\"C\",\"G2-ELEC-340\":\"C\"}",
+      "question_original": "Un regim energetic  este deformant",
+      "A_original": "dacă undele de curent şi tensiune nu sunt periodice",
+      "B_original": "numai dacă undele de curent şi de tensiune sunt ambele periodice şi nesinusoidale",
+      "C_original": "undele de curent şi tensiune sunt periodice iar cel puțin una este nesinusoidală",
+      "candidate_imported": "C_CONDITIONAL_PERIODICITY",
+      "technical_context": "Regimul deformant periodic presupune o tensiune sau un curent cu conținut armonic nesinusoidal. Nu este necesar ca ambele unde să fie nesinusoidale.",
+      "ABC_reasoning": {
+        "A": "Nesinusoidalitatea nu cere lipsa periodicității; A nu definește regim deformant periodic.",
+        "B": "«numai ambele» este prea restrictiv: una dintre tensiune sau curent poate fi sinusoidală.",
+        "C": "Dacă regimul periodic are cel puțin o undă nesinusoidală, este deformant în definiția armonicelor."
+      },
+      "pairwise_exclusion": "C cere periodicitate și cel puțin o undă nesinusoidală; A exclusiv lipsă periodicitate; B greșește prin «numai ambele».",
+      "reverse_counterexample": "Convertor electronic alimentat cu tensiune sinusoidală poate absorbi curent armonic: tensiunea sinus, curentul deformat.",
+      "scope_and_linguistic_gate": "PERIODIC_NONSINUSOIDAL_REGIME_NOT_TRANSIENT",
+      "sources": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Harmonic_currents_in_the_electrical_distribution_system",
+          "locator": "Schneider Electrical Installation Guide, distorsiune curent/tensiune prin armonici",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-cf5c0fd3eae30dab",
+      "representative_id": "G1-ELE-205",
+      "member_ids": "G1-ELE-205;G2-ELEC-341",
+      "qabc_sha256": "cf5c0fd3eae30dab618edc8774025a3423e948a45c7ad7ddc431ea0b5240b4be",
+      "original_keys_by_id_JSON": "{\"G1-ELE-205\":\"B\",\"G2-ELEC-341\":\"B\"}",
+      "question_original": "Reglarea puterii active debitate de generatorul sincron se face variind:",
+      "A_original": "tensiunea de excitaţie",
+      "B_original": "admisia agentului primar la turbina",
+      "C_original": "curentul statoric",
+      "candidate_imported": "B_GRID_CONNECTED_GENERATOR",
+      "technical_context": "La generator sincron în paralel cu rețea puternică, admiterea fluidului de lucru în turbină controlează puterea mecanică disponibilă, cuplul și P activă livrată.",
+      "ABC_reasoning": {
+        "A": "Excitația controlează în principal tensiunea și Q la generator conectat la rețea, nu puterea mecanică activă produsă.",
+        "B": "Admisia agentului primar ajustează cuplul mecanic și P livrată, la viteză/frecvență rețea fixată.",
+        "C": "Curentul statoric este o consecință a puterii și factorului de putere, nu comanda primară de P."
+      },
+      "pairwise_exclusion": "B comandă puterea activă; A excitația influențează în principal Q și tensiunea, C curentul statoric este efectul sarcinii și factorului de putere.",
+      "reverse_counterexample": "În regim insular cu frecvență variabilă, relațiile de control cu rețeaua nu pot fi aplicate identic.",
+      "scope_and_linguistic_gate": "GRID_CONNECTED_PRIME_MOVER_ACTIVE_POWER",
+      "sources": [
+        {
+          "url": "https://ccaps.umn.edu/documents/CPE-Conferences/MIPSYCON-PowerPoints/2019/Done/MatchingGenerators.pdf",
+          "locator": "University of Minnesota hosted 2019 generator slides, printed slide 175, prime mover governs active power",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    },
+    {
+      "unit_id": "AU-a251568507777d0e",
+      "representative_id": "G1-ELE-206",
+      "member_ids": "G1-ELE-206;G2-ELEC-342",
+      "qabc_sha256": "a251568507777d0e3d03563de418386e299ed65fe2a402642dfa5a622a3beca0",
+      "original_keys_by_id_JSON": "{\"G1-ELE-206\":\"A\",\"G2-ELEC-342\":\"A\"}",
+      "question_original": "Reglarea puterii reactive debitate de generatorul sincron se face prin:",
+      "A_original": "modificarea curentului de excitaţie",
+      "B_original": "deschiderea aparatului director al turbinei",
+      "C_original": "deconectarea rezistentei de stingere",
+      "candidate_imported": "A_GRID_CONNECTED_GENERATOR",
+      "technical_context": "La generator sincron legat la rețea, curentul/tensiunea de excitație determină fluxul rotorului și comandă regimul de putere reactivă Q în limitele stabilității și încălzirii.",
+      "ABC_reasoning": {
+        "A": "Excitația controlează Q/tensiunea la generatorul sincron în paralel în limita curbei de capabilitate.",
+        "B": "Deschiderea aparatului director al turbinei controlează P/cuplul, nu în primul rând Q.",
+        "C": "Rezistența de stingere este altă protecție/funcție, nu mijlocul obișnuit de reglare Q."
+      },
+      "pairwise_exclusion": "A controlează Q, B admisia turbinei reglează P, C rezistența de stingere nu este mijloc de reglare continuă Q.",
+      "reverse_counterexample": "În insular, Q efectiv depinde și de receptor și de reglajul AVR; nu garantăm o relație izolată de context.",
+      "scope_and_linguistic_gate": "GRID_CONNECTED_EXCITATION_REACTIVE_POWER",
+      "sources": [
+        {
+          "url": "https://ccaps.umn.edu/documents/CPE-Conferences/MIPSYCON-PowerPoints/2019/Done/MatchingGenerators.pdf",
+          "locator": "University of Minnesota hosted 2019 generator slides, printed slide 175, excitation governs reactive power",
+          "source_status": "PRETRIAGED; exact applicability must be independently verified"
+        }
+      ],
+      "checks": {
+        "stored_key_not_changed": "YES",
+        "original_2026_exam_edition": "NOT_VERIFIED",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_source_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "approved_for_learning": "NO"
+      }
+    }
+  ]
+}

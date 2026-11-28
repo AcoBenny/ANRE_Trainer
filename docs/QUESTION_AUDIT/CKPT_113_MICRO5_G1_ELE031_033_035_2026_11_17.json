@@ -1,0 +1,125 @@
+{
+  "checkpoint": "CKPT-113",
+  "date": "2026-11-17",
+  "input_head": "a5193c6b5d37c629479d27a3330f4c1e715e0f0a",
+  "protocol": "MICRO5 second batch; three QABC unique units, six grade IDs",
+  "actual_agents": "single assistant, technical/source/linguistic checklists; NO independent child agents available",
+  "scope": "documentation only, not validated for learner, no key/QABC/HTML/APK edits, no merge",
+  "priority": {
+    "deferred": "G1-ELE-026 / G2-ELEC-175 requires exact original diagram and corroborating investment comparison; not credited",
+    "problem_flag": "G1-ELE-031 / G2-ELEC-180 A vs B potential non-exclusivity, escalate at ambiguity adjudication"
+  },
+  "gates": {
+    "exam_2026_bibliography": "UNVERIFIED",
+    "official_key": "UNVERIFIED",
+    "independent_QA": "NOT_RUN",
+    "learning": "NO"
+  },
+  "cards": [
+    {
+      "unit_id": "AU-3ca1801a2969b0b8",
+      "representative_id": "G1-ELE-031",
+      "member_ids": "G1-ELE-031;G2-ELEC-180",
+      "qabc_sha256": "3ca1801a2969b0b869946801dad131bd65dd210263f9841091840fb01dd8e943",
+      "original_keys_by_id_JSON": "{\"G1-ELE-031\":\"A\",\"G2-ELEC-180\":\"A\"}",
+      "question_original": "Celulele prefabricate monobloc se caracterizează în principal prin:",
+      "A_original": "securitate ridicată a persoanelor;",
+      "B_original": "gamă largă de configuraţii ale schemei de conexiuni;",
+      "C_original": "eliminarea totală a posibilităţii de producere a unui scurtcircuit între faze",
+      "candidate_not_approved": "A_CONDITIONAL",
+      "source": [
+        {
+          "url": "https://electrification.us.abb.com/products/switchgear/safeplus-secondary-gas-insulated-switchgear-ring-main-unit-rmu",
+          "locator": "ABB SafePlus compact enclosed switchgear: lines 9–19 and 82–85 safety; modular/semimodular configurability in same product description",
+          "access": "HTML opened",
+          "evidence": "Personnel safety interlocks/enclosure proved; product also expressly offers modular configuration."
+        },
+        {
+          "url": "https://www.eaton.com/ph/en-us/catalog/medium-voltage-power-distribution-control-systems/eaton-xiria.html",
+          "locator": "Eaton Xiria block type and extendable type, overview; lines 90–108",
+          "access": "HTML opened",
+          "evidence": "Xiria block-type offers substantial options and panel types; safety and configurability can coexist."
+        }
+      ],
+      "context": "În celulele compacte prefabricate, incinta închisă, izolarea părților active și interblocările protejează personalul. ABB prezintă această funcție explicit, deci A are sprijin direct pentru familia de echipamente compacte. Însă Eaton descrie chiar o celulă «block-type» cu gamă extinsă de opțiuni/configurații, iar ABB combină tipuri modulare și semimodulare. Fără definirea precisă a lui «monobloc» și fără tipul de produs vizat de bibliografie, B nu poate fi eliminat universal. C este fals prin absolutul «eliminarea totală» deoarece sunt posibile defecte interne/arcuri și protecțiile doar reduc consecințele.",
+      "options": {
+        "A": "Susținut afirmativ ca avantaj important al celulelor compacte închise: protecție la contact și la arc, interblocări.",
+        "B": "Poate fi adevărat pentru unele configurații compacte și block-type: surse de producător arată opțiuni multiple. Posibil distractor multiplu.",
+        "C": "Fals absolut: chiar echipamente cu protecții pot suferi arcuri și scurtcircuite între faze."
+      },
+      "pairwise": "A vs B nu este exclusivitate demonstrată; A vs C: creșterea securității nu echivalează cu anularea tuturor defectelor; B vs C: opțiuni de configurație ≠ protecție absolută.",
+      "reverse_counterexample": "Caz negativ împotriva unei eliminări pripite a B: Eaton Xiria block-type are o gamă extinsă de opțiuni. Nu declarăm baremul A unic fără modelul monobloc strict din sursa examenului.",
+      "finding": "FLAG_POTENTIAL_MULTIPLE_TRUE_A_B; SOURCE_SCOPE_MONOBLOC_DEFINITION_UNVERIFIED",
+      "qa": "SELF_REVIEW_ONLY; INDEPENDENT_QA_NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-7074edfad26b4917",
+      "representative_id": "G1-ELE-033",
+      "member_ids": "G1-ELE-033;G2-ELEC-181",
+      "qabc_sha256": "7074edfad26b49177e1c01d7c41606c195519588ee656d2b8e442c64e370dc87",
+      "original_keys_by_id_JSON": "{\"G1-ELE-033\":\"A\",\"G2-ELEC-181\":\"A\"}",
+      "question_original": "Comparativ cu cele imersate, transformatoarele uscate prezintă :",
+      "A_original": "o bună rezistenţă la foc;",
+      "B_original": "risc redus de poluare acustică a mediului ambiant;",
+      "C_original": "necesitatea unor amenajări speciale la instalare",
+      "candidate_not_approved": "A_CONDITIONAL",
+      "source": [
+        {
+          "url": "https://www.maddox.com/resources/articles/guide-to-liquid-filled-and-dry-type-transformers",
+          "locator": "Maddox comparison: Environment and Location, Noise Level; May 11 2026",
+          "access": "HTML opened",
+          "evidence": "Dry units avoid flammable insulating liquid; oil/liquid units need extra indoor arrangements; liquid-filled noise often lower."
+        }
+      ],
+      "context": "Transformatorul uscat nu conține ulei izolant, deci evită riscul specific de incendiu și scurgere asociat acestuia. Comparativ cu un transformator mineral-ulei imersat, aceasta oferă avantaj pentru comportarea la foc, dar nu înseamnă aparat imposibil de incendiat. Sursa fabricantului descrie transformatoarele imersate drept adesea mai silențioase, ceea ce contrazice un avantaj generic al uscatelor privind poluarea acustică. Cerințele speciale de retenție/compartimentare la instalare sunt legate în special de lichide și de context. A este interpretarea intenționată, cu limita privind tipul de imersat.",
+      "options": {
+        "A": "Susținut comparativ prin eliminarea lichidului combustibil. «Bună rezistență la foc» nu este certificare universală de clasă de incendiu.",
+        "B": "Fals ca beneficiu generic al uscatelor: pentru unele construcții transformatoarele cu lichid sunt mai silențioase.",
+        "C": "Nu avantaj generic al uscatelor față de cele imersate; amenajările suplimentare interioare apar la cele cu lichid."
+      },
+      "pairwise": "A vs B: avantajul este riscul de incendiu, nu zgomotul; A vs C: absența lichidului poate reduce amenajările, nu le impune; B vs C: caracteristici distincte și contextuale.",
+      "reverse_counterexample": "Un transformator uscat poate avea în continuare incendiu prin defect/arc, iar fluidul ester poate modifica comparația; «bună» nu înseamnă imunitate.",
+      "finding": "INTENDED_KEY_A_FIRE_RISK_RELATIVE; MATERIAL_AND_FIRE_CLASS_UNVERIFIED",
+      "qa": "SELF_REVIEW_ONLY; INDEPENDENT_QA_NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-b3508186779ffeba",
+      "representative_id": "G1-ELE-035",
+      "member_ids": "G1-ELE-035;G2-ELEC-183",
+      "qabc_sha256": "b3508186779ffebafa12c6633156766d2c22892b799424f0acb20d6ba14af03c",
+      "original_keys_by_id_JSON": "{\"G1-ELE-035\":\"A\",\"G2-ELEC-183\":\"A\"}",
+      "question_original": "Compartimentarea unei celule electrice se utilizează",
+      "A_original": "în scopul evitării extinderii avariilor;",
+      "B_original": "numai  în scopul protejării personalului de exploatare;",
+      "C_original": "protecţiei la supratensiuni",
+      "candidate_not_approved": "A",
+      "source": [
+        {
+          "url": "https://www.se.com/sg/en/product-range/60681-pix-high/",
+          "locator": "Schneider Electric PIX High, features: modular design limits effects of internal arc to one compartment",
+          "access": "search-indexed product section, direct rendered page incomplete",
+          "evidence": "Explicit manufacturer claim of localized effects to one compartment."
+        },
+        {
+          "url": "https://productinfo.se.com/doca0483en-00_dnf7_ioms/doca0483en-00_dnf7_ioms/English/DOCA0483EN_DNF7_IOMS_DD01459658.xml/%24/SwitchgearEnclosure-3D64907D",
+          "locator": "Schneider Electric Switchgear Enclosure, internal compartments, busbar compartment: designed to confine faults; direct page cache miss",
+          "access": "search extract only; page fetch cache miss",
+          "evidence": "Compartment partitions and relief features are documented as protective, without promising to eliminate all arcs."
+        }
+      ],
+      "context": "Compartimentarea unei celule separă bare, comutație, cabluri și circuite auxiliare prin bariere. Producătorul descrie compartimentarea ca reducând efectul propagării defectelor prin limitarea impactului arcului intern la un compartiment. Protecția personalului este un obiectiv suplimentar, de aceea adverbul «numai» din B face varianta greșită. Protecția la supratensiuni se obține prin coordonarea izolației și dispozitive adecvate, nu prin compartimentare în sine. A este răspunsul intenționat; rezistența efectivă la arc depinde de construcție și testare.",
+      "options": {
+        "A": "Dovadă afirmativă: separarea compartimentelor poate limita extinderea avariilor interne.",
+        "B": "Fals prin «numai»: pe lângă siguranța personalului, are rol de localizare a efectelor defecțiunilor.",
+        "C": "Nu este funcția directă a compartimentării; protecția la supratensiuni are dispozitive proprii."
+      },
+      "pairwise": "A vs B: B exclude greșit rolul A; A vs C: propagare a efectelor avariei versus cauză de supratensiune; B vs C: niciuna nu definește scopul principal de segregare.",
+      "reverse_counterexample": "Compartimentele simple nu garantează confinarea arcului fără evaluare/testare pentru acea configurație; sursa Schneider este un model specific, nu normă ANRE de exam.",
+      "finding": "INTENDED_KEY_A_WITH_MANUFACTURER_EXAMPLE; INTERNAL_ARC_CLASS_DEPENDENT",
+      "qa": "SELF_REVIEW_ONLY; INDEPENDENT_QA_NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "ANRE_EDUCATIONAL_VALIDATION_V2",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-419",
+  "supersedes_for_content_approval": "CKPT-418 triple gate policy, not its historical evidence",
+  "purpose": "Learning and understanding questions, not certifying official ANRE exam key",
+  "required": [
+    "Exact relevant legal/normative or technical evidence appropriate for actual object and conditions",
+    "A/B/C source-backed rationale with no material unresolved mutually-true counterexample or imported-key contradiction",
+    "Didactic card with relevant original source context including preceding and following clauses/paragraphs when available, highlighting central rule, plus scope/exception notes"
+  ],
+  "removed_as_hard_content_gates": [
+    "Qualified human specialist signature",
+    "Separate proof source appears by name on 2026 exam bibliography"
+  ],
+  "caution": [
+    "Effective versions and amendments that materially alter correctness remain important when evidence raises issue",
+    "A link or old report pointer alone is NOT proof of correctness or evidence of directly reopened official source",
+    "AI reviewer is not human specialist signoff; no formal ANRE certification claimed",
+    "Preserve original imported keys, show conflicts explicitly and never silently replace them",
+    "Educational content validation is separate from successful HTML/APK integration, offline document rights and release QA"
+  ],
+  "states": [
+    "VALIDATED_FOR_LEARNING_CONTENT",
+    "AWAIT_EVIDENCE_ADJUDICATION",
+    "HOLD_HISTORICAL_SEMANTIC_SOURCE"
+  ],
+  "reopen_validated_only_for": [
+    "specific newly discovered source change",
+    "source applicability/exception/edition change affecting the specific question",
+    "material ABC counterexample",
+    "original bank checksum mismatch"
+  ],
+  "change_control": "Log old/new state and reason. No re-read without new material evidence. Do not bulk-approve based only on absence of historical flag.",
+  "approved_pilot_evidence": "docs/QUESTION_AUDIT/CLOSURE_PILOT/CLOSE_001_FIVE_G1_LEGISLATION_SOURCE_ABC_2026_11_23.json",
+  "app_unmodified": true
+}

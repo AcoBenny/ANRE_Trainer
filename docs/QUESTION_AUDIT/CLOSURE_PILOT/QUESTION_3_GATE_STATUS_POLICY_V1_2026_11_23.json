@@ -1,0 +1,47 @@
+{
+  "schema": "ANRE_THREE_GATE_CLOSURE_POLICY_V1",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-418",
+  "scope": "Evidence status only, no change to canonical training bank or learning release",
+  "goal": "Prevent repeated source/ABC research after a documented content decision, without presenting legal edition or expert signoff as already complete",
+  "statuses": {
+    "TECHNICAL_CONTENT": {
+      "allowed": [
+        "UNREVIEWED",
+        "RESEARCHING",
+        "SOURCE_ABC_RECONCILED",
+        "BLOCKED_CONTRADICTION"
+      ],
+      "meaning": "Agreement between original question, A/B/C, stored imported key, specific source and prior technical or legal reasoning. SOURCE_ABC_RECONCILED means documented evidence-level content conclusion, NOT an ANRE certified grade-specific exam answer or review by qualified human."
+    },
+    "EXAM_BIBLIOGRAPHY": {
+      "allowed": [
+        "UNVERIFIED",
+        "VERIFIED_APPLICABLE_EDITIONS",
+        "INAPPLICABLE_OR_CONFLICT"
+      ],
+      "meaning": "Exam-year-and-grade-specific ANRE official bibliography matched to exact source edition and amendments; proof must be named and checked. Law present on official portal alone does not establish exam-bibliography eligibility."
+    },
+    "QUALIFIED_SIGNOFF": {
+      "allowed": [
+        "NOT_REQUESTED",
+        "PENDING",
+        "SIGNED_BY_NAMED_QUALIFIED_REVIEWER",
+        "REJECTED"
+      ],
+      "meaning": "Real identified qualified professional with scope (law / technical / linguistic) and dated signed verdict, with independence/provenance; AI model review does not qualify."
+    }
+  },
+  "invariants": [
+    "Three fields are never merged into a generic boolean approved.",
+    "A qualified signoff cannot be inferred from AI review, internal checklist or a cited document.",
+    "Technical content source/ABC evidence is not reopened solely because bibliography or qualified signoff remains pending.",
+    "Reopen technical content only if new primary normative provision, a different applicable edition, exact grade condition, a counterexample, option uniqueness conflict, or a canonical-stem/key checksum mismatch is documented; log change reason and before/after.",
+    "Any substantive contradiction moves TECHNICAL_CONTENT to BLOCKED_CONTRADICTION and prevents learner-use approval.",
+    "Bibliography confirmation is a separate batch action; signoff is a separate batch action; avoid redoing A/B/C for either.",
+    "Release readiness, offline card integration, legal redistribution rights and user approval are product-level gates separate from question content.",
+    "No modifications to imported answer keys, original stem/ABC, HTML, APK, PR merge or release without explicit user approval."
+  ],
+  "formal_learner_gate": "Eligible for consideration ONLY when technical content SOURCE_ABC_RECONCILED, bibliography VERIFIED_APPLICABLE_EDITIONS, qualified signoff SIGNED_BY_NAMED_QUALIFIED_REVIEWER, and relevant product QA/release controls passed; do not set learner approved based on 3 statuses alone.",
+  "evidence_locator": "docs/QUESTION_AUDIT/CLOSURE_PILOT/CLOSE_001_FIVE_G1_LEGISLATION_SOURCE_ABC_2026_11_23.json"
+}

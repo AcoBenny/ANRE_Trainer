@@ -1,0 +1,632 @@
+{
+  "checkpoint": "CKPT-142",
+  "date": "2026-11-17",
+  "baseline_head": "4b47c8ee9adb13b594f848dbf5249805007aa932",
+  "phase": "FINAL_ADJUDICATION_P0_NEXT15_SECOND_SESSION_LOT",
+  "count": {
+    "unique_units": 15,
+    "grade_ids": 27
+  },
+  "risk_note": "Station switching cases are test analyses only and NEVER operator instructions",
+  "method": "Exact canonical question and A/B/C copied from existing 568-card master; source-object and linguistic counterexamples recorded; search-index-only access explicitly separated from reopened text; no independent reviewers available",
+  "status": "PRECHECK_NOT_APPROVED",
+  "cards": [
+    {
+      "unit_id": "AU-9ad47849152dd1ab",
+      "representative_id": "G1-ELE-124",
+      "grade_member_ids": [
+        "G1-ELE-124",
+        "G2-ELEC-266"
+      ],
+      "qabc_sha256": "9ad47849152dd1ab6b37eee33a7ad703861d878a1209963d357c4538c968b515",
+      "original_keymap": {
+        "G1-ELE-124": "A",
+        "G2-ELEC-266": "A"
+      },
+      "question_original": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
+      "original_options": {
+        "A": "se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+        "B": "nu se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+        "C": "se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
+      },
+      "technical_precheck": "Bus coupler has multiple configurations: joining busbars, bus transfer/testing, and breaker bypass only where the actual arrangement has appropriate transfer/bypass path.",
+      "abc_scope_analysis": {
+        "A": "'numai' ignores other bus-coupler uses.",
+        "B": "cannot categorically assert no bypass absent the actual bypass transfer configuration.",
+        "C": "plausibly used to re-energize/test an isolated bus under approved procedures."
+      },
+      "technical_classification": "BLOCKED_TRANSVERSE_COUPLER_TOPOLOGY_AND_COMPETING_FUNCTIONS",
+      "source_evidence": [
+        {
+          "url": "https://techdoc.relays.protection-control.abb/r/REF620-Application-Manual/2.0-FP1-IEC/en-US/Functional-diagrams-for-control-and-interlocking",
+          "access": "ABB_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-9688f38d9257eb2b",
+      "representative_id": "G1-ELE-125",
+      "grade_member_ids": [
+        "G1-ELE-125"
+      ],
+      "qabc_sha256": "9688f38d9257eb2b1a9ce8194ceb27480138dd617f37e83957407afa230657ca",
+      "original_keymap": {
+        "G1-ELE-125": "B"
+      },
+      "question_original": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
+      "original_options": {
+        "A": "nu se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+        "B": "se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+        "C": "se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
+      },
+      "technical_precheck": "This shares a source-object family with G1-ELE-124 but options and qabc differ; do not combine keys or presume the same equipment topology.",
+      "abc_scope_analysis": {
+        "A": "absolute 'cannot parallel energized buses' conflicts with standard coupler purposes subject to synchronism/interlocks.",
+        "B": "breaker bypass requires transfer path/disconnector and cannot be generalized to all double bus schemes.",
+        "C": "'numai' excluding other operations is implausible."
+      },
+      "technical_classification": "BLOCKED_TRANSVERSE_VS_TRANSFER_BUS_COUPLER_EXACT_DIAGRAM",
+      "source_evidence": [
+        {
+          "url": "https://electrical-engineering-portal.com/substation-switching-schemes",
+          "access": "WEB_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-14fb0886051fa595",
+      "representative_id": "G1-ELE-128",
+      "grade_member_ids": [
+        "G1-ELE-128",
+        "G2-ELEC-268"
+      ],
+      "qabc_sha256": "14fb0886051fa59580d900bd397fe65e98f480cf82c3c348d0c659ba3eee1c99",
+      "original_keymap": {
+        "G1-ELE-128": "A",
+        "G2-ELEC-268": "A"
+      },
+      "question_original": "Într-un circuit electric monofazat cu caracter inductiv tensiunea este defazata fata de curent:",
+      "original_options": {
+        "A": "înainte cu 90 de grade",
+        "B": "cu zero grade (sunt în faza)",
+        "C": "cu 90 de grade în urma"
+      },
+      "technical_precheck": "In a pure inductor sinusoidal voltage leads current by 90°. For an inductive RL load, phi=arctan(XL/R) lies between 0 and 90 degrees.",
+      "abc_scope_analysis": {
+        "A": "only the pure L limit is exactly +90.",
+        "B": "zero degrees is purely resistive, not inductive.",
+        "C": "capacitive orientation, not inductive."
+      },
+      "technical_classification": "CONDITIONAL_A_PURE_L_ONLY_NOT_GENERAL_INDUCTIVE",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/college-physics-ap-courses/pages/23-11-reactance-inductive-and-capacitive",
+          "access": "OPENSTAX_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_01_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-2aaa2d87c22ca0ab",
+      "representative_id": "G1-ELE-137",
+      "grade_member_ids": [
+        "G1-ELE-137"
+      ],
+      "qabc_sha256": "2aaa2d87c22ca0ab5e185befcaf940a37dd0197ada56c0b9b8e714c6d8ca7c1b",
+      "original_keymap": {
+        "G1-ELE-137": "B"
+      },
+      "question_original": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "original_options": {
+        "A": "separatorul de bare, întreruptorul, separatorul de linie;",
+        "B": "separatorul de bare, separatorul de linie, întreruptorul;",
+        "C": "întreruptorul, separatorul de linie, separatorul de bare."
+      },
+      "technical_precheck": "Switching sequence statements are MCQ abstractions; actual energized substation maneuvers require authorized station-specific approved plan and interlocks.",
+      "abc_scope_analysis": {
+        "A": "circuit breaker before final line isolator may put off-load isolator in an unsafe switching state.",
+        "B": "isolators before breaker is plausible normalized test ordering under de-energized conditions.",
+        "C": "breaker before both isolators is not approved connection sequence."
+      },
+      "technical_classification": "BLOCKED_OPERATING_PROCEDURE_SITE_SPECIFIC_NO_SIGNOFF",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+          "access": "GENERIC_DEVICE_SCOPE_ONLY",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-dd065a31756323cf",
+      "representative_id": "G1-ELE-138",
+      "grade_member_ids": [
+        "G1-ELE-138"
+      ],
+      "qabc_sha256": "dd065a31756323cf48efe1c6c99c80506d0b5f71ed5b1a1cc9a6cb921158dc00",
+      "original_keymap": {
+        "G1-ELE-138": "B"
+      },
+      "question_original": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "original_options": {
+        "A": "separatorul de linie, întreruptorul, separatorul de bare;",
+        "B": "întreruptorul, separatorul de linie, separatorul de bare;",
+        "C": "întreruptorul, separatorul de bare, separatorul de linie."
+      },
+      "technical_precheck": "For disconnecting a line, normally the breaker interrupts load current first; the order of subsequent isolators depends on precise bay diagram and maneuver program.",
+      "abc_scope_analysis": {
+        "A": "isolator before breaker can breach normal isolation switching restrictions.",
+        "B": "breaker first with line then bus isolator is an intended sequence subject to plan.",
+        "C": "breaker first with bus then line can also be considered in some designs; B versus C cannot be established without scheme."
+      },
+      "technical_classification": "BLOCKED_B_VS_C_SWITCHING_SEQUENCE_STATION_TOPOLOGY",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+          "access": "GENERIC_DEVICE_SCOPE_ONLY",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-3240d047f6d1f9fd",
+      "representative_id": "G1-ELE-155",
+      "grade_member_ids": [
+        "G1-ELE-155",
+        "G2-ELEC-293"
+      ],
+      "qabc_sha256": "3240d047f6d1f9fda2a2f25656b70173fb8e6164e4e5cc0f8e286668bdc996f4",
+      "original_keymap": {
+        "G1-ELE-155": "C",
+        "G2-ELEC-293": "C"
+      },
+      "question_original": "Mărirea cuplului de pornire şi micşorarea curentului de pornire la motoarele asincrone cu rotorul în scurtcircuit se face:",
+      "original_options": {
+        "A": "prin deconectarea şi reconectarea lor la reţeaua de alimentare",
+        "B": "numai prin utilizarea motoarelor cu rotorul în dublă colivie",
+        "C": "prin utilizarea motoarelor cu rotorul în colivie cu bare înalte"
+      },
+      "technical_precheck": "Deep-bar and double-cage squirrel-cage rotors can both improve starting current/torque characteristics, depending on exact design.",
+      "abc_scope_analysis": {
+        "A": "on/off switching is not a rotor-design solution to higher starting torque and lower current.",
+        "B": "'numai' excludes deep-bar designs.",
+        "C": "deep/high-bar rotor may meet intended starting profile but not unique technique."
+      },
+      "technical_classification": "CONDITIONAL_C_DEEP_BAR_AND_DOUBLE_CAGE_COUNTEREXAMPLE",
+      "source_evidence": [
+        {
+          "url": "https://electrical-engineering-portal.com/the-cage-induction-motor-explained-in-details",
+          "access": "TECHNICAL_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-c0537779d7a8cedb",
+      "representative_id": "G1-ELE-160",
+      "grade_member_ids": [
+        "G1-ELE-160",
+        "G2-ELEC-298"
+      ],
+      "qabc_sha256": "c0537779d7a8cedb930c21ecb68fc7f53890e6fbfc65a90fc1536512c7661452",
+      "original_keymap": {
+        "G1-ELE-160": "A",
+        "G2-ELEC-298": "A"
+      },
+      "question_original": "Motoarele sincrone se utilizează rar pentru antrenarea mecanismelor de servicii proprii din centralele electrice",
+      "original_options": {
+        "A": "deoarece nu permit variaţia turaţiei în limite largi",
+        "B": "numai deoarece excitatoarea cu colector din circuitul acestora este un element puţin fiabil",
+        "C": "deoarece au randament mai mic decât al celorlalte tipuri de motoare"
+      },
+      "technical_precheck": "Directly line-fed synchronous motor speed is tied to frequency and poles; modern power-electronic drives can vary it, so wording is historically qualified.",
+      "abc_scope_analysis": {
+        "A": "constrained speed under fixed-frequency mains is plausible traditional reason.",
+        "B": "'numai' excitation brushgear explanation excludes brushless systems.",
+        "C": "lower efficiency is not universal."
+      },
+      "technical_classification": "CONDITIONAL_A_HISTORICAL_FIXED_FREQUENCY_SCOPE",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Motor_starter_configurations",
+          "access": "TOPICAL_ONLY_NOT_EXACT_SYNC_APPLICATION",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-434c888e09692d50",
+      "representative_id": "G1-ELE-166",
+      "grade_member_ids": [
+        "G1-ELE-166",
+        "G2-ELEC-304"
+      ],
+      "qabc_sha256": "434c888e09692d50740cc564b47ad3c0bc0580d7e0a175aea2749bdb81c66049",
+      "original_keymap": {
+        "G1-ELE-166": "C",
+        "G2-ELEC-304": "C"
+      },
+      "question_original": "Pe măsură ce creşte tensiunea la care se realizează instalaţiile electrice, costul pierderilor de putere Cp este:",
+      "original_options": {
+        "A": "constant",
+        "B": "crescător",
+        "C": "descrescător"
+      },
+      "technical_precheck": "At constant transmitted power, power factor, span and line R, higher transmission U means lower I and I²R losses; price of those losses needs tariff and duty assumptions.",
+      "abc_scope_analysis": {
+        "A": "not constant when current changes.",
+        "B": "rising loss contradicts fixed-P I²R relationship.",
+        "C": "reduced Joule loss under fixed scope is supported."
+      },
+      "technical_classification": "CONDITIONAL_C_FIXED_POWER_RESISTANCE_SCOPE",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/15-6-transformers",
+          "access": "OPENSTAX_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-2ad66252f57dac02",
+      "representative_id": "G1-ELE-178",
+      "grade_member_ids": [
+        "G1-ELE-178",
+        "G2-ELEC-314"
+      ],
+      "qabc_sha256": "2ad66252f57dac0252edab9783996d098f73798a3e73ffb2919497db6e5efe41",
+      "original_keymap": {
+        "G1-ELE-178": "C",
+        "G2-ELEC-314": "C"
+      },
+      "question_original": "Puterea electrică reactivă:",
+      "original_options": {
+        "A": "permite definirea limitelor de utilizare ale unui aparat electric",
+        "B": "produce transformarea energiei electrice în energie mecanică",
+        "C": "este variaţia în timp a energiei magnetice şi electrice"
+      },
+      "technical_precheck": "Reactive power Q in sinusoidal circuits quantifies oscillating exchange between electric/magnetic fields; it is not literally at every instant d/dt of their stored energy.",
+      "abc_scope_analysis": {
+        "A": "component kVA limits depend apparent power not reactive power alone.",
+        "B": "net electromechanical work is associated with active, not pure reactive power.",
+        "C": "likely textbook intent for oscillatory stored field energy, but its unqualified definition is imprecise."
+      },
+      "technical_classification": "BLOCKED_REACTIVE_POWER_VS_INSTANTANEOUS_STORED_ENERGY",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+          "access": "SCHNEIDER_HTML_REOPENED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-e96a54cfe693a32b",
+      "representative_id": "G1-ELE-180",
+      "grade_member_ids": [
+        "G1-ELE-180",
+        "G2-ELEC-316"
+      ],
+      "qabc_sha256": "e96a54cfe693a32b24e57e80fc3b3520ffae0eeadff030e7b8e2c4cc265f6c90",
+      "original_keymap": {
+        "G1-ELE-180": "B",
+        "G2-ELEC-316": "B"
+      },
+      "question_original": "Pentru micşorarea pierderilor de putere prin curenţi turbionari în piesele metalice mari parcurse de fluxuri magnetice variabile:",
+      "original_options": {
+        "A": "se limitează dimensiunile pieselor",
+        "B": "se execută piesele metalice din tole de oţel  cu adaus de siliciu pentru mărirea rezistivităţii, subţiri și izolate între ele",
+        "C": "se evită plasarea pieselor metalice masive în câmpuri magnetice variabile"
+      },
+      "technical_precheck": "Eddy-current loss is mitigated by lamination, higher resistivity and geometry; options describe several possible mitigation strategies.",
+      "abc_scope_analysis": {
+        "A": "reducing part dimensions may reduce loop area/eddy current, conditional geometry.",
+        "B": "thin insulated silicon-steel laminations standard direct mitigation.",
+        "C": "removing massive metallic parts from alternating flux also reduces losses."
+      },
+      "technical_classification": "BLOCKED_MULTIPLE_FEASIBLE_METHODS_A_B_C",
+      "source_evidence": [
+        {
+          "url": "https://electrical-engineering-portal.com/download-center/books-and-guides/power-substations/energy-efficient-transformers",
+          "access": "TECHNICAL_INDEX_ONLY",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-7440d0225f70da42",
+      "representative_id": "G1-ELE-189",
+      "grade_member_ids": [
+        "G1-ELE-189",
+        "G2-ELEC-325"
+      ],
+      "qabc_sha256": "7440d0225f70da42a5ab6f3475aa07d9f2f818a0f4950429d18860c993ffbf2f",
+      "original_keymap": {
+        "G1-ELE-189": "A",
+        "G2-ELEC-325": "A"
+      },
+      "question_original": "Potenţialul electrostatic în punctul M este  :",
+      "original_options": {
+        "A": "lucrul mecanic care trebuie produs spre a transporta unitatea de sarcină pozitivă de la infinit până în punctul M.",
+        "B": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă de la infinit până în punctul M",
+        "C": "forţa care este necesară pentru a transporta unitatea de sarcină pozitivă din punctul M până la infinit"
+      },
+      "technical_precheck": "Electric potential at a point is potential energy/work per unit test charge relative to chosen reference; infinity requires usable zero convention.",
+      "abc_scope_analysis": {
+        "A": "external work per unit positive test charge from infinity, quasi-static, is a definition of V relative to infinity.",
+        "B": "force has wrong units.",
+        "C": "force likewise wrong units, and opposite direction."
+      },
+      "technical_classification": "CONDITIONAL_A_INFINITY_REFERENCE_AND_EXTERNAL_WORK",
+      "source_evidence": [
+        {
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/7-2-electric-potential-and-potential-difference",
+          "access": "OPENSTAX_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-caca8ce153450084",
+      "representative_id": "G1-ELE-193",
+      "grade_member_ids": [
+        "G1-ELE-193",
+        "G2-ELEC-329"
+      ],
+      "qabc_sha256": "caca8ce153450084814fc3b58e46e7e6406a05d76bd4f4e46c4b90f937055e3b",
+      "original_keymap": {
+        "G1-ELE-193": "B",
+        "G2-ELEC-329": "B"
+      },
+      "question_original": "Carcasa  unei celule electrice",
+      "original_options": {
+        "A": "asigură numai protecţia persoanelor împotriva atingerii accidentale a pieselor aflate sub tensiune în funcţionare normală sau a pieselor în mişcare din interiorul învelişului;",
+        "B": "asigură protecţia echipamentului electric împotriva pătrunderii corpurilor străine şi a umezelii;",
+        "C": "asigură protecţia echipamentului electric împotriva supratensiunilor."
+      },
+      "technical_precheck": "Electrical cell enclosure can have both accidental-contact protection and ingress resistance based on its rated enclosure/IP properties.",
+      "abc_scope_analysis": {
+        "A": "'numai' contact protection excludes ingress.",
+        "B": "ingress protection is a valid function subject to rated design, not a proof of every enclosure class.",
+        "C": "overvoltage requires separate protective components."
+      },
+      "technical_classification": "CONDITIONAL_B_IP_RATING_REQUIRED",
+      "source_evidence": [
+        {
+          "url": "https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+          "access": "TOPICAL_ONLY_ENCLOSURE_IP_CLAUSE_MISSING",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-0cf2f9bbd6d9e798",
+      "representative_id": "G1-ELE-199",
+      "grade_member_ids": [
+        "G1-ELE-199",
+        "G2-ELEC-335"
+      ],
+      "qabc_sha256": "0cf2f9bbd6d9e79856109a7a140330c6b2dd4277546c7f9ca1039caa479179cd",
+      "original_keymap": {
+        "G1-ELE-199": "A",
+        "G2-ELEC-335": "A"
+      },
+      "question_original": "Producerea dublei puneri la pământ a bobinajului rotoric al unui generator sincron are ca efect negativ",
+      "original_options": {
+        "A": "numai creșterea foarte mare a curentului prin circuitul rotoric",
+        "B": "faptul că tensiunile electromotoare nu mai sunt sinusoidale",
+        "C": "apar scântei la periile colectorului"
+      },
+      "technical_precheck": "Second earth fault in generator rotor field winding can short a portion of excitation winding with multiple effects including current, rotor heating, magnetic asymmetry and vibration.",
+      "abc_scope_analysis": {
+        "A": "word 'numai' excludes other serious consequences.",
+        "B": "non-sinusoidal EMF is possible but not established as required universal result.",
+        "C": "brush sparking is equipment-condition dependent."
+      },
+      "technical_classification": "BLOCKED_NO_UNIQUE_A_B_C_ROTOR_DOUBLE_GROUND",
+      "source_evidence": [
+        {
+          "url": "https://electrical-engineering-portal.com/failures-testing-protections-field-winding-generator",
+          "access": "POWER_ENGINEERING_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-d8e0bccaca041e45",
+      "representative_id": "G1-ELE-214",
+      "grade_member_ids": [
+        "G1-ELE-214",
+        "G2-ELEC-350"
+      ],
+      "qabc_sha256": "d8e0bccaca041e45c82149a1f5992cdb3ff04a347c787027cd96cceedf2c4478",
+      "original_keymap": {
+        "G1-ELE-214": "A",
+        "G2-ELEC-350": "A"
+      },
+      "question_original": "Rolul conservatorului de ulei la transformatoarele de forţa este:",
+      "original_options": {
+        "A": "de a asigura o suprafaţa de contact a uleiului cu aerul mai mica",
+        "B": "numai  de a asigura spaţiul necesar dilatării si contractării uleiului",
+        "C": "de a face posibila umplerea cu ulei a transformatorului"
+      },
+      "technical_precheck": "Transformer conservator accommodates thermal volume change and controls oil-air interface via breather or bladder; how 'smaller contact area' is achieved depends design.",
+      "abc_scope_analysis": {
+        "A": "reduced contact interface versus the main tank is plausible for free-breathing conservator; not universally for sealed bladder designs.",
+        "B": "'numai' falsely excludes air isolation/level management roles.",
+        "C": "filling possible but not primary reason for conservator."
+      },
+      "technical_classification": "BLOCKED_CONSERVATOR_A_VS_B_AMBIGUOUS_ERA_AND_DESIGN",
+      "source_evidence": [
+        {
+          "url": "https://www.hitachienergy.com/uk-ie/en/products-and-solutions/insulation-and-components/transformer-insulation-components/measurement-and-safety-devices/dehydrating-breathers/conventional",
+          "access": "HITACHI_MANUFACTURER_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    },
+    {
+      "unit_id": "AU-1d424ea49ab98760",
+      "representative_id": "G1-ELE-220",
+      "grade_member_ids": [
+        "G1-ELE-220",
+        "G2-ELEC-356"
+      ],
+      "qabc_sha256": "1d424ea49ab98760e6d2b1daa5c8c38c297cd1f17df85a787a90b258d48e0424",
+      "original_keymap": {
+        "G1-ELE-220": "A",
+        "G2-ELEC-356": "A"
+      },
+      "question_original": "Transformatoarele  de măsură se folosesc",
+      "original_options": {
+        "A": "în instalaţiile de curent alternativ de înaltă tensiune",
+        "B": "numai în instalaţiile de curent alternativ de medie tensiune",
+        "C": "în instalaţiile de curent continuu de înaltă şi joasă tensiune"
+      },
+      "technical_precheck": "Conventional electromagnetic CT/VT instrument transformers serve AC systems including high voltage; steady DC requires different transducer principles.",
+      "abc_scope_analysis": {
+        "A": "yes, instrument CT/VT for AC HV.",
+        "B": "'numai' medium voltage false, also HV.",
+        "C": "steady DC cannot be conventionally transformed electromagnetically; Hall/optical sensors differ."
+      },
+      "technical_classification": "CONDITIONAL_A_CONVENTIONAL_AC_TRANSFORMER",
+      "source_evidence": [
+        {
+          "url": "https://www.abb.com/global/en/areas/electrification/medium-voltage/grid-components/outdoor",
+          "access": "ABB_MANUFACTURER_HTML_INDEXED",
+          "exact_exam_bibliography_verified": false
+        }
+      ],
+      "prior_research_link": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_ELE_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+      "official_2026_exam_key_verified": "NO",
+      "review_mode": "ONE_ASSISTANT_SOURCE_TECHNICAL_LINGUISTIC_PRECHECK_ONLY",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "keys_qabc_mutated": false
+    }
+  ],
+  "QA": {
+    "unique_unit_ids": 15,
+    "grade_ids": 27,
+    "ABC_copied_untouched": true,
+    "imported_keys_untouched": true,
+    "independent_QA_completed": 0,
+    "approved_for_learning": 0
+  }
+}

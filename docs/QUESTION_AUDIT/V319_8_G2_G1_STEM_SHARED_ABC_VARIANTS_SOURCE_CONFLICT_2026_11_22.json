@@ -1,0 +1,349 @@
+{
+  "schema": "V319_8_SOURCE_ORIGINAL_SAME_STEM_DIFFERENT_ABC_CROSSGRADE_MATRIX_2026_11_22",
+  "date": "2026-11-22",
+  "input": "V298+V141 and 2026 source-specific legal references V312-318 and I7 stored referenced V299+V307",
+  "issues": {
+    "strict_provisional_candidates": 8,
+    "unique_staged_originals": 8,
+    "prior_existing_units": 10,
+    "priority_review": "G1-LEG-017 imported B vs Article18(3)(a) official text supporting G1 A under current legislation",
+    "all_current_keys_unchanged": true,
+    "release_approved_count": 0
+  },
+  "cases": [
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0018",
+      "source_file": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "source_row": 18,
+      "G2_original_stem": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :",
+      "G2_original_options": {
+        "A": "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+        "B": "autorizat graduk 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW.",
+        "C": "deține adeverință de electrician autorizat și desfăşoară activităţi de realizare de instalații electrice într-o formă care nu este prevăzută în regulamentul de autorizare"
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0271",
+          "grade_ids": "G1-LEG-007",
+          "canonical_original_question": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :",
+          "canonical_original_options": {
+            "A": "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+            "B": "desfăşoară activităţi de realizare de instalații electrice, pe cont propriu, fără a deține adeverință de electrician autorizat",
+            "C": "autorizat gradul 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW."
+          },
+          "current_imported_key_UNCHANGED": "G1-LEG-007=B",
+          "priority": "P1"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "C_INTENDED_BUT_FORM_REQUIRED",
+      "G2_reason": "A permitted action is not contravention; B 9 kW Grade I may lie within limited authorization, not automatically contravention; C unspecified/unauthorized business form may be sanctionable if concrete contravention proven.",
+      "source_locator": "Ord ANRE 66/2023 Art.37, Art.41 and original sanctioned offence; checked prior V315; independent precise contravention needed",
+      "source_url_or_user_provenance": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/270204",
+      "conflict_risk": "Sanctions require an actual offence and a defined permitted work form; comparison G1-LEG-007 B targets UNLICENSED work not same G2 wording.",
+      "review_class": "P0_LEGAL_CONTRAVENTION_SCOPE",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0034",
+      "source_file": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "source_row": 34,
+      "G2_original_stem": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+      "G2_original_options": {
+        "A": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare ",
+        "B": "racordare ilegală la reţeaua de distribuţie ",
+        "C": "neplata facturilor "
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0266",
+          "grade_ids": "G1-LEG-002",
+          "canonical_original_question": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice în caz de:",
+          "canonical_original_options": {
+            "A": "neplata abonamentului radio-tv",
+            "B": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+            "C": "depășirea cu 30 de zile a termenului scadent al unei facturi"
+          },
+          "current_imported_key_UNCHANGED": "G1-LEG-002=B",
+          "priority": "P1"
+        },
+        {
+          "qabc": "QABC-0281",
+          "grade_ids": "G1-LEG-017",
+          "canonical_original_question": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+          "canonical_original_options": {
+            "A": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+            "B": "racordare ilegală la reţeaua de distribuţie",
+            "C": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+          },
+          "current_imported_key_UNCHANGED": "G1-LEG-017=B",
+          "priority": "P0"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "C_WITH_NOTICE_AND_CURE",
+      "G2_reason": "C supplier can terminate for unpaid bills after contractual due process; A refusal of guarantee is immediate disconnection ground, not necessarily termination; B illegal hooking is not the exact Article18(3)(a) theft demonstrated by final court judgment.",
+      "source_locator": "Ord ANRE 5/2023 Art.18(3)-(5), supplier termination, separate Art26 interruption",
+      "source_url_or_user_provenance": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+      "conflict_risk": "Canonical G1-LEG-017 imported B ('racordare ilegală') while same G1 original option A says exact legal 'sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă'. Significant SOURCE_KEY_CONFLICT. Do not change any imported keys; appeal professional legal and source-specific historical score.",
+      "review_class": "P0_CANONICAL_IMPORTED_KEY_CONFLICT_G1_LEG017",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0082",
+      "source_file": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "source_row": 82,
+      "G2_original_stem": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum: ",
+      "G2_original_options": {
+        "A": " 30 zile calendaristice în cazul racordării la joasă tensiune ",
+        "B": "20 zile calendaristice în cazul racordării la joasă tensiune",
+        "C": "10 zile calendaristice în cazul racordării la joasă tensiune"
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0303",
+          "grade_ids": "G1-LEG-039",
+          "canonical_original_question": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum:",
+          "canonical_original_options": {
+            "A": "20 zile calendaristice în cazul racordării la joasă tensiune",
+            "B": "30 zile calendaristice în cazul racordării la medie tensiune",
+            "C": "10 zile calendaristice în cazul racordării la joasă tensiune"
+          },
+          "current_imported_key_UNCHANGED": "G1-LEG-039=B",
+          "priority": "P1"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "A",
+      "G2_reason": "30 calendar days for fișă rule Art26(1); original G1 option B says 30 days but medium voltage, source Art26(1) not limited to LV and both may be true within fișă scenario.",
+      "source_locator": "Reg ANRE 59/2013 consolidated Art26(1) 30 calendar days from complete documents when fișă",
+      "source_url_or_user_provenance": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+      "conflict_risk": "Same stem different original A/B/C; G2 A and G1 B legitimately refer to 30 days. No letter copying.",
+      "review_class": "P1_OPTION_PERMUTATION_WITH_SCOPE",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0093",
+      "source_file": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "source_row": 93,
+      "G2_original_stem": "Avizul tehnic de racordare constituie: ",
+      "G2_original_options": {
+        "A": "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;  ",
+        "B": "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii",
+        "C": "aprobarea de către operatorul de reţea a racordării utiizatorului în anumite condiţii."
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0311",
+          "grade_ids": "G1-LEG-047",
+          "canonical_original_question": "Avizul tehnic de racordare constituie:",
+          "canonical_original_options": {
+            "A": "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;",
+            "B": "oferta operatorului de reţea la cererea de racordare a solicitantului;",
+            "C": "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii"
+          },
+          "current_imported_key_UNCHANGED": "G1-LEG-047=B",
+          "priority": "P1"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "C_HISTORICAL_INTENT_BUT_CURRENT_TEXT_DIFFERS",
+      "G2_reason": "The old option C describes 'operator approval of connection under conditions', but current Art24 (amended 2022) says technical connection offer to applicant. Canonical G1 variant B is closer to current text.",
+      "source_locator": "Reg 59/2013 current consolidated Art24, changed by Ord17/2022",
+      "source_url_or_user_provenance": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+      "conflict_risk": "Era-conditional stem; no current exact option in G2 equals literal Art24 current definition. Historical norm version must be recorded separately.",
+      "review_class": "P0_HISTORICAL_VS_CURRENT_CONCEPT",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0079",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 79,
+      "G2_original_stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+      "G2_original_options": {
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0362",
+          "grade_ids": "G1-NOR-048",
+          "canonical_original_question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+          "canonical_original_options": {
+            "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+            "B": "numai dintr-un circuit de iluminat normal",
+            "C": "numai dintr-un circuit de prize"
+          },
+          "current_imported_key_UNCHANGED": "G1-NOR-048=A",
+          "priority": "P1"
+        },
+        {
+          "qabc": "QABC-0363",
+          "grade_ids": "G1-NOR-049",
+          "canonical_original_question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+          "canonical_original_options": {
+            "A": "numai direct din tabloul de distribuţie",
+            "B": "dintr-un circuit de iluminat normal",
+            "C": "numai dintr-un circuit de prize"
+          },
+          "current_imported_key_UNCHANGED": "G1-NOR-049=B",
+          "priority": "P1"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "C",
+      "G2_reason": "I7 §5.4.13 allows feed from socket circuit, lighting circuit OR distribution board. G2 A and B have 'numai' and overrestrict; C is valid nonexclusive.",
+      "source_locator": "I7 §5.4.13, before §5.4.12 and after §5.4.14, source read in V307",
+      "source_url_or_user_provenance": "USER_I7_2011_CONSOLIDATED_2023_LOCAL_SHA4bc3fc70",
+      "conflict_risk": "G1 QABC-0362 option A enumerates all allowed feeds; G1 QABC-0363 option B lists lighting without 'numai'; G2 C socket without 'numai'. All describe allowed scenarios with differing alternative structures.",
+      "review_class": "P1_DIFFERENT_TRUTHFUL_SUBSET",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0116",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 116,
+      "G2_original_stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+      "G2_original_options": {
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0386",
+          "grade_ids": "G1-NOR-072",
+          "canonical_original_question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+          "canonical_original_options": {
+            "A": "nu este obligatoriu să poată fi deconectat individual",
+            "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+            "C": "trebuie să poată fi deconectat individual"
+          },
+          "current_imported_key_UNCHANGED": "G1-NOR-072=B",
+          "priority": "P1"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "C_TRUE_BUT_INCOMPLETE",
+      "G2_reason": "I7 §5.5.2.3 conductor individually disconnectable, but disconnection must use a tool. G2 C asserts first condition, G1 QABC-0386 B asserts full condition.",
+      "source_locator": "I7 §5.5.2.3 with preceding §5.5.2.1 and following §5.5.3, V307",
+      "source_url_or_user_provenance": "USER_I7_2011_CONSOLIDATED_2023_LOCAL_SHA4bc3fc70",
+      "conflict_risk": "G2 C true yet shorter rule, do not falsely call equivalent with full G1 B or infer that G2 C allows tool-free removal.",
+      "review_class": "P1_PARTIAL_TRUE_VS_FULL_RULE",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0119",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 119,
+      "G2_original_stem": "Prevederile normativului  I 7 – 2011 se aplică la proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente:",
+      "G2_original_options": {
+        "A": "clădirilor prefabricate;",
+        "B": "minelor şi carierelor ",
+        "C": "depozitelor de materiale pirotehnice şi explozive"
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0369",
+          "grade_ids": "G1-NOR-055",
+          "canonical_original_question": "Prevederile normativului  I 7 – 2011 se aplică la proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente:",
+          "canonical_original_options": {
+            "A": "clădirilor cu funcţiuni agroindustriale şi agrozootehnice",
+            "B": "minelor şi carierelor",
+            "C": "depozitelor de materiale pirotehnice şi explozive"
+          },
+          "current_imported_key_UNCHANGED": "G1-NOR-055=A",
+          "priority": "P1"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "A",
+      "G2_reason": "I7 §1.1(e) includes prefabricated buildings; §1.2 excludes mines, quarries, pyro/explosive warehouses. G1 option A instead includes agroindustrial/animal farming buildings.",
+      "source_locator": "I7 §1.1(e) inclusion and §1.2(b,d) exclusion, V299",
+      "source_url_or_user_provenance": "USER_I7_2011_CONSOLIDATED_2023_LOCAL_SHA4bc3fc70",
+      "conflict_risk": "G1 A and G2 A are semantically DIFFERENT eligible objects; do not deduplicate same letter or stem.",
+      "review_class": "P1_SAME_STEM_DIFFERENT_TRUE_OBJECTS",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0127",
+      "source_file": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 127,
+      "G2_original_stem": "În cazul instalațiilor electrice de joasă tensiune, izolaţia de bază reprezintă:  ",
+      "G2_original_options": {
+        "A": "Izolaţia care asigură protecţia de bază.",
+        "B": "Izolaţia care asigură protecţia de defect",
+        "C": " izolaţia maselor"
+      },
+      "existing_G1_variants": [
+        {
+          "qabc": "QABC-0392",
+          "grade_ids": "G1-NOR-078",
+          "canonical_original_question": "În cazul instalațiilor electrice de joasă tensiune, izolaţia de bază reprezintă:",
+          "canonical_original_options": {
+            "A": "Izolaţia care asigură protecţia de defect",
+            "B": "izolaţia părţilor active periculoase",
+            "C": "izolaţia maselor"
+          },
+          "current_imported_key_UNCHANGED": "G1-NOR-078=B",
+          "priority": "P1"
+        }
+      ],
+      "provisional_G2_candidate_NOT_OFFICIAL": "A",
+      "G2_reason": "G2 A definition 'basic insulation ensures basic protection' and G1 QABC0392 B 'insulation of hazardous live parts' are mutually complementary aspects of I7 definition.",
+      "source_locator": "I7 chapter 2 definition basic insulation, §4.1.1, V299",
+      "source_url_or_user_provenance": "USER_I7_2011_CONSOLIDATED_2023_LOCAL_SHA4bc3fc70",
+      "conflict_risk": "Same concept, but literal choices and scoring letter differ, cannot overwrite/merge original alternatives.",
+      "review_class": "P1_DIFFERENT_LINGUISTIC_DEFINITIONS",
+      "technical_independent_approval": false,
+      "linguistic_independent_approval": false,
+      "official_key_authenticated": false,
+      "grade_2026_exact_edition_or_source_rights_checked": false,
+      "active_app_changed": false,
+      "release_to_learning": false
+    }
+  ],
+  "anomalies_to_escalate": [
+    "QABC-0281 G1-LEG-017 imported B (illegal connection) vs existing option A (electricity theft final court judgment) under current supplier regulation Art18",
+    "G2 LEG93 vs G1 LEG47 ATR offer definition amended 2022; distinguish 2023 exam expected key from current 2026 legal text",
+    "G2 Norme116 partial true vs G1 full rule; no assumption G2 allows tool-free removal"
+  ],
+  "no_canonical_redistribution_or_rekey": true
+}

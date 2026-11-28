@@ -1,0 +1,586 @@
+{
+  "schema": "v222_15_original_NOR77_91_ABC_with_5_source_semantic_holds",
+  "date": "2026-11-21",
+  "parent_commit": "9a2ee8a94540c42226fc18417bd5dc09c6cd8713",
+  "previous_manifest_blob": "ad8d5b93c4fc720da45c4d3b0bfac4c5c7ddff7d",
+  "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "source_v175_blob": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "counts": {
+    "new_unique_qabc": 15,
+    "new_grade_routes": 15,
+    "separate_option_explanations": 45,
+    "reformulated_exercises": 15,
+    "new_explicit_semantic_holds": 5,
+    "learner_approvals": 0
+  },
+  "held_ids": [
+    "QABC-0394",
+    "QABC-0395",
+    "QABC-0396",
+    "QABC-0403",
+    "QABC-0404"
+  ],
+  "normative_gate": "CKPT222 prior source evidence for NOR77-88; V77 NOR89 contradiction, V85 NOR90 B/C overlap, CKPT223 NOR91. NOR80 exact source clause not located; NOR81/82 conjunctive fire properties not both stated. Direct current 2026 official I7 HTTP502, independent qualified QA absent.",
+  "cards": [
+    {
+      "unit_id": "QABC-0391",
+      "grade_ids": [
+        "G1-NOR-077"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "84",
+        "stem": "Conform normativului I-7-2011, o coloană electrică  este un circuit electric care:",
+        "A": "alimentează mai multe surse de iluminat",
+        "B": "alimentează un receptor de putere",
+        "C": "alimentează mai multe tablouri de distribuţie.",
+        "imported_keys_UNCHANGED": "G1-NOR-077=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-077:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-077:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 definiția «coloană electrică», CKPT222",
+      "editorial_draft": {
+        "A": "A alimentarea directă a mai multor corpuri de iluminat descrie circuite terminale de iluminat, nu alimentarea tablourilor.",
+        "B": "B alimentarea unui singur receptor de putere nu este definiția unei coloane electrice către tablouri.",
+        "C": "C alimentarea mai multor tablouri este caz inclus în definiția unui circuit de coloană.",
+        "model_scope_or_trap": "Coloana poate alimenta UNUL SAU MAI MULTE tablouri; NOR076 și NOR077 sunt exemple complementare.",
+        "reformulated_question": "O coloană poate alimenta simultan două tablouri de distribuție?",
+        "reformulated_solution": "Da, conform definiției.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0392",
+      "grade_ids": [
+        "G1-NOR-078"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "85",
+        "stem": "În cazul instalațiilor electrice de joasă tensiune, izolaţia de bază reprezintă:",
+        "A": "Izolaţia care asigură protecţia de defect",
+        "B": "izolaţia părţilor active periculoase",
+        "C": "izolaţia maselor",
+        "imported_keys_UNCHANGED": "G1-NOR-078=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-078:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-078:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 «izolație de bază», CKPT222",
+      "editorial_draft": {
+        "A": "A protecția la defect nu este funcția exclusivă a izolației de bază, care asigură protecția principală la atingerea părților active.",
+        "B": "B izolația părților active periculoase exprimă izolația de bază cerută pentru protecția de bază.",
+        "C": "C izolația «maselor» nu este definiția izolației părților active periculoase.",
+        "model_scope_or_trap": "Diferențiază protecția de bază de protecția la defect și de izolația suplimentară.",
+        "reformulated_question": "Izolația de bază protejează în principal față de partea activă periculoasă sau este doar izolația unei carcase?",
+        "reformulated_solution": "Față de părțile active periculoase.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0393",
+      "grade_ids": [
+        "G1-NOR-079"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "86",
+        "stem": ". Atunci când un echipament nu conţine, prin construcţie, caracteristici corespunzătoare influenţelor externe ale locului  (sau amplasamentului):",
+        "A": "el nu poate fi utilizat în instalația electrică",
+        "B": "el poate fi totuşi utilizat cu condiţia ca instalația să fie montată în tub",
+        "C": "el poate fi totuşi utilizat cu condiţia să fie prevăzut cu o protecţie suplimentară corespunzătoare la realizarea instalaţiei",
+        "imported_keys_UNCHANGED": "G1-NOR-079=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-079:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-079:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.1.2.2–4, CKPT222",
+      "editorial_draft": {
+        "A": "A respingerea necondiționată a echipamentului ignoră posibilitatea protecției suplimentare adecvate.",
+        "B": "B montarea întregii instalații în tub nu este soluție universală pentru orice mediu extern nepotrivit.",
+        "C": "C o protecție suplimentară corespunzătoare influențelor externe poate permite echipamentul, fără a afecta funcționarea în siguranță.",
+        "model_scope_or_trap": "Protecția suplimentară trebuie să răspundă riscului concret, nu să fie un accesoriu generic.",
+        "reformulated_question": "Un echipament neprotejat contra stropirii devine sigur automat pentru că traseul cablului este în tub?",
+        "reformulated_solution": "Nu, se cere protecția adecvată echipamentului.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0394",
+      "grade_ids": [
+        "G1-NOR-080"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "87",
+        "stem": "Pentru instalaţiile electrice de iluminat şi putere (forţă):",
+        "A": "se prevede întotdeauna tablou electric de distribuţie comun",
+        "B": "se prevăd întotdeauna tablouri electrice  de distribuţie diferite",
+        "C": "se prevede tablou electric de distribuţie comun, cu unele excepţii:",
+        "imported_keys_UNCHANGED": "G1-NOR-080=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-080:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-080:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.3.3, CKPT222: exact rule 'common lighting and power board with exceptions' not located",
+      "editorial_draft": {
+        "A": "A «întotdeauna tablou comun» ignoră separările necesare pentru anumite destinații ori regimuri.",
+        "B": "B «întotdeauna tablouri diferite» nu reflectă posibilitatea grupării unor circuite în anumite proiecte.",
+        "C": "C tablou comun cu excepții este interpretarea importată cea mai plauzibilă, dar clauza exactă aferentă întrebării încă nu este identificată.",
+        "model_scope_or_trap": "HOLD: nu transforma flexibilitatea generală din I7 §5.3.3 în dovadă exactă pentru regula «comun, cu unele excepții».",
+        "reformulated_question": "E obligatoriu să existe tablouri distincte pentru lumină și forță în orice clădire?",
+        "reformulated_solution": "Nu se poate formula universal; se verifică reglementările și condițiile specifice.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0395",
+      "grade_ids": [
+        "G1-NOR-081"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "88",
+        "stem": "Montarea în contact direct cu materiale combustibile se admite",
+        "A": "pentru cabluri cu izolație din PVC",
+        "B": "pentru toate tuburile şi plintele din materiale plastice",
+        "C": "pentru cabluri cu întârziere la propagarea flăcării",
+        "imported_keys_UNCHANGED": "G1-NOR-081=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-081:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-081:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §3.0.3.7–8, CKPT222",
+      "editorial_draft": {
+        "A": "A izolația PVC, fără clasă verificată de reacție la foc, nu demonstrează adecvarea montajului direct pe combustibil.",
+        "B": "B orice tub/plintă din plastic nu este permis automat în contact cu material combustibil.",
+        "C": "C întârzierea propagării flăcării este caracteristică relevantă, însă sursa citată cere și rezistență la foc în condiția analizată; C nu afirmă ambele.",
+        "model_scope_or_trap": "HOLD: norma invocată conține cerință conjunctivă (rezistență la foc ȘI întârziere propagare flacără), C include doar a doua.",
+        "reformulated_question": "Este suficientă mențiunea «flame retardant» ca să demonstreze automat și «fire resistant»?",
+        "reformulated_solution": "Nu; sunt caracteristici diferite ce trebuie îndeplinite dacă norma le cere pe amândouă.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0396",
+      "grade_ids": [
+        "G1-NOR-082"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "89",
+        "stem": "Montarea în contact direct cu materiale combustibile se admite",
+        "A": "pentru toate tuburile şi plintele din materiale plastice",
+        "B": "pentru cabluri rezistente la foc",
+        "C": "pentru cabluri cu izolație din PVC",
+        "imported_keys_UNCHANGED": "G1-NOR-082=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-082:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-082:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §3.0.3.7–8, CKPT222",
+      "editorial_draft": {
+        "A": "A orice tub/plintă din plastic fără clasă de reacție la foc nu este permis automat.",
+        "B": "B cablu rezistent la foc poate îndeplini una dintre cerințe, dar nu garantează singur și întârzierea propagării flăcării.",
+        "C": "C izolația PVC nu reprezintă dovadă de conformitate cu caracteristicile de incendiu cerute.",
+        "model_scope_or_trap": "HOLD: sursa indică două proprietăți cumulative, dar B numește doar rezistența la foc; nu aproba răspunsul ca universal suficient.",
+        "reformulated_question": "Este cablul rezistent la foc implicit certificat și cu întârziere la propagarea flăcării?",
+        "reformulated_solution": "Nu; fiecare proprietate trebuie probată conform tipului și certificării.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0397",
+      "grade_ids": [
+        "G1-NOR-083"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "90",
+        "stem": "Prizele cu tensiunea de 230 V care se montează într-o instalație electrică trebuie să fie întotdeauna:",
+        "A": "în construcţie capsulată",
+        "B": "cu contact de protecţie",
+        "C": "în execuţie sub tencuială",
+        "imported_keys_UNCHANGED": "G1-NOR-083=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-083:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-083:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.4.8, CKPT222",
+      "editorial_draft": {
+        "A": "A construcția capsulată nu este condiția universală pentru toate prizele 230 V.",
+        "B": "B contactul de protecție este caracteristica de siguranță impusă prizei de 230 V în contextul I7.",
+        "C": "C montajul sub tencuială nu este obligatoriu universal, existând și soluții aparente conforme.",
+        "model_scope_or_trap": "Conexiunea PE nu este substituită de stilul constructiv sau metoda de montaj.",
+        "reformulated_question": "O priză de 230 V devine automat conformă doar fiind îngropată?",
+        "reformulated_solution": "Nu, trebuie inclus și contactul de protecție.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0398",
+      "grade_ids": [
+        "G1-NOR-084"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "91",
+        "stem": "Conform I7/2011, conductor de protecţie (PE)",
+        "A": "este un conductor prevăzut în linile aeriene de joasă tensiune pentru protecția împotriva loviturilor de trăsnet",
+        "B": "este un conductor prevăzut în scopuri de securitate, de exemplu protecţia împotriva şocurilor electrice.",
+        "C": "nu există conductor de protecție în instalațiile de joasă tensiune",
+        "imported_keys_UNCHANGED": "G1-NOR-084=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-084:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-084:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 «conductor de protecție (PE)», CKPT222",
+      "editorial_draft": {
+        "A": "A conductorul împotriva trăsnetelor din linia aeriană este alt obiect decât definiția conductorului PE al instalației.",
+        "B": "B PE este conductorul prevăzut în scopuri de securitate, de exemplu prevenirea șocului electric.",
+        "C": "C negarea existenței PE în joasă tensiune contrazice definiția și funcția instalațiilor.",
+        "model_scope_or_trap": "PE are funcție de securitate, diferită de neutralul de lucru și de componentele LPS.",
+        "reformulated_question": "Poate N obișnuit să înlocuiască automat conductorul PE într-un circuit?",
+        "reformulated_solution": "Nu, sunt funcții distincte.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0399",
+      "grade_ids": [
+        "G1-NOR-085"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "92",
+        "stem": "Legarea la pământ  reprezintă realizarea unei legături electrice",
+        "A": "numai între un punct dat al unui echipament şi un pământ local.",
+        "B": "numai între un punct dat al unei reţele şi un pământ local.",
+        "C": "între un punct dat al unei reţele sau al unui echipament şi un pământ local.",
+        "imported_keys_UNCHANGED": "G1-NOR-085=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-085:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-085:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 cap.2 «legare la pământ», CKPT222",
+      "editorial_draft": {
+        "A": "A numai echipament ar exclude punctele unei rețele care pot fi legate la pământ.",
+        "B": "B numai rețea ar exclude împământarea unui punct al echipamentului.",
+        "C": "C definiția cuprinde punctele unei rețele SAU ale echipamentului, conectate electric la un pământ local.",
+        "model_scope_or_trap": "«Sau» este inclusiv între două tipuri de obiecte, nu două definiții mutual exclusive.",
+        "reformulated_question": "Legarea la pământ privește exclusiv echipamentele și niciodată rețelele?",
+        "reformulated_solution": "Nu, poate privi ambele.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0400",
+      "grade_ids": [
+        "G1-NOR-086"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "93",
+        "stem": "Conductoarele, barele, tuburile etc.",
+        "A": "nu se pot dispune pe trasee comune cu traseele altor instalaţii",
+        "B": "se pot dispune pe trasee comune cu traseele altor instalaţii cu îndeplinirea unor condiţii",
+        "C": "se pot dispune pe trasee comune cu traseele altor instalaţii, fără alte condiții, dacă sunt în montaj aparent.",
+        "imported_keys_UNCHANGED": "G1-NOR-086=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-086:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-086:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §3.0.3.2–4, CKPT222",
+      "editorial_draft": {
+        "A": "A interzicerea oricărui traseu comun ignoră condițiile de montare împreună admise normativ.",
+        "B": "B traseele comune pot fi permise cu distanțe, separare, protecție termică și de siguranță adecvate.",
+        "C": "C montajul aparent nu înlătură automat regulile aplicabile traseelor comune.",
+        "model_scope_or_trap": "Nu confunda admiterea condiționată cu obligația de a accepta orice apropiere de alte instalații.",
+        "reformulated_question": "Conductoarele electrice pot fi puse în același traseu cu alte instalații fără nicio verificare?",
+        "reformulated_solution": "Nu, numai în condițiile de securitate prescrise.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0401",
+      "grade_ids": [
+        "G1-NOR-087"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "94",
+        "stem": "Utilizarea conductelor metalice pentru gaze şi/sau lichide inflamabile drept conductoare de protecţie:",
+        "A": "este recomandată",
+        "B": "este permisă condiţionat",
+        "C": "nu este permisă",
+        "imported_keys_UNCHANGED": "G1-NOR-087=C"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-087:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-087:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.5.3.2, CKPT222",
+      "editorial_draft": {
+        "A": "A folosirea țevilor pentru combustibili ca PE nu este recomandată, ci interzisă în obiectul sursei.",
+        "B": "B nu există excepție generală de a folosi conducte cu gaze ori lichide inflamabile ca PE.",
+        "C": "C folosirea lor CA conductor de protecție nu este permisă.",
+        "model_scope_or_trap": "Legarea echipotențială a conductei, unde cerută, este alta decât înlocuirea conductorului PE cu conducta.",
+        "reformulated_question": "Poate o conductă de gaz înlocui conductorul PE doar fiindcă este metalică?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0402",
+      "grade_ids": [
+        "G1-NOR-088"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "95",
+        "stem": "Dacă instalaţiile electrice sunt în distribuţie prefabricată în învelişuri metalice (cutii, carcase), aceste învelişuri",
+        "A": "pot fi utilizate drept conductoare de protecţie, în anumite condiții",
+        "B": "nu pot fi utilizate drept conductoare de protecţie",
+        "C": "pot fi utilizate întotdeauna drept conductoare de protecţie",
+        "imported_keys_UNCHANGED": "G1-NOR-088=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-088:CKPT_222_GFR_15_P1_G1_NOR_I7_IDENTIFICATION_FIRE_2026_11_18.md",
+        "original_source_links": "G1-NOR-088:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §4.1.5.3.8–9 și §5.5.3.1–2, CKPT222",
+      "editorial_draft": {
+        "A": "A învelișul metalic al distribuției prefabricate poate îndeplini rol de conductor de protecție NUMAI cu continuitate, secțiune și conexiuni adecvate.",
+        "B": "B interdicția absolută ignoră configurațiile normate în care carcasa poate servi ca PE.",
+        "C": "C «întotdeauna» ignoră verificarea continuității și caracteristicilor de protecție.",
+        "model_scope_or_trap": "Carcasa metalică oarecare nu devine automat PE fără cerințe tehnice speciale.",
+        "reformulated_question": "Este suficientă simpla existență a unui înveliș metalic pentru ca el să fie conductor PE?",
+        "reformulated_solution": "Nu; trebuie îndeplinite condițiile normei.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0403",
+      "grade_ids": [
+        "G1-NOR-089"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "96",
+        "stem": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+        "A": "este interzisă",
+        "B": "este permisă, cu marcarea corespunzătoare la cele două extremităţi",
+        "C": "este permisă dacă nu se folosește una dintre culorile verde sau galben",
+        "imported_keys_UNCHANGED": "G1-NOR-089=A"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-089:V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+        "original_source_links": "G1-NOR-089:https://legislatie.just.ro/Public/FormaPrintabila/00000G1AGLK3X9HXIS43LTLA4TCXTBR4"
+      },
+      "source_locator": "I7 §5.1.4.3.3, V77",
+      "editorial_draft": {
+        "A": "A «interzisă» este cheia importată, dar clauza permite aceeași culoare pentru conductoarele de fază cu identificarea corespunzătoare la capete.",
+        "B": "B aceeași culoare poate fi folosită pentru toate fazele dacă se marchează corespunzător la ambele extremități, conform I7.",
+        "C": "C excluderea culorii verde sau galben, fără marcajul de la capete, nu reproduce cerința completă; identificarea PE/N trebuie respectată.",
+        "model_scope_or_trap": "HOLD: importat A versus sursa afirmativă B, fără schimbare automată de barem.",
+        "reformulated_question": "Pot fi toate fazele aceluiași circuit de aceeași culoare dacă sunt identificate corect la ambele capete?",
+        "reformulated_solution": "Da, potrivit prevederii citate.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0404",
+      "grade_ids": [
+        "G1-NOR-090"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "97",
+        "stem": "Tuburile şi ţevile metalice",
+        "A": "nu se pot monta direct pe elementele de construcţie din materiale combustibile.",
+        "B": "se pot monta direct pe elementele de construcţie din materiale combustibile, condiționat.",
+        "C": "se pot monta direct pe elementele de construcţie din materiale combustibile",
+        "imported_keys_UNCHANGED": "G1-NOR-090=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-090:V85_NORM_NINE_P0_PRIMARY_SOURCE_AND_ABC_RECHECK.csv",
+        "original_source_links": "G1-NOR-090:https://legislatie.just.ro/Public/FormaPrintabila/00000G01BLZ812IXGEN16BYPVD5MO6U4"
+      },
+      "source_locator": "I7 §5.2.12.2.11–13 și §3.0.3.7; V85",
+      "editorial_draft": {
+        "A": "A interdicția absolută a tuburilor metalice montate direct pe material combustibil contrazice permisiunea specifică identificată.",
+        "B": "B montarea directă condiționată este compatibilă cu protecția generală și influențele externe ale instalației.",
+        "C": "C montarea directă a tuburilor metalice este explicit admisă în clauza de obiect, însă răspunsul nu redă toate constrângerile generale.",
+        "model_scope_or_trap": "HOLD: B și C se suprapun logic, deoarece permisiunea specifică nu șterge condițiile generale de mediu; formularea nu separă clar răspunsurile.",
+        "reformulated_question": "Dacă metalul unui tub poate fi montat direct pe suport combustibil, dispar cerințele de protecție din restul normei?",
+        "reformulated_solution": "Nu, rămân aplicabile condițiile relevante.",
+        "editorial_disposition": "SEMANTIC_OR_SOURCE_MODEL_HOLD",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0405",
+      "grade_ids": [
+        "G1-NOR-091"
+      ],
+      "source_origin": "ANRE_HOSTED_2023_NORME_EXAMPLES_NORMALIZED_ABC_MATCH_OFFICIAL_2026_KEY_NOT_VERIFIED",
+      "original": {
+        "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "98",
+        "stem": "Dozele de derivaţie se instalează",
+        "A": "numai pe suprafeţele verticale ale elementelor de construcţii",
+        "B": "cu prioritate pe suprafeţele verticale ale elementelor de construcţii",
+        "C": "pe sau în pardoseală, indiferent de tipul dozei",
+        "imported_keys_UNCHANGED": "G1-NOR-091=B"
+      },
+      "historic": {
+        "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v175_fidelity_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+        "previous_research_pointer": "G1-NOR-091:CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "original_source_links": "G1-NOR-091:https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "source_locator": "I7 §5.2.12.3.7–8, CKPT223",
+      "editorial_draft": {
+        "A": "A «numai vertical» face din preferință o interdicție universală pentru orice altă suprafață.",
+        "B": "B dozele de derivație sunt prevăzute cu prioritate pe suprafețe verticale, potrivit sursei.",
+        "C": "C montajul în pardoseală indiferent de tipul dozei ignoră cerințele speciale pentru dozele adecvate pardoselilor.",
+        "model_scope_or_trap": "«Cu prioritate» nu înseamnă «exclusiv», iar variantele pentru pardoseală cer echipamente corespunzătoare.",
+        "reformulated_question": "Se poate monta o doză corespunzătoare în pardoseală, deși se preferă montajul vertical?",
+        "reformulated_solution": "Da, numai în condițiile prevăzute pentru acel tip.",
+        "editorial_disposition": "PROVISIONAL_SOURCE_ALIGNED_TEACHING_DRAFT",
+        "source_edition_check": "CURRENT_2026_ERA_NOT_AUTHENTICATED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

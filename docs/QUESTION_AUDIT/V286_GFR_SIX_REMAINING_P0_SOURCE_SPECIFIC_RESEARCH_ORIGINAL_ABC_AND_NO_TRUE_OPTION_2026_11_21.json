@@ -1,0 +1,445 @@
+{
+  "schema": "V286_GFR_6_REMAINING_P0_RESEARCH_SYNTHESIS_SOURCE_NATIVE",
+  "asof": "2026-11-21",
+  "parent": "CKPT-374 + V285 + CKPT-373",
+  "completion_definition": "Source-level technical research and formal blocker diagnosis, NOT independently graded approved learner content",
+  "counts": {
+    "QABC": 6,
+    "grade_routes": 7,
+    "original_option_checks": 18,
+    "preexisting_pair_relationships": 18,
+    "grade_routes_approved": 0,
+    "complete_original_scientifically_wellformed_option_QABC": 5,
+    "no_such_original_answer_QABC": 1
+  },
+  "original_source_records": [
+    {
+      "unit_id": "QABC-0143",
+      "grade_routes": [
+        "G1-ELE-152"
+      ],
+      "original_user_XLSX": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "159",
+        "original_stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "choices": {
+          "A": "constanta de propagare a liniei",
+          "B": "constanta de atenuare a liniei",
+          "C": "constanta de distorsiune a liniei"
+        },
+        "imported_keys_UNCHANGED": {
+          "G1-ELE-152": "A"
+        }
+      },
+      "preexisting_V285_source_research_disposition": "QUALIFIED_MODEL_OR_HISTORIC",
+      "technical_research_update": {
+        "classification": "TECHNICAL_INTENT_A_WITH_ORIGINAL_DIMENSION_ERROR",
+        "candidate": "A",
+        "original_option_unique_true_under_intended_definition": true,
+        "positive": "NIST/NBS Special Publication 250-32 §1.3.12 definește γ=α+jβ, unde α este atenuarea pe unitate de lungime și β este schimbarea fazei pe unitate de lungime; în exponent e^(−γl). Doar A acoperă și amplitudinea și faza.",
+        "negative": "γ însuși nu este adimensional: [γ]=1/lungime; doar γ×1 km este adimensional. Original XLSX spune în mod greșit „mărimea adimensională”; aplicația a omis această caracteristică, o mutație materială a sursei.",
+        "source_records": [
+          {
+            "publisher": "NIST (formerly NBS)",
+            "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nbsspecialpublication250-32.pdf",
+            "locator": "§1.3.12 Propagation Constant, printed page 1-9",
+            "source_mode": "OFFICIAL_PDF_TEXT_EXTRACTED_WEB_SCREENSHOT_ATTEMPT_FAILED_CACHE_MISS"
+          },
+          {
+            "publisher": "IEEE Technology Navigator",
+            "url": "https://technav.ieee.org/topic/propagation-constant/",
+            "locator": "γ=√((R+jωL)(G+jωC)); α Np/m, β radians/m",
+            "source_mode": "WEB_INDEX"
+          }
+        ],
+        "review_constraint": "Nu număra A drept enunț complet corect fără a remedia sau adnota explicit eroarea de dimensiune; nu modifica enunțul oficial.",
+        "proposed_handling": "DIDACTIC_ANNOTATE_DIMENSIONAL_TYPO_PRESERVE_QUESTION_AND_ALL_ORIGINAL_OPTIONS",
+        "needs_user_decision": false
+      },
+      "question_to_original_A_B_C": {
+        "A": {
+          "original_text": "constanta de propagare a liniei",
+          "source_reason": "Only propagation constant accounts for both attenuation and phase; gamma has units inverse length, gamma times 1 km dimensionless"
+        },
+        "B": {
+          "original_text": "constanta de atenuare a liniei",
+          "source_reason": "Attenuation alpha alone changes amplitude, not phase"
+        },
+        "C": {
+          "original_text": "constanta de distorsiune a liniei",
+          "source_reason": "Distortion is not the complex coefficient for both attenuation and phase"
+        }
+      },
+      "all_three_original_pair_checks": {
+        "A_B": "A complex gamma accounts for attenuation AND phase, B alpha alone for amplitude, so B is a proper component of A but incomplete",
+        "A_C": "A propagation constant is standard gamma, C distortion term is not a compatible amplitude-plus-phase equivalent",
+        "B_C": "B attenuation coefficient not equivalent to C distortion and neither explains phase and amplitude jointly"
+      },
+      "negative_counterexample": "Gamma (1/km) versus gamma*L (dimensionless). The original is not equivalent to its cleaned app wording.",
+      "source_not_barem": true,
+      "independent_certified_reviewer": false,
+      "original_imported_keys_UNCHANGED": true,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0236",
+      "grade_routes": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "original_user_XLSX": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "254",
+        "original_stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "choices": {
+          "A": "prin conducţie",
+          "B": "prin inducţie electromagnetică",
+          "C": "prin magnetizare"
+        },
+        "imported_keys_UNCHANGED": {
+          "G1-ELE-247": "B",
+          "G2-ELEC-383": "B"
+        }
+      },
+      "preexisting_V285_source_research_disposition": "QUALIFIED_MODEL_OR_HISTORIC",
+      "technical_research_update": {
+        "classification": "NO_SCIENTIFICALLY_EXACT_ORIGINAL_ABC_OPTION",
+        "candidate": null,
+        "original_option_unique_true_under_intended_definition": false,
+        "positive": "OpenStax University Physics Vol2 §6.4 arată că un conductor într-un câmp E static își redistribuie sarcinile (polarizare), de regulă fără modificarea sarcinii totale când este izolat. §5.2 descrie încărcarea netă prin inducție electrostatică când există împământare/separare. OpenStax Physics §20.3 delimitează inducția electromagnetică ca fenomen magnetic.",
+        "negative": "A=conducție implică transfer prin contact absent în enunț; B=inducție electromagnetică se referă la flux magnetic variabil, nu la simpla prezență a unui E static; C=magnetizare alt domeniu. În Excel original niciuna nu corespunde. Versiunea aplicației a rescris B ca „electrostatică”, schimbând răspunsul posibil.",
+        "source_records": [
+          {
+            "publisher": "OpenStax University Physics Vol 2",
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium",
+            "locator": "§6.4 polarization of metallic sphere by external E, charges redistribute",
+            "source_mode": "DIRECT_OFFICIAL_EDUCATIONAL_HTML_READ"
+          },
+          {
+            "publisher": "OpenStax University Physics Vol 2",
+            "url": "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction",
+            "locator": "§5.2 charging by induction with ground, positive/negative separation",
+            "source_mode": "DIRECT_OFFICIAL_EDUCATIONAL_HTML_READ"
+          },
+          {
+            "publisher": "OpenStax Physics",
+            "url": "https://openstax.org/books/physics/pages/20-3-electromagnetic-induction",
+            "locator": "§20.3 electromagnetic induction distinguished from charging by electrostatic induction",
+            "source_mode": "DIRECT_OFFICIAL_EDUCATIONAL_HTML_READ"
+          }
+        ],
+        "review_constraint": "Nu forța B drept corect în ORIGINAL. Nu confunda polarizarea unui conductor izolat (sarcină netă zero) cu încărcarea netă prin inducție asistată de împământare.",
+        "proposed_handling": "USER_POLICY_DECISION_REQUIRED_ON_EXAM_FLAW_NO_TRUE_OPTION_WITHOUT_REWRITING_SOURCE",
+        "needs_user_decision": true
+      },
+      "question_to_original_A_B_C": {
+        "A": {
+          "original_text": "prin conducţie",
+          "source_reason": "Conduction would transfer net charge by contact; mere presence of an E field is insufficient"
+        },
+        "B": {
+          "original_text": "prin inducţie electromagnetică",
+          "source_reason": "Electromagnetic induction in original B requires changing magnetic flux and is not electrostatic induction. App replaced with 'electrostatică', which is a material mutation"
+        },
+        "C": {
+          "original_text": "prin magnetizare",
+          "source_reason": "Magnetization is response to magnetic field, not static electric-field polarization"
+        }
+      },
+      "all_three_original_pair_checks": {
+        "A_B": "A conduction by contact needs separate transfer; B electromagnetic induction relates changing magnetic flux, so neither describes static-E polarization",
+        "A_C": "A conduction transfers charges, C magnetization responds to magnetic fields; different actions, neither exact",
+        "B_C": "B electromagnetic induction and C magnetization are magnetic-domain phenomena vs required static E; both wrong"
+      },
+      "negative_counterexample": "An isolated conductor in static E polarizes with net charge zero; net charging requires grounding/contact and additional process.",
+      "source_not_barem": true,
+      "independent_certified_reviewer": false,
+      "original_imported_keys_UNCHANGED": true,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0288",
+      "grade_routes": [
+        "G1-LEG-024"
+      ],
+      "original_user_XLSX": {
+        "workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "31",
+        "original_stem": "Obţinerea avizului tehnic de racordare de către un utilizator:",
+        "choices": {
+          "A": "nu este obligatorie pentru o durata mai mică de 6 luni",
+          "B": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+          "C": "este obligatorie pentru orice loc de consum/producere nou"
+        },
+        "imported_keys_UNCHANGED": {
+          "G1-LEG-024": "A"
+        }
+      },
+      "preexisting_V285_source_research_disposition": "QUALIFIED_MODEL_OR_HISTORIC",
+      "technical_research_update": {
+        "classification": "SOURCE_STRONGLY_FAVORS_C_FOR_ORDINARY_NEW_SITE_ATR_WITH_ABSOLUTE_SCOPE_CAVEAT",
+        "candidate": "C",
+        "original_option_unique_true_under_intended_definition": true,
+        "positive": "Regulamentul ANRE 59/2013 consolidat art.5 alin1 include loc nou de consum definitiv SAU temporar și loc nou de producere; art.11 alin1 cere cerere indiferent de durata solicitată sau mărimea puterii; art.25 alin1 spune că operatorul emite ATR după stabilirea soluției de racordare. În cazul obișnuit de racordare nouă se susține C.",
+        "negative": "A «sub 6 luni» și B «sub 100 kW» pretind scutiri care contrazic obligația de a cere racordarea indiferent de timp/putere. Dar A/B privește „obținerea avizului”, iar art11 în mod expres privește «cererea de racordare». Nu pretinde validarea absolutului C în toate schemele noi fără examinarea mecanismelor alternative, inclusiv legislația modificată 2026.",
+        "source_records": [
+          {
+            "publisher": "Portal Legislativ",
+            "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+            "locator": "Regulament racordare Ordin59/2013 consolidat, art.5(1), 11(1)-(2), 25(1)",
+            "source_mode": "REOPENED_LIVE_LEGISLATION_VIA_DOCUMENT_SPECIFIC_EXTRACTION_2026"
+          },
+          {
+            "publisher": "ANRE",
+            "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+            "locator": "Tematica si bibliografie examen electricieni 2023; 2026 autumn session on same page",
+            "source_mode": "DIRECT_OFFICIAL_WEBPAGE_OPENED"
+          }
+        ],
+        "review_constraint": "Distinge expres cererea de racordare (obligatorie) de emiterea unui ATR nou și de actualizarea ATR/certificat. Nu inventa excepții actuale neidentificate.",
+        "proposed_handling": "PRELIMINARY_C_UNDER_NORMAL_NEW_CONNECTION_SUBJECT_TO_COMPLETE_EDITION_SENSITIVE_LEGAL_CHECK",
+        "needs_user_decision": false
+      },
+      "question_to_original_A_B_C": {
+        "A": {
+          "original_text": "nu este obligatorie pentru o durata mai mică de 6 luni",
+          "source_reason": "No blanket shorter-than-six-month exception: Art11(1) explicitly requires a request regardless of duration"
+        },
+        "B": {
+          "original_text": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+          "source_reason": "No blanket less-than-100-kW exception: Art11(1) explicitly independent of requested power"
+        },
+        "C": {
+          "original_text": "este obligatorie pentru orice loc de consum/producere nou",
+          "source_reason": "Best general intention: new site triggers request; however it says ATR compulsory 'orice' whereas Art11 concerns the request and update/certificate routes, so not proven for every hypothetical situation"
+        }
+      },
+      "all_three_original_pair_checks": {
+        "A_B": "A short-duration exemption and B small-power exemption are both contradicted for CONNECTION REQUEST by Art11, neither establishes ATR exception",
+        "A_C": "A no ATR for <6mo vs C all new ATR: contrary modal claims; mandatory application negates A but does not prove unqualified C",
+        "B_C": "B no ATR under100kW vs C all new ATR: power is irrelevant to application, yet ATR document requirement must be independently established"
+      },
+      "negative_counterexample": "Existing approved connection or certificate update is distinct from issuing a new ATR; absence of duration/power exception does not prove an unconditional ATR in every new topology.",
+      "source_not_barem": true,
+      "independent_certified_reviewer": false,
+      "original_imported_keys_UNCHANGED": true,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0341",
+      "grade_routes": [
+        "G1-NOR-027"
+      ],
+      "original_user_XLSX": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "34",
+        "original_stem": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+        "choices": {
+          "A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+          "B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+          "C": "conductoarele de alimentare să fie legate la duliile filetate"
+        },
+        "imported_keys_UNCHANGED": {
+          "G1-NOR-027": "B"
+        }
+      },
+      "preexisting_V285_source_research_disposition": "QUALIFIED_MODEL_OR_HISTORIC",
+      "technical_research_update": {
+        "classification": "SOURCE_A_EXACT_HISTORIC_PE102_GRADE_I_I7_TECHNICAL_BRIDGE",
+        "candidate": "A",
+        "original_option_unique_true_under_intended_definition": true,
+        "positive": "PE102/1986 §4.6.3 exprimă IDENTIC opțiunea A: «conductoarele de alimentare să fie legate la șuruburile de contact», plecările la dulii filetate. În I7 PDF dat de utilizator §5.3.4.3.1.2, pagina 67, alimentarea de fază la «contactul central al soclului» pentru siguranțe cu filet.",
+        "negative": "B inversează plecările cu alimentarea; C plasează alimentarea la duliile filetate, contrar ambelor reguli. PE102 este marcat NU la Grad I în bibliografia ANRE 2023 (deși este sursa textuală a distractorilor); I7 e relevant grad I, însă «șuruburi» vs «contact central» cere verificare de identitate tehnică înaintea baremului.",
+        "source_records": [
+          {
+            "publisher": "PE102/1986 copie terță",
+            "url": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+            "locator": "PDF indexed page 11 (index 10) §4.6.2–4.6.4, text literal",
+            "source_mode": "PUBLIC_PDF_TEXT_REOPENED_WEB_SCREENSHOT_ATTEMPT_CACHE_MISS"
+          },
+          {
+            "publisher": "I7 2011+2023 pdf uploaded by user",
+            "url": "USER_I7_SHA256_4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+            "locator": "PDF page 67, §5.3.4.3.1.1–3; source exact focused original",
+            "source_mode": "USER_LIBRARY_PDF_PARSED_PAGE_REOPENED_NOW"
+          },
+          {
+            "publisher": "ANRE",
+            "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+            "locator": "2023 official bibliography Grade I vs Grade II document (PE102 marked NU/DA in prior audited copy)",
+            "source_mode": "PREVIOUSLY_REVIEWED_PDF_GRADE_SCOPE_NOT_INDEPENDENTLY_RECONFIRMED_2026"
+          }
+        ],
+        "review_constraint": "A are literatură de specialitate extrem de directă, dar nu folosi PE102 singur drept normă aplicabilă gradului I. Nu deduce automat echivalența precisă dintre „șuruburile de contact” şi „contactul central” fără confirmarea aparatului real.",
+        "proposed_handling": "PRELIMINARY_A_EXACT_PE102_AND_I7_CORROBORATION_GRADE_I_SOURCE_QUALIFIER",
+        "needs_user_decision": false
+      },
+      "question_to_original_A_B_C": {
+        "A": {
+          "original_text": "conductoarele de alimentare să fie legate la şuruburile de contact",
+          "source_reason": "PE102/1986 §4.6.3 places supply on contact screws; I7 §5.3.4.3.1.2 separately instructs phase feed to central contact of threaded fuse base"
+        },
+        "B": {
+          "original_text": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+          "source_reason": "PE102 says load outgoing to threaded sockets, not contact screws; not same as incoming supply"
+        },
+        "C": {
+          "original_text": "conductoarele de alimentare să fie legate la duliile filetate",
+          "source_reason": "Threaded socket is a wrong live-side feed under cited specific fuse installation rule"
+        }
+      },
+      "all_three_original_pair_checks": {
+        "A_B": "A incoming wires to contact screws vs B outgoing wires to contact screws: mutually wrong location/supply direction under PE102",
+        "A_C": "A incoming screws vs C incoming threaded socket: physically different live-contact locations; source points to A",
+        "B_C": "B outgoing contact screws vs C incoming threaded socket reverse both required terminations; PE102 states opposite"
+      },
+      "negative_counterexample": "Counterexample: phase connected to exposed threaded sleeve rather than center contact violates the safety rule; exact screw identity needs applicable source diagram.",
+      "source_not_barem": true,
+      "independent_certified_reviewer": false,
+      "original_imported_keys_UNCHANGED": true,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0367",
+      "grade_routes": [
+        "G1-NOR-053"
+      ],
+      "original_user_XLSX": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "60",
+        "original_stem": "Branşamentul electric este partea din instalaţia de distribuţie a energiei electrice cuprinsă între linia electrică şi:",
+        "choices": {
+          "A": "firida de branşament",
+          "B": "coloana electrică",
+          "C": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului"
+        },
+        "imported_keys_UNCHANGED": {
+          "G1-NOR-053": "A"
+        }
+      },
+      "preexisting_V285_source_research_disposition": "QUALIFIED_MODEL_OR_HISTORIC",
+      "technical_research_update": {
+        "classification": "SOURCE_C_BRANSAMENT_BOUNDARY_WITH_OUTPUT_TERMINAL_QUALIFIER",
+        "candidate": "C",
+        "original_option_unique_true_under_intended_definition": true,
+        "positive": "PE155/1992 §1.2.1 definește branșament drept legătura de la linia electrică până la instalația interioară a abonatului; observația fixează delimitarea la bornele DE IEȘIRE din contor. §1.2.2 spune că până la firidă este numai RACORD; §1.2.7 coloana doar componentă. C numește punctul de delimitare și contorul, fără precizarea «de ieșire».",
+        "negative": "A este terminarea RACORDULUI, nu întregul branșament; B doar numește o componentă, nu limita completă. C omite calificarea «de ieșire» și poate fi prea vag dacă se confundă bornele de intrare cu cele de ieșire.",
+        "source_records": [
+          {
+            "publisher": "PE155/1992 copie terță",
+            "url": "https://www.baluna.ro/wp-content/uploads/2018/02/pe_155_92.pdf",
+            "locator": "§1.2.1–1.2.7 inclusiv observația bornele de ieșire ale contorului",
+            "source_mode": "PUBLIC_PDF_TEXT_REOPENED_WEB_SCREENSHOT_ATTEMPT_CACHE_MISS"
+          },
+          {
+            "publisher": "ANRE",
+            "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+            "locator": "2023 official bibliography item29 PE155 Grade I=DA",
+            "source_mode": "2023_SOURCE_SCOPE_PREVIOUSLY_REVIEWED"
+          }
+        ],
+        "review_constraint": "A CEA MAI BUNĂ variantă C este susținută pentru punctul de delimitare istoric; nu atribui automat toate branșamentele contemporane aceluiași punct fără verificarea actelor de racordare actuale. Termenul «bornele contorului» este mai general decât exact «de ieșire».",
+        "proposed_handling": "PRELIMINARY_C_PREFERRED_SOURCE_WITH_QUALIFIER_OMISSION_NOT_FATAL_TO_RELATIVE_A_B_C",
+        "needs_user_decision": false
+      },
+      "question_to_original_A_B_C": {
+        "A": {
+          "original_text": "firida de branşament",
+          "source_reason": "From line to branch entry box (firidă) describes racord, not complete branșament"
+        },
+        "B": {
+          "original_text": "coloana electrică",
+          "source_reason": "Electric column is a component but not the normative full boundary"
+        },
+        "C": {
+          "original_text": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului",
+          "source_reason": "Closest to boundary at meter, but original says 'bornele contorului' and primary historical source specifies meter OUTPUT terminals"
+        }
+      },
+      "all_three_original_pair_checks": {
+        "A_B": "A branch cabinet marks end of RACORD, B electric column also a subcomponent; neither total BRANȘAMENT boundary",
+        "A_C": "A firida vs C meter boundary: PE155 definition continues beyond firida; C closest but output-terminal qualifier missing",
+        "B_C": "B column vs C meter output terminals: PE155's boundary definition better matches C; check physical allocation of column"
+      },
+      "negative_counterexample": "Input terminal and output terminal are different ownership boundaries; naming generic meter terminals conflates them.",
+      "source_not_barem": true,
+      "independent_certified_reviewer": false,
+      "original_imported_keys_UNCHANGED": true,
+      "learner_approved": false
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grade_routes": [
+        "G1-NOR-072"
+      ],
+      "original_user_XLSX": {
+        "workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+        "source_row": "79",
+        "original_stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+        "choices": {
+          "stem": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+          "A": "nu este obligatoriu să poată fi deconectat individual",
+          "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+          "C": "trebuie să poată fi deconectat individual"
+        },
+        "imported_keys_UNCHANGED": {
+          "G1-NOR-072": "B"
+        }
+      },
+      "preexisting_V285_source_research_disposition": "QUALIFIED_MODEL_OR_HISTORIC",
+      "technical_research_update": {
+        "classification": "DIRECT_ORIGINAL_SOURCE_SUPPORT_C_NOT_APP_REWRITTEN_B",
+        "candidate": "C",
+        "original_option_unique_true_under_intended_definition": true,
+        "positive": "I7 original din Library §5.5.2.3 p.72 spune explicit că FIECARE conductor conectat la bara principală trebuie să poată fi DECONTECTAT INDIVIDUAL. Aceasta este exact condiția C din Excel original.",
+        "negative": "A «nu este obligatoriu» neagă cerința; B «FĂRĂ utilizarea unei scule» neagă cerința «NUMAI prin intermediul unei scule». C este o afirmație necesară, literalmente adevărată, chiar dacă norma are o a doua condiție; nu este nevoie să includă toate condițiile dacă nu spune «numai» sau «condiția completă». ATENȚIE: în aplicația rescrisă B a fost schimbată în «NUMAI prin intermediul unei scule», făcând și B și C adevărate, o nouă ambiguitate creată prin rescriere.",
+        "source_records": [
+          {
+            "publisher": "I7 2011+2023 pdf uploaded by user",
+            "url": "USER_I7_SHA256_4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+            "locator": "PDF p.72 §5.5.2.2, focus §5.5.2.3, next §5.5.3.1, reopened directly against user Library PDF",
+            "source_mode": "USER_LIBRARY_ORIGINAL_PDF_EXACT_PAGE_TEXT_READ_NOW"
+          }
+        ],
+        "review_constraint": "Original source-valid C is a logically unambiguous affirmative requirement among three original alternatives; do not classify C as wrong only because it does not exhaust the conjunction. App B true creates TWO true edited options; do not mark Trainer ready until fidelity issue fixed by approved process.",
+        "proposed_handling": "SOURCE_ORIGINAL_SINGLE_TRUE_C_RESEARCH_LOGIC_RESOLVED__APP_REWRITE_CRITICAL",
+        "needs_user_decision": false
+      },
+      "question_to_original_A_B_C": {
+        "A": {
+          "original_text": "nu este obligatoriu să poată fi deconectat individual",
+          "source_reason": "Original denial of individual disconnectability contradicts I7 §5.5.2.3"
+        },
+        "B": {
+          "original_text": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+          "source_reason": "Original WITHOUT tool contradicts I7 ONLY WITH tool; app rewrote B to true 'with tool'"
+        },
+        "C": {
+          "original_text": "trebuie să poată fi deconectat individual",
+          "source_reason": "Original individually disconnectable is explicitly a necessary condition, but omits extra tool-only requirement"
+        }
+      },
+      "all_three_original_pair_checks": {
+        "A_B": "A individual disconnectability not obligatory vs B WITHOUT tool: A denies first clause, B violates second clause, both false",
+        "A_C": "A denies individual vs C requires individual: opposite and I7 first clause selects C",
+        "B_C": "B without tool violates I7 second clause, C true first clause but omits second; in app rewritten B true and overlaps C"
+      },
+      "negative_counterexample": "A system where removal requires no tool may meet individual disconnectability but violates additional normative requirement.",
+      "source_not_barem": true,
+      "independent_certified_reviewer": false,
+      "original_imported_keys_UNCHANGED": true,
+      "learner_approved": false
+    }
+  ],
+  "source_visual_caveat": "External PDF screenshots were attempted using web screenshot, but returned Cache miss. Source text was read in PDF extraction; do not claim visual PDF verification. User-provided I7 PDF was re-read directly on exact pages.",
+  "editorial_rule": "The question can be marked science-defective in research without rewriting or replacing original A/B/C or switching answer grading.",
+  "copyright": "Reference external sources by URL; do not replicate their full protected text.",
+  "release_gate": {
+    "original_XLSX_changed": false,
+    "canonical_keys_changed": false,
+    "HTML_APK_changed": false,
+    "merge": false,
+    "official_scoring_key_authenticated": false,
+    "independent_qualified_QA": false
+  }
+}

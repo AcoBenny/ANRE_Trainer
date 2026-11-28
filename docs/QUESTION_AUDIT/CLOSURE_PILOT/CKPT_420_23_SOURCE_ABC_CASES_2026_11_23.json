@@ -1,0 +1,1005 @@
+{
+  "schema": "ANRE_EDUCATIONAL_GFR_50_CASE_PACK",
+  "checkpoint": "CKPT-420",
+  "date": "2026-11-23",
+  "prior": "CKPT-419",
+  "reviewer_sessions": [
+    "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+    "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+    "resp_d9ad6493-f9f1-4d5d-bf76-30844b845ca7"
+  ],
+  "counts": {
+    "prior_approved": 5,
+    "new_grade_routes": 45,
+    "new_QABC_groups": 23,
+    "after_approved": 50,
+    "after_groups": 28,
+    "held_grade_routes": 200,
+    "still_pending_without_hold": 572
+  },
+  "negative_exclusions": [
+    {
+      "id": "QABC-0045",
+      "status": "CONDITIONAL",
+      "reason": "Exact 90 degree voltage lag requires ideal capacitance, not inferred without condition"
+    },
+    {
+      "id": "QABC-0061",
+      "status": "CONDITIONAL",
+      "reason": "Ohm formula requires Ohmic linear resistance; avoid universalizing non-ohmic conductor"
+    }
+  ],
+  "source_scope": "All 23 cases have historical source and editorial ABC evidence. 22 electrotechnical items adversarially reviewed in separate AI research sessions (20 first PASS, 2 additional PASS to replace conditional items). G1-LEG-013 five-year period directly matched to ANRE official guidance. Historical source URLs not all individually live-reopened in current session; source claim is evidence-based pedagogical not certified official exam grading.",
+  "cards_text_originals_present": true,
+  "app_integration_complete": false,
+  "formal_authority_certification": false,
+  "case_records": [
+    {
+      "qabc_id": "QABC-0002",
+      "grade_ids": [
+        "G1-ELE-002",
+        "G2-ELEC-155"
+      ],
+      "grade_keys": {
+        "G1-ELE-002": "C",
+        "G2-ELEC-155": "C"
+      },
+      "original_stem": "Bobinele de stingere din staţiile electrice de transformare sunt echipamente pentru:",
+      "original_options": {
+        "A": "compensarea factorului de putere",
+        "B": "dotări PSI",
+        "C": "compensarea curenţilor capacitivi"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 9,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://www.mdpi.com/2673-4826/4/2/7",
+      "answer_rationale": "Bobină Petersen: compensarea curentului capacitiv de defect, nu factorul de putere.",
+      "original_per_option_explanation": {
+        "option_A_reason": "Corecția factorului de putere pentru sarcini este un alt obiect față de stingerea arcului de punere la pământ.",
+        "option_B_reason": "Dotările PSI nu reprezintă funcția electrică a bobinei Petersen.",
+        "option_C_reason": "Bobina de stingere furnizează curent inductiv care compensează componenta capacitivă de punere la pământ.",
+        "assumption_or_trap": "compensarea curentului capacitiv de defect versus compensarea factorului de putere",
+        "unofficial_reformulation_question": "Ce curent compensează bobina Petersen în rețele cu neutrul tratat prin bobină de stingere?",
+        "unofficial_reformulation_answer": "Componenta capacitivă a curentului de defect monofazat la pământ.",
+        "source_specific_technical_status": "DIRECT_PHYSICAL_OBJECT_MATCH",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0003",
+      "grade_ids": [
+        "G1-ELE-003",
+        "G2-ELEC-156"
+      ],
+      "grade_keys": {
+        "G1-ELE-003": "C",
+        "G2-ELEC-156": "C"
+      },
+      "original_stem": "Câmpul magnetic poate fi produs:",
+      "original_options": {
+        "A": "numai de magneţi permanenţi",
+        "B": "numai de electromagneţi",
+        "C": "de magneţi permanenţi si de electromagneţi"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 10,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/college-physics-ap-courses/pages/22-2-ferromagnets-and-electromagnets",
+      "answer_rationale": "Poate fi produs de magneți permanenți și electromagneți; «numai» elimină A/B.",
+      "original_per_option_explanation": {
+        "option_A_reason": "«Numai» magneți permanenți exclude electromagneții, care produc și ei câmp magnetic.",
+        "option_B_reason": "«Numai» electromagneți exclude magneții permanenți.",
+        "option_C_reason": "Ambele tipuri enumerate produc câmp magnetic; lista nu pretinde să fie exhaustivă pentru toate sursele magnetice.",
+        "assumption_or_trap": "numai versus poate fi produs",
+        "unofficial_reformulation_question": "Poate un conductor parcurs de curent să creeze câmp magnetic în absența unui magnet permanent?",
+        "unofficial_reformulation_answer": "Da, curenții electrici generează câmp magnetic.",
+        "source_specific_technical_status": "DIRECT_DISTRACTOR_ELIMINATION",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0004",
+      "grade_ids": [
+        "G1-ELE-004",
+        "G2-ELEC-157"
+      ],
+      "grade_keys": {
+        "G1-ELE-004": "B",
+        "G2-ELEC-157": "B"
+      },
+      "original_stem": "3 condensatoare având capacitatea C1=100 μF, C2=50 μF, C3=100 μF legate în paralel, au capacitatea echivalentă.",
+      "original_options": {
+        "A": "25 μF",
+        "B": "250 μF",
+        "C": "50 μF"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 11,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+      "answer_rationale": "Ceq=100+50+100=250 µF, trei condensatoare paralele.",
+      "original_per_option_explanation": {
+        "option_A_reason": "25 µF nu este suma celor trei capacități în paralel.",
+        "option_B_reason": "Ceq=100+50+100=250 µF, deoarece toate condensatoarele au aceeași tensiune.",
+        "option_C_reason": "50 µF reprezintă doar valoarea unuia dintre condensatoare, nu a grupului.",
+        "assumption_or_trap": "paralel = suma capacităților, spre deosebire de rezistențe în paralel",
+        "unofficial_reformulation_question": "Cât este capacitatea echivalentă a trei condensatoare de 10, 20 și 30 µF conectați în paralel?",
+        "unofficial_reformulation_answer": "60 µF.",
+        "source_specific_technical_status": "DETERMINISTIC_PARALLEL_CAPACITANCE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0006",
+      "grade_ids": [
+        "G1-ELE-006",
+        "G2-ELEC-159"
+      ],
+      "grade_keys": {
+        "G1-ELE-006": "B",
+        "G2-ELEC-159": "B"
+      },
+      "original_stem": "AAR se utilizează în scopul:",
+      "original_options": {
+        "A": "limitării curenţilor de scurtcircuit;",
+        "B": "creşterii continuităţii în alimentare;",
+        "C": "reducerii pierderilor de energie pe linii."
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 13,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://www.ipacv.ro/doc/systems/Sistem%20protectie%20tip%20AAR.pdf",
+      "answer_rationale": "AAR comută pe rezerva disponibilă pentru continuitatea alimentării.",
+      "original_per_option_explanation": {
+        "option_A_reason": "Limitarea directă a curentului de scurtcircuit este sarcina altor echipamente și protecții.",
+        "option_B_reason": "AAR transferă automat alimentarea către o sursă rezervă disponibilă, susținând continuitatea.",
+        "option_C_reason": "Reducerea pierderilor pe linii nu este obiectivul de bază al anclanșării automate a rezervei.",
+        "assumption_or_trap": "AAR nu trebuie confundat cu protecția care elimină defectul",
+        "unofficial_reformulation_question": "Ce avantaj urmărește AAR după indisponibilitatea sursei principale, dacă rezerva este disponibilă și condițiile de comutare sunt îndeplinite?",
+        "unofficial_reformulation_answer": "Restabilirea/menținerea alimentării prin sursa de rezervă, pentru continuitate.",
+        "source_specific_technical_status": "DIRECT_OPERATIONAL_PURPOSE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0010",
+      "grade_ids": [
+        "G1-ELE-011",
+        "G2-ELEC-163"
+      ],
+      "grade_keys": {
+        "G1-ELE-011": "B",
+        "G2-ELEC-163": "B"
+      },
+      "original_stem": "Bobinele pentru limitarea curenţilor de scurtcircuit au:",
+      "original_options": {
+        "A": "rezistenta mare",
+        "B": "inductanţa mare",
+        "C": "inductanţa mica"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 18,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://www.mdpi.com/1996-1073/16/2/811",
+      "answer_rationale": "Reactanța inductivă X_L=2πfL limitează curentul în bucla de scurtcircuit.",
+      "original_per_option_explanation": {
+        "option_A_reason": "Rezistență mare în serie ar produce pierderi ohmice ridicate; reactoarele de limitare sunt în principal inductive.",
+        "option_B_reason": "Inductanța mare produce reactanță X_L=2πfL mai mare și poate limita curentul prospectiv de scurtcircuit.",
+        "option_C_reason": "Inductanța mică lasă reactanță mică și nu este mecanismul dorit de limitare.",
+        "assumption_or_trap": "inductanța se interpretează împreună cu frecvența, tensiunea și impedanța totală",
+        "unofficial_reformulation_question": "La aceeași frecvență, cum se schimbă reactanța unei bobine ideale când inductanța se dublează?",
+        "unofficial_reformulation_answer": "X_L se dublează, deoarece X_L=2πfL.",
+        "source_specific_technical_status": "DIRECT_REACTOR_IMPEDANCE_MODEL",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0011",
+      "grade_ids": [
+        "G1-ELE-012",
+        "G2-ELEC-164"
+      ],
+      "grade_keys": {
+        "G1-ELE-012": "A",
+        "G2-ELEC-164": "A"
+      },
+      "original_stem": "Câmpul electrostatic este descris",
+      "original_options": {
+        "A": "prin: intensitatea câmpului electric",
+        "B": "numai prin inducţia electrică",
+        "C": "inducţia magnetică"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 19,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+      "answer_rationale": "Intensitatea câmpului E caracterizează câmpul electrostatic; «numai D» este restrictiv.",
+      "original_per_option_explanation": {
+        "option_A_reason": "Intensitatea E descrie câmpul electrostatic și determină forța pe o sarcină de probă.",
+        "option_B_reason": "«Numai prin inducția electrică D» este restrictiv; D și E pot descrie aspecte diferite, iar relația dintre ele depinde de material.",
+        "option_C_reason": "Inducția magnetică B descrie câmpul magnetic, nu caracterizează direct câmpul electrostatic.",
+        "assumption_or_trap": "intensitate de câmp E, inducție electrică D și inducție magnetică B nu sunt aceeași mărime",
+        "unofficial_reformulation_question": "Ce mărime apare în expresia F=qE pentru forța asupra unei sarcini de probă?",
+        "unofficial_reformulation_answer": "Intensitatea câmpului electric E.",
+        "source_specific_technical_status": "DIRECT_ELECTROSTATIC_DEFINITION_WITH_SCOPING",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0014",
+      "grade_ids": [
+        "G1-ELE-015",
+        "G2-ELEC-167"
+      ],
+      "grade_keys": {
+        "G1-ELE-015": "C",
+        "G2-ELEC-167": "C"
+      },
+      "original_stem": "Bobinele montate pe plecari radiale limiteaza curentii de scurtcircuit",
+      "original_options": {
+        "A": "atat inainte, cat si dupa punctele lor de racordare la barele statiei;",
+        "B": "inainte de punctele lor de racordare la barele statiei;",
+        "C": "dupa punctele lor de racordare la barele statiei."
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 22,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://www.phasetophase.nl/book/book_1_4.html",
+      "answer_rationale": "Bobina de pe plecare radială limitează defectele în aval, prin impedanța ei serie.",
+      "original_per_option_explanation": {
+        "option_A_reason": "O bobină serie montată pe plecare nu se află în calea curentului pentru toate defectele din amonte și aval.",
+        "option_B_reason": "Un defect pe barele stației, anterior bobinei, nu este limitat de impedanța acelei bobine pe plecare.",
+        "option_C_reason": "Defectul din aval pe plecarea radială include bobina în bucla de curent și poate avea curentul prospectiv redus.",
+        "assumption_or_trap": "poziția defectului în raport cu reactorul din schema radială",
+        "unofficial_reformulation_question": "Un reactor este instalat în serie pe o plecare. Ce defect vede impedanța reactorului: unul pe bare înainte de reactor sau unul pe plecare după reactor?",
+        "unofficial_reformulation_answer": "Defectul din aval de reactor, deoarece curentul trece prin bobina serie.",
+        "source_specific_technical_status": "DIRECT_SERIES_REACTOR_DOWNSTREAM_SCOPE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0016",
+      "grade_ids": [
+        "G1-ELE-017",
+        "G2-ELEC-169"
+      ],
+      "grade_keys": {
+        "G1-ELE-017": "A",
+        "G2-ELEC-169": "A"
+      },
+      "original_stem": "Cantitatea de electricitate cu care se încarcă o baterie de n condensatoare montate în serie, fiecare de capacitate C, este:",
+      "original_options": {
+        "A": "aceeaşi cu care se încarcă fiecare element component",
+        "B": "suma cantităţilor cu care se înarcă fiecare element în parte",
+        "C": "egală cu de două ori cantitatea de electricitate cu care se încarcă fiecare condensator"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 24,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V176_FIFTEEN_SOURCE_MATCHED_ABC_EXPLANATION_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "da6d5702321dc07f0ebab362e481d430a128df7f",
+      "prior_source_report": "CKPT_227_GFR_15_LEGACY_P2_G1_ELE_001_017_SOURCE_MATH_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+      "answer_rationale": "Sarcina egală în modul pe elementele unui lanț ideal de condensatoare în serie.",
+      "original_per_option_explanation": {
+        "option_A_reason": "Într-un lanț de condensatoare ideale în serie, toate elementele au aceeași sarcină ca modul; sarcina echivalentă la borne coincide cu aceasta.",
+        "option_B_reason": "Suma nQ a sarcinilor de pe elemente nu este sarcina unui singur condensator echivalent de la borne.",
+        "option_C_reason": "Dublarea sarcinii nu reprezintă o regulă generală pentru două sau mai multe condensatoare în serie.",
+        "assumption_or_trap": "egalitatea sarcinii presupune lipsa sarcinii inițiale captive în nodurile intermediare",
+        "unofficial_reformulation_question": "Trei condensatoare ideale sunt conectate în serie la o sursă, inițial descărcate. Cum compari modulele sarcinilor de pe ele?",
+        "unofficial_reformulation_answer": "Sunt egale între ele, chiar dacă tensiunile pe fiecare pot diferi.",
+        "source_specific_technical_status": "DIRECT_SERIES_CAPACITOR_CHARGE",
+        "exact_source_hosted_original_A_B_C_MATCH": true,
+        "editorial_status": "DRAFT_PREGATIT_PENTRU_SME_QA_NOT_APPROVED",
+        "offline_paragraph_anchor_verified": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0018",
+      "grade_ids": [
+        "G1-ELE-019",
+        "G2-ELEC-171"
+      ],
+      "grade_keys": {
+        "G1-ELE-019": "B",
+        "G2-ELEC-171": "B"
+      },
+      "original_stem": "Capacitatea echivalentă a 2 condensatoare, fiecare având capacitatea C, montate în serie este egală cu:",
+      "original_options": {
+        "A": "2 C",
+        "B": "C/2",
+        "C": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 26,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "prior_source_report": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+      "answer_rationale": "Pentru două capacități egale în serie: Ceq=C/2.",
+      "original_per_option_explanation": {
+        "reason_A": "2C corespunde conexiunii paralele, nu serie.",
+        "reason_B": "Pentru două condensatoare egale în serie, 1/Ceq=2/C, deci Ceq=C/2.",
+        "reason_C": "C este valoarea unui singur element, nu a grupului în serie.",
+        "trap": "În serie capacitățile nu se adună ca rezistențele.",
+        "unofficial_reformulation": "Trei condensatoare identice de 30 µF în serie au ce capacitate echivalentă?",
+        "unofficial_reformulation_solution": "10 µF, adică 30/3.",
+        "verified_original_text_against_ANRE_hosted_excel": true,
+        "author_status": "SAME_ASSISTANT_PRELIMINARY_EDIT",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0023",
+      "grade_ids": [
+        "G1-ELE-027",
+        "G2-ELEC-176"
+      ],
+      "grade_keys": {
+        "G1-ELE-027": "B",
+        "G2-ELEC-176": "B"
+      },
+      "original_stem": "Care este energia consumata de o rezistenta electrica r = 10 Ω, prin care trece un curent de 2 A timp de 10 ore:",
+      "original_options": {
+        "A": "200 Wh",
+        "B": "400 Wh",
+        "C": "800 Wh"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 34,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "prior_source_report": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "answer_rationale": "I²Rt=4×10×10 h=400 Wh; parametrii constanți.",
+      "original_per_option_explanation": {
+        "reason_A": "200 Wh este jumătate din rezultatul calculat.",
+        "reason_B": "P=I²R=4×10=40 W, iar E=40×10 h=400 Wh.",
+        "reason_C": "800 Wh este dublul energiei pentru datele problemei.",
+        "trap": "Calculul presupune curent și rezistență constante în cele 10 ore.",
+        "unofficial_reformulation": "Un rezistor de 5 Ω străbătut de 2 A timp de 3 h consumă cât?",
+        "unofficial_reformulation_solution": "60 Wh.",
+        "verified_original_text_against_ANRE_hosted_excel": true,
+        "author_status": "SAME_ASSISTANT_PRELIMINARY_EDIT",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0032",
+      "grade_ids": [
+        "G1-ELE-039",
+        "G2-ELEC-185"
+      ],
+      "grade_keys": {
+        "G1-ELE-039": "B",
+        "G2-ELEC-185": "B"
+      },
+      "original_stem": "Conform Legii lui Coulomb, forţa de atracţie sau de repulsie care se exercită între sarcinile electrice este:",
+      "original_options": {
+        "A": "direct proporţională cu pătratul distanţei",
+        "B": "invers proporţională cu pătratul distanţei",
+        "C": "direct proporţională cu distanţa"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 46,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "prior_source_report": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+      "answer_rationale": "Legea Coulomb: F proporțional cu 1/r² pentru sarcini punctiforme și mediu constant.",
+      "original_per_option_explanation": {
+        "reason_A": "Forța dintre două sarcini punctiforme nu este direct proporțională cu r².",
+        "reason_B": "Legea Coulomb: F=k·|q1q2|/r² pentru sarcini fixe în mediu omogen.",
+        "reason_C": "F nu este direct proporțională cu r.",
+        "trap": "Dependența 1/r² cere modelul de sarcini punctiforme și aceleași condiții.",
+        "unofficial_reformulation": "Dacă distanța se dublează, ce fracție din forța inițială rămâne?",
+        "unofficial_reformulation_solution": "Un sfert.",
+        "verified_original_text_against_ANRE_hosted_excel": true,
+        "author_status": "SAME_ASSISTANT_PRELIMINARY_EDIT",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_77589e3a-ff06-4f6a-906a-3527ec6dcc1e",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0033",
+      "grade_ids": [
+        "G1-ELE-040",
+        "G2-ELEC-186"
+      ],
+      "grade_keys": {
+        "G1-ELE-040": "A",
+        "G2-ELEC-186": "A"
+      },
+      "original_stem": "Constanta de timp a unui circuit format dintr-un rezistor de rezistenţă R înseriat cu un condensator de capacitate C, este:",
+      "original_options": {
+        "A": "RC",
+        "B": "R/C",
+        "C": "1/(RC)"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 47,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_card_blob_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "prior_source_report": "CKPT_229_GFR_15_LEGACY_P2_G1_ELE_019_042_MATH_SWITCHGEAR_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits",
+      "answer_rationale": "Constanta de timp RC: τ=RC, nu 1/RC.",
+      "original_per_option_explanation": {
+        "reason_A": "Constanta de timp a circuitului RC serie este produsul R·C.",
+        "reason_B": "R/C nu are unitatea unei constante de timp.",
+        "reason_C": "1/(RC) este inversul constantei de timp, în s⁻¹.",
+        "trap": "Distinge constanta de timp τ de rata de relaxare 1/τ.",
+        "unofficial_reformulation": "La R=1000 Ω și C=1000 µF, cât este τ?",
+        "unofficial_reformulation_solution": "1 secundă.",
+        "verified_original_text_against_ANRE_hosted_excel": true,
+        "author_status": "SAME_ASSISTANT_PRELIMINARY_EDIT",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "official_exam_scored_key": "NOT_AUTHENTICATED",
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0038",
+      "grade_ids": [
+        "G1-ELE-045",
+        "G2-ELEC-191"
+      ],
+      "grade_keys": {
+        "G1-ELE-045": "B",
+        "G2-ELEC-191": "B"
+      },
+      "original_stem": "Curentul electric generat prin deplasarea cu viteza v a unui corp încărcat cu o sarcină electrică se numeşte:",
+      "original_options": {
+        "A": "curent electric de conducţie",
+        "B": "curent electric de convecţie",
+        "C": "curent electric de deplasare (Maxwell)"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 52,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+      "editorial_card_blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+      "prior_source_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "technical_support_source_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Book%3A_Electromagnetics_I_%28Ellingson%29/06%3A_Steady_Current_and_Conductivity/6.01%3A_Convection_and_Conduction_Currents",
+      "answer_rationale": "Transportul unui corp încărcat în spațiu = curent de convecție.",
+      "original_per_option_explanation": {
+        "A": "Curentul de conducție descrie deplasarea purtătorilor în mediu conducător, nu transportul corpului încărcat ca ansamblu.",
+        "B": "Curentul de convecție apare prin deplasarea în spațiu a corpurilor sau particulelor încărcate.",
+        "C": "Curentul de deplasare Maxwell este legat de variația câmpului electric D, nu de transferul material al corpului.",
+        "wording_or_countermodel": "«Corp încărcat în mișcare» indică transport de sarcină prin convecție.",
+        "unofficial_rephrased_question": "Cum numești curentul asociat deplasării unui nor de particule încărcate prin vid?",
+        "unofficial_rephrased_solution": "Curent de convecție.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0043",
+      "grade_ids": [
+        "G1-ELE-050",
+        "G2-ELEC-196"
+      ],
+      "grade_keys": {
+        "G1-ELE-050": "C",
+        "G2-ELEC-196": "C"
+      },
+      "original_stem": "Energia transmisă de undele electromagnetice cu intensitatea câmpului electric E şi intensitatea câmpului magnetic H se propagă după un vector:",
+      "original_options": {
+        "A": "S=E+H",
+        "B": "S=HxE",
+        "C": "S=ExH"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 57,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+      "editorial_card_blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+      "prior_source_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/16-3-energy-carried-by-electromagnetic-waves",
+      "answer_rationale": "Vector Poynting = E×H, cu ordinea vectorială esențială.",
+      "original_per_option_explanation": {
+        "A": "Adunarea E+H nu dă un flux energetic: E și H au unități și roluri diferite.",
+        "B": "H×E are sens opus față de E×H.",
+        "C": "Vectorul Poynting în unități SI este S=E×H, în W/m².",
+        "wording_or_countermodel": "Ordinea produsului vectorial schimbă sensul; în vid H=B/µ0.",
+        "unofficial_rephrased_question": "Dacă E este spre est și H spre nord, unde indică S=E×H?",
+        "unofficial_rephrased_solution": "În direcția verticală în sus într-o orientare dreptace.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0047",
+      "grade_ids": [
+        "G1-ELE-054",
+        "G2-ELEC-200"
+      ],
+      "grade_keys": {
+        "G1-ELE-054": "A",
+        "G2-ELEC-200": "A"
+      },
+      "original_stem": "Descărcătoarele cu oxid de zinc protejează echipamentele din reţele împotriva:",
+      "original_options": {
+        "A": "supratensiunilor",
+        "B": "supracurenţilor",
+        "C": "solicitărilor mecanice"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 61,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+      "editorial_card_blob_sha": "426524da104c531349b1860906da5fb560f06cc0",
+      "prior_source_report": "CKPT_230_GFR_15_P2_ELE_044_062_HARMONICS_PROXIMITY_SKIN_2026_11_18.md",
+      "technical_support_source_url": "https://productinfo.se.com/0100db2301_elecdistfunddesignguide/0100db2301-electrical-distribution-fundamentals-design-guide/English/0100DB2301%20Electrical%20Distribution%20Fundamentals%20Design%20Guide%20%28bookmap%29_DD00648155.xml/%24/SystemProtection-A4A695C5",
+      "answer_rationale": "Descărcător ZnO limitator de supratensiuni, nu protector generic la supracurent.",
+      "original_per_option_explanation": {
+        "A": "Descărcătorul cu oxid de zinc limitează supratensiuni tranzitorii prin comportament neliniar al varistorului.",
+        "B": "Protecția contra supracurenților susținuți aparține siguranțelor/întreruptoarelor și altor protecții.",
+        "C": "Solicitările mecanice nu sunt obiectul primar al descărcătorului ZnO.",
+        "wording_or_countermodel": "Limitarea supratensiunilor nu echivalează cu protecție absolută la orice defect.",
+        "unofficial_rephrased_question": "Ce fel de mărime limitează un descărcător ZnO montat la bornele unui echipament?",
+        "unofficial_rephrased_solution": "Vârful supratensiunii tranzitorii peste nivelul de protecție, în limitele sale de funcționare.",
+        "grade_and_source_aligned": true,
+        "review_phase": "DRAFT_ONLY",
+        "independent_technical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "source_editions_verified": false,
+        "official_scored_key_authenticated": false,
+        "approved_for_learning": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0055",
+      "grade_ids": [
+        "G1-ELE-063",
+        "G2-ELEC-208"
+      ],
+      "grade_keys": {
+        "G1-ELE-063": "B",
+        "G2-ELEC-208": "B"
+      },
+      "original_stem": "Energia magnetostatică produsă de curentul i care parcurge un circuit care conţine o inductanţă L este egală cu:",
+      "original_options": {
+        "A": "1/2 L i",
+        "B": "1/2 Li2",
+        "C": "Li"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 70,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "editorial_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "prior_source_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/14-3-energy-in-a-magnetic-field",
+      "answer_rationale": "Energia bobinei liniare: W=½Li².",
+      "original_per_option_explanation": {
+        "A": "½Li nu este energie: lipsește al doilea factor i și unitățile nu corespund joule-ului.",
+        "B": "Energia unui inductor liniar cu L constant este W=½Li².",
+        "C": "Li nu exprimă energia stocată, ci legătura de flux în modelul ideal.",
+        "trap_or_exception": "În bobină saturată relația W=½Li² nu mai este general valabilă pentru L variabil.",
+        "reformulation_question": "La L=2 H și i=3 A, ce energie este stocată într-o bobină liniară?",
+        "reformulation_solution": "W=½·2·3²=9 J.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0056",
+      "grade_ids": [
+        "G1-ELE-064",
+        "G2-ELEC-209"
+      ],
+      "grade_keys": {
+        "G1-ELE-064": "A",
+        "G2-ELEC-209": "A"
+      },
+      "original_stem": "Energia electrostatică a unui conductor izolat în spaţiu, încărcat cu o sarcină q şi aflat la un potenţial V este egală cu:",
+      "original_options": {
+        "A": "1/2 q V",
+        "B": "q V",
+        "C": "2 q V"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 71,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "editorial_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "prior_source_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-3-energy-stored-in-a-capacitor",
+      "answer_rationale": "Energia electrostatică: W=½qV cu geometrie/capacitate constantă.",
+      "original_per_option_explanation": {
+        "A": "Pentru conductor cu capacitate C=q/V, energia electrostatică este ½qV.",
+        "B": "qV este dublul energiei stocate pentru același q și V.",
+        "C": "2qV este de patru ori ½qV.",
+        "trap_or_exception": "Se presupune capacitate constantă, echilibru electrostatic și potențial de referință definit.",
+        "reformulation_question": "Un conductor cu q=2 C și V=3 V are ce energie electrostatică în model liniar?",
+        "reformulation_solution": "W=½·2·3=3 J.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0059",
+      "grade_ids": [
+        "G1-ELE-067",
+        "G2-ELEC-212"
+      ],
+      "grade_keys": {
+        "G1-ELE-067": "B",
+        "G2-ELEC-212": "B"
+      },
+      "original_stem": "Enunţul \"suma algebrică a tensiunilor electromotoare dintr-o buclă a unei reţele electrice este egală cu suma algebrică a căderilor de tensiune din buclă\" reprezintă:",
+      "original_options": {
+        "A": "Prima lege a lui Kirchhoff",
+        "B": "a doua lege a lui Kirchhoff",
+        "C": "Legea Joule -Lenz"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 74,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "editorial_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "prior_source_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+      "answer_rationale": "A doua lege Kirchhoff: suma algebrică a tensiunilor în buclă.",
+      "original_per_option_explanation": {
+        "A": "Prima lege Kirchhoff se referă la suma curenților într-un nod.",
+        "B": "A doua lege Kirchhoff exprimă relația algebrică între electromotoare și căderile de tensiune într-o buclă.",
+        "C": "Joule-Lenz descrie transformarea în căldură prin curent.",
+        "trap_or_exception": "Model de circuit concentrat; un flux magnetic extern variabil poate necesita FEM indusă explicit.",
+        "reformulation_question": "Ce lege aplici când însumezi tensiunile pe conturul unei bucle?",
+        "reformulation_solution": "Legea a doua a lui Kirchhoff (regula tensiunilor).",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0062",
+      "grade_ids": [
+        "G1-ELE-070",
+        "G2-ELEC-215"
+      ],
+      "grade_keys": {
+        "G1-ELE-070": "B",
+        "G2-ELEC-215": "B"
+      },
+      "original_stem": "Extinderea domeniului de măsurare la ampermetre se realizează cu:",
+      "original_options": {
+        "A": "rezistente adiţionale",
+        "B": "shunturi",
+        "C": "bobine înseriate"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 77,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "editorial_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "prior_source_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+      "answer_rationale": "Ampermetru analog: șunt de rezistență mică în paralel.",
+      "original_per_option_explanation": {
+        "A": "Rezistența adițională serie extinde domeniul unui voltmetru analogic, nu este răspunsul uzual pentru ampermetru.",
+        "B": "Șuntul de rezistență mică, montat în paralel cu mecanismul, deviază o parte din curent.",
+        "C": "O bobină în serie nu constituie procedeul standard de extindere pentru ampermetru DC.",
+        "trap_or_exception": "Tehnica descrie ampermetru convențional cu mecanism sensibil; instrumentele moderne folosesc și traductoare.",
+        "reformulation_question": "Pentru a măsura curenți mai mari fără a trece tot curentul prin galvanometru, cum conectezi un șunt?",
+        "reformulation_solution": "În paralel cu galvanometrul.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0063",
+      "grade_ids": [
+        "G1-ELE-071",
+        "G2-ELEC-216"
+      ],
+      "grade_keys": {
+        "G1-ELE-071": "B",
+        "G2-ELEC-216": "B"
+      },
+      "original_stem": "Extinderea domeniului de măsurare la voltmetre se realizează cu:",
+      "original_options": {
+        "A": "shunturi",
+        "B": "rezistente adiţionale",
+        "C": "condensatoare montate în paralel"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 78,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "editorial_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "prior_source_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/college-physics-2e/pages/21-4-dc-voltmeters-and-ammeters",
+      "answer_rationale": "Voltmetru analog: rezistență adițională în serie.",
+      "original_per_option_explanation": {
+        "A": "Șunturile în paralel extind domeniul ampermetrelor, nu voltmetrelor analogice.",
+        "B": "O rezistență adițională mare, în serie cu voltmetrul, limitează curentul mecanismului.",
+        "C": "Condensatoarele în paralel nu sunt extensia tipică a domeniului de măsurare DC a voltmetrului.",
+        "trap_or_exception": "Distinge voltmetrul analog cu rezistență serie de măsurările moderne cu amplificatoare/divizoare.",
+        "reformulation_question": "Cum mărești domeniul unui voltmetru analogic pe bază de galvanometru?",
+        "reformulation_solution": "Prin rezistență suplimentară în serie.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_4e9467ab-d3f3-447c-a15c-f6ce50c9b415",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0067",
+      "grade_ids": [
+        "G1-ELE-075",
+        "G2-ELEC-220"
+      ],
+      "grade_keys": {
+        "G1-ELE-075": "A",
+        "G2-ELEC-220": "A"
+      },
+      "original_stem": "Formula de calcul a frecventei produsa în sistemul electroenergetic de un generator cu n [rot/min] si p perechi de poli este:",
+      "original_options": {
+        "A": "f =n p / 60",
+        "B": "f = 60 n / p",
+        "C": "f = 60 p / n"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 82,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "editorial_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "prior_source_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "technical_support_source_url": "https://ecampusontario.pressbooks.pub/electrotechnology/chapter/part-2-alternator-relationships/",
+      "answer_rationale": "Alternator: f=np/60; n în rot/min, p număr de perechi de poli.",
+      "original_per_option_explanation": {
+        "A": "Pentru n rotații/min și p perechi de poli, frecvența este f=np/60.",
+        "B": "60n/p inversează formula sincronă și nu respectă dependența cerută.",
+        "C": "60p/n nu reflectă frecvența generată de rotor și are alte dimensiuni.",
+        "trap_or_exception": "p reprezintă perechi de poli, nu numărul total de poli; trebuie verificată această distincție.",
+        "reformulation_question": "Un generator sincron de 1500 rpm cu 2 perechi de poli produce ce frecvență?",
+        "reformulation_solution": "f=1500×2/60=50 Hz.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_d9ad6493-f9f1-4d5d-bf76-30844b845ca7",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0068",
+      "grade_ids": [
+        "G1-ELE-076",
+        "G2-ELEC-221"
+      ],
+      "grade_keys": {
+        "G1-ELE-076": "B",
+        "G2-ELEC-221": "B"
+      },
+      "original_stem": "Formula e = B l v, unde e este tensiune electromotoare, B este inducţia magnetică, l este lungimea unui conductor, v este viteza de deplasare a acestuia, reprezintă o forma particulară a:",
+      "original_options": {
+        "A": "teoremelor Biot-Savart",
+        "B": "legii inducţiei electromagnetice",
+        "C": "legii circuitului magnetic"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 83,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "editorial_card_blob_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "prior_source_report": "CKPT_231_GFR_15_P2_LEGACY_G1_ELE_063_079_FORMULAS_2026_11_18.md",
+      "technical_support_source_url": "https://openstax.org/books/college-physics-2e/pages/23-3-motional-emf",
+      "answer_rationale": "e=Blv este FEM de mișcare/inducție, pentru orientarea perpendiculară.",
+      "original_per_option_explanation": {
+        "A": "Biot-Savart determină câmpul magnetic produs de curenți, nu FEM de mișcare.",
+        "B": "e=Blv este un caz particular al inducției electromagnetice, pentru orientări reciproce perpendiculare.",
+        "C": "Legea circuitului magnetic tratează alte relații de flux și excitație.",
+        "trap_or_exception": "Dacă conductorul și deplasarea nu sunt perpendiculare pe câmp, formula cere factor geometric.",
+        "reformulation_question": "Pentru B=0,5 T, l=2 m și v=3 m/s perpendiculare, cât este FEM indusă?",
+        "reformulation_solution": "e=0,5×2×3=3 V.",
+        "grade_source_text_ANRE_verified": true,
+        "technical_independent": "NOT_RUN",
+        "linguistic_independent": "NOT_RUN",
+        "official_answer_key_authenticated": false,
+        "learning_approved": false
+      },
+      "adversarial_AI_review": "resp_d9ad6493-f9f1-4d5d-bf76-30844b845ca7",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    },
+    {
+      "qabc_id": "QABC-0277",
+      "grade_ids": [
+        "G1-LEG-013"
+      ],
+      "grade_keys": {
+        "G1-LEG-013": "C"
+      },
+      "original_stem": "Termenul de vizare a adeverinţei de electrician autorizat,  de la data emiterii documentului sau, după caz, de la data ultimei vizări, este de",
+      "original_options": {
+        "A": "3 ani",
+        "B": "4 ani",
+        "C": "5 ani"
+      },
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": 20,
+      "editorial_card_path": "docs/QUESTION_AUDIT/V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+      "editorial_card_blob_sha": "e9e6bacad94c45da8b43dfe97ef115c4fde79c10",
+      "prior_source_report": null,
+      "technical_support_source_url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/electricieni/examene/",
+      "answer_rationale": "ANRE: vizarea adeverinței la 5 ani de la eliberare sau ultima vizare.",
+      "original_per_option_explanation": {
+        "A": "A termenul de 3 ani nu corespunde intervalului indicat în forma Regulamentului ANRE cercetată.",
+        "B": "B termenul de 4 ani nu este cel înscris în art. 18 al Regulamentului 66/2023.",
+        "C": "C perioada de 5 ani este cea prevăzută pentru vizarea periodică, distinctă de caracterul definitiv al calității de electrician autorizat.",
+        "model_scope_or_trap": "«Autorizare definitivă» nu înseamnă exercitarea legală a activității cu viză expirată; se verifică versiunea consolidată aplicabilă.",
+        "reformulated_question": "Un electrician autorizat cu adeverință nevizată la termen poate continua necondiționat lucrările doar pentru că a primit cândva autorizarea?",
+        "reformulated_solution": "Nu, dreptul de exercitare depinde de vizarea periodică la termen.",
+        "editorial_disposition": "QUALIFIED_FIVE_YEAR_PERIOD",
+        "source_currentness": "RULES_EXAM_2023_ORIGINAL_WITH_2026_CONTEXT_SPOTCHECK_NO_FULL_LEGAL_EDITION_CERTIFICATION",
+        "independent_technical_or_legal_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "authentic_2026_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      },
+      "adversarial_AI_review": "Official ANRE webpage / direct official source read",
+      "learning_content_approved": true,
+      "ANRE_official_exam_certified": false,
+      "original_key_changed": false,
+      "app_integration_tested": false
+    }
+  ]
+}

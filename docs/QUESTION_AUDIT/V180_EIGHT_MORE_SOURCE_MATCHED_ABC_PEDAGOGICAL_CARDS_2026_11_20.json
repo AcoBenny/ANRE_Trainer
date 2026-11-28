@@ -1,0 +1,317 @@
+{
+  "schema": "v180_eight_source_matched_pedagogical_cards",
+  "date": "2026-11-20",
+  "shas": {
+    "history": "da53f84d08f4916d6a915ee810a7734e16b76672",
+    "original_master": "ee2ac5536c78eb06a0461243be34c117e257188f",
+    "official_sample_fidelity": "06b7be03b6bfece9d332f804f1be79e8347711ba"
+  },
+  "counts": {
+    "new_qabc": 8,
+    "grade_id_routes": 16,
+    "ABC_explanations": 24,
+    "reformulations": 8,
+    "approved": 0
+  },
+  "qa": {
+    "original_question_ABC_keys_from_V149_and_ANRE_hosted_source": true,
+    "all_A_B_C_editorials_complete": true,
+    "all_rephrase_solutions": true,
+    "numeric_checks": {
+      "force_inverse": true,
+      "F_negQ": true,
+      "frequency50": true
+    }
+  },
+  "restrictions": "No official ANRE scored key authenticated. Earthing regulation and transformer temporary overload exact source/version still require independent verification. No original choices/keys/app altered.",
+  "cards": [
+    {
+      "unit_id": "QABC-0072",
+      "grade_ids": [
+        "G1-ELE-080",
+        "G2-ELEC-225"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "87",
+        "question": "Forţa electrodinamică exercitată între două conductoare filiforme, paralele, lungi, aflate la distanţa r, străbătute de câte un curent:",
+        "option_A": "este direct proporţională cu distanţa r dintre conductoare",
+        "option_B": "este invers proporţională cu distanţa r dintre conductoare",
+        "option_C": "nu depinde de distanţa r dintre conductoare",
+        "imported_keys_unmodified": "G1-ELE-080=B | G2-ELEC-225=B"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "DIRECT_LONG_PARALLEL_WIRE_FORCE_1_OVER_R",
+        "prior_model_assessment": "For long parallel wires F/ℓ=μ0 I1 I2/(2πr), so B inversely proportional to r. A directly proportional and C independent of r false. Assumes equal fixed currents and separation r, long thin parallel wires in homogeneous nonmagnetic medium; not generic short/angled wires.",
+        "technical_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents"
+      },
+      "card_editorial": {
+        "A": "F nu crește odată cu r.",
+        "B": "F/ℓ=µI1I2/(2πr); B susținut.",
+        "C": "F nu este independentă de r.",
+        "scope_note": "Valabil pentru fire paralele lungi, cu curenți și mediu fixe.",
+        "rephrased_question": "Dublând distanța dintre fire, cât devine F pe unitate de lungime?",
+        "rephrased_answer": "Jumătate."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0073",
+      "grade_ids": [
+        "G1-ELE-081",
+        "G2-ELEC-226"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "88",
+        "question": "Forţa F care se exercită asupra unei sarcini electrice q aflată într-un câmp electric de intensitate E are expresia:",
+        "option_A": "F=E/q",
+        "option_B": "F=qE",
+        "option_C": "F=q/E",
+        "imported_keys_unmodified": "G1-ELE-081=B | G2-ELEC-226=B"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "DIRECT_ELECTRIC_FIELD_FORCE",
+        "prior_model_assessment": "Electric field E defined by F=qE on test charge; B. A E/q and C q/E do not give force dimensions; vector direction for negative q reversed, magnitude |q|E.",
+        "technical_url_reported": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field"
+      },
+      "card_editorial": {
+        "A": "E/q nu are dimensiunea unei forțe.",
+        "B": "F=qE este definiția forței electrice.",
+        "C": "q/E nu are dimensiunea unei forțe.",
+        "scope_note": "La sarcină negativă direcția forței este opusă lui E.",
+        "rephrased_question": "Ce modul are forța pe q=−2 C într-un câmp E=3 N/C?",
+        "rephrased_answer": "6 N."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0074",
+      "grade_ids": [
+        "G1-ELE-082",
+        "G2-ELEC-227"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "89",
+        "question": "Frecvenţa unei mărimi periodice este inversul:",
+        "option_A": "amplitudinii",
+        "option_B": "perioadei",
+        "option_C": "fazei",
+        "imported_keys_unmodified": "G1-ELE-082=B | G2-ELEC-227=B"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "DIRECT_PERIOD_FREQUENCY_RECIPROCAL",
+        "prior_model_assessment": "Frequency f=1/T in Hz (1/s), B inverse period. A amplitude inverse dimensionally wrong, C phase inverse unrelated frequency. No need to assume sinusoid, applies any periodic parameter.",
+        "technical_url_reported": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-f"
+      },
+      "card_editorial": {
+        "A": "Inversul amplitudinii nu reprezintă frecvența.",
+        "B": "f=1/T, inversul perioadei.",
+        "C": "Inversul fazei nu este frecvența.",
+        "scope_note": "Valabil pentru orice mărime periodică, nu numai sinusoidală.",
+        "rephrased_question": "Dacă T=0,02 s, care este frecvența?",
+        "rephrased_answer": "50 Hz."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0075",
+      "grade_ids": [
+        "G1-ELE-083",
+        "G2-ELEC-228"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "90",
+        "question": "Funcţionarea contoarelor de inducţie are la baza:",
+        "option_A": "curenţii turbionari",
+        "option_B": "efectul termic al curentului electric",
+        "option_C": "forţa electrostatica",
+        "imported_keys_unmodified": "G1-ELE-083=A | G2-ELEC-228=A"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "DIRECT_INDUCTION_WATTHOUR_EDDY_CURRENT",
+        "prior_model_assessment": "Legacy induction electricity meter has rotating conductive disk with induced eddy currents generating meter driving torque and electromagnetic braking, so A. B thermal effects and C electrostatic force not meter induction operating principle. Does not describe digital/static electronic meter, but original explicitly says induction type.",
+        "technical_url_reported": "https://www.eit.edu.au/resources/fundamentals-of-smart-metering-kwh-and-kvarh-meters/"
+      },
+      "card_editorial": {
+        "A": "Curenții turbionari în discul mobil sunt esențiali în contorul de inducție.",
+        "B": "Încălzirea nu este principiul de măsurare.",
+        "C": "Forța electrostatică nu este principiul contorului inductiv.",
+        "scope_note": "Nu extrapola la contoare electronice statice.",
+        "rephrased_question": "Ce piesă mobilă și ce curenți sunt implicați în contorul de inducție clasic?",
+        "rephrased_answer": "Discul conductor și curenții turbionari induși."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0076",
+      "grade_ids": [
+        "G1-ELE-084",
+        "G2-ELEC-229"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "91",
+        "question": "În instalaţiile de joasa tensiune, legarea la pământ este justificatã:",
+        "option_A": "din motive economice",
+        "option_B": "pentru diminuarea suprasolicitărilor echipamentelor electrice",
+        "option_C": "pentru securitatea muncii",
+        "imported_keys_unmodified": "G1-ELE-084=C | G2-ELEC-229=C"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "DIRECT_EARTHING_SHOCK_PROTECTION_PURPOSE",
+        "prior_model_assessment": "Low voltage safety grounding/PE and equipotential bonding primarily protects people/animals against electric shock under fault, so C. A purely economics not basis, B limiting equipment stress can be ancillary function but not core protection claim. Need distinguish earthing, bonding, disconnection and network TN/TT/IT details from generic one-line purpose.",
+        "technical_url_reported": "https://legislatie.just.ro/Public/DetaliiDocument/286763"
+      },
+      "card_editorial": {
+        "A": "Legarea la pământ de protecție nu este justificată de economie.",
+        "B": "Limitarea stresului echipamentelor nu este motivul principal pentru PE.",
+        "C": "Securitatea persoanelor la defect și atingere este scopul de protecție.",
+        "scope_note": "Protecția completă include echipotențializare și deconectare, după TN/TT/IT.",
+        "rephrased_question": "O simplă priză de pământ garantează protecția împotriva electrocutării?",
+        "rephrased_answer": "Nu, trebuie îndeplinite condițiile de protecție și deconectare."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0077",
+      "grade_ids": [
+        "G1-ELE-085",
+        "G2-ELEC-230"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "92",
+        "question": "Funcţionarea în suprasarcinã a unui transformator reprezintă:",
+        "option_A": "un regim de avarie",
+        "option_B": "un regim temporar admisibil",
+        "option_C": "un regim inadmisibil",
+        "imported_keys_unmodified": "G1-ELE-085=B | G2-ELEC-230=B"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "CONDITIONAL_TEMPORARY_TRANSFORMER_OVERLOAD",
+        "prior_model_assessment": "Transformer can tolerate short/limited overload based on ambient, prior load, thermal rise, aging and protection settings, so B `regim temporar admisibil` in supervised conditions. A all overload automatically fault false, C all prohibited false. Does NOT authorize unbounded overload or guarantee safe without transformer loading guide. Specific regime dry vs immersed, IEC 60076-7/12 applicability must be checked.",
+        "technical_url_reported": "https://www.iteh.fr/catalog/standards/iec/924f42fe-e556-4197-b0fd-ca0cd3c56f58/iec-60076-7-2005"
+      },
+      "card_editorial": {
+        "A": "Suprasarcina temporară nu este întotdeauna avarie.",
+        "B": "Poate fi temporar admisibilă în condiții termice și de protecție verificate.",
+        "C": "Nu este interzisă universal orice suprasarcină.",
+        "scope_note": "Nu folosi B pentru a justifica supraîncărcări fără limită de timp.",
+        "rephrased_question": "Este sigură în orice condiții funcționarea la 110% din sarcina nominală?",
+        "rephrased_answer": "Nu; admisibilitatea depinde de temperatură, durată și încărcarea precedentă."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0078",
+      "grade_ids": [
+        "G1-ELE-086",
+        "G2-ELEC-231"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "93",
+        "question": "Funcţionarea transformatoarelor electrice are la bazã:",
+        "option_A": "fenomenul inducţiei electromagnetice",
+        "option_B": "efectul termic al curentului electric",
+        "option_C": "curenţii turbionari",
+        "imported_keys_unmodified": "G1-ELE-086=A | G2-ELEC-231=A"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "DIRECT_ELECTROMAGNETIC_INDUCTION_TRANSFORMER",
+        "prior_model_assessment": "AC transformer works mutual electromagnetic induction from changing magnetic flux A. B thermal effect is loss, C eddy currents are mostly parasitic core losses (not principle of intended winding transfer). Constant DC steady state gives no normal secondary induced voltage.",
+        "technical_url_reported": "https://openstax.org/books/college-physics-2e/pages/23-7-transformers"
+      },
+      "card_editorial": {
+        "A": "Inducția electromagnetică mutuală asigură transformarea energiei AC.",
+        "B": "Efectul termic reprezintă pierderi, nu principiul de funcționare.",
+        "C": "Curenții turbionari din miez sunt în general pierderi parazite.",
+        "scope_note": "Transformatorul inductiv convențional nu produce tensiune secundară DC susținută.",
+        "rephrased_question": "Ce se întâmplă cu FEM secundară la un flux constant?",
+        "rephrased_answer": "Devine zero după tranzitoriu."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0079",
+      "grade_ids": [
+        "G1-ELE-087",
+        "G2-ELEC-232"
+      ],
+      "original_source": {
+        "workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "row": "94",
+        "question": "Henry este unitatea de măsură pentru:",
+        "option_A": "fluxul magnetic",
+        "option_B": "inductanţă",
+        "option_C": "inducţia magnetică",
+        "imported_keys_unmodified": "G1-ELE-087=B | G2-ELEC-232=B"
+      },
+      "historical_source": {
+        "ckpt232_blob": "da53f84d08f4916d6a915ee810a7734e16b76672",
+        "scope_tag": "DIRECT_NIST_SI_HENRY_UNIT",
+        "prior_model_assessment": "SI derived unit henry H measures inductance B. A magnetic flux measured weber Wb; C magnetic flux density (magnetic induction B) tesla T. Dimensional H=V·s/A.",
+        "technical_url_reported": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes"
+      },
+      "card_editorial": {
+        "A": "Fluxul magnetic se măsoară în weber (Wb).",
+        "B": "Henry (H) este unitatea SI pentru inductanță.",
+        "C": "Inducția magnetică B se măsoară în tesla (T).",
+        "scope_note": "Nu confunda simbolul unității H cu simbolul câmpului magnetic H.",
+        "rephrased_question": "Ce unități au inductanța și fluxul magnetic?",
+        "rephrased_answer": "Henry și, respectiv, weber."
+      },
+      "review": {
+        "independent_technical": "NOT_RUN",
+        "independent_linguistic": "NOT_RUN",
+        "exact_exam_key": "NOT_VERIFIED",
+        "learning_approved": false
+      }
+    }
+  ]
+}

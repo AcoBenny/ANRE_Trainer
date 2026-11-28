@@ -1,0 +1,358 @@
+{
+  "schema": "V371_SOURCE_READINESS_FIRST5_PROVENANCE_BATCH_V1",
+  "date": "2026-11-23",
+  "checkpoint": "CKPT-411",
+  "micro_increment": "371.2",
+  "parent": "CKPT-410",
+  "baseline_ref": "6f38f1e5cc44a3edeb13360801d777cc80a609e3",
+  "contract_path": "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V371_SOURCE_READINESS_QUEUE_SCHEMA_2026_11_23.json",
+  "scope": "ONLY_FIRST_5_P0_GROUPS; NOT OFFICIAL SOURCE CERTIFICATION",
+  "selection_method": "V371 priority: four material variant QABC numeric ascending, then smallest remaining historical strict conflict QABC",
+  "counts": {
+    "qabc_unique": 5,
+    "grade_routes": 7,
+    "material_variant": 4,
+    "remaining_strict_conflict": 1,
+    "historical_reports_reopened": 5,
+    "rows_materialized": 5,
+    "prior_report_path_verified": 5,
+    "official_source_paragraphs_newly_authenticated": 0,
+    "technical_gates_newly_verified": 0,
+    "independent_technical_or_linguistic_QA": 0,
+    "learner_approved_added": 0,
+    "approved_global": 0
+  },
+  "records": [
+    {
+      "index": 1,
+      "qabc_id": "QABC-0143",
+      "priority": "P0_SOURCE_TRAINER_MATERIAL_VARIANT",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "grade_keys_imported_UNCHANGED": {
+        "G1-ELE-152": "A"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 159,
+      "source_text_from_preexisting_editorial_NOT_REOPENED_XLSX": {
+        "question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "trainer_text_from_preexisting_editorial": {
+        "question": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "material_variant": true,
+      "field_equality_original_to_trainer": {
+        "question": false,
+        "A": true,
+        "B": true,
+        "C": true
+      },
+      "source_favored_original_not_approved": "A INTENDED BUT STEM PHYSICALLY CONTRADICTORY, NO FULLY VALID UNQUALIFIED ANSWER",
+      "source_favored_trainer_not_approved": "A CONDITIONALLY SUPPORTED BY TECHNICAL THEORY",
+      "conflict_description": "Mărimea «adimensională» din sursă vs «caracteristică» din Trainer; gamma are unitate 1/lungime.",
+      "strict_hold_in_V370A": true,
+      "historical_semantic_hold": true,
+      "pointer_class": "REPORT_POINTER_ONLY",
+      "source_packet_tag": "NOT_VERIFIED_AGAINST_V364_V367_IN_THIS_INCREMENT",
+      "source_locator_legacy_unverified": "ELECTROTEHNICA-09.2024-2.xlsx row159; transmission-line γ=α+jβ, SI m⁻¹ (Engineering LibreTexts Steer §3.2; NIST calibration SP250-32 §1.3.12).",
+      "candidate_source_urls_from_old_editorial_UNREOPENED": [
+        "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Fundamentals_of_Microwave_and_RF_Design_%28Steer%29/03%3A_Transmission_Lines/3.02%3A_Transmission_Line_Theory",
+        "https://www.nist.gov/system/files/documents/calibrations/sp250-32.pdf"
+      ],
+      "prior_analysis_paths": [
+        "docs/QUESTION_AUDIT/CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md"
+      ],
+      "prior_analysis_blob_sha_in_branch": "6ed8123e78d82a049da5ab5844e47ca1d1c99d87",
+      "prior_analysis_verified_content_readback_2026_11_23": true,
+      "additional_report_file_sources": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json"
+      ],
+      "original_XLSX_bytes_reopened_this_increment": false,
+      "canonical_Trainer_modified": false,
+      "approved_for_learning": false,
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_ONLY_AND_V370A_HISTORICAL_HOLD",
+      "new_state": "PENDING_SOURCE_REOPEN",
+      "trace_state": "EXISTING_REPORT_CONTENT_REOPENED_ORIGINAL_VS_TRAINER_DISTINGUISHED",
+      "newly_verified_gate": "PRIOR_REPORT_PATH_AND_CONFLICT_TRACEABILITY_ONLY",
+      "source_scope_or_option_technical_gate_advanced": false,
+      "independent_QA": "NOT_RUN_IN_THIS_INCREMENT",
+      "official_exam_key_2026": "NOT_VERIFIED",
+      "rights_and_offline_context": "NOT_VERIFIED",
+      "next_exact_action": "Verifică exact textul original, analiza dimensională gamma și suportul A/B/C; adjudecare original vs Trainer cu reviewer separat.",
+      "processed_checkpoint": "CKPT-411"
+    },
+    {
+      "index": 2,
+      "qabc_id": "QABC-0236",
+      "priority": "P0_SOURCE_TRAINER_MATERIAL_VARIANT",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "grade_keys_imported_UNCHANGED": {
+        "G1-ELE-247": "B",
+        "G2-ELEC-383": "B"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 254,
+      "source_text_from_preexisting_editorial_NOT_REOPENED_XLSX": {
+        "question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "trainer_text_from_preexisting_editorial": {
+        "question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "material_variant": true,
+      "field_equality_original_to_trainer": {
+        "question": true,
+        "A": true,
+        "B": false,
+        "C": true
+      },
+      "source_favored_original_not_approved": "B IN ORIGINAL IS TECHNICALLY MISLABELED; SOURCE DOES NOT AUTHENTICATE A UNIQUE CORRECT RESPONSE",
+      "source_favored_trainer_not_approved": "B FOR POLARIZATION ONLY, NOT NECESSARILY NET CHARGING",
+      "conflict_description": "B original «inducţie electromagnetică», B Trainer «inducţie electrostatică»; polarizare fără încărcare netă.",
+      "strict_hold_in_V370A": true,
+      "historical_semantic_hold": true,
+      "pointer_class": "DIRECT_URL_UNREOPENED",
+      "source_packet_tag": "NOT_VERIFIED_AGAINST_V364_V367_IN_THIS_INCREMENT",
+      "source_locator_legacy_unverified": "ELECTROTEHNICA-09.2024-2.xlsx row254; electrostatic polarization in external E, not electromagnetic induction, with net charge caveat. Existing V194/CKPT242 full card preserved.",
+      "candidate_source_urls_from_old_editorial_UNREOPENED": [
+        "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction"
+      ],
+      "prior_analysis_paths": [
+        "docs/QUESTION_AUDIT/CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md"
+      ],
+      "prior_analysis_blob_sha_in_branch": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+      "prior_analysis_verified_content_readback_2026_11_23": true,
+      "additional_report_file_sources": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+        "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V368_QABC0236_SOURCE_VS_TRAINER_CANONICAL_CARD_EDITORIAL_OVERLAY_2026_11_23.json"
+      ],
+      "original_XLSX_bytes_reopened_this_increment": false,
+      "canonical_Trainer_modified": false,
+      "approved_for_learning": false,
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_ONLY_AND_V370A_HISTORICAL_HOLD",
+      "new_state": "PENDING_SOURCE_REOPEN",
+      "trace_state": "EXISTING_REPORT_CONTENT_REOPENED_ORIGINAL_VS_TRAINER_DISTINGUISHED",
+      "newly_verified_gate": "PRIOR_REPORT_PATH_AND_CONFLICT_TRACEABILITY_ONLY",
+      "source_scope_or_option_technical_gate_advanced": false,
+      "independent_QA": "NOT_RUN_IN_THIS_INCREMENT",
+      "official_exam_key_2026": "NOT_VERIFIED",
+      "rights_and_offline_context": "NOT_VERIFIED",
+      "next_exact_action": "Folosește V368 ca editorial efectiv Trainer și V194 separat pentru original; verifică electrostatic vs electromagnetic și ambiguitatea «se încarcă».",
+      "processed_checkpoint": "CKPT-411"
+    },
+    {
+      "index": 3,
+      "qabc_id": "QABC-0362",
+      "priority": "P0_SOURCE_TRAINER_MATERIAL_VARIANT",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-NOR-048"
+      ],
+      "grade_keys_imported_UNCHANGED": {
+        "G1-NOR-048": "A"
+      },
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 55,
+      "source_text_from_preexisting_editorial_NOT_REOPENED_XLSX": {
+        "question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "numai direct din tabloul de distribuţie",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "trainer_text_from_preexisting_editorial": {
+        "question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "material_variant": true,
+      "field_equality_original_to_trainer": {
+        "question": true,
+        "A": false,
+        "B": true,
+        "C": false
+      },
+      "source_favored_original_not_approved": "C SOURCE-FAVORED FOR PUBLISHED ORIGINAL; IMPORTED A CONFLICTS",
+      "source_favored_trainer_not_approved": "A SOURCE-FAVORED ONLY FOR TRAINER-ALTERED ABC",
+      "conflict_description": "Original A restrictiv, C neexclusiv; Trainer A enumeră trei căi, C a devenit restrictiv; cheia A poate fi susținută numai pentru Trainer.",
+      "strict_hold_in_V370A": true,
+      "historical_semantic_hold": true,
+      "pointer_class": "DIRECT_URL_UNREOPENED",
+      "source_packet_tag": "NOT_VERIFIED_AGAINST_V364_V367_IN_THIS_INCREMENT",
+      "source_locator_legacy_unverified": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx row55; I7-2011 §5.4.13, feeding a doorbell transformer/230 V bell via lighting circuit, socket circuit OR directly from distribution board.",
+      "candidate_source_urls_from_old_editorial_UNREOPENED": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "https://ro.scribd.com/doc/187231692/Normativ-I7-2011"
+      ],
+      "prior_analysis_paths": [
+        "docs/QUESTION_AUDIT/CKPT_219_GFR_13_G1_NOR_I7_LIVE_DEFINITIONS_SOCKETS_2026_11_18.md"
+      ],
+      "prior_analysis_blob_sha_in_branch": "02acee4bfd6f67b8eeb8309148f786cdd76e87be",
+      "prior_analysis_verified_content_readback_2026_11_23": true,
+      "additional_report_file_sources": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json"
+      ],
+      "original_XLSX_bytes_reopened_this_increment": false,
+      "canonical_Trainer_modified": false,
+      "approved_for_learning": false,
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_ONLY_AND_V370A_HISTORICAL_HOLD",
+      "new_state": "PENDING_SOURCE_REOPEN",
+      "trace_state": "EXISTING_REPORT_CONTENT_REOPENED_ORIGINAL_VS_TRAINER_DISTINGUISHED",
+      "newly_verified_gate": "PRIOR_REPORT_PATH_AND_CONFLICT_TRACEABILITY_ONLY",
+      "source_scope_or_option_technical_gate_advanced": false,
+      "independent_QA": "NOT_RUN_IN_THIS_INCREMENT",
+      "official_exam_key_2026": "NOT_VERIFIED",
+      "rights_and_offline_context": "NOT_VERIFIED",
+      "next_exact_action": "Reverifică I7 §5.4.13 cu condițiile și vecinii normativi în ediția aplicabilă, apoi compară opțiunile originale și Trainer separat.",
+      "processed_checkpoint": "CKPT-411"
+    },
+    {
+      "index": 4,
+      "qabc_id": "QABC-0386",
+      "priority": "P0_SOURCE_TRAINER_MATERIAL_VARIANT",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-NOR-072"
+      ],
+      "grade_keys_imported_UNCHANGED": {
+        "G1-NOR-072": "B"
+      },
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 79,
+      "source_text_from_preexisting_editorial_NOT_REOPENED_XLSX": {
+        "question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "trainer_text_from_preexisting_editorial": {
+        "question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "material_variant": true,
+      "field_equality_original_to_trainer": {
+        "question": true,
+        "A": true,
+        "B": false,
+        "C": true
+      },
+      "source_favored_original_not_approved": "C TRUE BUT INCOMPLETE; B FALSE IN ORIGINAL, IMPORTED B CONFLICTS",
+      "source_favored_trainer_not_approved": "B MOST COMPLETE, C ALSO PARTIALLY TRUE (OVERLAP)",
+      "conflict_description": "Original B spune «fără sculă», Trainer B cere «numai cu o sculă»; C din Trainer poate fi adevărat dar incomplet.",
+      "strict_hold_in_V370A": true,
+      "historical_semantic_hold": true,
+      "pointer_class": "DIRECT_URL_UNREOPENED",
+      "source_packet_tag": "NOT_VERIFIED_AGAINST_V364_V367_IN_THIS_INCREMENT",
+      "source_locator_legacy_unverified": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx row79; I7 §5.5.2.3 fiecare conductor la bara principală trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă NUMAI cu o sculă.",
+      "candidate_source_urls_from_old_editorial_UNREOPENED": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+        "https://legis.medleg.ro/legislatie/2011-reglementari-reglementare-tehnica-3"
+      ],
+      "prior_analysis_paths": [
+        "docs/QUESTION_AUDIT/CKPT_221_GFR_15_P1_G1_NOR_I7_PROTECTIVE_SCOPE_2026_11_18.md"
+      ],
+      "prior_analysis_blob_sha_in_branch": "86ae38f10647e9a4863c16009389fc981374d3",
+      "prior_analysis_verified_content_readback_2026_11_23": true,
+      "additional_report_file_sources": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json"
+      ],
+      "original_XLSX_bytes_reopened_this_increment": false,
+      "canonical_Trainer_modified": false,
+      "approved_for_learning": false,
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_ONLY_AND_V370A_HISTORICAL_HOLD",
+      "new_state": "PENDING_SOURCE_REOPEN",
+      "trace_state": "EXISTING_REPORT_CONTENT_REOPENED_ORIGINAL_VS_TRAINER_DISTINGUISHED",
+      "newly_verified_gate": "PRIOR_REPORT_PATH_AND_CONFLICT_TRACEABILITY_ONLY",
+      "source_scope_or_option_technical_gate_advanced": false,
+      "independent_QA": "NOT_RUN_IN_THIS_INCREMENT",
+      "official_exam_key_2026": "NOT_VERIFIED",
+      "rights_and_offline_context": "NOT_VERIFIED",
+      "next_exact_action": "Reverifică I7 §5.5.2.3, ediția și gradul; analizează suprapunerea B/C și conflictul originalului fără schimbarea cheii.",
+      "processed_checkpoint": "CKPT-411"
+    },
+    {
+      "index": 5,
+      "qabc_id": "QABC-0017",
+      "priority": "P0_STRICT_KEY_OR_SOURCE_HOLD",
+      "kind": "ORIGINAL",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "grade_keys_imported_UNCHANGED": {
+        "G1-ELE-018": "A",
+        "G2-ELEC-170": "C"
+      },
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 25,
+      "source_text_from_preexisting_editorial_NOT_REOPENED_XLSX": {
+        "question": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "trainer_text_from_preexisting_editorial": null,
+      "material_variant": false,
+      "field_equality_original_to_trainer": null,
+      "source_favored_original_not_approved": "KEY_CONFLICT_NOT_RESOLVED",
+      "source_favored_trainer_not_approved": "NOT_APPLICABLE",
+      "conflict_description": "Text și A/B/C identice între G1 și G2, cheile importate diferă (A vs C); derivarea stea/triunghi indică A doar ca ipoteză.",
+      "strict_hold_in_V370A": true,
+      "historical_semantic_hold": true,
+      "pointer_class": "DIRECT_URL_UNREOPENED",
+      "source_packet_tag": "NOT_VERIFIED_AGAINST_V364_V367_IN_THIS_INCREMENT",
+      "source_locator_legacy_unverified": "§1.3.3 'Capacități în serviciu', relation (1.45), and ensuing symmetric-line examples",
+      "candidate_source_urls_from_old_editorial_UNREOPENED": [
+        "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electricity_and_Magnetism_%28Tatum%29/05%3A_Capacitors/5.07%3A__Delta-Star_Transform",
+        "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electricity_and_Magnetism_%28Tatum%29/05%3A_Capacitors/5.07%3A__Delta-Star_Transform"
+      ],
+      "prior_analysis_paths": [
+        "docs/QUESTION_AUDIT/V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv"
+      ],
+      "prior_analysis_blob_sha_in_branch": "76cc322e83f511c24edf323b79d24175f37c93b1",
+      "prior_analysis_verified_content_readback_2026_11_23": true,
+      "additional_report_file_sources": [],
+      "original_XLSX_bytes_reopened_this_increment": false,
+      "canonical_Trainer_modified": false,
+      "approved_for_learning": false,
+      "previous_state": "V370_PRIOR_RESEARCH_POINTER_ONLY_AND_V370A_HISTORICAL_HOLD",
+      "new_state": "PENDING_SOURCE_REOPEN",
+      "trace_state": "EXISTING_REPORT_CONTENT_REOPENED_ORIGINAL_VS_TRAINER_DISTINGUISHED",
+      "newly_verified_gate": "PRIOR_REPORT_PATH_AND_CONFLICT_TRACEABILITY_ONLY",
+      "source_scope_or_option_technical_gate_advanced": false,
+      "independent_QA": "NOT_RUN_IN_THIS_INCREMENT",
+      "official_exam_key_2026": "NOT_VERIFIED",
+      "rights_and_offline_context": "NOT_VERIFIED",
+      "next_exact_action": "Verifică definiția exactă a capacității de serviciu Cs la linie simetrică și contextul fizic, apoi reviewer separat pentru cele două chei.",
+      "processed_checkpoint": "CKPT-411"
+    }
+  ],
+  "safety": {
+    "zero_canonical_changes": true,
+    "urls_not_reopened_or_authenticated": true,
+    "original_xlsx_not_reopened": true,
+    "source_scope_2026_not_verified": true,
+    "source_vs_trainer_version_important": true,
+    "zero_fake_credit": true,
+    "additional_g2_157_and_electro_11_outside_822": true
+  }
+}

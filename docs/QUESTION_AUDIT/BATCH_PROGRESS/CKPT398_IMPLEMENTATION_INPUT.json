@@ -1,0 +1,37 @@
+{
+  "schema": "batch_progress_input_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT-398-ANTI-LOOP-IMPLEMENTATION",
+  "task_id": "ANRE-ANTI-LOOP-IMPLEMENTATION",
+  "before": {
+    "items": [
+      {
+        "id": "ANRE-ANTI-LOOP-BATCH-GATE",
+        "stage": "BACKLOG",
+        "open_gates": [
+          "INDEPENDENT_CODE_QA",
+          "CI_INTEGRATION"
+        ],
+        "evidence_refs": []
+      }
+    ]
+  },
+  "after": {
+    "items": [
+      {
+        "id": "ANRE-ANTI-LOOP-BATCH-GATE",
+        "stage": "REVIEW_READY",
+        "open_gates": [
+          "INDEPENDENT_CODE_QA",
+          "CI_INTEGRATION"
+        ],
+        "evidence_refs": [
+          "tools/qa_batch_progress.mjs",
+          "tools/tests/qa_batch_progress.test.mjs",
+          "docs/QUESTION_AUDIT/BATCH_PROGRESS/README.md"
+        ]
+      }
+    ]
+  },
+  "note": "Progress on implementation of anti-loop gate, not on ANRE question approvals; independent QA and CI integration still pending."
+}

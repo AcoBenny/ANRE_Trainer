@@ -1,0 +1,625 @@
+{
+  "checkpoint": "CKPT-RECOVERY-LEG-030-046",
+  "date": "2026-11-17",
+  "recovered_after_interrupted_call": true,
+  "baseline_head": "2ed1c3b698e5a564225ebe1b86c67c4d8658aae1",
+  "already_processed_on_recovery": 375,
+  "batch_result": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 9,
+    "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE": 4,
+    "CONDITIONAL_MODEL_OR_SOURCE": 2
+  },
+  "unit_count": 15,
+  "grade_ids": 15,
+  "scope": "Single-session content/source check plus technical/linguistic roles, NOT independently executed subagents",
+  "methodology": "Non-overlapping first 15 pending units; direct read of 66/2023 art35/37/41; official indexed original passages for 59/2013, 5/2023, Law123; keep unverified exact 2026 and ambiguous clauses blocked.",
+  "warnings": [
+    "Reg66 art35(A)(a) internally refers to grade II-III-IV where subject is grade I; do not silently correct.",
+    "Contract non-payment deadline says 5 working days, not generic 5 days.",
+    "Court vs ANRE vs amicable resolution distinction preserved.",
+    "This is technical/legal evidence triage, not ANRE answer-key authentication or independent approval."
+  ],
+  "canonical_edit": false,
+  "learner_approval_count": 0,
+  "independent_QA_executed": false,
+  "cards": [
+    {
+      "unit_id": "AU-44615cc5d425428d",
+      "representative_id": "G1-LEG-030",
+      "member_ids": [
+        "G1-LEG-030"
+      ],
+      "qabc_sha256": "44615cc5d425428d67d79fac4817c3b1d05e93edb8fb900bcde8a634489cb3f2",
+      "original_question_UNCHANGED": "Neînţelegerile privind racordarea utilizatorilor la reţelele electrice de interes public, dintre operatorii de distribuţie şi solicitanţi, se soluţionează:",
+      "original_ABC_UNCHANGED": {
+        "A": "întotdeauna pe cale amiabilă",
+        "B": "de autoritatea competentă conform reglementărilor în vigoare",
+        "C": "întotdeauna în justiţie"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-030": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "B: ANRE are atribuții de soluționare administrativ-jurisdicțională a neînțelegerilor de racordare; «întotdeauna amiabil» și «întotdeauna justiție» sunt nejustificat exclusive.",
+      "evidence": {
+        "specific_rule_locator": "OUG 33/2007 art.9(1)(k)-(l), + procedura art24(1)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocument/195958",
+        "access_level": "OFFICIAL_WEB_INDEXED_EXCERPT_EXACT_PROCEDURAL_AUTHORITY",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/297330",
+        "source_locator": "Reg59/2013 soluționare neînțelegeri între solicitant și operator",
+        "ABC_notes": "A: «întotdeauna amiabil» este fals în prezența disputelor nesoluționate; B: autoritatea competentă prin procedură normativă are atribuții; C: «întotdeauna în justiție» exclude mecanisme administrative."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-be8b22614e06a5ff",
+      "representative_id": "G1-LEG-031",
+      "member_ids": [
+        "G1-LEG-031"
+      ],
+      "qabc_sha256": "be8b22614e06a5ffbd6c131be983f54804b7b71a2ddcf47c51a046234900d8f4",
+      "original_question_UNCHANGED": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:",
+      "original_ABC_UNCHANGED": {
+        "A": "Desfăşurarea de activităţi fără contracte legale, în vigoare (contract de muncă individual  semnat cu un angajator sau contract de prestări servicii, în cazul în care este persoană fizică autorizată în condițiile legii)",
+        "B": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+        "C": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-031": "A"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_and_linguistic_finding": "A (activitate fără contract) poate fi neconformă când cadrul juridic o impune, dar nu s-a demonstrat dispoziția contravențională aplicabilă exact acestei fapte în 2026; B 4 ani depinde de vizarea reală, C tip IIA permite proiectare LV. Fără dovada sancțiunii exacte, nu se validează A.",
+      "evidence": {
+        "specific_rule_locator": "Reg66/2023 art35-37; lege123 regim contravenții art93-96 trebuie potrivit exact",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "access_level": "OFFICIAL_HTML_READ_ART35_ART37; NO_SAME_OFFENSE_PROOF",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046 ; https://legislatie.just.ro/Public/DetaliiDocument/262079",
+        "source_locator": "Reg66/2023 art36–37 și Legea123 art93",
+        "ABC_notes": "A: exercitarea activității fără un cadru profesional/contractual cerut poate constitui încălcare, dar nu orice lipsă de contract automat este sancționabilă prin contravenție ANRE; B: adeverință veche 4 ani este încă în intervalul de vizare cinci ani; C: II A este autorizare de proiectare pentru locuințe în condiții, deci nu o contravenție în sine."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-8159e9385abd60ef",
+      "representative_id": "G1-LEG-033",
+      "member_ids": [
+        "G1-LEG-033"
+      ],
+      "qabc_sha256": "8159e9385abd60ef723bbcff760f3762b751f4de2abcb915bea81c99456f6ba1",
+      "original_question_UNCHANGED": "Sancţiunile contravenţionale aplicate de ANRE electricienilor autorizaţi pot fi asociate cu :",
+      "original_ABC_UNCHANGED": {
+        "A": "retragerea autorizării acordate",
+        "B": "Retragerea autorizării acordate pe o perioadă de până la doi ani",
+        "C": "Avertizarea în scris cu retragerea autorizării acordate la prima abatere constatată"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-033": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "A: art41(2)(b)-(c) permite retragerea. B până la 2 ani nu corespunde: suspendare până la 6 luni sau retragere cu reevaluare după 3 ani ori fără drept. C «prima abatere» nu e regulă automată.",
+      "evidence": {
+        "specific_rule_locator": "Reg66/2023 art41(2)-(3)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "access_level": "OFFICIAL_HTML_DIRECT_READ_EXACT_ARTICLE",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "source_locator": "Reg66/2023 art41(2)(a)–(c), art42–43",
+        "ABC_notes": "A: art41 permite retragerea autorizației ca sancțiune complementară; B: perioada «până la doi ani» nu corespunde sancțiunii 6 luni suspendare / 3 ani până la reexaminare în cazul retragerii; C: avertisment cu retragere automată la prima abatere nu este regula art41."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-5ca2670c29d9206f",
+      "representative_id": "G1-LEG-035",
+      "member_ids": [
+        "G1-LEG-035"
+      ],
+      "qabc_sha256": "5ca2670c29d9206f7a28aff1898b1ba7d0b79890bb176dddf39e4c7a0f53c5cd",
+      "original_question_UNCHANGED": "Una dintre obligaţiile electricianului autorizat care execută lucrări de instalaţii electrice este:",
+      "original_ABC_UNCHANGED": {
+        "A": "Să respecte proiectele de execuţie a lucrărilor de instalaţii electrice doar dacă sunt întocmite de el",
+        "B": "De a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, în cazul în care i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare",
+        "C": "De a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-035": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "B corespunde textual art37(h): participare la recepție și PIF dacă cere beneficiarul/operatorul. A «doar dacă întocmit de el» contrazice art37(e), C avizare post-factum contrazice art37(c), (i).",
+      "evidence": {
+        "specific_rule_locator": "Reg66/2023 art37(c),(e),(h),(i)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "access_level": "OFFICIAL_HTML_DIRECT_READ_EXACT_ARTICLE",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "source_locator": "Reg66/2023 art37(e),(h),(i)",
+        "ABC_notes": "A: obligația de respectare a proiectelor nu depinde de faptul că electricianul le-a întocmit; B: participarea la recepție/PIF este obligatorie la solicitarea beneficiarului/operatorului, exact cum scrie art37(h); C: racordarea SEN necesită autorizări și acordurile prealabile, nu post-factum."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-70e660a6bf14201f",
+      "representative_id": "G1-LEG-036",
+      "member_ids": [
+        "G1-LEG-036"
+      ],
+      "qabc_sha256": "70e660a6bf14201fd58a9a51d52b02af743a135c3936d2ef62ee100b9dd19ecf",
+      "original_question_UNCHANGED": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:",
+      "original_ABC_UNCHANGED": {
+        "A": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+        "B": "Să execute  instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte prevederile din proiect",
+        "C": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-036": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "B: art37(b),(e) cer execuție numai în limitele gradului/tipului și respectarea proiectului. A notificarea fiecărei date nu este obligație generală dovedită; C experiența execuției nu acordă automat drept de proiectare.",
+      "evidence": {
+        "specific_rule_locator": "Reg66/2023 art8,9,37(b),(e)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "access_level": "OFFICIAL_HTML_DIRECT_READ_EXACT_ARTICLE",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "source_locator": "Reg66/2023 art37(b),(d),(e), art9",
+        "ABC_notes": "A: ANRE nu cere notificarea fiecărei date de execuție ca regulă universală în art37; B: execută doar în grad/tip propriu și conform proiectului, art37(b),(e); C: autorizarea de execuție nu include automat proiectarea de tip A."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-444d9c551ccde592",
+      "representative_id": "G1-LEG-037",
+      "member_ids": [
+        "G1-LEG-037"
+      ],
+      "qabc_sha256": "444d9c551ccde592c1e3377d4a7bc29e5db24e35f824cc9fa8fc6f914c474d44",
+      "original_question_UNCHANGED": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:",
+      "original_ABC_UNCHANGED": {
+        "A": "Să execute  instalaţii electrice numai în una dintre calităţile prevăzute în regulament pentru exercitarea activităţii",
+        "B": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+        "C": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-037": "A"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_and_linguistic_finding": "A expresia «numai în una dintre calități» nu este dovedită: art35 oferă mai multe modalități de exercitare și nu am demonstrat incompatibilitatea exercitării simultane. B/C sunt distractori, dar eliminarea lor singură nu certifică A.",
+      "evidence": {
+        "specific_rule_locator": "Reg66/2023 art35 A-D, art37",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "access_level": "OFFICIAL_HTML_DIRECT_READ_EXACT_SCOPE_BUT_CONFLICT_UNRESOLVED",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "source_locator": "Reg66/2023 art36, art37(b)",
+        "ABC_notes": "A: activitatea se exercită numai în formele permise de regulament/lege, sub limitele tipului și gradului; B: nu există obligație generală de a anunța ANRE data fiecărei lucrări; C: autorizația de executare nu acordă prin experiență drept de proiectare."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-51479d9bb1a83586",
+      "representative_id": "G1-LEG-038",
+      "member_ids": [
+        "G1-LEG-038"
+      ],
+      "qabc_sha256": "51479d9bb1a83586f4a11ec958833010dae9894584dc34756f7a30a0843ef140",
+      "original_question_UNCHANGED": "Client final este:",
+      "original_ABC_UNCHANGED": {
+        "A": "orice client ce cumpără energie electrică de la un producător",
+        "B": "orice client ce cumpără energie electrică de la un trader de energie electrică",
+        "C": "orice persoană fizică sau juridică ce cumpără energie electrică pentru consum propriu"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-038": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "C este definiția legală a clientului final: persoană fizică/juridică ce cumpără pentru consum propriu. A/B nu verifică destinația finală, doar vânzătorul.",
+      "evidence": {
+        "specific_rule_locator": "Legea123/2012 art3 pct20 (consolidare 2026)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/300063",
+        "access_level": "OFFICIAL_SEARCH_INDEXED_EXACT_DEFINITION",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/262079",
+        "source_locator": "Legea123 art3 pct «client final»",
+        "ABC_notes": "A: «orice cumpără de la producător» include operatori care revând, nu definește client final; B: «orice cumpără de la trader» la fel nu garantează consum propriu; C: persoana fizică sau juridică achiziționează pentru consum propriu, criteriul decisiv."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-a76ef25267ccaddb",
+      "representative_id": "G1-LEG-039",
+      "member_ids": [
+        "G1-LEG-039"
+      ],
+      "qabc_sha256": "a76ef25267ccaddb2bf7885532389065569b06d7ece342678bb0eda4f0eb02e2",
+      "original_question_UNCHANGED": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum:",
+      "original_ABC_UNCHANGED": {
+        "A": "20 zile calendaristice în cazul racordării la joasă tensiune",
+        "B": "30 zile calendaristice în cazul racordării la medie tensiune",
+        "C": "10 zile calendaristice în cazul racordării la joasă tensiune"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-039": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_and_linguistic_finding": "B redă cifra de maximum 30 zile calendaristice din art26(1) pentru «fișă de soluție», însă normativul formulează regula fără condiție exclusivă «medie tensiune». A și C nu sunt termenul general maxim. Necesită verificare excepții și ediția aplicabilă.",
+      "evidence": {
+        "specific_rule_locator": "Reg59/2013 art26(1) și excepții art26(2)-(7)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/286056",
+        "access_level": "OFFICIAL_INDEXED_EXACT_ARTICLE_TEXT; 2026_EDITION_NOT_PROVED",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_02_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/297330",
+        "source_locator": "Reg59/2013 art26(1) ATR fișă soluție maximum 30 zile",
+        "ABC_notes": "A: 20 zile pentru joasă tensiune nu este plafonul general al articolului; B: 30 zile pentru medie tensiune respectă plafonul general de 30 zile, fără condiție de medie tensiune în articol; C: 10 zile pentru joasă tensiune nu este termenul general al emiterii prin fișă."
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-cf93e4566f91b893",
+      "representative_id": "G1-LEG-040",
+      "member_ids": [
+        "G1-LEG-040"
+      ],
+      "qabc_sha256": "cf93e4566f91b8930e707c644ea70ffc67d56d1e306ebca5bf8c02b99ee4e086",
+      "original_question_UNCHANGED": "În calitate de persoană fizică autorizată, electricianul autorizat gradul I poate executa instalaţii electrice interioare",
+      "original_ABC_UNCHANGED": {
+        "A": "având o putere electrică instalată de maximum 10 kW şi la o tensiune nominală mai mică de 1 kV, numai dacă deţine un atestat emis de ANRE",
+        "B": "având o putere electrică instalată de maximum 20 kW şi la o tensiune nominală mai mică de 1 kV, numai dacîă deţine un atestat emis de ANRE",
+        "C": "având o putere electrică instalată de maximum 10 kW şi la o tensiune nominală mai mică de 1 kV, fără a deţine un atestat emis de ANRE"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-040": "C"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_and_linguistic_finding": "C păstrează 10kW/<1kV și fără atestat, conforme art9(a) și art35(A)(a) în principiu, DAR art35(A)(a)(i) cere explicit autorizație grad II/III/IV vizată la zi chiar în alineatul pentru grad I. Contradicție internă a textului consolidat; nu validăm necondiționat.",
+      "evidence": {
+        "specific_rule_locator": "Reg66/2023 art9(a), art35(A)(a)(i)-(iii)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "access_level": "OFFICIAL_HTML_DIRECT_READ_EXACT_INTERNAL_CONTRADICTION",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "source_locator": "Reg66/2023 art9(a), art35(A)(a)(i-iii)",
+        "ABC_notes": {
+          "A": "A: atestat ANRE nu este condiție necesară în derogarea PFA prevăzută de art35, dar sunt alte condiții.",
+          "B": "B: 20kW depășește plafonul explicit 10kW pentru gradul I și impune eronat atestat.",
+          "C": "C: 10kW și <1kV fără atestat sunt compatibile cu textul de bază, dar art35 enumeră condiții cumulative; pct(i) menționează autorizare grad II/III/IV, în tensiune aparentă cu titlul grad I."
+        }
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-4b1ae492e2fd59ca",
+      "representative_id": "G1-LEG-041",
+      "member_ids": [
+        "G1-LEG-041"
+      ],
+      "qabc_sha256": "4b1ae492e2fd59caabe342c7387dee76294ffca24a1d53e43a6cff4442e093eb",
+      "original_question_UNCHANGED": "La încetarea perioadei de valabilitate a contractului de furnizare a energiei electrice, clientul final de energie electrică are dreptul să primească de la furnizor decontul final de regularizare",
+      "original_ABC_UNCHANGED": {
+        "A": "În termen de maximum 42 de zile de la încetarea contractului de furnizare a energiei electrice",
+        "B": "la  încetarea contractului de furnizare a energiei electrice",
+        "C": "În termen de maximum 10 de zile de la încetarea contractului de furnizare a energiei electrice"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-041": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "A: art19(1) din regulamentul de furnizare stabilește maximum 42 zile pentru transmiterea facturii cu decont final. B impune fără temei aceeași zi, C transformă un termen posibil mai scurt în plafon legal de 10 zile.",
+      "evidence": {
+        "specific_rule_locator": "Regulament Ordin5/2023 art19(1)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+        "access_level": "OFFICIAL_INDEXED_EXACT_EXCERPT_DIRECT_PAGE_FETCH_502; 2026_EDITION_PENDING",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0BMHAHWUFVKJ72PA35HP5XU0TP",
+        "source_locator": "Regulament furnizare Ordin5/2023 art19(1), forma redată de Portal",
+        "ABC_notes": {
+          "A": "A: 42 zile este termenul maxim pentru transmiterea facturii de decont final de la încetarea contractului.",
+          "B": "B: decontul nu trebuie emis în aceeași zi în toate cazurile.",
+          "C": "C: 10 zile nu este termenul maxim indicat de art19(1), deși transmiterea mai devreme este permisă."
+        }
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-af0fe444f91051d2",
+      "representative_id": "G1-LEG-042",
+      "member_ids": [
+        "G1-LEG-042"
+      ],
+      "qabc_sha256": "af0fe444f91051d2ef4c32e39b68fdf66e152c1523a0fc242b0305c6d7c3f968",
+      "original_question_UNCHANGED": "Furnizarea energiei electrice se desfăşoară",
+      "original_ABC_UNCHANGED": {
+        "A": "numai în baza unei licenţe pentru activitatea de furnizare a energiei electrice",
+        "B": "fără licență, de către operatori de distribuție neconcesionari către clienţii alimentaţi direct din reţelele electrice pe care aceştia le exploatează",
+        "C": "fără licență, de către producători, oricărui client final"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-042": "B"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "legal_and_linguistic_finding": "B este compatibil cu existența comercializării de către OD neconcesionar direct în rețeaua sa (reg5 art6), dar textul accesibil nu probează integral EXCEPȚIA DE LICENȚĂ și condițiile 2026. A «numai» este excesiv, C «oricărui client» prea larg.",
+      "evidence": {
+        "specific_rule_locator": "Reg5/2023 art6(1); Legea123/2012 art10/activități exceptate",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+        "access_level": "OFFICIAL_INDEXED_ART6_ONLY; LICENSE_EXCEPTION_NOT_EXACTLY_REOPENED",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/300063",
+        "source_locator": "Legea123/2012 art10 alin(2) lit f și art10(6) activitate fără licență pentru instalațiile/rețelele exploatate",
+        "ABC_notes": {
+          "A": "A: «numai în baza licenței» este prea exclusiv; legea are excepții explicite la furnizare/revânzare.",
+          "B": "B: fără licență este admisă revânzarea către consumatorii alimentați direct din rețele proprii în anumite condiții; nu se limitează textual exclusiv la OD neconcesionar.",
+          "C": "C: producătorii nu pot furniza oricărui client arbitrar fără licență; se aplică limitări de locație și reglementare."
+        }
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-b9340d72cf2c9bc5",
+      "representative_id": "G1-LEG-043",
+      "member_ids": [
+        "G1-LEG-043"
+      ],
+      "qabc_sha256": "b9340d72cf2c9bc57aaf68bac73a4733d918acc727ec892876b6668a5408ccba",
+      "original_question_UNCHANGED": "În cazul furnizării energiei electrice în baza unui contract încheiat pe piaţa concurenţială, întreruperea alimentării cu energie electrică pentru nerespectarea obligaţiilor contractuale de către beneficiar se face în cazul clienților noncasnici:",
+      "original_ABC_UNCHANGED": {
+        "A": "cu un preaviz de minim 5 zile",
+        "B": "cu un preaviz de cel puţin10 zile",
+        "C": "fără preaviz"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-043": "A"
+      },
+      "technical_classification": "BLOCKED_CONTRADICTION_OR_MISSING_SOURCE",
+      "legal_and_linguistic_finding": "A are cifra 5, dar pentru NEPLATA factura și 5 ZILE LUCRĂTOARE, art26(4)(b). Întrebarea spune generic «nerespectarea obligațiilor contractuale», iar B 10 zile poate satisface un minim de 5. Lipsesc obiectul exact și unitatea de timp. Nu se validează singular.",
+      "evidence": {
+        "specific_rule_locator": "Reg5/2023 art26(4)(b)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+        "access_level": "OFFICIAL_INDEXED_EXACT_CLAUSE_5_WORKING_DAYS_PAGE_FETCH_502",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0BMHAHWUFVKJ72PA35HP5XU0TP",
+        "source_locator": "Regulament Ordin5/2023 art26(4)(b) minimum 5 ZILE LUCRĂTOARE, pentru neplata facturii",
+        "ABC_notes": {
+          "A": "A: 5 este cifra din norma privind neplata, dar textul spune «zile lucrătoare», iar întrebarea «obligații contractuale» include mai mult decât neplata.",
+          "B": "B: 10 zile poate fi preaviz mai mare decât minimul reglementat, deci literal nu este interzis; nu este minimul exact.",
+          "C": "C: pentru neplata facturii la noncasnici norma prevede preaviz, nu întrerupere fără preaviz."
+        }
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-9efea3ec1b0a6f2b",
+      "representative_id": "G1-LEG-044",
+      "member_ids": [
+        "G1-LEG-044"
+      ],
+      "qabc_sha256": "9efea3ec1b0a6f2b248182b9bda9f13553d23895f94b4ecf67f54ee2c47e6ea1",
+      "original_question_UNCHANGED": "Furnizarea energiei electrice către clientul final se realizează:",
+      "original_ABC_UNCHANGED": {
+        "A": "fără încheierea contractului de furnizare, pe bază de negocieri",
+        "B": "fără încheierea contractului de furnizare, pentru clienții casnici",
+        "C": "fără încheierea contractului de furnizare în situaţiile reglementate în mod distinct de către autoritatea competentă."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-044": "C"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "C: Legea123 art52(4) exclude explicit din interdicția furnizării fără contract cazurile reglementate de ANRE. A negocieri singure nu ajung, B orice casnic nu este excepție.",
+      "evidence": {
+        "specific_rule_locator": "Legea123/2012 art52(4)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/305352",
+        "access_level": "OFFICIAL_INDEXED_EXACT_STATUTORY_EXCEPTION",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/DetaliiDocument/300063",
+        "source_locator": "Legea123/2012 art53(3)-(4) furnizor ultimă instanță trecere fără semnare contract; alte excepții specifice",
+        "ABC_notes": {
+          "A": "A: negocierile singure nu înlocuiesc în general obligația contractului.",
+          "B": "B: statut casnic nu elimină în general semnarea unui contract.",
+          "C": "C: sunt situații explicit reglementate (preluare de FUI) în care trecerea are loc fără semnarea unui nou contract."
+        }
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-4583095d6ef45397",
+      "representative_id": "G1-LEG-045",
+      "member_ids": [
+        "G1-LEG-045"
+      ],
+      "qabc_sha256": "4583095d6ef4539770dae9672d91dc8ab9d194c7f0c04803e59993454589fefc",
+      "original_question_UNCHANGED": "Căminele studenţeşti se încadrează în categoria :",
+      "original_ABC_UNCHANGED": {
+        "A": "clienţilor noncasnici",
+        "B": "clienţilor casnici",
+        "C": "clienţilor casnici, dar numai dacă au o putere aprobată sub 50 kW"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-045": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "B: art8(a) include explicit căminele studențești în consum casnic când energia servește scopurilor de locuire și nu activităților profesionale/comerciale. C prag 50kW nu e condiție a definiției. Nu se extinde automat asupra consumurilor comerciale din cămin.",
+      "evidence": {
+        "specific_rule_locator": "Reg5/2023 art8(a)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+        "access_level": "OFFICIAL_INDEXED_EXACT_CATEGORY_DEFINITION",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0BMHAHWUFVKJ72PA35HP5XU0TP",
+        "source_locator": "Regulament Ordin5/2023 art8(a) include explicit cămine studențești când consumul este casnic",
+        "ABC_notes": {
+          "A": "A: clasificarea drept noncasnic în orice împrejurare ignoră includerea explicită a căminelor studențești pentru activități casnice.",
+          "B": "B: corect pentru consum de locuire și aparate neprofesionale, în condițiile art8(a).",
+          "C": "C: nu există prag general de 50kW pentru această categorie în definiția citată."
+        }
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    },
+    {
+      "unit_id": "AU-43bbb85e349b3f84",
+      "representative_id": "G1-LEG-046",
+      "member_ids": [
+        "G1-LEG-046"
+      ],
+      "qabc_sha256": "43bbb85e349b3f84086a8eebf77747d51260ec4698b8d7f328df494cb0fab0ae",
+      "original_question_UNCHANGED": "Întreprinderile mici se încadrează în categoria",
+      "original_ABC_UNCHANGED": {
+        "A": "clienţilor noncasnici",
+        "B": "clienților casnici",
+        "C": "clienţilor noncasnici, dar numai dacă au o putere aprobată mai mare de 20 kW"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-046": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "legal_and_linguistic_finding": "A: art8(b) include întreprinderile mici și mijlocii la clienți noncasnici. C introduce prag 20kW inexistent în definire, B nu este statutul consumului economic.",
+      "evidence": {
+        "specific_rule_locator": "Reg5/2023 art8(b)",
+        "source_url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/264611",
+        "access_level": "OFFICIAL_INDEXED_EXACT_CATEGORY_DEFINITION",
+        "edition": "Consolidation as accessed/indicated 2024-2026; precise exam bibliography date and applicability still NOT separately certified",
+        "source_exact_object": "Matched to original card where specific rule accessed; conditional/block explicitly where only indexed or scope mismatches"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "source": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0BMHAHWUFVKJ72PA35HP5XU0TP",
+        "source_locator": "Regulament Ordin5/2023 art8(b) include întreprinderi mici și mijlocii la noncasnici",
+        "ABC_notes": {
+          "A": "A: întreprinderile mici intră la clienți noncasnici în definirea după destinația consumului.",
+          "B": "B: nu devin casnici pentru că au consum mic.",
+          "C": "C: pragul 20kW nu este condiția definiției noncasnic."
+        }
+      },
+      "grade_keys_authorized_change": "NO",
+      "official_ANRE_grading_key_verified": "NO",
+      "independent_source_QA": "NOT_RUN",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "approved_for_learning": "NO"
+    }
+  ]
+}

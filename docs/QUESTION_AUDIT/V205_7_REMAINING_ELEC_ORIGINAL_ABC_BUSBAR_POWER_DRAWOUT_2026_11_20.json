@@ -1,0 +1,289 @@
+{
+  "schema": "v205_seven_remaining_original_electrotechnics_ABC_editorial_drafts",
+  "date": "2026-11-20",
+  "parent_head": "a0b2990be4633f3cb7c0f0a63a92263a25988250",
+  "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "v204_blob_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+  "ckpt250_blob_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+  "counts": {
+    "new_qabc": 7,
+    "new_grade_routes": 11,
+    "per_option_ABCs": 21,
+    "unofficial_practice_rephrases": 7,
+    "semantic_hold_candidates": 5,
+    "independent_approvals": 0
+  },
+  "held_ids": [
+    "QABC-0213",
+    "QABC-0214",
+    "QABC-0215",
+    "QABC-0235",
+    "QABC-0256"
+  ],
+  "notes": "Seven ANRE-hosted source-matched original 2024 items, seven per-item A/B/C explanations. Keys unchanged. Electrical source retrieval inherited from prior CKPT250/V87/216 and source scope NOT independently recertified. No switching instructions, no final scored exam key authentication or independent technical/linguistic signoff.",
+  "cards": [
+    {
+      "unit_id": "QABC-0213",
+      "grade_ids": [
+        "G1-ELE-224",
+        "G2-ELEC-360"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "231",
+        "stem": "Secţionarea barelor colectoare ale unei staţii electrice conduce",
+        "A": "la mărirea continuităţii în alimentare a consumatorilor racordaţi la bare;",
+        "B": "limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face printr-un singur transformator;",
+        "C": "numai la limitarea curenţilor de scurtcircuit pe barele respective, dacă alimentarea staţiei se face prin două transformatoare sau printr-un transformator cu înfăşurare divizată.",
+        "imported_keys_UNCHANGED": "G1-ELE-224=A | G2-ELEC-360=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v204_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+        "prior_research_layer": "v164",
+        "ckpt250_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "historic_per_grade_source": "G1-ELE-224:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-360:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_urls_preliminary": "G1-ELE-224:https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/ | G2-ELEC-360:https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/"
+      },
+      "editorial_draft": {
+        "A": "Secționarea barelor poate limita extinderea unui defect la o secție și poate facilita realimentarea altor secții, dacă există protecții selective, surse și cuple adecvate.",
+        "B": "Cu o singură sursă și secții cuplate, simpla compartimentare geometrică nu reduce obligatoriu curentul de scurtcircuit calculat.",
+        "C": "«Numai limitarea» este restrictiv: obiectivul secționării include și disponibilitatea alimentării; nici pentru două transformatoare limitarea curentului nu este automată dacă secțiile rămân cuplate.",
+        "model_scope_or_trap": "Întrebare cu model de exploatare: continuitatea depinde de defect, cupla și sursele alimentării; nu afirma creștere garantată pentru orice schemă.",
+        "reformulated_question": "Dacă un defect scoate din funcțiune una dintre două secții alimentate independent, pot rămâne utilizatori alimentați pe cealaltă secție?",
+        "reformulated_solution": "Da, dacă protecțiile selectează zona defectă și restul sistemului are alimentare funcțională.",
+        "editorial_disposition": "HOLD_BUSBAR_CONTINUITY_DEPENDS_ON_COUPLER_AND_SOURCES",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "official_2026_scored_key": "NOT_AUTHENTICATED",
+        "edition_specific_source": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0214",
+      "grade_ids": [
+        "G1-ELE-225",
+        "G2-ELEC-361"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "232",
+        "stem": "Secţionarea barelor colectoare în staţiile electrice are scopul:",
+        "A": "de limitare a curenţilor de scurtcircuit",
+        "B": "de a reduce costul instalaţiei",
+        "C": "de a reduce pierderile de putere",
+        "imported_keys_UNCHANGED": "G1-ELE-225=A | G2-ELEC-361=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v204_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+        "prior_research_layer": "v164",
+        "ckpt250_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "historic_per_grade_source": "G1-ELE-225:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-361:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_urls_preliminary": "G1-ELE-225:https://www.sciencedirect.com/topics/engineering/bus-section-circuit-breaker | G2-ELEC-361:https://www.sciencedirect.com/topics/engineering/bus-section-circuit-breaker"
+      },
+      "editorial_draft": {
+        "A": "Exploatarea cu secții și cuple deschise poate limita aportul surselor la un scurtcircuit pe o secție, dar unirea electrică a secțiilor nu produce automat reducerea curentului.",
+        "B": "Compartimentarea poate necesita echipamente suplimentare și nu garantează o scădere a costului inițial.",
+        "C": "Reducerea pierderilor de putere nu este efect necesar sau scop unic al secționării; rezultatul depinde de distribuția curenților.",
+        "model_scope_or_trap": "Cheia A indică unul dintre scopuri în anumite regimuri. Nu confunda secționarea constructivă cu exploatarea în insule separate sau cu fiabilitatea.",
+        "reformulated_question": "Dacă două transformatoare rămân conectate pe aceleași bare printr-o cuplă închisă, separarea doar pe desen reduce automat curentul de scurtcircuit?",
+        "reformulated_solution": "Nu; contează separarea electrică efectivă și contribuțiile surselor.",
+        "editorial_disposition": "HOLD_BUSBAR_FAULT_CURRENT_REQUIRES_ACTUAL_OPEN_SECTION",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "official_2026_scored_key": "NOT_AUTHENTICATED",
+        "edition_specific_source": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0215",
+      "grade_ids": [
+        "G1-ELE-226",
+        "G2-ELEC-362"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "233",
+        "stem": "Sensul puterii deformante într-un circuit format dintr-un generator care produce o undă sinusoidală şi o bobină cu miez de fier saturat este:",
+        "A": "de la generator spre bobină",
+        "B": "întotdeauna de la bobină spre generator",
+        "C": "poate avea oricare sens, în funcţie de încărcarea generatorului",
+        "imported_keys_UNCHANGED": "G1-ELE-226=A | G2-ELEC-362=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v204_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+        "prior_research_layer": "v164",
+        "ckpt250_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "historic_per_grade_source": "G1-ELE-226:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-362:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_urls_preliminary": "G1-ELE-226:https://www.mdpi.com/1996-1073/17/1/227 | G2-ELEC-362:https://www.mdpi.com/1996-1073/17/1/227"
+      },
+      "editorial_draft": {
+        "A": "În sursa sinusoidală cu bobină saturată apare curent nesinusoidal; aceasta nu stabilește însă un sens unic al «puterii deformante» dacă se folosește definiția scalară Budeanu D=√(S²−P²−Q²).",
+        "B": "«Întotdeauna de la bobină spre generator» atribuie un sens semnat unei mărimi care, în convenția scalară uzuală, nu are sens de transfer.",
+        "C": "Încărcarea generatorului poate modifica spectrul, puterile și fluxurile armonice în modele specifice, dar nu definește universal sensul unei puteri deformante scalare.",
+        "model_scope_or_trap": "Blocaj semantic: enunțul presupune un «sens» fără a preciza definiția D sau o mărime semnată de flux armonic; variantele A/B/C nu sunt justificate prin formula Budeanu. Barem A păstrat fără certificare.",
+        "reformulated_question": "Dacă o mărime D este definită ca rădăcină pătrată nenegativă a S²−P²−Q², poți deduce numai din ea sensul transferului de energie?",
+        "reformulated_solution": "Nu; dintr-o magnitudine scalară nenegativă nu rezultă sensul unui flux.",
+        "editorial_disposition": "HOLD_DISTORTION_POWER_DIRECTION_UNDEFINED",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "official_2026_scored_key": "NOT_AUTHENTICATED",
+        "edition_specific_source": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0235",
+      "grade_ids": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "253",
+        "stem": "Utilizarea unei cuple longo-transversale se preferă atunci când dorim:",
+        "A": "scurtarea manevrelor;",
+        "B": "o siguranţă în funcţionare mai mare;",
+        "C": "reducerea investiţiei în echiparea staţiei.",
+        "imported_keys_UNCHANGED": "G1-ELE-246=B | G2-ELEC-382=B"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v204_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+        "prior_research_layer": "v164",
+        "ckpt250_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "historic_per_grade_source": "G1-ELE-246:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md | G2-ELEC-382:CKPT_250_GFR_FINAL_23_QABC_37_P2_RECORDS_2026_11_19.md",
+        "source_urls_preliminary": "G1-ELE-246:https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/ | G2-ELEC-382:https://eepower.com/technical-articles/substation-componentspart-5-busbar-configurations/"
+      },
+      "editorial_draft": {
+        "A": "Cupla longo-transversală poate simplifica anumite trasee de exploatare, dar nu garantează cel mai scurt timp sau număr de manevre în orice schemă.",
+        "B": "O configurație de cuplare cu mai multe posibilități de transfer și separare a defectelor poate crește continuitatea, dacă este proiectată și exploatată adecvat.",
+        "C": "Echipamentele suplimentare, interblocările și protecțiile pot mări investiția; reducerea nu este beneficiu universal.",
+        "model_scope_or_trap": "Termenul «longo-transversală» este specific unei topologii; sursa generală despre bare nu descrie exact această configurație în cadrul bibliografiei românești. B rămâne candidat importat.",
+        "reformulated_question": "De ce nu poate fi evaluată siguranța comparată a două scheme de bare doar după denumirea cuplei?",
+        "reformulated_solution": "Trebuie cunoscute sursele, legăturile, protecțiile, indisponibilitățile și secvențele de transfer.",
+        "editorial_disposition": "HOLD_LONGOTRANSVERSAL_TOPOLOGY_NOT_PRIMARY_SOURCED",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "official_2026_scored_key": "NOT_AUTHENTICATED",
+        "edition_specific_source": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0238",
+      "grade_ids": [
+        "G1-ELE-249"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "256",
+        "stem": "Un întreruptor debroşabil asigură:",
+        "A": "protecţia în caz de scurtcircuit;",
+        "B": "numai comutaţia în regim normal;",
+        "C": "protecţia la supratensiuni.",
+        "imported_keys_UNCHANGED": "G1-ELE-249=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v204_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+        "prior_research_layer": "v164",
+        "ckpt250_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "historic_per_grade_source": "G1-ELE-249:V87_ELEC_19_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+        "source_urls_preliminary": "G1-ELE-249:https://www.electrical-installation.org/enwiki/Fundamental_characteristics_of_a_circuit-breaker"
+      },
+      "editorial_draft": {
+        "A": "Un întreruptor debroșabil de putere, cu protecții adecvate, poate întrerupe curentul de scurtcircuit; caracterul debroșabil se referă separat la posibilitatea de extragere/izolare.",
+        "B": "«Numai comutația normală» exclude funcția de întrerupere a defectelor a întreruptorului de putere. Debroșabilitatea nu transformă aparatul în simplu separator.",
+        "C": "Protecția la supratensiuni cere metode dedicate, de exemplu descărcătoare, nu rezultă din simpla debroșare.",
+        "model_scope_or_trap": "Distinge funcția de întrerupere, dispozitivul releu-protecție, capacitatea de rupere nominală și poziția debroșabilă. Nu înseamnă că un întreruptor singur detectează orice defect.",
+        "reformulated_question": "Poate un întreruptor debroșabil să necesite relee de protecție pentru a declanșa la scurtcircuit?",
+        "reformulated_solution": "Da, după tipul echipamentului, chiar dacă aparatul are capacitate nominală de rupere.",
+        "editorial_disposition": "QUALIFIED_BREAKER_SHORT_CIRCUIT_WITH_PROTECTIVE_TRIP",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "official_2026_scored_key": "NOT_AUTHENTICATED",
+        "edition_specific_source": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0255",
+      "grade_ids": [
+        "G1-ELE-266"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "273",
+        "stem": "Utilizarea întreruptoarelor debroşabile:",
+        "A": "asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+        "B": "nu asigură scurtarea duratei reviziilor la celule;",
+        "C": "nu asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+        "imported_keys_UNCHANGED": "G1-ELE-266=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v204_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+        "prior_research_layer": "v169",
+        "ckpt250_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "historic_per_grade_source": "G1-ELE-266:CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+        "source_urls_preliminary": "G1-ELE-266:Source scientific/technical references in CKPT216"
+      },
+      "editorial_draft": {
+        "A": "Un modul debroșabil cu interblocări potrivite poate elimina unele manevre cu separatoare independente, reducând anumite erori; nu le elimină pe toate.",
+        "B": "În general accesibilitatea și schimbarea modulului pot reduce durata unei revizii, dar depind de compartimentul defect și condițiile LOTO.",
+        "C": "Un ansamblu debroșabil cu ecrane/compartimentare adecvate poate asigura izolarea zonei de lucru; formularea negativă este prea largă.",
+        "model_scope_or_trap": "Cheia A este o contribuție posibilă, nu garanție absolută; fiecare aparat are interblocări și proceduri proprii.",
+        "reformulated_question": "Dispare orice risc de manevră greșită doar pentru că întreruptorul este debroșabil?",
+        "reformulated_solution": "Nu; interblocările și procedurile rămân necesare.",
+        "editorial_disposition": "QUALIFIED_DRAWOUT_INTERLOCKING_FUNCTION",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "official_2026_scored_key": "NOT_AUTHENTICATED",
+        "edition_specific_source": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0256",
+      "grade_ids": [
+        "G1-ELE-267"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "274",
+        "stem": "Utilizarea întreruptoarelor debroşabile:",
+        "A": "asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+        "B": "asigură numai scurtarea duratei reviziilor la celule;",
+        "C": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+        "imported_keys_UNCHANGED": "G1-ELE-267=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "v204_sha": "11a93e6e2633d9dbd73bafc942b44534fc9c4b1b",
+        "prior_research_layer": "v169",
+        "ckpt250_sha": "9b3e090a96dbdbb70062b3cd7e4f2467a49ee6bd",
+        "historic_per_grade_source": "G1-ELE-267:CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+        "source_urls_preliminary": "G1-ELE-267:Source scientific/technical references in CKPT216"
+      },
+      "editorial_draft": {
+        "A": "Izolarea accesului la întreruptorul retras este o caracteristică posibilă a ansamblului debroșabil compartimentat, cu ecrane și proceduri. Nu asigură automat absența tensiunii pe toate barele.",
+        "B": "«Numai scurtarea duratei reviziilor» ignoră separarea, accesibilitatea și înlocuirea modulară.",
+        "C": "«Nu asigură eliminarea unor greșeli» este prea absolut; unele interblocări pot preveni manevre incorecte, fără garantarea eliminării tuturor riscurilor.",
+        "model_scope_or_trap": "Folosirea cuvântului «asigură» trebuie restrânsă la proiectul și poziția aparatelor; debroșarea nu înlocuiește verificarea absenței tensiunii sau măsurile de siguranță.",
+        "reformulated_question": "Dacă întreruptorul este retras, este sigur să atingi barele fixe fără verificări suplimentare?",
+        "reformulated_solution": "Nu. Se urmează procedura autorizată de izolare, verificare și securizare.",
+        "editorial_disposition": "HOLD_DRAWOUT_PERSONNEL_ISOLATION_NOT_AUTO",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "qualified_independent_linguistic_review": "NOT_RUN",
+        "official_2026_scored_key": "NOT_AUTHENTICATED",
+        "edition_specific_source": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

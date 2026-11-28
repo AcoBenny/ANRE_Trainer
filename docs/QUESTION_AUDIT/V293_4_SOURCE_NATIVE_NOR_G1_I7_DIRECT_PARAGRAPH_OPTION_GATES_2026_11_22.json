@@ -1,0 +1,117 @@
+{
+  "schema": "V293_I7_EXACT_XLSX_SOURCE_NATIVE_NOR_G1_4_QUESTIONS_MANUAL_SOURCE_SPECIFIC_RECHECK",
+  "date": "2026-11-22",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "inputs": {
+    "norms_xlsx": {
+      "filename": "NORME-TEHNICE-Gr.-1-05.2023(1)(3).xlsx",
+      "sha256": "bed56a32f24d19774ec9dfff8c5b1438176078d0e9c4eb9e8fa1ff1fc98c3092"
+    },
+    "i7_pdf": {
+      "filename": "803493174-I7-2011-completat2023(1).pdf",
+      "sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+      "text_date": "2023-09-22",
+      "visually_reopened_pages": [
+        55,
+        70,
+        72
+      ]
+    },
+    "official_bibliography": {
+      "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+      "page_of_ANRE_site": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+      "published_bibliography_date": "2023-05",
+      "current_ANRE_site_links_it": "2026-11-22",
+      "I7_applies_to_grade_I_and_II_in_published_table": true,
+      "exact_2026_key_authenticated": false,
+      "independent_current_normative_edition_check_done": false
+    }
+  },
+  "cases": [
+    {
+      "id": "QABC-0356",
+      "route": "G1-NOR-042",
+      "source_row": 49,
+      "imported_key": "B",
+      "candidate": "A",
+      "i7": "§5.2.4.6.1(a)-(d), §5.2.4.6.2 and §5.2.4.6.3",
+      "source_A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+      "source_B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+      "source_C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază ",
+      "rationale": {
+        "A": "Exact rule (a) matches 2-wire single-phase regardless conductor section.",
+        "B": "Incorrect topology and overlarge thresholds: §5.2.4.6.1(b) says multiphase phase ≤16 mm2 Cu or ≤25 mm2 Al, not source 25/35; not a correct literal answer.",
+        "C": "Unqualified all sizes in all multiphase not required; allowed smaller neutrals in qualified circumstances §5.2.4.6.3, and greater neutral for strong triplen harmonics §5.2.4.6.2."
+      },
+      "class": "P0_ORIGINAL_IMPORT_KEY_DISPUTE"
+    },
+    {
+      "id": "QABC-0362",
+      "route": "G1-NOR-048",
+      "source_row": 55,
+      "imported_key": "A",
+      "candidate": "C",
+      "i7": "§5.4.12-§5.4.14, central §5.4.13",
+      "source_A": "numai direct din tabloul de distribuţie",
+      "source_B": " numai dintr-un circuit de iluminat normal",
+      "source_C": "dintr-un circuit de prize",
+      "rationale": {
+        "A": "Only direct-board supply is falsely exclusive: I7 also permits lighting and socket circuits.",
+        "B": "Only normal lighting is falsely exclusive: I7 also permits sockets and board.",
+        "C": "A socket circuit is affirmatively one of the three expressly allowed origins, with no exclusivity claim."
+      },
+      "class": "P0_ORIGINAL_VS_CANONICAL_ALL_CHOICES_MUTATED"
+    },
+    {
+      "id": "QABC-0363",
+      "route": "G1-NOR-049",
+      "source_row": 56,
+      "imported_key": "B",
+      "candidate": "B",
+      "i7": "§5.4.12-§5.4.14, central §5.4.13",
+      "source_A": "numai direct din tabloul de distribuţie",
+      "source_B": " dintr-un circuit de iluminat normal",
+      "source_C": "numai dintr-un circuit de prize",
+      "rationale": {
+        "A": "Only board falsely exclusive.",
+        "B": "Normal lighting is one of three expressly allowed routes, without exclusivity.",
+        "C": "Only socket falsely exclusive."
+      },
+      "class": "P2_NEAR_DUPLICATE_P0_REGRESSION"
+    },
+    {
+      "id": "QABC-0386",
+      "route": "G1-NOR-072",
+      "source_row": 79,
+      "imported_key": "B",
+      "candidate": "C",
+      "i7": "§5.5.2.1-§5.5.3.1, central §5.5.2.3",
+      "source_A": "nu este obligatoriu să poată fi deconectat individual",
+      "source_B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+      "source_C": "trebuie să poată fi deconectat individual",
+      "rationale": {
+        "A": "Negates explicit individual disconnection obligation.",
+        "B": "Explicitly says no tool, opposite exact mandatory tool-only requirement.",
+        "C": "Affirmative explicit required individual-disconnection condition; incomplete as full combined standard but true. Tool qualifier must be in card context, not forced into original C."
+      },
+      "class": "P0_ORIGINAL_VS_CANONICAL_LOGICAL_NEGATION"
+    }
+  ],
+  "checks": {
+    "physical_xlsx_reopened_rows": 4,
+    "precise_pdf_context_reopened": true,
+    "technical_candidates_no_changed_keys": true,
+    "qualified_independent_review_done": false,
+    "learner_approvals_new": 0,
+    "p0_not_subtracted": 3,
+    "p2_not_subtracted": 1,
+    "all_822_approval_count_remains": 0
+  },
+  "didactic_context_instructions": "Use one sentence or paragraph before focus, bold precisely the normative central text, then one sentence or paragraph after it; include exception. Keep original source ABC immutable and distinguish teaching reformulation. Obtain quote rights for any user-facing offline passage.",
+  "anti_error": [
+    "§5.4.13 allows 3 alternatives, yet each test variant includes quantifier choices; no literal unqualified 'all three correct' response.",
+    "§5.5.2.3 contains TWO conjunctive requirements: separate disconnectability and a tool; C expresses only the first, still true.",
+    "§5.2.4.6.1 thresholds are 16 Cu/25 Al for the polyphase branch, not 25 Cu/35 Al.",
+    "Do not relabel the 2023 bibliographic PDF as newly revised 2026 or infer a 2026 official scored answer key."
+  ]
+}

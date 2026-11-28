@@ -1,0 +1,114 @@
+{
+  "schema_version": "0.1",
+  "created_on": "2026-11-19",
+  "purpose": "ANRE final content audit to Academy training assignment, not executed trials",
+  "audit_branch": "audit/anre-v8-priority-17-20261109",
+  "reference_checkpoint": "CKPT-250",
+  "training_state": "ASSIGNED_NOT_EXECUTED",
+  "independent_qa": "NOT_RUN",
+  "baseline_trials_completed": 0,
+  "skill_trials_completed": 0,
+  "approval_for_learning": 0,
+  "policy": "No model improvement, independent review or answer-key validity inferred from these fixtures.",
+  "pilot_cases": [
+    {
+      "id": "ANRE-ACA-001",
+      "question_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "focus": "same-question different imported key across grades",
+      "roles": [
+        "AGENT-029",
+        "AGENT-032",
+        "AGENT-005"
+      ],
+      "expected_checks": [
+        "immutable original variants",
+        "grade-scope applicability",
+        "contradictory keys flagged",
+        "no guessed official key"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ANRE-ACA-002",
+      "question_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "focus": "cross-grade busbar/topology conflict",
+      "roles": [
+        "AGENT-029",
+        "AGENT-030",
+        "AGENT-032",
+        "AGENT-005"
+      ],
+      "expected_checks": [
+        "exact schematic required where relevant",
+        "source applicability",
+        "different imported keys retained for adjudication"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ANRE-ACA-003",
+      "question_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "focus": "exclusive wording doar and isolator function",
+      "roles": [
+        "AGENT-029",
+        "AGENT-031",
+        "AGENT-030",
+        "AGENT-005"
+      ],
+      "expected_checks": [
+        "qualifier doar detected",
+        "option-by-option affirmative evidence",
+        "A/B distinction left open absent exact source",
+        "distinguish intended key from technical conclusion"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ANRE-ACA-004",
+      "question_ids": [
+        "G1-NOR-032"
+      ],
+      "focus": "generic-versus-specific source trap I7 25m vs PE155 15m",
+      "roles": [
+        "AGENT-030",
+        "AGENT-031",
+        "AGENT-005"
+      ],
+      "expected_checks": [
+        "same physical object and grade compared",
+        "generic I7 not promoted to exact PE155 answer proof",
+        "normative edition and exception checked",
+        "source-scope preflight not answer approval"
+      ],
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "ANRE-ACA-005",
+      "question_ids": [
+        "G1-ELE-139",
+        "G2-ELEC-277"
+      ],
+      "focus": "neutral-to-earth potential under unspoken grounding assumption",
+      "roles": [
+        "AGENT-029",
+        "AGENT-031",
+        "AGENT-005"
+      ],
+      "expected_checks": [
+        "idealized model distinguished from general physical conditions",
+        "missing neutral-earthing condition reported",
+        "no conditional source passed as universal proof"
+      ],
+      "status": "NOT_RUN"
+    }
+  ]
+}

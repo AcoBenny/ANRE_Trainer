@@ -1,0 +1,38 @@
+{
+  "schema": "batch_progress_result_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT-398-ANTI-LOOP-IMPLEMENTATION",
+  "task_id": "ANRE-ANTI-LOOP-IMPLEMENTATION",
+  "verdict": "PROGRESSED",
+  "action": "CONTINUE_NEXT_UNFINISHED_BATCH",
+  "counts": {
+    "before": {
+      "items": 1,
+      "open_gates": 2,
+      "approved": 0,
+      "review_ready": 0
+    },
+    "after": {
+      "items": 1,
+      "open_gates": 2,
+      "approved": 0,
+      "review_ready": 1
+    }
+  },
+  "delta": {
+    "distinct_items_advanced": 1,
+    "stage_transitions": [
+      {
+        "id": "ANRE-ANTI-LOOP-BATCH-GATE",
+        "from": "BACKLOG",
+        "to": "REVIEW_READY"
+      }
+    ],
+    "closed_gates": [],
+    "new_processed_items": [],
+    "evidence_only_items": [],
+    "regression_reasons": [],
+    "invalid_progress_claims": []
+  },
+  "audit_notice": "Structural preflight only. Does not independently verify technical truth, official exam keys, reviewer identity or HTML/APK runtime."
+}

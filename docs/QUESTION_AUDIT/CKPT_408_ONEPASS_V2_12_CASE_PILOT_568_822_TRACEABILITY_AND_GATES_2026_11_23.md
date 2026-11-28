@@ -1,0 +1,43 @@
+# CKPT-408 | ONE PASS v2 12-case pilot (real executed, NOT final answer validation)
+
+Date: 2026-11-23. Parent CKPT-407. Branch `audit/anre-v8-priority-17-20261109`. PR #7 Draft/unmerged. All source question texts, original A/B/C, imported answer keys, application HTML/APK and release artifacts unchanged.
+
+## 1. Exactly what was executed and read back
+
+- [V360: the complete 568 QABC ↔ 568 AU legacy ↔ 822 grade-route mapping](./ONEPASS_V2_PILOT/V360_ONEPASS_V2_568_AU_QABC_822_GRADE_ROUTE_EXACT_CROSSWALK_2026_11_23.json) generated from prior old/new full registries. **568/568 original question texts + three options identical; 568/568 imported key-group maps identical; 822/822 grade routes unique and matched, zero unaccounted/duplicate routes.** Exact original workbook SHA/bytes were NOT freshly reopened in this pilot; these are cross-registry assertions only.
+- [V361: 12 exact example dossiers with status and missing evidence](./ONEPASS_V2_PILOT/V361_ONEPASS_V2_12_CASE_PILOT_SOURCE_CARD_BLOCKERS_2026_11_23.json): **7 canonical QABC** with drafted ABC editorial cards found in V241 and tracked original data; **4 source-native Grade-II** questions still quarantined (not among current 822); **1 source-original Electrotehnica row 30** with three DrawingML graphic choices absent from the current canonical bank. **11/12** have original written question+ABC in source records; the diagram source still requires authentic visual pixel comparison and page/figure evidence.
+- [V362: 24/24 real source/register QA assertions + 11/11 synthetic fail-closed QA fixtures](./ONEPASS_V2_PILOT/V362_ONEPASS_V2_PILOT_24_DATA_ASSERTIONS_11_SYNTHETIC_GUARDS_2026_11_23.json). The 11 synthetic cases exercise a mock all-true positive and each independent missing approval predicate. **Synthetic checks are routing logic only**, not a separate reviewer, normative interpretation, or real Android test. Initial typo/overstrict text guard fixed in the **test**, no original data mutated.
+- Actual external independent AI criticism of the **process design** was run (`resp_4c55a9bc-3484-448a-a33d-791771743d6d`); no claim of qualified independent electrical or statutory answer-QA.
+
+## 2. The 12 sample cases and their actual no-false-approval dispositions
+
+| Source ID | Test dimension | What the existing evidence supports/flags | Exact missing gate |
+| --- | --- | --- | --- |
+| QABC-0017, G1-ELE-018 / G2-ELEC-170 | Shared grade + mathematics | Exact same text+ABC; imported G1=A vs G2=C. Existing source-based Cs=3C derivation is conditional | Source defining Cs, edition and qualified dispute arbitration; preserve both imported keys |
+| QABC-0027, G1-ELE-031 / G2-ELEC-180 | Routine card + technical support | Both imported A. Prefabricated monobloc often emphasizes personnel safety but generic claim is not a product-specific proof | Exact applicable source, full card context, rights and independent QA |
+| QABC-0143, G1-ELE-152 | Native workbook vs Trainer rewritten text | Original says “mărimea adimensională”, Trainer changes to “mărimea caracteristică”; `γ` has dimensions inverse length, so source contradiction is material | Resolve which original-source version may be scored, qualified source + terminology review |
+| QABC-0341, G1-NOR-027 | Historical source vs grade bibliography | PE102 §4.6.3 describes contact screws, but excluded Grade I 2023 bibliography; I7 contact-center terminology not proven identical to stem’s ‘șuruburi’ | Exact fuse construction + I7 grade-specific applicability, official key proof |
+| QABC-0346, G1-NOR-032 | Specific object vs generic numeric paragraph | PE155 §3.2.10 specific straight horizontal branch columns 15 m vs general I7 conduit run 25 m | Confirm PE155 2026 applicability, source page visual/permission, external QA |
+| QABC-0281, G1-LEG-017 | Current legal wording + A/B/C | Law 123 termination legal ground may support A while imported answer is B; disconnection != legal termination | Exact applicable statute+contract rule, A/B/C unique-answer independent legal review |
+| QABC-0426, G2-NORM-003 | Unofficial didactic source + A bias | Didactic question about PE155 grade scope, not a published ANRE exam original; all 153 didactic group imports are A | Label teaching-only, 2026 bibliography, correct stable option-ID shuffle validation |
+| G2 original NOR-R0037 | Source-object swap | I7 §5.3.3.17 addresses apparatus, PE102 §4.4.7 addresses circuits. Candidate C is provisional | Applicable 2026 PE102 edition and actual PDF image rights/verification |
+| G2 original NOR-R0122 | Language overqualification | Exact I7 §5.1.7.2(e) prescribes Cu, but answer B says **numai** Cu | Specific norm/exclusivity and linguistic review; complete card |
+| G2 original LEG-R0098 | Two literal obligatory documents | Art14(1)(c) vs (h) may both support A and B | No single-option assumption; legal/linguistic adjudication, complete card |
+| G2 original NOR-R0055 | Active vs neutral conductors | Source says interrupt all active conductors yet immediate exception says neutral interruption nonmandatory; A and C defensible | No forced answer, qualified semantic source review, complete card |
+| Original Electrotechnica XLSX row 30 | 3 graphic answers orphan | Original 3 DrawingML shapes-based answer fields have anchors; preview not pixel-identical or independently attested, no canonical ID | Original workbook image fidelity/visual source, 2026 official source and key, canonical inclusion scope |
+
+## 3. What the pilot proves and does NOT prove
+
+**Proves:** data identities across the 568 old/new QABC and all 822 grade routes can be joined **exactly** without changing source options or keys. The 12 chosen source/edition/semantic/rights/diagram blockers are preserved without false approval. All 7 canonical cases have prior A/B/C drafts, so research already done should not be repeated as ‘new progress’. The four new source-native G2 cases are still outside 822 and have source research **not finished user-facing cards**.
+
+**Does NOT prove:** a fully validated final answer, exact legal original source “paragraph before / focus bold / paragraph after”, source context republishing rights, a corrected 2026 source edition for every case, authenticated official scored ANRE keys, independent electrical/legal/linguistic professional signoff, or any real HTML/APK test. **0/12 sample final content approvals; 0/822 final grade-route approvals**. These are **expected fail-closed outcomes**, not proof that the user-visible content is ready for learning.
+
+**Missing-card counts in this pilot:** 7/12 canonical have A/B/C draft text linked; 4/12 quarantined G2 source questions have prior preliminary option reasoning but no full card; 1/12 diagram original has neither grade ID nor qualified graphic card. For these 12 the pilot did **not** authenticate exact licensed source context before/focus/after. Do not claim the 15 populated old source-aggregate cards are the only newer source-context work: newer V247/V249 and editorial manifests are dispersed and should be joined by stable ID.
+
+## 4. Fix before scaling to full final review
+
+1. Build the **read-only evidence/master field-coverage matrix for all 568/822 and 157 G2 staging + 11 source orphan rows**. Reuse V360 mapping. Join V241 full ABC drafts and latest source-window layers and explicitly score `has_source_URL` separately from `original_clause_exact`, `edition`, `grade_scope`, `ABC_unique`, `original_before_focus_after`, `rights`, `independent_professional_QA` and `official_key_proven`. Flag any original source XLSX visual missing and all material mutation changes. Do not add candidate rows to 822 yet.
+2. Before unlimited 822 pass, **prove one positive REAL end-to-end original-source card path** with a legally usable source, original exam question/ABC, complete precise contextual source, three editorial ABC explanations, valid source/page/version and rights, expert-review slot and deterministic counterexample tests. A positive **synthetic** fixture cannot replace that. This can be completed as content packet **pending professional signoff**, but never marked learner-approved without it.
+3. Then execute one-pass final review per distinct canonical QABC and per-grade route gates, with nonrepeating incremental evidence and **zero unqualified learning approvals**. Escalate user only for a specifically unresolved source-backed interpretation or rights/official-source decision. Do not repeat old G2 41/43 lots unless a previously missing source predicate changes.
+
+**Current status:** Pilot 12/12 traceability/negative routing closed. Application implementation has not started. PR #7 must remain Draft/unmerged until explicit user approval.

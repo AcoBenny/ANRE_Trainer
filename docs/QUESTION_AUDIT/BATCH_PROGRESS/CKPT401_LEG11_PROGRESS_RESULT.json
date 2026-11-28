@@ -1,0 +1,155 @@
+{
+  "schema": "batch_progress_result_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT401-LEG11",
+  "task_id": "ANRE-G2-110-NONREPEAT-FIVE-BATCHES",
+  "verdict": "PROGRESSED",
+  "action": "CONTINUE_NEXT_UNFINISHED_BATCH_OR_INDEPENDENT_SOURCE_QA",
+  "counts": {
+    "before": {
+      "items": 11,
+      "open_gates": 55,
+      "approved": 0,
+      "review_ready": 0
+    },
+    "after": {
+      "items": 11,
+      "open_gates": 44,
+      "approved": 0,
+      "review_ready": 0
+    }
+  },
+  "delta": {
+    "distinct_items_advanced": 11,
+    "stage_transitions": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0083",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0084",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0092",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0095",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0096",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0097",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0098",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0099",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0102",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0105",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0110",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      }
+    ],
+    "closed_gates": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0083",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0084",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0092",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0095",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0096",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0097",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0098",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0099",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0102",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0105",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0110",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      }
+    ],
+    "new_processed_items": [],
+    "evidence_only_items": [],
+    "regression_reasons": [],
+    "invalid_progress_claims": []
+  },
+  "audit_notice": "Recomputed structural gate in connected JS runtime. NOT independent ANRE answer-key validation or Node CI."
+}

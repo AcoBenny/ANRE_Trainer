@@ -1,0 +1,499 @@
+{
+  "schema": "v199_11_additional_ANRE_sample_original_source_matched_full_ABC_editorial_drafts",
+  "date": "2026-11-20",
+  "parent_head": "a2ec9866a553f9f18f76683207abadc3e4738db9",
+  "v197_blob_sha": "b30343b5200fa6d0383134a8caae264588477765",
+  "v149_blob_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "counts": {
+    "new_unique_qabc": 11,
+    "grade_routes": 20,
+    "per_option_explanations": 33,
+    "reformulations": 11,
+    "explicit_semantic_holds": 8,
+    "learner_approved": 0
+  },
+  "explicitly_held_QABC": [
+    "QABC-0019",
+    "QABC-0044",
+    "QABC-0046",
+    "QABC-0050",
+    "QABC-0069",
+    "QABC-0080",
+    "QABC-0082",
+    "QABC-0113"
+  ],
+  "integrity_note": "All 11 were previously unedited at V197. Original stem, A/B/C, all per-grade keys copied unchanged from V149. Source original equality inherited from V175/V197. This layer reuses historical CKPT216/189/250/V87 evidence without claiming to have reopened every page. Current live checks include OpenStax resonance/magnetic force and Schneider overload relay. Some original items are ambiguous/overlapping and not for release, and no qualified independent technical/linguistic QA was executed.",
+  "cards": [
+    {
+      "unit_id": "QABC-0019",
+      "grade_ids": [
+        "G1-ELE-020",
+        "G2-ELEC-172"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "27",
+        "stem": "Capsularea monopolară conduce la :",
+        "A": "eliminarea totală a posibilităţii apariţiei unui scurtcircuit între faze;",
+        "B": "micşorarea riscului unor pierderi de gaz izolant;",
+        "C": "reducerea cheltuielilor de realizare a instalaţiilor.",
+        "imported_keys_UNCHANGED": "G1-ELE-020=A | G2-ELEC-172=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v169",
+        "prior_history_reference": "CKPT216 / G2 V92",
+        "previous_source_reference_summary": "G1-ELE-020:Source scientific/technical references in CKPT216 | G2-ELEC-172:https://cache.industry.siemens.com/dl/files/247/109972247/att_1289495/v1/8DAB_HA35.11_EN.pdf ; https://www.infrastructure-cities.siemens.com.cn/powerdistribution/DownloadCenter/upload/20120710015855682.pdf",
+        "prior_exam_edition_gate": "G1-ELE-020:2026_EXAM_KEY_NOT_VERIFIED__INDEPENDENT_REVIEW_NOT_RUN__NO_LEARN_APPROVAL | G2-ELEC-172:Siemens HA35.11 catalog2023; historical 8DA/8DB presentation2011-10-01 copyright2008 | Exact installation scope and independent electrical review. Do not dismiss every absolute automatically: valid within an explicit physical enclosure boundary."
+      },
+      "editorial_draft": {
+        "A": "În carcase metalice separate pentru fiecare fază se pot elimina căi directe de defect între faze în interiorul zonelor segregate; «eliminarea totală» în întreaga instalație este însă excesivă.",
+        "B": "Capsularea monopolară nu garantează mai puține pierderi de gaz, deoarece numărul îmbinărilor și etanșările diferă după construcție.",
+        "C": "Separarea fazelor nu dovedește reducerea costurilor; poate crește numărul elementelor și complexitatea montajului.",
+        "model_scope_or_trap": "Separarea unipolară versus tripolară contează numai în volumul capsulat. Terminațiile și legăturile externe pot susține defecte între faze. Barem A importat nu este afirmație universală.",
+        "reformulated_question": "Dacă fiecare fază este izolată într-o carcasă separată, pot exista totuși defecte între faze la terminații externe necompartimentate?",
+        "reformulated_solution": "Da. Compartimentarea poate elimina anumite căi locale fără eliminare totală a posibilității în toată instalația.",
+        "editorial_disposition": "HOLD_ABSOLUTE_TOTAL_PHASE_FAULT",
+        "option_comparison_pairs": [
+          "A vs B: defect între faze vs pierderi de gaz sunt fenomene diferite",
+          "A vs C: izolarea nu dovedește economie",
+          "B vs C: etanșeitate și cost depind de construcție"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0044",
+      "grade_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "58",
+        "stem": "Dacă o tensiune electromotoare E, montată în latura AB a unei reţele pasive, produce în latura CD a reţelei un curent I, montarea t.e.m. E în latura CD va produce în latura AB:",
+        "A": "un curent - (minus) I",
+        "B": "un curent I",
+        "C": "un curent I/2",
+        "imported_keys_UNCHANGED": "G1-ELE-051=B | G2-ELEC-197=B"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v172",
+        "prior_history_reference": "CKPT189",
+        "previous_source_reference_summary": "G1-ELE-051:See exact indexed source in CKPT_189_NEXT5_BLOCKED_RECIPROCITY_OHM_MAGNETISM_MANEUVERS_2026_11_17.md | G2-ELEC-197:UNSPECIFIED",
+        "prior_exam_edition_gate": "G1-ELE-051:HISTORICAL_RECONCILIATION_NO_NEW_SOURCE_REVIEW__INDEPENDENT_QA_NOT_RUN | G2-ELEC-197:HISTORY_REUSED_NOT_NEW_QA"
+      },
+      "editorial_draft": {
+        "A": "Curentul −I poate apărea la convenții de referință inversate, dar semnul nu este determinat de simpla pasivitate.",
+        "B": "Curentul I este răspunsul intenționat de teorema reciprocității într-o rețea liniară bilaterală reciprocă și cu orientări coerente ale porturilor; «pasivă» singur nu garantează aceste proprietăți.",
+        "C": "Un raport fix de jumătate nu decurge din reciprocitate; depinde de structura și impedanțele rețelei.",
+        "model_scope_or_trap": "Contraexemplu: o rețea pasivă nereciprocă (de exemplu cu girator) sau porturi cu orientări opuse. Doar pasivitatea nu certifică reciprocitatea.",
+        "reformulated_question": "Într-o rețea liniară reciprocă cu porturi și sensuri identic definite, ce se întâmplă cu transferul dacă interschimbăm excitația și măsurarea?",
+        "reformulated_solution": "Coeficientul de transfer se păstrează; nu este adevărat pentru toate rețelele doar pasive.",
+        "editorial_disposition": "HOLD_PASSIVE_NOT_SUFFICIENT_RECIPROCITY",
+        "option_comparison_pairs": [
+          "A vs B: semnul depinde de convenția de orientare și reciprocitate",
+          "A vs C: −I nu implică I/2",
+          "B vs C: reciprocitatea ar da I, nu jumătate în modelul ideal"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0046",
+      "grade_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "60",
+        "stem": "Funcţionarea în doua faze a unui transformator trifazat are ca efect:",
+        "A": "supraîncălzirea acestuia",
+        "B": "suprasarcina",
+        "C": "reducerea puterii tranzitate",
+        "imported_keys_UNCHANGED": "G1-ELE-053=A | G2-ELEC-199=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v172",
+        "prior_history_reference": "CKPT217 / CKPT232",
+        "previous_source_reference_summary": "G1-ELE-053:See exact indexed source in CKPT_217_GFR_7_P1_GRADEII_TECHNICAL_QABC_FAULTS_REACTOR_GIS_2026_11_18.md | G2-ELEC-199:Source technical/engineering references in CKPT217",
+        "prior_exam_edition_gate": "G1-ELE-053:HISTORICAL_RECONCILIATION_NO_NEW_SOURCE_REVIEW__INDEPENDENT_QA_NOT_RUN | G2-ELEC-199:2026_EXAM_KEY_NOT_VERIFIED__INDEPENDENT_REVIEW_NOT_RUN__NO_LEARN_APPROVAL"
+      },
+      "editorial_draft": {
+        "A": "Alimentarea în două faze poate produce curenți dezechilibrați și încălzire suplimentară sub sarcină, dar severitatea nu este determinată fără conexiune, sarcină și protecții.",
+        "B": "Suprasarcina anumitor înfășurări este un mecanism posibil de supraîncălzire; nu se exclude automat de A și poate coexista cu aceasta.",
+        "C": "Pierderea unei faze poate reduce capacitatea de transfer în anumite conexiuni/regimuri, dar nu este consecință unică a oricărei «funcționări în două faze».",
+        "model_scope_or_trap": "Se suprapun A supraîncălzire, B suprasarcină și C reducere putere în anumite scenarii; criteriul conexiunii, sarcinii și protecției lipsește. Nu există unicitate demonstrată.",
+        "reformulated_question": "Un transformator trifazat cu o fază de alimentare absentă poate necesita reducerea sarcinii pentru a preveni supraîncălzirea?",
+        "reformulated_solution": "Da, în funcție de conexiune și de protecțiile aplicate; nu trebuie operat fără evaluare calificată.",
+        "editorial_disposition": "HOLD_TWO_PHASE_OPERATION_OVERLAPPING_OUTCOMES",
+        "option_comparison_pairs": [
+          "A vs B: suprasarcina poate cauza supraîncălzire, nu sunt excluse reciproc",
+          "A vs C: deratarea și supraîncălzirea pot coexista",
+          "B vs C: suprasarcina internă și puterea totală redusă pot coexista"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0050",
+      "grade_ids": [
+        "G1-ELE-057",
+        "G2-ELEC-203"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "64",
+        "stem": "Două funcţii periodice sinusoidale sunt armonice între ele dacă:",
+        "A": "raportul perioadelor lor este un număr întreg oarecare",
+        "B": "au aceeaşi perioadă",
+        "C": "raportul perioadelor lor este egal cu 1/2",
+        "imported_keys_UNCHANGED": "G1-ELE-057=A | G2-ELEC-203=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v164",
+        "prior_history_reference": "CKPT184 / V87 / V138",
+        "previous_source_reference_summary": "G1-ELE-057:See exact indexed source in CKPT_184_BLOCKED_ELECTROTECHNICS_7_TERMS_MATH_CONTEXT_2026_11_17.md | G2-ELEC-203:https://www.fluke.com/en/learn/blog/power-quality/how-to-find-harmonics-in-electrical-systems",
+        "prior_exam_edition_gate": "G1-ELE-057:HISTORICAL_RECONCILIATION_NO_NEW_SOURCE_REVIEW__INDEPENDENT_QA_NOT_RUN | G2-ELEC-203:Fluke online undated; consulted2026-11-11 | Specify which signal is fundamental and ratio orientation; mutually exclusive options needed; independent review"
+      },
+      "editorial_draft": {
+        "A": "Raportul întreg de perioade poate identifica o relație de armonică față de o fundamentală aleasă, dar este directional și se suprapune cu B pentru raport 1.",
+        "B": "Aceeași perioadă corespunde raportului 1, care este întreg; dacă se include armonica de ordin 1, B este deja subcaz A.",
+        "C": "Raport 1/2 este reciproca lui 2: dacă se inversează ordinea perioadelor, una dintre sinusoidale poate fi armonica a doua a celeilalte.",
+        "model_scope_or_trap": "Nu sunt trei alternative mutual exclusive. Se cere definiția formală a «armonice între ele» și ordinea fundamentală/armonică; cifra «oarecare» și cazul n=1 creează suprapunere.",
+        "reformulated_question": "Două sinusoidale au perioadele 20 ms și 10 ms. Care este raportul perioadelor în ambele sensuri?",
+        "reformulated_solution": "2 și 1/2. Ambele exprimă aceeași pereche de frecvențe legate armonic.",
+        "editorial_disposition": "HOLD_PERIOD_RATIO_OPTION_OVERLAP",
+        "option_comparison_pairs": [
+          "A vs B: B este submulțime A dacă n=1 permis",
+          "A vs C: C este reciprocă pentru ordinea inversă, nu neapărat fenomen diferit",
+          "B vs C: rapoarte 1 și 1/2 aparțin cazurilor distincte, dar nu rezolvă definirea"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0069",
+      "grade_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "84",
+        "stem": "Forţa care se exercită asupra unui conductor rectiliniu, parcurs de curentul i, aflat în câmpul de inducţie magnetică B se numeşte:",
+        "A": "forţă electromagnetică (Laplace)",
+        "B": "forţă electrodinamică",
+        "C": "forţă magnetomotoare",
+        "imported_keys_UNCHANGED": "G1-ELE-077=A | G2-ELEC-222=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v164",
+        "prior_history_reference": "V87 / CKPT250",
+        "previous_source_reference_summary": "G1-ELE-077:https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor | G2-ELEC-222:https://openstax.org/books/university-physics-volume-2/pages/11-4-magnetic-force-on-a-current-carrying-conductor",
+        "prior_exam_edition_gate": "G1-ELE-077:University Physics vol2 online; consulted 2026-11-11 | Romanian terminology independent review; no exact Romanian naming proof | G2-ELEC-222:PREVIOUS_V87_TERMINOLOGY_GATE_OFFICIAL_ANRE2026_EDITION_AND_INDEPENDENT_QA_UNVERIFIED"
+      },
+      "editorial_draft": {
+        "A": "Formula F=I (l×B) exprimă forța mecanică asupra conductorului și este numită frecvent forța lui Laplace.",
+        "B": "«Forță electrodinamică» poate desemna în literatura tehnică forțe magnetice între conductoare/circuite cu curent; nu este evident o categorie exclusă semantic în orice manual românesc.",
+        "C": "Forța magnetomotoare NI, măsurată în amper-spire, este o mărime de excitație magnetică, nu o forță mecanică în newtoni.",
+        "model_scope_or_trap": "Confirmarea fizică F=I l×B nu autentifică unicitatea terminologică A versus B. Necesită glosar/ediție de curs ANRE.",
+        "reformulated_question": "Un conductor cu I=2 A și l=0,5 m perpendicular pe câmp B=1 T suportă ce forță?",
+        "reformulated_solution": "1 N, din F=I·l·B pentru unghi de 90°.",
+        "editorial_disposition": "HOLD_LAPLACE_VS_ELECTRODYNAMIC_TERMINOLOGY",
+        "option_comparison_pairs": [
+          "A vs B: termeni cu posibile sensuri suprapuse, cere glosar",
+          "A vs C: forță mecanică vs magnetomotoare NI distincte",
+          "B vs C: electrodinamic mecanic vs NI excitație"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0080",
+      "grade_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "95",
+        "stem": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+        "A": "limitarea posibilităţilor de producere a unui defect în instalaţie;",
+        "B": "mărirea riscului de producere a unor scăpări de gaz;",
+        "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment.",
+        "imported_keys_UNCHANGED": "G1-ELE-088=A | G2-ELEC-233=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v164",
+        "prior_history_reference": "V87 / CKPT250",
+        "previous_source_reference_summary": "G1-ELE-088:https://www.hitachienergy.com/content/dam/web/products-services/products-systems/high-voltage-switchgear/documents/msm/2ghv045871-msm-user-manual-rev-r.pdf | G2-ELEC-233:https://switchgearcontent.com/2019/05/23/494/requirements-for-enclosure-partitioning-in-gis-design-according-to-iec-standard/",
+        "prior_exam_edition_gate": "G1-ELE-088:Hitachi Energy 2GHV045871 Rev R, copyright2023 | Exact GIS design/maintenance source for all three options; current source only establishes leakage qualification | G2-ELEC-233:PREVIOUS_V87_AND_WEB_INDEX_SOURCE_GAP_OFFICIAL_ANRE2026_EDITION_AND_INDEPENDENT_QA_UNVERIFIED"
+      },
+      "editorial_draft": {
+        "A": "Compartimentarea poate limita extinderea/propagarea defectului și volumul afectat, dar nu este demonstrat că reduce probabilitatea inițierii oricărui defect.",
+        "B": "Un număr mai mare de etanșări poate aduce puncte potențiale de scăpare, deși afirmația «mărirea riscului» nu este inevitabilă la proiectare corectă.",
+        "C": "Compartimentele mai mici permit de regulă manipularea unei cantități mai mici de gaz pentru o intervenție localizată, nu mai mare.",
+        "model_scope_or_trap": "«Limitarea posibilităților de producere» poate fi confuză cu limitarea propagării consecințelor. B poate fi condițional adevărat; unicitatea A nu este confirmată.",
+        "reformulated_question": "Dacă un defect intern este izolat într-un compartiment GIS, scade obligatoriu rata de apariție a defectelor?",
+        "reformulated_solution": "Nu. Limitarea propagării unui defect nu dovedește că inițierea sa devine imposibilă.",
+        "editorial_disposition": "HOLD_GIS_INITIATION_VS_CONTAINMENT",
+        "option_comparison_pairs": [
+          "A vs B: propagare limitată nu exclude o etanșare cu risc",
+          "A vs C: defect versus volum de gaz la intervenție sunt efecte diferite",
+          "B vs C: etanșări potențiale versus gaz manipulat pot varia independent"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0081",
+      "grade_ids": [
+        "G1-ELE-089"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "96",
+        "stem": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+        "A": "numai limitarea posibilităţilor de producere a unui defect în instalaţie;",
+        "B": "localizarea unor eventuale scăpări de gaz, precum şi a unor defecte interne,",
+        "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment",
+        "imported_keys_UNCHANGED": "G1-ELE-089=B"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v169",
+        "prior_history_reference": "CKPT216",
+        "previous_source_reference_summary": "G1-ELE-089:Source scientific/technical references in CKPT216",
+        "prior_exam_edition_gate": "G1-ELE-089:2026_EXAM_KEY_NOT_VERIFIED__INDEPENDENT_REVIEW_NOT_RUN__NO_LEARN_APPROVAL"
+      },
+      "editorial_draft": {
+        "A": "«Numai limitarea posibilităților de producere» este restrictivă, fiindcă compartimentarea ajută și la detectarea/localizarea pierderilor și defectelor.",
+        "B": "Compartimentele izolate permit localizarea pierderilor de gaz și a defectelor interne la un volum mai restrâns, dacă există delimitare și monitorizare adecvate.",
+        "C": "De regulă segmentarea reduce volumul de gaz manipulat la lucrări locale; nu demonstrează o creștere obligatorie.",
+        "model_scope_or_trap": "Compară aceeași întrebare G1-ELE-088, dar alte opțiuni și altă literă importată; nu le trata ca duplicate identice. Necesită ipoteza compartimentelor efectiv etanșe și monitorizate.",
+        "reformulated_question": "Într-un GIS cu 5 compartimente independente, o pierdere de gaz în unul trebuie să implice golirea tuturor?",
+        "reformulated_solution": "Nu. Izolarea volumelor permite localizarea și intervenția conform proiectului.",
+        "editorial_disposition": "QUALIFIED_DISTINCT_VARIANT_FROM_QABC0080",
+        "option_comparison_pairs": [
+          "A vs B: «numai» din A este fals deoarece B adaugă rol util",
+          "A vs C: A exclusiv nu este justificat",
+          "B vs C: B localizează, C susține volum crescut contrar segregării obișnuite"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0082",
+      "grade_ids": [
+        "G1-ELE-090",
+        "G2-ELEC-234"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "97",
+        "stem": "În cazul apariţiei fenomenului de rezonanţă într-un circuit de curent alternativ, alimentat de la o sursă, aceasta furnizează circuitului:",
+        "A": "numai energie activă",
+        "B": "energie activă şi reactivă",
+        "C": "numai energie reactivă",
+        "imported_keys_UNCHANGED": "G1-ELE-090=A | G2-ELEC-234=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v169",
+        "prior_history_reference": "CKPT216",
+        "previous_source_reference_summary": "G1-ELE-090:Source scientific/technical references in CKPT216 | G2-ELEC-234:UNSPECIFIED",
+        "prior_exam_edition_gate": "G1-ELE-090:2026_EXAM_KEY_NOT_VERIFIED__INDEPENDENT_REVIEW_NOT_RUN__NO_LEARN_APPROVAL | G2-ELEC-234:REUSE_ONLY_NOT_NEW_INDEPENDENT_REVIEW"
+      },
+      "editorial_draft": {
+        "A": "În RLC serie idealizat la rezonanță, reactanțele nete se compensează și sursa furnizează putere activă medie, Q_net≈0.",
+        "B": "În afara condițiilor idealizate (armonici, alt regim, tranzitorii), sursa poate schimba și energie reactivă; nu este adevărat B ca regulă pentru modelul de rezonanță serie simplu.",
+        "C": "«Numai energie reactivă» ar ignora disiparea de putere activă într-un circuit cu rezistență pozitivă.",
+        "model_scope_or_trap": "«Numai energie activă» descrie bilanțul net mediu la borne în regim sinusoidal staționar, nu absența energiei reactive stocate alternativ în L și C.",
+        "reformulated_question": "Un circuit RLC serie la rezonanță absoarbe net Q=0. Înseamnă că în L și C nu se schimbă energie?",
+        "reformulated_solution": "Nu. Energia oscilează local între câmpurile inductiv și capacitiv, deși fluxul net Q la sursă este zero.",
+        "editorial_disposition": "HOLD_RESONANCE_ONLY_NET_ACTIVE_MODEL",
+        "option_comparison_pairs": [
+          "A vs B: Q_net=0 numai în modelul rezonant potrivit",
+          "A vs C: un R>0 consumă P, deci C nu e valabil",
+          "B vs C: C exclude P, B îl admite împreună cu Q"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0083",
+      "grade_ids": [
+        "G1-ELE-091",
+        "G2-ELEC-235"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "98",
+        "stem": "În cazul circuitelor de curent alternativ, teoremele lui Kirchhoff sunt întotdeauna satisfăcute pentru:",
+        "A": "valorile instantanee ale tensiunilor şi curenţilor",
+        "B": "valorile efective ale tensiunilor şi curenţilor",
+        "C": "modulele fazorilor asociaţi tensiunilor şi curenţilor",
+        "imported_keys_UNCHANGED": "G1-ELE-091=A | G2-ELEC-235=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v169",
+        "prior_history_reference": "CKPT216",
+        "previous_source_reference_summary": "G1-ELE-091:Source scientific/technical references in CKPT216 | G2-ELEC-235:UNSPECIFIED",
+        "prior_exam_edition_gate": "G1-ELE-091:2026_EXAM_KEY_NOT_VERIFIED__INDEPENDENT_REVIEW_NOT_RUN__NO_LEARN_APPROVAL | G2-ELEC-235:REUSE_ONLY_NOT_NEW_INDEPENDENT_REVIEW"
+      },
+      "editorial_draft": {
+        "A": "Pentru modele de circuit concentrate, KCL și KVL se formulează cu semne și sensuri pentru valorile instantanee ale curenților și tensiunilor.",
+        "B": "Valorile RMS sunt mărimi pozitive și nu se pot suma algebric indiferent de fazele relative; pierd informația de semn/fază.",
+        "C": "Modulele fazorilor sunt numai magnitudini; se pot suma fazorii COMPLECȘI cu faze, dar nu modulele în general.",
+        "model_scope_or_trap": "«Întotdeauna» are domeniul de aplicare al circuitelor concentrate/quasi-staționare, nu câmpurilor distribuite arbitrarii. Formula pentru fazori COMPLECȘI este încă validă în regim sinusoidal stabil.",
+        "reformulated_question": "Doi curenți sinusoidali egali dar în opoziție de fază intră într-un nod. Suma modulelor lor este zero?",
+        "reformulated_solution": "Nu. Suma instantanee cu semne poate fi zero, dar suma modulelor este pozitivă.",
+        "editorial_disposition": "QUALIFIED_LUMPED_CIRCUIT",
+        "option_comparison_pairs": [
+          "A vs B: instantaneele păstrează semnul, RMS omite faza",
+          "A vs C: modulele fazorilor nu păstrează faza",
+          "B vs C: ambele magnitudini nu înlocuiesc sumele algebrice"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0086",
+      "grade_ids": [
+        "G1-ELE-094"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "101",
+        "stem": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
+        "A": "releele termice realizează protecţia la suprasarcină;",
+        "B": "releele termice realizează protecţia la scurtcircuit;",
+        "C": "releele termice realizează protecţia la supratensiuni;",
+        "imported_keys_UNCHANGED": "G1-ELE-094=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v169",
+        "prior_history_reference": "CKPT216 / Schneider live",
+        "previous_source_reference_summary": "G1-ELE-094:Source scientific/technical references in CKPT216",
+        "prior_exam_edition_gate": "G1-ELE-094:2026_EXAM_KEY_NOT_VERIFIED__INDEPENDENT_REVIEW_NOT_RUN__NO_LEARN_APPROVAL"
+      },
+      "editorial_draft": {
+        "A": "Releul termic protejează motorul față de suprasarcini persistente, acționând comanda contactorului, în coordonare cu restul aparatului de protecție.",
+        "B": "Scurtcircuitul necesită dispozitiv de protecție adecvat (fuzibil/întreruptor); releul termic nu este singurul dispozitiv de protecție la scurtcircuit.",
+        "C": "Supratensiunea se protejează prin echipamente și strategii dedicate, nu prin releu termic de suprasarcină.",
+        "model_scope_or_trap": "Releul termic nu este un întreruptor de putere autonom; tipul și coordonarea circuitului contează.",
+        "reformulated_question": "Ce aparat din ansamblul fuzibil + contactor + releu termic întrerupe curenții de scurtcircuit?",
+        "reformulated_solution": "Siguranța fuzibilă dimensionată corespunzător; releul termic vizează suprasarcina.",
+        "editorial_disposition": "QUALIFIED_MOTOR_OVERLOAD",
+        "option_comparison_pairs": [
+          "A vs B: regim termic prelungit vs defect scurtcircuit",
+          "A vs C: suprasarcină termică vs supratensiune",
+          "B vs C: scurtcircuit și supratensiune necesită măsuri distincte"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0113",
+      "grade_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "source_origin": "ANRE_HOSTED_2024_SAMPLE_NORMALIZED_TEXT_MATCH_NOT_AUTHENTICATED_SCORING_KEY",
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "129",
+        "stem": "Într-o schemă electrică prevăzută cu mai multe sisteme de bare colectoare, separatorul de bare",
+        "A": "asigură doar selectarea sistemului de bare pe care urmează a fi conectat circuitul;",
+        "B": "asigură izolarea unei părţi a circuitului de bara colectoare aflată sub tensiune;",
+        "C": "comutaţia curentului în regim normal de funcţionare.",
+        "imported_keys_UNCHANGED": "G1-ELE-122=A | G2-ELEC-264=A"
+      },
+      "historic": {
+        "v149_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "previous_research_layer": "v164",
+        "prior_history_reference": "CKPT250",
+        "previous_source_reference_summary": "G1-ELE-122:https://www.electrical-installation.org/enwiki/Elementary_switching_devices | G2-ELEC-264:https://www.electrical-installation.org/enwiki/Elementary_switching_devices",
+        "prior_exam_edition_gate": "G1-ELE-122:PREVIOUS_V87_AND_WEB_CONTEXT_OFFICIAL_ANRE2026_EDITION_AND_INDEPENDENT_QA_UNVERIFIED | G2-ELEC-264:Schneider EIG online; consulted2026-11-11 | LV generic source cannot alone certify HV bus topology; exact busbar scheme/standard and independent review required"
+      },
+      "editorial_draft": {
+        "A": "Separatorul de bare selectează bara la care se racordează un circuit, dar «doar» ignoră funcția de izolare/separare față de bare în configurații corespunzătoare.",
+        "B": "Izolarea unei părți a circuitului față de o bară sub tensiune poate fi o funcție a separatorului; formularea B poate fi tehnic adevărată când condițiile de separare sunt îndeplinite.",
+        "C": "Separatorul obișnuit nu este aparat pentru comutația curentului normal de sarcină, spre deosebire de un întreruptor sau separator de sarcină corespunzător.",
+        "model_scope_or_trap": "Import A dar B e candidat real în interpretarea instalației. Fără schema exactă și standardul relevant, «doar selectarea» nu certifică răspuns unic.",
+        "reformulated_question": "Separatorul de bare poate fi folosit ca întreruptor pentru curentul de sarcină în orice moment?",
+        "reformulated_solution": "Nu. Manevrele se efectuează numai în condițiile admise de proiect și aparat, cu personal autorizat.",
+        "editorial_disposition": "HOLD_BUS_DISCONNECTOR_A_VS_B_OVERLAP",
+        "option_comparison_pairs": [
+          "A vs B: selectare și izolare pot fi ambele funcții",
+          "A vs C: izolare vs comutație de sarcină sunt funcții distincte",
+          "B vs C: separarea fără sarcină nu este comutație normală sub sarcină"
+        ],
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "qualified_independent_technical_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "authentic_scored_exam_key": "NOT_AUTHENTICATED",
+        "learner_approved": false
+      }
+    }
+  ]
+}

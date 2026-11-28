@@ -1,0 +1,397 @@
+{
+  "schema": "V313_G2_LEGISLATION_14_RACORDARE_2026_ARTICLE_ABC_SCOPE_GATES",
+  "date": "2026-11-22",
+  "cases": [
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0039",
+      "original_source_row": 39,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Actualizarea avizului tehnic de racordare atunci când se produce schimbarea titularului locului de producere sau de consum ",
+      "options_original": {
+        "A": "este obligatorie numai dacă se modifică puterea aprobată anterior prin avizul tehnic de racordare;",
+        "B": "nu este obligatorie",
+        "C": "este obligatorie "
+      },
+      "candidate_UNOFFICIAL": "C_INTENDED_QUALIFY",
+      "option_reasons": {
+        "A": "A says update only if approved power changed; administrative holder changes can require ATR update without power change.",
+        "B": "B claims no update; correct only for *certificat de racordare* at already connected site, not universal ATR.",
+        "C": "C administrative holder change calls for administrative ATR update where ATR is operative."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.5(2), Art.6(3)(b), Art.26(2)"
+      },
+      "adjacent_context_or_exception": "The article expressly exempts updated certificate in an already connected site, creating a critical ATR-vs-certificate distinction.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0043",
+      "original_source_row": 43,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "În cazul existenţei mai multor puncte de delimitare, se consideră un singur loc de consum şi o singură instalaţie de utilizare dacă:",
+      "options_original": {
+        "A": "instalaţiile din aval aferente fiecărui punct de delimitare sunt legate electric între ele prin reţele ale operatorului de distribuţie;",
+        "B": "dacă există un singur proprietar  ",
+        "C": "instalaţiile din aval aferente fiecărui punct de delimitare sunt legate electric între ele prin reţele ale utilizatorului."
+      },
+      "candidate_UNOFFICIAL": "C",
+      "option_reasons": {
+        "A": "A OD-owned downstream interconnect cannot make a single user installation.",
+        "B": "B one ownership person is insufficient if the downstream installations are not electrically interconnected.",
+        "C": "C exact: downstream from all boundaries joined electrically via user's own networks."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Anexa 1 'instalație de utilizare'"
+      },
+      "adjacent_context_or_exception": "Exception: dispersed public lighting or equivalent loads on one LV feeder may be considered one installation without that direct link.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0082",
+      "original_source_row": 82,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "După depunerea documentaţiei complete de către utilizator, în situaţia în care soluţia de racordare se stabileşte prin fişă de soluţie, operatorul de reţea are obligaţia să transmită solicitantului avizul tehnic de racordare în maximum: ",
+      "options_original": {
+        "A": " 30 zile calendaristice în cazul racordării la joasă tensiune ",
+        "B": "20 zile calendaristice în cazul racordării la joasă tensiune",
+        "C": "10 zile calendaristice în cazul racordării la joasă tensiune"
+      },
+      "candidate_UNOFFICIAL": "A",
+      "option_reasons": {
+        "A": "A exactly 30 CALENDAR days from complete filing for solution-sheet route.",
+        "B": "B 20 days not this limit.",
+        "C": "C 10 days applies in other context e.g. study-based ATR or administrative update, not this exact case."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.26(1)"
+      },
+      "adjacent_context_or_exception": "The adjacent Art.26(2)/(3) provides different deadlines for administrative and study-based ATR.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0083",
+      "original_source_row": 83,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Cererile de racordare pentru locuri de producere cu puteri instalate de până la 50 MW inclusiv şi cele pentru locuri de consum cu puteri maxim simultan absorbite de până la 50 MW inclusiv, se adresează de către solicitanţi:",
+      "options_original": {
+        "A": "obligatoriu operatorului de distribuţie concesionar din zona respectivă ",
+        "B": "operatorului de transport şi de sistem",
+        "C": "unui operator de distribuţie care deţine în apropierea locului de producere sau de consum o reţea electrică de distribuţie"
+      },
+      "candidate_UNOFFICIAL": "C_NONEXCLUSIVE",
+      "option_reasons": {
+        "A": "A mandatory concessionaire only is false; another network operator nearby is also expressly permitted.",
+        "B": "B transmission-system operator is the default for >50MW, not <=50 MW.",
+        "C": "C a nearby distribution operator is expressly one permitted destination."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.8(1)-(3)"
+      },
+      "adjacent_context_or_exception": "Art.8(2) also accepts concessionaire; C is true, NOT exclusive. Do not turn it into an always-only requirement.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0084",
+      "original_source_row": 84,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Avizul tehnic de racordare se emite de către:",
+      "options_original": {
+        "A": "operatorul de reţea la care a fost depusă cererea de racordare, chiar dacă opţiunea scrisă a utilizatorului este pentru o variantă de soluţie de racordare la reţeaua electrică deţinută de un alt operator de reţea ",
+        "B": "operatorul de reţea la reţeaua căruia se racordează instalaţiile utilizatorului, conform soluţiei de racordare stabilite prin fişa sau studiul de solutie",
+        "C": "operatorul de reţea care a elaborat fişa sau studiul de solutie, chiar dacă opţiunea scrisă a utilizatorului este pentru o variantă de soluţie de racordare la reţeaua electrică deţinută de un alt operator de reţea"
+      },
+      "candidate_UNOFFICIAL": "B",
+      "option_reasons": {
+        "A": "A operator of original application not necessarily owner of ultimate connection network.",
+        "B": "B operator owning the grid actually used by solution issues the ATR.",
+        "C": "C solution-study author is not necessarily network operator receiving the final connection."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.17(1), Art.25(1)"
+      },
+      "adjacent_context_or_exception": "Art.25(2) adds upstream approval for nonconcessionary distribution cases.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0093",
+      "original_source_row": 93,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Avizul tehnic de racordare constituie: ",
+      "options_original": {
+        "A": "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;  ",
+        "B": "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii",
+        "C": "aprobarea de către operatorul de reţea a racordării utiizatorului în anumite condiţii."
+      },
+      "candidate_UNOFFICIAL": "NO_CURRENT_VERBATIM_MATCH",
+      "option_reasons": {
+        "A": "A an irrevocable commitment to build installation is not what ATR alone constitutes.",
+        "B": "B acceptance to USE grid is closer to other certificates, not the 2026 ART 'offer to connect'.",
+        "C": "C original wording 'approval of connection under conditions' approximates but not exact: current Art.24 says a technical connection offer to applicant."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.9(c), Art.24"
+      },
+      "adjacent_context_or_exception": "The current Art24 2022 rewrite changed legal characterization; hold rather than force historical intended C.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0095",
+      "original_source_row": 95,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Avizul tehnic de racordare este un aviz scris valabil:",
+      "options_original": {
+        "A": "pentru orice  titular al locului de producere/consum respectiv",
+        "B": "numai pentru un anumit titular al locului de producere/consum",
+        "C": "pe o perioadă de timp nelimitată"
+      },
+      "candidate_UNOFFICIAL": "CURRENT_ERA_HOLDER_GATE",
+      "option_reasons": {
+        "A": "A any holder is too broad: administrative transfer updates are regulated.",
+        "B": "B 'only a certain holder' may reflect the historic naming but must account for administrative transfer and updates.",
+        "C": "C unlimited validity false: ATR terminates upon certificate or multiple Art33 events."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.6(3)(b), Art.26(2), Art.32–33"
+      },
+      "adjacent_context_or_exception": "Source doesn't directly specify original 'valabil numai pentru un anumit titular', so don't score pending exact-era interpretation.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0096",
+      "original_source_row": 96,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Cererea pentru racordare la reţea  trebuie să fie în mod obligatoriu semnată de: ",
+      "options_original": {
+        "A": "utilizator sau de împuternicitul legal al utilizatorului.\n",
+        "B": "furnizor ",
+        "C": "operatorul de reţea\n"
+      },
+      "candidate_UNOFFICIAL": "A",
+      "option_reasons": {
+        "A": "A explicitly user or legally empowered representative signs application.",
+        "B": "B supplier may submit on behalf of applicant in specific circumstances, but is NOT mandatory signatory.",
+        "C": "C operator network is the receiver/issuer, not mandatory user applicant signature."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.15"
+      },
+      "adjacent_context_or_exception": "Art.12(1)(c) allows household supplier to represent applicant; Art15 governs signature authority.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0097",
+      "original_source_row": 97,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Cererea pentru racordare la reţea şi documentaţia anexată acesteia: \n",
+      "options_original": {
+        "A": "se pot depune direct la centrele teritoriale de relaţii cu clienţii organizate de operatorul de reţea;\n",
+        "B": "se trimit obligatoriu prin poştă\n",
+        "C": "se depun numai la registratura operatorului de reţea. "
+      },
+      "candidate_UNOFFICIAL": "A",
+      "option_reasons": {
+        "A": "A allows direct submission to network operator center; at least one accepted method.",
+        "B": "B post-only false, direct and empowered routes allowed.",
+        "C": "C registry-only false; multiple submission methods allowed."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.12(1), Art.14"
+      },
+      "adjacent_context_or_exception": "The exact phrase 'centre teritoriale' must be checked in current network operator procedures, not presumed as sole mandated form.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0098",
+      "original_source_row": 98,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Dacă se solicită avizul tehnic de racordare pentru o organizare de de şantier, documentaţia anexată cererii va cuprinde în mod obligatoriu şi:",
+      "options_original": {
+        "A": "certificatul de urbanism al obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;",
+        "B": "autorizaţia de construire a obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;\n",
+        "C": "contractul încheiat cu un furnizor de energie electrică\n"
+      },
+      "candidate_UNOFFICIAL": "A_SCOPE",
+      "option_reasons": {
+        "A": "A valid urban planning certificate for new/modified site is the listed source requirement.",
+        "B": "B construction permit is not generally the obligatory document in Art14(1)(c) at application stage.",
+        "C": "C supplier contract follows later supply relationship and is not the original construction documentation."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.14(1)(c), Art.5(1)(b)"
+      },
+      "adjacent_context_or_exception": "Site temporary construction connection is a consumer-case; legal Art14 has category-specific exceptions; mark intended A provisionally.",
+      "legal_object_gate": "SOURCE_REOPENED_2026_QUALIFIER_CHECK",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0099",
+      "original_source_row": 99,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Fişa de soluţie este elaborată de:",
+      "options_original": {
+        "A": "utilizatori",
+        "B": "operatorul de reţea",
+        "C": "orice proiectant de specialitate (societate comercială atestată pentru activităţi de proiectare)"
+      },
+      "candidate_UNOFFICIAL": "B_PROCESS_NOT_AUTHORSHIP",
+      "option_reasons": {
+        "A": "A end user cannot unilaterally fix the physical connection design.",
+        "B": "B operator determines the technical connection solution, but who *elaborates* a specific 'fișă de soluție' requires checking its own 102/2015 regulation.",
+        "C": "C external authorized design company might be contracted for execution of a study; blanket 'any designer' not correct."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.17(1), separate Ord.102/2015 required"
+      },
+      "adjacent_context_or_exception": "Topic adjacent but legal verb 'elaborată' not fully evidenced by Art17's 'stabilește'. Hold final key until Ord102/2015 exact clause.",
+      "legal_object_gate": "MISSING_EXACT_SECONDARY_REGULATION",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0100",
+      "original_source_row": 100,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "options_original": {
+        "A": "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "B": "locurile de consum şi/sau de producere care se racordează la reţele electrice având tensiunea nominală de 110 kV sau mai mare;",
+        "C": " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează"
+      },
+      "candidate_UNOFFICIAL": "SOURCE_102_2015_REQUIRED",
+      "option_reasons": {
+        "A": "A domestic individual consumption may use a solution sheet, but 'indiferent de puterea solicitată' needs exact 102/2015 exceptions.",
+        "B": "B connection to >=110kV generally calls for study; not categorically sheet.",
+        "C": "C distributor consumer category and conditions require exact current source."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.17(1) delegates to Ord.102/2015"
+      },
+      "adjacent_context_or_exception": "No affirmatively scoreable choice until distinct `Regulament privind stabilirea soluțiilor` Ord102/2015 provision reopened.",
+      "legal_object_gate": "MISSING_EXACT_SECONDARY_REGULATION",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0101",
+      "original_source_row": 101,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Soluţia de racordare se stabileşte printr-un studiu de soluţie pentru:",
+      "options_original": {
+        "A": "locurile de consum individuale ale utilizatorilor de tip clienţi casnici, indiferent de puterea solicitată",
+        "B": " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "C": "utilizatorii cu o putere de peste 25 kVA"
+      },
+      "candidate_UNOFFICIAL": "SOURCE_102_2015_REQUIRED",
+      "option_reasons": {
+        "A": "A domestic individual without other qualifiers does not always require study.",
+        "B": "B connection of user of distributor type may require study; relevant exact scope is separate 102/2015.",
+        "C": "C >25kVA not a universal study cutoff, depends grid type/connection case."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.17(1) delegates to Ord.102/2015"
+      },
+      "adjacent_context_or_exception": "No score transfer from row100 because alternatives and question object differ.",
+      "legal_object_gate": "MISSING_EXACT_SECONDARY_REGULATION",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0053",
+      "original_source_row": 53,
+      "source_hash": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "original_question": "Soluţia de racordare se stabileşte printr-o fişă de soluţie pentru:",
+      "options_original": {
+        "A": "utilizatorii perturbatori",
+        "B": " utilizatorii de tip distribuitori, indiferent de tensiunea reţelei la care se racordează",
+        "C": "locurile de consum care se racordează la reţele electrice de medie sau joasă tensiune, indiferent de puterea solicitată, dacă soluţia de racordare este unică şi/sau evidentă"
+      },
+      "candidate_UNOFFICIAL": "SOURCE_102_2015_REQUIRED",
+      "option_reasons": {
+        "A": "A disturbing user may trigger special connection study, not universal sheet.",
+        "B": "B distributor type and any voltage should not automatically be categorized as sheet.",
+        "C": "C unique/evident solution for LV/MV uses sheet in some eras but must verify exact current source."
+      },
+      "legal": {
+        "source": "Regulament ANRE nr.59/2013, consolidated Portal Legislativ through Ordin 15/2026",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "section": "Art.17(1) delegates to Ord.102/2015"
+      },
+      "adjacent_context_or_exception": "The original's 'indiferent de puterea solicitată' can be materially overbroad under later regulation.",
+      "legal_object_gate": "MISSING_EXACT_SECONDARY_REGULATION",
+      "professional_approval": false,
+      "official_scored_key_authenticated": false,
+      "learning_allowed": false
+    }
+  ],
+  "n": 14,
+  "source_portal_reopened": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+  "second_regulation_needed": "Ordin ANRE 102/2015 specific fișa/studiu solution categories",
+  "unsupported_unique_key_rows": [
+    53,
+    93,
+    95,
+    99,
+    100,
+    101
+  ],
+  "qualified_approved": 0,
+  "release": false
+}

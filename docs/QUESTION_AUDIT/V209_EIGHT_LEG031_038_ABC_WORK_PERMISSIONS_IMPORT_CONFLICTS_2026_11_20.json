@@ -1,0 +1,303 @@
+{
+  "schema": "v209_eight_leg031_038_original_ABC_qualified_editorial_drafts",
+  "date": "2026-11-20",
+  "prior_head": "42e9535051e528c7c6d7bc18121f9846d9373a3f",
+  "v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "v208_blob": "73c28805685b53e2c3df3a4980c0078127ea01fd",
+  "counts": {
+    "new_unique_qabc": 8,
+    "new_grade_routes": 8,
+    "explanations": 24,
+    "unofficial_reformulations": 8,
+    "new_semantic_holds": 3,
+    "learner_approvals": 0
+  },
+  "held_QABC": [
+    "QABC-0295",
+    "QABC-0296",
+    "QABC-0298"
+  ],
+  "source_gates": "Exact original questions/options/keys from V149; prior CKPT211/V86 focus. LEG032 imported B conflicts visa period and LEG034 imported B conflicts conditional upon request. No key changes. Exact 2026 law edition, scoring key, independent jurist+linguist QA not performed.",
+  "cards": [
+    {
+      "unit_id": "QABC-0295",
+      "grade_ids": [
+        "G1-LEG-031"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "38",
+        "stem": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:",
+        "A": "Desfăşurarea de activităţi fără contracte legale, în vigoare (contract de muncă individual  semnat cu un angajator sau contract de prestări servicii, în cazul în care este persoană fizică autorizată în condițiile legii)",
+        "B": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+        "C": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A",
+        "imported_keys_UNCHANGED": "G1-LEG-031=A"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-031:CKPT_211_LEGISLATION_G1_LEG_016_039_15_QABC_PRIMARY_2026_11_18.md",
+        "legal_source_links": "G1-LEG-031:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "edition_status": "G1-LEG-031:PRIMARY_TEXT_REOPENED_2026_11_18__2026_EXAM_BIBLIOGRAPHY_NOT_VERIFIED__INDEPENDENT_QA_NOT_RUN"
+      },
+      "editorial_draft": {
+        "A": "Fără acte sau formă legală de exercitare pot exista sancțiuni, dar «fără contracte» nu definește exhaustiv toate formele permise.",
+        "B": "Adeverința emisă în urmă cu 4 ani nu este automat expirată când intervalul normal de vizare este 5 ani.",
+        "C": "Proiectarea unei locuințe în limitele autorizației de tip IIA nu este automat contravenție.",
+        "model_scope_or_trap": "Paranteza din A limitează prea mult formele juridice ale muncii; interpretarea cere art. 35 și statutul real.",
+        "reformulated_question": "O autorizație ANRE emisă în urmă cu patru ani este, numai din acest motiv, nevizată la termen?",
+        "reformulated_solution": "Nu, viza periodică este analizată în cadrul termenului de cinci ani.",
+        "editorial_disposition": "HOLD_LEG031_WORK_FORMS_NONEXHAUSTIVE",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0296",
+      "grade_ids": [
+        "G1-LEG-032"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "39",
+        "stem": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:",
+        "A": "Comiterea unei fapte prevăzute în Regulamentul de autorizare ca fiind interzisă",
+        "B": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+        "C": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A",
+        "imported_keys_UNCHANGED": "G1-LEG-032=B"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-032:V86_LEG_FIVE_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+        "legal_source_links": "G1-LEG-032:https://legislatie.just.ro/Public/DetaliiDocument/288046;https://legislatie.just.ro/Public/FormaPrintabila/00000G0579GA89FL0DG218Q5BEZG2XPH",
+        "edition_status": "G1-LEG-032:Portal latest consolidation13.09.2024 viewed2026-11-11 | Exact statutory offense/sanction chain including current Legea123 art93; competent independent legal review; no universal approval of A."
+      },
+      "editorial_draft": {
+        "A": "O faptă interzisă prin regulament poate avea consecințe, dar trebuie identificat articolul contravențional specific.",
+        "B": "Doar vechimea adeverinței de patru ani nu indică depășirea termenului uzual de vizare de cinci ani.",
+        "C": "Proiectarea legală în baza unui drept IIA nu este contravenție doar prin menționarea unei locuințe.",
+        "model_scope_or_trap": "Cheia B importată este în conflict cu intervalul de vizare; A nu înseamnă că orice interdicție este automat contravenție fără temei.",
+        "reformulated_question": "Poate constitui contravenție exclusiv faptul că un electrician deține autorizație veche de patru ani?",
+        "reformulated_solution": "Nu; trebuie dovedit un temei contravențional distinct.",
+        "editorial_disposition": "HOLD_LEG032_IMPORT_B_FOUR_YEAR_VISA",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0297",
+      "grade_ids": [
+        "G1-LEG-033"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "40",
+        "stem": "Sancţiunile contravenţionale aplicate de ANRE electricienilor autorizaţi pot fi asociate cu :",
+        "A": "retragerea autorizării acordate",
+        "B": "Retragerea autorizării acordate pe o perioadă de până la doi ani",
+        "C": "Avertizarea în scris cu retragerea autorizării acordate la prima abatere constatată",
+        "imported_keys_UNCHANGED": "G1-LEG-033=A"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-033:CKPT_211_LEGISLATION_G1_LEG_016_039_15_QABC_PRIMARY_2026_11_18.md",
+        "legal_source_links": "G1-LEG-033:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "edition_status": "G1-LEG-033:PRIMARY_TEXT_REOPENED_2026_11_18__2026_EXAM_BIBLIOGRAPHY_NOT_VERIFIED__INDEPENDENT_QA_NOT_RUN"
+      },
+      "editorial_draft": {
+        "A": "Retragerea autorizației poate însoți sancțiuni în condițiile și procedura specială a ANRE.",
+        "B": "O retragere «până la doi ani» nu este formularea generală a instituției retragerii din articolul cercetat.",
+        "C": "Avertizarea și retragerea automată pentru orice primă abatere nu reprezintă regula demonstrată.",
+        "model_scope_or_trap": "Distinge retragere de suspendare și interdicția/reexaminarea în termene distincte.",
+        "reformulated_question": "Este retragerea autorizației obligatorie la fiecare primă contravenție?",
+        "reformulated_solution": "Nu, se aplică sancțiunile și procedurile prevăzute de actul în vigoare.",
+        "editorial_disposition": "QUALIFIED_SANCTION_WITHDRAWAL",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0298",
+      "grade_ids": [
+        "G1-LEG-034"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "41",
+        "stem": "Un electrician autorizat care execută lucrări de instalaţii electrice:",
+        "A": "Are obligaţia de a respecta proiectul în baza căruia execută instalaţia electrică",
+        "B": "Are obligaţia de a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, chiar dacă nu i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare;",
+        "C": "Are dreptul de a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor",
+        "imported_keys_UNCHANGED": "G1-LEG-034=B"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-034:V86_LEG_FIVE_P0_PRIMARY_SOURCE_OPTION_RECHECK_2026_11_11.csv",
+        "legal_source_links": "G1-LEG-034:https://legislatie.just.ro/Public/DetaliiDocument/288046;https://legislatie.just.ro/Public/FormaPrintabila/00000G0579GA89FL0DG218Q5BEZG2XPH",
+        "edition_status": "G1-LEG-034:Portal latest consolidation13.09.2024 viewed2026-11-11 | Independent legal+language QA and exact exam applicable edition."
+      },
+      "editorial_draft": {
+        "A": "Respectarea proiectului la executarea instalației este o obligație explicită a electricianului în sursa citată.",
+        "B": "«Chiar dacă nu i se solicită» inversează condiția de participare la recepție «dacă este solicitat», conform art. 37.",
+        "C": "Racordarea la SEN nu se poate efectua unilateral, cu obținerea acordului operatorului numai după recepție.",
+        "model_scope_or_trap": "Conflict de barem B față de varianta A susținută de text; o condiție «dacă» schimbă exact obligația.",
+        "reformulated_question": "Poate electricianul ignora proiectul deoarece beneficiarul nu i-a cerut expres să îl respecte?",
+        "reformulated_solution": "Nu. Respectarea proiectului este o obligație independentă.",
+        "editorial_disposition": "HOLD_LEG034_IMPORTED_B_VS_PROJECT_A",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0299",
+      "grade_ids": [
+        "G1-LEG-035"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "42",
+        "stem": "Una dintre obligaţiile electricianului autorizat care execută lucrări de instalaţii electrice este:",
+        "A": "Să respecte proiectele de execuţie a lucrărilor de instalaţii electrice doar dacă sunt întocmite de el",
+        "B": "De a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, în cazul în care i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare",
+        "C": "De a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor",
+        "imported_keys_UNCHANGED": "G1-LEG-035=B"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-035:CKPT_211_LEGISLATION_G1_LEG_016_039_15_QABC_PRIMARY_2026_11_18.md",
+        "legal_source_links": "G1-LEG-035:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "edition_status": "G1-LEG-035:PRIMARY_TEXT_REOPENED_2026_11_18__2026_EXAM_BIBLIOGRAPHY_NOT_VERIFIED__INDEPENDENT_QA_NOT_RUN"
+      },
+      "editorial_draft": {
+        "A": "Obligația de a respecta proiectul nu depinde de cine a întocmit documentația tehnică.",
+        "B": "Participarea la recepție și punere în funcțiune când beneficiarul/operatorul o solicită reflectă norma citată.",
+        "C": "Acordul operatorului pentru racordare nu se obține arbitrar după conectarea unilaterală la rețea.",
+        "model_scope_or_trap": "Compară exact cu LEG034: «dacă este solicitat» versus «chiar dacă nu este solicitat».",
+        "reformulated_question": "Un electrician trebuie să participe la recepție dacă este solicitat conform regulamentului aplicabil?",
+        "reformulated_solution": "Da, în condițiile obligației prevăzute de regulament.",
+        "editorial_disposition": "QUALIFIED_RECEPTION_ON_REQUEST",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0300",
+      "grade_ids": [
+        "G1-LEG-036"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "43",
+        "stem": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:",
+        "A": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+        "B": "Să execute  instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte prevederile din proiect",
+        "C": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru",
+        "imported_keys_UNCHANGED": "G1-LEG-036=B"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-036:CKPT_211_LEGISLATION_G1_LEG_016_039_15_QABC_PRIMARY_2026_11_18.md",
+        "legal_source_links": "G1-LEG-036:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "edition_status": "G1-LEG-036:PRIMARY_TEXT_REOPENED_2026_11_18__2026_EXAM_BIBLIOGRAPHY_NOT_VERIFIED__INDEPENDENT_QA_NOT_RUN"
+      },
+      "editorial_draft": {
+        "A": "Nu este identificată obligația generală de a notifica ANRE la începerea oricărei lucrări, indiferent de caz.",
+        "B": "Executarea numai în limita tipului/gradului autorizat și respectarea proiectului sunt cerințe ale activității.",
+        "C": "Experiența unui executant nu conferă automat drept de proiectare în lipsa dreptului de tip A.",
+        "model_scope_or_trap": "Separă tipul A pentru proiectare de tipul B pentru execuție și nu inventa permisiuni din experiență.",
+        "reformulated_question": "Poate o autorizație exclusiv de execuție să permită proiectarea doar pe baza experienței?",
+        "reformulated_solution": "Nu; trebuie să existe dreptul de proiectare potrivit gradului și tipului.",
+        "editorial_disposition": "QUALIFIED_EXECUTION_AUTHORITY_SCOPE",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0301",
+      "grade_ids": [
+        "G1-LEG-037"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "44",
+        "stem": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:",
+        "A": "Să execute  instalaţii electrice numai în una dintre calităţile prevăzute în regulament pentru exercitarea activităţii",
+        "B": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+        "C": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru",
+        "imported_keys_UNCHANGED": "G1-LEG-037=A"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-037:CKPT_211_LEGISLATION_G1_LEG_016_039_15_QABC_PRIMARY_2026_11_18.md",
+        "legal_source_links": "G1-LEG-037:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "edition_status": "G1-LEG-037:PRIMARY_TEXT_REOPENED_2026_11_18__2026_EXAM_BIBLIOGRAPHY_NOT_VERIFIED__INDEPENDENT_QA_NOT_RUN"
+      },
+      "editorial_draft": {
+        "A": "Activitatea se exercită în una dintre calitățile legale prevăzute pentru exercitarea autorizării.",
+        "B": "Nu rezultă o notificare ANRE obligatorie pentru data începerii fiecărei instalații din regula generală.",
+        "C": "Autorizarea pentru execuție nu dă automat autorizare pentru proiectare din experiență practică.",
+        "model_scope_or_trap": "«Una dintre calități» descrie o formă permisă în cazul concret, nu interdicție permanentă a tuturor celorlalte forme.",
+        "reformulated_question": "Exercitarea autorizării permite orice formă de activitate fără respectarea condițiilor art. 35?",
+        "reformulated_solution": "Nu; trebuie aleasă o formă legală permisă și respectate limitele autorizării.",
+        "editorial_disposition": "QUALIFIED_LEGAL_CAPACITY_FORM",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0302",
+      "grade_ids": [
+        "G1-LEG-038"
+      ],
+      "original": {
+        "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+        "source_row": "45",
+        "stem": "Client final este:",
+        "A": "orice client ce cumpără energie electrică de la un producător",
+        "B": "orice client ce cumpără energie electrică de la un trader de energie electrică",
+        "C": "orice persoană fizică sau juridică ce cumpără energie electrică pentru consum propriu",
+        "imported_keys_UNCHANGED": "G1-LEG-038=C"
+      },
+      "historic": {
+        "source_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+        "prev_analysis_reference": "G1-LEG-038:CKPT_211_LEGISLATION_G1_LEG_016_039_15_QABC_PRIMARY_2026_11_18.md",
+        "legal_source_links": "G1-LEG-038:https://legislatie.just.ro/Public/DetaliiDocument/311821",
+        "edition_status": "G1-LEG-038:PRIMARY_TEXT_REOPENED_2026_11_18__2026_EXAM_BIBLIOGRAPHY_NOT_VERIFIED__INDEPENDENT_QA_NOT_RUN"
+      },
+      "editorial_draft": {
+        "A": "Faptul că energia este vândută de un producător nu dovedește consum propriu, putând exista revânzare.",
+        "B": "Cumpărarea de la un trader nu stabilește prin sine că energia este destinată consumului propriu.",
+        "C": "Client final înseamnă persoana fizică sau juridică ce cumpără energia electrică pentru consum propriu.",
+        "model_scope_or_trap": "Client final nu este sinonim cu client casnic: o firmă poate fi client final noncasnic.",
+        "reformulated_question": "O societate cumpără electricitate pentru a alimenta propria fabrică. Este client final?",
+        "reformulated_solution": "Da; destinatarul o folosește pentru consum propriu.",
+        "editorial_disposition": "QUALIFIED_FINAL_CUSTOMER_DEFINITION",
+        "source_currentness": "NOT_QUALIFIED_CURRENT_EXAM_EDITION",
+        "independent_technical_or_juridical_QA": "NOT_RUN",
+        "independent_linguistic_QA": "NOT_RUN",
+        "scored_exam_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

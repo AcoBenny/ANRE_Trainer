@@ -1,0 +1,174 @@
+{
+  "schema": "V331_FOUR_NEXT_LEGAL_G1_P0_CURRENT_ANRE_SOURCE_EXACT_SCOPE_2026_11_22",
+  "date": "2026-11-22",
+  "base_checkpoint": "CKPT-395",
+  "branch": "audit/anre-v8-priority-17-20261109",
+  "role_profiles": [
+    "Normative Source Auditor",
+    "Electrical/Legal SME reasoning",
+    "option-by-option language and scope QA, same-model only"
+  ],
+  "method": "Original V326 exact stem/ABC/source freeze. Official consolidated pages accessed live 2026-11-22, relevant article and neighbor conditions compared, no professional/independent signoff. Normative content paraphrased in evidence locators, original ANRE text retained verbatim from project source packet.",
+  "cases": [
+    {
+      "route": "G1-LEG-024",
+      "qabc": "QABC-0288",
+      "source_grade": "I",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": 31,
+      "original_question": "Obţinerea avizului tehnic de racordare de către un utilizator:",
+      "original_options": {
+        "A": "nu este obligatorie pentru o durata mai mică de 6 luni",
+        "B": "nu este obligatorie pentru o putere ceruta sub 100 kW",
+        "C": "este obligatorie pentru orice loc de consum/producere nou"
+      },
+      "frozen_imported_key": "A",
+      "sources": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+          "locators": [
+            "Art.5(1)(a)-(c): new production, new permanent OR temporary consumption, new consumption+production require connection request",
+            "Art.11(1): connection application for each site regardless of duration or requested power",
+            "Art.24: ATR is grid operator offer at applicant's request",
+            "Art.25(1): ATR is issued by network operator based on determined connection solution"
+          ]
+        }
+      ],
+      "source_supported_option": "C",
+      "confidence": "STRONG_NORMAL_CASE_NOT_UNIVERSAL_CERTIFICATION",
+      "analysis": {
+        "A": "Time under six months does not waive the Art.11(1) application for a new temporary consumption site; source supports rejecting unconditional exemption.",
+        "B": "Power below 100 kW does not waive the Art.11(1) application; no such universal exemption in this rule.",
+        "C": "Supports standard new grid-connection procedure through request and issued ATR, but the word 'orice' and obtaining vs requesting ATR require checks for all exceptions, special regimes, impossible/refused applications."
+      },
+      "independent_technical_legal_reviewer": "NOT_RUN",
+      "independent_linguist": "NOT_RUN",
+      "official_exam_key_provenance": "NOT_AUTHENTICATED",
+      "current_2026_edition_temporary": "SOURCE_FETCHED_CURRENT_CONSOLIDATED_NOT_INDEPENDENTLY_SIGNED",
+      "approved_for_learning": false,
+      "change_key_allowed": false
+    },
+    {
+      "route": "G1-LEG-028",
+      "qabc": "QABC-0292",
+      "source_grade": "I",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": 35,
+      "original_question": "În cazul unui ansamblu de blocuri de locuinţe, grupurile de măsurare individuale se poziţionează",
+      "original_options": {
+        "A": "pe tablourile din apartamente",
+        "B": "centralizat, la limita zonei de proprietate asupra terenului, in exteriorul construcţiei",
+        "C": "centralizat, la parter sau pe palier"
+      },
+      "frozen_imported_key": "B",
+      "sources": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+          "locators": [
+            "Anexa nr. 3, pct.2.1-2.3, especially 2.3: individual meters in housing blocks placed centrally at ground floor or landing"
+          ]
+        }
+      ],
+      "source_supported_option": "C",
+      "confidence": "DIRECT_CONSOLIDATED_CLAUSE",
+      "analysis": {
+        "A": "In-apartment electrical panels are a different location from the expressly specified centralized meter groups.",
+        "B": "Property-land boundary in exterior construction is not the relevant norm for individual metering groups inside blocks; confuse the boundary of an electrical network with meter placement.",
+        "C": "Directly matches Annex 3 §2.3 for a group of apartment blocks. Neighbor §2.2 concerns the LV network in the housing complex, not a different meter-location exception."
+      },
+      "independent_technical_legal_reviewer": "NOT_RUN",
+      "independent_linguist": "NOT_RUN",
+      "official_exam_key_provenance": "NOT_AUTHENTICATED",
+      "current_2026_edition_temporary": "SOURCE_FETCHED_CURRENT_CONSOLIDATED_NOT_INDEPENDENTLY_SIGNED",
+      "approved_for_learning": false,
+      "change_key_allowed": false
+    },
+    {
+      "route": "G1-LEG-034",
+      "qabc": "QABC-0298",
+      "source_grade": "I",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": 41,
+      "original_question": "Un electrician autorizat care execută lucrări de instalaţii electrice:",
+      "original_options": {
+        "A": "Are obligaţia de a respecta proiectul în baza căruia execută instalaţia electrică",
+        "B": "Are obligaţia de a participa la recepţia şi la punerea în funcţiune a instalaţiei electrice de utilizare proiectată/ executată, chiar dacă nu i se solicită acest lucru de către beneficiarul sau operatorul de reţea la care urmează a se racorda instalaţia electrică de utilizare;",
+        "C": "Are dreptul de a racorda la SEN noi puncte de consum, urmând a solicita acordul operatorului de reţea după recepţia la terminarea lucrărilor"
+      },
+      "frozen_imported_key": "B",
+      "sources": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocument/288046",
+          "locators": [
+            "Art.37(d),(e): execute works on approved project and respect project; report nonconformities to designer",
+            "Art.37(h): participate in reception and commissioning when requested by beneficiary or network operator",
+            "Art.37(i),(j): request energization after reception and contracts, no work on network components without operator agreements"
+          ]
+        }
+      ],
+      "source_supported_option": "A",
+      "confidence": "DIRECT_CONSOLIDATED_CLAUSE",
+      "analysis": {
+        "A": "Art.37(e) expressly requires respect of the project used to execute the installation.",
+        "B": "Question's 'chiar dacă nu i se solicită' conflicts with Article 37(h)'s explicit 'în cazul în care i se solicită'.",
+        "C": "A unilateral connect-to-grid then request later conflicts with required operator approvals and commissioning procedures, Art.37(c),(i),(j)."
+      },
+      "independent_technical_legal_reviewer": "NOT_RUN",
+      "independent_linguist": "NOT_RUN",
+      "official_exam_key_provenance": "NOT_AUTHENTICATED",
+      "current_2026_edition_temporary": "SOURCE_FETCHED_CURRENT_CONSOLIDATED_NOT_INDEPENDENTLY_SIGNED",
+      "approved_for_learning": false,
+      "change_key_allowed": false
+    },
+    {
+      "route": "G1-LEG-048",
+      "qabc": "QABC-0312",
+      "source_grade": "I",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": 55,
+      "original_question": "Clienţii casnici de energie electrică:",
+      "original_options": {
+        "A": "pot impune furnizorului orice modalitate de plată, chiar dacă nu este pusă la dispoziţie de către acesta",
+        "B": "pot să opteze pentru orice modalitate de plată pe care furnizorul o pune la dispoziţie",
+        "C": "sunt obligaţi să achite facturile pentru energia electrică la una din casieriile furnizorului"
+      },
+      "frozen_imported_key": "A",
+      "sources": [
+        {
+          "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/307058",
+          "locators": [
+            "Legea 123/2012 Art.57(2): supplier offers several payment methods and household customer may choose from those",
+            "Art.57(2^1): e-billing and flexible payment options"
+          ]
+        }
+      ],
+      "source_supported_option": "B",
+      "confidence": "DIRECT_CONSOLIDATED_CLAUSE",
+      "analysis": {
+        "A": "No right to impose any method not offered by supplier under Article 57(2).",
+        "B": "Directly follows Article 57(2).",
+        "C": "Obligation to pay exclusively at supplier cashier is inconsistent with several selectable available methods."
+      },
+      "independent_technical_legal_reviewer": "NOT_RUN",
+      "independent_linguist": "NOT_RUN",
+      "official_exam_key_provenance": "NOT_AUTHENTICATED",
+      "current_2026_edition_temporary": "SOURCE_FETCHED_CURRENT_CONSOLIDATED_NOT_INDEPENDENTLY_SIGNED",
+      "approved_for_learning": false,
+      "change_key_allowed": false
+    }
+  ],
+  "tests": {
+    "p0_source_count": 4,
+    "original_p0_ABC_unchanged": true,
+    "cases_with_per_option_analysis": 4,
+    "source_url_count": 3,
+    "standalone_source_positive_not_scored_key": true
+  },
+  "limitations": [
+    "G1-LEG-024 original says obtaining ATR for every new site, while articles also establish requirement to REQUEST new connection; 'orice' universal and obtaining issuance exceptions remain a separate scope/edition gate.",
+    "Official bibliographic era for exam not authenticated; 2026 live consolidated text is technical legal source, not exam historical signed answer key.",
+    "No legally-qualified reviewer or independent linguist executed, 0 final approvals.",
+    "No app or answer key changes allowed."
+  ],
+  "disposition": "RESEARCHED_NOT_ADJUDICATED_INDEPENDENTLY"
+}

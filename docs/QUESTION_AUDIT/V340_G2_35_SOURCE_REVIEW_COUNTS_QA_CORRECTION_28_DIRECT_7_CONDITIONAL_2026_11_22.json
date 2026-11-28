@@ -1,0 +1,109 @@
+{
+  "schema": "V340_CORRECTED_G2_35_OF_35_DIRECT_VS_QUALIFIER_2026_11_22",
+  "date": "2026-11-22",
+  "supersedes_counts_in": "V339_G2_35_OF_35_SOURCE_CLUSTER_TRIAGE_AND_UNRESEARCHED_CROSS_BANK_QUEUE_2026_11_22.json",
+  "correction": "V339 mechanically counted R0033 label SOURCE_DIRECT_SCOPE_WITH_SPECIFIC_INDICATOR as a qualifier. It is source-direct under Standard 46/2021 Art.20, not an unresolved semantic hold. Preserve V339 historical raw reconciliation but use V340 counts as canonical status.",
+  "counts": {
+    "new_G2_source_researched": 35,
+    "clusters_completed": 16,
+    "original_ABC_evaluations": 105,
+    "source_direct_including_specific_indicator": 28,
+    "conditional_or_linguistic_qualifier_items": 7,
+    "original_G2_staged_total": 157,
+    "original_G2_outside_clustering_not_yet_source_researched": 122,
+    "overlap_with_12_cross_bank_stage_ids": 0,
+    "cross_bank_next_distinct": 12,
+    "approved_for_learning": 0
+  },
+  "specific_qualifier_cases": [
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0062",
+      "flag": "SCOPE_QUALIFIER_MISSING_NOT_UNIQUE"
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0063",
+      "flag": "SOURCE_SUPPORTED_BUT_OBJECT_WORDING_REVIEW"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0058",
+      "flag": "OMITTED_GROUNDED_QUALIFIER"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0100",
+      "flag": "FURNIZOR_VS_DISTRIBUITOR_TERM"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0101",
+      "flag": "FURNIZOR_VS_DISTRIBUITOR_TERM"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0106",
+      "flag": "CONDITIONAL_OMISSION"
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0169",
+      "flag": "CONDITIONAL_OMISSION"
+    }
+  ],
+  "all_stage_ids": [
+    "ANRE-G2-LEG-XLSX-R0053",
+    "ANRE-G2-LEG-XLSX-R0100",
+    "ANRE-G2-LEG-XLSX-R0101",
+    "ANRE-G2-LEG-XLSX-R0061",
+    "ANRE-G2-LEG-XLSX-R0062",
+    "ANRE-G2-LEG-XLSX-R0063",
+    "ANRE-G2-NOR-XLSX-R0123",
+    "ANRE-G2-NOR-XLSX-R0124",
+    "ANRE-G2-NOR-XLSX-R0130",
+    "ANRE-G2-LEG-XLSX-R0033",
+    "ANRE-G2-LEG-XLSX-R0080",
+    "ANRE-G2-LEG-XLSX-R0078",
+    "ANRE-G2-LEG-XLSX-R0079",
+    "ANRE-G2-LEG-XLSX-R0106",
+    "ANRE-G2-LEG-XLSX-R0107",
+    "ANRE-G2-NOR-XLSX-R0056",
+    "ANRE-G2-NOR-XLSX-R0057",
+    "ANRE-G2-NOR-XLSX-R0058",
+    "ANRE-G2-NOR-XLSX-R0059",
+    "ANRE-G2-NOR-XLSX-R0068",
+    "ANRE-G2-NOR-XLSX-R0069",
+    "ANRE-G2-NOR-XLSX-R0074",
+    "ANRE-G2-NOR-XLSX-R0075",
+    "ANRE-G2-NOR-XLSX-R0100",
+    "ANRE-G2-NOR-XLSX-R0101",
+    "ANRE-G2-NOR-XLSX-R0106",
+    "ANRE-G2-NOR-XLSX-R0107",
+    "ANRE-G2-NOR-XLSX-R0134",
+    "ANRE-G2-NOR-XLSX-R0135",
+    "ANRE-G2-NOR-XLSX-R0146",
+    "ANRE-G2-NOR-XLSX-R0147",
+    "ANRE-G2-NOR-XLSX-R0157",
+    "ANRE-G2-NOR-XLSX-R0158",
+    "ANRE-G2-NOR-XLSX-R0168",
+    "ANRE-G2-NOR-XLSX-R0169"
+  ],
+  "next_cross_stage_ids": [
+    "ANRE-G2-LEG-XLSX-R0018",
+    "ANRE-G2-LEG-XLSX-R0034",
+    "ANRE-G2-LEG-XLSX-R0069",
+    "ANRE-G2-LEG-XLSX-R0082",
+    "ANRE-G2-LEG-XLSX-R0093",
+    "ANRE-G2-LEG-XLSX-R0109",
+    "ANRE-G2-NOR-XLSX-R0040",
+    "ANRE-G2-NOR-XLSX-R0079",
+    "ANRE-G2-NOR-XLSX-R0116",
+    "ANRE-G2-NOR-XLSX-R0119",
+    "ANRE-G2-NOR-XLSX-R0127",
+    "ANRE-G2-NOR-XLSX-R0194"
+  ],
+  "accepted_non_qualifier_label": {
+    "id": "ANRE-G2-LEG-XLSX-R0033",
+    "status": "SOURCE_DIRECT_SCOPE_WITH_SPECIFIC_INDICATOR",
+    "reason": "Art.20 planned interruptions are a continuity indicator subtype, positively verified; no new ambiguity gate asserted."
+  },
+  "safety": {
+    "original_157_still_quarantined": true,
+    "original_master_and_keys_unchanged": true,
+    "independent_QA_not_performed": true
+  }
+}

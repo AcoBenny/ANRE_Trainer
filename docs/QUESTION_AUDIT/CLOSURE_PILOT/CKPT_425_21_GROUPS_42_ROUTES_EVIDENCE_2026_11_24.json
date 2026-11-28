@@ -1,0 +1,876 @@
+{
+  "schema": "ANRE_EDUCATIONAL_VALIDATION_BATCH_V1",
+  "date": "2026-11-24",
+  "checkpoint": "CKPT-425",
+  "parent": "CKPT-424",
+  "counts": {
+    "new_QABC": 21,
+    "new_grade_routes": 42,
+    "previous_validated_routes": 208,
+    "total_validated_routes": 250
+  },
+  "reviews_not_human": true,
+  "source_limit": "Linked technical pages reopened in web search or independent AI review; context before/central/after is editorial teaching paraphrase, not verified verbatim source excerpts; no official exam key proof, offline UI QA or qualified human certification.",
+  "qa_correction": "QABC-0045 first reviewer wrongly identified answer B, corrected by separate source-backed second reviewer (actual imported A).",
+  "regulatory_caveat": "QABC-0258: physical compactness of SF6 gas-insulated switchgear does not authorize commissioning new restricted F-gas switchgear. EU Regulation 2024/573 Article 13 includes restrictions from 2026 for certain MV <=24kV, subject to exceptions.",
+  "excluded_candidates_not_counted": [
+    "QABC-0064",
+    "QABC-0145",
+    "QABC-0165",
+    "QABC-0178",
+    "QABC-0184",
+    "QABC-0191",
+    "QABC-0197",
+    "QABC-0225",
+    "QABC-0241",
+    "QABC-0048",
+    "QABC-0152",
+    "QABC-0223"
+  ],
+  "records": [
+    {
+      "qabc_id": "QABC-0045",
+      "grade_ids": [
+        "G1-ELE-052",
+        "G2-ELEC-198"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-052": "A",
+        "G2-ELEC-198": "A"
+      },
+      "original_stem": "Dacă printr-un condensator circulă un curent alternativ sinusoidal, la bornele sale se produce o cădere de tensiune:",
+      "original_ABC": {
+        "A": "defazată cu 90 de grade în urma curentului",
+        "B": "defazată cu 90 de grade înaintea curentului",
+        "C": "în fază cu curentul"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V178_THIRD_15_EXACT_SOURCE_ABC_PEDAGOGICAL_CARDS_AC_HARMONICS_2026_11_20.json",
+      "legacy_card_sha": "426524da104c531349b1860906da5fb560f06cc0",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "source_locator": "Capacitor AC phase",
+      "source_context": {
+        "editorial_before": "Scop: Sarcină sinusoidală, model capacitiv ideal; corecție explicită a inversării A/B în primul review.",
+        "central_rule_highlighted_paraphrase": "**Tensiunea pe condensatorul ideal rămâne cu 90° în urma curentului.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "La condensator ideal, tensiunea rămâne în urma curentului cu 90°.",
+        "B": "Tensiunea înaintea curentului descrie bobina ideală, nu condensatorul.",
+        "C": "În fază este caracteristica rezistenței ideale, nu a condensatorului."
+      },
+      "limiting_scope_and_counterexamples": "Sarcină sinusoidală, model capacitiv ideal; corecție explicită a inversării A/B în primul review.",
+      "independent_AI_reviewer_sessions": [
+        "resp_c995fd1d-4093-4041-acbb-4d698ce7faca"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0109",
+      "grade_ids": [
+        "G1-ELE-118",
+        "G2-ELEC-260"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-118": "B",
+        "G2-ELEC-260": "B"
+      },
+      "original_stem": "Într-o reţea cu neutrul legat la pământ, valoarea cea mai mare a intensităţii curentului de scurtcircuit, pentru acelaşi punct de defect, corespunde, de regulã, defectului:",
+      "original_ABC": {
+        "A": "monofazat",
+        "B": "trifazat",
+        "C": "bifazat"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+      "legacy_card_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+      "source_url": "https://www.phasetophase.nl/book/book_2_10.html",
+      "source_locator": "Short circuit comparison",
+      "source_context": {
+        "editorial_before": "Scop: Nu este universal; Z0 mic poate face defectul monofazat mai sever; «de regulă» esențial.",
+        "central_rule_highlighted_paraphrase": "**Defectul trifazat are de regulă cel mai mare curent de scurtcircuit la punctul considerat.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Defectul monofazat nu este generic cel mai mare în toate sistemele, dar poate depăși trifazatul la anumite Z0.",
+        "B": "În multe rețele defectul trifazat simetric produce curentul maxim: «de regulă» este calificativul-cheie.",
+        "C": "Defectul bifazat nu este universal maxim, depinde de impedanțele de secvență."
+      },
+      "limiting_scope_and_counterexamples": "Nu este universal; Z0 mic poate face defectul monofazat mai sever; «de regulă» esențial.",
+      "independent_AI_reviewer_sessions": [
+        "resp_c995fd1d-4093-4041-acbb-4d698ce7faca"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0133",
+      "grade_ids": [
+        "G1-ELE-142",
+        "G2-ELEC-280"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-142": "C",
+        "G2-ELEC-280": "C"
+      },
+      "original_stem": "Teoremele lui Kirchhoff se aplică:",
+      "original_ABC": {
+        "A": "numai circuitelor liniare",
+        "B": "numai circuitelor cu elemente neliniare",
+        "C": "circuitelor liniare şi circuitelor neliniare"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "legacy_card_sha": "a85dba6472591e9a09dfb550f1e450d448871895",
+      "source_url": "https://openstax.org/books/college-physics-2e/pages/21-3-kirchhoffs-rules",
+      "source_locator": "Kirchhoff conservation laws",
+      "source_context": {
+        "editorial_before": "Scop: Câmpurile induse distribuite cer extinderea KVL simple.",
+        "central_rule_highlighted_paraphrase": "**Legile Kirchhoff se aplică circuitelor liniare și neliniare în model concentrat.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "«Numai liniare» este fals: conservarea sarcinii și legile de circuit se aplică și elementelor neliniare în regim de circuit concentrat.",
+        "B": "«Numai neliniare» este la fel de fals: și circuitele liniare respectă legile Kirchhoff.",
+        "C": "În condiții de circuit concentrat/quasistatic, legile Kirchhoff se aplică atât circuitelor liniare, cât și neliniare."
+      },
+      "limiting_scope_and_counterexamples": "Câmpurile induse distribuite cer extinderea KVL simple.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e5540da7-c3a9-4f7e-85cb-14bebf4484eb"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0134",
+      "grade_ids": [
+        "G1-ELE-143",
+        "G2-ELEC-281"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-143": "B",
+        "G2-ELEC-281": "B"
+      },
+      "original_stem": "La o instalaţie cu mai multe condensatoare conectate în serie, căderea de tensiune pe fiecare condensator este:",
+      "original_ABC": {
+        "A": "direct proporţionala cu capacitatea",
+        "B": "invers proporţionala cu capacitatea",
+        "C": "nu depinde de capacitate"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "legacy_card_sha": "a85dba6472591e9a09dfb550f1e450d448871895",
+      "source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-2-capacitors-in-series-and-in-parallel",
+      "source_locator": "Series capacitors",
+      "source_context": {
+        "editorial_before": "Scop: Pierderile/scurgerile și încărcările inițiale pot modifica împărțirea reală.",
+        "central_rule_highlighted_paraphrase": "**Pentru sarcină comună Q, pe fiecare condensator ideal Uᵢ=Q/Cᵢ.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "La condensatoare ideale în serie încărcarea Q este comună, iar U_i=Q/C_i; deci tensiunea nu este direct proporțională cu C_i.",
+        "B": "Varianta B corespunde relației U_i invers proporțional cu C_i pentru condensatoare ideale în serie cu aceeași sarcină.",
+        "C": "U_i depinde de capacitatea fiecărui condensator, deci varianta C este falsă în modelul standard."
+      },
+      "limiting_scope_and_counterexamples": "Pierderile/scurgerile și încărcările inițiale pot modifica împărțirea reală.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e5540da7-c3a9-4f7e-85cb-14bebf4484eb",
+        "resp_4d74427c-7bdf-4ced-b4ee-f02960526a45"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0160",
+      "grade_ids": [
+        "G1-ELE-170",
+        "G2-ELEC-307"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-170": "A",
+        "G2-ELEC-307": "A"
+      },
+      "original_stem": "Între două noduri oarecare A şi B ale unei reţele electrice active, o sursă de tensiune de tensiune electromotoare E şi  fără impedanţă interioară, dar legată în serie cu o impedanţă Z, poate fi înlocuită cu o sursă de curent, de intensitate J şi fără admitanţă interioară, şuntată cu admitanţa Y, fără ca parametrii electrici la bornele A şi B  - tensiunea la borne şi curentul debitat prin aceste borne- să se schimbe,  dacă sunt îndeplinite condiţiile:",
+      "original_ABC": {
+        "A": "Z Y = 1                                        J=YE",
+        "B": "J=YE                                         Z=Y",
+        "C": "Z Y = 1                                       Z=Y"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "legacy_card_sha": "b92b50e9bdd7bee8737544614d657e84ffeb33af",
+      "source_url": "https://spinningnumbers.org/a/source-transformation.html",
+      "source_locator": "Thevenin/Norton source transformation",
+      "source_context": {
+        "editorial_before": "Scop: Regim liniar, Z nenul, convenții de semne și de unități compatibile.",
+        "central_rule_highlighted_paraphrase": "**O sursă E în serie cu Z este echivalentă cu sursa J=E/Z în paralel cu Y=1/Z.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "ZY=1 și J=YE sunt condițiile Thevenin–Norton, cu Y=1/Z.",
+        "B": "Z=Y confundă impedanța și admitanța, cu unități reciproce.",
+        "C": "Deși ZY=1, Z=Y este fals din punct de vedere dimensional."
+      },
+      "limiting_scope_and_counterexamples": "Regim liniar, Z nenul, convenții de semne și de unități compatibile.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e5540da7-c3a9-4f7e-85cb-14bebf4484eb"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0168",
+      "grade_ids": [
+        "G1-ELE-179",
+        "G2-ELEC-315"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-179": "C",
+        "G2-ELEC-315": "C"
+      },
+      "original_stem": "Puterea nominala a unui motor electric se defineşte astfel:",
+      "original_ABC": {
+        "A": "puterea activã absorbitã de motor de la reţea când este alimentat la Un si absoarbe In",
+        "B": "puterea activã transmisã prin întrefierul motorului când este alimentat la Un si absoarbe In",
+        "C": "puterea mecanicã debitatã de motor la arbore când este alimentat la Un si absoarbe In"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "legacy_card_sha": "0e2b62ad8f0d367a21c2b8e55b52cae5c539daf4",
+      "source_url": "https://www.abb.com/global/en/news/132261/how-to-read-a-nema-motor-nameplate",
+      "source_locator": "Motor nameplate rated output",
+      "source_context": {
+        "editorial_before": "Scop: Nu confunda puterea din întrefier cu puterea electrică absorbită și nici motorul cu generatorul.",
+        "central_rule_highlighted_paraphrase": "**Puterea nominală a motorului este puterea mecanică utilă furnizată la arbore.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Puterea activă absorbită este puterea de intrare, înainte de pierderile motorului.",
+        "B": "Puterea din întrefier este intermediară, înainte de pierderile în rotor și mecanice.",
+        "C": "Puterea nominală a motorului se referă uzual la ieșirea mecanică disponibilă la arbore."
+      },
+      "limiting_scope_and_counterexamples": "Nu confunda puterea din întrefier cu puterea electrică absorbită și nici motorul cu generatorul.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e5540da7-c3a9-4f7e-85cb-14bebf4484eb"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0176",
+      "grade_ids": [
+        "G1-ELE-187",
+        "G2-ELEC-323"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-187": "B",
+        "G2-ELEC-323": "B"
+      },
+      "original_stem": "Pierderile de putere activã si reactivã pe o linie electricã, la aceeaşi putere aparentã vehiculatã, sunt invers proporţionale cu:",
+      "original_ABC": {
+        "A": "pătratul curentului",
+        "B": "pătratul tensiunii",
+        "C": "pătratul puterii active"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+      "legacy_card_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+      "source_url": "https://bscdocs.elexon.co.uk/bsc-module/guidance-notes/calculating-compensating-line-loss",
+      "source_locator": "Line loss calculation",
+      "source_context": {
+        "editorial_before": "Scop: Regim echilibrat, parametri R/X fixați; componenta shunt nu urmează simplist aceeași relație.",
+        "central_rule_highlighted_paraphrase": "**La putere aparentă S fixă, pierderile serie ∆P=S²R/U², ∆Q=S²X/U².**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Pierderile ∆P=3I²R nu sunt invers proporționale cu I², ci direct proporționale cu I² la R fix.",
+        "B": "Pentru S transmis și parametri R/X fixați, I=S/(√3U), deci pierderile rezistive și reactive aproximative ∝1/U².",
+        "C": "P² nu este termenul invers care caracterizează pierderile la S și impedanțe constante."
+      },
+      "limiting_scope_and_counterexamples": "Regim echilibrat, parametri R/X fixați; componenta shunt nu urmează simplist aceeași relație.",
+      "independent_AI_reviewer_sessions": [
+        "resp_44c7f8a8-e997-4770-88a6-a38e52fb6bbc",
+        "resp_c995fd1d-4093-4041-acbb-4d698ce7faca"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0179",
+      "grade_ids": [
+        "G1-ELE-190",
+        "G2-ELEC-326"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-190": "A",
+        "G2-ELEC-326": "A"
+      },
+      "original_stem": "Prima teoremă a lui Kirchhoff, pentru o reţea electrică buclată cu N noduri, ne dă, pentru curenţii care circulă prin reţea:",
+      "original_ABC": {
+        "A": "N-1 relaţii distincte",
+        "B": "N relaţii distincte",
+        "C": "N+1 relaţii distincte"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+      "legacy_card_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+      "source_url": "https://zrojec.fe.uni-lj.si/cao/circuit-topology-constitutive-relations-and-nodal-analysis/",
+      "source_locator": "KCL independent node equations",
+      "source_context": {
+        "editorial_before": "Scop: Ultima ecuație nodală este dependentă de celelalte; noduri distincte, rețea conexă.",
+        "central_rule_highlighted_paraphrase": "**Într-o rețea conexă cu N noduri există N−1 ecuații KCL independente.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Pentru o rețea conexă cu N noduri, matricea de incidență are rang N−1, deci N−1 ecuații KCL independente.",
+        "B": "Una dintre cele N ecuații nodale este redundantă: suma tuturor ecuațiilor KCL este zero.",
+        "C": "N+1 relații independente nu pot rezulta din N noduri ale unei rețele conexe."
+      },
+      "limiting_scope_and_counterexamples": "Ultima ecuație nodală este dependentă de celelalte; noduri distincte, rețea conexă.",
+      "independent_AI_reviewer_sessions": [
+        "resp_44c7f8a8-e997-4770-88a6-a38e52fb6bbc"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0182",
+      "grade_ids": [
+        "G1-ELE-193",
+        "G2-ELEC-329"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-193": "B",
+        "G2-ELEC-329": "B"
+      },
+      "original_stem": "Carcasa  unei celule electrice",
+      "original_ABC": {
+        "A": "asigură numai protecţia persoanelor împotriva atingerii accidentale a pieselor aflate sub tensiune în funcţionare normală sau a pieselor în mişcare din interiorul învelişului;",
+        "B": "asigură protecţia echipamentului electric împotriva pătrunderii corpurilor străine şi a umezelii;",
+        "C": "asigură protecţia echipamentului electric împotriva supratensiunilor."
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "legacy_card_sha": "0e2b62ad8f0d367a21c2b8e55b52cae5c539daf4",
+      "source_url": "https://www.eaton.com/us/en-us/products/server-racks-enclosures-airflow-management/Enclosures/enclosure-ratings.html",
+      "source_locator": "IEC IP enclosure ratings",
+      "source_context": {
+        "editorial_before": "Scop: Nu înseamnă etanșeitate universală și nu constituie protecție la supratensiuni.",
+        "central_rule_highlighted_paraphrase": "**Carcasa protejează echipamentele contra pătrunderii obiectelor și apei conform gradului IP.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "«Numai» protecția persoanelor exclude incorect protecția echipamentului.",
+        "B": "Învelișul contribuie la blocarea pătrunderii corpurilor și umezelii conform gradului IP.",
+        "C": "Carcasa nu asigură singură protecția față de supratensiuni, pentru care se folosesc soluții dedicate."
+      },
+      "limiting_scope_and_counterexamples": "Nu înseamnă etanșeitate universală și nu constituie protecție la supratensiuni.",
+      "independent_AI_reviewer_sessions": [
+        "resp_44c7f8a8-e997-4770-88a6-a38e52fb6bbc"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0193",
+      "grade_ids": [
+        "G1-ELE-204",
+        "G2-ELEC-340"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-204": "C",
+        "G2-ELEC-340": "C"
+      },
+      "original_stem": "Un regim energetic  este deformant",
+      "original_ABC": {
+        "A": "dacă undele de curent şi tensiune nu sunt periodice",
+        "B": "numai dacă undele de curent şi de tensiune sunt ambele periodice şi nesinusoidale",
+        "C": "undele de curent şi tensiune sunt periodice iar cel puțin una este nesinusoidală"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V190_CKPT241_15_SOURCE_EXACT_ABC_BIDIRECTIONAL_SCOPE_HOLDS_2026_11_20.json",
+      "legacy_card_sha": "0e2b62ad8f0d367a21c2b8e55b52cae5c539daf4",
+      "source_url": "https://www.electrical-installation.org/enwiki/Definition_of_harmonics",
+      "source_locator": "Definition of harmonics",
+      "source_context": {
+        "editorial_before": "Scop: Nu este obligatoriu ca ambele să fie deformate; tranzitoriul neperiodic este alt caz.",
+        "central_rule_highlighted_paraphrase": "**În regim periodic deformant, cel puțin una dintre undele U și I este nesinusoidală.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Nonperiodicitatea singură nu definește regimul periodic cu armonici.",
+        "B": "«Numai dacă ambele» este prea restrictiv: curentul poate fi deformat când tensiunea rămâne sinusoidală.",
+        "C": "Pentru regim periodic, cel puțin una dintre formele de undă nesinusoidală indică deformarea."
+      },
+      "limiting_scope_and_counterexamples": "Nu este obligatoriu ca ambele să fie deformate; tranzitoriul neperiodic este alt caz.",
+      "independent_AI_reviewer_sessions": [
+        "resp_44c7f8a8-e997-4770-88a6-a38e52fb6bbc"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0209",
+      "grade_ids": [
+        "G1-ELE-220",
+        "G2-ELEC-356"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-220": "A",
+        "G2-ELEC-356": "A"
+      },
+      "original_stem": "Transformatoarele  de măsură se folosesc",
+      "original_ABC": {
+        "A": "în instalaţiile de curent alternativ de înaltă tensiune",
+        "B": "numai în instalaţiile de curent alternativ de medie tensiune",
+        "C": "în instalaţiile de curent continuu de înaltă şi joasă tensiune"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V203_15_SOURCE_EXACT_SWITCHGEAR_POWER_FAULTS_ABC_DRAFTS_2026_11_20.json",
+      "legacy_card_sha": "ca2f940921bf14f0bbae61898e1bbb34d5c0f04d",
+      "source_url": "https://www.hitachienergy.com/products-and-solutions/instrument-transformers",
+      "source_locator": "HV instrument transformers",
+      "source_context": {
+        "editorial_before": "Scop: Nu «numai MT», iar măsurarea în DC necesită de regulă senzori cu alt principiu.",
+        "central_rule_highlighted_paraphrase": "**Transformatoarele convenționale de măsură sunt folosite în instalații CA de înaltă tensiune.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Transformatoarele de măsură convenționale se folosesc frecvent în instalații CA de înaltă tensiune, pentru a furniza secundare măsurabile și izolate.",
+        "B": "«Numai de medie tensiune» este fals: există CT/TT convenționale și pentru înaltă tensiune.",
+        "C": "Transformatoarele inductive obișnuite nu transformă un curent continuu staționar; pentru DC se folosesc senzori sau convertoare cu alt principiu."
+      },
+      "limiting_scope_and_counterexamples": "Nu «numai MT», iar măsurarea în DC necesită de regulă senzori cu alt principiu.",
+      "independent_AI_reviewer_sessions": [
+        "resp_172b3d25-2edf-411d-ba74-13575f8b6543"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0230",
+      "grade_ids": [
+        "G1-ELE-241",
+        "G2-ELEC-377"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-241": "A",
+        "G2-ELEC-377": "A"
+      },
+      "original_stem": "Transformatoarele de măsurare a curenţilor se construiesc pentru curenţi secundari de:",
+      "original_ABC": {
+        "A": "1 sau 5 A",
+        "B": "5 sau 10 A",
+        "C": "1 sau 10 A"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V196_CKPT244_15_ABC_TECHNICAL_CONTEXT_SOURCE_EXACT_DRAFTS_2026_11_20.json",
+      "legacy_card_sha": "4e6b1ff8cf35374c37d4f4b6db43244f83bac4d6",
+      "source_url": "https://www.bticino.com/products/ime-measurement-solutions/transformers/features-and-benefits",
+      "source_locator": "Current transformers CT standard current",
+      "source_context": {
+        "editorial_before": "Scop: Nu confunda perechea standard cu valori personalizate posibile.",
+        "central_rule_highlighted_paraphrase": "**Transformatoarele de curent uzuale au secundare nominale standard de 1 A sau 5 A.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "1 A și 5 A sunt valori nominale uzuale pentru secundarul transformatoarelor de curent convenționale.",
+        "B": "5 și 10 A nu reprezintă perechea uzuală standard prezentată.",
+        "C": "1 și 10 A include 10 A, care nu este una dintre cele două valori secundare uzuale cerute."
+      },
+      "limiting_scope_and_counterexamples": "Nu confunda perechea standard cu valori personalizate posibile.",
+      "independent_AI_reviewer_sessions": [
+        "resp_172b3d25-2edf-411d-ba74-13575f8b6543"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0239",
+      "grade_ids": [
+        "G1-ELE-250",
+        "G2-ELEC-385"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-250": "A",
+        "G2-ELEC-385": "A"
+      },
+      "original_stem": "Un motor electric sincron, care funcţionează subexcitat:",
+      "original_ABC": {
+        "A": "absoarbe putere activă şi putere reactivă",
+        "B": "absoarbe putere activă şi produce putere reactivă",
+        "C": "produce putere activă şi putere reactivă"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "source_url": "https://www.electronicsguide.net/systems-and-technologies/power-electronics/motor-drive-and-control/synchronous-machines/",
+      "source_locator": "Synchronous motor under-excitation",
+      "source_context": {
+        "editorial_before": "Scop: Regim motor, nu generator; interpretarea Q respectă convenția de putere.",
+        "central_rule_highlighted_paraphrase": "**Motorul sincron subexcitat absoarbe putere activă și putere reactivă din rețea.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Motorul sincron subexcitat, în regim de motor, absoarbe putere activă pentru a furniza energie mecanică și de regulă putere reactivă inductivă.",
+        "B": "Producerea de putere reactivă este tipică motorului supraexcitat, nu subexcitat.",
+        "C": "Producerea de putere activă indică regim de generator, incompatibil cu «motor» ca regim energetic."
+      },
+      "limiting_scope_and_counterexamples": "Regim motor, nu generator; interpretarea Q respectă convenția de putere.",
+      "independent_AI_reviewer_sessions": [
+        "resp_172b3d25-2edf-411d-ba74-13575f8b6543"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0240",
+      "grade_ids": [
+        "G1-ELE-251",
+        "G2-ELEC-386"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-251": "C",
+        "G2-ELEC-386": "C"
+      },
+      "original_stem": "Valoarea conductivităţii electrice este în ordine crescătoare la următoarele materiale:",
+      "original_ABC": {
+        "A": "aluminiu, argint, cupru",
+        "B": "argint, cupru, aluminiu",
+        "C": "aluminiu, cupru, argint"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "source_url": "https://phys.libretexts.org/Courses/Georgia_State_University/GSU-TM-Introductory_Physics_II_%281112%29/05%3A_Electric_Current_Resistance_and_Ohm%27s_Law/5.05%3A_Resistance_and_Resistivity",
+      "source_locator": "Conductivity table 20 C",
+      "source_context": {
+        "editorial_before": "Scop: Depinde de temperatură și de puritate; nu compara aliaje arbitrare.",
+        "central_rule_highlighted_paraphrase": "**Conductivitate crescătoare la 20°C: aluminiu, cupru, argint.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Aluminiu < argint < cupru inversează ordinea corectă a ultimelor două metale în puritate comparabilă.",
+        "B": "Argint > cupru > aluminiu este ordine descrescătoare, nu crescătoare.",
+        "C": "La temperatură și puritate comparabile, conductivitatea crește aluminiu → cupru → argint."
+      },
+      "limiting_scope_and_counterexamples": "Depinde de temperatură și de puritate; nu compara aliaje arbitrare.",
+      "independent_AI_reviewer_sessions": [
+        "resp_172b3d25-2edf-411d-ba74-13575f8b6543"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0242",
+      "grade_ids": [
+        "G1-ELE-253",
+        "G2-ELEC-388"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-253": "A",
+        "G2-ELEC-388": "A"
+      },
+      "original_stem": "Un receptor electric de rezistenţă R conectat la bornele AB ale unui circuit de alimentare oarecare absoarbe puterea maximă dacă:",
+      "original_ABC": {
+        "A": "rezistenţa R este egală cu rezistenţa totală a circuitului văzută prin bornele AB",
+        "B": "rezistenţa R este egală cu rezistenţa internă a sursei de tem",
+        "C": "rezistenţa R tinde spre zero"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "source_url": "https://wiki.analog.com/university/courses/alm1k/circuits1/alm-cir-4",
+      "source_locator": "Thevenin maximum power transfer",
+      "source_context": {
+        "editorial_before": "Scop: Model liniar rezistiv, Rth>0; AC complex implică adaptare conjugată.",
+        "central_rule_highlighted_paraphrase": "**Puterea sarcinii R este maximă când R=Rth văzut din bornele AB.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Pentru echivalent Thevenin cu Rth>0 și sarcină pur rezistivă, puterea sarcinii este maximă la R=Rth.",
+        "B": "Rezistența internă a unei singure surse poate diferi de rezistența totală văzută din AB într-o rețea complexă.",
+        "C": "La R→0, în model Thevenin cu Rth>0, puterea pe sarcină tinde la zero, nu la maxim."
+      },
+      "limiting_scope_and_counterexamples": "Model liniar rezistiv, Rth>0; AC complex implică adaptare conjugată.",
+      "independent_AI_reviewer_sessions": [
+        "resp_172b3d25-2edf-411d-ba74-13575f8b6543",
+        "resp_28e4dbc4-442c-4e15-a324-e3066502901c"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0244",
+      "grade_ids": [
+        "G1-ELE-255",
+        "G2-ELEC-390"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-255": "B",
+        "G2-ELEC-390": "B"
+      },
+      "original_stem": "Un transformator de măsurare de curent nu poate fi lăsat cu secundarul în gol, deoarece:",
+      "original_ABC": {
+        "A": "împiedica circulaţia curentului primar",
+        "B": "apar supratensiuni periculoase in secundar",
+        "C": "nu indica aparatele de măsurare"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "source_url": "https://www.se.com/us/en/faqs/FA125574/",
+      "source_locator": "CT shorting block safety",
+      "source_context": {
+        "editorial_before": "Scop: Nu este instrucțiune de manevră. Sunt obligatorii procedurile de securitate de către specialiști.",
+        "central_rule_highlighted_paraphrase": "**Secundarul deschis al unui transformator de curent cu primarul parcurs poate produce tensiuni periculoase.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Secundarul deschis nu întrerupe obligatoriu curentul prin circuitul primar al transformatorului de curent.",
+        "B": "Cu primarul străbătut de curent, secundarul deschis poate dezvolta supratensiuni periculoase.",
+        "C": "Lipsa indicației aparatelor poate surveni, dar nu este explicația esențială pentru interdicția de securitate."
+      },
+      "limiting_scope_and_counterexamples": "Nu este instrucțiune de manevră. Sunt obligatorii procedurile de securitate de către specialiști.",
+      "independent_AI_reviewer_sessions": [
+        "resp_172b3d25-2edf-411d-ba74-13575f8b6543"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0258",
+      "grade_ids": [
+        "G1-ELE-269",
+        "G2-ELEC-402"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-269": "C",
+        "G2-ELEC-402": "C"
+      },
+      "original_stem": "Utilizarea SF6 ca mediu de izolare",
+      "original_ABC": {
+        "A": "conduce la realizarea unor celule cu pericol de incendiu",
+        "B": "conduce numai la realizarea unor celule cu întreţinere mult simplificată;",
+        "C": "conduce la realizarea unor celule compacte"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "source_url": "https://www.csemag.com/saving-space/",
+      "source_locator": "SF6 compact GIS insulation",
+      "source_context": {
+        "editorial_before": "Scop: Proprietate tehnică istorică, NU permisiune de instalare. UE 2024/573 art.13 restricționează echipamente noi F-gaz din 2026 în anumite clase.",
+        "central_rule_highlighted_paraphrase": "**Rigiditatea dielectrică ridicată a SF6 permite construcția de celule compacte.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "SF6 ca gaz izolant necombustibil nu implică prin sine un pericol crescut de incendiu în celule.",
+        "B": "«Numai întreținere simplificată» e restrictiv: există și compactitate, dielectricitate ridicată și alte caracteristici.",
+        "C": "Rigiditatea dielectrică permite distanțe izolante mai mici și celule mai compacte."
+      },
+      "limiting_scope_and_counterexamples": "Proprietate tehnică istorică, NU permisiune de instalare. UE 2024/573 art.13 restricționează echipamente noi F-gaz din 2026 în anumite clase.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e6e44d5e-4388-4af7-8e42-35f1dd5ec575"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0260",
+      "grade_ids": [
+        "G1-ELE-271",
+        "G2-ELEC-404"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-271": "A",
+        "G2-ELEC-404": "A"
+      },
+      "original_stem": "Utilizarea vidului ca mediu de stingere a arcului electric:",
+      "original_ABC": {
+        "A": "reduce pericolul de incendiu;",
+        "B": "nu reduce cheltuielile de întreţinere;",
+        "C": "creşte masa şi gabaritul întreruptoarelor"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "source_url": "https://www.eaton.com/ph/en-us/products/medium-voltage-power-distribution-control-systems/switchgear/fundamentals-of-medium-voltage-switchgear.html",
+      "source_locator": "Vacuum versus oil breaker",
+      "source_context": {
+        "editorial_before": "Scop: Nu elimină orice risc de incendiu al instalației.",
+        "central_rule_highlighted_paraphrase": "**Stingerea arcului în vid reduce un mecanism de incendiu legat de uleiul combustibil.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Vidul evită utilizarea unui ulei de stingere combustibil și astfel reduce un mecanism de incendiu.",
+        "B": "Afirmația că vidul nu reduce întreținerea este prea generală; tehnologia are frecvent cerințe mici de mentenanță.",
+        "C": "Creșterea masei și gabaritului nu este consecință universală a întreruperii în vid."
+      },
+      "limiting_scope_and_counterexamples": "Nu elimină orice risc de incendiu al instalației.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e6e44d5e-4388-4af7-8e42-35f1dd5ec575",
+        "resp_28e4dbc4-442c-4e15-a324-e3066502901c"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0261",
+      "grade_ids": [
+        "G1-ELE-272",
+        "G2-ELEC-405"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-272": "A",
+        "G2-ELEC-405": "A"
+      },
+      "original_stem": "Valoarea frecventei în sistemul electroenergetic este determinata în principal de:",
+      "original_ABC": {
+        "A": "bilanţul puterilor active",
+        "B": "circulaţia puterii reactive",
+        "C": "modul de tratare a neutrului reţelei"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "source_url": "https://link.springer.com/article/10.1186/s43067-022-00053-2",
+      "source_locator": "Grid frequency and active-power balance",
+      "source_context": {
+        "editorial_before": "Scop: Sisteme CA sincronizate, inclusiv controlul inerției virtuale în rețele moderne.",
+        "central_rule_highlighted_paraphrase": "**Frecvența sistemului este guvernată în principal de bilanțul puterii active.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "În sistemele sincronizate, deficitul ori surplusul de putere activă accelerează sau frânează grupurile și schimbă frecvența.",
+        "B": "Fluxul de putere reactivă este legat în principal de tensiune, nu de determinarea directă a frecvenței.",
+        "C": "Tratarea neutrului influențează curenții de defect la pământ, nu echilibrul principal al frecvenței."
+      },
+      "limiting_scope_and_counterexamples": "Sisteme CA sincronizate, inclusiv controlul inerției virtuale în rețele moderne.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e6e44d5e-4388-4af7-8e42-35f1dd5ec575"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0262",
+      "grade_ids": [
+        "G1-ELE-273",
+        "G2-ELEC-406"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-273": "B",
+        "G2-ELEC-406": "B"
+      },
+      "original_stem": "Valoarea medie a capacităţii lineice pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+      "original_ABC": {
+        "A": "egală",
+        "B": "mai mică",
+        "C": "mai mare"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "source_url": "https://opal-rt.atlassian.net/wiki/spaces/PDOCHS/pages/150307736/Typical%2BElectrical%2BParameters",
+      "source_locator": "Overhead line vs cable capacitance",
+      "source_context": {
+        "editorial_before": "Scop: Parametrii depind de geometrie și dielectric; comparație tipică per km.",
+        "central_rule_highlighted_paraphrase": "**Capacitatea linică medie LEA este mai mică decât la cablul subteran.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Capacități linice egale nu sunt tipice pentru comparația LEA cu cablu de aceeași clasă.",
+        "B": "LEA are în medie capacitate pe lungime mai mică datorită distanțelor și dielectricului aer.",
+        "C": "Capacitatea LEA mai mare decât cablul nu este cazul mediu pentru geometrii comparabile."
+      },
+      "limiting_scope_and_counterexamples": "Parametrii depind de geometrie și dielectric; comparație tipică per km.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e6e44d5e-4388-4af7-8e42-35f1dd5ec575"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0263",
+      "grade_ids": [
+        "G1-ELE-274",
+        "G2-ELEC-407"
+      ],
+      "unchanged_grade_keys": {
+        "G1-ELE-274": "B",
+        "G2-ELEC-407": "B"
+      },
+      "original_stem": "Valoarea medie a inductanţei de serviciu pentru o linie electrică aeriană trifazată este ......... faţă de cea a unui cablu subteran.",
+      "original_ABC": {
+        "A": "egală",
+        "B": "mai mare",
+        "C": "mai mică"
+      },
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "source_url": "https://opal-rt.atlassian.net/wiki/spaces/PDOCHS/pages/150307736/Typical%2BElectrical%2BParameters",
+      "source_locator": "Overhead line vs cable inductance",
+      "source_context": {
+        "editorial_before": "Scop: Parametrii depind de geometria conductoarelor și ecranare; comparație tipică.",
+        "central_rule_highlighted_paraphrase": "**Inductanța linică medie LEA este mai mare decât la cablul subteran.**",
+        "editorial_after": "Pentru variantele A/B/C se aplică numai limita tehnică de mai sus; nu extinde regula dincolo de condițiile explicit notate.",
+        "is_verbatim_source_context": false
+      },
+      "reason_ABC": {
+        "A": "Egalitatea inductanțelor pe lungime nu este caracteristica medie a LEA și cablurilor comparabile.",
+        "B": "LEA are, în medie, inductanță serie mai mare din cauza distanțelor geometrice între conductoare.",
+        "C": "Inductanța LEA mai mică nu este cazul tipic față de cablurile compacte."
+      },
+      "limiting_scope_and_counterexamples": "Parametrii depind de geometria conductoarelor și ecranare; comparație tipică.",
+      "independent_AI_reviewer_sessions": [
+        "resp_e6e44d5e-4388-4af7-8e42-35f1dd5ec575"
+      ],
+      "accepted_for_learning_content": true,
+      "official_ANRE_exam_key_authenticated": false,
+      "offline_original_source_excerpt_verified": false,
+      "app_integrated": false
+    }
+  ]
+}

@@ -1,0 +1,807 @@
+{
+  "schema": "ANRE_EDUCATIONAL_VALIDATION_BATCH_V1",
+  "date": "2026-11-24",
+  "checkpoint": "CKPT-423",
+  "parent": "CKPT-422",
+  "counts": {
+    "new_QABC": 25,
+    "new_grade_routes": 50,
+    "prior_validated": 150,
+    "cumulative_validated": 200
+  },
+  "independent_AI_reviewer_sessions": [
+    "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+    "resp_5812b89a-2e21-4a4b-92c7-e3d91510bc8c",
+    "resp_77332147-61d6-4e52-b9a3-d66dc4e33385",
+    "resp_bef8bf75-4c91-4422-8b01-5bfbb3f66786",
+    "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8"
+  ],
+  "source_limits": "Historical sources and A/B/C card re-used, separately AI reviewed, not all individual URLs reopened live; no official key certification or offline app QA",
+  "excluded_not_counted": [
+    "QABC-0005",
+    "QABC-0007",
+    "QABC-0008",
+    "QABC-0009",
+    "QABC-0015",
+    "QABC-0227",
+    "QABC-0085",
+    "QABC-0098"
+  ],
+  "records": [
+    {
+      "qabc_id": "QABC-0072",
+      "grade_ids": [
+        "G1-ELE-080",
+        "G2-ELEC-225"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-080": "B",
+        "G2-ELEC-225": "B"
+      },
+      "original_stem": "Forţa electrodinamică exercitată între două conductoare filiforme, paralele, lungi, aflate la distanţa r, străbătute de câte un curent:",
+      "original_ABC": {
+        "A": "este direct proporţională cu distanţa r dintre conductoare",
+        "B": "este invers proporţională cu distanţa r dintre conductoare",
+        "C": "nu depinde de distanţa r dintre conductoare"
+      },
+      "reason_ABC": {
+        "A": "F nu crește odată cu r.",
+        "B": "F/ℓ=µI1I2/(2πr); B susținut.",
+        "C": "F nu este independentă de r."
+      },
+      "physical_scope": "F/l∝1/r pentru fire paralele lungi, curenți constanți.",
+      "technical_source_url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V180_EIGHT_MORE_SOURCE_MATCHED_ABC_PEDAGOGICAL_CARDS_2026_11_20.json",
+      "legacy_card_sha": "9498bb3b32cc650f97d837c70a5d4cda5431bdd8",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0073",
+      "grade_ids": [
+        "G1-ELE-081",
+        "G2-ELEC-226"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-081": "B",
+        "G2-ELEC-226": "B"
+      },
+      "original_stem": "Forţa F care se exercită asupra unei sarcini electrice q aflată într-un câmp electric de intensitate E are expresia:",
+      "original_ABC": {
+        "A": "F=E/q",
+        "B": "F=qE",
+        "C": "F=q/E"
+      },
+      "reason_ABC": {
+        "A": "E/q nu are dimensiunea unei forțe.",
+        "B": "F=qE este definiția forței electrice.",
+        "C": "q/E nu are dimensiunea unei forțe."
+      },
+      "physical_scope": "F=qE; la sarcină negativă forța are sens opus.",
+      "technical_source_url": "https://openstax.org/books/university-physics-volume-2/pages/5-4-electric-field",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V180_EIGHT_MORE_SOURCE_MATCHED_ABC_PEDAGOGICAL_CARDS_2026_11_20.json",
+      "legacy_card_sha": "9498bb3b32cc650f97d837c70a5d4cda5431bdd8",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0074",
+      "grade_ids": [
+        "G1-ELE-082",
+        "G2-ELEC-227"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-082": "B",
+        "G2-ELEC-227": "B"
+      },
+      "original_stem": "Frecvenţa unei mărimi periodice este inversul:",
+      "original_ABC": {
+        "A": "amplitudinii",
+        "B": "perioadei",
+        "C": "fazei"
+      },
+      "reason_ABC": {
+        "A": "Inversul amplitudinii nu reprezintă frecvența.",
+        "B": "f=1/T, inversul perioadei.",
+        "C": "Inversul fazei nu este frecvența."
+      },
+      "physical_scope": "f=1/T.",
+      "technical_source_url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-f",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V180_EIGHT_MORE_SOURCE_MATCHED_ABC_PEDAGOGICAL_CARDS_2026_11_20.json",
+      "legacy_card_sha": "9498bb3b32cc650f97d837c70a5d4cda5431bdd8",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0075",
+      "grade_ids": [
+        "G1-ELE-083",
+        "G2-ELEC-228"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-083": "A",
+        "G2-ELEC-228": "A"
+      },
+      "original_stem": "Funcţionarea contoarelor de inducţie are la baza:",
+      "original_ABC": {
+        "A": "curenţii turbionari",
+        "B": "efectul termic al curentului electric",
+        "C": "forţa electrostatica"
+      },
+      "reason_ABC": {
+        "A": "Curenții turbionari în discul mobil sunt esențiali în contorul de inducție.",
+        "B": "Încălzirea nu este principiul de măsurare.",
+        "C": "Forța electrostatică nu este principiul contorului inductiv."
+      },
+      "physical_scope": "Contorul de inducție operează cu curenți turbionari induși.",
+      "technical_source_url": "https://www.eit.edu.au/resources/fundamentals-of-smart-metering-kwh-and-kvarh-meters/",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V180_EIGHT_MORE_SOURCE_MATCHED_ABC_PEDAGOGICAL_CARDS_2026_11_20.json",
+      "legacy_card_sha": "9498bb3b32cc650f97d837c70a5d4cda5431bdd8",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0076",
+      "grade_ids": [
+        "G1-ELE-084",
+        "G2-ELEC-229"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-084": "C",
+        "G2-ELEC-229": "C"
+      },
+      "original_stem": "În instalaţiile de joasa tensiune, legarea la pământ este justificatã:",
+      "original_ABC": {
+        "A": "din motive economice",
+        "B": "pentru diminuarea suprasolicitărilor echipamentelor electrice",
+        "C": "pentru securitatea muncii"
+      },
+      "reason_ABC": {
+        "A": "Legarea la pământ de protecție nu este justificată de economie.",
+        "B": "Limitarea stresului echipamentelor nu este motivul principal pentru PE.",
+        "C": "Securitatea persoanelor la defect și atingere este scopul de protecție."
+      },
+      "physical_scope": "Legarea la pământ de protecție urmărește securitatea persoanelor.",
+      "technical_source_url": "https://legislatie.just.ro/Public/DetaliiDocument/286763",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V180_EIGHT_MORE_SOURCE_MATCHED_ABC_PEDAGOGICAL_CARDS_2026_11_20.json",
+      "legacy_card_sha": "9498bb3b32cc650f97d837c70a5d4cda5431bdd8",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0078",
+      "grade_ids": [
+        "G1-ELE-086",
+        "G2-ELEC-231"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-086": "A",
+        "G2-ELEC-231": "A"
+      },
+      "original_stem": "Funcţionarea transformatoarelor electrice are la bazã:",
+      "original_ABC": {
+        "A": "fenomenul inducţiei electromagnetice",
+        "B": "efectul termic al curentului electric",
+        "C": "curenţii turbionari"
+      },
+      "reason_ABC": {
+        "A": "Inducția electromagnetică mutuală asigură transformarea energiei AC.",
+        "B": "Efectul termic reprezintă pierderi, nu principiul de funcționare.",
+        "C": "Curenții turbionari din miez sunt în general pierderi parazite."
+      },
+      "physical_scope": "Transformatorul folosește inducție electromagnetică mutuală.",
+      "technical_source_url": "https://openstax.org/books/college-physics-2e/pages/23-7-transformers",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V180_EIGHT_MORE_SOURCE_MATCHED_ABC_PEDAGOGICAL_CARDS_2026_11_20.json",
+      "legacy_card_sha": "9498bb3b32cc650f97d837c70a5d4cda5431bdd8",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0079",
+      "grade_ids": [
+        "G1-ELE-087",
+        "G2-ELEC-232"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-087": "B",
+        "G2-ELEC-232": "B"
+      },
+      "original_stem": "Henry este unitatea de măsură pentru:",
+      "original_ABC": {
+        "A": "fluxul magnetic",
+        "B": "inductanţă",
+        "C": "inducţia magnetică"
+      },
+      "reason_ABC": {
+        "A": "Fluxul magnetic se măsoară în weber (Wb).",
+        "B": "Henry (H) este unitatea SI pentru inductanță.",
+        "C": "Inducția magnetică B se măsoară în tesla (T)."
+      },
+      "physical_scope": "Henry măsoară inductanța.",
+      "technical_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V180_EIGHT_MORE_SOURCE_MATCHED_ABC_PEDAGOGICAL_CARDS_2026_11_20.json",
+      "legacy_card_sha": "9498bb3b32cc650f97d837c70a5d4cda5431bdd8",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0090",
+      "grade_ids": [
+        "G1-ELE-098",
+        "G2-ELEC-241"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-098": "B",
+        "G2-ELEC-241": "B"
+      },
+      "original_stem": "În cazul punerii nete la pământ a fazei S         într-o reţea de 20 kV cu neutrul izolat:",
+      "original_ABC": {
+        "A": "tensiunea pe fazele R si T rămâne neschimbata , iar tensiunea fazei defecte S se apropie de 0",
+        "B": "tensiunea pe fazele R si T creste la valoarea tensiunii de linie iar pe faza S se apropie de 0",
+        "C": "cresc tensiunile pe fazele R si T, iar pe faza defecta S rămâne neschimbata"
+      },
+      "reason_ABC": {
+        "A": "Tensiunea fazelor sănătoase față de pământ nu rămâne neschimbată.",
+        "B": "La neutru izolat, fazele sănătoase ajung la tensiunea între faze față de pământ, iar faza defectă la zero.",
+        "C": "Faza defectă nu rămâne la tensiunea normală față de pământ."
+      },
+      "physical_scope": "Neutru izolat: fazele sănătoase ajung la tensiunea de linie față de pământ la defect monofazat net.",
+      "technical_source_url": "https://www.electrical-installation.org/enwiki/IT_system_-_Fault_protection",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V182_FIFTEEN_SOURCE_MATCHED_SUBSTATION_AND_MOTOR_CARDS_3_HOLDS_2026_11_20.json",
+      "legacy_card_sha": "ec247d596737c3763032694469bf5c220f125346",
+      "independent_AI_review_id": "resp_48ceb82a-1eba-4600-a6b7-670eec980710",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0207",
+      "grade_ids": [
+        "G1-ELE-218",
+        "G2-ELEC-354"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-218": "B",
+        "G2-ELEC-354": "B"
+      },
+      "original_stem": "Schema echivalentă de calcul în cazul producerii unui scurtcircuit trifazat, al unei reţele, izolat de pământ se compune din:",
+      "original_ABC": {
+        "A": "schemele de secvenţă directă (pozitivă) , inversă (negativă) şi homopolară (zero) conectate în serie",
+        "B": "schema de secvenţă directă (pozitivă)",
+        "C": "schemele de secvenţă directă (pozitivă) şi inversă (negativă) conectate în paralel"
+      },
+      "reason_ABC": {
+        "A": "Rețelele de secvență directă, inversă și homopolară în serie corespund altor tipuri de defect, nu unui defect trifazat simetric.",
+        "B": "Pentru un scurtcircuit trifazat simetric se folosește rețeaua de secvență directă pozitivă.",
+        "C": "Secvența inversă introdusă în paralel nu este necesară în modelul defectului trifazat echilibrat."
+      },
+      "physical_scope": "Scurtcircuit trifazat echilibrat: numai secvența pozitivă.",
+      "technical_source_url": "https://www.phasetophase.nl/book/book_2_10.html",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+      "legacy_card_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+      "independent_AI_review_id": "resp_5812b89a-2e21-4a4b-92c7-e3d91510bc8c",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0212",
+      "grade_ids": [
+        "G1-ELE-223",
+        "G2-ELEC-359"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-223": "C",
+        "G2-ELEC-359": "C"
+      },
+      "original_stem": "Transformatoarele de măsurare de curent:",
+      "original_ABC": {
+        "A": "pot fi racordate în circuitul primar cu înfăşurarea secundara deschisa",
+        "B": "pot fi lăsate în exploatare cu înfăşurarea secundara deschisa",
+        "C": "nu pot fi racordate in circuitul primar cu înfăşurarea secundara deschisa"
+      },
+      "reason_ABC": {
+        "A": "Nu se permite conectarea cu primar energizat și secundar convențional deschis, din cauza supratensiunilor periculoase.",
+        "B": "Lăsarea în funcțiune a unui TC cu primar parcurs de curent și secundar deschis poate genera tensiuni periculoase și supraîncălzire.",
+        "C": "Varianta C exprimă interdicția pentru TC convențional cu primarul parcurs de curent."
+      },
+      "physical_scope": "Un TC energizat pe primar nu trebuie să aibă secundarul deschis.",
+      "technical_source_url": "https://www.se.com/us/en/faqs/FA125574/",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V184_NEXT_15_SOURCE_MATCHED_ABC_EXPLANATIONS_FOUNDATION_2026_11_20.json",
+      "legacy_card_sha": "5e3a4cba6d0f0995057758f4aa11ed5bf4906a4a",
+      "independent_AI_review_id": "resp_5812b89a-2e21-4a4b-92c7-e3d91510bc8c",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0177",
+      "grade_ids": [
+        "G1-ELE-188",
+        "G2-ELEC-324"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-188": "A",
+        "G2-ELEC-324": "A"
+      },
+      "original_stem": "Pierderile de putere într-o linie electrică prin care se transportă o putere activă P la un factor de putere = 0,9, faţă de cazul când se transportă aceeaşi putere la un factor de putere = 0,8 sunt:",
+      "original_ABC": {
+        "A": "mai mici",
+        "B": "egale",
+        "C": "mai mari"
+      },
+      "reason_ABC": {
+        "A": "La P,U,R fixe, creșterea cosφ de la 0,8 la 0,9 reduce curentul și pierderile I²R.",
+        "B": "Pierderile nu sunt egale: curenții diferă pentru același P și aceeași tensiune.",
+        "C": "La cosφ=0,9 curentul este mai mic, nu mai mare, decât la 0,8."
+      },
+      "physical_scope": "La aceeași P,U,R, cosφ mai mare duce la pierderi I²R mai mici.",
+      "technical_source_url": "https://eepower.com/technical-articles/transmission-line-losses-and-efficiency-optimizationpart-1/",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V185_ANRE_15_ABC_CARD_EXPLANATIONS_MATERIALS_GENERATORS_2026_11_20.json",
+      "legacy_card_sha": "368c7d7ba006ea092f11a0f7690b359308e555b1",
+      "independent_AI_review_id": "resp_5812b89a-2e21-4a4b-92c7-e3d91510bc8c",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0104",
+      "grade_ids": [
+        "G1-ELE-113",
+        "G2-ELEC-255"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-113": "C",
+        "G2-ELEC-255": "C"
+      },
+      "original_stem": "Temperatura înfăşurărilor statorice ale generatoarelor electrice este determinată:",
+      "original_ABC": {
+        "A": "numai de temperatura mediului ambiant",
+        "B": "de tensiunea între faze",
+        "C": "de pierderile Joule-Lenz"
+      },
+      "reason_ABC": {
+        "A": "Temperatura mediului influențează temperatura finală, dar «numai» este fals deoarece există încălzire internă.",
+        "B": "Tensiunea între faze singură nu determină pierderile din înfășurări și răcirea.",
+        "C": "Pierderile Joule I²R sunt o contribuție directă la încălzire; C exprimă cauza urmărită."
+      },
+      "physical_scope": "Pierderile Joule contribuie la temperatura statorului; răcirea contează.",
+      "technical_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+      "legacy_card_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+      "independent_AI_review_id": "resp_5812b89a-2e21-4a4b-92c7-e3d91510bc8c",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0112",
+      "grade_ids": [
+        "G1-ELE-121",
+        "G2-ELEC-263"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-121": "B",
+        "G2-ELEC-263": "B"
+      },
+      "original_stem": "Într-o schemă electrică având un sistem de bare colectoare, separatorul asigură:",
+      "original_ABC": {
+        "A": "deconectarea unor curenţi de suprasarcină;",
+        "B": "izolarea unei părţi din instalaţie de altă parte a instalaţiei aflată sub tensiune;",
+        "C": "comutaţia curentului în regim normal de funcţionare."
+      },
+      "reason_ABC": {
+        "A": "Un separator obișnuit nu este întreruptor de suprasarcină.",
+        "B": "Separatorul asigură separarea/izolarea vizibilă sau garantată a părții de instalație.",
+        "C": "Comutarea curentului de sarcină este funcția echipamentelor cu capacitate de rupere, nu a separatorului simplu."
+      },
+      "physical_scope": "Separatorul asigură izolarea, nu întreruperea curentului de sarcină.",
+      "technical_source_url": "https://www.phasetophase.nl/book/book_1_2.html",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+      "legacy_card_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+      "independent_AI_review_id": "resp_5812b89a-2e21-4a4b-92c7-e3d91510bc8c",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0114",
+      "grade_ids": [
+        "G1-ELE-123",
+        "G2-ELEC-265"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-123": "C",
+        "G2-ELEC-265": "C"
+      },
+      "original_stem": "Într-un conductor curentul alternativ are densitatea:",
+      "original_ABC": {
+        "A": "uniforma",
+        "B": "mai mare în centrul conductorului",
+        "C": "mai mare la periferia conductorului"
+      },
+      "reason_ABC": {
+        "A": "În curent alternativ și la frecvențe relevante apare efect pelicular, deci nu mereu densitate uniformă.",
+        "B": "Concentrația tipică la frecvență mai mare este la suprafață, nu în centru.",
+        "C": "C este tendința curentului AC în conductor masiv, cu densitate mai mare spre periferie."
+      },
+      "physical_scope": "Efectul pelicular concentrează curentul AC spre suprafață; depinde de frecvență.",
+      "technical_source_url": "https://technav.ieee.org/topic/skin-effect/",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V181_FIFTEEN_MORE_ANRE_SOURCE_MATCHED_ABC_CARDS_ELECTRICAL_LAWS_2026_11_20.json",
+      "legacy_card_sha": "9b454dac2faf8a8c5b20c7e4e19c9ca9378b889c",
+      "independent_AI_review_id": "resp_5812b89a-2e21-4a4b-92c7-e3d91510bc8c",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0031",
+      "grade_ids": [
+        "G1-ELE-038",
+        "G2-ELEC-184"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-038": "A",
+        "G2-ELEC-184": "A"
+      },
+      "original_stem": "Componenta simetrică directă produce, în cazul unui motor electric:",
+      "original_ABC": {
+        "A": "cuplul util",
+        "B": "cuplul de frânare",
+        "C": "oscilaţii ale rotorului"
+      },
+      "reason_ABC": {
+        "A": "În regim normal motor, componenta directă creează câmpul rotativ și cuplul util.",
+        "B": "Componenta inversă și unele alte regimuri contribuie la cuplu opus, nu acesta este efectul principal în motorizarea normală.",
+        "C": "Oscilațiile rotorului nu sunt funcția definitorie a componentei directe."
+      },
+      "physical_scope": "Secvența pozitivă produce cuplul util în motor.",
+      "technical_source_url": "https://cms-cdn.selinc.com/assets/Literature/Publications/Technical%20Papers/6779_NegativeSequence_NM_20170209_Web3.pdf?v=20171110-231733",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "legacy_card_sha": "72f53da82e4b514bdd5609c1984cc14f0df102af",
+      "independent_AI_review_id": "resp_77332147-61d6-4e52-b9a3-d66dc4e33385",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0070",
+      "grade_ids": [
+        "G1-ELE-078",
+        "G2-ELEC-223"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-078": "B",
+        "G2-ELEC-223": "B"
+      },
+      "original_stem": "Forţa care se exercită între două conductoare străbătute de curenţi electrici se numeşte:",
+      "original_ABC": {
+        "A": "forţă electrocinetică",
+        "B": "forţă electrodinamică",
+        "C": "forţă magnetomotoare"
+      },
+      "reason_ABC": {
+        "A": "Forța electrocinetică nu este termenul tehnic neechivoc folosit aici pentru interacțiunea a doi curenți.",
+        "B": "Forța electrodinamică descrie interacțiunea mecanică dintre conductoare străbătute de curenți.",
+        "C": "Forța magnetomotoare NI se exprimă în amper-spire, nu este forță mecanică în N."
+      },
+      "physical_scope": "Forță electrodinamică între conductoare parcurse de curent.",
+      "technical_source_url": "https://openstax.org/books/university-physics-volume-2/pages/12-3-magnetic-force-between-two-parallel-currents",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V179_FOURTH_15_EXACT_SOURCE_ABC_FORMULAS_EXPLANATIONS_2026_11_20.json",
+      "legacy_card_sha": "a15c8b79829b00b3ea51e17cffed66d77aa814a5",
+      "independent_AI_review_id": "resp_bef8bf75-4c91-4422-8b01-5bfbb3f66786",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0136",
+      "grade_ids": [
+        "G1-ELE-145",
+        "G2-ELEC-283"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-145": "B",
+        "G2-ELEC-283": "B"
+      },
+      "original_stem": "La pornirea motoarelor electrice asincrone se urmăreşte:",
+      "original_ABC": {
+        "A": "reducerea vibraţiilor rotorului",
+        "B": "reducerea curentului electric absorbit de motor",
+        "C": "reducerea tensiunii la bornele de alimentare ale motorului"
+      },
+      "reason_ABC": {
+        "A": "Vibrațiile pot constitui și ele obiectiv de confort sau fiabilitate, dar nu caracterizează principalul motiv electric al pornirii controlate.",
+        "B": "Pornirea directă poate absorbi curenți mari; reducerea curentului este un obiectiv de proiectare al starterului.",
+        "C": "Reducerea tensiunii este una dintre metode, nu scopul universal; alte soluții folosesc VFD."
+      },
+      "physical_scope": "Pornirea motorului urmărește limitarea curentului și cuplu suficient.",
+      "technical_source_url": "https://library.e.abb.com/public/1fd380f8ca8b4934ae3fa609d764fd33/21043_ABB_Motor_Guide_REV_D.pdf",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V186_TEN_ORIGINAL_MATCHED_ABC_CARDS_ONE_OHM_SCOPE_HOLD_2026_11_20.json",
+      "legacy_card_sha": "b133539c842e9132b4cfe3539921e3e352422b9a",
+      "independent_AI_review_id": "resp_bef8bf75-4c91-4422-8b01-5bfbb3f66786",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0154",
+      "grade_ids": [
+        "G1-ELE-163",
+        "G2-ELEC-301"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-163": "A",
+        "G2-ELEC-301": "A"
+      },
+      "original_stem": "O linie electrică lungă funcţionând în gol:",
+      "original_ABC": {
+        "A": "produce putere reactivă",
+        "B": "absoarbe putere reactivă",
+        "C": "nu produce şi nu absoarbe putere reactivă"
+      },
+      "reason_ABC": {
+        "A": "La mers în gol, capacitatea liniei AC lungi injectează reactiv capacitiv.",
+        "B": "Linia în gol nu este tipic o sarcină inductivă netă în modelul uzual.",
+        "C": "Capacitatea distribuită nu poate fi ignorată în modelul liniei lungi în gol."
+      },
+      "physical_scope": "Linie lungă necompensată în gol: produce putere reactivă capacitivă.",
+      "technical_source_url": "https://www2.iea.lth.se/publications/MS-Theses/Full%20document/5330_full_document.pdf",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V187_TWELVE_EXACT_SOURCE_ABC_LINES_NETWORKS_THREE_SCOPE_HOLDS_2026_11_20.json",
+      "legacy_card_sha": "b92b50e9bdd7bee8737544614d657e84ffeb33af",
+      "independent_AI_review_id": "resp_bef8bf75-4c91-4422-8b01-5bfbb3f66786",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0245",
+      "grade_ids": [
+        "G1-ELE-256",
+        "G2-ELEC-391"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-256": "A",
+        "G2-ELEC-391": "A"
+      },
+      "original_stem": "Unitatea de măsură a capacităţii unui condensator este:",
+      "original_ABC": {
+        "A": "F",
+        "B": "Axh",
+        "C": "A/h"
+      },
+      "reason_ABC": {
+        "A": "Faradul este unitatea SI a capacității C=Q/U.",
+        "B": "A·h este o unitate de sarcină electrică, 1 Ah=3600 C, nu capacitate.",
+        "C": "A/h exprimă variația curentului în timp, nu capacitate."
+      },
+      "physical_scope": "Farad pentru capacitate, nu Ah ori A/h.",
+      "technical_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "independent_AI_review_id": "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0247",
+      "grade_ids": [
+        "G1-ELE-258",
+        "G2-ELEC-393"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-258": "B",
+        "G2-ELEC-393": "B"
+      },
+      "original_stem": "Unitatea de măsură a fluxului magnetic este:",
+      "original_ABC": {
+        "A": "Tesla",
+        "B": "Weber",
+        "C": "Farad"
+      },
+      "reason_ABC": {
+        "A": "Tesla (T) măsoară inducția magnetică B, adică Wb/m².",
+        "B": "Weber (Wb) măsoară fluxul magnetic Φ=∫B·dA.",
+        "C": "Farad (F) este unitatea capacității electrice."
+      },
+      "physical_scope": "Weber pentru flux magnetic, nu Tesla ori Farad.",
+      "technical_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "independent_AI_review_id": "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0248",
+      "grade_ids": [
+        "G1-ELE-259",
+        "G2-ELEC-394"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-259": "B",
+        "G2-ELEC-394": "B"
+      },
+      "original_stem": "Unitatea de măsură a frecvenţei mărimilor periodice se numeşte:",
+      "original_ABC": {
+        "A": "Weber",
+        "B": "Hertz",
+        "C": "Henry"
+      },
+      "reason_ABC": {
+        "A": "Weber măsoară fluxul magnetic, nu frecvența.",
+        "B": "Hertz este unitatea SI pentru f=1/T, adică s^-1.",
+        "C": "Henry măsoară inductanța, nu frecvența."
+      },
+      "physical_scope": "Hertz pentru frecvență, nu Weber ori Henry.",
+      "technical_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "independent_AI_review_id": "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0249",
+      "grade_ids": [
+        "G1-ELE-260",
+        "G2-ELEC-395"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-260": "B",
+        "G2-ELEC-395": "B"
+      },
+      "original_stem": "Unitatea de măsură a sarcinii electrice este:",
+      "original_ABC": {
+        "A": "V/m",
+        "B": "Coulomb",
+        "C": "Farad"
+      },
+      "reason_ABC": {
+        "A": "V/m este unitate pentru intensitatea câmpului electric.",
+        "B": "Coulomb este unitatea sarcinii electrice, 1 C=1 A·s.",
+        "C": "Farad este unitatea capacității electrice."
+      },
+      "physical_scope": "Coulomb pentru sarcină, nu V/m ori Farad.",
+      "technical_source_url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+      "legacy_card_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+      "independent_AI_review_id": "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0251",
+      "grade_ids": [
+        "G1-ELE-262",
+        "G2-ELEC-397"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-262": "B",
+        "G2-ELEC-397": "B"
+      },
+      "original_stem": "Unitatea de măsură pentru măsurarea puterii active este:",
+      "original_ABC": {
+        "A": "kWh",
+        "B": "kW",
+        "C": "kW/h"
+      },
+      "reason_ABC": {
+        "A": "kWh este energie electrică, nu putere.",
+        "B": "kW este unitate pentru putere activă.",
+        "C": "kW/h descrie o rată de variație a puterii, nu puterea."
+      },
+      "physical_scope": "kW pentru puterea activă, kWh pentru energie.",
+      "technical_source_url": "https://www.eia.gov/energyexplained/electricity/measuring-electricity.php",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "independent_AI_review_id": "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0252",
+      "grade_ids": [
+        "G1-ELE-263",
+        "G2-ELEC-398"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-263": "A",
+        "G2-ELEC-398": "A"
+      },
+      "original_stem": "Unitatea de măsură pentru puterea reactiva este:",
+      "original_ABC": {
+        "A": "kVAr",
+        "B": "kVA",
+        "C": "kW"
+      },
+      "reason_ABC": {
+        "A": "kvar este simbolul tehnic folosit pentru puterea reactivă, notat frecvent kVAr în enunțuri.",
+        "B": "kVA exprimă puterea aparentă, nu componenta reactivă.",
+        "C": "kW exprimă puterea activă."
+      },
+      "physical_scope": "kvar pentru putere reactivă, kVA pentru aparentă și kW pentru activă.",
+      "technical_source_url": "https://www.eia.gov/tools/glossary/index.php?id=power",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "independent_AI_review_id": "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8",
+      "source_correction": "Unrelated EPO reference replaced by appropriate EIA power glossary",
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    },
+    {
+      "qabc_id": "QABC-0264",
+      "grade_ids": [
+        "G1-ELE-275",
+        "G2-ELEC-408"
+      ],
+      "original_grade_keys": {
+        "G1-ELE-275": "C",
+        "G2-ELEC-408": "C"
+      },
+      "original_stem": "Valoarea medie pătratică a unei mărimi periodice se mai numeşte şi:",
+      "original_ABC": {
+        "A": "amplitudine",
+        "B": "modul",
+        "C": "valoare efectivă sau valoarea eficace"
+      },
+      "reason_ABC": {
+        "A": "Amplitudinea reprezintă vârful semnalului, nu media pătratelor.",
+        "B": "«Modul» înseamnă valoare absolută sau altă magnitudine, nu RMS prin definiție.",
+        "C": "Rădăcina mediei pătratice (RMS) este prin definiție valoarea efectivă/eficace."
+      },
+      "physical_scope": "RMS este valoare eficace/efectivă.",
+      "technical_source_url": "https://openstax.org/books/university-physics-volume-2/pages/15-2-simple-ac-circuits",
+      "legacy_card_path": "docs/QUESTION_AUDIT/V192_CKPT243_15_FULL_ABC_SWITCHGEAR_LINES_SF6_2026_11_20.json",
+      "legacy_card_sha": "ee7a8e2bd549d7477d3fc11189ea10f59c8eb803",
+      "independent_AI_review_id": "resp_93f92ff9-de59-4858-a9b3-1008f63fe6e8",
+      "source_correction": null,
+      "learning_content_validated": true,
+      "ANRE_official_certification": false,
+      "app_integrated": false
+    }
+  ]
+}

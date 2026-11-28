@@ -1,0 +1,122 @@
+{
+  "schema": "batch_progress_result_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT-399-G2-CLUSTER-04-07",
+  "task_id": "ANRE-G2-157-NEW-ORIGINAL-SOURCE-TRIAGE",
+  "verdict": "PROGRESSED",
+  "action": "CONTINUE_NEXT_UNFINISHED_BATCH",
+  "counts": {
+    "before": {
+      "items": 8,
+      "open_gates": 40,
+      "approved": 0,
+      "review_ready": 0
+    },
+    "after": {
+      "items": 8,
+      "open_gates": 32,
+      "approved": 0,
+      "review_ready": 0
+    }
+  },
+  "delta": {
+    "distinct_items_advanced": 8,
+    "stage_transitions": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0033",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0080",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0078",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0079",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0106",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0107",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0056",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0057",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      }
+    ],
+    "closed_gates": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0033",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0080",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0078",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0079",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0106",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0107",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0056",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0057",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      }
+    ],
+    "new_processed_items": [],
+    "evidence_only_items": [],
+    "regression_reasons": [],
+    "invalid_progress_claims": []
+  },
+  "audit_notice": "Recomputed same structural rules as repository anti-loop verifier in this turn's JS runtime; CLI/CI not executed; no official key or independent reviewer authentication."
+}

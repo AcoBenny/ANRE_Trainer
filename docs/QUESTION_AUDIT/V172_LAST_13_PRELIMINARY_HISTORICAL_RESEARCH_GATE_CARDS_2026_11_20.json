@@ -1,0 +1,505 @@
+{
+  "schema": "v172_last_thirteen_scope_identified_preliminary_historical_QABC_card_evidence",
+  "date": "2026-11-20",
+  "baseline": "V149 pinned QABC sha ee2ac5536c78eb06a0461243be34c117e257188f",
+  "prior_cumulative": 555,
+  "counts": {
+    "requested": 13,
+    "captured_new": 13,
+    "remaining_not_captured": 0,
+    "total_with_research_body": 568,
+    "learner_approved": 0
+  },
+  "note": "Source evidence captured as exact prior research per QABC, not independent final approval. Where original source text differs in material wording or figures are missing, maintain strict version/figure hold. Source CSV candidates are NOT permission to change answer keys.",
+  "checks": {
+    "master_records_read": 97,
+    "matching_full_ABC": 3,
+    "duplicate_keys": 0,
+    "unmatched_sources": 0
+  },
+  "flagged": [],
+  "cards": [
+    {
+      "unit_id": "QABC-0024",
+      "grade_id_source": "G1-ELE-028",
+      "grade_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "original_question": "Ce posibilităţi de limitare a curenţilor de scurtcirciut sunt de preferat pentru schema de mai sus ?",
+      "options": {
+        "A": "reducerea t.e.m., acţionând asupra circuitului de excitaţie al generatorului;",
+        "B": "mărirea reactanţei schemei de alimentare între sursă şi locul de defect;",
+        "C": "creşterea capacităţii de rupere a întreruptoarelor."
+      },
+      "imported_keys_UNCHANGED": "G1-ELE-028=B | G2-ELEC-177=B",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "35",
+      "legacy_evidence": {
+        "file": "V88_TWO_MISSING_DIAGRAMS_SOURCE_RECHECK.csv",
+        "sha": "e8197b6c0061c4c9f2cc805f74dd9ff985124514",
+        "grade_section_or_CSV_row": {
+          "ID": "G1-ELE-028",
+          "canonical_key_UNCHANGED": "B",
+          "question": "Ce posibilităţi de limitare a curenţilor de scurtcirciut sunt de preferat pentru schema de mai sus ?",
+          "A": "reducerea t.e.m., acţionând asupra circuitului de excitaţie al generatorului;",
+          "B": "mărirea reactanţei schemei de alimentare între sursă şi locul de defect;",
+          "C": "creşterea capacităţii de rupere a întreruptoarelor.",
+          "source_url": "https://www.electrical-installation.org/enwiki/Generator_protection ; https://www.electrical-installation.org/enwiki/3-phase_short-circuit_current_(Isc)_at_any_point_within_a_LV_installation",
+          "article_or_page": "Historical PDF physical p10 row28; Generator protection subtransient/steady-state; Method of calculating ZT",
+          "edition": "Historical edition unknown; Schneider live web accessed2026-11-11; Generator page rev2026-08-05",
+          "A_assessment": "Excitation affects fault current; time response and preference not universally established",
+          "B_assessment": "Candidate B under fixed-voltage radial inductive-network model; increasing positive series X reduces prospective current",
+          "C_assessment": "Higher interrupting rating does not itself reduce prospective current; distinguish current limiting",
+          "trap_trigger": "schema de mai sus; de preferat",
+          "preliminary_status": "MISSING_FIGURE_CONDITIONAL_B_CANDIDATE",
+          "independent_QA": "PENDING_SEPARATE_V89",
+          "approved_for_learning": "NO"
+        },
+        "alignment_provenance": "EXACT_CSV_ROW",
+        "source_ABC_alignment": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "question": true
+        }
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": true,
+        "nonofficial_practice_source": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0036",
+      "grade_id_source": "G1-ELE-043",
+      "grade_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "original_question": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
+      "options": {
+        "A": "cu tensiunea între faze",
+        "B": "numai cu puterile active generate",
+        "C": "cu puterile reactive generate"
+      },
+      "imported_keys_UNCHANGED": "G1-ELE-043=A | G2-ELEC-189=A",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "50",
+      "legacy_evidence": {
+        "file": "V82_NINE_ELECTRICAL_P0_SOURCE_FORMULA_CONDITION_CHECKS.csv",
+        "sha": "2c389490b3cc9dbee729d3cb9c6ddad805567d80",
+        "grade_section_or_CSV_row": {
+          "ID": "G1-ELE-043",
+          "question": "Curentul din circuitul statoric al unui generator crește direct proporţional:",
+          "A": "cu tensiunea între faze",
+          "B": "numai cu puterile active generate",
+          "C": "cu puterile reactive generate",
+          "canonical_key_UNCHANGED": "A",
+          "preliminary_candidate_OR_qualification": "NO_UNIVERSAL_PROPORTIONALITY",
+          "issue_type": "MISSING_GENERATOR_OPERATING_CONDITIONS",
+          "technical_source_reasoning": "In sistem trifazat echilibrat, S=sqrt(3)*U_linie*I_linie; la S fix I scade cand U creste. P=sqrt3*UI cos(phi), Q=sqrt3*UI sin(phi). Nici A nici B/C nu descriu o proportionalitate universal directa fara cosphi/U/regim.",
+          "source_title_section": "Schneider Electrical Installation Guide, Definition of reactive power",
+          "source_url": "https://www.electrical-installation.org/enwiki/Definition_of_reactive_power",
+          "remaining_gate": "INDEPENDENT_SME_AND_EXACT_CONTEXT_SOURCE_REQUIRED",
+          "independent_QA": "NOT_RUN",
+          "app_changed": "NO"
+        },
+        "alignment_provenance": "EXACT_CSV_ROW",
+        "source_ABC_alignment": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "question": true
+        }
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0044",
+      "grade_id_source": "G1-ELE-051",
+      "grade_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "original_question": "Dacă o tensiune electromotoare E, montată în latura AB a unei reţele pasive, produce în latura CD a reţelei un curent I, montarea t.e.m. E în latura CD va produce în latura AB:",
+      "options": {
+        "A": "un curent - (minus) I",
+        "B": "un curent I",
+        "C": "un curent I/2"
+      },
+      "imported_keys_UNCHANGED": "G1-ELE-051=B | G2-ELEC-197=B",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "58",
+      "legacy_evidence": {
+        "file": "CKPT_189_NEXT5_BLOCKED_RECIPROCITY_OHM_MAGNETISM_MANEUVERS_2026_11_17.md",
+        "sha": "6a4ade36e4b1b3b56a042893b6e8689edfe52db9",
+        "grade_section_or_CSV_row": "### G1-ELE-051 | PASSIVITY_NOT_SUFFICIENT_FOR_RECIPROCITY\n- Unit ID `AU-21064933b66a7f13` original SHA `21064933b66a7f132dec38688307460deaf86c7f3aec7502c8efcb1899a13273`; unchanged grade keys G1-ELE-051=B, G2-ELEC-197=B.\n- **Original question:** Dacă o tensiune electromotoare E, montată în latura AB a unei reţele pasive, produce în latura CD a reţelei un curent I, montarea t.e.m. E în latura CD va produce în latura AB:\n- **A:** un curent - (minus) I\n- **B:** un curent I\n- **C:** un curent I/2\n- **A/B/C analysis and counterexample:** A sign reversal possible in nonreciprocal passive networks with gyrator and oriented references, not universally. B the intended reciprocity theorem requires a linear bilateral reciprocal network and defined current reference directions, which word «pasive» alone does not guarantee. C half-current not generally implied.\n- **Source and access mode:** Oregon State University ECE580 notes including gyrator https://classes.engr.oregonstate.edu/eecs/fall2023/ece580/Lecture%20Notes/PrintableLectureNotes.pdf (INDEXED_PDF_NO_VISUAL_CONFIRMATION); University of Illinois passive gyrator anti-reciprocal transmission model https://jontallen.ece.illinois.edu/uploads/403-source-S17/LabManual/LabManual.pdf (INDEXED_PDF_NOT_VISUALLY_CHECKED)\n- **Provisional intended interpretation:** B only in reciprocal networks with compatible reference orientations. **Blocker:** Do not infer all passive devices reciprocal. Ordinary linear RLC bilateral network may have intended B, but counterexample exists outside implicit model.\n- `approved_for_learning=NO`, independent technical/linguistic/source QA NOT_RUN, 2026 exam official key NOT_VERIFIED.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0046",
+      "grade_id_source": "G2-ELEC-199",
+      "grade_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "original_question": "Funcţionarea în doua faze a unui transformator trifazat are ca efect:",
+      "options": {
+        "A": "supraîncălzirea acestuia",
+        "B": "suprasarcina",
+        "C": "reducerea puterii tranzitate"
+      },
+      "imported_keys_UNCHANGED": "G1-ELE-053=A | G2-ELEC-199=A",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "60",
+      "legacy_evidence": {
+        "file": "CKPT_217_GFR_7_P1_GRADEII_TECHNICAL_QABC_FAULTS_REACTOR_GIS_2026_11_18.md",
+        "sha": "331bcb3e60ecffde7a3f1cea18b0dafbf1eff793",
+        "grade_section_or_CSV_row": "### G2-ELEC-199 | CONDITIONAL_SINGLE_PHASING_TRANSFORMER\n- Original question: Funcţionarea în doua faze a unui transformator trifazat are ca efect:\n- A: supraîncălzirea acestuia\n- B: suprasarcina\n- C: reducerea puterii tranzitate\n- Imported key **A**, preserved. Source workbook: ELECTROTEHNICA-09.2024-2.xlsx, row 60.\n- A/B/C exact-object analysis: A overheating may result from phase loss/unbalanced excitation and currents, as Schneider warns; B loading constraints can yield thermal overload; C transmitted power/secondary quality can be reduced depending loading and construction. Without load, remaining phases, core and connection, more than one outcome is plausible, so intended A is not a uniquely demonstrated universal effect.\n- Source: Schneider single-phasing three phase transformer technical FAQ: https://www.se.com/nz/en/faqs/FA107378/\n- Gate: CONDITIONAL_SINGLE_PHASING_TRANSFORMER, `independent_QA=NOT_RUN`, `approved_for_learning=NO`, `2026_exam_key=NOT_VERIFIED`.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0289",
+      "grade_id_source": "G1-LEG-025",
+      "grade_ids": [
+        "G1-LEG-025"
+      ],
+      "original_question": "Sursele staţionare de energie electrică în curent continuu, dacă nu sunt racordate prin invertoare la SEN, se supun supun dispoziţiilor Legii nr. 123/2012?",
+      "options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Da, doar sub aspectul stabilirii preţului de vânzare e energiei electrice produse"
+      },
+      "imported_keys_UNCHANGED": "G1-LEG-025=B",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": "32",
+      "legacy_evidence": {
+        "file": "CKPT_203_LEG025_USER_DECISION_DUAL_SOURCES_2026_11_18.md",
+        "sha": "0b558b9ba4bc2551dd226e988448462dae19df00",
+        "grade_section_or_CSV_row": "# CKPT-203 | G1-LEG-025 user interpretation and dual-source policy | 2026-11-18\n\n## User decision recorded from current ANRE session\n- The user explicitly chose BOTH the publicly accessible Portal Legislativ and the project/local GitHub legal corpus as complementary evidence sources, instead of restricting research to GitHub only.\n- The user endorses keeping the already imported answer **B (Nu)** for G1-LEG-025. They consider the distinction between the statute's 'prezentului titlu' and the examination stem's 'Legea nr.123/2012' immaterial for the *intended exam answer in this context*.\n- This is a **user interpretation / exam-key decision**, not proof that title and entire law are legally identical; the exact scope note remains visible for independent juridical QA. Do not repeatedly ask the user to choose A/B/C again without new contrary evidence.\n\n## Grounding and audit constraints\n- Exact case: G1-LEG-025 (AU-950954e2d16b0eb9). The canonical question, original A/B/C and imported key B are NOT modified.\n- Statute evidence: Legea nr. 123/2012, Title I, Chapter I, art. 1(2)(b): official public source https://legislatie.just.ro/Public/DetaliiDocument/311821 ; previous official page extraction in CKPT-202 succeeded. A direct public-page open may produce HTTP 502, which does not render the law inaccessible.\n- Source priority: preserve the official article wording, applicable consolidated date, annotations, and exceptions; cross-check against a rights-permitted archived / local GitHub copy when available and do not assume it is already present. If sources differ, log edition/locator rather than silently replacing one with the other.\n- Important scope: source exempts described stationary DC sources not inverter-connected to SEN from Title I. A precise lawyerly statement cannot substitute 'entire law' as equivalent. In the supplied examination framing, B remains the adopted intended answer, pending separate legal-content QA.\n- Prior 6/6 JS equality/order smoke tests in CKPT-202 are not full source-fidelity certification, not Python packaged validator execution, and not independent legal validation. Full continuous three-original-paragraph presentation remains unverified.\n\n## Next steps and safeguards\n- Do not reopen G1-LEG-025 for the same semantic debate without new evidence; keep exception/scope note in explanation and log as user-endorsed intended key B (not final certified legal answer).\n- For the next ANRE case, do Docs Intelligence official + local reference dual check, select adjacent norm context, preserve original ABC, keep interpretation separate, and run content QA. Do not say full-context PASS without actual displayed-text verification.\n- PR #7 remains Draft; do not change canonical bank, barem, HTML, APK, merge or release without explicit authorization.\n\n## Prior checkpoint\n- CKPT-202: docs/QUESTION_AUDIT/CKPT_202_LEG025_OFFICIAL_SOURCE_AND_FIDELITY_SMOKE_2026_11_18.md\n",
+        "alignment_provenance": "EXPLICIT_GRADE_CONTEXT_DOCUMENT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": false,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0424",
+      "grade_id_source": "G2-NORM-001",
+      "grade_ids": [
+        "G2-NORM-001"
+      ],
+      "original_question": "Normativul I7-2011 pentru proiectarea, execuția și exploatarea instalațiilor electrice aferente clădirilor este aplicabil Gradului II?",
+      "options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_keys_UNCHANGED": "G2-NORM-001=A",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "120",
+      "legacy_evidence": {
+        "file": "CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "sha": "148f576acc2e5702873d893914dc393234049576",
+        "grade_section_or_CSV_row": "### G2-NORM-001 | OFFICIAL_2023_SOURCE_BIBLIO_MATCH\n- Original question: Normativul I7-2011 pentru proiectarea, execuția și exploatarea instalațiilor electrice aferente clădirilor este aplicabil Gradului II?\n- A: Da\n- B: Nu\n- C: Doar pentru Gradele III și IV\n- Imported key **A**, unchanged. Original `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023`:`120`.\n- Primary exact locator: ANRE May 2023 bibliography PDF page 2, item14, Grade II `DA`.\n- A/B/C source-aligned negative tests: A yes for I7; B no and C III/IV-only contradicted by II DA. The source is May 2023; 2026 edition NOT independently proven.\n- `approved_for_learning=NO`, `independent_technical_QA=NOT_RUN`, `official_2026_exam_key=NOT_VERIFIED`.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": true,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0425",
+      "grade_id_source": "G2-NORM-002",
+      "grade_ids": [
+        "G2-NORM-002"
+      ],
+      "original_question": "Normativul PE 102/1986 privind proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a. este inclus pentru Gradul II?",
+      "options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradul I"
+      },
+      "imported_keys_UNCHANGED": "G2-NORM-002=A",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "176",
+      "legacy_evidence": {
+        "file": "CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "sha": "148f576acc2e5702873d893914dc393234049576",
+        "grade_section_or_CSV_row": "### G2-NORM-002 | OFFICIAL_2023_SOURCE_BIBLIO_MATCH\n- Original question: Normativul PE 102/1986 privind proiectarea și executarea instalațiilor de conexiuni și distribuție cu tensiuni până la 1000 V c.a. este inclus pentru Gradul II?\n- A: Da\n- B: Nu\n- C: Doar pentru Gradul I\n- Imported key **A**, unchanged. Original `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023`:`176`.\n- Primary exact locator: ANRE May 2023 bibliography PDF page 3, item22 PE102/1986, Grade II DA, Grade I NU.\n- A/B/C source-aligned negative tests: A yes; B no and C I only contradict Grade II DA and I NU. Historic 1986 source object to be used only after specific norm scope match.\n- `approved_for_learning=NO`, `independent_technical_QA=NOT_RUN`, `official_2026_exam_key=NOT_VERIFIED`.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": true,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0426",
+      "grade_id_source": "G2-NORM-003",
+      "grade_ids": [
+        "G2-NORM-003"
+      ],
+      "original_question": "Normativul PE 155/1992 privind proiectarea și executarea branșamentelor pentru clădiri civile este aplicabil Gradului II?",
+      "options": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_keys_UNCHANGED": "G2-NORM-003=A",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": "211",
+      "legacy_evidence": {
+        "file": "CKPT_223_GFR_15_NOR_091_099_G2_BIBLIO_2026_11_18.md",
+        "sha": "148f576acc2e5702873d893914dc393234049576",
+        "grade_section_or_CSV_row": "### G2-NORM-003 | OFFICIAL_2023_SOURCE_BIBLIO_MATCH\n- Original question: Normativul PE 155/1992 privind proiectarea și executarea branșamentelor pentru clădiri civile este aplicabil Gradului II?\n- A: Da\n- B: Nu\n- C: Doar pentru Gradele III și IV\n- Imported key **A**, unchanged. Original `Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023`:`211`.\n- Primary exact locator: ANRE May 2023 bibliography PDF page 3, item29 PE155/1992, Grade I and II DA.\n- A/B/C source-aligned negative tests: A yes, PE155/1992 applies to Grade II in 2023; B no and C III/IV-only contradicted by 2023 PDF. The norm treats **branșamente**, which I7 expressly excludes at I7 §1.2(j).\n- `approved_for_learning=NO`, `independent_technical_QA=NOT_RUN`, `official_2026_exam_key=NOT_VERIFIED`.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": true,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0504",
+      "grade_id_source": "G2-ELEC-030",
+      "grade_ids": [
+        "G2-ELEC-030"
+      ],
+      "original_question": "Un transformator ideal nu poate funcționa în regim normal alimentat exclusiv cu:",
+      "options": {
+        "A": "curent continuu constant",
+        "B": "curent alternativ",
+        "C": "tensiune alternativă"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-030=A",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "source_row": "1",
+      "legacy_evidence": {
+        "file": "CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+        "sha": "6ed8123e78d82a049da5ab5844e47ca1d1c99d87",
+        "grade_section_or_CSV_row": "### G2-ELEC-030 | DIRECT_DC_TRANSFORMER_PHYSICS\n- **Original:** Un transformator ideal nu poate funcționa în regim normal alimentat exclusiv cu:\n- **A:** curent continuu constant\n- **B:** curent alternativ\n- **C:** tensiune alternativă\n- **Original key:** A, unchanged. Source: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1 row 1.\n- **Other grade members with exact same QABC:** G2-ELEC-030=A.\n- **Technical/scope A-B-C evaluation:** Steady constant DC produces no sustained time-varying flux and hence no normal transformer output (apart from switching transient); B alternating current and C alternating voltage are normal transformer excitation. An ideal mathematical transformer has limited DC interpretation; real core saturates.\n- **Source and access:** OpenStax College Physics Transformers section; https://openstax.org/books/college-physics-2e/pages/23-7-transformers.\n- **Gate:** DIRECT_DC_TRANSFORMER_PHYSICS, independent review NOT_RUN, exam key NOT_VERIFIED, learner approval NO.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": true,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0525",
+      "grade_id_source": "G2-ELEC-051",
+      "grade_ids": [
+        "G2-ELEC-051"
+      ],
+      "original_question": "Tensiunea nominală a unei instalații reprezintă:",
+      "options": {
+        "A": "valoarea de referință pentru care instalația și echipamentele sunt destinate să funcționeze",
+        "B": "curentul maxim permanent",
+        "C": "rezistența conductorului PE"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-051=A",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "source_row": "1",
+      "legacy_evidence": {
+        "file": "CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+        "sha": "6ed8123e78d82a049da5ab5844e47ca1d1c99d87",
+        "grade_section_or_CSV_row": "### G2-ELEC-051 | DIRECT_NOMINAL_VOLTAGE\n- **Original:** Tensiunea nominală a unei instalații reprezintă:\n- **A:** valoarea de referință pentru care instalația și echipamentele sunt destinate să funcționeze\n- **B:** curentul maxim permanent\n- **C:** rezistența conductorului PE\n- **Original key:** A, unchanged. Source: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1 row 1.\n- **Other grade members with exact same QABC:** G2-ELEC-051=A.\n- **Technical/scope A-B-C evaluation:** A is voltage equipment/design reference; B has unit amperes (current), C ohms (PE resistance), dimensional distractor checks. 'Rated/nominal voltage' may have standard-specific Uo/U definitions, but generic formulation fits A.\n- **Source and access:** IEC 60375 circuit quantity definition context and standard nominal rating concept; https://www.iteh.eu/catalog/standards/clc/8f705dcb-b17b-49a6-9d24-627a618d4f77/en-iec-60375-2018.\n- **Gate:** DIRECT_NOMINAL_VOLTAGE, independent review NOT_RUN, exam key NOT_VERIFIED, learner approval NO.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": true,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0526",
+      "grade_id_source": "G2-ELEC-052",
+      "grade_ids": [
+        "G2-ELEC-052"
+      ],
+      "original_question": "Un circuit electric închis este necesar pentru:",
+      "options": {
+        "A": "circulația continuă a curentului într-un circuit alimentat",
+        "B": "măsurarea exclusivă a rezistenței",
+        "C": "anularea tensiunii sursei"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-052=A",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "source_row": "1",
+      "legacy_evidence": {
+        "file": "CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+        "sha": "6ed8123e78d82a049da5ab5844e47ca1d1c99d87",
+        "grade_section_or_CSV_row": "### G2-ELEC-052 | DIRECT_CONDUCTION_LOOP\n- **Original:** Un circuit electric închis este necesar pentru:\n- **A:** circulația continuă a curentului într-un circuit alimentat\n- **B:** măsurarea exclusivă a rezistenței\n- **C:** anularea tensiunii sursei\n- **Original key:** A, unchanged. Source: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1 row 1.\n- **Other grade members with exact same QABC:** G2-ELEC-052=A.\n- **Technical/scope A-B-C evaluation:** A a closed conducting path normally needed for sustained current from a supply; B measuring resistance exclusively isn't what 'closed circuit' means; C short-circuiting or closing does not cancel source EMF. Distinguish displacement current/dielectric circuits from pedagogical conduction example.\n- **Source and access:** OpenStax intro electrical circuits (Kirchhoff) theoretical circuit convention; https://openstax.org/books/college-physics-2e/pages/20-2-electromotive-force-terminal-voltage.\n- **Gate:** DIRECT_CONDUCTION_LOOP, independent review NOT_RUN, exam key NOT_VERIFIED, learner approval NO.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": true,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0537",
+      "grade_id_source": "G2-ELEC-063",
+      "grade_ids": [
+        "G2-ELEC-063"
+      ],
+      "original_question": "La măsurarea unei tensiuni cu multimetrul, selectarea domeniului trebuie să fie:",
+      "options": {
+        "A": "adecvată valorii estimate și categoriei de măsurare",
+        "B": "întotdeauna cea mai mică posibilă",
+        "C": "aleasă fără conectarea sondelor"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-063=A",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "source_row": "1",
+      "legacy_evidence": {
+        "file": "CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+        "sha": "6ed8123e78d82a049da5ab5844e47ca1d1c99d87",
+        "grade_section_or_CSV_row": "### G2-ELEC-063 | CONDITIONAL_B_AND_C_WORDING\n- **Original:** La măsurarea unei tensiuni cu multimetrul, selectarea domeniului trebuie să fie:\n- **A:** adecvată valorii estimate și categoriei de măsurare\n- **B:** întotdeauna cea mai mică posibilă\n- **C:** aleasă fără conectarea sondelor\n- **Original key:** A, unchanged. Source: Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1 row 1.\n- **Other grade members with exact same QABC:** G2-ELEC-063=A.\n- **Technical/scope A-B-C evaluation:** A correct range based on expected voltage and meter CAT rating. B always lowest possible range can overload/damage or error; C 'aleasă fără conectarea sondelor' may describe a desirable safety step (select range before probing), so can also be literally true; C alone says nothing about proper range but not logically false. Keep linguistic overlap blocked for strict unique choice.\n- **Source and access:** Keysight Digital Multimeters safety selection/CAT guidance; https://www.keysight.com/us/en/products/digital-multimeters.html.\n- **Gate:** CONDITIONAL_B_AND_C_WORDING, independent review NOT_RUN, exam key NOT_VERIFIED, learner approval NO.",
+        "alignment_provenance": "GRADE_SECTION_IN_REPORT",
+        "source_ABC_alignment": null
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": true,
+        "learner_approved": false
+      }
+    },
+    {
+      "unit_id": "QABC-0568",
+      "grade_id_source": "G2-ELEC-290",
+      "grade_ids": [
+        "G2-ELEC-290"
+      ],
+      "original_question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "options": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "imported_keys_UNCHANGED": "G2-ELEC-290=A",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": "159",
+      "legacy_evidence": {
+        "file": "V77_18_P0_EXACT_SOURCE_AND_LANGUAGE_RECHECK.csv",
+        "sha": "9c0214c1457f29a485696651bbe969bda2661dcd",
+        "grade_section_or_CSV_row": {
+          "ID": "G2-ELEC-290",
+          "original_question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+          "A": "constanta de propagare a liniei",
+          "B": "constanta de atenuare a liniei",
+          "C": "constanta de distorsiune a liniei",
+          "canonical_key_NOT_CHANGED": "A",
+          "candidate_OR_resolution_NOT_APPROVED": "A_WITH_REWRITE",
+          "classification": "UNITS_IN_STATEMENT_CONTRADICTION",
+          "source_reasoning_individual": "Constanta propagare gamma=alpha+j beta are unitati m^-1; gamma*1km este adimensionala, dar gamma in sine nu e adimensionala. Enunt numeste constanta 'marime adimensionala ... pe 1km': necesita reformulare.",
+          "source_locator": "Engineering LibreTexts Steer sect3.2.2-3.2.3 SI m^-1",
+          "primary_or_didactic_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Fundamentals_of_Microwave_and_RF_Design_%28Steer%29/03%3A_Transmission_Lines/3.02%3A_Transmission_Line_Theory",
+          "edition_and_effective_2026_gate": "CURRENT_EFFECTIVE_VERSION_OR_TECHNICAL_CONTEXT_NOT_CERTIFIED",
+          "independent_technical_linguistic_qa": "NOT_RUN",
+          "app_approved": "NO"
+        },
+        "alignment_provenance": "EXACT_CSV_ROW",
+        "source_ABC_alignment": {
+          "A": true,
+          "B": true,
+          "C": true,
+          "question": true
+        }
+      },
+      "gates": {
+        "source_specific_edition": "NOT_AUTHENTICATED",
+        "independent_source_and_technical": "NOT_RUN",
+        "linguistic_QA": "NOT_RUN",
+        "official_exam_key": "NOT_AUTHENTICATED",
+        "figure_reconstruction_required": false,
+        "nonofficial_practice_source": false,
+        "learner_approved": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "v254_direct_official_hosted_xlsx_three_unmapped_text_rows_explanations_no_insert",
+  "date": "2026-11-21",
+  "previous_head": "d258994011e4831c688397b7161d9dfff18f725e",
+  "base_prior_inventory": "V175, V245",
+  "counts": {
+    "full_user_uploaded_rows": 426,
+    "published_scope_unique_source_rows": 414,
+    "source_only_rows": 12,
+    "source_only_text_rows_reviewed": 3,
+    "source_only_figure_rows_still_waiting": 9,
+    "added_to_822": 0,
+    "independent_learning_approvals": 0
+  },
+  "provenance": "Original A/B/C from V175 source gap inventory compared 4/4 columns per selected row against live ANRE-hosted XLSX rendered markdown; not byte-identical hashes or exact Excel row reconstruction in this execution.",
+  "checks": {
+    "official_HTTP_200": "2/2",
+    "source_text_four_fields_match": "3/3",
+    "existing_answer_keys_mutated": 0,
+    "independent_signoff": "NOT_RUN"
+  },
+  "packets": [
+    {
+      "source_tag": "EL",
+      "source_excel_row_from_prior_source_extraction": 39,
+      "official_hosted_xlsx_url": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+      "direct_official_rendered_row_exact_match": true,
+      "official_workbook_response_status": 200,
+      "source_original": {
+        "question": "Circulaţia câmpului magnetic pe un contur închis este egală cu:",
+        "A": "suma algebrică a curenţilor care străbat conturul",
+        "B": "zero",
+        "C": "suma căderilor de tensiune            de-a lungul conturului"
+      },
+      "diagram_required": false,
+      "canonical_qabc_mapping": "UNMAPPED_DELIBERATE_SCOPE_REVIEW_PENDING",
+      "official_key_available_in_source": false,
+      "authoritative_technical_qa": false,
+      "independent_linguistic_qa": false,
+      "approved_for_learning": false,
+      "technical_research": {
+        "likely_intended_candidate": "A",
+        "status": "SOURCE_SUPPORTED_IN_MAGNETOSTATICS_ONLY_SCOPE_HOLD",
+        "original_scope": "Circulation of magnetic field intensity around a closed contour, no magnetostatic/time-varying qualifier",
+        "technical_law": "Integral Ampere circuital law in magnetostatics: ∮_C H·dl = I_enclosed. For time-varying E, Maxwell adds displacement current.",
+        "proof_by_option": {
+          "A": "Correct for the algebraic oriented enclosed conduction currents when magnetostatic and H is the field used; the question omits this qualifier.",
+          "B": "Zero only in special cases with no enclosed effective current, not generally.",
+          "C": "Sum of circuit voltage drops is Kirchhoff's separate circuit notion, not the magnetic line integral."
+        },
+        "source_url": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electromagnetics_I_(Ellingson)/07:_Magnetostatics/7.04:_Amperes_Circuital_Law_(Magnetostatics)_-_Integral_Form",
+        "independent_technical_reviewer": false
+      }
+    },
+    {
+      "source_tag": "EL",
+      "source_excel_row_from_prior_source_extraction": 65,
+      "official_hosted_xlsx_url": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+      "direct_official_rendered_row_exact_match": true,
+      "official_workbook_response_status": 200,
+      "source_original": {
+        "question": "Două sisteme de fazori trifazaţi oarecare, care au vârfuri comune şi origini diferite care se descompun în componente simetrice:",
+        "A": "au numai aceleaşi componente directe (pozitive)",
+        "B": "au aceleaşi componente inverse (negative)",
+        "C": "au aceleaşi componente homopolare (zero)"
+      },
+      "diagram_required": false,
+      "canonical_qabc_mapping": "UNMAPPED_DELIBERATE_SCOPE_REVIEW_PENDING",
+      "official_key_available_in_source": false,
+      "authoritative_technical_qa": false,
+      "independent_linguistic_qa": false,
+      "approved_for_learning": false,
+      "technical_research": {
+        "likely_intended_candidate": "B",
+        "status": "MATH_CONDITIONAL_SOURCE_SUPPORTED_UNIQUE_OPTION_NOT_INDEPENDENTLY_APPROVED",
+        "object_and_assumption": "Two arbitrary 3-phasor triples have common tips, but each triple's three arrows have one common origin; difference of origins is one nonzero complex vector d added to all three phase arrows.",
+        "formulas": "For a=exp(j2π/3), 1+a+a²=0. V0=(Va+Vb+Vc)/3; V1=(Va+aVb+a²Vc)/3; V2=(Va+a²Vb+aVc)/3. After common origin shift d: Vx' = Vx − d for x=a,b,c; V0'=V0−d; V1'=V1; V2'=V2.",
+        "reproducible_numeric_example": {
+          "phase_phasors": [
+            "2+3j",
+            "-1+0.5j",
+            "0.2-2j"
+          ],
+          "common_origin_shift": "1.4-0.3j",
+          "abs_change_zero_sequence": 1.4317821063,
+          "abs_change_positive_sequence": 0,
+          "abs_change_negative_sequence": 0,
+          "python_numeric_result": "CHECKED (complex arithmetic), not an official exam verification"
+        },
+        "proof_by_option": {
+          "A": "«au numai aceleaşi componente directe» is FALSE under common-shift model because negative sequence is equal too; 'numai' wrongly claims exclusivity.",
+          "B": "«au aceleaşi componente inverse» is TRUE because the common shift cancels under Fortescue negative sequence.",
+          "C": "«au aceleaşi componente homopolare» is FALSE for different origins: zero sequence changes by −d."
+        },
+        "uncertainty": "Exact diagram/definition of 'origini' not supplied; if origins are not common within each triple, the translation model does not follow. Do not certify universal unique key from title alone.",
+        "source_url": "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electro-Optics/Introduction_to_Electric_Power_Systems_(Kirtley)/04:_Introduction_to_symmetrical_components/4.01:_The_Symmetrical_Component_Transformation",
+        "independent_technical_reviewer": false
+      }
+    },
+    {
+      "source_tag": "LE",
+      "source_excel_row_from_prior_source_extraction": 7,
+      "official_hosted_xlsx_url": "https://anre.ro/wp-content/uploads/2023/05/LEGISLATIE-GR.-1-05.2023.xlsx",
+      "direct_official_rendered_row_exact_match": true,
+      "official_workbook_response_status": 200,
+      "source_original": {
+        "question": "ANRE este:",
+        "A": "Agenţie naţională de reglementare în domeniul energiei termice",
+        "B": "Autoritatea Naţionala de Reglementare pentru Serviciile Publice de Gospodărie Comunala",
+        "C": "Autoritatea Naţionala de Reglementare in domeniul Energiei"
+      },
+      "diagram_required": false,
+      "canonical_qabc_mapping": "UNMAPPED_DELIBERATE_SCOPE_REVIEW_PENDING",
+      "official_key_available_in_source": false,
+      "authoritative_technical_qa": false,
+      "independent_linguistic_qa": false,
+      "approved_for_learning": false,
+      "technical_research": {
+        "likely_intended_candidate": "C",
+        "status": "OFFICIAL_AGENCY_NAME_SUPPORTS_C_NOT_SCORED_KEY",
+        "proof_by_option": {
+          "A": "Wrong regulatory scope: description references national thermal-energy agency, not the institution's actual statutory name.",
+          "B": "Names another public-service regulator; does not match ANRE's exact name.",
+          "C": "Correct institutional expansion of acronym: Autoritatea Națională de Reglementare în Domeniul Energiei."
+        },
+        "source_url": "https://anre.ro/",
+        "independent_legal_reviewer": false
+      }
+    }
+  ],
+  "warnings": [
+    "These are not presently inside 568 QABC groups or 822 grade routes; do not auto-insert.",
+    "Original live XLSX rendering cannot prove fidelity of hidden DrawingML diagrams; nine figure-dependent omissions unchanged.",
+    "Row 65 mathematical inference assumes a *common* origin within each phasor triple, as ordinarily implied by phasor diagram conventions, and is not an authenticated scored key.",
+    "No grade-specific final validation or app edits."
+  ]
+}

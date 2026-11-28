@@ -1,0 +1,434 @@
+{
+  "schema": "ANRE_CKPT047_SOURCE_GATED_QABC_RESEARCH_V1",
+  "batch_id": "L047-B-G1-CONFLICT",
+  "date": "2026-11-16",
+  "read_only_original_library_csv_sha256": "effa386b6e9c4d8e529b313af822c068fea5e0ed0473e40eb2adcd4be8c0a43f",
+  "cards": [
+    {
+      "unit_ref": "G1-NOR-010",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-010",
+        "question": "În instalaţiile de joasă tensiune aferente clădirilor, rezistenţa electrică a izolaţiei trebuie măsurată:",
+        "A": "numai între două conductoare active",
+        "B": "numai între conductoarele active luate 2 câte 2",
+        "C": "între conductoarele active şi conductorul de protecţie conectat la reţeaua de legare la pământ",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "STORED_KEY_B_CONTRADICTS_EXACT_TEST_MEASUREMENT",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A spune «numai» între două active, fără PE; nu este regula generală din I7.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B limitează exclusiv la active două câte două; omite cerința expresă față de PE.",
+      "B_research": "C coincide cu obiectul și direcția măsurării impuse de §8.1.1.3.3.",
+      "C_research": "La verificarea instalațiilor de joasă tensiune, **I7 §8.1.1.3.3** prevede măsurarea rezistenței izolației între **conductoarele active și conductorul de protecție legat la pământ**. Conductoarele active pot fi reunite pentru această încercare. Variantele A și B folosesc **„numai”** și omit legătura față de PE. Varianta **C** redă cerința specifică; baremul istoric **B** necesită corecție numai după verificarea ediției și QA independent.",
+      "context_romanian": "I7 §8.1.1.3.3",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "special_scope": "test de izolatie, nu separarea intre circuite a unei metode speciale TFJS/TFJP"
+    },
+    {
+      "unit_ref": "G1-NOR-012",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-012",
+        "question": "La circuitele electrice pentru alimentarea receptoarelor de importanţă deosebită (receptoare din blocul operator al spitalelor, iluminat de siguranţă, etc) materialul conductoarelor este:",
+        "A": "întotdeauna aluminiu",
+        "B": "întotdeauna cupru",
+        "C": "cupru sau aluminiu, condiţionat",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "C",
+      "finding": "STORED_B_UNCONDITIONAL_CU_OVERSTATES_CONDITIONAL_I7",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A «întotdeauna aluminiu» contrazice recomandarea expresă pentru Cu în situații particulare.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B «întotdeauna cupru» transformă condiția specifică din §5.1.7.2(a) într-o interdicție universală pentru aluminiu.",
+      "B_research": "C «cupru sau aluminiu, condiționat» corespunde caracterului condițional al materialului/sectiunii în §5.1.7.1-2.",
+      "C_research": "În **I7 §5.1.7.2(a)**, pentru receptoarele de importanță deosebită se prevăd conductoare de **cupru** când secțiunea calculată în **aluminiu ar fi sub 10 mm²**. Textul nu spune fără condiții că tot cuprul este obligatoriu pentru orice asemenea circuit. A și B au adverbul **„întotdeauna”**, care elimină nuanța normativă. C reflectă corect **alegerea condiționată** în sursa disponibilă. Răspunsul original B rămâne nemodificat în date până la QA tehnic, lingvistic și ediția de examen.",
+      "context_romanian": "I7 §5.1.7.1–5.1.7.2(a)",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "scope_trap": "EXCEPTION_CONDITIONAL_COPPER_WHEN_AL_BELOW_10MM2"
+    },
+    {
+      "unit_ref": "G1-NOR-041",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-041",
+        "question": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "A": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 16 mm2Cu sau 25 mm2Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B_CONDITIONAL",
+      "finding": "MOSTLY_SUPPORTED_WITH_SINGLE_PHASE_3WIRE_SCOPE_GAP",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A cere egalitate în polifazate pentru toate secțiunile; este prea general față de I7.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B folosește pragurile exacte ≤16mm² Cu și ≤25mm² Al pentru polifazate; adaugă totuși «monofazate cu trei conductoare», nu cazul expres 2 conductoare din lit. a.",
+      "B_research": "C include praguri 25 Cu/35 Al, diferite de I7 (16/25).",
+      "C_research": "Articolul **I7 §5.2.4.6.1** obligă neutrul să aibă secțiunea fazei la **monofazate cu două conductoare**, indiferent de dimensiune, și la **polifazate cu faze ≤16 mm² Cu sau ≤25 mm² Al**. Varianta B conține pragurile corecte, spre deosebire de A și C. Totuși, B menționează și un circuit **monofazat cu trei conductoare**, care nu este cazul enunțat explicit în litera a a normei. Păstrăm **B ca răspuns probabil**, dar fără a pretinde că toate subclauzele sunt deja verificate pentru această topologie.",
+      "context_romanian": "I7 §5.2.4.6.1(a)-(d)",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "scope_gate": "single_phase_three_wire_extra_claim_NOT_PROVEN"
+    },
+    {
+      "unit_ref": "G1-NOR-042",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-042",
+        "question": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+        "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "A",
+      "finding": "STORED_B_MISMATCH_CORRECT_SINGLE_PHASE_2WIRE",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A reproduce literal cazul monofazat cu două conductoare, indiferent de secțiune, din I7 lit. a.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B invocă monofazate cu 3 conductoare și praguri Cu25/Al35, care nu corespund lit. b din I7.",
+      "B_research": "C extinde necondiționat egalitatea la toate secțiunile polifazate; §5.2.4.6.3 permite reducerea în anumite condiții.",
+      "C_research": "Potrivit **I7 §5.2.4.6.1(a)**, neutrul trebuie să fie egal cu faza în **circuitele monofazate cu două conductoare**, fără limită de secțiune. La **polifazate**, lit. b indică pragurile **16 mm² Cu / 25 mm² Al**, nu 25/35. De aceea B amestecă o topologie neprecizată cu praguri greșite, iar C generalizează peste condițiile reale. Răspunsul specific **A** este argumentat textual, dar baremul B rămâne neschimbat până la autorizarea corecției.",
+      "context_romanian": "I7 §5.2.4.6.1(a)(b) și §5.2.4.6.3",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-089",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-089",
+        "question": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+        "A": "este interzisă",
+        "B": "este permisă, cu marcarea corespunzătoare la cele două extremităţi",
+        "C": "este permisă dacă nu se folosește una dintre culorile verde sau galben",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "STORED_A_PROHIBITION_CONTRADICTS_I7_EXPLICIT_PERMISSION",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A susține interdicție, contrazisă de permisiunea expresă la §5.1.4.3.3.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B corespunde permisiunii de aceeași culoare pentru faze, cu marcare corectă la ambele capete.",
+      "B_research": "C omiterea regulilor PE/N și reducerea identificării la interdicția verde/galben nu este suficientă.",
+      "C_research": "În **I7 §5.1.4.3.3**, conductoarele de fază pot avea **o singură culoare**, cu condiția marcării corespunzătoare **la ambele extremități**. A transformă această permisiune într-o interdicție absolută. C se referă doar la evitarea unor culori fără să rezolve identificarea fiecărei faze. B include tocmai condiția cerută și este candidatul susținut, în timp ce baremul original A nu a fost modificat.",
+      "context_romanian": "I7 §5.1.4.3.3",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-090",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-090",
+        "question": "Tuburile şi ţevile metalice",
+        "A": "nu se pot monta direct pe elementele de construcţie din materiale combustibile.",
+        "B": "se pot monta direct pe elementele de construcţie din materiale combustibile, condiționat.",
+        "C": "se pot monta direct pe elementele de construcţie din materiale combustibile",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B_OR_C_SEMANTIC_GATE",
+      "finding": "TWO_VIABLE_OPTION_WORDINGS_DIRECT_VS_CONDITIONAL",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A spune că nu se pot monta direct pe material combustibil; I7 §5.2.12.2.12 permite.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B spune «se pot ... condiționat», interpretabil ca respectarea condițiilor generale ale montajului, dar nu definește condiția.",
+      "B_research": "C coincide literal cu propoziția «se pot monta direct» din I7 §5.2.12.2.12, fără a interzice respectarea altor cerințe.",
+      "C_research": "Conform **I7 §5.2.12.2.12**, **tuburile și țevile metalice se pot monta direct pe elemente combustibile**. Aceasta exclude răspunsul A. B adaugă **„condiționat”**, fără să precizeze condiția, iar C redă exact permisiunea din textul disponibil. Ambele formulări pot fi interpretate drept compatibile cu un montaj corect, dar **C este reproducerea textuală**, iar B este baremul original. E necesară o decizie lingvistică privind rolul cuvântului «condiționat», fără modificare automată de cheie.",
+      "context_romanian": "I7 §5.2.12.2.12",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "user_interpretation_may_unlock": true,
+      "exception_exists_in_this_exact_clause": false
+    },
+    {
+      "unit_ref": "G1-NOR-020",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-020",
+        "question": "Amplasarea aparatelor cu ulei în interiorul tablourilor electrice:",
+        "A": "este interzisă",
+        "B": "este permisă în anumite condiţii",
+        "C": "este permisă, dar nu se recomandă",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A",
+      "finding": "STORED_A_SUPPORTED_OIL_DIELECTRIC_IN_DISTRIBUTION_BOARD",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A reproduce interdicția pentru aparate cu dielectric combustibil.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B inventează permisiune condiționată fără excepție în §5.3.3.18.",
+      "B_research": "C inventează permisiune nerecomandată, deși norma folosește interdicția.",
+      "C_research": "În **I7 §5.3.3.18**, instalarea în **tablourile de distribuție** a aparatelor cu **dielectrici combustibili, inclusiv ulei**, este interzisă. A reflectă direct regula aplicabilă exact acestor tablouri. B și C vorbesc despre permisiuni care nu apar în articol. Este important să nu transferăm regula la alte clase de echipamente care nu sunt tablouri de distribuție.",
+      "context_romanian": "I7 §5.3.3.18",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-024",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-024",
+        "question": "Întreruperea conductorului de protecţie prin aparate de conectare:",
+        "A": "este permisă",
+        "B": "nu este permisă",
+        "C": "de regula nu este permisă, cu excepţia anumitor cazuri",
+        "key_UNCHANGED": "B"
+      },
+      "candidate_NOT_APPLIED": "B",
+      "finding": "NO_PE_SWITCH_SUPPORTED_TEST_JOINT_NOT_SWITCH",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A permite întreruperea cu aparate de conectare, contrar cerinței de continuitate PE.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B interzice înserierea aparatelor de comutație pe PE, conform §5.5.3.5.",
+      "B_research": "C excepțiile pentru îmbinările de test cu sculă nu constituie permisiune pentru dispozitive de comutație.",
+      "C_research": "Articolul **I7 §5.5.3.5** spune că **nu se înseriază dispozitive de comutație pe conductorul PE**. Îmbinările de test demontabile cu ajutorul unei scule sunt prevăzute separat și **nu sunt aparate de comutație**. De aceea A este greșită, iar C induce o excepție pentru un alt obiect. **B** corespunde regulii fără a suprima posibilitatea testării controlate.",
+      "context_romanian": "I7 §5.5.3.5",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-026",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-026",
+        "question": "Montarea siguranţelor de j.t.pe conductoarele instalaţiei de protecţie:",
+        "A": "este interzisă",
+        "B": "este întotdeauna permisă",
+        "C": "este interzisă numai în cazul în care conductorul de protecţie este folosit drept conductor de nul",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A_CONDITIONAL_SCOPE",
+      "finding": "PE_FUSE_PROHIBITION_SUPP_ORIGINAL_SAFETY_DIRECT_FUSE_SOURCE_NOT_LOCATED",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A este compatibilă cu continuitatea obligatorie a conductorului de protecție; însă §5.5.3.5 nu numește literal siguranțe fuzibile.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B «întotdeauna permisă» este incompatibilă cu cerința de continuitate a PE.",
+      "B_research": "C restrânge interdicția doar la folosirea de protecție a neutrului și nu rezultă din I7.",
+      "C_research": "Conductorul **PE** trebuie să-și păstreze continuitatea pentru protecție în caz de defect. **I7 §5.5.3.5** interzice dispozitivele de **comutație** înseriate și permite doar îmbinări de test controlate. O **siguranță fuzibilă** instalată în serie poate întrerupe traseul PE și ar elimina protecția, astfel încât **A** este răspunsul tehnic susținut. Totuși, articolul consultat nu menționează textual **siguranțele**, deci validarea strictă a acestei interdicții cere sursa exactă ori un standard specific.",
+      "context_romanian": "I7 §5.5.3.5 și subcapitolul 5.5",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "source_scope_equivalence_unproved": "fuse_device_is_not_named_in_the_quoted_clause"
+    },
+    {
+      "unit_ref": "G1-NOR-050",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-050",
+        "question": "Secţiunea minimă admisă pentru conductoare de fază din circuite pentru prize monofazate în instalaţiile electrice din interiorul clădirilor este de:",
+        "A": "2,5 mm2 cupru,",
+        "B": "1,5 mm2 cupru,                           2,5 mm2 aluminiu",
+        "C": "4 mm2 aluminiu",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A",
+      "finding": "EXACT_ANNEX_5_32_MONOPHASE_SOCKET_CU25",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A 2,5mm² Cu corespunde anexei 5.32, rând 1.2.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B include 1,5 Cu sub limita minimă a circuitului de prize mono.",
+      "B_research": "C prezintă 4 Al fără valoarea de Cu cerută pentru priza mono.",
+      "C_research": "În **I7 anexa 5.32, rând 1.2**, circuitele fixe pentru **prize monofazate** au secțiunea minimă de **2,5 mm² cupru**. Nu este aceeași coloană cu circuitele de iluminat, unde există alt minim. A corespunde tabelului, B include un conductor Cu sub minim, iar C nu exprimă minimul Cu cerut. Acesta este un argument specific pentru **circuite de prize**, fără extrapolare la toate circuitele de forță.",
+      "context_romanian": "I7 anexa 5.32, tabel 1.2",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true
+    },
+    {
+      "unit_ref": "G1-NOR-051",
+      "batch": "L047-B-G1-CONFLICT",
+      "grade": "I",
+      "category": "Norme tehnice",
+      "original": {
+        "ID": "G1-NOR-051",
+        "question": "Secţiunea minimă admisă a conductorului de fază pentru circuitul unui receptor electrocasnic monofazat cu putere de peste 2 kW este de:",
+        "A": "2,5 mm2 cupru",
+        "B": "1,5 mm2 cupru,                           2,5 mm2 aluminiu",
+        "C": "4 mm2 aluminiu",
+        "key_UNCHANGED": "A"
+      },
+      "candidate_NOT_APPLIED": "A_CONDITIONAL_USER_INSIGHT",
+      "finding": "HOUSEHOLD_GT2KW_SOCKET_VS_FIXED_FEED_SCOPE_CONDITIONAL",
+      "exact_source": {
+        "document": "I7/2011",
+        "locator": "A 2,5 Cu este congruentă cu un circuit dedicat de priză mono, ca interpretare obișnuită pentru electrocasnic.",
+        "url": "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011",
+        "access": "working_copy_html_synced_2026_05_11_from_PortalLegislativ",
+        "physical_legal_scope": "Examen Grad I, instalatii electrice aferente cladirilor"
+      },
+      "A_research": "B 1,5 Cu/2,5 Al este diferit de minimul I7 pentru circuite de prize mono.",
+      "B_research": "C 4 Al nu dovedește un minim general pentru receptor electrocasnic; regimul fix poate diferi.",
+      "C_research": "În **I7 §5.4.7**, locuințele prevăd circuite de priză separate pentru receptoare cu **putere peste 2 kW**. Pentru un astfel de circuit de prize, **anexa 5.32 pct. 1.2** dă **2,5 mm² Cu**, corespunzător variantei A. B și C nu sunt valorile acestei clase de circuit. Rămâne însă de diferențiat **priza dedicată** de o legătură **fixă** și dimensionarea la putere, deoarece enunțul nu precizează explicit forma alimentării. Observația utilizatorului despre sensul «electrocasnic» sprijină ipoteza de priză, dar nu înlocuiește verificarea normativă.",
+      "context_romanian": "I7 §5.4.7 și anexa 5.32 pct. 1.2",
+      "grade_bibliography_reference": {
+        "document": "ANRE Tematică bibliografie mai 2023",
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "current_2026_bibliography_verified": false
+      },
+      "separate_QA_source": "NOT_RUN_THIS_TURN",
+      "separate_QA_technical": "NOT_RUN_THIS_TURN",
+      "separate_QA_linguistic": "NOT_RUN_THIS_TURN",
+      "approved_for_learning": false,
+      "changes_to_original": false,
+      "elimination_is_secondary_to_source": true,
+      "user_hypothesis_from_prior_conversation": "electrocasnic monofazat peste2kW => de regulă priză dedicată; candidate A; treated as context insight"
+    }
+  ],
+  "claim": "Preliminary research, NOT independent QA, grade2026 official edition NOT fully verified, no learner approvals"
+}

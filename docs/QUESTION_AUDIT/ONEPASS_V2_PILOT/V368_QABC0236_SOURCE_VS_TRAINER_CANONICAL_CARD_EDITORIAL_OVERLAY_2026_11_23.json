@@ -1,0 +1,55 @@
+{
+  "schema": "ONEPASS_V2_SOURCE_VS_TRAINER_EXACT_EDITORIAL_POINTER_FIX_OVERLAY",
+  "date": "2026-11-23",
+  "parent": "V364 + V366B; correct overlay does not mutate either input",
+  "id": "QABC-0236",
+  "grade_ids": [
+    "G1-ELE-247",
+    "G2-ELEC-383"
+  ],
+  "old_legacy_manifest_editorial_file": "V194_CKPT242_15_ABC_SI_MODELS_ONE_STRICT_SOURCE_VARIANT_HOLD_2026_11_20.json",
+  "old_original_source_blob_sha": "c9802bc2dcd9e1afb5c57f24aa4e2e82191d7a87",
+  "new_effective_canonical_trainer_card_file": "V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+  "new_effective_blob_sha": "dfba1daefb08b94ef6ab7fefd9f95c439e1febeb",
+  "original_XLSX_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+  "original_XLSX_ABC": {
+    "A": "prin conducţie",
+    "B": "prin inducţie electromagnetică",
+    "C": "prin magnetizare"
+  },
+  "trainer_canonical_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+  "trainer_canonical_ABC": {
+    "A": "prin conducţie",
+    "B": "prin inducţie electrostatică",
+    "C": "prin magnetizare"
+  },
+  "original_source_editorial_A_B_C": {
+    "A": "A conducția necesită contact/conexiune și transfer, nu simpla prezență a unui câmp electric exterior.",
+    "B": "B ORIGINAL «inducţie electromagnetică» nu este sinonimă cu inducția ELECTROSTATICĂ necesară redistribuirii sarcinilor în conductor aflat într-un câmp E static. Nu este răspuns neechivoc la literalul original.",
+    "C": "C magnetizarea privește răspunsul materialului la câmp magnetic, nu redistribuirea pur electrostatică a sarcinilor."
+  },
+  "effective_trainer_editorial_A_B_C": {
+    "A": "A conducția prin contact nu este mecanismul polarizării sub acțiunea unui câmp exterior fără contact.",
+    "B": "B TRAINER «inducție electrostatică» denumește corect redistribuirea sarcinilor într-un conductor expus la E, fără a implica automat încărcarea netă.",
+    "C": "C magnetizarea privește un fenomen magnetic, nu inducția electrostatică din câmp electric."
+  },
+  "changed_semantic_option": "B",
+  "changed_from": "prin inducţie electromagnetică",
+  "changed_to": "prin inducţie electrostatică",
+  "source_supported_option_original": "HELD_ORIGINAL_WORDING",
+  "source_supported_option_trainer": "B_CONDITIONAL_ELECTROSTATIC_INDUCTION",
+  "imported_key_original_and_trainer_unmodified": "B",
+  "qa": {
+    "old_card_matches_original_XLSX": true,
+    "trainer_variant_ABC_distinct": true,
+    "old_manifest_points_at_original": true,
+    "new_source_and_trainer_versions_contain_distinct_ABC": true,
+    "old_and_new_grade_keys_unchanged": true,
+    "QA_detected_mismatch": true
+  },
+  "qualified_technical_review": false,
+  "qualified_linguistic_review": false,
+  "official_ANRE_scored_key_authenticated": false,
+  "learner_approved": false,
+  "effective_source_coverage_correction": "For canonical QABC0236 use V240.trainer_altered_option_review. V194 remains the original-published ANRE variant with different option B. No actual Trainer, key, or Excel change."
+}

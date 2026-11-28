@@ -1,0 +1,538 @@
+{
+  "schema": "V338_18_G2_NEW_SOURCE_ORIGINAL_I7_RESEARCH_2026_11_22",
+  "date": "2026-11-22",
+  "source_inputs": [
+    "V298 157 candidate original workbook rows immutable",
+    "V332 stage similarity cluster IDs 8-16"
+  ],
+  "source_url": "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/",
+  "source_notes": "I7/2011 as amended to 2023, public HTML read live. Exam-2026 edition independently certified=false. Art.5.2.4.1.3(c): 35A/mm2 Cu and 20A/mm2 Al. Art.5.3.1.3(a): motor 4kW singlephase and 5.5kW threephase. Definitions/nearby clauses compared for PE/N and protective separation. Art.4.3.3.1.3.1 short circuit trip exceptions are conditional.",
+  "counts": {
+    "new_source_researched_IDs": 18,
+    "new_clusters_researched": 9,
+    "original_ABC_justifications": 54,
+    "source_direct": 13,
+    "qualifier_remains": 5,
+    "independent_approvals": 0
+  },
+  "clusters": [
+    {
+      "id": "STAGE_CLUSTER_08",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0058",
+        "ANRE-G2-NOR-XLSX-R0059"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_09",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0068",
+        "ANRE-G2-NOR-XLSX-R0069"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_10",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0074",
+        "ANRE-G2-NOR-XLSX-R0075"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_11",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0100",
+        "ANRE-G2-NOR-XLSX-R0101"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_12",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0106",
+        "ANRE-G2-NOR-XLSX-R0107"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_13",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0134",
+        "ANRE-G2-NOR-XLSX-R0135"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_14",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0146",
+        "ANRE-G2-NOR-XLSX-R0147"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_15",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0157",
+        "ANRE-G2-NOR-XLSX-R0158"
+      ],
+      "no_auto_merge": true
+    },
+    {
+      "id": "STAGE_CLUSTER_16",
+      "stage_ids": [
+        "ANRE-G2-NOR-XLSX-R0168",
+        "ANRE-G2-NOR-XLSX-R0169"
+      ],
+      "no_auto_merge": true
+    }
+  ],
+  "items": [
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0058",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 58,
+      "source_stem_sha256": "4b73342441fc9b91f5375d4596368cbeb41ab74cfc5ac8960cbf25c8f46ad287",
+      "original_question": "Schema de legare la pământ de tip TN-S, în care un conductor de protecţie distinct este folosit pentru întreaga schemă, se utilizează:",
+      "original_options": {
+        "A": "reglementările nu fac precizări privind cazurile în care se utilizează acest tip de schemă",
+        "B": "de la ultimul tablou spre consumator",
+        "C": "numai în reţelele cu tensiune peste 500 V"
+      },
+      "source_locator_I7": "3.3.2.4",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "TN-S usage cases ARE listed in the norm.",
+      "original_option_B_reason": "Use from last grounded panel to consumer; original omits 'grounded'.",
+      "original_option_C_reason": "Not only for networks above 500V.",
+      "semantic_scope_flag": "OMITTED_GROUNDED_QUALIFIER",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0059",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 59,
+      "source_stem_sha256": "4b73342441fc9b91f5375d4596368cbeb41ab74cfc5ac8960cbf25c8f46ad287",
+      "original_question": "Schema de legare la pământ de tip TN-S, în care un conductor de protecţie distinct este folosit pentru întreaga schemă, se utilizează:",
+      "original_options": {
+        "A": "când trebuie separate conductoarele PE şi N pentru asigurarea funcţionării protecţiei",
+        "B": "numai în reţelele cu tensiune peste 500 V",
+        "C": "reglementările nu fac precizări privind cazurile în care se utilizează acest tip de schemă"
+      },
+      "source_locator_I7": "3.3.2.4",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "A",
+      "original_option_A_reason": "PE/N separation for protection functioning is explicitly named.",
+      "original_option_B_reason": "No exclusive >500V limit.",
+      "original_option_C_reason": "Usage conditions are given in normative text.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0068",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 68,
+      "source_stem_sha256": "22119dd2b5ced58e32b52e4f4297a5eebe55a07164636d2b803f9a4b6cf2cee9",
+      "original_question": " Secţiunile conductoarelor de fază trebuie să fie corespunzătoare din punct de vedere al: ",
+      "original_options": {
+        "A": "secţiunii conductorului de protecţie",
+        "B": "tipului reţelei (LEA sau LES)",
+        "C": "căderii de tensiune"
+      },
+      "source_locator_I7": "5.2.4.1.3(b)",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "C",
+      "original_option_A_reason": "PE sizing is not the phase conductor design criterion.",
+      "original_option_B_reason": "Aerial versus buried method isn't this exact check.",
+      "original_option_C_reason": "Voltage-drop verification is explicitly required.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0069",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 69,
+      "source_stem_sha256": "3eb6872d4d01281388c11cbf757dff59c286b859487b2b23875125a0d24a8f2f",
+      "original_question": "La instalaţiile electrice de putere secţiunile conductoarelor de fază trebuie să fie corespunzătoare din punct de vedere al: ",
+      "original_options": {
+        "A": "tipului cicuitului de alimentare (aerian sau subteran)",
+        "B": "secţiunii conductorului de protecţie",
+        "C": "stabilităţii termice în regim de defect"
+      },
+      "source_locator_I7": "5.2.4.1(d); 5.2.4.1.3(a)",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "C",
+      "original_option_A_reason": "Aerial/buried choice doesn't replace fault thermal check.",
+      "original_option_B_reason": "PE sizing is different conductor object.",
+      "original_option_C_reason": "Phase thermal withstand in fault mode is required.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0074",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 74,
+      "source_stem_sha256": "10a5e31b137c876cc2da2ade857176ecf3a53855c107e2d7cb886b3da33099ff",
+      "original_question": " La instalaţiile electrice de putere de joasă tensiune, densitatea maximă de curent admisă  în regim de scurtă durată la pornire este de:",
+      "original_options": {
+        "A": "50 A/mm2 pentru conductoare de cupru",
+        "B": "35 A/mm2 pentru conductoare de aluminiu",
+        "C": "20 A/mm2 pentru conductoare de aluminiu"
+      },
+      "source_locator_I7": "5.2.4.1.3(c)",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "C",
+      "original_option_A_reason": "50 A/mm² Cu exceeds normative max 35.",
+      "original_option_B_reason": "35 A/mm² is for Cu, not Al.",
+      "original_option_C_reason": "20 A/mm² for Al is source max at starting transient.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0075",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 75,
+      "source_stem_sha256": "10a5e31b137c876cc2da2ade857176ecf3a53855c107e2d7cb886b3da33099ff",
+      "original_question": " La instalaţiile electrice de putere de joasă tensiune, densitatea maximă de curent admisă  în regim de scurtă durată la pornire este de:",
+      "original_options": {
+        "A": "35 A/mm2 pentru conductoare de aluminiu",
+        "B": "35A/mm2 pentru conductoare de cupru",
+        "C": "16 A/mm2 pentru conductoare de aluminiu"
+      },
+      "source_locator_I7": "5.2.4.1.3(c)",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "35 A/mm² for Al incorrectly uses Cu value.",
+      "original_option_B_reason": "35 A/mm² for Cu is source max.",
+      "original_option_C_reason": "16 A/mm² Al is not the specified maximum 20.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0100",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 100,
+      "source_stem_sha256": "8de14a2e0e4add1990e78234e7f7dbc68ddca0a00d5e8ae4c3762ff2c010a60a",
+      "original_question": "În cazul consumatorilor racordaţi direct la reţeaua de joasa tensiune a distribuitorului, pornirea directa a motoarelor monofazate se admite pentru o putere de până la:",
+      "original_options": {
+        "A": " 3 kW",
+        "B": " 4 kW",
+        "C": "5,5 kW"
+      },
+      "source_locator_I7": "5.3.1.3(a)",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "3kW is below ceiling, not ceiling.",
+      "original_option_B_reason": "Single-phase 230V max is 4kW inclusive.",
+      "original_option_C_reason": "5.5kW is three-phase ceiling.",
+      "semantic_scope_flag": "FURNIZOR_VS_DISTRIBUITOR_TERM",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0101",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 101,
+      "source_stem_sha256": "c36445e763b9039e744a67a12604f4ad185b2d58b09358d2c48cf3555a0518a6",
+      "original_question": "În cazul consumatorilor racordaţi direct la reţeaua de joasă tensiune a distribuitorului, pornirea directă a motoarelor trifazate se admite pentru o putere de până la:",
+      "original_options": {
+        "A": "4 kW",
+        "B": "5,5 kW",
+        "C": " 7,5 kW"
+      },
+      "source_locator_I7": "5.3.1.3(a)",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "4kW is below three-phase ceiling.",
+      "original_option_B_reason": "Three-phase 400V max is 5.5kW inclusive.",
+      "original_option_C_reason": "7.5kW exceeds permitted direct start.",
+      "semantic_scope_flag": "FURNIZOR_VS_DISTRIBUITOR_TERM",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0106",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 106,
+      "source_stem_sha256": "7652d0d2619d62c96d102506d9da526cb488fdc70cbcb020a1fa6af71e1b17c4",
+      "original_question": "Pe circuitele secundare ale transformatoarelor de curent:",
+      "original_options": {
+        "A": "este obligatoriu să se prevadă protecţia la suprasarcină",
+        "B": "este obligatoriu să se prevadă protecţia la scurcircuit",
+        "C": "se permite renunţarea la protecţia la scurtcircuit"
+      },
+      "source_locator_I7": "4.3.3.1.3.1 and 4.3.2.4.1",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "C",
+      "original_option_A_reason": "Overload protection not always mandatory on CT secondary.",
+      "original_option_B_reason": "Short circuit protection not universally mandatory under exceptions.",
+      "original_option_C_reason": "Omission may be allowed if interruption dangerous or measurement-circuit conditions met.",
+      "semantic_scope_flag": "CONDITIONAL_OMISSION",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0107",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 107,
+      "source_stem_sha256": "7652d0d2619d62c96d102506d9da526cb488fdc70cbcb020a1fa6af71e1b17c4",
+      "original_question": "Pe circuitele secundare ale transformatoarelor de curent:",
+      "original_options": {
+        "A": "este obligatoriu să se prevadă protecţia la suprasarcină",
+        "B": "se recomandă să nu se prevadă protecţia la suprasarcina",
+        "C": "este obligatoriu să se prevadă protecţia la scurcircuit"
+      },
+      "source_locator_I7": "4.3.2.4.1",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "No universal mandatory overload protective trip for CT secondary.",
+      "original_option_B_reason": "Source recommends omit overload trip when unexpected disconnection dangerous; use alarm.",
+      "original_option_C_reason": "Not always mandatory short-circuit trip per 4.3.3.1.3.1.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0134",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 134,
+      "source_stem_sha256": "4a719b2e2ea3d67a77e4cbc7d8019ae9c1663c30036f4b9cc71c3b2a919554f8",
+      "original_question": "În funcţie de dispunerea conductorului neutru şi a conductorului de protecţie reţelele de tip TN  se pot realiza în: ",
+      "original_options": {
+        "A": "   Schema TN-S",
+        "B": "Schema TN-C-S-C",
+        "C": "Schema TN-S-C"
+      },
+      "source_locator_I7": "3.3.2.3–3.3.2.6",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "A",
+      "original_option_A_reason": "TN-S is expressly permitted.",
+      "original_option_B_reason": "TN-C-S-C would form PEN after split, prohibited.",
+      "original_option_C_reason": "TN-S-C also reunites N/PE downstream, prohibited.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0135",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 135,
+      "source_stem_sha256": "4a719b2e2ea3d67a77e4cbc7d8019ae9c1663c30036f4b9cc71c3b2a919554f8",
+      "original_question": "În funcţie de dispunerea conductorului neutru şi a conductorului de protecţie reţelele de tip TN  se pot realiza în: ",
+      "original_options": {
+        "A": "Schema TN-C-S-C",
+        "B": "  Schema TN-C",
+        "C": "Schema TN-S-C"
+      },
+      "source_locator_I7": "3.3.2.3–3.3.2.6",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "TN-C-S-C reverse after split prohibited.",
+      "original_option_B_reason": "TN-C exists with combined PEN.",
+      "original_option_C_reason": "TN-S-C merges N/PE after separation, prohibited.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0146",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 146,
+      "source_stem_sha256": "d6071b6632f742606e0d84cf5a854188892f16a856c6c26ff2eacc03eba75508",
+      "original_question": "                                                                   Dacă de la orice punct al unei instalaţii funcţiile de conductor neutru (N) şi de conductor de protecţie (PE) sunt asigurate prin conductoare separate, \n",
+      "original_options": {
+        "A": "este permis să se conecteze conductorul neutru la orice altă parte a instalaţiei legată la pământ",
+        "B": "este permis să se conecteze conductorul neutru la orice altă parte a instalaţiei legată la pământ, în anumite situații",
+        "C": "nu este permis să se conecteze conductorul neutru la orice altă parte a instalaţiei legată la pământ"
+      },
+      "source_locator_I7": "5.5.4.4",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "C",
+      "original_option_A_reason": "Downstream neutral/earth reconnection prohibited.",
+      "original_option_B_reason": "No such general conditional exception at post-split neutral.",
+      "original_option_C_reason": "Source explicitly forbids rejoining neutral to earthed parts.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0147",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 147,
+      "source_stem_sha256": "d6071b6632f742606e0d84cf5a854188892f16a856c6c26ff2eacc03eba75508",
+      "original_question": "                                                                   Dacă de la orice punct al unei instalaţii funcţiile de conductor neutru (N) şi de conductor de protecţie (PE) sunt asigurate prin conductoare separate, \n",
+      "original_options": {
+        "A": " Se prevede bornă sau bară comune pentru conductoarele de neutru şi respectiv conductoarele de protecţie.",
+        "B": " Se prevăd borne sau bare separate pentru conductoarele de neutru şi respectiv conductoarele de protecţie.",
+        "C": " Se prevăd borne sau bare separate pentru conductoarele de neutru şi respectiv conductoarele de protecţie, în anumite situații"
+      },
+      "source_locator_I7": "5.5.4.4",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "Common N/PE bus after split contrary to source.",
+      "original_option_B_reason": "Distinct terminals/bars for neutral and PE are required.",
+      "original_option_C_reason": "Not restricted to unspecified special cases.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0157",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 157,
+      "source_stem_sha256": "c75dd027e6365da319767d8c9f36ed86144a94f9c7c0ec343c97aaadbbd37c4f",
+      "original_question": "Separarea de protecţie – este o separare între două circuite electrice prin intermediul:\n",
+      "original_options": {
+        "A": "unei izolaţii de bază",
+        "B": "unei protecţii electrice printr-un ecran, ",
+        "C": " unei izolaţii duble"
+      },
+      "source_locator_I7": "I7 Glossary: separare de protecție",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "C",
+      "original_option_A_reason": "Basic insulation alone is simple separation.",
+      "original_option_B_reason": "Screen alone isn't listed; source requires basic insulation PLUS screen.",
+      "original_option_C_reason": "Double insulation is complete protective separation.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0158",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 158,
+      "source_stem_sha256": "c75dd027e6365da319767d8c9f36ed86144a94f9c7c0ec343c97aaadbbd37c4f",
+      "original_question": "Separarea de protecţie – este o separare între două circuite electrice prin intermediul:\n",
+      "original_options": {
+        "A": "unei izolaţii întărite",
+        "B": "unei protecţii electrice printr-un ecran, ",
+        "C": "unei izolaţii de bază"
+      },
+      "source_locator_I7": "I7 Glossary: separare de protecție",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "A",
+      "original_option_A_reason": "Reinforced insulation is listed protective separation.",
+      "original_option_B_reason": "Screen alone isn't enough without basic insulation.",
+      "original_option_C_reason": "Basic alone is simple separation, not protective.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0168",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 168,
+      "source_stem_sha256": "17eff64a9445e63ef0a59765b3bccc89114bdcc540dd7bcffea29d76825319f9",
+      "original_question": " Pe circuitele de alimentare ale dispozitivelor de stingere a incendiilor.",
+      "original_options": {
+        "A": "se recomandă să se prevadă protecţia la suprasarcina ",
+        "B": "se recomandă să nu se prevadă protecţia la suprasarcina ",
+        "C": "este obligatoriu să se prevadă protecţia la suprasarcina "
+      },
+      "source_locator_I7": "4.3.2.4.1",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "B",
+      "original_option_A_reason": "Recommending overload trip contradicts dangerous-disconnection exception.",
+      "original_option_B_reason": "Recommendation is to omit overload trip for fire suppression and use warning.",
+      "original_option_C_reason": "Overload trip not universally mandatory.",
+      "semantic_scope_flag": "SOURCE_SCOPED_DIRECT",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0169",
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 169,
+      "source_stem_sha256": "17eff64a9445e63ef0a59765b3bccc89114bdcc540dd7bcffea29d76825319f9",
+      "original_question": " Pe circuitele de alimentare ale dispozitivelor de stingere a incendiilor.",
+      "original_options": {
+        "A": "se permite renunţarea la protecţia la scurtcircuit ",
+        "B": "este obligatoriu să se prevadă protecţia la scurtcircuit ",
+        "C": "în norme nu sunt prevederi speciale pentru protecția la scurtcircuit a circuitelor de acest tip  "
+      },
+      "source_locator_I7": "4.3.3.1.3.1 and 4.3.2.4.1",
+      "source_supported_candidate_NOT_OFFICIAL_KEY": "A",
+      "original_option_A_reason": "Omission permitted if disconnection itself creates danger, NOT blanket omission.",
+      "original_option_B_reason": "Mandatory in every case contradicts specific allowed exception.",
+      "original_option_C_reason": "Source does contain special rules.",
+      "semantic_scope_flag": "CONDITIONAL_OMISSION",
+      "stage_before": "TRIAGED",
+      "stage_after": "SOURCE_RESEARCHED",
+      "ANRE_original_key": "NOT_AUTHENTICATED",
+      "independent_QA": "NOT_RUN",
+      "app_release": "NO"
+    }
+  ],
+  "limitations": [
+    "No original ANRE scored key is authenticated; candidate letters are research hints only.",
+    "Two conditional short-circuit protection omissions are NOT blanket rules.",
+    "R0058 'last earthed panel' term and R0100/101 supplier versus distributor wording remain scope gates.",
+    "Original workbook as captured in V298, no direct external ANRE server workbook hash authentication in this run.",
+    "Human qualified technical, legal and linguistic signoffs not run. No learner approval."
+  ],
+  "safe_state": {
+    "all_157_quarantined": true,
+    "no_key_or_answer_or_HTML_APK_changes": true,
+    "no_merge_release": true
+  }
+}

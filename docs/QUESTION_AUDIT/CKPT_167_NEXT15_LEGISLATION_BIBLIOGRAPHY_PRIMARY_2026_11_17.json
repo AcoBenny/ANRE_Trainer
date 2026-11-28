@@ -1,0 +1,629 @@
+{
+  "id": "CKPT-167",
+  "date": "2026-11-17",
+  "base": "91708f2629388964f6a83b2895ad4e6b21ae808c",
+  "units": 15,
+  "grade_ids": 15,
+  "counts": {
+    "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT": 14,
+    "CONDITIONAL_MODEL_OR_SOURCE": 1
+  },
+  "method": "One-pass source and option-aware re-evaluation, official ANRE 2023 Grade II bibliography PDF screen-verified pages 1 and 2 and current ANRE index; source-linked official text. Same assistant, no independent QA.",
+  "source_warning": "Do not misidentify unrelated ANRE job-vacancy 2024 PDF as electrician exam bibliography. Correct examiner PDF is the 2023 four-page document at official ANRE link.",
+  "updates_only_in_audit_branch": true,
+  "approved_for_learning": 0,
+  "cards": [
+    {
+      "unit_id": "AU-eb7482d73b94d41b",
+      "representative_id": "G1-LEG-047",
+      "member_ids": [
+        "G1-LEG-047"
+      ],
+      "qabc_sha256": "eb7482d73b94d41b786a2129cddcf224212d55daf04463aa001b6531b0e3a03e",
+      "question_original_UNCHANGED": "Avizul tehnic de racordare constituie:",
+      "options_original_UNCHANGED": {
+        "A": "angajamentul operatorului de reţea de a realiza instalaţia de racordare a utilizatorului;",
+        "B": "oferta operatorului de reţea la cererea de racordare a solicitantului;",
+        "C": "acceptul operatorului de reţea pentru utilizarea reţelei în anumite condiţii"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-047": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "B: Regulamentul privind racordarea (O.59/2013) precizează că ATR conține soluția tehnică și este oferta operatorului de rețea. A ar descrie angajarea lucrărilor după contract; C confundă oferta inițială cu dreptul ulterior de utilizare.",
+      "source_evidence": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/288589",
+        "locator": "Reg. 59/2013, definiție ATR și oferta de racordare, publicată în textul consolidat, articol introductiv",
+        "access": "OFFICIAL_TEXT_SEARCH_EXCERPT"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "locator": "Regulament Racordare Ordin59/2013 definiție ATR, capitolul I art3; art26/33",
+        "ABC": {
+          "A": "A: angajamentul de execuție se naște din contractul de racordare, nu simpla emitere ATR.",
+          "B": "B: ATR comunică oferta/condițiile operatorului privind racordarea; se verifică limbajul exact al definiției normative.",
+          "C": "C: «acceptul pentru utilizarea rețelei» poate descrie efecte după racordare, dar nu substituie oferta de racordare; riscul de confuzie semantică rămâne."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-bb5b673d586da27f",
+      "representative_id": "G1-LEG-049",
+      "member_ids": [
+        "G1-LEG-049"
+      ],
+      "qabc_sha256": "bb5b673d586da27f08437013be6db9e2e4c22f220accc327b205d370cff10683",
+      "question_original_UNCHANGED": "În cazul unui refuz de constituire a garanţiilor conform Regulamentului de furnizare a energiei electrice la clienţii finali  şi a procedurilor specifice",
+      "options_original_UNCHANGED": {
+        "A": "furnizorul are dreptul să solicite operatorului de distribuţie deconectarea clientului final de la reţea",
+        "B": "clientul final poate fi deconectat numai după o decizie a ANRE pentru cazul respectiv",
+        "C": "se reziliază contractul de furnizare a energiei electrice"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-049": "A"
+      },
+      "technical_classification": "CONDITIONAL_MODEL_OR_SOURCE",
+      "finding": "A: Legea123/2012 art58(5)-(6) permite expres solicitarea deconectării în caz de refuz al garanțiilor de la art58(5) pentru suspiciuni de manipulare/ocolire contor. Întrebarea formulată generic poate cuprinde și alte garanții pentru risc de neplată; nu se generalizează sancțiunea fără clauza regulamentară aplicabilă. B nu cere de regulă decizie individuală ANRE, C nu instituie reziliere automată.",
+      "source_evidence": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/294442",
+        "locator": "Legea 123/2012 art.58 alin.(5)-(6) și Regulamentul de furnizare art.26",
+        "access": "OFFICIAL_INDEX_EXACT_ARTICLE_58_5_6;_OTHER_GUARANTEE_CASES_NOT_FULLY_VERIFIED"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0BMHAHWUFVKJ72PA35HP5XU0TP",
+        "locator": "Regulament Ordin5/2023 art26(2)(b) garanție financiară neconstituită; Legea123 art58",
+        "ABC": {
+          "A": "A: furnizorul poate solicita OD deconectarea dacă garanția financiară solicitată legal/contractual nu e constituită, cu procedura aplicabilă.",
+          "B": "B: decizia individuală ANRE nu este condiție generală pentru deconectare.",
+          "C": "C: deconectare nu echivalează cu reziliere automată; contractul poate avea procedură separată."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-fe691e3736dab79b",
+      "representative_id": "G1-LEG-050",
+      "member_ids": [
+        "G1-LEG-050"
+      ],
+      "qabc_sha256": "fe691e3736dab79bed2af87329942d80a7fe824bece3d795bf1b4d5e3d97ebdb",
+      "question_original_UNCHANGED": "Clientul vulnerabil",
+      "options_original_UNCHANGED": {
+        "A": "nu are dreptul să beneficieze de eşalonarea la plată a facturii",
+        "B": "are dreptul să beneficieze de eşalonarea la plată a facturii, la cerere, pe o perioadă de minimum 3 luni",
+        "C": "are dreptul să beneficieze de eşalonarea la plată a facturii, la cerere, pe o perioadă de maximum 3 luni"
+      },
+      "original_keys_UNCHANGED": {
+        "G1-LEG-050": "B"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "B: art7(1)(d) din Regulamentul furnizării dă clientului vulnerabil eșalonare la cerere de minimum 3 luni sau perioada convenită; A neagă dreptul, C introduce eronat plafon maxim 3 luni.",
+      "source_evidence": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/264611",
+        "locator": "Regulament Ordin 5/2023 art.7(1)(d)",
+        "access": "OFFICIAL_INDEX_EXACT_RULE_READ; PAGE_502_ON_FULL_FETCH"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0BMHAHWUFVKJ72PA35HP5XU0TP",
+        "locator": "Regulament Ordin5/2023 art7(1)(d) eșalonare minimum 3 luni sau convenită",
+        "ABC": {
+          "A": "A: contrazice dreptul expres al clientului vulnerabil la eșalonare la cerere.",
+          "B": "B: minimum 3 luni, ori perioada convenită de părți, este susținut în textul regulii.",
+          "C": "C: maximum 3 luni exclude posibilitatea unei perioade mai lungi, contrară normei."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-44af7c4202d30efb",
+      "representative_id": "G2-LEG-001",
+      "member_ids": [
+        "G2-LEG-001"
+      ],
+      "qabc_sha256": "44af7c4202d30efb680303f0b9142871122d511eb1d0093bc173f8638fbc3774",
+      "question_original_UNCHANGED": "Care este legea indicată în bibliografia ANRE pentru Gradul II privind energia electrică și gazele naturale?",
+      "options_original_UNCHANGED": {
+        "A": "Legea nr. 123/2012",
+        "B": "Legea nr. 50/1991",
+        "C": "Legea nr. 10/1995"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-001": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Bibliografia de examen 05.2023, rândul 2, include Legea123/2012 și marchează DA pentru gradul II; B/C sunt legi din alte domenii.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 1,
+        "original_pdf_page_zero_based": 0,
+        "table_number": 2,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+        "locator": "ANRE Tematică de examen electricieni / bibliografia 2023 listată; Legea123 titlu",
+        "ABC": {
+          "A": "A: Legea123/2012 reglementează energie electrică și gaze naturale, compatibilă cu titlul din întrebare.",
+          "B": "B: Legea50/1991 privește autorizarea construcțiilor, nu legea de bază a pieței energiei și gazelor.",
+          "C": "C: Legea10/1995 tratează calitatea în construcții, nu documentul numit."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-9eca2ca6f3036f32",
+      "representative_id": "G2-LEG-002",
+      "member_ids": [
+        "G2-LEG-002"
+      ],
+      "qabc_sha256": "9eca2ca6f3036f326c9121d31fa623f37ad2aff947320fdb549509f297845102",
+      "question_original_UNCHANGED": "Prin ce ordin ANRE este indicat în bibliografia Gradului II Regulamentul de furnizare a energiei electrice la clienții finali?",
+      "options_original_UNCHANGED": {
+        "A": "Ordinul ANRE nr. 5/2023",
+        "B": "Ordinul ANRE nr. 66/2023",
+        "C": "Ordinul ANRE nr. 128/2008"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-002": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 3, aprobă regulamentul de furnizare prin Ordin 5/2023, Grad II DA; 66/2023 autorizează electricieni și 128/2008 aprobă Codul distribuției.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 1,
+        "original_pdf_page_zero_based": 0,
+        "table_number": 3,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/FormaPrintabila/00000G0BMHAHWUFVKJ72PA35HP5XU0TP",
+        "locator": "Regulament de furnizare aprobat prin Ordin ANRE 5/2023; bibliografia ANRE 2023",
+        "ABC": {
+          "A": "A: Ordinul 5/2023 aprobă regulamentul furnizării la clienți finali, după antetul Portalului.",
+          "B": "B: Ordin 66/2023 se referă la autorizarea electricienilor, alt obiect.",
+          "C": "C: 128/2008 aprobă codul rețelelor de distribuție, alt obiect."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-c196d45eee47227c",
+      "representative_id": "G2-LEG-003",
+      "member_ids": [
+        "G2-LEG-003"
+      ],
+      "qabc_sha256": "c196d45eee47227c0ee0f3bb896563551948b9596c538f771f6ed0776d1836a6",
+      "question_original_UNCHANGED": "Ce ordin ANRE este indicat în bibliografia Gradului II pentru Regulamentul privind racordarea utilizatorilor la rețelele electrice de interes public?",
+      "options_original_UNCHANGED": {
+        "A": "Ordinul nr. 59/2013",
+        "B": "Ordinul nr. 46/2021",
+        "C": "Ordinul nr. 134/2021"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-003": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 4, include Regulamentul privind racordarea aprobat prin Ordin 59/2013, Grad II DA; celelalte ordine au alte obiecte.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 1,
+        "original_pdf_page_zero_based": 0,
+        "table_number": 4,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+        "locator": "Regulament racordare art1, aprobat Ordin59/2013, forma 2026 cu Ordin15/2026",
+        "ABC": {
+          "A": "A: Ordinul 59/2013 este actul aprobator al regulamentului de racordare citat.",
+          "B": "B: 46/2021 aprobă standardul distribuției, alt obiect.",
+          "C": "C: 134/2021 nu identifică documentul din enunț în sursa utilizată."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-9a3643bb3204dfa2",
+      "representative_id": "G2-LEG-004",
+      "member_ids": [
+        "G2-LEG-004"
+      ],
+      "qabc_sha256": "9a3643bb3204dfa29f4a23388d1e7cccc18eb0d677a5fe2debc7c84265c0fd87",
+      "question_original_UNCHANGED": "Prin ce ordin este aprobat documentul indicat în bibliografie ca „Codul tehnic al rețelelor electrice de distribuție”?",
+      "options_original_UNCHANGED": {
+        "A": "Ordinul ANRE nr. 128/2008",
+        "B": "Ordinul ANRE nr. 102/2015",
+        "C": "Ordinul ANRE nr. 20/2004"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-004": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 7, identifică Ordin 128/2008 pentru Codul tehnic al rețelelor electrice de distribuție, Grad II DA. Ordin 20/2004 este pentru transport.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 2,
+        "original_pdf_page_zero_based": 1,
+        "table_number": 7,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/243247",
+        "locator": "Norma art11(g) citează Codul tehnic distribuție aprobat Ordin128/2008",
+        "ABC": {
+          "A": "A: ordinul128/2008 este asociat oficial codului rețelelor electrice de distribuție.",
+          "B": "B: ordinul102/2015 e regulamentul stabilirii soluțiilor de racordare, nu codul distribuției.",
+          "C": "C: ordinul20/2004 este codul tehnic al rețelei electrice de TRANSPORT."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-db9f3efbdd5bf0b8",
+      "representative_id": "G2-LEG-005",
+      "member_ids": [
+        "G2-LEG-005"
+      ],
+      "qabc_sha256": "db9f3efbdd5bf0b825e943a5df7d87f7e9339418b4993d15b58c4320f693d128",
+      "question_original_UNCHANGED": "Ce ordin ANRE este indicat pentru Standardul de performanță pentru serviciul de distribuție a energiei electrice?",
+      "options_original_UNCHANGED": {
+        "A": "Ordinul nr. 46/2021",
+        "B": "Ordinul nr. 12/2016",
+        "C": "Ordinul nr. 103/2015"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-005": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 8, indică Ordin 46/2021 pentru standardul de performanță al distribuției, Grad II DA; 12/2016 este transport/sistem, 103/2015 măsurare.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 2,
+        "original_pdf_page_zero_based": 1,
+        "table_number": 8,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/243963",
+        "locator": "Standard performanță pentru distribuție, aprobat prin Ordin46/2021 antet",
+        "ABC": {
+          "A": "A: Ordin46/2021 aprobă Standardul de performanță pentru serviciul de distribuție.",
+          "B": "B: Ordin12/2016 privește standardul transportului, alt serviciu.",
+          "C": "C: Ordin103/2015 privește codul de măsurare, nu standardul distribuției."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-9dc455e7fdf47fdf",
+      "representative_id": "G2-LEG-006",
+      "member_ids": [
+        "G2-LEG-006"
+      ],
+      "qabc_sha256": "9dc455e7fdf47fdf1d2792fb28d11aaad84f1f44dfdc8effa97edf65bf7a7d19",
+      "question_original_UNCHANGED": "Ce ordin aprobă regulamentul pentru autorizarea electricienilor indicat în bibliografia ANRE?",
+      "options_original_UNCHANGED": {
+        "A": "Ordinul ANRE nr. 66/2023",
+        "B": "Ordinul ANRE nr. 65/2024",
+        "C": "Ordinul ANRE nr. 134/2021"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-006": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 10, indică Ordin 66/2023 pentru Regulamentul autorizării electricienilor, Grad II DA. Celelalte ordine nu sunt actul de aprobare.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 2,
+        "original_pdf_page_zero_based": 1,
+        "table_number": 10,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "locator": "Regulament electricieni ANRE aprobat prin Ordin66/2023, antet",
+        "ABC": {
+          "A": "A: Ordin66/2023 este actul de aprobare pentru regulamentul electricienilor.",
+          "B": "B: Ordin65/2024 nu este actul aprobator al documentului din întrebare.",
+          "C": "C: Ordin134/2021 nu este actul aprobator al regulamentului din antet."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-59ceafed63eb3bab",
+      "representative_id": "G2-LEG-007",
+      "member_ids": [
+        "G2-LEG-007"
+      ],
+      "qabc_sha256": "59ceafed63eb3bab1973e21a1cddcec6a04588aebc5b1dfe7f1c758887bfad46",
+      "question_original_UNCHANGED": "Regulamentul pentru atestarea operatorilor economici care proiectează, execută și verifică instalații electrice este aplicabil Gradului II?",
+      "options_original_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradul I"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-007": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 11, declară explicit Grad II DA la regulamentul atestării operatorilor economici, Ordin134/2021. Nu înseamnă că atestarea firmei echivalează cu autorizația individuală.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 2,
+        "original_pdf_page_zero_based": 1,
+        "table_number": 11,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+        "locator": "Bibliografie 2023 şi regulament atestare operatori economici, tip activitate",
+        "ABC": {
+          "A": "A: atestarea operatorilor economici este o reglementare distinctă relevantă pentru persoanele juridice ce execută/proiectează, nu identică cu autorizarea individuală GradII.",
+          "B": "B: negarea completă a relevanței este nejustificată pentru activitățile specifice.",
+          "C": "C: nu este reglementare «doar grad I», dar aplicabilitatea depinde de titular și activitate."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-08548022dbbf3e61",
+      "representative_id": "G2-LEG-008",
+      "member_ids": [
+        "G2-LEG-008"
+      ],
+      "qabc_sha256": "08548022dbbf3e6125f0ab4f5057adf3f7909af2b449d76790c8d81657b12a66",
+      "question_original_UNCHANGED": "Regulamentul privind stabilirea soluțiilor de racordare a utilizatorilor la rețelele electrice de interes public este inclus în bibliografia Gradului II?",
+      "options_original_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Numai pentru Gradul IV"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-008": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 12, include Regulamentul stabilirii soluțiilor de racordare, Ordin102/2015, Grad II DA; NU/numai IV sunt contrazise de tabel.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 2,
+        "original_pdf_page_zero_based": 1,
+        "table_number": 12,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+        "locator": "Regulament stabilirea soluțiilor de racordare aprobat Ordin ANRE102/2015; listă ANRE",
+        "ABC": {
+          "A": "A: regulamentul soluțiilor de racordare este o temă a documentației de rețea relevantă autorizării II, conform indicativului istoric.",
+          "B": "B: negația necesită verificarea bibliografiei actuale, nu este dovedită aici.",
+          "C": "C: restricția «numai grad IV» nu e susținută de temă, grad II implică lucrări de joasă tensiune."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-97fb32b226e248bc",
+      "representative_id": "G2-LEG-009",
+      "member_ids": [
+        "G2-LEG-009"
+      ],
+      "qabc_sha256": "97fb32b226e248bc03eaa2768d6e4f5edb4ab87cba81d6c24f0c81d79935e85a",
+      "question_original_UNCHANGED": "Procedura privind soluționarea neînțelegerilor apărute la încheierea contractelor în sectorul energiei electrice este aplicabilă Gradului II?",
+      "options_original_UNCHANGED": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradul I"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-009": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: Tabelul oficial 05.2023, rândul 13, include Procedura neînțelegerilor privind contractele din sectorul energiei electrice, Ordin128/2020, Grad II DA; nu este rezervată Grad I.",
+      "source_evidence": {
+        "url": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+        "page_index": 2,
+        "original_pdf_page_zero_based": 1,
+        "table_number": 13,
+        "access": "OFFICIAL_ANRE_2023_BIBLIOGRAPHY_PDF_OPENED_AND_PAGE_SCREENSHOT_VERIFIED",
+        "ANRE_site_currently_lists_document": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+        "locator": "Procedură neînțelegeri contracte energie; bibliografia ANRE listată generic",
+        "ABC": {
+          "A": "A: procedura de neînțelegeri poate fi relevantă activității, dar includerea explicită în bibliografia II trebuie probată.",
+          "B": "B: fără bibliografie exactă nu se poate exclude procedura.",
+          "C": "C: «doar GradI» nefundamentat și improbabil dacă procedura se aplică sectorial."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-e5b313c78cd5c101",
+      "representative_id": "G2-LEG-067",
+      "member_ids": [
+        "G2-LEG-067"
+      ],
+      "qabc_sha256": "e5b313c78cd5c101401decb00d80e181d27cd9202ed044a30c490a6cf3a30a10",
+      "question_original_UNCHANGED": "Care dintre următoarele este prevăzută de ANRE ca document pentru solicitarea autorizării?",
+      "options_original_UNCHANGED": {
+        "A": "Cererea de autorizare completată electronic pe portalul ANRE sau în PCUe",
+        "B": "Doar o cerere scrisă depusă fizic la ANRE",
+        "C": "Doar recomandarea angajatorului"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-067": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: art17(1)(a) Reg66/2023 și ANRE pagină solicitări indică cererea electronică portal ANRE/PCUe. B doar fizic și C doar recomandare angajator nu corespund dosarului.",
+      "source_evidence": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "locator": "Reg66/2023 art.17(1)(a); ANRE secțiune A1",
+        "access": "OFFICIAL_HTML_OPENED_EXACT_RULE"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_03_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "locator": "Reg66/2023 înscriere/cerere autorizare art21-23, canal portal ANRE/PCUe",
+        "ABC": {
+          "A": "A: portal ANRE sau PCUe este rută prevăzută pentru cereri/documente; pentru cererea de AUTORIZARE trebuie verificat exact art21-23 nu confundat cu art33 vizare.",
+          "B": "B: «doar cerere fizică» contrazice disponibilitatea fluxului electronic.",
+          "C": "C: «doar recomandarea angajatorului» nu constituie dosarul complet."
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-303b00d1f9ada86e",
+      "representative_id": "G2-LEG-068",
+      "member_ids": [
+        "G2-LEG-068"
+      ],
+      "qabc_sha256": "303b00d1f9ada86e2ff2e017482423867471ee105dcd8a60fff37148c34e2b8b",
+      "question_original_UNCHANGED": "Care dintre documentele următoare este indicat de ANRE în dosarul de autorizare?",
+      "options_original_UNCHANGED": {
+        "A": "Copia actului de identitate",
+        "B": "Doar permisul de conducere",
+        "C": "Doar certificatul medical"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-068": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: art17(1)(b) cere copie act de identitate, nu doar permis ori doar certificat medical.",
+      "source_evidence": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "locator": "Reg66/2023 art.17(1)(b)",
+        "access": "OFFICIAL_HTML_OPENED_EXACT_RULE"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "locator": "ANRE Reg66/2023 art.17(1)(b)",
+        "ABC": {
+          "A": "A identity copy required",
+          "B": "B driver's license only does not meet listed ID copy",
+          "C": "C medical certificate only not the listed ID document"
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    },
+    {
+      "unit_id": "AU-9a4cf19dace24b65",
+      "representative_id": "G2-LEG-069",
+      "member_ids": [
+        "G2-LEG-069"
+      ],
+      "qabc_sha256": "9a4cf19dace24b65b7113ac7d5373048e66c70cce54fb47d88e85d53a7bf6b32",
+      "question_original_UNCHANGED": "Ce document trebuie să ateste calificarea profesională, conform informațiilor ANRE privind autorizarea?",
+      "options_original_UNCHANGED": {
+        "A": "Certificatele sau diplomele care atestă calificarea profesională",
+        "B": "Doar o declarație verbală",
+        "C": "Doar o recomandare de la un electrician autorizat"
+      },
+      "original_keys_UNCHANGED": {
+        "G2-LEG-069": "A"
+      },
+      "technical_classification": "MODEL_SUPPORTED_REVIEW_NOT_INDEPENDENT",
+      "finding": "A: art17(1)(c) enumeră diplomele/certificatele de calificare și la (d) recunoașterea în cazul studiilor din străinătate; B/C nu sunt dovezi suficiente.",
+      "source_evidence": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "locator": "Reg66/2023 art.17(1)(c)-(d)",
+        "access": "OFFICIAL_HTML_OPENED_EXACT_RULE"
+      },
+      "prior_research": {
+        "file": "docs/QUESTION_AUDIT/DEEP_EXECUTION_2026_11_11/DEEP_LEG_04_ALL_20_PRE_REVIEW_SOURCE_ABC_TRIAGE.csv",
+        "url": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+        "locator": "ANRE Reg66/2023 art.17(1)(c)",
+        "ABC": {
+          "A": "A certificates or diplomas attest professional qualification",
+          "B": "B verbal statement is not documentary proof",
+          "C": "C electrician recommendation alone is not diploma/certificate"
+        }
+      },
+      "edition_gate": "OFFICIAL_2023_BIBLIOGRAPHY_TABLE_REOPENED; ANRE_2026_PAGE_STILL_LISTS_2023_BUT_EXAM_APPLICABILITY_NOT_INDEPENDENTLY_CERTIFIED",
+      "official_ANRE_answer_key": "NOT_VERIFIED",
+      "independent_QA": "NOT_RUN",
+      "approved_for_learning": "NO",
+      "canonical_modified": false
+    }
+  ]
+}

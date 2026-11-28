@@ -1,0 +1,318 @@
+{
+  "checkpoint": "CKPT-123",
+  "date": "2026-11-17",
+  "input_head": "3ce63c2910685d1ef4227fcf648c592dab0a05fc",
+  "protocol": "BATCH10 pilot 1/2, 10 canonical QABC units, 20 grade IDs",
+  "roles": "One assistant using technical/source/linguistic and data QA checklists; independent child-agent execution NOT available",
+  "constraints": "No original QABC/keys/MASTER/HTML/APK changes; no merge/release",
+  "scope": "Preliminary contextual research. Exact 2026 exam bibliography, approved answer keys, official provenance and independent QA not verified.",
+  "execution_note": "Some source pages independently opened via web this session, others retained as preliminary research leads. Distinguish access status per card.",
+  "cards": [
+    {
+      "unit_id": "AU-b75750069293ee13",
+      "qabc_sha256": "b75750069293ee13780d8c2726156551d2f3be33054010586b2bf86e3877d623",
+      "representative_id": "G1-ELE-142",
+      "member_ids": "G1-ELE-142;G2-ELEC-280",
+      "original_keys_by_id_JSON": "{\"G1-ELE-142\":\"C\",\"G2-ELEC-280\":\"C\"}",
+      "question_original": "Teoremele lui Kirchhoff se aplică:",
+      "A_original": "numai circuitelor liniare",
+      "B_original": "numai circuitelor cu elemente neliniare",
+      "C_original": "circuitelor liniare şi circuitelor neliniare",
+      "original_key_unchanged": "C",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "locator": "OpenStax 10.3 junction/loop conservation",
+        "access": "WEB_HTML_OPENED"
+      },
+      "context_positive": "Legile nodurilor și ochiurilor derivă din conservarea sarcinii și a energiei, fără ipoteza I=kU pentru fiecare element.",
+      "abc_analysis": {
+        "A": "A exclusivitatea pentru liniare este falsă; diodele pot intra în ecuații nodale.",
+        "B": "B exclusivitatea pentru neliniare este falsă; rezistoarele liniare sunt exemple directe.",
+        "C": "C ambele clase sunt analizabile prin KCL și KVL."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "Rezistor neliniar cu i=g(v) respectă KCL la nod; doar ecuația constitutivă este neliniară.",
+      "scope_and_linguistic_gate": "Modelul lumped/cvasi-staționar; în câmpuri cu flux variabil KVL simplu trebuie adaptată la tensiuni induse.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-53349c59d5e86d0b",
+      "qabc_sha256": "53349c59d5e86d0b17dd603d3f597ced83eb8c5c10ce5a1a8ef7c1e2b394a256",
+      "representative_id": "G1-ELE-144",
+      "member_ids": "G1-ELE-144;G2-ELEC-282",
+      "original_keys_by_id_JSON": "{\"G1-ELE-144\":\"B\",\"G2-ELEC-282\":\"B\"}",
+      "question_original": "La o maşina electrica asincrona turaţia variază:",
+      "A_original": "cu curentul de excitaţie",
+      "B_original": "cu frecventa",
+      "C_original": "numai cu sarcina",
+      "original_key_unchanged": "B",
+      "source": {
+        "url": "https://www.electrical4u.com/induction-motor/",
+        "locator": "Induction motor synchronous speed ns=120f/P, slip s",
+        "access": "PRETRIAGE_LOCATOR_NOT_FULLY_REOPENED"
+      },
+      "context_positive": "Turația rotorului n≈(1−s)120f/P; modificarea frecvenței schimbă viteza de sincronism.",
+      "abc_analysis": {
+        "A": "A curent de excitație separat nu este variabila de viteză relevantă a motorului asincron uzual.",
+        "B": "B frecvența fixează viteza câmpului rotitor, cu variație suplimentară prin alunecare.",
+        "C": "C «numai cu sarcina» fals: controlul f schimbă viteza; sarcina tot influențează s."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "La f constantă și sarcină variabilă, n se poate modifica prin s; C rămâne fals datorită «numai».",
+      "scope_and_linguistic_gate": "Rotorul are alunecare dependentă de sarcină; B nu susține că sarcina nu afectează niciodată turația.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-579cc6968817497a",
+      "qabc_sha256": "579cc6968817497a84b7361d34fab735a52dea10f966d37c4cff29440fe8c4b6",
+      "representative_id": "G1-ELE-145",
+      "member_ids": "G1-ELE-145;G2-ELEC-283",
+      "original_keys_by_id_JSON": "{\"G1-ELE-145\":\"B\",\"G2-ELEC-283\":\"B\"}",
+      "question_original": "La pornirea motoarelor electrice asincrone se urmăreşte:",
+      "A_original": "reducerea vibraţiilor rotorului",
+      "B_original": "reducerea curentului electric absorbit de motor",
+      "C_original": "reducerea tensiunii la bornele de alimentare ale motorului",
+      "original_key_unchanged": "B",
+      "source": {
+        "url": "https://www.electrical-installation.org/enwiki/Motor_starting",
+        "locator": "Motor starting strategies and line current reduction",
+        "access": "PRETRIAGE_LOCATOR_EXACT_PARAGRAPH_PENDING"
+      },
+      "context_positive": "Pornirea limitată/soft-start urmărește evitarea vârfurilor excesive de curent; tensiunea redusă poate fi mijlocul și nu scopul final.",
+      "abc_analysis": {
+        "A": "A vibrația poate fi efect secundar, dar nu criteriul electric principal din variante.",
+        "B": "B limitarea curentului mare de pornire este obiectivul tipic al metodei.",
+        "C": "C reducerea tensiunii poate fi uneori procedeu, nu scop universal al pornirii."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "Pornirea stea reduce tensiunea de fază ca mijloc; B rămâne scopul de protecție a rețelei.",
+      "scope_and_linguistic_gate": "Pornirea directă poate fi acceptabilă; formularea «se urmărește» este pentru metode de pornire cu limitarea curentului.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-1ee87c061c6da278",
+      "qabc_sha256": "1ee87c061c6da2789f555918f1d8199277c58a1892877c4643009e0eba0f023a",
+      "representative_id": "G1-ELE-147",
+      "member_ids": "G1-ELE-147;G2-ELEC-285",
+      "original_keys_by_id_JSON": "{\"G1-ELE-147\":\"C\",\"G2-ELEC-285\":\"C\"}",
+      "question_original": "Materialele feromagnetice au permeabilitatea relativa:",
+      "A_original": "mai mica decât 1",
+      "B_original": "puţin mai mare decât 1",
+      "C_original": "mult mai mare decât 1",
+      "original_key_unchanged": "C",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/12-8-magnetism-in-matter",
+        "locator": "OpenStax magnetism in matter, ferro/dia/para",
+        "access": "PRETRIAGE_REFERENCED_SCOPE"
+      },
+      "context_positive": "În regimul feromagnetic nesaturat, susceptibilitatea magnetică pozitivă și permeabilitatea relativă sunt uzual mult peste 1.",
+      "abc_analysis": {
+        "A": "A μr sub 1 caracterizează materialele diamagnetice în aproximația simplă.",
+        "B": "B μr puțin peste 1 este asociat uzual paramagneticelor.",
+        "C": "C feromagneticele au în general μr≫1 în domeniul nesaturat."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "La câmp foarte mare/în saturație permeabilitatea diferențială se poate apropia de μ0.",
+      "scope_and_linguistic_gate": "μr neliniară, dependentă de câmp, frecvență și saturație; nu universal constantă mare.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-4766d8cd015739c1",
+      "qabc_sha256": "4766d8cd015739c1bbe597c230d39aa25ec5c3ebf7e5949040b678a0dcbf4a8e",
+      "representative_id": "G1-ELE-148",
+      "member_ids": "G1-ELE-148;G2-ELEC-286",
+      "original_keys_by_id_JSON": "{\"G1-ELE-148\":\"B\",\"G2-ELEC-286\":\"B\"}",
+      "question_original": "Ecuația constitutivă a bobinei ideale are forma:",
+      "A_original": "u = R i",
+      "B_original": "u= L di/dt",
+      "C_original": "du = i/C dt",
+      "original_key_unchanged": "B",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/14-2-self-inductance-and-inductors",
+        "locator": "OpenStax 14.2 eq 14.10 electromotive force -L di/dt",
+        "access": "WEB_HTML_OPENED"
+      },
+      "context_positive": "Bobina liniară ideală cu convenție pasivă la borne are u=L(di/dt).",
+      "abc_analysis": {
+        "A": "A u=Ri aparține rezistorului.",
+        "B": "B u=Ldi/dt în modelul inductiv, L constantă.",
+        "C": "C relație de tip i=Cdu/dt caracterizează condensatorul (textul C are altă structură)."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "Pentru L(i) neliniară, u=d(L(i)i)/dt nu simplu Ldi/dt dacă L variază.",
+      "scope_and_linguistic_gate": "Semnul depinde de convenția de borne; t.e.m. autoindusă este −Ldi/dt, tensiunea pasivă +Ldi/dt.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-54516b6f6bd9a71c",
+      "qabc_sha256": "54516b6f6bd9a71ccba80bfdb3666bf0757374a16dd738f6e1b27f7bd0439834",
+      "representative_id": "G1-ELE-149",
+      "member_ids": "G1-ELE-149;G2-ELEC-287",
+      "original_keys_by_id_JSON": "{\"G1-ELE-149\":\"A\",\"G2-ELEC-287\":\"A\"}",
+      "question_original": "Legea lui Coulomb exprimã:",
+      "A_original": "forţa de interacţiune dintre corpuri punctuale încărcate cu sarcini electrice",
+      "B_original": "fluxul electric printr-o suprafaţa sferica",
+      "C_original": "diferenţa de potenţial între doua puncte",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/5-2-coulombs-law",
+        "locator": "OpenStax Coulomb's law for point charges",
+        "access": "SPECIFIC_PAGE_NOT_OPENED_THIS_RUN"
+      },
+      "context_positive": "Legea Coulomb descrie forța electrostatică dintre sarcini punctiforme, F∝q1q2/r².",
+      "abc_analysis": {
+        "A": "A exprimă exact obiectul legii Coulomb.",
+        "B": "B fluxul electric prin suprafață închisă aparține legii Gauss.",
+        "C": "C diferența de potențial este mărime energetică, nu enunțul Coulomb."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "Legea Gauss poate determina fluxul prin sferă, dar nu este formularea cerută a legii Coulomb.",
+      "scope_and_linguistic_gate": "Sarcini punctiforme, repaus/electrostatică, mediu și permitivitate definite.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-2bf004b643dff489",
+      "qabc_sha256": "2bf004b643dff48931fe66f5cc65fdc21bec5df7591f7b77c6ac9276c891fe19",
+      "representative_id": "G1-ELE-153",
+      "member_ids": "G1-ELE-153;G2-ELEC-291",
+      "original_keys_by_id_JSON": "{\"G1-ELE-153\":\"B\",\"G2-ELEC-291\":\"B\"}",
+      "question_original": "Mărimea caracteristică circuitelor magnetice şi care este analoagă cu rezistenţa circuitelor electrice se numeşte:",
+      "A_original": "impedanţă",
+      "B_original": "reluctanţă",
+      "C_original": "permeanţă",
+      "original_key_unchanged": "B",
+      "source": {
+        "url": "https://www.electrical4u.com/magnetic-reluctance/",
+        "locator": "Magnetic reluctance and electrical resistance analogy",
+        "access": "PRETRIAGE_LOCATOR_NOT_REOPENED"
+      },
+      "context_positive": "Reluctanța magnetică ℛ=l/(μA) se opune fluxului, analog R în circuite electrice.",
+      "abc_analysis": {
+        "A": "A impedanța este o noțiune electrică pentru regim alternativ, nu analogul magnetic numit în item.",
+        "B": "B reluctanța este analogul magnetic al rezistenței.",
+        "C": "C permeanța este 1/ℛ, analog conductanței."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "Dacă ai căuta analogul conductanței, ai alege permeanta, nu pentru rezistență.",
+      "scope_and_linguistic_gate": "Analogia ideală de circuit magnetic concentrat, permeabilitate definită.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-b7f2fab6b20faa6d",
+      "qabc_sha256": "b7f2fab6b20faa6de507361739561b8bc836aef5e3b620026bc4964f3e9b313f",
+      "representative_id": "G1-ELE-158",
+      "member_ids": "G1-ELE-158;G2-ELEC-296",
+      "original_keys_by_id_JSON": "{\"G1-ELE-158\":\"A\",\"G2-ELEC-296\":\"A\"}",
+      "question_original": "Miezul magnetic al rotorului unei maşini electrice asincrone se realizează din tole pentru:",
+      "A_original": "reducerea curenţilor turbionari",
+      "B_original": "reducerea tensiunii electromotoare induse",
+      "C_original": "numai din motive constructive",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://openstax.org/books/university-physics-volume-2/pages/13-5-eddy-currents",
+        "locator": "OpenStax 13.5 eddy currents, thin insulated laminations",
+        "access": "WEB_HTML_OPENED"
+      },
+      "context_positive": "Miezul realizat din tole subțiri izolate întrerupe buclele mari de curenți turbionari și limitează pierderile Joule.",
+      "abc_analysis": {
+        "A": "A scop electromagnetic direct: reducerea curenților turbionari.",
+        "B": "B tensiunea electromotoare utilă de inducție nu este scopul reducerii, bobina motorului rămâne activă.",
+        "C": "C «numai» constructiv este fals deoarece laminarea reduce pierderi în miez."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "Miez masiv ar avea bucle de curenți turbionari mai mari și pierderi; tolele limitează acest efect.",
+      "scope_and_linguistic_gate": "Rotorul asincron are curenți cu frecvență de alunecare, iar laminarea miezului are relevanță în regimul rotoric.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-9dba2e4ffde7e0bb",
+      "qabc_sha256": "9dba2e4ffde7e0bbeb35fa53ef94e7b533b39bbd5778ec4984257a7c0a6fc5ed",
+      "representative_id": "G1-ELE-162",
+      "member_ids": "G1-ELE-162;G2-ELEC-300",
+      "original_keys_by_id_JSON": "{\"G1-ELE-162\":\"A\",\"G2-ELEC-300\":\"A\"}",
+      "question_original": "O linie electrică foarte lungă se comportă ca o linie adaptată:",
+      "A_original": "dacă alimentează un receptor cu impedanţă egală cu impedanţa sa caracteristică",
+      "B_original": "dacă funcţionează  în scurtcircuit",
+      "C_original": "dacă funcţionează în gol",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://www.allaboutcircuits.com/textbook/alternating-current/chpt-14/reflections-and-standing-waves/",
+        "locator": "Matching at ZL=Z0, Γ=(ZL-Z0)/(ZL+Z0); source locator research, formula independently checked",
+        "access": "EXACT_WEB_PAGE_ACCESS_PENDING"
+      },
+      "context_positive": "Linia este adaptată când impedanța sarcinii egalează impedanța caracteristică Z0; coeficientul de reflexie Γ=0.",
+      "abc_analysis": {
+        "A": "A ZL=Z0 este condiția de adaptare.",
+        "B": "B scurtcircuit ZL=0 produce Γ=−1, nu adaptare.",
+        "C": "C mers în gol ZL→∞ produce Γ≈+1, nu adaptare."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "La sarcină în gol unda se reflectă; termenul «foarte lungă» nu elimină condiția de terminare.",
+      "scope_and_linguistic_gate": "Model de linii distribuite; egalitatea complexă ZL=Z0, nu doar modulele.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    },
+    {
+      "unit_id": "AU-8a03dd33196cf5a0",
+      "qabc_sha256": "8a03dd33196cf5a0c235d0d846456d81d48371c93e57613c89fdeceb7fe8aa83",
+      "representative_id": "G1-ELE-163",
+      "member_ids": "G1-ELE-163;G2-ELEC-301",
+      "original_keys_by_id_JSON": "{\"G1-ELE-163\":\"A\",\"G2-ELEC-301\":\"A\"}",
+      "question_original": "O linie electrică lungă funcţionând în gol:",
+      "A_original": "produce putere reactivă",
+      "B_original": "absoarbe putere reactivă",
+      "C_original": "nu produce şi nu absoarbe putere reactivă",
+      "original_key_unchanged": "A",
+      "source": {
+        "url": "https://vp-dei.vlabs.ac.in/exp/ferranti-effect/theory.html",
+        "locator": "Virtual Labs Ferranti effect at light/no load",
+        "access": "PRETRIAGE_LOCATOR_EXACT_Q_DIRECTION_PENDING"
+      },
+      "context_positive": "O linie lungă deschisă este caracterizată de capacitatea transversală distribuită; curentul de încărcare capacitivă injectează în mod uzual Q capacitiv spre sistem.",
+      "abc_analysis": {
+        "A": "A în convenția de putere reactivă capacitivă linia în gol «produce» Q.",
+        "B": "B absorbția inductivă poate exista, dar în gol la lungime mare componenta capacitivă domină uzual.",
+        "C": "C linia în gol are totuși admitanță capacitivă și curent reactiv, deci nu Q zero."
+      },
+      "pairwise": "Eliminare bidirecțională: comparați variantele A/B, A/C și B/C cu raționamentele individuale și contextul afirmației pozitive; nicio variantă nu se validează doar prin excludere.",
+      "reverse_counterexample": "Cu reactoare de compensare sau model extrem de neobișnuit bilanțul de Q net nu rămâne neapărat capacitiv.",
+      "scope_and_linguistic_gate": "Sistem la frecvență industrială, fără compensare completă, condiții obișnuite de tensiune/lungime; «produce» după semnul Q capacitiv.",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "learner_approved": "NO"
+    }
+  ],
+  "gates": {
+    "source_scope": "PRELIMINARY",
+    "original_exact_sha": "VERIFY_BEFORE_LEDGER_CREDIT",
+    "independent_review": "NOT_RUN",
+    "final_learner_approval": "NO"
+  }
+}

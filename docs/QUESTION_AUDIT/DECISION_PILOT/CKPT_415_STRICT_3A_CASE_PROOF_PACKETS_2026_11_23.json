@@ -1,0 +1,157 @@
+{
+  "schema": "ANRE_PILOT_REAL_ADJUDICATION_B1",
+  "date": "2026-11-23",
+  "ckpt": "CKPT-415",
+  "parent_ckpt": "CKPT-414",
+  "mode": "GFR_2X3_STRICT_BLOCKER_DECISION_PACKET_PILOT",
+  "lot": "A",
+  "source_page_reopens": 3,
+  "group_count": 3,
+  "grade_placements": 5,
+  "source_content_technical_rechecked": 3,
+  "previously_known_findings_confirmed": 3,
+  "new_facts_claimed": 0,
+  "case_dispositions_ready": 3,
+  "strict_conflicts_closed": 0,
+  "final_exam_approved": 0,
+  "independent_technical_qa": "NOT_RUN",
+  "original_XLSX_binaries_reopened": false,
+  "queue_V371_expansion_disabled": true,
+  "records": [
+    {
+      "id": "QABC-0017",
+      "members": [
+        {
+          "grade": "G1-ELE-018",
+          "key": "A"
+        },
+        {
+          "grade": "G2-ELEC-170",
+          "key": "C"
+        }
+      ],
+      "original": {
+        "stem": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "technical_object": "Three equal mutual capacitances, earth neglected; network delta-star, requiring an exact definition of phase 'capacitatea de serviciu' Cs.",
+      "source": {
+        "url": "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electricity_and_Magnetism_%28Tatum%29/05%3A_Capacitors/5.07%3A__Delta-Star_Transform",
+        "title": "Jeremy Tatum, Electricity and Magnetism §5.7 Delta-Star Transform",
+        "method": "Source HTML scraped and §5.7 equations 5.7.1–5.7.3 reopened on 2026-11-23, no formal source edition verification",
+        "preceding_context": "Capacitor delta circuit and star equivalent between same pairs of terminals",
+        "central_formula": "c1=(C2*C3+C3*C1+C1*C2)/C1; c2, c3 analogous. For C1=C2=C3=C, each c=3C",
+        "following_context": "Inverse transform §5.7.4–5.7.6",
+        "scope_limit": "Purely electrical delta-star equivalence; page does not define Romanian service capacitance Cs of overhead line"
+      },
+      "ABC": {
+        "A": "MATHEMATICALLY_SUPPORTED_IF_Cs_IS_EQUAL_STAR_PHASE_CAPACITANCE",
+        "B": "NOT_MATCHING_EQUAL_DELTA_STAR_TRANSFORM",
+        "C": "NOT_MATCHING_EQUAL_DELTA_STAR_TRANSFORM"
+      },
+      "adjudication": "GRADE_KEY_CONFLICT_PENDING_EXACT_Cs_DEFINITION_AND_ANRE_SCORING_PROVENANCE",
+      "now_direct_source_check": "FORMULA_AND_MODEL_CONSISTENT",
+      "new_independently_resolved_gate_count": 0,
+      "reason_not_closed": "Exact Cs physical definition and common ANRE grade-specific scored key not certified. Prior V80 already had mathematical argument. This reopened source is not an entirely new discovery.",
+      "needs_owner": "If current official exam papers truly assign different keys for identical stem/ABC, owner decision to flag key disparity without rewriting imported grades; present exact source and alternatives.",
+      "earlier_evidence": [
+        "docs/QUESTION_AUDIT/V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv"
+      ]
+    },
+    {
+      "id": "QABC-0094",
+      "members": [
+        {
+          "grade": "G1-ELE-102",
+          "key": "A"
+        },
+        {
+          "grade": "G2-ELEC-245",
+          "key": "C"
+        }
+      ],
+      "original": {
+        "stem": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
+      },
+      "technical_object": "Normal operation preference of a two-busbar substation with one breaker per circuit; compare breaker/coupler state and operating policy.",
+      "source": {
+        "url": "https://legislatie.just.ro/Public/DetaliiDocument/122751",
+        "title": "Romanian official NTE 009/10/00 general switching regulation (26 Aug 2010)",
+        "method": "Official government HTML retrieved from site in present session via document scrape; exact current amendment status / ANRE2026 bibliography not independently signed",
+        "preceding_context": "Defines operational states in service and in reserve, including hot reserve, with protection/automation assumptions",
+        "central_formula": "Cupla «în rezervă caldă»: disconnectors toward relevant busbars closed, breaker open, breaker closing establishes connection; reserve rece: circuit breakers and isolators opened per defined limits",
+        "following_context": "Cold reserve definition and conditions/notes, including prohibition on mislabeling a separator-only coupler as hot reserve",
+        "scope_limit": "Regulation defines operative states; it does NOT establish a universally preferred A vs C for every two-busbar topology."
+      },
+      "ABC": {
+        "A": "POSSIBLE_IN_COLD_RESERVE_OPERATION_POLICY_NOT_UNIVERSALLY_REQUIRED",
+        "B": "POSSIBLE_SPECIFIC_OPERATION_NOT_GENERAL_UNIQUE_PREFERENCE",
+        "C": "POSSIBLE_IN_HOT_RESERVE_OPERATION_POLICY_NOT_UNIVERSALLY_REQUIRED"
+      },
+      "adjudication": "G1_A_G2_C_UNRESOLVED_CONTEXT_OF_PREFERRED_NORMAL_SCHEME",
+      "now_direct_source_check": "NTE_HOT_AND_COLD_RESERVE_TERMINOLOGY_VERIFIED",
+      "new_independently_resolved_gate_count": 0,
+      "reason_not_closed": "The operative preference and exact single-line diagram remain unspecified. Previous V80 also had normative reserve terminology; no independent engineering reviewer.",
+      "needs_owner": "Supply actual prescribed normal one-line station scheme or ANRE-specific bibliography if deciding between A and C; do not select by intuition.",
+      "earlier_evidence": [
+        "docs/QUESTION_AUDIT/V80_FOUR_CROSSGRADE_CONFLICT_RECHECK_DELTA_CAPACITANCE_AND_BUS_BARS.csv",
+        "docs/QUESTION_AUDIT/V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json"
+      ]
+    },
+    {
+      "id": "QABC-0143",
+      "members": [
+        {
+          "grade": "G1-ELE-152",
+          "key": "A"
+        }
+      ],
+      "original": {
+        "stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "trainer": {
+        "stem": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "technical_object": "Propagation constant gamma describes amplitude and phase change per unit line length; alpha+j beta.",
+      "source": {
+        "url": "https://link.springer.com/chapter/10.1007/978-3-031-14186-7_7",
+        "title": "Springer, Transmission Lines §7.5 Propagation Constant γ, eq. 7.48–7.51",
+        "method": "Technical full-text section HTML opened and formulas/adjacent paragraphs reread 2026-11-23; Springer scientific source, NOT ANRE answer key",
+        "preceding_context": "§7.4 distributed line per-length parameters; γ used in exp(-γz)",
+        "central_formula": "γ [1/m]=α+jβ, α [1/m], β [rad/m]; exp(-γ z) dimensionless",
+        "following_context": "§7.5 formula sqrt((R'+jωL')(G'+jωC')); attenuation and phase factors differentiated",
+        "scope_limit": "Original word «adimensională» describes gamma incorrectly; only gamma*z exponent is dimensionless."
+      },
+      "ABC": {
+        "A": "INTENDED_PHYSICAL_TERM_BUT_ORIGINAL_DIMENSIONALLY_CONTRADICTORY;TRAINER_A_CONDITIONAL",
+        "B": "ATTENUATION_ALPHA_ONLY_LACKS_PHASE_BETA",
+        "C": "NOT_A_DEFINED_GAMMA_REPLACEMENT_IN_THIS_SOURCE"
+      },
+      "adjudication": "SOURCE_ORIGINAL_STEM_INVALID_DIMENSIONS_TRAINER_CORRECTION_MATERIAL",
+      "now_direct_source_check": "GAMMA_DIMENSIONALITY_VERIFIED_BY_EQS",
+      "new_independently_resolved_gate_count": 0,
+      "reason_not_closed": "Physical contradiction already in V240; precise scored exam source and policy for rewritten Trainer item unresolved. Not an independent grade approval.",
+      "needs_owner": "Choose whether original item is flagged unteachable/unsafe as imported, while Trainer wording is kept as unofficial corrected teaching version; no silent original edit.",
+      "earlier_evidence": [
+        "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json"
+      ]
+    }
+  ],
+  "next_lot_B_not_yet_processed": [
+    "QABC-0236",
+    "QABC-0362",
+    "QABC-0386"
+  ],
+  "guardrails": "All options and imported keys immutable; no HTML/APK or merge; title of sources does not substitute actual edition/legal/bibliographic validation"
+}

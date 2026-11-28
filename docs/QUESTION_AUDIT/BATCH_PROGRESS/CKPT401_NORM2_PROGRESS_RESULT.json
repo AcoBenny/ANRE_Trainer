@@ -1,0 +1,56 @@
+{
+  "schema": "batch_progress_result_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT401-NORM2",
+  "task_id": "ANRE-G2-110-NONREPEAT-FIVE-BATCHES",
+  "verdict": "PROGRESSED",
+  "action": "CONTINUE_NEXT_UNFINISHED_BATCH_OR_INDEPENDENT_SOURCE_QA",
+  "counts": {
+    "before": {
+      "items": 2,
+      "open_gates": 10,
+      "approved": 0,
+      "review_ready": 0
+    },
+    "after": {
+      "items": 2,
+      "open_gates": 8,
+      "approved": 0,
+      "review_ready": 0
+    }
+  },
+  "delta": {
+    "distinct_items_advanced": 2,
+    "stage_transitions": [
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0035",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0096",
+        "from": "TRIAGED",
+        "to": "SOURCE_RESEARCHED"
+      }
+    ],
+    "closed_gates": [
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0035",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0096",
+        "gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH"
+        ]
+      }
+    ],
+    "new_processed_items": [],
+    "evidence_only_items": [],
+    "regression_reasons": [],
+    "invalid_progress_claims": []
+  },
+  "audit_notice": "Recomputed structural gate in connected JS runtime. NOT independent ANRE answer-key validation or Node CI."
+}

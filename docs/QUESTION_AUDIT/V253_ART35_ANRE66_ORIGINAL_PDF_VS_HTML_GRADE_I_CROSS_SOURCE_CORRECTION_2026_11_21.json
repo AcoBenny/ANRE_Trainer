@@ -1,0 +1,71 @@
+{
+  "schema": "V253 source-original PDF cross-render override and negative source-scope test",
+  "date": "2026-11-21",
+  "branch_previous_head": "c59b9d3b1a113bc8be8357e0a53a576abe5efc16",
+  "source_priority": "Original ANRE-published Monitorul Oficial scan/page image controls over inconsistent portal HTML representation for the *historical 2023 source*; 2026 applicability requires separate verification.",
+  "source_original_pdf": "https://anre.ro/wp-content/uploads/2023/05/Ord-66-2023.pdf",
+  "source_original_pdf_date": "2023-05-16",
+  "original_printed_page": 9,
+  "pdf_page_zero_index": 7,
+  "pdf_following_page_zero_index": 8,
+  "original_source_seen_via_web_pdf_screenshots": true,
+  "original_pdf_binary_hash_in_this_run": "NOT_AVAILABLE",
+  "html_page": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/270204",
+  "html_observed_wrong_assignment": "Art.35 A(a)(i) website rendering states grade II/III/IV, while original printed page 9 says grade I. Website might have source conversion/correction mismatch; do not infer why without evidence.",
+  "qa_negative_fixture": {
+    "id": "ANRE66_ART35_2023_PDF_VS_HTML_SCOPE_NEGATIVE",
+    "question": "Art 35 A(a)(i) Grade I PFA",
+    "reject_candidate": "Current II/III/IV authorization is required by clause (i) of Grade I route",
+    "accept_exact_2023_pdf_candidate": "Grade I authorization current, plus association and SSM, within regulated activity",
+    "synthetic_runtime_test": "NOT_RUN",
+    "visual_pdf_evidence": "PASS_NARROW_PDF_PAGE_INSPECTED"
+  },
+  "role_status": "Primary PDF page visually checked by same assistant; independent research by Parallel model only; no human/qualified expert QA",
+  "cases": [
+    {
+      "qabc_id": "QABC-0271",
+      "grade_id": "G1-LEG-007",
+      "source_original_stem": "ANRE poate aplica sancţiuni contravenţionale în cazul în care un electrician :",
+      "source_original_options": {
+        "A": "deține adeverință de electrician autorizat și comite o faptă prevăzută în Regulamentul de autorizare ca fiind permisă",
+        "B": "desfăşoară activităţi de realizare de instalații electrice, pe cont propriu, fără a deține adeverință de electrician autorizat",
+        "C": "autorizat gradul 1, execută în calitate de persoană fizică autorizată o instalație electrică de joasă tensiune având o putere totală instalată de 9 kW."
+      },
+      "unchanged_imported_key": "B",
+      "superseded_specific_claim": "V252 interpreted the portal HTML phrase 'pentru gradul II, III sau IV' as the Grade I PFA art.35(A)(a)(i) condition.",
+      "corrected_original_pdf_scope": "ANRE official Order 66/2023, Monitorul Oficial 417/16.05.2023, printed page 9 (PDF zero-based page 7), art.35 A(a)(i): 'pentru gradul I, vizată la zi'. Art.35 A(b) on printed pp9-10 (PDF pages 7-8) addresses II/III/IV and is not the Grade I qualification.",
+      "neighboring_condition": "Art.35 A(a)(ii) requires association with another authorized electrician who meets (i), also acting as PFA/II/IF; A(a)(iii) occupational safety compliance.",
+      "revised_candidate": "B still a plausible intended examiner answer; C Grade I PFA 9 kW is not automatically lawful solely from its stated 9 kW, because grade-I-current and associating partner are not stated; do NOT import Grade II qualification.",
+      "reviewer_classification": "External Parallel AI web research suggested a grade-I clause; official original ANRE PDF visually independently inspected by same assistant confirmed that text. External AI research is NOT an independent qualified expert signoff.",
+      "error_class": "SOURCE_REPRESENTATION_HTML_PDF_TEXT_DISAGREEMENT_CROSS_PARAGRAPH_FIELD_SHIFT",
+      "technical_approval": false,
+      "language_approval": false,
+      "edition_2026_certified": false,
+      "official_exam_key_authenticated": false,
+      "learner_approved": false
+    },
+    {
+      "qabc_id": "QABC-0304",
+      "grade_id": "G1-LEG-040",
+      "source_original_stem": "În calitate de persoană fizică autorizată, electricianul autorizat gradul I poate executa instalaţii electrice interioare",
+      "source_original_options": {
+        "A": "având o putere electrică instalată de maximum 10 kW şi la o tensiune nominală mai mică de 1 kV, numai dacă deţine un atestat emis de ANRE",
+        "B": "având o putere electrică instalată de maximum 20 kW şi la o tensiune nominală mai mică de 1 kV, numai dacîă deţine un atestat emis de ANRE",
+        "C": "având o putere electrică instalată de maximum 10 kW şi la o tensiune nominală mai mică de 1 kV, fără a deţine un atestat emis de ANRE"
+      },
+      "unchanged_imported_key": "C",
+      "superseded_specific_claim": "V252 interpreted the portal HTML phrase 'pentru gradul II, III sau IV' as the Grade I PFA art.35(A)(a)(i) condition.",
+      "corrected_original_pdf_scope": "ANRE official Order 66/2023, Monitorul Oficial 417/16.05.2023, printed page 9 (PDF zero-based page 7), art.35 A(a)(i): 'pentru gradul I, vizată la zi'. Art.35 A(b) on printed pp9-10 (PDF pages 7-8) addresses II/III/IV and is not the Grade I qualification.",
+      "neighboring_condition": "Art.35 A(a)(ii) requires association with another authorized electrician who meets (i), also acting as PFA/II/IF; A(a)(iii) occupational safety compliance.",
+      "revised_candidate": "C still provisional closest choice for 10 kW, under 1 kV, no economic-operator attestation; but this exception has cumulative Grade I-current authorization + association + occupational safety conditions, not free-standing individual execution.",
+      "reviewer_classification": "External Parallel AI web research suggested a grade-I clause; official original ANRE PDF visually independently inspected by same assistant confirmed that text. External AI research is NOT an independent qualified expert signoff.",
+      "error_class": "SOURCE_REPRESENTATION_HTML_PDF_TEXT_DISAGREEMENT_CROSS_PARAGRAPH_FIELD_SHIFT",
+      "technical_approval": false,
+      "language_approval": false,
+      "edition_2026_certified": false,
+      "official_exam_key_authenticated": false,
+      "learner_approved": false
+    }
+  ],
+  "legacy_status": "136 semantic holds still OPEN, 0/822 final independent learner approvals. V252 is not deleted."
+}

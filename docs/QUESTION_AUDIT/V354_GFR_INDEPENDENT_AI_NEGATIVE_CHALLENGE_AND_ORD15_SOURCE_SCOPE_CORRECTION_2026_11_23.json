@@ -1,0 +1,101 @@
+{
+  "schema": "V354_INDEPENDENT_AI_ADVERSARIAL_RESEARCH_AND_SOURCE_REGULATION_CORRECTION",
+  "date": "2026-11-23",
+  "parent": "CKPT403 V352 V353",
+  "purpose": "Independently challenge original answers and newly identified 2026 regulation changes without falsely claiming scored key or accredited QA.",
+  "cases": [
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0180",
+      "external_AI_research_id": "resp_26be7027-4859-47ad-a747-8c8140185300",
+      "independent_AI_challenge_executed": true,
+      "qualified_human_reviewer": false,
+      "original_stem": "Pe un circuit care alimentează mai multe receptoare electrice de putere de aceeaşi natură şi destinaţie",
+      "original_options": {
+        "A": "nu se prevede protecție comună la scurtcircuit",
+        "B": "nu se prevede protecție comună la suprasarcină",
+        "C": "se prevede protecție la suprasarcină dacă puterea totală instalată depăşeşte 16 kW"
+      },
+      "source_locators": [
+        "I7/2011 §5.3.1.1",
+        "I7/2011 §5.3.1.7.2",
+        "I7/2011 §5.3.1.7.2.1"
+      ],
+      "findings": {
+        "A": "Not universally correct: §5.3.1.1 specifically permits common short-circuit protection for alike loads up to 15 kW.",
+        "B": "NOT independently positively demonstrated as a categorical prohibition of shared overload protection. Per-motor protection requirements and allowed methods are not equivalent to a universal device-location ban.",
+        "C": "16 kW threshold is not supported by source's 15 kW common short-circuit allowance and does not establish when overload protection begins."
+      },
+      "candidate_key": null,
+      "flag": "NO_UNIQUE_ANSWER_AFFIRMATIVELY_PROVEN_FROM_CITED_CLAUSES",
+      "next_gate": "Look for exact rule specifically forbidding common overload protection or document exam-language ambiguity, then qualified technical/language reviewer.",
+      "links": [
+        "https://legislatie.just.ro/Public/FormaPrintabila/00000G1U3ML5T1N05B31QMEGD94NWZ8V",
+        "https://www.arya.ro/legislatie/document.php?slug=normativ-i7-2011"
+      ]
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0083",
+      "external_AI_research_id": "resp_f813bcf6-e209-4ef4-b3f6-b074231cdb66",
+      "independent_AI_challenge_executed": true,
+      "qualified_human_reviewer": false,
+      "source_scope_correction": {
+        "initial_inference_to_reject": "ANRE Ord15/2026 adds Art8(4) participation guarantee to Ord59/2013 and therefore changes the Art8 choice-of-network-operator rule.",
+        "verified_exact_instrument": "Article IV of Order ANRE 15/2026 amends the CAPACITY ALLOCATION METHODOLOGY approved by Order 53/2024, adding its Article 8(4) guarantee. Article I of Order15/2026 separately amends the Ord59/2013 CONNECTION REGULATION, including Articles 2,31 and other entries, not the original Art8(2) choice text. Do not transpose Article IV 'Article 8' to the Regulation under Ord59.",
+        "original_stem_object": "Connection applications for production/consumption up to 50 MW, routed to distribution concessionaire or another distribution operator with nearby network.",
+        "exact_original_source_unchanged_in_identified_2026_amendment": "Ord59/2013 Regulation Art8(1) >50MW to transmission-system operator; Art8(2) <=50MW routes to a local concessionaire or other nearby-network distribution operator, depending on siting. The verified 15/2026 amendment to the Methodology does not itself erase these options.",
+        "caveat": "This is regulation-object and amendment attribution review, not 2026 scored ANRE key authentication or full exhaustive corpus check."
+      },
+      "source_links": [
+        "https://lexapp.ro/legislatie/ordinul-15-2026-anre/",
+        "https://lexapp.ro/legislatie/regulament-racordarea-utilizatorilor-retelele-electrice-interes-public-2013/",
+        "https://b.colegiul-geodezilor.ro/legislatie/articol.php?a=64_ORD-ANRE-59-2013_regulament-racordare&n=8",
+        "https://lege5.ro/Gratuit/ge4dmmjwgy2tk/art-iv-ordin-15-2026?dp=gy3tsmzthe3tomy"
+      ],
+      "candidate_key_not_official": "C",
+      "further_gate": "Independent legally qualified reader to confirm applicable grade bibliography and official scored key, check later changes as-of exam date."
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0053",
+      "external_AI_research_id": "resp_f813bcf6-e209-4ef4-b3f6-b074231cdb66",
+      "source_scope_note": "959/2023 item8 changes I7 §3.0.3.4: fully dielectric optical communications cables are a narrowly defined exception to avoidance of risky shared route; do not confuse optical-only with hybrid cables.",
+      "source_links": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/271142"
+      ],
+      "independent_qualified_approval": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0091",
+      "external_AI_research_id": "resp_f813bcf6-e209-4ef4-b3f6-b074231cdb66",
+      "source_scope_note": "959/2023 item52 rewrites §7.22.1. One supply may be used under P118/2 conditions when no reserve fire pump is required, other fire-safety loads may need two independent sources.",
+      "source_links": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/271142"
+      ],
+      "independent_qualified_approval": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0179",
+      "external_AI_research_id": "resp_f813bcf6-e209-4ef4-b3f6-b074231cdb66",
+      "source_scope_note": "Revised 7.22.1 still treats any number of feeds from the national transmission/distribution network as ONE SEN supply source for a customer, separate backup sources must be truly independent.",
+      "source_links": [
+        "https://legislatie.just.ro/Public/DetaliiDocument/271142"
+      ],
+      "independent_qualified_approval": false
+    }
+  ],
+  "source_search_evidence": "Parallel web_research was executed as a separate AI research step and sources checked with direct Firecrawl legal text and web source snippets. Independent research does NOT equal accredited independent technical QA; any unsupported model inference is explicitly corrected.",
+  "totals": {
+    "distinct_cases_challenged": 5,
+    "genuine_external_ai_calls": 2,
+    "qualified_human_reviews": 0,
+    "official_keys_authenticated": 0,
+    "original_QABC_or_keys_changed": 0,
+    "learner_released": 0
+  },
+  "safety": [
+    "No canonical modifications",
+    "No answer-key promotion",
+    "Do not show provisional source key as official ANRE key",
+    "No HTML/APK modification",
+    "PR#7 Draft/Unmerged"
+  ]
+}

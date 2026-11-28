@@ -1,0 +1,372 @@
+{
+  "schema": "V281_TEN_TECHNICAL_REOPENINGS_AND_SOURCE_HASH_BIBLIOGRAPHY_GATES",
+  "date": "2026-11-21",
+  "parent": "CKPT-367 / V280; V279 exact 17 source-candidate disagreements",
+  "qa_kind": "source-technical research preflight NOT certified key adjudication",
+  "counts": {
+    "original_QABC_total": 568,
+    "grade_routes_total": 822,
+    "baseline_semantic_holds": 136,
+    "source_root_diagnosed": 136,
+    "remaining_key_discrepancy_candidates_UNAUTHENTICATED": 17,
+    "source_key_candidate_grade_routes": 18,
+    "technical_cases_this_pass": 10,
+    "technical_grade_routes_this_pass": 11,
+    "user_original_I7_pages_reopened_and_pdf_hash_verified": 7,
+    "public_historic_technical_pdf_text_retrieved_not_visually_authenticated": 3,
+    "learner_approved_grade_routes": 0,
+    "release_blocked_semantic_groups": 136
+  },
+  "critical_source_hash_reconciliation": {
+    "actual_sha256_from_user_uploaded_library_PDF": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+    "actual_length": 64,
+    "source_name": "803493174-I7-2011-completat2023.pdf",
+    "source_pdf_pages": 249,
+    "V249_recorded_correct_sha256": "4bc3fc701cb71c937ad166462807423fa505c483783c5c93fe5b8ad03b20f431",
+    "V278_V279_recorded_erroneous_58_char_string": "4bc3fc701cb71c937ad166462807423fa505c483783c5b8ad03b20f431",
+    "error_class": "INVALID_LENGTH_TRUNCATED_SHA256_NOT_NEW_FILE_DIFFERENCE",
+    "corrective_action": "Pin correct 64-hex digest in all new evidence; preserve immutable prior V278/V279 and log the discrepancy"
+  },
+  "bibliography_evidence": {
+    "official_ANRE_2023_pdf": "https://anre.ro/wp-content/uploads/2023/05/Tematica-si-bibliografie-pentru-examenul-de-autorizare-electricieni-2023-.pdf",
+    "official_ANRE_landing": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+    "page_zero_based": 2,
+    "PE102_item_22": {
+      "grade_I": "NU",
+      "grade_II": "DA",
+      "grade_IIIA_IVA": "DA",
+      "grade_IIIB_IVB": "DA"
+    },
+    "PE155_item_29": {
+      "grade_I": "DA",
+      "grade_II": "DA",
+      "grade_IIIA_IVA": "DA",
+      "grade_IIIB_IVB": "DA"
+    },
+    "I7_item_14": {
+      "grade_I": "DA",
+      "grade_II": "DA"
+    },
+    "edition_note": "Official ANRE current landing links a 05.2023 bibliography; no 2026-specific bibliography or scored key authenticated"
+  },
+  "external_sources": {
+    "PE102": "https://electrician365.ro/wp-content/uploads/2019/04/Normativ-instalatii-electrice-ORDIN-PE-102-1986.pdf",
+    "PE155": "https://www.baluna.ro/wp-content/uploads/2018/02/pe_155_92.pdf",
+    "IP71": "https://stoianconstantin.wordpress.com/wp-content/uploads/2024/11/1.e-ip-71-2015-statii-de-conexiuni-si-de-transformare.pdf"
+  },
+  "source_rendering_limitations": "Web PDF screenshot API returned cache-miss for PE102 and PE155, and IP71 is too large for web open screenshot; indexed exact text and independent source snippets were read, but visual PDF pages not authenticated. Original user I7 PDF is byte-verified.",
+  "technical_case_records": [
+    {
+      "unit_id": "QABC-0356",
+      "grade_routes": [
+        "G1-NOR-042"
+      ],
+      "original_stem": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+      "original_ABC_UNCHANGED": {
+        "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+        "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+        "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-042=B",
+      "source_research_candidate_NOT_OFFICIAL": "A",
+      "source_exact_scope": "I7/2011 consolidated for 2023-09-22 §5.2.4.6.1",
+      "pdf_page_1_based": 55,
+      "source_evidence_mode": "USER_LIBRARY_PDF_LOCAL_BYTES_SHA256_VERIFIED_AND_FITZ_EXACT_PAGE_REOPEN",
+      "negative_option_QA": {
+        "A": "AFFIRMATIVE: monophase 2-conductor N equals phase any cross-section",
+        "B": "CONTRADICTED: 3-conductor monophase + 25 mm2 Cu / 35 mm2 Al are not conditions specified by source; polyphase thresholds are 16 Cu/25 Al",
+        "C": "OVERGENERALIZED: polyphase all sizes not universal; neutral may differ in qualified cases §5.2.4.6.3"
+      },
+      "scope_counterexample": "Polyphase conductors over 16 Cu / 25 Al with balanced load, lower harmonics and protected N may permit smaller N §5.2.4.6.3",
+      "grade_bibliography_note": "I7 listed for Grade I and II in ANRE May 2023 official bibliography item 14",
+      "research_state": "SOURCE_MATCH_2023_PROVISIONAL",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "I7 2023 §5.2.4.6.1"
+    },
+    {
+      "unit_id": "QABC-0374",
+      "grade_routes": [
+        "G1-NOR-060"
+      ],
+      "original_stem": "Utilizarea conductelor metalice pentru apă drept conductoare de protecţie:",
+      "original_ABC_UNCHANGED": {
+        "A": "este recomandată",
+        "B": "este permisă condiţionat",
+        "C": "nu este permisă"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-060=B",
+      "source_research_candidate_NOT_OFFICIAL": "C",
+      "source_exact_scope": "I7/2011 consolidated for 2023-09-22 §5.5.3.2",
+      "pdf_page_1_based": 72,
+      "source_evidence_mode": "USER_LIBRARY_PDF_LOCAL_BYTES_SHA256_VERIFIED_AND_FITZ_EXACT_PAGE_REOPEN",
+      "negative_option_QA": {
+        "A": "CONTRADICTED: water pipes not recommended as PE",
+        "B": "CONTRADICTED: the cited subsection prohibits as PE, with no permission in this object",
+        "C": "AFFIRMATIVE: source expressly prohibits using water pipes as protection conductors"
+      },
+      "scope_counterexample": "Equipotential bonding to metallic pipes is a separate activity; it cannot be treated as permission to replace a PE conductor",
+      "grade_bibliography_note": "I7 listed for Grade I and II in ANRE May 2023 official bibliography item 14",
+      "research_state": "SOURCE_MATCH_2023_PROVISIONAL",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "I7 2023 §5.5.3.2"
+    },
+    {
+      "unit_id": "QABC-0375",
+      "grade_routes": [
+        "G1-NOR-061"
+      ],
+      "original_stem": "Îmbinarea tuburilor de protecţie a conductoarelor electrice la trecerile prin elemente de construcţie este:",
+      "original_ABC_UNCHANGED": {
+        "A": "admisă",
+        "B": "interzisă",
+        "C": "admisă doar pentru tuburi cu diametru mai mic de 16 mm"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-061=A",
+      "source_research_candidate_NOT_OFFICIAL": "B",
+      "source_exact_scope": "I7/2011 consolidated for 2023-09-22 §5.2.12.3.4",
+      "pdf_page_1_based": 61,
+      "source_evidence_mode": "USER_LIBRARY_PDF_LOCAL_BYTES_SHA256_VERIFIED_AND_FITZ_EXACT_PAGE_REOPEN",
+      "negative_option_QA": {
+        "A": "CONTRADICTED: joints at construction penetrations expressly forbidden",
+        "B": "AFFIRMATIVE: exact source wording forbids joints",
+        "C": "CONTRADICTED: no diameter <16mm exception to this ban in cited subsection"
+      },
+      "scope_counterexample": "Tube joints permitted with adequate accessories outside the penetration (§5.2.12.3.1–3), but not at penetrations",
+      "grade_bibliography_note": "I7 listed for Grade I and II in ANRE May 2023 official bibliography item 14",
+      "research_state": "SOURCE_MATCH_2023_PROVISIONAL",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "I7 2023 §5.2.12.3.4"
+    },
+    {
+      "unit_id": "QABC-0403",
+      "grade_routes": [
+        "G1-NOR-089"
+      ],
+      "original_stem": "Utilizarea unei singure culori pentru toate conductoarele de fază ale unui circuit",
+      "original_ABC_UNCHANGED": {
+        "A": "este interzisă",
+        "B": "este permisă, cu marcarea corespunzătoare la cele două extremităţi",
+        "C": "este permisă dacă nu se folosește una dintre culorile verde sau galben"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-089=A",
+      "source_research_candidate_NOT_OFFICIAL": "B",
+      "source_exact_scope": "I7/2011 consolidated for 2023-09-22 §5.1.4.3.3 with §5.1.4.3.1–2",
+      "pdf_page_1_based": 47,
+      "source_evidence_mode": "USER_LIBRARY_PDF_LOCAL_BYTES_SHA256_VERIFIED_AND_FITZ_EXACT_PAGE_REOPEN",
+      "negative_option_QA": {
+        "A": "CONTRADICTED: a single phase-conductor color can be allowed",
+        "B": "AFFIRMATIVE: explicitly allowed only with identification at both ends",
+        "C": "INSUFFICIENT: the alternative lacks mandatory both-end identification; advice about green/yellow alone does not exhaust conditions"
+      },
+      "scope_counterexample": "All phase wires colored brown but no identification at both ends fails the wording of §5.1.4.3.3 despite avoiding green/yellow",
+      "grade_bibliography_note": "I7 listed for Grade I and II in ANRE May 2023 official bibliography item 14",
+      "research_state": "SOURCE_MATCH_2023_PROVISIONAL_WITH_WORDING_CHECK",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "I7 2023 §5.1.4.3.3"
+    },
+    {
+      "unit_id": "QABC-0372",
+      "grade_routes": [
+        "G1-NOR-058"
+      ],
+      "original_stem": "Amplasarea instalaţiilor electrice sub conducte sau utilaje pe care poate să apară condens:",
+      "original_ABC_UNCHANGED": {
+        "A": "se admite întotdeauna",
+        "B": "este total interzisă",
+        "C": "se admite condiţionat"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-058=B",
+      "source_research_candidate_NOT_OFFICIAL": "C",
+      "source_exact_scope": "I7/2011 consolidated for 2023-09-22 §3.0.3.5",
+      "pdf_page_1_based": 13,
+      "source_evidence_mode": "USER_LIBRARY_PDF_LOCAL_BYTES_SHA256_VERIFIED_AND_FITZ_EXACT_PAGE_REOPEN",
+      "negative_option_QA": {
+        "A": "CONTRADICTED: not always allowed below condensate-producing pipes/equipment",
+        "B": "CONTRADICTED: there is an explicit exception",
+        "C": "AFFIRMATIVE: permitted subject to closed construction, minimum IP33 and material resistance"
+      },
+      "scope_counterexample": "Below condensation-prone equipment without IP33-rated closed resistant execution is prohibited",
+      "grade_bibliography_note": "I7 listed for Grade I and II in ANRE May 2023 official bibliography item 14",
+      "research_state": "SOURCE_MATCH_2023_PROVISIONAL",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "I7 2023 §3.0.3.5"
+    },
+    {
+      "unit_id": "QABC-0380",
+      "grade_routes": [
+        "G1-NOR-066"
+      ],
+      "original_stem": "Instalarea conductoarelor electrice în tuburi sau ţevi pozate în pământ:",
+      "original_ABC_UNCHANGED": {
+        "A": "este interzisă",
+        "B": "este admisă",
+        "C": "este admisă numai pentru conductoare de cupru"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-066=B",
+      "source_research_candidate_NOT_OFFICIAL": "A",
+      "source_exact_scope": "I7/2011 consolidated for 2023-09-22 §5.2.12.1.4; context §5.2.12.1.3–5",
+      "pdf_page_1_based": 59,
+      "source_evidence_mode": "USER_LIBRARY_PDF_LOCAL_BYTES_SHA256_VERIFIED_AND_FITZ_EXACT_PAGE_REOPEN",
+      "negative_option_QA": {
+        "A": "AFFIRMATIVE: direct wording prohibits electrical conductors in buried conduits",
+        "B": "CONTRADICTED for conductors covered by §5.2.12.1.4; generic allowed alternative wrong under same object",
+        "C": "CONTRADICTED: the norm has no copper-only allowance for those conductors"
+      },
+      "scope_counterexample": "Do not generalize this prohibition to all fully rated underground cable types without checking separate cable-installation provisions and precise definition of conductoare vs cabluri",
+      "grade_bibliography_note": "I7 listed for Grade I and II in ANRE May 2023 official bibliography item 14",
+      "research_state": "SOURCE_MATCH_2023_PROVISIONAL_WITH_CABLE_SCOPE_GUARD",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "I7 2023 §5.2.12.1.4"
+    },
+    {
+      "unit_id": "QABC-0324",
+      "grade_routes": [
+        "G1-NOR-010"
+      ],
+      "original_stem": "În instalaţiile de joasă tensiune aferente clădirilor, rezistenţa electrică a izolaţiei trebuie măsurată:",
+      "original_ABC_UNCHANGED": {
+        "A": "numai între două conductoare active",
+        "B": "numai între conductoarele active luate 2 câte 2",
+        "C": "între conductoarele active şi conductorul de protecţie conectat la reţeaua de legare la pământ"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-010=B",
+      "source_research_candidate_NOT_OFFICIAL": "C",
+      "source_exact_scope": "I7/2011 consolidated for 2023-09-22 §8.1.1.3.3",
+      "pdf_page_1_based": 162,
+      "source_evidence_mode": "USER_LIBRARY_PDF_LOCAL_BYTES_SHA256_VERIFIED_AND_FITZ_EXACT_PAGE_REOPEN",
+      "negative_option_QA": {
+        "A": "CONTRADICTED by exclusive 'numai': requires active-to-PE testing, not only a pair of active conductors",
+        "B": "CONTRADICTED by exclusive 'numai': requires active-to-PE testing; note active conductors may be interconnected for this measurement",
+        "C": "AFFIRMATIVE: matches explicit measured relationship active conductors-to-earthed PE"
+      },
+      "scope_counterexample": "Optional additional active-to-active tests cannot replace explicitly required active-to-PE measurement",
+      "grade_bibliography_note": "I7 listed for Grade I and II in ANRE May 2023 official bibliography item 14",
+      "research_state": "SOURCE_MATCH_2023_PROVISIONAL",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "I7 2023 §8.1.1.3.3"
+    },
+    {
+      "unit_id": "QABC-0367",
+      "grade_routes": [
+        "G1-NOR-053"
+      ],
+      "original_stem": "Branşamentul electric este partea din instalaţia de distribuţie a energiei electrice cuprinsă între linia electrică şi:",
+      "original_ABC_UNCHANGED": {
+        "A": "firida de branşament",
+        "B": "coloana electrică",
+        "C": "punctul de delimitare între distribuitor şi consumator, reprezentat de bornele contorului"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-053=A",
+      "source_research_candidate_NOT_OFFICIAL": "C",
+      "source_exact_scope": "PE155/1992 §§1.2.1–1.2.2, accessible historical third-party PDF",
+      "pdf_page_1_based": null,
+      "source_evidence_mode": "PUBLIC_HISTORIC_THIRD_PARTY_PDF_SEARCHABLE_TEXT_VISUAL_SNAPSHOT_NOT_VERIFIED",
+      "negative_option_QA": {
+        "A": "CONTRADICTED: between line and firidă defines RACORD, only part of full branșament",
+        "B": "NOT COMPLETE: column is another component, not complete boundary",
+        "C": "CLOSEST SOURCE SUPPORTED: delivery/consumer separation at meter OUTPUT terminals; original C misses word 'ieșire'"
+      },
+      "scope_counterexample": "If the boundary is stated as any arbitrary meter terminal rather than the output terminal, C is imprecise; source-specific qualifier is mandatory",
+      "grade_bibliography_note": "PE155/1992 marked DA for Grade I and II in ANRE May 2023 official bibliography item 29",
+      "research_state": "REPRODUCED_HISTORICAL_SOURCE_SUPPORTED_WITH_OUTPUT_TERMINAL_CAVEAT",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "PE155/1992 §1.2.1–2"
+    },
+    {
+      "unit_id": "QABC-0341",
+      "grade_routes": [
+        "G1-NOR-027"
+      ],
+      "original_stem": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+      "original_ABC_UNCHANGED": {
+        "A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+        "B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+        "C": "conductoarele de alimentare să fie legate la duliile filetate"
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-NOR-027=B",
+      "source_research_candidate_NOT_OFFICIAL": "A",
+      "source_exact_scope": "PE102/1986 §4.6.3 historical copy",
+      "pdf_page_1_based": null,
+      "source_evidence_mode": "PUBLIC_HISTORIC_THIRD_PARTY_PDF_SEARCHABLE_TEXT_VISUAL_SNAPSHOT_NOT_VERIFIED",
+      "negative_option_QA": {
+        "A": "AFFIRMATIVE: feed-side wires connect to contact screws",
+        "B": "CONTRADICTED: outgoing to consumers are connected to threaded sockets/dulii, not contact screws",
+        "C": "CONTRADICTED: feed-side wires do not attach to threaded socket under this source"
+      },
+      "scope_counterexample": "Even a technically precise clause cannot certify a Grade I key when exact Grade I exam bibliography labels PE102 as NU",
+      "grade_bibliography_note": "ANRE official May 2023 bibliography item 22 labels PE102/1986: Grade I=NU, Grade II=DA",
+      "research_state": "SOURCE_TECHNICAL_MATCH_BUT_GRADE_I_BIBLIOGRAPHY_EXCLUDED",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "PE102/1986 §4.6.3"
+    },
+    {
+      "unit_id": "QABC-0235",
+      "grade_routes": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "original_stem": "Utilizarea unei cuple longo-transversale se preferă atunci când dorim:",
+      "original_ABC_UNCHANGED": {
+        "A": "scurtarea manevrelor;",
+        "B": "o siguranţă în funcţionare mai mare;",
+        "C": "reducerea investiţiei în echiparea staţiei."
+      },
+      "original_imported_grade_key_UNCHANGED": "G1-ELE-246=B | G2-ELEC-382=B",
+      "source_research_candidate_NOT_OFFICIAL": "C",
+      "source_exact_scope": "IP71/2015 §5.2.4.3 and §5.2.4.3.1 public third-party indexed PDF; exact visual page not authenticated",
+      "pdf_page_1_based": null,
+      "source_evidence_mode": "PUBLIC_HISTORIC_THIRD_PARTY_PDF_SEARCHABLE_TEXT_VISUAL_SNAPSHOT_NOT_VERIFIED",
+      "negative_option_QA": {
+        "A": "NOT SUPPORTED as the chief purpose: maneuvers may become more complex with combined function",
+        "B": "NOT AFFIRMATIVELY SUPPORTED as universal: neighboring section notes construction complexity, serious fault probability, unavailable multiple function when one is out",
+        "C": "AFFIRMATIVE in technical source excerpt: economy of investment from reducing count of coupler bays"
+      },
+      "scope_counterexample": "A combined coupler may have operational benefits for a particular station, but a general assertion of greater safety without specified baseline cannot override the explicitly stated investment motive",
+      "grade_bibliography_note": "ANRE May 2023 grade I/II electrotechnics allows specialized books generally; IP71/2015 is not separately identified as obligatory normative item in the seen four-page list",
+      "research_state": "EXACT_TECHNICAL_SOURCE_TEXT_RETRIEVED_BUT_VISUAL_EDITION_AND_EXAM_INTENT_OPEN",
+      "official_grade_bibliography_version_2026_verified": false,
+      "independent_qualified_technical_and_linguistic_review": false,
+      "official_ANRE_scored_key_authenticated": false,
+      "learner_approved": false,
+      "source_evidence_id": "IP71 2015 §5.2.4.3–3.1"
+    }
+  ],
+  "hard_gates_before_canonical_edits": [
+    "Verify exact exam-relevant edition and any updates for 2026",
+    "Resolve PE102 Grade I bibliography absence by a Grade-I applicable primary source or qualified interpretation",
+    "Authenticate true official ANRE scored answer keys or qualified adjudication per source/option and route",
+    "Independent qualified reviewer of all 822 grade routes and source-before/FOCUS/source-after cards",
+    "User explicit authorization for key changes, offline HTML/APK integration and PR merge"
+  ],
+  "canonical_keys_changed": false,
+  "original_ABC_changed": false,
+  "HTML_APK_changed": false,
+  "PR7_merged": false
+}

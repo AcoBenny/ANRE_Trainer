@@ -1,0 +1,828 @@
+{
+  "schema": "v236_25_g2_mixed_technical_legal_ABC",
+  "date": "2026-11-21",
+  "parent_commit": "7a7697955c59820a191d7d6483d4e5a52661f734",
+  "original_registry_sha": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "prior_manifest_sha": "9984c5e8bb9c7b8122c779900c22540d9da3e0c9",
+  "historical_evidence": [
+    "CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md",
+    "CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+    "CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+    "CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md"
+  ],
+  "current_public_regulation": "https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046",
+  "caveat": "Portal print currently returns consolidated 13.09.2024; 2026 current completeness and exam question provenance not independently certified.",
+  "counts": {
+    "new_cards": 25,
+    "ABC_option_explanations": 75,
+    "reformulated_unofficial_exercises": 25,
+    "semantic_holds_added": 1,
+    "final_approvals": 0
+  },
+  "held_ids": [
+    "QABC-0537"
+  ],
+  "cards": [
+    {
+      "unit_id": "QABC-0530",
+      "grade_ids": [
+        "G2-ELEC-056"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Într-un sistem trifazat echilibrat, conductorul de nul poate avea curent:",
+        "A": "nul, pentru sarcină perfect echilibrată și condițiile corespunzătoare",
+        "B": "întotdeauna egal cu curentul de fază",
+        "C": "întotdeauna dublu față de curentul de fază",
+        "imported_key_UNCHANGED": "G2-ELEC-056=A"
+      },
+      "source_locator": "G2-ELEC-056:https://www.monolithicpower.com/en/learning/mpscholar/ac-power/theory-and-analysis/three-phase-systems-and-applications",
+      "history": "G2-ELEC-056:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A curentul neutru poate fi zero când trei curenți sinusoidali egali la 120° se compensează fazorial.",
+        "B": "B «întotdeauna egal» este fals, de pildă în echilibru ideal cu I_N=0.",
+        "C": "C «întotdeauna dublu» este fals și nesusținut de sumarea curenților de fază.",
+        "model_scope_or_trap": "Harmonicele triplen și sarcinile dezechilibrate pot crea curent neutru; enunțul folosește «poate» și condițiile potrivite.",
+        "reformulated_question": "Ce curent în neutru rezultă într-un sistem trifazat pur sinusoidal perfect echilibrat?",
+        "reformulated_solution": "0 A.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0531",
+      "grade_ids": [
+        "G2-ELEC-057"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Eficiența/randamentul unui echipament este raportul dintre:",
+        "A": "puterea utilă și puterea absorbită",
+        "B": "puterea absorbită și pierderi",
+        "C": "tensiune și curent",
+        "imported_key_UNCHANGED": "G2-ELEC-057=A"
+      },
+      "source_locator": "G2-ELEC-057:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "history": "G2-ELEC-057:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A randamentul η=P_utilă/P_absorbită cuantifică fracția energiei sau puterii de intrare convertită util.",
+        "B": "B P_absorbită/pierderi nu reprezintă eficiența și poate depăși 1.",
+        "C": "C U/I are unitatea Ω, incompatibilă cu raportul adimensional η.",
+        "model_scope_or_trap": "Pentru echipament pasiv uzual 0≤η≤1, iar pierderile explică diferența dintre intrare și ieșire.",
+        "reformulated_question": "Un aparat absoarbe 100 W și livrează util 80 W. Ce randament are?",
+        "reformulated_solution": "80%.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0532",
+      "grade_ids": [
+        "G2-ELEC-058"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Pierderile Joule într-un conductor cresc cu:",
+        "A": "I²·R",
+        "B": "I/R",
+        "C": "U/R²",
+        "imported_key_UNCHANGED": "G2-ELEC-058=A"
+      },
+      "source_locator": "G2-ELEC-058:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "history": "G2-ELEC-058:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A pierderea Joule în conductor este P_J=I²R la curent și rezistență date.",
+        "B": "B I/R are unități A/Ω și nu exprimă puterea termică.",
+        "C": "C U/R² are unități incompatibile cu W și nu este legea Joule.",
+        "model_scope_or_trap": "Dublarea curentului cu rezistența constantă multiplică pierderea de patru ori.",
+        "reformulated_question": "Câtă căldură disipă un fir R=2 Ω parcurs de 3 A?",
+        "reformulated_solution": "18 W.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0533",
+      "grade_ids": [
+        "G2-ELEC-059"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Într-o linie electrică, creșterea tensiunii pentru aceeași putere transmisă determină, ideal, un curent:",
+        "A": "mai mic",
+        "B": "mai mare de patru ori",
+        "C": "neschimbat obligatoriu",
+        "imported_key_UNCHANGED": "G2-ELEC-059=A"
+      },
+      "source_locator": "G2-ELEC-059:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "history": "G2-ELEC-059:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A pentru aceeași putere transferată și același factor de putere, mărirea tensiunii reduce curentul de linie.",
+        "B": "B «mai mare de patru ori» contrazice relația inversă a curentului cu tensiunea.",
+        "C": "C «neschimbat obligatoriu» nu permite acoperirea aceleiași puteri la U mai mare în modelul ideal.",
+        "model_scope_or_trap": "Dacă P, topologia și cosφ rămân fixe, I∝1/U; pierderile I²R scad când I se reduce.",
+        "reformulated_question": "Dacă dublezi U și păstrezi aceeași putere și cosφ, cât devine I?",
+        "reformulated_solution": "Jumătate.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0534",
+      "grade_ids": [
+        "G2-ELEC-060"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Un wattmetru este destinat măsurării:",
+        "A": "puterii electrice",
+        "B": "rezistenței de izolație exclusiv",
+        "C": "frecvenței exclusiv",
+        "imported_key_UNCHANGED": "G2-ELEC-060=A"
+      },
+      "source_locator": "G2-ELEC-060:https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "history": "G2-ELEC-060:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A wattmetrul este instrumentul destinat măsurării puterii electrice, în special a celei active.",
+        "B": "B rezistența de izolație cere un tester dedicat și nu este măsurarea exclusivă a unui wattmetru.",
+        "C": "C măsurarea frecvenței este scopul frecvențmetrului, nu al wattmetrului.",
+        "model_scope_or_trap": "Instrumentele multifuncționale pot integra mai multe măsurări; întrebare despre funcția principală.",
+        "reformulated_question": "Ce aparat alegi pentru măsurarea puterii active a unui receptor?",
+        "reformulated_solution": "Wattmetru.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0535",
+      "grade_ids": [
+        "G2-ELEC-061"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Un frecvențmetru este destinat măsurării:",
+        "A": "frecvenței",
+        "B": "rezistenței",
+        "C": "inductanței",
+        "imported_key_UNCHANGED": "G2-ELEC-061=A"
+      },
+      "source_locator": "G2-ELEC-061:https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "history": "G2-ELEC-061:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A frecvențmetrul este folosit pentru determinarea frecvenței în Hz.",
+        "B": "B măsurarea rezistenței se face cu ohmmetrul, altă funcție.",
+        "C": "C inductanța se măsoară prin alte metode/metre LCR, nu prin frecvențmetru simplu.",
+        "model_scope_or_trap": "Nu confunda frecvența rețelei cu valori ale tensiunii și curentului.",
+        "reformulated_question": "La ce mărime te uiți pentru a determina 50 Hz?",
+        "reformulated_solution": "Frecvența.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0536",
+      "grade_ids": [
+        "G2-ELEC-062"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Un megohmetru este utilizat în principal pentru măsurarea:",
+        "A": "rezistenței de izolație la tensiuni de încercare specifice",
+        "B": "puterii active de rețea",
+        "C": "curentului de scurtcircuit al rețelei",
+        "imported_key_UNCHANGED": "G2-ELEC-062=A"
+      },
+      "source_locator": "G2-ELEC-062:https://www.fluke.com/en/learn/blog/electrical/how-to-choose-an-insulation-resistance-tester",
+      "history": "G2-ELEC-062:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A megohmetrul verifică rezistența de izolație prin tensiune de încercare selectată pentru obiectul testat.",
+        "B": "B puterea activă de rețea se determină cu wattmetru/analizor, nu cu megohmetrul.",
+        "C": "C curentul de scurtcircuit al rețelei nu este măsurarea de bază a megohmetrului.",
+        "model_scope_or_trap": "Testarea izolației trebuie făcută în condiții sigure și conform echipamentului, fără tensiune externă.",
+        "reformulated_question": "Ce mărime indică în MΩ un aparat de testare a izolației?",
+        "reformulated_solution": "Rezistența de izolație.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0537",
+      "grade_ids": [
+        "G2-ELEC-063"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "La măsurarea unei tensiuni cu multimetrul, selectarea domeniului trebuie să fie:",
+        "A": "adecvată valorii estimate și categoriei de măsurare",
+        "B": "întotdeauna cea mai mică posibilă",
+        "C": "aleasă fără conectarea sondelor",
+        "imported_key_UNCHANGED": "G2-ELEC-063=A"
+      },
+      "source_locator": "G2-ELEC-063:Source scientific/technical references in CKPT216",
+      "history": "G2-ELEC-063:CKPT_216_GFR_15_P1_ELECTROTECHNICS_MODEL_AND_TRAPS_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A domeniul și categoria CAT trebuie adaptate tensiunii estimate și mediului de măsurare.",
+        "B": "B alegerea întotdeauna a celui mai mic domeniu poate supraîncărca instrumentul sau duce la eroare.",
+        "C": "C selectarea domeniului înainte de conectarea sondelor poate fi o practică bună, însă singură nu asigură domeniul/CAT corect.",
+        "model_scope_or_trap": "HOLD: C descrie o condiție procedurală plauzibilă, nu domeniul adecvat; poate fi adevărată alături de A dacă enunțul este citit larg.",
+        "reformulated_question": "Ce două caracteristici trebuie verificate când alegi domeniul unui multimetru pentru tensiune?",
+        "reformulated_solution": "Valoarea estimată și categoria CAT.",
+        "editorial_disposition": "SOURCE_SEMANTICS_HOLD",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false,
+        "semantic_source_model_hold": true
+      }
+    },
+    {
+      "unit_id": "QABC-0538",
+      "grade_ids": [
+        "G2-ELEC-064"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Simbolul electric pentru rezistență este în mod uzual:",
+        "A": "R",
+        "B": "C",
+        "C": "L",
+        "imported_key_UNCHANGED": "G2-ELEC-064=A"
+      },
+      "source_locator": "G2-ELEC-064:https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+      "history": "G2-ELEC-064:CKPT_248_GFR_15_G2_PROVENANCE_AND_PROTECTION_2026_11_19.md|CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A litera R este simbolul uzual al rezistenței electrice în ecuații, de exemplu R=U/I.",
+        "B": "B C este simbolul uzual al capacității, nu al rezistenței.",
+        "C": "C L este simbolul uzual al inductanței, nu al rezistenței.",
+        "model_scope_or_trap": "Nu confunda simbolul mărimii R cu unitatea ei Ω.",
+        "reformulated_question": "Ce simbol se folosește în legea lui Ohm pentru rezistență?",
+        "reformulated_solution": "R.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0539",
+      "grade_ids": [
+        "G2-ELEC-065"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Simbolul uzual pentru inductanță este:",
+        "A": "L",
+        "B": "R",
+        "C": "G",
+        "imported_key_UNCHANGED": "G2-ELEC-065=A"
+      },
+      "source_locator": "G2-ELEC-065:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "history": "G2-ELEC-065:CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A inductanța este notată uzual L și se măsoară în henry H.",
+        "B": "B R notează rezistența, nu inductanța.",
+        "C": "C G notează conductanța, nu inductanța.",
+        "model_scope_or_trap": "Simbolul mărimii L este diferit de simbolul unității H.",
+        "reformulated_question": "Ce mărime exprimă L în X_L=2πfL?",
+        "reformulated_solution": "Inductanța.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0540",
+      "grade_ids": [
+        "G2-ELEC-066"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+        "source_row": "1",
+        "stem": "Simbolul uzual pentru capacitate este:",
+        "A": "C",
+        "B": "L",
+        "C": "I",
+        "imported_key_UNCHANGED": "G2-ELEC-066=A"
+      },
+      "source_locator": "G2-ELEC-066:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "history": "G2-ELEC-066:CKPT_249_GFR_12_AUTHORED_QABC_AND_V64_PROVENANCE_CORRECTION_2026_11_19.md",
+      "editorial_draft": {
+        "A": "A capacitatea electrică are simbolul uzual C, cu unitatea farad F.",
+        "B": "B L notează inductanța, nu capacitatea.",
+        "C": "C I notează curentul electric, nu capacitatea.",
+        "model_scope_or_trap": "C pentru capacitate nu trebuie confundat cu coulombul (C) ca unitate de sarcină.",
+        "reformulated_question": "Ce reprezintă C în relația Q=C·U?",
+        "reformulated_solution": "Capacitatea electrică.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "CONCEPTUAL_TECH_SOURCE_NOT_OFFICIAL_EXAM_KEY",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0541",
+      "grade_ids": [
+        "G2-LEG-067"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "113",
+        "stem": "Care dintre următoarele este prevăzută de ANRE ca document pentru solicitarea autorizării?",
+        "A": "Cererea de autorizare completată electronic pe portalul ANRE sau în PCUe",
+        "B": "Doar o cerere scrisă depusă fizic la ANRE",
+        "C": "Doar recomandarea angajatorului",
+        "imported_key_UNCHANGED": "G2-LEG-067=A"
+      },
+      "source_locator": "G2-LEG-067:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-067:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A cererea de autorizare electronică prin portalul ANRE/PCUe este înscrisă în art.17(1)(a) și art.21.",
+        "B": "B «doar depusă fizic» exclude căile electronice expres prevăzute și nu este răspunsul cerut.",
+        "C": "C recomandarea angajatorului nu înlocuiește cererea legală de autorizare.",
+        "model_scope_or_trap": "A se distinge cererea pentru prima autorizare de cererea pentru vizare; fiecare are documentație proprie.",
+        "reformulated_question": "Unde poate fi completată electronic cererea de autorizare?",
+        "reformulated_solution": "Portal ANRE sau PCUe.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0542",
+      "grade_ids": [
+        "G2-LEG-068"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "114",
+        "stem": "Care dintre documentele următoare este indicat de ANRE în dosarul de autorizare?",
+        "A": "Copia actului de identitate",
+        "B": "Doar permisul de conducere",
+        "C": "Doar certificatul medical",
+        "imported_key_UNCHANGED": "G2-LEG-068=A"
+      },
+      "source_locator": "G2-LEG-068:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-068:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A copia actului de identitate figurează în lista documentelor dosarului de autorizare, art.17.",
+        "B": "B doar permisul de conducere nu înlocuiește automat actul de identitate cerut în dosar.",
+        "C": "C doar certificatul medical nu reprezintă dovada de identitate prevăzută.",
+        "model_scope_or_trap": "Lista dosarului are mai multe documente, nu se reduce la un singur act.",
+        "reformulated_question": "Este suficientă numai o fotografie cu permisul auto pentru dosarul de autorizare?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0543",
+      "grade_ids": [
+        "G2-LEG-069"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "115",
+        "stem": "Ce document trebuie să ateste calificarea profesională, conform informațiilor ANRE privind autorizarea?",
+        "A": "Certificatele sau diplomele care atestă calificarea profesională",
+        "B": "Doar o declarație verbală",
+        "C": "Doar o recomandare de la un electrician autorizat",
+        "imported_key_UNCHANGED": "G2-LEG-069=A"
+      },
+      "source_locator": "G2-LEG-069:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-069:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A diplomele și certificatele profesionale recunoscute sunt documentele pentru atestarea calificării, art.17/14.",
+        "B": "B declarația verbală nu autentifică calificarea de studii cerută.",
+        "C": "C o recomandare informală de la electrician nu echivalează cu diploma sau certificatul cerut.",
+        "model_scope_or_trap": "Se verifică categoria de calificare și corespondența cu gradul solicitat, nu doar existența diplomei.",
+        "reformulated_question": "Ce document atestă în mod normal calificarea profesională?",
+        "reformulated_solution": "Diploma sau certificatul de calificare.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0544",
+      "grade_ids": [
+        "G2-LEG-070"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "117",
+        "stem": "Cum poate fi dovedită experiența profesională, acolo unde este cazul, conform informațiilor ANRE?",
+        "A": "Prin carnet de muncă sau adeverințe și, după caz, raport/extras din Registrul de evidență a salariaților",
+        "B": "Numai prin declarație verbală",
+        "C": "Numai prin factura de energie electrică",
+        "imported_key_UNCHANGED": "G2-LEG-070=A"
+      },
+      "source_locator": "G2-LEG-070:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-070:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A carnetul de muncă, adeverințele și extrasele din evidența salariaților pot demonstra experiența cerută.",
+        "B": "B doar declarația verbală nu dovedește durată, domeniu și raport de muncă.",
+        "C": "C factura de energie atestă consum/utilizare, nu experiența profesională.",
+        "model_scope_or_trap": "Expresia «acolo unde este cazul» cere verificarea încadrării în categoria educațională și grad.",
+        "reformulated_question": "Ce document poate certifica experiența electrică în locul unei declarații verbale?",
+        "reformulated_solution": "Adeverință de experiență.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0545",
+      "grade_ids": [
+        "G2-LEG-071"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "118",
+        "stem": "Declarația de consimțământ privind colectarea și prelucrarea datelor personale este enumerată de ANRE în documentele pentru autorizare?",
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru verificatori",
+        "imported_key_UNCHANGED": "G2-LEG-071=A"
+      },
+      "source_locator": "G2-LEG-071:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-071:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A declarația de consimțământ pentru prelucrarea datelor personale este enumerată în dosarul solicitat.",
+        "B": "B «Nu» neagă un document înscris expres în lista pentru autorizație.",
+        "C": "C doar pentru verificatori exclude eronat candidații electricieni.",
+        "model_scope_or_trap": "Procedura de protecție a datelor are scop distinct de dovada calificării.",
+        "reformulated_question": "Este declarația de prelucrare a datelor una dintre componentele dosarului electricianului?",
+        "reformulated_solution": "Da.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0546",
+      "grade_ids": [
+        "G2-LEG-072"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "119",
+        "stem": "Ce dovadă financiară este enumerată în dosarul de autorizare?",
+        "A": "Copia chitanței de achitare a tarifului pentru autorizare",
+        "B": "Extrasul de cont al angajatorului",
+        "C": "Factura de energie electrică a locuinței",
+        "imported_key_UNCHANGED": "G2-LEG-072=A"
+      },
+      "source_locator": "G2-LEG-072:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-072:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A dovada achitării tarifului de autorizare figurează între documentele cerute, art.17.",
+        "B": "B extrasul de cont al angajatorului nu dovedește singur plata tarifului specific.",
+        "C": "C factura electrică personală nu este chitanța de tarif de autorizare.",
+        "model_scope_or_trap": "Nu confunda dovada plății autorizării cu plata cursului de perfecționare.",
+        "reformulated_question": "Ce plată trebuie documentată în dosarul ANRE?",
+        "reformulated_solution": "Tariful de autorizare.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0547",
+      "grade_ids": [
+        "G2-LEG-073"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "122",
+        "stem": "Pentru acceptarea dosarului de autorizare, cererea trebuie să fie însoțită de toate documentele cerute de regulament?",
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar de actul de identitate",
+        "imported_key_UNCHANGED": "G2-LEG-073=A"
+      },
+      "source_locator": "G2-LEG-073:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-073:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A dosarul trebuie să conțină cumulativ documentele prevăzute de regulament, art.29(b).",
+        "B": "B «Nu» contrazice condițiile cumulative de acceptare la examen.",
+        "C": "C doar actul de identitate este insuficient când sunt cerute și alte dovezi.",
+        "model_scope_or_trap": "Condițiile de experiență și calificare se analizează separat, conform categoriei solicitantului.",
+        "reformulated_question": "Poate fi acceptat dosarul fără toate documentele obligatorii?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0548",
+      "grade_ids": [
+        "G2-LEG-074"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "124",
+        "stem": "Acceptarea dosarului de autorizare presupune și demonstrarea experienței profesionale minime, în conformitate cu cerințele regulamentului?",
+        "A": "Da",
+        "B": "Nu",
+        "C": "Numai pentru Gradul I",
+        "imported_key_UNCHANGED": "G2-LEG-074=A"
+      },
+      "source_locator": "G2-LEG-074:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-074:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A experiența minimă se dovedește conform gradului, studiilor și art.16/anexelor aplicabile.",
+        "B": "B negarea oricărei experiențe ignoră cerințele gradului pentru categoriile relevante.",
+        "C": "C «numai gradul I» exclude alte grade ce pot avea cerințe de experiență.",
+        "model_scope_or_trap": "Nu inventa aceeași vechime numerică pentru fiecare candidat și grad.",
+        "reformulated_question": "Este corect să presupui că toți candidații au același minim de ani?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0549",
+      "grade_ids": [
+        "G2-LEG-075"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "129",
+        "stem": "Examenele de autorizare a electricienilor se organizează, de regulă, de câte ori pe an?",
+        "A": "De două ori pe an",
+        "B": "O singură dată la cinci ani",
+        "C": "În fiecare lună, obligatoriu",
+        "imported_key_UNCHANGED": "G2-LEG-075=A"
+      },
+      "source_locator": "G2-LEG-075:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-075:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A regulamentul precizează că sesiunile de examinare se organizează, de regulă, de două ori anual.",
+        "B": "B un examen la cinci ani confundă sesiunile cu intervalul de vizare.",
+        "C": "C un examen obligatoriu în fiecare lună nu este regula din anexă.",
+        "model_scope_or_trap": "«De regulă» nu garantează exact două sesiuni în orice situație administrativă.",
+        "reformulated_question": "Care este frecvența obișnuită a sesiunilor ANRE?",
+        "reformulated_solution": "De două ori pe an.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0550",
+      "grade_ids": [
+        "G2-LEG-076"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "132",
+        "stem": "La ce interval este prevăzută vizarea periodică a autorizației de electrician?",
+        "A": "O dată la cinci ani",
+        "B": "Lunar",
+        "C": "O dată la zece ani",
+        "imported_key_UNCHANGED": "G2-LEG-076=A"
+      },
+      "source_locator": "G2-LEG-076:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-076:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A vizarea periodică a autorizației este prevăzută la cinci ani de la emitere/ultima vizare.",
+        "B": "B perioada lunară nu este termenul legal de vizare.",
+        "C": "C intervalul de zece ani depășește cel prevăzut de regulament.",
+        "model_scope_or_trap": "Autorizația poate avea caracter definitiv, dar exercitarea activităților este condiționată de vizare la termen.",
+        "reformulated_question": "Dacă ultima vizare a fost în 2022, când se împlinește termenul de cinci ani?",
+        "reformulated_solution": "În 2027.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0551",
+      "grade_ids": [
+        "G2-LEG-077"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "137",
+        "stem": "Pentru vizarea periodică a autorizației de electrician, ANRE enumeră dovada absolvirii în ultimele 12 luni a unui curs de pregătire teoretică de minimum: ",
+        "A": "20 de ore",
+        "B": "2 ore",
+        "C": "100 de ore",
+        "imported_key_UNCHANGED": "G2-LEG-077=A"
+      },
+      "source_locator": "G2-LEG-077:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-077:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A cursul de pregătire teoretică pentru vizare are durată de minimum 20 ore și trebuie absolvit în ultimele 12 luni.",
+        "B": "B 2 ore nu ating minimul prevăzut de art.30/34.",
+        "C": "C 100 ore depășesc minimul, dar nu sunt minimul legal cerut în enunț.",
+        "model_scope_or_trap": "Un curs de 100 ore ar putea satisface cerința de durată, însă nu redefinește pragul de 20 ore.",
+        "reformulated_question": "Este suficient un curs de 15 ore pentru cerința minimă de vizare?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0552",
+      "grade_ids": [
+        "G2-LEG-078"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "139",
+        "stem": "Ce se întâmplă dacă autorizația de electrician nu este vizată până la termenul de vizare?",
+        "A": "Titularul nu are dreptul să desfășoare activități de proiectare, executare și verificare până la vizare",
+        "B": "Autorizația se transformă automat în Gradul I",
+        "C": "Nu există nicio consecință",
+        "imported_key_UNCHANGED": "G2-LEG-078=A"
+      },
+      "source_locator": "G2-LEG-078:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-078:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A lipsa vizării la termen suspendă dreptul de a desfășura activitățile reglementate până la vizare.",
+        "B": "B nu se transformă automat gradul în I prin expirarea vizării.",
+        "C": "C afirmația că nu există consecințe contrazice art.30(3).",
+        "model_scope_or_trap": "Dreptul de practică și existența autorizației sunt două concepte distincte.",
+        "reformulated_question": "Poate titularul să continue lucrările autorizate după expirarea vizării, fără remediere?",
+        "reformulated_solution": "Nu.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0553",
+      "grade_ids": [
+        "G2-LEG-079"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "133",
+        "stem": "Autorizația de electrician este valabilă numai în concordanță cu ce evidență a autorității competente?",
+        "A": "Registrul electronic de evidență",
+        "B": "Registrul auto",
+        "C": "Registrul comerțului al angajatorului, exclusiv",
+        "imported_key_UNCHANGED": "G2-LEG-079=A"
+      },
+      "source_locator": "G2-LEG-079:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-079:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A registrul electronic al ANRE este evidența oficială a autorizațiilor și concordanța cu acesta contează la valabilitate.",
+        "B": "B registrul de înmatriculare auto este complet străin autorizațiilor electrice.",
+        "C": "C registrul comerțului al angajatorului nu înlocuiește registrul regulatorului.",
+        "model_scope_or_trap": "Autorizația este personală și documentul de identitate este relevant; nu confunda evidența ANRE cu evidența societății.",
+        "reformulated_question": "Care registru ține evidența oficială a autorizațiilor electricienilor?",
+        "reformulated_solution": "Registrul electronic ANRE.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0554",
+      "grade_ids": [
+        "G2-LEG-080"
+      ],
+      "source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "trainer_didactic_text": {
+        "dataset_reference": "Regulamentul pentru autorizarea electricienilor, aprobat prin Ordinul ANRE nr. 66/2023, cu modificările ulterioare",
+        "source_row": "205",
+        "stem": "Prin ce mijloace poate solicita solicitantul înregistrarea la ANRE a documentelor prevăzute în regulament?",
+        "A": "Prin portalul autorității competente sau prin încărcare în platforma PCUe",
+        "B": "Numai prin telefon",
+        "C": "Numai prin mesaj SMS",
+        "imported_key_UNCHANGED": "G2-LEG-080=A"
+      },
+      "source_locator": "G2-LEG-080:https://legislatie.just.ro/Public/DetaliiDocumentAfis/288046;https://legislatie.just.ro/Public/DetaliiDocument/305643",
+      "history": "G2-LEG-080:CKPT_224_GFR_15_G2_LEG_REGULAMENT_66_2023_2026_FEES_2026_11_18.md",
+      "editorial_draft": {
+        "A": "A documentele prevăzute se pot depune prin portalul autorității sau platforma PCUe, art.21.",
+        "B": "B telefonul singur nu este canalul formal pentru încărcarea actelor cerute.",
+        "C": "C SMS nu poate suplini mecanismul de depunere a documentelor.",
+        "model_scope_or_trap": "Regulile pentru autorizare și vizare au articole dedicate; se utilizează canalele electronice prevăzute.",
+        "reformulated_question": "Care două căi electronice sunt enumerate pentru depunerea documentelor?",
+        "reformulated_solution": "Portal ANRE ori PCUe.",
+        "editorial_disposition": "PROVISIONAL_TRAINER_UNOFFICIAL_SOURCE_LINKED_EXPLANATION",
+        "source_edition_check": "PORTAL_LEGISLATIV_2024_CONSOLIDATED_2026_EDITION_NOT_CERTIFIED",
+        "qualified_electrical_independent_review": "NOT_RUN",
+        "linguistic_independent_review": "NOT_RUN",
+        "official_exam_scoring_key": "NOT_AUTHENTICATED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

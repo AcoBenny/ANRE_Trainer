@@ -1,0 +1,15 @@
+# CKPT-431 | ANRE-MC-002 card preparation and reuse
+2026-11-27 | Draft PR #7 | No technical answer revalidation; owner-approved CONSULTFORM keys unchanged.
+
+## Deliverable
+- 305 distinct study-card records, 151 G1 and 154 G2, 104 LEG and 201 NOR.
+- [Card index](CKPT_431_CARD_INDEX_305.json) contains accepted key, grade, workbook row, references, source anchors, historical explanation and provenance. Full local payload `ANRE_CKPT431_study_cards_305.json` (conversation artifact, SHA-256 c4440610ab6425ac85bd1eb569ff0c47e696b69e9f3bf04a588bae58f4ed5391) retains the full workbook question and alternatives plus original I7 context. Raw proprietary workbooks and full question text are not uploaded to GitHub. Join both by stable id before MC-004; do not regenerate or recheck the keys.
+- 140 legacy exact matches inspected; 49 compatible selected-answer rationales reused; 24 old-key disagreements excluded from automatic explanation reuse and kept as historical evidence; 67 remaining context-only legacy records.
+- 104 distinct questions matched in additional G2 research files, 95 with a matching selected-answer rationale. Combined 144 distinct questions have historical explanatory material; these are explicitly editorial/historical, not source quotations.
+- 167 original I7 source anchors located in owner HTML snapshot (SHA-256 99389c372d898dea067b80a93e1998f93a1b03302812e478de327ff2013d90b7). 81 literal answer-text matches, 86 located without a literal match. Literal matching normalizes case/diacritics/whitespace and is not technical/legal proof. Only 24 of 81 have both adjacent paragraphs available; missing neighbors explicitly null, not fabricated. Original text extraction removes collapsed UI placeholders and normalizes whitespace. Source excerpt edition is the owner snapshot, not certified current-2026 text.
+- Exclusive card statuses: 81 source literal match; 86 source located without highlight; 71 historical rationale without original source anchor; 66 reference only; 1 reference missing. 238/305 have source text or historical rationale; 67 have only workbook question/answer and reference or missing-reference flag. 304/305 workbook references retained. CF-LEGISLATIE-056 lacks reference.
+- Remaining sources are not falsely represented as original law/normative paragraphs. Do not treat a historical rationale as independently verified. Missing source paragraphs can be enriched if the actual documents are supplied, without reopening question-key validation.
+- Local structural QA: 305 unique IDs; 0 discrepancies in Q/A/B/C, accepted answer or reference against staging; original grade distribution retained. No HTML/APK build/runtime QA; no merge/release; no paid Actions.
+
+## Next
+MC-002 DONE for the specified card preparation/index and explicit source-gap disposition. MC-003 blocked on Electrotechnics workbook. MC-004 candidate HTML/APK integration of 305 existing cards can proceed in scope, preserving missing-source flags. Full bank integration and release await MC-003 and MC-005 plus owner acceptance. Do not redo MC-001 or MC-002 without a documented new source or defect.

@@ -1,0 +1,662 @@
+{
+  "schema": "v194_ckpt242_15_full_ABC_cautions_one_strict_source_version_mismatch",
+  "date": "2026-11-20",
+  "parent_head": "fb4dbdeffa38695d7fecd279821cbb2b8bfab5ca",
+  "ckpt242_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+  "v193_blob_sha": "68c4432bfd90093049c4598636a0b39039d5e9f6",
+  "v175_blob_sha": "06b7be03b6bfece9d332f804f1be79e8347711ba",
+  "counts": {
+    "new_unique_qabc": 15,
+    "grade_routes": 30,
+    "option_rationales": 45,
+    "pedagogical_reformulations": 15,
+    "strict_original_variant_diff": 1,
+    "new_semantic_hold_candidates": 5,
+    "learner_approved": 0
+  },
+  "holds": [
+    {
+      "unit_id": "QABC-0234",
+      "reason": "HOLD_PF_ONE_NOT_NECESSARILY_PURE_R"
+    },
+    {
+      "unit_id": "QABC-0236",
+      "reason": "HOLD_STRICT_SOURCE_VARIANT_AND_CHARGING_NET"
+    },
+    {
+      "unit_id": "QABC-0243",
+      "reason": "HOLD_POINT_CHARGE_MODEL_NOT_STATED"
+    },
+    {
+      "unit_id": "QABC-0246",
+      "reason": "HOLD_ELECTRIC_FLUX_E_VS_D"
+    },
+    {
+      "unit_id": "QABC-0250",
+      "reason": "HOLD_MMP_UNIT_NOTATION"
+    }
+  ],
+  "integrity": "QABC-0236 uses ANRE-hosted original B electromagnetic, while the imported trainer B is electrostatic. Both retained explicitly as conflicting variants, imported B key unchanged. Other 14 original question/ABC exact normalized according to V175/V193. Do not silently replace original QABC, no independent qualified technical/linguistic QA, no authenticated exam scoring keys. This is source-context research and editorial drafts only.",
+  "cards": [
+    {
+      "unit_id": "QABC-0234",
+      "grade_ids": [
+        "G1-ELE-245",
+        "G2-ELEC-381"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "252",
+        "stem": "Un circuit de curent alternativ, pentru care factorul de putere este egal cu 1, este un circuit:",
+        "A": "pur rezistiv",
+        "B": "pur inductiv",
+        "C": "pur capacitiv",
+        "imported_keys_UNCHANGED": "G1-ELE-245=A | G2-ELEC-381=A"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://wiki.analog.com/university/courses/alm1k/circuits1/alm-cir-ac-power-factor",
+        "prior_rationale": "A «pur rezistiv» este modelul intenționat pentru cosφ=1 în regim sinusoidal. B pur inductiv și C pur capacitiv au ideal φ=±90° și PF=0, nu 1. Contraexemplu: o rețea cu rezistențe plus L și C compensate la intrare poate avea PF=1 fără a fi construită exclusiv din rezistențe. Barem A necesită calificare model, nu este universal.",
+        "source_access_2026_11_20": "HISTORICAL_ANALOG_OPENED"
+      },
+      "editorial_draft": {
+        "A": "Într-un circuit pur rezistiv cu regim sinusoidal, tensiunea și curentul sunt în fază, deci factor de putere 1.",
+        "B": "Pentru o inductanță ideală, decalajul de 90° implică factor de putere activă zero, nu unu.",
+        "C": "Pentru condensator ideal, defazajul de 90° în sens opus dă factor de putere activă zero.",
+        "model_scope_or_trap": "PF=1 nu dovedește că există numai rezistențe: un circuit cu L și C compensate poate avea factor de putere unitar la intrare.",
+        "reformulated_question": "Un circuit RLC serie la rezonanță are factor de putere 1. Conține doar rezistență?",
+        "reformulated_solution": "Nu. XL=XC se compensează, deși L și C există.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "HOLD_PF_ONE_NOT_NECESSARILY_PURE_R",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "254",
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare",
+        "imported_keys_UNCHANGED": "G1-ELE-247=B | G2-ELEC-383=B"
+      },
+      "source_variant_conflict": {
+        "anre_hosted_original": {
+          "question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+          "A": "prin conducţie",
+          "B": "prin inducţie electromagnetică",
+          "C": "prin magnetizare"
+        },
+        "trainer": {
+          "question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+          "A": "prin conducţie",
+          "B": "prin inducţie electrostatică",
+          "C": "prin magnetizare"
+        },
+        "fields_matching": {
+          "question": true,
+          "A": true,
+          "B": false,
+          "C": true
+        },
+        "scope": "STRICT_ORIGINAL_VARIANT_HOLD_NOT_LEARNER_APPROVED"
+      },
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction",
+        "prior_rationale": "B inducția electrostatică determină separarea sarcinilor în conductor introdus într-un câmp E. A conducție ar necesita contact, iar C magnetizare privește proprietăți magnetice. Nu înseamnă că un conductor neutru și izolat primește automat sarcină NETĂ: pentru încărcare netă prin inducție e necesar proces auxiliar de împământare sau separare; enunțul confundă potențial polarizarea cu încărcarea netă.",
+        "source_access_2026_11_20": "LIVE_OPENSTAX_ELECTROSTATIC_AND_FARADAY"
+      },
+      "editorial_draft": {
+        "A": "Conducția presupune contact/conexiune sau transfer prin conductor, nu simpla prezență a unui câmp electric extern.",
+        "B": "În varianta TRAINER «prin inducție electrostatică» descrie separarea sarcinilor unui conductor în câmp electric; varianta ORIGINALĂ publicată spune «prin inducție electromagnetică», fenomen distinct fără justificare prin simplul E static.",
+        "C": "Magnetizarea privește configurația magnetică, nu redistribuirea sarcinii electrice de către un câmp E static.",
+        "model_scope_or_trap": "Blocaj strict sursă: B original=«inducţie electromagnetică», B trainer=«inducţie electrostatică». Un conductor izolat poate rămâne neutru net, deși sarcinile se separă.",
+        "reformulated_question": "O sferă metalică izolată neutră este apropiată de un corp încărcat. Ce se schimbă fără contact ori împământare?",
+        "reformulated_solution": "Se redistribuie sarcinile (polarizare electrostatică), dar sarcina totală rămâne zero.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_STRICT_SOURCE_VARIANT_AND_CHARGING_NET",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0237",
+      "grade_ids": [
+        "G1-ELE-248",
+        "G2-ELEC-384"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "255",
+        "stem": "Un întreruptor debroşabil asigură:",
+        "A": "numai protecţia în caz de scurtcircuit;",
+        "B": "protecţia la supratensiuni;",
+        "C": "izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+        "imported_keys_UNCHANGED": "G1-ELE-248=C | G2-ELEC-384=C"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://studylib.net/doc/28010055/iec-62271-200--2021-05-",
+        "prior_rationale": "C exprimă avantajul de a izola întreruptorul debroșabil față de barele sub tensiune în poziție retrasă și condiții de protecție adecvate; A «numai la scurtcircuit» este prea restrictivă; B supratensiunile necesită protecții specifice. Important: debroșarea singură NU certifică absența tensiunii și nu înlocuiește LOTO, punerea la pământ ori verificările și ecranele de protecție. Norma IEC 62271-200 trebuie verificată la ediția și articolul exact.",
+        "source_access_2026_11_20": "HISTORICAL_STANDARD_INDEX_ONLY"
+      },
+      "editorial_draft": {
+        "A": "«Numai scurtcircuit» ignoră alte roluri ale întreruptorului, inclusiv manevra și separarea constructivă.",
+        "B": "Întreruptorul debroșabil singur nu este un descărcător pentru supratensiuni.",
+        "C": "Poziția retrasă permite separarea modulului față de părțile fixe, în cadrul unui ansamblu cu ecrane, interblocări și proceduri adecvate.",
+        "model_scope_or_trap": "C nu este un ordin de lucru: debroșarea nu confirmă automat lipsa tensiunii și nu înlocuiește LOTO, verificarea și împământarea după procedură.",
+        "reformulated_question": "Este suficient să retragi un întreruptor pentru a declara toate compartimentele fără tensiune?",
+        "reformulated_solution": "Nu, trebuie urmate toate procedurile de securitate și verificările necesare.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED_SAFETY_PRECONDITIONS",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0239",
+      "grade_ids": [
+        "G1-ELE-250",
+        "G2-ELEC-385"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "257",
+        "stem": "Un motor electric sincron, care funcţionează subexcitat:",
+        "A": "absoarbe putere activă şi putere reactivă",
+        "B": "absoarbe putere activă şi produce putere reactivă",
+        "C": "produce putere activă şi putere reactivă",
+        "imported_keys_UNCHANGED": "G1-ELE-250=A | G2-ELEC-385=A"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://edurev.in/t/95075/polyphase-synchronous-machines-2",
+        "prior_rationale": "A pentru motor sincron subexcitat operând ca motor: absoarbe putere activă mecanică și reactivă de la rețea (factor de putere inductiv). B pretinde că produce reactivă, caracteristic motorului supraexcitat; C ar descrie funcționare de generator, nu motor. Necesită precizarea regimului, a semnelor și a excitației.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Motorul sincron subexcitat, în regim de motor, absoarbe putere activă pentru a furniza energie mecanică și de regulă putere reactivă inductivă.",
+        "B": "Producerea de putere reactivă este tipică motorului supraexcitat, nu subexcitat.",
+        "C": "Producerea de putere activă indică regim de generator, incompatibil cu «motor» ca regim energetic.",
+        "model_scope_or_trap": "Califică semnul Q, nivelul excitației și faptul că mașina funcționează ca motor, nu ca generator.",
+        "reformulated_question": "Cum se schimbă comportarea reactivă a unui motor sincron când este supraexcitat?",
+        "reformulated_solution": "Poate furniza putere reactivă în rețea, spre deosebire de cazul subexcitat.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_MOTOR_OPERATION",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0240",
+      "grade_ids": [
+        "G1-ELE-251",
+        "G2-ELEC-386"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "258",
+        "stem": "Valoarea conductivităţii electrice este în ordine crescătoare la următoarele materiale:",
+        "A": "aluminiu, argint, cupru",
+        "B": "argint, cupru, aluminiu",
+        "C": "aluminiu, cupru, argint",
+        "imported_keys_UNCHANGED": "G1-ELE-251=C | G2-ELEC-386=C"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://hyperphysics.phy-astr.gsu.edu/hbase/Tables/rstiv.html",
+        "prior_rationale": "C aluminium < copper < silver în conductivitate la ~20°C și materiale de puritate comparabilă. A pune argint înaintea cuprului într-o ordine greșită; B este ordine descrescătoare. Temperatura, aliajul și puritatea trebuie ținute constante pentru comparație.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Aluminiu < argint < cupru inversează ordinea corectă a ultimelor două metale în puritate comparabilă.",
+        "B": "Argint > cupru > aluminiu este ordine descrescătoare, nu crescătoare.",
+        "C": "La temperatură și puritate comparabile, conductivitatea crește aluminiu → cupru → argint.",
+        "model_scope_or_trap": "Nu generaliza la aliaje arbitrare, impurități sau temperaturi diferite.",
+        "reformulated_question": "La circa 20°C pentru metale pure, care are conductivitate mai mare: Cu sau Ag?",
+        "reformulated_solution": "Argintul are conductivitate electrică mai mare decât cuprul.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "QUALIFIED_PURITY_TEMPERATURE",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0241",
+      "grade_ids": [
+        "G1-ELE-252",
+        "G2-ELEC-387"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "259",
+        "stem": "Un număr de n surse  având fiecare tensiunea electromotoare continua e si rezistenta interioara r, legate în paralel pot fi înlocuite printr-o sursa echivalenta având:",
+        "A": "tensiunea electromotoare e si rezistenta r/n",
+        "B": "tensiunea electromotoare ne si rezistentă r/n",
+        "C": "tensiunea electromotoare e si rezistenta nr.",
+        "imported_keys_UNCHANGED": "G1-ELE-252=A | G2-ELEC-387=A"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://openstax.org/books/university-physics-volume-2/pages/10-3-kirchhoffs-rules",
+        "prior_rationale": "A: n surse identice idealizate cu t.e.m. e și rezistență internă r, conectate în paralel cu aceeași polaritate, dau e și r/n. B ne corespunde surselor în serie, C nr inversează rezultatul pentru rezistență. Modelul cere t.e.m. identice și rezistențe identice; altfel pot apărea curenți de circulație.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Pentru n surse identice cu aceeași polaritate în paralel, tensiunea echivalentă rămâne e și rezistența internă devine r/n.",
+        "B": "ne este tensiune echivalentă pentru legare în serie cu aceeași polaritate, nu în paralel.",
+        "C": "nr este rezistența internă pentru n rezistențe în serie, nu în paralel.",
+        "model_scope_or_trap": "Sursele trebuie să aibă aceeași t.e.m. și polaritate; altfel apar curenți de circulație.",
+        "reformulated_question": "Trei surse de 12 V cu r=0,6 Ω identice în paralel: e_eq și r_eq?",
+        "reformulated_solution": "12 V și 0,2 Ω.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_IDENTICAL_PARALLEL_SOURCES",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0242",
+      "grade_ids": [
+        "G1-ELE-253",
+        "G2-ELEC-388"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "260",
+        "stem": "Un receptor electric de rezistenţă R conectat la bornele AB ale unui circuit de alimentare oarecare absoarbe puterea maximă dacă:",
+        "A": "rezistenţa R este egală cu rezistenţa totală a circuitului văzută prin bornele AB",
+        "B": "rezistenţa R este egală cu rezistenţa internă a sursei de tem",
+        "C": "rezistenţa R tinde spre zero",
+        "imported_keys_UNCHANGED": "G1-ELE-253=A | G2-ELEC-388=A"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://www.sciencedirect.com/topics/engineering/maximum-power-transfer-theorem",
+        "prior_rationale": "A: pentru circuit liniar cu rezistență Thevenin Rth pozitivă și sarcină rezistivă R, puterea pe sarcină se maximizează la R=Rth. B rezistența «internă a sursei» nu descrie neapărat întreaga rețea văzută la borne AB, C R→0 anulează puterea pe sarcină în modelul Thevenin cu Rth>0. Pentru impedanță complexă condiția de conjugare este diferită.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Pentru echivalent Thevenin cu Rth>0 și sarcină pur rezistivă, puterea sarcinii este maximă la R=Rth.",
+        "B": "Rezistența internă a unei singure surse poate diferi de rezistența totală văzută din AB într-o rețea complexă.",
+        "C": "La R→0, în model Thevenin cu Rth>0, puterea pe sarcină tinde la zero, nu la maxim.",
+        "model_scope_or_trap": "Condiția trebuie raportată la rezistența Thevenin din borne, nu la o sursă selectată arbitrar; pentru AC complex apare conjugarea impedanței.",
+        "reformulated_question": "Dacă Vth=10 V și Rth=5 Ω, care R maximizează puterea într-o sarcină rezistivă?",
+        "reformulated_solution": "R=5 Ω.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED_THEVENIN_LINEAR",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0243",
+      "grade_ids": [
+        "G1-ELE-254",
+        "G2-ELEC-389"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "261",
+        "stem": "Valoarea intensităţii câmpului electric produs de o sarcină electrică la distanţa r este:",
+        "A": "direct proporţională cu r",
+        "B": "direct proporţională cu pătratul lui r",
+        "C": "invers proporţională cu pătratul lui r",
+        "imported_keys_UNCHANGED": "G1-ELE-254=C | G2-ELEC-389=C"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://openstax.org/books/university-physics-volume-2/pages/5-3-coulombs-law",
+        "prior_rationale": "C pentru o sarcină PUNCTUALĂ în mediu omogen: E=k|q|/r². A și B ar face E crescător cu distanța, contrar legii Coulomb. Enunțul spune numai «o sarcină electrică», nu precizează punctuală, geometria ori mediul, astfel C cere modelul sursei punctuale și nu este universal pentru orice distribuție extinsă.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Pentru o sarcină punctiformă, E nu crește liniar cu distanța r.",
+        "B": "Nici o creștere pătratică a câmpului nu rezultă din legea Coulomb pentru sursa punctuală.",
+        "C": "Pentru sursă punctiformă într-un mediu omogen, E=k|q|/r².",
+        "model_scope_or_trap": "Enunțul nu precizează «punctiformă»; distribuțiile extinse (de exemplu plan ideal infinit) au alte dependențe de r.",
+        "reformulated_question": "Cum variază E când distanța se dublează față de o sarcină punctiformă izolată?",
+        "reformulated_solution": "E scade de patru ori, în același mediu.",
+        "candidate_imported_key_UNCHANGED": "C",
+        "editorial_disposition": "HOLD_POINT_CHARGE_MODEL_NOT_STATED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0244",
+      "grade_ids": [
+        "G1-ELE-255",
+        "G2-ELEC-390"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "262",
+        "stem": "Un transformator de măsurare de curent nu poate fi lăsat cu secundarul în gol, deoarece:",
+        "A": "împiedica circulaţia curentului primar",
+        "B": "apar supratensiuni periculoase in secundar",
+        "C": "nu indica aparatele de măsurare",
+        "imported_keys_UNCHANGED": "G1-ELE-255=B | G2-ELEC-390=B"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://www.se.com/us/en/faqs/FA125574/",
+        "prior_rationale": "B: secundarul deschis al transformatorului de curent convențional, când prin primar circulă curent, poate dezvolta tensiuni periculoase. A nu oprește automat curentul primar; C absența indicației e efect secundar, nu explicația de securitate. Nu se manevrează fără procedură și personal calificat.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Secundarul deschis nu întrerupe obligatoriu curentul prin circuitul primar al transformatorului de curent.",
+        "B": "Cu primarul străbătut de curent, secundarul deschis poate dezvolta supratensiuni periculoase.",
+        "C": "Lipsa indicației aparatelor poate surveni, dar nu este explicația esențială pentru interdicția de securitate.",
+        "model_scope_or_trap": "Se referă la TC convențional; nu este procedură de manevră. Securizarea secundarului cere personal autorizat și proceduri dedicate.",
+        "reformulated_question": "De ce este periculoasă deschiderea secundarului unui TC convențional când primarul conduce curent?",
+        "reformulated_solution": "Din cauza tensiunilor periculoase ce pot apărea în secundar.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED_CT_SAFETY",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0245",
+      "grade_ids": [
+        "G1-ELE-256",
+        "G2-ELEC-391"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "263",
+        "stem": "Unitatea de măsură a capacităţii unui condensator este:",
+        "A": "F",
+        "B": "Axh",
+        "C": "A/h",
+        "imported_keys_UNCHANGED": "G1-ELE-256=A | G2-ELEC-391=A"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "prior_rationale": "A: capacitate în farazi F = C/V. B A·h reprezintă sarcină electrică, nu capacitate; C A/h are unități diferite.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Faradul este unitatea SI a capacității C=Q/U.",
+        "B": "A·h este o unitate de sarcină electrică, 1 Ah=3600 C, nu capacitate.",
+        "C": "A/h exprimă variația curentului în timp, nu capacitate.",
+        "model_scope_or_trap": "Nu confunda amper-oră cu farad; capacitatea raportează sarcina la tensiune.",
+        "reformulated_question": "Un condensator cu Q=2 C la U=4 V are capacitatea?",
+        "reformulated_solution": "0,5 F.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0246",
+      "grade_ids": [
+        "G1-ELE-257",
+        "G2-ELEC-392"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "264",
+        "stem": "Unitatea de măsură a fluxului electric este:",
+        "A": "V/m",
+        "B": "Coulombul",
+        "C": "Faradul",
+        "imported_keys_UNCHANGED": "G1-ELE-257=B | G2-ELEC-392=B"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://sathee.iitk.ac.in/sathee-jee/article/physics/physics-electric-flux/",
+        "prior_rationale": "B coulomb este compatibil cu fluxul deplasării electrice ∫D·dA. Însă fluxul vectorului câmpului electric ΦE=∫E·dA are unitatea N·m²/C sau V·m, NU coulomb. A V/m este intensitatea E, C farad este capacitatea. Enunțul «flux electric» fără precizarea D ori E este semantic ambiguu între definiții. NU certifica B universal și NU schimba baremul.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "V/m exprimă intensitatea câmpului E, nu fluxul lui D și nici fluxul lui E.",
+        "B": "Coulomb este unitatea fluxului deplasării electrice ΦD=∫D·dA; nu a fluxului electric ΦE=∫E·dA, care are V·m.",
+        "C": "Faradul este unitatea capacității, nu a fluxului electric.",
+        "model_scope_or_trap": "Termenul «flux electric» este ambiguu: fluxul E are unități N·m²/C, în timp ce fluxul D are C. B este condiționat de convenția D.",
+        "reformulated_question": "Pentru ∫D·dA, ce unitate rezultă când D se măsoară în C/m²?",
+        "reformulated_solution": "Coulomb; pentru ∫E·dA unitatea este V·m.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "HOLD_ELECTRIC_FLUX_E_VS_D",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0247",
+      "grade_ids": [
+        "G1-ELE-258",
+        "G2-ELEC-393"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "265",
+        "stem": "Unitatea de măsură a fluxului magnetic este:",
+        "A": "Tesla",
+        "B": "Weber",
+        "C": "Farad",
+        "imported_keys_UNCHANGED": "G1-ELE-258=B | G2-ELEC-393=B"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "prior_rationale": "B: flux magnetic Φ se măsoară în weber Wb = V·s. A tesla măsoară inducție magnetică B = Wb/m², C farad capacitatea electrică.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Tesla (T) măsoară inducția magnetică B, adică Wb/m².",
+        "B": "Weber (Wb) măsoară fluxul magnetic Φ=∫B·dA.",
+        "C": "Farad (F) este unitatea capacității electrice.",
+        "model_scope_or_trap": "Fluxul și inducția magnetică nu sunt aceeași mărime, deși sunt legate prin integrarea pe suprafață.",
+        "reformulated_question": "Câmp uniform B=2 T perpendicular pe A=3 m². Ce flux este?",
+        "reformulated_solution": "6 Wb.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0248",
+      "grade_ids": [
+        "G1-ELE-259",
+        "G2-ELEC-394"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "266",
+        "stem": "Unitatea de măsură a frecvenţei mărimilor periodice se numeşte:",
+        "A": "Weber",
+        "B": "Hertz",
+        "C": "Henry",
+        "imported_keys_UNCHANGED": "G1-ELE-259=B | G2-ELEC-394=B"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "prior_rationale": "B: frecvența periodică f=1/T se măsoară în hertz Hz=s^-1. A weber măsoară flux magnetic, C henry inductanță.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Weber măsoară fluxul magnetic, nu frecvența.",
+        "B": "Hertz este unitatea SI pentru f=1/T, adică s^-1.",
+        "C": "Henry măsoară inductanța, nu frecvența.",
+        "model_scope_or_trap": "Frecvența este inversa perioadei, nu amplitudine, flux ori inductanță.",
+        "reformulated_question": "Ce frecvență are un semnal de perioadă 20 ms?",
+        "reformulated_solution": "50 Hz.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0249",
+      "grade_ids": [
+        "G1-ELE-260",
+        "G2-ELEC-395"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "267",
+        "stem": "Unitatea de măsură a sarcinii electrice este:",
+        "A": "V/m",
+        "B": "Coulomb",
+        "C": "Farad",
+        "imported_keys_UNCHANGED": "G1-ELE-260=B | G2-ELEC-395=B"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+        "prior_rationale": "B: sarcina electrică q este măsurată în coulomb C=A·s. A V/m intensitatea câmpului electric, C farad capacitate.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "V/m este unitate pentru intensitatea câmpului electric.",
+        "B": "Coulomb este unitatea sarcinii electrice, 1 C=1 A·s.",
+        "C": "Farad este unitatea capacității electrice.",
+        "model_scope_or_trap": "Faptul că ambele C și F folosesc simboluri scurte nu le face aceeași mărime.",
+        "reformulated_question": "Câtă sarcină trece dacă I=2 A timp de 3 s constant?",
+        "reformulated_solution": "6 C.",
+        "candidate_imported_key_UNCHANGED": "B",
+        "editorial_disposition": "QUALIFIED",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0250",
+      "grade_ids": [
+        "G1-ELE-261",
+        "G2-ELEC-396"
+      ],
+      "original": {
+        "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+        "source_row": "268",
+        "stem": "Unitatea de măsură ohm x mmp / m este pentru:",
+        "A": "rezistivitate",
+        "B": "greutate specifica",
+        "C": "coeficient de dilataţie",
+        "imported_keys_UNCHANGED": "G1-ELE-261=A | G2-ELEC-396=A"
+      },
+      "source_variant_conflict": null,
+      "historic": {
+        "source_checkpoint": "CKPT_242_GFR_15_P2_SI_UNITS_AND_ELECTRICAL_MODELS_2026_11_19.md",
+        "source_blob_sha": "4e04bfb0e571a194bbe1304026bb045bbae36920",
+        "source_reference": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+        "prior_rationale": "A: din R=ρl/A rezultă ρ=RA/l, deci unitatea practică Ω·mm²/m. B greutatea specifică are unități N/m³, C coeficientul de dilatație K^-1. Notația canonică «mmp» probabil mm pătrat, necesită păstrarea literală și clarificare în fișa sursei.",
+        "source_access_2026_11_20": "HISTORICAL_SOURCE"
+      },
+      "editorial_draft": {
+        "A": "Din R=ρl/A, rezistivitatea ρ are unitatea practică Ω·mm²/m, ceea ce corespunde probabil expresiei «ohm x mmp / m».",
+        "B": "Greutatea specifică are unități de forță pe volum, de exemplu N/m³, nu Ω·mm²/m.",
+        "C": "Coeficientul de dilatație liniară are unitatea inversă temperaturii, nu Ω·mm²/m.",
+        "model_scope_or_trap": "Notația originală «mmp» necesită clarificare documentară; nu corecta enunțul în banca examenului.",
+        "reformulated_question": "Dacă R=1 Ω, l=10 m și A=2 mm², ce rezistivitate ρ obții în Ω·mm²/m?",
+        "reformulated_solution": "ρ=R·A/l=0,2 Ω·mm²/m.",
+        "candidate_imported_key_UNCHANGED": "A",
+        "editorial_disposition": "HOLD_MMP_UNIT_NOTATION",
+        "technical_review": "SAME_ASSISTANT_ONLY",
+        "independent_professional_reviewer": "NOT_RUN",
+        "independent_linguistic_reviewer": "NOT_RUN",
+        "original_exam_scoring_key": "NOT_AUTHENTICATED",
+        "exact_2026_bibliography": "NOT_VERIFIED",
+        "approved_for_learning": false
+      }
+    }
+  ]
+}

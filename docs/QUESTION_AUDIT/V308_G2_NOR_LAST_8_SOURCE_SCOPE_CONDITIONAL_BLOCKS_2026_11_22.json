@@ -1,0 +1,203 @@
+{
+  "schema": "V308_G2_NORME_8_REMAINDER_FIVE_SOURCE_ONE_ERA_TRAPS_THREE_BLOCKED",
+  "date": "2026-11-22",
+  "cases": [
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0035",
+      "excel_row": 35,
+      "original_stem": "Amplasarea instalaţiilor electrice de conexiuni şi distribuţie în interiorul încăperilor de cabluri: ",
+      "ABC": {
+        "A": "este interzisă, cu unele excepţii",
+        "B": "este permisă întotdeauna",
+        "C": "nu există în prescripţiile energetice o prevedere în acest sens"
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "BLOCKED_SOURCE_SCOPE",
+      "provisional_key": "NOT_ASSIGNED",
+      "scope_or_blocker": "Unrelated installation-in-cable-room object not located in exact-scope user I7; needs relevant technical standard for cable chambers.",
+      "source_reasoning": {
+        "A": "A 'forbidden with certain exceptions' may be intended, but no same-object legal provision opened.",
+        "B": "B 'always permitted' requires proof of universal allowance; unsupported.",
+        "C": "C 'no rule' cannot be accepted without full exact-scope primary technical norm."
+      },
+      "limitation": "Do not infer from generic electric switchboard installations.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0084",
+      "excel_row": 84,
+      "original_stem": "Pentru un circuit trifazat cu patru conductoare de aluminiu cu secţiunea conductoarelor de fază de 35 mm2,  conductorul neutru  are secţiunea minimă de:  ",
+      "ABC": {
+        "A": "16 mm2",
+        "B": "25 mm2",
+        "C": "35 mm2"
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "PROVISIONAL_CONDITIONAL",
+      "provisional_key": "B",
+      "scope_or_blocker": "I7 Annex 5.32 p209 row for 35mm² Al phase -> 25mm² Al N under third harmonics <15% and balanced; §5.2.4.6 p55 provides exceptions.",
+      "source_reasoning": {
+        "A": "A 16mm² is less than cited annex value for 35mm² Al phase.",
+        "B": "B 25mm² matches annex in low-triplen balanced regime.",
+        "C": "C 35mm² may be required if harmonics/imbalance higher; stem lacks operating regime."
+      },
+      "limitation": "Numerical answer cannot be certified with unspecified harmonics: B intended, C potentially required under other conditions.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0086",
+      "excel_row": 86,
+      "original_stem": "Cablurile de energie la circuitele care alimentează receptoare de importanţă deosebită, se prevăd cu conductoare de cupru atunci când secţiunea conductoarelor (din aluminiu) ar rezulta mai mică de :",
+      "ABC": {
+        "A": "10mm2",
+        "B": "16mm2",
+        "C": "6mm2"
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "PROVISIONAL_SOURCE_MATCH",
+      "provisional_key": "A",
+      "scope_or_blocker": "I7 §5.1.7.2(a) p49: copper for very important receivers if otherwise aluminum section <10mm².",
+      "source_reasoning": {
+        "A": "A 10mm² exact threshold.",
+        "B": "B 16mm² overstates when Cu becomes specially required.",
+        "C": "C 6mm² understates threshold."
+      },
+      "limitation": "Keep specific special receiver classes and copper substitution trigger, not generic Cu requirement.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0122",
+      "excel_row": 122,
+      "original_stem": "La circuitele electrice de comandă, automatizare, măsurare şi semnalizare: ",
+      "ABC": {
+        "A": "se prevăd numai                                   conductoare din aluminiu",
+        "B": "se prevăd numai                                   conductoare din cupru",
+        "C": "se prevăd conductoare din aluminiu sau cupru"
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "PROVISIONAL_SOURCE_MATCH",
+      "provisional_key": "B",
+      "scope_or_blocker": "I7 §5.1.7.2(e) p49: copper conductors specially prescribed in control, automation, measurement and signaling circuits.",
+      "source_reasoning": {
+        "A": "A aluminum-only contradicts source.",
+        "B": "B copper-only consistent with source category.",
+        "C": "C aluminum or copper permits Al contrary to this case's specialized prescription."
+      },
+      "limitation": "Confirm that the circuit is truly of the named functional type, not a power feeder.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0161",
+      "excel_row": 161,
+      "original_stem": "In România tensiunea nominala de joasă tensiune asigurata de reţeaua de distribuţie publică ",
+      "ABC": {
+        "A": "este monofazata 230 V şi trifazata 400/230V, în sistem TN-S",
+        "B": "este monofazata  400 V şi trifazata 690 V,                         în sistem TN-C",
+        "C": "este monofazata 230 V şi trifazata 400/230V,                           în sistem TN-C"
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "PROVISIONAL_2023_SOURCE_ONLY",
+      "provisional_key": "C",
+      "scope_or_blocker": "I7 §3.1.2.1 p13: public distribution single phase 230V, three-phase 400/230V, system TN-C in the 2023 document.",
+      "source_reasoning": {
+        "A": "A TN-S does not reflect quoted historical public distribution system default.",
+        "B": "B 400V single and 690V three-phase wrong normal voltages.",
+        "C": "C exact historical 230V and 400/230V with TN-C."
+      },
+      "limitation": "Historical I7 statement not a claim that every physical current Romanian network is TN-C; need applicable 2026 source-era verification.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0171",
+      "excel_row": 171,
+      "original_stem": "În instalaţiile electrice ale construcţiilor se utilizează oțelul sub formă de ",
+      "ABC": {
+        "A": "conductoare neizolate rigide (bare)",
+        "B": "conductoare izolate ",
+        "C": "conductoare neizolate "
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "PROVISIONAL_SOURCE_MATCH",
+      "provisional_key": "A",
+      "scope_or_blocker": "I7 §5.1.7.1 p49 allows uninsulated rigid busbar conductors made from copper, aluminum or steel.",
+      "source_reasoning": {
+        "A": "A steel as bare rigid busbar is explicitly listed.",
+        "B": "B steel insulated flexible conductors not listed in source category.",
+        "C": "C steel any bare conductor lacks rigid/busbar qualifier of standard."
+      },
+      "limitation": "No license to use arbitrary steel wire as PE/PEN or phase wiring; object is rigid busbar.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0179",
+      "excel_row": 179,
+      "original_stem": "Reţeaua electrică a operatorului de transport/distribuţie ",
+      "ABC": {
+        "A": "constituie două surse de alimentare pentru locul de consum respectiv, dacă acesta este racordat  printr-un post de transformare alimentat din două stații de treanformare, echipat cu două transformatoare și instalație de AAR  \n",
+        "B": "constituie două surse de alimentare pentru locul de consum respectiv, dacă acesta este racordat  printr-un post de transformare echipat cu două transformatoare și instalație de AAR  \n",
+        "C": "constituie o singură sursă de alimentare (SEN) pentru locul de consum respectiv, indiferent de numărul de instalaţii electrice prin care este racordat  \n"
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "BLOCKED_SOURCE_SPECIFICITY",
+      "provisional_key": "NOT_ASSIGNED",
+      "scope_or_blocker": "Operator TRANSPORT/DISTRIBUTION network = one/two independent supply sources: exact ANRE definition/circuit topology and 2026 rule not reopened.",
+      "source_reasoning": {
+        "A": "A/B describe connection via potentially multiple feeders; prove or disprove independence with regulator's definition.",
+        "B": "No generic I7 house-installation paragraph can prove the categorical network-source answer.",
+        "C": "C assumes a single SEN source irrespective of connection; may be intended under special definition but not authenticated."
+      },
+      "limitation": "Needs applicable operator supply independence definition and exact alternative clause.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0180",
+      "excel_row": 180,
+      "original_stem": "Pe un circuit   care alimentează mai multe receptoare electrice de putere de aceeaşi natură şi destinaţie ",
+      "ABC": {
+        "A": "nu se prevede protecție comună la scurtcircuit ",
+        "B": "nu se prevede protecție comună la suprasarcină",
+        "C": "se prevede protecție la suprasarcină dacă puterea totală instalată a acestor receptoare  depăşeşte 16 kW"
+      },
+      "source_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "state": "BLOCKED_QUESTION_ACTION",
+      "provisional_key": "NOT_ASSIGNED",
+      "scope_or_blocker": "I7 §5.3.1.1 p62 permits shared SHORT-CIRCUIT protection for alike receivers where total <=15kW, but original options concern OVERLOAD and >15kW.",
+      "source_reasoning": {
+        "A": "A absence of common short-circuit protection could be expected above 15kW but does not answer overload statement.",
+        "B": "B absence of common overload protection not established by source.",
+        "C": "C prescribes overload protection if >15kW; this is NOT a direct inference from common short-circuit permission <=15kW."
+      },
+      "limitation": "Do not substitute short-circuit source for overload action. Request exact specific overload rule.",
+      "official_key": "UNKNOWN",
+      "independent_qualified_reviewer": false,
+      "edition_2026_verified": false,
+      "learnable": false
+    }
+  ],
+  "clear_provisional": 4,
+  "conditional_source_only": 1,
+  "blocked": 3,
+  "learning_approvals": 0,
+  "qa_note": "All 104 Norme stage rows now covered by a first-pass source review or an explicit source-specific blocker. Not 104 certified answers."
+}

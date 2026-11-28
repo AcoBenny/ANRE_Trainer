@@ -1,0 +1,3296 @@
+{
+  "schema": "ANRE_ELECTRO_EDITORIAL_FINAL_V1",
+  "checkpoint": "CKPT-434",
+  "parent": "CKPT-433",
+  "scope": "Reuse only, no answer or grade revalidation.",
+  "counts": {
+    "WORKBOOK_OBSERVATION_PRESERVED": 11,
+    "REUSED_HISTORICAL_EDITORIAL": 185,
+    "MEDIA_NOT_AUTO_REUSED": 12,
+    "NO_COMPATIBLE_EXPLANATION": 40,
+    "LEGACY_KEY_CONFLICT_NO_REUSE": 14,
+    "HISTORICAL_HOLD_NO_REUSE": 11,
+    "NO_EXACT_QABC_MATCH": 2
+  },
+  "summary": {
+    "legacy_reused": 44,
+    "newer_reused": 141,
+    "workbook_observations": 11,
+    "answer_only": 79,
+    "source_files_inspected": 23
+  },
+  "source_parts": [
+    "docs/CONSULTFORM/CKPT_434_ELECTRO_EDITORIAL_OVERLAY.json",
+    "docs/CONSULTFORM/CKPT_434_DRAFT_REUSE_1.json",
+    "docs/CONSULTFORM/CKPT_434_DRAFT_REUSE_2.json",
+    "docs/CONSULTFORM/CKPT_434_DRAFT_REUSE_3.json",
+    "docs/CONSULTFORM/CKPT_434_DRAFT_REUSE_4.json"
+  ],
+  "transfer_fnv1a32": "1e6cbe7d",
+  "records": [
+    {
+      "id": "CF-ELECTROTEHNICA-001",
+      "legacy_ids": [
+        "G1-ELE-001",
+        "G2-ELEC-154"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-002",
+      "legacy_ids": [
+        "G1-ELE-002",
+        "G2-ELEC-155"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-002",
+        "record": "G1-ELE-002",
+        "source": "LEGACY_HTML",
+        "text": "Bobina de stingere (bobina Petersen) compensează curentul capacitiv de defect la pământ, limitând curentul rezidual."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-003",
+      "legacy_ids": [
+        "G1-ELE-003",
+        "G2-ELEC-156"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-003",
+        "record": "G1-ELE-003",
+        "source": "LEGACY_HTML",
+        "text": "Câmpul magnetic poate exista atât în jurul magneților permanenți, cât și în jurul electromagneților."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-004",
+      "legacy_ids": [
+        "G1-ELE-004",
+        "G2-ELEC-157"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-004",
+        "record": "G1-ELE-004",
+        "source": "LEGACY_HTML",
+        "text": "La legarea în paralel, capacitățile se adună: Ce = C1 + C2 + C3 = 100 + 50 + 100 = 250 μF."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-005",
+      "legacy_ids": [
+        "G1-ELE-005",
+        "G2-ELEC-158"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-005",
+        "record": "G1-ELE-005",
+        "source": "LEGACY_HTML",
+        "text": "Pentru o rețea cu N noduri și L laturi, numărul de ecuații independente din teorema a doua a lui Kirchhoff este L−N+1. Împreună cu cele N−1 ecuații ale teoremei întâi rezultă L ecuații independente."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-006",
+      "legacy_ids": [
+        "G1-ELE-006",
+        "G2-ELEC-159"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-006",
+        "record": "G1-ELE-006",
+        "source": "LEGACY_HTML",
+        "text": "AAR (anclanșarea automată a rezervei) reface alimentarea prin conectarea automată a unei surse/rezerve după dispariția alimentării principale."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-007",
+      "legacy_ids": [
+        "G1-ELE-007",
+        "G2-ELEC-160"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-007",
+        "record": "G1-ELE-007",
+        "source": "LEGACY_HTML",
+        "text": "Alunecarea motorului asincron este s=(n1−n)/n1. În regim normal de motor, turația rotorului este sub turația sincronă, deci 0<s<1."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-008",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-009",
+      "legacy_ids": [
+        "G1-ELE-009",
+        "G2-ELEC-161"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-009",
+        "record": "G1-ELE-009",
+        "source": "LEGACY_HTML",
+        "text": "Reglarea tensiunii se poate realiza prin transformatoare și elemente de compensare/reactanță. Rezistorul nu este elementul utilizat în această grilă pentru reglarea tensiunii rețelei."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-010",
+      "legacy_ids": [
+        "G1-ELE-010",
+        "G2-ELEC-162"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-010",
+        "record": "G1-ELE-010",
+        "source": "LEGACY_HTML",
+        "text": "Motoarele asincrone sunt utilizate pe scară largă pentru acționări și servicii auxiliare datorită construcției robuste și exploatării simple."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-011",
+      "legacy_ids": [
+        "G1-ELE-011",
+        "G2-ELEC-163"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-011",
+        "record": "QABC-0010",
+        "source": "V176",
+        "text": "Inductanța mare produce reactanță X_L=2πfL mai mare și poate limita curentul prospectiv de scurtcircuit."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-012",
+      "legacy_ids": [
+        "G1-ELE-012",
+        "G2-ELEC-164"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-012",
+        "record": "QABC-0011",
+        "source": "V176",
+        "text": "Intensitatea E descrie câmpul electrostatic și determină forța pe o sarcină de probă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-013",
+      "legacy_ids": [
+        "G1-ELE-013",
+        "G2-ELEC-165"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-013",
+        "record": "G1-ELE-013",
+        "source": "LEGACY_HTML",
+        "text": "Transformatoarele imersate folosesc ulei și necesită măsuri/amenajări speciale la instalare, inclusiv din considerente de securitate la incendiu și gestionarea uleiului. Afirmația despre o bună rezistență la foc ar contrazice tocmai acest aspect."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-014",
+      "legacy_ids": [
+        "G1-ELE-014",
+        "G2-ELEC-166"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-015",
+      "legacy_ids": [
+        "G1-ELE-015",
+        "G2-ELEC-167"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-016",
+      "legacy_ids": [
+        "G1-ELE-016",
+        "G2-ELEC-168"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-016",
+        "record": "QABC-0015",
+        "source": "V176",
+        "text": "Legea Joule pentru curent și rezistență fixe în timpul t este Q=I²Rt; dependența este pătratică de I."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-017",
+      "legacy_ids": [
+        "G1-ELE-017",
+        "G2-ELEC-169"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-017",
+        "record": "QABC-0016",
+        "source": "V176",
+        "text": "Într-un lanț de condensatoare ideale în serie, toate elementele au aceeași sarcină ca modul; sarcina echivalentă la borne coincide cu aceasta."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-018",
+      "legacy_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-019",
+      "legacy_ids": [
+        "G1-ELE-019",
+        "G2-ELEC-171"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-019",
+        "record": "G1-ELE-019",
+        "source": "LEGACY_HTML",
+        "text": "Pentru două condensatoare identice în serie, 1/Ce=1/C+1/C=2/C, deci Ce=C/2. În serie, capacitatea echivalentă este mai mică decât fiecare capacitate individuală."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-020",
+      "legacy_ids": [
+        "G1-ELE-020",
+        "G2-ELEC-172"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-021",
+      "legacy_ids": [
+        "G1-ELE-021",
+        "G2-ELEC-173"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-021",
+        "record": "G1-ELE-021",
+        "source": "LEGACY_HTML",
+        "text": "Cuprul admite o densitate de curent mai mare decât aluminiul în condițiile uzuale de dimensionare comparate aici, datorită conductivității sale electrice mai mari."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-022",
+      "legacy_ids": [
+        "G1-ELE-022",
+        "G2-ELEC-174"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-022",
+        "record": "QABC-0021",
+        "source": "V177",
+        "text": "În dielectric liniar omogen izotrop, D=εE, deci A este relația de manual."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-023",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-024",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-025",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-026",
+      "legacy_ids": [
+        "G1-ELE-026",
+        "G2-ELEC-175"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-027",
+      "legacy_ids": [
+        "G1-ELE-027",
+        "G2-ELEC-176"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-027",
+        "record": "QABC-0023",
+        "source": "V177",
+        "text": "P=I²R=4×10=40 W, iar E=40×10 h=400 Wh."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-028",
+      "legacy_ids": [
+        "G1-ELE-028",
+        "G2-ELEC-177"
+      ],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-029",
+      "legacy_ids": [
+        "G1-ELE-029",
+        "G2-ELEC-178"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-030",
+      "legacy_ids": [
+        "G1-ELE-030",
+        "G2-ELEC-179"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-030",
+        "record": "QABC-0026",
+        "source": "V177",
+        "text": "Schema cu bară simplă și întreruptor pe circuit poate fi aplicată la trepte multiple, după proiect."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-031",
+      "legacy_ids": [
+        "G1-ELE-031",
+        "G2-ELEC-180"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-031",
+        "record": "QABC-0027",
+        "source": "V177",
+        "text": "Carcasa, compartimentarea și interblocările unei celule prefabricate pot spori securitatea persoanelor."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-032",
+      "legacy_ids": [],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-033",
+      "legacy_ids": [
+        "G1-ELE-033",
+        "G2-ELEC-181"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-033",
+        "record": "G1-ELE-033",
+        "source": "LEGACY_HTML",
+        "text": "Transformatoarele uscate elimină uleiul ca mediu de izolație/răcire, ceea ce le conferă avantaje importante privind riscul de incendiu și amplasarea. De aceea, în comparația propusă, „bună rezistență la foc” este varianta corectă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-034",
+      "legacy_ids": [
+        "G1-ELE-034",
+        "G2-ELEC-182"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-035",
+      "legacy_ids": [
+        "G1-ELE-035",
+        "G2-ELEC-183"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-035",
+        "record": "QABC-0030",
+        "source": "V177",
+        "text": "Compartimentarea limitează propagarea avariilor către alte componente."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-036",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-037",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-038",
+      "legacy_ids": [
+        "G1-ELE-038",
+        "G2-ELEC-184"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-038",
+        "record": "G1-ELE-038",
+        "source": "LEGACY_HTML",
+        "text": "Componenta de secvență directă creează câmpul magnetic învârtitor în sensul normal de rotație și contribuie la cuplul electromagnetic util al motorului. Componentele inversă și homopolară au efecte diferite."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-039",
+      "legacy_ids": [
+        "G1-ELE-039",
+        "G2-ELEC-185"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-040",
+      "legacy_ids": [
+        "G1-ELE-040",
+        "G2-ELEC-186"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-041",
+      "legacy_ids": [
+        "G1-ELE-041",
+        "G2-ELEC-187"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-041",
+        "record": "QABC-0034",
+        "source": "V177",
+        "text": "Separarea celulelor are ca scop limitarea extinderii avariilor."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-042",
+      "legacy_ids": [
+        "G1-ELE-042",
+        "G2-ELEC-188"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-042",
+        "record": "QABC-0035",
+        "source": "V177",
+        "text": "|Z|=√(3²+4²)=5 Ω, iar I=220/5=44 A."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-043",
+      "legacy_ids": [
+        "G1-ELE-043",
+        "G2-ELEC-189"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-044",
+      "legacy_ids": [
+        "G1-ELE-044",
+        "G2-ELEC-190"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-044",
+        "record": "QABC-0037",
+        "source": "V178",
+        "text": "Supratensiunea crește temperatura și evaporarea filamentului, reducând viața becului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-045",
+      "legacy_ids": [
+        "G1-ELE-045",
+        "G2-ELEC-191"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-045",
+        "record": "G1-ELE-045",
+        "source": "LEGACY_HTML",
+        "text": "Deplasarea unui corp macroscopic încărcat electric produce curent de convecție. Curentul de conducție este asociat purtătorilor de sarcină în mediul conductor, iar curentul de deplasare este termenul introdus în teoria lui Maxwell pentru variația câmpului electric."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-046",
+      "legacy_ids": [
+        "G1-ELE-046",
+        "G2-ELEC-192"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-047",
+      "legacy_ids": [
+        "G1-ELE-047",
+        "G2-ELEC-193"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-048",
+      "legacy_ids": [
+        "G1-ELE-048",
+        "G2-ELEC-194"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-049",
+      "legacy_ids": [
+        "G1-ELE-049",
+        "G2-ELEC-195"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-049",
+        "record": "G1-ELE-049",
+        "source": "LEGACY_HTML",
+        "text": "Când doi conductori paraleli sunt parcurși de curenți în același sens, apare efectul de proximitate: curentul se redistribuie, iar densitatea crește pe părțile mai îndepărtate una de cealaltă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-050",
+      "legacy_ids": [
+        "G1-ELE-050",
+        "G2-ELEC-196"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-050",
+        "record": "QABC-0043",
+        "source": "V178",
+        "text": "Vectorul Poynting în unități SI este S=E×H, în W/m²."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-051",
+      "legacy_ids": [
+        "G1-ELE-051",
+        "G2-ELEC-197"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-052",
+      "legacy_ids": [
+        "G1-ELE-052",
+        "G2-ELEC-198"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-052",
+        "record": "G1-ELE-052",
+        "source": "LEGACY_HTML",
+        "text": "Într-un condensator, curentul este înaintea tensiunii cu 90°, ceea ce înseamnă echivalent că tensiunea este în urma curentului cu 90°. Prin urmare, căderea de tensiune este defazată cu 90° în urma curentului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-053",
+      "legacy_ids": [
+        "G1-ELE-053",
+        "G2-ELEC-199"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-054",
+      "legacy_ids": [
+        "G1-ELE-054",
+        "G2-ELEC-200"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-054",
+        "record": "QABC-0047",
+        "source": "V178",
+        "text": "Descărcătorul cu oxid de zinc limitează supratensiuni tranzitorii prin comportament neliniar al varistorului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-055",
+      "legacy_ids": [
+        "G1-ELE-055",
+        "G2-ELEC-201"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-055",
+        "record": "QABC-0048",
+        "source": "V178",
+        "text": "Descărcătorul ZnO protejează echipamente împotriva supratensiunilor."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-056",
+      "legacy_ids": [
+        "G1-ELE-056",
+        "G2-ELEC-202"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-056",
+        "record": "QABC-0049",
+        "source": "V178",
+        "text": "La condensatoare în serie, tensiunea totală este suma algebrică a căderilor individuale conform legii lui Kirchhoff."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-057",
+      "legacy_ids": [
+        "G1-ELE-057",
+        "G2-ELEC-203"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-058",
+      "legacy_ids": [],
+      "status": "NO_EXACT_QABC_MATCH"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-059",
+      "legacy_ids": [
+        "G1-ELE-059",
+        "G2-ELEC-204"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-059",
+        "record": "G1-ELE-059",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: C. tensiunea de linie este egală cu aproximativ 1,73 × tensiunea de fază. În conexiune stea, U_l = √3 U_f, iar curentul de linie este egal cu cel de fază. Capcana este inversarea relației sau folosirea relației specifice conexiunii triunghi."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-060",
+      "legacy_ids": [
+        "G1-ELE-060",
+        "G2-ELEC-205"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-060",
+        "record": "QABC-0052",
+        "source": "V178",
+        "text": "Încălzirea prin inducție folosește curenți turbionari în piesă și poate exploata concentrarea lor la suprafață (efect pelicular)."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-061",
+      "legacy_ids": [
+        "G1-ELE-061",
+        "G2-ELEC-206"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-061",
+        "record": "QABC-0053",
+        "source": "V178",
+        "text": "Curenții induși și redistribuția lor sub câmp variabil explică efectul pelicular în geometria standard a conductorului masiv."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-062",
+      "legacy_ids": [
+        "G1-ELE-062",
+        "G2-ELEC-207"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-062",
+        "record": "QABC-0054",
+        "source": "V178",
+        "text": "Magnetizarea bobinajelor consumă/returnează periodic energie în câmpul magnetic; A exprimă o utilizare didactică obișnuită a energiei reactive."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-063",
+      "legacy_ids": [
+        "G1-ELE-063",
+        "G2-ELEC-208"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-063",
+        "record": "QABC-0055",
+        "source": "V179",
+        "text": "Energia unui inductor liniar cu L constant este W=½Li²."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-064",
+      "legacy_ids": [
+        "G1-ELE-064",
+        "G2-ELEC-209"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-064",
+        "record": "QABC-0056",
+        "source": "V179",
+        "text": "Pentru conductor cu capacitate C=q/V, energia electrostatică este ½qV."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-065",
+      "legacy_ids": [
+        "G1-ELE-065",
+        "G2-ELEC-210"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-065",
+        "record": "G1-ELE-065",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: C. crește curentul de alimentare a instalației. Un scurtcircuit reduce puternic impedanța echivalentă a circuitului, astfel încât, pentru aceeași tensiune, curentul crește. Variantele care afirmă creșterea tensiunii sau a impedanței descriu invers fenomenul."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-066",
+      "legacy_ids": [
+        "G1-ELE-066",
+        "G2-ELEC-211"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-066",
+        "record": "G1-ELE-066",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. legea conservării sarcinii electrice. Enunțul spune direct că sarcina totală nu este creată sau distrusă, ci doar transferată. Legea lui Coulomb descrie forța dintre sarcini, iar legea lui Laplace descrie acțiuni electromagnetice asupra curenților."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-067",
+      "legacy_ids": [
+        "G1-ELE-067",
+        "G2-ELEC-212"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-067",
+        "record": "QABC-0059",
+        "source": "V179",
+        "text": "A doua lege Kirchhoff exprimă relația algebrică între electromotoare și căderile de tensiune într-o buclă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-068",
+      "legacy_ids": [
+        "G1-ELE-068",
+        "G2-ELEC-213"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-068",
+        "record": "QABC-0060",
+        "source": "V179",
+        "text": "Pentru conductor perpendicular pe B, modulul forței magnetice este F=B·i·l, în N."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-069",
+      "legacy_ids": [
+        "G1-ELE-069",
+        "G2-ELEC-214"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-069",
+        "record": "QABC-0061",
+        "source": "V179",
+        "text": "Legea Ohm pentru rezistență R nenulă este I=U/R."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-070",
+      "legacy_ids": [
+        "G1-ELE-070",
+        "G2-ELEC-215"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-070",
+        "record": "QABC-0062",
+        "source": "V179",
+        "text": "Șuntul de rezistență mică, montat în paralel cu mecanismul, deviază o parte din curent."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-071",
+      "legacy_ids": [
+        "G1-ELE-071",
+        "G2-ELEC-216"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-071",
+        "record": "QABC-0063",
+        "source": "V179",
+        "text": "O rezistență adițională mare, în serie cu voltmetrul, limitează curentul mecanismului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-072",
+      "legacy_ids": [
+        "G1-ELE-072",
+        "G2-ELEC-217"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-073",
+      "legacy_ids": [
+        "G1-ELE-073",
+        "G2-ELEC-218"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-074",
+      "legacy_ids": [
+        "G1-ELE-074",
+        "G2-ELEC-219"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-074",
+        "record": "QABC-0066",
+        "source": "V179",
+        "text": "Conductoarele jumelate reduc gradientul electric local la suprafață și ajută la reducerea fenomenului Corona."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-075",
+      "legacy_ids": [
+        "G1-ELE-075",
+        "G2-ELEC-220"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-075",
+        "record": "QABC-0067",
+        "source": "V179",
+        "text": "Pentru n rotații/min și p perechi de poli, frecvența este f=np/60."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-076",
+      "legacy_ids": [
+        "G1-ELE-076",
+        "G2-ELEC-221"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-076",
+        "record": "QABC-0068",
+        "source": "V179",
+        "text": "e=Blv este un caz particular al inducției electromagnetice, pentru orientări reciproce perpendiculare."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-077",
+      "legacy_ids": [
+        "G1-ELE-077",
+        "G2-ELEC-222"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-078",
+      "legacy_ids": [
+        "G1-ELE-078",
+        "G2-ELEC-223"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-078",
+        "record": "QABC-0070",
+        "source": "V179",
+        "text": "Forța electrodinamică descrie interacțiunea mecanică dintre conductoare străbătute de curenți."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-079",
+      "legacy_ids": [
+        "G1-ELE-079",
+        "G2-ELEC-224"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-079",
+        "record": "QABC-0071",
+        "source": "V179",
+        "text": "Legea Faraday afirmă că modulul FEM depinde de viteza variației fluxului magnetic; A este intenția didactică."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-080",
+      "legacy_ids": [
+        "G1-ELE-080",
+        "G2-ELEC-225"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-080",
+        "record": "QABC-0072",
+        "source": "V180",
+        "text": "F/ℓ=µI1I2/(2πr); B susținut."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-081",
+      "legacy_ids": [
+        "G1-ELE-081",
+        "G2-ELEC-226"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-081",
+        "record": "QABC-0073",
+        "source": "V180",
+        "text": "F=qE este definiția forței electrice."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-082",
+      "legacy_ids": [
+        "G1-ELE-082",
+        "G2-ELEC-227"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-082",
+        "record": "QABC-0074",
+        "source": "V180",
+        "text": "f=1/T, inversul perioadei."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-083",
+      "legacy_ids": [
+        "G1-ELE-083",
+        "G2-ELEC-228"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-083",
+        "record": "QABC-0075",
+        "source": "V180",
+        "text": "Curenții turbionari în discul mobil sunt esențiali în contorul de inducție."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-084",
+      "legacy_ids": [
+        "G1-ELE-084",
+        "G2-ELEC-229"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-084",
+        "record": "QABC-0076",
+        "source": "V180",
+        "text": "Securitatea persoanelor la defect și atingere este scopul de protecție."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-085",
+      "legacy_ids": [
+        "G1-ELE-085",
+        "G2-ELEC-230"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-085",
+        "record": "QABC-0077",
+        "source": "V180",
+        "text": "Poate fi temporar admisibilă în condiții termice și de protecție verificate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-086",
+      "legacy_ids": [
+        "G1-ELE-086",
+        "G2-ELEC-231"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-086",
+        "record": "QABC-0078",
+        "source": "V180",
+        "text": "Inducția electromagnetică mutuală asigură transformarea energiei AC."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-087",
+      "legacy_ids": [
+        "G1-ELE-087",
+        "G2-ELEC-232"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-087",
+        "record": "QABC-0079",
+        "source": "V180",
+        "text": "Henry (H) este unitatea SI pentru inductanță."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-088",
+      "legacy_ids": [
+        "G1-ELE-088",
+        "G2-ELEC-233"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-089",
+      "legacy_ids": [
+        "G1-ELE-089"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-089",
+        "record": "QABC-0081",
+        "source": "V199",
+        "text": "Compartimentele izolate permit localizarea pierderilor de gaz și a defectelor interne la un volum mai restrâns, dacă există delimitare și monitorizare adecvate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-090",
+      "legacy_ids": [
+        "G1-ELE-090",
+        "G2-ELEC-234"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-091",
+      "legacy_ids": [
+        "G1-ELE-091",
+        "G2-ELEC-235"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-091",
+        "record": "G1-ELE-091",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. valorile instantanee ale tensiunilor și curenților. Teoremele lui Kirchhoff sunt legi fundamentale de conservare și sunt valabile instantaneu. Valorile efective sau modulele fazorilor nu pot înlocui, în general, relația instantanee dintre mărimi."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-092",
+      "legacy_ids": [
+        "G1-ELE-092",
+        "G2-ELEC-236"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-092",
+        "record": "G1-ELE-092",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: C. amplasarea postului în zone aglomerate. Transformatoarele cu lichide neinflamabile sunt preferate când riscul de incendiu asociat unui lichid inflamabil trebuie redus, ceea ce este relevant în zonele aglomerate. Capcana este alegerea unor criterii care pot conta în alte proiecte, dar nu sunt condiția vizată aici."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-093",
+      "legacy_ids": [
+        "G1-ELE-093",
+        "G2-ELEC-237"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-093",
+        "record": "G1-ELE-093",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. siguranța fuzibilă realizează protecția la scurtcircuit. Siguranța fuzibilă întrerupe curenții mari de defect, iar releele termice ale contactorului protejează motorul la suprasarcină. Supratensiunea nu este funcția indicată pentru siguranța fuzibilă în această schemă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-094",
+      "legacy_ids": [
+        "G1-ELE-094"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-094",
+        "record": "G1-ELE-094",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. releele termice realizează protecția la suprasarcină. Releul termic urmărește încălzirea produsă de supracurentul de durată și declanșează la suprasarcină. Protecția principală la scurtcircuit este realizată de siguranța fuzibilă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-095",
+      "legacy_ids": [
+        "G1-ELE-095",
+        "G2-ELEC-238"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-095",
+        "record": "G1-ELE-095",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. sistemul nu are componentă simetrică homopolară (zero). Componenta homopolară are aceeași fază în toate cele trei faze, iar suma celor trei fazori este 3 ori componenta homopolară. Dacă rezultanta este nulă, componenta homopolară este nulă. Capcana este că și alte componente pot lipsi în situații particulare, dar formularea standard a întrebării vizează direct componenta zero."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-096",
+      "legacy_ids": [
+        "G1-ELE-096",
+        "G2-ELEC-239"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-096",
+        "record": "G1-ELE-096",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. 1/3 din curentul de pornire la conexiunea triunghi. În stea, tensiunea pe fiecare înfășurare este U_l/√3, iar curentul de linie rezultă de trei ori mai mic decât la pornirea în triunghi pentru aceeași impedanță. Aceasta este tocmai ideea metodei stea-triunghi: reducerea curentului de pornire."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-097",
+      "legacy_ids": [
+        "G1-ELE-097",
+        "G2-ELEC-240"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-097",
+        "record": "G1-ELE-097",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: C. amplasarea postului se face în zone aglomerate. Transformatoarele uscate elimină riscul asociat lichidului izolant inflamabil și sunt potrivite când postul este amplasat în spații aglomerate. Restricțiile de teren sau de zgomot nu reprezintă condiția specifică urmărită de întrebare."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-098",
+      "legacy_ids": [
+        "G1-ELE-098",
+        "G2-ELEC-241"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-098",
+        "record": "G1-ELE-098",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. tensiunea pe fazele R și T crește la valoarea tensiunii de linie, iar pe faza S se apropie de 0. La defectul monofazat la pământ într-o rețea cu neutrul izolat, faza defectă ajunge aproape de potențialul pământului, iar tensiunile fazelor sănătoase față de pământ cresc până la tensiunea de linie. Capcana este să tratezi fazele sănătoase ca și cum ar rămâne la tensiunea lor normală față de pământ."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-099",
+      "legacy_ids": [
+        "G1-ELE-099",
+        "G2-ELEC-242"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-100",
+      "legacy_ids": [
+        "G1-ELE-100",
+        "G2-ELEC-243"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-101",
+      "legacy_ids": [
+        "G1-ELE-101",
+        "G2-ELEC-244"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-102",
+      "legacy_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "status": "WORKBOOK_OBSERVATION_PRESERVED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-103",
+      "legacy_ids": [
+        "G1-ELE-103",
+        "G2-ELEC-246"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-103",
+        "record": "G1-ELE-103",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. în rezervă caldă. Într-o stație cu bare secționate și cuplă longitudinală cu întreruptor și AAR, rezerva caldă înseamnă echipamentul disponibil pentru preluarea rapidă a alimentării. „Rezervă rece” ar presupune lipsa tensiunii, iar „în funcțiune” nu descrie regimul de rezervă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-104",
+      "legacy_ids": [
+        "G1-ELE-104",
+        "G2-ELEC-247"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-105",
+      "legacy_ids": [
+        "G1-ELE-105",
+        "G2-ELEC-248"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-105",
+        "record": "QABC-0097",
+        "source": "V182",
+        "text": "Trei întreruptoare partajate la două circuite între două bare permit funcționarea fără acele cuple dedicate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-106",
+      "legacy_ids": [
+        "G1-ELE-106",
+        "G2-ELEC-249"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-106",
+        "record": "QABC-0098",
+        "source": "V182",
+        "text": "Bara și cupla de ocolire facilitează revizia întreruptorului păstrând alimentarea dacă schema permite."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-107",
+      "legacy_ids": [
+        "G1-ELE-107",
+        "G2-ELEC-250"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-107",
+        "record": "QABC-0099",
+        "source": "V182",
+        "text": "Varianta uscată poate reduce riscurile specifice uleiului în zone aglomerate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-108",
+      "legacy_ids": [
+        "G1-ELE-108",
+        "G2-ELEC-251"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-108",
+        "record": "QABC-0100",
+        "source": "V182",
+        "text": "Legăturile sunt asigurate de întreruptoarele inelului; cupla transversală separată nu este obligatorie."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-109",
+      "legacy_ids": [
+        "G1-ELE-109",
+        "G2-ELEC-252"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-109",
+        "record": "QABC-0101",
+        "source": "V196",
+        "text": "Actualizarea este transformarea valorii fondului la un an de referință ales, prin acumulare/actualizare financiară."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-110",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-111",
+      "legacy_ids": [
+        "G1-ELE-111",
+        "G2-ELEC-253"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-111",
+        "record": "QABC-0102",
+        "source": "V181",
+        "text": "Ridicarea aparatelor poate asigura distanțe de securitate pentru personal."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-112",
+      "legacy_ids": [
+        "G1-ELE-112",
+        "G2-ELEC-254"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-112",
+        "record": "QABC-0103",
+        "source": "V181",
+        "text": "Nisipul ajută stingerea arcului și mărește capacitatea de rupere a siguranței."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-113",
+      "legacy_ids": [
+        "G1-ELE-113",
+        "G2-ELEC-255"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-113",
+        "record": "QABC-0104",
+        "source": "V181",
+        "text": "Pierderile Joule I²R sunt o contribuție directă la încălzire; C exprimă cauza urmărită."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-114",
+      "legacy_ids": [
+        "G1-ELE-114",
+        "G2-ELEC-256"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-115",
+      "legacy_ids": [
+        "G1-ELE-115",
+        "G2-ELEC-257"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-115",
+        "record": "QABC-0106",
+        "source": "V181",
+        "text": "A este intenția didactică dacă «flux propriu» înseamnă fluxul total înlănțuit λ=NΦ."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-116",
+      "legacy_ids": [
+        "G1-ELE-116",
+        "G2-ELEC-258"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-116",
+        "record": "QABC-0107",
+        "source": "V181",
+        "text": "Prin definiție E=F/q pentru sarcină de probă, în limita acesteia."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-117",
+      "legacy_ids": [
+        "G1-ELE-117",
+        "G2-ELEC-259"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-117",
+        "record": "QABC-0108",
+        "source": "V181",
+        "text": "La conductor rectiliniu suficient de lung H=I/(2πr), deci depinde invers de r."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-118",
+      "legacy_ids": [
+        "G1-ELE-118",
+        "G2-ELEC-260"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-118",
+        "record": "G1-ELE-118",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. trifazat. Pentru același punct de defect, într-o rețea cu neutrul legat la pământ, scurtcircuitul trifazat produce, în mod obișnuit, cea mai mare valoare a curentului de defect. „De regulă” este important, deoarece impedanțele și configurația rețelei pot modifica valorile concrete."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-119",
+      "legacy_ids": [
+        "G1-ELE-119",
+        "G2-ELEC-261"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-119",
+        "record": "QABC-0110",
+        "source": "V181",
+        "text": "Curentul tinde spre U/R pentru t≫L/R, nu atinge exact această limită într-un timp finit în modelul ideal."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-120",
+      "legacy_ids": [
+        "G1-ELE-120",
+        "G2-ELEC-262"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-120",
+        "record": "QABC-0111",
+        "source": "V181",
+        "text": "U=√(100²+70²)≈122 V, rezultatul vectorial."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-121",
+      "legacy_ids": [
+        "G1-ELE-121",
+        "G2-ELEC-263"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-121",
+        "record": "QABC-0112",
+        "source": "V181",
+        "text": "Separatorul asigură separarea/izolarea vizibilă sau garantată a părții de instalație."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-122",
+      "legacy_ids": [
+        "G1-ELE-122",
+        "G2-ELEC-264"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-123",
+      "legacy_ids": [
+        "G1-ELE-123",
+        "G2-ELEC-265"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-123",
+        "record": "QABC-0114",
+        "source": "V181",
+        "text": "C este tendința curentului AC în conductor masiv, cu densitate mai mare spre periferie."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-124",
+      "legacy_ids": [
+        "G1-ELE-124",
+        "G2-ELEC-266"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-125",
+      "legacy_ids": [
+        "G1-ELE-125"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-126",
+      "legacy_ids": [
+        "G1-ELE-126"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-127",
+      "legacy_ids": [
+        "G1-ELE-127",
+        "G2-ELEC-267"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-127",
+        "record": "QABC-0118",
+        "source": "V181",
+        "text": "P=4 kW și Q=3 kvar dau S=5 kVA și factorul de putere P/S=0,8."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-128",
+      "legacy_ids": [
+        "G1-ELE-128",
+        "G2-ELEC-268"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-129",
+      "legacy_ids": [
+        "G1-ELE-129",
+        "G2-ELEC-269"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-129",
+        "record": "QABC-0120",
+        "source": "V201",
+        "text": "Cheia C corespunde ordinii generale descrise în registrul V81 pentru cazul standard, cu întreruptorul ultima etapă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-130",
+      "legacy_ids": [
+        "G1-ELE-130",
+        "G2-ELEC-270"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-130",
+        "record": "QABC-0121",
+        "source": "V181",
+        "text": "I=U/R=100/5=20 A."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-131",
+      "legacy_ids": [
+        "G1-ELE-131",
+        "G2-ELEC-271"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-131",
+        "record": "QABC-0122",
+        "source": "V201",
+        "text": "Varianta C descrie ordinea de referință a manevrei normale din materialul istoric V81, cu întreruptorul primul."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-132",
+      "legacy_ids": [
+        "G1-ELE-132",
+        "G2-ELEC-272"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-132",
+        "record": "G1-ELE-132",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. reactanța totală X > 0. Dacă X = X_L - X_C este pozitivă, circuitul are caracter inductiv, iar curentul rămâne în urmă față de tensiune. Pentru X < 0 circuitul este capacitiv, iar la X = 0 defazajul este nul."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-133",
+      "legacy_ids": [
+        "G1-ELE-133",
+        "G2-ELEC-273"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-133",
+        "record": "G1-ELE-133",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: C. egală. La mașina sincronă, rotorul se rotește sincron cu câmpul magnetic învârtitor al statorului, în regim staționar. Tocmai absența alunecării diferențiază mașina sincronă de cea asincronă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-134",
+      "legacy_ids": [
+        "G1-ELE-134",
+        "G2-ELEC-274"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-135",
+      "legacy_ids": [
+        "G1-ELE-135",
+        "G2-ELEC-275"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-135",
+        "record": "QABC-0126",
+        "source": "V181",
+        "text": "Pentru paralel: 1/R_eq=Σ(1/R_i), suma conductanțelor."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-136",
+      "legacy_ids": [
+        "G1-ELE-136",
+        "G2-ELEC-276"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-136",
+        "record": "QABC-0127",
+        "source": "V186",
+        "text": "În sincronism n=60f/p perechi de poli, turația este fixată de frecvență și poli."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-137",
+      "legacy_ids": [
+        "G1-ELE-137"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-137",
+        "record": "QABC-0128",
+        "source": "V201",
+        "text": "Varianta B corespunde ordinii de referință pentru modelul simplu de circuit în V81, cu separatorul de bare și cel de linie înaintea întreruptorului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-138",
+      "legacy_ids": [
+        "G1-ELE-138"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-138",
+        "record": "QABC-0129",
+        "source": "V201",
+        "text": "Cheia B reprezintă aceeași ordine didactică din G1-ELE-131, dar poziționată ca altă literă de răspuns."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-139",
+      "legacy_ids": [
+        "G1-ELE-139",
+        "G2-ELEC-277"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-140",
+      "legacy_ids": [
+        "G1-ELE-140",
+        "G2-ELEC-278"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-141",
+      "legacy_ids": [
+        "G1-ELE-141",
+        "G2-ELEC-279"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-142",
+      "legacy_ids": [
+        "G1-ELE-142",
+        "G2-ELEC-280"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-142",
+        "record": "QABC-0133",
+        "source": "V201",
+        "text": "În condiții de circuit concentrat/quasistatic, legile Kirchhoff se aplică atât circuitelor liniare, cât și neliniare."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-143",
+      "legacy_ids": [
+        "G1-ELE-143",
+        "G2-ELEC-281"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-143",
+        "record": "QABC-0134",
+        "source": "V201",
+        "text": "Varianta B corespunde relației U_i invers proporțional cu C_i pentru condensatoare ideale în serie cu aceeași sarcină."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-144",
+      "legacy_ids": [
+        "G1-ELE-144",
+        "G2-ELEC-282"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-144",
+        "record": "QABC-0135",
+        "source": "V186",
+        "text": "n=(60f/p)·(1−s): frecvența de alimentare influențează direct turația sincronă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-145",
+      "legacy_ids": [
+        "G1-ELE-145",
+        "G2-ELEC-283"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-145",
+        "record": "QABC-0136",
+        "source": "V186",
+        "text": "Pornirea directă poate absorbi curenți mari; reducerea curentului este un obiectiv de proiectare al starterului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-146",
+      "legacy_ids": [
+        "G1-ELE-146",
+        "G2-ELEC-284"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-147",
+      "legacy_ids": [
+        "G1-ELE-147",
+        "G2-ELEC-285"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-147",
+        "record": "QABC-0138",
+        "source": "V186",
+        "text": "În regim nesaturat, feromagneții au de regulă μr mult peste 1."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-148",
+      "legacy_ids": [
+        "G1-ELE-148",
+        "G2-ELEC-286"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-148",
+        "record": "QABC-0139",
+        "source": "V186",
+        "text": "Pentru inductor ideal L constant, convenție pasivă: u=L·di/dt."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-149",
+      "legacy_ids": [
+        "G1-ELE-149",
+        "G2-ELEC-287"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-149",
+        "record": "QABC-0140",
+        "source": "V186",
+        "text": "Legea Coulomb descrie forța electrostatică între sarcini punctiforme, cu |F|=k|q1q2|/r²."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-150",
+      "legacy_ids": [
+        "G1-ELE-150",
+        "G2-ELEC-288"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-151",
+      "legacy_ids": [
+        "G1-ELE-151",
+        "G2-ELEC-289"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-152",
+      "legacy_ids": [
+        "G2-ELEC-290"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-153",
+      "legacy_ids": [
+        "G1-ELE-153",
+        "G2-ELEC-291"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-153",
+        "record": "QABC-0144",
+        "source": "V186",
+        "text": "Reluctanța ℜ=ℓ/(μA) este analogul rezistenței electrice, pentru flux și forță magnetomotoare."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-154",
+      "legacy_ids": [
+        "G1-ELE-154",
+        "G2-ELEC-292"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-154",
+        "record": "QABC-0145",
+        "source": "V187",
+        "text": "0 este media pe o perioadă a unui curent sinusoidal sau alternativ fără componentă DC."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-155",
+      "legacy_ids": [
+        "G1-ELE-155",
+        "G2-ELEC-293"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-155",
+        "record": "QABC-0146",
+        "source": "V190",
+        "text": "Barele înalte folosesc efectul pelicular pentru modificarea rezistenței efective la pornire și pot îmbunătăți cuplul/curentul."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-156",
+      "legacy_ids": [
+        "G1-ELE-156",
+        "G2-ELEC-294"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-157",
+      "legacy_ids": [
+        "G1-ELE-157",
+        "G2-ELEC-295"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-157",
+        "record": "QABC-0148",
+        "source": "V187",
+        "text": "Transfigurarea simplifică un model echivalent pentru calcule la borne."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-158",
+      "legacy_ids": [
+        "G1-ELE-158",
+        "G2-ELEC-296"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-158",
+        "record": "QABC-0149",
+        "source": "V186",
+        "text": "Miezurile din tole izolate reduc curenții turbionari și pierderile prin limitarea buclelor de curent."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-159",
+      "legacy_ids": [
+        "G1-ELE-159",
+        "G2-ELEC-297"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-159",
+        "record": "QABC-0150",
+        "source": "V203",
+        "text": "Montajul fix elimină mecanismele de debroșare și poate simplifica constructiv celula, dar nu înseamnă absența tuturor interblocărilor de siguranță."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-160",
+      "legacy_ids": [
+        "G1-ELE-160",
+        "G2-ELEC-298"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-160",
+        "record": "QABC-0151",
+        "source": "V196",
+        "text": "La frecvență de alimentare fixă turația sincronă este legată de f și numărul de poli, nu ajustabilă liber."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-161",
+      "legacy_ids": [
+        "G1-ELE-161",
+        "G2-ELEC-299"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-161",
+        "record": "QABC-0152",
+        "source": "V196",
+        "text": "Compensatoarele reactive, inclusiv tehnologii cu comandă rapidă, pot susține și modifica nivelul tensiunii."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-162",
+      "legacy_ids": [
+        "G1-ELE-162",
+        "G2-ELEC-300"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-162",
+        "record": "QABC-0153",
+        "source": "V187",
+        "text": "Sarcina Z_L=Zc înseamnă terminare adaptată la impedanța caracteristică."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-163",
+      "legacy_ids": [
+        "G1-ELE-163",
+        "G2-ELEC-301"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-163",
+        "record": "QABC-0154",
+        "source": "V187",
+        "text": "La mers în gol, capacitatea liniei AC lungi injectează reactiv capacitiv."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-164",
+      "legacy_ids": [
+        "G1-ELE-164",
+        "G2-ELEC-302"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-164",
+        "record": "QABC-0155",
+        "source": "V187",
+        "text": "Impedanța serie inductivă a unei linii AC în scurtcircuit absoarbe reactivă în modelul ne-rezonant."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-165",
+      "legacy_ids": [
+        "G1-ELE-165",
+        "G2-ELEC-303"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-166",
+      "legacy_ids": [
+        "G1-ELE-166",
+        "G2-ELEC-304"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-167",
+      "legacy_ids": [
+        "G1-ELE-167",
+        "G2-ELEC-305"
+      ],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-168",
+      "legacy_ids": [
+        "G1-ELE-168",
+        "G2-ELEC-306"
+      ],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-169",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-170",
+      "legacy_ids": [
+        "G1-ELE-170",
+        "G2-ELEC-307"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-170",
+        "record": "G1-ELE-170",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. ZY = 1 și J = YE. Este condiția de echivalență Thévenin-Norton: impedanța și admitanța sunt reciproce, iar sursa de curent este legată de f.e.m. prin J = YE. Capcana este să amesteci relația ZY = 1 cu relația dintre sursă și admitanță."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-171",
+      "legacy_ids": [
+        "G1-ELE-171",
+        "G2-ELEC-308"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-172",
+      "legacy_ids": [
+        "G1-ELE-172",
+        "G2-ELEC-309"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-173",
+      "legacy_ids": [
+        "G1-ELE-173",
+        "G2-ELEC-310"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-174",
+      "legacy_ids": [],
+      "status": "MEDIA_NOT_AUTO_REUSED"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-175",
+      "legacy_ids": [
+        "G1-ELE-175",
+        "G2-ELEC-311"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-175",
+        "record": "G1-ELE-175",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. „energia ... este produsul dintre puterea maximă și timpul de funcționare” nu este o relație generală. Energia se calculează din puterea efectivă/medie integrată în timp; puterea maximă poate fi folosită doar într-o situație în care ea este menținută pe intervalul respectiv. Termenul „nu este adevărat” cere identificarea afirmației care nu este general valabilă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-176",
+      "legacy_ids": [
+        "G1-ELE-176",
+        "G2-ELEC-312"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-176",
+        "record": "QABC-0165",
+        "source": "V190",
+        "text": "Pentru elemente statice trifazate simetrice și liniare Z2≈Z1; la mașini rotative Z2 poate diferi."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-177",
+      "legacy_ids": [
+        "G1-ELE-177",
+        "G2-ELEC-313"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-177",
+        "record": "QABC-0166",
+        "source": "V190",
+        "text": "Reactorul inseriat adaugă reactanță pe calea defectului; un miez de aer evită saturația feromagnetică puternică."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-178",
+      "legacy_ids": [
+        "G1-ELE-178",
+        "G2-ELEC-314"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-179",
+      "legacy_ids": [
+        "G1-ELE-179",
+        "G2-ELEC-315"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-179",
+        "record": "QABC-0168",
+        "source": "V190",
+        "text": "Puterea nominală a motorului se referă uzual la ieșirea mecanică disponibilă la arbore."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-180",
+      "legacy_ids": [
+        "G1-ELE-180",
+        "G2-ELEC-316"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-181",
+      "legacy_ids": [
+        "G1-ELE-181",
+        "G2-ELEC-317"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-181",
+        "record": "QABC-0170",
+        "source": "V187",
+        "text": "La Z_L=Zc pentru linie ideală, puterea transmisă este numită naturală sau caracteristică."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-182",
+      "legacy_ids": [
+        "G1-ELE-182",
+        "G2-ELEC-318"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-182",
+        "record": "QABC-0171",
+        "source": "V187",
+        "text": "În model ideal adaptat la Zc, puterea reactivă capacitivă produsă compensează absorbția inductivă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-183",
+      "legacy_ids": [
+        "G1-ELE-183",
+        "G2-ELEC-319"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-183",
+        "record": "QABC-0172",
+        "source": "V187",
+        "text": "La S fix, P=S×PF este maximă când PF=1."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-184",
+      "legacy_ids": [
+        "G1-ELE-184",
+        "G2-ELEC-320"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-184",
+        "record": "QABC-0173",
+        "source": "V185",
+        "text": "Permeabilitatea μ caracterizează răspunsul magnetic al mediului; în regim liniar B=μH."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-185",
+      "legacy_ids": [
+        "G1-ELE-185",
+        "G2-ELEC-321"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-185",
+        "record": "QABC-0174",
+        "source": "V185",
+        "text": "Permitivitatea ε descrie răspunsul dielectric/electric; apare în D=εE pentru mediu liniar."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-186",
+      "legacy_ids": [
+        "G1-ELE-186",
+        "G2-ELEC-322"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-186",
+        "record": "QABC-0175",
+        "source": "V185",
+        "text": "RAT/AVR reglează tensiunea generatorului sincron modificând excitația și curentul în înfășurarea de câmp."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-187",
+      "legacy_ids": [
+        "G1-ELE-187",
+        "G2-ELEC-323"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-187",
+        "record": "QABC-0176",
+        "source": "V185",
+        "text": "Pentru S transmis și parametri R/X fixați, I=S/(√3U), deci pierderile rezistive și reactive aproximative ∝1/U²."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-188",
+      "legacy_ids": [
+        "G1-ELE-188",
+        "G2-ELEC-324"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-188",
+        "record": "G1-ELE-188",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. mai mici. Pentru aceeași putere activă P și aceeași tensiune, un factor de putere mai mare înseamnă curent mai mic. Pierderile Joule sunt proporționale cu I², deci la cosφ = 0,9 sunt mai mici decât la cosφ = 0,8."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-189",
+      "legacy_ids": [
+        "G1-ELE-189",
+        "G2-ELEC-325"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-189",
+        "record": "QABC-0178",
+        "source": "V190",
+        "text": "Lucrul mecanic extern pentru a aduce sarcina pozitivă unitară de la infinit definește potențialul față de V(infinit)=0."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-190",
+      "legacy_ids": [
+        "G1-ELE-190",
+        "G2-ELEC-326"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-190",
+        "record": "QABC-0179",
+        "source": "V185",
+        "text": "Pentru o rețea conexă cu N noduri, matricea de incidență are rang N−1, deci N−1 ecuații KCL independente."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-191",
+      "legacy_ids": [
+        "G1-ELE-191",
+        "G2-ELEC-327"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-191",
+        "record": "G1-ELE-191",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. circulația curenților existentă anterior în rețea nu se modifică. Teorema lui Vaschy arată că introducerea unor f.e.m. egale și la fel orientate pe toate laturile care pornesc din același nod nu schimbă diferențele de potențial relevante și, în consecință, nu schimbă distribuția curenților. Capcana este să presupui că adăugarea unor surse modifică automat curenții."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-192",
+      "legacy_ids": [
+        "G1-ELE-192",
+        "G2-ELEC-328"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-192",
+        "record": "QABC-0181",
+        "source": "V185",
+        "text": "Fierul, nichelul și cobaltul sunt exemplele clasice de elemente feromagnetice."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-193",
+      "legacy_ids": [
+        "G1-ELE-193",
+        "G2-ELEC-329"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-193",
+        "record": "QABC-0182",
+        "source": "V190",
+        "text": "Învelișul contribuie la blocarea pătrunderii corpurilor și umezelii conform gradului IP."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-194",
+      "legacy_ids": [
+        "G1-ELE-194",
+        "G2-ELEC-330"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-195",
+      "legacy_ids": [
+        "G1-ELE-195",
+        "G2-ELEC-331"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-195",
+        "record": "QABC-0184",
+        "source": "V190",
+        "text": "Viteza motoarelor CC clasice poate fi variată într-o plajă largă prin tensiunea armăturii și flux."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-196",
+      "legacy_ids": [
+        "G1-ELE-196",
+        "G2-ELEC-332"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-196",
+        "record": "QABC-0185",
+        "source": "V185",
+        "text": "Din 1/Req=1/R1+1/R2, Req<min(R1,R2) pentru două rezistențe strict pozitive."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-197",
+      "legacy_ids": [
+        "G1-ELE-197",
+        "G2-ELEC-333"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-197",
+        "record": "QABC-0186",
+        "source": "V203",
+        "text": "Impuritățile din montaj, inclusiv pilituri și contaminanți, pot genera intensificări locale ale câmpului și scăderea izolației."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-198",
+      "legacy_ids": [
+        "G1-ELE-198",
+        "G2-ELEC-334"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-199",
+      "legacy_ids": [
+        "G1-ELE-199",
+        "G2-ELEC-335"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-200",
+      "legacy_ids": [
+        "G1-ELE-200",
+        "G2-ELEC-336"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-200",
+        "record": "QABC-0189",
+        "source": "V185",
+        "text": "Releul termic este destinat protecției motoarelor la suprasarcină prelungită, după reglaje."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-201",
+      "legacy_ids": [
+        "G1-ELE-201",
+        "G2-ELEC-337"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-201",
+        "record": "QABC-0190",
+        "source": "V185",
+        "text": "În serie rezistențele se adună: 2+2+2=6 Ω."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-202",
+      "legacy_ids": [
+        "G1-ELE-202",
+        "G2-ELEC-338"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-202",
+        "record": "QABC-0191",
+        "source": "V185",
+        "text": "La transformator ideal, raportul de transformare nominal al tensiunilor este apropiat de raportul tensiunilor în gol și de spire, în condițiile definiției adoptate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-203",
+      "legacy_ids": [
+        "G1-ELE-203",
+        "G2-ELEC-339"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-204",
+      "legacy_ids": [
+        "G1-ELE-204",
+        "G2-ELEC-340"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-204",
+        "record": "QABC-0193",
+        "source": "V190",
+        "text": "Pentru regim periodic, cel puțin una dintre formele de undă nesinusoidală indică deformarea."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-205",
+      "legacy_ids": [
+        "G1-ELE-205",
+        "G2-ELEC-341"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-205",
+        "record": "QABC-0194",
+        "source": "V185",
+        "text": "Admisia agentului primar la turbină modifică puterea mecanică și, la sincronism cu rețeaua, puterea activă generată."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-206",
+      "legacy_ids": [
+        "G1-ELE-206",
+        "G2-ELEC-342"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-206",
+        "record": "QABC-0195",
+        "source": "V185",
+        "text": "Curentul de excitație variază fluxul și permite reglarea Q/tensiunii generatorului sincron."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-207",
+      "legacy_ids": [
+        "G1-ELE-207",
+        "G2-ELEC-343"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-208",
+      "legacy_ids": [
+        "G1-ELE-208",
+        "G2-ELEC-344"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-208",
+        "record": "QABC-0197",
+        "source": "V185",
+        "text": "Pentru triunghi echilibrat, curentul de linie are modul √3·I_fază."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-209",
+      "legacy_ids": [
+        "G1-ELE-209",
+        "G2-ELEC-345"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-209",
+        "record": "G1-ELE-209",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: C. o înfășurare este conectată la rețea, iar cealaltă este deschisă. Funcționarea în gol a transformatorului înseamnă că primarul este alimentat, iar secundarul nu alimentează o sarcină. Curentul secundar este practic zero, în timp ce primarul absoarbe curentul de mers în gol."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-210",
+      "legacy_ids": [
+        "G1-ELE-210",
+        "G2-ELEC-346"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-211",
+      "legacy_ids": [
+        "G1-ELE-211",
+        "G2-ELEC-347"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-211",
+        "record": "QABC-0200",
+        "source": "V184",
+        "text": "Prin 1/Req=1/3+1/3+1/3, rezistența echivalentă este 1 Ω."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-212",
+      "legacy_ids": [
+        "G1-ELE-212",
+        "G2-ELEC-348"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-212",
+        "record": "QABC-0201",
+        "source": "V184",
+        "text": "Rezistivitatea ρ este caracteristica materialului și depinde și de temperatură."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-213",
+      "legacy_ids": [
+        "G1-ELE-213",
+        "G2-ELEC-349"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-213",
+        "record": "G1-ELE-213",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. reactanțele inductivă și capacitivă sunt egale în valoare absolută. Rezonanța apare când X_L = X_C, deci reactanța totală a circuitului RLC este nulă. Dacă X_L > X_C circuitul este inductiv, iar dacă X_C > X_L este capacitiv."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-214",
+      "legacy_ids": [
+        "G1-ELE-214",
+        "G2-ELEC-350"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-214",
+        "record": "QABC-0203",
+        "source": "V196",
+        "text": "Conservatorul limitează suprafața directă de contact ulei/aer în unele construcții, reducând degradarea uleiului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-215",
+      "legacy_ids": [
+        "G1-ELE-215",
+        "G2-ELEC-351"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-215",
+        "record": "QABC-0204",
+        "source": "V184",
+        "text": "În rețele cu reactanță dominantă, circulația puterii reactive influențează substanțial nivelul tensiunii."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-216",
+      "legacy_ids": [
+        "G1-ELE-216",
+        "G2-ELEC-352"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-217",
+      "legacy_ids": [
+        "G1-ELE-217",
+        "G2-ELEC-353"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-217",
+        "record": "G1-ELE-217",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. schemele de secvență directă și inversă conectate în paralel. Pentru un scurtcircuit între două faze, fără implicarea pământului și fără arc, componentele homopolare nu participă, iar rețelele directă și inversă se cuplează conform condițiilor defectului. Capcana este introducerea inutilă a secvenței zero."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-218",
+      "legacy_ids": [
+        "G1-ELE-218",
+        "G2-ELEC-354"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-218",
+        "record": "G1-ELE-218",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. schema de secvență directă. Scurtcircuitul trifazat simetric este reprezentat numai prin componenta de secvență directă. Componentele inversă și homopolară apar la defecte nesimetrice, nu la defectul trifazat simetric ideal."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-219",
+      "legacy_ids": [
+        "G1-ELE-219",
+        "G2-ELEC-355"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-220",
+      "legacy_ids": [
+        "G1-ELE-220",
+        "G2-ELEC-356"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-220",
+        "record": "QABC-0209",
+        "source": "V203",
+        "text": "Transformatoarele de măsură convenționale se folosesc frecvent în instalații CA de înaltă tensiune, pentru a furniza secundare măsurabile și izolate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-221",
+      "legacy_ids": [
+        "G1-ELE-221",
+        "G2-ELEC-357"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-222",
+      "legacy_ids": [
+        "G1-ELE-222",
+        "G2-ELEC-358"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-223",
+      "legacy_ids": [
+        "G1-ELE-223",
+        "G2-ELEC-359"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-223",
+        "record": "QABC-0212",
+        "source": "V184",
+        "text": "Varianta C exprimă interdicția pentru TC convențional cu primarul parcurs de curent."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-224",
+      "legacy_ids": [
+        "G1-ELE-224",
+        "G2-ELEC-360"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-225",
+      "legacy_ids": [
+        "G1-ELE-225",
+        "G2-ELEC-361"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-226",
+      "legacy_ids": [
+        "G1-ELE-226",
+        "G2-ELEC-362"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-227",
+      "legacy_ids": [
+        "G1-ELE-227",
+        "G2-ELEC-363"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-227",
+        "record": "QABC-0216",
+        "source": "V184",
+        "text": "Separatorul asigură izolarea unui circuit, cu distanță de separare identificabilă/verificabilă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-228",
+      "legacy_ids": [
+        "G1-ELE-228",
+        "G2-ELEC-364"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-229",
+      "legacy_ids": [
+        "G1-ELE-229",
+        "G2-ELEC-365"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-230",
+      "legacy_ids": [
+        "G1-ELE-230",
+        "G2-ELEC-366"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-230",
+        "record": "QABC-0219",
+        "source": "V184",
+        "text": "Siguranța este destinată întreruperii supracurenților peste caracteristica sa, incluzând scurtcircuite și unele suprasarcini."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-231",
+      "legacy_ids": [
+        "G1-ELE-231",
+        "G2-ELEC-367"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-232",
+      "legacy_ids": [
+        "G1-ELE-232",
+        "G2-ELEC-368"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-233",
+      "legacy_ids": [
+        "G1-ELE-233",
+        "G2-ELEC-369"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-234",
+      "legacy_ids": [
+        "G1-ELE-234",
+        "G2-ELEC-370"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-234",
+        "record": "QABC-0223",
+        "source": "V196",
+        "text": "100 V este o valoare secundară nominală folosită frecvent la transformatoare de măsurare de tensiune."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-235",
+      "legacy_ids": [
+        "G1-ELE-235",
+        "G2-ELEC-371"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-235",
+        "record": "QABC-0224",
+        "source": "V184",
+        "text": "Trei tensiuni electromotoare egale și decalate cu 120° au suma fazorială nulă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-236",
+      "legacy_ids": [
+        "G1-ELE-236",
+        "G2-ELEC-372"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-236",
+        "record": "QABC-0225",
+        "source": "V196",
+        "text": "Descărcările atmosferice pot induce supratensiuni în circuitele apropiate prin câmpurile variabile."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-237",
+      "legacy_ids": [
+        "G1-ELE-237",
+        "G2-ELEC-373"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-237",
+        "record": "G1-ELE-237",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: C. neliniar. Un conductor/circuit care nu respectă relația liniară U = RI pentru domeniul analizat este tratat ca neliniar. „Neomogen” se referă la uniformitatea proprietăților, nu la liniaritatea relației curent-tensiune."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-238",
+      "legacy_ids": [
+        "G1-ELE-238",
+        "G2-ELEC-374"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-238",
+        "record": "QABC-0227",
+        "source": "V184",
+        "text": "Biot–Savart–Laplace determină câmpul magnetic produs de elementele de curent."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-239",
+      "legacy_ids": [
+        "G1-ELE-239",
+        "G2-ELEC-375"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-239",
+        "record": "QABC-0228",
+        "source": "V184",
+        "text": "Tesla este unitatea SI a inducției magnetice B, adică densitatea fluxului magnetic."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-240",
+      "legacy_ids": [
+        "G1-ELE-240",
+        "G2-ELEC-376"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-240",
+        "record": "QABC-0229",
+        "source": "V196",
+        "text": "Un conservator cu respirație/desicant poate reduce pătrunderea umezelii fără a o elimina absolut."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-241",
+      "legacy_ids": [
+        "G1-ELE-241",
+        "G2-ELEC-377"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-241",
+        "record": "QABC-0230",
+        "source": "V196",
+        "text": "1 A și 5 A sunt valori nominale uzuale pentru secundarul transformatoarelor de curent convenționale."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-242",
+      "legacy_ids": [
+        "G1-ELE-242",
+        "G2-ELEC-378"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-242",
+        "record": "QABC-0231",
+        "source": "V184",
+        "text": "În stea simetrică, U_fază=400/√3≈230,9 V."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-243",
+      "legacy_ids": [
+        "G1-ELE-243",
+        "G2-ELEC-379"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-243",
+        "record": "QABC-0232",
+        "source": "V184",
+        "text": "Varianta C specifică lipsa curentului și admite instalație fără tensiune sau separare fără sarcină sub tensiune."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-244",
+      "legacy_ids": [
+        "G1-ELE-244",
+        "G2-ELEC-380"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-244",
+        "record": "QABC-0233",
+        "source": "V184",
+        "text": "Scurtcircuitarea secundarului unui transformator de tensiune poate produce supracurent și defect; nu este permisă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-245",
+      "legacy_ids": [
+        "G1-ELE-245",
+        "G2-ELEC-381"
+      ],
+      "status": "HISTORICAL_HOLD_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-246",
+      "legacy_ids": [
+        "G1-ELE-246",
+        "G2-ELEC-382"
+      ],
+      "status": "LEGACY_KEY_CONFLICT_NO_REUSE"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-247",
+      "legacy_ids": [],
+      "status": "NO_EXACT_QABC_MATCH"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-248",
+      "legacy_ids": [
+        "G1-ELE-248",
+        "G2-ELEC-384"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-248",
+        "record": "QABC-0237",
+        "source": "V194",
+        "text": "Poziția retrasă permite separarea modulului față de părțile fixe, în cadrul unui ansamblu cu ecrane, interblocări și proceduri adecvate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-249",
+      "legacy_ids": [
+        "G1-ELE-249"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-249",
+        "record": "QABC-0238",
+        "source": "V205",
+        "text": "Un întreruptor debroșabil de putere, cu protecții adecvate, poate întrerupe curentul de scurtcircuit; caracterul debroșabil se referă separat la posibilitatea de extragere/izolare."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-250",
+      "legacy_ids": [
+        "G1-ELE-250",
+        "G2-ELEC-385"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-250",
+        "record": "QABC-0239",
+        "source": "V194",
+        "text": "Motorul sincron subexcitat, în regim de motor, absoarbe putere activă pentru a furniza energie mecanică și de regulă putere reactivă inductivă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-251",
+      "legacy_ids": [
+        "G1-ELE-251",
+        "G2-ELEC-386"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-251",
+        "record": "QABC-0240",
+        "source": "V194",
+        "text": "La temperatură și puritate comparabile, conductivitatea crește aluminiu → cupru → argint."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-252",
+      "legacy_ids": [
+        "G1-ELE-252",
+        "G2-ELEC-387"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-252",
+        "record": "QABC-0241",
+        "source": "V194",
+        "text": "Pentru n surse identice cu aceeași polaritate în paralel, tensiunea echivalentă rămâne e și rezistența internă devine r/n."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-253",
+      "legacy_ids": [
+        "G1-ELE-253",
+        "G2-ELEC-388"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-253",
+        "record": "G1-ELE-253",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: A. R este egală cu rezistența totală văzută prin bornele AB. Este condiția de transfer maxim de putere pentru o sarcină rezistivă: rezistența sarcinii trebuie egalată cu rezistența echivalentă a sursei văzută din borne. Capcana este confundarea acesteia cu simpla rezistență internă a unei surse înainte de echivalare."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-254",
+      "legacy_ids": [
+        "G1-ELE-254",
+        "G2-ELEC-389"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-255",
+      "legacy_ids": [
+        "G1-ELE-255",
+        "G2-ELEC-390"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-255",
+        "record": "G1-ELE-255",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. apar supratensiuni periculoase în secundar. Un transformator de curent are secundarul destinat funcționării cu o sarcină de măsurare/protecție. Dacă secundarul este lăsat în gol în timp ce primarul este parcurs de curent, tensiunea secundară poate deveni foarte mare și periculoasă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-256",
+      "legacy_ids": [
+        "G1-ELE-256",
+        "G2-ELEC-391"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-256",
+        "record": "QABC-0245",
+        "source": "V194",
+        "text": "Faradul este unitatea SI a capacității C=Q/U."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-257",
+      "legacy_ids": [
+        "G1-ELE-257",
+        "G2-ELEC-392"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-258",
+      "legacy_ids": [
+        "G1-ELE-258",
+        "G2-ELEC-393"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-258",
+        "record": "QABC-0247",
+        "source": "V194",
+        "text": "Weber (Wb) măsoară fluxul magnetic Φ=∫B·dA."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-259",
+      "legacy_ids": [
+        "G1-ELE-259",
+        "G2-ELEC-394"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-259",
+        "record": "QABC-0248",
+        "source": "V194",
+        "text": "Hertz este unitatea SI pentru f=1/T, adică s^-1."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-260",
+      "legacy_ids": [
+        "G1-ELE-260",
+        "G2-ELEC-395"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-260",
+        "record": "QABC-0249",
+        "source": "V194",
+        "text": "Coulomb este unitatea sarcinii electrice, 1 C=1 A·s."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-261",
+      "legacy_ids": [
+        "G1-ELE-261",
+        "G2-ELEC-396"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-262",
+      "legacy_ids": [
+        "G1-ELE-262",
+        "G2-ELEC-397"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-262",
+        "record": "QABC-0251",
+        "source": "V192",
+        "text": "kW este unitate pentru putere activă."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-263",
+      "legacy_ids": [
+        "G1-ELE-263",
+        "G2-ELEC-398"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-263",
+        "record": "QABC-0252",
+        "source": "V192",
+        "text": "kvar este simbolul tehnic folosit pentru puterea reactivă, notat frecvent kVAr în enunțuri."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-264",
+      "legacy_ids": [
+        "G1-ELE-264",
+        "G2-ELEC-399"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-265",
+      "legacy_ids": [
+        "G1-ELE-265",
+        "G2-ELEC-400"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-266",
+      "legacy_ids": [
+        "G1-ELE-266"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-266",
+        "record": "QABC-0255",
+        "source": "V205",
+        "text": "Un modul debroșabil cu interblocări potrivite poate elimina unele manevre cu separatoare independente, reducând anumite erori; nu le elimină pe toate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-267",
+      "legacy_ids": [
+        "G1-ELE-267"
+      ],
+      "status": "NO_COMPATIBLE_EXPLANATION"
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-268",
+      "legacy_ids": [
+        "G1-ELE-268",
+        "G2-ELEC-401"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-268",
+        "record": "QABC-0257",
+        "source": "V192",
+        "text": "Cu unitate de schimb compatibilă, personal autorizat și condiții sigure, revenirea în funcțiune poate fi mai rapidă după defectul modulului."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-269",
+      "legacy_ids": [
+        "G1-ELE-269",
+        "G2-ELEC-402"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-269",
+        "record": "QABC-0258",
+        "source": "V192",
+        "text": "Rigiditatea dielectrică permite distanțe izolante mai mici și celule mai compacte."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-270",
+      "legacy_ids": [
+        "G1-ELE-270",
+        "G2-ELEC-403"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-270",
+        "record": "QABC-0259",
+        "source": "V192",
+        "text": "Întreruptoarele SF6 etanșe au avut în mod tipic întreținere simplificată comparativ cu anumite tehnologii anterioare; tot necesită verificări adecvate."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-271",
+      "legacy_ids": [
+        "G1-ELE-271",
+        "G2-ELEC-404"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-271",
+        "record": "QABC-0260",
+        "source": "V192",
+        "text": "Vidul evită utilizarea unui ulei de stingere combustibil și astfel reduce un mecanism de incendiu."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-272",
+      "legacy_ids": [
+        "G1-ELE-272",
+        "G2-ELEC-405"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-272",
+        "record": "QABC-0261",
+        "source": "V192",
+        "text": "În sistemele sincronizate, deficitul ori surplusul de putere activă accelerează sau frânează grupurile și schimbă frecvența."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-273",
+      "legacy_ids": [
+        "G1-ELE-273",
+        "G2-ELEC-406"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-273",
+        "record": "G1-ELE-273",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. mai mică. Linia aeriană are conductoare mai depărtate și, în configurația uzuală comparată cu un cablu subteran, prezintă o capacitate lineică medie mai mică. Capcana este inversarea comportării capacității și inductanței."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-274",
+      "legacy_ids": [
+        "G1-ELE-274",
+        "G2-ELEC-407"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-274",
+        "record": "G1-ELE-274",
+        "source": "LEGACY_HTML",
+        "text": "Răspuns corect: B. mai mare. Într-o linie aeriană, distanțele dintre conductoare sunt în general mai mari decât în cablu, ceea ce conduce la o inductanță de serviciu mai mare. Pentru cablul subteran, geometria apropiată și efectele ecranării modifică această valoare în sens opus."
+      }
+    },
+    {
+      "id": "CF-ELECTROTEHNICA-275",
+      "legacy_ids": [
+        "G1-ELE-275",
+        "G2-ELEC-408"
+      ],
+      "status": "REUSED_HISTORICAL_EDITORIAL",
+      "editorial": {
+        "id": "CF-ELECTROTEHNICA-275",
+        "record": "QABC-0264",
+        "source": "V192",
+        "text": "Rădăcina mediei pătratice (RMS) este prin definiție valoarea efectivă/eficace."
+      }
+    }
+  ]
+}

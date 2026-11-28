@@ -1,0 +1,105 @@
+{
+  "version": "H_TOPOLOGY_SUBGROUP_V1",
+  "date": "2026-11-13",
+  "scope_rule": {
+    "id": "H_PREFERENCE_BY_SWITCHING_TARGET_NOT_DOUBLE_BUSBAR_V1",
+    "hypothesis": "H inferior for frequent line switching, H superior for frequent transformer switching, if original figure matches breaker placement",
+    "guard": "Never generalize double busbar two-bus-and-coupler operation to a line-transformer H bridge: these are different objects.",
+    "source_scope_preflight": "TECHNICAL_OBJECT_MATCH_CONDITIONAL_SOURCE_VERSION_NOT_VERIFIED",
+    "technical_certification": "NO",
+    "figure_original_verified": "NO"
+  },
+  "per_unit": [
+    {
+      "unit_id": "AU-b157329216a487e9",
+      "representative_id": "G1-ELE-167",
+      "member_ids": "G1-ELE-167;G2-ELEC-305",
+      "original_QABC": {
+        "question": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" inferior este de preferat unei scheme de tip ,, H \" superior atunci când:",
+        "A": "se fac manevre dese cu circuitele de linie;",
+        "B": "se fac manevre dese cu circuitele de transformator;",
+        "C": "pe legătura dintre blocuri circulă un curent mic."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-167": "A",
+        "G2-ELEC-305": "A"
+      },
+      "source": {
+        "title": "Stații și posturi de transformare, scheme electrice de conexiuni ale circuitelor, §3.2.3.10, reproducere didactică",
+        "url": "https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php",
+        "locator": "§3.2.3.10 «Scheme în punte (fără bare colectoare)»; fig. 3.23; paragrafele referitoare la puntea spre transformator și puntea spre linie",
+        "access": "EXACT_SCOPE_HTML_READ_OPENED",
+        "source_type": "MIRRORED_TECHNICAL_DOCUMENT_UNVERIFIED_ORIGINAL_AUTHOR_EDITION",
+        "secondary_lead": "Comanescu Gh., Costinas S., PECS Note de curs, §3.9.3 fig. 3.25, online copies only; original publisher not verified",
+        "bib_2026": "NOT_VERIFIED",
+        "offline_rights": "NO_VERBATIM_LONG_TEXT; FIGURE_RIGHTS_AND_IMAGE_AUTHENTICITY_NOT_VERIFIED"
+      },
+      "contextual_explanation_md": "Două blocuri **linie–transformator** pot fi legate printr-o **punte**, rezultând o schemă care, prin poziționarea punții și a întreruptoarelor, poate fi de tip **H inferior** sau **H superior**. În varianta **H inferior**, întreruptoarele sunt dispuse astfel încât **manevrele pe circuitele de linie** să poată fi efectuate direct prin întreruptorul propriu. Această configurație reduce complexitatea manevrelor atunci când liniile sunt conectate și deconectate frecvent, față de o schemă unde operația implică mai multe aparate. Manevrele de scoatere în revizie a unui **transformator** pot necesita, în schimb, mai multe operații și interblocări. Alegerea schemei depinde de **frecvența operațiilor pe linie versus transformator**, nu de un curent generic «mic» în punte fără alte criterii.",
+      "highlights": [
+        "linie–transformator",
+        "punte",
+        "H inferior",
+        "H superior",
+        "manevrele pe circuitele de linie",
+        "transformator",
+        "frecvența operațiilor pe linie versus transformator"
+      ],
+      "ABC_technical_research": {
+        "A": "Susținut condițional de poziția întreruptoarelor în H inferior: manevre frecvente pe liniile electrice, prin întreruptorul propriu și număr mai redus de manevre.",
+        "B": "În H inferior manevrele de transformator pot fi mai laborioase; pentru exploatarea frecventă a transformatoarelor se preferă în mod uzual H superior.",
+        "C": "Un curent redus în punte poate avea consecințe de dimensionare, dar singur nu este criteriul comparativ solicitat de formularea despre manevre."
+      },
+      "provisional_key_NOT_APPLIED": "A_CONDITIONAL_SOURCE_MATCH",
+      "approved_for_learning": "NO",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "figure_verification": "NOT_RUN_AND_REQUIRES_RIGHTS"
+    },
+    {
+      "unit_id": "AU-914d53da0bed681e",
+      "representative_id": "G1-ELE-168",
+      "member_ids": "G1-ELE-168;G2-ELEC-306",
+      "original_QABC": {
+        "question": "O schemă cu două blocuri linie-transformator cu punte între ele de tip ,, H \" superior este de preferat unei scheme de tip ,, H \" inferior atunci când:",
+        "A": "se fac manevre dese cu circuitele de linie;",
+        "B": "se fac manevre dese cu circuitele de transformator;",
+        "C": "pe legătura dintre blocuri circulă un curent mic."
+      },
+      "original_keys_UNCHANGED": {
+        "G1-ELE-168": "B",
+        "G2-ELEC-306": "B"
+      },
+      "source": {
+        "title": "Stații și posturi de transformare, scheme electrice de conexiuni ale circuitelor, §3.2.3.10, reproducere didactică",
+        "url": "https://www.scrigroup.com/tehnologie/electronica-electricitate/Statii-Si-Posturi-De-Tansforma34188.php",
+        "locator": "§3.2.3.10 «Scheme în punte (fără bare colectoare)»; fig. 3.23; paragrafele referitoare la puntea spre transformator și puntea spre linie",
+        "access": "EXACT_SCOPE_HTML_READ_OPENED",
+        "source_type": "MIRRORED_TECHNICAL_DOCUMENT_UNVERIFIED_ORIGINAL_AUTHOR_EDITION",
+        "secondary_lead": "Comanescu Gh., Costinas S., PECS Note de curs, §3.9.3 fig. 3.25, online copies only; original publisher not verified",
+        "bib_2026": "NOT_VERIFIED",
+        "offline_rights": "NO_VERBATIM_LONG_TEXT; FIGURE_RIGHTS_AND_IMAGE_AUTHENTICITY_NOT_VERIFIED"
+      },
+      "contextual_explanation_md": "La schemele cu două blocuri **linie–transformator** unite printr-o punte, poziția întreruptoarelor determină circuitele care pot fi comutate direct. În varianta **H superior**, puntea este orientată spre partea de linie, iar **întreruptoarele aferente transformatoarelor** permit deconectarea unui transformator printr-o manevră mai simplă. Schema este astfel favorabilă atunci când **transformatoarele necesită manevre dese**, de exemplu pentru schimbări planificate ale regimului de funcționare. În comparație, varianta **H inferior** simplifică manevrele frecvente pe circuitele de linie, în timp ce oprirea transformatorului poate implica etape suplimentare. Alegerea nu decurge din denumirea «superior», ci din **topologia exactă a punții și din obiectul manevrelor**.",
+      "highlights": [
+        "linie–transformator",
+        "H superior",
+        "întreruptoarele aferente transformatoarelor",
+        "transformatoarele necesită manevre dese",
+        "H inferior",
+        "topologia exactă a punții și din obiectul manevrelor"
+      ],
+      "ABC_technical_research": {
+        "A": "Manevrele dese ale liniilor favorizează de regulă H inferior, cu întreruptoarele apropiate de circuitul de linie, nu H superior.",
+        "B": "Susținut condițional de configurația H superior: manevre dese pe transformatoare, care sunt comutate direct prin propriile întreruptoare.",
+        "C": "Curentul mic pe punte singur nu justifică un criteriu general de preferință între H inferior și superior; depinde de schema și protecții."
+      },
+      "provisional_key_NOT_APPLIED": "B_CONDITIONAL_SOURCE_MATCH",
+      "approved_for_learning": "NO",
+      "independent_technical_QA": "NOT_RUN",
+      "independent_source_QA": "NOT_RUN",
+      "independent_linguistic_QA": "NOT_RUN",
+      "figure_verification": "NOT_RUN_AND_REQUIRES_RIGHTS"
+    }
+  ]
+}

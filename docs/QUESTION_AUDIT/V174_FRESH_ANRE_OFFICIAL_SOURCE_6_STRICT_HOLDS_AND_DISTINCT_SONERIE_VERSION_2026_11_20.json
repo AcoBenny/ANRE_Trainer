@@ -1,0 +1,373 @@
+{
+  "schema": "v174_official_anre_source_text_reopened_six_strict_holds_plus_same_stem_pair",
+  "created_date": "2026-11-20",
+  "base_shas": {
+    "v144": "0fae5c2e3653c4cea2ced456ca768ddb01db733e",
+    "v150": "2251f3c23ad909933702c1b7f9200bd4dc65d7a4",
+    "v155": "cd59198b3d7823c9af63f2af5c66764c7b4f7b65"
+  },
+  "provenance": {
+    "site_listing": "https://anre.ro/participanti-la-piata-de-energie/persoane-fizice/energie-electrica/",
+    "ANRE_2024_official_host": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+    "ANRE_2023_official_host": "https://anre.ro/wp-content/uploads/2023/05/NORME-TEHNICE-Gr.-1-05.2023.xlsx",
+    "method": "Firecrawl queried public XLSX endpoints, response 200, extracted targeted question/options. Exact workbook raw XLSX bytes/ANRE server SHA not obtained. Row numbers are from pinned V144/V155; Firecrawl gives table ordinal 50/51/72 for norms vs snapshot physical rows 55/56/79, so no numerical row equality claimed.",
+    "normative_sources": [
+      "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/",
+      "https://www.dioda.ro/blog/normativ-i7-text-integral"
+    ],
+    "I7_clauses": "5.4.13 and 5.5.2.3 individually matched in two mirror texts; official legislatie.just.ro API still 502",
+    "official_original_question_source_reopened": true,
+    "official_scored_exam_key_authenticated": false
+  },
+  "counts": {
+    "strict_holds": 6,
+    "strict_grade_routes": 9,
+    "closely_related_distinct_same_stem_qabc": 1,
+    "original_question_source_pages_seen": 2,
+    "original_exam_answers_approved": 0
+  },
+  "cards": [
+    {
+      "unit_id": "QABC-0017",
+      "grades": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "immutable_keys": "G1-ELE-018=A | G2-ELEC-170=C",
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_snapshot_row": "25",
+      "official_web_link_origin": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_question": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+      "original_options": {
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "current_question": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+      "current_options": {
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "source_to_trainer_question_identical": true,
+      "source_to_trainer_changed_option_letters": [],
+      "technical_review": {
+        "physical_scope": "Linie electrică trifazată simetrică, capacități între faze C egale, contribuția pământului neglijată; trebuie precizat regimul secvenței directe.",
+        "original_candidate": "A",
+        "technical_status": "MATH_DIRECT_SEQUENCE_CANDIDATE_NOT_OFFICIAL_KEY",
+        "abc": {
+          "A": "În secvență directă echilibrată, q_a=C(Va−Vb)+C(Va−Vc)=3CVa, deci Cs=3C.",
+          "B": "Cs=C/3 contrazice relația de echivalență triunghi-stea pentru trei capacități egale în modelul enunțat.",
+          "C": "Cs=C este capacitatea individuală între faze, nu capacitatea echivalentă de serviciu pe fază în ipoteza de secvență directă."
+        },
+        "reformulation": {
+          "prompt": "Trei capacități egale C formează un triunghi între fazele unei rețele simetrice. Ce capacitate echivalentă în stea rezultă pentru fiecare fază?",
+          "answer": "3C în echivalența triunghi-stea, pentru secvența simetrică folosită."
+        },
+        "gaps": [
+          "Authentic original graded key G1/G2",
+          "exact Cs notation and phase-sequence applicability",
+          "distinct qualified independent QA"
+        ],
+        "source": [
+          "https://consultform.ro/anre/wp-content/uploads/2021/09/Retele-electrice-note-de-curs.pdf",
+          "https://phys.libretexts.org/Bookshelves/Electricity_and_Magnetism/Electricity_and_Magnetism_%28Tatum%29/05%3A_Capacitors/5.07%3A__Delta-Star_Transform"
+        ],
+        "technical_review_status": "MODEL_SAME_ASSISTANT_PRELIMINARY_WITH_PRIMARY_WORKBOOK_WEB_EXTRACTION",
+        "official_scoring_key_proven": false,
+        "independent_human_review": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0094",
+      "grades": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "immutable_keys": "G1-ELE-102=A | G2-ELEC-245=C",
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_snapshot_row": "109",
+      "official_web_link_origin": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_question": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+      "original_options": {
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
+      },
+      "current_question": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+      "current_options": {
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
+      },
+      "source_to_trainer_question_identical": true,
+      "source_to_trainer_changed_option_letters": [],
+      "technical_review": {
+        "physical_scope": "Stație cu două sisteme bare colectoare și un singur întreruptor pe circuit. Enunțul nu definește criteriul după care se preferă o configurație în exploatare.",
+        "original_candidate": "C_CONDITIONAL_NOT_UNIQUE",
+        "technical_status": "PREFERENCE_POLICY_UNDEFINED_KEY_CONFLICT",
+        "abc": {
+          "A": "O bară energizată și cealaltă în rezervă rece este o politică posibilă, cu alt compromis de continuitate și operativitate; nu este fizic imposibil.",
+          "B": "Cupla transversală în funcțiune înseamnă bare cuplate; poate fi exploatată în anumite regimuri, dar schimbă curentul de scurtcircuit și strategia de separare.",
+          "C": "Ambele bare sub tensiune cu cupla în rezervă caldă (întreruptorul deschis, separatoarele închise) corespund schemei cu cuplă normal deschisă; candidat documentat într-un anumit regim."
+        },
+        "reformulation": {
+          "prompt": "Într-o cuplă transversală «în rezervă caldă», cum sunt poziționate separatoarele și întreruptorul de cuplă?",
+          "answer": "Separatoarele spre bare sunt închise, întreruptorul este deconectat/deschis; cuplarea devine posibilă prin acționarea întreruptorului, în condiții autorizate."
+        },
+        "gaps": [
+          "Criterion of preferred normal station operating policy",
+          "original scored grade-specific A versus C key",
+          "exact bibliography generation and expert QA"
+        ],
+        "source": [
+          "https://legis.medleg.ro/legislatie/2010-regulament-general-manevre-2",
+          "https://www.academia.edu/16422253/SCHEME_DE_CONEXIUNI_PENTRU_STATII_ELECTRICE"
+        ],
+        "technical_review_status": "MODEL_SAME_ASSISTANT_PRELIMINARY_WITH_PRIMARY_WORKBOOK_WEB_EXTRACTION",
+        "official_scoring_key_proven": false,
+        "independent_human_review": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0143",
+      "grades": [
+        "G1-ELE-152"
+      ],
+      "immutable_keys": "G1-ELE-152=A",
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_snapshot_row": "159",
+      "official_web_link_origin": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_question": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "original_options": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "current_question": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "current_options": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "source_to_trainer_question_identical": false,
+      "source_to_trainer_changed_option_letters": [],
+      "technical_review": {
+        "physical_scope": "Constanta de propagare complexă gamma descrie evoluția amplitudinii și fazei pe unitate de lungime; originalul o numește «adimensională».",
+        "original_candidate": "A_TERM_WITH_DIMENSION_ERROR",
+        "technical_status": "ORIGINAL_STEM_GAMMA_UNITS_CONFLICT",
+        "abc": {
+          "A": "«Constanta de propagare» denumește obiectul care include atenuarea alpha și constanta de fază beta; însă gamma are unități inverse lungimii, nu este adimensională.",
+          "B": "Constanta de atenuare alpha descrie scăderea amplitudinii, fără a codifica separat variația de fază.",
+          "C": "«Constanta de distorsiune» nu este termenul standard pentru gamma=alpha+j beta ce caracterizează ambele efecte."
+        },
+        "reformulation": {
+          "prompt": "Ce unitate fizică are gamma=alpha+j beta și când este o cantitate fără dimensiune?",
+          "answer": "Gamma în m⁻¹ sau km⁻¹. Produsul gamma·ℓ este fără dimensiune (beta·ℓ reprezintă unghi)."
+        },
+        "gaps": [
+          "Didactic definition of a 1 km normalized propagation quantity if claimed",
+          "original exam key proof",
+          "correct original-vs-current text display and expert signoff"
+        ],
+        "source": [
+          "https://eng.libretexts.org/Bookshelves/Electrical_Engineering/Electronics/Microwave_and_RF_Design_II_-_Transmission_Lines_%28Steer%29/02%3A_Transmission_Lines/2.02%3A_Transmission_Line_Theory"
+        ],
+        "technical_review_status": "MODEL_SAME_ASSISTANT_PRELIMINARY_WITH_PRIMARY_WORKBOOK_WEB_EXTRACTION",
+        "official_scoring_key_proven": false,
+        "independent_human_review": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0236",
+      "grades": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "immutable_keys": "G1-ELE-247=B | G2-ELEC-383=B",
+      "original_source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_snapshot_row": "254",
+      "official_web_link_origin": "https://anre.ro/wp-content/uploads/2024/11/ELECTROTEHNICA-09.2024-2.xlsx",
+      "original_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "original_options": {
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "current_question": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+      "current_options": {
+        "A": "prin conducţie",
+        "B": "prin inducţie electrostatică",
+        "C": "prin magnetizare"
+      },
+      "source_to_trainer_question_identical": true,
+      "source_to_trainer_changed_option_letters": [
+        "B"
+      ],
+      "technical_review": {
+        "physical_scope": "Conductor izolat sau conectat la pământ aflat în câmp electric extern: inducție electrostatică/polarizare, versus transfer de sarcină; B original spune electromagnetică.",
+        "original_candidate": "NONE_STRICT_WITH_STATIC_E_AND_ISOLATED_NEUTRAL_CONDUCTOR",
+        "technical_status": "MATERIAL_OPTION_B_MUTATION_NO_ORIGINAL_UNIQUE_VALID_CHOICE",
+        "abc": {
+          "A": "Conducția presupune cale de transfer de sarcină; enunțul nu precizează contact sau împământare.",
+          "B": "«Inducție electromagnetică» nu este același lucru cu «inducție electrostatică». Un câmp E static poate redistribui sarcina într-un conductor fără flux magnetic variabil.",
+          "C": "Magnetizarea privește proprietățile magnetice, nu electrizarea/polarizarea electrostatică descrisă."
+        },
+        "reformulation": {
+          "prompt": "Un conductor inițial neutru, izolat, este introdus într-un câmp electric static. Apar sarcini de semn opus la extremități. A căpătat neapărat sarcină netă?",
+          "answer": "Nu. Apare separare de sarcini prin influență electrostatică; sarcina totală rămâne zero dacă este izolat și nu există transfer."
+        },
+        "gaps": [
+          "Historical 'electrizare prin influență' exam interpretation",
+          "net charge versus charge separation",
+          "official original scored key and expert review"
+        ],
+        "source": [
+          "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium",
+          "https://openstax.org/books/university-physics-volume-2/pages/5-2-conductors-insulators-and-charging-by-induction"
+        ],
+        "technical_review_status": "MODEL_SAME_ASSISTANT_PRELIMINARY_WITH_PRIMARY_WORKBOOK_WEB_EXTRACTION",
+        "official_scoring_key_proven": false,
+        "independent_human_review": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0362",
+      "grades": [
+        "G1-NOR-048"
+      ],
+      "immutable_keys": "G1-NOR-048=A",
+      "original_source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_snapshot_row": "55",
+      "official_web_link_origin": "https://anre.ro/wp-content/uploads/2023/05/NORME-TEHNICE-Gr.-1-05.2023.xlsx",
+      "original_question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  . ",
+      "original_options": {
+        "A": "numai direct din tabloul de distribuţie",
+        "B": " numai dintr-un circuit de iluminat normal",
+        "C": "dintr-un circuit de prize"
+      },
+      "current_question": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+      "current_options": {
+        "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+        "B": "numai dintr-un circuit de iluminat normal",
+        "C": "numai dintr-un circuit de prize"
+      },
+      "source_to_trainer_question_identical": true,
+      "source_to_trainer_changed_option_letters": [
+        "A",
+        "C"
+      ],
+      "technical_review": {
+        "physical_scope": "Alimentarea transformatorului de sonerie sau soneriei la 220(230) V: I7 §5.4.13 permite trei locuri diferite, iar originalul conține două «numai».",
+        "original_candidate": "C_PERMISSION_FROM_SOCKET_CIRCUIT",
+        "technical_status": "ORIGINAL_THREE_CHOICES_VS_REWRITTEN_TRAINER_A",
+        "abc": {
+          "A": "«Numai direct din tabloul de distribuție» este fals ca exclusivitate, fiind permise și prizele și iluminatul normal.",
+          "B": "«Numai dintr-un circuit de iluminat normal» este fals ca exclusivitate.",
+          "C": "«Dintr-un circuit de prize» este permis explicit de I7 5.4.13, dar nu reprezintă singura variantă de alimentare permisă."
+        },
+        "reformulation": {
+          "prompt": "Numește toate cele trei moduri de alimentare permise de I7 5.4.13 pentru sonerie/transformatorul de sonerie.",
+          "answer": "Din circuit de iluminat normal, din circuit de prize sau direct din tabloul de distribuție."
+        },
+        "gaps": [
+          "Official normative text 2026 direct endpoint inaccessible; two mirror texts agree",
+          "Original physical Excel source row-number discrepancy scrape index versus snapshot",
+          "ANRE original exam key and independent human QA"
+        ],
+        "source": [
+          "https://anre.ro/wp-content/uploads/2023/05/NORME-TEHNICE-Gr.-1-05.2023.xlsx",
+          "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/"
+        ],
+        "technical_review_status": "MODEL_SAME_ASSISTANT_PRELIMINARY_WITH_PRIMARY_WORKBOOK_WEB_EXTRACTION",
+        "official_scoring_key_proven": false,
+        "independent_human_review": false,
+        "approved_for_learning": false
+      }
+    },
+    {
+      "unit_id": "QABC-0386",
+      "grades": [
+        "G1-NOR-072"
+      ],
+      "immutable_keys": "G1-NOR-072=B",
+      "original_source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_snapshot_row": "79",
+      "official_web_link_origin": "https://anre.ro/wp-content/uploads/2023/05/NORME-TEHNICE-Gr.-1-05.2023.xlsx",
+      "original_question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general: ",
+      "original_options": {
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat uşor, fără utilizarea unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "current_question": "Fiecare conductor conectat la bara principală de legare la pământ la tabloul general:",
+      "current_options": {
+        "A": "nu este obligatoriu să poată fi deconectat individual",
+        "B": "trebuie să poată fi deconectat individual, iar conectarea să fie sigură și deconectabilă numai prin intermediul unei scule",
+        "C": "trebuie să poată fi deconectat individual"
+      },
+      "source_to_trainer_question_identical": true,
+      "source_to_trainer_changed_option_letters": [
+        "B"
+      ],
+      "technical_review": {
+        "physical_scope": "Fiecare conductor deja conectat la bara principală de legare la pământ: cerință deconectare individuală și numai cu sculă, I7 §5.5.2.3.",
+        "original_candidate": "C_INDIVIDUAL_DISCONNECT_SUPPORTED",
+        "technical_status": "ORIGINAL_WITHOUT_TOOL_FALSE_TRAINER_B_REWRITTEN",
+        "abc": {
+          "A": "Nu este obligatoriu să se poată deconecta individual contrazice cerința I7 5.5.2.3.",
+          "B": "Originalul «fără utilizarea unei scule» este contrar cerinței «numai prin intermediul unei scule»; versiunea trainerului a inversat expresia.",
+          "C": "Se poate deconecta individual afirmă prima cerință a I7 5.5.2.3. Nu menționează cerința suplimentară a sculei, dar acest lucru nu o falsifică."
+        },
+        "reformulation": {
+          "prompt": "Care două condiții distincte sunt impuse de I7 5.5.2.3 pentru conductorii conectați la bara principală de împământare?",
+          "answer": "Deconectare individuală și conectare sigură, deconectabilă numai prin intermediul unei scule."
+        },
+        "gaps": [
+          "Direct official 2026 I7 endpoint accessibility",
+          "Physical original workbook row-number authentication and original graded key",
+          "Independent source/linguistic expert QA"
+        ],
+        "source": [
+          "https://anre.ro/wp-content/uploads/2023/05/NORME-TEHNICE-Gr.-1-05.2023.xlsx",
+          "https://lexapp.ro/legislatie/reglementare-tehnica-normativ-proiectarea-executia-exploatarea-2011/"
+        ],
+        "technical_review_status": "MODEL_SAME_ASSISTANT_PRELIMINARY_WITH_PRIMARY_WORKBOOK_WEB_EXTRACTION",
+        "official_scoring_key_proven": false,
+        "independent_human_review": false,
+        "approved_for_learning": false
+      }
+    }
+  ],
+  "related_same_stem_do_not_deduplicate": {
+    "unit_id": "QABC-0363",
+    "grade_id": "G1-NOR-049",
+    "source_snapshot_row": 56,
+    "official_workbook_original_stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+    "official_source_options_reconfirmed_2026_11_20": {
+      "A": "numai direct din tabloul de distribuţie",
+      "B": "dintr-un circuit de iluminat normal",
+      "C": "numai dintr-un circuit de prize"
+    },
+    "trainer_imported_grade_key": "B",
+    "technical_candidate": "B_LIGHTING_PERMITTED",
+    "reasoning": "Unlike QABC-0362 original, B has no restrictive 'numai'; I7 5.4.13 supports B. A and C contain false exclusivity. This is a distinct published original option set, not an alternative grading of one QABC.",
+    "original_exam_scored_key_authenticated": false,
+    "independent_QA": false,
+    "learning_approved": false
+  },
+  "QA": {
+    "six_ids_preserved": true,
+    "each_has_three_stored_source_and_current_options": true,
+    "all_original_and_trainer_keys_unmodified": true,
+    "source_candidate_distinguished_from_exam_key": true,
+    "source_blob_hashed_from_historical_snapshot_only": true,
+    "separate_actual_independent_technical_or_linguistic_reviewer": "NOT_RUN",
+    "learner_release": "BLOCKED"
+  },
+  "next": "Prioritize official scoring-key authenticity, raw workbook byte/fidelity and normative 2026, then independent technical/legal/linguistic review. Leave current six strict holds in force. Never change keys/HTML/APK or merge."
+}

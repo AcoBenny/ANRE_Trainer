@@ -1,0 +1,552 @@
+{
+  "schema": "ANRE_CKPT427_DIDACTIC_EVIDENCE_V1",
+  "checkpoint": "CKPT-427",
+  "date": "2026-11-25",
+  "parent": "CKPT-426",
+  "counts": {
+    "new_didactic_groups": 14,
+    "new_grade_routes": 14
+  },
+  "provenance": "These are trainer-authored supplemental G2 questions, NOT original ANRE exam questions. Original text and key unchanged; source/ABC conceptual audits with independent AI reviews. Verbatim original before/after source paragraphs not yet authenticated, offline rights and app QA untested.",
+  "excluded_unapproved": [
+    "QABC-0537: competing true procedural variant C",
+    "QABC-0510: imprecise short circuit description"
+  ],
+  "records": [
+    {
+      "qabc_id": "QABC-0475",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-001",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_UNOFFICIAL_NOT_ANRE_EXAM_QUESTION",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Ce relație exprimă legea lui Ohm pentru un rezistor?",
+      "unchanged_trainer_ABC": {
+        "A": "U = R·I",
+        "B": "P = U·I",
+        "C": "Q = U/R"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "484d6655b460a6b6a63e7205458e31f262834aa5",
+      "source_previous_locator": "OpenStax University Physics Vol2 §9.4 Ohm's Law; CKPT245",
+      "exact_relevant_science_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+      "technical_section": "Ohm's law V=IR",
+      "physical_scope_and_countermodel": "Linear resistor at conditions where R is approximately constant",
+      "prior_card_model_note": "Pentru un rezistor ohmic: U=RI și I=U/R; nu extrapola automat la componentă neliniară precum o diodă.",
+      "explanations_ABC": {
+        "A": "A U=R·I este forma legii lui Ohm pentru un rezistor ohmic în condiții de temperatură/fenomen liniar considerate constante.",
+        "B": "B P=U·I calculează puterea electrică, dar nu exprimă relația de definiție între U, R și I cerută.",
+        "C": "C Q=U/R confundă notația Q, folosită pentru sarcină electrică, cu intensitatea I; U/R are dimensiune de amperi, nu coulombi."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Linear resistor at conditions where R is approximately constant",
+        "central_highlighted_rule_paraphrase": "**A U=R·I este forma legii lui Ohm pentru un rezistor ohmic în condiții de temperatură/fenomen liniar considerate constante.**",
+        "after_paraphrase": "Distincția față de B și C: B P=U·I calculează puterea electrică, dar nu exprimă relația de definiție între U, R și I cerută. C Q=U/R confundă notația Q, folosită pentru sarcină electrică, cu intensitatea I; U/R are dimensiune de amperi, nu coulombi."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_9f2a4baa-c33a-4a0c-a109-f7c9a989ec56",
+        "resp_00893e9e-9235-44a7-8da5-256791fe04f4"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0476",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-002",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_UNOFFICIAL_NOT_ANRE_EXAM_QUESTION",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Unitatea SI pentru rezistența electrică este:",
+      "unchanged_trainer_ABC": {
+        "A": "ohmul (Ω)",
+        "B": "voltul (V)",
+        "C": "wattul (W)"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "484d6655b460a6b6a63e7205458e31f262834aa5",
+      "source_previous_locator": "Unități SI, NIST SI, CKPT245",
+      "exact_relevant_science_source_url": "https://www.nist.gov/pml/owm/si-units-electric-current",
+      "technical_section": "SI resistance: ohm Ω",
+      "physical_scope_and_countermodel": "Ω=V/A, not a potential-difference or power unit",
+      "prior_card_model_note": "Dimensional: R=U/I, astfel Ω=V/A. Nu confunda unitatea mărimii cu unitățile din formula de putere.",
+      "explanations_ABC": {
+        "A": "A ohmul (Ω) este unitatea rezistenței, definită ca volt pe amper, Ω=V/A.",
+        "B": "B voltul (V) măsoară diferența de potențial electric, nu rezistența.",
+        "C": "C wattul (W) este unitate de putere, nu unitatea rezistenței."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Ω=V/A, not a potential-difference or power unit",
+        "central_highlighted_rule_paraphrase": "**A ohmul (Ω) este unitatea rezistenței, definită ca volt pe amper, Ω=V/A.**",
+        "after_paraphrase": "Distincția față de B și C: B voltul (V) măsoară diferența de potențial electric, nu rezistența. C wattul (W) este unitate de putere, nu unitatea rezistenței."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_9f2a4baa-c33a-4a0c-a109-f7c9a989ec56",
+        "resp_00893e9e-9235-44a7-8da5-256791fe04f4"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0477",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-003",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_UNOFFICIAL_NOT_ANRE_EXAM_QUESTION",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Unitatea SI pentru intensitatea curentului electric este:",
+      "unchanged_trainer_ABC": {
+        "A": "amperul (A)",
+        "B": "ohmul (Ω)",
+        "C": "joule (J)"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "484d6655b460a6b6a63e7205458e31f262834aa5",
+      "source_previous_locator": "Unități SI, NIST SI, CKPT245",
+      "exact_relevant_science_source_url": "https://www.nist.gov/pml/owm/si-units-electric-current",
+      "technical_section": "SI base electric-current unit ampere A",
+      "physical_scope_and_countermodel": "Ampere current distinct from Ω resistance and J energy",
+      "prior_card_model_note": "Sarcina electrică este exprimată în coulombi C, curentul în A=C/s.",
+      "explanations_ABC": {
+        "A": "A amperul (A) este unitatea SI de bază pentru curentul electric.",
+        "B": "B ohmul (Ω) este unitate derivată de rezistență, nu de curent.",
+        "C": "C joule (J) este unitate de energie sau lucru mecanic, nu de intensitate."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Ampere current distinct from Ω resistance and J energy",
+        "central_highlighted_rule_paraphrase": "**A amperul (A) este unitatea SI de bază pentru curentul electric.**",
+        "after_paraphrase": "Distincția față de B și C: B ohmul (Ω) este unitate derivată de rezistență, nu de curent. C joule (J) este unitate de energie sau lucru mecanic, nu de intensitate."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_9f2a4baa-c33a-4a0c-a109-f7c9a989ec56",
+        "resp_00893e9e-9235-44a7-8da5-256791fe04f4"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0478",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-004",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_UNOFFICIAL_NOT_ANRE_EXAM_QUESTION",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Unitatea SI pentru tensiunea electrică este:",
+      "unchanged_trainer_ABC": {
+        "A": "voltul (V)",
+        "B": "amperul (A)",
+        "C": "wattul (W)"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "484d6655b460a6b6a63e7205458e31f262834aa5",
+      "source_previous_locator": "Unități SI, NIST SI, CKPT245",
+      "exact_relevant_science_source_url": "https://www.nist.gov/pml/owm/si-units-electric-current",
+      "technical_section": "SI electric potential difference volt V",
+      "physical_scope_and_countermodel": "V=W/A for voltage; not current A or power W",
+      "prior_card_model_note": "Tensiunea este energie transferată pe unitate de sarcină: 1 V=1 J/C.",
+      "explanations_ABC": {
+        "A": "A voltul (V) este unitatea tensiunii, diferența de potențial electric între două puncte.",
+        "B": "B amperul (A) exprimă curentul, nu tensiunea.",
+        "C": "C wattul (W) exprimă puterea, nu diferența de potențial."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: V=W/A for voltage; not current A or power W",
+        "central_highlighted_rule_paraphrase": "**A voltul (V) este unitatea tensiunii, diferența de potențial electric între două puncte.**",
+        "after_paraphrase": "Distincția față de B și C: B amperul (A) exprimă curentul, nu tensiunea. C wattul (W) exprimă puterea, nu diferența de potențial."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_00893e9e-9235-44a7-8da5-256791fe04f4"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0479",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-005",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_UNOFFICIAL_NOT_ANRE_EXAM_QUESTION",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Puterea electrică activă într-un circuit de curent continuu se poate calcula cu:",
+      "unchanged_trainer_ABC": {
+        "A": "P = U·I",
+        "B": "P = U/I",
+        "C": "P = R/I"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V230_G2LEG128_135_NOR136_147_ELEC001_005_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "484d6655b460a6b6a63e7205458e31f262834aa5",
+      "source_previous_locator": "OpenStax University Physics Vol2 §9.5 Electrical Energy and Power; CKPT245",
+      "exact_relevant_science_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "technical_section": "DC power P=U·I",
+      "physical_scope_and_countermodel": "Power sign depends on passive generator/load convention",
+      "prior_card_model_note": "În DC pasiv, P=UI, iar pentru rezistor ohmic P=I²R=U²/R; semnul depinde de convenția generator/receptor.",
+      "explanations_ABC": {
+        "A": "A P=U·I este puterea în circuit DC la borne pentru convenția semnelor adoptată; unitatea V·A=W.",
+        "B": "B P=U/I are dimensiune V/A=Ω și descrie rezistența, nu puterea.",
+        "C": "C P=R/I are dimensiune Ω/A, incompatibilă cu wattul și cu relațiile de putere."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Power sign depends on passive generator/load convention",
+        "central_highlighted_rule_paraphrase": "**A P=U·I este puterea în circuit DC la borne pentru convenția semnelor adoptată; unitatea V·A=W.**",
+        "after_paraphrase": "Distincția față de B și C: B P=U/I are dimensiune V/A=Ω și descrie rezistența, nu puterea. C P=R/I are dimensiune Ω/A, incompatibilă cu wattul și cu relațiile de putere."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_00893e9e-9235-44a7-8da5-256791fe04f4"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0531",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-057",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Eficiența/randamentul unui echipament este raportul dintre:",
+      "unchanged_trainer_ABC": {
+        "A": "puterea utilă și puterea absorbită",
+        "B": "puterea absorbită și pierderi",
+        "C": "tensiune și curent"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-057:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "exact_relevant_science_source_url": "https://openstax.org/books/college-physics/pages/7-6-conservation-of-energy",
+      "technical_section": "Efficiency useful output/input",
+      "physical_scope_and_countermodel": "For consistent time interval η=P useful/P in or Wout/Ein",
+      "prior_card_model_note": "Pentru echipament pasiv uzual 0≤η≤1, iar pierderile explică diferența dintre intrare și ieșire.",
+      "explanations_ABC": {
+        "A": "A randamentul η=P_utilă/P_absorbită cuantifică fracția energiei sau puterii de intrare convertită util.",
+        "B": "B P_absorbită/pierderi nu reprezintă eficiența și poate depăși 1.",
+        "C": "C U/I are unitatea Ω, incompatibilă cu raportul adimensional η."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: For consistent time interval η=P useful/P in or Wout/Ein",
+        "central_highlighted_rule_paraphrase": "**A randamentul η=P_utilă/P_absorbită cuantifică fracția energiei sau puterii de intrare convertită util.**",
+        "after_paraphrase": "Distincția față de B și C: B P_absorbită/pierderi nu reprezintă eficiența și poate depăși 1. C U/I are unitatea Ω, incompatibilă cu raportul adimensional η."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_120ef115-15bd-4b97-8d1a-117d6b90b850"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0532",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-058",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Pierderile Joule într-un conductor cresc cu:",
+      "unchanged_trainer_ABC": {
+        "A": "I²·R",
+        "B": "I/R",
+        "C": "U/R²"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-058:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "exact_relevant_science_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "technical_section": "Joule heating P=I²R",
+      "physical_scope_and_countermodel": "When R is fixed, heating grows with current squared",
+      "prior_card_model_note": "Dublarea curentului cu rezistența constantă multiplică pierderea de patru ori.",
+      "explanations_ABC": {
+        "A": "A pierderea Joule în conductor este P_J=I²R la curent și rezistență date.",
+        "B": "B I/R are unități A/Ω și nu exprimă puterea termică.",
+        "C": "C U/R² are unități incompatibile cu W și nu este legea Joule."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: When R is fixed, heating grows with current squared",
+        "central_highlighted_rule_paraphrase": "**A pierderea Joule în conductor este P_J=I²R la curent și rezistență date.**",
+        "after_paraphrase": "Distincția față de B și C: B I/R are unități A/Ω și nu exprimă puterea termică. C U/R² are unități incompatibile cu W și nu este legea Joule."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_120ef115-15bd-4b97-8d1a-117d6b90b850"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0533",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-059",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Într-o linie electrică, creșterea tensiunii pentru aceeași putere transmisă determină, ideal, un curent:",
+      "unchanged_trainer_ABC": {
+        "A": "mai mic",
+        "B": "mai mare de patru ori",
+        "C": "neschimbat obligatoriu"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-059:https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "exact_relevant_science_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power",
+      "technical_section": "P=UI; I decreases as U rises with P and power factor fixed",
+      "physical_scope_and_countermodel": "Same transmitted real power, topology and power factor",
+      "prior_card_model_note": "Dacă P, topologia și cosφ rămân fixe, I∝1/U; pierderile I²R scad când I se reduce.",
+      "explanations_ABC": {
+        "A": "A pentru aceeași putere transferată și același factor de putere, mărirea tensiunii reduce curentul de linie.",
+        "B": "B «mai mare de patru ori» contrazice relația inversă a curentului cu tensiunea.",
+        "C": "C «neschimbat obligatoriu» nu permite acoperirea aceleiași puteri la U mai mare în modelul ideal."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Same transmitted real power, topology and power factor",
+        "central_highlighted_rule_paraphrase": "**A pentru aceeași putere transferată și același factor de putere, mărirea tensiunii reduce curentul de linie.**",
+        "after_paraphrase": "Distincția față de B și C: B «mai mare de patru ori» contrazice relația inversă a curentului cu tensiunea. C «neschimbat obligatoriu» nu permite acoperirea aceleiași puteri la U mai mare în modelul ideal."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_120ef115-15bd-4b97-8d1a-117d6b90b850"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0534",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-060",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Un wattmetru este destinat măsurării:",
+      "unchanged_trainer_ABC": {
+        "A": "puterii electrice",
+        "B": "rezistenței de izolație exclusiv",
+        "C": "frecvenței exclusiv"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-060:https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "exact_relevant_science_source_url": "https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1011-92_VOL4.pdf",
+      "technical_section": "DOE electrical science test equipment: wattmeter measures DC/true AC power",
+      "physical_scope_and_countermodel": "Wattmeter measures power, not insulation resistance nor exclusively frequency",
+      "prior_card_model_note": "Instrumentele multifuncționale pot integra mai multe măsurări; întrebare despre funcția principală.",
+      "explanations_ABC": {
+        "A": "A wattmetrul este instrumentul destinat măsurării puterii electrice, în special a celei active.",
+        "B": "B rezistența de izolație cere un tester dedicat și nu este măsurarea exclusivă a unui wattmetru.",
+        "C": "C măsurarea frecvenței este scopul frecvențmetrului, nu al wattmetrului."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Wattmeter measures power, not insulation resistance nor exclusively frequency",
+        "central_highlighted_rule_paraphrase": "**A wattmetrul este instrumentul destinat măsurării puterii electrice, în special a celei active.**",
+        "after_paraphrase": "Distincția față de B și C: B rezistența de izolație cere un tester dedicat și nu este măsurarea exclusivă a unui wattmetru. C măsurarea frecvenței este scopul frecvențmetrului, nu al wattmetrului."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_120ef115-15bd-4b97-8d1a-117d6b90b850"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0535",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-061",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Un frecvențmetru este destinat măsurării:",
+      "unchanged_trainer_ABC": {
+        "A": "frecvenței",
+        "B": "rezistenței",
+        "C": "inductanței"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-061:https://www.ni.com/en/shop/electronic-test-instrumentation/digital-multimeters/dmm-measurement-fundamentals.html",
+      "exact_relevant_science_source_url": "https://www.keysight.com/ca/en/products/rf-power-meters/frequency-counters.html",
+      "technical_section": "Keysight frequency counter measures frequency of periodic signal",
+      "physical_scope_and_countermodel": "Frequency meter function differs from ohmmeter and LCR meter",
+      "prior_card_model_note": "Nu confunda frecvența rețelei cu valori ale tensiunii și curentului.",
+      "explanations_ABC": {
+        "A": "A frecvențmetrul este folosit pentru determinarea frecvenței în Hz.",
+        "B": "B măsurarea rezistenței se face cu ohmmetrul, altă funcție.",
+        "C": "C inductanța se măsoară prin alte metode/metre LCR, nu prin frecvențmetru simplu."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Frequency meter function differs from ohmmeter and LCR meter",
+        "central_highlighted_rule_paraphrase": "**A frecvențmetrul este folosit pentru determinarea frecvenței în Hz.**",
+        "after_paraphrase": "Distincția față de B și C: B măsurarea rezistenței se face cu ohmmetrul, altă funcție. C inductanța se măsoară prin alte metode/metre LCR, nu prin frecvențmetru simplu."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_120ef115-15bd-4b97-8d1a-117d6b90b850"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0536",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-062",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Un megohmetru este utilizat în principal pentru măsurarea:",
+      "unchanged_trainer_ABC": {
+        "A": "rezistenței de izolație la tensiuni de încercare specifice",
+        "B": "puterii active de rețea",
+        "C": "curentului de scurtcircuit al rețelei"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-062:https://www.fluke.com/en/learn/blog/electrical/how-to-choose-an-insulation-resistance-tester",
+      "exact_relevant_science_source_url": "https://www.fluke.com/en/learn/blog/electrical/how-to-choose-an-insulation-resistance-tester",
+      "technical_section": "Insulation resistance tester/megohmmeter with selected test voltage",
+      "physical_scope_and_countermodel": "Testing must be per qualified procedure, never apply test voltage to live circuit",
+      "prior_card_model_note": "Testarea izolației trebuie făcută în condiții sigure și conform echipamentului, fără tensiune externă.",
+      "explanations_ABC": {
+        "A": "A megohmetrul verifică rezistența de izolație prin tensiune de încercare selectată pentru obiectul testat.",
+        "B": "B puterea activă de rețea se determină cu wattmetru/analizor, nu cu megohmetrul.",
+        "C": "C curentul de scurtcircuit al rețelei nu este măsurarea de bază a megohmetrului."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Testing must be per qualified procedure, never apply test voltage to live circuit",
+        "central_highlighted_rule_paraphrase": "**A megohmetrul verifică rezistența de izolație prin tensiune de încercare selectată pentru obiectul testat.**",
+        "after_paraphrase": "Distincția față de B și C: B puterea activă de rețea se determină cu wattmetru/analizor, nu cu megohmetrul. C curentul de scurtcircuit al rețelei nu este măsurarea de bază a megohmetrului."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_ce1041ca-45ad-4444-bc51-0711c7209073"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0538",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-064",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Simbolul electric pentru rezistență este în mod uzual:",
+      "unchanged_trainer_ABC": {
+        "A": "R",
+        "B": "C",
+        "C": "L"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-064:https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+      "exact_relevant_science_source_url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law",
+      "technical_section": "R symbol of resistance",
+      "physical_scope_and_countermodel": "Quantity symbol R vs SI unit symbol Ω",
+      "prior_card_model_note": "Nu confunda simbolul mărimii R cu unitatea ei Ω.",
+      "explanations_ABC": {
+        "A": "A litera R este simbolul uzual al rezistenței electrice în ecuații, de exemplu R=U/I.",
+        "B": "B C este simbolul uzual al capacității, nu al rezistenței.",
+        "C": "C L este simbolul uzual al inductanței, nu al rezistenței."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Quantity symbol R vs SI unit symbol Ω",
+        "central_highlighted_rule_paraphrase": "**A litera R este simbolul uzual al rezistenței electrice în ecuații, de exemplu R=U/I.**",
+        "after_paraphrase": "Distincția față de B și C: B C este simbolul uzual al capacității, nu al rezistenței. C L este simbolul uzual al inductanței, nu al rezistenței."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_ce1041ca-45ad-4444-bc51-0711c7209073"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0539",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-065",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Simbolul uzual pentru inductanță este:",
+      "unchanged_trainer_ABC": {
+        "A": "L",
+        "B": "R",
+        "C": "G"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-065:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "exact_relevant_science_source_url": "https://openstax.org/books/university-physics-volume-2/pages/14-2-self-inductance-and-inductors",
+      "technical_section": "L symbol of inductance",
+      "physical_scope_and_countermodel": "Inductance L uses henry H, distinct from R resistance and G conductance",
+      "prior_card_model_note": "Simbolul mărimii L este diferit de simbolul unității H.",
+      "explanations_ABC": {
+        "A": "A inductanța este notată uzual L și se măsoară în henry H.",
+        "B": "B R notează rezistența, nu inductanța.",
+        "C": "C G notează conductanța, nu inductanța."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Inductance L uses henry H, distinct from R resistance and G conductance",
+        "central_highlighted_rule_paraphrase": "**A inductanța este notată uzual L și se măsoară în henry H.**",
+        "after_paraphrase": "Distincția față de B și C: B R notează rezistența, nu inductanța. C G notează conductanța, nu inductanța."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_ce1041ca-45ad-4444-bc51-0711c7209073"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    },
+    {
+      "qabc_id": "QABC-0540",
+      "classification": "UNOFFICIAL_TRAINER_AUTHORED_NOT_ANRE_EXAM_QUESTION",
+      "original_grade_id": "G2-ELEC-066",
+      "original_key_unchanged": "A",
+      "original_source_origin": "SUPPLEMENTAL_PRACTICE_TRAINER_AUTHORED_NOT_ANRE_ORIGINAL",
+      "source_dataset_reference": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023, pct. 1",
+      "unchanged_trainer_stem": "Simbolul uzual pentru capacitate este:",
+      "unchanged_trainer_ABC": {
+        "A": "C",
+        "B": "L",
+        "C": "I"
+      },
+      "prior_editorial_path": "docs/QUESTION_AUDIT/V236_G2ELEC056_066_LEG067_080_25_DIDACTIC_ABC_2026_11_21.json",
+      "prior_editorial_sha": "71429f9303e9f32195fd1617aeaeb33d0d26df0b",
+      "source_previous_locator": "G2-ELEC-066:https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "exact_relevant_science_source_url": "https://openstax.org/books/university-physics-volume-2/pages/8-1-capacitors-and-capacitance",
+      "technical_section": "C symbol of capacitance",
+      "physical_scope_and_countermodel": "Capacitance quantity C vs coulomb C unit; farad F capacitance unit",
+      "prior_card_model_note": "C pentru capacitate nu trebuie confundat cu coulombul (C) ca unitate de sarcină.",
+      "explanations_ABC": {
+        "A": "A capacitatea electrică are simbolul uzual C, cu unitatea farad F.",
+        "B": "B L notează inductanța, nu capacitatea.",
+        "C": "C I notează curentul electric, nu capacitatea."
+      },
+      "teaching_context_editorial": {
+        "before_paraphrase": "Model: Capacitance quantity C vs coulomb C unit; farad F capacitance unit",
+        "central_highlighted_rule_paraphrase": "**A capacitatea electrică are simbolul uzual C, cu unitatea farad F.**",
+        "after_paraphrase": "Distincția față de B și C: B L notează inductanța, nu capacitatea. C I notează curentul electric, nu capacitatea."
+      },
+      "verified_verbatim_original_source_before_after": false,
+      "actual_distinct_AI_review_ids": [
+        "resp_ce1041ca-45ad-4444-bc51-0711c7209073"
+      ],
+      "learning_content_validated": true,
+      "official_ANRE_scoring_claim": false,
+      "app_qa_not_run": true
+    }
+  ]
+}

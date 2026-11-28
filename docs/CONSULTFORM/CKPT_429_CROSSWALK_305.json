@@ -1,0 +1,5883 @@
+{
+  "schema": "ANRE_CONSULTFORM_CROSSWALK_V1",
+  "checkpoint": "CKPT-429",
+  "mission": "ANRE-MC-001",
+  "source_files": [
+    {
+      "file": "CONSULTFORM-INTREBARI-LEGISLATIE-GR2_si_GR1-Interactiv-P(2).xlsx",
+      "sha256": "78ac0606d552c5af97d58958e75a73be2ae3cd42ed114139c7a26230493f8d45",
+      "sheet": "rezolvate"
+    },
+    {
+      "file": "CONSULTFORM-NORME_TEHNICE_GR2_si_GR1-Interactiv-P(1).xlsx",
+      "sha256": "77be5bacf7d883ca19652e97341c493f8030c52bd3229bb33ea2a8503c4cff8b",
+      "sheet": "rezolvate"
+    }
+  ],
+  "legacy_commit": "4ada6c74024d47d5c297ae2a415a34cfdff26b78",
+  "legacy_master_blob": "6db046d3577297aa2aea18ac0992438fb115f7b5",
+  "legacy_group_blob": "fe8fa953605cab36e4459e4a9004b71c438fd7d7",
+  "policy": "Source key accepted by owner. Exact normalized QABC set; unmatched both. No technical key verification. No raw workbook or full QABC copied. Stable source IDs; old IDs linked.",
+  "summary": {
+    "input": 305,
+    "unique": 305,
+    "duplicates": 0,
+    "match_modes": {
+      "UNMATCHED_DEFAULT_BOTH": 165,
+      "NORMALIZED_QABC": 140
+    },
+    "grades": {
+      "G1+G2": 165,
+      "G1": 140
+    },
+    "by_category": {
+      "LEGISLATIE|G1+G2": 54,
+      "LEGISLATIE|G1": 50,
+      "NORME_TEHNICE|G1+G2": 111,
+      "NORME_TEHNICE|G1": 90
+    },
+    "g1": 305,
+    "g2": 165,
+    "old_ids_matched": 140,
+    "questions_with_historical_key_difference": 24,
+    "questions_with_permuted_options": 0,
+    "missing_reference": 1
+  },
+  "records": [
+    {
+      "id": "CF-LEGISLATIE-001",
+      "category": "LEGISLATIE",
+      "source_row": 4,
+      "key_cell": "H4",
+      "answer": "C",
+      "reference": "L123/2012 art.3 pct.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-002",
+      "category": "LEGISLATIE",
+      "source_row": 5,
+      "key_cell": "H5",
+      "answer": "C",
+      "reference": "l123/2012 art.3 pct.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-003",
+      "category": "LEGISLATIE",
+      "source_row": 6,
+      "key_cell": "H6",
+      "answer": "C",
+      "reference": "Legea 123/2012 art.15 alin.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-004",
+      "category": "LEGISLATIE",
+      "source_row": 7,
+      "key_cell": "H7",
+      "answer": "C",
+      "reference": "l123/2012 art.46 alin.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-005",
+      "category": "LEGISLATIE",
+      "source_row": 8,
+      "key_cell": "H8",
+      "answer": "C",
+      "reference": "l123/2012 art.3 pct.15",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-001",
+          "group": "QABC-0265",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-006",
+      "category": "LEGISLATIE",
+      "source_row": 9,
+      "key_cell": "H9",
+      "answer": "C",
+      "reference": "l.123/2012 art.51 alin 1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-007",
+      "category": "LEGISLATIE",
+      "source_row": 10,
+      "key_cell": "H10",
+      "answer": "B",
+      "reference": "l123/2012 art.58 alin 4 lit.a,",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-002",
+          "group": "QABC-0266",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-008",
+      "category": "LEGISLATIE",
+      "source_row": 11,
+      "key_cell": "H11",
+      "answer": "C",
+      "reference": "l123/2012 art.58 alin 4 lit.a,b,c",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-003",
+          "group": "QABC-0267",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-009",
+      "category": "LEGISLATIE",
+      "source_row": 12,
+      "key_cell": "H12",
+      "answer": "C",
+      "reference": "l123/2012 art.58 alin 5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-004",
+          "group": "QABC-0268",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-010",
+      "category": "LEGISLATIE",
+      "source_row": 13,
+      "key_cell": "H13",
+      "answer": "C",
+      "reference": "l.123/2012 art.23.alin.4",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-005",
+          "group": "QABC-0269",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-011",
+      "category": "LEGISLATIE",
+      "source_row": 14,
+      "key_cell": "H14",
+      "answer": "C",
+      "reference": "ord.59 art.35",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-006",
+          "group": "QABC-0270",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-012",
+      "category": "LEGISLATIE",
+      "source_row": 15,
+      "key_cell": "H15",
+      "answer": "C",
+      "reference": "Reg.aut.EE art.68",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-013",
+      "category": "LEGISLATIE",
+      "source_row": 16,
+      "key_cell": "H16",
+      "answer": "B",
+      "reference": "Reg.aut.EE art.68",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-007",
+          "group": "QABC-0271",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-014",
+      "category": "LEGISLATIE",
+      "source_row": 17,
+      "key_cell": "H17",
+      "answer": "C",
+      "reference": "Reg.aut.e.e. art.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-008",
+          "group": "QABC-0272",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-015",
+      "category": "LEGISLATIE",
+      "source_row": 18,
+      "key_cell": "H18",
+      "answer": "A",
+      "reference": "l.123/2012 art.93 pct.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-009",
+          "group": "QABC-0273",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-016",
+      "category": "LEGISLATIE",
+      "source_row": 19,
+      "key_cell": "H19",
+      "answer": "C",
+      "reference": "Reg.aut e.e.art.20",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-010",
+          "group": "QABC-0274",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-017",
+      "category": "LEGISLATIE",
+      "source_row": 20,
+      "key_cell": "H20",
+      "answer": "C",
+      "reference": "Reg.aut e.e.art.51",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-011",
+          "group": "QABC-0275",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-018",
+      "category": "LEGISLATIE",
+      "source_row": 21,
+      "key_cell": "H21",
+      "answer": "C",
+      "reference": "Reg.aut e.e.art.16 lit a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-019",
+      "category": "LEGISLATIE",
+      "source_row": 22,
+      "key_cell": "H22",
+      "answer": "C",
+      "reference": "Reg.aut.EE art.30",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-012",
+          "group": "QABC-0276",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-020",
+      "category": "LEGISLATIE",
+      "source_row": 23,
+      "key_cell": "H23",
+      "answer": "C",
+      "reference": "Reg.aut.EE art.30,alin.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-013",
+          "group": "QABC-0277",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-021",
+      "category": "LEGISLATIE",
+      "source_row": 24,
+      "key_cell": "H24",
+      "answer": "C",
+      "reference": "Reg.aut.EE art.28",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-014",
+          "group": "QABC-0278",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-022",
+      "category": "LEGISLATIE",
+      "source_row": 25,
+      "key_cell": "H25",
+      "answer": "A",
+      "reference": "l.123/2012 art.19",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-023",
+      "category": "LEGISLATIE",
+      "source_row": 26,
+      "key_cell": "H26",
+      "answer": "A",
+      "reference": "l.123/2012 art.93.pct.28 si art.26",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-015",
+          "group": "QABC-0279",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V206_LEG001_015_ORIGINAL_LEGISLATION_ABC_2026_EDITION_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-024",
+      "category": "LEGISLATIE",
+      "source_row": 27,
+      "key_cell": "H27",
+      "answer": "B",
+      "reference": "l.123/2012 art.92",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-016",
+          "group": "QABC-0280",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-025",
+      "category": "LEGISLATIE",
+      "source_row": 28,
+      "key_cell": "H28",
+      "answer": "A",
+      "reference": "l123,art71,alin.2, lit.c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-026",
+      "category": "LEGISLATIE",
+      "source_row": 29,
+      "key_cell": "H29",
+      "answer": "C",
+      "reference": "Cod RED art.9.1.1.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-027",
+      "category": "LEGISLATIE",
+      "source_row": 30,
+      "key_cell": "H30",
+      "answer": "C",
+      "reference": "Stand Perf. art,16 alin 1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-028",
+      "category": "LEGISLATIE",
+      "source_row": 31,
+      "key_cell": "H31",
+      "answer": "C",
+      "reference": "l123/2012 art.58 alin 4 lit.b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-029",
+      "category": "LEGISLATIE",
+      "source_row": 32,
+      "key_cell": "H32",
+      "answer": "A",
+      "reference": "l123/2012 art.58 alin 4 lit.a,",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-017",
+          "group": "QABC-0281",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-030",
+      "category": "LEGISLATIE",
+      "source_row": 33,
+      "key_cell": "H33",
+      "answer": "B",
+      "reference": "l.123/2012 art.67 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-018",
+          "group": "QABC-0282",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-031",
+      "category": "LEGISLATIE",
+      "source_row": 34,
+      "key_cell": "H34",
+      "answer": "B",
+      "reference": "l.123/2012 art.93 pct.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-019",
+          "group": "QABC-0283",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": false,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-032",
+      "category": "LEGISLATIE",
+      "source_row": 35,
+      "key_cell": "H35",
+      "answer": "C",
+      "reference": "Ord 5/2023 Art 28",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-033",
+      "category": "LEGISLATIE",
+      "source_row": 36,
+      "key_cell": "H36",
+      "answer": "C",
+      "reference": "Ord 59, art5.2.b; 6.3.c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-034",
+      "category": "LEGISLATIE",
+      "source_row": 37,
+      "key_cell": "H37",
+      "answer": "B",
+      "reference": "l.123/2012 art.65 alin1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-035",
+      "category": "LEGISLATIE",
+      "source_row": 38,
+      "key_cell": "H38",
+      "answer": "A",
+      "reference": "l123/2012 art.45 lit.a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-036",
+      "category": "LEGISLATIE",
+      "source_row": 39,
+      "key_cell": "H39",
+      "answer": "C",
+      "reference": "ord 59, art 74",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-020",
+          "group": "QABC-0284",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-037",
+      "category": "LEGISLATIE",
+      "source_row": 40,
+      "key_cell": "H40",
+      "answer": "C",
+      "reference": "ord 59, Anexa 1, \"loc consum\"",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-038",
+      "category": "LEGISLATIE",
+      "source_row": 41,
+      "key_cell": "H41",
+      "answer": "B",
+      "reference": "l.123/2012 art.49.lit.f",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-021",
+          "group": "QABC-0285",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-039",
+      "category": "LEGISLATIE",
+      "source_row": 42,
+      "key_cell": "H42",
+      "answer": "A",
+      "reference": "l.123/2012 art.49.lit.a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-022",
+          "group": "QABC-0286",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-040",
+      "category": "LEGISLATIE",
+      "source_row": 43,
+      "key_cell": "H43",
+      "answer": "B",
+      "reference": "l.123/2012 art.2.alin.i",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-023",
+          "group": "QABC-0287",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-041",
+      "category": "LEGISLATIE",
+      "source_row": 44,
+      "key_cell": "H44",
+      "answer": "B",
+      "reference": "l.123/2012 art.3.pct.65",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-042",
+      "category": "LEGISLATIE",
+      "source_row": 45,
+      "key_cell": "H45",
+      "answer": "C",
+      "reference": "ord 59, art 5, lit b",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-024",
+          "group": "QABC-0288",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-043",
+      "category": "LEGISLATIE",
+      "source_row": 46,
+      "key_cell": "H46",
+      "answer": "B",
+      "reference": "l.123/2012 art.1.alin 2 lit.bpct.77",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-025",
+          "group": "QABC-0289",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-044",
+      "category": "LEGISLATIE",
+      "source_row": 47,
+      "key_cell": "H47",
+      "answer": "B",
+      "reference": "l.123/2012 art.92 alin.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-026",
+          "group": "QABC-0290",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": false,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-045",
+      "category": "LEGISLATIE",
+      "source_row": 48,
+      "key_cell": "H48",
+      "answer": "C",
+      "reference": "ord 59,art.33,lit b",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-027",
+          "group": "QABC-0291",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-046",
+      "category": "LEGISLATIE",
+      "source_row": 49,
+      "key_cell": "H49",
+      "answer": "C",
+      "reference": "ord 59, Anexa 2, art2.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-028",
+          "group": "QABC-0292",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-047",
+      "category": "LEGISLATIE",
+      "source_row": 50,
+      "key_cell": "H50",
+      "answer": "C",
+      "reference": "ord.102 art.12 lit.c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-048",
+      "category": "LEGISLATIE",
+      "source_row": 51,
+      "key_cell": "H51",
+      "answer": "A",
+      "reference": "O.35/2013 art.4 alin.3+art 5 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-029",
+          "group": "QABC-0293",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-049",
+      "category": "LEGISLATIE",
+      "source_row": 52,
+      "key_cell": "H52",
+      "answer": "B",
+      "reference": "O.35/2013 art.8 alin.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-030",
+          "group": "QABC-0294",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-050",
+      "category": "LEGISLATIE",
+      "source_row": 53,
+      "key_cell": "H53",
+      "answer": "A",
+      "reference": "Reg.aut.EE art.68",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-031",
+          "group": "QABC-0295",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-051",
+      "category": "LEGISLATIE",
+      "source_row": 54,
+      "key_cell": "H54",
+      "answer": "A",
+      "reference": "Reg.aut.EE art.68",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-032",
+          "group": "QABC-0296",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-052",
+      "category": "LEGISLATIE",
+      "source_row": 55,
+      "key_cell": "H55",
+      "answer": "A",
+      "reference": "Reg.aut.e.e. art.13 lit.a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-053",
+      "category": "LEGISLATIE",
+      "source_row": 56,
+      "key_cell": "H56",
+      "answer": "B",
+      "reference": "Reg Aut EE art.12 lit.b si lit.c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-054",
+      "category": "LEGISLATIE",
+      "source_row": 57,
+      "key_cell": "H57",
+      "answer": "A",
+      "reference": "ord. 99 art.8, alin.2,  lit. a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-055",
+      "category": "LEGISLATIE",
+      "source_row": 58,
+      "key_cell": "H58",
+      "answer": "B",
+      "reference": "Reg Aut EE art.7",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-056",
+      "category": "LEGISLATIE",
+      "source_row": 59,
+      "key_cell": "H59",
+      "answer": "B",
+      "reference": null,
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-057",
+      "category": "LEGISLATIE",
+      "source_row": 60,
+      "key_cell": "H60",
+      "answer": "A",
+      "reference": "Reg Aut EE art.66 lit f",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-058",
+      "category": "LEGISLATIE",
+      "source_row": 61,
+      "key_cell": "H61",
+      "answer": "B",
+      "reference": "Reg Aut EE art.27",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-059",
+      "category": "LEGISLATIE",
+      "source_row": 62,
+      "key_cell": "H62",
+      "answer": "B",
+      "reference": "Re.aut EE art.11 alin.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-060",
+      "category": "LEGISLATIE",
+      "source_row": 63,
+      "key_cell": "H63",
+      "answer": "A",
+      "reference": "Re.aut EE art.35 alin.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-033",
+          "group": "QABC-0297",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-061",
+      "category": "LEGISLATIE",
+      "source_row": 64,
+      "key_cell": "H64",
+      "answer": "A",
+      "reference": "Reg.aut.EE art.37.lit.e",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-034",
+          "group": "QABC-0298",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-062",
+      "category": "LEGISLATIE",
+      "source_row": 65,
+      "key_cell": "H65",
+      "answer": "B",
+      "reference": "Reg.aut.EE art.37.lit.h",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-035",
+          "group": "QABC-0299",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-063",
+      "category": "LEGISLATIE",
+      "source_row": 66,
+      "key_cell": "H66",
+      "answer": "A",
+      "reference": "Reg.aut.EE art.37.lit.b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-064",
+      "category": "LEGISLATIE",
+      "source_row": 67,
+      "key_cell": "H67",
+      "answer": "B",
+      "reference": "Reg.aut.EE art.37.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-036",
+          "group": "QABC-0300",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-065",
+      "category": "LEGISLATIE",
+      "source_row": 68,
+      "key_cell": "H68",
+      "answer": "A",
+      "reference": "Reg.aut.EE art.37,litb",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-037",
+          "group": "QABC-0301",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-066",
+      "category": "LEGISLATIE",
+      "source_row": 69,
+      "key_cell": "H69",
+      "answer": "C",
+      "reference": "l123/2012 art.3 pct.13",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-038",
+          "group": "QABC-0302",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V209_EIGHT_LEG031_038_ABC_WORK_PERMISSIONS_IMPORT_CONFLICTS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-067",
+      "category": "LEGISLATIE",
+      "source_row": 70,
+      "key_cell": "H70",
+      "answer": "B",
+      "reference": "l123/2012 art.3 pct.13",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-068",
+      "category": "LEGISLATIE",
+      "source_row": 71,
+      "key_cell": "H71",
+      "answer": "B",
+      "reference": "Cod RED art.1.5.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-069",
+      "category": "LEGISLATIE",
+      "source_row": 72,
+      "key_cell": "H72",
+      "answer": "B",
+      "reference": "stand.perf.art25",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-070",
+      "category": "LEGISLATIE",
+      "source_row": 73,
+      "key_cell": "H73",
+      "answer": "B",
+      "reference": "Cod RED art.1.2.3 lit b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-071",
+      "category": "LEGISLATIE",
+      "source_row": 74,
+      "key_cell": "H74",
+      "answer": "B",
+      "reference": "Stand.perf.art.5 lit.a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-072",
+      "category": "LEGISLATIE",
+      "source_row": 75,
+      "key_cell": "H75",
+      "answer": "B",
+      "reference": "Stand.perf.art.3 lit.b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-073",
+      "category": "LEGISLATIE",
+      "source_row": 76,
+      "key_cell": "H76",
+      "answer": "A",
+      "reference": "Stand.perf.art.3 lit.c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-074",
+      "category": "LEGISLATIE",
+      "source_row": 77,
+      "key_cell": "H77",
+      "answer": "A",
+      "reference": "Stand.perf.art.4 lit.a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-075",
+      "category": "LEGISLATIE",
+      "source_row": 78,
+      "key_cell": "H78",
+      "answer": "B",
+      "reference": "ord 59, art.26, alin (1) si si art 5, alin5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-039",
+          "group": "QABC-0303",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-076",
+      "category": "LEGISLATIE",
+      "source_row": 79,
+      "key_cell": "H79",
+      "answer": "A",
+      "reference": "ord 59, art.26, alin (1) si si art 5, alin5",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-077",
+      "category": "LEGISLATIE",
+      "source_row": 80,
+      "key_cell": "H80",
+      "answer": "C",
+      "reference": "Ord 59, art 8(2)",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-078",
+      "category": "LEGISLATIE",
+      "source_row": 81,
+      "key_cell": "H81",
+      "answer": "B",
+      "reference": "ord 59, Anexa 1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-079",
+      "category": "LEGISLATIE",
+      "source_row": 82,
+      "key_cell": "H82",
+      "answer": "A",
+      "reference": "Reg.Aut.EE art.9, lit.a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-040",
+          "group": "QABC-0304",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": false,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-080",
+      "category": "LEGISLATIE",
+      "source_row": 83,
+      "key_cell": "H83",
+      "answer": "A",
+      "reference": "Ordinul ANRE 5/2023 - Reg furnizare a e.e. Art 19 alin 1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-041",
+          "group": "QABC-0305",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-081",
+      "category": "LEGISLATIE",
+      "source_row": 84,
+      "key_cell": "H84",
+      "answer": "B",
+      "reference": "Ordinul ANRE 5/2023 - Reg furnizare a e.e. Art4 alin 7 lit b",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-042",
+          "group": "QABC-0306",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-082",
+      "category": "LEGISLATIE",
+      "source_row": 85,
+      "key_cell": "H85",
+      "answer": "A",
+      "reference": "ord 5-2023 SECŢIUNEA 10: Întreruperea alimentării cu energie electrică la locul de consum al clientului Art. 26 alin 4 lit b",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-043",
+          "group": "QABC-0307",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-083",
+      "category": "LEGISLATIE",
+      "source_row": 86,
+      "key_cell": "H86",
+      "answer": "C",
+      "reference": "ord 235, art 10, alin 1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-044",
+          "group": "QABC-0308",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-084",
+      "category": "LEGISLATIE",
+      "source_row": 87,
+      "key_cell": "H87",
+      "answer": "B",
+      "reference": "ord 5-2023 CAPITOLUL II: Furnizarea energiei electrice la clienţi SECŢIUNEA 1: Oferta de furnizare a energiei electrice Art. 8 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-045",
+          "group": "QABC-0309",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-085",
+      "category": "LEGISLATIE",
+      "source_row": 88,
+      "key_cell": "H88",
+      "answer": "A",
+      "reference": "ord 5-2023 CAPITOLUL II: Furnizarea energiei electrice la clienţi SECŢIUNEA 1: Oferta de furnizare a energiei electrice Art. 8 lit b",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-046",
+          "group": "QABC-0310",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-086",
+      "category": "LEGISLATIE",
+      "source_row": 89,
+      "key_cell": "H89",
+      "answer": "A",
+      "reference": "ord.235 art.35 alin.4 ",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-087",
+      "category": "LEGISLATIE",
+      "source_row": 90,
+      "key_cell": "H90",
+      "answer": "C",
+      "reference": "Ord 59, Anexa 1, art.2.4, art.24",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-088",
+      "category": "LEGISLATIE",
+      "source_row": 91,
+      "key_cell": "H91",
+      "answer": "B",
+      "reference": "Ord 59, Anexa 1, art.2.4, art.24",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-047",
+          "group": "QABC-0311",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-089",
+      "category": "LEGISLATIE",
+      "source_row": 92,
+      "key_cell": "H92",
+      "answer": "B",
+      "reference": "Ord 59, Anexa 1,",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-090",
+      "category": "LEGISLATIE",
+      "source_row": 93,
+      "key_cell": "H93",
+      "answer": "A",
+      "reference": "Ord 59 art.15",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-091",
+      "category": "LEGISLATIE",
+      "source_row": 94,
+      "key_cell": "H94",
+      "answer": "A",
+      "reference": "Ord 59, art 12, (2)",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-092",
+      "category": "LEGISLATIE",
+      "source_row": 95,
+      "key_cell": "H95",
+      "answer": "B",
+      "reference": "ord 59, art 14, lit h",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-093",
+      "category": "LEGISLATIE",
+      "source_row": 96,
+      "key_cell": "H96",
+      "answer": "B",
+      "reference": "ord 59, art 9, lit c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-094",
+      "category": "LEGISLATIE",
+      "source_row": 97,
+      "key_cell": "H97",
+      "answer": "A",
+      "reference": "ord.102 art.12 lit.a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-095",
+      "category": "LEGISLATIE",
+      "source_row": 98,
+      "key_cell": "H98",
+      "answer": "B",
+      "reference": "ord.102 art.15 lit.b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-096",
+      "category": "LEGISLATIE",
+      "source_row": 99,
+      "key_cell": "H99",
+      "answer": "A",
+      "reference": "ord 5-2023 Art 15 alin 4",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-097",
+      "category": "LEGISLATIE",
+      "source_row": 100,
+      "key_cell": "H100",
+      "answer": "B",
+      "reference": "ord 235, art.52, alin.5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-048",
+          "group": "QABC-0312",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-098",
+      "category": "LEGISLATIE",
+      "source_row": 101,
+      "key_cell": "H101",
+      "answer": "A",
+      "reference": "ord 235, art. 34, alin 2b",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-049",
+          "group": "QABC-0313",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-099",
+      "category": "LEGISLATIE",
+      "source_row": 102,
+      "key_cell": "H102",
+      "answer": "C",
+      "reference": "ord 5-2023 Art 31 lit o",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-100",
+      "category": "LEGISLATIE",
+      "source_row": 103,
+      "key_cell": "H103",
+      "answer": "C",
+      "reference": "ord.235,art. 31,lit.g",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-101",
+      "category": "LEGISLATIE",
+      "source_row": 104,
+      "key_cell": "H104",
+      "answer": "A",
+      "reference": "ord.235,art. 32,lit.k",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-102",
+      "category": "LEGISLATIE",
+      "source_row": 105,
+      "key_cell": "H105",
+      "answer": "B",
+      "reference": "Regulament de furnizare a energiei electrice",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-LEG-050",
+          "group": "QABC-0314",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V211_LEG039_050_12_ABC_OFFICIAL_SUPPLY_ART4_NEW_SCOPE_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-LEGISLATIE-103",
+      "category": "LEGISLATIE",
+      "source_row": 106,
+      "key_cell": "H106",
+      "answer": "C",
+      "reference": "ord 35/2013",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-LEGISLATIE-104",
+      "category": "LEGISLATIE",
+      "source_row": 107,
+      "key_cell": "H107",
+      "answer": "B",
+      "reference": "ord 45/2016, art.26 b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-001",
+      "category": "NORME_TEHNICE",
+      "source_row": 6,
+      "key_cell": "K6",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.7.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-002",
+      "category": "NORME_TEHNICE",
+      "source_row": 7,
+      "key_cell": "K7",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.2.14",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-001",
+          "group": "QABC-0315",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-003",
+      "category": "NORME_TEHNICE",
+      "source_row": 8,
+      "key_cell": "K8",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.8.1.1.3.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-002",
+          "group": "QABC-0316",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-004",
+      "category": "NORME_TEHNICE",
+      "source_row": 9,
+      "key_cell": "K9",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-003",
+          "group": "QABC-0317",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-005",
+      "category": "NORME_TEHNICE",
+      "source_row": 10,
+      "key_cell": "K10",
+      "answer": "A",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.4.3.11",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-006",
+      "category": "NORME_TEHNICE",
+      "source_row": 11,
+      "key_cell": "K11",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art. 4.3.4.1.1.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-004",
+          "group": "QABC-0318",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-007",
+      "category": "NORME_TEHNICE",
+      "source_row": 12,
+      "key_cell": "K12",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.8.1.1.3.5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-005",
+          "group": "QABC-0319",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-008",
+      "category": "NORME_TEHNICE",
+      "source_row": 13,
+      "key_cell": "K13",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-009",
+      "category": "NORME_TEHNICE",
+      "source_row": 14,
+      "key_cell": "K14",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.19",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-006",
+          "group": "QABC-0320",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-010",
+      "category": "NORME_TEHNICE",
+      "source_row": 15,
+      "key_cell": "K15",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-011",
+      "category": "NORME_TEHNICE",
+      "source_row": 16,
+      "key_cell": "K16",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.2.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-007",
+          "group": "QABC-0321",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-012",
+      "category": "NORME_TEHNICE",
+      "source_row": 17,
+      "key_cell": "K17",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.19",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-008",
+          "group": "QABC-0322",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-013",
+      "category": "NORME_TEHNICE",
+      "source_row": 18,
+      "key_cell": "K18",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.12.2.4",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-009",
+          "group": "QABC-0323",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-014",
+      "category": "NORME_TEHNICE",
+      "source_row": 19,
+      "key_cell": "K19",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.8.1.1.3.3.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-010",
+          "group": "QABC-0324",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-015",
+      "category": "NORME_TEHNICE",
+      "source_row": 20,
+      "key_cell": "K20",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.1.7.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-011",
+          "group": "QABC-0325",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-016",
+      "category": "NORME_TEHNICE",
+      "source_row": 21,
+      "key_cell": "K21",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.1.7.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-012",
+          "group": "QABC-0326",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-017",
+      "category": "NORME_TEHNICE",
+      "source_row": 22,
+      "key_cell": "K22",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.6.10",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-013",
+          "group": "QABC-0327",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-018",
+      "category": "NORME_TEHNICE",
+      "source_row": 23,
+      "key_cell": "K23",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.6.12",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-014",
+          "group": "QABC-0328",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-019",
+      "category": "NORME_TEHNICE",
+      "source_row": 24,
+      "key_cell": "K24",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.6.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-015",
+          "group": "QABC-0329",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V212_NOR001_015_I7_ORIGINAL_FULL_ABC_AND_STRICT_SOURCE_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-020",
+      "category": "NORME_TEHNICE",
+      "source_row": 25,
+      "key_cell": "K25",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.6.4",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-016",
+          "group": "QABC-0330",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-021",
+      "category": "NORME_TEHNICE",
+      "source_row": 26,
+      "key_cell": "K26",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.0.3.8",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-017",
+          "group": "QABC-0331",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-022",
+      "category": "NORME_TEHNICE",
+      "source_row": 27,
+      "key_cell": "K27",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.0.3.8",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-018",
+          "group": "QABC-0332",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-023",
+      "category": "NORME_TEHNICE",
+      "source_row": 28,
+      "key_cell": "K28",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.12.2.5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-019",
+          "group": "QABC-0333",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-024",
+      "category": "NORME_TEHNICE",
+      "source_row": 29,
+      "key_cell": "K29",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.1.1 lit.b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-025",
+      "category": "NORME_TEHNICE",
+      "source_row": 30,
+      "key_cell": "K30",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.10.9",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-026",
+      "category": "NORME_TEHNICE",
+      "source_row": 31,
+      "key_cell": "K31",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-027",
+      "category": "NORME_TEHNICE",
+      "source_row": 32,
+      "key_cell": "K32",
+      "answer": "A",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.2.12 lit.f",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-020",
+          "group": "QABC-0334",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-028",
+      "category": "NORME_TEHNICE",
+      "source_row": 33,
+      "key_cell": "K33",
+      "answer": "A",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.2.7.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-029",
+      "category": "NORME_TEHNICE",
+      "source_row": 34,
+      "key_cell": "K34",
+      "answer": "A",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.4.8.2 lit.c",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-030",
+      "category": "NORME_TEHNICE",
+      "source_row": 35,
+      "key_cell": "K35",
+      "answer": "C",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.4.4.7",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-031",
+      "category": "NORME_TEHNICE",
+      "source_row": 36,
+      "key_cell": "K36",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.7",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-022",
+          "group": "QABC-0336",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-032",
+      "category": "NORME_TEHNICE",
+      "source_row": 37,
+      "key_cell": "K37",
+      "answer": "A",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.2.12 lit.a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-023",
+          "group": "QABC-0337",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-033",
+      "category": "NORME_TEHNICE",
+      "source_row": 38,
+      "key_cell": "K38",
+      "answer": "B",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.4.5.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-024",
+          "group": "QABC-0338",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-034",
+      "category": "NORME_TEHNICE",
+      "source_row": 39,
+      "key_cell": "K39",
+      "answer": "B",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.4.2.2 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-025",
+          "group": "QABC-0339",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-035",
+      "category": "NORME_TEHNICE",
+      "source_row": 40,
+      "key_cell": "K40",
+      "answer": "A",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.4.6.4",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-026",
+          "group": "QABC-0340",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-036",
+      "category": "NORME_TEHNICE",
+      "source_row": 41,
+      "key_cell": "K41",
+      "answer": "A",
+      "reference": "PE 102 Normativ pentru proiectarea şi executarea instalaţiilor de conexiuni şi distribuţie cu tensiuni până la 1000 V c.a. în unităţile energetice art.4.6.3.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-027",
+          "group": "QABC-0341",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-037",
+      "category": "NORME_TEHNICE",
+      "source_row": 42,
+      "key_cell": "K42",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.3.21",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-038",
+      "category": "NORME_TEHNICE",
+      "source_row": 43,
+      "key_cell": "K43",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.6.6",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-028",
+          "group": "QABC-0342",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-039",
+      "category": "NORME_TEHNICE",
+      "source_row": 44,
+      "key_cell": "K44",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.3.21",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-029",
+          "group": "QABC-0343",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-040",
+      "category": "NORME_TEHNICE",
+      "source_row": 45,
+      "key_cell": "K45",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.12.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-041",
+      "category": "NORME_TEHNICE",
+      "source_row": 46,
+      "key_cell": "K46",
+      "answer": "A",
+      "reference": "PE 155 Normativ privind proiectarea şi executarea branşamentelor pentru clădiri civile art.3.3.1",
+      "grade_marker": null,
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-030",
+          "group": "QABC-0344",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-042",
+      "category": "NORME_TEHNICE",
+      "source_row": 47,
+      "key_cell": "K47",
+      "answer": "B",
+      "reference": "PE 155 Normativ privind proiectarea şi executarea branşamentelor pentru clădiri civile art.3.2.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-031",
+          "group": "QABC-0345",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-043",
+      "category": "NORME_TEHNICE",
+      "source_row": 48,
+      "key_cell": "K48",
+      "answer": "B",
+      "reference": "PE 155 Normativ privind proiectarea şi executarea branşamentelor pentru clădiri civile art.3.2.10",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-032",
+          "group": "QABC-0346",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-044",
+      "category": "NORME_TEHNICE",
+      "source_row": 49,
+      "key_cell": "K49",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.7.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-033",
+          "group": "QABC-0347",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-045",
+      "category": "NORME_TEHNICE",
+      "source_row": 50,
+      "key_cell": "K50",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.0.2.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-034",
+          "group": "QABC-0348",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-046",
+      "category": "NORME_TEHNICE",
+      "source_row": 51,
+      "key_cell": "K51",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.0.3.4",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-047",
+      "category": "NORME_TEHNICE",
+      "source_row": 52,
+      "key_cell": "K52",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  cap 2lit M",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-048",
+      "category": "NORME_TEHNICE",
+      "source_row": 53,
+      "key_cell": "K53",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.7.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-049",
+      "category": "NORME_TEHNICE",
+      "source_row": 54,
+      "key_cell": "K54",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.3.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-050",
+      "category": "NORME_TEHNICE",
+      "source_row": 55,
+      "key_cell": "K55",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.3.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-051",
+      "category": "NORME_TEHNICE",
+      "source_row": 56,
+      "key_cell": "K56",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.3.2.4",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-052",
+      "category": "NORME_TEHNICE",
+      "source_row": 57,
+      "key_cell": "K57",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.3.2.4",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-053",
+      "category": "NORME_TEHNICE",
+      "source_row": 58,
+      "key_cell": "K58",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.3.2.9",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-054",
+      "category": "NORME_TEHNICE",
+      "source_row": 59,
+      "key_cell": "K59",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  cap 2 lit.a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-036",
+          "group": "QABC-0350",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-055",
+      "category": "NORME_TEHNICE",
+      "source_row": 60,
+      "key_cell": "K60",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  cap 2 lit.a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-037",
+          "group": "QABC-0351",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-056",
+      "category": "NORME_TEHNICE",
+      "source_row": 61,
+      "key_cell": "K61",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  cap.2 lit.P",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-038",
+          "group": "QABC-0352",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-057",
+      "category": "NORME_TEHNICE",
+      "source_row": 62,
+      "key_cell": "K62",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  cap.2 lit.P",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-039",
+          "group": "QABC-0353",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-058",
+      "category": "NORME_TEHNICE",
+      "source_row": 63,
+      "key_cell": "K63",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  cap.2 lit.P",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-040",
+          "group": "QABC-0354",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-059",
+      "category": "NORME_TEHNICE",
+      "source_row": 64,
+      "key_cell": "K64",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.4.6.1 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-041",
+          "group": "QABC-0355",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-060",
+      "category": "NORME_TEHNICE",
+      "source_row": 65,
+      "key_cell": "K65",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.4.6.1 lit b",
+      "grade_marker": null,
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-042",
+          "group": "QABC-0356",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-061",
+      "category": "NORME_TEHNICE",
+      "source_row": 66,
+      "key_cell": "K66",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.4.1.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-062",
+      "category": "NORME_TEHNICE",
+      "source_row": 67,
+      "key_cell": "K67",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.4.1.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-063",
+      "category": "NORME_TEHNICE",
+      "source_row": 68,
+      "key_cell": "K68",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.2.0.2 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-064",
+      "category": "NORME_TEHNICE",
+      "source_row": 69,
+      "key_cell": "K69",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.2.0.2 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-065",
+      "category": "NORME_TEHNICE",
+      "source_row": 70,
+      "key_cell": "K70",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.2.0.2 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-066",
+      "category": "NORME_TEHNICE",
+      "source_row": 71,
+      "key_cell": "K71",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.2.0.2 lit a",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-067",
+      "category": "NORME_TEHNICE",
+      "source_row": 72,
+      "key_cell": "K72",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.4.1.3 litera c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-068",
+      "category": "NORME_TEHNICE",
+      "source_row": 73,
+      "key_cell": "K73",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.4.1.3 litera c",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-069",
+      "category": "NORME_TEHNICE",
+      "source_row": 74,
+      "key_cell": "K74",
+      "answer": "A",
+      "reference": "I7/2011 Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -art.5.2.5.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-070",
+      "category": "NORME_TEHNICE",
+      "source_row": 75,
+      "key_cell": "K75",
+      "answer": "C",
+      "reference": "I7/2011 Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -art.5.2.5.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-071",
+      "category": "NORME_TEHNICE",
+      "source_row": 76,
+      "key_cell": "K76",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.7.2.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-047",
+          "group": "QABC-0361",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-072",
+      "category": "NORME_TEHNICE",
+      "source_row": 77,
+      "key_cell": "K77",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.13",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-073",
+      "category": "NORME_TEHNICE",
+      "source_row": 78,
+      "key_cell": "K78",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.13",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-074",
+      "category": "NORME_TEHNICE",
+      "source_row": 79,
+      "key_cell": "K79",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  anexa 5.32-1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-050",
+          "group": "QABC-0364",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-075",
+      "category": "NORME_TEHNICE",
+      "source_row": 80,
+      "key_cell": "K80",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  anexa 5.32-2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-051",
+          "group": "QABC-0365",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-076",
+      "category": "NORME_TEHNICE",
+      "source_row": 81,
+      "key_cell": "K81",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  aenxa 5.32",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-052",
+          "group": "QABC-0366",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-077",
+      "category": "NORME_TEHNICE",
+      "source_row": 82,
+      "key_cell": "K82",
+      "answer": "B",
+      "reference": "\tI7/2011 Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - Anexa 5.32-1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-078",
+      "category": "NORME_TEHNICE",
+      "source_row": 83,
+      "key_cell": "K83",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.7.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-079",
+      "category": "NORME_TEHNICE",
+      "source_row": 84,
+      "key_cell": "K84",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.7.2.a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-080",
+      "category": "NORME_TEHNICE",
+      "source_row": 85,
+      "key_cell": "K85",
+      "answer": "C",
+      "reference": "PE 155 Normativ privind proiectarea şi executarea branşamentelor pentru clădiri civileart.1.2.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-053",
+          "group": "QABC-0367",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-081",
+      "category": "NORME_TEHNICE",
+      "source_row": 86,
+      "key_cell": "K86",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.22",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-054",
+          "group": "QABC-0368",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-082",
+      "category": "NORME_TEHNICE",
+      "source_row": 87,
+      "key_cell": "K87",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  cap.1. art.1.1 lit.d",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-055",
+          "group": "QABC-0369",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-083",
+      "category": "NORME_TEHNICE",
+      "source_row": 88,
+      "key_cell": "K88",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art5.5.3.5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-056",
+          "group": "QABC-0370",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-084",
+      "category": "NORME_TEHNICE",
+      "source_row": 89,
+      "key_cell": "K89",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.4.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-085",
+      "category": "NORME_TEHNICE",
+      "source_row": 90,
+      "key_cell": "K90",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.1.6.11",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-057",
+          "group": "QABC-0371",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-086",
+      "category": "NORME_TEHNICE",
+      "source_row": 91,
+      "key_cell": "K91",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.0.3.5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-058",
+          "group": "QABC-0372",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-087",
+      "category": "NORME_TEHNICE",
+      "source_row": 92,
+      "key_cell": "K92",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.20",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-059",
+          "group": "QABC-0373",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-088",
+      "category": "NORME_TEHNICE",
+      "source_row": 93,
+      "key_cell": "K93",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.21",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-089",
+      "category": "NORME_TEHNICE",
+      "source_row": 94,
+      "key_cell": "K94",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.2.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-090",
+      "category": "NORME_TEHNICE",
+      "source_row": 95,
+      "key_cell": "K95",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.5.3.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-060",
+          "group": "QABC-0374",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V218_14_SOURCE_EXACT_NOR046_060_EXCLUDING_MUTATED_NOR048_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-091",
+      "category": "NORME_TEHNICE",
+      "source_row": 96,
+      "key_cell": "K96",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.12.3.4",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-061",
+          "group": "QABC-0375",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-092",
+      "category": "NORME_TEHNICE",
+      "source_row": 97,
+      "key_cell": "K97",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.25",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-062",
+          "group": "QABC-0376",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-093",
+      "category": "NORME_TEHNICE",
+      "source_row": 98,
+      "key_cell": "K98",
+      "answer": "B",
+      "reference": "I7/2011 Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -art.5.3.1.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-094",
+      "category": "NORME_TEHNICE",
+      "source_row": 99,
+      "key_cell": "K99",
+      "answer": "B",
+      "reference": "I7/2011 Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -art.5.3.1.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-095",
+      "category": "NORME_TEHNICE",
+      "source_row": 100,
+      "key_cell": "K100",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.3.5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-063",
+          "group": "QABC-0377",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-096",
+      "category": "NORME_TEHNICE",
+      "source_row": 101,
+      "key_cell": "K101",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.24",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-064",
+          "group": "QABC-0378",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-097",
+      "category": "NORME_TEHNICE",
+      "source_row": 102,
+      "key_cell": "K102",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.2.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-065",
+          "group": "QABC-0379",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-098",
+      "category": "NORME_TEHNICE",
+      "source_row": 103,
+      "key_cell": "K103",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.12.1.4",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-066",
+          "group": "QABC-0380",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": false,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-099",
+      "category": "NORME_TEHNICE",
+      "source_row": 104,
+      "key_cell": "K104",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.3.1.3.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-100",
+      "category": "NORME_TEHNICE",
+      "source_row": 105,
+      "key_cell": "K105",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.2.4.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-101",
+      "category": "NORME_TEHNICE",
+      "source_row": 106,
+      "key_cell": "K106",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.1.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-102",
+      "category": "NORME_TEHNICE",
+      "source_row": 107,
+      "key_cell": "K107",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.1.2 ",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-067",
+          "group": "QABC-0381",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-103",
+      "category": "NORME_TEHNICE",
+      "source_row": 108,
+      "key_cell": "K108",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.29",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-068",
+          "group": "QABC-0382",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-104",
+      "category": "NORME_TEHNICE",
+      "source_row": 109,
+      "key_cell": "K109",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.29",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-069",
+          "group": "QABC-0383",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-105",
+      "category": "NORME_TEHNICE",
+      "source_row": 110,
+      "key_cell": "K110",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.22",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-070",
+          "group": "QABC-0384",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-106",
+      "category": "NORME_TEHNICE",
+      "source_row": 111,
+      "key_cell": "K111",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.1.4.3.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-071",
+          "group": "QABC-0385",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-107",
+      "category": "NORME_TEHNICE",
+      "source_row": 112,
+      "key_cell": "K112",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.3.1.4",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-108",
+      "category": "NORME_TEHNICE",
+      "source_row": 113,
+      "key_cell": "K113",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.6.11",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-109",
+      "category": "NORME_TEHNICE",
+      "source_row": 114,
+      "key_cell": "K114",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.5.2.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-110",
+      "category": "NORME_TEHNICE",
+      "source_row": 115,
+      "key_cell": "K115",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.2.6.8",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-073",
+          "group": "QABC-0387",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-111",
+      "category": "NORME_TEHNICE",
+      "source_row": 116,
+      "key_cell": "K116",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.7.4.34",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-112",
+      "category": "NORME_TEHNICE",
+      "source_row": 117,
+      "key_cell": "K117",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , art1.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-113",
+      "category": "NORME_TEHNICE",
+      "source_row": 118,
+      "key_cell": "K118",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art. 5.1.4.3.1 b",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-074",
+          "group": "QABC-0388",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-114",
+      "category": "NORME_TEHNICE",
+      "source_row": 119,
+      "key_cell": "K119",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art. 5.1.4.3.1 c",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-075",
+          "group": "QABC-0389",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-115",
+      "category": "NORME_TEHNICE",
+      "source_row": 120,
+      "key_cell": "K120",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.1.7.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-116",
+      "category": "NORME_TEHNICE",
+      "source_row": 121,
+      "key_cell": "K121",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap.2, lit.p",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-117",
+      "category": "NORME_TEHNICE",
+      "source_row": 122,
+      "key_cell": "K122",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap.2, lit.p",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-118",
+      "category": "NORME_TEHNICE",
+      "source_row": 123,
+      "key_cell": "K123",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap.2, lit.c",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-076",
+          "group": "QABC-0390",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V220_NOR061_076_15_FULL_ABC_EXCLUDING_MUTATED_NOR072_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-119",
+      "category": "NORME_TEHNICE",
+      "source_row": 124,
+      "key_cell": "K124",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap.2, lit.c",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-077",
+          "group": "QABC-0391",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-120",
+      "category": "NORME_TEHNICE",
+      "source_row": 125,
+      "key_cell": "K125",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap. 2 lit.i",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-121",
+      "category": "NORME_TEHNICE",
+      "source_row": 126,
+      "key_cell": "K126",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap. 2 lit.i",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-078",
+          "group": "QABC-0392",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-122",
+      "category": "NORME_TEHNICE",
+      "source_row": 127,
+      "key_cell": "K127",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor CAPITOLUL 2 - Terminologie si abrevieri",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-123",
+      "category": "NORME_TEHNICE",
+      "source_row": 128,
+      "key_cell": "K128",
+      "answer": "A",
+      "reference": "TERMINOLOGIE 􀃹I ABREVIERI",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-124",
+      "category": "NORME_TEHNICE",
+      "source_row": 129,
+      "key_cell": "K129",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.1.2.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-125",
+      "category": "NORME_TEHNICE",
+      "source_row": 130,
+      "key_cell": "K130",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap. 2 lit.a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-126",
+      "category": "NORME_TEHNICE",
+      "source_row": 131,
+      "key_cell": "K131",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.1.5.5",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-080",
+          "group": "QABC-0394",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-127",
+      "category": "NORME_TEHNICE",
+      "source_row": 132,
+      "key_cell": "K132",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art3.3.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-128",
+      "category": "NORME_TEHNICE",
+      "source_row": 133,
+      "key_cell": "K133",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art3.3.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-129",
+      "category": "NORME_TEHNICE",
+      "source_row": 134,
+      "key_cell": "K134",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.5.7.11",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-130",
+      "category": "NORME_TEHNICE",
+      "source_row": 135,
+      "key_cell": "K135",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.7.21.12",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-131",
+      "category": "NORME_TEHNICE",
+      "source_row": 136,
+      "key_cell": "K136",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , art. 7.21.12",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-132",
+      "category": "NORME_TEHNICE",
+      "source_row": 137,
+      "key_cell": "K137",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , art 3.3.2.11.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-133",
+      "category": "NORME_TEHNICE",
+      "source_row": 138,
+      "key_cell": "K138",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , art 3.3.2.11.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-134",
+      "category": "NORME_TEHNICE",
+      "source_row": 139,
+      "key_cell": "K139",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art 4.3.4.2.1a",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-135",
+      "category": "NORME_TEHNICE",
+      "source_row": 140,
+      "key_cell": "K140",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.4.2.1b",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-136",
+      "category": "NORME_TEHNICE",
+      "source_row": 141,
+      "key_cell": "K141",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.4.3.4.2.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-137",
+      "category": "NORME_TEHNICE",
+      "source_row": 142,
+      "key_cell": "K142",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art. 5.4.28",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-138",
+      "category": "NORME_TEHNICE",
+      "source_row": 143,
+      "key_cell": "K143",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , art. 5.3.3.1.6",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-139",
+      "category": "NORME_TEHNICE",
+      "source_row": 144,
+      "key_cell": "K144",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.5.4.4",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-140",
+      "category": "NORME_TEHNICE",
+      "source_row": 145,
+      "key_cell": "K145",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.5.4.4",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-141",
+      "category": "NORME_TEHNICE",
+      "source_row": 146,
+      "key_cell": "K146",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap. 2 lit.i",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-142",
+      "category": "NORME_TEHNICE",
+      "source_row": 147,
+      "key_cell": "K147",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor , cap. 2 lit.i",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-143",
+      "category": "NORME_TEHNICE",
+      "source_row": 148,
+      "key_cell": "K148",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art. 5.3.4.1.2.3. \nPunctul C este corect pentru retele TN-S conform art. 5.3.4.1.2.3. şi conform 4.1.3.2.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-144",
+      "category": "NORME_TEHNICE",
+      "source_row": 149,
+      "key_cell": "K149",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.5.8",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-145",
+      "category": "NORME_TEHNICE",
+      "source_row": 150,
+      "key_cell": "K150",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.5.8",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-146",
+      "category": "NORME_TEHNICE",
+      "source_row": 151,
+      "key_cell": "K151",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - Art. 3.0.3.7",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-081",
+          "group": "QABC-0395",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-147",
+      "category": "NORME_TEHNICE",
+      "source_row": 152,
+      "key_cell": "K152",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.3.0.3.7",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-082",
+          "group": "QABC-0396",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-148",
+      "category": "NORME_TEHNICE",
+      "source_row": 153,
+      "key_cell": "K153",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor  art.5.4.8",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-083",
+          "group": "QABC-0397",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-149",
+      "category": "NORME_TEHNICE",
+      "source_row": 154,
+      "key_cell": "K154",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-084",
+          "group": "QABC-0398",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-150",
+      "category": "NORME_TEHNICE",
+      "source_row": 155,
+      "key_cell": "K155",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-151",
+      "category": "NORME_TEHNICE",
+      "source_row": 156,
+      "key_cell": "K156",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-152",
+      "category": "NORME_TEHNICE",
+      "source_row": 157,
+      "key_cell": "K157",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-085",
+          "group": "QABC-0399",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-153",
+      "category": "NORME_TEHNICE",
+      "source_row": 158,
+      "key_cell": "K158",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art 3.0.3.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-086",
+          "group": "QABC-0400",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-154",
+      "category": "NORME_TEHNICE",
+      "source_row": 159,
+      "key_cell": "K159",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 3.1.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-155",
+      "category": "NORME_TEHNICE",
+      "source_row": 160,
+      "key_cell": "K160",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.5.5.3.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-087",
+          "group": "QABC-0401",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-156",
+      "category": "NORME_TEHNICE",
+      "source_row": 161,
+      "key_cell": "K161",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.4.1.5.3.8",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-088",
+          "group": "QABC-0402",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-157",
+      "category": "NORME_TEHNICE",
+      "source_row": 162,
+      "key_cell": "K162",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.5.1.4.3.3",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-089",
+          "group": "QABC-0403",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": false,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-158",
+      "category": "NORME_TEHNICE",
+      "source_row": 163,
+      "key_cell": "K163",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.3.3.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-159",
+      "category": "NORME_TEHNICE",
+      "source_row": 164,
+      "key_cell": "K164",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.3.3.2.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-160",
+      "category": "NORME_TEHNICE",
+      "source_row": 165,
+      "key_cell": "K165",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.3.3.2.7",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-161",
+      "category": "NORME_TEHNICE",
+      "source_row": 166,
+      "key_cell": "K166",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.4.3.2.4.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-162",
+      "category": "NORME_TEHNICE",
+      "source_row": 167,
+      "key_cell": "K167",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.4.3.3.1.3.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-163",
+      "category": "NORME_TEHNICE",
+      "source_row": 168,
+      "key_cell": "K168",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.4.3.4.3",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-164",
+      "category": "NORME_TEHNICE",
+      "source_row": 169,
+      "key_cell": "K169",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.5.1.7.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-165",
+      "category": "NORME_TEHNICE",
+      "source_row": 170,
+      "key_cell": "K170",
+      "answer": "B",
+      "reference": "I7/2011 art.  5.2.12.2.1 şi Art. 3.0.3.7 (regula generală pentru materiale combustibile): admite montarea în contact direct cu materiale combustibile pentru tuburi și plinte metalice, dar nu necondiționat. Imediat în fraza următoare impune explicit: „Se vor respecta şi condiţiile prevăzute la subcap. 4.2 şi...” (care trimit la protecția împotriva incendiilor și la condițiile de montaj ale sistemelor de pozare).",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-090",
+          "group": "QABC-0404",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-166",
+      "category": "NORME_TEHNICE",
+      "source_row": 171,
+      "key_cell": "K171",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.2.12.37",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-091",
+          "group": "QABC-0405",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V222_NOR077_091_15_ABC_FIRE_IDENTIFICATION_5_HOLDS_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-167",
+      "category": "NORME_TEHNICE",
+      "source_row": 172,
+      "key_cell": "K172",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.3.1.5",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-168",
+      "category": "NORME_TEHNICE",
+      "source_row": 173,
+      "key_cell": "K173",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.5.2.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-092",
+          "group": "QABC-0406",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-169",
+      "category": "NORME_TEHNICE",
+      "source_row": 174,
+      "key_cell": "K174",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.4.1",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-093",
+          "group": "QABC-0407",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-170",
+      "category": "NORME_TEHNICE",
+      "source_row": 175,
+      "key_cell": "K175",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.5.7.11",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-094",
+          "group": "QABC-0408",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-171",
+      "category": "NORME_TEHNICE",
+      "source_row": 176,
+      "key_cell": "K176",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.5.8",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-172",
+      "category": "NORME_TEHNICE",
+      "source_row": 177,
+      "key_cell": "K177",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.7.22.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-173",
+      "category": "NORME_TEHNICE",
+      "source_row": 178,
+      "key_cell": "K178",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.3.1.1.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-174",
+      "category": "NORME_TEHNICE",
+      "source_row": 179,
+      "key_cell": "K179",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 7.4.31",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-175",
+      "category": "NORME_TEHNICE",
+      "source_row": 180,
+      "key_cell": "K180",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 7.4.35",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-176",
+      "category": "NORME_TEHNICE",
+      "source_row": 181,
+      "key_cell": "K181",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.3.1.7.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-177",
+      "category": "NORME_TEHNICE",
+      "source_row": 182,
+      "key_cell": "K182",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.3.1.7.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-178",
+      "category": "NORME_TEHNICE",
+      "source_row": 183,
+      "key_cell": "K183",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.3.1.7.2.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-179",
+      "category": "NORME_TEHNICE",
+      "source_row": 184,
+      "key_cell": "K184",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 7.21.1",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-180",
+      "category": "NORME_TEHNICE",
+      "source_row": 185,
+      "key_cell": "K185",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.7.21.8",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-181",
+      "category": "NORME_TEHNICE",
+      "source_row": 186,
+      "key_cell": "K186",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 7.21.11",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-182",
+      "category": "NORME_TEHNICE",
+      "source_row": 187,
+      "key_cell": "K187",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-095",
+          "group": "QABC-0409",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-183",
+      "category": "NORME_TEHNICE",
+      "source_row": 188,
+      "key_cell": "K188",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art.4.1.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-184",
+      "category": "NORME_TEHNICE",
+      "source_row": 189,
+      "key_cell": "K189",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-096",
+          "group": "QABC-0410",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-185",
+      "category": "NORME_TEHNICE",
+      "source_row": 190,
+      "key_cell": "K190",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-097",
+          "group": "QABC-0411",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-186",
+      "category": "NORME_TEHNICE",
+      "source_row": 191,
+      "key_cell": "K191",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 5.5.4.5",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-187",
+      "category": "NORME_TEHNICE",
+      "source_row": 192,
+      "key_cell": "K192",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-188",
+      "category": "NORME_TEHNICE",
+      "source_row": 193,
+      "key_cell": "K193",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art 5.5.7.2",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-098",
+          "group": "QABC-0412",
+          "origin": "ORIGINAL",
+          "old_key": "A",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-189",
+      "category": "NORME_TEHNICE",
+      "source_row": 194,
+      "key_cell": "K194",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-099",
+          "group": "QABC-0413",
+          "origin": "ORIGINAL",
+          "old_key": "C",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    },
+    {
+      "id": "CF-NORME_TEHNICE-190",
+      "category": "NORME_TEHNICE",
+      "source_row": 195,
+      "key_cell": "K195",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-191",
+      "category": "NORME_TEHNICE",
+      "source_row": 196,
+      "key_cell": "K196",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 4.1.2.1 A",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-192",
+      "category": "NORME_TEHNICE",
+      "source_row": 197,
+      "key_cell": "K197",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 4.1.2.1 B",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-193",
+      "category": "NORME_TEHNICE",
+      "source_row": 198,
+      "key_cell": "K198",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-194",
+      "category": "NORME_TEHNICE",
+      "source_row": 199,
+      "key_cell": "K199",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 4.1.2.1 A",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-195",
+      "category": "NORME_TEHNICE",
+      "source_row": 200,
+      "key_cell": "K200",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 4.1.3.2",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-196",
+      "category": "NORME_TEHNICE",
+      "source_row": 201,
+      "key_cell": "K201",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-197",
+      "category": "NORME_TEHNICE",
+      "source_row": 202,
+      "key_cell": "K202",
+      "answer": "A",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-198",
+      "category": "NORME_TEHNICE",
+      "source_row": 203,
+      "key_cell": "K203",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-199",
+      "category": "NORME_TEHNICE",
+      "source_row": 204,
+      "key_cell": "K204",
+      "answer": "C",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-200",
+      "category": "NORME_TEHNICE",
+      "source_row": 205,
+      "key_cell": "K205",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor - terminologie si abrevieri.",
+      "grade_marker": null,
+      "grades": [
+        "G1",
+        "G2"
+      ],
+      "match_mode": "UNMATCHED_DEFAULT_BOTH",
+      "legacy": []
+    },
+    {
+      "id": "CF-NORME_TEHNICE-201",
+      "category": "NORME_TEHNICE",
+      "source_row": 206,
+      "key_cell": "K206",
+      "answer": "B",
+      "reference": "I7/2011  Normativ pentru proiectarea, execuţia şi exploatarea instalaţiilor electrice aferente clădirilor -Art. 4.1.5.5.6",
+      "grade_marker": "GR I",
+      "grades": [
+        "G1"
+      ],
+      "match_mode": "NORMALIZED_QABC",
+      "legacy": [
+        {
+          "id": "G1-NOR-100",
+          "group": "QABC-0414",
+          "origin": "ORIGINAL",
+          "old_key": "B",
+          "key_text_matches": true,
+          "card": "V224_FINAL_10_EXACT_WORKBOOK_NOR092_100_AND_G2_ELEC290_ABC_2026_11_21.json",
+          "options_reordered": false
+        }
+      ]
+    }
+  ]
+}

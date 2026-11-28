@@ -1,0 +1,268 @@
+{
+  "schema": "batch_progress_input_v1",
+  "project": "ANRE Trainer",
+  "batch_id": "CKPT-399-G2-CLUSTER-01-03",
+  "task_id": "ANRE-G2-157-NEW-ORIGINAL-SOURCE-TRIAGE",
+  "before": {
+    "items": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0053",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0053"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0100",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0100"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0101",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0101"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0061",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0061"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0062",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0062"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0063",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0063"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0123",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-NOR-XLSX-R0123"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0124",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-NOR-XLSX-R0124"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0130",
+        "stage": "TRIAGED",
+        "open_gates": [
+          "SOURCE_EXACT_SCOPE_RESEARCH",
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-NOR-XLSX-R0130"
+        ]
+      }
+    ]
+  },
+  "after": {
+    "items": [
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0053",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0053",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-LEG-XLSX-R0053"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0100",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0100",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-LEG-XLSX-R0100"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0101",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0101",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-LEG-XLSX-R0101"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0061",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0061",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-LEG-XLSX-R0061"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0062",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0062",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-LEG-XLSX-R0062"
+        ]
+      },
+      {
+        "id": "ANRE-G2-LEG-XLSX-R0063",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-LEG-XLSX-R0063",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-LEG-XLSX-R0063"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0123",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-NOR-XLSX-R0123",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-NOR-XLSX-R0123"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0124",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-NOR-XLSX-R0124",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-NOR-XLSX-R0124"
+        ]
+      },
+      {
+        "id": "ANRE-G2-NOR-XLSX-R0130",
+        "stage": "SOURCE_RESEARCHED",
+        "open_gates": [
+          "OFFICIAL_EXAM_KEY",
+          "INDEPENDENT_QA",
+          "2026_EXAM_EDITION",
+          "SEMANTIC_EQUIVALENCE"
+        ],
+        "evidence_refs": [
+          "V332_G2_157_SEMANTIC_PAIR_CLUSTERS_CHOICE_OVERLAP_SAFE_REVIEW_2026_11_22.json#ANRE-G2-NOR-XLSX-R0130",
+          "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json#ANRE-G2-NOR-XLSX-R0130"
+        ]
+      }
+    ]
+  },
+  "truthful_definition": "SOURCE_RESEARCHED means specific normative text and source original A/B/C reasons recorded, NOT technical signoff, official answer or edition approval",
+  "source_artifact": "V336_G2_9_NEW_SOURCE_RESEARCHED_3_CLUSTERS_27_OPTION_JUSTIFICATIONS_2026_11_22.json"
+}

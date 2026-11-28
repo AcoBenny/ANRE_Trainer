@@ -1,0 +1,839 @@
+{
+  "schema": "v155_repeated_stem_exact_source_scope_audit",
+  "created_date": "2026-11-20",
+  "baseline_v149_blob": "ee2ac5536c78eb06a0461243be34c117e257188f",
+  "counts": {
+    "groups": 18,
+    "unit_appearances": 40,
+    "grade_id_appearances": 47,
+    "by_workbook": {
+      "ELECTROTEHNICA-09.2024-2.xlsx": 7,
+      "LEGISLATIE-GR.-1-05.2023 (1).xlsx": 4,
+      "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx": 7
+    }
+  },
+  "not_all_source_rows_represented": "The Electrotehnica figure-only rows 176 and 181 share a stem but are absent from V149; tracked separately in V153",
+  "the_repeated_groups_do_not_prove_wrong_keys": true,
+  "all_original_questions_options_imported_keys_unchanged": true,
+  "all_original_exam_keys_officially_authenticated": false,
+  "learning_approvals": 0,
+  "qa_decision_rule": "Full choice-set comparison and original workbook row are mandatory; never dedupe or transpose grading letters based on identical stems.",
+  "groups": [
+    {
+      "group_id": "REPEATED_STEM_01",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "stem": "Împărţirea fiecărei faze a unei instalaţii capsulate într-un anumit număr de compartimente atrage după sine:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 3,
+      "items": [
+        {
+          "id": "QABC-0080",
+          "row": 95,
+          "grade_ids": "G1-ELE-088|G2-ELEC-233",
+          "imported_keys_UNCHANGED": "G1-ELE-088=A | G2-ELEC-233=A",
+          "selected_answer_texts": [
+            "limitarea posibilităţilor de producere a unui defect în instalaţie;"
+          ],
+          "options": {
+            "A": "limitarea posibilităţilor de producere a unui defect în instalaţie;",
+            "B": "mărirea riscului de producere a unor scăpări de gaz;",
+            "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0081",
+          "row": 96,
+          "grade_ids": "G1-ELE-089",
+          "imported_keys_UNCHANGED": "G1-ELE-089=B",
+          "selected_answer_texts": [
+            "localizarea unor eventuale scăpări de gaz, precum şi a unor defecte interne,"
+          ],
+          "options": {
+            "A": "numai limitarea posibilităţilor de producere a unui defect în instalaţie;",
+            "B": "localizarea unor eventuale scăpări de gaz, precum şi a unor defecte interne,",
+            "C": "mărirea cantităţilor de gaz ce trebuie manipulate în cazul intervenţiei la un compartiment"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_02",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "stem": "În cazul în care echiparea circuitelor electrice de alimentare a motoarelor electrice se face cu siguranţă fuzibilă şi contactor cu relee termice:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 3,
+      "items": [
+        {
+          "id": "QABC-0085",
+          "row": 100,
+          "grade_ids": "G1-ELE-093|G2-ELEC-237",
+          "imported_keys_UNCHANGED": "G1-ELE-093=B | G2-ELEC-237=B",
+          "selected_answer_texts": [
+            "siguranţa fuzibilă realizează protecţia la scurtcircuit;"
+          ],
+          "options": {
+            "A": "siguranţa fuzibilă realizează protecţia la suprasarcină;",
+            "B": "siguranţa fuzibilă realizează protecţia la scurtcircuit;",
+            "C": "siguranţa fuzibilă realizează protecţia la supratensiuni;"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0086",
+          "row": 101,
+          "grade_ids": "G1-ELE-094",
+          "imported_keys_UNCHANGED": "G1-ELE-094=A",
+          "selected_answer_texts": [
+            "releele termice realizează protecţia la suprasarcină;"
+          ],
+          "options": {
+            "A": "releele termice realizează protecţia la suprasarcină;",
+            "B": "releele termice realizează protecţia la scurtcircuit;",
+            "C": "releele termice realizează protecţia la supratensiuni;"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_03",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "stem": "Într-o staţie cu două sisteme de bare colectoare, cupla transversală:",
+      "distinct_qabc": 3,
+      "grade_ids_count": 4,
+      "items": [
+        {
+          "id": "QABC-0115",
+          "row": 131,
+          "grade_ids": "G1-ELE-124|G2-ELEC-266",
+          "imported_keys_UNCHANGED": "G1-ELE-124=A | G2-ELEC-266=A",
+          "selected_answer_texts": [
+            "se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;"
+          ],
+          "options": {
+            "A": "se poate utiliza numai pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+            "B": "nu se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+            "C": "se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0116",
+          "row": 132,
+          "grade_ids": "G1-ELE-125",
+          "imported_keys_UNCHANGED": "G1-ELE-125=B",
+          "selected_answer_texts": [
+            "se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;"
+          ],
+          "options": {
+            "A": "nu se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+            "B": "se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+            "C": "se poate utiliza numai pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0117",
+          "row": 133,
+          "grade_ids": "G1-ELE-126",
+          "imported_keys_UNCHANGED": "G1-ELE-126=A",
+          "selected_answer_texts": [
+            "se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;"
+          ],
+          "options": {
+            "A": "se poate utiliza pentru cuplarea în paralel a celor două sisteme de bare colectoare care sunt sub tensiune;",
+            "B": "nu se poate utiliza pentru ocolirea unui întreruptor de linie pe durata unei revizii sau reparaţii;",
+            "C": "nu se poate utiliza pentru verificarea stării izolaţiei unui sistem de bare colectoare, care până în momentul respectiv a fost scos de sub tensiune."
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_04",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "stem": "La conectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 3,
+      "items": [
+        {
+          "id": "QABC-0120",
+          "row": 136,
+          "grade_ids": "G1-ELE-129|G2-ELEC-269",
+          "imported_keys_UNCHANGED": "G1-ELE-129=C | G2-ELEC-269=C",
+          "selected_answer_texts": [
+            "separatorul de bare, separatorul de linie, întreruptorul ."
+          ],
+          "options": {
+            "A": "separatorul de linie, separatorul de bare, întreruptorul;",
+            "B": "separatorul de bare, întreruptorul, separatorul de linie;",
+            "C": "separatorul de bare, separatorul de linie, întreruptorul ."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0128",
+          "row": 144,
+          "grade_ids": "G1-ELE-137",
+          "imported_keys_UNCHANGED": "G1-ELE-137=B",
+          "selected_answer_texts": [
+            "separatorul de bare, separatorul de linie, întreruptorul;"
+          ],
+          "options": {
+            "A": "separatorul de bare, întreruptorul, separatorul de linie;",
+            "B": "separatorul de bare, separatorul de linie, întreruptorul;",
+            "C": "întreruptorul, separatorul de linie, separatorul de bare."
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_05",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "stem": "La deconectarea unui circuit de linie se recomandă următoarea  ordine a manevrelor:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 3,
+      "items": [
+        {
+          "id": "QABC-0122",
+          "row": 138,
+          "grade_ids": "G1-ELE-131|G2-ELEC-271",
+          "imported_keys_UNCHANGED": "G1-ELE-131=C | G2-ELEC-271=C",
+          "selected_answer_texts": [
+            "întreruptorul, separatorul de  linie, separatorul de bare."
+          ],
+          "options": {
+            "A": "separatorul de linie, întreruptorul, separatorul de bare;",
+            "B": "separatorul de bare, întreruptorul, separatorul de linie;",
+            "C": "întreruptorul, separatorul de  linie, separatorul de bare."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0129",
+          "row": 145,
+          "grade_ids": "G1-ELE-138",
+          "imported_keys_UNCHANGED": "G1-ELE-138=B",
+          "selected_answer_texts": [
+            "întreruptorul, separatorul de linie, separatorul de bare;"
+          ],
+          "options": {
+            "A": "separatorul de linie, întreruptorul, separatorul de bare;",
+            "B": "întreruptorul, separatorul de linie, separatorul de bare;",
+            "C": "întreruptorul, separatorul de bare, separatorul de linie."
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_06",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "stem": "Un întreruptor debroşabil asigură:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 3,
+      "items": [
+        {
+          "id": "QABC-0237",
+          "row": 255,
+          "grade_ids": "G1-ELE-248|G2-ELEC-384",
+          "imported_keys_UNCHANGED": "G1-ELE-248=C | G2-ELEC-384=C",
+          "selected_answer_texts": [
+            "izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+          ],
+          "options": {
+            "A": "numai protecţia în caz de scurtcircuit;",
+            "B": "protecţia la supratensiuni;",
+            "C": "izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0238",
+          "row": 256,
+          "grade_ids": "G1-ELE-249",
+          "imported_keys_UNCHANGED": "G1-ELE-249=A",
+          "selected_answer_texts": [
+            "protecţia în caz de scurtcircuit;"
+          ],
+          "options": {
+            "A": "protecţia în caz de scurtcircuit;",
+            "B": "numai comutaţia în regim normal;",
+            "C": "protecţia la supratensiuni."
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_07",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "stem": "Utilizarea întreruptoarelor debroşabile:",
+      "distinct_qabc": 3,
+      "grade_ids_count": 4,
+      "items": [
+        {
+          "id": "QABC-0253",
+          "row": 271,
+          "grade_ids": "G1-ELE-264|G2-ELEC-399",
+          "imported_keys_UNCHANGED": "G1-ELE-264=B | G2-ELEC-399=B",
+          "selected_answer_texts": [
+            "asigură scurtarea duratei reviziilor la celule;"
+          ],
+          "options": {
+            "A": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+            "B": "asigură scurtarea duratei reviziilor la celule;",
+            "C": "asigură numai izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0255",
+          "row": 273,
+          "grade_ids": "G1-ELE-266",
+          "imported_keys_UNCHANGED": "G1-ELE-266=A",
+          "selected_answer_texts": [
+            "asigură eliminarea unor greşeli de manevră datorate separatoarelor;"
+          ],
+          "options": {
+            "A": "asigură eliminarea unor greşeli de manevră datorate separatoarelor;",
+            "B": "nu asigură scurtarea duratei reviziilor la celule;",
+            "C": "nu asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0256",
+          "row": 274,
+          "grade_ids": "G1-ELE-267",
+          "imported_keys_UNCHANGED": "G1-ELE-267=A",
+          "selected_answer_texts": [
+            "asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune."
+          ],
+          "options": {
+            "A": "asigură izolarea personalului care lucrează la întreruptor, de restul instalaţiei aflată sub tensiune.",
+            "B": "asigură numai scurtarea duratei reviziilor la celule;",
+            "C": "nu asigură eliminarea unor greşeli de manevră datorate separatoarelor;"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_08",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "stem": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice în caz de:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0266",
+          "row": 9,
+          "grade_ids": "G1-LEG-002",
+          "imported_keys_UNCHANGED": "G1-LEG-002=B",
+          "selected_answer_texts": [
+            "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă"
+          ],
+          "options": {
+            "A": "neplata abonamentului radio-tv",
+            "B": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+            "C": "depășirea cu 30 de zile a termenului scadent al unei facturi"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0281",
+          "row": 24,
+          "grade_ids": "G1-LEG-017",
+          "imported_keys_UNCHANGED": "G1-LEG-017=B",
+          "selected_answer_texts": [
+            "racordare ilegală la reţeaua de distribuţie"
+          ],
+          "options": {
+            "A": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+            "B": "racordare ilegală la reţeaua de distribuţie",
+            "C": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_09",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "stem": "Pentru protejarea reţelelor electrice de distribuţie, persoanelor fizice si juridice:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0285",
+          "row": 28,
+          "grade_ids": "G1-LEG-021",
+          "imported_keys_UNCHANGED": "G1-LEG-021=B",
+          "selected_answer_texts": [
+            "li se interzice să limiteze sau să îngrădească, prin execuţia de împrejmuire, prin construcţii ori prin orice alt mod, accesul la instalaţii al operatorului de distribuţie"
+          ],
+          "options": {
+            "A": "li se interzice să consume energie electrica prin instalaţii racordate direct la cele ale reţelei electrice de distribuţie",
+            "B": "li se interzice să limiteze sau să îngrădească, prin execuţia de împrejmuire, prin construcţii ori prin orice alt mod, accesul la instalaţii al operatorului de distribuţie",
+            "C": "li se permite depozitarea de materiale pe culoarul de trecere si in zonele de protecţie si de siguranţa ale instalaţiilor, fara acordul operatorului de reţea, cu condiţia să fie proprietar al terenului"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0286",
+          "row": 29,
+          "grade_ids": "G1-LEG-022",
+          "imported_keys_UNCHANGED": "G1-LEG-022=A",
+          "selected_answer_texts": [
+            "li se interzice să efectueze construcţii de orice fel în zona de siguranţă a reţelelor electrice de distribuţie, fără avizul de amplasament al operatorului de distribuţie"
+          ],
+          "options": {
+            "A": "li se interzice să efectueze construcţii de orice fel în zona de siguranţă a reţelelor electrice de distribuţie, fără avizul de amplasament al operatorului de distribuţie",
+            "B": "li se interzice să consume energie electrica prin instalaţii racordate direct la cele ale reţelei electrice de distribuţie",
+            "C": "li se permite depozitarea de materiale pe culoarul de trecere si in zonele de protecţie si de siguranţa ale instalaţiilor, fara acordul operatorului de reţea, cu condiţia să fie proprietar al terenului"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_10",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "stem": "ANRE poate aplica sancţiuni contravenţionale unui electrician autorizat pentru:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0295",
+          "row": 38,
+          "grade_ids": "G1-LEG-031",
+          "imported_keys_UNCHANGED": "G1-LEG-031=A",
+          "selected_answer_texts": [
+            "Desfăşurarea de activităţi fără contracte legale, în vigoare (contract de muncă individual  semnat cu un angajator sau contract de prestări servicii, în cazul în care este persoană fizică autorizată în condițiile legii)"
+          ],
+          "options": {
+            "A": "Desfăşurarea de activităţi fără contracte legale, în vigoare (contract de muncă individual  semnat cu un angajator sau contract de prestări servicii, în cazul în care este persoană fizică autorizată în condițiile legii)",
+            "B": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+            "C": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0296",
+          "row": 39,
+          "grade_ids": "G1-LEG-032",
+          "imported_keys_UNCHANGED": "G1-LEG-032=B",
+          "selected_answer_texts": [
+            "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani"
+          ],
+          "options": {
+            "A": "Comiterea unei fapte prevăzute în Regulamentul de autorizare ca fiind interzisă",
+            "B": "Desfăşurarea activităţii în baza unei adeverințe (legitimații) de electrician autorizat emisă în urmă cu 4 ani",
+            "C": "Proiectarea instalaţiei electrice a unei locuinţe în baza unei autorizaţii de tip II A"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_11",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "stem": "Una dintre obligaţiile electricianului care deţine autorizaţie de executare  instalaţii electrice este:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0300",
+          "row": 43,
+          "grade_ids": "G1-LEG-036",
+          "imported_keys_UNCHANGED": "G1-LEG-036=B",
+          "selected_answer_texts": [
+            "Să execute  instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte prevederile din proiect"
+          ],
+          "options": {
+            "A": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+            "B": "Să execute  instalaţii electrice doar conform gradului si tipului de autorizare şi să respecte prevederile din proiect",
+            "C": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0301",
+          "row": 44,
+          "grade_ids": "G1-LEG-037",
+          "imported_keys_UNCHANGED": "G1-LEG-037=A",
+          "selected_answer_texts": [
+            "Să execute  instalaţii electrice numai în una dintre calităţile prevăzute în regulament pentru exercitarea activităţii"
+          ],
+          "options": {
+            "A": "Să execute  instalaţii electrice numai în una dintre calităţile prevăzute în regulament pentru exercitarea activităţii",
+            "B": "Să notifice ANRE data începerii execuţiei unei instalaţii electrice conform gradului si tipului de autorizare",
+            "C": "Să proiecteze instalaţii electrice doar conform gradului si tipului de autorizare, având în vedere că experienţa practică îi permite acest lucru"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_12",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "stem": "Conform I 7, parte activă a unei instalaţii este:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0352",
+          "row": 45,
+          "grade_ids": "G1-NOR-038",
+          "imported_keys_UNCHANGED": "G1-NOR-038=B",
+          "selected_answer_texts": [
+            "conductorul neutru (N)"
+          ],
+          "options": {
+            "A": "conductorul PEN",
+            "B": "conductorul neutru (N)",
+            "C": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0353",
+          "row": 46,
+          "grade_ids": "G1-NOR-039",
+          "imported_keys_UNCHANGED": "G1-NOR-039=A",
+          "selected_answer_texts": [
+            "conductor sau parte conductoare destinată să fie pusă sub tensiune în funcţionare normală"
+          ],
+          "options": {
+            "A": "conductor sau parte conductoare destinată să fie pusă sub tensiune în funcţionare normală",
+            "B": "Partea conductoare accesibilă a unui echipament electric sau a unui element de construcţie care poate fi atinsă, dar care în mod normal nu este sub tensiune",
+            "C": "conductorul PEN"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_13",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "stem": "Conductorul neutru (N) trebuie să aibă aceeaşi secţiune cu conductorul de fază:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0355",
+          "row": 48,
+          "grade_ids": "G1-NOR-041",
+          "imported_keys_UNCHANGED": "G1-NOR-041=B",
+          "selected_answer_texts": [
+            "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 16 mm2Cu sau 25 mm2Al"
+          ],
+          "options": {
+            "A": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază",
+            "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 16 mm2Cu sau 25 mm2Al",
+            "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0356",
+          "row": 49,
+          "grade_ids": "G1-NOR-042",
+          "imported_keys_UNCHANGED": "G1-NOR-042=B",
+          "selected_answer_texts": [
+            "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al"
+          ],
+          "options": {
+            "A": "în circuitele monofazate cu două conductoare, indiferent de secţiunea conductoarelor",
+            "B": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate ale căror conductoare de fază au secţiunea mai mică sau egală cu 25 mm2 Cu sau 35 mm2 Al",
+            "C": "în circuitele monofazate cu trei conductoare şi în circuitele polifazate indiferent de secţiunea conductoarelor de fază"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_14",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "stem": "Valoarea curentului maxim admisibil într-un conductor în regim permanent de lucru depinde de:",
+      "distinct_qabc": 4,
+      "grade_ids_count": 4,
+      "items": [
+        {
+          "id": "QABC-0357",
+          "row": 50,
+          "grade_ids": "G1-NOR-043",
+          "imported_keys_UNCHANGED": "G1-NOR-043=C",
+          "selected_answer_texts": [
+            "secţiunea conductorului"
+          ],
+          "options": {
+            "A": "tipul receptorului alimentat",
+            "B": "lungimea circuitului",
+            "C": "secţiunea conductorului"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0358",
+          "row": 51,
+          "grade_ids": "G1-NOR-044",
+          "imported_keys_UNCHANGED": "G1-NOR-044=B",
+          "selected_answer_texts": [
+            "materialul conductorului"
+          ],
+          "options": {
+            "A": "lungimea circuitului",
+            "B": "materialul conductorului",
+            "C": "tipul receptorului alimentat"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0359",
+          "row": 52,
+          "grade_ids": "G1-NOR-045",
+          "imported_keys_UNCHANGED": "G1-NOR-045=B",
+          "selected_answer_texts": [
+            "natura izolaţiei conductorului"
+          ],
+          "options": {
+            "A": "lungimea circuitului",
+            "B": "natura izolaţiei conductorului",
+            "C": "tipul receptorului alimentat"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0360",
+          "row": 53,
+          "grade_ids": "G1-NOR-046",
+          "imported_keys_UNCHANGED": "G1-NOR-046=A",
+          "selected_answer_texts": [
+            "modul de montare"
+          ],
+          "options": {
+            "A": "modul de montare",
+            "B": "tipul receptorului alimentat",
+            "C": "lungimea circuitului"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_15",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "stem": "Alimentarea transformatorului de sonerie sau soneriei de 220(230) V se face:  .",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0362",
+          "row": 55,
+          "grade_ids": "G1-NOR-048",
+          "imported_keys_UNCHANGED": "G1-NOR-048=A",
+          "selected_answer_texts": [
+            "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție"
+          ],
+          "options": {
+            "A": "dintr-un circuit de iluminat normal, dintr-un circuit de prize sau direct din tabloul de distribuție",
+            "B": "numai dintr-un circuit de iluminat normal",
+            "C": "numai dintr-un circuit de prize"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0363",
+          "row": 56,
+          "grade_ids": "G1-NOR-049",
+          "imported_keys_UNCHANGED": "G1-NOR-049=B",
+          "selected_answer_texts": [
+            "dintr-un circuit de iluminat normal"
+          ],
+          "options": {
+            "A": "numai direct din tabloul de distribuţie",
+            "B": "dintr-un circuit de iluminat normal",
+            "C": "numai dintr-un circuit de prize"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_16",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "stem": "În încăperi în care se impun condiţii speciale de protecţie datorită utilizatorilor (copii, bolnavi mintal etc.), prizele trebuie să fie",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0382",
+          "row": 75,
+          "grade_ids": "G1-NOR-068",
+          "imported_keys_UNCHANGED": "G1-NOR-068=B",
+          "selected_answer_texts": [
+            "prevăzute cu dispozitive de protecţie diferenţială ≤ 30 mA"
+          ],
+          "options": {
+            "A": "montate aparent",
+            "B": "prevăzute cu dispozitive de protecţie diferenţială ≤ 30 mA",
+            "C": "de tip îngropat"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0383",
+          "row": 76,
+          "grade_ids": "G1-NOR-069",
+          "imported_keys_UNCHANGED": "G1-NOR-069=A",
+          "selected_answer_texts": [
+            "de tip special (de ex. cu obturatori)"
+          ],
+          "options": {
+            "A": "de tip special (de ex. cu obturatori)",
+            "B": "de tip îngropat",
+            "C": "montate aparent"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_17",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "stem": "Conform normativului I-7-2011, o coloană electrică  este un circuit electric care:",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0390",
+          "row": 83,
+          "grade_ids": "G1-NOR-076",
+          "imported_keys_UNCHANGED": "G1-NOR-076=A",
+          "selected_answer_texts": [
+            "alimentează un tablou de distribuţie."
+          ],
+          "options": {
+            "A": "alimentează un tablou de distribuţie.",
+            "B": "alimentează un receptor de putere",
+            "C": "alimentează mai multe surse de iluminat"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0391",
+          "row": 84,
+          "grade_ids": "G1-NOR-077",
+          "imported_keys_UNCHANGED": "G1-NOR-077=C",
+          "selected_answer_texts": [
+            "alimentează mai multe tablouri de distribuţie."
+          ],
+          "options": {
+            "A": "alimentează mai multe surse de iluminat",
+            "B": "alimentează un receptor de putere",
+            "C": "alimentează mai multe tablouri de distribuţie."
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    },
+    {
+      "group_id": "REPEATED_STEM_18",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "stem": "Montarea în contact direct cu materiale combustibile se admite",
+      "distinct_qabc": 2,
+      "grade_ids_count": 2,
+      "items": [
+        {
+          "id": "QABC-0395",
+          "row": 88,
+          "grade_ids": "G1-NOR-081",
+          "imported_keys_UNCHANGED": "G1-NOR-081=C",
+          "selected_answer_texts": [
+            "pentru cabluri cu întârziere la propagarea flăcării"
+          ],
+          "options": {
+            "A": "pentru cabluri cu izolație din PVC",
+            "B": "pentru toate tuburile şi plintele din materiale plastice",
+            "C": "pentru cabluri cu întârziere la propagarea flăcării"
+          },
+          "learning_approval": false
+        },
+        {
+          "id": "QABC-0396",
+          "row": 89,
+          "grade_ids": "G1-NOR-082",
+          "imported_keys_UNCHANGED": "G1-NOR-082=B",
+          "selected_answer_texts": [
+            "pentru cabluri rezistente la foc"
+          ],
+          "options": {
+            "A": "pentru toate tuburile şi plintele din materiale plastice",
+            "B": "pentru cabluri rezistente la foc",
+            "C": "pentru cabluri cu izolație din PVC"
+          },
+          "learning_approval": false
+        }
+      ],
+      "pattern": "SAME_STEM_DIFFERENT_CHOICES_NO_STEM_ONLY_DEDUP",
+      "requires_separate_ABC_QA": true,
+      "official_key_authenticated": false
+    }
+  ]
+}

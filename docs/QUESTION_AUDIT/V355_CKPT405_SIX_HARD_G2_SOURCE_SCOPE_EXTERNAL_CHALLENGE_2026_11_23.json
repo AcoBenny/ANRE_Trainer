@@ -1,0 +1,188 @@
+{
+  "schema": "V355_CKPT405_SIX_DISTINCT_G2_SCOPE_ADJUDICATION",
+  "date": "2026-11-23",
+  "parent": "CKPT404",
+  "counts": {
+    "cases_challenged": 6,
+    "new_conditional_source_semantic_gates": 2,
+    "still_held_for_source_uniqueness": 4,
+    "official_grade_key_signoffs": 0,
+    "qualified_independent_signoffs": 0,
+    "learner_approvals": 0
+  },
+  "external_AI_research_response_ids": [
+    "resp_8d781de4-4c19-4868-b463-544f8b0e2bd4",
+    "resp_77b2e3db-db7b-4252-ac04-aa6c6b2fbf84",
+    "resp_8051b383-5465-492f-bb27-d760323f0620"
+  ],
+  "sources": [
+    "https://legislatie.just.ro/Public/DetaliiDocument/310640",
+    "https://legislatie.just.ro/Public/DetaliiDocumentAfis/286763"
+  ],
+  "method": "Independent external AI source challenges executed; primary consolidated source paragraphs reopened separately. Source-only semantics, not official scored keys or qualified human legal/engineering review. No full raw before-focus-after source passage licensed.",
+  "items": [
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0055",
+      "original_question": "Dacă protecţia motoarelor contra suprasarcinilor este realizată cu întrerupere, dispozitivul de comutaţie trebuie să întrerupă obligatoriu: ",
+      "original_ABC": {
+        "A": " toate conductoarele active",
+        "B": "conductorul neutru ",
+        "C": " toate conductoarele de fază"
+      },
+      "original_source_row": 55,
+      "source_stem_sha256": "2914e854e5852949a7acdba57b6a61790509fdc588da4fed7b947338d1e601b8",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "prior_flag": "CONFLICT_BETWEEN_LITERAL_GENERAL_WORDING_AND_NEUTRAL_EXCEPTION",
+      "status": "HELD_A_AND_C_LITERALLY_DEFENSIBLE",
+      "source_supported_candidate_NOT_official_key": null,
+      "source_locator": "I7 §5.3.1.7.2.1",
+      "exact_scope_paraphrase": "A verbatim 'all active' conflicts with neighboring rule: neutral interruption not mandatory, making C phase-only defensible",
+      "option_A_technical_and_linguistic_review": "A repeats first clause but exception narrows obligation",
+      "option_B_technical_and_linguistic_review": "B neutral only cannot suffice",
+      "option_C_technical_and_linguistic_review": "C phases only can meet special neutral exception",
+      "before_context_note": "Applicable exact source object, grade and functional regime required",
+      "after_context_note": "Special exceptions and adjacent clauses kept; official exam grading may differ",
+      "official_scored_key_authenticated": false,
+      "independent_qualified_reviewer_signed": false,
+      "edition_2026_exam_certified": false,
+      "learner_release": false
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0039",
+      "original_question": "Actualizarea avizului tehnic de racordare atunci când se produce schimbarea titularului locului de producere sau de consum ",
+      "original_ABC": {
+        "A": "este obligatorie numai dacă se modifică puterea aprobată anterior prin avizul tehnic de racordare;",
+        "B": "nu este obligatorie",
+        "C": "este obligatorie "
+      },
+      "original_source_row": 39,
+      "source_stem_sha256": "cc5c5439ec3900ff61ef3f0e85e979a4dcfef1f07c167ae097fdb3a063433be3",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "prior_flag": "ATR_VS_POST_CONNECTION_CERTIFICATE_CONDITION_MATERIAL",
+      "status": "SOURCE_ONLY_CONDITIONAL_C",
+      "source_supported_candidate_NOT_official_key": "C",
+      "source_locator": "Ord59/2013 Regulation Art5(2)(b) and 6(3)(b)",
+      "exact_scope_paraphrase": "A still-valid ATR must be updated for holder change, even absent increased approved power. For already-connected site, certification document is different and holder change does not require updating certificate.",
+      "option_A_technical_and_linguistic_review": "A falsely conditions duty on power change",
+      "option_B_technical_and_linguistic_review": "B false for still-valid ATR",
+      "option_C_technical_and_linguistic_review": "C supported when active valid ATR",
+      "before_context_note": "Applicable exact source object, grade and functional regime required",
+      "after_context_note": "Special exceptions and adjacent clauses kept; official exam grading may differ",
+      "official_scored_key_authenticated": false,
+      "independent_qualified_reviewer_signed": false,
+      "edition_2026_exam_certified": false,
+      "learner_release": false
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0095",
+      "original_question": "Avizul tehnic de racordare este un aviz scris valabil:",
+      "original_ABC": {
+        "A": "pentru orice  titular al locului de producere/consum respectiv",
+        "B": "numai pentru un anumit titular al locului de producere/consum",
+        "C": "pe o perioadă de timp nelimitată"
+      },
+      "original_source_row": 95,
+      "source_stem_sha256": "72ca3b9f56bd17499a2bc6d9004eeae9d0415703120a2400a6a86559299ce3e6",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "prior_flag": "EXACT_NORM_OBJECT_MISMATCH_AMPLASAMENT_VS_TITULAR",
+      "status": "HELD_NO_LITERAL_CORRECT_OPTION",
+      "source_supported_candidate_NOT_official_key": null,
+      "source_locator": "Ord59/2013 Annex ATR definition Art32-33",
+      "exact_scope_paraphrase": "ATR applies to a particular amplasament, not exclusively titular; it also expires.",
+      "option_A_technical_and_linguistic_review": "A any holder is not exclusive normative requirement",
+      "option_B_technical_and_linguistic_review": "B exclusive holder misstates amplasament",
+      "option_C_technical_and_linguistic_review": "C unlimited time refuted by expiry",
+      "before_context_note": "Applicable exact source object, grade and functional regime required",
+      "after_context_note": "Special exceptions and adjacent clauses kept; official exam grading may differ",
+      "official_scored_key_authenticated": false,
+      "independent_qualified_reviewer_signed": false,
+      "edition_2026_exam_certified": false,
+      "learner_release": false
+    },
+    {
+      "stage_id": "ANRE-G2-LEG-XLSX-R0098",
+      "original_question": "Dacă se solicită avizul tehnic de racordare pentru o organizare de de şantier, documentaţia anexată cererii va cuprinde în mod obligatoriu şi:",
+      "original_ABC": {
+        "A": "certificatul de urbanism al obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;",
+        "B": "autorizaţia de construire a obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;\n",
+        "C": "contractul încheiat cu un furnizor de energie electrică\n"
+      },
+      "original_source_row": 98,
+      "source_stem_sha256": "ead4d671b6f00daab61cf60ce6099c7f7956774e9813e015cada0030d349547e",
+      "source_workbook_sha256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "prior_flag": "MULTIPLE_A_AND_B_VALID_IN_NEW_BUILDING_CONTEXT",
+      "status": "HELD_A_AND_B_BOTH_MANDATORY",
+      "source_supported_candidate_NOT_official_key": null,
+      "source_locator": "Ord59/2013 Art14(1)(c) and Art14(1)(h)",
+      "exact_scope_paraphrase": "Construction-site authorization is specifically mandatory under h, while valid urban-planning certificate under c can also be mandatory for same new build.",
+      "option_A_technical_and_linguistic_review": "A can be mandatory in same dossier",
+      "option_B_technical_and_linguistic_review": "B specifically required for construction site request, likely examiner intention",
+      "option_C_technical_and_linguistic_review": "C contract with supplier not the mandatory added item",
+      "before_context_note": "Applicable exact source object, grade and functional regime required",
+      "after_context_note": "Special exceptions and adjacent clauses kept; official exam grading may differ",
+      "official_scored_key_authenticated": false,
+      "independent_qualified_reviewer_signed": false,
+      "edition_2026_exam_certified": false,
+      "learner_release": false
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0096",
+      "original_question": "Este obligatorie protecţia la suprasarcini pentru:",
+      "original_ABC": {
+        "A": "instalaţii din încăperi din categoriile celor cu risc de incendiu sau de explozie",
+        "B": "instalaţii de comandă ",
+        "C": "instalaţii de semnalizare"
+      },
+      "original_source_row": 96,
+      "source_stem_sha256": "24bc01e96cc3b5302942d75917cfcce53ea4c0ef8b4a61d3bce4130777efb2f0",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "prior_flag": "SUPERSEDED_HISTORICAL_NORM_NO_CURRENT_ERA_SOURCE",
+      "status": "SOURCE_ONLY_CONDITIONAL_A",
+      "source_supported_candidate_NOT_official_key": "A",
+      "source_locator": "I7/2011 §4.3.2.2.1, preceding overload general rule and §4.3.2.4.1",
+      "exact_scope_paraphrase": "2011 I7 general overload duty plus fire/explosion exception to omission supports A under ordinary regime, while command/signalling may omit. Hazardous automatic interruption can trigger special warning choice.",
+      "option_A_technical_and_linguistic_review": "A supported subject to fire systems hazardous disconnection exceptions",
+      "option_B_technical_and_linguistic_review": "B may omit outside hazardous installation",
+      "option_C_technical_and_linguistic_review": "C may omit outside hazardous installation",
+      "before_context_note": "Applicable exact source object, grade and functional regime required",
+      "after_context_note": "Special exceptions and adjacent clauses kept; official exam grading may differ",
+      "official_scored_key_authenticated": false,
+      "independent_qualified_reviewer_signed": false,
+      "edition_2026_exam_certified": false,
+      "learner_release": false
+    },
+    {
+      "stage_id": "ANRE-G2-NOR-XLSX-R0180",
+      "original_question": "Pe un circuit   care alimentează mai multe receptoare electrice de putere de aceeaşi natură şi destinaţie ",
+      "original_ABC": {
+        "A": "nu se prevede protecție comună la scurtcircuit ",
+        "B": "nu se prevede protecție comună la suprasarcină",
+        "C": "se prevede protecție la suprasarcină dacă puterea totală instalată a acestor receptoare  depăşeşte 16 kW"
+      },
+      "original_source_row": 180,
+      "source_stem_sha256": "bf0aa86b04e899854388a7de40f7f37acd18a6ecbd37c903d9076fb5e76cdc08",
+      "source_workbook_sha256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "prior_flag": "COMMON_OVERLOAD_SCOPE_EXTRA_REVIEW",
+      "status": "HELD_NO_AFFIRMATIVE_OPTION",
+      "source_supported_candidate_NOT_official_key": null,
+      "source_locator": "I7/2011 §5.3.1.1 and §5.3.1.7.2.1",
+      "exact_scope_paraphrase": "Common short-circuit protection for same-kind receivers is allowed if total <=15kW; does NOT prove ban on shared overload protection.",
+      "option_A_technical_and_linguistic_review": "A universal ban on common short-circuit protection false",
+      "option_B_technical_and_linguistic_review": "B prohibitive statement not affirmatively proven by exact clause",
+      "option_C_technical_and_linguistic_review": "C erroneous 16kW threshold and wrong type protection",
+      "before_context_note": "Applicable exact source object, grade and functional regime required",
+      "after_context_note": "Special exceptions and adjacent clauses kept; official exam grading may differ",
+      "official_scored_key_authenticated": false,
+      "independent_qualified_reviewer_signed": false,
+      "edition_2026_exam_certified": false,
+      "learner_release": false
+    }
+  ],
+  "anti_loop": "Six previously flagged hard-source cases have a NEW external challenge and direct article-conditional decision; 2 source-only conditional support and 4 held, not repeating 41 cautions; no application nor answer-key changes.",
+  "safety": [
+    "all official scored keys untouched",
+    "no canonical QABC changes",
+    "no HTML APK modifications",
+    "PR7 Draft"
+  ]
+}

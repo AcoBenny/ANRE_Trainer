@@ -1,0 +1,492 @@
+{
+  "schema": "ONEPASS_V2_12_CASE_SOURCE_CARD_EVIDENCE_GAP_PILOT",
+  "date": "2026-11-23",
+  "parent": "CKPT407",
+  "verdict": "PILOT_JOIN_AND_FAIL_CLOSED_TRIAGE_PASS__FINAL_ANSWER_AND_CARD_VALIDATION_NOT_DONE",
+  "counts": {
+    "pilot_case_ids": 12,
+    "canonical_units": 7,
+    "quarantined_G2_original": 4,
+    "unmapped_original_visual": 1,
+    "original_written_question_ABC_crosschecked": 11,
+    "unverified_original_graphic_row": 1,
+    "canonical_editorial_ABC_drafts_registered": 7,
+    "staging_card_drafts_not_present": 4,
+    "orphan_card_not_present": 1,
+    "source_before_focus_after_char_verified_in_pilot": 0,
+    "final_qualified_question_approvals": 0
+  },
+  "input_evidence_files": [
+    {
+      "path": "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V360_ONEPASS_V2_568_AU_QABC_822_GRADE_ROUTE_EXACT_CROSSWALK_2026_11_23.json",
+      "git_blob_sha": "3dbfbf0dfa6eb2b9323ff4671be35d9cf04ee861"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V141_568_QABC_MASTER_WITH_7_SOURCE_FIDELITY_DELTAS_2026_11_19.csv",
+      "git_blob_sha": "1b00624eecb5ea57507e0fb34ef5b30deecf5551"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V241_568_QABC_ALL_FULL_ABC_822_GRADE_ROUTES_4_VERSION_HOLDS_2026_11_21.json",
+      "git_blob_sha": "d07299f1ebced2e3e1c28ec4997f238b8039d624"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/INTEGRATED_ADJUDICATION_2026_11_13/MASTER_UNIT_CARDS_568.csv",
+      "git_blob_sha": "6db046d3577297aa2aea18ac0992438fb115f7b5"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V298_G2_ORIGINAL_157_RECOVERY_CANDIDATES_QUARANTINE_2026_11_22.csv",
+      "git_blob_sha": "c4234a68a7781a5e9cf72e738038907b5b28c9a4"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V355_CKPT405_SIX_HARD_G2_SOURCE_SCOPE_EXTERNAL_CHALLENGE_2026_11_23.json",
+      "git_blob_sha": "db0b3cd3d25f2f883addf67d60e53691d6858657"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V359_CKPT407_43_G2_NOR_INDEPENDENT_AI_SOURCE_REVIEW_2_SCOPE_GATES_2026_11_23.json",
+      "git_blob_sha": "43f8f4a55dffb443dd048ba1ca053dc66d75c9be"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V257_ORIGINAL_XLSX_9_VECTOR_GRAPHIC_ROW_ANCHORS_36_330_SHA256_VERIFIED_2026_11_21.json",
+      "git_blob_sha": "c878e856e5b0887c1b1627bec06e5752332b40e3"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V335_OFFICIAL_ANRE_2023_GRADE_I_BIBLIO_PE102_NOT_INCLUDED_PE155_I7_INCLUDED_2026_11_22.json",
+      "git_blob_sha": "99595710e42a9191f6a3719935e378ce804027e7"
+    },
+    {
+      "path": "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "git_blob_sha": "dfba1daefb08b94ef6ab7fefd9f95c439e1febeb"
+    }
+  ],
+  "crosswalk_568_822": "docs/QUESTION_AUDIT/ONEPASS_V2_PILOT/V360_ONEPASS_V2_568_AU_QABC_822_GRADE_ROUTE_EXACT_CROSSWALK_2026_11_23.json",
+  "cases": [
+    {
+      "id": "QABC-0017",
+      "category": "CROSSGRADE_KEY_CONFLICT",
+      "provenance": "CANONICAL_QABC",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "legacy_AU_id": "AU-765361a56cb06047",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 25,
+      "original_question": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+      "original_ABC": {
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "imported_keys_unchanged": {
+        "G1-ELE-018": "A",
+        "G2-ELEC-170": "C"
+      },
+      "staged_full_editorial_draft_path": "docs/QUESTION_AUDIT/V201_FIFTEEN_SOURCE_MATCHED_CROSSGRADE_COUPLER_AC_CALC_ABC_DRAFTS_2026_11_20.json",
+      "editorial_A_B_C_draft_registered": true,
+      "old_master_exact_source_document": "Mihai Puiu–Berizințu, Bazele electrotehnicii. Seminar și lucrări practice",
+      "old_master_exact_source_section": "§1.3.3 'Capacități în serviciu', relation (1.45), and ensuing symmetric-line examples",
+      "old_master_contextual_paraphrase_present": true,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_G1_A_VS_G2_C",
+      "blockers": [
+        "G1_KEY_A_G2_KEY_C",
+        "TECH_DEFINITION_NOT_INDEPENDENTLY_PROVEN",
+        "SOURCE_CONTEXT_RIGHTS"
+      ]
+    },
+    {
+      "id": "QABC-0027",
+      "category": "ROUTINE_MONOBLOC_DEVICE",
+      "provenance": "CANONICAL_QABC",
+      "grade_ids": [
+        "G1-ELE-031",
+        "G2-ELEC-180"
+      ],
+      "legacy_AU_id": "AU-3ca1801a2969b0b8",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 38,
+      "original_question": "Celulele prefabricate monobloc se caracterizează în principal prin:",
+      "original_ABC": {
+        "A": "securitate ridicată a persoanelor;",
+        "B": "gamă largă de configuraţii ale schemei de conexiuni;",
+        "C": "eliminarea totală a posibilităţii de producere a unui scurtcircuit între faze"
+      },
+      "imported_keys_unchanged": {
+        "G1-ELE-031": "A",
+        "G2-ELEC-180": "A"
+      },
+      "staged_full_editorial_draft_path": "docs/QUESTION_AUDIT/V177_SECOND_15_SOURCE_MATCHED_ABC_AND_REFORMULATION_DRAFTS_2026_11_20.json",
+      "editorial_A_B_C_draft_registered": true,
+      "old_master_exact_source_document": null,
+      "old_master_exact_source_section": null,
+      "old_master_contextual_paraphrase_present": false,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_EXACT_SOURCE_AND_CARD",
+      "blockers": [
+        "GENERIC_PRODUCT_SAFETY_NOT_EXACT_GRADE_SOURCE",
+        "CARD_SOURCE_CONTEXT_NOT_AUTHENTICATED"
+      ]
+    },
+    {
+      "id": "QABC-0143",
+      "category": "ORIGINAL_XLSX_STEM_MUTATION",
+      "provenance": "CANONICAL_QABC",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "legacy_AU_id": "AU-5129ac7f8023aeea",
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 159,
+      "original_question": "Mărimea caracteristică care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+      "original_ABC": {
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "imported_keys_unchanged": {
+        "G1-ELE-152": "A"
+      },
+      "staged_full_editorial_draft_path": "docs/QUESTION_AUDIT/V240_FOUR_MATERIAL_SOURCE_VS_TRAINER_VARIANTS_3_NEW_FULL_DUAL_ABC_2026_11_21.json",
+      "editorial_A_B_C_draft_registered": true,
+      "old_master_exact_source_document": null,
+      "old_master_exact_source_section": null,
+      "old_master_contextual_paraphrase_present": false,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_SOURCE_VS_TRAINER_WORDING",
+      "blockers": [
+        "ORIGINAL_ADIMENSIONALA_VS_TRAINER_CARACTERISTICA",
+        "ORIGINAL_DIMENSIONAL_CONTRADICTION"
+      ]
+    },
+    {
+      "id": "QABC-0341",
+      "category": "GRADE_I_HISTORICAL_PE102_FUSE",
+      "provenance": "CANONICAL_QABC",
+      "grade_ids": [
+        "G1-NOR-027"
+      ],
+      "legacy_AU_id": "AU-24115e9d1eb4a28b",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 34,
+      "original_question": "Siguranţele cu capac filetat trebuie să fie montate în aşa fel încât:",
+      "original_ABC": {
+        "A": "conductoarele de alimentare să fie legate la şuruburile de contact",
+        "B": "conductoarele de plecare spre consumatori să fie legate la şuruburile de contact",
+        "C": "conductoarele de alimentare să fie legate la duliile filetate"
+      },
+      "imported_keys_unchanged": {
+        "G1-NOR-027": "B"
+      },
+      "staged_full_editorial_draft_path": "docs/QUESTION_AUDIT/V214_NOR016_030_I7_ORIGINAL_ABC_EXCEPTION_AND_PE155_HOLDS_2026_11_20.json",
+      "editorial_A_B_C_draft_registered": true,
+      "old_master_exact_source_document": "I7/2011 (ANRE Grade I 2023) + PE102/1986 (Grade I excluded in ANRE2023)",
+      "old_master_exact_source_section": "I7 §5.3.4.3.1.2; PE102 §4.6.3 (not Grade I exam source)",
+      "old_master_contextual_paraphrase_present": true,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_BIBLIO_AND_TERMINAL_SEMANTIC",
+      "blockers": [
+        "PE102_NOT_GRADE_I_2023_BIBLIO",
+        "I7_CENTRAL_CONTACT_VS_SCREW_CONTACT"
+      ]
+    },
+    {
+      "id": "QABC-0346",
+      "category": "PE155_HORIZ_BRANCH_COLUMN",
+      "provenance": "CANONICAL_QABC",
+      "grade_ids": [
+        "G1-NOR-032"
+      ],
+      "legacy_AU_id": "AU-b8fe3982d5083999",
+      "source_workbook": "NORME-TEHNICE-Gr.-1-05.2023 (1).xlsx",
+      "source_row": 39,
+      "original_question": "Montarea dozelor de trecere este obligatorie în cazul în care lungimea coloanelor în linie dreapta, pe orizontală, depăşeşte:",
+      "original_ABC": {
+        "A": "10 m",
+        "B": "15 m",
+        "C": "20 m"
+      },
+      "imported_keys_unchanged": {
+        "G1-NOR-032": "B"
+      },
+      "staged_full_editorial_draft_path": "docs/QUESTION_AUDIT/V216_NOR031_045_PE155_I7_EXACT_ABC_NEUTRAL_AND_SELECTIVITY_HOLDS_2026_11_21.json",
+      "editorial_A_B_C_draft_registered": true,
+      "old_master_exact_source_document": "PE155/92 Normativ privind proiectarea si executarea bransamentelor electrice pentru cladiri civile",
+      "old_master_exact_source_section": "§3.2.10, coloane electrice, doze de trecere, traseu drept orizontal",
+      "old_master_contextual_paraphrase_present": true,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_SOURCE_EDITION_AND_VISUAL",
+      "blockers": [
+        "PE155_15M_IS_NOT_GENERIC_I7_25M",
+        "PE155_2026_APPLICABILITY_AND_VISUAL_RIGHTS"
+      ]
+    },
+    {
+      "id": "QABC-0281",
+      "category": "LEGAL_TERMINATION_VS_DISCONNECTION",
+      "provenance": "CANONICAL_QABC",
+      "grade_ids": [
+        "G1-LEG-017"
+      ],
+      "legacy_AU_id": "AU-4b365bd0966b300d",
+      "source_workbook": "LEGISLATIE-GR.-1-05.2023 (1).xlsx",
+      "source_row": 24,
+      "original_question": "Furnizorul de energie electrică este îndreptăţit sã rezilieze contractul de furnizare a energiei electrice  în caz de:",
+      "original_ABC": {
+        "A": "sustragerea de energie electrică constatată prin hotărâre judecătorească definitivă",
+        "B": "racordare ilegală la reţeaua de distribuţie",
+        "C": "refuz al clientului final de a constitui garanţia solicitată de furnizor atunci când acesta constată acţiuni menite să denatureze în orice fel indicaţiile echipamentelor de măsurare"
+      },
+      "imported_keys_unchanged": {
+        "G1-LEG-017": "B"
+      },
+      "staged_full_editorial_draft_path": "docs/QUESTION_AUDIT/V207_LEG016_030_ORIGINAL_ABC_CROSSLAW_CONFLICT_GATES_2026_11_20.json",
+      "editorial_A_B_C_draft_registered": true,
+      "old_master_exact_source_document": null,
+      "old_master_exact_source_section": null,
+      "old_master_contextual_paraphrase_present": false,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_LEGAL_MULTI_OPTION",
+      "blockers": [
+        "LEGAL_GROUND_A_VS_IMPORT_B",
+        "L123_ART58_CURRENT_EXACT_EDITION"
+      ]
+    },
+    {
+      "id": "QABC-0426",
+      "category": "DIDACTIC_ALL_A_POSITION_BIAS",
+      "provenance": "CANONICAL_QABC",
+      "grade_ids": [
+        "G2-NORM-003"
+      ],
+      "legacy_AU_id": "AU-f85c371b57d8589f",
+      "source_workbook": "Tematica și bibliografia ANRE pentru examenul de autorizare electricieni 2023",
+      "source_row": 211,
+      "original_question": "Normativul PE 155/1992 privind proiectarea și executarea branșamentelor pentru clădiri civile este aplicabil Gradului II?",
+      "original_ABC": {
+        "A": "Da",
+        "B": "Nu",
+        "C": "Doar pentru Gradele III și IV"
+      },
+      "imported_keys_unchanged": {
+        "G2-NORM-003": "A"
+      },
+      "staged_full_editorial_draft_path": "docs/QUESTION_AUDIT/V226_G2_2023_BIBLIO_15_UNOFFICIAL_DIDACTIC_ABC_CARDS_2026_11_21.json",
+      "editorial_A_B_C_draft_registered": true,
+      "old_master_exact_source_document": null,
+      "old_master_exact_source_section": null,
+      "old_master_contextual_paraphrase_present": false,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_UNOFFICIAL_SOURCE",
+      "blockers": [
+        "NOT_ANRE_PUBLISHED_QUESTION",
+        "153_UNOFFICIAL_IMPORT_KEY_A",
+        "2026_BIBLIO_NOT_AUTHENTICATED"
+      ]
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0037",
+      "category": "PE102_CIRCUITS_VS_I7_APPARATUS",
+      "provenance": "G2_ORIGINAL_QUARANTINED_NOT_CANONICAL",
+      "grade_ids": [],
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_source_workbook_SHA256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 37,
+      "original_question": "Circuitele de joasă tensiune de curent alternativ, de curent continuu sau de tensiuni diferite",
+      "original_ABC": {
+        "A": "se recomandă să fie grupate pe acelaşi panou (dulap)",
+        "B": "este interzisă gruparea pe acelaşi panou (dulap)",
+        "C": "este admisă gruparea pe acelaşi panou (dulap), în anumite condiţii"
+      },
+      "imported_keys_unchanged": null,
+      "previously_researched_source_locator": "PE102/1986 §4.4.7 (circuits), I7/2011 §5.3.3.17 (apparatus, analogy only)",
+      "preliminary_source_candidate_not_official": "C",
+      "staged_full_editorial_draft_path": null,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_2026_SOURCE_EDITION",
+      "blockers": [
+        "2026_PE102_EXACT_SOURCE",
+        "PDF_PAGE_VISUAL",
+        "CARD_REQUIRED"
+      ]
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0122",
+      "category": "NUMAI_COPPER_MODAL",
+      "provenance": "G2_ORIGINAL_QUARANTINED_NOT_CANONICAL",
+      "grade_ids": [],
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_source_workbook_SHA256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 122,
+      "original_question": "La circuitele electrice de comandă, automatizare, măsurare şi semnalizare: ",
+      "original_ABC": {
+        "A": "se prevăd numai                                   conductoare din aluminiu",
+        "B": "se prevăd numai                                   conductoare din cupru",
+        "C": "se prevăd conductoare din aluminiu sau cupru"
+      },
+      "imported_keys_unchanged": null,
+      "previously_researched_source_locator": "I7/2011 §5.1.7.2(e)",
+      "preliminary_source_candidate_not_official": "B",
+      "staged_full_editorial_draft_path": null,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_ONLY_CU_EXCLUSIVITY",
+      "blockers": [
+        "NUMAI_NOT_EXACT_VERBATIM",
+        "EXACT_I7_EXCEPTION_CHECK",
+        "CARD_REQUIRED"
+      ]
+    },
+    {
+      "id": "ANRE-G2-LEG-XLSX-R0098",
+      "category": "TWO_MANDATORY_CONSTRUCTION_DOCUMENTS",
+      "provenance": "G2_ORIGINAL_QUARANTINED_NOT_CANONICAL",
+      "grade_ids": [],
+      "source_workbook": "LEGISLATIE-GR.-2-05.2023(1)(2).xlsx",
+      "original_source_workbook_SHA256": "725323d136481e7ad5643251e2b89a19bd57a471527cbeec847a5fe7f32f2662",
+      "source_row": 98,
+      "original_question": "Dacă se solicită avizul tehnic de racordare pentru o organizare de de şantier, documentaţia anexată cererii va cuprinde în mod obligatoriu şi:",
+      "original_ABC": {
+        "A": "certificatul de urbanism al obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;",
+        "B": "autorizaţia de construire a obiectivului pentru care se organizează şantierul, în termen de valabilitate, in copie;\n",
+        "C": "contractul încheiat cu un furnizor de energie electrică\n"
+      },
+      "imported_keys_unchanged": null,
+      "previously_researched_source_locator": "Ord59/2013 Art14(1)(c) and Art14(1)(h)",
+      "preliminary_source_candidate_not_official": null,
+      "staged_full_editorial_draft_path": null,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_A_AND_B_BOTH_SUPPORTED",
+      "blockers": [
+        "CERT_URBANISM_AND_BUILDING_PERMIT",
+        "NO_SINGLE_EXAM_OPTION",
+        "CARD_REQUIRED"
+      ]
+    },
+    {
+      "id": "ANRE-G2-NOR-XLSX-R0055",
+      "category": "ALL_ACTIVE_VS_NEUTRAL_EXCEPTION",
+      "provenance": "G2_ORIGINAL_QUARANTINED_NOT_CANONICAL",
+      "grade_ids": [],
+      "source_workbook": "NORME-TEHNICE-Gr.-2-05.2023(1)(2).xlsx",
+      "original_source_workbook_SHA256": "2183a362a9d22fad79052f7981238aa15b56cc8972ebfb87e86bd9d86a939613",
+      "source_row": 55,
+      "original_question": "Dacă protecţia motoarelor contra suprasarcinilor este realizată cu întrerupere, dispozitivul de comutaţie trebuie să întrerupă obligatoriu: ",
+      "original_ABC": {
+        "A": " toate conductoarele active",
+        "B": "conductorul neutru ",
+        "C": " toate conductoarele de fază"
+      },
+      "imported_keys_unchanged": null,
+      "previously_researched_source_locator": "I7 §5.3.1.7.2.1",
+      "preliminary_source_candidate_not_official": null,
+      "staged_full_editorial_draft_path": null,
+      "source_original_before_focus_after_char_verified": false,
+      "offline_long_source_rights_verified": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "approved_for_learning": false,
+      "gate": "BLOCK_A_AND_C_BOTH_DEFENSIBLE",
+      "blockers": [
+        "GENERAL_ALL_ACTIVE",
+        "NEUTRAL_NOT_MANDATORY",
+        "NO_SINGLE_EXAM_OPTION",
+        "CARD_REQUIRED"
+      ]
+    },
+    {
+      "id": "ORIGINAL-ELECTRO-ROW-30",
+      "category": "VECTOR_DIAGRAM_ORPHAN",
+      "provenance": "UNMAPPED_ORIGINAL_XLSX",
+      "grade_ids": [],
+      "source_workbook": "ELECTROTEHNICA-09.2024-2.xlsx",
+      "source_row": 30,
+      "original_question": "ORIGINAL_CELL_NOT_REOPENED_IN_THIS_PILOT",
+      "original_ABC": {
+        "A": "VECTOR_GRAPHIC_NOT_REAUTHENTICATED",
+        "B": "VECTOR_GRAPHIC_NOT_REAUTHENTICATED",
+        "C": "VECTOR_GRAPHIC_NOT_REAUTHENTICATED"
+      },
+      "DrawingML_SHA256": "abba6b1a03337409a38a8548e834f651f0eeaabb062966994315b83640ddc53e",
+      "three_graphical_choices": 3,
+      "original_pixel_verified": false,
+      "derived_preview_pixel_identical": false,
+      "staged_full_editorial_draft_path": null,
+      "approved_for_learning": false,
+      "scored_ANRE_key_authenticated": false,
+      "independent_qualified_source_technical_linguist_signoff": false,
+      "gate": "BLOCK_VISUAL_SOURCE_AND_ORPHAN_SCOPE",
+      "blockers": [
+        "ORPHAN_NOT_IN_568_OR_822",
+        "ORIGINAL_DRAWINGML_GRAPHIC_PIXEL_FIDELITY",
+        "EXAM_KEY_AND_VISUAL_CARD_REQUIRED"
+      ]
+    }
+  ],
+  "negative_checks": {
+    "crossgrade_key_conflict_detected": true,
+    "original_trainer_material_word_change_detected": true,
+    "PE102_G1_source_era_mismatch_detected": true,
+    "PE155_specific_vs_I7_generic_separated": true,
+    "didactic_153_all_A_not_official_exam_flagged": true,
+    "quarantined_G2_4_not_promoted": true,
+    "multi_true_legal_held": true,
+    "multi_true_neutral_held": true,
+    "graphics_orphan_retained": true,
+    "source_rights_gate_fail_closed": true,
+    "pro_signoff_not_fabricated": true
+  },
+  "independent_AI_process_challenge": "resp_4c55a9bc-3484-448a-a33d-791771743d6d (PROCESS ONLY, NOT CONTENT REVIEW)",
+  "notes": [
+    "Existing V241 contains 568 complete editorial A/B/C drafts, not 568 licensed before/focus/after original-source cards.",
+    "Original workbook bytes not reopened in this pilot; original per-ID source row/text from prior XLSX reconciliation.",
+    "Original XML graphics exist for row30 but pixel-equivalent rendering not approved.",
+    "No current final official ANRE scored key authenticated, source/legal technical and linguistic qualified signoff missing.",
+    "No actual HTML or APK device tests performed."
+  ],
+  "safety": {
+    "no_original_key_changed": true,
+    "no_HTML_APK_changed": true,
+    "no_staging_imported": true,
+    "PR7_Draft": true,
+    "no_merge_release": true
+  }
+}

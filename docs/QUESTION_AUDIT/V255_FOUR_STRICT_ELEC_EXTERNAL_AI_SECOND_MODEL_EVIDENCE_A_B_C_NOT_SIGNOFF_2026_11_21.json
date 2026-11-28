@@ -1,0 +1,139 @@
+{
+  "schema": "v255_four_strict_electrical_source_original_second_model_research",
+  "date": "2026-11-21",
+  "parent_head": "5de64ca62b8681158c1836623bf1e39e99178c7d",
+  "research_models_actually_executed": [
+    "Parallel separate AI model medium effort for QABC-0017/0143",
+    "Parallel separate AI model medium effort for QABC-0094/0236"
+  ],
+  "source_parent_registry": "V248 uploaded-user-original Excel-provenance",
+  "counts": {
+    "strict_cases_researched_in_this_iteration": 4,
+    "grade_routes": 7,
+    "strict_total": 6,
+    "qualified_reviewer_signoffs": 0,
+    "learner_approvals": 0
+  },
+  "scope": "Actual separate AI research checked by coordinator; not a certified qualified independent electrical reviewer. Original keys and A/B/C unchanged; do not mark as learning-ready.",
+  "records": [
+    {
+      "id": "QABC-0017",
+      "grade_ids": [
+        "G1-ELE-018",
+        "G2-ELEC-170"
+      ],
+      "original_ABC": {
+        "stem": "Capacitatea de serviciu Cs a unei linii electrice aeriene simetrice, având capacităţile C12=C23=C31 =C şi neglijînd influenţa pământului, este:",
+        "A": "Cs=3 C",
+        "B": "Cs=C/3",
+        "C": "Cs=C"
+      },
+      "imported_grade_keys_unmodified": "G1-ELE-018=A | G2-ELEC-170=C",
+      "second_model_research_id": "resp_3c86139a-68bd-49dc-b84d-8e489e81a8ef",
+      "provisional_candidate_not_official_score": "A conditional: Cs=3C",
+      "source_scope_and_physics": "For balanced triple Va+Vb+Vc=0 and pair capacitances C: Qa=C(Va-Vb)+C(Va-Vc)=3C Va; per-phase star equivalent Cs=Qa/Va=3C.",
+      "rationale_ABC": {
+        "A": "A supported by charge calculation under explicit Cs service-capacitance convention.",
+        "B": "B C/3 inverts the equal-delta conversion.",
+        "C": "C applies only to a different definition of C or Cs; not physically pairwise C12=C23=C31 as given."
+      },
+      "source_reference": "https://wzy.ece.iastate.edu/Courses/EE455/06%20EE455%20Modeling%20Shunt%20Admittance.pdf",
+      "source_readback_class": "External AI research pointer; exact PDF page not independently inspected here.",
+      "remaining_gate": "Definition of service capacitance and authenticated grade-specific exam scored key still unknown.",
+      "current_exam_edition_verified": false,
+      "official_scored_key_authenticated": false,
+      "qualified_independent_electrical_review": false,
+      "independent_linguistic_review": false,
+      "learner_approved": false
+    },
+    {
+      "id": "QABC-0094",
+      "grade_ids": [
+        "G1-ELE-102",
+        "G2-ELEC-245"
+      ],
+      "original_ABC": {
+        "stem": "În cazul unei scheme cu două bare colectoare şi un întreruptor pe circuit este de preferat ca în regim normal de funcţionare:",
+        "A": "una dintre barele colectoare să fie sub tensiune, cealaltă bară fiind menţinută în rezervă rece;",
+        "B": "ambele bare colectoare să fie sub tensiune, cupla transversală fiind menţinută în funcţiune;",
+        "C": "ambele bare colectoare să fie menţinute sub tensiune, cupla transversală fiind în rezervă caldă."
+      },
+      "imported_grade_keys_unmodified": "G1-ELE-102=A | G2-ELEC-245=C",
+      "second_model_research_id": "resp_5d1e28d5-a478-4124-a160-0f152659e3ca",
+      "provisional_candidate_not_official_score": "No universal unique answer",
+      "source_scope_and_physics": "For double-busbar one-breaker circuit, preferred normal bus coupler operation depends on supply, short-circuit current, breaker/coupler scheme, continuity and protective selectivity.",
+      "rationale_ABC": {
+        "A": "Cold reserve can be designed but is not universally preferred.",
+        "B": "Both live with coupler in service may aid bus sharing but requires protection and fault-current checks.",
+        "C": "Both live with coupler in hot reserve can support split-bus operation; not universally preferred."
+      },
+      "source_reference": "https://selinc.com/api/download/3164?lang=en-us",
+      "source_readback_class": "External research pointer; direct source open failed and is NOT independently page-certified.",
+      "remaining_gate": "Missing exact intended station operating standard/normal topology; G1 A vs G2 C remains conflict.",
+      "current_exam_edition_verified": false,
+      "official_scored_key_authenticated": false,
+      "qualified_independent_electrical_review": false,
+      "independent_linguistic_review": false,
+      "learner_approved": false
+    },
+    {
+      "id": "QABC-0143",
+      "grade_ids": [
+        "G1-ELE-152"
+      ],
+      "original_ABC": {
+        "stem": "Mărimea adimensională care reprezintă variaţia pe care o suferă amplitudinea şi faza undei de tensiune sau curent când parcurge 1 km de linie (lungă ) se numeşte:",
+        "A": "constanta de propagare a liniei",
+        "B": "constanta de atenuare a liniei",
+        "C": "constanta de distorsiune a liniei"
+      },
+      "imported_grade_keys_unmodified": "G1-ELE-152=A",
+      "second_model_research_id": "resp_3c86139a-68bd-49dc-b84d-8e489e81a8ef",
+      "provisional_candidate_not_official_score": "A is closest intended, original is dimensionally inconsistent",
+      "source_scope_and_physics": "Gamma=alpha+j beta has inverse-length units (km^-1 or m^-1); gamma times L is dimensionless and describes accumulated amplitude+phase in exp(-gamma L).",
+      "rationale_ABC": {
+        "A": "Propagation constant covers both amplitude and phase, but gamma itself is not adimensional.",
+        "B": "Attenuation alpha by itself cannot describe phase.",
+        "C": "The provided term distortion constant is not the standard full complex propagation coefficient."
+      },
+      "source_reference": "https://www.engineeringdevotion.com/electric-power-systems/lecture/chapter-12-long-lines-and-the-wave-equation.html",
+      "source_readback_class": "Official non-ANRE educational page directly reopened; unit gamma per km and gamma L dimensionless verified.",
+      "remaining_gate": "Original XLSX uses adimensionala but Trainer changed to caracteristica; original wording/erratum and official key not certified.",
+      "current_exam_edition_verified": false,
+      "official_scored_key_authenticated": false,
+      "qualified_independent_electrical_review": false,
+      "independent_linguistic_review": false,
+      "learner_approved": false
+    },
+    {
+      "id": "QABC-0236",
+      "grade_ids": [
+        "G1-ELE-247",
+        "G2-ELEC-383"
+      ],
+      "original_ABC": {
+        "stem": "Un corp conductor situat într-un câmp electric de intensitate E se încarcă cu electricitate:",
+        "A": "prin conducţie",
+        "B": "prin inducţie electromagnetică",
+        "C": "prin magnetizare"
+      },
+      "imported_grade_keys_unmodified": "G1-ELE-247=B | G2-ELEC-383=B",
+      "second_model_research_id": "resp_5d1e28d5-a478-4124-a160-0f152659e3ca",
+      "provisional_candidate_not_official_score": "Original B electromagnetic is not electrostatic induction; no exact original net-charging answer",
+      "source_scope_and_physics": "Isolated conductor in static E polarizes with zero net charge. Net charge by electrostatic induction requires grounding or separation; electromagnetic induction concerns changing magnetic flux.",
+      "rationale_ABC": {
+        "A": "Conduction charging requires actual contact/charge-transfer route not present.",
+        "B": "Electromagnetic induction in original cannot be replaced with electrostatic; edited Trainer B materially differs.",
+        "C": "Magnetization does not describe electric charging."
+      },
+      "source_reference": "https://openstax.org/books/college-physics/pages/18-2-conductors-and-insulators",
+      "source_readback_class": "Text directly reopened and verified, neutral polarization versus grounding/separation.",
+      "remaining_gate": "Need official erratum or validated source meaning of se incarca; original key B cannot be independently approved.",
+      "current_exam_edition_verified": false,
+      "official_scored_key_authenticated": false,
+      "qualified_independent_electrical_review": false,
+      "independent_linguistic_review": false,
+      "learner_approved": false
+    }
+  ]
+}
