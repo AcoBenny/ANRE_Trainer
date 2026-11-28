@@ -1,6 +1,10 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-440 | MC-006 in progress: electrotechnics missing fields | 2026-11-28**
+**CKPT-441 | MC-006 in progress: fundamental circuits and missing context | 2026-11-28**
+
+Current progress: [report](docs/CONSULTFORM/CKPT_441_MC006_CIRCUITS_PROGRESS.md), [582-ID tracker](docs/CONSULTFORM/CKPT_441_MC006_FIELD_INVENTORY.json). 43 distinct Electrotechnics records changed: 30 new passages/formulas, 8 explanation-only, 5 missing-context additions; 2 new full field checklists. 170/582 complete, 309 source passages/formulas, 479 explanations; 139 context gaps, 273 source gaps, 103 explanation gaps (overlap). Remaining sources: 203 Electrotechnics, 31 legislation, 39 norms. Private HTML `ANRE_CKPT441_Candidate_582.html` SHA256 8366409db9432b995ad28109cd7534016298147e025237aa552af8fae28264a5. 43/43 Chromium card panels PASS (set_content), 539 records unchanged, all 582 original question/grade/key fields preserved; scoring smoke PASS, no JS/network errors. OpenStax educational sources and UTCN slide formulas, no independent technical/edition certification. No APK/device QA. NEXT: missing fields only, prioritize 103 explanation gaps and 203 Electrotechnics source gaps by topic. MC-004 blocked; MC-005 waiting.
+
+Historical CKPT-440:
 
 Current progress: [report](docs/CONSULTFORM/CKPT_440_MC006_ELECTRO_PROGRESS.md), [582-ID tracker](docs/CONSULTFORM/CKPT_440_MC006_FIELD_INVENTORY.json). 24 distinct electrotechnics IDs enriched (12 source-linked, 12 explanation-only; 13 new explanations total). 168/582 full field checklists, 279 source passages/formulas, 471 explanations/observations; 111 context gaps, 303 source gaps, 111 explanation gaps (overlap). Remaining sources: 233 electrotechnics, 31 legislation, 39 norms. Private HTML `ANRE_CKPT440_Candidate_582.html` SHA256 bcf0fdeb2aec7ddaab6960d1a2b2bed9a0521d71af5da493c3d4d18f1c420b12. Structural preservation 582/582, 24/24 new Chromium panels PASS (set_content), scoring smoke PASS, no JS/network errors. Edition of machine manual unconfirmed; no independent certification, device QA or APK. NEXT: only missing fields, prioritize 111 explanation gaps and group sources by topic. MC-004 blocked; MC-005 waiting.
 
