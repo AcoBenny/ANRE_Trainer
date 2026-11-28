@@ -1,6 +1,8 @@
 # ANRE Trainer | ACTIVE_HANDOFF
 
-**CKPT-439 | MC-006 in progress: grouped source completion | 2026-11-28**
+**CKPT-440 | MC-006 in progress: electrotechnics missing fields | 2026-11-28**
+
+Current progress: [report](docs/CONSULTFORM/CKPT_440_MC006_ELECTRO_PROGRESS.md), [582-ID tracker](docs/CONSULTFORM/CKPT_440_MC006_FIELD_INVENTORY.json). 24 distinct electrotechnics IDs enriched (12 source-linked, 12 explanation-only; 13 new explanations total). 168/582 full field checklists, 279 source passages/formulas, 471 explanations/observations; 111 context gaps, 303 source gaps, 111 explanation gaps (overlap). Remaining sources: 233 electrotechnics, 31 legislation, 39 norms. Private HTML `ANRE_CKPT440_Candidate_582.html` SHA256 bcf0fdeb2aec7ddaab6960d1a2b2bed9a0521d71af5da493c3d4d18f1c420b12. Structural preservation 582/582, 24/24 new Chromium panels PASS (set_content), scoring smoke PASS, no JS/network errors. Edition of machine manual unconfirmed; no independent certification, device QA or APK. NEXT: only missing fields, prioritize 111 explanation gaps and group sources by topic. MC-004 blocked; MC-005 waiting.
 
 Current authority: [Mission Control](docs/MISSION_CONTROL.md). [CKPT-434 report](docs/CONSULTFORM/CKPT_434_ELECTRO_CARD_REUSE_REPORT.md) | [final Electro card index](docs/CONSULTFORM/CKPT_434_ELECTRO_FINAL_CARD_INDEX.json) | [CKPT-433 classification/import](docs/CONSULTFORM/CKPT_433_FULL_BANK_REPORT.md).
 
