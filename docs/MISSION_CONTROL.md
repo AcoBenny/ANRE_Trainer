@@ -1,4 +1,4 @@
-# ANRE Mission Control | CKPT-442
+# ANRE Mission Control | CKPT-443
 2026-11-28 | Owner strategy supersedes CKPT-427 validation queue. [Mission issues](https://github.com/AcoBenny/ANRE_Trainer/issues?q=label%3Amission-control) | Draft PR #7.
 
 ## Current board (execution order, not issue creation order)
@@ -10,7 +10,7 @@
 | ANRE-MC-001 | [Match Legislation + Technical Norms](https://github.com/AcoBenny/ANRE_Trainer/issues/14) | DONE | CKPT-430: 305 unique, G1 151 / G2 154; 140 legacy matches for cards only; [crosswalk](CONSULTFORM/CKPT_430_CROSSWALK_305.json) |
 | ANRE-MC-002 | [Reuse cards and references](https://github.com/AcoBenny/ANRE_Trainer/issues/15) | DONE | CKPT-431: 305 cards; 167 original source anchors, 144 historical rationales (overlap); 67 reference-only/missing; [report](CONSULTFORM/CKPT_431_MC002_REPORT.md) |
 | ANRE-MC-003 | [Electrotechnics](https://github.com/AcoBenny/ANRE_Trainer/issues/16) | DONE | CKPT-434: 275 Electro + 2 PDF imported; 185 historical explanations reused, 11 observations, 79 explicit gaps; [report](CONSULTFORM/CKPT_434_ELECTRO_CARD_REUSE_REPORT.md) |
-| ANRE-MC-006 | [Complete educational explanations and source excerpts](https://github.com/AcoBenny/ANRE_Trainer/issues/19) | IN_PROGRESS | CKPT-442: 171 complete fields, 323 source excerpts/formulas/table rows, 496 explanations; 152 context gaps, 259 source gaps, 86 explanation gaps (overlap). [Report](CONSULTFORM/CKPT_442_MC006_MACHINES_PROGRESS.md)|
+| ANRE-MC-006 | [Complete educational explanations and source excerpts](https://github.com/AcoBenny/ANRE_Trainer/issues/19) | IN_PROGRESS | CKPT-443: 174 complete fields, 333 source excerpts/formulas/table rows, 515 explanations; 159 context gaps, 249 source gaps, 67 explanation gaps (overlap). [Report](CONSULTFORM/CKPT_443_MC006_NETWORK_PROGRESS.md)|
 | ANRE-MC-004 | [HTML/APK integration](https://github.com/AcoBenny/ANRE_Trainer/issues/17) | BLOCKED (finalization) | Await MC-006; CKPT-434 HTML 582 updated, 3492 permutations PASS; updated Android kit staged, actual APK compilation pending; [report](CONSULTFORM/CKPT_434_ELECTRO_CARD_REUSE_REPORT.md) |
 | ANRE-MC-005 | [Functional QA and owner acceptance](https://github.com/AcoBenny/ANRE_Trainer/issues/18) | TODO | After MC-004 final integration/APK; MC-006 completion or explicit owner waiver required |
 
